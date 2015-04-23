@@ -251,6 +251,14 @@ body {
     border: 1px solid rgba(214, 214, 214, 0.4);
 }
 
+.offcanvas-btn {
+    font-size: 1.5em;
+    color: $white;
+    background: $dark-blue;
+    padding: 0.5em 0.5em;
+
+}
+
 .breadcrumb {
     background: none;
     padding: 0.5em 0.5em;
@@ -378,8 +386,9 @@ input[type="range"] {
 
 // Gallery items
 
-.gallery-item {
-    padding: 0 0 2em;
+.center-block {
+    text-align: center;
+    padding: 1em 0;
 }
 
 // // Overlay on hover
@@ -551,6 +560,9 @@ input[type="range"] {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    .breadcrumb {
+        display: none;
     }
 }
 
