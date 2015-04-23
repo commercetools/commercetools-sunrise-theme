@@ -46,6 +46,10 @@ a:hover {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+
+    // Resolves the bootstrap white gap issue
+    width: auto !important;
+    overflow-x: hidden !important;
 }
 
 /*****************************************************************************/
@@ -251,12 +255,18 @@ body {
     border: 1px solid rgba(214, 214, 214, 0.4);
 }
 
+.hr-short {
+    border: 1px solid rgba(214, 214, 214, 1);
+    width: 50px;
+    margin: 0 auto;
+}
+
 .offcanvas-btn {
     font-size: 1.5em;
     color: $white;
     background: $dark-blue;
-    padding: 0.5em 0.5em;
-
+    padding: 0.4em 0.4em;
+    margin: 0.5em 0.5em;
 }
 
 .breadcrumb {
@@ -319,25 +329,15 @@ body {
     margin: 0 0.5em;
 }
 
-.low-btn {
-    background: $steel;
-    border: none;
-    border-radius: 3px;
-    color: $white;
-}
-
-.high-btn {
-    background: $white;
-    border: 1px solid $steel;
-    border-radius: 3px;
-    color: $steel;
+.clear-btn {
+    color: $dark-grey;
 }
 
 // Slider
 
-input[type="range"] {
+// input[type="range"] {
     
-}
+// }
 
 // Designer box
 
@@ -372,16 +372,22 @@ input[type="range"] {
     font-size: 0.9em;
 }
 
-.pagination, {
+.pagination {
     margin: 0 auto;
+    padding-left: 15px;
+}
+.pagination-active {
+    color: $yellow;
 }
 
 .page-numbers {
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 .page-numbers li {
     display: inline-block;
+    font-size: 1.1em;
 }
 
 // Gallery items
@@ -532,6 +538,7 @@ input[type="range"] {
     position: absolute;
     top: 0;
     width: 50%; /* 6 columns */
+    padding-left: 2em;
   }
 }
 
@@ -574,6 +581,12 @@ input[type="range"] {
     }
     .header-right {
         height: 20px;
+    }
+    .item-list-pagination {
+        display: none;
+    }
+    .pagination {
+        display: none;
     }
 }
 
