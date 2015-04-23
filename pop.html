@@ -138,11 +138,11 @@
                 <p>Filter Products</p>
                 <hr class="hr">
                 <div class="row product-type">
-                  <div class="col-sm-8 text-left">
+                  <div class="col-xs-8 text-left">
                     <p>Product type</p>
                   </div>
-                  <div class="col-sm-4 text-right">
-                    <a href="">Clear</a>
+                  <div class="col-xs-4 text-right clear-btn">
+                    <a href="#">Clear</a>
                   </div>              
                 </div>
                 <div class="row">
@@ -228,15 +228,15 @@
                 </div>
                 <hr class="hr">
                 <div class="row size-box">
-                  <div class="col-sm-8 text-left">
+                  <div class="col-xs-8 text-left">
                     Size
                   </div>
-                  <div class="col-sm-4 text-right">
+                  <div class="col-xs-4 text-right clear-btn">
                     <a href="#">Clear</a>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-6">
+                  <div class="col-xs-6">
                     <div class="checkbox">
                       <label>
                         <input type="checkbox" value="">
@@ -250,7 +250,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-xs-6">
                     <div class="checkbox">
                       <label>
                         <input type="checkbox" value="">
@@ -267,15 +267,15 @@
                 </div>
                 <hr class="hr">
                 <div class="row color-box">
-                  <div class="col-sm-8 text-left">
+                  <div class="col-xs-8 text-left">
                     Color
                   </div>
-                  <div class="col-sm-4 text-right">
+                  <div class="col-xs-4 text-right clear-btn">
                     <a href="#">Clear</a>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-6">
+                  <div class="col-xs-6">
                     <div class="checkbox">
                       <label>
                         <input type="checkbox" value="">
@@ -289,7 +289,7 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-xs-6">
                     <div class="checkbox">
                       <label>
                         <input type="checkbox" value="">
@@ -312,15 +312,18 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-12">
-                    <input class="price-slider" type="range" name="points" min="0" max="1000">
+                    <form oninput="amount.value=price.value">
+                      <input class="price-slider" type="range" name="price" min="0" max="1000">
+                      <output name="amount" for="price"></output>
+                    </form>
                   </div>
                 </div>
                 <hr class="hr">
                 <div class="row designer-box">
-                  <div class="col-sm-8 text-left">
+                  <div class="col-xs-8 text-left">
                     Brands
                   </div>
-                  <div class="col-sm-4 text-right">
+                  <div class="col-xs-4 text-right clear-btn">
                     <a href="#">Clear</a>
                   </div>
                 </div>
@@ -384,8 +387,8 @@
                 <img class="img-responsive center-block placeholder-img" src="http://placehold.it/1000x350" alt="placeholder"> -->
 
                 <!-- Text Option -->
-                <p>Women<br><span class="section-heading">Coats</span><br><hr class="hr"></p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+                <p>Women<br><span class="section-heading">Coats</span><br><hr class="hr-short"></p>
+                <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
               </div>
             </div>
             <hr class="hr">
@@ -400,13 +403,13 @@
               </div>
               <div class="col-xs-4 text-center pagination">
                 <ul class="page-numbers">
-                  <li><a href="" class="prev">«</a></li>
+                  <li><a href=""><span class="glyphicon glyphicon-menu-left"></span></a></li>
                   <li><a href="">1</a></li>
                   <li><a href="">2</a></li>
-                  <li><a href="">3</a></li>
+                  <li class="pagination-active"><a href="">3</a></li>
                   <li><a href="">4</a></li>
                   <li><a href="">5</a></li>
-                  <li><a href="" class="next">»</a></li>
+                  <li><a href=""><span class="glyphicon glyphicon-menu-right"></span></a></li>
                 </ul>
               </div>
               <div class="col-xs-4 text-right">
@@ -454,13 +457,13 @@
             <div class="row">
               <div class="col-sm-12 text-center pagination">
                 <ul class="page-numbers">
-                  <li><a href="" class="prev">«</a></li>
+                  <li><a href=""><span class="glyphicon glyphicon-menu-left"></span></a></li>
                   <li><a href="">1</a></li>
-                  <li><a href="" class="current" >2</a></li>
+                  <li class="pagination-active"><a href="">2</a></li>
                   <li><a href="">3</a></li>
                   <li><a href="">4</a></li>
                   <li><a href="">5</a></li>
-                  <li><a href="" class="next">»</a></li>
+                  <li><a href=""><span class="glyphicon glyphicon-menu-right"></span></a></li>
                 </ul>
               </div>
             </div>
@@ -529,10 +532,10 @@
   <div class="sub-footer">
     <div class="container">
       <div class="row text-uppercase">
-        <div class="col-sm-6 text-left">
+        <div class="col-xs-6 text-left">
           <p class="footer-title">&copy; 2015 Sunrise</p>
         </div>
-        <div class="col-sm-6 text-right">
+        <div class="col-xs-6 text-right">
           <ul class="social-icons">
             <li class="footer-title">Follow us</li>
             <a href=""><li><img class="social-icon" src="assets/img/facebook-32.png" alt="facebook"></li></a>
