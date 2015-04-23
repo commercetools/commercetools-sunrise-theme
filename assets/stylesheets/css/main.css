@@ -177,6 +177,12 @@ body {
   margin: 0;
   border: 1px solid rgba(214, 214, 214, 0.4); }
 
+.offcanvas-btn {
+  font-size: 1.5em;
+  color: #FFFFFF;
+  background: #2A343F;
+  padding: 0.5em 0.5em; }
+
 .breadcrumb {
   background: none;
   padding: 0.5em 0.5em; }
@@ -259,8 +265,9 @@ body {
 .page-numbers li {
   display: inline-block; }
 
-.gallery-item {
-  padding: 0 0 2em; }
+.center-block {
+  text-align: center;
+  padding: 1em 0; }
 
 /*****************************************************************************/
 /*
@@ -391,7 +398,10 @@ body {
   .payment-cards {
     display: block;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+
+  .breadcrumb {
+    display: none; } }
 @media screen and (max-width: 629px) {
   .cart-item-number,
   .your-bag,
