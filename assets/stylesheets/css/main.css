@@ -194,6 +194,9 @@ body {
 .panel-title {
   background-color: #F5F2EA; }
 
+.panel-group .panel + .panel {
+  margin-top: 0; }
+
 .panel {
   background-color: transparent;
   border: none; }
@@ -236,6 +239,10 @@ body {
 
 .text-capitalize {
   text-transform: capitalize; }
+
+.section-heading {
+  font-size: 4em;
+  font-weight: 200; }
 
 .item-list-pagination {
   padding: 1em 0;

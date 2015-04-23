@@ -275,6 +275,10 @@ body {
     background-color: $dirty-white;
 }
 
+.panel-group .panel+.panel {
+    margin-top: 0;
+}
+
 .panel {
     background-color: transparent;
     border: none;
@@ -342,6 +346,13 @@ input[type="range"] {
 
 .text-capitalize {
     text-transform: capitalize;
+}
+
+// Section heading - Text
+
+.section-heading {
+    font-size: 4em;
+    font-weight: 200;
 }
 
 // Pagination
