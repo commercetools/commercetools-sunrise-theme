@@ -120,349 +120,351 @@
 
   <div class="pop-page">
     <div id="pop-page" class="container">
-      <div class="row">
-        <div class="col-xs-6">
-          <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Women</a></li>
-            <li class="active"><a href="#">Coats</a></li>
-          </ol>
+      <div class="row row-offcanvas row-offcanvas-left">
+        <p class="pull-left visible-xs">
+          <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+        </p>
+        <div class="row">
+          <div class="col-xs-12">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Women</a></li>
+              <li class="active"><a href="#">Coats</a></li>
+            </ol>
+          </div>
         </div>
-        <div class="col-xs-6 text-right back-to-btn">
-          <a href="#">Back to ...</a>
-        </div>
-      </div>
-
-      <div class="row product-filter">
-        <div class="col-sm-3 filter-options">
-          <div class="row">
-            <div class="col-sm-12">
-              <p>Filter Products</p>
-              <hr class="hr">
-              <div class="row product-type">
-                <div class="col-sm-8 text-left">
-                  <p>Product type</p>
+        <div class="row product-filter">
+          <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
+            <div class="row">
+              <div class="col-sm-12">
+                <p>Filter Products</p>
+                <hr class="hr">
+                <div class="row product-type">
+                  <div class="col-sm-8 text-left">
+                    <p>Product type</p>
+                  </div>
+                  <div class="col-sm-4 text-right">
+                    <a href="">Clear</a>
+                  </div>              
                 </div>
-                <div class="col-sm-4 text-right">
-                  <a href="">Clear</a>
-                </div>              
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Type-1
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" value="">
-                              sub-type 1
-                            </label>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Type-1
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                sub-type 1
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                sub-type 2
+                              </label>
+                            </div>
                           </div>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" value="">
-                              sub-type 2
-                            </label>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Type-2
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                sub-type 1
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                sub-type 2
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Type-3
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                sub-type 1
+                              </label>
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                sub-type 2
+                              </label>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Type-2
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" value="">
-                              sub-type 1
-                            </label>
-                          </div>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" value="">
-                              sub-type 2
-                            </label>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <hr class="hr">
+                <div class="row size-box">
+                  <div class="col-sm-8 text-left">
+                    Size
+                  </div>
+                  <div class="col-sm-4 text-right">
+                    <a href="#">Clear</a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">
+                        S
+                      </label>
                     </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Type-3
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" value="">
-                              sub-type 1
-                            </label>
-                          </div>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" value="">
-                              sub-type 2
-                            </label>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">
+                        M
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">
+                        XL
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">
+                        XXL
+                      </label>
                     </div>
                   </div>
                 </div>
-              </div>
-              <hr class="hr">
-              <div class="row size-box">
-                <div class="col-sm-8 text-left">
-                  Size
-                </div>
-                <div class="col-sm-4 text-right">
-                  <a href="#">Clear</a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      S
-                    </label>
+                <hr class="hr">
+                <div class="row color-box">
+                  <div class="col-sm-8 text-left">
+                    Color
                   </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      M
-                    </label>
+                  <div class="col-sm-4 text-right">
+                    <a href="#">Clear</a>
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      XL
-                    </label>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">
+                        Black
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">
+                        Blue
+                      </label>
+                    </div>
                   </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      XXL
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <hr class="hr">
-              <div class="row color-box">
-                <div class="col-sm-8 text-left">
-                  Color
-                </div>
-                <div class="col-sm-4 text-right">
-                  <a href="#">Clear</a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      Black
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      Blue
-                    </label>
+                  <div class="col-sm-6">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">
+                        Multi
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">
+                        Neutrals
+                      </label>
+                    </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      Multi
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" value="">
-                      Neutrals
-                    </label>
+                <hr class="hr">
+                <div class="row price-box">
+                  <div class="col-sm-12">
+                    Price
                   </div>
                 </div>
-              </div>
-              <hr class="hr">
-              <div class="row price-box">
-                <div class="col-sm-12">
-                  Price
+                <div class="row">
+                  <div class="col-sm-12">
+                    <input class="price-slider" type="range" name="points" min="0" max="1000">
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <input class="price-slider" type="range" name="points" min="0" max="1000">
+                <hr class="hr">
+                <div class="row designer-box">
+                  <div class="col-sm-8 text-left">
+                    Brands
+                  </div>
+                  <div class="col-sm-4 text-right">
+                    <a href="#">Clear</a>
+                  </div>
                 </div>
-              </div>
-              <hr class="hr">
-              <div class="row designer-box">
-                <div class="col-sm-8 text-left">
-                  Designers
-                </div>
-                <div class="col-sm-4 text-right">
-                  <a href="#">Clear</a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12 designer-list">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> A.P.C
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> ACNE
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> ACRONYM
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> ALEXANDER MCQUEEN
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> ALEXANDER WANG
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> ALEXANDER WANG
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> ALEXANDER WANG
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> ALEXANDER WANG
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> ALEXANDER WANG
-                    </label>
+                <div class="row">
+                  <div class="col-sm-12 designer-list">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> A.P.C
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> ACNE
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> ACRONYM
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> ALEXANDER MCQUEEN
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> ALEXANDER WANG
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> ALEXANDER WANG
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> ALEXANDER WANG
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> ALEXANDER WANG
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> ALEXANDER WANG
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+          <div class="col-sm-9 text-center">
+            <div class="row">
+              <div class="col-sm-12">
 
-        <div class="col-sm-9 text-center">
-          <div class="row">
-            <div class="col-sm-12">
+                <!-- Image Option 
+                <img class="img-responsive center-block placeholder-img" src="http://placehold.it/1000x350" alt="placeholder"> -->
 
-              <!-- Image Option 
-              <img class="img-responsive center-block placeholder-img" src="http://placehold.it/1000x350" alt="placeholder"> -->
-
-              <!-- Text Option -->
-              <p>Women<br><span class="section-heading">Coats</span><br><hr class="hr"></p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+                <!-- Text Option -->
+                <p>Women<br><span class="section-heading">Coats</span><br><hr class="hr"></p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+              </div>
             </div>
-          </div>
-          <hr class="hr">
-          <div class="row item-list-pagination">
-            <div class="col-sm-4 text-left">
-              <span class="text-capitalize">Sort by</span>
-              <button class="low-btn">Low</button>
-              <button class="high-btn">High</button>
-              <span class="text-capitalize">123 of 123</span>
+            <hr class="hr">
+            <div class="row item-list-pagination">
+              <div class="col-xs-4 text-left">
+                <span class="text-capitalize">Sort by</span>
+                <select class="per-page">
+                  <option value="low">Low</option>
+                  <option value="high">High</option>
+                </select>
+                <span class="text-capitalize">123 of 123</span>
+              </div>
+              <div class="col-xs-4 text-center pagination">
+                <ul class="page-numbers">
+                  <li><a href="" class="prev">«</a></li>
+                  <li><a href="">1</a></li>
+                  <li><a href="">2</a></li>
+                  <li><a href="">3</a></li>
+                  <li><a href="">4</a></li>
+                  <li><a href="">5</a></li>
+                  <li><a href="" class="next">»</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-4 text-right">
+                <span class="text-capitalize">items per page</span>
+                <select class="per-page">
+                  <option value="12">12</option>
+                  <option value="24">24</option>
+                  <option value="48">48</option>
+                </select>
+              </div>
             </div>
-            <div class="col-sm-4 text-center pagination">
-              <ul class="page-numbers">
-                <li><a href="" class="prev">«</a></li>
-                <li><a href="">1</a></li>
-                <li><a href="" class="current" >2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-                <li><a href="" class="next">»</a></li>
-              </ul>
+            <div class="row gallery-item">
+              <div class="col-sm-4">
+                <a href="#"><img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder"></a>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
+              </div>
+              <div class="col-sm-4">
+                <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
+              </div>
             </div>
-            <div class="col-sm-4 text-right">
-              <span class="text-capitalize">items per page</span>
-              <select class="per-page">
-                <option value="12">12</option>
-                <option value="24">24</option>
-                <option value="48">48</option>
-              </select>
+            <div class="row gallery-item">
+              <div class="col-sm-4">
+                <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
+              </div>
+              <div class="col-sm-4">
+                <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
+              </div>
+              <div class="col-sm-4">
+                <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
+              </div>
             </div>
-          </div>
-          <div class="row gallery-item">
-            <div class="col-sm-4">
-              <a href="#"><img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder"></a>
+            <div class="row gallery-item">
+              <div class="col-sm-4">
+                <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
+              </div>
+              <div class="col-sm-4">
+                <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
+              </div>
+              <div class="col-sm-4">
+                <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
+              </div>
             </div>
-            <div class="col-sm-4">
-              <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
-            </div>
-            <div class="col-sm-4">
-              <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
-            </div>
-          </div>
-          <div class="row gallery-item">
-            <div class="col-sm-4">
-              <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
-            </div>
-            <div class="col-sm-4">
-              <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
-            </div>
-            <div class="col-sm-4">
-              <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
-            </div>
-          </div>
-          <div class="row gallery-item">
-            <div class="col-sm-4">
-              <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
-            </div>
-            <div class="col-sm-4">
-              <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
-            </div>
-            <div class="col-sm-4">
-              <img class="img-responsive" src="http://placehold.it/250x350" alt="placeholder">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 text-center pagination">
-              <ul class="page-numbers">
-                <li><a href="" class="prev">«</a></li>
-                <li><a href="">1</a></li>
-                <li><a href="" class="current" >2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-                <li><a href="" class="next">»</a></li>
-              </ul>
+            <div class="row">
+              <div class="col-sm-12 text-center pagination">
+                <ul class="page-numbers">
+                  <li><a href="" class="prev">«</a></li>
+                  <li><a href="">1</a></li>
+                  <li><a href="" class="current" >2</a></li>
+                  <li><a href="">3</a></li>
+                  <li><a href="">4</a></li>
+                  <li><a href="">5</a></li>
+                  <li><a href="" class="next">»</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

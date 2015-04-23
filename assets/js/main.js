@@ -5,3 +5,11 @@ $(function () {
 	    $('.navbar-toggle:visible').click();
 	});
 });
+
+// Off-canvas menu 
+
+$(document).ready(function () {
+  $('[data-toggle="offcanvas"]').click(function () {
+    $('.row-offcanvas').toggleClass('active')
+  });
+});
