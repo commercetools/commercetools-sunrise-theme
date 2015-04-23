@@ -273,6 +273,7 @@ body {
 
 .panel-title {
     background-color: $dirty-white;
+    font-size: 1.5em;
 }
 
 .panel-group .panel+.panel {
@@ -307,6 +308,7 @@ body {
 
 .per-page {
     background: transparent;
+    margin: 0 0.5em;
 }
 
 .low-btn {
@@ -359,7 +361,7 @@ input[type="range"] {
 
 .item-list-pagination {
     padding: 1em 0;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .pagination, {
@@ -479,14 +481,58 @@ input[type="range"] {
 
 /*****************************************************************************/
 /*
+/* OFF CANVAS MENU
+/*
+/*****************************************************************************/
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+/*****************************************************************************/
+/*
 /* MEDIA QUERIES
 /*
 /*****************************************************************************/
 
 @media screen and (max-width: 768px) {
-    .filter-options {
-        display: none;
-    }
     .search-box {
         text-align: center;
     }
