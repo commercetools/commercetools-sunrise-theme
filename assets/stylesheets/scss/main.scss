@@ -210,6 +210,7 @@ body {
 .navbar-collapse,
 .navbar-collapsing {
     text-align: center;
+    padding-left: 0;
 }
 
 .navbar-default .navbar-toggle {
@@ -220,11 +221,6 @@ body {
 .navbar-default .navbar-toggle:hover {
     background: none;
 }
-
-// // Dispaly dropdown on hover
-// ul.nav li.dropdown:hover > ul.dropdown-menu {
-//     display: block;    
-// }
 
 .glyphicon-tags:before {
     padding-right: 0.5em;
@@ -267,6 +263,8 @@ body {
     background: $dark-blue;
     padding: 0.4em 0.4em;
     margin: 0.5em 0.5em;
+    position: absolute;
+    z-index: 1;
 }
 
 .breadcrumb {
@@ -280,6 +278,12 @@ body {
 
 .product-type {
     margin-top: 10px;
+}
+
+// Sidebar 
+
+#sidebar {
+    font-size: 0.9em;
 }
 
 // Product type accordion menu
@@ -318,9 +322,7 @@ body {
 
 // Price slider
 
-.price-slider {
-    margin: 2em 0;
-}
+
 
 // Buttons
 
@@ -332,12 +334,6 @@ body {
 .clear-btn {
     color: $dark-grey;
 }
-
-// Slider
-
-// input[type="range"] {
-    
-// }
 
 // Designer box
 
@@ -390,30 +386,42 @@ body {
     font-size: 1.1em;
 }
 
-// Gallery items
-
-.center-block {
-    text-align: center;
-    padding: 1em 0;
+.glyphicon-menu-left,
+.glyphicon-menu-right {
+    font-size: 0.8em;
 }
 
-// // Overlay on hover
+// Gallery items
 
-// .shop-item {
-//     position: relative;
-// }
+.thumbnail-img {
+    padding-bottom: 0.5em;
+}
 
-// .shop-item:after {
-//     content:'Quick View';
-//     position:absolute;
-//     width:100%; height:100%;
-//     top:0; left:0;
-//     background:rgba(0,0,0,0.1);
-//     opacity:0;
-// }
-// .shop-item:hover:after {
-//     opacity:1;
-// }
+.shop-item {
+    background: $white;
+    font-size: 0.8em;
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+    background-size: cover;
+    overflow: hidden;
+    color: $dark-grey;
+    padding: 1em 1em;
+}
+
+.gallery-row {
+    margin-left: 0.1em;
+    margin-bottom: 0.5em;
+}
+
+// Gallery items overlay
+
+.gallery-item-overlay {
+
+}
+
+.gallery-item-overlay:hover {
+    
+}
 
 /*****************************************************************************/
 /*
@@ -570,6 +578,12 @@ body {
     }
     .breadcrumb {
         display: none;
+    }
+    #sidebar {
+        padding-top: 1em;
+    }
+    .dropdown-menu li a {
+        text-align: center;
     }
 }
 
