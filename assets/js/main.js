@@ -13,3 +13,6 @@ $(document).ready(function () {
     $('.row-offcanvas').toggleClass('active')
   });
 });
+
+// Gallery item overlay on hover
+
