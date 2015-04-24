@@ -406,11 +406,12 @@ body {
     overflow: hidden;
     color: $dark-grey;
     padding: 1em 1em;
+    // margin: 0.2em 0.2em;
 }
 
 .gallery-row {
     margin-left: 0.1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 // Gallery items overlay
@@ -420,7 +421,7 @@ body {
 }
 
 .gallery-item-overlay:hover {
-    
+
 }
 
 /*****************************************************************************/
