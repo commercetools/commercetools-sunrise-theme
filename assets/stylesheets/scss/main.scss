@@ -406,22 +406,25 @@ body {
     overflow: hidden;
     color: $dark-grey;
     padding: 1em 1em;
-    // margin: 0.2em 0.2em;
 }
 
 .gallery-row {
-    margin-left: 0.1em;
+    margin-left: 0.3em;
     margin-bottom: 1em;
+}
+
+.gallery-item {
+    padding: 0 1em;
 }
 
 // Gallery items overlay
 
 .gallery-item-overlay {
-    background: red;
+
 }
 
 .gallery-item-overlay:hover {
-    background: tomato;
+
 }
 
 /*****************************************************************************/
