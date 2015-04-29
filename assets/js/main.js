@@ -14,5 +14,4 @@ $(document).ready(function () {
   });
 });
 
-// Gallery item overlay on hover
 

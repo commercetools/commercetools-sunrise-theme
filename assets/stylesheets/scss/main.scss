@@ -327,7 +327,50 @@ body {
 
 // Price slider
 
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
 
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: lighten(#3071a9, 10%);
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: $dark-blue;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: lighten(#3071a9, 10%);
+}
+input[type=range]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: $dark-blue;
+  cursor: pointer;
+}
+
+output {
+    margin-top: -15px;
+}
 
 // Buttons
 
@@ -428,11 +471,12 @@ body {
 // Gallery items overlay
 
 .shop-item:after {
-    content:'\A';
+    content: url(../../../assets/img/quicklook.png);
     position:absolute;
+    padding: 1em 1em;
     width:100%; height:100%;
     top:0; left:0;
-    background:rgba(0,0,0,0.6);
+    background:rgba(0,0,0,0.3);
     opacity:0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
