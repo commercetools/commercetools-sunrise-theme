@@ -81,12 +81,9 @@ body {
 	margin-bottom: 0;
 }
 
-.glyphicon.glyphicon-map-marker,
-.glyphicon.glyphicon-user,
-.glyphicon.glyphicon-lock {
-	font-size: 20px;
-	padding-right: 5px;
-	vertical-align: middle;
+.header-icons {
+  height: 20px;
+  padding-right: 10px;
 }
 
 // Left
@@ -147,11 +144,11 @@ body {
 // Sunrise logo  and searchbox
 
 .logo-img {
-    margin-left: 10px;
+    margin-left: 0;
 }
 
 .logo-search {
-	padding: 1em 0;
+	padding: 1em 0 0;
 }
 
 .search-box input {
