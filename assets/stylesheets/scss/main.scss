@@ -293,6 +293,11 @@ body {
     padding: 0 0;
 }
 
+.panel-group .panel-heading+.panel-collapse>.list-group, 
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0;
+}
+
 .panel-title {
     background-color: $dirty-white;
     font-size: 1.5em;
@@ -339,9 +344,11 @@ body {
 
 .designer-list {
     margin-top: 1em;
+    margin-left: 1em;
     border: 1px solid $light-grey;
     height: 200px;
     overflow: scroll;
+    width: 90%;
 }
 
 // Placeholder image
@@ -379,6 +386,11 @@ body {
 .page-numbers {
     padding-left: 0;
     margin-bottom: 0;
+    letter-spacing: 0.5em;
+}
+
+.page-numbers-bottom {
+    padding-bottom: 1em;
 }
 
 .page-numbers li {
