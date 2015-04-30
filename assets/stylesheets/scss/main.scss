@@ -167,14 +167,19 @@ body {
 
 // Main navigation
 
-.navbar-collapse > .navbar-nav > .mega-dropdown {
-  display: inline-block;
-  background: tomato;
+.nav-row {
+  padding: 0;
+  height: 40px;
 }
 
-.navbar-nav > li > .dropdown-menu {
-  border-top: none;
-  border-radius: 3px;
+.navbar-default .navbar-nav .open a, 
+.navbar-default .navbar-nav .open a:focus,
+.navbar-default .navbar-nav .open a:hover {
+  background: none;
+}
+
+.navbar-collapse .navbar-nav .mega-dropdown {
+  display: inline-block;
 }
 
 .navbar-default {
@@ -195,13 +200,8 @@ body {
   padding: 0;
 }
 
-.navbar-default .navbar-nav > li > a {
-  font-weight:bold;
-}
-
 .mega-dropdown {
   position: static !important;
-  width:100%;
 }
 
 .mega-dropdown-menu {

@@ -113,13 +113,17 @@ body {
   margin: 6px 0;
   height: 30px; }
 
-.navbar-collapse > .navbar-nav > .mega-dropdown {
-  display: inline-block;
-  background: tomato; }
+.nav-row {
+  padding: 0;
+  height: 40px; }
 
-.navbar-nav > li > .dropdown-menu {
-  border-top: none;
-  border-radius: 3px; }
+.navbar-default .navbar-nav .open a,
+.navbar-default .navbar-nav .open a:focus,
+.navbar-default .navbar-nav .open a:hover {
+  background: none; }
+
+.navbar-collapse .navbar-nav .mega-dropdown {
+  display: inline-block; }
 
 .navbar-default {
   background: none;
@@ -135,12 +139,8 @@ body {
 .navbar-collapse {
   padding: 0; }
 
-.navbar-default .navbar-nav > li > a {
-  font-weight: bold; }
-
 .mega-dropdown {
-  position: static !important;
-  width: 100%; }
+  position: static !important; }
 
 .mega-dropdown-menu {
   padding: 20px 0px;
