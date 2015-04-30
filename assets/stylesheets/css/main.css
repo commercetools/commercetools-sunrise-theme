@@ -113,52 +113,67 @@ body {
   margin: 6px 0;
   height: 30px; }
 
-.navbar {
-  background: transparent;
-  margin: 0 0;
-  text-transform: uppercase; }
+.navbar-collapse > .navbar-nav > .mega-dropdown {
+  display: inline-block;
+  background: tomato; }
+
+.navbar-nav > li > .dropdown-menu {
+  border-top: none;
+  border-radius: 3px; }
 
 .navbar-default {
-  border: none; }
-
-.main-nav {
-  padding: 0 0; }
-
-#navigation {
-  padding: 0 0.2em; }
-
-.navbar-default .navbar-nav > li > a:first-child {
-  padding-left: 4px; }
-
-.navbar-default .navbar-nav .open a,
-.navbar-default .navbar-nav .open a:focus,
-.navbar-default .navbar-nav .open a:hover {
-  background: transparent; }
-
-.dropdown-menu {
+  background: none;
   border: none;
-  box-shadow: none; }
+  margin-bottom: 0; }
 
-.navbar-collapse.in {
-  text-align: center; }
+.navbar {
+  margin-bottom: 0; }
 
-.navbar-collapse,
-.navbar-collapsing {
-  text-align: center;
-  padding-left: 0; }
-
-.navbar-default .navbar-toggle {
+.navbar-toggle {
   border: none; }
 
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-  background: none; }
+.navbar-collapse {
+  padding: 0; }
 
-.glyphicon-tags:before {
-  padding-right: 0.5em; }
+.navbar-default .navbar-nav > li > a {
+  font-weight: bold; }
 
-.glyphicon-tags {
-  color: #D54D4D; }
+.mega-dropdown {
+  position: static !important;
+  width: 100%; }
+
+.mega-dropdown-menu {
+  padding: 20px 0px;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+
+.mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0; }
+
+.mega-dropdown-menu > li > ul > li {
+  list-style: none; }
+
+.mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #999;
+  white-space: normal; }
+
+.mega-dropdown-menu .dropdown-header {
+  color: #2A343F;
+  font-size: 18px;
+  font-weight: bold; }
+
+.mega-dropdown-menu form {
+  margin: 3px 20px; }
+
+.mega-dropdown-menu .form-group {
+  margin-bottom: 3px; }
 
 /*****************************************************************************/
 /*
