@@ -226,6 +226,26 @@ body {
   font-weight:bold;
 }
 
+// Bootstrap responsive navigation override
+
+.navbar-nav {
+  margin:0;
+}
+.navbar-nav > li {
+  float:none;
+  display:inline-block;
+}
+.navbar-nav > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-nav > li.open > ul.dropdown-menu {
+  position: absolute;
+  border: 1px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
 /*****************************************************************************/
 /*
 /* POP PAGE
@@ -660,26 +680,6 @@ output {
     .pagination {
         display: none;
     }
-}
-
-// Bootstrap responsive navigation override
-
-.navbar-nav {
-  margin:0;
-}
-.navbar-nav > li {
-  float:none;
-  display:inline-block;
-}
-.navbar-nav > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.navbar-nav > li.open > ul.dropdown-menu {
-  position: absolute;
-  border: 1px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 
 
