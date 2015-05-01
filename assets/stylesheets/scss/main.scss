@@ -226,6 +226,14 @@ body {
   font-weight:bold;
 }
 
+.glyphicon-tags {
+  color: $red;
+}
+
+.glyphicon-tags:before {
+  padding-right: 0.5em;
+}
+
 // Bootstrap responsive navigation override
 
 .navbar-nav {
@@ -238,6 +246,7 @@ body {
 .navbar-nav > li > a {
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 7px;
 }
 .navbar-nav > li.open > ul.dropdown-menu {
   position: absolute;
@@ -681,6 +690,13 @@ output {
         display: none;
     }
 }
+
+@media screen and (max-width: 437px) {
+  .navbar-nav > li > a {
+    font-size: 0.7em;
+  }
+}
+
 
 
 
