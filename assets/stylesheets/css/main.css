@@ -161,6 +161,12 @@ body {
   font-size: 18px;
   font-weight: bold; }
 
+.glyphicon-tags {
+  color: #D54D4D; }
+
+.glyphicon-tags:before {
+  padding-right: 0.5em; }
+
 .navbar-nav {
   margin: 0; }
 
@@ -170,7 +176,8 @@ body {
 
 .navbar-nav > li > a {
   padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  padding-left: 7px; }
 
 .navbar-nav > li.open > ul.dropdown-menu {
   position: absolute;
@@ -529,5 +536,8 @@ output {
 
   .pagination {
     display: none; } }
+@media screen and (max-width: 437px) {
+  .navbar-nav > li > a {
+    font-size: 0.7em; } }
 
 /*# sourceMappingURL=main.css.map */
