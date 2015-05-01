@@ -535,7 +535,10 @@ output {
     display: none; }
 
   .pagination {
-    display: none; } }
+    display: none; }
+
+  .header {
+    font-size: 0.7em; } }
 @media screen and (max-width: 437px) {
   .navbar-nav > li > a {
     font-size: 0.7em; } }
