@@ -401,7 +401,8 @@ output {
 // Buttons
 
 .per-page {
-    background: transparent;
+    background: white;
+    border-radius: 0;
     margin: 0 0.5em;
 }
 
@@ -440,7 +441,7 @@ output {
 // Pagination
 
 .item-list-pagination {
-    padding: 2em 0 3em;;
+    padding: 2em 0;
     font-size: 0.9em;
 }
 

@@ -300,7 +300,8 @@ output {
   margin-top: -15px; }
 
 .per-page {
-  background: transparent;
+  background: white;
+  border-radius: 0;
   margin: 0 0.5em; }
 
 .clear-btn {
@@ -325,7 +326,7 @@ output {
   font-weight: 200; }
 
 .item-list-pagination {
-  padding: 2em 0 3em;
+  padding: 2em 0;
   font-size: 0.9em; }
 
 .pagination {
