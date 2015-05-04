@@ -224,7 +224,7 @@ body {
   padding: 0.5em 0.5em; }
 
 .product-type {
-  margin-top: 10px; }
+  margin: 10px -15px 0; }
 
 #sidebar {
   font-size: 0.9em; }
@@ -239,7 +239,8 @@ body {
 
 .panel-title {
   background-color: #F5F2EA;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  padding-bottom: 0.1em; }
 
 .panel-group .panel + .panel {
   margin-top: 0; }
@@ -363,18 +364,20 @@ output {
   margin-bottom: 2.2em;
   position: relative; }
 
+.shop-item:hover {
+  background: #2A343F;
+  color: white; }
+
 .gallery-item {
   padding: 0 1em; }
 
 .shop-item:after {
-  content: "";
+  content: url(../../../assets/img/quicklook.png);
   position: absolute;
-  padding: 1em 1em;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 30%;
   left: 0;
-  background: rgba(0, 0, 0, 0.1);
   opacity: 0; }
 
 .shop-item:hover:after {
