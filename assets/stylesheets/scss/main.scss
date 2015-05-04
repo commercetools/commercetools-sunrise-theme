@@ -440,7 +440,7 @@ output {
 // Pagination
 
 .item-list-pagination {
-    padding: 1em 0;
+    padding: 2em 0 3em;;
     font-size: 0.9em;
 }
 
@@ -467,9 +467,9 @@ output {
     font-size: 1.1em;
 }
 
-.glyphicon-menu-left,
-.glyphicon-menu-right {
-    font-size: 0.8em;
+.page-prev,
+.page-next {
+  height: 20px;
 }
 
 // Gallery items
@@ -503,11 +503,6 @@ output {
 .overlay {
   background: rgba(0,0,0,.1);
   position: absolute;
-  margin: auto;
-  width: 0px;
-  height: 0px;
-  top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
   opacity: 0;
@@ -520,7 +515,7 @@ output {
 }
 
 .quicklook-btn {
-  margin-top: 160px;
+  margin-top: 50%;
   height: 45px;
 }
 
