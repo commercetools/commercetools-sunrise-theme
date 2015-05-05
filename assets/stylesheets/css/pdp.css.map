@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": ";;;;;AAMA,SAAU;EACT,MAAM,EAAE,MAAM;;;;;;;AAWf,eAAgB;EACf,YAAY,EAAE,CAAC;;AAGhB,eAAgB;EACf,SAAS,EAAE,KAAK",
+"mappings": ";;;;;AAMA,SAAU;EACT,MAAM,EAAE,MAAM;;;;;;;AAWf,eAAgB;EACf,YAAY,EAAE,CAAC;;AAGhB,eAAgB;EACf,SAAS,EAAE,KAAK;;AAGjB,aAAc;EACb,MAAM,EAAE,OAAO;EACf,MAAM,EAAE,eAAe",
 "sources": ["../scss/pdp.scss"],
 "names": [],
 "file": "pdp.css"
