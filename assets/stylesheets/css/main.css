@@ -579,4 +579,15 @@ output {
 .pdp-breadcrumb {
   font-size: 0.9em; }
 
+.vertical-img {
+  margin: 0.3em 0;
+  border: 1px solid #AAAEB2; }
+
+.vertical-img:hover {
+  border: 1px solid #333333; }
+
+.product-frame {
+  border: 1px solid #AAAEB2;
+  height: 30.5em; }
+
 /*# sourceMappingURL=main.css.map */
