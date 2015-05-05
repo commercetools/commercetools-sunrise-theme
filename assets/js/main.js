@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 // Main navigation
 
-jQuery(document).on('click', '.mega-dropdown', function(e) {
+$(document).on('click', '.mega-dropdown', function(e) {
   e.stopPropagation()
 })
 
@@ -37,6 +37,13 @@ jQuery(document).on('click', '.mega-dropdown', function(e) {
 $(document).ready(function () {
         $("div.col-sm-12 a").click(function (event) {
             event.preventDefault();
-            $("div.product-frame").html($("<img>").attr("src", this.href).fadeIn(1000));
+            $("div.product-frame").html($("<img>").attr("src", this.href).fadeIn(100));
         });
     });
+
+// Loading first child of vertical gallery on pageload 
+
+$(document).ready(function () {
+    var href = $('div.col-sm-12 a').get(0).href;
+    $('div.product-frame').html($('<img>').attr('src', href).fadeIn(100));
+})
