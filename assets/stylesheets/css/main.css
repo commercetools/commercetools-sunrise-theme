@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*****************************************************************************/
 /*
 /* TYPOGRAPHY
@@ -585,5 +586,51 @@ output {
 
 .vertical-img:hover {
   border: 1px solid #333333; }
+
+.grey-p {
+  color: #ADADAD; }
+
+.rating {
+  float: left; }
+
+.rating:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0); }
+
+.rating:not(:checked) > label {
+  float: right;
+  width: 1em;
+  padding: 0 .1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 150%;
+  line-height: 1.2;
+  color: #ADADAD; }
+
+.rating:not(:checked) > label:before {
+  content: '★ '; }
+
+.rating > input:checked ~ label {
+  color: #FFBA27; }
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #FFBA27; }
+
+.rating > label:active {
+  position: relative;
+  top: 2px;
+  left: 2px; }
+
+.view-details {
+  color: #858585;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 0.9em; }
+
+.product-price {
+  font-size: 2em; }
 
 /*# sourceMappingURL=main.css.map */

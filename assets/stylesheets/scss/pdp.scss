@@ -24,7 +24,7 @@
 	font-size: 0.9em;
 }
 
-// Vertical gallery thumbnails
+// Vertical thumbnails
 
 .vertical-img {
 	margin: 0.3em 0;
@@ -36,4 +36,112 @@
 }
 
 // Main product image
+
+
+
+// Product information title
+
+.grey-p {
+	color: $grey;
+}
+
+// Stars rating
+
+.rating {
+    float:left;
+}
+
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:150%;
+    line-height:1.2;
+    color:$grey;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: $yellow;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: $yellow;
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+// Product information text
+
+.view-details {
+	color: $dark-grey;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-size: 0.9em;
+}
+
+// Product price
+
+.product-price {
+	font-size: 2em;
+}
+
+// Color and size select buttons
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

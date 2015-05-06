@@ -3,7 +3,7 @@ Error: Undefined variable: "$steel".
         on line 31 of scss/pdp.scss
 
 26: 
-27: // Vertical gallery thumbnails
+27: // Vertical thumbnails
 28: 
 29: .vertical-img {
 30: 	margin: 0.3em 0;
@@ -71,4 +71,4 @@ scss/pdp.scss:31
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$steel\".\A         on line 31 of scss/pdp.scss\A \A 26: \A 27: // Vertical gallery thumbnails\A 28: \A 29: .vertical-img {\A 30: 	margin: 0.3em 0;\A 31: 	border: 1px solid $steel;\A 32: }\A 33: \A 34: .vertical-img:hover {\A 35: 	border: 1px solid $black;\A 36: }"; }
+  content: "Error: Undefined variable: \"$steel\".\A         on line 31 of scss/pdp.scss\A \A 26: \A 27: // Vertical thumbnails\A 28: \A 29: .vertical-img {\A 30: 	margin: 0.3em 0;\A 31: 	border: 1px solid $steel;\A 32: }\A 33: \A 34: .vertical-img:hover {\A 35: 	border: 1px solid $black;\A 36: }"; }

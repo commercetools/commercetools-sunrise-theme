@@ -32,7 +32,7 @@ $(document).on('click', '.mega-dropdown', function(e) {
 /*
 /*****************************************************************************/
 
-// Getting image from vertical thumbnail gallery on click
+// Getting image from vertical thumbnail on click
 
 $(document).ready(function () {
         $("div.col-sm-12 a").click(function (event) {
@@ -41,7 +41,7 @@ $(document).ready(function () {
         });
     });
 
-// Loading first child of vertical gallery on pageload 
+// Loading first child of vertical thumbnail on pageload 
 
 $(document).ready(function () {
     var href = $('div.col-sm-12 a').get(0).href;
