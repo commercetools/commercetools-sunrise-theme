@@ -633,4 +633,23 @@ output {
 .product-price {
   font-size: 2em; }
 
+.styled-select select {
+  background: transparent;
+  width: 150px;
+  padding: 5px;
+  font-size: 1em;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 30px;
+  -webkit-appearance: none; }
+
+.styled-select {
+  width: 150px;
+  height: 34px;
+  overflow: hidden;
+  background: url(../../../assets/img/arrow-67.png) no-repeat 127px 8px #FFFFFF;
+  background-size: 15px;
+  border: 1px solid #333333; }
+
 /*# sourceMappingURL=main.css.map */
