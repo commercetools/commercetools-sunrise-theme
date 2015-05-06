@@ -16,15 +16,15 @@
 
 $(document).ready(function () {
   $('[data-toggle="offcanvas"]').click(function () {
-    $('.row-offcanvas').toggleClass('active')
+    $('.row-offcanvas').toggleClass('active');
   });
 });
 
 // Main navigation
 
-$(document).on('click', '.mega-dropdown', function(e) {
-  e.stopPropagation()
-})
+// $(document).on('click', '.mega-dropdown', function(e) {
+//   e.stopPropagation();
+// });
 
 /*****************************************************************************/
 /*
@@ -35,7 +35,7 @@ $(document).on('click', '.mega-dropdown', function(e) {
 // Getting image from vertical thumbnail on click
 
 $(document).ready(function () {
-        $("div.col-sm-12 a").click(function (event) {
+        $(".product-thumb").click(function (event) {
             event.preventDefault();
             $("div.product-frame").html($("<img>").attr("src", this.href).fadeIn(100));
         });
@@ -44,6 +44,6 @@ $(document).ready(function () {
 // Loading first child of vertical thumbnail on pageload 
 
 $(document).ready(function () {
-    var href = $('div.col-sm-12 a').get(0).href;
+    var href = $('#first-thumb').get(0).href;
     $('div.product-frame').html($('<img>').attr('src', href).fadeIn(100));
-})
+});
