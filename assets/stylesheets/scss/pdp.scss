@@ -103,6 +103,12 @@
 	font-size: 2em;
 }
 
+// Row of select color, size and guide
+
+.select-row {
+	padding: 0 0 1.5em;
+}
+
 // Color and size select buttons
 
 .styled-select select {
@@ -112,8 +118,8 @@
    font-size: 1em;
    line-height: 1;
    border: 0;
-   border-radius: 0;
    height: 30px;
+   cursor: pointer;
    -webkit-appearance: none;
 }
 
@@ -123,8 +129,49 @@
    overflow: hidden;
    background: url(../../../assets/img/arrow-67.png) no-repeat 127px 8px $white;
    background-size: 15px;
-   border: 1px solid $black;
-   }
+   border: 1px solid rgba(0,0,0,0.3);
+}
+
+// Size guide
+
+.size-guide-col {
+	padding-top: 2.3em;
+}
+
+.size-guide-thumb {
+	height: 30px;
+	padding-right: 0.5em;
+}
+
+.size-guide {
+	text-transform: uppercase;
+	color: $dark-grey;
+}
+
+// Number of bag items
+
+.bag-items {
+	border: 2px solid $yellow;
+	text-align: center;
+	font-size: 1.5em;
+	height: 40px;
+	width: 40px;
+	padding: 0.1em 0.5em;
+}
+
+// Add to bag button
+
+.add-to-bag {
+	background: $yellow;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.bag-thumb {
+	height: 25px;
+	margin: 0.5em 1em;
+}
+
 
 
 
