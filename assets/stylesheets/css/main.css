@@ -633,6 +633,9 @@ output {
 .product-price {
   font-size: 2em; }
 
+.select-row {
+  padding: 0 0 1.5em; }
+
 .styled-select select {
   background: transparent;
   width: 150px;
@@ -640,8 +643,8 @@ output {
   font-size: 1em;
   line-height: 1;
   border: 0;
-  border-radius: 0;
   height: 30px;
+  cursor: pointer;
   -webkit-appearance: none; }
 
 .styled-select {
@@ -650,6 +653,34 @@ output {
   overflow: hidden;
   background: url(../../../assets/img/arrow-67.png) no-repeat 127px 8px #FFFFFF;
   background-size: 15px;
-  border: 1px solid #333333; }
+  border: 1px solid rgba(0, 0, 0, 0.3); }
+
+.size-guide-col {
+  padding-top: 2.3em; }
+
+.size-guide-thumb {
+  height: 30px;
+  padding-right: 0.5em; }
+
+.size-guide {
+  text-transform: uppercase;
+  color: #858585; }
+
+.bag-items {
+  border: 2px solid #FFBA27;
+  text-align: center;
+  font-size: 1.5em;
+  height: 40px;
+  width: 40px;
+  padding: 0.1em 0.5em; }
+
+.add-to-bag {
+  background: #FFBA27;
+  text-transform: uppercase;
+  font-weight: 900; }
+
+.bag-thumb {
+  height: 25px;
+  margin: 0.5em 1em; }
 
 /*# sourceMappingURL=main.css.map */
