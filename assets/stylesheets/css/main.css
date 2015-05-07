@@ -134,6 +134,9 @@ body {
 .navbar {
   margin-bottom: 0; }
 
+.dropdown-toggle:hover {
+  border-bottom: 2px solid #333333; }
+
 .navbar-nav .open .dropdown-menu {
   background: #FFFFFF;
   width: 100%; }
@@ -177,12 +180,13 @@ body {
 
 .navbar-nav > li > a {
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 0;
   padding-left: 7px; }
 
 .navbar-nav > li.open > ul.dropdown-menu {
   position: absolute;
   border: 1px;
+  margin-top: -9px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
 
