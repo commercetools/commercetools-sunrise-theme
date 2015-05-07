@@ -499,15 +499,15 @@ output {
 .overlay {
   background: rgba(0,0,0,.1);
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 0;
+  left: 0;
   opacity: 0;
 }
 
 .shop-item:hover .overlay{
   opacity: 1;
-  width: 92%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
 }
 
 .quicklook-btn {
