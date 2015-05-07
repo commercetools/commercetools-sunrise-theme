@@ -352,7 +352,7 @@ output {
   height: 20px; }
 
 .thumbnail-img {
-  padding-bottom: 0.5em; }
+  padding-bottom: 1.25em; }
 
 .shop-item {
   background: #FFFFFF;
@@ -370,14 +370,14 @@ output {
 .overlay {
   background: rgba(0, 0, 0, 0.1);
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 10px;
+  left: 10px;
   opacity: 0; }
 
 .shop-item:hover .overlay {
   opacity: 1;
-  width: 100%;
-  height: 100%; }
+  width: 92%;
+  height: 95%; }
 
 .quicklook-btn {
   margin-top: 50%;
@@ -386,6 +386,15 @@ output {
 .favourites-btn {
   margin-top: 20px;
   height: 35px; }
+
+.quicklook-btn:hover {
+  content: url("../../../assets/img/arrow-67.png"); }
+
+.favourites-btn:hover {
+  content: url("../../../assets/img/arrow-67.png"); }
+
+.text-normalize {
+  text-transform: none; }
 
 /*****************************************************************************/
 /*
