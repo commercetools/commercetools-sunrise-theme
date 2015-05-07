@@ -192,6 +192,10 @@ body {
   margin-bottom: 0;
 }
 
+.dropdown-toggle:hover {
+  border-bottom: 2px solid $black;
+}
+
 .navbar-nav .open .dropdown-menu {
   background: $white;
   width: 100%;
@@ -245,12 +249,13 @@ body {
 }
 .navbar-nav > li > a {
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 0;
   padding-left: 7px;
 }
 .navbar-nav > li.open > ul.dropdown-menu {
   position: absolute;
   border: 1px;
+  margin-top: -9px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
