@@ -133,7 +133,7 @@ body {
 .navbar {
   margin-bottom: 0; }
 
-.dropdown-toggle:hover {
+.navbar-nav > li > a:hover {
   border-bottom: 2px solid #333333; }
 
 .navbar-nav .open .dropdown-menu {
@@ -164,11 +164,9 @@ body {
   font-size: 18px;
   font-weight: bold; }
 
-.glyphicon-tags {
-  color: #D54D4D; }
-
-.glyphicon-tags:before {
-  padding-right: 0.5em; }
+.sale-icon {
+  margin-top: -0.4em;
+  height: 1.5em; }
 
 .navbar-nav {
   margin: 0; }
@@ -261,6 +259,9 @@ body {
 .price-box {
   padding: 1em 0 0; }
 
+.slider-col {
+  padding: 0 2.2em 2em; }
+
 .ui-slider-horizontal {
   height: 0.3em;
   background: transparent;
@@ -349,7 +350,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  opacity: 0; }
+  opacity: 0;
+  border: 10px solid #FFFFFF; }
 
 .shop-item:hover .overlay {
   opacity: 1;

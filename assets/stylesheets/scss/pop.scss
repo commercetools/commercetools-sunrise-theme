@@ -192,7 +192,7 @@ body {
   margin-bottom: 0;
 }
 
-.dropdown-toggle:hover {
+.navbar-nav > li > a:hover {
   border-bottom: 2px solid $black;
 }
 
@@ -230,12 +230,9 @@ body {
   font-weight:bold;
 }
 
-.glyphicon-tags {
-  color: $red;
-}
-
-.glyphicon-tags:before {
-  padding-right: 0.5em;
+.sale-icon {
+  margin-top: -0.4em;
+  height: 1.5em;
 }
 
 // Bootstrap responsive navigation override
@@ -357,6 +354,10 @@ body {
 
 // Price slider
 
+.slider-col {
+  padding: 0 2.2em 2em;
+}
+
 .ui-slider-horizontal {
   height: 0.3em;
   background: transparent; 
@@ -396,6 +397,7 @@ body {
     overflow: scroll;
     width: 90%;
 }
+
 
 // Placeholder image
 
@@ -479,6 +481,7 @@ body {
   bottom: 0;
   left: 0;
   opacity: 0;
+  border: 10px solid $white;
 }
 
 .shop-item:hover .overlay{
