@@ -323,7 +323,7 @@ body {
   letter-spacing: 0.5em; }
 
 .page-numbers-bottom {
-  padding-bottom: 1em; }
+  padding-bottom: 4em; }
 
 .page-numbers li {
   display: inline-block;
@@ -462,7 +462,7 @@ body {
 
 /*****************************************************************************/
 /*
-/* OFF CANVAS MENU
+/* OFF CANVAS MENU MEDIA QUERIES
 /*
 /*****************************************************************************/
 @media screen and (max-width: 767px) {
@@ -480,28 +480,40 @@ body {
 
   .row-offcanvas-right
   .sidebar-offcanvas {
-    right: -50%;
-    /* 6 columns */ }
+    right: -50%; }
 
   .row-offcanvas-left
   .sidebar-offcanvas {
-    left: -50%;
-    /* 6 columns */ }
+    left: -50%; }
 
   .row-offcanvas-right.active {
-    right: 50%;
-    /* 6 columns */ }
+    right: 50%; }
 
   .row-offcanvas-left.active {
-    left: 50%;
-    /* 6 columns */ }
+    left: 50%; }
 
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
     width: 50%;
-    /* 6 columns */
     padding-left: 2em; } }
+@media screen and (max-width: 375px) {
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -80%; }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -80%; }
+
+  .row-offcanvas-right.active {
+    right: 80%; }
+
+  .row-offcanvas-left.active {
+    left: 80%; }
+
+  .sidebar-offcanvas {
+    width: 80%; } }
 /*****************************************************************************/
 /*
 /* MEDIA QUERIES
@@ -566,6 +578,10 @@ body {
   #pop-page,
   #footer {
     overflow-x: hidden; } }
+@media screen and (max-width: 375px) {
+  #sidebar {
+    padding-left: 3em;
+    padding-right: 2em; } }
 @media screen and (max-width: 320px) {
   .nav-row {
     font-size: 0.8em; }
