@@ -143,8 +143,8 @@ body {
 
 // Sunrise logo  and searchbox
 
-.logo-img {
-    margin-left: 0;
+.sunrise-logo {
+  height: 3em;
 }
 
 .logo-search {
@@ -474,6 +474,24 @@ body {
     padding: 0 1em;
 }
 
+.sale-flag {
+  height: 3em;
+  width: 3em;
+  border: 1px solid $red;
+  border-radius: 50%;
+  color: $red;
+  position: absolute;
+  padding: 0.7em 0.3em;
+}
+
+.new-flag {
+  height: 3em;
+  width: 3em;
+  color: $black;
+  position: absolute;
+  padding: 0.7em 0.3em;
+}
+
 // Gallery items overlay
 
 .overlay {
@@ -654,11 +672,6 @@ body {
     .search-box {
         text-align: center;
     }
-    .logo-img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
     #footer {
         text-align: center;
     }
@@ -726,6 +739,12 @@ body {
 @media screen and (max-width: 320px) {
   .nav-row  {
     font-size: 0.8em;
+  }
+  .clear-btn {
+    padding-right: 0;
+  }
+  .header-icons {
+    display: none;
   }
 }
 
