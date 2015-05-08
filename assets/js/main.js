@@ -22,9 +22,9 @@ $(document).ready(function () {
 
 // Main navigation
 
-// $(document).on('click', '.mega-dropdown', function(e) {
-//   e.stopPropagation();
-// });
+$(document).on('click', '.mega-dropdown', function(e) {
+  e.stopPropagation();
+});
 
 // Price range slider 
 
