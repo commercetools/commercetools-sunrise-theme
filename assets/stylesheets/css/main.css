@@ -393,10 +393,10 @@ output {
   height: 35px; }
 
 .quicklook-btn:hover {
-  content: url("../../../assets/img/arrow-67.png"); }
+  content: url("../../../assets/img/quicklook-hover.png"); }
 
 .favourites-btn:hover {
-  content: url("../../../assets/img/arrow-67.png"); }
+  content: url("../../../assets/img/Heart-inverted.png"); }
 
 .text-normalize {
   text-transform: none; }
