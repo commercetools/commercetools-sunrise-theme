@@ -115,6 +115,7 @@ body {
   height: 30px; }
 
 .nav-row {
+  font-size: 1.1em;
   padding: 0;
   height: 40px; }
 
@@ -122,6 +123,10 @@ body {
 .navbar-default .navbar-nav .open a:focus,
 .navbar-default .navbar-nav .open a:hover {
   background: none; }
+
+.nav .open > a,
+.nav .open > a:focus {
+  border-bottom: 2px solid #2A343F; }
 
 .navbar-collapse .navbar-nav .mega-dropdown {
   display: inline-block; }
@@ -135,7 +140,7 @@ body {
   margin-bottom: 0; }
 
 .navbar-nav > li > a:hover {
-  border-bottom: 2px solid #333333; }
+  border-bottom: 2px solid #2A343F; }
 
 .navbar-nav .open .dropdown-menu {
   background: #FFFFFF;
@@ -167,6 +172,7 @@ body {
 
 .sale-icon {
   margin-top: -0.4em;
+  padding-right: 0.3em;
   height: 1.5em; }
 
 .navbar-nav {
@@ -178,7 +184,7 @@ body {
 
 .navbar-nav > li > a {
   padding-top: 10px;
-  padding-bottom: 0;
+  padding-bottom: 5px;
   padding-left: 7px; }
 
 .navbar-nav > li.open > ul.dropdown-menu {
@@ -197,7 +203,7 @@ body {
   background: #F5F2EA; }
 
 #pop-page {
-  font-size: .9em;
+  font-size: 0.9em;
   text-transform: uppercase; }
 
 .hr {
@@ -227,9 +233,6 @@ body {
 
 .product-type {
   margin: 10px -15px 0; }
-
-#sidebar {
-  font-size: 0.9em; }
 
 .panel-heading,
 .panel-body {
@@ -335,7 +338,7 @@ body {
 
 .shop-item {
   background: #FFFFFF;
-  font-size: 0.9em;
+  font-size: 1em;
   border: 1px solid #D6D6D6;
   border-radius: 3px;
   color: #858585;
@@ -538,7 +541,10 @@ body {
     display: none; }
 
   .header {
-    font-size: 0.7em; } }
+    font-size: 0.7em; }
+
+  .nav-row {
+    font-size: 1em; } }
 @media screen and (max-width: 437px) {
   .navbar-nav > li > a {
     font-size: 0.7em; }
@@ -549,6 +555,9 @@ body {
   #pop-page,
   #footer {
     overflow-x: hidden; } }
+@media screen and (max-width: 320px) {
+  .nav-row {
+    font-size: 0.8em; } }
 /*****************************************************************************/
 /*
 /* TEMPORARY FOR DEV PURPOSES
