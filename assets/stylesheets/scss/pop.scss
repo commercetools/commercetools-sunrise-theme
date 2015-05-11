@@ -137,7 +137,7 @@ body {
 
 /*****************************************************************************/
 /*
-/* NAVIGATION
+/* LOGO AND SEARCH
 /*
 /*****************************************************************************/
 
@@ -165,104 +165,6 @@ body {
     height: 30px;
 }
 
-// Main navigation
-
-.nav-row {
-  font-size: 1.1em;
-  padding: 0;
-  height: 40px;
-}
-
-.navbar-default .navbar-nav .open a, 
-.navbar-default .navbar-nav .open a:focus,
-.navbar-default .navbar-nav .open a:hover {
-  background: none;
-}
-
-.nav .open > a,
-.nav .open > a:focus {
-  border-bottom: 2px solid $dark-blue;
-}
-
-.navbar-collapse .navbar-nav .mega-dropdown {
-  display: inline-block;
-}
-
-.navbar-default {
-  background: none;
-  border: none;
-  margin-bottom: 0;
-}
-
-.navbar {
-  margin-bottom: 0;
-}
-
-.navbar-nav > li > a:hover {
-  border-bottom: 2px solid $dark-blue;
-}
-
-.navbar-nav .open .dropdown-menu {
-  background: $white;
-  width: 100%;
-}
-
-.mega-dropdown {
-  position: static !important;
-}
-
-.mega-dropdown-menu > li > ul {
-  padding: 0;
-  margin: 0;
-}
-
-.mega-dropdown-menu > li > ul > li {
-  list-style: none;
-}
-
-.mega-dropdown-menu > li > ul > li > a {
-  display: block;
-  padding: 3px 20px;
-  clear: both;
-  font-weight: normal;
-  line-height: 1.428571429;
-  color: #999;
-  white-space: normal;
-}
-
-.mega-dropdown-menu .dropdown-header {
-  color: $dark-blue;
-  font-size: 18px;
-  font-weight:bold;
-}
-
-.sale-icon {
-  margin-top: -0.4em;
-  padding-right: 0.3em;
-  height: 1.5em;
-}
-
-// Bootstrap responsive navigation override
-
-.navbar-nav {
-  margin:0;
-}
-.navbar-nav > li {
-  float:none;
-  display:inline-block;
-}
-.navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 5px;;
-  padding-left: 7px;
-}
-.navbar-nav > li.open > ul.dropdown-menu {
-  position: absolute;
-  border: 1px;
-  margin-top: -9px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-}
 
 /*****************************************************************************/
 /*
@@ -733,10 +635,11 @@ body {
         height: 20px;
     }
     .item-list-pagination {
-        display: none;
+        font-size: 0.5em;
     }
-    .pagination {
-        display: none;
+    .item-list-pagination .page-prev,
+    .item-list-pagination .page-next {
+      height: 11px;
     }
     .header {
       font-size: 0.7em;
