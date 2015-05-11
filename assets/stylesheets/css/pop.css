@@ -113,6 +113,9 @@ body {
   margin: 6px 0;
   height: 30px; }
 
+.navbar-toggle {
+  border: none; }
+
 .navbar {
   margin-bottom: 0; }
 
