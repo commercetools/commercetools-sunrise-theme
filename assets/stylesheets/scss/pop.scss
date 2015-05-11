@@ -242,8 +242,15 @@ body {
   height: 1.5em;
 }
 
-// // Bootstrap responsive navigation override
+// Bootstrap responsive navigation override
 
+.navbar-nav {
+  margin:0;
+}
+.navbar-nav > li {
+  float:none;
+  display:inline-block;
+}
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 5px;;
