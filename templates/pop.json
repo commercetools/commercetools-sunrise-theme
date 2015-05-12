@@ -1,0 +1,8 @@
+{
+	"title" : "Sunrise - Product Overview Page",
+	"breadcrumb" : [
+		{ "url" : "home/", "name" : "Home" },
+		{ "url" : "women/", "name" : "Women" },
+		{ "url" : "coats/", "name" : "Coats", "isCurrent" : "true" }
+	]
+}
