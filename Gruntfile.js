@@ -1,23 +1,62 @@
 module.exports = function(grunt) {
-
   grunt.initConfig({
+
+    clean: ['output/'],
+
+    copy: {
+      main: {
+        files: [
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/css/*.css' },
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/js/*.js' },
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/img/**' }
+        ]
+      }
+    },
+
+    coffee: {
+      main: {
+        files: {
+          'output/assets/js/another.js': ['input/assets/js/*.coffee']
+        }
+      }
+    },
+
+    sass: {
+      main: {
+        options: {
+         style: 'compressed'
+        },
+        files: {
+          'output/assets/css/main.min.css': 'input/assets/css/main.scss'
+        }
+      }
+    },
+
     'compile-handlebars': {
-      globbedTemplateAndOutput: {
+      main: {
         files: [{
             expand: true,
-            cwd: 'templates',
-            src: '**/*.hbs',
-            dest: 'html/',
+            cwd: 'input/',
+            src: '*.hbs',
+            dest: 'output/',
             ext: '.html'
         }],
-        templateData: 'templates/data/**/*.json'
-        //helpers: 'test/helpers/**/*.js',
-        //partials: 'test/fixtures/deep/shared/**/*.handlebars'
+        templateData: 'input/*.json',
+        partials: 'input/partials/**/*.hbs'
+        //helpers: 'input/helpers/**/*.js'
       }
     }
+
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-compile-handlebars');
 
-  grunt.registerTask('default', ['compile-handlebars']);
+  grunt.option('verbose', true);
+
+  grunt.registerTask('default', ['clean', 'copy', 'coffee', 'sass', 'compile-handlebars']);
+
 };
