@@ -14,8 +14,8 @@
   - Processes `input/assets/css/main.scss` into `output/assets/css/main.min.css`.
 
 
-`grun compile-handlebars`
+`grunt compile-handlebars`
   - Generates HTML files from the Handlebars templates and JSON data defined in `input/templates/` and the partial templates defined in `input/templates/partials/` into `output/`
 
 
-To run them all, simply use the default command `grunt`.
+**To run them all, simply use the default command `grunt`.**
