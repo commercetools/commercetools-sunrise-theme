@@ -8,7 +8,8 @@ module.exports = function(grunt) {
         files: [
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/css/*.css' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/js/*.js' },
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/img/**' }
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/img/**' },
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/**' }
         ]
       }
     },
@@ -16,7 +17,7 @@ module.exports = function(grunt) {
     coffee: {
       main: {
         options: {
-          join: true
+          //join: true
         },
         files: {
           'output/assets/js/coffee.js': ['input/assets/js/*.coffee']
@@ -39,14 +40,14 @@ module.exports = function(grunt) {
       main: {
         files: [{
             expand: true,
-            cwd: 'input/',
+            cwd: 'input/templates',
             src: '*.hbs',
             dest: 'output/',
             ext: '.html'
         }],
-        templateData: 'input/*.json',
-        partials: 'input/partials/**/*.hbs'
-        //helpers: 'input/helpers/**/*.js'
+        templateData: '*.json', // compile-handlebars uses the template folder no matter what
+        partials: 'input/templates/partials/**/*.hbs'
+        //helpers: 'input/templates/helpers/**/*.js'
       }
     }
 
