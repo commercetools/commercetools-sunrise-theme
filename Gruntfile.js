@@ -15,8 +15,11 @@ module.exports = function(grunt) {
 
     coffee: {
       main: {
+        options: {
+          join: true
+        },
         files: {
-          'output/assets/js/another.js': ['input/assets/js/*.coffee']
+          'output/assets/js/coffee.js': ['input/assets/js/*.coffee']
         }
       }
     },
