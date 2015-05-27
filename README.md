@@ -1,11 +1,19 @@
 # sphere-sunrise-design
 
 The Grunt tasks defined in the project allows you to:
-- Copy those assets that do not need any type of processing, in particular: `assets/css/*.css`, `assets/js/*.js` and any file inside the `assets/img` folder.
-- Generate a `coffee.js` file concatenating Coffeescript files from `assets/js/*.coffee` and move it to `assets/js/coffee.js`.
-- Generate a `main.min.css` file from `assets/css/main.scss` and move it to `assets/css/main.min.css`.
 
-To generate all the static website in the `output` folder, just run:
-```
-grunt
-```
+`grunt copy`:
+  - Copy any CSS file in `input/assets/css/` to `output/assets/css/`
+  - Copy any JS file in `input/assets/js/` to `output/assets/js/`
+  - Copy any file in `input/assets/img/` to `output/assets/img/`
+
+`grunt coffee`:
+  - Compile and concatenate any Coffeescript file inside `input/assets/js/` into `output/assets/js/coffee.js`
+
+`grunt sass`:
+  - Processes `assets/css/main.scss` into `assets/css/main.min.css`.
+
+`grun compile-handlebars`:
+  - Generates HTML files from the Handlebars templates and JSON data defined in `input/templates/` and the partial templates defined in `input/templates/partials/` into `output/`
+
+To run them all, simply use the default command `grunt`
