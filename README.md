@@ -11,7 +11,7 @@
 
 
 `grunt sass`
-  - Processes `assets/css/main.scss` into `assets/css/main.min.css`.
+  - Processes `input/assets/css/main.scss` into `output/assets/css/main.min.css`.
 
 
 `grun compile-handlebars`
