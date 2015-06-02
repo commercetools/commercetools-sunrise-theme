@@ -1,0 +1,308 @@
+
+/*****************************************************************************/
+/*
+/* CART PAGE
+/*
+/*****************************************************************************/
+
+.cart-page {
+	background: $dirty-white;
+}
+
+.current-in-bag {
+	padding: 2em 0;
+}
+
+.bag-icon-lg {
+	height: 30px;
+	margin-bottom: 1em;
+}
+
+.your-bag-txt {
+	font-size: 2em;
+	padding: 0 0.5em;
+}
+
+.items-total-txt {
+	font-size: 2em;
+	color: $steel;
+}
+
+.checkout-now {
+	padding: 2em 0;
+}
+
+.checkout-now-btn {
+	background: url(../../../assets/img/arrow-66.png) no-repeat 155px 10px $yellow;
+	background-size: 20px;
+	border: none;
+	color: $black;
+	padding: 0.5em 2em;
+	font-size: 1.2em;
+	font-weight: 900;
+		&:hover {
+			background: $white;
+		}
+		&:active {
+			background: $yellow;
+		}
+		&:focus {
+			outline: 0;
+		}
+}
+
+.cart-content {
+	background: $white;
+	border: 1px solid $light-grey;
+}
+
+.cart-items-title {
+	margin: 1em;
+	padding-bottom: 0.5em;
+	font-size: 0.9em;
+	color: $dark-grey;
+	border-bottom: 1px solid $light-grey;
+}
+
+.product-img-col {
+	padding: 0;
+}
+
+.cart-item-img {
+	border: 1px solid $light-grey;
+}
+
+.cart-item-name {
+	font-size: 1.7em;
+}
+
+.cart-color-size {
+	font-size: 1.1em;
+	color: $dark-grey;
+}
+
+.cart-item-availability {
+	font-size: 0.9em;
+}
+
+.black-p {
+	color: $black;
+}
+
+.cart-edit-delete {
+	border-left: 1px solid $light-grey;
+	border-right: 1px solid $light-grey;
+}
+
+.edit-delete-section {
+	padding: 0.5em 0;
+}
+
+.cart-action-icon {
+	height: 20px;
+	margin-right: 1em;
+}
+
+.single-cart-item {
+	margin: 1em;
+	border-bottom: 1px solid $light-grey;
+}
+
+// Quantity counter / spinner
+
+.input-number {
+  width: 40px;
+  padding: 0 12px;
+  margin: 0 0.5em;
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+  border: 1px solid $light-grey;
+  height: 40px;
+  user-select: none;
+  font-size: 1.2em;
+}
+
+.input-number-decrement,
+.input-number-increment {
+  display: inline-block;
+  width: 30px;
+  line-height: 38px;
+  color: #444444;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  &:active {
+    background: $yellow;
+  }
+}
+
+// Cart item price
+
+.cart-item-price {
+	font-size: 1.2em;
+	font-weight: 900;
+}
+
+// Promotion section
+
+.promotion-info {
+	margin: 0 1em 1em 1em;
+	border-bottom: 1px solid $light-grey;
+	padding-bottom: 1em;
+}
+
+.promo-info-text {
+	color: $dark-grey;
+	padding-right: 1em;
+}
+
+.info-icon {
+	height: 15px;
+	margin: 0 0 0.1em 0.5em;
+}
+
+#promo-code {
+	resize: none;
+	padding: 0.5em 0;
+	width: 250px;
+	margin: 0 1em -1em 0;
+	border: 1px solid $light-grey;
+}
+
+.promo-apply-btn {
+	background: none;
+	border: 2px solid $light-grey;
+	color: $grey;
+	margin-right: 0.5em;
+	padding: 0.5em 1em;
+		&:active {
+			background: $yellow;
+			color: $white;
+			border: 2px solid $white;
+		}
+		&:focus {
+			outline: 0;
+		}
+}
+
+// Total price section
+
+.total-price-calc {
+	margin: 1em;
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+}
+
+.order-discount {
+	color: $grey;
+}
+
+.delivery-est {
+	color: $grey;
+}
+
+.order-total {
+	font-size: 1.3em;
+	font-weight: 900;
+}
+
+// Back to shopping and checkout now buttons
+
+.continue-shopping-btn {
+	background: url(../../../assets/img/arrow-67-black.png) no-repeat 10px 10px transparent;
+	background-size: 20px;
+	border: 1px solid $grey;
+	color: $grey;
+	padding: 0.5em 2em;
+	font-size: 1.2em;
+	font-weight: 900;
+		&:hover {
+			background: $white;
+			border: 1px solid $white;
+			color: $black;
+		}
+		&:focus {
+			outline: 0;
+		}
+}
+.bottom-cart-btns {
+	padding: 2em 0;
+}
+
+/*****************************************************************************/
+/*
+/* MEDIA QUERIES
+/*
+/*****************************************************************************/
+
+@media screen and (max-width: 991px) {
+	.current-in-bag {
+		font-size: 0.9em;
+	}
+	.cart-item-name {
+		font-size: 1.3em;
+	}
+	.cart-color-size {
+		font-size: 0.9em;
+	}
+	.input-number {
+		padding: 0;
+		width: 22px;
+	}
+	.input-number-increment,
+	.input-number-decrement {
+		width: 20px;
+	}
+}
+
+// @media screena and (max-width: )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

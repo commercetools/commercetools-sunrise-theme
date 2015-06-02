@@ -1,0 +1,21 @@
+language: node_js
+node_js: "0.12.2"
+
+before_install:
+  - npm install -g grunt-cli
+  - gem install sass
+  - gem install compass
+
+install:
+  - npm install
+
+before_script:
+  - grunt
+
+#script:
+#  - bash ./deploy.sh
+
+env:
+  global:
+   - GH_REF: github.com/sphereio/sphere-sunrise-design.git
+   - secure: N5/PgAU0t+ZaTkEwMFsIxeE9SFh46FUpVmVtUpfAQQcGcV41csmKyOVs0Zo7w8SBZApOcHfPwDbC9dcxjR0jf1SjR6Ca0VELha5IzBbJS/Jsj2U0AxrKnVapQbKalRkII03V8r7m33LKzmYomiBMoAp+bJYfK6KznUHvSh2i64uVoWk/bzfnIsEcNQ5iR5dhYWzIxbPw3G1VYrubatmLpqaz1Ta5tnHN225BRQrxijMqFqVthkdJNgV2rH7EtKYaDnPaSAqDIwmqBByIAmBeJ8jgKVwUaZGLVx1CV6LL2qrGR8U6GP8f9nV+G7/Onf7N2L8har1NBW1ds3x9nVRFkxqwKT1lOhWKNgMS7ix//ymIgZlA78vRv/xpxFwcwrywhXqcAMGgKhPtG+myJE2BYzs/mlnIeIGCwxWfc2wO3pPV13BvKSz6ZBMKJcgDPUrYnOZuFzfjP5sgwDsFW8n+NPxAieEMpgPV+kBAuJNTmI8CPqDCU+RoE29bKy/ZDKODcSXOP8c92vG3SXb48/GogU8poX8rpxrwh8Ysu/gGAa4Q7u2pJ21H1yZsiFs3dpPl/DOXCRRhFjjIJa2MJtq0b/E2/KsknXaPcqTaV4yUeCv5kCsNjzp1YTHFrET9ZJ0Ng6ADRhnEi0QavIPo2eM2RyDMfq3G4j30EjZg8WmwsIU=
