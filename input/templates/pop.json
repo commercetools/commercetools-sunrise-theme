@@ -15,36 +15,7 @@
 			"isCurrent" : true
 		}
 	],
-	"languages" : {
-		"title" : "Language",
-		"list" : [
-			{ 
-				"name" : "ENG",
-				"value" : "",
-				"isSelected" : true
-			},
-			{
-				"name" : "DE",
-				"value" : "",
-				"isSelected" : false
-			}
-		]
-	},
-	"currencies" : {
-		"title" : "Language",
-		"list" : [
-			{ 
-				"name" : "Euro",
-				"value" : "",
-				"isSelected" : true
-			},
-			{
-				"name" : "Pound",
-				"value" : "",
-				"isSelected" : false
-			}
-		]
-	},
+
 	"productList" : {
 		"title" : "Products",
 		"pagination" : {
@@ -453,6 +424,58 @@
 					"url" : ""
 				}
 			]
+		}
+	},
+	"header" : {
+		"stores" : {
+			"title" : "STORES",
+			"url" : ""
+		},
+		"help" : {
+			"title" : "HELP",
+			"url" : ""
+		},
+		"callUs" : "CALL US ON +44 123 456 000",
+		"languages" : {
+			"title" : "Language",
+			"list" : [
+				{ 
+					"name" : "ENG",
+					"value" : "",
+					"label" : "English",
+					"isSelected" : true
+				},
+				{
+					"name" : "DE",
+					"value" : "",
+					"label" : "German",
+					"isSelected" : false
+				}
+			]
+		},
+		"currencies" : {
+			"title" : "Language",
+			"list" : [
+				{ 
+					"name" : "Euro",
+					"value" : "",
+					"isSelected" : true
+				},
+				{
+					"name" : "Pound",
+					"value" : "",
+					"isSelected" : false
+				}
+			]
+		},
+		"signIn" : {
+			"title" : "SIGN IN",
+			"url" : ""
+		},
+		"miniCart" : {
+			"title" : "YOUR BAG",
+			"url" : "",
+			"numItems" : 1
 		}
 	}
 }
