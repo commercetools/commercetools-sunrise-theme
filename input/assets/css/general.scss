@@ -34,12 +34,12 @@ $blue: #6989C2;
 /*****************************************************************************/
 
 // Links
-a, 
-a:link, 
-a:visited, 
-a:active, 
-a:hover { 
-	text-decoration: none; 
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+	text-decoration: none;
 	color: inherit;
 }
 
@@ -49,289 +49,22 @@ body {
   // Resolves the bootstrap white gap issue
   width: auto !important;
   overflow-x: hidden !important;
-}
 
-/*****************************************************************************/
-/*
-/* HEADER
-/*
-/*****************************************************************************/
+  // In order to see the page content due to fixed navigation
+  padding-top: 110px;
 
-// General 
-
-.header {
-  background: $dark-blue;
-}
-
-#header {
-	background: $dark-blue;
-	font-size: 1em;
-	text-align: center;
-}
-
-.header-left li,
-.header-right li {
-	display: inline-block;
-	margin: 10px 10px;
-}
-
-.header-left,
-.header-right {
-	margin-bottom: 0;
-}
-
-.header-icons {
-  height: 20px;
-  padding-right: 10px;
-}
-
-// Left
-
-.header-left {
-	color: $grey;
-  padding-left: 0;
-}
-
-.header-left a:hover {
-	color: $white;
-}
-
-// Right
-
-.language-select {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
-   color: $light-grey;
-   border: none;
-   background: transparent;
-}
-
-.language-select:hover {
-  color: $white;
-  cursor: pointer;
-}
-
-.header-right .cart-items {
-  margin: 10px 0;
-}
-
-.cart-item-number {
-  background: $yellow;
-  padding: 2px 7px;
-  width: 21px;
-  border-radius: 50%;
-  color: $dark-blue;
-  font-size: 1.1em;
-}
-
-.header-right {
-	color: $light-grey;
-}
-
-.header-right a:hover {
-	color: $white;
-}
-
-/*****************************************************************************/
-/*
-/* NAVIGATION
-/*
-/*****************************************************************************/
-
-// Sunrise logo  and searchbox
-
-.sunrise-logo {
-  height: 3em;
-}
-
-.logo-search {
-	padding: 1em 0 0;
-}
-
-.search-box input {
-  background: url(../../../assets/img/magnifying-glass34.png) no-repeat 270px 4px $dirty-white;
-  background-size: 20px;
-  border: 1px solid rgba(170, 174, 178, 0.5);
-  border-radius: 2px;
-  padding: 0 1em;
-}
-
-.search-field {
-  width: 300px;
-  margin: 6px 0; 
-  height: 30px;
-}
-
-// Main navigation
-
-.dropdown-toggle:hover {
-  border-bottom: 2px solid $dark-blue;
-}
-
-.navbar-toggle {
-  border: none;
-  background: none;
-  float: left;
-  padding-left: 1.2em;
-}
-
-.navbar {
-  margin-bottom: 0;
-  border-bottom: 1px solid $light-grey;
-}
-
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:focus,
-.navbar-default .navbar-nav>.open>a:hover {
-  background: none;
-  border: none;
-}
-
-.navbar-default {
-  background: none;
-  border: none;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: $black;
-  padding: 1.5em 0 0.3em 0;
-  margin-right: 1.5em;
-  font-size: 1.25em;
-  text-transform: uppercase;
-}
-
-.sale-ribbon {
-  color: $red;
-}
-
-.navbar-collapse {
-  padding-left: 0.5em;
-}
-
-.menu-large {
-  position: static !important;
-}
-
-.megamenu {
-  padding: 20px 0px;
-  width:100%;
-  border-top: none;
-}
-
-.nav-accordion > ul > li {
-  list-style-type: none;
-}
-
-  // Main navigation - mobile accordion view
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: $dark-blue;
-}
-
-.navbar-default .navbar-toggle:focus, 
-.navbar-default .navbar-toggle:hover {
-  background: none;
-}
-
-.ui-accordion-header {
-  background: none;
-  border: none;
-}
-
-.ui-accordion-content {
-  border: none;
-}
-
-.ui-icon {
-  display: none;
-}
-
-/*****************************************************************************/
-/*
-/* FOOTER
-/*
-/*****************************************************************************/
-
-.footer {
-    background: $dark-blue;
-}
-
-#footer {
-  font-size: 1em;
-  font-weight: 200;
-  padding-top: 2em;
-  color: white;
-  background: $dark-blue;
-  letter-spacing: 0.1em;
-}
-
-.sub-footer {
-  background: $black;
-  padding: 1em 0;
-  font-size: 1em;
-}
-
-#footer ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-#footer ul li {
-  padding: 0.5em 0;
-}
-
-.footer-title {
-  color: $dark-grey;
-  font-size: 1em;
-  margin: 0 0;
-}
-
-.newsletter-box {
-  padding: 3em 0;
-}
-
-.email-box {
-  width: 200px;
-  color: #white;
-  background: $black;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
-  padding: 0.5em 0.5em;
-}
-
-.email-submit input {
-  background: url(../../../assets/img/arrow-28-32.png) no-repeat 177px 2px $black;
-  background-size: 16px;
-  padding: 0 1em;
+  @media screen and (min-width: 768px) {
+    padding-top: 190px;
   }
 
-.card-info {
-  padding-top: 2.5em;
+	// Font rendering optimization
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.payment-cards {
-  width: 240px;
-}
-
-.footer-title-yellow {
-  color: $yellow;
-  text-align: center;
-}
-
-.social-icons li {
-  display: inline-block;
-}
-
-.social-icon {
-  max-height: 20px;
-}
-
-.imprint-row  {
-  padding: 0;
-    li {
-      list-style: none;
-      display: inline;
-      padding: 0 1em 0 0;
-    }
+// Removes border on focus
+select:focus,
+input:focus,
+a:focus {
+  outline: none;
 }

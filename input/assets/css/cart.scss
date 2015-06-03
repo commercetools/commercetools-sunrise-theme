@@ -42,6 +42,7 @@
 	font-weight: 900;
 		&:hover {
 			background: $white;
+			outline: 1px solid $light-grey;
 		}
 		&:active {
 			background: $yellow;
@@ -73,7 +74,7 @@
 }
 
 .cart-item-name {
-	font-size: 1.7em;
+	font-size: 1.5em;
 }
 
 .cart-color-size {
@@ -92,6 +93,13 @@
 .cart-edit-delete {
 	border-left: 1px solid $light-grey;
 	border-right: 1px solid $light-grey;
+}
+
+.quantity-spinner {
+	-webkit-user-select: none; /* disable highlight on frequent click  */
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -ms-user-select: none; 
 }
 
 .edit-delete-section {
@@ -160,6 +168,7 @@
 .promo-info-text {
 	color: $dark-grey;
 	padding-right: 1em;
+	letter-spacing: 0.1em;
 }
 
 .info-icon {
@@ -168,9 +177,8 @@
 }
 
 #promo-code {
-	resize: none;
 	padding: 0.5em 0;
-	width: 250px;
+	width: 300px;
 	margin: 0 1em -1em 0;
 	border: 1px solid $light-grey;
 }
@@ -224,7 +232,7 @@
 	font-weight: 900;
 		&:hover {
 			background: $white;
-			border: 1px solid $white;
+			outline: 1px solid $light-grey;
 			color: $black;
 		}
 		&:focus {
@@ -261,7 +269,93 @@
 	}
 }
 
-// @media screena and (max-width: )
+@media screen and (max-width: 768px) {
+	.current-in-bag {
+		text-align: center;
+		padding: 1em 0 0 0;
+	}
+	.checkout-now {
+		padding: 0;
+	}
+	.checkout-now-btn {
+		width: 100%;
+		margin: 1em 0;
+		background-position: 95% 10px;
+	}
+	.continue-shopping-btn {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	.bottom-cart-btns {
+		padding: 1em 0 0 0;
+	}
+	.cart-edit-delete {
+		border: none;
+		text-align: left;
+		padding: 0.5em 0;
+			.edit-delete-section {
+				display: inline;
+				padding-right: 1em;
+			}
+	}
+	.quantity-spinner {
+		text-align: right;
+	}
+	.input-number {
+		padding: 0 0.2em;
+		width: 30px;
+	}
+	.input-number-increment,
+	.input-number-decrement {
+		width: 25px;
+	}
+	.cart-item-price {
+		padding: 1em 0;
+	}
+	.xs-price-title {
+		font-size: 0.9em;
+		color: $dark-grey;
+	}
+	.cart-action-icon {
+		height: 15px;
+	}
+	#promo-code {
+		margin: 0.5em 0;
+	}
+	.promo-apply-btn {
+		margin-right: 0;
+	}
+	.delivery-xs {
+		padding-bottom: 1em;
+	}
+	.order-total {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.product-info-text {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.current-in-bag {
+		font-size: 0.7em;
+	}
+	.cart-edit-delete {
+		font-size: 0.8em;
+	}
+	#promo-code {
+		width: 250px;
+	}
+	.total-price-calc {
+		font-size: 0.9em;
+	}
+	.promo-info-text {
+		font-size: 0.8em;
+	}
+}
 
 
 

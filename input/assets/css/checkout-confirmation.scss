@@ -1,0 +1,62 @@
+/*****************************************************************************/
+/*
+/* CHECKOUT-CONFIRMATION PAGE
+/*
+/*****************************************************************************/
+
+.checkout-summary {
+  margin: 1em;
+  padding: 1em;
+  background: lighten($light-grey, 10%);
+}
+
+.checkout-summary-edit-icon {
+  height: 18px;
+  margin: 0 0.8em 0.5em 0;
+}
+
+.checkout-summary-title {
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.checkout-summary-text {
+  padding: 1em 0;
+}
+
+.checkout-first-col {
+  padding-right: 0;
+}
+
+.checkout-second-col {
+  padding: 0;
+}
+
+.checkout-third-col {
+  padding-left: 0;
+}
+
+.confirmation-products-title {
+  margin: 1em;
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+  padding: 1em 0 0.5em;
+  font-size: 0.9em;
+  color: $dark-grey;
+}
+
+.confirmation-product-img {
+  border: 1px solid $light-grey;
+  margin: 1em;
+}
+
+.confirmation-product-info {
+  margin: 1em;
+}
+
+.confirmation-product-name,
+.confirmation-product-sku,
+.confirmation-product-size-color,
+.confirmation-product-availability {
+  padding-bottom: 0.5em;
+}

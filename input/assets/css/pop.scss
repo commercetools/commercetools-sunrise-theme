@@ -402,25 +402,6 @@
 /*
 /*****************************************************************************/
 
-@media screen and (min-width: 768px) {
-  .megamenu {
-    display: block;
-    opacity: 0;
-    z-index: -1;
-      li .nav-accordion {
-        border-right: 1px solid $grey;
-      }
-  }
-  .dropdown:hover .megamenu {
-    opacity: 1;
-    z-index: 1;
-  }
-  .placeholder-img {
-    height: 40vh;
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 991px) {
   .thumbnail-img {
     max-width: 100%;
@@ -486,58 +467,6 @@
     padding: 0.5em 2em 0.5em 1em;
     margin: 0;
   }
-
-  // Megamenu
-
-  .megamenu {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-  }
-  .megamenu > li:last-child {
-    margin-bottom: 0;
-  }
-  .megamenu .dropdown-header {
-    padding: 3px 15px !important;
-  }
-  .navbar-nav .open .dropdown-menu .dropdown-header {
-    color: $dark-blue;
-  }
-  .navbar-collapse {
-    padding-left: 15px;
-  }
-  .dropdown-menu {
-  position: relative;
-  }
-  .navbar-default .navbar-nav > li > a {
-    text-align: left;
-    margin-left: 1em;
-    padding: 0.5em 0;
-  }
-  .navbar-default .navbar-nav > li:nth-child(n+2) {
-    border-top: 1px solid $light-grey;
-  }
-  .mobile-plus-content {
-    height: 20px;
-    float: right;
-  }
-  .mobile-minus-content {
-    height: 20px;
-    float: right;
-    content: url(../../../assets/img/minus-1.png);
-  }                   
-  .nav-accordion {
-    text-align: left;
-  }
-  .dropdown-toggle:hover {
-    border-bottom: none;
-  }
-}
-
-@media screen and (max-width: 629px) {
-    .header {
-      font-size: 0.9em;
-    }
 }
 
 @media screen and (max-width: 437px) {

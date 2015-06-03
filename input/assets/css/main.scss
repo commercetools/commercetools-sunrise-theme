@@ -1,7 +1,13 @@
 
 // SCSS files
 @import "general";
+@import "icon-font";
+@import "navigation";
+@import "megamenu";
+@import "footer";
 @import "pop";
 @import "pdp";
 @import "cart";
-
+@import "checkout-shipping";
+@import "checkout-payment";
+@import "checkout-confirmation";

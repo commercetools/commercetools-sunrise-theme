@@ -1,0 +1,435 @@
+/*****************************************************************************/
+/*
+/* NAVIGATION
+/*
+/*****************************************************************************/
+
+.header {
+  height: 50px;
+  background: $dark-blue;
+  overflow: hidden;
+  z-index: 9999;
+  position: relative;
+
+  .col-xs-12 {
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.navbar {
+  min-height: 0;
+}
+
+// All navigation components
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+
+  li {
+    color: $white;
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    border-right: solid 1px #404953;
+
+    @media screen and (min-width: 768px) {
+      width: inherit;
+      text-align: left;
+    }
+
+    > a,
+    > button {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  .list-item-nav-toggle {
+    float: left;
+
+    .navbar-toggle {
+      margin: 0;
+      padding: 14px 20px 20px;
+      border: none;
+      background: none;
+
+      .icon-bar {
+        width: 30px;
+        height: 2px;
+        margin: auto;
+        background: $white;
+        display: block;
+        border-radius: 1px;
+
+        +.icon-bar {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .list-item-store {
+    float: left;
+
+    .store-select {
+      color: $white;
+      padding: 10px 10px;
+
+      &.icon-marker::before {
+        font-size: 28px;
+        position: relative;
+        vertical-align: top;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      border: none;
+
+      .store-select {
+        color: $steel;
+        padding: 15px 10px 15px 0;
+        font-size: 12px;
+
+        &:hover,
+        &:focus {
+          color: $white;
+        }
+
+        &.icon-marker::before {
+          font-size: 26px;
+          bottom: 5px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+
+  .list-item-help {
+    display: none;
+
+    .link-help {
+      color: $steel;
+      padding: 15px 10px;
+      font-size: 12px;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      border: none;
+    }
+  }
+
+  .list-item-call {
+    display: none;
+
+    .link-hotline {
+      color: $steel;
+      padding: 15px 10px;
+      font-size: 12px;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      border: none;
+    }
+  }
+
+  .list-item-search {
+    float: left;
+
+    .search-toggle {
+      font-size: 26px;
+      padding: 8px 10px;
+    }
+
+    .search-toggle {
+      background: none;
+      border: none;
+      outline: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .list-item-language {
+    display: none;
+    float: right;
+
+    .language-select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      color: $light-grey;
+      border: none;
+      background: transparent;
+      padding: 15px 20px 20px;
+      font-size: 12px;
+      cursor: pointer;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus {
+        color: $white;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+
+  .list-item-user {
+    float: right;
+
+    .link-user {
+      color: $white;
+      padding: 10px 20px;
+
+      &.icon-user::before {
+        font-size: 28px;
+        position: relative;
+        vertical-align: top;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .link-user {
+        padding: 15px 20px;
+
+        &:hover,
+        &:focus {
+          background: #353e49;
+        }
+
+        &.icon-user::before {
+          font-size: 26px;
+          bottom: 3px;
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+
+  .list-item-bag {
+    float: right;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+      border-right: solid 1px #404953;
+    }
+
+    .link-your-bag {
+      color: $white;
+      padding: 10px 20px;
+      position: relative;
+
+      @media screen and (min-width: 768px) {
+        padding: 15px 20px;
+
+        &:hover,
+        &:focus {
+          background: #353e49;
+        }
+      }
+
+      &.icon-hand-bag::before {
+        font-size: 28px;
+        position: relative;
+        vertical-align: top;
+
+        @media screen and (min-width: 768px) {
+          font-size: 26px;
+          bottom: 3px;
+          margin-right: 7px;
+        }
+      }
+
+      &.not-empty {
+        color: $black;
+        background: $yellow;
+
+        .cart-item-number {
+          color: $white;
+          background: $red;
+        }
+
+        @media screen and (min-width: 768px) {
+          &:hover,
+          &:focus {
+            background: #ffc447;
+          }
+        }
+      }
+
+      .cart-item-number {
+        position: absolute;
+        color: $dark-blue;
+        background: $yellow;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 20px;
+        right: 10px;
+        bottom: 20px;
+        letter-spacing: normal;
+        font-size: 12px;
+        font-weight: bold;
+
+        @media screen and (min-width: 768px) {
+          position: relative;
+          width: 25px;
+          height: 25px;
+          bottom: 2px;
+          margin-left: 5px;
+          line-height: 26px;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+// Sunrise logo and searchbox
+
+.brand-logo {
+  display: inline-block;
+
+  img
+  {
+    width: 100%;
+    max-width: 220px;
+    padding: 15px 25px 10px;
+
+    @media screen and (min-width: 768px) {
+      width: 220px;
+      padding: 0;
+    }
+  }
+}
+
+.logo-search {
+
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
+}
+
+.search-box
+{
+  position: relative;
+  display: none;
+  padding: 20px 0;
+
+  @media screen and (min-width: 768px) {
+    display: block !important;
+    padding: 0;
+  }
+
+  .search-field {
+    height: 40px;
+    width: 100%;
+    background: $dirty-white;
+    border: 1px solid rgba(170, 174, 178, 0.5);
+    border-radius: 2px;
+    margin: 0;
+    padding: 0 1em;
+    font-size: 16px;
+  }
+
+  .search-button {
+    outline: none;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 22px;
+    color: $dark-blue;
+    padding: 8px 10px 8px 20px;
+    line-height: 10px;
+
+    @media screen and (min-width: 768px) {
+      top: 0;
+    }
+  }
+}
+
+.search-field {
+  width: 300px;
+  margin: 6px 0;
+  height: 30px;
+}
+
+// Shrink the header on scroll, see navigation.js for the script.
+
+@media screen and (min-width: 768px) {
+  .list-item-store,
+  .list-item-call,
+  .list-item-help,
+  .logo-search,
+  .navbar.navbar-fixed-top,
+  .nav.navbar-nav {
+    transition: ease all .33s;
+  }
+
+  .small-header {
+    .list-item-store,
+    .list-item-call,
+    .list-item-help,
+    .logo-search {
+      opacity: 0;
+      visibility: hidden;
+   }
+
+    .brand-logo,
+    .search-box {
+      opacity: 0;
+    }
+
+    .logo-search,
+    .nav.navbar-nav {
+      margin-top: -55px;
+
+      > li > a {
+        color: $white;
+        position: relative;
+        z-index: 9999999;
+
+      }
+    }
+
+    .dropdown-menu.megamenu {
+      margin-top: 0;
+    }
+  }
+}

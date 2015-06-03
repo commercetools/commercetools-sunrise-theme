@@ -1,0 +1,91 @@
+/*****************************************************************************/
+/*
+/* CHECKOUT-PAYMENT PAGE
+/*
+/*****************************************************************************/
+
+.payment-info-title {
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+}
+
+.payment-options-title {
+  margin: 1em;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+}
+
+.credit-card,
+.paypal,
+.pre-payment {
+  margin: 1em;
+}
+
+.name-on-card,
+.card-number,
+.expiry-date,
+.expiry-year,
+.security-code {
+  margin: 0.5em 0;
+}
+
+.payment-type-icon {
+  height: 3em;
+  padding-bottom: 0.5em;
+}
+
+.credit-card {
+  .credit-card-text {
+    margin-right: 1em;
+  }
+}
+
+.paypal {
+  .paypal-text {
+    margin-right: 1em;
+  }
+}
+
+.pre-payment {
+  .pre-payment-text {
+    margin-right: 1em;
+  }
+}
+
+.card-number-input {
+  background: url(../../../assets/img/mastercard4.png) no-repeat 95%;
+  background-size: 2.5em;
+
+}
+
+.security-code-input {
+  max-width: 50%;
+}
+
+.security-code-info {
+  padding-left: 0.5em;
+  color: $dark-grey;
+}
+
+.hr-checkout-payment {
+  margin: 1em;
+  border-top: 1px solid $light-grey;
+}
+
+/*****************************************************************************/
+/*
+/* MEDIA QUERIES
+/*
+/*****************************************************************************/
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .credit-card,
+  .paypal,
+  .pre-payment {
+    margin: 1em 0 1em 1em;
+    font-size: 0.9em;
+  }
+  .payment-options-title {
+    font-size: 1em;
+  }
+}

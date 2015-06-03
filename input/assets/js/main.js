@@ -1,5 +1,30 @@
 /*****************************************************************************/
 /*
+/* NAVIGATION
+/*
+/*****************************************************************************/
+
+$(document).ready(function(){
+  // Toggle search bar on mobile
+    $('.search-toggle').click(function(){
+        $('.search-box').slideToggle();
+    });
+
+    // Small menu bar on scroll
+    var body = $("body");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 300) {
+            body.addClass("small-header");
+        } else {
+            body.removeClass("small-header");
+        }
+    });
+});
+
+/*****************************************************************************/
+/*
 /* POP PAGE
 /*
 /*****************************************************************************/
@@ -43,7 +68,7 @@ $(function() {
   });
 });
 
-// Off-canvas menu 
+// Off-canvas menu
 
 $(document).ready(function() {
   $('[data-toggle="offcanvas"]').click(function() {
@@ -51,7 +76,7 @@ $(document).ready(function() {
   });
 });
 
-// Price range slider 
+// Price range slider
 
 $(function() {
   $("#slider-range").slider({
@@ -82,12 +107,13 @@ $(document).ready(function() {
   });
 });
 
-// Loading first child of vertical thumbnail on pageload 
+// Loading first child of vertical thumbnail on pageload
 
-$(document).ready(function() {
-  var href = $('#first-thumb').get(0).href;
-  $('div.product-frame').html($('<img>').attr('src', href).fadeIn(100));
-});
+//There is a bug who prevent other script to work properly, please fix!
+// $(document).ready(function() {
+//   var href = $('#first-thumb').get(0).href;
+//   $('div.product-frame').html($('<img>').attr('src', href).fadeIn(100));
+// });
 
 /*****************************************************************************/
 /*
@@ -101,15 +127,12 @@ $(document).ready(function() {
   window.inputNumber = function(el) {
     var min = el.attr('min') || false;
     var max = el.attr('max') || false;
-    var els = {};
-    els.dec = el.prev();
-    els.inc = el.next();
     el.each(function() {
       init($(this));
     });
     function init(el) {
-      els.dec.on('click', decrement);
-      els.inc.on('click', increment);
+      el.prev().on('click', decrement);
+      el.next().on('click', increment);
       function decrement() {
         var value = el[0].value;
         value--;
@@ -129,20 +152,23 @@ $(document).ready(function() {
 })();
 inputNumber($('.input-number'));
 
+/*****************************************************************************/
+/*
+/* CHECKOUT-SHIPPING PAGE
+/*
+/*****************************************************************************/
 
+// Adding active on click to checkout steps
 
+(function($){
+  $('.step-number').click(function(){
+    $('.step-number-active').removeClass('step-number-active');
+    $(this).addClass('step-number-active');
+  });
+}(jQuery));
 
+// Slide toggle different shipping address on click
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+$( "#different-billing-checkbox" ).click(function() {
+  $( "#different-billing-address" ).slideToggle( "slow" )
+});

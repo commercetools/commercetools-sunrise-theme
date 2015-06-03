@@ -1,0 +1,88 @@
+/*****************************************************************************/
+/*
+/* FOOTER
+/*
+/*****************************************************************************/
+
+.footer {
+    background: $dark-blue;
+}
+
+#footer {
+  font-size: 1em;
+  font-weight: 200;
+  padding-top: 2em;
+  color: white;
+  background: $dark-blue;
+  letter-spacing: 0.1em;
+}
+
+.sub-footer {
+  background: $black;
+  padding: 1em 0;
+  font-size: 1em;
+}
+
+#footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#footer ul li {
+  padding: 0.5em 0;
+}
+
+.footer-title {
+  color: $dark-grey;
+  font-size: 1em;
+  margin: 0 0;
+}
+
+.newsletter-box {
+  padding: 3em 0;
+}
+
+.email-box {
+  width: 200px;
+  color: $white;
+  background: $black;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  padding: 0.5em 0.5em;
+}
+
+.email-submit input {
+  background: url(../../../assets/img/arrow-28-32.png) no-repeat 177px 2px $black;
+  background-size: 16px;
+  padding: 0 1em;
+  }
+
+.card-info {
+  padding-top: 2.5em;
+}
+
+.payment-cards {
+  width: 240px;
+}
+
+.footer-title-yellow {
+  color: $yellow;
+  text-align: center;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icon {
+  max-height: 20px;
+}
+
+.imprint-row  {
+  padding: 0;
+    li {
+      list-style: none;
+      display: inline;
+      padding: 0 1em 0 0;
+    }
+}
