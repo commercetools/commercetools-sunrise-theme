@@ -9,7 +9,9 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/css/*.css' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/js/*.js' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/img/**' },
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/**' }
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/fonts/**' },
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/**' },
+          { expand: true, cwd: 'input/', dest: 'output/', src: '*.html' }
         ]
       }
     },
