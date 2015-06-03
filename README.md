@@ -4,6 +4,7 @@
   - Copy any CSS file in `input/assets/css/` to `output/assets/css/`
   - Copy any JS file in `input/assets/js/` to `output/assets/js/`
   - Copy any file in `input/assets/img/` to `output/assets/img/`
+  - Copy any file in `input/assets/font/` to `output/assets/font/`
 
 
 `grunt coffee`
