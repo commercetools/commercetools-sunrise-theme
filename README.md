@@ -12,6 +12,9 @@
 As a general rule, just run `grunt` in the project root in order to generate the `output` folder with the generated site.
 The following text is a more detailed explanation of the executed tasks:
 
+`grunt clean`
+  - Removes the `output/` folder with the generate site
+
 `grunt copy`
   - Copy any CSS file in `input/assets/css/` to `output/assets/css/`
   - Copy any JS file in `input/assets/js/` to `output/assets/js/`
