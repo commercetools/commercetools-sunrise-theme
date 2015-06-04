@@ -1,4 +1,8 @@
-# sphere-sunrise-design
+# SPHERE.IO Sunrise design
+
+![SPHERE.IO icon](https://admin.sphere.io/assets/images/sphere_logo_rgb_long.png)
+
+[![Build Status](https://travis-ci.org/sphereio/sphere-jvm-sdk.png?branch=master)](https://travis-ci.org/sphereio/sphere-jvm-sdk)
 
 ###Requirements
 
