@@ -387,7 +387,7 @@
 				}
 			]
 		},
-		"customerCare" : {
+		"shortcuts" : {
 			"title" : "Shortcuts",
 			"list" : [
 				{
@@ -454,7 +454,7 @@
 			]
 		},
 		"currencies" : {
-			"title" : "Language",
+			"title" : "Currency",
 			"list" : [
 				{ 
 					"name" : "Euro",
@@ -478,7 +478,7 @@
 		"miniCart" : {
 			"title" : "YOUR BAG",
 			"url" : "",
-			"numItems" : 1
+			"numItems" : 12
 		},
 		"navMenu" : {
 			"new" : {
