@@ -62,6 +62,35 @@ module.exports = function(grunt) {
       },
     },
 
+    maven: {
+      options: {
+        type: "jar",
+        groupId: 'io.sphere',
+        artifactId: "<%= pkg.name %>",
+        version: "<%= pkg.version %>",
+        destFolder: "/META-INF/resources/webjars"
+      },
+      install : {
+        options : {
+          goal: "install"
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'output/assets/',
+            src: "**/*",
+            filter: "isFile"
+          },
+          {
+            expand: true,
+            cwd: 'output/',
+            src: "templates/**/*",
+            filter: "isFile"
+          }
+        ]
+      }
+    },
+
     bintrayDeploy: {
       bintray: {
         options: {
@@ -89,10 +118,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-compile-handlebars');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-maven-tasks');
   grunt.loadNpmTasks('grunt-bintray-deploy');
 
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'compile-handlebars']);
-  grunt.registerTask('release', ['build', 'bintrayDeploy']);
+  grunt.registerTask('release', ['build', 'maven'/*, 'bintrayDeploy'*/]);
 
 };
