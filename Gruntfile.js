@@ -8,9 +8,9 @@ module.exports = function(grunt) {
         files: [
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/css/*.css' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/js/*.js' },
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/img/**' },
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/fonts/**' },
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/**' },
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/img/**/*' },
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/fonts/**/*' },
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/**/*' },
           { expand: true, cwd: 'input/', dest: 'output/', src: '*.html' }
         ]
       }
@@ -51,6 +51,13 @@ module.exports = function(grunt) {
         partials: 'input/templates/partials/**/*.hbs'
         //helpers: 'input/templates/helpers/**/*.js'
       }
+    },
+
+    watch: {
+      scripts: {
+        files: ['input/**/*'],
+        tasks: ['build']
+      },
     }
 
   });
@@ -60,9 +67,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-compile-handlebars');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.option('verbose', true);
-
-  grunt.registerTask('default', ['clean', 'copy', 'coffee', 'sass', 'compile-handlebars']);
+  grunt.registerTask('default', ['build', 'watch']);
+  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'compile-handlebars']);
 
 };
