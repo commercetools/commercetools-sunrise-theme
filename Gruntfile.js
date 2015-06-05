@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
   grunt.initConfig({
 
+    pkg: grunt.file.readJSON("package.json"),
+
     clean: ['output/'],
 
     copy: {
@@ -58,6 +60,25 @@ module.exports = function(grunt) {
         files: ['input/**/*'],
         tasks: ['build']
       },
+    },
+
+    bintrayDeploy: {
+      bintray: {
+        options: {
+          user: process.env.BINTRAY_USER,
+          apikey: process.env.BINTRAY_API_KEY,
+          pkg: {
+            repo: "maven"
+          }
+        },
+        files: [{
+            expand: true,
+            cwd: 'output/',
+            src: ["assets/**/*", "templates/**/*"],
+            dest: "<%= pkg.version %>",
+            filter: "isFile"
+        }]
+      }
     }
 
   });
@@ -68,8 +89,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-compile-handlebars');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-bintray-deploy');
 
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'compile-handlebars']);
+  grunt.registerTask('release', ['build', 'bintrayDeploy']);
 
 };

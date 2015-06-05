@@ -1,10 +1,8 @@
 {
   "name": "sphere-sunrise-design",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Compiles Handlebars templates with JSON data, outputting static HTML files.",
   "main": "Gruntfile.js",
-  "scripts": {
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/sphereio/sphere-sunrise-design.git"
@@ -14,8 +12,7 @@
     "SPHERE.IO",
     "template"
   ],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sphereio/sphere-sunrise-design/issues"
   },
@@ -24,6 +21,7 @@
     "grunt": "^0.4.5"
   },
   "devDependencies": {
+    "grunt-bintray-deploy": "^0.1.0",
     "grunt-compile-handlebars": "^2.0.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-coffee": "^0.13.0",
