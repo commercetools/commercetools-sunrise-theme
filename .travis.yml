@@ -10,7 +10,7 @@ install:
   - npm install
 
 before_script:
-  - grunt
+  - grunt build
 
 #script:
 #  - bash ./deploy.sh
