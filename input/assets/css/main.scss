@@ -1,10 +1,16 @@
+// SCSS partials compiled into main.min.css
 
-// SCSS files
+// Components
 @import "_general";
 @import "_icon-font";
+@import "_banners";
+
+// Partials
 @import "_navigation";
 @import "_megamenu";
 @import "_footer";
+
+// Pages
 @import "_pop";
 @import "_pdp";
 @import "_cart";
