@@ -1,291 +1,349 @@
-<div class="header">
-  <header id="header" class="container">
-    <div class="row">
-      <div class="col-sm-6 hidden-xs">
-        <ul class="header-left text-left">
-          <li><a href="#"><img class="header-icons" src="assets/img/marker-1.png" alt="location">STORES</a></li>
-          <li><a href="#">HELP</a></li>
-          <li><a href="#" class="call-us">CALL US ON +44 123 456 000</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-6 col-xs-12 text-right">
-        <ul class="header-right">
-          <li><select class="language-select hidden-xs"><option value="English">ENG</option><option value="German">DE</option></select></li>
-          <li><a href="#"><img class="header-icons" src="assets/img/user-2.png" alt="profile">SIGN IN</a></li>
-          <li><a href="#" class="your-bag"><img class="header-icons" src="assets/img/hand-bag-2.png" alt="cart">YOUR BAG</a></li>
-          <li class="cart-items"><span class="cart-item-number">1</span></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-</div>
+  <div class="navbar navbar-fixed-top">
 
-<div class="navbar">
-  <div id="navigation" class="container">
-    <div class="row logo-search">
-      <div class="col-sm-6">
-        <div class="sunrise-logo">
-          <img class="img-responsive sunrise-logo" src="assets/img/Logo.png" alt="sunrise logo">
+    <div class="header">
+      <header class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="nav-list">
+              <!-- Toggle the menu on mobile -->
+              <li class="list-item-nav-toggle">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </li>
+              <!-- Toggles the search field on mobile / not visible on desktop -->
+              <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only">Toggle search field</span></button></li>
+
+              <li class="list-item-store"><a href="#" class="store-select icon-marker"><span class="hidden-xs">Stores</span></a></li>
+
+              <li class="list-item-help"><a href="#" class="link-help">Help</a></li>
+
+              <li class="list-item-call"><a href="#" class="link-hotline">Call us on +44 123 456 000</a></li>
+              <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
+              <li class="list-item-bag"><a href="#" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">Your bag</span> <span class="cart-item-number">12</span></a></li>
+
+              <li class="list-item-user"><a href="#"class="link-user icon-user"><span class="hidden-xs hidden-sm">Sign in</span></a></li>
+
+              <li class="list-item-language hidden-sm">
+                <select class="language-select">
+                  <option value="English">Eng</option>
+                  <option value="German">De</option>
+                </select>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-       <form class="search-box text-right" action="">
-          <input class="search-field" type="search" placeholder="Search" />
-       </form>
-      </div>
+      </header>
     </div>
-    <div class="row">
-      <div class="navbar navbar-default">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
+
+    <div id="navigation" class="container">
+      <div class="row logo-search">
+        <div class="col-sm-8">
+          <a href="#" class="brand-logo">
+            <img class="img-responsive" src="assets/img/logo.svg" alt="SUNRISE Logo">
+          </a>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">New</a></li>
-            <li class="dropdown menu-large">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-              <ul class="dropdown-menu megamenu row dropdown-submenu">
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Women</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                    <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Women</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                  <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Women</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                    <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3 hidden-xs">
-                  <img src="assets/img/blue-jacket.jpg" alt="banner image" class="img-responsive">
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown menu-large">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-              <ul class="dropdown-menu megamenu row dropdown-submenu">
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Men</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                    <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Men</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                  <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Men</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                    <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3 hidden-xs">
-                  <img src="assets/img/blue-jacket.jpg" alt="banner image" class="img-responsive">
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown menu-large">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-              <ul class="dropdown-menu megamenu row dropdown-submenu">
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Accessories</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                    <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Accessories</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                  <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Accessories</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                    <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3 hidden-xs">
-                  <img src="assets/img/blue-jacket.jpg" alt="banner image" class="img-responsive">
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown menu-large">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brands<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-              <ul class="dropdown-menu megamenu row dropdown-submenu">
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Brands</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                    <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Brands</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                  <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3">
-                  <div class="nav-accordion">
-                    <h3>Brands</h3>
-                    <ul>
-                      <li><a href="#">Basic example</a></li>
-                      <li><a href="#">Button toolbar</a></li>
-                      <li><a href="#">Sizing</a></li>
-                      <li><a href="#">Nesting</a></li>
-                      <li><a href="#">Vertical variation</a></li>
-                    </ul>
-                    <h3>Glasses</h3>
-                    <ul>
-                      <li><a href="#">Lorem</a></li>
-                      <li><a href="#">Ipsum</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="col-sm-3 hidden-xs">
-                  <img src="assets/img/blue-jacket.jpg" alt="banner image" class="img-responsive">
-                </li>
-              </ul>
-            </li>
-            <li><a href="#"><span class="sale-ribbon"><img src="assets/img/Red-ribbon.png" alt="sale ribbon">Sale</span></a></li>
-          </ul>
+        <div class="col-sm-4">
+         <form class="search-box text-right" action="">
+            <input class="search-field" type="search" placeholder="Search" />
+            <button type="submit" class="search-button"><span class=".icon-font icon-magnifying-glass"></span> <span class="sr-only">Search</span></button>
+         </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="dropdown-megamenu navbar navbar-default">
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">New</a></li>
+              <li class="dropdown menu-large">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <ul class="dropdown-menu megamenu row dropdown-submenu">
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Women</h3>
+                      <ul>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                      </ul>
+                      <h3>Glasses</h3>
+                      <ul>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Sweats</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Women</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Sizing</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Women</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Women</h3>
+                      <ul>
+                        <li><a href="#">Nesting</a></li>
+                        <li><a href="#">Vertical variation</a></li>
+                      </ul>
+                      <h3>Glasses</h3>
+                      <ul>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                        <li><a href="#">Vertical variation</a></li>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Sizing</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-4 hidden-xs">
+                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown menu-large">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <ul class="dropdown-menu megamenu row dropdown-submenu">
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Men</h3>
+                      <ul>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                      </ul>
+                      <h3>Glasses</h3>
+                      <ul>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Men</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Sizing</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Men</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Sizing</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Men</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Sizing</a></li>
+                        <li><a href="#">Nesting</a></li>
+                        <li><a href="#">Vertical variation</a></li>
+                      </ul>
+                      <h3>Glasses</h3>
+                      <ul>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                        <li><a href="#">Vertical variation</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-4 hidden-xs">
+                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown menu-large">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <ul class="dropdown-menu megamenu row dropdown-submenu">
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Accessories</h3>
+                      <ul>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                      </ul>
+                      <h3>Glasses</h3>
+                      <ul>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Accessories</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Sizing</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Accessories</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Accessories</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Sizing</a></li>
+                        <li><a href="#">Nesting</a></li>
+                        <li><a href="#">Vertical variation</a></li>
+                      </ul>
+                      <h3>Glasses</h3>
+                      <ul>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                        <li><a href="#">Vertical variation</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-4 hidden-xs">
+                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown menu-large">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brands<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <ul class="dropdown-menu megamenu row dropdown-submenu">
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Brand</h3>
+                      <ul>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                      </ul>
+                      <h3>Glasses</h3>
+                      <ul>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Brand</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Sizing</a></li>
+                        <li><a href="#">T-shirts</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Sweats</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Brand</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Button toolbar</a></li>
+                        <li><a href="#">Sizing</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-2">
+                    <div class="nav-accordion">
+                      <h3>Brand</h3>
+                      <ul>
+                        <li><a href="#">Basic example</a></li>
+                        <li><a href="#">Nesting</a></li>
+                        <li><a href="#">Vertical variation</a></li>
+                      </ul>
+                      <h3>Glasses</h3>
+                      <ul>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Ipsum</a></li>
+                        <li><a href="#">Vertical variation</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="col-sm-4 hidden-xs">
+                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#" class="sale icon-ribbon"></span> Sale</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
