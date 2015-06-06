@@ -10,12 +10,173 @@
 			"name" : "Women"
 		},
 		{
-			"url" : "coats/", 
+			"url" : "coats/",
 			"name" : "Coats",
 			"isCurrent" : true
 		}
 	],
-
+	"filters" : {
+		"title" : "Filters",
+		"clear" : "Clear",
+		"clearAll" : "Clear All",
+		"clearAllFilters" : "clear all filters",
+		"categories" : {
+			"title" : "Product type",
+			"list" : [
+				{
+					"id" : "one",
+					"name" : "Type-1",
+					"isSelected" : true,
+					"children" : [
+						{
+							"name" : "sub-type 1",
+							"value" : "",
+							"isSelected" : true
+						},
+						{
+							"name" : "sub-type 2",
+							"value" : "",
+							"isSelected" : false
+						}
+					]
+				},
+				{
+					"id" : "two",
+					"name" : "Type-2",
+					"isSelected" : false,
+					"children" : [
+						{
+							"name" : "sub-type 1",
+							"value" : "",
+							"isSelected" : false
+						},
+						{
+							"name" : "sub-type 2",
+							"value" : "",
+							"isSelected" : false
+						}
+					]
+				},
+				{
+					"id" : "three",
+					"name" : "Type-3",
+					"isSelected" : false,
+					"children" : [
+						{
+							"name" : "sub-type 1",
+							"value" : "",
+							"isSelected" : false
+						},
+						{
+							"name" : "sub-type 2",
+							"value" : "",
+							"isSelected" : false
+						}
+					]
+				}
+			]
+		},
+		"size" : {
+			"title" : "Size",
+			"list" : [
+				{
+					"name" : "S",
+					"value" : "",
+					"isSelected" : true
+				},
+				{
+					"name" : "M",
+					"value" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "XL",
+					"value" : "",
+					"isSelected" : true
+				},
+				{
+					"name" : "XXL",
+					"value" : "",
+					"isSelected" : false
+				}
+			]
+		},
+		"color" : {
+			"title" : "Color",
+			"list" : [
+				{
+					"name" : "Black",
+					"value" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "Blue",
+					"value" : "",
+					"isSelected" : true
+				},
+				{
+					"name" : "Multi",
+					"value" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "Neutral",
+					"value" : "",
+					"isSelected" : true
+				}
+			]
+		},
+		"price" : {
+			"min" : 25,
+			"max" : 500,
+			"selected" : 50
+		},
+		"brands" : {
+			"title" : "Brands",
+			"list" : [
+				{
+					"name" : "A.P.C",
+					"value" : "",
+					"isSelected" : true
+				},
+				{
+					"name" : "ACNE",
+					"value" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "ALEXANDER MCQUEEN",
+					"value" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "ALEXANDER WANG",
+					"value" : "",
+					"isSelected" : true
+				},
+				{
+					"name" : "ALEXANDER WANG",
+					"value" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "ALEXANDER WANG",
+					"value" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "ALEXANDER WANG",
+					"value" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "ALEXANDER WANG",
+					"value" : "",
+					"isSelected" : false
+				}
+			]
+		}
+	},
 	"productList" : {
 		"title" : "Products",
 		"pagination" : {
@@ -38,182 +199,21 @@
 				{
 					"name" : "3",
 					"url" : "",
-					"isSelected" : true				
+					"isSelected" : true
 				},
 				{
 					"name" : "4",
 					"url" : "",
-					"isSelected" : false				
+					"isSelected" : false
 				},
 				{
 					"name" : "5",
 					"url" : "",
-					"isSelected" : false				
-				}		
+					"isSelected" : false
+				}
 			]
 		},
-		"filters" : {
-			"title" : "Filters",
-			"clear" : "Clear",
-			"clearAll" : "Clear All",
-			"clearAllFilters" : "clear all filters",
-			"categories" : {
-				"title" : "Product type",
-				"list" : [
-					{
-						"id" : "one",
-						"name" : "Type-1",
-						"isSelected" : true,
-						"children" : [
-							{
-								"name" : "sub-type 1",
-								"value" : "",
-								"isSelected" : true
-							},
-							{
-								"name" : "sub-type 2",
-								"value" : "",
-								"isSelected" : false
-							}
-						]
-					},
-					{
-						"id" : "two",
-						"name" : "Type-2",
-						"isSelected" : false,
-						"children" : [
-							{
-								"name" : "sub-type 1",
-								"value" : "",
-								"isSelected" : false
-							},
-							{
-								"name" : "sub-type 2",
-								"value" : "",
-								"isSelected" : false
-							}
-						]
-					},
-					{
-						"id" : "three",
-						"name" : "Type-3",
-						"isSelected" : false,
-						"children" : [
-							{
-								"name" : "sub-type 1",
-								"value" : "",
-								"isSelected" : false
-							},
-							{
-								"name" : "sub-type 2",
-								"value" : "",
-								"isSelected" : false
-							}
-						]
-					}
-				]
-			},
-			"size" : {
-				"title" : "Size",
-				"list" : [
-					{
-						"name" : "S",
-						"value" : "",
-						"isSelected" : true
-					},
-					{
-						"name" : "M",
-						"value" : "",
-						"isSelected" : false
-					},
-					{
-						"name" : "XL",
-						"value" : "",
-						"isSelected" : true
-					},
-					{
-						"name" : "XXL",
-						"value" : "",
-						"isSelected" : false
-					}
-				]
-			},
-			"color" : {
-				"title" : "Color",
-				"list" : [
-					{
-						"name" : "Black",
-						"value" : "",
-						"isSelected" : false
-					},
-					{
-						"name" : "Blue",
-						"value" : "",
-						"isSelected" : true
-					},
-					{
-						"name" : "Multi",
-						"value" : "",
-						"isSelected" : false
-					},
-					{
-						"name" : "Neutral",
-						"value" : "",
-						"isSelected" : true
-					}
-				]
-			},
-			"price" : {
-				"min" : 25,
-				"max" : 500,
-				"selected" : 50
-			},
-			"brands" : {
-				"title" : "Brands",
-				"list" : [
-					{
-						"name" : "A.P.C",
-						"value" : "",
-						"isSelected" : true
-					},
-					{
-						"name" : "ACNE",
-						"value" : "",
-						"isSelected" : false
-					},
-					{
-						"name" : "ALEXANDER MCQUEEN",
-						"value" : "",
-						"isSelected" : false
-					},
-					{
-						"name" : "ALEXANDER WANG",
-						"value" : "",
-						"isSelected" : true
-					},
-					{
-						"name" : "ALEXANDER WANG",
-						"value" : "",
-						"isSelected" : false
-					},
-					{
-						"name" : "ALEXANDER WANG",
-						"value" : "",
-						"isSelected" : false
-					},
-					{
-						"name" : "ALEXANDER WANG",
-						"value" : "",
-						"isSelected" : false
-					},
-					{
-						"name" : "ALEXANDER WANG",
-						"value" : "",
-						"isSelected" : false
-					}
-				]
-			}
-		},
+
 		"display" : {
 			"title" : "items per page",
 			"list" : [
@@ -225,7 +225,7 @@
 				{
 					"name" : "24",
 					"value" : "24",
-					"isSelected" : true				
+					"isSelected" : true
 				},
 				{
 					"name" : "48",
@@ -246,7 +246,7 @@
 					"name" : "High",
 					"value" : "",
 					"isSelected" : true
-				}			
+				}
 			]
 		},
 		"list" : [
@@ -279,7 +279,7 @@
 				"isOnSale" : false,
 				"isNew" : true,
 				"hasMoreColors" : true
-			},	
+			},
 			{
 				"name" : "Enditatem Product Name Optional Line Two",
 				"image" : "assets/img/blue-jacket.jpg",
@@ -309,16 +309,6 @@
 				"isOnSale" : false,
 				"isNew" : false,
 				"hasMoreColors" : true
-			},	
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : false,
-				"hasMoreColors" : true
 			},
 			{
 				"name" : "Enditatem Product Name Optional Line Two",
@@ -339,7 +329,17 @@
 				"isOnSale" : false,
 				"isNew" : false,
 				"hasMoreColors" : true
-			}								
+			},
+			{
+				"name" : "Enditatem Product Name Optional Line Two",
+				"image" : "assets/img/blue-jacket.jpg",
+				"price" : "&euro;250,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : false,
+				"isNew" : false,
+				"hasMoreColors" : true
+			}
 		]
 	},
 	"seo" : {
@@ -439,7 +439,7 @@
 		"languages" : {
 			"title" : "Language",
 			"list" : [
-				{ 
+				{
 					"name" : "ENG",
 					"value" : "",
 					"label" : "English",
@@ -456,7 +456,7 @@
 		"currencies" : {
 			"title" : "Currency",
 			"list" : [
-				{ 
+				{
 					"name" : "Euro",
 					"value" : "",
 					"isSelected" : true
@@ -612,7 +612,7 @@
 								"url" : ""
 							}
 						]
-					}					
+					}
 				]
 			},
 			"men" : {
@@ -738,7 +738,7 @@
 								"url" : ""
 							}
 						]
-					}					
+					}
 				]
 			},
 			"accessories" : {
@@ -864,7 +864,7 @@
 								"url" : ""
 							}
 						]
-					}					
+					}
 				]
 			},
 			"brands" : {
@@ -990,7 +990,7 @@
 								"url" : ""
 							}
 						]
-					}					
+					}
 				]
 			}
 		}
