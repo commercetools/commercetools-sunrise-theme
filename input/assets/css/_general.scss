@@ -60,3 +60,24 @@ input:focus,
 a:focus {
   outline: none;
 }
+
+// Cross browser compatible hr
+.hr {
+  border: none;
+  margin: 0;
+  background: $lighter-steel;
+  height: 1px;
+}
+
+.hr-short {
+  border: none;
+  background: $lighter-steel;
+  height: 1px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+// Removes unwanted box-shadow
+.panel {
+  box-shadow: none;
+}
