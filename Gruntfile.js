@@ -70,9 +70,11 @@ module.exports = function(grunt) {
         version: "<%= pkg.version %>",
         destFolder: "/META-INF/resources/webjars"
       },
-      install : {
+      deploy : {
         options : {
-          goal: "install"
+          goal: "deploy",
+          repositoryId: "commercetools-bintray",
+          url: "https://api.bintray.com/maven/commercetools/maven/<%= pkg.name %>"
         },
         files: [
           {
@@ -89,27 +91,7 @@ module.exports = function(grunt) {
           }
         ]
       }
-    },
-
-    bintrayDeploy: {
-      bintray: {
-        options: {
-          user: process.env.BINTRAY_USER,
-          apikey: process.env.BINTRAY_API_KEY,
-          pkg: {
-            repo: "maven"
-          }
-        },
-        files: [{
-            expand: true,
-            cwd: 'output/',
-            src: ["assets/**/*", "templates/**/*"],
-            dest: "<%= pkg.version %>",
-            filter: "isFile"
-        }]
-      }
     }
-
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -123,6 +105,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'compile-handlebars']);
-  grunt.registerTask('release', ['build', 'maven'/*, 'bintrayDeploy'*/]);
+  grunt.registerTask('release', ['build', 'maven']);
 
 };
