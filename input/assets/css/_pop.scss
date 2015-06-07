@@ -12,29 +12,22 @@
     text-transform: uppercase;
 }
 
-.offcanvas-btn {
-  font-size: 1em;
-  color: $white;
-  background: $dark-blue;
-  padding: 0.5em 0;
-}
-
 .mobile-filter-row {
   padding: 1em 0;
 }
 
 .breadcrumb {
   background: none;
-  padding: 1em 0.5em;
+  padding: 1em 0;
   font-size: 1em;
 }
 
 .product-filter {
-	padding: 0.5em 0.5em;
+	padding: 0;
 }
 
 .product-type {
-  margin: 10px -15px 0;
+  margin: 0;
 }
 
 // Product type accordion menu
@@ -101,19 +94,6 @@
 }
 
 // Buttons
-
-.per-page {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0.5em 0.5em;
-  background: url(../../../assets/img/arrow-67.png) no-repeat 40px 6px $white;
-  background-size: 1em;
-  padding: 0.2em 2em 0.2em 0.5em;
-  border-radius: 0;
-  border: 1px solid $grey;
-  color: $dark-grey;
-}
 
 .clear-btn {
     color: $dark-grey;
@@ -312,80 +292,6 @@
 
 /*****************************************************************************/
 /*
-/* OFF CANVAS MENU MEDIA QUERIES
-/*
-/*****************************************************************************/
-
-@media screen and (max-width: 767px) {
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all .25s ease-out;
-         -o-transition: all .25s ease-out;
-            transition: all .25s ease-out;
-  }
-
-  .row-offcanvas-right {
-    right: 0;
-  }
-
-  .row-offcanvas-left {
-    left: 0;
-  }
-
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -50%;
-  }
-
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -50%;
-  }
-
-  .row-offcanvas-right.active {
-    right: 50%;
-  }
-
-  .row-offcanvas-left.active {
-    left: 50%;
-  }
-
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 50%;
-    padding-left: 2em;
-  }
-  .designer-list {
-    margin-bottom: 2em;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -80%;
-  }
-
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -80%;
-  }
-
-  .row-offcanvas-right.active {
-    right: 80%;
-  }
-
-  .row-offcanvas-left.active {
-    left: 80%;
-  }
-  .sidebar-offcanvas {
-    width: 80%;
-  }
-}
-
-/*****************************************************************************/
-/*
 /* MEDIA QUERIES
 /*
 /*****************************************************************************/
@@ -407,44 +313,52 @@
   .search-box {
     text-align: center;
   }
+
   #footer {
     text-align: center;
   }
+
   .card-info {
     text-align: center;
   }
+
   .payment-cards {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+
   .breadcrumb {
     display: none;
   }
-  #sidebar {
-    padding-top: 1em;
-  }
+
   .dropdown-menu li a {
     text-align: center;
   }
+
   .navbar-default {
     text-align: center;
   }
+
   .overlay {
     display: none;
   }
+
   .sale-flag,
   .new-flag {
     zoom: 0.9;
     -moz-transform: scale(0.9);
   }
+
   .newsletter-box {
     padding: 0;
   }
+
   .per-page {
     margin: 0.5em 0;
     background-position: 90px 6px;
   }
+
   .language-select-xs,
   .currency-select-xs {
     background: url(../../../assets/img/arrow-67-white.png) no-repeat 70px 12px $dark-blue;
@@ -461,13 +375,16 @@
   .social-icons {
     padding-left: 0;
   }
+
   #pop-page,
   #footer {
     overflow-x: hidden;
   }
+
   .imprint-row {
     text-align: center;
   }
+
   .sale-flag,
   .new-flag {
     zoom: 0.5;
