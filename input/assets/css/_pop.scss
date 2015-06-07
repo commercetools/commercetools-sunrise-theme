@@ -222,6 +222,7 @@
   border-radius: 2px;
   color: $dark-grey;
   margin-bottom: 2.2em;
+  text-align: center;
   // for overlay
   position: relative;
 }
@@ -284,10 +285,19 @@
   content: url("../../../assets/img/Heart-inverted.png");
 }
 
-// Bottom SEO text area
+// SEO text area
 
-.text-normalize {
+.seo-title {
+  margin-top: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.seo-text {
+  text-align: center;
   text-transform: none;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 /*****************************************************************************/
