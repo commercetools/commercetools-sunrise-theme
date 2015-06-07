@@ -87,3 +87,25 @@ button {
   border: none;
   background: none;
 }
+
+// Color and size select buttons
+
+.styled-select {
+   -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+   width: 100%;
+   cursor: pointer;
+   overflow: hidden;
+   display: inline;
+   position: relative;
+   border-radius: 0;
+   border: none;
+
+   &.icon-drop-down::before {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    color: $dark-grey;
+   }
+}

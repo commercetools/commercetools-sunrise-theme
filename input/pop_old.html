@@ -715,11 +715,14 @@
                   <div class="row hidden-xs item-list-pagination">
                     <div class="col-xs-4 text-left">
                       <span class="hidden-sm">Sort by</span>
-                      <select class="select">
-                        <option value="low">Low</option>
-                        <option value="high">High</option>
-                      </select>
-                      <span>123 of 123</span>
+                      <div class="styled-select icon-drop-down">
+                        <select class="select">
+                          <option value="low">Low</option>
+                          <option value="high">High</option>
+                          <option value="long text">long text</option>
+                        </select>
+                      </div>
+                     <p class="item-count">12 of 234</p>
                     </div>
                     <div class="col-xs-4 text-center pagination">
                       <ul class="page-numbers">
@@ -733,12 +736,14 @@
                       </ul>
                     </div>
                     <div class="col-xs-4 text-right">
-                      <span class="text-capitalize">items per page</span>
-                      <select class="select">
-                        <option value="12">12</option>
-                        <option value="24">24</option>
-                        <option value="48">48</option>
-                      </select>
+                      <p class="item-count">Items per page</p>
+                      <div class="styled-select icon-drop-down">
+                        <select class="select">
+                          <option value="12">12</option>
+                          <option value="24">24</option>
+                          <option value="48">48</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                   <div class="row">

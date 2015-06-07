@@ -116,23 +116,6 @@
 	padding: 0 0 1.5em;
 }
 
-// Color and size select buttons
-
-.styled-select {
-   -webkit-appearance: none;
-   -moz-appearance:    none;
-   appearance:         none;
-   width: 100%;
-   padding: 0.5em;
-   font-size: 0.8em;
-   cursor: pointer;
-   overflow: hidden;
-   background: url(../../../assets/img/arrow-67.png) no-repeat 90% 8px $white;
-   background-size: 15px;
-   border: 1px solid rgba(0,0,0,0.2);
-   border-radius: 0;
-}
-
 // Size guide
 
 .size-guide-col {
