@@ -994,5 +994,16 @@
 				]
 			}
 		}
+	},
+	"figure" : {
+		"title" : "Women",
+		"text" : "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
+		"image-mobile" : "assets/img/banner_mobile.jpg",
+		"image-desktop" : "assets/img/banner_desktop.jpg"
+	},
+	"jumbotron" : {
+		"title" : "Coats",
+		"text" : "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
+		"categories" : "Women"
 	}
 }

@@ -11,11 +11,11 @@
       <div id="pop-page" class="container">
         <div class="row">
           <figure class="figure-banner">
-            <img class="img-responsive hidden-sm hidden-md hidden-lg" src="assets/img/banner_mobile.jpg" alt="Women">
-            <img class="img-responsive hidden-xs" src="assets/img/banner_desktop.jpg" alt="Women">
+            <img class="img-responsive hidden-sm hidden-md hidden-lg" src="{{figure.image-mobile}}" alt="Women">
+            <img class="img-responsive hidden-xs" src="{{figure.image-desktop}}" alt="Women">
               <figcaption class="figcaption-banner-text">
-                <h2>Women</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h3>
+                <h2>{{figure.title}}</h2>
+                <h3>{{figure.text}}</h3>
               </figcaption>
           </figure>
         </div>
@@ -268,9 +268,9 @@
               <div class="row">
                 <div class="col-xs-12">
                   <div class="jumbotron">
-                    <p>Women</p>
-                    <h2>Coats</h2>
-                    <h3>Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.</h3>
+                    <p>{{jumbotron.categories}}</p>
+                    <h2>{{jumbotron.title}}</h2>
+                    <h3>{{jumbotron.text}}</h3>
                   </div>
                 </div>
               </div>
