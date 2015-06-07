@@ -39,4 +39,5 @@ The following text is a more detailed explanation of the executed tasks:
   - Generates HTML files from the Handlebars templates and JSON data defined in `input/templates/` and the partial templates defined in `input/templates/partials/` into `output/`
 
 
-**To run them all, simply use the default command `grunt`.**
+To run them all, use the command `grunt build`.
+To run them all and watch for changes, use the default command `grunt`.
