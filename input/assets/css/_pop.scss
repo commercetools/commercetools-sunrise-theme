@@ -19,6 +19,7 @@
 .breadcrumb {
   background: none;
   padding: 1em 0;
+  margin-bottom: 0;
   font-size: 1em;
 }
 
@@ -146,9 +147,8 @@
   margin-top: 1em;
   margin-left: 1em;
   border: 1px solid $light-grey;
-  height: 200px;
-  overflow: scroll;
-  width: 90%;
+  max-height: 500px;
+  overflow-y: scroll;
 }
 
 // Placeholder image
@@ -170,36 +170,6 @@
 
 .product-title {
   font-size: 1.2em;
-}
-
-// Pagination
-
-.item-list-pagination {
-  padding: 2em 0;
-  font-size: 0.9em;
-}
-
-.pagination {
-  margin: 0 auto;
-  padding-left: 15px;
-}
-.pagination-active {
-  color: $yellow;
-}
-
-.page-numbers {
-  padding-left: 0;
-  margin: 0.5em 0 0;
-  letter-spacing: 0.5em;
-}
-
-.page-numbers-bottom {
-  padding-bottom: 4em;
-}
-
-.page-numbers li {
-  display: inline-block;
-  font-size: 1.1em;
 }
 
 .page-prev,
