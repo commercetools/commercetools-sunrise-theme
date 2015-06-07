@@ -1,0 +1,238 @@
+            <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
+              <button type="button" class="visible-xs offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas"><span class="sr-only">Filter schließen</span></button>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="row hidden-xs">
+                    <div class="col-xs-5">
+                      <p><b>{{filters.title}}</b></p>
+                    </div>
+                    <div class="col-xs-7 text-right clear-btn">
+                      <a href="#">{{filters.clear}}</a>
+                    </div>
+                  </div>
+                  <div class="row visible-xs">
+                    <div class="col-xs-6">
+                      <p><strong>{{filters.products}}</strong></p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <p><strong>{{pagination.currentPage}} {{pagination.pageSeparator}} {{pagination.totalPages}}</strong></p>
+                    </div>
+                  </div>
+                  <div class="row visible-xs clear-btn-row">
+                    <a href="#"><div class="col-xs-12 text-center clear-all-btn">{{filters.clearAllFilters}}</div></a>
+                  </div>
+                  <hr class="hr">
+                  <div class="row product-type">
+                    <div class="col-xs-8 text-left">
+                      <p>{{filters.categories.title}}</p>
+                    </div>
+                    <div class="col-xs-4 text-right clear-btn">
+                      <a href="#">{{filters.clear}}</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        {{#each filters.categories.list}}
+                        <div class="panel panel-default">
+                          <div class="panel-heading" role="tab" id="heading-{{id}}">
+                            <h4 class="panel-title">
+                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{id}}" aria-expanded="true" aria-controls="collapse-{{id}}">
+                                {{name}}
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="collapse-{{id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{id}}">
+                            <div class="panel-body">
+                              {{#each children}}
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="{{value}}">
+                                  {{name}}
+                                </label>
+                              </div>
+                              {{/each}}
+                            </div>
+                          </div>
+                        </div>
+                        {{/each}}
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="hr">
+                  <div class="row size-box">
+                    <div class="col-xs-8 text-left">
+                      {{filters.size.title}}
+                    </div>
+                    <div class="col-xs-4 text-right clear-btn">
+                      <a href="#">{{filters.clear}}</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          S
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          M
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          XL
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          XXL
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="hr">
+                  <div class="row color-box">
+                    <div class="col-xs-8 text-left">
+                      Color
+                    </div>
+                    <div class="col-xs-4 text-right clear-btn">
+                      <a href="#">{{filters.clear}}</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          Black
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          Blue
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          Multi
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" value="">
+                          Neutral
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="hr">
+                  <div class="row price-box">
+                    <div class="col-sm-12">
+                      Price
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 text-center slider-col">
+                      <p><input type="text" id="amount" readonly style="border:0; color:black; background: transparent; text-align: center;"></p>
+                      <div id="slider-range"></div>
+                    </div>
+                  </div>
+                  <hr class="hr">
+                  <div class="row designer-box">
+                    <div class="col-xs-8 text-left">
+                      Brands
+                    </div>
+                    <div class="col-xs-4 text-right clear-btn">
+                      <a href="#">Clear</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 designer-list">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> A.P.C
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> ACNE
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> ACRONYM
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> ALEXANDER MCQUEEN
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> ALEXANDER WANG
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> ALEXANDER WANG
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> ALEXANDER WANG
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> ALEXANDER WANG
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> ALEXANDER WANG
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="hr visible-xs">
+                  <div class="row visible-xs">
+                    <div class="col-xs-12 sort-by-xs">
+                      <select class="per-page">
+                        <option selected="selected">Sort by price</option>
+                        <option value="low">Low</option>
+                        <option value="high">High</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row visible-xs language-currency-select">
+                    <div class="col-xs-6 sort-by-xs">
+                      <select class="per-page language-select-xs">
+                        <option selected="selected">Language</option>
+                        <option value="low">ENG</option>
+                        <option value="high">DE</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-6 sort-by-xs">
+                      <select class="per-page currency-select-xs">
+                        <option selected="selected">Currency</option>
+                        <option value="low">Euro</option>
+                        <option value="high">Pound</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
