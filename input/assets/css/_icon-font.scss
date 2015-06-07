@@ -44,18 +44,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-marker:before {
-  content: "d";
-}
 .icon-user:before {
   content: "a";
 }
 .icon-hand-bag:before {
   content: "b";
 }
+.icon-ribbon:before {
+  content: "e";
+}
 .icon-magnifying-glass:before {
   content: "c";
 }
-.icon-ribbon:before {
-  content: "e";
+.icon-marker:before {
+  content: "d";
+}
+.icon-multiple:before {
+  content: "f";
+}
+.icon-single:before {
+  content: "g";
+}
+.icon-close:before {
+  content: "h";
 }
