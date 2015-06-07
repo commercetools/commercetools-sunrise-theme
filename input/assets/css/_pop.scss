@@ -27,10 +27,6 @@
 	padding: 0;
 }
 
-.product-type {
-  margin: 0;
-}
-
 // Product type accordion menu
 
 .panel-heading,
@@ -45,8 +41,13 @@
 
 .panel-title {
   background-color: $dirty-white;
-  font-size: 1.5em;
-  padding-bottom: 0.1em;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 700;
+
+  a.collapsed {
+    font-weight: 400;
+  }
 }
 
 .panel-group .panel+.panel {
@@ -58,17 +59,15 @@
   border: none;
 }
 
-.collapsed {
-  font-size: 0.6em;
-}
-
 // Size Box
 
+.product-type,
 .size-box,
 .color-box,
 .designer-box,
 .price-box {
   padding: 1em 0 0;
+  font-size: 16px;
 }
 
 // Price slider
@@ -96,8 +95,10 @@
 
 // Buttons
 
-.clear-btn {
-    color: $dark-grey;
+a.clear-btn {
+  display: block;
+  color: $dark-grey;
+  font-size: 14px;
 }
 
 .clear-all-btn {
@@ -145,7 +146,7 @@
 
 .designer-list {
   margin-top: 1em;
-  margin-left: 1em;
+  padding: 1em;
   border: 1px solid $light-grey;
   max-height: 500px;
   overflow-y: scroll;
@@ -306,10 +307,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .breadcrumb {
-    display: none;
   }
 
   .dropdown-menu li a {
