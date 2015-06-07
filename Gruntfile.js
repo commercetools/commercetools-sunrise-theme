@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     clean: ['output/'],
 
     copy: {
-      main: {
+      dist: {
         files: [
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/css/*.css' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/js/*.js' },
@@ -19,18 +19,18 @@ module.exports = function(grunt) {
     },
 
     coffee: {
-      main: {
+      dist: {
         options: {
           //join: true
         },
         files: {
-          'output/assets/js/coffee.js': ['input/assets/js/*.coffee']
+          'output/assets/js/coffee.js': 'input/assets/js/*.coffee'
         }
       }
     },
 
     sass: {
-      main: {
+      dist: {
         options: {
          style: 'compressed'
         },
@@ -40,8 +40,19 @@ module.exports = function(grunt) {
       }
     },
 
+    autoprefixer: {
+      dist: {
+        options: {
+          map: true
+        },
+        files: {
+          'output/assets/css/main.min.css': 'output/assets/css/main.min.css'
+        }
+      }
+    },
+
     'compile-handlebars': {
-      main: {
+      dist: {
         files: [{
             expand: true,
             cwd: 'input/templates',
@@ -97,6 +108,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-compile-handlebars');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -104,7 +116,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bintray-deploy');
 
   grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'compile-handlebars']);
+  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'autoprefixer', 'compile-handlebars']);
   grunt.registerTask('release', ['build', 'maven']);
 
 };
