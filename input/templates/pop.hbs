@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> htmlhead}}
+  </head>
+
+  <body>
+    {{> header}}
+
+    <div class="pop-page">
+      <div id="pop-page" class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <figure class="figure-banner">
+              <img class="img-responsive hidden-sm hidden-md hidden-lg" src="{{figure.image-mobile}}" alt="Women">
+              <img class="img-responsive hidden-xs" src="{{figure.image-desktop}}" alt="Women">
+                <figcaption class="figcaption-banner-text">
+                  <h2>{{figure.title}}</h2>
+                  <h3>{{figure.text}}</h3>
+                </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row row-offcanvas row-offcanvas-right">
+          <div class="col-xs-12">
+            {{> breadcrumb}}
+          </div>
+          <div class="product-filter">
+              {{> sidebar-offcanvas}}
+            <div class="col-sm-9">
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="jumbotron">
+                    <p>{{jumbotron.categories}}</p>
+                    <h2>{{jumbotron.title}}</h2>
+                    <h3>{{jumbotron.text}}</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row visible-xs">
+                <div class="col-xs-12">
+                  <ul class="mobile-filter-list clearfix">
+                    <li class="pull-left"><button type="button" class="offcanvas-btn offcanvas-open" data-toggle="offcanvas">Filter</button></li>
+                    <li class="pull-left">
+                      <select class="select">
+                        <option value="Sort: low">Sort: low</option>
+                        <option value="Sort: high">Sort: high</option>
+                      </select>
+                    </li>
+                    <li class="pull-left"><p class="item-count">12 of 234</p></li>
+                    <li class="pull-right"><button type="button" class="offcanvas-btn offcanvas-btn-sort icon-multiple"><span class="sr-only">multiple view</span></button></li>
+                    <li class="pull-right"><button type="button" class="offcanvas-btn offcanvas-btn-sort icon-single"><span class="sr-only">single view</span></button></li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="hr hidden-xs">
+              <div class="row hidden-xs item-list-pagination">
+                <div class="col-xs-4 text-left">
+                  <span class="text-capitalizeh hidden-sm">Sort by</span>
+                  <select class="per-page">
+                    <option value="low">Low</option>
+                    <option value="high">High</option>
+                  </select>
+                  <span class="text-capitalize">123 of 123</span>
+                </div>
+                <div class="col-xs-4 text-center pagination">
+                  <ul class="page-numbers">
+                    <li><a href=""><img class="page-prev" src="assets/img/arrow-circle-27.png" alt="previous"></a></li>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li class="pagination-active"><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href=""><img class="page-next" src="assets/img/arrow-circle-28.png" alt="next"></a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-4 text-right">
+                  <span class="text-capitalize">items per page</span>
+                  <select class="per-page per-page-xs-btn">
+                    <option value="12">12</option>
+                    <option value="24">24</option>
+                    <option value="48">48</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 col-xs-6">
+                  <a href="#">
+                    <div class="shop-item">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="sale-flag">Sale</div>
+                          <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
+                        </div>
+                      </div>
+                      <div class="row text-capitalize">
+                        <div class="col-xs-12">
+                          <p>Enditatem Product Name<br>Optional Line Two<br>&euro;250,-</p>
+                          <p class="text-uppercase">More Colours</p>
+                        </div>
+                      </div>
+                      <div class="overlay">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                  <a href="#">
+                    <div class="shop-item">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="sale-flag">Sale</div>
+                          <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
+                        </div>
+                      </div>
+                      <div class="row text-capitalize">
+                        <div class="col-xs-12">
+                          <p>Enditatem Product Name<br>Optional Line Two<br>&euro;250,-</p>
+                          <p class="text-uppercase">More Colours</p>
+                        </div>
+                      </div>
+                      <div class="overlay">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4 hidden-xs">
+                  <a href="#">
+                    <div class="shop-item">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="new-flag">New</div>
+                          <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
+                        </div>
+                      </div>
+                      <div class="row text-capitalize">
+                        <div class="col-xs-12">
+                          <p>Enditatem Product Name<br>Optional Line Two<br>&euro;250,-</p>
+                          <p class="text-uppercase">More Colours</p>
+                        </div>
+                      </div>
+                      <div class="overlay">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 col-xs-6">
+                  <a href="#">
+                    <div class="shop-item">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="new-flag">New</div>
+                          <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
+                        </div>
+                      </div>
+                      <div class="row text-capitalize">
+                        <div class="col-xs-12">
+                          <p>Enditatem Product Name<br>Optional Line Two<br>&euro;250,-<br><span class="text-uppercase">More Colours</span></p>
+                        </div>
+                      </div>
+                      <div class="overlay">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                  <a href="#">
+                    <div class="shop-item">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
+                        </div>
+                      </div>
+                      <div class="row text-capitalize">
+                        <div class="col-xs-12">
+                          <p>Enditatem Product Name<br>Optional Line Two<br>&euro;250,-<br><span class="text-uppercase">More Colours</span></p>
+                        </div>
+                      </div>
+                      <div class="overlay">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4 hidden-xs">
+                  <a href="#">
+                    <div class="shop-item">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
+                        </div>
+                      </div>
+                      <div class="row text-capitalize">
+                        <div class="col-xs-12">
+                          <p>Enditatem Product Name<br>Optional Line Two<br>&euro;250,-<br><span class="text-uppercase">More Colours</span></p>
+                        </div>
+                      </div>
+                      <div class="overlay">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 col-xs-6">
+                  <a href="#">
+                    <div class="shop-item">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
+                        </div>
+                      </div>
+                      <div class="row text-capitalize">
+                        <div class="col-xs-12">
+                          <p>Enditatem Product Name<br>Optional Line Two<br>&euro;250,-<br><span class="text-uppercase">More Colours</span></p>
+                        </div>
+                      </div>
+                      <div class="overlay">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                  <a href="#">
+                    <div class="shop-item">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
+                        </div>
+                      </div>
+                      <div class="row text-capitalize">
+                        <div class="col-xs-12">
+                          <p>Enditatem Product Name<br>Optional Line Two<br>&euro;250,-<br><span class="text-uppercase">More Colours</span></p>
+                        </div>
+                      </div>
+                      <div class="overlay">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-4 hidden-xs">
+                  <a href="#">
+                    <div class="shop-item">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
+                        </div>
+                      </div>
+                      <div class="row text-capitalize">
+                        <div class="col-xs-12">
+                          <p>Enditatem Product Name<br>Optional Line Two<br>&euro;250,-<br><span class="text-uppercase">More Colours</span></p>
+                        </div>
+                      </div>
+                      <div class="overlay">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 text-center pagination">
+                  <ul class="page-numbers page-numbers-bottom">
+                    <li><a href=""><img class="page-prev" src="assets/img/arrow-circle-27.png" alt="previous"></a></li>
+                    <li><a href="">1</a></li>
+                    <li class="pagination-active"><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href=""><img class="page-next" src="assets/img/arrow-circle-28.png" alt="next"></a></li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="hr">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h1>SEO TEXT AREA</h1>
+                  <p class="text-normalize">SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{> footer}}
+
+    {{> htmlscripts}}
+  </body>
+</html>
