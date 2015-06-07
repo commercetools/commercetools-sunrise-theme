@@ -40,4 +40,5 @@ The following text is a more detailed explanation of the executed tasks:
 
 
 To run them all, use the command `grunt build`.
+
 To run them all and watch for changes, use the default command `grunt`.
