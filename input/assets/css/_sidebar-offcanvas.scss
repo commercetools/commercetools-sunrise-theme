@@ -49,7 +49,7 @@
   height: 50px;
   border: none;
   position: absolute;
-  left: -35px;
+  right: -65px;
   top: 50px;
   z-index: 100;
   display: none;
@@ -67,7 +67,7 @@
   }
 }
 
-.row-offcanvas-right.active {
+.row-offcanvas-left.active {
 
   .offcanvas-btn-close {
     display: block;
@@ -142,7 +142,7 @@ select.select {
 
   .row-offcanvas-left
   .sidebar-offcanvas {
-    left: -50%;
+    left: -70%;
   }
 
   .row-offcanvas-right.active {
@@ -150,7 +150,7 @@ select.select {
   }
 
   .row-offcanvas-left.active {
-    left: 50%;
+    left: 80%;
   }
 
   .sidebar-offcanvas {
@@ -165,7 +165,7 @@ select.select {
   }
 }
 
-.row-offcanvas-right.active {
+.row-offcanvas-left.active {
 
   .dark-overlay {
     background: rgba(0, 0, 0, .7);
