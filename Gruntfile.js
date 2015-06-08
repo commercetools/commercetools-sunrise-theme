@@ -3,7 +3,10 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON("package.json"),
 
-    clean: ['output/'],
+    clean: {
+      build: ['output/'],
+      dist: ['*.jar'] 
+    },
 
     copy: {
       dist: {
@@ -124,9 +127,9 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'compile-handlebars']);
-  grunt.registerTask('release', ['build', 'maven']);
-  grunt.registerTask('release-minor', ['build', 'maven:release:minor']);
-  grunt.registerTask('release-major', ['build', 'maven:release:major']);
+  grunt.registerTask('release-patch', ['build', 'maven', 'clean:dist']);
+  grunt.registerTask('release-minor', ['build', 'maven:release:minor', 'clean:dist']);
+  grunt.registerTask('release-major', ['build', 'maven:release:major', 'clean:dist']);
   grunt.registerTask('publish', ['gh-pages-clean', 'build', 'gh-pages']);
 
 };
