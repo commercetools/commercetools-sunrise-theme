@@ -79,7 +79,8 @@ module.exports = function(grunt) {
         groupId: 'io.sphere',
         artifactId: "<%= pkg.name %>",
         version: "<%= pkg.version %>",
-        destFolder: "/META-INF/resources/webjars"
+        destFolder: "/META-INF/resources/webjars",
+        mode: "patch"
       },
       release : {
         options : {
@@ -124,6 +125,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'compile-handlebars']);
   grunt.registerTask('release', ['build', 'maven']);
+  grunt.registerTask('release-minor', ['build', 'maven:release:minor']);
   grunt.registerTask('release-major', ['build', 'maven:release:major']);
   grunt.registerTask('publish', ['gh-pages-clean', 'build', 'gh-pages']);
 
