@@ -112,13 +112,10 @@ module.exports = function(grunt) {
           email: 'automation@commercetools.de'          
         },
         repo: 'https://' + process.env.GH_TOKEN + '@' + process.env.GH_REF,
-        silent: true
+        silent: true,
+        base: 'output'
       },
-      dist: {
-        expand: true,
-        cwd: 'output/',
-        src: ["**/*"]
-      }
+      src: ['assets/**/*', '**/*.html']
     }
 
   });
@@ -137,6 +134,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'compile-handlebars']);
   grunt.registerTask('release', ['build', 'maven']);
-  grunt.registerTask('publish', ['build', 'gh-pages']);
+  grunt.registerTask('publish', ['gh-pages-clean', 'build', 'gh-pages']);
 
 };
