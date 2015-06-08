@@ -25,6 +25,10 @@
 
 `grunt build` to build the generated site
 
+`grunt publish` to publish the generated site to GitHub Pages (requires $GH_TOKEN)
+
+Notice you can always add `--verbose` to the commands in order to obtain more information.
+
 #####Generated site
 
 Once the project is built, the generated site is located in the `output/` folder.
