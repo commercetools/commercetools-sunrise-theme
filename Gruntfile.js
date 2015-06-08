@@ -83,7 +83,7 @@ module.exports = function(grunt) {
         artifactId: "<%= pkg.name %>",
         version: "<%= pkg.version %>",
         destFolder: "/META-INF/resources/webjars",
-        gitPush: true,
+        gitpush: true,
         mode: "patch"
       },
       release : {
