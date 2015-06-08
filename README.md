@@ -49,7 +49,7 @@ Once the project is built, the generated site is located in the `output/` folder
 `grunt sass`
   - Processes `input/assets/css/main.scss` into `output/assets/css/main.min.css`
 
-`grunt autoprefixer`
+`grunt postcss`
   - Adds vendor-prefixed CSS properties to `output/assets/css/main.min.css`
 
 `grunt compile-handlebars`
