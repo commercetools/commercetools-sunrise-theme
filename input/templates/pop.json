@@ -1,431 +1,5 @@
 {
 	"title" : "Sunrise - Product Overview Page",
-	"breadcrumb" : [
-		{
-			"url" : "home/",
-			"name" : "Home"
-		},
-		{
-			"url" : "women/",
-			"name" : "Women"
-		},
-		{
-			"url" : "coats/",
-			"name" : "Coats",
-			"isCurrent" : true
-		}
-	],
-	"filters" : {
-		"title" : "Filters",
-		"clear" : "Clear",
-		"clearAll" : "Clear All",
-		"clearAllFilters" : "clear all filters",
-		"categories" : {
-			"title" : "Product type",
-			"list" : [
-				{
-					"id" : "one",
-					"name" : "Type-1",
-					"isSelected" : true,
-					"children" : [
-						{
-							"name" : "sub-type 1",
-							"value" : "",
-							"isSelected" : true
-						},
-						{
-							"name" : "sub-type 2",
-							"value" : "",
-							"isSelected" : false
-						}
-					]
-				},
-				{
-					"id" : "two",
-					"name" : "Type-2",
-					"isSelected" : false,
-					"children" : [
-						{
-							"name" : "sub-type 1",
-							"value" : "",
-							"isSelected" : false
-						},
-						{
-							"name" : "sub-type 2",
-							"value" : "",
-							"isSelected" : false
-						}
-					]
-				},
-				{
-					"id" : "three",
-					"name" : "Type-3",
-					"isSelected" : false,
-					"children" : [
-						{
-							"name" : "sub-type 1",
-							"value" : "",
-							"isSelected" : false
-						},
-						{
-							"name" : "sub-type 2",
-							"value" : "",
-							"isSelected" : false
-						}
-					]
-				}
-			]
-		},
-		"size" : {
-			"title" : "Size",
-			"list" : [
-				{
-					"name" : "S",
-					"value" : "",
-					"isSelected" : true
-				},
-				{
-					"name" : "M",
-					"value" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "XL",
-					"value" : "",
-					"isSelected" : true
-				},
-				{
-					"name" : "XXL",
-					"value" : "",
-					"isSelected" : false
-				}
-			]
-		},
-		"color" : {
-			"title" : "Color",
-			"list" : [
-				{
-					"name" : "Black",
-					"value" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "Blue",
-					"value" : "",
-					"isSelected" : true
-				},
-				{
-					"name" : "Multi",
-					"value" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "Neutral",
-					"value" : "",
-					"isSelected" : true
-				}
-			]
-		},
-		"price" : {
-			"min" : 25,
-			"max" : 500,
-			"selected" : 50
-		},
-		"brands" : {
-			"title" : "Brands",
-			"list" : [
-				{
-					"name" : "A.P.C",
-					"value" : "",
-					"isSelected" : true
-				},
-				{
-					"name" : "ACNE",
-					"value" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "ALEXANDER MCQUEEN",
-					"value" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "ALEXANDER WANG",
-					"value" : "",
-					"isSelected" : true
-				},
-				{
-					"name" : "ALEXANDER WANG",
-					"value" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "ALEXANDER WANG",
-					"value" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "ALEXANDER WANG",
-					"value" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "ALEXANDER WANG",
-					"value" : "",
-					"isSelected" : false
-				}
-			]
-		}
-	},
-	"productList" : {
-		"title" : "Products",
-		"pagination" : {
-			"currentPage" : 145,
-			"totalPages" : 234,
-			"pageSeparator" : "of",
-			"urlNext" : "",
-			"urlPrev" : "",
-			"pages" : [
-				{
-					"name" : "1",
-					"url" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "2",
-					"url" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "3",
-					"url" : "",
-					"isSelected" : true
-				},
-				{
-					"name" : "4",
-					"url" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "5",
-					"url" : "",
-					"isSelected" : false
-				}
-			]
-		},
-
-		"display" : {
-			"title" : "items per page",
-			"list" : [
-				{
-					"name" : "12",
-					"value" : "12",
-					"isSelected" : false
-				},
-				{
-					"name" : "24",
-					"value" : "24",
-					"isSelected" : true
-				},
-				{
-					"name" : "48",
-					"value" : "48",
-					"isSelected" : false
-				}
-			]
-		},
-		"sort" : {
-			"title" : "Sort by price",
-			"list" : [
-				{
-					"name" : "Low",
-					"value" : "",
-					"isSelected" : false
-				},
-				{
-					"name" : "High",
-					"value" : "",
-					"isSelected" : true
-				}
-			]
-		},
-		"list" : [
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : true,
-				"isNew" : false,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : true,
-				"isNew" : false,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : true,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : true,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : false,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : false,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : false,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : false,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : false,
-				"hasMoreColors" : true
-			}
-		]
-	},
-	"seo" : {
-		"title" : "SEO TEXT AREA",
-		"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
-	},
-	"footer" : {
-		"paySecure" : "Pay securely with these payment methods",
-		"followUs" : "Follow us",
-		"customerCare" : {
-			"title" : "Customer Care",
-			"list" : [
-				{
-					"name" : "Contact us",
-					"url" : ""
-				},
-				{
-					"name" : "Help",
-					"url" : ""
-				},
-				{
-					"name" : "Shipping",
-					"url" : ""
-				},
-				{
-					"name" : "Returns",
-					"url" : ""
-				},
-				{
-					"name" : "Size Guide",
-					"url" : ""
-				}
-			]
-		},
-		"aboutUs" : {
-			"title" : "About Us",
-			"list" : [
-				{
-					"name" : "Our Story",
-					"url" : ""
-				},
-				{
-					"name" : "Careers",
-					"url" : ""
-				}
-			]
-		},
-		"shortcuts" : {
-			"title" : "Shortcuts",
-			"list" : [
-				{
-					"name" : "My Account",
-					"url" : ""
-				},
-				{
-					"name" : "Store Locator",
-					"url" : ""
-				},
-				{
-					"name" : "Gift Cards",
-					"url" : ""
-				},
-				{
-					"name" : "Payment",
-					"url" : ""
-				}
-			]
-		},
-		"legalInfo" : {
-			"title" : "&copy; 2015 Sunrise",
-			"list" : [
-				{
-					"name" : "Imprint",
-					"url" : ""
-				},
-				{
-					"name" : "Privacy policy",
-					"url" : ""
-				},
-				{
-					"name" : "Terms of use",
-					"url" : ""
-				}
-			]
-		}
-	},
 	"header" : {
 		"stores" : {
 			"title" : "STORES",
@@ -994,16 +568,441 @@
 				]
 			}
 		}
+	},	
+	"footer" : {
+		"paySecure" : "Pay securely with these payment methods",
+		"followUs" : "Follow us",
+		"customerCare" : {
+			"title" : "Customer Care",
+			"list" : [
+				{
+					"name" : "Contact us",
+					"url" : ""
+				},
+				{
+					"name" : "Help",
+					"url" : ""
+				},
+				{
+					"name" : "Shipping",
+					"url" : ""
+				},
+				{
+					"name" : "Returns",
+					"url" : ""
+				},
+				{
+					"name" : "Size Guide",
+					"url" : ""
+				}
+			]
+		},
+		"aboutUs" : {
+			"title" : "About Us",
+			"list" : [
+				{
+					"name" : "Our Story",
+					"url" : ""
+				},
+				{
+					"name" : "Careers",
+					"url" : ""
+				}
+			]
+		},
+		"shortcuts" : {
+			"title" : "Shortcuts",
+			"list" : [
+				{
+					"name" : "My Account",
+					"url" : ""
+				},
+				{
+					"name" : "Store Locator",
+					"url" : ""
+				},
+				{
+					"name" : "Gift Cards",
+					"url" : ""
+				},
+				{
+					"name" : "Payment",
+					"url" : ""
+				}
+			]
+		},
+		"legalInfo" : {
+			"title" : "&copy; 2015 Sunrise",
+			"list" : [
+				{
+					"name" : "Imprint",
+					"url" : ""
+				},
+				{
+					"name" : "Privacy policy",
+					"url" : ""
+				},
+				{
+					"name" : "Terms of use",
+					"url" : ""
+				}
+			]
+		}
 	},
-	"figure" : {
-		"title" : "Women",
-		"text" : "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
-		"image-mobile" : "assets/img/banner_mobile.jpg",
-		"image-desktop" : "assets/img/banner_desktop.jpg"
-	},
-	"jumbotron" : {
-		"title" : "Coats",
-		"text" : "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
-		"categories" : "Women"
+	"seo" : {
+		"title" : "SEO TEXT AREA",
+		"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+	},	
+	"page" : {
+		"title" : "Products",
+		"banner" : {
+			"title" : "Women",
+			"text" : "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
+			"imageMobile" : "assets/img/banner_mobile.jpg",
+			"imageDesktop" : "assets/img/banner_desktop.jpg"
+		},
+		"jumbotron" : {
+			"title" : "Coats",
+			"text" : "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
+			"category" : "Women"
+		},
+		"breadcrumb" : [
+			{
+				"url" : "home/",
+				"name" : "Home"
+			},
+			{
+				"url" : "women/",
+				"name" : "Women"
+			},
+			{
+				"url" : "coats/",
+				"name" : "Coats",
+				"isCurrent" : true
+			}
+		],		
+		"filters" : {
+			"title" : "Filters",
+			"clear" : "Clear",
+			"clearAll" : "Clear All",
+			"clearAllFilters" : "clear all filters",
+			"categories" : {
+				"title" : "Product type",
+				"list" : [
+					{
+						"id" : "one",
+						"name" : "Type-1",
+						"isSelected" : true,
+						"children" : [
+							{
+								"name" : "sub-type 1",
+								"value" : "",
+								"isSelected" : true
+							},
+							{
+								"name" : "sub-type 2",
+								"value" : "",
+								"isSelected" : false
+							}
+						]
+					},
+					{
+						"id" : "two",
+						"name" : "Type-2",
+						"isSelected" : false,
+						"children" : [
+							{
+								"name" : "sub-type 1",
+								"value" : "",
+								"isSelected" : false
+							},
+							{
+								"name" : "sub-type 2",
+								"value" : "",
+								"isSelected" : false
+							}
+						]
+					},
+					{
+						"id" : "three",
+						"name" : "Type-3",
+						"isSelected" : false,
+						"children" : [
+							{
+								"name" : "sub-type 1",
+								"value" : "",
+								"isSelected" : false
+							},
+							{
+								"name" : "sub-type 2",
+								"value" : "",
+								"isSelected" : false
+							}
+						]
+					}
+				]
+			},
+			"size" : {
+				"title" : "Size",
+				"list" : [
+					{
+						"name" : "S",
+						"value" : "",
+						"isSelected" : true
+					},
+					{
+						"name" : "M",
+						"value" : "",
+						"isSelected" : false
+					},
+					{
+						"name" : "XL",
+						"value" : "",
+						"isSelected" : true
+					},
+					{
+						"name" : "XXL",
+						"value" : "",
+						"isSelected" : false
+					}
+				]
+			},
+			"color" : {
+				"title" : "Color",
+				"list" : [
+					{
+						"name" : "Black",
+						"value" : "",
+						"isSelected" : false
+					},
+					{
+						"name" : "Blue",
+						"value" : "",
+						"isSelected" : true
+					},
+					{
+						"name" : "Multi",
+						"value" : "",
+						"isSelected" : false
+					},
+					{
+						"name" : "Neutral",
+						"value" : "",
+						"isSelected" : true
+					}
+				]
+			},
+			"price" : {
+				"min" : 25,
+				"max" : 500,
+				"selected" : 50
+			},
+			"brands" : {
+				"title" : "Brands",
+				"list" : [
+					{
+						"name" : "A.P.C",
+						"value" : "",
+						"isSelected" : true
+					},
+					{
+						"name" : "ACNE",
+						"value" : "",
+						"isSelected" : false
+					},
+					{
+						"name" : "ALEXANDER MCQUEEN",
+						"value" : "",
+						"isSelected" : false
+					},
+					{
+						"name" : "ALEXANDER WANG",
+						"value" : "",
+						"isSelected" : true
+					},
+					{
+						"name" : "ALEXANDER WANG",
+						"value" : "",
+						"isSelected" : false
+					},
+					{
+						"name" : "ALEXANDER WANG",
+						"value" : "",
+						"isSelected" : false
+					},
+					{
+						"name" : "ALEXANDER WANG",
+						"value" : "",
+						"isSelected" : false
+					},
+					{
+						"name" : "ALEXANDER WANG",
+						"value" : "",
+						"isSelected" : false
+					}
+				]
+			}
+		},		
+		"pagination" : {
+			"currentPage" : 145,
+			"totalPages" : 234,
+			"pageSeparator" : "of",
+			"urlNext" : "",
+			"urlPrev" : "",
+			"pages" : [
+				{
+					"name" : "1",
+					"url" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "2",
+					"url" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "3",
+					"url" : "",
+					"isSelected" : true
+				},
+				{
+					"name" : "4",
+					"url" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "5",
+					"url" : "",
+					"isSelected" : false
+				}
+			]
+		},
+		"display" : {
+			"title" : "items per page",
+			"list" : [
+				{
+					"name" : "12",
+					"value" : "12",
+					"isSelected" : false
+				},
+				{
+					"name" : "24",
+					"value" : "24",
+					"isSelected" : true
+				},
+				{
+					"name" : "48",
+					"value" : "48",
+					"isSelected" : false
+				}
+			]
+		},
+		"sort" : {
+			"title" : "Sort by price",
+			"list" : [
+				{
+					"name" : "Low",
+					"value" : "",
+					"isSelected" : false
+				},
+				{
+					"name" : "High",
+					"value" : "",
+					"isSelected" : true
+				}
+			]
+		},
+		"products" : [
+			{
+				"name" : "Enditatem Product Name Optional Line Two",
+				"image" : "assets/img/blue-jacket.jpg",
+				"price" : "&euro;250,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : true,
+				"isNew" : false,
+				"hasMoreColors" : true
+			},
+			{
+				"name" : "Enditatem Product Name Optional Line Two",
+				"image" : "assets/img/blue-jacket.jpg",
+				"price" : "&euro;250,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : true,
+				"isNew" : false,
+				"hasMoreColors" : true
+			},
+			{
+				"name" : "Enditatem Product Name Optional Line Two",
+				"image" : "assets/img/blue-jacket.jpg",
+				"price" : "&euro;250,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : false,
+				"isNew" : true,
+				"hasMoreColors" : true
+			},
+			{
+				"name" : "Enditatem Product Name Optional Line Two",
+				"image" : "assets/img/blue-jacket.jpg",
+				"price" : "&euro;250,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : false,
+				"isNew" : true,
+				"hasMoreColors" : true
+			},
+			{
+				"name" : "Enditatem Product Name Optional Line Two",
+				"image" : "assets/img/blue-jacket.jpg",
+				"price" : "&euro;250,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : false,
+				"isNew" : false,
+				"hasMoreColors" : true
+			},
+			{
+				"name" : "Enditatem Product Name Optional Line Two",
+				"image" : "assets/img/blue-jacket.jpg",
+				"price" : "&euro;250,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : false,
+				"isNew" : false,
+				"hasMoreColors" : true
+			},
+			{
+				"name" : "Enditatem Product Name Optional Line Two",
+				"image" : "assets/img/blue-jacket.jpg",
+				"price" : "&euro;250,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : false,
+				"isNew" : false,
+				"hasMoreColors" : true
+			},
+			{
+				"name" : "Enditatem Product Name Optional Line Two",
+				"image" : "assets/img/blue-jacket.jpg",
+				"price" : "&euro;250,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : false,
+				"isNew" : false,
+				"hasMoreColors" : true
+			},
+			{
+				"name" : "Enditatem Product Name Optional Line Two",
+				"image" : "assets/img/blue-jacket.jpg",
+				"price" : "&euro;250,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : false,
+				"isNew" : false,
+				"hasMoreColors" : true
+			}
+		]
 	}
 }
