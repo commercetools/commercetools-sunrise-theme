@@ -4,13 +4,9 @@ node_js: "0.12.2"
 before_install:
   - npm install -g grunt-cli
   - gem install sass
-  - gem install compass
 
 install:
   - npm install
-
-before_script:
-  - grunt build
 
 script:
   - grunt publish
