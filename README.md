@@ -34,11 +34,14 @@ The following text is a more detailed explanation of the executed tasks:
 `grunt sass`
   - Processes `input/assets/css/main.scss` into `output/assets/css/main.min.css`
 
+`grunt autoprefixer`
+  - Adds vendor-prefixed CSS properties to `output/assets/css/main.min.css`
 
 `grunt compile-handlebars`
   - Generates HTML files from the Handlebars templates and JSON data defined in `input/templates/` and the partial templates defined in `input/templates/partials/` into `output/`
 
+###Commands
 
-To run them all, use the command `grunt build`.
+`grunt` to generate the site and watch for changes
 
-To run them all and watch for changes, use the default command `grunt`.
+`grunt build` to only generate the site
