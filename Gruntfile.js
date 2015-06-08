@@ -102,7 +102,25 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+
+    'gh-pages': {
+      options: {
+        message: "Deploy to GitHub Pages",
+        user: {
+          name: 'automation-commercetools',
+          email: 'automation@commercetools.de'          
+        },
+        repo: 'https://' + process.env.GH_TOKEN + '@' + process.env.GH_REF,
+        silent: true
+      },
+      dist: {
+        expand: true,
+        cwd: 'output/',
+        src: ["**/*.html", "assets/**/*"]
+      }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -114,9 +132,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-maven-tasks');
   grunt.loadNpmTasks('grunt-bintray-deploy');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'compile-handlebars']);
   grunt.registerTask('release', ['build', 'maven']);
+  grunt.registerTask('publish', ['build', 'gh-pages']);
 
 };

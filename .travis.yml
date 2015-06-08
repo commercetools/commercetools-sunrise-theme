@@ -13,7 +13,7 @@ before_script:
   - grunt build
 
 script:
-  - bash ./deploy.sh
+  - grunt publish
 
 env:
   global:
