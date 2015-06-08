@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/sphereio/sphere-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/sphere-sunrise-design)
 
-###Requirements
+###Installation
 
 - Install [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/)
 - Install [Sass](http://sass-lang.com/install)
@@ -13,8 +13,15 @@
 
 ###Usage
 
-As a general rule, just run `grunt` in the project root in order to generate the `output` folder with the generated site.
-The following text is a more detailed explanation of the executed tasks:
+`grunt` to build the generated site and watch for changes
+
+`grunt build` to build the generated site
+
+#####Generated site
+
+Once the project is built, the generated site is located in the `output/` folder.
+
+#####Executed tasks
 
 `grunt clean`
   - Removes the `output/` folder with the generate site
@@ -39,9 +46,3 @@ The following text is a more detailed explanation of the executed tasks:
 
 `grunt compile-handlebars`
   - Generates HTML files from the Handlebars templates and JSON data defined in `input/templates/` and the partial templates defined in `input/templates/partials/` into `output/`
-
-###Commands
-
-`grunt` to generate the site and watch for changes
-
-`grunt build` to only generate the site
