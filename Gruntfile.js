@@ -83,13 +83,14 @@ module.exports = function(grunt) {
         artifactId: "<%= pkg.name %>",
         version: "<%= pkg.version %>",
         destFolder: "/META-INF/resources/webjars",
+        gitPush: true,
         mode: "patch"
       },
       release : {
         options : {
           goal: "release",
           repositoryId: "commercetools-bintray",
-          url: "https://api.bintray.com/maven/commercetools/maven/<%= pkg.name %>"
+          url: "https://api.bintray.com/maven/commercetools/maven/<%= pkg.name %>;publish=1"
         },
         files: [
           { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
