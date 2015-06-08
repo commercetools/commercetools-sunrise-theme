@@ -13,5 +13,4 @@ script:
 
 env:
   global:
-  - GH_REF: github.com/sphereio/sphere-sunrise-design.git
   - secure: WKGlYM5brTh7EdrWryBYVjm4MjN16QjN4le2j+mUIoDO5sOGmDwTuUIYexdrT9zwhuxH2x9QqA1j+2cF9eRShMT7Bl/StsEzEI3Kidd1FZUZ4ufjhq73ASjYkCc4owUKobp+eLNMh4Y5KYjRJVTgK6sEPM2DJnNHG8N1nEI4ESg=

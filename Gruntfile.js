@@ -81,25 +81,15 @@ module.exports = function(grunt) {
         version: "<%= pkg.version %>",
         destFolder: "/META-INF/resources/webjars"
       },
-      deploy : {
+      release : {
         options : {
-          goal: "deploy",
+          goal: "release",
           repositoryId: "commercetools-bintray",
           url: "https://api.bintray.com/maven/commercetools/maven/<%= pkg.name %>"
         },
         files: [
-          {
-            expand: true,
-            cwd: 'output/assets/',
-            src: "**/*",
-            filter: "isFile"
-          },
-          {
-            expand: true,
-            cwd: 'output/',
-            src: "templates/**/*",
-            filter: "isFile"
-          }
+          { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
+          { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" }
         ]
       }
     },
@@ -111,7 +101,7 @@ module.exports = function(grunt) {
           name: 'automation-commercetools',
           email: 'automation@commercetools.de'          
         },
-        repo: 'https://' + process.env.GH_TOKEN + '@' + process.env.GH_REF,
+        repo: 'https://' + process.env.GH_TOKEN + '@github.com/sphereio/sphere-sunrise-design.git',
         silent: true,
         base: 'output'
       },
@@ -134,6 +124,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'compile-handlebars']);
   grunt.registerTask('release', ['build', 'maven']);
+  grunt.registerTask('release-major', ['build', 'maven:release:major']);
   grunt.registerTask('publish', ['gh-pages-clean', 'build', 'gh-pages']);
 
 };
