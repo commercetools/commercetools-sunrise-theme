@@ -1,6 +1,6 @@
 {
   "name": "sphere-sunrise-design",
-  "version": "0.0.9-SNAPSHOT",
+  "version": "0.0.9",
   "description": "Compiles Handlebars templates with JSON data, outputting static HTML files.",
   "main": "Gruntfile.js",
   "repository": {
