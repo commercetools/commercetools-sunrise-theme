@@ -31,7 +31,7 @@
 
 `grunt release-[patch|minor|major]` to release the current version to the Maven Bintray repository and prepare a new version (requires commercetools-bintray repository ID in settings.xml)
 
-Notice you can always add `--verbose` to the commands in order to obtain more information.
+Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
 #####Generated site
 
