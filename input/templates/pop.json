@@ -9,7 +9,10 @@
 			"title" : "HELP",
 			"url" : ""
 		},
-		"callUs" : "CALL US ON +44 123 456 000",
+		"callUs" : {
+			"title" : "CALL US ON +44 123 456 000",
+			"url" : ""
+		},
 		"languages" : {
 			"title" : "Language",
 			"list" : [
@@ -568,7 +571,7 @@
 				]
 			}
 		}
-	},	
+	},
 	"footer" : {
 		"paySecure" : "Pay securely with these payment methods",
 		"followUs" : "Follow us",
@@ -652,7 +655,7 @@
 	"seo" : {
 		"title" : "SEO TEXT AREA",
 		"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
-	},	
+	},
 	"page" : {
 		"title" : "Products",
 		"banner" : {
@@ -680,7 +683,7 @@
 				"name" : "Coats",
 				"isCurrent" : true
 			}
-		],		
+		],
 		"filters" : {
 			"title" : "Filters",
 			"clear" : "Clear",
@@ -842,7 +845,7 @@
 					}
 				]
 			}
-		},		
+		},
 		"pagination" : {
 			"currentPage" : 145,
 			"totalPages" : 234,
