@@ -123,7 +123,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-compile-handlebars');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-maven-tasks');
-  grunt.loadNpmTasks('grunt-bintray-deploy');
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['build', 'watch']);
