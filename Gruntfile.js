@@ -84,8 +84,7 @@ module.exports = function(grunt) {
         version: "<%= pkg.version %>",
         destFolder: "/META-INF/resources/webjars",
         gitpush: true,
-        mode: "patch",
-        classifier: "webjar"
+        mode: "patch"
       },
       release : {
         options : {
@@ -97,7 +96,7 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
           { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" }
         ]
-      }
+      }      
     },
 
     'gh-pages': {
