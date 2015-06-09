@@ -84,7 +84,8 @@ module.exports = function(grunt) {
         version: "<%= pkg.version %>",
         destFolder: "/META-INF/resources/webjars",
         gitpush: true,
-        mode: "patch"
+        mode: "patch",
+        classifier: "webjar"
       },
       release : {
         options : {
