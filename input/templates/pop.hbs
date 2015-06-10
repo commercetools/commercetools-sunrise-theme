@@ -8,8 +8,6 @@
   <body>
     {{> header}}
 
-    {{> breadcrumb}}
-
     <div class="pop-page">
       <div id="pop-page" class="container">
         <div class="row">
@@ -26,17 +24,7 @@
         </div>
         <div class="row row-offcanvas row-offcanvas-left">
           <div class="col-xs-12">
-            <ol class="breadcrumb">
-            	<li >
-            		<a href="home/">Home</a>
-            	</li>
-            	<li >
-            		<a href="women/">Women</a>
-            	</li>
-            	<li class="active">
-            		<a href="coats/">Coats</a>
-            	</li>
-            </ol>
+            {{> breadcrumb}}
           </div>
           <div class="product-filter">
             <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
@@ -44,8 +32,11 @@
               <div class="row">
                 <div class="col-sm-12">
                   <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-sm-8">
                       <p><b>Filter Products</b></p>
+                    </div>
+                    <div class="col-sm-4 hidden-xs">
+                      <a href="#" class="text-right clear-btn">Clear all</a>
                     </div>
                   </div>
                   <hr class="hr">
@@ -236,8 +227,11 @@
                   </div>
                   <hr class="hr">
                   <div class="row price-box">
-                    <div class="col-sm-12">
+                    <div class="col-xs-8">
                       Price
+                    </div>
+                    <div class="col-xs-4">
+                      <a href="#" class="text-right clear-btn">Clear</a>
                     </div>
                   </div>
                   <div class="row">
@@ -382,19 +376,16 @@
                           </select>
                         </li>
                         <li class="pull-left"><p class="item-count">12 of 234</p></li>
-                        <li class="pull-right"><button type="button" class="offcanvas-btn offcanvas-btn-sort icon-multiple"><span class="sr-only">multiple view</span></button></li>
-                        <li class="pull-right"><button type="button" class="offcanvas-btn offcanvas-btn-sort icon-single"><span class="sr-only">single view</span></button></li>
                       </ul>
                     </div>
                   </div>
                   <hr class="hr hidden-xs">
                   <div class="row hidden-xs item-list-pagination">
                     <div class="col-xs-4 text-left">
-                      <span class="hidden-sm">Sort by</span>
                       <div class="styled-select icon-drop-down">
                         <select class="select">
-                          <option value="low">Low</option>
-                          <option value="high">High</option>
+                          <option value="low">Sort: Low</option>
+                          <option value="high">Sort: High</option>
                           <option value="long text">long text</option>
                         </select>
                       </div>
@@ -423,7 +414,7 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-4 col-xs-6">
+                    <div class="col-sm-4">
                         <div class="shop-item">
                           <div class="row">
                             <div class="col-xs-12">
@@ -451,7 +442,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-sm-4 col-xs-6">
+                    <div class="col-sm-4">
                       <a href="#">
                         <div class="shop-item">
                           <div class="row">
@@ -481,7 +472,7 @@
                         </div>
                       </a>
                     </div>
-                    <div class="col-sm-4 hidden-xs">
+                    <div class="col-sm-4">
                       <a href="#">
                         <div class="shop-item">
                           <div class="row">
@@ -513,7 +504,7 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-4 col-xs-6">
+                    <div class="col-sm-4">
                       <a href="#">
                         <div class="shop-item">
                           <div class="row">
@@ -542,7 +533,7 @@
                         </div>
                       </a>
                     </div>
-                    <div class="col-sm-4 col-xs-6">
+                    <div class="col-sm-4">
                       <a href="#">
                         <div class="shop-item">
                           <div class="row">
@@ -570,7 +561,7 @@
                         </div>
                       </a>
                     </div>
-                    <div class="col-sm-4 hidden-xs">
+                    <div class="col-sm-4">
                       <a href="#">
                         <div class="shop-item">
                           <div class="row">
@@ -600,7 +591,7 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-4 col-xs-6">
+                    <div class="col-sm-4">
                       <a href="#">
                         <div class="shop-item">
                           <div class="row">
@@ -628,7 +619,7 @@
                         </div>
                       </a>
                     </div>
-                    <div class="col-sm-4 col-xs-6">
+                    <div class="col-sm-4">
                       <a href="#">
                         <div class="shop-item">
                           <div class="row">
@@ -656,7 +647,7 @@
                         </div>
                       </a>
                     </div>
-                    <div class="col-sm-4 hidden-xs">
+                    <div class="col-sm-4">
                       <a href="#">
                         <div class="shop-item">
                           <div class="row">
