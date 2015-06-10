@@ -49,7 +49,7 @@
     font-weight: 400;
   }
   a:hover {
-    color: $light-grey;
+    color: $dark-grey;
   }
 }
 
@@ -86,12 +86,10 @@
 }
 
 .ui-slider-horizontal .ui-slider-handle {
-  top: -0.3em;
+  top: -0.5em;
   border-radius: 50%;
   background: $dark-blue;
   border: none;
-  width: 1em;
-  height: 1em;
 }
 
 .ui-slider-range {
@@ -242,7 +240,7 @@ a.clear-btn {
 }
 
 .quicklook-btn {
-  margin-top: 50%;
+  margin-top: 40%;
   height: 45px;
   opacity: 0.9;
 }
