@@ -17,10 +17,8 @@
     "url": "https://github.com/sphereio/sphere-sunrise-design/issues"
   },
   "homepage": "https://github.com/sphereio/sphere-sunrise-design#readme",
-  "dependencies": {
-    "grunt": "^0.4.5"
-  },
   "devDependencies": {
+    "grunt": "^0.4.5",
     "autoprefixer-core": "^5.2.0",
     "grunt-compile-handlebars": "^2.0.0",
     "grunt-contrib-clean": "^0.6.0",
