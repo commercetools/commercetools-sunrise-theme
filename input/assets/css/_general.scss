@@ -108,5 +108,6 @@ button {
     right: 10px;
     color: $dark-grey;
 		transform: scale(0.7);
+		pointer-events: none;
    }
 }

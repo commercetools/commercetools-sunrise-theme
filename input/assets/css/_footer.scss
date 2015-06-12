@@ -43,19 +43,28 @@
 }
 
 .email-box {
-  width: 200px;
-  color: $white;
+  height: 40px;
+  width: 100%;
   background: $black;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 2px;
   padding: 0.5em 0.5em;
 }
 
-.email-submit input {
-  background: url(../../assets/img/arrow-28-32.png) no-repeat 177px 2px $black;
-  background-size: 16px;
-  padding: 0 1em;
+.email-submit {
+  .search-button {
+    outline: none;
+    background: none;
+    border: none;
+    position: absolute;
+    top: -1px;
+    right: 12px;
+    font-size: 26px;
+    color: $white;
+    padding: 8px 10px 8px 20px;
+    line-height: 10px;
   }
+}
 
 .card-info {
   padding-top: 2.5em;
@@ -67,7 +76,7 @@
 
 .footer-title-yellow {
   color: $yellow;
-  text-align: center;
+  padding-top: 0.7em;
 }
 
 .social-icons li {
@@ -76,6 +85,7 @@
 
 .social-icon {
   max-height: 20px;
+  padding-right: 0.5em;
 }
 
 .imprint-row  {
@@ -85,4 +95,20 @@
       display: inline;
       padding: 0 1em 0 0;
     }
+}
+
+.footer-col ul:after {
+    position: absolute;
+    content: " ";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 15em;
+    border-right: solid 1px $white;
+}
+
+.footer-col ul{
+    position: relative;
+    float: left;
+    padding-right: 2.5em;
 }

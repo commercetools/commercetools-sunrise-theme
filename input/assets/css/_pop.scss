@@ -205,6 +205,10 @@ a.clear-btn {
   color: $black;
 }
 
+.more-colors {
+  padding-bottom: 0.5em;
+}
+
 .sale-flag {
   height: 3em;
   width: 3em;
@@ -245,7 +249,7 @@ a.clear-btn {
 
 .quicklook-btn {
   margin-top: 40%;
-  height: 45px;
+  height: 40px;
   opacity: 0.9;
 }
 
@@ -277,7 +281,7 @@ a.clear-btn {
   text-align: center;
   text-transform: none;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 /*****************************************************************************/
@@ -382,5 +386,27 @@ a.clear-btn {
   #sidebar {
     padding-left: 3em;
     padding-right: 2em;
+  }
+  .footer-title-yellow {
+    margin-left: 1em;
+  }
+  .footer-col {
+    text-align: left;
+  }
+  .card-info {
+    text-align: left;
+    margin-left: 1em;
+  }
+  .payment-cards {
+    margin-left: 0;
+  }
+  .email-submit {
+    padding: 0 1em;
+    .search-button {
+      right: 25px;
+    }
+  }
+  .container .jumbotron {
+    border: none;
   }
 }
