@@ -9,7 +9,7 @@ install:
   - npm install
 
 script:
-  - grunt publish
+  - if [ "$TRAVIS_BRANCH"  = "master" ]; then grunt publish; fi
 
 env:
   global:
