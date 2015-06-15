@@ -409,4 +409,15 @@ a.clear-btn {
   .container .jumbotron {
     border: none;
   }
+
+  // Banner image
+  figure.figure-banner figcaption.figcaption-banner-text {
+    bottom: 0;
+  }
+  figure.figure-banner {
+    margin-top: 0;
+  }
+  .figure-col {
+    padding: 0;
+  }
 }

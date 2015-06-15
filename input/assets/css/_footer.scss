@@ -97,18 +97,21 @@
     }
 }
 
-.footer-col ul:after {
-    position: absolute;
-    content: " ";
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 15em;
-    border-right: solid 1px $white;
-}
+@media screen and (min-width: 992px) {
+  .footer-col ul:after {
+      position: absolute;
+      content: " ";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 15em;
+      border-right: solid 1px $white;
+      opacity: 0.1;
+  }
 
-.footer-col ul{
-    position: relative;
-    float: left;
-    padding-right: 2.5em;
+  .footer-col ul{
+      position: relative;
+      float: left;
+      padding-right: 2.5em;
+  }
 }
