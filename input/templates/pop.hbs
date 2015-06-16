@@ -13,11 +13,11 @@
         <div class="row">
           <div class="col-xs-12 figure-col">
             <figure class="figure-banner">
-              <img class="img-responsive hidden-sm hidden-md hidden-lg" src="assets/img/banner_mobile.jpg" alt="Women">
-              <img class="img-responsive hidden-xs" src="assets/img/banner_desktop.jpg" alt="Women">
+              <img class="img-responsive hidden-sm hidden-md hidden-lg" src="{{page.banner.imageMobile}}" alt="Women">
+              <img class="img-responsive hidden-xs" src="{{page.banner.imageDesktop}}" alt="Women">
                 <figcaption class="figcaption-banner-text">
-                  <h2>Women</h2>
-                  <h3>Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.</h3>
+                  <h2>{{page.banner.title}}</h2>
+                  <h3>{{page.banner.text}}</h3>
                 </figcaption>
             </figure>
           </div>
@@ -33,194 +33,74 @@
                 <div class="col-sm-12">
                   <div class="row">
                     <div class="col-sm-12 ">
-                      <p class="filter-products"><b>Filter Products</b></p>
+                      <p class="filter-products"><b>{{page.filters.title}}</b></p>
                     </div>
                   </div>
                   <hr class="hr">
                   <div class="row product-type">
                     <div class="col-xs-8 text-left">
-                      <p>Product type</p>
+                      {{page.filters.categories.title}}
                     </div>
                     <div class="col-xs-4">
-                      <a href="#" class="text-right clear-btn">Clear</a>
+                      <a href="#" class="text-right clear-btn">{{page.filters.clear}}</a>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-one">
-                            <h4 class="panel-title">
-                              <a class="" data-toggle="collapse" data-parent="#accordion" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
-                                Beachwear
-                              </a>
-                            </h4>
-                          </div>
-                          <div id="collapse-one" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading-one">
-                            <div class="panel-body">
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" value="">
-                                  Capes
-                                </label>
-                              </div>
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" value="">
-                                  Short
-                                </label>
-                              </div>
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" value="">
-                                  Long
-                                </label>
-                              </div>
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" value="">
-                                  Medium short
-                                </label>
+                        {{#each page.filters.categories.list}}
+                          <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading-one">
+                              <h4 class="panel-title">
+                                <a class="" data-toggle="collapse" data-parent="#accordion" href="#{{id}}" aria-expanded="true" aria-controls="collapse-one">
+                                  {{name}}
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="{{id}}" class="panel-collapse collapse {{#if isSelected}}in{{/if}}" role="tabpanel" aria-labelledby="heading-one">
+                              <div class="panel-body">
+                                {{#each children}}
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox" value="{{value}}" {{#if isSelected}}checked{{/if}}>
+                                      {{name}}
+                                    </label>
+                                  </div>
+                                {{/each}}
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-two">
-                            <h4 class="panel-title">
-                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-two" aria-expanded="true" aria-controls="collapse-two">
-                                Denim
-                              </a>
-                            </h4>
-                          </div>
-                          <div id="collapse-two" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-two">
-                            <div class="panel-body">
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" value="">
-                                  sub-type 1
-                                </label>
-                              </div>
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" value="">
-                                  sub-type 2
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="panel panel-default">
-                          <div class="panel-heading" role="tab" id="heading-three">
-                            <h4 class="panel-title">
-                              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
-                                Jackets
-                              </a>
-                            </h4>
-                          </div>
-                          <div id="collapse-three" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-three">
-                            <div class="panel-body">
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" value="">
-                                  sub-type 1
-                                </label>
-                              </div>
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" value="">
-                                  Tiny little long text
-                                </label>
-                              </div>
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" value="">
-                                  sub-type 2
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        {{/each}}
                       </div>
                     </div>
                   </div>
                   <hr class="hr">
                   <div class="row size-box">
                     <div class="col-xs-8 text-left">
-                      Size
+                      {{page.filters.size.title}}
                     </div>
                     <div class="col-xs-4">
-                      <a href="#" class="text-right clear-btn">Clear</a>
+                      <a href="#" class="text-right clear-btn">{{page.filters.clear}}</a>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox" value="">
-                          S
-                        </label>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox" value="">
-                          M
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-xs-6">
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox" value="">
-                          XL
-                        </label>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox" value="">
-                          XXL
-                        </label>
-                      </div>
-                    </div>
+                  <div class="pop-filter-size">
+                    {{#each page.filters.size.list}}
+                      <input type="checkbox" value="{{value}}" {{#if isSelected}}checked{{/if}}><label>{{name}}</label><br>
+                    {{/each}}
                   </div>
                   <hr class="hr">
                   <div class="row color-box">
                     <div class="col-xs-8 text-left">
-                      Color
+                      {{page.filters.color.title}}
                     </div>
                     <div class="col-xs-4">
-                      <a href="#" class="text-right clear-btn">Clear</a>
+                      <a href="#" class="text-right clear-btn">{{page.filters.clear}}</a>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox" value="">
-                          Black
-                        </label>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox" value="">
-                          Blue
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-xs-6">
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox" value="">
-                          Multi
-                        </label>
-                      </div>
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox" value="">
-                          Neutral
-                        </label>
-                      </div>
-                    </div>
+                  <div class="pop-filter-color">
+                    {{#each page.filters.color.list}}
+                      <input type="checkbox" value="{{value}}" {{#if isSelected}}checked{{/if}}><label>{{name}}</label><br>
+                    {{/each}}
                   </div>
                   <hr class="hr">
                   <div class="row price-box">
@@ -228,7 +108,7 @@
                       Price
                     </div>
                     <div class="col-xs-4">
-                      <a href="#" class="text-right clear-btn">Clear</a>
+                      <a href="#" class="text-right clear-btn">{{page.filters.clear}}</a>
                     </div>
                   </div>
                   <div class="row">
@@ -238,112 +118,22 @@
                     </div>
                   </div>
                   <hr class="hr">
-                  <div class="row designer-box">
+                  <div class="row brands-box">
                     <div class="col-xs-8 text-left">
-                      Brands
+                      {{page.filters.brands.title}}
                     </div>
                     <div class="col-xs-4">
-                      <a href="#" class="text-right clear-btn">Clear</a>
+                      <a href="#" class="text-right clear-btn">{{page.filters.clear}}</a>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
-                      <div class="designer-list">
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> A.P.C
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> ACNE
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> ACRONYM
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> ALEXANDER MCQUEEN
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Ami
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Apolis
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Arcteryx Veilance
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Arpenteur
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Aspesi
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Baracuta
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Barbour
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Barena
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Battenwear
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Beams Plus
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Beauty & Youth
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Belstaff
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Bleu de paname
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Canada goose
-                          </label>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Carhartt
-                          </label>
-                        </div>
+                      <div class="brands-list">
+                        {{#each page.filters.brands.list}}
+                          <div class="checkbox">
+                            <input id="brands-checkbox" type="checkbox" {{#if isSelected}}checked{{/if}}><label>{{name}}</label>
+                          </div>
+                        {{/each}}
                       </div>
                     </div>
                   </div>
@@ -356,9 +146,9 @@
                   <div class="row">
                     <div class="col-xs-12">
                       <div class="jumbotron">
-                        <p>Women</p>
-                        <h2>Coats</h2>
-                        <h3>Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.</h3>
+                        <p>{{page.jumbotron.category}}</p>
+                        <h2>{{page.jumbotron.title}}</h2>
+                        <h3>{{page.jumbotron.text}}</h3>
                       </div>
                     </div>
                   </div>
@@ -368,8 +158,9 @@
                         <li class="pull-left"><button type="button" class="offcanvas-btn offcanvas-open" data-toggle="offcanvas">Filter</button></li>
                         <li class="pull-left">
                           <select class="select">
-                            <option value="Sort: low">Sort by: low</option>
-                            <option value="Sort: high">Sort by: high</option>
+                            {{#each page.sort.list}}
+                              <option value="{{value}}" {{#if isSelected}}selected{{/if}}>{{name}}</option>
+                            {{/each}}
                           </select>
                         </li>
                         <li class="pull-left"><p class="item-count">12 of 234</p></li>
@@ -381,31 +172,29 @@
                     <div class="col-xs-4 text-left">
                       <div class="styled-select icon-drop-down">
                         <select class="select">
-                          <option value="low">Sort by: Low</option>
-                          <option value="high">Sort by: High</option>
-                          <option value="long text">long text</option>
+                          {{#each page.sort.list}}
+                            <option value="{{value}}" {{#if isSelected}}selected{{/if}}>{{name}}</option>
+                          {{/each}}
                         </select>
                       </div>
                      <p class="item-count">12 of 234</p>
                     </div>
                     <div class="col-xs-4 text-center pagination">
                       <ul class="page-numbers">
-                        <li><a href="#" class="icon-prev"><span class="sr-only">Previous</span></a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#" class="active">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#" class="icon-next"><span class="sr-only">Next</span></a></li>
+                        <li><a href="{{page.pagination.urlPrev}}" class="icon-prev"><span class="sr-only">Previous</span></a></li>
+                        {{#each page.pagination.pages}}
+                          <li><a href="{{url}}" {{#if isSelected}}class="active"{{/if}}>{{name}}</a></li>
+                        {{/each}}
+                        <li><a href="{{page.pagination.urlNext}}" class="icon-next"><span class="sr-only">Next</span></a></li>
                       </ul>
                     </div>
                     <div class="col-xs-4 text-right">
-                      <p class="item-count">Items per page</p>
+                      <p class="item-count">{{page.display.title}}</p>
                       <div class="styled-select icon-drop-down">
                         <select class="select">
-                          <option value="12">12</option>
-                          <option value="24">24</option>
-                          <option value="48">48</option>
+                          {{#each page.display.list}}
+                          <option value="{{value}}" {{#if isSelected}}selected{{/if}}>{{name}}</option>
+                          {{/each}}
                         </select>
                       </div>
                     </div>
@@ -676,21 +465,19 @@
                   <div class="row">
                     <div class="col-xs-12 text-center pagination">
                       <ul class="page-numbers page-numbers-bottom">
-                        <li><a href="#" class="icon-prev"><span class="sr-only">Previous</span></a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#" class="active">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#" class="icon-next"><span class="sr-only">Next</span></a></li>
+                        <li><a href="{{page.pagination.urlPrev}}" class="icon-prev"><span class="sr-only">Previous</span></a></li>
+                        {{#each page.pagination.pages}}
+                          <li><a href="{{url}}" {{#if isSelected}}class="active"{{/if}}>{{name}}</a></li>
+                        {{/each}}
+                        <li><a href="{{page.pagination.urlNext}}" class="icon-next"><span class="sr-only">Next</span></a></li>
                       </ul>
                     </div>
                   </div>
                   <hr class="hr">
                   <div class="row">
                     <div class="col-sm-12">
-                      <h1 class="seo-title">Seo Text Area</h1>
-                      <p class="seo-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+                      <h1 class="seo-title">{{seo.title}}</h1>
+                      <p class="seo-text">{{seo.description}}</p>
                     </div>
                   </div>
               </div>

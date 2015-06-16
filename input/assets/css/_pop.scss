@@ -43,8 +43,6 @@
   background-color: $dirty-white;
   font-size: 14px;
   margin-top: 10px;
-  font-weight: 700;
-
   a.collapsed {
     font-weight: 400;
   }
@@ -67,10 +65,22 @@
 .product-type,
 .size-box,
 .color-box,
-.designer-box,
+.brands-box,
 .price-box {
   padding: 1em 0 0;
   font-size: 16px;
+}
+
+.pop-filter-size,
+.pop-filter-color {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  padding: 0.5em 0;
+  label {
+    margin-left: 1em;
+    font-weight: 400;
+  }
 }
 
 // Price slider
@@ -145,14 +155,18 @@ a.clear-btn {
   color: $dark-grey;
 }
 
-// Designer box
+// Brands box
 
-.designer-list {
+.brands-list {
   margin-top: 1em;
   padding: 1em;
   border: 1px solid $light-grey;
   max-height: 500px;
   overflow-y: scroll;
+}
+
+#brands-checkbox {
+  margin-left: 0;
 }
 
 // Placeholder image

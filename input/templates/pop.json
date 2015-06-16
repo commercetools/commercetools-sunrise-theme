@@ -685,9 +685,8 @@
 			}
 		],
 		"filters" : {
-			"title" : "Filters",
+			"title" : "Filter Products",
 			"clear" : "Clear",
-			"clearAll" : "Clear All",
 			"clearAllFilters" : "clear all filters",
 			"categories" : {
 				"title" : "Product type",
@@ -904,12 +903,12 @@
 			"title" : "Sort by price",
 			"list" : [
 				{
-					"name" : "Low",
+					"name" : "Sort by: low",
 					"value" : "",
 					"isSelected" : false
 				},
 				{
-					"name" : "High",
+					"name" : "Sort by high",
 					"value" : "",
 					"isSelected" : true
 				}
