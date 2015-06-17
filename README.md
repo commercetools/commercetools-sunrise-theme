@@ -47,6 +47,7 @@ Once the project is built, the generated site is located in the `output/` folder
   - Copy any JS file in `input/assets/js/` to `output/assets/js/`
   - Copy any file in `input/assets/img/` to `output/assets/img/`
   - Copy any file in `input/assets/font/` to `output/assets/font/`
+  - Copy any Handlebars template in `input/templates/` to `output/templates/` (it flattens any directory)
   - Copy any HTML file in `input/` to `output/` (be careful not to use the same name as a Handlebars template or it will be overwritten)
 
 
