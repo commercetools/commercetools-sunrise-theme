@@ -209,10 +209,15 @@ a.clear-btn {
   border: 1px solid $light-grey;
   border-radius: 2px;
   color: $dark-grey;
-  margin-bottom: 2.2em;
+  margin: 1.65%;
   text-align: center;
+  width: 30%;
   // for overlay
   position: relative;
+}
+
+.pop-product-name {
+  
 }
 
 .pop-item-price {
@@ -220,7 +225,7 @@ a.clear-btn {
 }
 
 .more-colors {
-  padding-bottom: 0.5em;
+  padding: 1em 0 0.5em;
 }
 
 .sale-flag {

@@ -27,6 +27,21 @@
 
 // All navigation components
 
+// Column count for navigation for dynamic content
+@media screen and (min-width: 768px) {
+  .nav-accordion {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-rule: 1px outset $light-grey; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px outset $light-grey; /* Firefox */
+    column-rule: 1px outset $light-grey;
+    -webkit-column-gap: 8em; /* Chrome, Safari, Opera */
+    -moz-column-gap: 8em; /* Firefox */
+    column-gap: 8em;
+  }
+}
+
 .nav-list {
   margin: 0;
   padding: 0;
