@@ -217,7 +217,7 @@ a.clear-btn {
 }
 
 .pop-product-name {
-  
+
 }
 
 .pop-item-price {
@@ -267,7 +267,7 @@ a.clear-btn {
 }
 
 .quicklook-btn {
-  margin-top: 40%;
+  margin-top: 30%;
   height: 40px;
   opacity: 0.9;
 }
@@ -308,6 +308,13 @@ a.clear-btn {
 /* MEDIA QUERIES
 /*
 /*****************************************************************************/
+
+@media screen and (max-width: 767px) {
+  .shop-item {
+    width: 100%;
+    margin: 0;
+  }
+}
 
 @media screen and (max-width: 991px) {
   .thumbnail-img {

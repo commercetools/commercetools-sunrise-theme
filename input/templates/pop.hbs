@@ -201,7 +201,7 @@
                   </div>
                   <div class="row">
                     {{#each page.products}}
-                      <div class="pull-left shop-item">
+                      <div class="pull-left shop-item" onclick="location.href='{{url}}';" style="cursor: pointer;">
                         <div class="row">
                           <div class="col-xs-12">
                             {{#if isOnSale}}<div class="sale-flag">Sale</div>{{/if}}
@@ -218,14 +218,10 @@
                         </div>
                         <div class="overlay">
                           <div class="row">
-                            <div class="col-xs-12">
-                              <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
-                            </div>
+                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
                           </div>
                           <div class="row">
-                            <div class="col-xs-12">
-                              <a href="{{favouriteUrl}}"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
-                            </div>
+                            <a href="{{favouriteUrl}}"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
                           </div>
                         </div>
                       </div>
