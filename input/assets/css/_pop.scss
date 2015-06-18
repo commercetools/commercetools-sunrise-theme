@@ -217,7 +217,8 @@ a.clear-btn {
 }
 
 .pop-product-name {
-
+  height: 3em;
+  margin: 0 12%;
 }
 
 .pop-item-price {
@@ -321,12 +322,6 @@ a.clear-btn {
     max-width: 100%;
     max-height: 100%;
   }
-  .sale-flag,
-  .new-flag {
-    zoom: 0.7;
-    -moz-transform: scale(0.7);
-  }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -358,12 +353,6 @@ a.clear-btn {
 
   .overlay {
     display: none;
-  }
-
-  .sale-flag,
-  .new-flag {
-    zoom: 0.9;
-    -moz-transform: scale(0.9);
   }
 
   .newsletter-box {
@@ -400,19 +389,9 @@ a.clear-btn {
   .imprint-row {
     text-align: center;
   }
-
-  .sale-flag,
-  .new-flag {
-    zoom: 0.5;
-    -moz-transform: scale(0.5);
-  }
 }
 
 @media screen and (max-width: 375px) {
-  #sidebar {
-    padding-left: 3em;
-    padding-right: 2em;
-  }
   .footer-title-yellow {
     margin-left: 1em;
   }

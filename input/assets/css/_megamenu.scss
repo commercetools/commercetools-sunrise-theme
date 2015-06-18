@@ -106,8 +106,16 @@
     display: none;
 
       li .nav-accordion {
-        border-right: 1px solid #eaeaea;
-        min-height: 380px;
+        min-height: 330px;
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+        -moz-column-count: 3; /* Firefox */
+        column-count: 3;
+        -webkit-column-rule: 1px outset $light-grey; /* Chrome, Safari, Opera */
+        -moz-column-rule: 1px outset $light-grey; /* Firefox */
+        column-rule: 1px outset $light-grey;
+        -webkit-column-gap: 7em; /* Chrome, Safari, Opera */
+        -moz-column-gap: 7em; /* Firefox */
+        column-gap: 7em;
       }
   }
 
