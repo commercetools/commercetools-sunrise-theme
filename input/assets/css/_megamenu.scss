@@ -35,7 +35,7 @@
   }
 
   .dropdown.menu-large.open .megamenu {
-    padding: 10px 20px;
+    padding: 20px;
   }
 }
 
@@ -117,7 +117,6 @@
     display: none;
 
       li .nav-accordion {
-        min-height: 330px;
         -webkit-column-count: 3; /* Chrome, Safari, Opera */
         -moz-column-count: 3; /* Firefox */
         column-count: 3;
@@ -135,7 +134,7 @@
 
   .dropdown:hover .megamenu {
     display: block;
-    padding: 10px 20px;
+    padding: 20px;
   }
 
   .placeholder-img {
@@ -234,10 +233,19 @@
       display: inline-block;
       padding: 8px 0;
       font-size: 12px;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
     }
   }
 
   .megamenu-img {
     margin-top: 20px;
   }
+}
+
+.ui-accordion .ui-accordion-header {
+  font-size: 14px;
 }

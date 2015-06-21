@@ -231,7 +231,35 @@
 								"url" : ""
 							},
 							{
-								"title" : "Ipsum",
+								"title" : "Very long navigation item",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation items will be truncated",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation item",
+								"url" : ""
+							},
+							{
+								"title" : "Button toolbar",
+								"url" : ""
+							},
+							{
+								"title" : "Sizing",
+								"url" : ""
+							},
+							{
+								"title" : "Nesting",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation items will be truncated",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation item",
 								"url" : ""
 							}
 						]
@@ -257,7 +285,7 @@
 								"url" : ""
 							},
 							{
-								"title" : "Vertical variation",
+								"title" : "Very long navigation items will be truncated",
 								"url" : ""
 							}
 						]
@@ -289,7 +317,7 @@
 								"url" : ""
 							},
 							{
-								"title" : "Sizing",
+								"title" : "Very long navigation items will be truncated",
 								"url" : ""
 							},
 							{
@@ -357,7 +385,35 @@
 								"url" : ""
 							},
 							{
-								"title" : "Ipsum",
+								"title" : "Very long navigation item",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation items will be truncated",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation item",
+								"url" : ""
+							},
+							{
+								"title" : "Button toolbar",
+								"url" : ""
+							},
+							{
+								"title" : "Sizing",
+								"url" : ""
+							},
+							{
+								"title" : "Nesting",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation items will be truncated",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation item",
 								"url" : ""
 							}
 						]
