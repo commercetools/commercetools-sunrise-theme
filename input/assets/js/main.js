@@ -172,3 +172,19 @@ inputNumber($('.input-number'));
 $( "#different-billing-checkbox" ).click(function() {
   $( "#different-billing-address" ).slideToggle( "slow" )
 });
+
+
+
+/*****************************************************************************/
+/*
+/* CUSTOM LANGUAGE SELECT WITH COUNTRY FLAGS
+/*
+/*****************************************************************************/
+
+$('#language-select').ddslick({
+    width: 220,
+    background: 'transparent',
+    onSelected: function(selectedData){
+        //callback function: do something with selectedData;
+    }
+});

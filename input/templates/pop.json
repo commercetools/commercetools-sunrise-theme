@@ -17,28 +17,39 @@
 			"title" : "Language",
 			"list" : [
 				{
-					"name" : "ENG",
-					"value" : "",
-					"label" : "English",
-					"isSelected" : false
+					"text" : "ENG",
+					"value" : 1,
+					"selected" : false,
+					"description" : "Pounds",
+					"imageSrc" : "assets/img/flags/gb.svg"
 				},
 				{
-					"name" : "CH",
-					"value" : "",
-					"label" : "Switzerland",
-					"isSelected" : false
+					"text" : "Schweiz",
+					"value" : 2,
+					"selected" : false,
+					"description" : "CHF",
+					"imageSrc" : "assets/img/flags/ch.svg"
 				},
 				{
-					"name" : "Japan / USD $ / English",
-					"value" : "",
-					"label" : "Japan / USD $ / English",
-					"isSelected" : true
+					"text" : "Japan",
+					"value" : 3,
+					"selected" : false,
+					"description" : "Yen",
+					"imageSrc" : "assets/img/flags/jp.svg"
 				},
 				{
-					"name" : "DE",
-					"value" : "",
-					"label" : "German",
-					"isSelected" : false
+					"text" : "USA",
+					"value" : 4,
+					"selected" : false,
+					"description" : "US Dollar",
+					"imageSrc" : "assets/img/flags/us.svg"
+				},
+				{
+					"text" : "DE",
+					"value" : 5,
+					"selected" : true,
+					"description" : "Euro",
+					"imageSrc" : "assets/img/flags/de.svg"
 				}
 			]
 		},
