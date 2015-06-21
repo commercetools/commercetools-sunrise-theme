@@ -20,6 +20,18 @@
 					"name" : "ENG",
 					"value" : "",
 					"label" : "English",
+					"isSelected" : false
+				},
+				{
+					"name" : "CH",
+					"value" : "",
+					"label" : "Switzerland",
+					"isSelected" : false
+				},
+				{
+					"name" : "Japan / USD $ / English",
+					"value" : "",
+					"label" : "Japan / USD $ / English",
 					"isSelected" : true
 				},
 				{
