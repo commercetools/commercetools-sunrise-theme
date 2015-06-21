@@ -117,6 +117,9 @@
         -moz-column-gap: 7em; /* Firefox */
         column-gap: 7em;
       }
+    div.nav-accordion > h3 {
+      margin-top: 0;
+    }
   }
 
   .dropdown:hover .megamenu {
