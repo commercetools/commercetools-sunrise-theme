@@ -195,100 +195,6 @@ a.clear-btn {
   height: 20px;
 }
 
-// Gallery items
-
-.thumbnail-img {
-  padding-bottom: 1.25em;
-  max-width: 210px;
-  max-height: 280px;
-}
-
-.shop-item {
-  background: $white;
-  font-size: 1em;
-  border: 1px solid $light-grey;
-  border-radius: 2px;
-  color: $dark-grey;
-  margin: 1.65%;
-  text-align: center;
-  width: 30%;
-  // for overlay
-  position: relative;
-}
-
-.pop-product-name {
-  height: 3em;
-  margin: 0 12%;
-}
-
-.pop-item-price {
-  color: $black;
-}
-
-.more-colors {
-  padding: 1em 0 0.5em;
-}
-
-.sale-flag {
-  height: 3em;
-  width: 3em;
-  border: 1px solid $red;
-  border-radius: 50%;
-  color: $red;
-  position: absolute;
-  padding: 0.7em 0.3em;
-  margin: 1em 0 0 1em;
-}
-
-.new-flag {
-  height: 3em;
-  width: 3em;
-  color: $black;
-  position: absolute;
-  padding: 0.7em 0.3em;
-  margin: 1em 0 0 1em;
-}
-
-// Gallery items overlay
-
-.overlay {
-  background: rgba(0,0,0,.1);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  outline: 10px solid $white;
-  width: 100%;
-  height: 100%;
-}
-
-.shop-item:hover .overlay{
-  opacity: 1;
-  transition: 0.3s;
-}
-
-.quicklook-btn {
-  margin-top: 30%;
-  height: 40px;
-  opacity: 0.9;
-}
-
-.favourites-btn {
-  margin-top: 20px;
-  height: 35px;
-  opacity: 0.9;
-}
-
-// Quicklook and favourites button changes on hover
-
-.quicklook-btn:hover {
-  content: url("../../assets/img/quicklook-hover.png");
-}
-
-.favourites-btn:hover {
-  content: url("../../assets/img/Heart-inverted.png");
-}
-
 // SEO text area
 
 .seo-title {
@@ -309,13 +215,6 @@ a.clear-btn {
 /* MEDIA QUERIES
 /*
 /*****************************************************************************/
-
-@media screen and (max-width: 767px) {
-  .shop-item {
-    width: 100%;
-    margin: 0;
-  }
-}
 
 @media screen and (max-width: 991px) {
   .thumbnail-img {

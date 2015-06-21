@@ -200,28 +200,32 @@
                   </div>
                   <div class="row">
                     {{#each page.products}}
-                      <div class="pull-left shop-item" onclick="location.href='{{url}}';" style="cursor: pointer;">
-                        <div class="row">
-                          <div class="col-xs-12">
+                      <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="shop-item" onclick="location.href='{{url}}';">
                             {{#if isOnSale}}<div class="sale-flag">Sale</div>{{/if}}
                             {{#if isNew}}<div class="new-flag">New</div>{{/if}}
-                            <img class="img-responsive center-block thumbnail-img" src="{{image}}" alt="placeholder">
-                          </div>
-                        </div>
-                        <div class="row text-capitalize">
-                          <div class="col-xs-12">
-                            <div class="pop-product-name">{{name}}</div>
-                            <span class=pop-item-price>{{price}}</span>
-                            <div class="text-uppercase more-colors">{{#if hasMoreColors}}More colours{{/if}}&nbsp;</div>
-                          </div>
-                        </div>
-                        <div class="overlay">
-                          <div class="row">
-                            <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
-                          </div>
-                          <div class="row">
-                            <a href="{{favouriteUrl}}"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
-                          </div>
+                            <img class="pop-product-image" src="{{image}}" alt="{{imgDescription}}" width="200" />
+
+                            <div class="pop-product-name">
+                              <span class="name-headline">{{nameHeadline}}</span>
+                              <span class="name-subline">{{nameSubline}}</span>
+                            </div>
+
+                            <div class="pop-item-price">
+                              {{#if reducedPrice}}
+                                <span class="strikethrough">{{priceNew}}</span>
+                                <span class="pop-item-price-old">{{priceOld}}</span>
+                              {{else}}
+                                <span>{{priceNew}}</span>
+                              {{/if}}
+                            </div>
+
+                            <div class="pop-product-more-colors">{{#if hasMoreColors}}More colours{{/if}}&nbsp;</div>
+
+                            <div class="shop-item-overlay">
+                              <button type="button" class="quickview">Quick view</button>
+                              <button type="button" class="heart"><span class="sr-only">Add item to wishlist</span></button>
+                            </div>
                         </div>
                       </div>
                     {{/each}}
