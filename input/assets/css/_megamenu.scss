@@ -22,24 +22,35 @@
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar-default .navbar-nav > li:hover > a::after,
+  .navbar-default .navbar-nav > li > a:hover::after {
+    content: "";
+    border-bottom: solid 2px $black;
+    position: relative;
+    top: 2px;
+    width: 100%;
+    height: 100%;
+    display: inherit;
+  }
+
+  .dropdown.menu-large.open .megamenu {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .open>.dropdown-menu {
+    display: none;
+  }
+}
+
 .navbar-default .navbar-nav > li > a {
   color: $black;
   padding: 20px 15px;
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: -10px;
-
-  @media screen and (min-width: 768px) {
-    &:hover::after {
-      content: "";
-      border-bottom: solid 2px $black;
-      position: relative;
-      top: 2px;
-      width: 100%;
-      height: 100%;
-      display: inherit;
-    }
-  }
 
   &.sale {
     color: $red;
