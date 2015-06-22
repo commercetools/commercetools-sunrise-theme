@@ -1,261 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    {{> htmlhead}}
-  </head>
+<head>
+  {{> htmlhead}}
+</head>
 
-  <body>
-    {{> header}}
-    <div class="pop-page">
-      <div id="pop-page" class="container">
-        <div class="row">
-          <div class="col-xs-12 figure-col">
-            <figure class="figure-banner">
-              <img class="img-responsive hidden-sm hidden-md hidden-lg" src="{{page.banner.imageMobile}}" alt="Women">
-              <img class="img-responsive hidden-xs" src="{{page.banner.imageDesktop}}" alt="Women">
-                <figcaption class="figcaption-banner-text">
-                  <h2>{{page.banner.title}}</h2>
-                  <h3>{{page.banner.text}}</h3>
-                </figcaption>
-            </figure>
-          </div>
+<body>
+  {{> header}}
+  <div class="pop-page">
+    <div id="pop-page" class="container">
+      <div class="row">
+        <div class="col-xs-12 figure-col">
+          <figure class="figure-banner">
+            <img class="img-responsive hidden-sm hidden-md hidden-lg" src="{{page.banner.imageMobile}}" alt="Women">
+            <img class="img-responsive hidden-xs" src="{{page.banner.imageDesktop}}" alt="Women">
+            <figcaption class="figcaption-banner-text">
+              <h2>{{page.banner.title}}</h2>
+              <h3>{{page.banner.text}}</h3>
+            </figcaption>
+          </figure>
         </div>
-        <div class="row row-offcanvas row-offcanvas-left">
-          <div class="col-xs-12">
-            {{> breadcrumb}}
+      </div>
+      <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-xs-12">
+          {{> breadcrumb}}
+        </div>
+        <div class="product-filter">
+          {{> sidebar-offcanvas}}
+        </div>
+        <div class="col-sm-9">
+          <div class="dark-overlay"></div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="jumbotron">
+                <p>{{page.jumbotron.category}}</p>
+                <h2>{{page.jumbotron.title}}</h2>
+                <h3>{{page.jumbotron.text}}</h3>
+              </div>
+            </div>
           </div>
-          <div class="product-filter">
-            <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
-              <button type="button" class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas"><span class="sr-only">Filter schließen</span></button>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="row">
-                    <div class="col-sm-12 ">
-                      <p class="filter-products"><b>{{page.filters.title}}</b></p>
-                    </div>
-                  </div>
-                  <hr class="hr">
-                  <div class="row product-type">
-                    <div class="col-xs-8 text-left">
-                      {{page.filters.categories.title}}
-                    </div>
-                    <div class="col-xs-4">
-                      <a href="#" class="text-right clear-btn">{{page.filters.clear}}</a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        {{#each page.filters.categories.list}}
-                          <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="heading-one">
-                              <h4 class="panel-title">
-                                <a class="" data-toggle="collapse" data-parent="#accordion" href="#{{id}}" aria-expanded="true" aria-controls="collapse-one">
-                                  {{name}}
-                                </a>
-                              </h4>
-                            </div>
-                            <div id="{{id}}" class="panel-collapse collapse {{#if isSelected}}in{{/if}}" role="tabpanel" aria-labelledby="heading-one">
-                              <div class="panel-body">
-                                {{#each children}}
-                                  <div class="checkbox">
-                                    <label>
-                                      <input type="checkbox" value="{{value}}" {{#if isSelected}}checked{{/if}}>
-                                      {{name}}
-                                    </label>
-                                  </div>
-                                {{/each}}
-                              </div>
-                            </div>
-                          </div>
-                        {{/each}}
-                      </div>
-                    </div>
-                  </div>
-                  <hr class="hr">
-                  <div class="row size-box">
-                    <div class="col-xs-8 text-left">
-                      {{page.filters.size.title}}
-                    </div>
-                    <div class="col-xs-4">
-                      <a href="#" class="text-right clear-btn">{{page.filters.clear}}</a>
-                    </div>
-                  </div>
-                  <div class="pop-filter-size">
-                    {{#each page.filters.size.list}}
-                      <input type="checkbox" value="{{value}}" {{#if isSelected}}checked{{/if}}><label>{{name}}</label><br>
+          <div class="row visible-xs">
+            <div class="col-xs-12">
+              <ul class="mobile-filter-list clearfix">
+                <li class="pull-left">
+                  <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="offcanvas">Filter</button>
+                </li>
+                <li class="pull-left">
+                  <select class="select">
+                    {{#each page.sort.list}}
+                      <option value="{{value}}" {{#if isSelected}} selected {{/if}}>{{name}}</option>
                     {{/each}}
+                  </select>
+                </li>
+                <li class="pull-left">
+                  <p class="item-count">12 of 234</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="hr hidden-xs">
+          <div class="row hidden-xs item-list-pagination">
+            <div class="col-xs-4 text-left">
+              <div class="styled-select icon-drop-down">
+                <select class="select">
+                  {{#each page.sort.list}}
+                    <option value="{{value}}" {{#if isSelected}} selected {{/if}}>{{name}}</option>
+                  {{/each}}
+                </select>
+              </div>
+              <p class="item-count">12 of 234</p>
+            </div>
+            <div class="col-xs-4 text-center pagination">
+              <ul class="page-numbers">
+                <li>
+                  <a href="{{page.pagination.urlPrev}}" class="icon-prev">
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                {{#each page.pagination.pages}}
+                  <li><a href="{{url}}" {{#if isSelected}} class="active" {{/if}}>{{name}}</a></li>
+                {{/each}}
+                <li>
+                  <a href="{{page.pagination.urlNext}}" class="icon-next">
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-4 text-right">
+              <p class="item-count">{{page.display.title}}</p>
+              <div class="styled-select icon-drop-down">
+                <select class="select">
+                  {{#each page.display.list}}
+                    <option value="{{value}}" {{#if isSelected}} selected {{/if}}>{{name}}</option>
+                  {{/each}}
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            {{#each page.products}}
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="shop-item" onclick="location.href='{{url}}';">
+                  {{#if isOnSale}}
+                    <div class="sale-flag">Sale</div>
+                  {{/if}}
+                  {{#if isNew}}
+                    <div class="new-flag">New</div>
+                  {{/if}}
+                  <img class="pop-product-image" src="{{image}}" alt="{{imgDescription}}" width="200" />
+
+                  <div class="pop-product-name">
+                    <span class="name-headline">{{nameHeadline}}</span>
+                    <span class="name-subline">{{nameSubline}}</span>
                   </div>
-                  <hr class="hr">
-                  <div class="row color-box">
-                    <div class="col-xs-8 text-left">
-                      {{page.filters.color.title}}
-                    </div>
-                    <div class="col-xs-4">
-                      <a href="#" class="text-right clear-btn">{{page.filters.clear}}</a>
-                    </div>
+
+                  <div class="pop-item-price">
+                    {{#if reducedPrice}}
+                      <span class="strikethrough">{{priceNew}}</span>
+                      <span class="pop-item-price-old">{{priceOld}}</span>
+                    {{else}}
+                      <span>{{priceNew}}</span>
+                    {{/if}}
                   </div>
-                  <div class="pop-filter-color">
-                    {{#each page.filters.color.list}}
-                      <input type="checkbox" value="{{value}}" {{#if isSelected}}checked{{/if}}><label>{{name}}</label><br>
-                    {{/each}}
-                  </div>
-                  <hr class="hr">
-                  <div class="row price-box">
-                    <div class="col-xs-8">
-                      Price
-                    </div>
-                    <div class="col-xs-4">
-                      <a href="#" class="text-right clear-btn">{{page.filters.clear}}</a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12 text-center slider-col">
-                      <p><input type="text" id="amount" readonly style="border:0; color:black; background: transparent; text-align: center;"></p>
-                      <div id="slider-range"></div>
-                    </div>
-                  </div>
-                  <hr class="hr">
-                  <div class="row brands-box">
-                    <div class="col-xs-8 text-left">
-                      {{page.filters.brands.title}}
-                    </div>
-                    <div class="col-xs-4">
-                      <a href="#" class="text-right clear-btn">{{page.filters.clear}}</a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="brands-list">
-                        {{#each page.filters.brands.list}}
-                          <div class="checkbox">
-                            <input id="brands-checkbox" type="checkbox" {{#if isSelected}}checked{{/if}}><label>{{name}}</label>
-                          </div>
-                        {{/each}}
-                      </div>
-                    </div>
-                  </div>
+
+                  {{!-- Should this be a clickable link? Right now, you can't click it due to the overlay --}}
+                  <div class="pop-product-more-colors">
+                    {{#if hasMoreColors}}More colours{{/if}}&nbsp;</div>
+
+                  <div class="shop-item-overlay">
+                    <button type="button" class="quickview">Quick view</button>
+                    <button type="button" class="heart">
+                      <span class="sr-only">Add item to wishlist</span>
+                    </button>
                   </div>
                 </div>
               </div>
+            {{/each}}
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-center pagination">
+              <ul class="page-numbers page-numbers-bottom">
+                <li>
+                  <a href="{{page.pagination.urlPrev}}" class="icon-prev">
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                {{#each page.pagination.pages}}
+                  <li><a href="{{url}}" {{#if isSelected}} class="active" {{/if}}>{{name}}</a></li>
+                {{/each}}
+                <li>
+                  <a href="{{page.pagination.urlNext}}" class="icon-next">
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-              <div class="col-sm-9">
-                <div class="dark-overlay"></div>
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <div class="jumbotron">
-                        <p>{{page.jumbotron.category}}</p>
-                        <h2>{{page.jumbotron.title}}</h2>
-                        <h3>{{page.jumbotron.text}}</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row visible-xs">
-                    <div class="col-xs-12">
-                      <ul class="mobile-filter-list clearfix">
-                        <li class="pull-left"><button type="button" class="offcanvas-btn offcanvas-open" data-toggle="offcanvas">Filter</button></li>
-                        <li class="pull-left">
-                          <select class="select">
-                            {{#each page.sort.list}}
-                              <option value="{{value}}" {{#if isSelected}}selected{{/if}}>{{name}}</option>
-                            {{/each}}
-                          </select>
-                        </li>
-                        <li class="pull-left"><p class="item-count">12 of 234</p></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <hr class="hr hidden-xs">
-                  <div class="row hidden-xs item-list-pagination">
-                    <div class="col-xs-4 text-left">
-                      <div class="styled-select icon-drop-down">
-                        <select class="select">
-                          {{#each page.sort.list}}
-                            <option value="{{value}}" {{#if isSelected}}selected{{/if}}>{{name}}</option>
-                          {{/each}}
-                        </select>
-                      </div>
-                     <p class="item-count">12 of 234</p>
-                    </div>
-                    <div class="col-xs-4 text-center pagination">
-                      <ul class="page-numbers">
-                        <li><a href="{{page.pagination.urlPrev}}" class="icon-prev"><span class="sr-only">Previous</span></a></li>
-                        {{#each page.pagination.pages}}
-                          <li><a href="{{url}}" {{#if isSelected}}class="active"{{/if}}>{{name}}</a></li>
-                        {{/each}}
-                        <li><a href="{{page.pagination.urlNext}}" class="icon-next"><span class="sr-only">Next</span></a></li>
-                      </ul>
-                    </div>
-                    <div class="col-xs-4 text-right">
-                      <p class="item-count">{{page.display.title}}</p>
-                      <div class="styled-select icon-drop-down">
-                        <select class="select">
-                          {{#each page.display.list}}
-                          <option value="{{value}}" {{#if isSelected}}selected{{/if}}>{{name}}</option>
-                          {{/each}}
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    {{#each page.products}}
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="shop-item" onclick="location.href='{{url}}';">
-                            {{#if isOnSale}}<div class="sale-flag">Sale</div>{{/if}}
-                            {{#if isNew}}<div class="new-flag">New</div>{{/if}}
-                            <img class="pop-product-image" src="{{image}}" alt="{{imgDescription}}" width="200" />
-
-                            <div class="pop-product-name">
-                              <span class="name-headline">{{nameHeadline}}</span>
-                              <span class="name-subline">{{nameSubline}}</span>
-                            </div>
-
-                            <div class="pop-item-price">
-                              {{#if reducedPrice}}
-                                <span class="strikethrough">{{priceNew}}</span>
-                                <span class="pop-item-price-old">{{priceOld}}</span>
-                              {{else}}
-                                <span>{{priceNew}}</span>
-                              {{/if}}
-                            </div>
-
-                            {{!-- Should this be a clickable link? Right now, you can't click it due to the overlay --}}
-                            <div class="pop-product-more-colors">{{#if hasMoreColors}}More colours{{/if}}&nbsp;</div>
-
-                            <div class="shop-item-overlay">
-                              <button type="button" class="quickview">Quick view</button>
-                              <button type="button" class="heart"><span class="sr-only">Add item to wishlist</span></button>
-                            </div>
-                        </div>
-                      </div>
-                    {{/each}}
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-12 text-center pagination">
-                      <ul class="page-numbers page-numbers-bottom">
-                        <li><a href="{{page.pagination.urlPrev}}" class="icon-prev"><span class="sr-only">Previous</span></a></li>
-                        {{#each page.pagination.pages}}
-                          <li><a href="{{url}}" {{#if isSelected}}class="active"{{/if}}>{{name}}</a></li>
-                        {{/each}}
-                        <li><a href="{{page.pagination.urlNext}}" class="icon-next"><span class="sr-only">Next</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <hr class="hr">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <h1 class="seo-title">{{seo.title}}</h1>
-                      <p class="seo-text">{{seo.description}}</p>
-                    </div>
-                  </div>
-              </div>
+          </div>
+          <hr class="hr">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="seo-title">{{seo.title}}</h1>
+              <p class="seo-text">{{seo.description}}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    {{> footer}}
-    {{> htmlscripts}}
-  </body>
+  </div>
+  </div>
+  {{> footer}}
+  {{> htmlscripts}}
+</body>
 
 </html>
