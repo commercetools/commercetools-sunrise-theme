@@ -9,11 +9,7 @@ install:
   - npm install
 
 script:
-  - grunt publish
-  
-branches:
-  only:
-    - master  
+  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then grunt publish fi
 
 env:
   global:
