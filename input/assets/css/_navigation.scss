@@ -237,6 +237,12 @@
     }
   }
 
+  .list-item-bag,
+  .list-item-user {
+    z-index: 9999;
+    position: relative;
+  }
+
   .list-item-bag {
     float: right;
     border: none;
@@ -322,7 +328,7 @@
 // Sunrise logo and searchbox
 
 .brand-logo {
-  display: inline-block;
+  display: block;
 
   img
   {
@@ -388,67 +394,4 @@
   width: 300px;
   margin: 6px 0;
   height: 30px;
-}
-
-// Shrink the header on scroll, see main.js for the script.
-
-@media screen and (min-width: 768px) {
-  .list-item-store,
-  .list-item-call,
-  .list-item-help,
-  .logo-search,
-  .navbar.navbar-fixed-top,
-  .nav.navbar-nav {
-    transition: ease all .33s;
-  }
-
-  .small-header {
-    .list-item-store,
-    .list-item-call,
-    .list-item-help,
-    .logo-search {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .brand-logo,
-    .search-box {
-      opacity: 0;
-    }
-
-    .logo-search {
-      display: none;
-    }
-
-    .logo-search,
-    .nav.navbar-nav {
-
-      > li > a {
-        color: $white;
-        position: relative;
-        z-index: 9999999;
-      }
-    }
-
-    .navbar {
-      background: rgba(0, 0, 0, 0);
-      border-color: rgba(0, 0, 0, 0);
-    }
-
-    .dropdown-megamenu.navbar.navbar-default {
-      height: 55px;
-      bottom: 55px;
-    }
-
-    .language-label,
-    .dd-selected-text,
-    .dd-selected-description,
-    .dd-pointer.dd-pointer-down {
-      display: none;
-    }
-
-    .dd-selected {
-      margin-left: 170px;
-    }
-  }
 }

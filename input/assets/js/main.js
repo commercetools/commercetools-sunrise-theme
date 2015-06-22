@@ -9,18 +9,6 @@ $(document).ready(function(){
     $('.search-toggle').click(function(){
         $('.search-box').slideToggle();
     });
-
-    // Small menu bar on scroll
-    var body = $("body");
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 150) {
-            body.addClass("small-header");
-        } else {
-            body.removeClass("small-header");
-        }
-    });
 });
 
 /*****************************************************************************/
