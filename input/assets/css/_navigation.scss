@@ -409,27 +409,46 @@
     .logo-search {
       opacity: 0;
       visibility: hidden;
-   }
+    }
 
     .brand-logo,
     .search-box {
       opacity: 0;
     }
 
+    .logo-search {
+      display: none;
+    }
+
     .logo-search,
     .nav.navbar-nav {
-      margin-top: -55px;
 
       > li > a {
         color: $white;
         position: relative;
         z-index: 9999999;
-
       }
     }
 
-    .dropdown-menu.megamenu {
-      margin-top: 0;
+    .navbar {
+      background: rgba(0, 0, 0, 0);
+      border-color: rgba(0, 0, 0, 0);
+    }
+
+    .dropdown-megamenu.navbar.navbar-default {
+      height: 55px;
+      bottom: 55px;
+    }
+
+    .language-label,
+    .dd-selected-text,
+    .dd-selected-description,
+    .dd-pointer.dd-pointer-down {
+      display: none;
+    }
+
+    .dd-selected {
+      margin-left: 170px;
     }
   }
 }
