@@ -5,12 +5,12 @@
 [![Build Status](https://travis-ci.org/sphereio/sphere-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/sphere-sunrise-design)
 
 ###Demo
-- [Product Overview](http://sphereio.github.io/sphere-sunrise-design/pop_old.html)
-- [Product Detail](http://sphereio.github.io/sphere-sunrise-design/pdp_old.html)
-- [Cart Detail](http://sphereio.github.io/sphere-sunrise-design/cart_old.html)
-- [Checkout Shipping](http://sphereio.github.io/sphere-sunrise-design/checkout-shipping_old.html)
-- [Checkout Payment](http://sphereio.github.io/sphere-sunrise-design/checkout-payment_old.html)
-- [Checkout Confirmation](http://sphereio.github.io/sphere-sunrise-design/checkout-confirmation_old.html)
+- [Product Overview](http://sphereio.github.io/sphere-sunrise-design/pop.html)
+- [Product Detail](http://sphereio.github.io/sphere-sunrise-design/pdp.html)
+- [Cart Detail](http://sphereio.github.io/sphere-sunrise-design/cart.html)
+- [Checkout Shipping](http://sphereio.github.io/sphere-sunrise-design/checkout-shipping.html)
+- [Checkout Payment](http://sphereio.github.io/sphere-sunrise-design/checkout-payment.html)
+- [Checkout Confirmation](http://sphereio.github.io/sphere-sunrise-design/checkout-confirmation.html)
 
 ###Installation
 
