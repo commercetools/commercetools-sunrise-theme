@@ -29,11 +29,11 @@
               <li class="list-item-language"><span class="language-label">Location</span>
                 <select id="language-select" class="language-select">
                 {{#each header.currencies.list}}
-                    <option value="{{value}}" {{#if selected}}selected="selected"{{/if}} data-imagesrc="{{imageSrc}}" data-description="{{description}}">{{text}} - </option>
-                 {{/each}}
-                 {{#each header.languages.list}}
-                     <option value="{{value}}" {{#if selected}}selected="selected"{{/if}}>{{name}}</option>
-                  {{/each}}
+                  <option value="{{value}}" {{#if selected}}selected="selected"{{/if}} data-imagesrc="{{imageSrc}}" data-description="{{description}}">{{text}} - </option>
+                {{/each}}
+                {{#each header.languages.list}}
+                  <option value="{{value}}" {{#if selected}}selected="selected"{{/if}}>{{name}}</option>
+                {{/each}}
                 </select>
               </li>
             </ul>
