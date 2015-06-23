@@ -13,11 +13,11 @@
 			"title" : "CALL US ON +44 123 456 000",
 			"url" : ""
 		},
-		"languages" : {
-			"title" : "Language",
+		"currencies" : {
+			"title" : "currency",
 			"list" : [
 				{
-					"text" : "ENG",
+					"text" : "UK",
 					"value" : 1,
 					"selected" : false,
 					"description" : "Pounds",
@@ -53,16 +53,16 @@
 				}
 			]
 		},
-		"currencies" : {
-			"title" : "Currency",
+		"languages" : {
+			"title" : "language",
 			"list" : [
 				{
-					"name" : "Euro",
+					"name" : "English",
 					"value" : "",
 					"isSelected" : true
 				},
 				{
-					"name" : "Pound",
+					"name" : "German",
 					"value" : "",
 					"isSelected" : false
 				}
