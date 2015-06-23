@@ -59,12 +59,12 @@
 				{
 					"name" : "English",
 					"value" : "",
-					"isSelected" : true
+					"selected" : true
 				},
 				{
 					"name" : "German",
 					"value" : "",
-					"isSelected" : false
+					"selected" : false
 				}
 			]
 		},
@@ -760,7 +760,7 @@
 			{
 				"url" : "coats/",
 				"name" : "Coats",
-				"isCurrent" : true
+				"current" : true
 			}
 		],
 		"filters" : {
@@ -773,51 +773,51 @@
 					{
 						"id" : "one",
 						"name" : "Type-1",
-						"isSelected" : true,
+						"selected" : true,
 						"children" : [
 							{
 								"name" : "sub-type 1",
 								"value" : "",
-								"isSelected" : true
+								"selected" : true
 							},
 							{
 								"name" : "sub-type 2",
 								"value" : "",
-								"isSelected" : false
+								"selected" : false
 							}
 						]
 					},
 					{
 						"id" : "two",
 						"name" : "Type-2",
-						"isSelected" : false,
+						"selected" : false,
 						"children" : [
 							{
 								"name" : "sub-type 1",
 								"value" : "",
-								"isSelected" : false
+								"selected" : false
 							},
 							{
 								"name" : "sub-type 2",
 								"value" : "",
-								"isSelected" : false
+								"selected" : false
 							}
 						]
 					},
 					{
 						"id" : "three",
 						"name" : "Type-3",
-						"isSelected" : false,
+						"selected" : false,
 						"children" : [
 							{
 								"name" : "sub-type 1",
 								"value" : "",
-								"isSelected" : false
+								"selected" : false
 							},
 							{
 								"name" : "sub-type 2",
 								"value" : "",
-								"isSelected" : false
+								"selected" : false
 							}
 						]
 					}
@@ -829,22 +829,22 @@
 					{
 						"name" : "S",
 						"value" : "",
-						"isSelected" : true
+						"selected" : true
 					},
 					{
 						"name" : "M",
 						"value" : "",
-						"isSelected" : false
+						"selected" : false
 					},
 					{
 						"name" : "XL",
 						"value" : "",
-						"isSelected" : true
+						"selected" : true
 					},
 					{
 						"name" : "XXL",
 						"value" : "",
-						"isSelected" : false
+						"selected" : false
 					}
 				]
 			},
@@ -854,22 +854,22 @@
 					{
 						"name" : "Black",
 						"value" : "",
-						"isSelected" : false
+						"selected" : false
 					},
 					{
 						"name" : "Blue",
 						"value" : "",
-						"isSelected" : true
+						"selected" : true
 					},
 					{
 						"name" : "Multi",
 						"value" : "",
-						"isSelected" : false
+						"selected" : false
 					},
 					{
 						"name" : "Neutral",
 						"value" : "",
-						"isSelected" : true
+						"selected" : true
 					}
 				]
 			},
@@ -884,42 +884,42 @@
 					{
 						"name" : "A.P.C",
 						"value" : "",
-						"isSelected" : true
+						"selected" : true
 					},
 					{
 						"name" : "ACNE",
 						"value" : "",
-						"isSelected" : false
+						"selected" : false
 					},
 					{
 						"name" : "ALEXANDER MCQUEEN",
 						"value" : "",
-						"isSelected" : false
+						"selected" : false
 					},
 					{
 						"name" : "ALEXANDER WANG",
 						"value" : "",
-						"isSelected" : true
+						"selected" : true
 					},
 					{
 						"name" : "ALEXANDER WANG",
 						"value" : "",
-						"isSelected" : false
+						"selected" : false
 					},
 					{
 						"name" : "ALEXANDER WANG",
 						"value" : "",
-						"isSelected" : false
+						"selected" : false
 					},
 					{
 						"name" : "ALEXANDER WANG",
 						"value" : "",
-						"isSelected" : false
+						"selected" : false
 					},
 					{
 						"name" : "ALEXANDER WANG",
 						"value" : "",
-						"isSelected" : false
+						"selected" : false
 					}
 				]
 			}
@@ -934,27 +934,27 @@
 				{
 					"name" : "1",
 					"url" : "",
-					"isSelected" : false
+					"selected" : false
 				},
 				{
 					"name" : "2",
 					"url" : "",
-					"isSelected" : false
+					"selected" : false
 				},
 				{
 					"name" : "3",
 					"url" : "",
-					"isSelected" : true
+					"selected" : true
 				},
 				{
 					"name" : "4",
 					"url" : "",
-					"isSelected" : false
+					"selected" : false
 				},
 				{
 					"name" : "5",
 					"url" : "",
-					"isSelected" : false
+					"selected" : false
 				}
 			]
 		},
@@ -964,17 +964,17 @@
 				{
 					"name" : "12",
 					"value" : "12",
-					"isSelected" : false
+					"selected" : false
 				},
 				{
 					"name" : "24",
 					"value" : "24",
-					"isSelected" : true
+					"selected" : true
 				},
 				{
 					"name" : "48",
 					"value" : "48",
-					"isSelected" : false
+					"selected" : false
 				}
 			]
 		},
@@ -984,12 +984,12 @@
 				{
 					"name" : "Sort by: low",
 					"value" : "",
-					"isSelected" : false
+					"selected" : false
 				},
 				{
 					"name" : "Sort by high",
 					"value" : "",
-					"isSelected" : true
+					"selected" : true
 				}
 			]
 		},

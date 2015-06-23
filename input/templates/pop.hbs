@@ -48,7 +48,7 @@
                 <li class="pull-left">
                   <select class="select">
                     {{#each page.sort.list}}
-                      <option value="{{value}}" {{#if isSelected}} selected {{/if}}>{{name}}</option>
+                      <option value="{{value}}" {{#if selected}} selected {{/if}}>{{name}}</option>
                     {{/each}}
                   </select>
                 </li>
@@ -64,7 +64,7 @@
               <div class="styled-select icon-drop-down">
                 <select class="select">
                   {{#each page.sort.list}}
-                    <option value="{{value}}" {{#if isSelected}} selected {{/if}}>{{name}}</option>
+                    <option value="{{value}}" {{#if selected}} selected {{/if}}>{{name}}</option>
                   {{/each}}
                 </select>
               </div>
@@ -78,7 +78,7 @@
                   </a>
                 </li>
                 {{#each page.pagination.pages}}
-                  <li><a href="{{url}}" {{#if isSelected}} class="active" {{/if}}>{{name}}</a></li>
+                  <li><a href="{{url}}" {{#if selected}} class="active" {{/if}}>{{name}}</a></li>
                 {{/each}}
                 <li>
                   <a href="{{page.pagination.urlNext}}" class="icon-next">
@@ -92,7 +92,7 @@
               <div class="styled-select icon-drop-down">
                 <select class="select">
                   {{#each page.display.list}}
-                    <option value="{{value}}" {{#if isSelected}} selected {{/if}}>{{name}}</option>
+                    <option value="{{value}}" {{#if selected}} selected {{/if}}>{{name}}</option>
                   {{/each}}
                 </select>
               </div>
@@ -143,7 +143,7 @@
                   </a>
                 </li>
                 {{#each page.pagination.pages}}
-                  <li><a href="{{url}}" {{#if isSelected}} class="active" {{/if}}>{{name}}</a></li>
+                  <li><a href="{{url}}" {{#if selected}} class="active" {{/if}}>{{name}}</a></li>
                 {{/each}}
                 <li>
                   <a href="{{page.pagination.urlNext}}" class="icon-next">

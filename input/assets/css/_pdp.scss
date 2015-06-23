@@ -8,41 +8,16 @@
   padding-bottom: 5em;
 }
 
-// Vertical thumbnails
-
-.vertical-img {
-	margin: 0 0 1em 0;
-	border: 1px solid $light-grey;
-}
-
-.vertical-img:hover {
-	border: 1px solid $black;
-}
-
-// Main image
-
-.product-frame {
-  border: 1px solid $grey;
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-}
-
 // Product information
-
 .product-description {
   font-size: 1.2em;
 }
 
 // Product information title
-
 .grey-p {
 	color: $grey;
 }
 
-// Stars rating
 
 .rating {
     float:left;
@@ -86,7 +61,6 @@
 }
 
 // Product information text
-
 .view-details {
 	color: $dark-grey;
 	text-transform: uppercase;
@@ -95,19 +69,16 @@
 }
 
 // Product price
-
 .product-price {
 	font-size: 2em;
 }
 
 // Row of select color, size and guide
-
 .select-row {
 	padding: 0 0 1.5em;
 }
 
 // Size guide
-
 .size-guide-col {
 	padding-top: 2.3em;
 }
@@ -123,7 +94,6 @@
 }
 
 // Number of bag items
-
 #bag-items {
   border: 3px solid $yellow;
   padding: 0.5em 0.5em;
@@ -133,7 +103,6 @@
 }
 
 // Add to bag button
-
 .add-to-bag {
   width: 100%;
   border: 2px solid $yellow;
@@ -151,14 +120,12 @@
 }
 
 // Add to wishlish
-
 .wishlist-btn {
   margin: 0;
   height: 40px;
 }
 
 // Availability
-
 .glyphicon-ok-sign:before {
   padding-right: 1em;
 }
@@ -175,7 +142,6 @@
 }
 
 // Product details accordion
-
 .product-accordion-title {
   background: $white;
   letter-spacing: 0.1em;
@@ -194,7 +160,6 @@
 }
 
 // Social share
-
 .social-share-icon {
   height: 20px;
   padding-right: 1em;
@@ -207,7 +172,6 @@
 }
 
 // You may also like section
-
 .pdp-page-review {
   background: $dirty-white;
 }
@@ -223,7 +187,6 @@
 }
 
 // Reviews Section
-
 .reviews-title {
   letter-spacing: 0.1em;
   font-size: 2em;

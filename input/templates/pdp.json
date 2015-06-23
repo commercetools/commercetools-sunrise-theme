@@ -59,12 +59,12 @@
 				{
 					"name" : "English",
 					"value" : "",
-					"isSelected" : true
+					"selected" : true
 				},
 				{
 					"name" : "German",
 					"value" : "",
-					"isSelected" : false
+					"selected" : false
 				}
 			]
 		},
@@ -744,15 +744,15 @@
 			},
 			{
 				"url" : "coats/",
-				"name" : "Coats",
-				"isCurrent" : false
+				"name" : "Coats"
 			},
       {
 				"url" : "coat1/",
 				"name" : "CoatOne",
-				"isCurrent" : true
+				"current" : true
 			}
 		],
+		
 		"suggestions" : [
 			{
 				"nameHeadline" : "Enditatem Product Name Optional very long line two",
