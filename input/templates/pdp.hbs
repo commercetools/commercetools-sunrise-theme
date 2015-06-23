@@ -173,8 +173,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-3 col-xs-6">
-          {{#each page.products}}
+        {{#each page.products}}
+          <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="shop-item" onclick="location.href='{{url}}';">
               {{#if isOnSale}}
                 <div class="sale-flag">Sale</div>
@@ -183,12 +183,10 @@
                 <div class="new-flag">New</div>
               {{/if}}
               <img class="pop-product-image" src="{{image}}" alt="{{imgDescription}}" width="200" />
-
               <div class="pop-product-name">
                 <span class="name-headline">{{nameHeadline}}</span>
                 <span class="name-subline">{{nameSubline}}</span>
               </div>
-
               <div class="pop-item-price">
                 {{#if reducedPrice}}
                   <span class="strikethrough">{{priceNew}}</span>
@@ -197,11 +195,9 @@
                   <span>{{priceNew}}</span>
                 {{/if}}
               </div>
-
               {{!-- Should this be a clickable link? Right now, you can't click it due to the overlay --}}
               <div class="pop-product-more-colors">
                 {{#if hasMoreColors}}More colours{{/if}}&nbsp;</div>
-
               <div class="shop-item-overlay">
                 <button type="button" class="quickview">Quick view</button>
                 <button type="button" class="heart">
@@ -209,7 +205,8 @@
                 </button>
               </div>
             </div>
-          {{/each}}
+          </div>
+        {{/each}}
         </div>
       </div>
       <hr class="hr">

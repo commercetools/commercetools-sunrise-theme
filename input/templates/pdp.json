@@ -752,6 +752,64 @@
 				"name" : "CoatOne",
 				"isCurrent" : true
 			}
+		],
+		"products" : [
+			{
+				"nameHeadline" : "Enditatem Product Name Optional very long line two",
+				"nameSubline" : "Subline",
+				"image" : "assets/img/blue-jacket.jpg",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 79,99",
+				"priceOld" : "€ 49,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : true,
+				"isNew" : true,
+				"hasMoreColors" : true,
+				"reducedPrice" : true
+			},
+			{
+				"nameHeadline" : "Enditatem Product Name Optional very long line two",
+				"nameSubline" : "Subline",
+				"image" : "assets/img/blue-jacket.jpg",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 79,99",
+				"priceOld" : "€ 49,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : true,
+				"isNew" : true,
+				"hasMoreColors" : true,
+				"reducedPrice" : true
+			},
+			{
+				"nameHeadline" : "Enditatem Product Name Optional very long line two",
+				"nameSubline" : "Subline",
+				"image" : "assets/img/blue-jacket.jpg",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 79,99",
+				"priceOld" : "€ 49,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : true,
+				"isNew" : true,
+				"hasMoreColors" : true,
+				"reducedPrice" : true
+			},
+			{
+				"nameHeadline" : "Enditatem Product Name Optional very long line two",
+				"nameSubline" : "Subline",
+				"image" : "assets/img/blue-jacket.jpg",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 79,99",
+				"priceOld" : "€ 49,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : true,
+				"isNew" : true,
+				"hasMoreColors" : true,
+				"reducedPrice" : true
+			}
 		]
 	}
 }
