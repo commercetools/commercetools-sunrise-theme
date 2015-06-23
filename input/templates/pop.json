@@ -59,7 +59,7 @@
 				{
 					"name" : "English",
 					"value" : "",
-					"selected" : true
+					"selected" : false
 				},
 				{
 					"name" : "German",
@@ -766,7 +766,7 @@
 		"filters" : {
 			"title" : "Filter Products",
 			"clear" : "Clear",
-			"clearAllFilters" : "clear all filters",
+			"filterToggleBtn" : "Filter",
 			"categories" : {
 				"title" : "Product type",
 				"list" : [

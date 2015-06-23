@@ -131,31 +131,6 @@ a.clear-btn {
   padding-top: 5em;
 }
 
-// Buttons for sidebar at mobile view
-
-.sort-by-xs {
-  margin: 0.25em 0;
-}
-
-.sort-by-xs-button {
-  margin: 0.5em 0.5em 0 0;
-  background: $white;
-  color: $dark-grey;
-  border: 1px solid $grey;
-}
-
-.per-page-xs-btn {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url(../../../assets/img/arrow-67.png) no-repeat 28px 6px $white;
-  background-size: 1em;
-  padding: 0.2em 2em 0.2em 0.5em;
-  border-radius: 0;
-  border: 1px solid $grey;
-  color: $dark-grey;
-}
-
 // Brands box
 
 .brands-list {

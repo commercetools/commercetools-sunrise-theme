@@ -8,7 +8,7 @@
 .bzoom_icon,
 .bzoom_hint { display: none }
 
-.bzoom .bzoom_thumb { background: #fff url(./img/loading.gif) center no-repeat; }
+.bzoom .bzoom_thumb { background: #fff url(../img/loading.gif) center no-repeat; }
 
 .bzoom,
 .bzoom ul,
@@ -58,7 +58,7 @@ ul .bzoom_small_thumbs li,
 
 .bzoom .bzoom_zoom_area,
 .bzoom_zoom_area {
-  background: #fff url(./img/loading.gif) center no-repeat;
+  background: #fff url(../img/loading.gif) center no-repeat;
   border: 1px solid #ddd;
   padding: 6px;
   -webkit-box-shadow: 0 0 10px #ddd;

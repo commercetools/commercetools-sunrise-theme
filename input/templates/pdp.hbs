@@ -40,7 +40,7 @@
           <div class="col-sm-6 col-xs-12 product-description">
             <div class="row">
               <div class="col-sm-12">
-                <p><span class="h2 text-uppercase">Enditatem Product Name</span><br><span class="grey-p">Sunrise #SUN123456</span></p>
+                <p><h1 class="text-uppercase pdp-product-title">{{page.product.title}}</h1><span class="grey-p">{{page.product.sku}}</span></p>
               </div>
             </div>
             <div class="row">
@@ -56,58 +56,62 @@
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.<br><a href="#"><span class="view-details">View Details</span></a></p>
+                <p class="pdp-product-description">{{page.product.description}}</p><a href="#"><span class="view-details">{{page.product.viewDetails}}</span></a>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <p class="product-price">&euro; 123,-</p>
+                <p class="product-price">{{page.product.price}}</p>
               </div>
             </div>
             <div class="row select-row">
               <div class="col-sm-4 col-xs-12">
-                <p class="text-uppercase">Color</p>
+                <p class="text-uppercase">{{page.product.color.title}}</p>
                 <div>
-                  <select class="styled-select">
-                    <option value="initial">Choose color</option>
-                    <option value="red">Red</option>
-                    <option value="blue">Blue</option>
-                    <option value="green">Green</option>
+                  <select class="select">
+                    {{#each page.product.color.list}}
+                      <option value="{{value}}" {{#if selected}}selected{{/if}}>{{name}}</option>
+                    {{/each}}
                   </select>
                 </div>
               </div>
               <div class="col-sm-4 col-xs-6">
-                <p class="text-uppercase">Size</p>
+                <p class="text-uppercase">{{page.product.size.title}}</p>
                 <div>
-                  <select class="styled-select">
-                    <option value="initial">Choose size</option>
-                    <option value="small">S</option>
-                    <option value="medium">M</option>
-                    <option value="large">L</option>
+                  <select class="select">
+                    {{#each page.product.size.list}}
+                      <option value="{{value}}" {{#if selected}}selected{{/if}}>{{name}}</option>
+                    {{/each}}
                   </select>
                 </div>
               </div>
               <div class="col-sm-4 col-xs-6 size-guide-col">
-                <a href="#"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">Size Guide</span></a>
+                <a href="#"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">{{page.product.sizeGuide}}</span></a>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-2 col-xs-3">
-                <textarea name="Bag items" id="bag-items" cols="1" rows="1"></textarea>
+                <select class="bag-items">
+                  {{#each page.product.bagItems.list}}
+                    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{name}}</option>
+                  {{/each}}
+                </select>
               </div>
               <div class="col-sm-6 col-xs-6">
                 <button class="add-to-bag text-center">
-                 <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="add to bag">Add to bag
+                 <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="add to bag">{{page.product.addToBag}}
                 </button>
               </div>
               <div class="col-sm-4 col-xs-3">
-                <a href="#"><img class="favourites-btn wishlist-btn" src="assets/img/Heart.png" alt="favourites"></a>
+                <button type="button" class="pdp-product-heart">
+                  <span class="sr-only">Add item to wishlist</span>
+                </button>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12">
                 <div class="availability">
-                  <span class="glyphicon glyphicon-ok-sign"></span>Immediately available, delivery in 2-5 days
+                  <span class="glyphicon glyphicon-ok-sign"></span>{{page.product.available}}
                 </div>
               </div>
             </div>
@@ -117,28 +121,26 @@
                   <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingTwo">
                       <h4 class="panel-title product-accordion-title text-uppercase">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Product Details <img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">{{page.product.productDetails.title}}<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
                         </a>
                       </h4>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                       <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        {{page.product.productDetails.text}}
                       </div>
                     </div>
                   </div>
                   <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingThree">
                       <h4 class="panel-title product-accordion-title text-uppercase delivery-details">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Delivery & Returns <img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{{page.product.deliveryAndReturn.title}}<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
                         </a>
                       </h4>
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                       <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        {{page.product.deliveryAndReturn.text}}
                       </div>
                     </div>
                   </div>
@@ -148,7 +150,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="social-share">
-                  <a href="#"><span><img class="social-share-icon" src="assets/img/sign28.png" alt="share on social">Share</span></a>
+                  <a href="#"><span><img class="social-share-icon" src="assets/img/sign28.png" alt="share on social">{{page.product.share}}</span></a>
                 </div>
               </div>
             </div>
@@ -161,7 +163,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <p class="may-like text-center text-uppercase">You may also like</p>
+          <p class="text-center text-uppercase may-like">You may also like</p>
         </div>
       </div>
       <div class="row">

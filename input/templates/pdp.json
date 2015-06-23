@@ -59,7 +59,7 @@
 				{
 					"name" : "English",
 					"value" : "",
-					"selected" : true
+					"selected" : false
 				},
 				{
 					"name" : "German",
@@ -752,7 +752,124 @@
 				"current" : true
 			}
 		],
-		
+		"product" : {
+				"title" : "Enditatem Product Name",
+				"sku" : "Sunrise #SUN123456",
+				"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+				"viewDetails" : "View Details",
+				"price" : "€ 123,-",
+				"color" : {
+					"title" : "Color",
+					"list" : [
+						{
+							"name" : "Choose Color",
+							"value" : "",
+							"selected" : true
+						},
+						{
+							"name" : "Red",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "Blue",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "Green",
+							"value" : "",
+							"selected" : false
+						}
+					]
+				},
+				"size" : {
+					"title" : "Size",
+					"list" : [
+						{
+							"name" : "Choose Size",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "S",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "M",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "L",
+							"value" : "",
+							"selected" : false
+						}
+					]
+				},
+				"sizeGuide" : "Size Guide",
+				"bagItems" : {
+					"list" : [
+						{
+							"name" : "1",
+							"value" : "",
+							"selected" : true
+						},
+						{
+							"name" : "2",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "3",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "4",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "5",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "6",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "7",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "8",
+							"value" : "",
+							"selected" : false
+						},
+						{
+							"name" : "9",
+							"value" : "",
+							"selected" : false
+						}
+					]
+				},
+				"addToBag" : "Add to bag",
+				"available" : "Available",
+				"productDetails" : {
+					"title" : "Product Details",
+					"text" : "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et."
+				},
+				"deliveryAndReturn" : {
+					"title" : "Delivery & Returns",
+					"text" : "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et."
+				},
+				"share" : "Share"
+			},
 		"suggestions" : [
 			{
 				"nameHeadline" : "Enditatem Product Name Optional very long line two",

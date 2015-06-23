@@ -8,6 +8,15 @@
   padding-bottom: 5em;
 }
 
+.product-info-row-pdp {
+  padding-top: 2em;
+}
+
+ .pdp-product-title {
+   font-size: 1.6em;
+   margin: -0.6em 0 0;
+ }
+
 // Product information
 .product-description {
   font-size: 1.2em;
@@ -60,6 +69,11 @@
     left:2px;
 }
 
+// Product description
+.pdp-product-description {
+  font-size: 0.9em;
+}
+
 // Product information text
 .view-details {
 	color: $dark-grey;
@@ -94,35 +108,44 @@
 }
 
 // Number of bag items
-#bag-items {
+.bag-items {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  padding: 0.5em 1em;
+  border-radius: 0;
   border: 3px solid $yellow;
-  padding: 0.5em 0.5em;
-  resize: none;
-  text-align: center;
-  width: 100%;
 }
 
 // Add to bag button
 .add-to-bag {
   width: 100%;
-  border: 2px solid $yellow;
+  height: 2.8em;
 	background: $yellow;
 	text-transform: uppercase;
 	font-weight: 900;
     &:hover {
-      outline: 2px solid $dark-blue;
+      background: lighten($yellow, 5%);
     }
 }
 
 .bag-thumb {
 	height: 25px;
-	margin: 0.4em 0.5em;
+	margin: 0.5em 0.9em;
 }
 
 // Add to wishlish
-.wishlist-btn {
-  margin: 0;
-  height: 40px;
+.pdp-product-heart {
+  width: 50px;
+  height: 50px;
+  background: url("../img/heart_sprite.png") no-repeat;
+  background-size: 170px;
+  float: left;
+  &:hover,
+  &:focus {
+      background-position: -60px;
+  }
 }
 
 // Availability
@@ -178,7 +201,7 @@
 
 .may-like {
   letter-spacing: 0.1em;
-  font-size: 2em;
+  font-size: 1.9em;
   padding: 1em 0;
 }
 
@@ -189,7 +212,7 @@
 // Reviews Section
 .reviews-title {
   letter-spacing: 0.1em;
-  font-size: 2em;
+  font-size: 1.9em;
   padding: 1em 0;
 }
 
@@ -230,8 +253,5 @@
 @media screen and (max-width: 768px) {
   .add-to-bag {
     font-size: 0.8em;
-  }
-  .product-info-row-pdp {
-    padding-top: 2em;
   }
 }
