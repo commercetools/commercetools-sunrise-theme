@@ -86,22 +86,11 @@ $(function() {
 /*
 /*****************************************************************************/
 
-// Getting image from vertical thumbnail on click
-
-$(document).ready(function() {
-  $(".product-thumb").click(function(event) {
-    event.preventDefault();
-    $("div.product-frame").html($("<img>").attr("src", this.href).fadeIn(100));
-  });
+// Product gallery
+$("#bzoom").zoom({
+zoom_area_width: 300,
+// MORE OPTIONS HERE
 });
-
-// Loading first child of vertical thumbnail on pageload
-
-//There is a bug who prevent other script to work properly, please fix!
-// $(document).ready(function() {
-//   var href = $('#first-thumb').get(0).href;
-//   $('div.product-frame').html($('<img>').attr('src', href).fadeIn(100));
-// });
 
 /*****************************************************************************/
 /*
