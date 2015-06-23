@@ -1,829 +1,678 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="assets/img/favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link href="assets/css/main.min.css" rel="stylesheet">
-    <title></title>
-  </head>
 
-  <body>
-      <div class="navbar navbar-fixed-top">
-    
-        <div class="header">
-          <header class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <ul class="nav-list">
-                  <!-- Toggle the menu on mobile -->
-                  <li class="list-item-nav-toggle">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                  </li>
-                  <!-- Toggles the search field on mobile / not visible on desktop -->
-                  <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only">Toggle search field</span></button></li>
-    
-                  <li class="list-item-store"><a href="#" class="store-select icon-marker"><span class="hidden-xs">Stores</span></a></li>
-    
-                  <li class="list-item-help"><a href="#" class="link-help">Help</a></li>
-    
-                  <li class="list-item-call"><a href="#" class="link-hotline">Call us on +44 123 456 000</a></li>
-                  <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
-                  <li class="list-item-bag"><a href="#" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">Your bag</span> <span class="cart-item-number">12</span></a></li>
-    
-                  <li class="list-item-user"><a href="#"class="link-user icon-user"><span class="hidden-xs hidden-sm">Sign in</span></a></li>
-    
-                  <li class="list-item-language hidden-sm">
-                    <select class="language-select">
-                      <option value="English">Eng</option>
-                      <option value="German">De</option>
-                    </select>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </header>
-        </div>
-    
-        <div id="navigation" class="container">
-          <div class="row logo-search">
-            <div class="col-sm-8">
-              <a href="#" class="brand-logo">
-                <img class="img-responsive" src="assets/img/logo.svg" alt="SUNRISE Logo">
-              </a>
-            </div>
-            <div class="col-sm-4">
-             <form class="search-box text-right" action="">
-                <input class="search-field" type="search" placeholder="Search" />
-                <button type="submit" class="search-button"><span class=".icon-font icon-magnifying-glass"></span> <span class="sr-only">Search</span></button>
-             </form>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link href="assets/css/main.min.css" rel="stylesheet">
+  <title>Sunrise - Product Detail Page</title>
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top">
+  
+      <div class="header">
+        <header class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="nav-list">
+                <!-- Toggle the menu on mobile -->
+                <li class="list-item-nav-toggle">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </li>
+                <!-- Toggles the search field on mobile / not visible on desktop -->
+                <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only">Toggle search field</span></button></li>
+  
+                <li class="list-item-store"><a href="" class="store-select icon-marker"><span class="hidden-xs">STORES</span></a></li>
+  
+                <li class="list-item-help"><a href="" class="link-help">HELP</a></li>
+  
+                <li class="list-item-call"><a href="" class="link-hotline">CALL US ON +44 123 456 000</a></li>
+                <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
+                <li class="list-item-bag"><a href="" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">YOUR BAG</span> <span class="cart-item-number">12</span></a></li>
+  
+                <li class="list-item-user"><a href="" class="link-user icon-user"><span class="hidden-xs hidden-sm">SIGN IN</span></a></li>
+  
+                <li class="list-item-language"><span class="language-label">Location</span>
+                  <select id="language-select" class="language-select">
+                    <option value="1"  data-imagesrc="assets/img/flags/gb.svg" data-description="Pounds">UK - </option>
+                    <option value="2"  data-imagesrc="assets/img/flags/ch.svg" data-description="CHF">Schweiz - </option>
+                    <option value="3"  data-imagesrc="assets/img/flags/jp.svg" data-description="Yen">Japan - </option>
+                    <option value="4"  data-imagesrc="assets/img/flags/us.svg" data-description="US Dollar">USA - </option>
+                    <option value="5" selected="selected" data-imagesrc="assets/img/flags/de.svg" data-description="Euro">DE - </option>
+                    <option value="" >English</option>
+                    <option value="" >German</option>
+                  </select>
+                </li>
+              </ul>
             </div>
           </div>
-    
-          <div class="row">
-            <div class="dropdown-megamenu navbar navbar-default">
-              <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                  <li><a href="#">New</a></li>
-                  <li class="dropdown menu-large">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                    <ul class="dropdown-menu megamenu row dropdown-submenu">
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
+        </header>
+      </div>
+  
+      <div id="navigation" class="container">
+        <div class="row logo-search">
+          <div class="col-sm-8">
+            <a href="#" class="brand-logo">
+              <img class="img-responsive" src="assets/img/logo.svg" alt="SUNRISE Logo">
+            </a>
+          </div>
+          <div class="col-sm-4">
+           <form class="search-box text-right" action="">
+              <input class="search-field" type="search" placeholder="Search" />
+              <button type="submit" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only">Search</span></button>
+           </form>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="dropdown-megamenu navbar navbar-default">
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="">New</a></li>
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">Women<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                  <ul class="dropdown-menu megamenu row dropdown-submenu">
+                    <li class="col-sm-8">
+                      <div class="nav-accordion">
                           <h3>Women</h3>
                           <ul>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
-                            <li><a href="#">T-shirts</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
                           </ul>
                           <h3>Glasses</h3>
                           <ul>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
-                            <li><a href="#">T-shirts</a></li>
-                            <li><a href="#">Sweats</a></li>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
                           <h3>Women</h3>
                           <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Sizing</a></li>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
+                          <h3>Glasses</h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
                           <h3>Women</h3>
                           <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Swimwear</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Ipsum</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
-                          <h3>Women</h3>
-                          <ul>
-                            <li><a href="#">Nesting</a></li>
-                            <li><a href="#">Vertical variation</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
                           </ul>
                           <h3>Glasses</h3>
                           <ul>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Ipsum</a></li>
-                            <li><a href="#">Vertical variation</a></li>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Sizing</a></li>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-4 hidden-xs">
-                        <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown menu-large">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                    <ul class="dropdown-menu megamenu row dropdown-submenu">
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
+                      </div>
+                    </li>
+                    <li class="col-sm-4 hidden-xs">
+                      <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">Men<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                  <ul class="dropdown-menu megamenu row dropdown-submenu">
+                    <li class="col-sm-8">
+                      <div class="nav-accordion">
                           <h3>Men</h3>
                           <ul>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
-                            <li><a href="#">T-shirts</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
                           </ul>
                           <h3>Glasses</h3>
                           <ul>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
                           <h3>Men</h3>
                           <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Sizing</a></li>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
-                            <li><a href="#">T-shirts</a></li>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
+                          <h3>Glasses</h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
                           <h3>Men</h3>
                           <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Sizing</a></li>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Ipsum</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
-                          <h3>Men</h3>
-                          <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Sizing</a></li>
-                            <li><a href="#">Nesting</a></li>
-                            <li><a href="#">Vertical variation</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
                           </ul>
                           <h3>Glasses</h3>
                           <ul>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Ipsum</a></li>
-                            <li><a href="#">Vertical variation</a></li>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-4 hidden-xs">
-                        <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown menu-large">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                    <ul class="dropdown-menu megamenu row dropdown-submenu">
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
+                      </div>
+                    </li>
+                    <li class="col-sm-4 hidden-xs">
+                      <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">Accessories<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                  <ul class="dropdown-menu megamenu row dropdown-submenu">
+                    <li class="col-sm-8">
+                      <div class="nav-accordion">
                           <h3>Accessories</h3>
                           <ul>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">T-shirts</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
                           </ul>
                           <h3>Glasses</h3>
                           <ul>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
-                            <li><a href="#">T-shirts</a></li>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
                           <h3>Accessories</h3>
                           <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Sizing</a></li>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
+                          <h3>Glasses</h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
                           <h3>Accessories</h3>
                           <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Ipsum</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
-                          <h3>Accessories</h3>
-                          <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Sizing</a></li>
-                            <li><a href="#">Nesting</a></li>
-                            <li><a href="#">Vertical variation</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
                           </ul>
                           <h3>Glasses</h3>
                           <ul>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Ipsum</a></li>
-                            <li><a href="#">Vertical variation</a></li>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-4 hidden-xs">
-                        <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown menu-large">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brands<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                    <ul class="dropdown-menu megamenu row dropdown-submenu">
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
-                          <h3>Brand</h3>
+                      </div>
+                    </li>
+                    <li class="col-sm-4 hidden-xs">
+                      <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown">Brands<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                  <ul class="dropdown-menu megamenu row dropdown-submenu">
+                    <li class="col-sm-8">
+                      <div class="nav-accordion">
+                          <h3>Brands</h3>
                           <ul>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
-                            <li><a href="#">T-shirts</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
                           </ul>
                           <h3>Glasses</h3>
                           <ul>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">T-shirts</a></li>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
-                          <h3>Brand</h3>
+                          <h3>Brands</h3>
                           <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Sizing</a></li>
-                            <li><a href="#">T-shirts</a></li>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Sweats</a></li>
-                            <li><a href="#">Swimwear</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
-                          <h3>Brand</h3>
-                          <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Button toolbar</a></li>
-                            <li><a href="#">Sizing</a></li>
-                            <li><a href="#">Suits</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Ipsum</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-2">
-                        <div class="nav-accordion">
-                          <h3>Brand</h3>
-                          <ul>
-                            <li><a href="#">Basic example</a></li>
-                            <li><a href="#">Nesting</a></li>
-                            <li><a href="#">Vertical variation</a></li>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
                           </ul>
                           <h3>Glasses</h3>
                           <ul>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Ipsum</a></li>
-                            <li><a href="#">Vertical variation</a></li>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
                           </ul>
-                        </div>
-                      </li>
-                      <li class="col-sm-4 hidden-xs">
-                        <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="#" class="sale icon-ribbon"></span> Sale</a></li>
-                </ul>
-              </div>
+                          <h3>Brands</h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3>Glasses</h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="col-sm-4 hidden-xs">
+                      <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="" class="sale icon-ribbon">Sale</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-
-    <div class="pdp-page">
-      <div id="pdp-page" class="container">
-        <div class="row">
-            <div class="col-xs-12 breadcrumb-col">
-              <ol class="breadcrumb">
-              </ol>            </div>
+    </div>
+  <div class="pdp-page">
+    <div id="pdp-page" class="container">
+      <div class="row">
+          <div class="col-xs-12 breadcrumb-col">
+            <ol class="breadcrumb">
+            		<li >
+            			<a href="home/">Home</a>
+            		</li>
+            		<li >
+            			<a href="women/">Women</a>
+            		</li>
+            		<li >
+            			<a href="coats/">Coats</a>
+            		</li>
+            		<li class="active">
+            			<a href="coat1/">CoatOne</a>
+            		</li>
+            </ol>
           </div>
-          <div class="row product-info-row-pdp">
-            <div class="col-sm-1 col-xs-3">
-              <div class="row">
-                <div class="col-sm-12">
-                  <a class="product-thumb" id="first-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
-                </div>
+        </div>
+        <div class="row product-info-row-pdp">
+          <div class="col-sm-1 col-xs-3">
+            <div class="row">
+              <div class="col-sm-12">
+                <a class="product-thumb" id="first-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
               </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <a class="product-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
-                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <a class="product-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
               </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <a class="product-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
-                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <a class="product-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
               </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <a class="product-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <a class="product-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-xs-9">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="product-frame text-center">
                 </div>
               </div>
             </div>
-            <div class="col-sm-5 col-xs-9">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="product-frame text-center">
+          </div>
+          <div class="col-sm-6 col-xs-12 product-description">
+            <div class="row">
+              <div class="col-sm-12">
+                <p><span class="h2 text-uppercase">Enditatem Product Name</span><br><span class="grey-p">Sunrise #SUN123456</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <fieldset class="rating">
+                  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                </fieldset>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.<br><a href="#"><span class="view-details">View Details</span></a></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="product-price">&euro; 123,-</p>
+              </div>
+            </div>
+            <div class="row select-row">
+              <div class="col-sm-4 col-xs-12">
+                <p class="text-uppercase">Color</p>
+                <div>
+                  <select class="styled-select">
+                    <option value="initial">Choose color</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-6">
+                <p class="text-uppercase">Size</p>
+                <div>
+                  <select class="styled-select">
+                    <option value="initial">Choose size</option>
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-6 size-guide-col">
+                <a href="#"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">Size Guide</span></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2 col-xs-3">
+                <textarea name="Bag items" id="bag-items" cols="1" rows="1"></textarea>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <button class="add-to-bag text-center">
+                 <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="add to bag">Add to bag
+                </button>
+              </div>
+              <div class="col-sm-4 col-xs-3">
+                <a href="#"><img class="favourites-btn wishlist-btn" src="assets/img/Heart.png" alt="favourites"></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="availability">
+                  <span class="glyphicon glyphicon-ok-sign"></span>Immediately available, delivery in 2-5 days
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="panel-group panel-group-pdp" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title product-accordion-title text-uppercase">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Product Details <img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title product-accordion-title text-uppercase delivery-details">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Delivery & Returns <img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-xs-12 product-description">
-              <div class="row">
-                <div class="col-sm-12">
-                  <p><span class="h2 text-uppercase">Enditatem Product Name</span><br><span class="grey-p">Sunrise #SUN123456</span></p>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="social-share">
+                  <a href="#"><span><img class="social-share-icon" src="assets/img/sign28.png" alt="share on social">Share</span></a>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <fieldset class="rating">
+            </div>
+          </div>
+        </div>
+     </div>
+  </div>
+
+  <div class="pdp-page-review">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="may-like text-center text-uppercase">You may also like</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-xs-6">
+        </div>
+      </div>
+      <hr class="hr">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="text-uppercase reviews-title">Reviews</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="review-count">1 - 5 of 51 Reviews</div>
+            </div>
+            <hr class="hr">
+          </div>
+          <div class="single-comment">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="review-rating">
+                  <fieldset class="rating rated-stars">
                     <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
                     <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
                     <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
                     <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
                     <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
                   </fieldset>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.<br><a href="#"><span class="view-details">View Details</span></a></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="product-price">&euro; 123,-</p>
-                </div>
-              </div>
-              <div class="row select-row">
-                <div class="col-sm-4 col-xs-12">
-                  <p class="text-uppercase">Color</p>
-                  <div>
-                    <select class="styled-select">
-                      <option value="initial">Choose color</option>
-                      <option value="red">Red</option>
-                      <option value="blue">Blue</option>
-                      <option value="green">Green</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-xs-6">
-                  <p class="text-uppercase">Size</p>
-                  <div>
-                    <select class="styled-select">
-                      <option value="initial">Choose size</option>
-                      <option value="small">S</option>
-                      <option value="medium">M</option>
-                      <option value="large">L</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-xs-6 size-guide-col">
-                  <a href="#"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">Size Guide</span></a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-2 col-xs-3">
-                  <textarea name="Bag items" id="bag-items" cols="1" rows="1"></textarea>
-                </div>
-                <div class="col-sm-6 col-xs-6">
-                  <button class="add-to-bag text-center">
-                   <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="add to bag">Add to bag
-                  </button>
-                </div>
-                <div class="col-sm-4 col-xs-3">
-                  <a href="#"><img class="favourites-btn wishlist-btn" src="assets/img/Heart.png" alt="favourites"></a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="availability">
-                    <span class="glyphicon glyphicon-ok-sign"></span>Immediately available, delivery in 2-5 days
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="panel-group panel-group-pdp" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title product-accordion-title text-uppercase">
-                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Product Details <img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title product-accordion-title text-uppercase delivery-details">
-                          <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Delivery & Returns <img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="social-share">
-                    <a href="#"><span><img class="social-share-icon" src="assets/img/sign28.png" alt="share on social">Share</span></a>
-                  </div>
+                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
                 </div>
               </div>
             </div>
-          </div>
-       </div>
-    </div>
-
-    <div class="pdp-page-review">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <p class="may-like text-center text-uppercase">You may also like</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3 col-xs-6">
-            <div class="text-center center-block gallery-item gallery-item-pdp">
-              <div class="shop-item">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="new-flag">New</div>
-                    <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
-                  </div>
-                </div>
-                <div class="row text-uppercase">
-                  <div class="col-xs-12">
-                    <p>Enditatem Product Name<br>&euro;250,-</p>
-                  </div>
-                </div> 
-                <div class="overlay">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
-                    </div>
-                  </div>
-                </div> 
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
               </div>
             </div>
           </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="text-center center-block gallery-item gallery-item-pdp">
-              <div class="shop-item">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="sale-flag">Sale</div>
-                    <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
-                  </div>
-                </div>
-                <div class="row text-uppercase">
-                  <div class="col-xs-12">
-                    <p>Enditatem Product Name<br><span class="text-red "><del>&euro;250,-</del></span> &euro;200,-</p>
-                  </div>
-                </div> 
-                <div class="overlay">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
-                    </div>
-                  </div>
-                </div> 
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="text-center center-block gallery-item gallery-item-pdp">
-              <div class="shop-item">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="new-flag">New</div>
-                    <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
-                  </div>
-                </div>
-                <div class="row text-uppercase">
-                  <div class="col-xs-12">
-                    <p>Enditatem Product Name<br>&euro;250,-</p>
-                  </div>
-                </div> 
-                <div class="overlay">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
-                    </div>
-                  </div>
-                </div> 
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-xs-6">
-            <div class="text-center center-block">
-              <div class="shop-item">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="sale-flag">Sale</div>
-                    <img class="img-responsive center-block thumbnail-img" src="assets/img/blue-jacket.jpg" alt="placeholder">
-                  </div>
-                </div>
-                <div class="row text-uppercase">
-                  <div class="col-xs-12">
-                    <p>Enditatem Product Name<br><span class="text-red "><del>&euro;250,-</del></span> &euro;200,-</p>
-                  </div>
-                </div> 
-                <div class="overlay">
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <a href="#"><img class="quicklook-btn" src="assets/img/quicklook.png" alt="quicklook"></a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <a href="#"><img class="favourites-btn" src="assets/img/Heart.png" alt="favourites"></a>
-                    </div>
-                  </div>
-                </div> 
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="hr">
-        <div class="row">
-          <div class="col-sm-12">
-            <p class="text-uppercase reviews-title">Reviews</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
+          <hr class="hr">
+          <div class="single-comment">
             <div class="row">
               <div class="col-sm-12">
-                <div class="review-count">1 - 5 of 51 Reviews</div>
+                <div class="review-rating">
+                  <fieldset class="rating rated-stars">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                  </fieldset>
+                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
+                </div>
               </div>
-              <hr class="hr">
             </div>
-            <div class="single-comment">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="review-rating">
-                    <fieldset class="rating rated-stars">
-                      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset>
-                    <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                  </div>
-                </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
               </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-                </div>
-              </div> 
             </div>
-            <hr class="hr">
-            <div class="single-comment">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="review-rating">
-                    <fieldset class="rating rated-stars">
-                      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset>
-                    <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                  </div>
-                </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
               </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-                </div>
-              </div> 
-            </div>
-            <hr class="hr">
-            <div class="single-comment">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="review-rating">
-                    <fieldset class="rating rated-stars">
-                      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                    </fieldset>
-                    <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-                </div>
-              </div> 
             </div>
           </div>
-        </div> 
+          <hr class="hr">
+          <div class="single-comment">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="review-rating">
+                  <fieldset class="rating rated-stars">
+                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                  </fieldset>
+                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="footer">
-      <div id="footer" class="container">
-        <div class="row text-uppercase">
-          <div class="col-sm-2">
+  </div>
+  <div class="footer">
+    <div id="footer" class="container">
+      <div class="row text-uppercase">
+        <div class="col-sm-2">
+          <div class="footer-col">
             <ul>
               <li class="footer-title hidden-xs">Customer Care</li>
-              <li><a href="">Contact us</a></li>
-              <li><a href="">Help</a></li>
-              <li><a href="">Shipping</a></li>
-              <li><a href="">Returns</a></li>
-              <li><a href="">Size Guide</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Shipping</a></li>
+                <li><a href="">Returns</a></li>
+                <li><a href="">Size Guide</a></li>
             </ul>
           </div>
-          <div class="col-sm-2 hidden-xs">
+        </div>
+        <div class="col-sm-2 hidden-xs">
+          <div class="footer-col">
             <ul>
-              <li class="footer-title">About Us</li>
-              <li><a href="">Our Story</a></li>
-              <li><a href="">Careers</a></li>
+              <li class="footer-title hidden-xs">About Us</li>
+                <li><a href="">Our Story</a></li>
+                <li><a href="">Careers</a></li>
             </ul>
           </div>
-          <div class="col-sm-2 hidden-xs">
+        </div>
+        <div class="col-sm-2 hidden-xs">
+          <div class="footer-col">
             <ul>
-              <li class="footer-title">Shortcuts</li>
-              <li><a href="">My Account</a></li>
-              <li><a href="">Store Locator</a></li>
-              <li><a href="">Gift Cards</a></li>
-              <li><a href="">Payment</a></li>
+              <li class="footer-title hidden-xs">Shortcuts</li>
+                <li><a href="">My Account</a></li>
+                <li><a href="">Store Locator</a></li>
+                <li><a href="">Gift Cards</a></li>
+                <li><a href="">Payment</a></li>
             </ul>
           </div>
-          <div class="col-sm-6 text-center newsletter-box">
-            <div class="row">
-              <div class="col-sm-5 footer-title-yellow">
-                <p>Join our newsletter</p>
-              </div>
-              <div class="col-sm-7">
-                <form class="email-submit" action="">
-                  <input class="email-box" type="text" placeholder="Your email ...">
-                </form>
-              </div>
+        </div>
+        <div class="col-sm-6 text-center newsletter-box">
+          <div class="row">
+            <div class="col-sm-5 text-left footer-title-yellow">
+              <p>Join our newsletter</p>
             </div>
-            <div class="row">
-              <div class="col-sm-8 text-left card-info footer-title">
-                <p>Pay securely with these payment methods</p>
-                <img src="assets/img/cards.png" alt="payment types" class="img-responsive payment-cards">
-              </div>
-              <div class="col-sm-4 text-left card-info footer-title">
-                <p>Follow us</p>
-                <ul class="social-icons">
-                  <a href=""><li><img class="social-icon" src="assets/img/facebook-32.png" alt="facebook"></li></a>
-                  <a href=""><li><img class="social-icon" src="assets/img/pinterest-32.png" alt="pinterest"></li></a>
-                  <a href=""><li><img class="social-icon" src="assets/img/google-plus-32.png" alt="google plus"></li></a>
-                </ul>
-              </div>
+            <div class="col-sm-7">
+              <form class="email-submit" action="">
+                <input class="email-box" type="text" placeholder="Your email ...">
+                <button type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">Search</span></button>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 text-left card-info footer-title">
+              <p>Pay securely with these payment methods</p>
+              <img src="assets/img/cards.png" alt="payment types" class="img-responsive payment-cards">
+            </div>
+            <div class="col-sm-4 text-left card-info footer-title">
+              <p>Follow us</p>
+              <ul class="social-icons">
+                <a href=""><li><img class="social-icon" src="assets/img/facebook-32.png" alt="facebook"></li></a>
+                <a href=""><li><img class="social-icon" src="assets/img/pinterest-32.png" alt="pinterest"></li></a>
+                <a href=""><li><img class="social-icon" src="assets/img/google-plus-32.png" alt="google plus"></li></a>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <div class="sub-footer">
-      <div class="container">
-        <div class="row text-uppercase">
-          <div class="col-sm-12">
-            <ul class="footer-title imprint-row">
-              <li>&copy; 2015 Sunrise</li>
-              <a href="#"><li>Imprint</li></a>
-              <a href="#"><li>Privacy policy</li></a>
-              <a href="#"><li>Terms of use</li></a>
-            </ul>
-          </div>
+  </div>
+  
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row text-uppercase">
+        <div class="col-sm-12">
+          <ul class="footer-title imprint-row">
+            <li class="hidden-xs">&amp;copy; 2015 Sunrise</li>
+              <li><a href="">Imprint</a></li>
+              <li><a href="">Privacy policy</a></li>
+              <li><a href="">Terms of use</a></li>
+            <li class="visible-xs">&amp;copy; 2015 Sunrise</li>
+          </ul>
         </div>
       </div>
-    </div> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="assets/js/ddslick.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
