@@ -745,6 +745,11 @@
 			{
 				"url" : "coats/",
 				"name" : "Coats",
+				"isCurrent" : false
+			},
+      {
+				"url" : "coat1/",
+				"name" : "CoatOne",
 				"isCurrent" : true
 			}
 		]
