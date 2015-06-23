@@ -15,7 +15,7 @@ $(document).ready(function(){
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 150) {
+        if (scroll >= 300) {
             body.addClass("small-header");
         } else {
             body.removeClass("small-header");
@@ -83,7 +83,7 @@ $(function() {
     range: true,
     min: 0,
     max: 1000,
-    values: [0, 1000],
+    values: [0, 300],
     slide: function(event, ui) {
       $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
     }
@@ -171,20 +171,4 @@ inputNumber($('.input-number'));
 
 $( "#different-billing-checkbox" ).click(function() {
   $( "#different-billing-address" ).slideToggle( "slow" )
-});
-
-
-
-/*****************************************************************************/
-/*
-/* CUSTOM LANGUAGE SELECT WITH COUNTRY FLAGS
-/*
-/*****************************************************************************/
-
-$('#language-select').ddslick({
-    width: 220,
-    background: 'transparent',
-    onSelected: function(selectedData){
-        //callback function: do something with selectedData;
-    }
 });
