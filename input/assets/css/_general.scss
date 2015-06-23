@@ -43,10 +43,10 @@ body {
   overflow-x: hidden !important;
 
   // In order to see the page content due to fixed navigation
-  padding-top: 120px;
+  padding-top: 115px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 190px;
+    padding-top: 185px;
   }
 
 	// Font rendering optimization
@@ -104,8 +104,10 @@ button {
 
    &.icon-drop-down::before {
     position: absolute;
-    top: 3px;
+    top: 5px;
     right: 10px;
     color: $dark-grey;
+		transform: scale(0.7);
+		pointer-events: none;
    }
 }

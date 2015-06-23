@@ -20,7 +20,8 @@
   background: none;
   padding: 1em 0;
   margin-bottom: 0;
-  font-size: 1em;
+  font-size: 0.9em;
+  text-transform: uppercase;
 }
 
 .product-filter {
@@ -43,10 +44,11 @@
   background-color: $dirty-white;
   font-size: 14px;
   margin-top: 10px;
-  font-weight: 700;
-
   a.collapsed {
     font-weight: 400;
+  }
+  a:hover {
+    color: $dark-grey;
   }
 }
 
@@ -64,10 +66,22 @@
 .product-type,
 .size-box,
 .color-box,
-.designer-box,
+.brands-box,
 .price-box {
   padding: 1em 0 0;
   font-size: 16px;
+}
+
+.pop-filter-size,
+.pop-filter-color {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  padding: 0.5em 0;
+  label {
+    margin-left: 1em;
+    font-weight: 400;
+  }
 }
 
 // Price slider
@@ -142,14 +156,18 @@ a.clear-btn {
   color: $dark-grey;
 }
 
-// Designer box
+// Brands box
 
-.designer-list {
+.brands-list {
   margin-top: 1em;
   padding: 1em;
   border: 1px solid $light-grey;
   max-height: 500px;
   overflow-y: scroll;
+}
+
+#brands-checkbox {
+  margin-left: 0;
 }
 
 // Placeholder image
@@ -178,84 +196,6 @@ a.clear-btn {
   height: 20px;
 }
 
-// Gallery items
-
-.thumbnail-img {
-  padding-bottom: 1.25em;
-  max-width: 210px;
-  max-height: 280px;
-}
-
-.shop-item {
-  background: $white;
-  font-size: 1em;
-  border: 1px solid $light-grey;
-  border-radius: 2px;
-  color: $dark-grey;
-  margin-bottom: 2.2em;
-  text-align: center;
-  // for overlay
-  position: relative;
-}
-
-.sale-flag {
-  height: 3em;
-  width: 3em;
-  border: 1px solid $red;
-  border-radius: 50%;
-  color: $red;
-  position: absolute;
-  padding: 0.7em 0.3em;
-  margin: 1em 0 0 1em;
-}
-
-.new-flag {
-  height: 3em;
-  width: 3em;
-  color: $black;
-  position: absolute;
-  padding: 0.7em 0.3em;
-  margin: 1em 0 0 1em;
-}
-
-// Gallery items overlay
-
-.overlay {
-  background: rgba(0,0,0,.1);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  outline: 10px solid $white;
-  width: 100%;
-  height: 100%;
-}
-
-.shop-item:hover .overlay{
-  opacity: 1;
-  transition: 0.3s;
-}
-
-.quicklook-btn {
-  margin-top: 50%;
-  height: 45px;
-}
-
-.favourites-btn {
-  margin-top: 20px;
-  height: 35px;
-}
-
-// Quicklook and favourites button changes on hover
-
-.quicklook-btn:hover {
-  content: url("../../../assets/img/quicklook-hover.png");
-}
-
-.favourites-btn:hover {
-  content: url("../../../assets/img/Heart-inverted.png");
-}
-
 // SEO text area
 
 .seo-title {
@@ -268,7 +208,7 @@ a.clear-btn {
   text-align: center;
   text-transform: none;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 /*****************************************************************************/
@@ -282,12 +222,6 @@ a.clear-btn {
     max-width: 100%;
     max-height: 100%;
   }
-  .sale-flag,
-  .new-flag {
-    zoom: 0.7;
-    -moz-transform: scale(0.7);
-  }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -319,12 +253,6 @@ a.clear-btn {
 
   .overlay {
     display: none;
-  }
-
-  .sale-flag,
-  .new-flag {
-    zoom: 0.9;
-    -moz-transform: scale(0.9);
   }
 
   .newsletter-box {
@@ -361,17 +289,40 @@ a.clear-btn {
   .imprint-row {
     text-align: center;
   }
-
-  .sale-flag,
-  .new-flag {
-    zoom: 0.5;
-    -moz-transform: scale(0.5);
-  }
 }
 
 @media screen and (max-width: 375px) {
-  #sidebar {
-    padding-left: 3em;
-    padding-right: 2em;
+  .footer-title-yellow {
+    margin-left: 1em;
+  }
+  .footer-col {
+    text-align: left;
+  }
+  .card-info {
+    text-align: left;
+    margin-left: 1em;
+  }
+  .payment-cards {
+    margin-left: 0;
+  }
+  .email-submit {
+    padding: 0 1em;
+    .search-button {
+      right: 25px;
+    }
+  }
+  .container .jumbotron {
+    border: none;
+  }
+
+  // Banner image
+  figure.figure-banner figcaption.figcaption-banner-text {
+    bottom: 0;
+  }
+  figure.figure-banner {
+    margin-top: 0;
+  }
+  .figure-col {
+    padding: 0;
   }
 }

@@ -16,20 +16,24 @@
               <!-- Toggles the search field on mobile / not visible on desktop -->
               <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only">Toggle search field</span></button></li>
 
-              <li class="list-item-store"><a href="#" class="store-select icon-marker"><span class="hidden-xs">Stores</span></a></li>
+              <li class="list-item-store"><a href="{{header.stores.url}}" class="store-select icon-marker"><span class="hidden-xs">{{header.stores.title}}</span></a></li>
 
-              <li class="list-item-help"><a href="#" class="link-help">Help</a></li>
+              <li class="list-item-help"><a href="{{header.help.url}}" class="link-help">{{header.help.title}}</a></li>
 
-              <li class="list-item-call"><a href="#" class="link-hotline">Call us on +44 123 456 000</a></li>
+              <li class="list-item-call"><a href="{{header.callUs.url}}" class="link-hotline">{{header.callUs.title}}</a></li>
               <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
-              <li class="list-item-bag"><a href="#" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">Your bag</span> <span class="cart-item-number">12</span></a></li>
+              <li class="list-item-bag"><a href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">{{header.miniCart.title}}</span> <span class="cart-item-number">{{header.miniCart.numItems}}</span></a></li>
 
-              <li class="list-item-user"><a href="#"class="link-user icon-user"><span class="hidden-xs hidden-sm">Sign in</span></a></li>
+              <li class="list-item-user"><a href="{{header.logIn.signIn.url}}" class="link-user icon-user"><span class="hidden-xs hidden-sm">{{header.logIn.signIn.title}}</span></a></li>
 
-              <li class="list-item-language hidden-sm">
-                <select class="language-select">
-                  <option value="English">Eng</option>
-                  <option value="German">De</option>
+              <li class="list-item-language"><span class="language-label">Location</span>
+                <select id="language-select" class="language-select">
+                {{#each header.currencies.list}}
+                  <option value="{{value}}" {{#if selected}}selected="selected"{{/if}} data-imagesrc="{{imageSrc}}" data-description="{{description}}">{{text}} - </option>
+                {{/each}}
+                {{#each header.languages.list}}
+                  <option value="{{value}}" {{#if selected}}selected="selected"{{/if}}>{{name}}</option>
+                {{/each}}
                 </select>
               </li>
             </ul>
@@ -48,7 +52,7 @@
         <div class="col-sm-4">
          <form class="search-box text-right" action="">
             <input class="search-field" type="search" placeholder="Search" />
-            <button type="submit" class="search-button"><span class=".icon-font icon-magnifying-glass"></span> <span class="sr-only">Search</span></button>
+            <button type="submit" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only">Search</span></button>
          </form>
         </div>
       </div>
@@ -57,70 +61,20 @@
         <div class="dropdown-megamenu navbar navbar-default">
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="#">New</a></li>
+              <li><a href="{{header.navMenu.new.url}}">{{header.navMenu.new.title}}</a></li>
               <li class="dropdown menu-large">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <a href="{{header.navMenu.women.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.women.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
                 <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-2">
+                  <li class="col-sm-8">
                     <div class="nav-accordion">
-                      <h3>Women</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                        <li><a href="#">Sweats</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Women</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Women</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Women</h3>
-                      <ul>
-                        <li><a href="#">Nesting</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                      </ul>
+                      {{#each header.navMenu.women.children}}
+                        <h3>{{title}}</h3>
+                        <ul>
+                          {{#each children}}
+                            <li><a href="{{url}}">{{title}}</a></li>
+                          {{/each}}
+                        </ul>
+                      {{/each}}
                     </div>
                   </li>
                   <li class="col-sm-4 hidden-xs">
@@ -129,72 +83,18 @@
                 </ul>
               </li>
               <li class="dropdown menu-large">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <a href="{{header.navMenu.men.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.men.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
                 <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-2">
+                  <li class="col-sm-8">
                     <div class="nav-accordion">
-                      <h3>Men</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Men</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Men</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Men</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Nesting</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
+                      {{#each header.navMenu.men.children}}
+                        <h3>{{title}}</h3>
+                        <ul>
+                          {{#each children}}
+                            <li><a href="{{url}}">{{title}}</a></li>
+                          {{/each}}
+                        </ul>
+                      {{/each}}
                     </div>
                   </li>
                   <li class="col-sm-4 hidden-xs">
@@ -203,68 +103,18 @@
                 </ul>
               </li>
               <li class="dropdown menu-large">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <a href="{{header.navMenu.accessories.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.accessories.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
                 <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-2">
+                  <li class="col-sm-8">
                     <div class="nav-accordion">
-                      <h3>Accessories</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Accessories</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Accessories</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Accessories</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Nesting</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
+                      {{#each header.navMenu.accessories.children}}
+                        <h3>{{title}}</h3>
+                        <ul>
+                          {{#each children}}
+                            <li><a href="{{url}}">{{title}}</a></li>
+                          {{/each}}
+                        </ul>
+                      {{/each}}
                     </div>
                   </li>
                   <li class="col-sm-4 hidden-xs">
@@ -273,66 +123,18 @@
                 </ul>
               </li>
               <li class="dropdown menu-large">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brands<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <a href="{{header.navMenu.brands.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.brands.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
                 <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-2">
+                  <li class="col-sm-8">
                     <div class="nav-accordion">
-                      <h3>Brand</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Brand</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Brand</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Brand</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Nesting</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
+                      {{#each header.navMenu.brands.children}}
+                        <h3>{{title}}</h3>
+                        <ul>
+                          {{#each children}}
+                            <li><a href="{{url}}">{{title}}</a></li>
+                          {{/each}}
+                        </ul>
+                      {{/each}}
                     </div>
                   </li>
                   <li class="col-sm-4 hidden-xs">
@@ -340,7 +142,7 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="#" class="sale icon-ribbon"></span> Sale</a></li>
+              <li><a href="{{header.navMenu.sale.url}}" class="sale icon-ribbon">{{header.navMenu.sale.title}}</a></li>
             </ul>
           </div>
         </div>

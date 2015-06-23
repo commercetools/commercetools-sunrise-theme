@@ -9,34 +9,60 @@
 			"title" : "HELP",
 			"url" : ""
 		},
-		"callUs" : "CALL US ON +44 123 456 000",
-		"languages" : {
-			"title" : "Language",
+		"callUs" : {
+			"title" : "CALL US ON +44 123 456 000",
+			"url" : ""
+		},
+		"currencies" : {
+			"title" : "currency",
 			"list" : [
 				{
-					"name" : "ENG",
-					"value" : "",
-					"label" : "English",
-					"isSelected" : true
+					"text" : "UK",
+					"value" : 1,
+					"selected" : false,
+					"description" : "Pounds",
+					"imageSrc" : "assets/img/flags/gb.svg"
 				},
 				{
-					"name" : "DE",
-					"value" : "",
-					"label" : "German",
-					"isSelected" : false
+					"text" : "Schweiz",
+					"value" : 2,
+					"selected" : false,
+					"description" : "CHF",
+					"imageSrc" : "assets/img/flags/ch.svg"
+				},
+				{
+					"text" : "Japan",
+					"value" : 3,
+					"selected" : false,
+					"description" : "Yen",
+					"imageSrc" : "assets/img/flags/jp.svg"
+				},
+				{
+					"text" : "USA",
+					"value" : 4,
+					"selected" : false,
+					"description" : "US Dollar",
+					"imageSrc" : "assets/img/flags/us.svg"
+				},
+				{
+					"text" : "DE",
+					"value" : 5,
+					"selected" : true,
+					"description" : "Euro",
+					"imageSrc" : "assets/img/flags/de.svg"
 				}
 			]
 		},
-		"currencies" : {
-			"title" : "Currency",
+		"languages" : {
+			"title" : "language",
 			"list" : [
 				{
-					"name" : "Euro",
+					"name" : "English",
 					"value" : "",
 					"isSelected" : true
 				},
 				{
-					"name" : "Pound",
+					"name" : "German",
 					"value" : "",
 					"isSelected" : false
 				}
@@ -228,7 +254,35 @@
 								"url" : ""
 							},
 							{
-								"title" : "Ipsum",
+								"title" : "Very long navigation item",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation items will be truncated",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation item",
+								"url" : ""
+							},
+							{
+								"title" : "Button toolbar",
+								"url" : ""
+							},
+							{
+								"title" : "Sizing",
+								"url" : ""
+							},
+							{
+								"title" : "Nesting",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation items will be truncated",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation item",
 								"url" : ""
 							}
 						]
@@ -254,7 +308,7 @@
 								"url" : ""
 							},
 							{
-								"title" : "Vertical variation",
+								"title" : "Very long navigation items will be truncated",
 								"url" : ""
 							}
 						]
@@ -286,7 +340,7 @@
 								"url" : ""
 							},
 							{
-								"title" : "Sizing",
+								"title" : "Very long navigation items will be truncated",
 								"url" : ""
 							},
 							{
@@ -354,7 +408,35 @@
 								"url" : ""
 							},
 							{
-								"title" : "Ipsum",
+								"title" : "Very long navigation item",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation items will be truncated",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation item",
+								"url" : ""
+							},
+							{
+								"title" : "Button toolbar",
+								"url" : ""
+							},
+							{
+								"title" : "Sizing",
+								"url" : ""
+							},
+							{
+								"title" : "Nesting",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation items will be truncated",
+								"url" : ""
+							},
+							{
+								"title" : "Very long navigation item",
 								"url" : ""
 							}
 						]
@@ -568,7 +650,7 @@
 				]
 			}
 		}
-	},	
+	},
 	"footer" : {
 		"paySecure" : "Pay securely with these payment methods",
 		"followUs" : "Follow us",
@@ -652,7 +734,7 @@
 	"seo" : {
 		"title" : "SEO TEXT AREA",
 		"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
-	},	
+	},
 	"page" : {
 		"title" : "Products",
 		"banner" : {
@@ -680,11 +762,10 @@
 				"name" : "Coats",
 				"isCurrent" : true
 			}
-		],		
+		],
 		"filters" : {
-			"title" : "Filters",
+			"title" : "Filter Products",
 			"clear" : "Clear",
-			"clearAll" : "Clear All",
 			"clearAllFilters" : "clear all filters",
 			"categories" : {
 				"title" : "Product type",
@@ -842,7 +923,7 @@
 					}
 				]
 			}
-		},		
+		},
 		"pagination" : {
 			"currentPage" : 145,
 			"totalPages" : 234,
@@ -901,12 +982,12 @@
 			"title" : "Sort by price",
 			"list" : [
 				{
-					"name" : "Low",
+					"name" : "Sort by: low",
 					"value" : "",
 					"isSelected" : false
 				},
 				{
-					"name" : "High",
+					"name" : "Sort by high",
 					"value" : "",
 					"isSelected" : true
 				}
@@ -914,94 +995,130 @@
 		},
 		"products" : [
 			{
-				"name" : "Enditatem Product Name Optional Line Two",
+				"nameHeadline" : "Enditatem Product Name Optional very long line two",
+				"nameSubline" : "Subline",
 				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 79,99",
+				"priceOld" : "€ 49,-",
 				"url" : "",
 				"favouriteUrl" : "",
 				"isOnSale" : true,
-				"isNew" : false,
-				"hasMoreColors" : true
+				"isNew" : true,
+				"hasMoreColors" : true,
+				"reducedPrice" : true
 			},
 			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : true,
-				"isNew" : false,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
+				"nameHeadline" : "Just one single line",
+				"nameSubline" : "",
+				"image" : "assets/img/blue-shirt.jpg",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 250,-",
+				"priceOld" : "€ 149,-",
 				"url" : "",
 				"favouriteUrl" : "",
 				"isOnSale" : false,
 				"isNew" : true,
-				"hasMoreColors" : true
+				"hasMoreColors" : false,
+				"reducedPrice" : true
 			},
 			{
-				"name" : "Enditatem Product Name Optional Line Two",
+				"nameHeadline" : "Headline",
+				"nameSubline" : "Enditatem Product Name Optional Line Two",
 				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 250,-",
+				"priceOld" : "€ 49,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : true,
+				"isNew" : false,
+				"hasMoreColors" : true,
+				"reducedPrice" : false
+			},
+			{
+				"nameHeadline" : "Enditatem Product Name Optional very long line two",
+				"nameSubline" : "Subline",
+				"image" : "assets/img/blue-jacket.jpg",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 79,99",
+				"priceOld" : "€ 49,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : true,
+				"isNew" : true,
+				"hasMoreColors" : true,
+				"reducedPrice" : true
+			},
+			{
+				"nameHeadline" : "Just one single line",
+				"nameSubline" : "",
+				"image" : "assets/img/blue-shirt.jpg",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 250,-",
+				"priceOld" : "€ 149,-",
 				"url" : "",
 				"favouriteUrl" : "",
 				"isOnSale" : false,
 				"isNew" : true,
-				"hasMoreColors" : true
+				"hasMoreColors" : false,
+				"reducedPrice" : true
 			},
 			{
-				"name" : "Enditatem Product Name Optional Line Two",
+				"nameHeadline" : "Headline",
+				"nameSubline" : "Enditatem Product Name Optional Line Two",
 				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 250,-",
+				"priceOld" : "€ 49,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : true,
+				"isNew" : false,
+				"hasMoreColors" : true,
+				"reducedPrice" : false
+			},
+			{
+				"nameHeadline" : "Enditatem Product Name Optional very long line two",
+				"nameSubline" : "Subline",
+				"image" : "assets/img/blue-jacket.jpg",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 79,99",
+				"priceOld" : "€ 49,-",
+				"url" : "",
+				"favouriteUrl" : "",
+				"isOnSale" : true,
+				"isNew" : true,
+				"hasMoreColors" : true,
+				"reducedPrice" : true
+			},
+			{
+				"nameHeadline" : "Just one single line",
+				"nameSubline" : "",
+				"image" : "assets/img/blue-shirt.jpg",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 250,-",
+				"priceOld" : "€ 149,-",
 				"url" : "",
 				"favouriteUrl" : "",
 				"isOnSale" : false,
-				"isNew" : false,
-				"hasMoreColors" : true
+				"isNew" : true,
+				"hasMoreColors" : false,
+				"reducedPrice" : true
 			},
 			{
-				"name" : "Enditatem Product Name Optional Line Two",
+				"nameHeadline" : "Headline",
+				"nameSubline" : "Enditatem Product Name Optional Line Two",
 				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
+				"imgDescription" : "Describe image here",
+				"priceNew" : "€ 250,-",
+				"priceOld" : "€ 49,-",
 				"url" : "",
 				"favouriteUrl" : "",
-				"isOnSale" : false,
+				"isOnSale" : true,
 				"isNew" : false,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : false,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : false,
-				"hasMoreColors" : true
-			},
-			{
-				"name" : "Enditatem Product Name Optional Line Two",
-				"image" : "assets/img/blue-jacket.jpg",
-				"price" : "&euro;250,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : false,
-				"isNew" : false,
-				"hasMoreColors" : true
+				"hasMoreColors" : true,
+				"reducedPrice" : false
 			}
 		]
 	}
