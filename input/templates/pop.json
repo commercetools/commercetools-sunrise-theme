@@ -749,8 +749,8 @@
 		"text" : "SEO TEXT AREA",
 		"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
 	},
-	"page" : {
-		"title" : "Products",
+	"content" : {
+		"text" : "Products",
 		"banner" : {
 			"title" : "Women",
 			"text" : "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
@@ -765,71 +765,72 @@
 		"breadcrumb" : [
 			{
 				"url" : "home/",
-				"name" : "Home"
+				"text" : "Home"
 			},
 			{
 				"url" : "women/",
-				"name" : "Women"
+				"text" : "Women"
 			},
 			{
 				"url" : "coats/",
-				"name" : "Coats",
-				"current" : true
+				"text" : "Coats",
+				"selected" : true
 			}
 		],
 		"filters" : {
-			"title" : "Filter Products",
+			"text" : "Filter Products",
 			"clear" : "Clear",
-			"filterToggleBtn" : "Filter",
+			"open" : "Filter",
+			"close" : "Filter close",
 			"categories" : {
-				"title" : "Product type",
+				"text" : "Product type",
 				"list" : [
 					{
-						"id" : "one",
-						"name" : "Type-1",
+						"text" : "Type-1",
+						"value" : "one",
 						"selected" : true,
 						"children" : [
 							{
-								"name" : "sub-type 1",
+								"text" : "sub-type 1",
 								"value" : "",
 								"selected" : true
 							},
 							{
-								"name" : "sub-type 2",
+								"text" : "sub-type 2",
 								"value" : "",
 								"selected" : false
 							}
 						]
 					},
 					{
-						"id" : "two",
-						"name" : "Type-2",
+						"text" : "Type-2",
+						"value" : "two",
 						"selected" : false,
 						"children" : [
 							{
-								"name" : "sub-type 1",
+								"text" : "sub-type 1",
 								"value" : "",
 								"selected" : false
 							},
 							{
-								"name" : "sub-type 2",
+								"text" : "sub-type 2",
 								"value" : "",
 								"selected" : false
 							}
 						]
 					},
 					{
-						"id" : "three",
-						"name" : "Type-3",
+						"text" : "Type-3",
+						"value" : "three",
 						"selected" : false,
 						"children" : [
 							{
-								"name" : "sub-type 1",
+								"text" : "sub-type 1",
 								"value" : "",
 								"selected" : false
 							},
 							{
-								"name" : "sub-type 2",
+								"text" : "sub-type 2",
 								"value" : "",
 								"selected" : false
 							}
@@ -838,100 +839,101 @@
 				]
 			},
 			"size" : {
-				"title" : "Size",
+				"text" : "Size",
 				"list" : [
 					{
-						"name" : "S",
+						"text" : "S",
 						"value" : "",
 						"selected" : true
 					},
 					{
-						"name" : "M",
+						"text" : "M",
 						"value" : "",
 						"selected" : false
 					},
 					{
-						"name" : "XL",
+						"text" : "XL",
 						"value" : "",
 						"selected" : true
 					},
 					{
-						"name" : "XXL",
+						"text" : "XXL",
 						"value" : "",
 						"selected" : false
 					}
 				]
 			},
 			"color" : {
-				"title" : "Color",
+				"text" : "Color",
 				"list" : [
 					{
-						"name" : "Black",
+						"text" : "Black",
 						"value" : "",
 						"selected" : false
 					},
 					{
-						"name" : "Blue",
+						"text" : "Blue",
 						"value" : "",
 						"selected" : true
 					},
 					{
-						"name" : "Multi",
+						"text" : "Multi",
 						"value" : "",
 						"selected" : false
 					},
 					{
-						"name" : "Neutral",
+						"text" : "Neutral",
 						"value" : "",
 						"selected" : true
 					}
 				]
 			},
 			"price" : {
+				"text" : "Price",
 				"min" : 25,
 				"max" : 500,
 				"selected" : 50
 			},
 			"brands" : {
-				"title" : "Brands",
+				"text" : "Brands",
 				"list" : [
 					{
-						"name" : "A.P.C",
+						"text" : "A.P.C",
 						"value" : "",
 						"selected" : true
 					},
 					{
-						"name" : "ACNE",
+						"text" : "ACNE",
 						"value" : "",
 						"selected" : false
 					},
 					{
-						"name" : "ALEXANDER MCQUEEN",
+						"text" : "ALEXANDER MCQUEEN",
 						"value" : "",
 						"selected" : false
 					},
 					{
-						"name" : "ALEXANDER WANG",
+						"text" : "ALEXANDER WANG",
 						"value" : "",
 						"selected" : true
 					},
 					{
-						"name" : "ALEXANDER WANG",
+						"text" : "ALEXANDER WANG",
 						"value" : "",
 						"selected" : false
 					},
 					{
-						"name" : "ALEXANDER WANG",
+						"text" : "ALEXANDER WANG",
 						"value" : "",
 						"selected" : false
 					},
 					{
-						"name" : "ALEXANDER WANG",
+						"text" : "ALEXANDER WANG",
 						"value" : "",
 						"selected" : false
 					},
 					{
-						"name" : "ALEXANDER WANG",
+						"text" : "ALEXANDER WANG",
 						"value" : "",
 						"selected" : false
 					}
@@ -993,15 +995,15 @@
 			]
 		},
 		"sort" : {
-			"title" : "Sort by price",
+			"text" : "Sort by price",
 			"list" : [
 				{
-					"name" : "Sort by: low",
+					"text" : "Sort by: low",
 					"value" : "",
 					"selected" : false
 				},
 				{
-					"name" : "Sort by high",
+					"text" : "Sort by high",
 					"value" : "",
 					"selected" : true
 				}

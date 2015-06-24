@@ -1,7 +1,7 @@
 <ol class="breadcrumb">
-	{{#each page.breadcrumb}}
-		<li {{#if current}}class="active"{{/if}}>
-			<a href="{{url}}">{{name}}</a>
+	{{#each content.breadcrumb}}
+		<li {{#if selected}}class="active"{{/if}}>
+			<a href="{{url}}">{{text}}</a>
 		</li>
 	{{/each}}
 </ol>

@@ -745,25 +745,25 @@
 			]
 		}
 	},
-	"page" : {
-		"title" : "Products",
+	"content" : {
+		"text" : "Products",
 		"breadcrumb" : [
 			{
 				"url" : "home/",
-				"name" : "Home"
+				"text" : "Home"
 			},
 			{
 				"url" : "women/",
-				"name" : "Women"
+				"text" : "Women"
 			},
 			{
 				"url" : "coats/",
-				"name" : "Coats"
+				"text" : "Coats"
 			},
-      {
+		    {
 				"url" : "coat1/",
-				"name" : "CoatOne",
-				"current" : true
+				"text" : "CoatOne",
+				"selected" : true
 			}
 		],
 		"gallery" : [
