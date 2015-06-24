@@ -669,84 +669,84 @@
 		"followUs" : "Follow us",
 		"newsletter" : "Join our newsletter",
 		"customerCare" : {
-			"title" : "Customer Care",
+			"text" : "Customer Care",
 			"list" : [
 				{
-					"name" : "Contact us",
+					"text" : "Contact us",
 					"url" : ""
 				},
 				{
-					"name" : "Help",
+					"text" : "Help",
 					"url" : ""
 				},
 				{
-					"name" : "Shipping",
+					"text" : "Shipping",
 					"url" : ""
 				},
 				{
-					"name" : "Returns",
+					"text" : "Returns",
 					"url" : ""
 				},
 				{
-					"name" : "Size Guide",
+					"text" : "Size Guide",
 					"url" : ""
 				}
 			]
 		},
 		"aboutUs" : {
-			"title" : "About Us",
+			"text" : "About Us",
 			"list" : [
 				{
-					"name" : "Our Story",
+					"text" : "Our Story",
 					"url" : ""
 				},
 				{
-					"name" : "Careers",
+					"text" : "Careers",
 					"url" : ""
 				}
 			]
 		},
 		"shortcuts" : {
-			"title" : "Shortcuts",
+			"text" : "Shortcuts",
 			"list" : [
 				{
-					"name" : "My Account",
+					"text" : "My Account",
 					"url" : ""
 				},
 				{
-					"name" : "Store Locator",
+					"text" : "Store Locator",
 					"url" : ""
 				},
 				{
-					"name" : "Gift Cards",
+					"text" : "Gift Cards",
 					"url" : ""
 				},
 				{
-					"name" : "Payment",
+					"text" : "Payment",
 					"url" : ""
 				}
 			]
 		},
 		"legalInfo" : {
-			"title" : "© 2015 Sunrise",
+			"text" : "© 2015 Sunrise",
 			"list" : [
 				{
-					"name" : "Imprint",
+					"text" : "Imprint",
 					"url" : ""
 				},
 				{
-					"name" : "Privacy policy",
+					"text" : "Privacy policy",
 					"url" : ""
 				},
 				{
-					"name" : "Terms of use",
+					"text" : "Terms of use",
 					"url" : ""
 				}
 			]
 		}
 	},
 	"seo" : {
-		"title" : "SEO TEXT AREA",
+		"text" : "SEO TEXT AREA",
 		"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
 	},
 	"page" : {

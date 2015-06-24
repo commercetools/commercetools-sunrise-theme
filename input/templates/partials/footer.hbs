@@ -4,9 +4,9 @@
       <div class="col-sm-2">
         <div class="footer-col">
           <ul>
-            <li class="footer-title hidden-xs">{{footer.customerCare.title}}</li>
+            <li class="footer-title hidden-xs">{{footer.customerCare.text}}</li>
             {{#each footer.customerCare.list}}
-              <li><a href="{{url}}">{{name}}</a></li>
+              <li><a href="{{url}}">{{text}}</a></li>
             {{/each}}
           </ul>
         </div>
@@ -14,9 +14,9 @@
       <div class="col-sm-2 hidden-xs">
         <div class="footer-col">
           <ul>
-            <li class="footer-title hidden-xs">{{footer.aboutUs.title}}</li>
+            <li class="footer-title hidden-xs">{{footer.aboutUs.text}}</li>
             {{#each footer.aboutUs.list}}
-              <li><a href="{{url}}">{{name}}</a></li>
+              <li><a href="{{url}}">{{text}}</a></li>
             {{/each}}
           </ul>
         </div>
@@ -24,9 +24,9 @@
       <div class="col-sm-2 hidden-xs">
         <div class="footer-col">
           <ul>
-            <li class="footer-title hidden-xs">{{footer.shortcuts.title}}</li>
+            <li class="footer-title hidden-xs">{{footer.shortcuts.text}}</li>
             {{#each footer.shortcuts.list}}
-              <li><a href="{{url}}">{{name}}</a></li>
+              <li><a href="{{url}}">{{text}}</a></li>
             {{/each}}
           </ul>
         </div>
@@ -67,11 +67,11 @@
     <div class="row text-uppercase">
       <div class="col-sm-12">
         <ul class="footer-title imprint-row">
-          <li class="hidden-xs">{{footer.legalInfo.title}}</li>
+          <li class="hidden-xs">{{footer.legalInfo.text}}</li>
           {{#each footer.legalInfo.list}}
-            <li><a href="{{url}}">{{name}}</a></li>
+            <li><a href="{{url}}">{{text}}</a></li>
           {{/each}}
-          <li class="visible-xs">{{footer.legalInfo.title}}</li>
+          <li class="visible-xs">{{footer.legalInfo.text}}</li>
         </ul>
       </div>
     </div>
