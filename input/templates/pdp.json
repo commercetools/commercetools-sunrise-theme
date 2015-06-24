@@ -714,7 +714,7 @@
 			]
 		},
 		"legalInfo" : {
-			"title" : "&copy; 2015 Sunrise",
+			"title" : "© 2015 Sunrise",
 			"list" : [
 				{
 					"name" : "Imprint",
@@ -755,6 +755,10 @@
 		"product" : {
 				"title" : "Enditatem Product Name",
 				"sku" : "Sunrise #SUN123456",
+				"ratingReview" : {
+					"title" : "Write first review",
+					"url" : ""
+				},
 				"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
 				"viewDetails" : "View Details",
 				"price" : "€ 123,-",
@@ -867,66 +871,73 @@
 				"deliveryAndReturn" : {
 					"title" : "Delivery & Returns",
 					"text" : "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et."
+				}
+			},
+		"suggestions" : {
+			"title" : "You may also like",
+			"list" : [
+				{
+					"nameHeadline" : "Enditatem Product Name Optional very long line two",
+					"nameSubline" : "Subline",
+					"image" : "assets/img/blue-jacket.jpg",
+					"imgDescription" : "Describe image here",
+					"priceNew" : "€ 79,99",
+					"priceOld" : "€ 49,-",
+					"url" : "",
+					"favouriteUrl" : "",
+					"isOnSale" : true,
+					"isNew" : true,
+					"hasMoreColors" : true,
+					"reducedPrice" : true,
+					"quickView" : "Quick view"
 				},
-				"share" : "Share"
-			},
-		"suggestions" : [
-			{
-				"nameHeadline" : "Enditatem Product Name Optional very long line two",
-				"nameSubline" : "Subline",
-				"image" : "assets/img/blue-jacket.jpg",
-				"imgDescription" : "Describe image here",
-				"priceNew" : "€ 79,99",
-				"priceOld" : "€ 49,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : true,
-				"isNew" : true,
-				"hasMoreColors" : true,
-				"reducedPrice" : true
-			},
-			{
-				"nameHeadline" : "Enditatem Product Name Optional very long line two",
-				"nameSubline" : "Subline",
-				"image" : "assets/img/blue-jacket.jpg",
-				"imgDescription" : "Describe image here",
-				"priceNew" : "€ 79,99",
-				"priceOld" : "€ 49,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : true,
-				"isNew" : true,
-				"hasMoreColors" : true,
-				"reducedPrice" : true
-			},
-			{
-				"nameHeadline" : "Enditatem Product Name Optional very long line two",
-				"nameSubline" : "Subline",
-				"image" : "assets/img/blue-jacket.jpg",
-				"imgDescription" : "Describe image here",
-				"priceNew" : "€ 79,99",
-				"priceOld" : "€ 49,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : true,
-				"isNew" : true,
-				"hasMoreColors" : true,
-				"reducedPrice" : true
-			},
-			{
-				"nameHeadline" : "Enditatem Product Name Optional very long line two",
-				"nameSubline" : "Subline",
-				"image" : "assets/img/blue-jacket.jpg",
-				"imgDescription" : "Describe image here",
-				"priceNew" : "€ 79,99",
-				"priceOld" : "€ 49,-",
-				"url" : "",
-				"favouriteUrl" : "",
-				"isOnSale" : true,
-				"isNew" : true,
-				"hasMoreColors" : true,
-				"reducedPrice" : true
-			}
-		]
+				{
+					"nameHeadline" : "Enditatem Product Name Optional very long line two",
+					"nameSubline" : "Subline",
+					"image" : "assets/img/blue-jacket.jpg",
+					"imgDescription" : "Describe image here",
+					"priceNew" : "€ 79,99",
+					"priceOld" : "€ 49,-",
+					"url" : "",
+					"favouriteUrl" : "",
+					"isOnSale" : true,
+					"isNew" : true,
+					"hasMoreColors" : true,
+					"reducedPrice" : true,
+					"quickView" : "Quick view"
+				},
+				{
+					"nameHeadline" : "Enditatem Product Name Optional very long line two",
+					"nameSubline" : "Subline",
+					"image" : "assets/img/blue-jacket.jpg",
+					"imgDescription" : "Describe image here",
+					"priceNew" : "€ 79,99",
+					"priceOld" : "€ 49,-",
+					"url" : "",
+					"favouriteUrl" : "",
+					"isOnSale" : true,
+					"isNew" : true,
+					"hasMoreColors" : true,
+					"reducedPrice" : true,
+					"quickView" : "Quick view"
+				},
+				{
+					"nameHeadline" : "Enditatem Product Name Optional very long line two",
+					"nameSubline" : "Subline",
+					"image" : "assets/img/blue-jacket.jpg",
+					"imgDescription" : "Describe image here",
+					"priceNew" : "€ 79,99",
+					"priceOld" : "€ 49,-",
+					"url" : "",
+					"favouriteUrl" : "",
+					"isOnSale" : true,
+					"isNew" : true,
+					"hasMoreColors" : true,
+					"reducedPrice" : true,
+					"quickView" : "Quick view"
+				}
+			]
+		},
+		"reviews" : "Reviews"
 	}
 }

@@ -714,7 +714,7 @@
 			]
 		},
 		"legalInfo" : {
-			"title" : "&copy; 2015 Sunrise",
+			"title" : "© 2015 Sunrise",
 			"list" : [
 				{
 					"name" : "Imprint",
@@ -1006,7 +1006,8 @@
 				"isOnSale" : true,
 				"isNew" : true,
 				"hasMoreColors" : true,
-				"reducedPrice" : true
+				"reducedPrice" : true,
+				"quickView" : "Quick view"
 			},
 			{
 				"nameHeadline" : "Just one single line",
@@ -1020,7 +1021,8 @@
 				"isOnSale" : false,
 				"isNew" : true,
 				"hasMoreColors" : false,
-				"reducedPrice" : true
+				"reducedPrice" : true,
+				"quickView" : "Quick view"
 			},
 			{
 				"nameHeadline" : "Headline",
@@ -1034,7 +1036,8 @@
 				"isOnSale" : true,
 				"isNew" : false,
 				"hasMoreColors" : true,
-				"reducedPrice" : false
+				"reducedPrice" : false,
+				"quickView" : "Quick view"
 			},
 			{
 				"nameHeadline" : "Enditatem Product Name Optional very long line two",
@@ -1048,7 +1051,8 @@
 				"isOnSale" : true,
 				"isNew" : true,
 				"hasMoreColors" : true,
-				"reducedPrice" : true
+				"reducedPrice" : true,
+				"quickView" : "Quick view"
 			},
 			{
 				"nameHeadline" : "Just one single line",
@@ -1062,7 +1066,8 @@
 				"isOnSale" : false,
 				"isNew" : true,
 				"hasMoreColors" : false,
-				"reducedPrice" : true
+				"reducedPrice" : true,
+				"quickView" : "Quick view"
 			},
 			{
 				"nameHeadline" : "Headline",
@@ -1076,7 +1081,8 @@
 				"isOnSale" : true,
 				"isNew" : false,
 				"hasMoreColors" : true,
-				"reducedPrice" : false
+				"reducedPrice" : false,
+				"quickView" : "Quick view"
 			},
 			{
 				"nameHeadline" : "Enditatem Product Name Optional very long line two",
@@ -1090,7 +1096,8 @@
 				"isOnSale" : true,
 				"isNew" : true,
 				"hasMoreColors" : true,
-				"reducedPrice" : true
+				"reducedPrice" : true,
+				"quickView" : "Quick view"
 			},
 			{
 				"nameHeadline" : "Just one single line",
@@ -1104,7 +1111,8 @@
 				"isOnSale" : false,
 				"isNew" : true,
 				"hasMoreColors" : false,
-				"reducedPrice" : true
+				"reducedPrice" : true,
+				"quickView" : "Quick view"
 			},
 			{
 				"nameHeadline" : "Headline",
@@ -1118,7 +1126,8 @@
 				"isOnSale" : true,
 				"isNew" : false,
 				"hasMoreColors" : true,
-				"reducedPrice" : false
+				"reducedPrice" : false,
+				"quickView" : "Quick view"
 			}
 		]
 	}

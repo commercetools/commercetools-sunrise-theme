@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="row product-info-row-pdp">
-          <div class="col-sm-4 col-sm-offset-1 col-xs-12">
+          <div class="col-sm-4 col-sm-offset-1">
             <div class="bzoom_wrap">
               <ul id="bzoom">
                 <li>
@@ -37,7 +37,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-6 col-xs-12 product-description">
+          <div class="col-sm-6 product-description">
             <div class="row">
               <div class="col-sm-12">
                 <p><h1 class="text-uppercase pdp-product-title">{{page.product.title}}</h1><span class="grey-p">{{page.product.sku}}</span></p>
@@ -52,6 +52,7 @@
                   <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
                   <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
                 </fieldset>
+                <span class="star-rating-review"><a href="{{page.product.ratingReview.url}}">{{page.product.ratingReview.title}}</a></span>
               </div>
             </div>
             <div class="row">
@@ -126,20 +127,20 @@
                       </h4>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="panel-body">
+                      <div class="panel-body panel-body-pdp">
                         {{page.product.productDetails.text}}
                       </div>
                     </div>
                   </div>
                   <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title product-accordion-title text-uppercase delivery-details">
+                      <h4 class="panel-title product-accordion-title text-uppercase">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{{page.product.deliveryAndReturn.title}}<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
                         </a>
                       </h4>
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                      <div class="panel-body">
+                      <div class="panel-body panel-body-pdp">
                         {{page.product.deliveryAndReturn.text}}
                       </div>
                     </div>
@@ -150,7 +151,11 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="social-share">
-                  <a href="#"><span><img class="social-share-icon" src="assets/img/sign28.png" alt="share on social">{{page.product.share}}</span></a>
+                  <ul class="social-icons pdp-social-icons">
+                    <a href=""><li><img class="social-icon" src="assets/img/Facebook.png" alt="facebook"></li></a>
+                    <a href=""><li><img class="social-icon" src="assets/img/Pinterest.png" alt="pinterest"></li></a>
+                    <a href=""><li><img class="social-icon" src="assets/img/Google.png" alt="google plus"></li></a>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -163,11 +168,11 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <p class="text-center text-uppercase may-like">You may also like</p>
+          <p class="text-center text-uppercase may-like">{{page.suggestions.title}}</p>
         </div>
       </div>
       <div class="row">
-        {{#each page.suggestions}}
+        {{#each page.suggestions.list}}
           <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="shop-item" onclick="location.href='{{url}}';">
               {{#if isOnSale}}
@@ -193,7 +198,7 @@
               <div class="pop-product-more-colors">
                 {{#if hasMoreColors}}More colours{{/if}}&nbsp;</div>
               <div class="shop-item-overlay">
-                <button type="button" class="quickview">Quick view</button>
+                <button type="button" class="quickview">{{quickView}}</button>
                 <button type="button" class="heart">
                   <span class="sr-only">Add item to wishlist</span>
                 </button>
@@ -206,16 +211,15 @@
       <hr class="hr">
       <div class="row">
         <div class="col-sm-12">
-          <p class="text-uppercase reviews-title">Reviews</p>
+          <p class="text-uppercase text-center reviews-title">{{page.reviews}}</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 reviews-col">
           <div class="row">
             <div class="col-sm-12">
-              <div class="review-count">1 - 5 of 51 Reviews</div>
+              <div>1 - 5 of 51 Reviews</div>
             </div>
-            <hr class="hr">
           </div>
           <div class="single-comment">
             <div class="row">
@@ -243,7 +247,6 @@
               </div>
             </div>
           </div>
-          <hr class="hr">
           <div class="single-comment">
             <div class="row">
               <div class="col-sm-12">
@@ -270,7 +273,6 @@
               </div>
             </div>
           </div>
-          <hr class="hr">
           <div class="single-comment">
             <div class="row">
               <div class="col-sm-12">

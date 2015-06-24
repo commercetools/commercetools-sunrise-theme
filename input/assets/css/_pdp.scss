@@ -5,11 +5,11 @@
 /*****************************************************************************/
 
 .pdp-page {
-  padding-bottom: 5em;
+  padding-bottom: 2em;
 }
 
 .product-info-row-pdp {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
  .pdp-product-title {
@@ -27,7 +27,7 @@
 	color: $grey;
 }
 
-
+// Star rating
 .rating {
     float:left;
 }
@@ -41,11 +41,10 @@
 .rating:not(:checked) > label {
     float:right;
     width:1em;
-    padding:0 .1em;
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-    font-size:150%;
+    font-size:120%;
     line-height:1.2;
     color:$grey;
 }
@@ -67,6 +66,14 @@
     position:relative;
     top:2px;
     left:2px;
+}
+
+// Star ratings - review
+
+.star-rating-review {
+  font-size: 0.9em;
+  text-decoration: underline;
+  padding: 0 0.5em;
 }
 
 // Product description
@@ -177,21 +184,24 @@
   padding-bottom: 1em;
 }
 
+.panel-body-pdp {
+  padding: 0.3em 0;
+}
+
 .accordion-plus {
-  height: 1.5em;
+  height: 1.2em;
   float: right;
 }
 
 // Social share
-.social-share-icon {
-  height: 20px;
-  padding-right: 1em;
-}
-
 .social-share {
   text-transform: uppercase;
   color: $dark-grey;
   font-size: 0.8em;
+}
+
+.pdp-social-icons {
+  padding: 0;
 }
 
 // You may also like section
@@ -203,6 +213,7 @@
   letter-spacing: 0.1em;
   font-size: 1.9em;
   padding: 1em 0;
+  margin: 0;
 }
 
 .text-red {
@@ -214,14 +225,16 @@
   letter-spacing: 0.1em;
   font-size: 1.9em;
   padding: 1em 0;
+  margin: 0;
 }
 
-.review-count {
-  padding: 1em 0;
+.reviews-col {
+  padding: 0 2em;
 }
 
 .single-comment {
   padding: 2em 0;
+  border-bottom: 1px solid $light-grey;
 }
 
 .rated-stars {
