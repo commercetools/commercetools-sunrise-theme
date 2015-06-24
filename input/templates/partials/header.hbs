@@ -22,11 +22,11 @@
 
               <li class="list-item-call"><a href="{{header.callUs.url}}" class="link-hotline">{{header.callUs.text}}</a></li>
               <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
-              <li class="list-item-bag"><a href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">{{header.miniCart.title}}</span> <span class="cart-item-number">{{header.miniCart.numItems}}</span></a></li>
+              <li class="list-item-bag"><a href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">{{header.miniCart.text}}</span> <span class="cart-item-number">{{header.miniCart.numItems}}</span></a></li>
 
-              <li class="list-item-user"><a href="{{header.user.signIn.url}}" class="link-user icon-user"><span class="hidden-xs hidden-sm">{{header.user.signIn.title}}</span></a></li>
+              <li class="list-item-user"><a href="{{header.user.signIn.url}}" class="link-user icon-user"><span class="hidden-xs hidden-sm">{{header.user.signIn.text}}</span></a></li>
 
-              <li class="list-item-language"><span class="language-label">{{header.countries.title}}</span>
+              <li class="list-item-language"><span class="language-label">{{header.countries.text}}</span>
                 <select id="language-select" class="language-select">
                 {{#each header.countries.list}}
                   <option value="{{value}}" {{#if selected}}selected="selected"{{/if}} data-imagesrc="{{image}}" data-description="{{description}}">{{text}} - </option>
@@ -61,17 +61,18 @@
         <div class="dropdown-megamenu navbar navbar-default">
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="{{header.navMenu.new.url}}">{{header.navMenu.new.title}}</a></li>
+              <li><a href="{{header.navMenu.new.url}}">{{header.navMenu.new.text}}</a></li>
+              {{#each header.navMenu.categories}}
               <li class="dropdown menu-large">
-                <a href="{{header.navMenu.women.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.women.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <a href="{{url}}" class="dropdown-toggle" data-toggle="dropdown">{{text}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
                 <ul class="dropdown-menu megamenu row dropdown-submenu">
                   <li class="col-sm-8">
                     <div class="nav-accordion">
-                      {{#each header.navMenu.women.children}}
-                        <h3>{{title}}</h3>
+                      {{#each children}}
+                        <h3>{{text}}</h3>
                         <ul>
                           {{#each children}}
-                            <li><a href="{{url}}">{{title}}</a></li>
+                            <li><a href="{{url}}">{{text}}</a></li>
                           {{/each}}
                         </ul>
                       {{/each}}
@@ -82,56 +83,17 @@
                   </li>
                 </ul>
               </li>
+              {{/each}}
               <li class="dropdown menu-large">
-                <a href="{{header.navMenu.men.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.men.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-8">
-                    <div class="nav-accordion">
-                      {{#each header.navMenu.men.children}}
-                        <h3>{{title}}</h3>
-                        <ul>
-                          {{#each children}}
-                            <li><a href="{{url}}">{{title}}</a></li>
-                          {{/each}}
-                        </ul>
-                      {{/each}}
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown menu-large">
-                <a href="{{header.navMenu.accessories.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.accessories.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-8">
-                    <div class="nav-accordion">
-                      {{#each header.navMenu.accessories.children}}
-                        <h3>{{title}}</h3>
-                        <ul>
-                          {{#each children}}
-                            <li><a href="{{url}}">{{title}}</a></li>
-                          {{/each}}
-                        </ul>
-                      {{/each}}
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown menu-large">
-                <a href="{{header.navMenu.brands.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.brands.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <a href="{{header.navMenu.brands.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.brands.text}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
                 <ul class="dropdown-menu megamenu row dropdown-submenu">
                   <li class="col-sm-8">
                     <div class="nav-accordion">
                       {{#each header.navMenu.brands.children}}
-                        <h3>{{title}}</h3>
+                        <h3>{{text}}</h3>
                         <ul>
                           {{#each children}}
-                            <li><a href="{{url}}">{{title}}</a></li>
+                            <li><a href="{{url}}">{{text}}</a></li>
                           {{/each}}
                         </ul>
                       {{/each}}
@@ -142,7 +104,7 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="{{header.navMenu.sale.url}}" class="sale icon-ribbon">{{header.navMenu.sale.title}}</a></li>
+              <li><a href="{{header.navMenu.sale.url}}" class="sale icon-ribbon">{{header.navMenu.sale.text}}</a></li>
             </ul>
           </div>
         </div>
