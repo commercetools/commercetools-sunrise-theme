@@ -18,22 +18,12 @@
           <div class="col-sm-4 col-sm-offset-1">
             <div class="bzoom_wrap">
               <ul id="bzoom">
-                <li>
-                  <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
-                  <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
-                </li>
-                <li>
-                  <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
-                  <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
-                </li>
-                <li>
-                  <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
-                  <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
-                </li>
-                <li>
-                  <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
-                  <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
-                </li>
+                {{#each page.gallery}}
+                  <li>
+                    <img class="bzoom_thumb_image" src="{{thumbImage}}">
+                    <img class="bzoom_big_image" src="{{bigImage}}">
+                  </li>
+                {{/each}}
               </ul>
             </div>
           </div>

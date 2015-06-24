@@ -752,6 +752,24 @@
 				"current" : true
 			}
 		],
+		"gallery" : [
+			{
+				"thumbImage" : "assets/img/blue-jacket.jpg" ,
+				"bigImage" : "assets/img/blue-jacket.jpg"
+			},
+			{
+				"thumbImage" : "assets/img/blue-jacket.jpg" ,
+				"bigImage" : "assets/img/blue-jacket.jpg"
+			},
+			{
+				"thumbImage" : "assets/img/blue-jacket.jpg" ,
+				"bigImage" : "assets/img/blue-jacket.jpg"
+			},
+			{
+				"thumbImage" : "assets/img/blue-jacket.jpg" ,
+				"bigImage" : "assets/img/blue-jacket.jpg"
+			}
+		],
 		"product" : {
 				"title" : "Enditatem Product Name",
 				"sku" : "Sunrise #SUN123456",
