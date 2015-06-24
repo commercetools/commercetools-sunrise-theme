@@ -26,7 +26,7 @@
 
               <li class="list-item-user"><a href="{{header.logIn.signIn.url}}" class="link-user icon-user"><span class="hidden-xs hidden-sm">{{header.logIn.signIn.title}}</span></a></li>
 
-              <li class="list-item-language"><span class="language-label">Location</span>
+              <li class="list-item-language"><span class="language-label">{{header.languageTitle}}</span>
                 <select id="language-select" class="language-select">
                 {{#each header.currencies.list}}
                   <option value="{{value}}" {{#if selected}}selected="selected"{{/if}} data-imagesrc="{{imageSrc}}" data-description="{{description}}">{{text}} - </option>

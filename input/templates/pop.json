@@ -13,6 +13,7 @@
 			"title" : "CALL US ON +44 123 456 000",
 			"url" : ""
 		},
+		"languageTitle" : "Location",
 		"currencies" : {
 			"title" : "currency",
 			"list" : [
@@ -654,6 +655,7 @@
 	"footer" : {
 		"paySecure" : "Pay securely with these payment methods",
 		"followUs" : "Follow us",
+		"newsletter" : "Join our newsletter",
 		"customerCare" : {
 			"title" : "Customer Care",
 			"list" : [
