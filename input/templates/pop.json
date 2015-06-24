@@ -2,74 +2,73 @@
 	"header" : {
 		"title" : "Sunrise - Product Overview Page",
 		"stores" : {
-			"title" : "STORES",
+			"text" : "STORES",
 			"url" : ""
 		},
 		"help" : {
-			"title" : "HELP",
+			"text" : "HELP",
 			"url" : ""
 		},
 		"callUs" : {
-			"title" : "CALL US ON +44 123 456 000",
+			"text" : "CALL US ON +44 123 456 000",
 			"url" : ""
 		},
-		"languageTitle" : "Location",
-		"currencies" : {
-			"title" : "currency",
+		"countries" : {
+			"title" : "Location",
 			"list" : [
 				{
 					"text" : "UK",
 					"value" : 1,
 					"selected" : false,
 					"description" : "Pounds",
-					"imageSrc" : "assets/img/flags/gb.svg"
+					"image" : "assets/img/flags/gb.svg"
 				},
 				{
 					"text" : "Schweiz",
 					"value" : 2,
 					"selected" : false,
 					"description" : "CHF",
-					"imageSrc" : "assets/img/flags/ch.svg"
+					"image" : "assets/img/flags/ch.svg"
 				},
 				{
 					"text" : "Japan",
 					"value" : 3,
 					"selected" : false,
 					"description" : "Yen",
-					"imageSrc" : "assets/img/flags/jp.svg"
+					"image" : "assets/img/flags/jp.svg"
 				},
 				{
 					"text" : "USA",
 					"value" : 4,
 					"selected" : false,
 					"description" : "US Dollar",
-					"imageSrc" : "assets/img/flags/us.svg"
+					"image" : "assets/img/flags/us.svg"
 				},
 				{
 					"text" : "DE",
 					"value" : 5,
 					"selected" : true,
 					"description" : "Euro",
-					"imageSrc" : "assets/img/flags/de.svg"
+					"image" : "assets/img/flags/de.svg"
 				}
 			]
 		},
 		"languages" : {
-			"title" : "language",
+			"title" : "Language",
 			"list" : [
 				{
-					"name" : "English",
+					"text" : "English",
 					"value" : "",
 					"selected" : false
 				},
 				{
-					"name" : "German",
+					"text" : "German",
 					"value" : "",
 					"selected" : false
 				}
 			]
 		},
-		"logIn" : {
+		"user" : {
 			"isLoggedIn" : false,
 			"signIn" : {
 				"title" : "SIGN IN",
