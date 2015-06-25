@@ -181,7 +181,8 @@
 	margin-right: 0.5em;
 	padding: 0.5em 1em;
 	&:hover {
-		color: $black;
+		color: $dark-grey;
+		border: 2px solid $dark-grey;
 	}
 }
 

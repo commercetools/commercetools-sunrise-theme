@@ -18,7 +18,6 @@ $(document).ready(function(){
 /*****************************************************************************/
 
 // Activate megamenu accordion on smaller screens
-
 $(function() {
   if ($(window).width() < 768) {
     $(".nav-accordion").accordion({
@@ -30,13 +29,11 @@ $(function() {
 });
 
 // Toggling plus and minus icons for mobile navigation menu
-
 $(".dropdown-toggle").click(function() {
     $(this).find(".mobile-plus-content").toggleClass("mobile-minus-content");
 });
 
 // Disabling bootstrap menu close on 2nd+ level items
-
 $( ".dropdown-submenu" ).click(function(event) {
     // stop bootstrap.js to hide the parents
     event.stopPropagation();
@@ -49,7 +46,6 @@ $( ".dropdown-submenu" ).click(function(event) {
 });
 
 // Close hamburger menu on select click or outside
-
 $(function() {
   $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function() {
     $('.navbar-toggle:visible').click();
@@ -57,7 +53,6 @@ $(function() {
 });
 
 // Off-canvas menu
-
 $(document).ready(function() {
   $('[data-toggle="offcanvas"]').click(function() {
     $('.row-offcanvas').toggleClass('active');
@@ -65,7 +60,6 @@ $(document).ready(function() {
 });
 
 // Price range slider
-
 $(function() {
   $("#slider-range").slider({
     range: true,
@@ -100,7 +94,6 @@ zoom_area_width: 300,
 /*****************************************************************************/
 
 // Quantity counter / spinner
-
 (function() {
   window.inputNumber = function(el) {
     var min = el.attr('min') || false;
@@ -130,6 +123,9 @@ zoom_area_width: 300,
 })();
 inputNumber($('.input-number'));
 
+// Tooltip on hover
+$( ".promo-info-text, .delivery-est" ).tooltip();
+
 /*****************************************************************************/
 /*
 /* CHECKOUT-SHIPPING PAGE
@@ -137,7 +133,6 @@ inputNumber($('.input-number'));
 /*****************************************************************************/
 
 // Adding active on click to checkout steps
-
 (function($){
   $('.step-number').click(function(){
     $('.step-number-active').removeClass('step-number-active');
@@ -146,7 +141,6 @@ inputNumber($('.input-number'));
 }(jQuery));
 
 // Slide toggle different shipping address on click
-
 $( "#different-billing-checkbox" ).click(function() {
   $( "#different-billing-address" ).slideToggle( "slow" )
 });
