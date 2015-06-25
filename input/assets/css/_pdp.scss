@@ -121,7 +121,7 @@
   appearance: none;
   width: 100%;
   background: none;
-  padding: 0.5em 1.6em;
+  padding: 0.5em 36%;
   border-radius: 0;
   border: 3px solid $yellow;
 }
@@ -129,7 +129,7 @@
 // Add to bag button
 .add-to-bag {
   width: 100%;
-  height: 2.8em;
+  height: 47px;
 	background: $yellow;
 	text-transform: uppercase;
     &:hover {
@@ -255,4 +255,12 @@
 
 .review-comment {
   color: $dark-grey;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 340px) {
+  .add-to-bag {
+    font-size: 0.9em;
+  }
 }
