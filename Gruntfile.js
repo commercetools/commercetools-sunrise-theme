@@ -65,8 +65,8 @@ module.exports = function(grunt) {
             ext: '.html'
         }],
         templateData: '*.json', // compile-handlebars uses the template folder no matter what
-        partials: 'input/templates/partials/**/*.hbs'
-        //helpers: 'input/templates/helpers/**/*.js'
+        partials: 'input/templates/partials/**/*.hbs',
+        helpers: 'input/templates/helpers/**/*.js'
       }
     },
 
