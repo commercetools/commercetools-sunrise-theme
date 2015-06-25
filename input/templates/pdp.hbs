@@ -158,42 +158,13 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <p class="text-center text-uppercase may-like">{{content.suggestions.title}}</p>
+          <p class="text-center text-uppercase may-like">{{content.suggestions.text}}</p>
         </div>
       </div>
       <div class="row">
         {{#each content.suggestions.list}}
           <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="shop-item" onclick="location.href='{{url}}';">
-              {{#if isOnSale}}
-                <div class="sale-flag">Sale</div>
-              {{/if}}
-              {{#if isNew}}
-                <div class="new-flag">New</div>
-              {{/if}}
-              <img class="pop-product-image" src="{{image}}" alt="{{imgDescription}}" width="200" />
-              <div class="pop-product-name">
-                <span class="name-headline">{{nameHeadline}}</span>
-                <span class="name-subline">{{nameSubline}}</span>
-              </div>
-              <div class="pop-item-price">
-                {{#if reducedPrice}}
-                  <span class="strikethrough">{{priceNew}}</span>
-                  <span class="pop-item-price-old">{{priceOld}}</span>
-                {{else}}
-                  <span>{{priceNew}}</span>
-                {{/if}}
-              </div>
-              {{!-- Should this be a clickable link? Right now, you can't click it due to the overlay --}}
-              <div class="pop-product-more-colors">
-                {{#if hasMoreColors}}More colours{{/if}}&nbsp;</div>
-              <div class="shop-item-overlay">
-                <button type="button" class="quickview">{{quickView}}</button>
-                <button type="button" class="heart">
-                  <span class="sr-only">Add item to wishlist</span>
-                </button>
-              </div>
-            </div>
+            {{> product-thumbnail context=../content.suggestions}}
           </div>
         {{/each}}
         </div>
