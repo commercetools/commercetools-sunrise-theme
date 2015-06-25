@@ -79,6 +79,11 @@
 				}
 			]
 		},
+		"search" : {
+			"text" : "Search",
+			"textToggle" : "Toggle search field",
+			"url" : ""
+		},
 		"user" : {
 			"isLoggedIn" : false,
 			"signIn" : {
@@ -667,7 +672,12 @@
 	"footer" : {
 		"paySecure" : "Pay securely with these payment methods",
 		"followUs" : "Follow us",
-		"newsletter" : "Join our newsletter",
+		"newsletter" : {
+			"text" :  "Join our newsletter",
+			"textAlt" : "Subscribe",
+			"url" : "",
+			"placeholder" : "Your email ..."
+		},
 		"customerCare" : {
 			"text" : "Customer Care",
 			"list" : [
@@ -750,7 +760,7 @@
 		"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
 	},
 	"content" : {
-		"text" : "Products",
+		"text" : "Women",
 		"banner" : {
 			"text" : "Women",
 			"description" : "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
@@ -944,6 +954,8 @@
 			"currentPage" : 145,
 			"totalPages" : 234,
 			"pageSeparator" : "of",
+			"next" : "Next",
+			"prev" : "Previous",
 			"urlNext" : "",
 			"urlPrev" : "",
 			"pages" : [

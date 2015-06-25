@@ -11,22 +11,15 @@
     <div id="pop-page" class="container">
       <div class="row">
         <div class="col-xs-12 figure-col">
-          <figure class="figure-banner">
-            <img class="img-responsive hidden-sm hidden-md hidden-lg" src="{{content.banner.imageMobile}}" alt="Women">
-            <img class="img-responsive hidden-xs" src="{{content.banner.imageDesktop}}" alt="Women">
-            <figcaption class="figcaption-banner-text">
-              <h2>{{content.banner.text}}</h2>
-              <h3>{{content.banner.description}}</h3>
-            </figcaption>
-          </figure>
+          {{> catalog/banner}}
         </div>
       </div>
       <div class="row row-offcanvas row-offcanvas-left">
         <div class="col-xs-12">
-          {{> breadcrumb}}
+          {{> catalog/breadcrumb}}
         </div>
         <div class="product-filter">
-          {{> pop-sidebar}}
+          {{> catalog/filters-sidebar}}
         </div>
         <div class="col-sm-9">
           <div class="dark-overlay"></div>
@@ -53,7 +46,7 @@
                   </select>
                 </li>
                 <li class="pull-left">
-                  <p class="item-count">12 of 234</p>
+                  <p class="item-count">{{content.pagination.currentPage}} {{content.pagination.pageSeparator}} {{content.pagination.totalPages}}</p>
                 </li>
               </ul>
             </div>
@@ -68,23 +61,11 @@
                   {{/each}}
                 </select>
               </div>
-              <p class="item-count">12 of 234</p>
+              <p class="item-count">{{content.pagination.currentPage}} {{content.pagination.pageSeparator}} {{content.pagination.totalPages}}</p>
             </div>
             <div class="col-xs-4 text-center pagination">
               <ul class="page-numbers">
-                <li>
-                  <a href="{{content.pagination.urlPrev}}" class="icon-prev">
-                    <span class="sr-only">Previous</span>
-                  </a>
-                </li>
-                {{#each content.pagination.pages}}
-                  <li><a href="{{url}}" {{#if selected}} class="active" {{/if}}>{{name}}</a></li>
-                {{/each}}
-                <li>
-                  <a href="{{content.pagination.urlNext}}" class="icon-next">
-                    <span class="sr-only">Next</span>
-                  </a>
-                </li>
+                {{> catalog/pagination}}
               </ul>
             </div>
             <div class="col-xs-4 text-right">
@@ -101,26 +82,14 @@
           <div class="row">
             {{#each content.products.list}}
               <div class="col-xs-12 col-sm-6 col-md-4">
-                {{> product-thumbnail context=../content.products}}
+                {{> catalog/product-thumbnail context=../content.products}}
               </div>
             {{/each}}
           </div>
           <div class="row">
             <div class="col-xs-12 text-center pagination">
               <ul class="page-numbers page-numbers-bottom">
-                <li>
-                  <a href="{{content.pagination.urlPrev}}" class="icon-prev">
-                    <span class="sr-only">Previous</span>
-                  </a>
-                </li>
-                {{#each content.pagination.pages}}
-                  <li><a href="{{url}}" {{#if selected}} class="active" {{/if}}>{{name}}</a></li>
-                {{/each}}
-                <li>
-                  <a href="{{content.pagination.urlNext}}" class="icon-next">
-                    <span class="sr-only">Next</span>
-                  </a>
-                </li>
+                {{> catalog/pagination}}
               </ul>
             </div>
           </div>

@@ -11,7 +11,7 @@
     <div id="pdp-page" class="container">
       <div class="row">
           <div class="col-xs-12 breadcrumb-col">
-            {{> breadcrumb}}
+            {{> catalog/breadcrumb}}
           </div>
         </div>
         <div class="row product-info-row-pdp">
@@ -28,127 +28,7 @@
             </div>
           </div>
           <div class="col-sm-6 product-description">
-            <div class="row">
-              <div class="col-sm-12">
-                <p><h1 class="text-uppercase pdp-product-title">{{content.product.title}}</h1><span class="grey-p">{{content.product.sku}}</span></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <fieldset class="rating">
-                  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                </fieldset>
-                <span class="star-rating-review"><a href="{{content.product.ratingReview.url}}">{{content.product.ratingReview.title}}</a></span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="pdp-product-description">{{content.product.description}}</p><a href="#"><span class="view-details">{{content.product.viewDetails}}</span></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="product-price">{{content.product.price}}</p>
-              </div>
-            </div>
-            <div class="row select-row">
-              <div class="col-sm-3 col-xs-12">
-                <p class="text-uppercase">{{content.product.color.title}}</p>
-                <div>
-                  <select class="select">
-                    {{#each content.product.color.list}}
-                      <option value="{{value}}" {{#if selected}}selected{{/if}}>{{name}}</option>
-                    {{/each}}
-                  </select>
-                </div>
-              </div>
-              <div class="col-sm-3 col-xs-6">
-                <p class="text-uppercase">{{content.product.size.title}}</p>
-                <div>
-                  <select class="select">
-                    {{#each content.product.size.list}}
-                      <option value="{{value}}" {{#if selected}}selected{{/if}}>{{name}}</option>
-                    {{/each}}
-                  </select>
-                </div>
-              </div>
-              <div class="col-sm-6 col-xs-6 size-guide-col">
-                <a href="#"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">{{content.product.sizeGuide}}</span></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-2 col-xs-3">
-                <select class="bag-items">
-                  {{#each content.product.bagItems.list}}
-                    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{name}}</option>
-                  {{/each}}
-                </select>
-              </div>
-              <div class="col-sm-6 col-xs-6">
-                <button class="add-to-bag text-center">
-                 <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="add to bag">{{content.product.addToBag}}
-                </button>
-              </div>
-              <div class="col-sm-4 col-xs-3">
-                <button type="button" class="pdp-product-heart">
-                  <span class="sr-only">Add item to wishlist</span>
-                </button>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="availability">
-                  <span class="glyphicon glyphicon-ok-sign"></span>{{content.product.available}}
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="panel-group panel-group-pdp" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title product-accordion-title text-uppercase">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">{{content.product.productDetails.title}}<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="panel-body panel-body-pdp">
-                        {{content.product.productDetails.text}}
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title product-accordion-title text-uppercase">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{{content.product.deliveryAndReturn.title}}<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                      <div class="panel-body panel-body-pdp">
-                        {{content.product.deliveryAndReturn.text}}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="social-share">
-                  <ul class="social-icons pdp-social-icons">
-                    <a href=""><li><img class="social-icon" src="assets/img/Facebook.png" alt="facebook"></li></a>
-                    <a href=""><li><img class="social-icon" src="assets/img/Pinterest.png" alt="pinterest"></li></a>
-                    <a href=""><li><img class="social-icon" src="assets/img/Google.png" alt="google plus"></li></a>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            {{> catalog/product-detail}}
           </div>
         </div>
      </div>
@@ -156,115 +36,14 @@
 
   <div class="pdp-page-review">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <p class="text-center text-uppercase may-like">{{content.suggestions.text}}</p>
-        </div>
-      </div>
-      <div class="row">
-        {{#each content.suggestions.list}}
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            {{> product-thumbnail context=../content.suggestions}}
-          </div>
-        {{/each}}
-        </div>
-      </div>
+      {{> catalog/suggestions}}
       <hr class="hr">
-      <div class="row">
-        <div class="col-sm-12">
-          <p class="text-uppercase text-center reviews-title">{{content.reviews}}</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 reviews-col">
-          <div class="row">
-            <div class="col-sm-12">
-              <div>1 - 5 of 51 Reviews</div>
-            </div>
-          </div>
-          <div class="single-comment">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="review-rating">
-                  <fieldset class="rating rated-stars">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                  </fieldset>
-                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-              </div>
-            </div>
-          </div>
-          <div class="single-comment">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="review-rating">
-                  <fieldset class="rating rated-stars">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                  </fieldset>
-                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-              </div>
-            </div>
-          </div>
-          <div class="single-comment">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="review-rating">
-                  <fieldset class="rating rated-stars">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                  </fieldset>
-                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {{> catalog/reviews}}
     </div>
   </div>
+
   {{> footer}}
+
   {{> htmlscripts}}
 </body>
 
