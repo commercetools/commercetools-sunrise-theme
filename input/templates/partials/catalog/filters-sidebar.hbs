@@ -1,25 +1,26 @@
+{{#with content.filters}}
 <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
-  <button class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas" type="button"><span class="sr-only">{{content.filters.close}}</span></button>
+  <button class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas" type="button"><span class="sr-only">{{close}}</span></button>
   <div class="row">
     <div class="col-sm-12">
       <div class="row">
         <div class="col-sm-12 ">
-          <p class="filter-products"><b>{{content.filters.text}}</b></p>
+          <p class="filter-products"><b>{{text}}</b></p>
         </div>
       </div>
       <hr class="hr">
       <div class="row product-type">
         <div class="col-xs-8 text-left">
-          {{content.filters.categories.text}}
+          {{categories.text}}
         </div>
         <div class="col-xs-4">
-          <a class="text-right clear-btn" href="#">{{content.filters.clear}}</a>
+          <a class="text-right clear-btn" href="#">{{clear}}</a>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-12">
           <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
-            {{#each content.filters.categories.list}}
+            {{#each categories.list}}
               <div class="panel panel-default">
                 <div class="panel-heading" id="heading-one" role="tab">
                   <h4 class="panel-title">
@@ -28,12 +29,12 @@
                     </a>
                   </h4>
                 </div>
-                <div aria-labelledby="heading-one" class="panel-collapse collapse {{#if isSelected}}in{{/if}}" id="{{value}}" role="tabpanel">
+                <div aria-labelledby="heading-one" class="panel-collapse collapse {{#if selected}}in{{/if}}" id="{{value}}" role="tabpanel">
                   <div class="panel-body">
                     {{#each children}}
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox" value="{{value}}" {{#if isSelected}}checked{{/if}}>
+                          <input type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}>
                           {{text}}
                         </label>
                       </div>
@@ -48,38 +49,38 @@
       <hr class="hr">
       <div class="row size-box">
         <div class="col-xs-8 text-left">
-          {{content.filters.size.text}}
+          {{size.text}}
         </div>
         <div class="col-xs-4">
-          <a class="text-right clear-btn" href="#">{{content.filters.clear}}</a>
+          <a class="text-right clear-btn" href="#">{{clear}}</a>
         </div>
       </div>
       <div class="pop-filter-size">
-        {{#each content.filters.size.list}}
-          <input type="checkbox" value="{{value}}" {{#if isSelected}}checked{{/if}}><label>{{text}}</label><br>
+        {{#each size.list}}
+          <input type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}><label>{{text}}</label><br>
         {{/each}}
       </div>
       <hr class="hr">
       <div class="row color-box">
         <div class="col-xs-8 text-left">
-          {{content.filters.color.text}}
+          {{color.text}}
         </div>
         <div class="col-xs-4">
-          <a class="text-right clear-btn" href="#">{{content.filters.clear}}</a>
+          <a class="text-right clear-btn" href="#">{{clear}}</a>
         </div>
       </div>
       <div class="pop-filter-color">
-        {{#each content.filters.color.list}}
-          <input type="checkbox" value="{{value}}" {{#if isSelected}}checked{{/if}}><label>{{text}}</label><br>
+        {{#each color.list}}
+          <input type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}><label>{{text}}</label><br>
         {{/each}}
       </div>
       <hr class="hr">
       <div class="row price-box">
         <div class="col-xs-8">
-          {{content.filters.price.text}}
+          {{price.text}}
         </div>
         <div class="col-xs-4">
-          <a class="text-right clear-btn" href="#">{{content.filters.clear}}</a>
+          <a class="text-right clear-btn" href="#">{{clear}}</a>
         </div>
       </div>
       <div class="row">
@@ -91,18 +92,18 @@
       <hr class="hr">
       <div class="row brands-box">
         <div class="col-xs-8 text-left">
-          {{content.filters.brands.text}}
+          {{brands.text}}
         </div>
         <div class="col-xs-4">
-          <a class="text-right clear-btn" href="#">{{content.filters.clear}}</a>
+          <a class="text-right clear-btn" href="#">{{clear}}</a>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-12">
           <div class="brands-list">
-            {{#each content.filters.brands.list}}
+            {{#each brands.list}}
               <div class="checkbox">
-                <input id="brands-checkbox" type="checkbox" {{#if isSelected}}checked{{/if}}><label>{{text}}</label>
+                <input id="brands-checkbox" type="checkbox" {{#if selected}}checked{{/if}}><label>{{text}}</label>
               </div>
             {{/each}}
           </div>
@@ -111,3 +112,4 @@
     </div>
   </div>
 </div>
+{{/with}}
