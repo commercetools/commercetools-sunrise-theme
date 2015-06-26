@@ -32,23 +32,15 @@
 }
 
 .checkout-now-btn {
-	background: url(../../../assets/img/arrow-66.png) no-repeat 155px 10px $yellow;
-	background-size: 20px;
+	background: /* url(../../assets/img/arrow-66.png) no-repeat 95% 13px */ $yellow;
+	background-size: 15px;
 	border: none;
 	color: $black;
 	padding: 0.5em 2em;
 	font-size: 1.2em;
-	font-weight: 900;
-		&:hover {
-			background: $white;
-			outline: 1px solid $light-grey;
-		}
-		&:active {
-			background: $yellow;
-		}
-		&:focus {
-			outline: 0;
-		}
+	&:hover {
+		background: /* url(../../assets/img/arrow-66.png) no-repeat 95% 13px */ lighten($yellow, 5%);
+	}
 }
 
 .cart-content {
@@ -188,14 +180,10 @@
 	color: $grey;
 	margin-right: 0.5em;
 	padding: 0.5em 1em;
-		&:active {
-			background: $yellow;
-			color: $white;
-			border: 2px solid $white;
-		}
-		&:focus {
-			outline: 0;
-		}
+	&:hover {
+		color: $dark-grey;
+		border: 2px solid $dark-grey;
+	}
 }
 
 // Total price section
@@ -222,20 +210,14 @@
 // Back to shopping and checkout now buttons
 
 .continue-shopping-btn {
-	background: url(../../../assets/img/arrow-67-black.png) no-repeat 10px 10px transparent;
+	background: /* url(../../assets/img/arrow-67-black.png) no-repeat 10px 10px */ transparent;
 	background-size: 20px;
-	border: 1px solid $grey;
-	color: $grey;
-	padding: 0.5em 2em;
+	border: 1px solid $dark-grey;
+	color: $black;
+	padding: 0.4em 2em;
 	font-size: 1.2em;
-	font-weight: 900;
 		&:hover {
 			background: $white;
-			outline: 1px solid $light-grey;
-			color: $black;
-		}
-		&:focus {
-			outline: 0;
 		}
 }
 .bottom-cart-btns {
@@ -271,7 +253,7 @@
 @media screen and (max-width: 768px) {
 	.current-in-bag {
 		text-align: center;
-		padding: 1em 0 0 0;
+		padding: 2em 0 0 0;
 	}
 	.checkout-now {
 		padding: 0;
@@ -355,47 +337,3 @@
 		font-size: 0.8em;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

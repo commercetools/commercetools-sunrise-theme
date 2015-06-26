@@ -1,383 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="assets/img/favicon.ico">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link href="assets/css/main.min.css" rel="stylesheet">
-    <title>Sunrise</title>
-  </head>
 
-  <body>
+<head>
+  {{> htmlhead}}
+</head>
 
-  <div class="navbar navbar-fixed-top">
-
-    <div class="header">
-      <header class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <ul class="nav-list">
-              <!-- Toggle the menu on mobile -->
-              <li class="list-item-nav-toggle">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </li>
-              <!-- Toggles the search field on mobile / not visible on desktop -->
-              <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only">Toggle search field</span></button></li>
-
-              <li class="list-item-store"><a href="#" class="store-select icon-marker"><span class="hidden-xs">Stores</span></a></li>
-
-              <li class="list-item-help"><a href="#" class="link-help">Help</a></li>
-
-              <li class="list-item-call"><a href="#" class="link-hotline">Call us on +44 123 456 000</a></li>
-              <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
-              <li class="list-item-bag"><a href="#" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">Your bag</span> <span class="cart-item-number">12</span></a></li>
-
-              <li class="list-item-user"><a href="#"class="link-user icon-user"><span class="hidden-xs hidden-sm">Sign in</span></a></li>
-
-              <li class="list-item-language hidden-sm">
-                <select class="language-select">
-                  <option value="English">Eng</option>
-                  <option value="German">De</option>
-                </select>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-    </div>
-
-    <div id="navigation" class="container">
-      <div class="row logo-search">
-        <div class="col-sm-8">
-          <a href="#" class="brand-logo">
-            <img class="img-responsive" src="assets/img/logo.svg" alt="SUNRISE Logo">
-          </a>
-        </div>
-        <div class="col-sm-4">
-         <form class="search-box text-right" action="">
-            <input class="search-field" type="search" placeholder="Search" />
-            <button type="submit" class="search-button"><span class=".icon-font icon-magnifying-glass"></span> <span class="sr-only">Search</span></button>
-         </form>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="dropdown-megamenu navbar navbar-default">
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#">New</a></li>
-              <li class="dropdown menu-large">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Women</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                        <li><a href="#">Sweats</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Women</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Women</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Women</h3>
-                      <ul>
-                        <li><a href="#">Nesting</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown menu-large">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Men</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Men</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Men</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Men</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Nesting</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown menu-large">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Accessories</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Accessories</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Accessories</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Accessories</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Nesting</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown menu-large">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brands<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Brand</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Brand</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">T-shirts</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Sweats</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Brand</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Button toolbar</a></li>
-                        <li><a href="#">Sizing</a></li>
-                        <li><a href="#">Suits</a></li>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-2">
-                    <div class="nav-accordion">
-                      <h3>Brand</h3>
-                      <ul>
-                        <li><a href="#">Basic example</a></li>
-                        <li><a href="#">Nesting</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                      <h3>Glasses</h3>
-                      <ul>
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                        <li><a href="#">Vertical variation</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#" class="sale icon-ribbon"></span> Sale</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<body>
+  {{> header}}
   <div class="cart-page">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-xs-12">
           <div class="current-in-bag">
             <span><img class="bag-icon-lg" src="assets/img/hand-bag-2-black.png" alt="bag icon"></span>
-            <span class="text-uppercase your-bag-txt">Your Bag:</span>
-            <span class="items-total-txt">3 items in total</span>
+            <span class="text-uppercase your-bag-txt">{{content.yourBag}}</span>
+            <span class="items-total-txt">{{content.itemsTotal}}</span>
           </div>
         </div>
         <div class="col-sm-6 col-xs-12">
           <div class="checkout-now">
-            <button class="pull-right text-uppercase checkout-now-btn">Checkout now</button>
+            <button class="pull-right text-uppercase checkout-now-btn">{{content.checkoutBtn}}</button>
           </div>
         </div>
       </div>
@@ -386,98 +28,63 @@
           <div class="cart-content">
             <div class="row text-uppercase hidden-xs cart-items-title">
               <div class="col-sm-6">
-                <span>Product description</span>
+                <span>{{content.cartItems.description}}</span>
               </div>
               <div class="col-sm-2">
-                <span>Quantity</span>
+                <span>{{content.cartItems.quantity}}</span>
               </div>
               <div class="col-sm-2 text-right">
-                <span>Price</span>
+                <span>{{content.cartItems.price}}</span>
               </div>
               <div class="col-sm-2 text-right">
-                <span>Total Price</span>
+                <span>{{content.cartItems.totalPrice}}</span>
               </div>
             </div>
-            <div class="row single-cart-item">
-              <div class="col-sm-1 col-xs-4 product-img-col">
-                <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
-              </div>
-              <div class="col-sm-3 col-xs-8 product-info-text">
-                <p class="cart-item-name">Enditatem Product Name<br>Optional Line Two</p>
-                <p class="grey-p">Sunrise #SUN123456</p>
-                <p class="cart-color-size">Color: <span class="black-p">Navy Blue</span><br>Size: <span class="black-p">M</span></p>
-                <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>Immediately available, delivery in 2-5 days</p>
-                <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>Available</p>
-              </div>
-              <div class="col-sm-2 col-xs-6 text-center cart-edit-delete">
-                <div class="text-uppercase edit-delete-section">
-                  <a href="#"><span><img class="cart-action-icon" src="assets/img/edit-1.png" alt="delete">Edit</span></a>
+            {{#each content.cartItems.list}}
+              <div class="row single-cart-item">
+                <div class="col-sm-1 col-xs-4 product-img-col">
+                  <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
                 </div>
-                <div class="text-uppercase edit-delete-section">
-                  <a href="#"><span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">Delete</span></a>
+                <div class="col-sm-3 col-xs-8 product-info-text">
+                  <p class="cart-item-name">{{nameHeadline}}<br>{{nameSubline}}</p>
+                  <p class="grey-p">{{sku}}</p>
+                  <p class="cart-color-size">{{colorTitle}}<span class="black-p">{{color}}</span><br>{{sizeTitle}}<span class="black-p">{{size}}</span></p>
+                  <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
+                  <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
                 </div>
-              </div>
-              <div class="col-sm-2 col-xs-6">
-                <div class="quantity-spinner">
-                  <span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="1" max="10"><span class="input-number-increment">+</span>
+                <div class="col-sm-2 col-xs-6 text-center cart-edit-delete">
+                  <div class="text-uppercase edit-delete-section">
+                    <a href="#"><span><img class="cart-action-icon" src="assets/img/edit-1.png" alt="delete">{{edit}}</span></a>
+                  </div>
+                  <div class="text-uppercase edit-delete-section">
+                    <a href="#"><span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">{{delete}}</span></a>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-2 col-xs-7">
-                <div class="text-right cart-item-price">
-                  <span class="visible-xs xs-price-title">Price</span>
-                  <span>49,00 €</span>
+                <div class="col-sm-2 col-xs-6">
+                  <div class="quantity-spinner">
+                    <span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="1" max="10"><span class="input-number-increment">+</span>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-2 col-xs-5">
-                <div class="text-right cart-item-price">
-                  <span class="visible-xs xs-price-title">Total Price</span>
-                  <span>49,00 €</span>
+                <div class="col-sm-2 col-xs-7">
+                  <div class="text-right cart-item-price">
+                    <span class="visible-xs xs-price-title">{{priceTitle}}</span>
+                    <span>{{price}}</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="row single-cart-item">
-              <div class="col-sm-1 col-xs-4 product-img-col">
-                <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
-              </div>
-              <div class="col-sm-3 col-xs-8 product-info-text">
-                <p class="cart-item-name">Enditatem Product Name<br>Optional Line Two</p>
-                <p class="grey-p">Sunrise #SUN123456</p>
-                <p class="cart-color-size">Color: <span class="black-p">Navy Blue</span><br>Size: <span class="black-p">M</span></p>
-                <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>Immediately available, delivery in 2-5 days</p>
-                <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>Available</p>
-              </div>
-              <div class="col-sm-2 col-xs-6 text-center cart-edit-delete">
-                <div class="text-uppercase edit-delete-section">
-                  <a href="#"><span><img class="cart-action-icon" src="assets/img/edit-1.png" alt="delete">Edit</span></a>
-                </div>
-                <div class="text-uppercase edit-delete-section">
-                  <a href="#"><span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">Delete</span></a>
+                <div class="col-sm-2 col-xs-5">
+                  <div class="text-right cart-item-price">
+                    <span class="visible-xs xs-price-title">{{totalPriceTitle}}</span>
+                    <span>{{totalPrice}}</span>
+                  </div>
                 </div>
               </div>
-              <div class="col-sm-2 col-xs-6">
-                <div class="quantity-spinner">
-                  <span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="0" max="10"><span class="input-number-increment">+</span>
-                </div>
-              </div>
-              <div class="col-sm-2 col-xs-7">
-                <div class="text-right cart-item-price">
-                  <span class="visible-xs xs-price-title">Price</span>
-                  <span>49,00 €</span>
-                </div>
-              </div>
-              <div class="col-sm-2 col-xs-5">
-                <div class="text-right cart-item-price">
-                  <span class="visible-xs xs-price-title">Total Price</span>
-                  <span>49,00 €</span>
-                </div>
-              </div>
-            </div>
+            {{/each}}
             <div class="row">
               <div class="col-sm-12">
                 <div class="text-right promotion-info">
-                  <span class="text-uppercase promo-info-text">Promotional Discount Info<img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
+                  <span class="text-uppercase promo-info-text" title="Delivery estimate options additional information...">{{content.cartItems.promoDiscount}}<img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
                   <input id="promo-code" type="text">
-                  <button class="text-uppercase promo-apply-btn">Apply</button>
+                  <button class="text-uppercase promo-apply-btn">{{content.cartItems.applyBtn}}</button>
                 </div>
               </div>
             </div>
@@ -486,43 +93,43 @@
                 <div class="total-price-calc">
                   <div class="row">
                     <div class="col-xs-12 delivery-xs">
-                      <span class="visible-xs text-right delivery-est">Delivery esimate options<img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
+                      <span class="visible-xs text-right delivery-est" title="Delivery estimatte options additional text area">{{content.cartItems.deliveryEstimate}}<img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
                     </div>
                     <div class="col-sm-10 col-xs-8">
                       <div class="text-right subtotal">
-                        <span class="subtotal-title">Subtotal</span>
+                        <span class="subtotal-title">{{content.cartItems.subtotalTitle}}</span>
                       </div>
                       <div class="text-right">
-                        <span class="order-discount">Order Discount</span>
+                        <span class="order-discount">{{content.cartItems.orderDiscountTitle}}</span>
                       </div>
                       <div class="text-right delivery-info">
-                        <span class="delivery-est hidden-xs">Delivery esimate options<img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
-                        <span class="delivery-info-title">Standart delivery</span>
+                        <span class="delivery-est hidden-xs" title="Delivery estimatte options additional text area">{{content.cartItems.deliveryEstimate}}<img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
+                        <span class="delivery-info-title">{{content.cartItems.deliveryOption}}</span>
                       </div>
                       <hr class="total-divider">
                       <div class="text-right">
-                        <span>Sales Tax</span>
+                        <span>{{content.cartItems.taxTitle}}</span>
                       </div>
                       <div class="text-right">
-                        <span class="order-total"><span class="hidden-xs">Estimated</span> Order Total</span>
+                        <span class="order-total">{{content.cartItems.orderTotalTitle}}</span>
                       </div>
                     </div>
                     <div class="col-sm-2 col-xs-4 text-right">
                       <div>
-                        <span>107,00 €</span>
+                        <span>{{content.cartItems.subtotal}}</span>
                       </div>
                       <div>
-                        <span class="order-discount">0,00 €</span>
+                        <span class="order-discount">{{content.cartItems.orderDiscount}}</span>
                       </div>
                       <div>
-                        <span>10,00 €</span>
+                        <span>{{content.cartItems.delivery}}</span>
                       </div>
                       <hr>
                       <div>
-                        <span>20,00 €</span>
+                        <span>{{content.cartItems.tax}}</span>
                       </div>
                       <div>
-                        <span class="order-total">117,00 €</span>
+                        <span class="order-total">{{content.cartItems.orderTotal}}</span>
                       </div>
                     </div>
                   </div>
@@ -535,102 +142,24 @@
       <div class="row bottom-cart-btns">
         <div class="col-sm-6 col-xs-12 visible-xs">
           <div class="checkout-now-bottom">
-            <a href="#"><button class="pull-right text-uppercase checkout-now-btn">Checkout now</button></a>
+            <a href="#"><button class="pull-right text-uppercase checkout-now-btn">{{content.checkoutBtn}}</button></a>
           </div>
         </div>
         <div class="col-sm-6 col-xs-12">
           <div>
-            <a href="#"><button class="text-uppercase continue-shopping-btn">Continue Shopping</button></a>
+            <a href="#"><button class="text-uppercase continue-shopping-btn">{{content.continueShoppingBtn}}</button></a>
           </div>
         </div>
         <div class="col-sm-6 col-xs-12 hidden-xs">
           <div class="checkout-now-bottom">
-            <a href="#"><button class="pull-right text-uppercase checkout-now-btn">Checkout now</button></a>
+            <a href="#"><button class="pull-right text-uppercase checkout-now-btn">{{content.checkoutBtn}}</button></a>
           </div>
         </div>
       </div>
     </div>
   </div>
+  {{> footer}}
+  {{> htmlscripts}}
+</body>
 
-  <div class="footer">
-    <div id="footer" class="container">
-      <div class="row text-uppercase">
-        <div class="col-sm-2">
-          <ul>
-            <li class="footer-title hidden-xs">Customer Care</li>
-            <li><a href="">Contact us</a></li>
-            <li><a href="">Help</a></li>
-            <li><a href="">Shipping</a></li>
-            <li><a href="">Returns</a></li>
-            <li><a href="">Size Guide</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-2 hidden-xs">
-          <ul>
-            <li class="footer-title">About Us</li>
-            <li><a href="">Our Story</a></li>
-            <li><a href="">Careers</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-2 hidden-xs">
-          <ul>
-            <li class="footer-title">Shortcuts</li>
-            <li><a href="">My Account</a></li>
-            <li><a href="">Store Locator</a></li>
-            <li><a href="">Gift Cards</a></li>
-            <li><a href="">Payment</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-6 text-center newsletter-box">
-          <div class="row">
-            <div class="col-sm-5 footer-title-yellow">
-              <p>Join our newsletter</p>
-            </div>
-            <div class="col-sm-7">
-              <form class="email-submit" action="">
-                <input class="email-box" type="text" placeholder="Your email ...">
-              </form>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-8 text-left card-info footer-title">
-              <p>Pay securely with these payment methods</p>
-              <img src="assets/img/cards.png" alt="payment types" class="img-responsive payment-cards">
-            </div>
-            <div class="col-sm-4 text-left card-info footer-title">
-              <p>Follow us</p>
-              <ul class="social-icons">
-                <a href=""><li><img class="social-icon" src="assets/img/facebook-32.png" alt="facebook"></li></a>
-                <a href=""><li><img class="social-icon" src="assets/img/pinterest-32.png" alt="pinterest"></li></a>
-                <a href=""><li><img class="social-icon" src="assets/img/google-plus-32.png" alt="google plus"></li></a>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="sub-footer">
-    <div class="container">
-      <div class="row text-uppercase">
-        <div class="col-sm-12">
-          <ul class="footer-title imprint-row">
-            <li>&copy; 2015 Sunrise</li>
-            <a href="#"><li>Imprint</li></a>
-            <a href="#"><li>Privacy policy</li></a>
-            <a href="#"><li>Terms of use</li></a>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
-  </body>
 </html>

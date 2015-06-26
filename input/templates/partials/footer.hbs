@@ -1,12 +1,13 @@
+{{#with footer}}
 <div class="footer">
   <div id="footer" class="container">
     <div class="row text-uppercase">
       <div class="col-sm-2">
         <div class="footer-col">
           <ul>
-            <li class="footer-title hidden-xs">{{footer.customerCare.title}}</li>
-            {{#each footer.customerCare.list}}
-              <li><a href="{{url}}">{{name}}</a></li>
+            <li class="footer-title hidden-xs">{{customerCare.text}}</li>
+            {{#each customerCare.list}}
+              <li><a href="{{url}}">{{text}}</a></li>
             {{/each}}
           </ul>
         </div>
@@ -14,9 +15,9 @@
       <div class="col-sm-2 hidden-xs">
         <div class="footer-col">
           <ul>
-            <li class="footer-title hidden-xs">{{footer.aboutUs.title}}</li>
-            {{#each footer.aboutUs.list}}
-              <li><a href="{{url}}">{{name}}</a></li>
+            <li class="footer-title hidden-xs">{{aboutUs.text}}</li>
+            {{#each aboutUs.list}}
+              <li><a href="{{url}}">{{text}}</a></li>
             {{/each}}
           </ul>
         </div>
@@ -24,9 +25,9 @@
       <div class="col-sm-2 hidden-xs">
         <div class="footer-col">
           <ul>
-            <li class="footer-title hidden-xs">{{footer.shortcuts.title}}</li>
-            {{#each footer.shortcuts.list}}
-              <li><a href="{{url}}">{{name}}</a></li>
+            <li class="footer-title hidden-xs">{{shortcuts.text}}</li>
+            {{#each shortcuts.list}}
+              <li><a href="{{url}}">{{text}}</a></li>
             {{/each}}
           </ul>
         </div>
@@ -34,26 +35,26 @@
       <div class="col-sm-6 text-center newsletter-box">
         <div class="row">
           <div class="col-sm-5 text-left footer-title-yellow">
-            <p>Join our newsletter</p>
+            <p>{{newsletter.text}}</p>
           </div>
           <div class="col-sm-7">
-            <form class="email-submit" action="">
-              <input class="email-box" type="text" placeholder="Your email ...">
-              <button type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">Search</span></button>
+            <form class="email-submit" action="{{newsletter.url}}">
+              <input class="email-box" type="text" placeholder="{{newsletter.placeholder}}">
+              <button type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">{{newsletter.textAlt}}</span></button>
             </form>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-8 text-left card-info footer-title">
-            <p>{{footer.paySecure}}</p>
+            <p>{{paySecure}}</p>
             <img src="assets/img/cards.png" alt="payment types" class="img-responsive payment-cards">
           </div>
           <div class="col-sm-4 text-left card-info footer-title">
-            <p>{{footer.followUs}}</p>
+            <p>{{followUs}}</p>
             <ul class="social-icons">
-              <a href=""><li><img class="social-icon" src="assets/img/facebook-32.png" alt="facebook"></li></a>
-              <a href=""><li><img class="social-icon" src="assets/img/pinterest-32.png" alt="pinterest"></li></a>
-              <a href=""><li><img class="social-icon" src="assets/img/google-plus-32.png" alt="google plus"></li></a>
+              <a href=""><li><img class="social-icon" src="assets/img/Facebook.png" alt="facebook"></li></a>
+              <a href=""><li><img class="social-icon" src="assets/img/Pinterest.png" alt="pinterest"></li></a>
+              <a href=""><li><img class="social-icon" src="assets/img/Google.png" alt="google plus"></li></a>
             </ul>
           </div>
         </div>
@@ -61,19 +62,19 @@
     </div>
   </div>
 </div>
-
 <div class="sub-footer">
   <div class="container">
     <div class="row text-uppercase">
       <div class="col-sm-12">
         <ul class="footer-title imprint-row">
-          <li class="hidden-xs">{{footer.legalInfo.title}}</li>
-          {{#each footer.legalInfo.list}}
-            <li><a href="{{url}}">{{name}}</a></li>
+          <li class="hidden-xs">{{legalInfo.text}}</li>
+          {{#each legalInfo.list}}
+            <li><a href="{{url}}">{{text}}</a></li>
           {{/each}}
-          <li class="visible-xs">{{footer.legalInfo.title}}</li>
+          <li class="visible-xs">{{legalInfo.text}}</li>
         </ul>
       </div>
     </div>
   </div>
 </div>
+{{/with}}

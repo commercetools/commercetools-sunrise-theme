@@ -5,45 +5,29 @@
 /*****************************************************************************/
 
 .pdp-page {
-  padding-bottom: 5em;
+  padding-bottom: 2em;
 }
 
-// Vertical thumbnails
-
-.vertical-img {
-	margin: 0 0 1em 0;
-	border: 1px solid $light-grey;
+.product-info-row-pdp {
+  padding-top: 1em;
 }
 
-.vertical-img:hover {
-	border: 1px solid $black;
-}
-
-// Main image
-
-.product-frame {
-  border: 1px solid $grey;
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-}
+ .pdp-product-title {
+   font-size: 1.6em;
+   margin: -0.6em 0 0;
+ }
 
 // Product information
-
 .product-description {
   font-size: 1.2em;
 }
 
 // Product information title
-
 .grey-p {
 	color: $grey;
 }
 
-// Stars rating
-
+// Star rating
 .rating {
     float:left;
 }
@@ -57,11 +41,10 @@
 .rating:not(:checked) > label {
     float:right;
     width:1em;
-    padding:0 .1em;
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-    font-size:150%;
+    font-size:120%;
     line-height:1.2;
     color:$grey;
 }
@@ -85,8 +68,20 @@
     left:2px;
 }
 
-// Product information text
+// Star ratings - review
 
+.star-rating-review {
+  font-size: 0.9em;
+  text-decoration: underline;
+  padding: 0 0.5em;
+}
+
+// Product description
+.pdp-product-description {
+  font-size: 0.9em;
+}
+
+// Product information text
 .view-details {
 	color: $dark-grey;
 	text-transform: uppercase;
@@ -95,19 +90,16 @@
 }
 
 // Product price
-
 .product-price {
 	font-size: 2em;
 }
 
 // Row of select color, size and guide
-
 .select-row {
 	padding: 0 0 1.5em;
 }
 
 // Size guide
-
 .size-guide-col {
 	padding-top: 2.3em;
 }
@@ -123,42 +115,47 @@
 }
 
 // Number of bag items
-
-#bag-items {
-  border: 3px solid $yellow;
-  padding: 0.5em 0.5em;
-  resize: none;
-  text-align: center;
+.bag-items {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 100%;
+  background: none;
+  padding: 0.5em 36%;
+  border-radius: 0;
+  border: 3px solid $yellow;
 }
 
 // Add to bag button
-
 .add-to-bag {
   width: 100%;
-  border: 2px solid $yellow;
+  height: 47px;
 	background: $yellow;
 	text-transform: uppercase;
-	font-weight: 900;
     &:hover {
-      outline: 2px solid $dark-blue;
+      background: lighten($yellow, 5%);
     }
 }
 
 .bag-thumb {
 	height: 25px;
-	margin: 0.4em 0.5em;
+	margin: 0.5em 0.9em 0.5em 0;
 }
 
 // Add to wishlish
-
-.wishlist-btn {
-  margin: 0;
-  height: 40px;
+.pdp-product-heart {
+  width: 50px;
+  height: 50px;
+  background: url("../img/heart_sprite.png") no-repeat;
+  background-size: 170px;
+  float: left;
+  &:hover,
+  &:focus {
+      background-position: -60px;
+  }
 }
 
 // Availability
-
 .glyphicon-ok-sign:before {
   padding-right: 1em;
 }
@@ -175,7 +172,6 @@
 }
 
 // Product details accordion
-
 .product-accordion-title {
   background: $white;
   letter-spacing: 0.1em;
@@ -188,34 +184,36 @@
   padding-bottom: 1em;
 }
 
+.panel-body-pdp {
+  padding: 0.3em 0;
+}
+
 .accordion-plus {
-  height: 1.5em;
+  height: 1.2em;
   float: right;
 }
 
 // Social share
-
-.social-share-icon {
-  height: 20px;
-  padding-right: 1em;
-}
-
 .social-share {
   text-transform: uppercase;
   color: $dark-grey;
   font-size: 0.8em;
 }
 
-// You may also like section
+.pdp-social-icons {
+  padding: 0;
+}
 
+// You may also like section
 .pdp-page-review {
   background: $dirty-white;
 }
 
 .may-like {
   letter-spacing: 0.1em;
-  font-size: 2em;
+  font-size: 1.9em;
   padding: 1em 0;
+  margin: 0;
 }
 
 .text-red {
@@ -223,19 +221,20 @@
 }
 
 // Reviews Section
-
 .reviews-title {
   letter-spacing: 0.1em;
-  font-size: 2em;
+  font-size: 1.9em;
   padding: 1em 0;
+  margin: 0;
 }
 
-.review-count {
-  padding: 1em 0;
+.reviews-col {
+  padding: 0 2em;
 }
 
 .single-comment {
   padding: 2em 0;
+  border-bottom: 1px solid $light-grey;
 }
 
 .rated-stars {
@@ -258,17 +257,10 @@
   color: $dark-grey;
 }
 
-/*****************************************************************************/
-/*
-/* MEDIA QUERIES
-/*
-/*****************************************************************************/
+/* Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 340px) {
   .add-to-bag {
-    font-size: 0.8em;
-  }
-  .product-info-row-pdp {
-    padding-top: 2em;
+    font-size: 0.9em;
   }
 }

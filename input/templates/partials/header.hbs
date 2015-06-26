@@ -1,3 +1,4 @@
+  {{#with header}}
   <div class="navbar navbar-fixed-top">
 
     <div class="header">
@@ -14,26 +15,26 @@
                 </button>
               </li>
               <!-- Toggles the search field on mobile / not visible on desktop -->
-              <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only">Toggle search field</span></button></li>
+              <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only">{{search.textToggle}}</span></button></li>
 
-              <li class="list-item-store"><a href="{{header.stores.url}}" class="store-select icon-marker"><span class="hidden-xs">{{header.stores.title}}</span></a></li>
+              <li class="list-item-store"><a href="{{stores.url}}" class="store-select icon-marker"><span class="hidden-xs">{{stores.text}}</span></a></li>
 
-              <li class="list-item-help"><a href="{{header.help.url}}" class="link-help">{{header.help.title}}</a></li>
+              <li class="list-item-help"><a href="{{help.url}}" class="link-help">{{help.text}}</a></li>
 
-              <li class="list-item-call"><a href="{{header.callUs.url}}" class="link-hotline">{{header.callUs.title}}</a></li>
+              <li class="list-item-call"><a href="{{callUs.url}}" class="link-hotline">{{callUs.text}}</a></li>
               <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
-              <li class="list-item-bag"><a href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">{{header.miniCart.title}}</span> <span class="cart-item-number">{{header.miniCart.numItems}}</span></a></li>
+              <li class="list-item-bag"><a href="{{miniCart.url}}" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">{{miniCart.text}}</span> <span class="cart-item-number">{{miniCart.numItems}}</span></a></li>
 
-              <li class="list-item-user"><a href="{{header.logIn.signIn.url}}" class="link-user icon-user"><span class="hidden-xs hidden-sm">{{header.logIn.signIn.title}}</span></a></li>
+              <li class="list-item-user"><a href="{{user.signIn.url}}" class="link-user icon-user"><span class="hidden-xs hidden-sm">{{user.signIn.text}}</span></a></li>
 
-              <li class="list-item-language"><span class="language-label">Location</span>
+              <li class="list-item-language"><span class="language-label">{{countries.text}}</span>
                 <select id="language-select" class="language-select">
-                {{#each header.currencies.list}}
-                  <option value="{{value}}" {{#if selected}}selected="selected"{{/if}} data-imagesrc="{{imageSrc}}" data-description="{{description}}">{{text}} - </option>
+                {{#each countries.list}}
+                  <option value="{{value}}" {{#if selected}}selected="selected"{{/if}} data-imagesrc="{{image}}" data-description="{{description}}">{{text}} - </option>
                 {{/each}}
-                {{#each header.languages.list}}
-                  <option value="{{value}}" {{#if selected}}selected="selected"{{/if}}>{{name}}</option>
-                {{/each}}
+                <!-- {{#each languages.list}}
+                  <option value="{{value}}" {{#if selected}}selected="selected"{{/if}}>{{text}}</option>
+                {{/each}} -->
                 </select>
               </li>
             </ul>
@@ -50,9 +51,9 @@
           </a>
         </div>
         <div class="col-sm-4">
-         <form class="search-box text-right" action="">
+         <form class="search-box text-right" action="{{search.url}}">
             <input class="search-field" type="search" placeholder="Search" />
-            <button type="submit" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only">Search</span></button>
+            <button type="submit" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only">{{search.text}}</span></button>
          </form>
         </div>
       </div>
@@ -61,17 +62,18 @@
         <div class="dropdown-megamenu navbar navbar-default">
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="{{header.navMenu.new.url}}">{{header.navMenu.new.title}}</a></li>
+              <li><a href="{{navMenu.new.url}}">{{navMenu.new.text}}</a></li>
+              {{#each navMenu.categories}}
               <li class="dropdown menu-large">
-                <a href="{{header.navMenu.women.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.women.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <a href="{{url}}" class="dropdown-toggle" data-toggle="dropdown">{{text}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
                 <ul class="dropdown-menu megamenu row dropdown-submenu">
                   <li class="col-sm-8">
                     <div class="nav-accordion">
-                      {{#each header.navMenu.women.children}}
-                        <h3>{{title}}</h3>
+                      {{#each children}}
+                        <h3>{{text}}</h3>
                         <ul>
                           {{#each children}}
-                            <li><a href="{{url}}">{{title}}</a></li>
+                            <li><a href="{{url}}">{{text}}</a></li>
                           {{/each}}
                         </ul>
                       {{/each}}
@@ -82,16 +84,17 @@
                   </li>
                 </ul>
               </li>
+              {{/each}}
               <li class="dropdown menu-large">
-                <a href="{{header.navMenu.men.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.men.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                <a href="{{navMenu.brands.url}}" class="dropdown-toggle" data-toggle="dropdown">{{navMenu.brands.text}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
                 <ul class="dropdown-menu megamenu row dropdown-submenu">
                   <li class="col-sm-8">
                     <div class="nav-accordion">
-                      {{#each header.navMenu.men.children}}
-                        <h3>{{title}}</h3>
+                      {{#each navMenu.brands.children}}
+                        <h3>{{text}}</h3>
                         <ul>
                           {{#each children}}
-                            <li><a href="{{url}}">{{title}}</a></li>
+                            <li><a href="{{url}}">{{text}}</a></li>
                           {{/each}}
                         </ul>
                       {{/each}}
@@ -102,50 +105,11 @@
                   </li>
                 </ul>
               </li>
-              <li class="dropdown menu-large">
-                <a href="{{header.navMenu.accessories.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.accessories.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-8">
-                    <div class="nav-accordion">
-                      {{#each header.navMenu.accessories.children}}
-                        <h3>{{title}}</h3>
-                        <ul>
-                          {{#each children}}
-                            <li><a href="{{url}}">{{title}}</a></li>
-                          {{/each}}
-                        </ul>
-                      {{/each}}
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown menu-large">
-                <a href="{{header.navMenu.brands.url}}" class="dropdown-toggle" data-toggle="dropdown">{{header.navMenu.brands.title}}<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-8">
-                    <div class="nav-accordion">
-                      {{#each header.navMenu.brands.children}}
-                        <h3>{{title}}</h3>
-                        <ul>
-                          {{#each children}}
-                            <li><a href="{{url}}">{{title}}</a></li>
-                          {{/each}}
-                        </ul>
-                      {{/each}}
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
-              </li>
-              <li><a href="{{header.navMenu.sale.url}}" class="sale icon-ribbon">{{header.navMenu.sale.title}}</a></li>
+              <li><a href="{{navMenu.sale.url}}" class="sale icon-ribbon">{{navMenu.sale.text}}</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+  {{/with}}

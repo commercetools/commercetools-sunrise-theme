@@ -11,155 +11,24 @@
     <div id="pdp-page" class="container">
       <div class="row">
           <div class="col-xs-12 breadcrumb-col">
-            {{> breadcrumb}}
+            {{> catalog/breadcrumb}}
           </div>
         </div>
         <div class="row product-info-row-pdp">
-          <div class="col-sm-1 col-xs-3">
-            <div class="row">
-              <div class="col-sm-12">
-                <a class="product-thumb" id="first-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <a class="product-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <a class="product-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <a class="product-thumb" href="assets/img/blue-jacket.jpg"><img class="vertical-img img-responsive" src="assets/img/blue-jacket.jpg" alt="product thumbnail"></a>
-              </div>
+          <div class="col-sm-4 col-sm-offset-1">
+            <div class="bzoom_wrap">
+              <ul id="bzoom">
+                {{#each content.gallery}}
+                  <li>
+                    <img class="bzoom_thumb_image" src="{{thumbImage}}">
+                    <img class="bzoom_big_image" src="{{bigImage}}">
+                  </li>
+                {{/each}}
+              </ul>
             </div>
           </div>
-          <div class="col-sm-5 col-xs-9">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="product-frame text-center">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xs-12 product-description">
-            <div class="row">
-              <div class="col-sm-12">
-                <p><span class="h2 text-uppercase">Enditatem Product Name</span><br><span class="grey-p">Sunrise #SUN123456</span></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <fieldset class="rating">
-                  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                </fieldset>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.<br><a href="#"><span class="view-details">View Details</span></a></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="product-price">&euro; 123,-</p>
-              </div>
-            </div>
-            <div class="row select-row">
-              <div class="col-sm-4 col-xs-12">
-                <p class="text-uppercase">Color</p>
-                <div>
-                  <select class="styled-select">
-                    <option value="initial">Choose color</option>
-                    <option value="red">Red</option>
-                    <option value="blue">Blue</option>
-                    <option value="green">Green</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-sm-4 col-xs-6">
-                <p class="text-uppercase">Size</p>
-                <div>
-                  <select class="styled-select">
-                    <option value="initial">Choose size</option>
-                    <option value="small">S</option>
-                    <option value="medium">M</option>
-                    <option value="large">L</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-sm-4 col-xs-6 size-guide-col">
-                <a href="#"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">Size Guide</span></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-2 col-xs-3">
-                <textarea name="Bag items" id="bag-items" cols="1" rows="1"></textarea>
-              </div>
-              <div class="col-sm-6 col-xs-6">
-                <button class="add-to-bag text-center">
-                 <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="add to bag">Add to bag
-                </button>
-              </div>
-              <div class="col-sm-4 col-xs-3">
-                <a href="#"><img class="favourites-btn wishlist-btn" src="assets/img/Heart.png" alt="favourites"></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="availability">
-                  <span class="glyphicon glyphicon-ok-sign"></span>Immediately available, delivery in 2-5 days
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="panel-group panel-group-pdp" id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                      <h4 class="panel-title product-accordion-title text-uppercase">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Product Details <img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title product-accordion-title text-uppercase delivery-details">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Delivery & Returns <img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="social-share">
-                  <a href="#"><span><img class="social-share-icon" src="assets/img/sign28.png" alt="share on social">Share</span></a>
-                </div>
-              </div>
-            </div>
+          <div class="col-sm-6 product-description">
+            {{> catalog/product-detail}}
           </div>
         </div>
      </div>
@@ -167,150 +36,14 @@
 
   <div class="pdp-page-review">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <p class="may-like text-center text-uppercase">You may also like</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3 col-xs-6">
-          {{#each page.products}}
-            <div class="shop-item" onclick="location.href='{{url}}';">
-              {{#if isOnSale}}
-                <div class="sale-flag">Sale</div>
-              {{/if}}
-              {{#if isNew}}
-                <div class="new-flag">New</div>
-              {{/if}}
-              <img class="pop-product-image" src="{{image}}" alt="{{imgDescription}}" width="200" />
-
-              <div class="pop-product-name">
-                <span class="name-headline">{{nameHeadline}}</span>
-                <span class="name-subline">{{nameSubline}}</span>
-              </div>
-
-              <div class="pop-item-price">
-                {{#if reducedPrice}}
-                  <span class="strikethrough">{{priceNew}}</span>
-                  <span class="pop-item-price-old">{{priceOld}}</span>
-                {{else}}
-                  <span>{{priceNew}}</span>
-                {{/if}}
-              </div>
-
-              {{!-- Should this be a clickable link? Right now, you can't click it due to the overlay --}}
-              <div class="pop-product-more-colors">
-                {{#if hasMoreColors}}More colours{{/if}}&nbsp;</div>
-
-              <div class="shop-item-overlay">
-                <button type="button" class="quickview">Quick view</button>
-                <button type="button" class="heart">
-                  <span class="sr-only">Add item to wishlist</span>
-                </button>
-              </div>
-            </div>
-          {{/each}}
-        </div>
-      </div>
+      {{> catalog/suggestions}}
       <hr class="hr">
-      <div class="row">
-        <div class="col-sm-12">
-          <p class="text-uppercase reviews-title">Reviews</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="review-count">1 - 5 of 51 Reviews</div>
-            </div>
-            <hr class="hr">
-          </div>
-          <div class="single-comment">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="review-rating">
-                  <fieldset class="rating rated-stars">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                  </fieldset>
-                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-              </div>
-            </div>
-          </div>
-          <hr class="hr">
-          <div class="single-comment">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="review-rating">
-                  <fieldset class="rating rated-stars">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                  </fieldset>
-                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-              </div>
-            </div>
-          </div>
-          <hr class="hr">
-          <div class="single-comment">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="review-rating">
-                  <fieldset class="rating rated-stars">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                  </fieldset>
-                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {{> catalog/reviews}}
     </div>
   </div>
+
   {{> footer}}
+
   {{> htmlscripts}}
 </body>
 
