@@ -864,6 +864,8 @@
         }
       ]
     },
-    "checkoutBtn" : "Continue Checkout"
+    "checkoutBtn" : "Continue Checkout",
+    "orderSummary" : "Order Summary",
+    "itemsTotal" : "3 items in total"
   }
 }
