@@ -1,0 +1,121 @@
+{{#with content.product}}
+<div class="row">
+  <div class="col-sm-12">
+    <p><h1 class="text-uppercase pdp-product-title">{{text}}</h1><span class="grey-p">{{sku}}</span></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <fieldset class="rating">
+      {{#each rating.list}}
+        <input type="radio" id="star{{value}}" name="rating" value="{{value}}" /><label for="star{{value}}" title="{{description}}">{{text}}</label>
+      {{/each}}
+    </fieldset>
+    <span class="star-rating-review"><a href="{{rating.url}}">{{rating.text}}</a></span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <p class="pdp-product-description">{{description}}</p><a href="#"><span class="view-details">{{viewDetails}}</span></a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <p class="product-price">{{price}}</p>
+  </div>
+</div>
+<div class="row select-row">
+  <div class="col-sm-3 col-xs-12">
+    <p class="text-uppercase">{{color.title}}</p>
+    <div>
+      <select class="select">
+        {{#each color.list}}
+          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+  <div class="col-sm-3 col-xs-6">
+    <p class="text-uppercase">{{size.text}}</p>
+    <div>
+      <select class="select">
+        {{#each size.list}}
+          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+  <div class="col-sm-6 col-xs-6 size-guide-col">
+    <a href="#"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">{{sizeGuide}}</span></a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-2 col-xs-3">
+    <select class="bag-items">
+      {{#each bagItems.list}}
+        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+      {{/each}}
+    </select>
+  </div>
+  <div class="col-sm-6 col-xs-6">
+    <button class="add-to-bag text-center">
+     <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="{{addToBag}}">{{addToBag}}
+    </button>
+  </div>
+  <div class="col-sm-4 col-xs-3">
+    <button type="button" class="pdp-product-heart">
+      <span class="sr-only">{{addToWishlist}}</span>
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="availability">
+      <span class="glyphicon glyphicon-ok-sign"></span>{{available}}
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="panel-group panel-group-pdp" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title product-accordion-title text-uppercase">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">{{productDetails.text}}<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body panel-body-pdp">
+            {{productDetails.description}}
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title product-accordion-title text-uppercase">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{{deliveryAndReturn.text}}<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body panel-body-pdp">
+            {{deliveryAndReturn.description}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="social-share">
+      <ul class="social-icons pdp-social-icons">
+        <a href=""><li><img class="social-icon" src="assets/img/Facebook.png" alt="facebook"></li></a>
+        <a href=""><li><img class="social-icon" src="assets/img/Pinterest.png" alt="pinterest"></li></a>
+        <a href=""><li><img class="social-icon" src="assets/img/Google.png" alt="google plus"></li></a>
+      </ul>
+    </div>
+  </div>
+</div>
+{{/with}}
