@@ -40,8 +40,11 @@
   margin: 1em;
   border-top: 1px solid $light-grey;
   border-bottom: 1px solid $light-grey;
+  .cart-items-title {
+    margin-bottom: 0;
+  }
   .single-cart-item {
-    margin: 0;
+    margin: 1em 0 0 0;
   }
 }
 
