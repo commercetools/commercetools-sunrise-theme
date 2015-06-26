@@ -802,6 +802,68 @@
           "selected" : false
         }
       ]
-    }
+    },
+    "defaultShipping" : "Default Country Shipping",
+    "region" : "Region",
+    "telNumber" : "Telephone Number",
+    "telNumberInfo" : "Please provide your telephone number so the shipper can contact you during delivery",
+    "email" : "Email",
+    "emailInfo" : "We require your email address to send your shipping and order confirmation",
+    "differentBilling" : "Use a different address for billing",
+    "diffAddressOne" : "Address 1",
+    "diffAddressTwo" : "Address 2",
+    "diffCity" : "City",
+    "diffPostCode" : "Post Code",
+    "diffCountry" : "Country",
+    "diffChooseCountry" : {
+      "list" : [
+        {
+          "text" : "Germany",
+          "value" : "",
+          "selected" : true
+        },
+        {
+          "text" : "France",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "Spain",
+          "value" : "",
+          "selected" : false
+        }
+      ]
+    },
+    "diffRegion" : "Region",
+    "shippingMethod" : "Shipping Method",
+    "delivery" : {
+      "list" : [
+        {
+          "text" : "DHL Standart",
+          "value" : "",
+          "selected" : true,
+          "deliveryDays" : "Delivery: 3-5 Days",
+          "url" : "",
+          "details" : "View Details"
+        },
+        {
+          "text" : "DHL Express",
+          "value" : "",
+          "selected" : false,
+          "deliveryDays" : "Delivery: 3-5 Days",
+          "url" : "",
+          "details" : "View Details"
+        },
+        {
+          "text" : "DHL Overnight",
+          "value" : "",
+          "selected" : false,
+          "deliveryDays" : "Delivery: 3-5 Days",
+          "url" : "",
+          "details" : "View Details"
+        }
+      ]
+    },
+    "checkoutBtn" : "Continue Checkout"
   }
 }
