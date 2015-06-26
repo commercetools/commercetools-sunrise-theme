@@ -926,7 +926,7 @@
     "discountTitle" : "Order Discount",
     "discount" : "0,00 €",
     "deliveryTitle" : "Standart Delivery",
-    "delivery" : "10,00 €",
+    "deliverySum" : "10,00 €",
     "taxTitle" : "Sales Tax",
     "tax" : "20,00 €",
     "totalTitle" : "Order Total",

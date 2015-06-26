@@ -198,14 +198,11 @@
 	width: 100%;
 	background: $yellow;
 	border: none;
-	margin: 2em 0 1em 1em;
+	margin: 1em;
 	padding: 0.5em 0;
 	font-size: 1.2em;
-	font-weight: 900;
-	letter-spacing: 0.05em;
 		&:hover {
-			background: $white;
-			outline: 1px solid $light-grey;
+			background: lighten($yellow, 5%);
 		}
 }
 
