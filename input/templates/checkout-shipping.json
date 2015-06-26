@@ -866,6 +866,71 @@
     },
     "checkoutBtn" : "Continue Checkout",
     "orderSummary" : "Order Summary",
-    "itemsTotal" : "3 items in total"
+    "itemsTotal" : "3 items in total",
+    "checkoutItem" : {
+      "list" : [
+        {
+          "text" : "Enditatem Product Name",
+          "description" : "Optional Line Two",
+          "image" : "assets/img/blue-jacket.jpg",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size",
+          "size" : "M",
+          "quantity" : "Quantity",
+          "quantityNumber" : "1",
+          "priceTitle" : "Price",
+          "price" : "49,00 €",
+          "totalTitle" : "Total",
+          "total" : "49,00 €"
+        },
+        {
+          "text" : "Enditatem Product Name",
+          "description" : "Optional Line Two",
+          "image" : "assets/img/blue-jacket.jpg",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size",
+          "size" : "M",
+          "quantity" : "Quantity",
+          "quantityNumber" : "1",
+          "priceTitle" : "Price",
+          "price" : "49,00 €",
+          "totalTitle" : "Total",
+          "total" : "49,00 €"
+        },
+        {
+          "text" : "Enditatem Product Name",
+          "description" : "Optional Line Two",
+          "image" : "assets/img/blue-jacket.jpg",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size",
+          "size" : "M",
+          "quantity" : "Quantity",
+          "quantityNumber" : "1",
+          "priceTitle" : "Price",
+          "price" : "49,00 €",
+          "totalTitle" : "Total",
+          "total" : "49,00 €"
+        }
+      ]
+    },
+    "promoCodeTitle" : "Promotional Code Applied",
+    "promoCode" : "Sunny Sale",
+    "subtotalTitle" : "Subtotal",
+    "subtotal" : "107,00 €",
+    "discountTitle" : "Order Discount",
+    "discount" : "0,00 €",
+    "deliveryTitle" : "Standart Delivery",
+    "delivery" : "10,00 €",
+    "taxTitle" : "Sales Tax",
+    "tax" : "20,00 €",
+    "totalTitle" : "Order Total",
+    "total" : "123,00 €",
+    "editMyOrder" : "Edit my quantity order"
   }
 }
