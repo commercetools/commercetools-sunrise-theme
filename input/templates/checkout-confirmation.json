@@ -1,6 +1,6 @@
 {
 	"header" : {
-		"title" : "Sunrise - Checkout Payment Page",
+		"title" : "Sunrise - Checkout Confirmation Page",
 		"stores" : {
 			"text" : "STORES",
 			"url" : ""
@@ -746,178 +746,52 @@
 		}
 	},
   "content" : {
-    "secureCheckoutTitle" : "Secure Checkout - Payment",
+    "secureCheckoutTitle" : "Secure Checkout - Confirmation",
     "shippingOne" : "Shipping",
     "paymentTwo" : "Payment",
     "confirmationThree" : "Confirmation",
-    "paymentInfoTitle" : "Payment Details",
-    "required" : "Required",
 
-
-    "paymentOptionTitle" : "Please provide one of the following payment options:",
-    "paymentOption" : {
+    "cartItems" : {
+      "description" : "Product Description",
+      "quantity" : "Quantity",
+      "price" : "Price",
+      "totalPrice" : "Total Price",
       "list" : [
         {
-          "text" : "Credit Card",
-          "image" : "assets/img/mastercard4.png",
-          "value" : "",
-          "selected" : true
-        },
-        {
-          "text" : "PayPal",
-          "image" : "assets/img/mastercard4.png",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "Pre-payment",
-          "image" : "assets/img/mastercard4.png",
-          "value" : "",
-          "selected" : false
-        }
-      ]
-    },
-    "cardName" : "Name on credit card",
-    "cardNumber" : "Credit card number",
-    "expiryDateTitle" : "Expiry data",
-    "expiryDate" : {
-      "list" : [
-        {
-          "text" : "January",
-          "value" : "",
-          "selected" : true
-        },
-        {
-          "text" : "February",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "March",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "April",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "May",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "June",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "July",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "August",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "September",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "October",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "November",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "December",
-          "value" : "",
-          "selected" : false
-        }
-      ]
-    },
-    "year" : {
-      "list" : [
-        {
-          "text" : "2050",
-          "value" : "",
-          "selected" : true
-        },
-        {
-          "text" : "2100",
-          "value" : "",
-          "selected" : false
-        }
-      ]
-    },
-    "securityCode" : "Security Code",
-    "securityCodeTooltip" : "Additional information about the security code goes here...",
-
-
-    "checkoutBtn" : "Continue Checkout",
-    "orderSummary" : "Order Summary",
-    "itemsTotal" : "3 items in total",
-    "checkoutItem" : {
-      "list" : [
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
+          "nameHeadline" : "Enditatem Product Name",
+          "nameSubline" : "Optional Line Two",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
+          "colorTitle" : "Color: ",
           "color" : "Navy Blue",
-          "sizeTitle" : "Size",
+          "sizeTitle" : "Size: ",
           "size" : "M",
-          "quantity" : "Quantity",
-          "quantityNumber" : "1",
+          "available" : "Available",
+          "edit" : "Edit",
+          "delete" : "Delete",
           "priceTitle" : "Price",
           "price" : "49,00 €",
-          "totalTitle" : "Total",
-          "total" : "49,00 €"
+          "totalPriceTitle" : "Total Price",
+          "totalPrice" : "49,00 €"
         },
         {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
+          "nameHeadline" : "Enditatem Product Name",
+          "nameSubline" : "Optional Line Two",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
+          "colorTitle" : "Color: ",
           "color" : "Navy Blue",
-          "sizeTitle" : "Size",
+          "sizeTitle" : "Size: ",
           "size" : "M",
-          "quantity" : "Quantity",
-          "quantityNumber" : "1",
+          "available" : "Available",
+          "edit" : "Edit",
+          "delete" : "Delete",
           "priceTitle" : "Price",
           "price" : "49,00 €",
-          "totalTitle" : "Total",
-          "total" : "49,00 €"
-        },
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
-          "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
-          "color" : "Navy Blue",
-          "sizeTitle" : "Size",
-          "size" : "M",
-          "quantity" : "Quantity",
-          "quantityNumber" : "1",
-          "priceTitle" : "Price",
-          "price" : "49,00 €",
-          "totalTitle" : "Total",
-          "total" : "49,00 €"
+          "totalPriceTitle" : "Total Price",
+          "totalPrice" : "49,00 €"
         }
       ]
     },
-    "promoCodeTitle" : "Promotional Code Applied",
+
     "promoCode" : "Sunny Sale",
     "subtotalTitle" : "Subtotal",
     "subtotal" : "107,00 €",
@@ -928,7 +802,6 @@
     "taxTitle" : "Sales Tax",
     "tax" : "20,00 €",
     "totalTitle" : "Order Total",
-    "total" : "123,00 €",
-    "editMyOrder" : "Edit my quantity order"
+    "total" : "123,00 €"
   }
 }
