@@ -124,7 +124,7 @@ zoom_area_width: 300,
 inputNumber($('.input-number'));
 
 // jQuery UI - Tooltip on hover
-$( ".promo-info-text, .delivery-est" ).tooltip();
+$( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
 
 /*****************************************************************************/
 /*
