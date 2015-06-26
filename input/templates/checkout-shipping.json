@@ -751,29 +751,57 @@
     "paymentTwo" : "Payment",
     "confirmationThree" : "Confirmation",
     "shippingInfoTitle" : "Shipping Information",
-    "required" : "Required*",
+    "required" : "Required",
     "title" : "Title",
-    "chooseTitle" : [
-      {
-        "text" : "Mr.",
-        "value" : "",
-        "selected" : true
-      },
-      {
-        "text" : "Mrs.",
-        "value" : "",
-        "selected" : false
-      },
-      {
-        "text" : "Ms.",
-        "value" : "",
-        "selected" : false
-      },
-      {
-        "text" : "Dr.",
-        "value" : "",
-        "selected" : false
-      }
-    ]
+    "chooseTitle" : {
+      "list" : [
+        {
+          "text" : "Mr.",
+          "value" : "",
+          "selected" : true
+        },
+        {
+          "text" : "Mrs.",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "Ms.",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "Dr.",
+          "value" : "",
+          "selected" : false
+        }
+      ]
+    },
+    "firstName" : "First Name",
+    "lastName" : "Last Name",
+    "addressOne" : "Address 1",
+    "addressTwo" : "Address 2",
+    "city" : "City",
+    "postCode" : "Post Code",
+    "country" : "Country",
+    "chooseCountry" : {
+      "list" : [
+        {
+          "text" : "Germany",
+          "value" : "",
+          "selected" : true
+        },
+        {
+          "text" : "France",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "Spain",
+          "value" : "",
+          "selected" : false
+        }
+      ]
+    }
   }
 }
