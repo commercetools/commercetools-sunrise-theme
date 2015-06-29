@@ -28,7 +28,45 @@
     "shippingOne" : "Shipping",
     "paymentTwo" : "Payment",
     "confirmationThree" : "Confirmation",
-
+		"editIconText" : "Edit",
+		"shippingAddress" : {
+			"text" : "Shipping Address",
+			"name" : "Mr. Bruce Wayne",
+			"street" : "100 Gotham Street",
+			"city" : "Gothan City",
+			"region" : "Region",
+			"postCode" : "123456",
+			"country" : "Country",
+			"phoneTitle" : "Phone",
+			"phone" : "+49 123 4567899",
+			"emailTitle" : "Email",
+			"email" : "batman@commercetools.com"
+		},
+		"billingAddress" : {
+			"text" : "Billing Address",
+			"name" : "Mr. Bruce Wayne",
+			"street" : "100 Gotham Street",
+			"city" : "Gothan City",
+			"region" : "Region",
+			"postCode" : "123456",
+			"country" : "Country",
+			"phoneTitle" : "Phone",
+			"phone" : "+49 123 4567899",
+			"emailTitle" : "Email",
+			"email" : "batman@commercetools.com"
+		},
+		"shippingMethod" : {
+			"text" : "Shipping Method",
+			"description" : "DHL Standart - Delivery 3-5 Days"
+		},
+		"paymentDetails" : {
+			"text" : "Payment Details",
+			"type" : "Credit Card",
+			"name" : "Bruce Wayne",
+			"card" : "Visa",
+			"number" : "**** **** **** **56",
+			"date" : "09.18"
+		},
     "cartItems" : {
       "description" : "Product Description",
       "quantity" : "Quantity",
@@ -69,17 +107,37 @@
         }
       ]
     },
+		"rememberMe" : {
+			"text" : "Save my details to create my personal account at SUNRISE",
+			"value" : ""
+		},
+		"newsletter" : {
+			"text" : "Please add me to the",
+			"description" : "SUNRISE Newsletter",
+			"value" : "",
+			"url" : ""
+		},
 
-    "promoCode" : "Sunny Sale",
-    "subtotalTitle" : "Subtotal",
-    "subtotal" : "107,00 €",
-    "discountTitle" : "Order Discount",
-    "discount" : "0,00 €",
-    "deliveryTitle" : "Standart Delivery",
-    "deliverySum" : "10,00 €",
-    "taxTitle" : "Sales Tax",
-    "tax" : "20,00 €",
-    "totalTitle" : "Order Total",
-    "total" : "123,00 €"
+		"totalSum" : {
+			"subtotalTitle" : "Subtotal",
+			"subtotal" : "107,00 €",
+			"orderDiscountTitle" : "Order Discount",
+			"orderDiscount" : "0,00 €",
+			"deliveryOption" : "Standart Delivery",
+			"delivery" : "0,00 €",
+			"taxTitle" : "Sales Tax",
+			"tax" : "20,00 €",
+			"orderTotalTitle" : "Order Total",
+			"orderTotal" : "117,00 €"
+		},
+		"completeOrderBtn" : {
+			"text" : "Complete my order",
+			"url" : ""
+		},
+		"termsConditions" : {
+			"text" : "I agree to the",
+			"linkText" : "Terms and Conditions",
+			"url" : ""
+		}
   }
 }

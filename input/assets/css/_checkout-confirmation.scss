@@ -4,6 +4,10 @@
 /*
 /*****************************************************************************/
 
+.checkout-confirmation {
+  margin-bottom: 2em;
+}
+
 .checkout-summary {
   margin: 1em;
   padding: 1em;
@@ -47,18 +51,58 @@
   }
 }
 
-.confirmation-product-img {
-  border: 1px solid $light-grey;
-  margin: 1em;
+.follow-up {
+  border-bottom: 1px solid $light-grey;
+  .remember-me {
+    margin: 1em 1em 0.5em 0;
+  }
+  .add-to-newsletter {
+    margin: 0 1em 1em 0;
+  }
+  .sunrise-newsletter {
+    text-decoration: underline;
+    color: $dark-grey;
+  }
 }
 
-.confirmation-product-info {
-  margin: 1em;
-}
-
-.confirmation-product-name,
-.confirmation-product-sku,
-.confirmation-product-size-color,
-.confirmation-product-availability {
+.payment-code-applied {
   padding-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding-right: 1em;
+}
+
+.payment-code-title {
+  color: $dark-grey;
+}
+
+.payment-code {
+  font-weight: 700;
+}
+
+.complete-order {
+  text-align: right;
+}
+
+.complete-order-btn {
+  width: 310px;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+	background: $yellow;
+	border: none;
+	margin: 1em;
+	padding: 0.5em 0;
+		&:hover {
+			background: lighten($yellow, 5%);
+		}
+}
+
+.agree-to {
+  margin-right: 1em;;
+}
+
+.terms-link {
+  text-decoration: underline;
+  color: $dark-grey;
 }
