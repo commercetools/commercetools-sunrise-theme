@@ -1,0 +1,24 @@
+.checkout-header {
+  background: $dark-blue;
+  margin-top: -185px; // *
+}
+
+.checkout-header-logo {
+  margin: 1em 0;
+}
+
+.checkout-header-callus {
+  color: $steel;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 1.5em 0;
+  text-align: right
+}
+
+.phone-icon {
+  margin: 0 1em;
+}
+
+.checkout-header-number {
+  color: $yellow;
+}
