@@ -22,3 +22,21 @@
 .checkout-header-number {
   color: $yellow;
 }
+
+@media screen and (max-width: 767px) {
+  .checkout-header {
+    margin-top: -115px;
+  }
+  .checkout-header-logo {
+    margin: 0;
+    padding-bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .checkout-header-callus {
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 0;
+  }
+}

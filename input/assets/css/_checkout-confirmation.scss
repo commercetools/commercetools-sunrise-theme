@@ -102,3 +102,24 @@
   text-decoration: underline;
   color: $dark-grey;
 }
+
+@media screen and (max-width: 767px) {
+  .complete-order-btn {
+    width: 200px;
+  }
+  .checkout-first-col {
+    padding-right: 15px;
+  }
+  .checkout-second-col {
+    padding: 0 15px;
+  }
+  .checkout-third-col {
+    padding-left: 15px;
+  }
+  .follow-up {
+    .remember-me,
+    .add-to-newsletter {
+      margin-bottom: 0;
+    }
+  }
+}
