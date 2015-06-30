@@ -74,6 +74,13 @@ $(function() {
     " - $" + $("#slider-range").slider("values", 1));
 });
 
+//
+$( ".quickview" ).click(function( event ) {
+  $('#myModal').modal('show');
+  event.stopPropagation();
+  // Do something
+});
+
 /*****************************************************************************/
 /*
 /* PDP PAGE
