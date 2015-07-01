@@ -73,6 +73,7 @@
 .checkout {
 	background: $white;
 	border: 1px solid $light-grey;
+	margin-bottom: 2em;
 }
 
 .shipping-info {
@@ -91,7 +92,7 @@
 }
 
 .checkout-dropdown {
-	background: url(../../../assets/img/arrow-67.png) no-repeat 90% 6px $white;
+	background: url(../../assets/img/arrow-67.png) no-repeat 90% 6px $white;
 	background-size: 20px;
 	width: 100%;
 	border: 1px solid $light-grey;
@@ -198,14 +199,11 @@
 	width: 100%;
 	background: $yellow;
 	border: none;
-	margin: 2em 0 1em 1em;
+	margin: 1em;
 	padding: 0.5em 0;
 	font-size: 1.2em;
-	font-weight: 900;
-	letter-spacing: 0.05em;
 		&:hover {
-			background: $white;
-			outline: 1px solid $light-grey;
+			background: lighten($yellow, 5%);
 		}
 }
 

@@ -788,14 +788,14 @@
           "totalPrice" : "49,00 €"
         }
       ],
+			"discountTooltip" : "Discount options additional information...",
       "promoDiscount" : "Promotional Discount Info",
       "applyBtn" : "Apply",
-
-
       "subtotalTitle" : "Subtotal",
       "subtotal" : "107,00 €",
       "orderDiscountTitle" : "Order Discount",
       "orderDiscount" : "0,00 €",
+			"deliveryTooltip" : "Delivery estimate options additional information...",
       "deliveryEstimate" : "Delivery estimate options",
       "deliveryOption" : "Standart Delivery",
       "delivery" : "0,00 €",

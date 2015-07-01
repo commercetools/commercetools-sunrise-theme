@@ -15,9 +15,7 @@
   letter-spacing: 0.1em;
 }
 
-.credit-card,
-.paypal,
-.pre-payment {
+.payment-type {
   margin: 1em;
 }
 
@@ -34,20 +32,8 @@
   padding-bottom: 0.5em;
 }
 
-.credit-card {
-  .credit-card-text {
-    margin-right: 1em;
-  }
-}
-
-.paypal {
-  .paypal-text {
-    margin-right: 1em;
-  }
-}
-
-.pre-payment {
-  .pre-payment-text {
+.payment-type {
+  .payment-text {
     margin-right: 1em;
   }
 }
@@ -64,11 +50,10 @@
 
 .security-code-info {
   padding-left: 0.5em;
-  color: $dark-grey;
 }
 
 .hr-checkout-payment {
-  margin: 1em;
+  margin: 1em 1em 0 1em;
   border-top: 1px solid $light-grey;
 }
 
@@ -79,9 +64,7 @@
 /*****************************************************************************/
 
 @media screen and (min-width: 767px) and (max-width: 991px) {
-  .credit-card,
-  .paypal,
-  .pre-payment {
+  .payment-type {
     margin: 1em 0 1em 1em;
     font-size: 0.9em;
   }

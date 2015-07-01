@@ -16,7 +16,7 @@ $dark-blue: #2A343F;
 $steel: #AAAEB2;
 $lighter-steel: #D9D7CE;
 $dirty-white: #F5F2EA;
-$green: #7D945E;
+$green: #699E63;
 $blue: #6989C2;
 
 /*****************************************************************************/
@@ -86,6 +86,12 @@ button {
   outline: none;
   border: none;
   background: none;
+}
+
+// Border radius on .btn
+
+.btn {
+	border-radius: 0;
 }
 
 // Color and size select buttons
