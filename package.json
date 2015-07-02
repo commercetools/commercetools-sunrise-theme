@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/sphereio/sphere-sunrise-design#readme",
   "devDependencies": {
-    "grunt": "^0.4.5",
     "autoprefixer-core": "^5.2.0",
+    "escape-string-regexp": "^1.0.3",
+    "grunt": "^0.4.5",
     "grunt-compile-handlebars": "^2.0.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-coffee": "^0.13.0",
