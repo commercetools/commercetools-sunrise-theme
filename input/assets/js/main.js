@@ -76,9 +76,9 @@ $(function() {
 
 //
 $( ".quickview" ).click(function( event ) {
-  $('#myModal').modal('show');
   event.stopPropagation();
-  // Do something
+  var modalId = event.target.getAttribute('data-modal')
+  $("#" + modalId).modal('show');
 });
 
 /*****************************************************************************/

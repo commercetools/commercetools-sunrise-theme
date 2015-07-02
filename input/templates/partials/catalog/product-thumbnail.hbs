@@ -22,7 +22,8 @@
   <div class="pop-product-more-colors">
     {{#if moreColors}}{{context.moreColors}}{{/if}}&nbsp;</div>
   <div class="shop-item-overlay">
-    <button type="button" class="quickview">{{context.quickView}}</button>
+    <button type="button" class="quickview"
+     data-modal="quickview-modal-{{id}}">{{context.quickView}}</button>
     <button type="button" class="heart">
       <span class="sr-only">{{context.wishlist}}</span>
     </button>
