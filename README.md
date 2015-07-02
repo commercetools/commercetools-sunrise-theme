@@ -29,7 +29,7 @@
 
 `grunt publish` to publish the generated site to GitHub Pages (requires $GH_TOKEN)
 
-`grunt release-[patch|minor|major]` to release the current version to the Maven Bintray repository and prepare a new version (requires commercetools-bintray repository ID in settings.xml)
+`grunt release-[patch|minor|major]` to release the current version to the Maven Bintray repository and prepare a new version (requires commercetools-bintray repository ID in Maven's settings.xml)
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
