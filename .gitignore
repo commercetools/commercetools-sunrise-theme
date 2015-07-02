@@ -6,3 +6,4 @@ output/
 *.codekit
 *.log
 *.jar
+.idea
