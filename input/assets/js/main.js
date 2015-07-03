@@ -74,7 +74,7 @@ $(function() {
     " - $" + $("#slider-range").slider("values", 1));
 });
 
-//
+// Adding dynamic ID to quickview modals
 $( ".quickview" ).click(function( event ) {
   event.stopPropagation();
   var modalId = event.target.getAttribute('data-modal')
@@ -87,12 +87,17 @@ $( ".quickview" ).click(function( event ) {
 /*
 /*****************************************************************************/
 
+
 // Product gallery - BZoom
-$("#bzoom").zoom({
-zoom_area_width: 300,
-// MORE OPTIONS HERE
-  small_thumbs: 4,
-});
+$("ul#bzoom").each( function(index, ul) {
+  $ul = $(ul);
+  $ul.zoom({
+    zoom_area_width: 300,
+    // MORE OPTIONS HERE
+    small_thumbs: 4,
+  });
+}
+);
 
 /*****************************************************************************/
 /*

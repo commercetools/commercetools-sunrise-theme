@@ -1041,19 +1041,19 @@
 					"moreColors" : true,
 					"quickviewGallery" : [
 						{
-							"thumbImage" : "assets/img/blue-jacket.jpg" ,
+							"thumbImage" : "assets/img/blue-jacket.jpg",
 							"bigImage" : "assets/img/blue-jacket.jpg"
 						},
 						{
-							"thumbImage" : "assets/img/blue-jacket.jpg" ,
+							"thumbImage" : "assets/img/blue-jacket.jpg",
 							"bigImage" : "assets/img/blue-jacket.jpg"
 						},
 						{
-							"thumbImage" : "assets/img/blue-jacket.jpg" ,
+							"thumbImage" : "assets/img/blue-jacket.jpg",
 							"bigImage" : "assets/img/blue-jacket.jpg"
 						},
 						{
-							"thumbImage" : "assets/img/blue-jacket.jpg" ,
+							"thumbImage" : "assets/img/blue-jacket.jpg",
 							"bigImage" : "assets/img/blue-jacket.jpg"
 						}
 					],
@@ -1217,24 +1217,24 @@
 					"moreColors" : false,
 					"quickviewGallery" : [
 						{
-							"thumbImage" : "assets/img/blue-shirt.jpg" ,
+							"thumbImage" : "assets/img/blue-shirt.jpg",
 							"bigImage" : "assets/img/blue-shirt.jpg"
 						},
 						{
-							"thumbImage" : "assets/img/blue-shirt.jpg" ,
+							"thumbImage" : "assets/img/blue-shirt.jpg",
 							"bigImage" : "assets/img/blue-shirt.jpg"
 						},
 						{
-							"thumbImage" : "assets/img/blue-shirt.jpg" ,
+							"thumbImage" : "assets/img/blue-shirt.jpg",
 							"bigImage" : "assets/img/blue-shirt.jpg"
 						},
 						{
-							"thumbImage" : "assets/img/blue-shirt.jpg" ,
+							"thumbImage" : "assets/img/blue-shirt.jpg",
 							"bigImage" : "assets/img/blue-shirt.jpg"
 						}
 					],
 					"product" : {
-						"text" : "Enditatem Product Name",
+						"text" : "Enditatem Product Name id2",
 						"sku" : "Sunrise #SUN123456",
 						"rating" : {
 							"text" : "Write first review",
