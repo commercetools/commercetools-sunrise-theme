@@ -61,6 +61,11 @@ a:focus {
   outline: none;
 }
 
+// Custom checkbox's
+input[type="checkbox"]:checked + label {
+ 	border-color: $black;
+}
+
 // Cross browser compatible hr
 .hr {
   border: none;
