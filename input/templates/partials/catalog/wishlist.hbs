@@ -1,0 +1,16 @@
+<div class="wishlist">
+  <button class="wishlist-btn">
+    <div class="wishlist-number">{{content.wishlistWidged.number}}</div>
+  </button>
+  <div class="wishlist-items hidden">
+    <p class="wishlist-title">{{content.wishlistWidged.text}}
+      <span>({{content.wishlistWidged.number}})</span></p>
+    <span class="recently-added-title">{{content.wishlistWidged.recentAddedTitle}}</span>
+    <div class="clearfix">
+      {{#each content.wishlistWidged.list}}
+        <img class="pull-left img-responsive wishlist-img" src="{{image}}" alt="wishlist item image">
+      {{/each}}
+    </div>
+    <a href="{{content.wishlistWidged.viewWishlist.url}}" class="btn view-wishlist-btn">{{content.wishlistWidged.viewWishlist.text}}</a>
+  </div>
+</div>
