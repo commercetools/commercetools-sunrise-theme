@@ -77,6 +77,24 @@
       left: 10px;
     }
 
+    .heart {
+        width: 50px;
+        height: 50px;
+        background: url("../img/heart_sprite.png") no-repeat;
+        background-size: 170px;
+        padding: 0;
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 380px;
+        left: 100px;
+
+        &:hover,
+        &:focus {
+            background-position: -60px;
+        }
+    }
+
     .shop-item-overlay {
         transition: ease all .25s;
         opacity: 0;
