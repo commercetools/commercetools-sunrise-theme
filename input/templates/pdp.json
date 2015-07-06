@@ -834,11 +834,11 @@
 				]
 			},
 			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-			"viewDetails" : "View Details",				
+			"viewDetails" : "View Details",
 			"price" : "€ 123,-",
 			"priceOld" : "€ 173,-",
 			"color" : {
-				"title" : "Color",
+				"text" : "Color",
 				"list" : [
 					{
 						"text" : "Choose Color",
@@ -952,7 +952,7 @@
 		"suggestions" : {
 			"text" : "You may also like",
 			"sale" : "Sale",
-			"new" : "New",			
+			"new" : "New",
 			"quickView" : "Quick view",
 			"wishlist" : "Add item to wishlist",
 			"moreColors" : "More colours",

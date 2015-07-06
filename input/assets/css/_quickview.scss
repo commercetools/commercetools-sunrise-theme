@@ -1,0 +1,32 @@
+
+.modal-dialog {
+  margin-top: 7%;
+  width: 700px;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 0;
+}
+
+.modal-header .close {
+  margin-top: -40px;
+  margin-right: -40px;
+}
+
+.modal-content {
+  border-radius: 0;
+  height: 550px;
+  .quickview-sku {
+    text-transform: capitalize;
+  }
+  .star-rating-review {
+    text-transform: capitalize;
+  }
+  .availability {
+    text-transform: capitalize;
+  }
+  .product-info-row-pdp {
+    padding: 0;
+  }
+}
