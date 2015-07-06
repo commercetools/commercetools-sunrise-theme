@@ -130,6 +130,7 @@
 .add-to-bag {
   width: 100%;
   height: 47px;
+  font-weight: 900;
 	background: $yellow;
 	text-transform: uppercase;
     &:hover {
@@ -261,6 +262,6 @@
 
 @media screen and (max-width: 340px) {
   .add-to-bag {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 }
