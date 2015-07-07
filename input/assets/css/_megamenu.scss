@@ -47,7 +47,7 @@
 
 .navbar-default .navbar-nav > li > a {
   color: $black;
-  padding: 10px 15px;
+  padding: 20px 15px;
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: -10px;
@@ -130,6 +130,10 @@
     div.nav-accordion > h3 {
       margin-top: 0;
     }
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    padding: 10px 15px;
   }
 
   .dropdown:hover .megamenu {
