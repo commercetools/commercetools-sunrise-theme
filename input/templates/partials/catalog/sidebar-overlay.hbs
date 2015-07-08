@@ -1,0 +1,127 @@
+<!-- Modal -->
+<div class="modal fade" id="sidebar-overlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        {{#with content.filters}}
+        <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
+          <button class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas" type="button"><span class="sr-only">{{close}}</span></button>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 ">
+                  <p class="filter-products"><b>{{text}}</b></p>
+                </div>
+              </div>
+              <hr class="hr">
+              <div class="row product-type">
+                <div class="col-xs-8 text-left">
+                  {{categories.text}}
+                </div>
+                <div class="col-xs-4">
+                  <a class="text-right clear-btn" href="#">{{clear}}</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+                    {{#each categories.list}}
+                      <div class="panel panel-default">
+                        <div class="panel-heading" id="heading-one" role="tab">
+                          <h4 class="panel-title">
+                            <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#{{value}}">
+                              {{text}}
+                            </a>
+                          </h4>
+                        </div>
+                        <div aria-labelledby="heading-one" class="panel-collapse collapse {{#if selected}}in{{/if}}" id="{{value}}" role="tabpanel">
+                          <div class="panel-body">
+                            {{#each children}}
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}>
+                                  {{text}}
+                                </label>
+                              </div>
+                            {{/each}}
+                          </div>
+                        </div>
+                      </div>
+                    {{/each}}
+                  </div>
+                </div>
+              </div>
+              <hr class="hr">
+              <div class="row size-box">
+                <div class="col-xs-8 text-left">
+                  {{size.text}}
+                </div>
+                <div class="col-xs-4">
+                  <a class="text-right clear-btn" href="#">{{clear}}</a>
+                </div>
+              </div>
+              <div class="pop-filter-size">
+                {{#each size.list}}
+                  <input type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}><label>{{text}}</label><br>
+                {{/each}}
+              </div>
+              <hr class="hr">
+              <div class="row color-box">
+                <div class="col-xs-8 text-left">
+                  {{color.text}}
+                </div>
+                <div class="col-xs-4">
+                  <a class="text-right clear-btn" href="#">{{clear}}</a>
+                </div>
+              </div>
+              <div class="pop-filter-color">
+                {{#each color.list}}
+                  <input type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}><label>{{text}}</label><br>
+                {{/each}}
+              </div>
+              <hr class="hr">
+              <div class="row price-box">
+                <div class="col-xs-8">
+                  {{price.text}}
+                </div>
+                <div class="col-xs-4">
+                  <a class="text-right clear-btn" href="#">{{clear}}</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 text-center slider-col">
+                  <p><input id="amount" readonly style="border:0; color:black; background: transparent; text-align: center;" type="text"></p>
+                  <div id="slider-range"></div>
+                </div>
+              </div>
+              <hr class="hr">
+              <div class="row brands-box">
+                <div class="col-xs-8 text-left">
+                  {{brands.text}}
+                </div>
+                <div class="col-xs-4">
+                  <a class="text-right clear-btn" href="#">{{clear}}</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="brands-list">
+                    {{#each brands.list}}
+                      <div class="checkbox">
+                        <input id="brands-checkbox" type="checkbox" {{#if selected}}checked{{/if}}><label>{{text}}</label>
+                      </div>
+                    {{/each}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/with}}
+      </div>
+    </div>
+  </div>
+</div>
