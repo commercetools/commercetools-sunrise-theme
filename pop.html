@@ -461,7 +461,7 @@
                     <input type="checkbox" value="" ><label>Black</label><br>
                     <input type="checkbox" value="" checked><label>Blue</label><br>
                     <input type="checkbox" value="" ><label>Multi</label><br>
-                    <input type="checkbox" value="" checked><label>Neutral</label><br>
+                    <input type="checkbox" value="" checked><label>White</label><br>
                 </div>
                 <hr class="hr">
                 <div class="row price-box">
@@ -536,7 +536,7 @@
             <div class="col-xs-12">
               <ul class="mobile-filter-list clearfix">
                 <li class="pull-left">
-                  <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="offcanvas">Filter</button>
+                  <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="modal" data-target="#sidebar-overlay">Filter</button>
                 </li>
                 <li class="pull-left">
                   <select class="select">
@@ -548,6 +548,204 @@
                   <p class="item-count">145 of 234</p>
                 </li>
               </ul>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="sidebar-overlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
+                      <button class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas" type="button"><span class="sr-only">Filter close</span></button>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="row">
+                            <div class="col-sm-12 ">
+                              <p class="filter-products"><b>Filter Products</b></p>
+                            </div>
+                          </div>
+                          <hr class="hr">
+                          <div class="row product-type">
+                            <div class="col-xs-8 text-left">
+                              Product type
+                            </div>
+                            <div class="col-xs-4">
+                              <a class="text-right clear-btn" href="#">Clear</a>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" id="heading-one" role="tab">
+                                      <h4 class="panel-title">
+                                        <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#one">
+                                          Type-1
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div aria-labelledby="heading-one" class="panel-collapse collapse in" id="one" role="tabpanel">
+                                      <div class="panel-body">
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" value="" checked>
+                                              sub-type 1
+                                            </label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" value="" >
+                                              sub-type 2
+                                            </label>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" id="heading-one" role="tab">
+                                      <h4 class="panel-title">
+                                        <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#two">
+                                          Type-2
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div aria-labelledby="heading-one" class="panel-collapse collapse " id="two" role="tabpanel">
+                                      <div class="panel-body">
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" value="" >
+                                              sub-type 1
+                                            </label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" value="" >
+                                              sub-type 2
+                                            </label>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" id="heading-one" role="tab">
+                                      <h4 class="panel-title">
+                                        <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#three">
+                                          Type-3
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div aria-labelledby="heading-one" class="panel-collapse collapse " id="three" role="tabpanel">
+                                      <div class="panel-body">
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" value="" >
+                                              sub-type 1
+                                            </label>
+                                          </div>
+                                          <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" value="" >
+                                              sub-type 2
+                                            </label>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                          <hr class="hr">
+                          <div class="row size-box">
+                            <div class="col-xs-8 text-left">
+                              Size
+                            </div>
+                            <div class="col-xs-4">
+                              <a class="text-right clear-btn" href="#">Clear</a>
+                            </div>
+                          </div>
+                          <div class="pop-filter-size">
+                              <input type="checkbox" value="" checked><label>S</label><br>
+                              <input type="checkbox" value="" ><label>M</label><br>
+                              <input type="checkbox" value="" checked><label>XL</label><br>
+                              <input type="checkbox" value="" ><label>XXL</label><br>
+                          </div>
+                          <hr class="hr">
+                          <div class="row color-box">
+                            <div class="col-xs-8 text-left">
+                              Color
+                            </div>
+                            <div class="col-xs-4">
+                              <a class="text-right clear-btn" href="#">Clear</a>
+                            </div>
+                          </div>
+                          <div class="pop-filter-color">
+                              <input type="checkbox" value="" ><label>Black</label><br>
+                              <input type="checkbox" value="" checked><label>Blue</label><br>
+                              <input type="checkbox" value="" ><label>Multi</label><br>
+                              <input type="checkbox" value="" checked><label>White</label><br>
+                          </div>
+                          <hr class="hr">
+                          <div class="row price-box">
+                            <div class="col-xs-8">
+                              Price
+                            </div>
+                            <div class="col-xs-4">
+                              <a class="text-right clear-btn" href="#">Clear</a>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12 text-center slider-col">
+                              <p><input id="amount" readonly style="border:0; color:black; background: transparent; text-align: center;" type="text"></p>
+                              <div id="slider-range"></div>
+                            </div>
+                          </div>
+                          <hr class="hr">
+                          <div class="row brands-box">
+                            <div class="col-xs-8 text-left">
+                              Brands
+                            </div>
+                            <div class="col-xs-4">
+                              <a class="text-right clear-btn" href="#">Clear</a>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="brands-list">
+                                  <div class="checkbox">
+                                    <input id="brands-checkbox" type="checkbox" checked><label>A.P.C</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input id="brands-checkbox" type="checkbox" ><label>ACNE</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER MCQUEEN</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input id="brands-checkbox" type="checkbox" checked><label>ALEXANDER WANG</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <hr class="hr hidden-xs">
@@ -596,6 +794,9 @@
                 <div class="shop-item" onclick="location.href=''">
                     <div class="sale-flag">Sale</div>
                     <div class="new-flag">New</div>
+                  <button type="button" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
                   <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Enditatem Product Name Optional very long line two</span>
@@ -606,7 +807,8 @@
                       <span class="pop-item-price-old">€ 49,-</span>
                   </div>
                   <div class="pop-product-more-colors">
-                    More colours&nbsp;</div>
+                    More colours&nbsp;
+                  </div>
                   <div class="shop-item-overlay hidden-xs">
                     <button type="button" class="quickview"
                      data-modal="quickview-modal-1">Quick view</button>
@@ -741,6 +943,9 @@
                 <div class="shop-item" onclick="location.href=''">
                     <div class="sale-flag">Sale</div>
                     <div class="new-flag">New</div>
+                  <button type="button" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
                   <img class="pop-product-image" src="assets/img/blue-shirt.jpg" alt="Just one single line" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Just one single line</span>
@@ -751,7 +956,8 @@
                       <span class="pop-item-price-old">€ 149,-</span>
                   </div>
                   <div class="pop-product-more-colors">
-                    &nbsp;</div>
+                    &nbsp;
+                  </div>
                   <div class="shop-item-overlay hidden-xs">
                     <button type="button" class="quickview"
                      data-modal="quickview-modal-2">Quick view</button>
@@ -884,6 +1090,9 @@
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="shop-item" onclick="location.href=''">
+                  <button type="button" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
                   <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Headline" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Headline</span>
@@ -893,7 +1102,8 @@
                       <span>€ 250,-</span>
                   </div>
                   <div class="pop-product-more-colors">
-                    More colours&nbsp;</div>
+                    More colours&nbsp;
+                  </div>
                   <div class="shop-item-overlay hidden-xs">
                     <button type="button" class="quickview"
                      data-modal="quickview-modal-3">Quick view</button>
@@ -1028,6 +1238,9 @@
                 <div class="shop-item" onclick="location.href=''">
                     <div class="sale-flag">Sale</div>
                     <div class="new-flag">New</div>
+                  <button type="button" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
                   <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Enditatem Product Name Optional very long line two</span>
@@ -1038,7 +1251,8 @@
                       <span class="pop-item-price-old">€ 49,-</span>
                   </div>
                   <div class="pop-product-more-colors">
-                    More colours&nbsp;</div>
+                    More colours&nbsp;
+                  </div>
                   <div class="shop-item-overlay hidden-xs">
                     <button type="button" class="quickview"
                      data-modal="quickview-modal-4">Quick view</button>
@@ -1173,6 +1387,9 @@
                 <div class="shop-item" onclick="location.href=''">
                     <div class="sale-flag">Sale</div>
                     <div class="new-flag">New</div>
+                  <button type="button" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
                   <img class="pop-product-image" src="assets/img/blue-shirt.jpg" alt="Just one single line" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Just one single line</span>
@@ -1183,7 +1400,8 @@
                       <span class="pop-item-price-old">€ 149,-</span>
                   </div>
                   <div class="pop-product-more-colors">
-                    &nbsp;</div>
+                    &nbsp;
+                  </div>
                   <div class="shop-item-overlay hidden-xs">
                     <button type="button" class="quickview"
                      data-modal="quickview-modal-5">Quick view</button>
@@ -1316,6 +1534,9 @@
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="shop-item" onclick="location.href=''">
+                  <button type="button" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
                   <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Headline" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Headline</span>
@@ -1325,7 +1546,8 @@
                       <span>€ 250,-</span>
                   </div>
                   <div class="pop-product-more-colors">
-                    More colours&nbsp;</div>
+                    More colours&nbsp;
+                  </div>
                   <div class="shop-item-overlay hidden-xs">
                     <button type="button" class="quickview"
                      data-modal="quickview-modal-6">Quick view</button>
@@ -1460,6 +1682,9 @@
                 <div class="shop-item" onclick="location.href=''">
                     <div class="sale-flag">Sale</div>
                     <div class="new-flag">New</div>
+                  <button type="button" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
                   <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Enditatem Product Name Optional very long line two</span>
@@ -1470,7 +1695,8 @@
                       <span class="pop-item-price-old">€ 49,-</span>
                   </div>
                   <div class="pop-product-more-colors">
-                    More colours&nbsp;</div>
+                    More colours&nbsp;
+                  </div>
                   <div class="shop-item-overlay hidden-xs">
                     <button type="button" class="quickview"
                      data-modal="quickview-modal-7">Quick view</button>
@@ -1605,6 +1831,9 @@
                 <div class="shop-item" onclick="location.href=''">
                     <div class="sale-flag">Sale</div>
                     <div class="new-flag">New</div>
+                  <button type="button" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
                   <img class="pop-product-image" src="assets/img/blue-shirt.jpg" alt="Just one single line" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Just one single line</span>
@@ -1615,7 +1844,8 @@
                       <span class="pop-item-price-old">€ 149,-</span>
                   </div>
                   <div class="pop-product-more-colors">
-                    &nbsp;</div>
+                    &nbsp;
+                  </div>
                   <div class="shop-item-overlay hidden-xs">
                     <button type="button" class="quickview"
                      data-modal="quickview-modal-8">Quick view</button>
@@ -1748,6 +1978,9 @@
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="shop-item" onclick="location.href=''">
+                  <button type="button" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
                   <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Headline" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Headline</span>
@@ -1757,7 +1990,8 @@
                       <span>€ 250,-</span>
                   </div>
                   <div class="pop-product-more-colors">
-                    More colours&nbsp;</div>
+                    More colours&nbsp;
+                  </div>
                   <div class="shop-item-overlay hidden-xs">
                     <button type="button" class="quickview"
                      data-modal="quickview-modal-9">Quick view</button>
@@ -1921,6 +2155,21 @@
       </div>
     </div>
   </div>
+  <div class="wishlist">
+    <button class="hidden-xs wishlist-btn">
+      <div class="wishlist-number">45</div>
+    </button>
+    <div class="wishlist-items hidden">
+      <p class="wishlist-title">Your Wishlist
+        <span>(45)</span></p>
+      <span class="recently-added-title">My recently added items</span>
+      <div class="clearfix">
+          <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
+          <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
+          <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
+      </div>
+      <a href="" class="btn view-wishlist-btn">View your wishlist</a>
+    </div>
   </div>
 
   <div class="footer">

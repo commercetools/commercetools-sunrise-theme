@@ -81,6 +81,11 @@ $( ".quickview" ).click(function( event ) {
   $("#" + modalId).modal('show');
 });
 
+// Wishlist section
+$( ".wishlist-btn" ).click(function() {
+  $( ".wishlist-items" ).toggleClass("hidden");
+});
+
 /*****************************************************************************/
 /*
 /* PDP PAGE
