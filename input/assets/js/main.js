@@ -86,6 +86,11 @@ $( ".wishlist-btn" ).click(function() {
   $( ".wishlist-items" ).toggleClass("hidden");
 });
 
+// Dark background on opened menu (mobile)
+$(".navbar-toggle").click(function() {
+  $(".darkbg").toggleClass("hidden");
+});
+
 /*****************************************************************************/
 /*
 /* PDP PAGE
