@@ -5,6 +5,9 @@
   {{#if new}}
     <div class="new-flag">{{context.new}}</div>
   {{/if}}
+  <button type="button" class="heart-xs visible-xs">
+    <span class="sr-only">{{context.wishlist}}</span>
+  </button>
   <img class="pop-product-image" src="{{image}}" alt="{{text}}" width="200" />
   <div class="pop-product-name">
     <span class="name-headline">{{text}}</span>
@@ -20,7 +23,8 @@
   </div>
   {{!-- Should this be a clickable link? Right now, you can't click it due to the overlay --}}
   <div class="pop-product-more-colors">
-    {{#if moreColors}}{{context.moreColors}}{{/if}}&nbsp;</div>
+    {{#if moreColors}}{{context.moreColors}}{{/if}}&nbsp;
+  </div>
   <div class="shop-item-overlay hidden-xs">
     <button type="button" class="quickview"
      data-modal="quickview-modal-{{id}}">{{context.quickView}}</button>

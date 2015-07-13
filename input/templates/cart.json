@@ -804,6 +804,25 @@
       "orderTotalTitle" : "Order Total",
       "orderTotal" : "117,00 €"
     },
-    "continueShoppingBtn" : "Continue Shopping"
+    "continueShoppingBtn" : "Continue Shopping","wishlistWidged" : {
+			"text" : "Your Wishlist",
+			"number" : "45",
+			"recentAddedTitle" : "My recently added items",
+			"viewWishlist" : {
+				"text" : "View your wishlist",
+				"url" : ""
+			},
+			"list" : [
+				{
+					"image" : "assets/img/blue-shirt.jpg"
+				},
+				{
+					"image" : "assets/img/blue-shirt.jpg"
+				},
+				{
+					"image" : "assets/img/blue-shirt.jpg"
+				}
+			]
+		}
   }
 }

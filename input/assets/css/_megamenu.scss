@@ -132,6 +132,10 @@
     }
   }
 
+  .navbar-default .navbar-nav > li > a {
+    padding: 10px 15px;
+  }
+
   .dropdown:hover .megamenu {
     display: block;
     padding: 20px;
@@ -188,7 +192,7 @@
     height: 15px;
     opacity: .5;
     float: right;
-    content: url(../../../assets/img/minus-1.png);
+    content: url(../../assets/img/minus-1.png);
   }
 
   .nav-accordion {
