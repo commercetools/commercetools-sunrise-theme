@@ -106,7 +106,9 @@ select.select {
   background: $dirty-white;
   border-radius: 0;
   .close {
-    margin: 0;
-    background: $black;
+    margin: -1px;
+    background: $dark-blue;
+    opacity: 0.9;
+    padding: 17px;
   }
 }
