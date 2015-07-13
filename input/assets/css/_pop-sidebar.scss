@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*
-/* SIDEBAR OFFCANVAS
+/* SIDEBAR
 /*
 /*****************************************************************************/
 
@@ -18,27 +18,6 @@
   &:focus {
     color: $white;
     background: $grey;
-  }
-}
-
-.offcanvas-btn-sort {
-  width: 40px;
-  height: 40px;
-
-  &::before {
-    position: relative;
-  }
-
-  &.icon-single::before {
-    font-size: 15px;
-    top: 2px;
-    right: 2px;
-  }
-
-  &.icon-multiple::before {
-    font-size: 22px;
-    right: 4px;
-    bottom: 1px;
   }
 }
 
@@ -121,60 +100,13 @@ select.select {
   }
 }
 
-// OFF CANVAS
+// Sidebar overlay (modal)
 
-@media screen and (max-width: 767px) {
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all .25s ease-out;
-         -o-transition: all .25s ease-out;
-            transition: all .25s ease-out;
-  }
-
-  .row-offcanvas-right {
-    right: 0;
-  }
-
-  .row-offcanvas-left {
-    left: 0;
-  }
-
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -70%;
-  }
-
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -70%;
-  }
-
-  .row-offcanvas-right.active {
-    right: 80%;
-  }
-
-  .row-offcanvas-left.active {
-    left: 80%;
-  }
-
-  .sidebar-offcanvas {
-    position: absolute;
-    padding-top: 30px;
-    width: 70%;
-    height: 100%;
-    padding-left: 2em;
-  }
-  .designer-list {
-    margin-bottom: 2em;
-  }
-}
-
-.row-offcanvas-left.active {
-  .dark-overlay {
-    background: rgba(0, 0, 0, .7);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
+.sidebar-overlay-modal {
+  background: $dirty-white;
+  border-radius: 0;
+  .close {
+    margin: 0;
+    background: $black;
   }
 }

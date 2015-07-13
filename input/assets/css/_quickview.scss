@@ -1,5 +1,5 @@
 
-.modal-dialog {
+.modal-dialog-quickview {
   margin-top: 7%;
   width: 700px;
 }
@@ -7,14 +7,13 @@
 .modal-header {
   border-bottom: none;
   padding: 0;
+  .close {
+    margin-top: -40px;
+    margin-right: -40px;
+  }
 }
 
-.modal-header .close {
-  margin-top: -40px;
-  margin-right: -40px;
-}
-
-.modal-content {
+.quickview-modal {
   border-radius: 0;
   height: 550px;
   .quickview-sku {
