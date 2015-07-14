@@ -105,6 +105,9 @@ select.select {
 .sidebar-overlay-modal {
   background: $dirty-white;
   border-radius: 0;
+  .modal-header {
+    height: 63px;
+  }
   .close {
     margin: -1px;
     background: $dark-blue;
