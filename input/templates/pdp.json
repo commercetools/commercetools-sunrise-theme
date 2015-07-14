@@ -834,6 +834,7 @@
 				]
 			},
 			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+			"additionalDescription" : "This is the area for additional product information",
 			"viewDetails" : "View Details",
 			"price" : "€ 123,-",
 			"priceOld" : "€ 173,-",

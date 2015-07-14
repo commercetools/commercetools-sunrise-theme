@@ -109,6 +109,11 @@ $("ul#bzoom").each( function(index, ul) {
 }
 );
 
+// Expand product information on click
+$( ".view-details" ).click(function() {
+  $( ".additional-description" ).slideToggle( "fast" )
+});
+
 /*****************************************************************************/
 /*
 /* CART PAGE
@@ -164,7 +169,7 @@ $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
 
 // Slide toggle different shipping address on click
 $( "#different-billing-checkbox" ).click(function() {
-  $( "#different-billing-address" ).slideToggle( "slow" )
+  $( "#different-billing-address" ).slideToggle( "fast" )
 });
 
 
