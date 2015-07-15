@@ -189,30 +189,19 @@
     }
   }
 
+  .list-item-country,
   .list-item-language {
-    display: none;
     float: right;
-
-    .language-select {
+    select {
       -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      color: $light-grey;
+      -moz-appearance:    none;
+      appearance:         none;
       border: none;
       background: transparent;
-      padding: 15px 20px 20px;
-      font-size: 14px;
-      cursor: pointer;
-      text-transform: uppercase;
-
-      &:hover,
-      &:focus {
-        color: $white;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      display: inline-block;
+      padding: 10px;
+      width: 100px;
+      background: transparent url(../../assets/img/arrow-67-white.png) no-repeat 90% 50%;
+      background-size: 20px;
     }
   }
 

@@ -27,16 +27,22 @@
 
               <li class="list-item-user"><a href="{{user.signIn.url}}" class="link-user icon-user"><span class="hidden-xs hidden-sm">{{user.signIn.text}}</span></a></li>
 
-              <li class="list-item-language"><span class="language-label">{{countries.text}}</span>
-                <select id="language-select" class="language-select">
-                {{#each countries.list}}
-                  <option value="{{value}}" {{#if selected}}selected="selected"{{/if}} data-imagesrc="{{image}}" data-description="{{description}}">{{text}} - </option>
-                {{/each}}
-                <!-- {{#each languages.list}}
-                  <option value="{{value}}" {{#if selected}}selected="selected"{{/if}}>{{text}}</option>
-                {{/each}} -->
+              <li class="list-item-country">
+                <select>
+                  <option value="">Language</option>
+                  <option value="">Language</option>
+                  <option value="">Language</option>
                 </select>
               </li>
+
+              <li class="list-item-language">
+                <select>
+                  <option value="">Country</option>
+                  <option value="">Country</option>
+                  <option value="">Country</option>
+                </select>
+              </li>
+
             </ul>
           </div>
         </div>

@@ -108,6 +108,7 @@ $("ul#bzoom").each( function(index, ul) {
     zoom_area_width: 300,
     // MORE OPTIONS HERE
     small_thumbs: 4,
+    autoplay: false
   });
 }
 );
