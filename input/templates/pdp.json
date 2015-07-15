@@ -779,19 +779,23 @@
 		"gallery" : [
 			{
 				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg"
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			},
 			{
 				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg"
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			},
 			{
 				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg"
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			},
 			{
 				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg"
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			}
 		],
 		"product" : {
