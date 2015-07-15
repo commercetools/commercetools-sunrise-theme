@@ -115,7 +115,7 @@ $("ul#bzoom").each( function(index, ul) {
 // Expand product information on click
 $( ".view-details" ).click(function() {
   event.preventDefault();
-  $( ".additional-description" ).slideToggle( "fast" )
+  $( this ).closest("div").find(".additional-description").slideToggle( "fast" )
 });
 
 /*****************************************************************************/
