@@ -27,8 +27,20 @@
 
               <li class="list-item-user"><a href="{{user.signIn.url}}" class="link-user icon-user"><span class="hidden-xs hidden-sm">{{user.signIn.text}}</span></a></li>
 
-              <li class="list-item-location">
-                <button><img src="assets/img/globe-2.png" alt="Location"></button>
+              <li class="list-item-location clearfix">
+                <button><img class="pull-right" src="assets/img/globe-2.png" alt="Location"></button>
+                <div class="location-dropdown">
+                  <select class="select location-select" name="language">
+                    <option value="">Country</option>
+                    <option value="">B</option>
+                    <option value="">C</option>
+                  </select>
+                  <select class="select location-select" name="">
+                    <option value="">Language</option>
+                    <option value="">B</option>
+                    <option value="">C</option>
+                  </select>
+                </div>
               </li>
 
             </ul>

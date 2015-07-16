@@ -11,6 +11,11 @@ $(document).ready(function(){
     });
 });
 
+// Location dropdown
+$(".list-item-location").click(function () {
+  $(".location-dropdown").slideToggle();
+});
+
 /*****************************************************************************/
 /*
 /* POP PAGE
