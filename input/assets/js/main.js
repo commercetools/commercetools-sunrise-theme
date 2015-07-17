@@ -12,7 +12,7 @@ $(document).ready(function(){
 });
 
 // Location dropdown
-$(".list-item-location").click(function () {
+$(".location-dropdown-toggle").click(function () {
   $(".location-dropdown").slideToggle();
 });
 
