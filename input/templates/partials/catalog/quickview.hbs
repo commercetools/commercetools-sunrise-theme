@@ -46,21 +46,21 @@
                 <p class="product-price">{{product.price}}</p>
               </div>
             </div>
-            <div class="row select-row">
-              <div class="col-sm-6">
+            <div class="row clearfix select-row">
+              <div class="pull-left">
                 <p class="text-uppercase">{{product.color.text}}</p>
                 <div>
-                  <select class="select">
+                  <select class="select-product-detail">
                     {{#each product.color.list}}
                       <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                     {{/each}}
                   </select>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="pull-left">
                 <p class="text-uppercase">{{product.size.text}}</p>
                 <div>
-                  <select class="select">
+                  <select class="select-product-detail">
                     {{#each product.size.list}}
                       <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                     {{/each}}
@@ -68,20 +68,20 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-3">
+            <div class="row clearfix">
+              <div class="pull-left">
                 <select class="bag-items">
                   {{#each product.bagItems.list}}
                     <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                   {{/each}}
                 </select>
               </div>
-              <div class="col-sm-6">
+              <div class="pull-left">
                 <button class="add-to-bag text-center">
                  <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="{{addToBag}}">{{product.addToBag}}
                 </button>
               </div>
-              <div class="col-sm-3">
+              <div class="pull-left">
                 <button type="button" class="pdp-product-heart">
                   <span class="sr-only">{{product.addToWishlist}}</span>
                 </button>
