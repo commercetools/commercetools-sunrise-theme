@@ -44,16 +44,22 @@
   
                 <li class="list-item-user"><a href="" class="link-user icon-user"><span class="hidden-xs hidden-sm">SIGN IN</span></a></li>
   
-                <li class="list-item-language"><span class="language-label">Location</span>
-                  <select id="language-select" class="language-select">
-                    <option value="1"  data-imagesrc="assets/img/flags/gb.svg" data-description="Pounds">UK - </option>
-                    <option value="2"  data-imagesrc="assets/img/flags/ch.svg" data-description="CHF">Schweiz - </option>
-                    <option value="3"  data-imagesrc="assets/img/flags/jp.svg" data-description="Yen">Japan - </option>
-                    <option value="4"  data-imagesrc="assets/img/flags/us.svg" data-description="US Dollar">USA - </option>
-                    <option value="5" selected="selected" data-imagesrc="assets/img/flags/de.svg" data-description="Euro">DE - </option>
-                  <!--  -->
-                  </select>
+                <li class="list-item-location clearfix">
+                  <button><img class="pull-right location-dropdown-toggle" src="assets/img/globe-2.png" alt="Location"></button>
+                  <div class="location-dropdown">
+                    <select class="select location-select" name="language">
+                      <option value="" selected>German</option>
+                      <option value="" >English</option>
+                      <option value="" >French</option>
+                    </select>
+                    <select class="select location-select" name="country">
+                      <option value="">Germany</option>
+                      <option value="">UK</option>
+                      <option value="">France</option>
+                    </select>
+                  </div>
                 </li>
+  
               </ul>
             </div>
           </div>
@@ -330,20 +336,20 @@
             <div class="bzoom_wrap">
               <ul id="bzoom">
                   <li>
-                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
-                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
+                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
                   </li>
                   <li>
-                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
-                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
+                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
                   </li>
                   <li>
-                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
-                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
+                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
                   </li>
                   <li>
-                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
-                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
+                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
                   </li>
               </ul>
             </div>
@@ -368,7 +374,9 @@
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <p class="pdp-product-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p><a href="#"><span class="view-details">View Details</span></a>
+                <p class="pdp-product-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+                <p class="additional-description">This is the area for additional product information</p>
+                <a href="#"><span class="view-details">View Details</span></a>
               </div>
             </div>
             <div class="row">
@@ -512,16 +520,16 @@
               </div>
               <div class="shop-item-overlay hidden-xs">
                 <button type="button" class="quickview"
-                 data-modal="quickview-modal-">Quick view</button>
+                 data-modal="quickview-modal-1">Quick view</button>
                 <button type="button" class="heart">
                   <span class="sr-only">Add item to wishlist</span>
                 </button>
               </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="quickview-modal-" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
+            <div class="modal fade" id="quickview-modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-dialog-quickview" role="document">
+                <div class="modal-content quickview-modal">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                   </div>
@@ -530,44 +538,74 @@
                       <div class="col-sm-4">
                         <div class="bzoom_wrap">
                           <ul id="bzoom">
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
                           </ul>
                         </div>
                       </div>
                       <div class="col-sm-6 col-sm-offset-2 product-description">
                         <div class="row">
                           <div class="col-sm-12">
-                            <p><h1 class="text-uppercase pdp-product-title"></h1><span class="grey-p quickview-sku"></span></p>
+                            <p><h1 class="text-uppercase pdp-product-title">Enditatem Product Name</h1><span class="grey-p quickview-sku">Sunrise #SUN123456</span></p>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
                             </fieldset>
-                            <span class="star-rating-review"><a href=""></a></span>
+                            <span class="star-rating-review"><a href="">Write first review</a></span>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <a href="#"><span class="view-details"></span></a>
+                            <p class="additional-description">This is the area for additional product information</p>
+                            <a href="#"><span class="view-details">View Details</span></a>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <p class="product-price"></p>
+                            <p class="product-price">€ 123,-</p>
                           </div>
                         </div>
                         <div class="row select-row">
                           <div class="col-sm-6">
-                            <p class="text-uppercase"></p>
+                            <p class="text-uppercase">Color</p>
                             <div>
                               <select class="select">
+                                  <option value="" selected>Choose Color</option>
+                                  <option value="" >Red</option>
+                                  <option value="" >Blue</option>
+                                  <option value="" >Green</option>
                               </select>
                             </div>
                           </div>
                           <div class="col-sm-6">
-                            <p class="text-uppercase"></p>
+                            <p class="text-uppercase">Size</p>
                             <div>
                               <select class="select">
+                                  <option value="" >Choose Size</option>
+                                  <option value="" >S</option>
+                                  <option value="" >M</option>
+                                  <option value="" >L</option>
                               </select>
                             </div>
                           </div>
@@ -575,23 +613,32 @@
                         <div class="row">
                           <div class="col-sm-3">
                             <select class="bag-items">
+                                <option value="" selected>1</option>
+                                <option value="" >2</option>
+                                <option value="" >3</option>
+                                <option value="" >4</option>
+                                <option value="" >5</option>
+                                <option value="" >6</option>
+                                <option value="" >7</option>
+                                <option value="" >8</option>
+                                <option value="" >9</option>
                             </select>
                           </div>
                           <div class="col-sm-6">
                             <button class="add-to-bag text-center">
-                             <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">
+                             <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">Add to bag
                             </button>
                           </div>
                           <div class="col-sm-3">
                             <button type="button" class="pdp-product-heart">
-                              <span class="sr-only"></span>
+                              <span class="sr-only">Add item to wishlist</span>
                             </button>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <div class="availability">
-                              <span class="glyphicon glyphicon-ok-sign"></span>
+                              <span class="glyphicon glyphicon-ok-sign"></span>Available
                             </div>
                           </div>
                         </div>
@@ -623,16 +670,16 @@
               </div>
               <div class="shop-item-overlay hidden-xs">
                 <button type="button" class="quickview"
-                 data-modal="quickview-modal-">Quick view</button>
+                 data-modal="quickview-modal-2">Quick view</button>
                 <button type="button" class="heart">
                   <span class="sr-only">Add item to wishlist</span>
                 </button>
               </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="quickview-modal-" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
+            <div class="modal fade" id="quickview-modal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-dialog-quickview" role="document">
+                <div class="modal-content quickview-modal">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                   </div>
@@ -641,44 +688,74 @@
                       <div class="col-sm-4">
                         <div class="bzoom_wrap">
                           <ul id="bzoom">
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-shirt.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-shirt.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-shirt.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-shirt.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-shirt.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-shirt.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-shirt.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-shirt.jpg">
+                              </li>
                           </ul>
                         </div>
                       </div>
                       <div class="col-sm-6 col-sm-offset-2 product-description">
                         <div class="row">
                           <div class="col-sm-12">
-                            <p><h1 class="text-uppercase pdp-product-title"></h1><span class="grey-p quickview-sku"></span></p>
+                            <p><h1 class="text-uppercase pdp-product-title">Enditatem Product Name</h1><span class="grey-p quickview-sku">Sunrise #SUN123456</span></p>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
                             </fieldset>
-                            <span class="star-rating-review"><a href=""></a></span>
+                            <span class="star-rating-review"><a href="">Write first review</a></span>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <a href="#"><span class="view-details"></span></a>
+                            <p class="additional-description">This is the area for additional product information</p>
+                            <a href="#"><span class="view-details">View Details</span></a>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <p class="product-price"></p>
+                            <p class="product-price">€ 123,-</p>
                           </div>
                         </div>
                         <div class="row select-row">
                           <div class="col-sm-6">
-                            <p class="text-uppercase"></p>
+                            <p class="text-uppercase">Color</p>
                             <div>
                               <select class="select">
+                                  <option value="" selected>Choose Color</option>
+                                  <option value="" >Red</option>
+                                  <option value="" >Blue</option>
+                                  <option value="" >Green</option>
                               </select>
                             </div>
                           </div>
                           <div class="col-sm-6">
-                            <p class="text-uppercase"></p>
+                            <p class="text-uppercase">Size</p>
                             <div>
                               <select class="select">
+                                  <option value="" >Choose Size</option>
+                                  <option value="" >S</option>
+                                  <option value="" >M</option>
+                                  <option value="" >L</option>
                               </select>
                             </div>
                           </div>
@@ -686,23 +763,32 @@
                         <div class="row">
                           <div class="col-sm-3">
                             <select class="bag-items">
+                                <option value="" selected>1</option>
+                                <option value="" >2</option>
+                                <option value="" >3</option>
+                                <option value="" >4</option>
+                                <option value="" >5</option>
+                                <option value="" >6</option>
+                                <option value="" >7</option>
+                                <option value="" >8</option>
+                                <option value="" >9</option>
                             </select>
                           </div>
                           <div class="col-sm-6">
                             <button class="add-to-bag text-center">
-                             <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">
+                             <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">Add to bag
                             </button>
                           </div>
                           <div class="col-sm-3">
                             <button type="button" class="pdp-product-heart">
-                              <span class="sr-only"></span>
+                              <span class="sr-only">Add item to wishlist</span>
                             </button>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <div class="availability">
-                              <span class="glyphicon glyphicon-ok-sign"></span>
+                              <span class="glyphicon glyphicon-ok-sign"></span>Available
                             </div>
                           </div>
                         </div>
@@ -731,16 +817,16 @@
               </div>
               <div class="shop-item-overlay hidden-xs">
                 <button type="button" class="quickview"
-                 data-modal="quickview-modal-">Quick view</button>
+                 data-modal="quickview-modal-3">Quick view</button>
                 <button type="button" class="heart">
                   <span class="sr-only">Add item to wishlist</span>
                 </button>
               </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="quickview-modal-" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
+            <div class="modal fade" id="quickview-modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-dialog-quickview" role="document">
+                <div class="modal-content quickview-modal">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                   </div>
@@ -749,44 +835,74 @@
                       <div class="col-sm-4">
                         <div class="bzoom_wrap">
                           <ul id="bzoom">
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
                           </ul>
                         </div>
                       </div>
                       <div class="col-sm-6 col-sm-offset-2 product-description">
                         <div class="row">
                           <div class="col-sm-12">
-                            <p><h1 class="text-uppercase pdp-product-title"></h1><span class="grey-p quickview-sku"></span></p>
+                            <p><h1 class="text-uppercase pdp-product-title">Enditatem Product Name</h1><span class="grey-p quickview-sku">Sunrise #SUN123456</span></p>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
                             </fieldset>
-                            <span class="star-rating-review"><a href=""></a></span>
+                            <span class="star-rating-review"><a href="">Write first review</a></span>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <a href="#"><span class="view-details"></span></a>
+                            <p class="additional-description">This is the area for additional product information</p>
+                            <a href="#"><span class="view-details">View Details</span></a>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <p class="product-price"></p>
+                            <p class="product-price">€ 123,-</p>
                           </div>
                         </div>
                         <div class="row select-row">
                           <div class="col-sm-6">
-                            <p class="text-uppercase"></p>
+                            <p class="text-uppercase">Color</p>
                             <div>
                               <select class="select">
+                                  <option value="" selected>Choose Color</option>
+                                  <option value="" >Red</option>
+                                  <option value="" >Blue</option>
+                                  <option value="" >Green</option>
                               </select>
                             </div>
                           </div>
                           <div class="col-sm-6">
-                            <p class="text-uppercase"></p>
+                            <p class="text-uppercase">Size</p>
                             <div>
                               <select class="select">
+                                  <option value="" >Choose Size</option>
+                                  <option value="" >S</option>
+                                  <option value="" >M</option>
+                                  <option value="" >L</option>
                               </select>
                             </div>
                           </div>
@@ -794,23 +910,32 @@
                         <div class="row">
                           <div class="col-sm-3">
                             <select class="bag-items">
+                                <option value="" selected>1</option>
+                                <option value="" >2</option>
+                                <option value="" >3</option>
+                                <option value="" >4</option>
+                                <option value="" >5</option>
+                                <option value="" >6</option>
+                                <option value="" >7</option>
+                                <option value="" >8</option>
+                                <option value="" >9</option>
                             </select>
                           </div>
                           <div class="col-sm-6">
                             <button class="add-to-bag text-center">
-                             <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">
+                             <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">Add to bag
                             </button>
                           </div>
                           <div class="col-sm-3">
                             <button type="button" class="pdp-product-heart">
-                              <span class="sr-only"></span>
+                              <span class="sr-only">Add item to wishlist</span>
                             </button>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <div class="availability">
-                              <span class="glyphicon glyphicon-ok-sign"></span>
+                              <span class="glyphicon glyphicon-ok-sign"></span>Available
                             </div>
                           </div>
                         </div>
@@ -842,16 +967,16 @@
               </div>
               <div class="shop-item-overlay hidden-xs">
                 <button type="button" class="quickview"
-                 data-modal="quickview-modal-">Quick view</button>
+                 data-modal="quickview-modal-4">Quick view</button>
                 <button type="button" class="heart">
                   <span class="sr-only">Add item to wishlist</span>
                 </button>
               </div>
             </div>
             <!-- Modal -->
-            <div class="modal fade" id="quickview-modal-" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
+            <div class="modal fade" id="quickview-modal-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog modal-dialog-quickview" role="document">
+                <div class="modal-content quickview-modal">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                   </div>
@@ -860,44 +985,74 @@
                       <div class="col-sm-4">
                         <div class="bzoom_wrap">
                           <ul id="bzoom">
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
+                              <li>
+                                <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                                <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                              </li>
                           </ul>
                         </div>
                       </div>
                       <div class="col-sm-6 col-sm-offset-2 product-description">
                         <div class="row">
                           <div class="col-sm-12">
-                            <p><h1 class="text-uppercase pdp-product-title"></h1><span class="grey-p quickview-sku"></span></p>
+                            <p><h1 class="text-uppercase pdp-product-title">Enditatem Product Name</h1><span class="grey-p quickview-sku">Sunrise #SUN123456</span></p>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
                             </fieldset>
-                            <span class="star-rating-review"><a href=""></a></span>
+                            <span class="star-rating-review"><a href="">Write first review</a></span>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <a href="#"><span class="view-details"></span></a>
+                            <p class="additional-description">This is the area for additional product information</p>
+                            <a href="#"><span class="view-details">View Details</span></a>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <p class="product-price"></p>
+                            <p class="product-price">€ 123,-</p>
                           </div>
                         </div>
                         <div class="row select-row">
                           <div class="col-sm-6">
-                            <p class="text-uppercase"></p>
+                            <p class="text-uppercase">Color</p>
                             <div>
                               <select class="select">
+                                  <option value="" selected>Choose Color</option>
+                                  <option value="" >Red</option>
+                                  <option value="" >Blue</option>
+                                  <option value="" >Green</option>
                               </select>
                             </div>
                           </div>
                           <div class="col-sm-6">
-                            <p class="text-uppercase"></p>
+                            <p class="text-uppercase">Size</p>
                             <div>
                               <select class="select">
+                                  <option value="" >Choose Size</option>
+                                  <option value="" >S</option>
+                                  <option value="" >M</option>
+                                  <option value="" >L</option>
                               </select>
                             </div>
                           </div>
@@ -905,23 +1060,32 @@
                         <div class="row">
                           <div class="col-sm-3">
                             <select class="bag-items">
+                                <option value="" selected>1</option>
+                                <option value="" >2</option>
+                                <option value="" >3</option>
+                                <option value="" >4</option>
+                                <option value="" >5</option>
+                                <option value="" >6</option>
+                                <option value="" >7</option>
+                                <option value="" >8</option>
+                                <option value="" >9</option>
                             </select>
                           </div>
                           <div class="col-sm-6">
                             <button class="add-to-bag text-center">
-                             <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">
+                             <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">Add to bag
                             </button>
                           </div>
                           <div class="col-sm-3">
                             <button type="button" class="pdp-product-heart">
-                              <span class="sr-only"></span>
+                              <span class="sr-only">Add item to wishlist</span>
                             </button>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <div class="availability">
-                              <span class="glyphicon glyphicon-ok-sign"></span>
+                              <span class="glyphicon glyphicon-ok-sign"></span>Available
                             </div>
                           </div>
                         </div>
@@ -1131,7 +1295,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="assets/js/ddslick.min.js"></script>
   <script src="assets/js/jqzoom.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

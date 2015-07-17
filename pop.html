@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <div class="darkbg hidden"></div>
     <div class="navbar navbar-fixed-top">
   
       <div class="header">
@@ -44,16 +45,22 @@
   
                 <li class="list-item-user"><a href="" class="link-user icon-user"><span class="hidden-xs hidden-sm">SIGN IN</span></a></li>
   
-                <li class="list-item-language"><span class="language-label">Location</span>
-                  <select id="language-select" class="language-select">
-                    <option value="1"  data-imagesrc="assets/img/flags/gb.svg" data-description="Pounds">UK - </option>
-                    <option value="2"  data-imagesrc="assets/img/flags/ch.svg" data-description="CHF">Schweiz - </option>
-                    <option value="3"  data-imagesrc="assets/img/flags/jp.svg" data-description="Yen">Japan - </option>
-                    <option value="4"  data-imagesrc="assets/img/flags/us.svg" data-description="US Dollar">USA - </option>
-                    <option value="5" selected="selected" data-imagesrc="assets/img/flags/de.svg" data-description="Euro">DE - </option>
-                  <!--  -->
-                  </select>
+                <li class="list-item-location clearfix">
+                  <button><img class="pull-right location-dropdown-toggle" src="assets/img/globe-2.png" alt="Location"></button>
+                  <div class="location-dropdown">
+                    <select class="select location-select" name="language">
+                      <option value="" selected>German</option>
+                      <option value="" >English</option>
+                      <option value="" >French</option>
+                    </select>
+                    <select class="select location-select" name="country">
+                      <option value="">Germany</option>
+                      <option value="">UK</option>
+                      <option value="">France</option>
+                    </select>
+                  </div>
                 </li>
+  
               </ul>
             </div>
           </div>
@@ -333,7 +340,7 @@
           		</li>
           </ol>
         </div>
-        <div class="product-filter">
+        <div class="product-filter hidden-xs">
           <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
             <button class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas" type="button"><span class="sr-only">Filter close</span></button>
             <div class="row">
@@ -474,8 +481,12 @@
                 </div>
                 <div class="row">
                   <div class="col-sm-12 text-center slider-col">
-                    <p><input id="amount" readonly style="border:0; color:black; background: transparent; text-align: center;" type="text"></p>
-                    <div id="slider-range"></div>
+                    <p>
+                      <input class="amount" readonly style="border:0; color:black; background: transparent; text-align: center;" type="text" />
+                      <input class="s1" name="s1" type="hidden" />
+                      <input class="s2" name="s2" type="hidden" />
+                    </p>
+                    <div class="slider-range"></div>
                   </div>
                 </div>
                 <hr class="hr">
@@ -552,9 +563,9 @@
             <!-- Modal -->
             <div class="modal fade" id="sidebar-overlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-content sidebar-overlay-modal">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                   </div>
                   <div class="modal-body">
                     <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
@@ -697,8 +708,12 @@
                           </div>
                           <div class="row">
                             <div class="col-sm-12 text-center slider-col">
-                              <p><input id="amount" readonly style="border:0; color:black; background: transparent; text-align: center;" type="text"></p>
-                              <div id="slider-range"></div>
+                              <p>
+                                <input class="amount" readonly style="border:0; color:black; background: transparent; text-align: center;" type="text" />
+                                <input class="s1" name="s1" type="hidden" />
+                                <input class="s2" name="s2" type="hidden" />
+                              </p>
+                              <div class="slider-range"></div>
                             </div>
                           </div>
                           <hr class="hr">
@@ -819,8 +834,8 @@
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="quickview-modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                  <div class="modal-dialog modal-dialog-quickview" role="document">
+                    <div class="modal-content quickview-modal">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                       </div>
@@ -868,6 +883,7 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
+                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -968,8 +984,8 @@
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="quickview-modal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                  <div class="modal-dialog modal-dialog-quickview" role="document">
+                    <div class="modal-content quickview-modal">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                       </div>
@@ -1017,6 +1033,7 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
+                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1114,8 +1131,8 @@
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="quickview-modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                  <div class="modal-dialog modal-dialog-quickview" role="document">
+                    <div class="modal-content quickview-modal">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                       </div>
@@ -1163,6 +1180,7 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
+                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1263,8 +1281,8 @@
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="quickview-modal-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                  <div class="modal-dialog modal-dialog-quickview" role="document">
+                    <div class="modal-content quickview-modal">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                       </div>
@@ -1312,6 +1330,7 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
+                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1412,8 +1431,8 @@
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="quickview-modal-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                  <div class="modal-dialog modal-dialog-quickview" role="document">
+                    <div class="modal-content quickview-modal">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                       </div>
@@ -1461,6 +1480,7 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
+                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1558,8 +1578,8 @@
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="quickview-modal-6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                  <div class="modal-dialog modal-dialog-quickview" role="document">
+                    <div class="modal-content quickview-modal">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                       </div>
@@ -1607,6 +1627,7 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
+                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1707,8 +1728,8 @@
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="quickview-modal-7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                  <div class="modal-dialog modal-dialog-quickview" role="document">
+                    <div class="modal-content quickview-modal">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                       </div>
@@ -1756,6 +1777,7 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
+                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1856,8 +1878,8 @@
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="quickview-modal-8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                  <div class="modal-dialog modal-dialog-quickview" role="document">
+                    <div class="modal-content quickview-modal">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                       </div>
@@ -1905,6 +1927,7 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
+                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -2002,8 +2025,8 @@
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="quickview-modal-9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                  <div class="modal-dialog modal-dialog-quickview" role="document">
+                    <div class="modal-content quickview-modal">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
                       </div>
@@ -2051,6 +2074,7 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
+                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -2257,7 +2281,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="assets/js/ddslick.min.js"></script>
   <script src="assets/js/jqzoom.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

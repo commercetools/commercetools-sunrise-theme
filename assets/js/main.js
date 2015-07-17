@@ -11,6 +11,20 @@ $(document).ready(function(){
     });
 });
 
+// Location dropdown
+$(".location-dropdown-toggle").click(function () {
+  $(".location-dropdown").slideToggle();
+});
+
+$(document).mouseup(function (e) {
+  var container = $(".location-dropdown");
+  if (!container.is(e.target) // if the target of the click isn't the container
+    && container.has(e.target).length === 0) // nor a descendant of the container
+  {
+    container.hide();
+  }
+});
+
 /*****************************************************************************/
 /*
 /* POP PAGE
@@ -61,17 +75,20 @@ $(document).ready(function() {
 
 // Price range slider
 $(function() {
-  $("#slider-range").slider({
+  $(".slider-range").slider({
     range: true,
     min: 0,
     max: 1000,
     values: [0, 1000],
     slide: function(event, ui) {
-      $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+      $(".amount").val("€ " + ui.values[0] + " - € " + ui.values[1]);
+      // Getting handler values
+      $('.s1').val(ui.values[0]);
+      $('.s2').val(ui.values[1]);
     }
   });
-  $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-    " - $" + $("#slider-range").slider("values", 1));
+  $(".amount").val("€ " + $(".slider-range").slider("values", 0) +
+    " - € " + $(".slider-range").slider("values", 1));
 });
 
 // Adding dynamic ID to quickview modals
@@ -84,6 +101,11 @@ $( ".quickview" ).click(function( event ) {
 // Wishlist section
 $( ".wishlist-btn" ).click(function() {
   $( ".wishlist-items" ).toggleClass("hidden");
+});
+
+// Dark background on opened menu (mobile)
+$(".navbar-toggle").click(function() {
+  $(".darkbg").toggleClass("hidden");
 });
 
 /*****************************************************************************/
@@ -100,9 +122,16 @@ $("ul#bzoom").each( function(index, ul) {
     zoom_area_width: 300,
     // MORE OPTIONS HERE
     small_thumbs: 4,
+    autoplay: false
   });
 }
 );
+
+// Expand product information on click
+$( ".view-details" ).click(function() {
+  event.preventDefault();
+  $( this ).closest("div").find(".additional-description").slideToggle( "fast" )
+});
 
 /*****************************************************************************/
 /*
@@ -159,21 +188,5 @@ $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
 
 // Slide toggle different shipping address on click
 $( "#different-billing-checkbox" ).click(function() {
-  $( "#different-billing-address" ).slideToggle( "slow" )
-});
-
-
-
-/*****************************************************************************/
-/*
-/* CUSTOM LANGUAGE SELECT WITH COUNTRY FLAGS
-/*
-/*****************************************************************************/
-
-$('#language-select').ddslick({
-    width: 220,
-    background: 'transparent',
-    onSelected: function(selectedData){
-        //callback function: do something with selectedData;
-    }
+  $( "#different-billing-address" ).slideToggle( "fast" )
 });
