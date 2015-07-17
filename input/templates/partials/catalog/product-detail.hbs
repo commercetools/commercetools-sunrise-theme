@@ -26,45 +26,45 @@
     <p class="product-price">{{price}}</p>
   </div>
 </div>
-<div class="row select-row">
-  <div class="col-sm-3 col-xs-12">
+<div class="row select-row clearfix">
+  <div class="pull-left">
     <p class="text-uppercase">{{color.text}}</p>
     <div>
-      <select class="select">
+      <select class="select-product-detail">
         {{#each color.list}}
           <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
         {{/each}}
       </select>
     </div>
   </div>
-  <div class="col-sm-3 col-xs-6">
+  <div class="pull-left">
     <p class="text-uppercase">{{size.text}}</p>
     <div>
-      <select class="select">
+      <select class="select-product-detail">
         {{#each size.list}}
           <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
         {{/each}}
       </select>
     </div>
   </div>
-  <div class="col-sm-6 col-xs-6 size-guide-col">
+  <div class="pull-left size-guide-col">
     <a href="#"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">{{sizeGuide}}</span></a>
   </div>
 </div>
-<div class="row">
-  <div class="col-sm-2 col-xs-3">
+<div class="row clearfix">
+  <div class="pull-left">
     <select class="bag-items">
       {{#each bagItems.list}}
         <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
       {{/each}}
     </select>
   </div>
-  <div class="col-sm-6 col-xs-6">
+  <div class="pull-left">
     <button class="add-to-bag text-center">
      <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="{{addToBag}}">{{addToBag}}
     </button>
   </div>
-  <div class="col-sm-4 col-xs-3">
+  <div class="pull-left">
     <button type="button" class="pdp-product-heart">
       <span class="sr-only">{{addToWishlist}}</span>
     </button>
