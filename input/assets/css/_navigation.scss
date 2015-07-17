@@ -25,6 +25,17 @@
   min-height: 0;
 }
 
+// Dark background on menu open (mobile)
+
+.darkbg {
+  background: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+}
+
 // All navigation components
 
 .nav-list {
@@ -178,25 +189,29 @@
     }
   }
 
-  .list-item-language {
-    display: none;
+  // Location select (language, country/currenct)
+
+  .list-item-location {
     float: right;
-
-    .language-select {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      color: $light-grey;
-      border: none;
-      background: transparent;
-      padding: 15px 20px 20px;
-      font-size: 14px;
-      cursor: pointer;
-      text-transform: uppercase;
-
-      &:hover,
-      &:focus {
+    display: none;
+    img {
+      height: 20px;
+      margin-right: 10px;
+    }
+    .location-dropdown {
+      display: none;
+      position: relative;
+      background: $dark-blue;
+      height: 125px;
+      width: 140px;
+      top: -2px;
+      .location-select {
+        width: 120px;
         color: $white;
+        border: 1px solid $white;
+        background: transparent url("../../assets/img/arrow-67-white.png") no-repeat 90% 50%;
+        background-size: 10px;
+        margin: 10px;
       }
     }
 

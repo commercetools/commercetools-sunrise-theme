@@ -20,8 +20,8 @@
               <ul id="bzoom">
                 {{#each content.gallery}}
                   <li>
-                    <img class="bzoom_thumb_image" src="{{thumbImage}}">
-                    <img class="bzoom_big_image" src="{{bigImage}}">
+                    <img class="bzoom_thumb_image" {{#if thumbImage}}src="{{thumbImage}}"{{/if}} src="{{placeholderImage}}">
+                    <img class="bzoom_big_image" {{#if bigImage}}src="{{bigImage}}"{{/if}} src="{{placeholderImage}}">
                   </li>
                 {{/each}}
               </ul>

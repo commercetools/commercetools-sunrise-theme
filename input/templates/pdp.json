@@ -13,69 +13,39 @@
 			"text" : "CALL US ON +44 123 456 000",
 			"url" : ""
 		},
-		"countries" : {
-			"text" : "Location",
-			"list" : [
+		"location" : {
+			"language" : [
+				{
+					"text" : "German",
+					"value" : "",
+					"selected" : true
+				},
+				{
+					"text" : "English",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "French",
+					"value" : "",
+					"selected" : false
+				}
+			],
+			"country" : [
+				{
+					"text" : "Germany",
+					"value" : "",
+					"selected" : true
+				},
 				{
 					"text" : "UK",
-					"value" : 1,
-					"selected" : false,
-					"description" : "Pounds",
-					"image" : "assets/img/flags/gb.svg",
-					"languages" : [
-						{
-							"text" : "English",
-							"value" : "",
-							"selected" : false
-						}
-					]
+					"value" : "",
+					"selected" : false
 				},
 				{
-					"text" : "Schweiz",
-					"value" : 2,
-					"selected" : false,
-					"description" : "CHF",
-					"image" : "assets/img/flags/ch.svg"
-				},
-				{
-					"text" : "Japan",
-					"value" : 3,
-					"selected" : false,
-					"description" : "Yen",
-					"image" : "assets/img/flags/jp.svg"
-				},
-				{
-					"text" : "USA",
-					"value" : 4,
-					"selected" : false,
-					"description" : "US Dollar",
-					"image" : "assets/img/flags/us.svg",
-					"languages" : [
-						{
-							"text" : "English",
-							"value" : "",
-							"selected" : false
-						}
-					]
-				},
-				{
-					"text" : "DE",
-					"value" : 5,
-					"selected" : true,
-					"description" : "Euro",
-					"image" : "assets/img/flags/de.svg",
-					"languages" : [
-						{
-							"text" : "English",
-							"value" : "",
-							"selected" : true
-						},
-						{
-							"text" : "German",
-							"value" : "",
-							"selected" : false
-						}
-					]
+					"text" : "France",
+					"value" : "",
+					"selected" : false
 				}
 			]
 		},
@@ -779,19 +749,23 @@
 		"gallery" : [
 			{
 				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg"
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			},
 			{
 				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg"
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			},
 			{
 				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg"
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			},
 			{
 				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg"
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			}
 		],
 		"product" : {
@@ -834,6 +808,7 @@
 				]
 			},
 			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+			"additionalDescription" : "This is the area for additional product information",
 			"viewDetails" : "View Details",
 			"price" : "€ 123,-",
 			"priceOld" : "€ 173,-",
@@ -958,6 +933,7 @@
 			"moreColors" : "More colours",
 			"list" : [
 				{
+					"id" : "1",
 					"text" : "Enditatem Product Name Optional very long line two",
 					"description" : "Subline",
 					"image" : "assets/img/blue-jacket.jpg",
@@ -966,9 +942,175 @@
 					"url" : "",
 					"wishlistUrl" : "",
 					"new" : true,
-					"moreColors" : true
-				},
+					"moreColors" : true,
+					"quickviewGallery" : [
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						}
+					],
+					"product" : {
+						"text" : "Enditatem Product Name",
+						"sku" : "Sunrise #SUN123456",
+						"rating" : {
+							"text" : "Write first review",
+							"url" : "",
+							"list" : [
+								{
+									"text" : "5 stars",
+									"value" : 5,
+									"description" : "Rocks!",
+									"url" : ""
+								},
+								{
+									"text" : "4 stars",
+									"value" : 4,
+									"description" : "Pretty good",
+									"url" : ""
+								},
+								{
+									"text" : "3 stars",
+									"value" : 3,
+									"description" : "Meh",
+									"url" : ""
+								},
+								{
+									"text" : "2 stars",
+									"value" : 2,
+									"description" : "Kinda bad",
+									"url" : ""
+								},
+								{
+									"text" : "1 star",
+									"value" : 1,
+									"description" : "Sucks big time",
+									"url" : ""
+								}
+							]
+						},
+						"additionalDescription" : "This is the area for additional product information",
+						"viewDetails" : "View Details",
+						"price" : "€ 123,-",
+						"priceOld" : "€ 173,-",
+						"color" : {
+							"text" : "Color",
+							"list" : [
+								{
+									"text" : "Choose Color",
+									"value" : "",
+									"selected" : true
+								},
+								{
+									"text" : "Red",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "Blue",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "Green",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"size" : {
+							"text" : "Size",
+							"list" : [
+								{
+									"text" : "Choose Size",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "S",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "M",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "L",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"sizeGuide" : "Size Guide",
+						"bagItems" : {
+							"list" : [
+								{
+									"text" : "1",
+									"value" : "",
+									"selected" : true
+								},
+								{
+									"text" : "2",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "3",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "4",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "5",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "6",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "7",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "8",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "9",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"addToBag" : "Add to bag",
+						"addToWishlist" : "Add item to wishlist",
+						"available" : "Available"
+						}
+					},
 				{
+					"id" : "2",
 					"text" : "Just one single line",
 					"description" : "",
 					"image" : "assets/img/blue-shirt.jpg",
@@ -977,9 +1119,175 @@
 					"url" : "",
 					"wishlistUrl" : "",
 					"new" : true,
-					"moreColors" : false
-				},
+					"moreColors" : false,
+					"quickviewGallery" : [
+						{
+							"thumbImage" : "assets/img/blue-shirt.jpg",
+							"bigImage" : "assets/img/blue-shirt.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-shirt.jpg",
+							"bigImage" : "assets/img/blue-shirt.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-shirt.jpg",
+							"bigImage" : "assets/img/blue-shirt.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-shirt.jpg",
+							"bigImage" : "assets/img/blue-shirt.jpg"
+						}
+					],
+					"product" : {
+						"text" : "Enditatem Product Name",
+						"sku" : "Sunrise #SUN123456",
+						"rating" : {
+							"text" : "Write first review",
+							"url" : "",
+							"list" : [
+								{
+									"text" : "5 stars",
+									"value" : 5,
+									"description" : "Rocks!",
+									"url" : ""
+								},
+								{
+									"text" : "4 stars",
+									"value" : 4,
+									"description" : "Pretty good",
+									"url" : ""
+								},
+								{
+									"text" : "3 stars",
+									"value" : 3,
+									"description" : "Meh",
+									"url" : ""
+								},
+								{
+									"text" : "2 stars",
+									"value" : 2,
+									"description" : "Kinda bad",
+									"url" : ""
+								},
+								{
+									"text" : "1 star",
+									"value" : 1,
+									"description" : "Sucks big time",
+									"url" : ""
+								}
+							]
+						},
+						"additionalDescription" : "This is the area for additional product information",
+						"viewDetails" : "View Details",
+						"price" : "€ 123,-",
+						"priceOld" : "€ 173,-",
+						"color" : {
+							"text" : "Color",
+							"list" : [
+								{
+									"text" : "Choose Color",
+									"value" : "",
+									"selected" : true
+								},
+								{
+									"text" : "Red",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "Blue",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "Green",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"size" : {
+							"text" : "Size",
+							"list" : [
+								{
+									"text" : "Choose Size",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "S",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "M",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "L",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"sizeGuide" : "Size Guide",
+						"bagItems" : {
+							"list" : [
+								{
+									"text" : "1",
+									"value" : "",
+									"selected" : true
+								},
+								{
+									"text" : "2",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "3",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "4",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "5",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "6",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "7",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "8",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "9",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"addToBag" : "Add to bag",
+						"addToWishlist" : "Add item to wishlist",
+						"available" : "Available"
+						}
+					},
 				{
+					"id" : "3",
 					"text" : "Headline",
 					"description" : "Enditatem Product Name Optional Line Two",
 					"image" : "assets/img/blue-jacket.jpg",
@@ -987,9 +1295,175 @@
 					"url" : "",
 					"wishlistUrl" : "",
 					"new" : false,
-					"moreColors" : true
-				},
+					"moreColors" : true,
+					"quickviewGallery" : [
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						}
+					],
+					"product" : {
+						"text" : "Enditatem Product Name",
+						"sku" : "Sunrise #SUN123456",
+						"rating" : {
+							"text" : "Write first review",
+							"url" : "",
+							"list" : [
+								{
+									"text" : "5 stars",
+									"value" : 5,
+									"description" : "Rocks!",
+									"url" : ""
+								},
+								{
+									"text" : "4 stars",
+									"value" : 4,
+									"description" : "Pretty good",
+									"url" : ""
+								},
+								{
+									"text" : "3 stars",
+									"value" : 3,
+									"description" : "Meh",
+									"url" : ""
+								},
+								{
+									"text" : "2 stars",
+									"value" : 2,
+									"description" : "Kinda bad",
+									"url" : ""
+								},
+								{
+									"text" : "1 star",
+									"value" : 1,
+									"description" : "Sucks big time",
+									"url" : ""
+								}
+							]
+						},
+						"additionalDescription" : "This is the area for additional product information",
+						"viewDetails" : "View Details",
+						"price" : "€ 123,-",
+						"priceOld" : "€ 173,-",
+						"color" : {
+							"text" : "Color",
+							"list" : [
+								{
+									"text" : "Choose Color",
+									"value" : "",
+									"selected" : true
+								},
+								{
+									"text" : "Red",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "Blue",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "Green",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"size" : {
+							"text" : "Size",
+							"list" : [
+								{
+									"text" : "Choose Size",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "S",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "M",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "L",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"sizeGuide" : "Size Guide",
+						"bagItems" : {
+							"list" : [
+								{
+									"text" : "1",
+									"value" : "",
+									"selected" : true
+								},
+								{
+									"text" : "2",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "3",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "4",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "5",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "6",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "7",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "8",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "9",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"addToBag" : "Add to bag",
+						"addToWishlist" : "Add item to wishlist",
+						"available" : "Available"
+						}
+					},
 				{
+					"id" : "4",
 					"text" : "Enditatem Product Name Optional very long line two",
 					"description" : "Subline",
 					"image" : "assets/img/blue-jacket.jpg",
@@ -998,7 +1472,172 @@
 					"url" : "",
 					"wishlistUrl" : "",
 					"new" : true,
-					"moreColors" : true
+					"moreColors" : true,
+					"quickviewGallery" : [
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						},
+						{
+							"thumbImage" : "assets/img/blue-jacket.jpg",
+							"bigImage" : "assets/img/blue-jacket.jpg"
+						}
+					],
+					"product" : {
+						"text" : "Enditatem Product Name",
+						"sku" : "Sunrise #SUN123456",
+						"rating" : {
+							"text" : "Write first review",
+							"url" : "",
+							"list" : [
+								{
+									"text" : "5 stars",
+									"value" : 5,
+									"description" : "Rocks!",
+									"url" : ""
+								},
+								{
+									"text" : "4 stars",
+									"value" : 4,
+									"description" : "Pretty good",
+									"url" : ""
+								},
+								{
+									"text" : "3 stars",
+									"value" : 3,
+									"description" : "Meh",
+									"url" : ""
+								},
+								{
+									"text" : "2 stars",
+									"value" : 2,
+									"description" : "Kinda bad",
+									"url" : ""
+								},
+								{
+									"text" : "1 star",
+									"value" : 1,
+									"description" : "Sucks big time",
+									"url" : ""
+								}
+							]
+						},
+						"additionalDescription" : "This is the area for additional product information",
+						"viewDetails" : "View Details",
+						"price" : "€ 123,-",
+						"priceOld" : "€ 173,-",
+						"color" : {
+							"text" : "Color",
+							"list" : [
+								{
+									"text" : "Choose Color",
+									"value" : "",
+									"selected" : true
+								},
+								{
+									"text" : "Red",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "Blue",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "Green",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"size" : {
+							"text" : "Size",
+							"list" : [
+								{
+									"text" : "Choose Size",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "S",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "M",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "L",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"sizeGuide" : "Size Guide",
+						"bagItems" : {
+							"list" : [
+								{
+									"text" : "1",
+									"value" : "",
+									"selected" : true
+								},
+								{
+									"text" : "2",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "3",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "4",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "5",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "6",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "7",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "8",
+									"value" : "",
+									"selected" : false
+								},
+								{
+									"text" : "9",
+									"value" : "",
+									"selected" : false
+								}
+							]
+						},
+						"addToBag" : "Add to bag",
+						"addToWishlist" : "Add item to wishlist",
+						"available" : "Available"
+						}
 				}
 			]
 		},

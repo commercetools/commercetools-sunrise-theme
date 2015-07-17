@@ -13,69 +13,39 @@
 			"text" : "CALL US ON +44 123 456 000",
 			"url" : ""
 		},
-		"countries" : {
-			"text" : "Location",
-			"list" : [
+		"location" : {
+			"language" : [
+				{
+					"text" : "German",
+					"value" : "",
+					"selected" : true
+				},
+				{
+					"text" : "English",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "French",
+					"value" : "",
+					"selected" : false
+				}
+			],
+			"country" : [
+				{
+					"text" : "Germany",
+					"value" : "",
+					"selected" : true
+				},
 				{
 					"text" : "UK",
-					"value" : 1,
-					"selected" : false,
-					"description" : "Pounds",
-					"image" : "assets/img/flags/gb.svg",
-					"languages" : [
-						{
-							"text" : "English",
-							"value" : "",
-							"selected" : false
-						}
-					]
+					"value" : "",
+					"selected" : false
 				},
 				{
-					"text" : "Schweiz",
-					"value" : 2,
-					"selected" : false,
-					"description" : "CHF",
-					"image" : "assets/img/flags/ch.svg"
-				},
-				{
-					"text" : "Japan",
-					"value" : 3,
-					"selected" : false,
-					"description" : "Yen",
-					"image" : "assets/img/flags/jp.svg"
-				},
-				{
-					"text" : "USA",
-					"value" : 4,
-					"selected" : false,
-					"description" : "US Dollar",
-					"image" : "assets/img/flags/us.svg",
-					"languages" : [
-						{
-							"text" : "English",
-							"value" : "",
-							"selected" : false
-						}
-					]
-				},
-				{
-					"text" : "DE",
-					"value" : 5,
-					"selected" : true,
-					"description" : "Euro",
-					"image" : "assets/img/flags/de.svg",
-					"languages" : [
-						{
-							"text" : "English",
-							"value" : "",
-							"selected" : true
-						},
-						{
-							"text" : "German",
-							"value" : "",
-							"selected" : false
-						}
-					]
+					"text" : "France",
+					"value" : "",
+					"selected" : false
 				}
 			]
 		},
@@ -1096,6 +1066,7 @@
 								}
 							]
 						},
+						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -1272,6 +1243,7 @@
 								}
 							]
 						},
+						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -1447,6 +1419,7 @@
 								}
 							]
 						},
+						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -1623,6 +1596,7 @@
 								}
 							]
 						},
+						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -1799,6 +1773,7 @@
 								}
 							]
 						},
+						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -1974,6 +1949,7 @@
 								}
 							]
 						},
+						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -2150,6 +2126,7 @@
 								}
 							]
 						},
+						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -2326,6 +2303,7 @@
 								}
 							]
 						},
+						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -2501,6 +2479,7 @@
 								}
 							]
 						},
+						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
