@@ -204,7 +204,7 @@
   background: $white;
   letter-spacing: 0.1em;
   border-top: 1px solid $grey;
-  padding: 0.2em 0;
+  padding: 0.5em 0;
 }
 
 .panel-group {
@@ -217,8 +217,9 @@
 }
 
 .accordion-plus {
-  height: 1.2em;
+  height: 1em;
   float: right;
+  margin-right: 1em;
 }
 
 // Social share
