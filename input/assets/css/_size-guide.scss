@@ -1,0 +1,21 @@
+.size-guide-content {
+  border-radius: 0;
+}
+
+.clothing-table {
+  .tr-title {
+    background: $dark-blue;
+    color: $white;
+    td {
+      padding: 10px 15px;
+      text-align: center;
+    }
+  }
+  .tr-countries-size {
+    border-bottom: 1px solid $dark-blue;
+    td {
+      padding: 10px 15px;
+      text-align: center;
+    }
+  }
+}
