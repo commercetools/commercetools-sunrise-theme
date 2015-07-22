@@ -31,7 +31,7 @@
 
 `grunt release-[patch|minor|major]` to release the current version to the Maven Bintray repository and prepare a new version (requires commercetools-bintray repository ID in Maven's settings.xml)
 
-`grunt build maven:install` to install to local maven repository (~/.m2/repository/io/sphere/sphere-sunrise-design)
+`grunt clean build maven:install` to install to local maven repository (~/.m2/repository/io/sphere/sphere-sunrise-design)
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
