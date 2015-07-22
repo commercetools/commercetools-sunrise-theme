@@ -88,6 +88,15 @@ module.exports = function(grunt) {
         gitpush: true,
         mode: "patch"
       },
+      install : {
+        options : {
+          goal: "install"
+        },
+        files: [
+          { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
+          { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" }
+        ]
+      },
       release : {
         options : {
           goal: "release",
