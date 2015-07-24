@@ -794,5 +794,8 @@
 				}
 			]
 		}
+  },
+  "meta" : {
+	"assetsPath": "assets/"
   }
 }
