@@ -139,5 +139,8 @@
 			"linkText" : "Terms and Conditions",
 			"url" : ""
 		}
+  },
+  "meta" : {
+	"assetsPath": "assets/"
   }
 }

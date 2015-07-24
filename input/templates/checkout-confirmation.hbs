@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="secure-payment">
-            <span><img class="secure-payment-icon" src="assets/img/credit-card-lock.png" alt="secure payment"></span>
+            <span><img class="secure-payment-icon" src="{{meta.assetsPath}}img/credit-card-lock.png" alt="secure payment"></span>
             <span class="text-uppercase secure-payment-title">{{content.secureCheckoutTitle}}</span>
           </div>
         </div>
@@ -41,7 +41,7 @@
               <div class="col-sm-4 checkout-first-col">
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">{{content.shippingAddress.text}}</span><a href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
+                    <span class="checkout-summary-title">{{content.shippingAddress.text}}</span><a href="#"><span class="pull-right"><img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
                   </div>
                   <div class="checkout-summary-text">
                     <span>{{content.shippingAddress.name}}</span><br>
@@ -60,7 +60,7 @@
               <div class="col-sm-4 checkout-second-col">
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">{{content.billingAddress.text}}</span><a href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
+                    <span class="checkout-summary-title">{{content.billingAddress.text}}</span><a href="#"><span class="pull-right"><img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
                   </div>
                   <div class="checkout-summary-text">
                     <span>{{content.billingAddress.name}}</span><br>
@@ -79,7 +79,7 @@
               <div class="col-sm-4 checkout-third-col">
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">{{content.shippingMethod.text}}</span><a href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
+                    <span class="checkout-summary-title">{{content.shippingMethod.text}}</span><a href="#"><span class="pull-right"><img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
                   </div>
                   <div class="checkout-summary-text">
                     <span>{{content.shippingMethod.description}}</span>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">{{content.paymentDetails.text}}</span><a href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
+                    <span class="checkout-summary-title">{{content.paymentDetails.text}}</span><a href="#"><span class="pull-right"><img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
                   </div>
                   <div class="checkout-summary-text">
                     <span>{{content.paymentDetails.type}}</span><br>
@@ -119,7 +119,7 @@
             {{#each content.cartItems.list}}
               <div class="row single-cart-item">
                 <div class="col-sm-1 col-xs-4 product-img-col">
-                  <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
+                  <img class="img-responsive cart-item-img" src="{{../meta.assetsPath}}img/blue-jacket.jpg" alt="cart item image">
                 </div>
                 <div class="col-sm-3 col-xs-8 product-info-text">
                   <p class="cart-item-name">{{nameHeadline}}<br>{{nameSubline}}</p>
@@ -130,10 +130,10 @@
                 </div>
                 <div class="col-sm-2 col-sm-offset-2 col-xs-6 text-center cart-edit-delete">
                   <div class="text-uppercase edit-delete-section">
-                    <a href="#"><span><img class="cart-action-icon" src="assets/img/edit-1.png" alt="delete">{{edit}}</span></a>
+                    <a href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}</span></a>
                   </div>
                   <div class="text-uppercase edit-delete-section">
-                    <a href="#"><span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">{{delete}}</span></a>
+                    <a href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}</span></a>
                   </div>
                 </div>
                 <div class="col-sm-2 col-xs-7">

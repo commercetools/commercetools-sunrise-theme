@@ -1664,5 +1664,8 @@
 				}
 			]
 		}
+	},
+    "meta" : {
+	  "assetsPath": "assets/"
 	}
 }
