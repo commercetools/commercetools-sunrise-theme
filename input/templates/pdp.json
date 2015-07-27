@@ -816,7 +816,7 @@
 				"text" : "Color",
 				"list" : [
 					{
-						"text" : "Choose Color",
+						"text" : "Choose",
 						"value" : "",
 						"selected" : true
 					},
@@ -841,7 +841,7 @@
 				"text" : "Size",
 				"list" : [
 					{
-						"text" : "Choose Size",
+						"text" : "Choose",
 						"value" : "",
 						"selected" : false
 					},
@@ -1008,7 +1008,7 @@
 							"text" : "Color",
 							"list" : [
 								{
-									"text" : "Choose Color",
+									"text" : "Choose",
 									"value" : "",
 									"selected" : true
 								},
@@ -1033,7 +1033,7 @@
 							"text" : "Size",
 							"list" : [
 								{
-									"text" : "Choose Size",
+									"text" : "Choose",
 									"value" : "",
 									"selected" : false
 								},
@@ -1185,7 +1185,7 @@
 							"text" : "Color",
 							"list" : [
 								{
-									"text" : "Choose Color",
+									"text" : "Choose",
 									"value" : "",
 									"selected" : true
 								},
@@ -1210,7 +1210,7 @@
 							"text" : "Size",
 							"list" : [
 								{
-									"text" : "Choose Size",
+									"text" : "Choose",
 									"value" : "",
 									"selected" : false
 								},
@@ -1361,7 +1361,7 @@
 							"text" : "Color",
 							"list" : [
 								{
-									"text" : "Choose Color",
+									"text" : "Choose",
 									"value" : "",
 									"selected" : true
 								},
@@ -1386,7 +1386,7 @@
 							"text" : "Size",
 							"list" : [
 								{
-									"text" : "Choose Size",
+									"text" : "Choose",
 									"value" : "",
 									"selected" : false
 								},
@@ -1538,7 +1538,7 @@
 							"text" : "Color",
 							"list" : [
 								{
-									"text" : "Choose Color",
+									"text" : "Choose",
 									"value" : "",
 									"selected" : true
 								},
@@ -1563,7 +1563,7 @@
 							"text" : "Size",
 							"list" : [
 								{
-									"text" : "Choose Size",
+									"text" : "Choose",
 									"value" : "",
 									"selected" : false
 								},

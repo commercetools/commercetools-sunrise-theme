@@ -99,9 +99,29 @@
 	font-size: 2em;
 }
 
+// Color and Size buttons
+.select-product-detail {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0 20px 0 0;
+  background: transparent url("../../assets/img/arrow-67.png") no-repeat 90% 50%;
+  background-size: 20px;
+  padding: 8px;
+  border-radius: 0;
+  border: solid 2px $light-grey;
+  color: $black;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+}
+
 // Row of select color, size and guide
 .select-row {
-	padding: 0 0 1.5em;
+	padding: 0 0 1.5em 1em;
 }
 
 // Size guide
@@ -124,17 +144,19 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 100%;
+  width: 50px;
   background: none;
-  padding: 0.5em 36%;
+  padding: 10px 17px;
+  margin: 0 20px 0 1em;
   border-radius: 0;
-  border: 3px solid $yellow;
+  border: 2px solid $yellow;
 }
 
 // Add to bag button
 .add-to-bag {
-  width: 100%;
+  width: 200px;
   height: 47px;
+  margin-right: 20px;
   font-weight: 900;
 	background: $yellow;
 	text-transform: uppercase;
@@ -182,7 +204,7 @@
   background: $white;
   letter-spacing: 0.1em;
   border-top: 1px solid $grey;
-  padding: 0.2em 0;
+  padding: 0.5em 0;
 }
 
 .panel-group {
@@ -195,8 +217,9 @@
 }
 
 .accordion-plus {
-  height: 1.2em;
+  height: 1em;
   float: right;
+  margin-right: 1em;
 }
 
 // Social share
@@ -268,5 +291,9 @@
 @media screen and (max-width: 340px) {
   .add-to-bag {
     font-size: 0.8em;
+    width: 150px;
+  }
+  .size-guide-col {
+    padding-top: 1em;
   }
 }
