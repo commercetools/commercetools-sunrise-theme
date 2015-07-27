@@ -208,5 +208,8 @@
     "totalTitle" : "Order Total",
     "total" : "123,00 €",
     "editMyOrder" : "Edit my quantity order"
+  },
+  "meta" : {
+    "assetsPath": "assets/"
   }
 }

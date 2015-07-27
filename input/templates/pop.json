@@ -2610,5 +2610,8 @@
 				}
 			]
 		}
+	},
+	"meta" : {
+	  "assetsPath": "assets/"
 	}
 }
