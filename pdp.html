@@ -11,6 +11,8 @@
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
   <link href="assets/css/main.min.css" rel="stylesheet">
   <title>Sunrise - Product Overview Page</title>
 </head>
@@ -334,25 +336,31 @@
         </div>
         <div class="row product-info-row-pdp">
           <div class="col-md-4 col-md-offset-1 col-sm-6">
-            <div class="bzoom_wrap">
+            <div class="bzoom_wrap hidden-xs">
               <ul id="bzoom">
                   <li>
-                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
-                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
+                    <img class="bzoom_thumb_image" src="assets/img/blue-shirt.jpg" src="http://placehold.it/350x150">
+                    <img class="bzoom_big_image" src="assets/img/blue-shirt.jpg" src="http://placehold.it/350x150">
                   </li>
                   <li>
-                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
-                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
+                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg" src="http://placehold.it/350x150">
+                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg" src="http://placehold.it/350x150">
                   </li>
                   <li>
-                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
-                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
+                    <img class="bzoom_thumb_image" src="assets/img/blue-shirt.jpg" src="http://placehold.it/350x150">
+                    <img class="bzoom_big_image" src="assets/img/blue-shirt.jpg" src="http://placehold.it/350x150">
                   </li>
                   <li>
-                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
-                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg" src="assets/img/blue-shirt.jpg">
+                    <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg" src="http://placehold.it/350x150">
+                    <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg" src="http://placehold.it/350x150">
                   </li>
               </ul>
+            </div>
+            <div class="slick visible-xs">
+                <img src="assets/img/blue-shirt.jpg" src="http://placehold.it/350x150" alt="Product Image" />
+                <img src="assets/img/blue-jacket.jpg" src="http://placehold.it/350x150" alt="Product Image" />
+                <img src="assets/img/blue-shirt.jpg" src="http://placehold.it/350x150" alt="Product Image" />
+                <img src="assets/img/blue-jacket.jpg" src="http://placehold.it/350x150" alt="Product Image" />
             </div>
           </div>
           <div class="col-sm-6 product-description">
@@ -370,7 +378,7 @@
                     <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
                     <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
                 </fieldset>
-                <span class="star-rating-review"><a href=""></a></span>
+                <span class="star-rating-review"><a href="">Write first review</a></span>
               </div>
             </div>
             <div class="row">
@@ -1327,6 +1335,7 @@
   <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="assets/js/jqzoom.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
