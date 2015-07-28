@@ -134,6 +134,11 @@ $( ".view-details" ).click(function() {
   $( this ).closest("div").find(".additional-description").slideToggle( "fast" )
 });
 
+// Slick gallery init
+$('.slick').slick({
+  dots: true
+})
+
 /*****************************************************************************/
 /*
 /* CART PAGE

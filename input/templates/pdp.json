@@ -748,24 +748,24 @@
 		],
 		"gallery" : [
 			{
-				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg",
-				"placeholderImage" : "assets/img/blue-shirt.jpg"
+				"thumbImage" : "assets/img/blue-shirt.jpg" ,
+				"bigImage" : "assets/img/blue-shirt.jpg",
+				"placeholderImage" : "http://placehold.it/350x150"
 			},
 			{
 				"thumbImage" : "assets/img/blue-jacket.jpg" ,
 				"bigImage" : "assets/img/blue-jacket.jpg",
-				"placeholderImage" : "assets/img/blue-shirt.jpg"
+				"placeholderImage" : "http://placehold.it/350x150"
+			},
+			{
+				"thumbImage" : "assets/img/blue-shirt.jpg" ,
+				"bigImage" : "assets/img/blue-shirt.jpg",
+				"placeholderImage" : "http://placehold.it/350x150"
 			},
 			{
 				"thumbImage" : "assets/img/blue-jacket.jpg" ,
 				"bigImage" : "assets/img/blue-jacket.jpg",
-				"placeholderImage" : "assets/img/blue-shirt.jpg"
-			},
-			{
-				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg",
-				"placeholderImage" : "assets/img/blue-shirt.jpg"
+				"placeholderImage" : "http://placehold.it/350x150"
 			}
 		],
 		"product" : {
