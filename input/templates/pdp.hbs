@@ -28,7 +28,7 @@
             </div>
             <div class="slick visible-xs">
               {{#each content.gallery}}
-                <img src="{{bigImage}}" alt="" />
+                <img {{#if bigImage}}src="{{bigImage}}"{{/if}} src="{{placeholderImage}}" alt="Product Image" />
               {{/each}}
             </div>
           </div>
