@@ -1,21 +1,63 @@
 .size-guide-content {
   border-radius: 0;
+  .modal-header {
+    height: 63px;
+  }
+  .modal-body {
+    overflow-x: scroll;
+  }
+  .close {
+    margin: -1px;
+    background: $dark-blue;
+    opacity: 1;
+    padding: 17px;
+    &:hover {
+      background: lighten($dark-blue, 5%);
+    }
+  }
+  h4 {
+    padding: 20px 0 0 0;
+    font-weight: bold;
+  }
 }
 
-.clothing-table {
+.size-guide-table {
+  width: 100%;
   .tr-title {
     background: $dark-blue;
     color: $white;
+    th,
     td {
       padding: 10px 15px;
       text-align: center;
+      font-weight: 400;
+      }
+    }
+    .tr-size {
+      border-bottom: 1px solid $dark-blue;
+      td {
+        padding: 10px 15px;
+        text-align: center;
+        cursor: default;
+        &:hover {
+          background: $yellow;
+      }
     }
   }
-  .tr-countries-size {
-    border-bottom: 1px solid $dark-blue;
+}
+
+
+.belt-table {
+  width: 100%;
+  .tr-title {
+    th,
     td {
-      padding: 10px 15px;
-      text-align: center;
+      padding: 10px;
+    }
+  }
+  .tr-size {
+    td {
+      padding: 10px;
     }
   }
 }
