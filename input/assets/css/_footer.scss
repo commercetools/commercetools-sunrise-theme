@@ -87,6 +87,9 @@
   max-height: 25px;
   padding-right: 0.5em;
   margin-top: -10px;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .imprint-row  {
