@@ -748,8 +748,8 @@
 		],
 		"gallery" : [
 			{
-				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg",
+				"thumbImage" : "assets/img/blue-shirt.jpg" ,
+				"bigImage" : "assets/img/blue-shirt.jpg",
 				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			},
 			{
@@ -758,8 +758,8 @@
 				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			},
 			{
-				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg",
+				"thumbImage" : "assets/img/blue-shirt.jpg" ,
+				"bigImage" : "assets/img/blue-shirt.jpg",
 				"placeholderImage" : "assets/img/blue-shirt.jpg"
 			},
 			{

@@ -16,7 +16,7 @@
         </div>
         <div class="row product-info-row-pdp">
           <div class="col-md-4 col-md-offset-1 col-sm-6">
-            <div class="bzoom_wrap">
+            <div class="bzoom_wrap hidden-xs">
               <ul id="bzoom">
                 {{#each content.gallery}}
                   <li>
@@ -25,6 +25,11 @@
                   </li>
                 {{/each}}
               </ul>
+            </div>
+            <div class="slick visible-xs">
+              {{#each content.gallery}}
+                <img src="{{bigImage}}" alt="" />
+              {{/each}}
             </div>
           </div>
           <div class="col-sm-6 product-description">
