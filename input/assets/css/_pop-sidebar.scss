@@ -111,7 +111,10 @@ select.select {
   .close {
     margin: -1px;
     background: $dark-blue;
-    opacity: 0.9;
+    opacity: 1;
     padding: 17px;
+    &:hover {
+      background: lighten($dark-blue, 5%);
+    }
   }
 }
