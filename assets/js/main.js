@@ -135,9 +135,11 @@ $( ".view-details" ).click(function() {
 });
 
 // Slick gallery init
-$('.slick').slick({
-  dots: true
-})
+$(document).ready(function() {
+  $('.slick').slick({
+    dots: true
+  });
+});
 
 /*****************************************************************************/
 /*
