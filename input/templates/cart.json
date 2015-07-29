@@ -637,7 +637,12 @@
 	"footer" : {
 		"paySecure" : "Pay securely with these payment methods",
 		"followUs" : "Follow us",
-		"newsletter" : "Join our newsletter",
+		"newsletter" : {
+			"text" :  "Join our newsletter",
+			"textAlt" : "Subscribe",
+			"url" : "",
+			"placeholder" : "Your email ..."
+		},
 		"customerCare" : {
 			"text" : "Customer Care",
 			"list" : [
