@@ -33,10 +33,15 @@
     "title" : "Title",
     "chooseTitle" : {
       "list" : [
+				{
+          "text" : "Choose",
+          "value" : "",
+          "selected" : true
+        },
         {
           "text" : "Mr.",
           "value" : "",
-          "selected" : true
+          "selected" : false
         },
         {
           "text" : "Mrs.",
@@ -64,10 +69,15 @@
     "country" : "Country",
     "chooseCountry" : {
       "list" : [
+				{
+          "text" : "Choose",
+          "value" : "",
+          "selected" : true
+        },
         {
           "text" : "Germany",
           "value" : "",
-          "selected" : true
+          "selected" : false
         },
         {
           "text" : "France",
