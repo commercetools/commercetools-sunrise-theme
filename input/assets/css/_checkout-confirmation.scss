@@ -36,6 +36,10 @@
   padding-left: 0;
 }
 
+.quantity-number {
+  font-size: 1.2em;
+}
+
 .confirmation-products-title {
   margin: 1em;
   border-top: 1px solid $light-grey;
@@ -121,5 +125,8 @@
     .add-to-newsletter {
       margin-bottom: 0;
     }
+  }
+  .quantity-counter {
+    text-align: right;
   }
 }
