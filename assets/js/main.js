@@ -6,25 +6,25 @@
 
 $(document).ready(function(){
   // Toggle search bar on mobile
-    $('.search-toggle').click(function(){
-        $('.search-box').slideToggle();
-    });
-});
+  $('.search-toggle').click(function(){
+      $('.search-box').slideToggle();
+  });
 
-// Location dropdown
-$(".location-dropdown-toggle").click(function () {
-  $(".location-dropdown").slideToggle();
+  // Location dropdown
+  $(".location-dropdown-toggle").click(function () {
+    $(".location-dropdown").slideToggle();
+  });
 });
 
   // Close dropdown when clicking outside of it
-$(document).mouseup(function (e) {
-  var container = $(".location-dropdown");
-  if (!container.is(e.target) // if the target of the click isn't the container
-    && container.has(e.target).length === 0) // nor a descendant of the container
-  {
-    container.hide();
-  }
-});
+// $(document).mouseup(function (e) {
+//   var container = $(".location-dropdown");
+//   if (!container.is(e.target) // if the target of the click isn't the container
+//     && container.has(e.target).length === 0) // nor a descendant of the container
+//   {
+//     container.hide();
+//   }
+// });
 
 /*****************************************************************************/
 /*
