@@ -191,6 +191,10 @@
 
   // Location select (language, country/currenct)
 
+  .location-dropdown-toggle:hover {
+    transform: scale(1.1);
+  }
+
   .list-item-location {
     float: right;
     display: none;
