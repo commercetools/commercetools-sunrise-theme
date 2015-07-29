@@ -197,13 +197,15 @@
 
 .checkout-checkout-btn {
 	width: 100%;
-	background: $yellow;
+	background: url(../../assets/img/arrow-66.png) no-repeat 95% 13px $yellow;
+	background-size: 15px;
 	border: none;
 	margin: 1em;
 	padding: 0.5em 0;
 	font-size: 1.2em;
 		&:hover {
-			background: lighten($yellow, 5%);
+			background: url(../../assets/img/arrow-66.png) no-repeat 95% 13px lighten($yellow, 5%);
+			background-size: 15px;
 		}
 }
 
@@ -295,7 +297,7 @@
 
 .checkout-price-text,
 .checkout-price-digits {
-	margin: 0 1em 1em;
+	margin-bottom: 1em;
 	font-size: 1.1em;
 	letter-spacing: 0.1em;
 }
@@ -305,9 +307,14 @@
 	margin: 1em;
 }
 
-.order-tax-total-text,
+.order-tax-total-text {
+	margin: 0 0.5em 1em 0;
+	font-size: 1.1em;
+	letter-spacing: 0.1em;
+}
+
 .order-tax-total-digits {
-	margin: 0 1em 1em;
+	margin: 0 1em 1em 0;
 	font-size: 1.1em;
 	letter-spacing: 0.1em;
 }
