@@ -32,14 +32,15 @@
 }
 
 .checkout-now-btn {
-	background: /* url(../../assets/img/arrow-66.png) no-repeat 95% 13px */ $yellow;
+	background: url(../../assets/img/arrow-66.png) no-repeat 95% 13px $yellow;
 	background-size: 15px;
 	border: none;
 	color: $black;
 	padding: 0.5em 2em;
 	font-size: 1.2em;
 	&:hover {
-		background: /* url(../../assets/img/arrow-66.png) no-repeat 95% 13px */ lighten($yellow, 5%);
+		background: url(../../assets/img/arrow-66.png) no-repeat 95% 13px lighten($yellow, 5%);
+		background-size: 15px;
 	}
 }
 
@@ -210,14 +211,15 @@
 // Back to shopping and checkout now buttons
 
 .continue-shopping-btn {
-	background: /* url(../../assets/img/arrow-67-black.png) no-repeat 10px 10px */ transparent;
-	background-size: 20px;
+	background: url(../../assets/img/arrow-67-black.png) no-repeat 5% 13px transparent;
+	background-size: 15px;
 	border: 1px solid $dark-grey;
 	color: $black;
 	padding: 0.4em 2em;
 	font-size: 1.2em;
 		&:hover {
-			background: $white;
+			background: url(../../assets/img/arrow-67-black.png) no-repeat 5% 13px $white;
+			background-size: 15px;
 		}
 }
 .bottom-cart-btns {
@@ -261,7 +263,6 @@
 	.checkout-now-btn {
 		width: 100%;
 		margin: 1em 0;
-		background-position: 95% 10px;
 	}
 	.continue-shopping-btn {
 		width: 100%;
