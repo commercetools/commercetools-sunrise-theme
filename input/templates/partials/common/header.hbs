@@ -30,11 +30,13 @@
               <li class="list-item-location clearfix">
                 <button><img class="pull-right location-dropdown-toggle" src="{{meta.assetsPath}}img/globe-2.png" alt="Location"></button>
                 <div class="location-dropdown">
+                  <span class="location-dropdown-label">Language</span>
                   <select class="select location-select" name="language">
                     {{#each header.location.language}}
                     <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                     {{/each}}
                   </select>
+                  <span class="location-dropdown-label">Country</span>
                   <select class="select location-select" name="country">
                     {{#each header.location.country}}
                     <option value="{{value}}">{{text}}</option>
