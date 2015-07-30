@@ -36,6 +36,10 @@
   padding-left: 0;
 }
 
+.quantity-number {
+  font-size: 1.2em;
+}
+
 .confirmation-products-title {
   margin: 1em;
   border-top: 1px solid $light-grey;
@@ -103,6 +107,15 @@
   color: $dark-grey;
 }
 
+// Media Queries
+
+@media screen and (min-width: 767px) {
+  .checkout-first-col .checkout-summary,
+  .checkout-second-col .checkout-summary {
+    padding: 1em 1em 4.6em;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .complete-order-btn {
     width: 200px;
@@ -121,5 +134,8 @@
     .add-to-newsletter {
       margin-bottom: 0;
     }
+  }
+  .quantity-counter {
+    text-align: right;
   }
 }

@@ -131,7 +131,7 @@ $("ul#bzoom").each( function(index, ul) {
 // Expand product information on click
 $( ".view-details" ).click(function() {
   event.preventDefault();
-  $( this ).closest("div").find(".additional-description").slideToggle( "fast" )
+  $( this ).closest("div").find(".additional-description").slideToggle( "slow" )
 });
 
 // Slick gallery init
@@ -196,5 +196,5 @@ $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
 
 // Slide toggle different shipping address on click
 $( "#different-billing-checkbox" ).click(function() {
-  $( "#different-billing-address" ).slideToggle( "fast" )
+  $( "#different-billing-address" ).slideToggle( "slow" )
 });

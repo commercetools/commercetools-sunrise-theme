@@ -60,10 +60,15 @@
     "expiryDateTitle" : "Expiry data",
     "expiryDate" : {
       "list" : [
+				{
+          "text" : "Month",
+          "value" : "",
+          "selected" : true
+        },
         {
           "text" : "January",
           "value" : "",
-          "selected" : true
+          "selected" : false
         },
         {
           "text" : "February",
@@ -124,10 +129,15 @@
     },
     "year" : {
       "list" : [
+				{
+          "text" : "Year",
+          "value" : "",
+          "selected" : true
+        },
         {
           "text" : "2050",
           "value" : "",
-          "selected" : true
+          "selected" : false
         },
         {
           "text" : "2100",

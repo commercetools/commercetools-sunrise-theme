@@ -195,6 +195,11 @@
     transform: scale(1.1);
   }
 
+  .location-dropdown-label {
+    font-size: 0.8em;
+    padding-left: 1.1em;
+  }
+
   .list-item-location {
     float: right;
     display: none;
@@ -206,7 +211,7 @@
       display: none;
       position: relative;
       background: $dark-blue;
-      height: 125px;
+      height: 160px;
       width: 140px;
       top: -2px;
       .location-select {
@@ -216,6 +221,7 @@
         background: transparent url("../../assets/img/arrow-67-white.png") no-repeat 90% 50%;
         background-size: 10px;
         margin: 10px;
+        text-transform: capitalize;
       }
     }
 
