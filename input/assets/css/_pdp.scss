@@ -104,18 +104,16 @@
   -moz-appearance: none;
   appearance: none;
   margin: 0 20px 0 0;
-  background: transparent url("../../assets/img/arrow-67.png") no-repeat 90% 50%;
-  background-size: 20px;
-  padding: 8px;
+  background: transparent url("../../assets/img/arrow-67-filled.png") no-repeat 90% 50%;
+  background-size: 12px;
+  padding: 10px 50px 10px 10px;
   border-radius: 0;
   border: solid 2px $light-grey;
-  color: $black;
+  color: $dark-grey;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
   cursor: pointer;
-  height: 40px;
-  width: 100px;
 }
 
 // Row of select color, size and guide
@@ -143,9 +141,10 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 50px;
-  background: none;
-  padding: 10px 17px;
+  background: transparent url("../../assets/img/arrow-67-filled.png") no-repeat 80% 50%;
+  background-size: 12px;
+  color: $dark-grey;
+  padding: 10px 30px 10px 10px;
   margin: 0 20px 0 1em;
   border-radius: 0;
   border: 2px solid $yellow;
@@ -153,11 +152,10 @@
 
 // Add to bag button
 .add-to-bag {
-  width: 200px;
-  height: 47px;
   margin-right: 20px;
   font-weight: 900;
 	background: $yellow;
+  padding: 3px 20px;
 	text-transform: uppercase;
     &:hover {
       background: lighten($yellow, 5%);
@@ -174,11 +172,10 @@
   width: 50px;
   height: 50px;
   background: url("../img/heart_sprite.png") no-repeat;
-  background-size: 170px;
-  float: left;
+  background-size: 160px;
   &:hover,
   &:focus {
-      background-position: -60px;
+      background-position: -56px;
   }
 }
 
@@ -287,12 +284,14 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 340px) {
-  .add-to-bag {
-    font-size: 0.8em;
-    width: 150px;
-  }
+// iPhone 6 size
+@media screen and (max-width: 375px) {
   .size-guide-col {
-    padding-top: 1em;
+    padding-top: 1.5em;
   }
+}
+
+// iPhone 5 size
+@media screen and (max-width: 320px) {
+
 }

@@ -131,7 +131,7 @@ $("ul#bzoom").each( function(index, ul) {
 // Expand product information on click
 $( ".view-details" ).click(function() {
   event.preventDefault();
-  $( this ).closest("div").find(".additional-description").slideToggle( "slow" )
+  $( this ).closest("div").find(".additional-description").slideToggle( "fast" )
 });
 
 // Slick gallery init
