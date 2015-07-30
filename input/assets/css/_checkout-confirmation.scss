@@ -107,6 +107,15 @@
   color: $dark-grey;
 }
 
+// Media Queries
+
+@media screen and (min-width: 767px) {
+  .checkout-first-col .checkout-summary,
+  .checkout-second-col .checkout-summary {
+    padding: 1em 1em 4.6em;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .complete-order-btn {
     width: 200px;
