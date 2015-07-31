@@ -118,12 +118,7 @@
 
 // Row of select color, size and guide
 .select-row {
-	padding: 0 0 1.5em 1em;
-}
-
-// Size guide
-.size-guide-col {
-	padding-top: 2.3em;
+	padding: 0 0 1em 1em;
 }
 
 .size-guide-thumb {
@@ -155,7 +150,7 @@
   margin-right: 20px;
   font-weight: 900;
 	background: $yellow;
-  padding: 3px 20px;
+  padding: 5px 30px 2px 30px;
 	text-transform: uppercase;
     &:hover {
       background: lighten($yellow, 5%);
@@ -164,7 +159,7 @@
 
 .bag-thumb {
 	height: 25px;
-	margin: 0.5em 0.9em 0.5em 0;
+	margin: 0.5em 0.9em 0.7em 0;
 }
 
 // Add to wishlish
@@ -172,10 +167,10 @@
   width: 50px;
   height: 50px;
   background: url("../img/heart_sprite.png") no-repeat;
-  background-size: 160px;
+  background-size: 167px;
   &:hover,
   &:focus {
-      background-position: -56px;
+      background-position: -60px;
   }
 }
 
@@ -210,6 +205,12 @@
 
 .panel-body-pdp {
   padding: 0.3em 0;
+  ul {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 16px;
+  }
 }
 
 .accordion-plus {
@@ -284,14 +285,21 @@
 
 /* Media Queries */
 
-// iPhone 6 size
-@media screen and (max-width: 375px) {
-  .size-guide-col {
-    padding-top: 1.5em;
+@media screen and (max-width: 991px) {
+  .size-guide-li {
+    padding-top: 1em;
+  }
+  .pdp-product-heart {
+    margin: 1em 0 0 1em;
   }
 }
 
-// iPhone 5 size
-@media screen and (max-width: 320px) {
-
-}
+// iPhone 6 size
+// @media screen and (max-width: 375px) {
+//
+// }
+//
+// // iPhone 5 size
+// @media screen and (max-width: 320px) {
+//
+// }
