@@ -136,8 +136,15 @@ $( ".view-details" ).click(function() {
 
 // Slick gallery init
 $(document).ready(function() {
-  $('.slick').slick({
+  $('.gallery-mobile').slick({
     dots: true
+  });
+});
+
+// Slick reviews init
+$(document).ready(function() {
+  $('.reviews-mobile').slick({
+      dots: true
   });
 });
 
