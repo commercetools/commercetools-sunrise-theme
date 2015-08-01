@@ -18,7 +18,6 @@
 }
 
 .thankyou-confirmation {
-  font-weight: bold;
   .thankyou-email {
     color: $blue;
   }
@@ -31,6 +30,10 @@
   border: 1px solid $dark-grey;
   text-transform: uppercase;
   letter-spacing: 1px;
+  &:hover {
+    color: $black;
+    border: 1px solid $black;
+  }
 }
 
 .thankyou-continue-shopping-btn {
@@ -40,6 +43,9 @@
   text-transform: uppercase;
   padding: 12px 20px;
   letter-spacing: 1px;
+  &:hover {
+    background: lighten($yellow, 5%);
+  }
 }
 
 .order-details-title {
