@@ -7,7 +7,31 @@
   <body>
   {{> common/checkout-header}}
 
-  Thank you page
+  <div class="checkout-thankyou">
+    <div class="container">
+      <div class="thankyou-page-title">{{content.thankyouTitle}}</div>
+      <div class="thankyou-page-content">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="thankyou-confirmation">{{content.emailSentTo}}o <span class="thankyou-email">{{content.email}}</span><br>{{content.emailSentToEnding}}</span>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline text-right">
+              <li><button type="button" class="print-receipt-btn">{{content.receiptBtn}}</button></li>
+              <li><a href="#" class="thankyou-continue-shopping-btn">{{content.continueShoppingBtn}}</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="thankyou-order-details">
+          <div class="order-details-title">{{content.orderDetailsTitle}}</div>
+          <div class="order-number-date">
+            <span class="number-date-title">{{content.orderNumberTitle}}<br>{{content.orderDateTitle}}</span>
+            <span class="black-p">{{content.orderNumber}}<br>{{content.orderDate}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   {{> common/checkout-footer}}
   {{> common/htmlscripts}}

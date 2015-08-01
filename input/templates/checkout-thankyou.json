@@ -24,24 +24,21 @@
 		}
 	},
   "content" : {
-    "secureCheckoutTitle" : "Secure Checkout - Confirmation",
-    "shippingOne" : "Shipping",
-    "paymentTwo" : "Payment",
-    "confirmationThree" : "Confirmation",
-		"editIconText" : "Edit",
-		"shippingAddress" : {
-			"text" : "Shipping Address",
-			"name" : "Mr. Bruce Wayne",
-			"street" : "100 Gotham Street",
-			"city" : "Gothan City",
-			"region" : "Region",
-			"postCode" : "123456",
-			"country" : "Country",
-			"phoneTitle" : "Phone",
-			"phone" : "+49 123 4567899",
-			"emailTitle" : "Email",
-			"email" : "batman@commercetools.com"
-		},
+    "thankyouTitle" : "Thank you for your order!",
+    "emailSentTo" : "An email has been sent to",
+    "email" : "camilo@batman.com",
+    "emailSentToEnding" : "as a copy of this confirmation purchase",
+    "receiptBtn" : "Print Receipt",
+    "continueShoppingBtn" : "Continue Shopping",
+    "orderDetailsTitle" : "Your order details",
+    "orderNumberTitle" : "Order Number",
+    "orderNumber" : "01445678",
+    "orderDateTitle" : "Order Date",
+    "orderDate" : "Nov 14, 2015",
+
+
+
+
 		"billingAddress" : {
 			"text" : "Billing Address",
 			"name" : "Mr. Bruce Wayne",

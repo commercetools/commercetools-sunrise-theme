@@ -1,0 +1,62 @@
+.checkout-thankyou {
+  background: $dirty-white;
+}
+
+.thankyou-page-title {
+  font-size: 24px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 24px 0 14px;
+}
+
+.thankyou-page-content {
+  background-color: $white;
+  padding: 14px;
+  border: 1px solid $light-grey;
+  margin-bottom: 28px;
+}
+
+.thankyou-confirmation {
+  font-weight: bold;
+  .thankyou-email {
+    color: $blue;
+  }
+}
+
+.print-receipt-btn {
+  color: $dark-grey;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: 1px solid $dark-grey;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.thankyou-continue-shopping-btn {
+  background: $yellow;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  letter-spacing: 1px;
+}
+
+.order-details-title {
+  text-transform: uppercase;
+  border-bottom: 1px solid $light-grey;
+  padding: 14px 0;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+.order-number-date {
+  padding: 12px 0;
+  color: $dark-grey;
+  span {
+    display: inline-block;
+  }
+  .number-date-title {
+    padding-right: 14px;
+  }
+}
