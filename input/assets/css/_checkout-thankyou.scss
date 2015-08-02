@@ -66,3 +66,24 @@
     padding-right: 14px;
   }
 }
+
+.thankyou-order-summary {
+  margin: -14px;
+}
+
+@media screen and (max-width: 414px) {
+  .print-receipt-btn {
+    margin: 24px 0;
+    width: 100%;
+  }
+  .thankyou-buttons {
+    li {
+      width: 100%;
+    }
+  }
+  .thankyou-continue-shopping-btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
