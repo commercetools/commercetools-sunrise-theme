@@ -144,6 +144,24 @@ $( ".view-details" ).click(function() {
   $( this ).closest("div").find(".additional-description").slideToggle( "fast" )
 });
 
+// Toggle hidden/sliced description
+$(function() {
+    var hiddenDescription = $('p.pdp-product-description');
+
+    hiddenDescription.each(function(){
+        var t = $(this).text();
+        if(t.length < 100) return;
+        $(this).html(
+            t.slice(0,100)+'<span>... </span>'+
+            '<span class="hidden">'+ t.slice(100,t.length)+'</span>'
+        );
+    });
+
+    $('.view-details').click(function() {
+      $('.pdp-product-description span').toggleClass('hidden');
+    });
+});
+
 // Slick gallery init
 $(document).ready(function() {
   $('.gallery-mobile').slick({
