@@ -103,7 +103,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin: 0 20px 0 0;
+  margin: 0 10px 0 0;
   background: transparent url("../../assets/img/arrow-67-filled.png") no-repeat 90% 50%;
   background-size: 12px;
   padding: 10px 50px 10px 10px;
@@ -118,7 +118,7 @@
 
 // Row of select color, size and guide
 .select-row {
-	padding: 0 0 1em 1em;
+	padding: 0 0 0.5em 1em;
 }
 
 .size-guide-thumb {
@@ -140,14 +140,14 @@
   background-size: 12px;
   color: $dark-grey;
   padding: 10px 30px 10px 10px;
-  margin: 0 20px 0 1em;
+  margin: 0 10px 0 1em;
   border-radius: 0;
   border: 2px solid $yellow;
 }
 
 // Add to bag button
 .add-to-bag {
-  margin-right: 20px;
+  margin-right: 10px;
   font-weight: 900;
 	background: $yellow;
   padding: 5px 30px 2px 30px;
