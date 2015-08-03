@@ -11,6 +11,7 @@
 - [Checkout Shipping](http://sphereio.github.io/sphere-sunrise-design/checkout-shipping.html)
 - [Checkout Payment](http://sphereio.github.io/sphere-sunrise-design/checkout-payment.html)
 - [Checkout Confirmation](http://sphereio.github.io/sphere-sunrise-design/checkout-confirmation.html)
+- [Checkout Thank You](http://sphereio.github.io/sphere-sunrise-design/checkout-thankyou.html)
 
 ###Installation
 
