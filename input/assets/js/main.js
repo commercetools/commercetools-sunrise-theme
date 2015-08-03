@@ -127,7 +127,6 @@ $(".navbar-toggle").click(function() {
 /*
 /*****************************************************************************/
 
-
 // Product gallery - BZoom
 $("ul#bzoom").each( function(index, ul) {
   $ul = $(ul);
