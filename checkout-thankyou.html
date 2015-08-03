@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
+    <link href="assets/css/main.min.css" rel="stylesheet">
+    <title>Sunrise - Checkout Confirmation Page</title>
+  </head>
+
+  <body>
+  <div class="checkout-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12">
+          <a href="#" class="brand-logo">
+            <img class="checkout-header-logo img-responsive" src="assets/img/logo-white-text.svg" alt="SUNRISE Logo">
+          </a>
+        </div>
+        <div class="col-sm-8 col-xs-12">
+          <div class="checkout-header-callus">
+            <span class="">Need help? Customer Service</span>
+            <span class="checkout-header-number"><img class="phone-icon" src="assets/img/phone.png" alt="phone icon" />+12 345 6000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="checkout-thankyou">
+    <div class="container">
+      <div class="thankyou-page-title">Thank you for your order!</div>
+      <div class="thankyou-page-content">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="thankyou-confirmation">An email has been sent too <span class="thankyou-email">camilo@batman.com</span><br>as a copy of this confirmation purchase</span>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline text-right thankyou-buttons">
+              <li><button type="button" class="print-receipt-btn">Print Receipt</button></li>
+              <li><a href="#" class="thankyou-continue-shopping-btn">Continue Shopping</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="thankyou-order-details">
+          <div class="order-details-title">Your order details</div>
+          <div class="order-number-date">
+            <span class="number-date-title">Order Number<br>Order Date</span>
+            <span class="black-p">01445678<br>Nov 14, 2015</span>
+          </div>
+        </div>
+        <div class="thankyou-order-summary">
+          <div class="row">
+            <div class="col-sm-4 checkout-first-col">
+              <div class="checkout-summary">
+                <div class="text-uppercase">
+                  <span class="checkout-summary-title">Shipping Address</span>
+                </div>
+                <div class="checkout-summary-text">
+                  <span>Mr. Bruce Wayne</span><br>
+                  <span>100 Gotham Street</span><br>
+                  <span>Gothan City</span><br>
+                  <span>Region</span><br>
+                  <span>123456</span><br>
+                  <span>Country</span>
+                </div>
+                <div>
+                  <span>Phone:</span><span> +49 123 4567899</span><br>
+                  <span>Email:</span><span> batman@commercetools.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 checkout-second-col">
+              <div class="checkout-summary">
+                <div class="text-uppercase">
+                  <span class="checkout-summary-title">Billing Address</span>
+                </div>
+                <div class="checkout-summary-text">
+                  <span>Mr. Bruce Wayne</span><br>
+                  <span>100 Gotham Street</span><br>
+                  <span>Gothan City</span><br>
+                  <span>Region</span><br>
+                  <span>123456</span><br>
+                  <span>Country</span>
+                </div>
+                <div>
+                  <span>Phone:</span><span> +49 123 4567899</span><br>
+                  <span>Email:</span><span> batman@commercetools.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 checkout-third-col">
+              <div class="checkout-summary">
+                <div class="text-uppercase">
+                  <span class="checkout-summary-title">Shipping Method</span>
+                </div>
+                <div class="checkout-summary-text">
+                  <span>DHL Standart - Delivery 3-5 Days</span>
+                </div>
+              </div>
+              <div class="checkout-summary">
+                <div class="text-uppercase">
+                  <span class="checkout-summary-title">Payment Details</span>
+                </div>
+                <div class="checkout-summary-text">
+                  <span>Credit Card</span><br>
+                  <span>Bruce Wayne</span><br>
+                  <span>Visa</span><br>
+                  <span>**** **** **** **56</span><br>
+                  <span>09.18</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="confirmation-products-title">
+            <div class="row">
+              <div class="row text-uppercase hidden-xs cart-items-title">
+                <div class="col-sm-6">
+                  <span>Product Description</span>
+                </div>
+                <div class="col-sm-2 text-center">
+                  <span>Quantity</span>
+                </div>
+                <div class="col-sm-2 text-right">
+                  <span>Price</span>
+                </div>
+                <div class="col-sm-2 text-right">
+                  <span>Total Price</span>
+                </div>
+              </div>
+            </div>
+            <div class="row single-cart-item">
+              <div class="col-sm-1 col-xs-4 product-img-col">
+                <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
+              </div>
+              <div class="col-sm-3 col-xs-8 product-info-text">
+                <p class="cart-item-name">Enditatem Product Name<br>Optional Line Two</p>
+                <p class="grey-p">Sunrise #SUN123456</p>
+                <p class="cart-color-size">Color: <span class="black-p">Navy Blue</span><br>Size: <span class="black-p">M</span></p>
+                <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>Available</p>
+                <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>Available</p>
+              </div>
+              <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
+                <span class="visible-xs">Quantity:</span>
+                <span class="quantity-number">2</span>
+              </div>
+              <div class="col-sm-2 col-xs-7">
+                <div class="text-right cart-item-price">
+                  <span class="visible-xs xs-price-title">Price</span>
+                  <span>49,00 €</span>
+                </div>
+              </div>
+              <div class="col-sm-2 col-xs-5">
+                <div class="text-right cart-item-price">
+                  <span class="visible-xs xs-price-title">Total Price</span>
+                  <span>49,00 €</span>
+                </div>
+              </div>
+            </div>
+            <div class="row single-cart-item">
+              <div class="col-sm-1 col-xs-4 product-img-col">
+                <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
+              </div>
+              <div class="col-sm-3 col-xs-8 product-info-text">
+                <p class="cart-item-name">Enditatem Product Name<br>Optional Line Two</p>
+                <p class="grey-p">Sunrise #SUN123456</p>
+                <p class="cart-color-size">Color: <span class="black-p">Navy Blue</span><br>Size: <span class="black-p">M</span></p>
+                <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>Available</p>
+                <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>Available</p>
+              </div>
+              <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
+                <span class="visible-xs">Quantity:</span>
+                <span class="quantity-number">3</span>
+              </div>
+              <div class="col-sm-2 col-xs-7">
+                <div class="text-right cart-item-price">
+                  <span class="visible-xs xs-price-title">Price</span>
+                  <span>49,00 €</span>
+                </div>
+              </div>
+              <div class="col-sm-2 col-xs-5">
+                <div class="text-right cart-item-price">
+                  <span class="visible-xs xs-price-title">Total Price</span>
+                  <span>49,00 €</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="total-price-calc">
+                  <div class="row text-right payment-code-applied">
+                    <span class="payment-code-title">Promotion code applied:</span>
+                    <span class="payment-code">Sunny Sale</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-10 col-xs-7">
+                      <div class="text-right subtotal">
+                        <span class="subtotal-title">Subtotal</span>
+                      </div>
+                      <div class="text-right">
+                        <span class="order-discount">Order Discount</span>
+                      </div>
+                      <div class="text-right delivery-info">
+                        <span class="delivery-info-title">Standart Delivery</span>
+                      </div>
+                      <hr class="total-divider">
+                      <div class="text-right">
+                        <span>Sales Tax</span>
+                      </div>
+                      <div class="text-right">
+                        <span class="order-total">Order Total</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-5 text-right">
+                      <div>
+                        <span>107,00 €</span>
+                      </div>
+                      <div>
+                        <span class="order-discount">0,00 €</span>
+                      </div>
+                      <div>
+                        <span>0,00 €</span>
+                      </div>
+                      <hr>
+                      <div>
+                        <span>20,00 €</span>
+                      </div>
+                      <div>
+                        <span class="order-total">117,00 €</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul class="list-inline text-right thankyou-buttons">
+            <li><button type="button" class="print-receipt-btn">Print Receipt</button></li>
+            <li><a href="#" class="thankyou-continue-shopping-btn">Continue Shopping</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row text-uppercase">
+        <div class="col-sm-12">
+          <ul class="footer-title imprint-row">
+            <li class="hidden-xs">© 2015 Sunrise</li>
+              <li><a href="">Imprint</a></li>
+              <li><a href="">Privacy policy</a></li>
+              <li><a href="">Terms of use</a></li>
+            <li class="visible-xs">© 2015 Sunrise</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="assets/js/jqzoom.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  </body>
+</html>
