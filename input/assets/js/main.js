@@ -131,13 +131,20 @@ $("ul#bzoom").each( function(index, ul) {
 // Expand product information on click
 $( ".view-details" ).click(function() {
   event.preventDefault();
-  $( this ).closest("div").find(".additional-description").slideToggle( "slow" )
+  $( this ).closest("div").find(".additional-description").slideToggle( "fast" )
 });
 
 // Slick gallery init
 $(document).ready(function() {
-  $('.slick').slick({
+  $('.gallery-mobile').slick({
     dots: true
+  });
+});
+
+// Slick reviews init
+$(document).ready(function() {
+  $('.reviews-mobile').slick({
+      dots: true
   });
 });
 

@@ -25,49 +25,53 @@
     <p class="product-price">{{content.product.price}}</p>
   </div>
 </div>
-<div class="row select-row clearfix">
-  <div class="pull-left">
-    <p class="text-uppercase">{{content.product.color.text}}</p>
-    <div>
-      <select class="select-product-detail">
-        {{#each content.product.color.list}}
-          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-        {{/each}}
-      </select>
-    </div>
-  </div>
-  <div class="pull-left">
-    <p class="text-uppercase">{{content.product.size.text}}</p>
-    <div>
-      <select class="select-product-detail">
-        {{#each content.product.size.list}}
-          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-        {{/each}}
-      </select>
-    </div>
-  </div>
-  <div class="pull-left size-guide-col">
-    <a href="#" data-toggle="modal" data-target="#size-guide"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">{{content.product.sizeGuide}}</span></a>
-  </div>
+<div class="row select-row">
+  <ul class="list-inline">
+    <li>
+      <p class="text-uppercase">{{content.product.color.text}}</p>
+      <div>
+        <select class="select-product-detail">
+          {{#each content.product.color.list}}
+            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </li>
+    <li>
+      <p class="text-uppercase">{{content.product.size.text}}</p>
+      <div>
+        <select class="select-product-detail">
+          {{#each content.product.size.list}}
+            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </li>
+    <li class="size-guide-li">
+      <a href="#" data-toggle="modal" data-target="#size-guide"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">{{content.product.sizeGuide}}</span></a>
+    </li>
+  </ul>
 </div>
-<div class="row clearfix">
-  <div class="pull-left">
-    <select class="bag-items">
-      {{#each content.product.bagItems.list}}
-        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-      {{/each}}
-    </select>
-  </div>
-  <div class="pull-left">
-    <button class="add-to-bag text-center">
-     <img class="bag-thumb" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="{{content.product.addToBag}}">{{content.product.addToBag}}
-    </button>
-  </div>
-  <div class="pull-left">
-    <button type="button" class="pdp-product-heart">
-      <span class="sr-only">{{content.product.addToWishlist}}</span>
-    </button>
-  </div>
+<div class="row">
+  <ul class="list-inline">
+    <li>
+      <select class="bag-items">
+        {{#each content.product.bagItems.list}}
+          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+        {{/each}}
+      </select>
+    </li>
+    <li>
+      <button class="add-to-bag text-center">
+       <img class="bag-thumb" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="{{content.product.addToBag}}">{{content.product.addToBag}}
+      </button>
+    </li>
+    <li>
+      <button type="button" class="btn pdp-product-heart">
+        <span class="sr-only">{{content.product.addToWishlist}}</span>
+      </button>
+    </li>
+  </ul>
 </div>
 <div class="row">
   <div class="col-sm-12">
@@ -88,7 +92,11 @@
         </div>
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
           <div class="panel-body panel-body-pdp">
-            {{content.product.productDetails.description}}
+            <ul>
+              {{#each content.product.productDetails.listItems}}
+                <li>{{text}}</li>
+              {{/each}}
+            </ul>
           </div>
         </div>
       </div>
@@ -101,7 +109,18 @@
         </div>
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body panel-body-pdp">
-            {{content.product.deliveryAndReturn.description}}
+            <h4>{{content.product.deliveryAndReturn.deliveryTitle}}</h4>
+            <ul>
+              {{#each content.product.deliveryAndReturn.deliveryList}}
+                <li>{{text}}</li>
+              {{/each}}
+            </ul>
+            <h4>{{content.product.deliveryAndReturn.returnsTitle}}</h4>
+            <ul>
+              {{#each content.product.deliveryAndReturn.returnsList}}
+                <li>{{text}}</li>
+              {{/each}}
+            </ul>
           </div>
         </div>
       </div>

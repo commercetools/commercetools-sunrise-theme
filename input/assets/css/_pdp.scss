@@ -104,28 +104,21 @@
   -moz-appearance: none;
   appearance: none;
   margin: 0 20px 0 0;
-  background: transparent url("../../assets/img/arrow-67.png") no-repeat 90% 50%;
-  background-size: 20px;
-  padding: 8px;
+  background: transparent url("../../assets/img/arrow-67-filled.png") no-repeat 90% 50%;
+  background-size: 12px;
+  padding: 10px 50px 10px 10px;
   border-radius: 0;
   border: solid 2px $light-grey;
-  color: $black;
+  color: $dark-grey;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
   cursor: pointer;
-  height: 40px;
-  width: 100px;
 }
 
 // Row of select color, size and guide
 .select-row {
-	padding: 0 0 1.5em 1em;
-}
-
-// Size guide
-.size-guide-col {
-	padding-top: 2.3em;
+	padding: 0 0 1em 1em;
 }
 
 .size-guide-thumb {
@@ -143,9 +136,10 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 50px;
-  background: none;
-  padding: 10px 17px;
+  background: transparent url("../../assets/img/arrow-67-filled.png") no-repeat 80% 50%;
+  background-size: 12px;
+  color: $dark-grey;
+  padding: 10px 30px 10px 10px;
   margin: 0 20px 0 1em;
   border-radius: 0;
   border: 2px solid $yellow;
@@ -153,11 +147,10 @@
 
 // Add to bag button
 .add-to-bag {
-  width: 200px;
-  height: 47px;
   margin-right: 20px;
   font-weight: 900;
 	background: $yellow;
+  padding: 5px 30px 2px 30px;
 	text-transform: uppercase;
     &:hover {
       background: lighten($yellow, 5%);
@@ -166,7 +159,7 @@
 
 .bag-thumb {
 	height: 25px;
-	margin: 0.5em 0.9em 0.5em 0;
+	margin: 0.5em 0.9em 0.7em 0;
 }
 
 // Add to wishlish
@@ -174,8 +167,7 @@
   width: 50px;
   height: 50px;
   background: url("../img/heart_sprite.png") no-repeat;
-  background-size: 170px;
-  float: left;
+  background-size: 167px;
   &:hover,
   &:focus {
       background-position: -60px;
@@ -213,6 +205,12 @@
 
 .panel-body-pdp {
   padding: 0.3em 0;
+  ul {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 16px;
+  }
 }
 
 .accordion-plus {
@@ -285,14 +283,41 @@
   color: $dark-grey;
 }
 
-/* Media Queries */
+.write-review-btn {
+  color: $grey;
+  text-transform: uppercase;
+  background: $white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 2px solid $grey;
+  margin: 1em 0 1em 1em;
+}
 
-@media screen and (max-width: 340px) {
-  .add-to-bag {
-    font-size: 0.8em;
-    width: 150px;
-  }
-  .size-guide-col {
-    padding-top: 1em;
+.showmore-reviews-btn {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &:hover {
+    text-decoration: underline;
   }
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 991px) {
+  .size-guide-li {
+    padding-top: 1em;
+  }
+  .pdp-product-heart {
+    margin: 1em 0 0 1em;
+  }
+}
+
+// iPhone 6 size
+// @media screen and (max-width: 375px) {
+//
+// }
+//
+// // iPhone 5 size
+// @media screen and (max-width: 320px) {
+//
+// }
