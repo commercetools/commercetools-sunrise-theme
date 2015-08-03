@@ -136,8 +136,7 @@ $("ul#bzoom").each( function(index, ul) {
     small_thumbs: 4,
     autoplay: false
   });
-}
-);
+});
 
 // Expand product information on click
 $( ".view-details" ).click(function() {
