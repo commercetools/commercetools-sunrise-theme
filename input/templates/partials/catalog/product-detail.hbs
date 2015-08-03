@@ -103,21 +103,21 @@
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingThree">
           <h4 class="panel-title product-accordion-title text-uppercase">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{{content.product.deliveryAndReturn.text}}<img class="accordion-plus" src="{{meta.assetsPath}}img/plus79.png" alt="accordion content">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{{content.product.deliveryAndReturns}}<img class="accordion-plus" src="{{meta.assetsPath}}img/plus79.png" alt="accordion content">
             </a>
           </h4>
         </div>
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body panel-body-pdp">
-            <h4>{{content.product.deliveryAndReturn.deliveryTitle}}</h4>
+            <h4>{{content.product.delivery.text}}</h4>
             <ul>
-              {{#each content.product.deliveryAndReturn.deliveryList}}
+              {{#each content.product.delivery.list}}
                 <li>{{text}}</li>
               {{/each}}
             </ul>
-            <h4>{{content.product.deliveryAndReturn.returnsTitle}}</h4>
+            <h4>{{content.product.returns.text}}</h4>
             <ul>
-              {{#each content.product.deliveryAndReturn.returnsList}}
+              {{#each content.product.returns.list}}
                 <li>{{text}}</li>
               {{/each}}
             </ul>

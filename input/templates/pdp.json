@@ -929,30 +929,32 @@
 					}
 				]
 			},
-			"deliveryAndReturn" : {
-				"text" : "Delivery & Returns",
-				"deliveryTitle" : "Delivery",
-				"returnsTitle" : "Returns",
-				"deliveryList" : [
+			"deliveryAndReturns" : "Delivery & Returns",
+			"delivery" : {
+				"text" : "Delivery",
+				"list" : [
 					{
-						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
 					},
 					{
-						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
 					},
 					{
-						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
 					}
-				],
-				"returnsList" : [
+				]
+			},
+			"returns" : {
+				"text" : "Returns",
+				"list" : [
 					{
-						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
 					},
 					{
-						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
 					},
 					{
-						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
 					}
 				]
 			}
