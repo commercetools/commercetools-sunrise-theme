@@ -69,6 +69,15 @@
 
 .thankyou-order-summary {
   margin: -14px;
+  .cart-item-name {
+    font-size: 16px;
+  }
+  .cart-color-size {
+    font-size: 14px;
+  }
+  .quantity-number {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 414px) {
