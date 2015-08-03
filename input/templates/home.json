@@ -721,66 +721,7 @@
 		}
 	},
   "content" : {
-    "yourBag" : "Your bag:",
-    "itemsTotal" : "3 items in total",
-    "checkoutBtn" : "Checkout now",
-    "cartItems" : {
-      "description" : "Product Description",
-      "quantity" : "Quantity",
-      "price" : "Price",
-      "totalPrice" : "Total Price",
-      "list" : [
-        {
-          "nameHeadline" : "Enditatem Product Name",
-          "nameSubline" : "Optional Line Two",
-          "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color: ",
-          "color" : "Navy Blue",
-          "sizeTitle" : "Size: ",
-          "size" : "M",
-          "available" : "Available",
-          "edit" : "Edit",
-          "delete" : "Delete",
-          "priceTitle" : "Price",
-          "price" : "49,00 €",
-          "totalPriceTitle" : "Total Price",
-          "totalPrice" : "49,00 €"
-        },
-        {
-          "nameHeadline" : "Enditatem Product Name",
-          "nameSubline" : "Optional Line Two",
-          "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color: ",
-          "color" : "Navy Blue",
-          "sizeTitle" : "Size: ",
-          "size" : "M",
-          "available" : "Available",
-          "edit" : "Edit",
-          "delete" : "Delete",
-          "priceTitle" : "Price",
-          "price" : "49,00 €",
-          "totalPriceTitle" : "Total Price",
-          "totalPrice" : "49,00 €"
-        }
-      ],
-			"discountTooltip" : "Discount options additional information...",
-      "promoDiscount" : "Promotional Discount Info",
-      "applyBtn" : "Apply",
-      "subtotalTitle" : "Subtotal",
-      "subtotal" : "107,00 €",
-      "orderDiscountTitle" : "Order Discount",
-      "orderDiscount" : "0,00 €",
-			"deliveryTooltip" : "Delivery estimate options additional information...",
-      "deliveryEstimate" : "Delivery estimate options",
-      "deliveryOption" : "Standart Delivery",
-      "delivery" : "0,00 €",
-      "taxTitle" : "Sales Tax",
-      "tax" : "20,00 €",
-      "orderTotalTitle" : "Order Total",
-      "orderTotal" : "117,00 €"
-    },
-    "continueShoppingBtn" : "Continue Shopping",
-		"wishlistWidged" : {
+    "wishlistWidged" : {
 			"text" : "Your Wishlist",
 			"number" : "45",
 			"recentAddedTitle" : "My recently added items",
