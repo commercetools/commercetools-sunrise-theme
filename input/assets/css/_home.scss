@@ -17,19 +17,29 @@
 
 .home-carousel-item {
   .home-carousel-caption {
-    top: 50px;
+    margin-left: 6%;
+    bottom: 25px;
     position: absolute;
     text-align: center;
-    width: 400px;
+    width: 550px;
     color: $white;
     .home-carousel-title {
       font-size: 40px;
+      text-transform: uppercase;
+      margin: 0;
+      font-weight: 200;
+    }
+    .home-carousel-hr {
+      width: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     .home-carousel-btn {
       position: relative;
       background: $yellow;
       text-transform: uppercase;
       padding: 10px 20px;
+      margin-top: 15px;
       letter-spacing: 2px;
       font-size: 18px;
       color: $black;
