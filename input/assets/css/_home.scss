@@ -36,12 +36,11 @@
       margin-bottom: 10px;
     }
     .home-carousel-btn {
-      position: relative;
       background: $yellow;
       text-transform: uppercase;
       padding: 10px 20px;
       margin-top: 15px;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       font-size: 18px;
       color: $black;
       &:hover {
@@ -72,4 +71,28 @@
   color: $grey;
   letter-spacing: 1px;
   margin-bottom: 40px;
+}
+
+.home-viewall {
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 25px;
+  .home-viewall-btn {
+    background: $yellow;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: $black;
+    &:hover {
+      background: lighten($yellow, 5%);
+    }
+    border-left: 30px solid $dirty-white;
+    border-right: 30px solid $dirty-white;
+  }
+  .home-viewall-hr {
+    margin: -12px 0 8px 0;
+    border-top: 1px solid $light-grey;
+  }
 }

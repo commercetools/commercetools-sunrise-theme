@@ -26,7 +26,7 @@
       {{#with content.suggestions}}
       <h4 class="home-suggestions-title">{{text}}</h4>
       <hr class="home-suggestions-hr">
-      <p class="home-suggestions-description">Why so serious?!</p>
+      <p class="home-suggestions-description">{{description}}</p>
       <div class="row">
         {{#each list}}
           <div class="col-xs-12 col-sm-6 col-md-3">
@@ -35,6 +35,11 @@
         {{/each}}
       </div>
       {{/with}}
+
+      <div class="home-viewall">
+        <a href="" class="home-viewall-btn">View All New Products</a>
+        <hr class="home-viewall-hr">
+      </div>
     </div>
   </div>
 
