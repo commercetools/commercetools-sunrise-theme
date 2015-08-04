@@ -32,11 +32,11 @@ $(document).ready(function(){
 /*
 /*****************************************************************************/
 
-$(document).ready(function() {
-  $(".slick-homepage").slick({
-    dots: true
-  });
-});
+// $(document).ready(function() {
+//   $(".slick-homepage").slick({
+//     dots: true
+//   });
+// });
 
 /*****************************************************************************/
 /*
