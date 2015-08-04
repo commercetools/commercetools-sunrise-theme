@@ -58,40 +58,72 @@
 }
 
 // Banner option one
-.banner-left {
-  border-right: 1px solid $white;
-}
-
-.banner-right {
-  border-left: 1px solid $white;
-}
-
-.banner-text {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: $white;
-  background: rgba(0,0,0,0.5);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  .banner-title {
-    font-size: 22px;
-    font-weight: 200;
-  }
-  .banner-btn {
-    margin-bottom: 10px;
-    background: $yellow;
-    padding: 10px 20px;
-    color: $black;
-    &:hover {
-      background: lighten($yellow, 5%);
-    }
-  }
-}
+// .home-banner-option-one {
+//   .banner-left {
+//     border-right: 1px solid $white;
+//   }
+//   .banner-right {
+//     border-left: 1px solid $white;
+//   }
+//   .banner-text {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     text-align: center;
+//     color: $white;
+//     background: rgba(0,0,0,0.5);
+//     text-transform: uppercase;
+//     letter-spacing: 1px;
+//     .banner-title {
+//       font-size: 22px;
+//       font-weight: 200;
+//     }
+//     .banner-btn {
+//       margin-bottom: 10px;
+//       background: $yellow;
+//       padding: 10px 20px;
+//       color: $black;
+//       &:hover {
+//         background: lighten($yellow, 5%);
+//       }
+//     }
+//   }
+// }
 
 // Banner option two
-
+// .home-banner-option-two {
+//   .banner-text {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     height: 100%;
+//     padding: 70px 100px;
+//     text-align: center;
+//     max-width: 40%;
+//     background: rgba(255,255,255,0.6);
+//     .banner-title {
+//       font-size: 22px;
+//       font-weight: 200;
+//       letter-spacing: 1px;
+//       text-transform: uppercase;
+//     }
+//     .banner-subtitle {
+//       letter-spacing: 1px;
+//       text-transform: uppercase;
+//       padding-bottom: 20px;
+//     }
+//     .banner-btn {
+//       margin-top: 20px;
+//       padding: 10px 20px;
+//       text-transform: uppercase;
+//       border: 2px solid $black;
+//       letter-spacing: 1px;
+//       &:hover {
+//         background: $white;
+//       }
+//     }
+//   }
+// }
 
 // Home suggestions
 .home-suggestions-title {
