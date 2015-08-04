@@ -125,6 +125,92 @@
 //   }
 // }
 
+// Banner option three
+// .home-banner-option-three {
+//   .banner-left {
+//     border-right: 1px solid $white;
+//   }
+//   .banner-right {
+//     border-left: 1px solid $white;
+//   }
+//   .banner-text {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     text-align: center;
+//     color: $white;
+//     background: rgba(0,0,0,0.5);
+//     text-transform: uppercase;
+//     letter-spacing: 1px;
+//     .banner-title {
+//       font-size: 22px;
+//       font-weight: 200;
+//     }
+//     .banner-btn {
+//       margin-bottom: 10px;
+//       background: $yellow;
+//       padding: 10px 20px;
+//       color: $black;
+//       &:hover {
+//         background: lighten($yellow, 5%);
+//       }
+//     }
+//   }
+//   .banner-xs-one {
+//
+//   }
+//   .banner-xs-two {
+//     .banner-text {
+//       position: absolute;
+//       top: 0;
+//       width: 100%;
+//       text-align: center;
+//       color: $white;
+//       background: rgba(0,0,0,0.5);
+//       text-transform: uppercase;
+//       letter-spacing: 1px;
+//       .banner-title {
+//         font-size: 22px;
+//         font-weight: 200;
+//       }
+//       .banner-btn {
+//         margin-bottom: 10px;
+//         background: $yellow;
+//         padding: 10px 20px;
+//         color: $black;
+//         &:hover {
+//           background: lighten($yellow, 5%);
+//         }
+//       }
+//     }
+//   }
+//   .banner-sm {
+//     .banner-text {
+//       position: absolute;
+//       bottom: 0;
+//       width: 100%;
+//       text-align: center;
+//       color: $white;
+//       background: rgba(0,0,0,0.5);
+//       text-transform: uppercase;
+//       letter-spacing: 1px;
+//       .banner-title {
+//         font-size: 22px;
+//         font-weight: 200;
+//       }
+//       .banner-btn {
+//         margin-bottom: 10px;
+//         background: $yellow;
+//         padding: 10px 20px;
+//         color: $black;
+//         &:hover {
+//           background: lighten($yellow, 5%);
+//         }
+//       }
+//     }
+//   }
+// }
+
 // Home suggestions
 .home-suggestions-title {
   text-align: center;
@@ -144,7 +230,7 @@
 
 .home-suggestions-description {
   text-align: center;
-  color: $grey;
+  color: $dark-grey;
   letter-spacing: 1px;
   margin-bottom: 40px;
 }
