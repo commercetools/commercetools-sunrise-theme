@@ -405,13 +405,15 @@
 }
 
 @media screen and (max-width: 470px) {
-	.checkout-steps {
-		div {
-			display: block;
-			text-align: left;
-			margin: 2em 0;
-		}
-		padding: 0;
+	.step-title {
+		padding-right: 0;
+		margin-right: 2em;
+	}
+	.step-title-active {
+		border-bottom: 1px solid $dark-blue;
+	}
+	.step-number {
+		display: none;
 	}
 	.secure-payment-title {
 		font-size: 1.2em;
@@ -435,5 +437,15 @@
 	.order-tax-total-text,
 	.order-tax-total-digits {
 		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.secure-payment-icon {
+		display: none;
+	}
+	.step-title {
+		padding-right: 0;
+		margin-right: 1em;
 	}
 }
