@@ -807,8 +807,7 @@
 					}
 				]
 			},
-			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-			"additionalDescription" : "This is the area for additional product information",
+			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
 			"viewDetails" : "View Details",
 			"price" : "€ 123,-",
 			"priceOld" : "€ 173,-",
@@ -917,7 +916,7 @@
 			"available" : "Available",
 			"productDetails" : {
 				"text" : "Product Details",
-				"listItems" : [
+				"list" : [
 					{
 						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
 					},

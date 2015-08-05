@@ -16,7 +16,6 @@
 <div class="row">
   <div class="col-sm-12">
     <p class="pdp-product-description">{{content.product.description}}</p>
-    <p class="additional-description">{{content.product.additionalDescription}}</p>
     <a href="#"><span class="view-details">{{content.product.viewDetails}}</span></a>
   </div>
 </div>
@@ -93,7 +92,7 @@
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
           <div class="panel-body panel-body-pdp">
             <ul>
-              {{#each content.product.productDetails.listItems}}
+              {{#each content.product.productDetails.list}}
                 <li>{{text}}</li>
               {{/each}}
             </ul>

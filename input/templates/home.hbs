@@ -8,36 +8,123 @@
   {{> common/header}}
 
   <div class="home-page">
-    <div class="slick-homepage">
-      <div class="home-carousel-item">
-        <img src="{{meta.assetsPath}}img/banner_desktop.jpg" alt="" />
-        <div class="home-carousel-caption">
-          <h4 class="home-carousel-title">Here Comes The Sun 1</h4>
-          <p>
-            Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! 
-          </p>
-          <a href="#" class="btn home-carousel-btn">Shop Collection 1</a>
+    {{!-- <div class="slick-homepage">
+      {{#each content.carouselItems.list}}
+        <div class="home-carousel-item">
+          <img src="{{image}}" alt="Carousel banner image" />
+          <div class="home-carousel-caption">
+            <h4 class="home-carousel-title">{{title}}</h4>
+            <hr class="home-carousel-hr">
+            <p>{{description}}</p>
+            <a href="{{url}}" class="btn home-carousel-btn">{{buttonText}}</a>
+          </div>
+        </div>
+      {{/each}}
+    </div> --}}
+
+    <div class="home-banner-option-one">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 nopadding banner-left">
+            <img class="img-responsive" src="assets/img/leather-691609.jpg" alt="Banner image" />
+            <div class="banner-text">
+              <h4 class="banner-title">Live by the sun</h4>
+              <p class="banner-paragraph">Make the great days happen</p>
+              <a href="#" class="btn banner-btn">Shop Collection</a>
+            </div>
+          </div>
+          <div class="col-sm-6 nopadding banner-right">
+            <img class="img-responsive" src="assets/img/woman-692767_1920.jpg" alt="Banner image" />
+            <div class="banner-text">
+              <h4 class="banner-title">Hello sunday</h4>
+              <p class="banner-paragraph">Get the freshest styles</p>
+              <a href="#" class="btn banner-btn">Shop Collection</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="home-carousel-item">
-        <img src="{{meta.assetsPath}}img/banner_desktop.jpg" alt="" />
-        <div class="home-carousel-caption">
-          <h4 class="home-carousel-title">Here Comes The Sun 2</h4>
-          <p>
-            Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! 
-          </p>
-          <a href="#" class="btn home-carousel-btn">Shop Collection 1</a>
+    </div>
+
+    {{!-- <div class="home-banner-option-two">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 nopadding">
+            <img class="img-responsive" src="assets/img/photo-1431727460781-fa165e66bffa.jpeg" alt="Banner image" />
+            <div class="banner-text">
+              <h4 class="banner-title">Here comes the sun</h4>
+              <p class="banner-subtitle">What inspires you?</p>
+              <p>Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas </p>
+              <p>Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas </p>
+              <a class="btn banner-btn" href="#">Shop Collection</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="home-carousel-item">
-        <img src="{{meta.assetsPath}}img/banner_desktop.jpg" alt="" />
-        <div class="home-carousel-caption">
-          <h4 class="home-carousel-title">Here Comes The Sun 3</h4>
-          <p>
-            Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! Lorem Bananas Mee Wants !!! 
-          </p>
-          <a href="#" class="btn home-carousel-btn">Shop Collection 1</a>
+    </div> --}}
+
+    {{!-- <div class="home-banner-option-three">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 nopadding banner-left">
+            <img class="img-responsive" src="assets/img/shoes-690608_1280.jpg" alt="Banner image" />
+            <div class="banner-text">
+              <h4 class="banner-title">Live by the sun</h4>
+              <p class="banner-paragraph">Make the great days happen</p>
+              <a href="#" class="btn banner-btn">Shop Collection</a>
+            </div>
+          </div>
+          <div class="col-sm-6 noppading banner-right">
+            <div class="row">
+              <div class="col-sm-6 nopadding">
+                <div class="banner-xs-one">
+                  <p>Boom Boom Bananas, Boom Boom Batman</p>
+                </div>
+              </div>
+              <div class="col-sm-6 nopadding">
+                <div class="banner-xs-two">
+                  <img class="img-responsive" src="assets/img/sunglasses-411632_1280.jpg" alt="Banner image" />
+                  <div class="banner-text">
+                    <h4 class="banner-title">Live by the sun</h4>
+                    <p class="banner-paragraph">Make the great days happen</p>
+                    <a href="#" class="btn banner-btn">Shop Collection</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 nopadding">
+                <div class="banner-sm">
+                  <img class="img-responsive" src="assets/img/woman-422706_1280.jpg" alt="Banner image" />
+                  <div class="banner-text">
+                    <h4 class="banner-title">Live by the sun</h4>
+                    <p class="banner-paragraph">Make the great days happen</p>
+                    <a href="#" class="btn banner-btn">Shop Collection</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div> --}}
+
+    <div class="container">
+      {{#with content.suggestions}}
+      <h4 class="home-suggestions-title">{{text}}</h4>
+      <hr class="home-suggestions-hr">
+      <p class="home-suggestions-description">{{description}}</p>
+      <div class="row">
+        {{#each list}}
+          <div class="col-xs-12 col-sm-6 col-sm-3">
+            {{> catalog/product-thumbnail context=..}}
+          </div>
+        {{/each}}
+      </div>
+      {{/with}}
+
+      <div class="home-viewall">
+        <a href="" class="home-viewall-btn">View All New Products</a>
+        <hr class="home-viewall-hr">
       </div>
     </div>
   </div>

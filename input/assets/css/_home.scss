@@ -1,38 +1,264 @@
 .home-page {
-  height: 1000px; // for dev purposes - temporary
+  background: $dirty-white;
 }
 
-.slick-homepage {
-  .slick-dots {
-    bottom: 0px;
-    text-align: left;
-    padding-left: 50px;
-    li button:before {
-      color: $white;
-      font-size: 10px;
-      color: $yellow;
+// Carousel option
+// .slick-homepage {
+//   .slick-dots {
+//     bottom: 0px;
+//     text-align: left;
+//     padding-left: 50px;
+//     li button:before {
+//       color: $white;
+//       font-size: 10px;
+//       color: $yellow;
+//     }
+//   }
+// }
+//
+// .home-carousel-item {
+//   .home-carousel-caption {
+//     margin-left: 6%;
+//     bottom: 25px;
+//     position: absolute;
+//     text-align: center;
+//     width: 550px;
+//     color: $white;
+//     .home-carousel-title {
+//       font-size: 40px;
+//       text-transform: uppercase;
+//       margin: 0;
+//       font-weight: 200;
+//       letter-spacing: 1px;
+//     }
+//     .home-carousel-hr {
+//       width: 50px;
+//       margin-top: 10px;
+//       margin-bottom: 10px;
+//     }
+//     .home-carousel-btn {
+//       background: $yellow;
+//       text-transform: uppercase;
+//       padding: 10px 20px;
+//       margin-top: 15px;
+//       letter-spacing: 1px;
+//       font-size: 18px;
+//       color: $black;
+//       &:hover {
+//         background: lighten($yellow, 5%);
+//       }
+//     }
+//   }
+// }
+
+// No margin/padding helper class
+.nopadding {
+  padding: 0;
+  margin: 0;
+}
+
+// Banner option one
+.home-banner-option-one {
+  .banner-left {
+    border-right: 1px solid $white;
+  }
+  .banner-right {
+    border-left: 1px solid $white;
+  }
+  .banner-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: $white;
+    background: rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    .banner-title {
+      font-size: 22px;
+      font-weight: 200;
+    }
+    .banner-btn {
+      margin-bottom: 10px;
+      background: $yellow;
+      padding: 10px 20px;
+      color: $black;
+      &:hover {
+        background: lighten($yellow, 5%);
+      }
     }
   }
 }
 
-.home-carousel-item {
-  .home-carousel-caption {
-    top: 50px;
+// Banner option two
+.home-banner-option-two {
+  .banner-text {
     position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 5%;
     text-align: center;
-    width: 400px;
-    color: $white;
-    .home-carousel-title {
-      font-size: 40px;
-    }
-    .home-carousel-btn {
-      position: relative;
-      background: $yellow;
+    max-width: 40%;
+    background: rgba(255,255,255,0.6);
+    .banner-title {
+      font-size: 22px;
+      font-weight: 200;
+      letter-spacing: 1px;
       text-transform: uppercase;
-      padding: 10px 20px;
-      letter-spacing: 2px;
-      font-size: 18px;
-      color: $black;
     }
+    .banner-subtitle {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+    }
+    .banner-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      border: 2px solid $black;
+      letter-spacing: 1px;
+      &:hover {
+        background: $white;
+      }
+    }
+  }
+}
+
+// Banner option three
+.home-banner-option-three {
+  .banner-left {
+    border-right: 1px solid $white;
+  }
+  .banner-right {
+    border-left: 1px solid $white;
+  }
+  .banner-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: $white;
+    background: rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    .banner-title {
+      font-size: 22px;
+      font-weight: 200;
+    }
+    .banner-btn {
+      margin-bottom: 10px;
+      background: $yellow;
+      padding: 10px 20px;
+      color: $black;
+      &:hover {
+        background: lighten($yellow, 5%);
+      }
+    }
+  }
+  .banner-xs-one {
+    background: $dark-blue;
+    border-right: 1px solid $white;
+  }
+  .banner-xs-two {
+    border-left: 1px solid $white;
+    border-bottom: 1px solid $white;
+    .banner-text {
+      position: absolute;
+      top: 0;
+      text-align: center;
+      color: $white;
+      background: rgba(0,0,0,0.5);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      .banner-title {
+        font-size: 22px;
+        font-weight: 200;
+      }
+      .banner-btn {
+        margin-bottom: 10px;
+        background: $yellow;
+        padding: 10px 20px;
+        color: $black;
+        &:hover {
+          background: lighten($yellow, 5%);
+        }
+      }
+    }
+  }
+  .banner-sm {
+    border-top: 1px solid $white;
+    .banner-text {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      color: $white;
+      background: rgba(0,0,0,0.5);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      .banner-title {
+        font-size: 22px;
+        font-weight: 200;
+      }
+      .banner-btn {
+        margin-bottom: 10px;
+        background: $yellow;
+        padding: 10px 20px;
+        color: $black;
+        &:hover {
+          background: lighten($yellow, 5%);
+        }
+      }
+    }
+  }
+}
+
+// Home suggestions
+.home-suggestions-title {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.home-suggestions-hr {
+  width: 50px;
+  text-align: center;
+  border-top: 1px solid $dark-grey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.home-suggestions-description {
+  text-align: center;
+  color: $dark-grey;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.home-viewall {
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 25px;
+  .home-viewall-btn {
+    background: $yellow;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: $black;
+    &:hover {
+      background: lighten($yellow, 5%);
+    }
+    border-left: 25px solid $dirty-white;
+    border-right: 25px solid $dirty-white;
+  }
+  .home-viewall-hr {
+    margin: -12px 0 8px 0;
+    border-top: 1px solid $light-grey;
   }
 }
