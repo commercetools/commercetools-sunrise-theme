@@ -32,11 +32,11 @@ $(document).ready(function(){
 /*
 /*****************************************************************************/
 
-$(document).ready(function() {
-  $(".slick-homepage").slick({
-    dots: true
-  });
-});
+// $(document).ready(function() {
+//   $(".slick-homepage").slick({
+//     dots: true
+//   });
+// });
 
 /*****************************************************************************/
 /*
@@ -136,13 +136,30 @@ $("ul#bzoom").each( function(index, ul) {
     small_thumbs: 4,
     autoplay: false
   });
-}
-);
+});
 
 // Expand product information on click
 $( ".view-details" ).click(function() {
   event.preventDefault();
   $( this ).closest("div").find(".additional-description").slideToggle( "fast" )
+});
+
+// Toggle hidden/sliced description
+$(function() {
+    var hiddenDescription = $('p.pdp-product-description');
+
+    hiddenDescription.each(function(){
+        var t = $(this).text();
+        if(t.length < 100) return;
+        $(this).html(
+            t.slice(0,100)+'<span>... </span>'+
+            '<span class="hidden">'+ t.slice(100,t.length)+'</span>'
+        );
+    });
+
+    $('.view-details').click(function() {
+      $('.pdp-product-description span').toggleClass('hidden');
+    });
 });
 
 // Slick gallery init
