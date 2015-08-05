@@ -57,13 +57,21 @@
   margin: 0;
 }
 
-Banner option one
+// Banner option one
 .home-banner-option-one {
   .banner-left {
     border-right: 1px solid $white;
+    img {
+      height: 500px;
+      width: 100%;
+    }
   }
   .banner-right {
     border-left: 1px solid $white;
+    img {
+      height: 500px;
+      width: 100%;
+    }
   }
   .banner-text {
     position: absolute;
@@ -126,7 +134,7 @@ Banner option one
 }
 
 // Banner option three
-// .home-banner-option-three {
+.home-banner-option-three {
   .banner-left {
     border-right: 1px solid $white;
   }
