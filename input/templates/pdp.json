@@ -916,7 +916,7 @@
 			"available" : "Available",
 			"productDetails" : {
 				"text" : "Product Details",
-				"listItems" : [
+				"list" : [
 					{
 						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
 					},

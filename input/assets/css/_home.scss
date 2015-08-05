@@ -61,17 +61,9 @@
 .home-banner-option-one {
   .banner-left {
     border-right: 1px solid $white;
-    img {
-      height: 500px;
-      width: 100%;
-    }
   }
   .banner-right {
     border-left: 1px solid $white;
-    img {
-      height: 500px;
-      width: 100%;
-    }
   }
   .banner-text {
     position: absolute;
@@ -100,10 +92,6 @@
 
 // Banner option two
 .home-banner-option-two {
-  .banner-option-two-img {
-    height: 500px;
-    width: 100%;
-  }
   .banner-text {
     position: absolute;
     top: 0;
@@ -169,13 +157,15 @@
     }
   }
   .banner-xs-one {
-
+    background: $dark-blue;
+    border-right: 1px solid $white;
   }
   .banner-xs-two {
+    border-left: 1px solid $white;
+    border-bottom: 1px solid $white;
     .banner-text {
       position: absolute;
       top: 0;
-      width: 100%;
       text-align: center;
       color: $white;
       background: rgba(0,0,0,0.5);
@@ -197,6 +187,7 @@
     }
   }
   .banner-sm {
+    border-top: 1px solid $white;
     .banner-text {
       position: absolute;
       bottom: 0;
@@ -225,6 +216,7 @@
 
 // Home suggestions
 .home-suggestions-title {
+  margin-top: 40px;
   text-align: center;
   font-size: 30px;
   text-transform: uppercase;

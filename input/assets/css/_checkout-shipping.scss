@@ -33,7 +33,7 @@
 }
 
 .step-number {
-	padding: 0.5em 1em;
+	padding: 0.6em 1em;
 	color: $dark-grey;
 	background: $white;
 	border-radius: 50%;
@@ -289,7 +289,7 @@
 }
 
 .checkout-promo-code {
-	margin: 0 1em 1em;
+	margin: 0 0 1em;
 }
 
 .promo-code-applied {
@@ -388,7 +388,6 @@
 	.checkout-dropdown {
 		max-width: 50%;
 	}
-	.secure-payment,
 	.checkout-steps {
 		text-align: center;
 	}
