@@ -91,7 +91,6 @@
         }
       ]
     },
-    "defaultShipping" : "Default Country Shipping",
     "region" : "Region",
     "telNumber" : "Telephone Number",
     "telNumberInfo" : "Please provide your telephone number so the shipper can contact you during delivery",
@@ -219,7 +218,7 @@
     "tax" : "20,00 €",
     "totalTitle" : "Order Total",
     "total" : "123,00 €",
-    "editMyOrder" : "Edit my quantity order"
+    "editMyOrder" : "Edit my shopping cart"
   },
   "meta" : {
     "assetsPath": "assets/"

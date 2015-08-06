@@ -22,12 +22,10 @@
               <span class="text-uppercase step-title step-title-active">{{content.shippingOne}}</span>
             </div>
             <div>
-              <span class="step-divider"></span>
               <a href="#"><span class="step-number">2</span></a>
               <span class="text-uppercase step-title">{{content.paymentTwo}}</span>
             </div>
             <div>
-              <span class="step-divider-two"></span>
               <a href="#"><span class="step-number">3</span></a>
               <span class="text-uppercase step-title">{{content.confirmationThree}}</span>
             </div>
@@ -100,7 +98,6 @@
                           <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                         {{/each}}
                       </select>
-                      <a href="#"><span class="text-uppercase country-shipping">{{content.defaultShipping}}</span></a>
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -114,7 +111,7 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="primary-telephone">
-                      <span class="text-uppercase">{{content.telNumber}}*</span><br>
+                      <span class="text-uppercase">{{content.telNumber}}</span><br>
                       <input class="checkout-input-field" type="text">
                       <span class="tel-email-text">{{content.telNumberInfo}}</span>
                     </div>

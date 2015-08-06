@@ -50,26 +50,6 @@
 	padding: 0 2em 0 0.2em;
 }
 
-.step-divider {
-	content: '';
-	height: 2px;
-  width: 25px;
-  top: 30px;
-  left: 218px;
-	background: $grey;
-	position: absolute;
-}
-
-.step-divider-two {
-	content: '';
-	height: 2px;
-  width: 25px;
-  top: 30px;
-  left: 363px;
-	background: $grey;
-	position: absolute;
-}
-
 // Shipping information
 
 .checkout {
@@ -129,12 +109,6 @@
 	border-radius: 1px;
 	padding: 0.5em 0;
 	margin-top: 0.2em;
-}
-
-.country-shipping {
-	color: $dark-grey;
-	font-size: 0.9em;
-	text-decoration: underline;
 }
 
 .tel-email-text {
@@ -344,14 +318,6 @@
 	.checkout-steps {
 		font-size: 0.9em;
 	}
-	.step-divider {
-		top: 27px;
-		left: 152px;
-	}
-	.step-divider-two {
-		top: 27px;
-		left: 282px;
-	}
 	.checkout-price-digits {
 		margin-right: 0;
 	}
@@ -361,12 +327,6 @@
 	.secure-payment,
 	.checkout-steps {
 		text-align: center;
-	}
-	.step-divider {
-		left: 270px;
-	}
-	.step-divider-two {
-		left: 400px;
 	}
 	.checkout-total-items {
 		letter-spacing: 0;
@@ -390,10 +350,6 @@
 	}
 	.checkout-steps {
 		text-align: center;
-	}
-	.step-divider,
-	.step-divider-two {
-		display: none;
 	}
 	.country-shipping {
 		margin-left: 1em;
