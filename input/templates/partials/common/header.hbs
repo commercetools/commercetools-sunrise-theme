@@ -114,20 +114,24 @@
                 </ul>
               </li>
               <li><a href="{{header.navMenu.sale.url}}" class="sale icon-ribbon">{{header.navMenu.sale.text}}</a></li>
-              <li class="visible-xs list-item-location-xs">
-                <div class="location-dropdown">
-                  <span class="location-dropdown-label">Language</span>
-                  <select class="select location-select" name="language">
-                    {{#each header.location.language}}
-                    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-                    {{/each}}
-                  </select>
-                  <span class="location-dropdown-label">Country</span>
-                  <select class="select location-select" name="country">
-                    {{#each header.location.country}}
-                    <option value="{{value}}">{{text}}</option>
-                    {{/each}}
-                  </select>
+              <li class="visible-xs location-xs">
+                <div class="location-dropdown-xs">
+                  <ul>
+                    <li>
+                      <select class="select location-select" name="language">
+                        {{#each header.location.language}}
+                        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+                        {{/each}}
+                      </select>
+                    </li>
+                    <li>
+                      <select class="select location-select" name="country">
+                        {{#each header.location.country}}
+                        <option value="{{value}}">{{text}}</option>
+                        {{/each}}
+                      </select>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
