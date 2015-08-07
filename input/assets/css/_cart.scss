@@ -147,6 +147,12 @@
 .cart-item-price {
 	font-size: 1.2em;
 	font-weight: 900;
+	.discounted-price {
+		text-decoration: line-through;
+		color: $grey;
+		font-size: 1em;
+		font-weight: 200;
+	}
 }
 
 // Promotion section
