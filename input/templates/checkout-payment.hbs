@@ -53,12 +53,12 @@
                     <div class="col-lg-3 col-md-4 col-sm-4">
                       <div class="payment-type">
                         <span><img src="{{image}}" class="payment-type-icon" alt="credit card"></span><br>
-                        <span><input class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
+                        <span><input id="{{id}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
                       </div>
                     </div>
                   {{/each}}
                 </div>
-                <div class="row">
+                <div class="row" id="credit-card-input-field">
                   <div class="col-md-6 col-sm-8">
                     <div class="col-sm-12">
                       <div class="name-on-card">
