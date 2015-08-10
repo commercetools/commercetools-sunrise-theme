@@ -50,26 +50,6 @@
 	padding: 0 2em 0 0.2em;
 }
 
-.step-divider {
-	content: '';
-	height: 2px;
-  width: 25px;
-  top: 30px;
-  left: 218px;
-	background: $grey;
-	position: absolute;
-}
-
-.step-divider-two {
-	content: '';
-	height: 2px;
-  width: 25px;
-  top: 30px;
-  left: 363px;
-	background: $grey;
-	position: absolute;
-}
-
 // Shipping information
 
 .checkout {
@@ -129,12 +109,6 @@
 	border-radius: 1px;
 	padding: 0.5em 0;
 	margin-top: 0.2em;
-}
-
-.country-shipping {
-	color: $dark-grey;
-	font-size: 0.9em;
-	text-decoration: underline;
 }
 
 .tel-email-text {
@@ -288,6 +262,11 @@
 	color: $dark-grey;
 }
 
+.checkout-discounted-price {
+	color: $grey;
+	text-decoration: line-through;
+}
+
 .checkout-promo-code {
 	margin: 0 0 1em;
 }
@@ -344,14 +323,6 @@
 	.checkout-steps {
 		font-size: 0.9em;
 	}
-	.step-divider {
-		top: 27px;
-		left: 152px;
-	}
-	.step-divider-two {
-		top: 27px;
-		left: 282px;
-	}
 	.checkout-price-digits {
 		margin-right: 0;
 	}
@@ -361,12 +332,6 @@
 	.secure-payment,
 	.checkout-steps {
 		text-align: center;
-	}
-	.step-divider {
-		left: 270px;
-	}
-	.step-divider-two {
-		left: 400px;
 	}
 	.checkout-total-items {
 		letter-spacing: 0;
@@ -391,10 +356,6 @@
 	.checkout-steps {
 		text-align: center;
 	}
-	.step-divider,
-	.step-divider-two {
-		display: none;
-	}
 	.country-shipping {
 		margin-left: 1em;
 	}
@@ -405,13 +366,15 @@
 }
 
 @media screen and (max-width: 470px) {
-	.checkout-steps {
-		div {
-			display: block;
-			text-align: left;
-			margin: 2em 0;
-		}
-		padding: 0;
+	.step-title {
+		padding-right: 0;
+		margin-right: 2em;
+	}
+	.step-title-active {
+		border-bottom: 1px solid $dark-blue;
+	}
+	.step-number {
+		display: none;
 	}
 	.secure-payment-title {
 		font-size: 1.2em;
@@ -435,5 +398,15 @@
 	.order-tax-total-text,
 	.order-tax-total-digits {
 		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.secure-payment-icon {
+		display: none;
+	}
+	.step-title {
+		padding-right: 0;
+		margin-right: 1em;
 	}
 }

@@ -33,6 +33,7 @@
             <div class="col-xs-4">
               <div class="text-right order-item-value">
                 <span class="text-uppercase pricing-titles">{{priceTitle}}</span><br>
+                {{#if priceOld}}<span class="checkout-discounted-price">{{priceOld}}</span><br>{{/if}}
                 <span>{{price}}</span>
               </div>
             </div>

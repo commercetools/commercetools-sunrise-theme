@@ -253,3 +253,28 @@
 .ui-accordion .ui-accordion-header {
   font-size: 14px;
 }
+
+// Location options on mobile
+.location-xs {
+  .location-dropdown-xs {
+    padding: 10px 15px;
+    ul {
+      text-align: left;
+      padding: 0;
+      li {
+        display: inline-block;
+        list-style: none;
+        &:first-child {
+          padding-right: 10px;
+        }
+        .location-select {
+          color: $white;
+          background: $dark-blue url("../../assets/img/arrow-67-white.png") no-repeat 90% 50%;
+          background-size: 10px;
+          padding-right: 30px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

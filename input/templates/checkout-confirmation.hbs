@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,18 +19,18 @@
         <div class="col-md-6">
           <div class="checkout-steps text-right">
             <div>
-              <a href="#"><span class="step-number">1</span></a>
-              <span class="text-uppercase step-title">{{content.shippingOne}}</span>
+              <a href="#"><span class="step-number">1</span>
+              <span class="text-uppercase step-title">{{content.shippingOne}}</span></a>
             </div>
             <div>
               <span class="step-divider"></span>
-              <a href="#"><span class="step-number">2</span></a>
-              <span class="text-uppercase step-title">{{content.paymentTwo}}</span>
+              <a href="#"><span class="step-number">2</span>
+              <span class="text-uppercase step-title">{{content.paymentTwo}}</span></a>
             </div>
             <div>
               <span class="step-divider-two"></span>
-              <a href="#"><span class="step-number step-number-active">3</span></a>
-              <span class="text-uppercase step-title">{{content.confirmationThree}}</span>
+              <a href="#"><span class="step-number step-number-active">3</span>
+              <span class="text-uppercase step-title step-title-active">{{content.confirmationThree}}</span></a>
             </div>
           </div>
         </div>
@@ -128,21 +129,14 @@
                   <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
                   <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
                 </div>
-                <div class="col-sm-2 col-xs-6 text-center cart-edit-delete">
-                  <div class="text-uppercase edit-delete-section">
-                    <a href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}</span></a>
-                  </div>
-                  <div class="text-uppercase edit-delete-section">
-                    <a href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}</span></a>
-                  </div>
-                </div>
-                <div class="col-sm-2 col-xs-6 text-center quantity-counter">
+                <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
                   <span class="visible-xs">Quantity:</span>
                   <span class="quantity-number">{{quantity}}</span>
                 </div>
                 <div class="col-sm-2 col-xs-7">
                   <div class="text-right cart-item-price">
                     <span class="visible-xs xs-price-title">{{priceTitle}}</span>
+                    {{#if priceOld}}<span class="discounted-price">{{priceOld}}</span>{{/if}}
                     <span>{{price}}</span>
                   </div>
                 </div>
