@@ -30,8 +30,6 @@
     "confirmationThree" : "Confirmation",
     "paymentInfoTitle" : "Payment Details",
     "required" : "Required",
-
-
     "paymentOptionTitle" : "Please provide one of the following payment options:",
     "paymentOption" : {
       "list" : [
@@ -39,19 +37,22 @@
           "text" : "Credit Card",
           "image" : "assets/img/mastercard4.png",
           "value" : "",
-          "selected" : true
+          "selected" : true,
+					"id" : "payment-type-credit-card"
         },
         {
           "text" : "PayPal",
           "image" : "assets/img/mastercard4.png",
           "value" : "",
-          "selected" : false
+          "selected" : false,
+					"id" : "payment-type-paypal"
         },
         {
           "text" : "Pre-payment",
           "image" : "assets/img/mastercard4.png",
           "value" : "",
-          "selected" : false
+          "selected" : false,
+					"id" : "payment-type-pre-payment"
         }
       ]
     },
