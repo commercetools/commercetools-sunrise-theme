@@ -746,6 +746,51 @@
 				}
 			]
 		},
+		"bannerOption1" : {
+			"bannerLeft" : {
+				"text" : "Live by the sun",
+				"description" : "Make the great day happen",
+				"bannerBtn" : "Shop Collection",
+				"url" : ""
+			},
+			"bannerRight" : {
+				"text" : "Live by the sun",
+				"description" : "Make the great day happen",
+				"bannerBtn" : "Shop Collection",
+				"url" : ""
+			}
+		},
+		"bannerOption2" : {
+			"text" : "here comes the sum",
+			"subText" : "What inspires you?",
+			"descriptionOne" : "Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas",
+			"descriptionTwo" : "Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas",
+			"bannerBtn" : "Shop Collection",
+			"url" : ""
+		},
+		"bannerOption3": {
+			"bannerLeft" : {
+				"text" : "Live by the sun",
+				"description" : "Make the great day happen",
+				"bannerBtn" : "Shop Collection",
+				"url" : ""
+			},
+			"bannerRightOne" : {
+				"text" : "Boom boom bananas, boom boom bananas"
+			},
+			"bannerRightTwo" : {
+				"text" : "Live by the sun",
+				"description" : "Make the great day happen",
+				"bannerBtn" : "Shop Collection",
+				"url" : ""
+			},
+			"bannerRightThree" : {
+				"text" : "Live by the sun",
+				"description" : "Make the great day happen",
+				"bannerBtn" : "Shop Collection",
+				"url" : ""
+			}
+		},
 		"suggestions" : {
 			"text" : "Get Beach Ready",
 			"description" : "Why so serious?!",

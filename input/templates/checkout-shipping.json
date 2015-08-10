@@ -91,7 +91,6 @@
         }
       ]
     },
-    "defaultShipping" : "Default Country Shipping",
     "region" : "Region",
     "telNumber" : "Telephone Number",
     "telNumberInfo" : "Please provide your telephone number so the shipper can contact you during delivery",
@@ -169,6 +168,7 @@
           "quantity" : "Quantity",
           "quantityNumber" : "1",
           "priceTitle" : "Price",
+					"priceOld" : "100,00 €",
           "price" : "49,00 €",
           "totalTitle" : "Total",
           "total" : "49,00 €"
@@ -201,6 +201,7 @@
           "quantity" : "Quantity",
           "quantityNumber" : "1",
           "priceTitle" : "Price",
+					"priceOld" : "100,00 €",
           "price" : "49,00 €",
           "totalTitle" : "Total",
           "total" : "49,00 €"
@@ -219,7 +220,7 @@
     "tax" : "20,00 €",
     "totalTitle" : "Order Total",
     "total" : "123,00 €",
-    "editMyOrder" : "Edit my quantity order"
+    "editMyOrder" : "Edit my shopping cart"
   },
   "meta" : {
     "assetsPath": "assets/"

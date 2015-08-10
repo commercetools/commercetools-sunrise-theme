@@ -166,6 +166,7 @@
           "size" : "M",
           "quantity" : "Quantity",
           "quantityNumber" : "1",
+					"priceOld" : "100,00 €",
           "priceTitle" : "Price",
           "price" : "49,00 €",
           "totalTitle" : "Total",
@@ -199,6 +200,7 @@
           "quantity" : "Quantity",
           "quantityNumber" : "1",
           "priceTitle" : "Price",
+					"priceOld" : "100,00 €",
           "price" : "49,00 €",
           "totalTitle" : "Total",
           "total" : "49,00 €"

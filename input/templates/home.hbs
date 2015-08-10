@@ -5,6 +5,7 @@
   </head>
 
   <body>
+  <div class="darkbg hidden"></div>
   {{> common/header}}
 
   <div class="home-page">
@@ -26,19 +27,19 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-6 nopadding banner-left">
-            <img class="img-responsive" src="assets/img/leather-691609.jpg" alt="Banner image" />
+            <img class="img-responsive" src="{{meta.assetsPath}}img/leather-691609.jpg" alt="Banner image" />
             <div class="banner-text">
-              <h4 class="banner-title">Live by the sun</h4>
-              <p class="banner-paragraph">Make the great days happen</p>
-              <a href="#" class="btn banner-btn">Shop Collection</a>
+              <h4 class="banner-title">{{content.bannerOption1.bannerLeft.text}}</h4>
+              <p class="banner-paragraph">{{content.bannerOption1.bannerLeft.description}}</p>
+              <a href="{{content.bannerOption1.bannerLeft.url}}" class="btn banner-btn">{{content.bannerOption1.bannerLeft.bannerBtn}}</a>
             </div>
           </div>
           <div class="col-sm-6 nopadding banner-right">
-            <img class="img-responsive" src="assets/img/woman-692767_1920.jpg" alt="Banner image" />
+            <img class="img-responsive" src="{{meta.assetsPath}}img/woman-692767_1920.jpg" alt="Banner image" />
             <div class="banner-text">
-              <h4 class="banner-title">Hello sunday</h4>
-              <p class="banner-paragraph">Get the freshest styles</p>
-              <a href="#" class="btn banner-btn">Shop Collection</a>
+              <h4 class="banner-title">{{content.bannerOption1.bannerRight.text}}</h4>
+              <p class="banner-paragraph">{{content.bannerOption1.bannerRight.description}}</p>
+              <a href="{{content.bannerOption1.bannerRight.url}}" class="btn banner-btn">{{content.bannerOption1.bannerRight.bannerBtn}}</a>
             </div>
           </div>
         </div>
@@ -49,13 +50,13 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-12 nopadding">
-            <img class="img-responsive" src="assets/img/photo-1431727460781-fa165e66bffa.jpeg" alt="Banner image" />
+            <img class="img-responsive" src="{{meta.assetsPath}}img/photo-1431727460781-fa165e66bffa.jpeg" alt="Banner image" />
             <div class="banner-text">
-              <h4 class="banner-title">Here comes the sun</h4>
-              <p class="banner-subtitle">What inspires you?</p>
-              <p>Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas </p>
-              <p>Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas </p>
-              <a class="btn banner-btn" href="#">Shop Collection</a>
+              <h4 class="banner-title">{{content.bannerOption2.text}}</h4>
+              <p class="banner-subtitle">{{content.bannerOption2.subText}}</p>
+              <p>{{content.bannerOption2.descriptionOne}}</p>
+              <p>{{content.bannerOption2.descriptionTwo}}</p>
+              <a class="btn banner-btn" href="{{content.bannerOption2.url}}">{{content.bannerOption2.bannerBtn}}</a>
             </div>
           </div>
         </div>
@@ -66,27 +67,27 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-6 nopadding banner-left">
-            <img class="img-responsive" src="assets/img/shoes-690608_1280.jpg" alt="Banner image" />
+            <img class="img-responsive" src="{{meta.assetsPath}}img/shoes-690608_1280.jpg" alt="Banner image" />
             <div class="banner-text">
-              <h4 class="banner-title">Live by the sun</h4>
-              <p class="banner-paragraph">Make the great days happen</p>
-              <a href="#" class="btn banner-btn">Shop Collection</a>
+              <h4 class="banner-title">{{content.bannerOption3.bannerLeft.text}}</h4>
+              <p class="banner-paragraph">{{content.bannerOption3.bannerLeft.description}}</p>
+              <a href="{{content.bannerOption3.bannerLeft.url}}" class="btn banner-btn">{{content.bannerOption3.bannerLeft.bannerBtn}}</a>
             </div>
           </div>
           <div class="col-sm-6 noppading banner-right">
             <div class="row">
               <div class="col-sm-6 nopadding">
                 <div class="banner-xs-one">
-                  <p>Boom Boom Bananas, Boom Boom Batman</p>
+                  <p>{{content.bannerOption3.bannerRightOne.text}}</p>
                 </div>
               </div>
               <div class="col-sm-6 nopadding">
                 <div class="banner-xs-two">
-                  <img class="img-responsive" src="assets/img/sunglasses-411632_1280.jpg" alt="Banner image" />
+                  <img class="img-responsive" src="{{meta.assetsPath}}img/sunglasses-411632_1280.jpg" alt="Banner image" />
                   <div class="banner-text">
-                    <h4 class="banner-title">Live by the sun</h4>
-                    <p class="banner-paragraph">Make the great days happen</p>
-                    <a href="#" class="btn banner-btn">Shop Collection</a>
+                    <h4 class="banner-title">{{content.bannerOption3.bannerRightTwo.text}}</h4>
+                    <p class="banner-paragraph">{{content.bannerOption3.bannerRightTwo.description}}</p>
+                    <a href="{{content.bannerOption3.bannerRightTwo.url}}" class="btn banner-btn">{{content.bannerOption3.bannerRightTwo.bannerBtn}}</a>
                   </div>
                 </div>
               </div>
@@ -94,11 +95,11 @@
             <div class="row">
               <div class="col-sm-12 nopadding">
                 <div class="banner-sm">
-                  <img class="img-responsive" src="assets/img/woman-422706_1280.jpg" alt="Banner image" />
+                  <img class="img-responsive" src="{{meta.assetsPath}}img/woman-422706_1280.jpg" alt="Banner image" />
                   <div class="banner-text">
-                    <h4 class="banner-title">Live by the sun</h4>
-                    <p class="banner-paragraph">Make the great days happen</p>
-                    <a href="#" class="btn banner-btn">Shop Collection</a>
+                    <h4 class="banner-title">{{content.bannerOption3.bannerRightThree.text}}</h4>
+                    <p class="banner-paragraph">{{content.bannerOption3.bannerRightThree.description}}</p>
+                    <a href="{{content.bannerOption3.bannerRightThree.url}}" class="btn banner-btn">{{content.bannerOption3.bannerRightThree.bannerBtn}}</a>
                   </div>
                 </div>
               </div>
@@ -115,7 +116,7 @@
       <p class="home-suggestions-description">{{description}}</p>
       <div class="row">
         {{#each list}}
-          <div class="col-xs-12 col-sm-6 col-sm-3">
+          <div class="col-xs-12 col-sm-6 col-md-3 ">
             {{> catalog/product-thumbnail context=..}}
           </div>
         {{/each}}

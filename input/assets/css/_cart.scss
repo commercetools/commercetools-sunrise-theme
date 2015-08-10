@@ -66,7 +66,7 @@
 }
 
 .cart-item-name {
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 .cart-color-size {
@@ -147,6 +147,12 @@
 .cart-item-price {
 	font-size: 1.2em;
 	font-weight: 900;
+	.discounted-price {
+		text-decoration: line-through;
+		color: $grey;
+		font-size: 1em;
+		font-weight: 200;
+	}
 }
 
 // Promotion section
@@ -191,7 +197,7 @@
 
 .total-price-calc {
 	margin: 1em;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	letter-spacing: 0.1em;
 }
 

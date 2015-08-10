@@ -87,7 +87,22 @@
 // Price slider
 
 .slider-col {
-  padding: 0 2.2em 2em;
+  padding: 1.5em 2.2em 0;
+}
+
+.s1 {
+  width: 50px;
+  margin: 15px 0 10px -16px;
+  background: none;
+  border: none;
+}
+
+.s2 {
+  width: 50px;
+  margin: 15px -26px 10px 0;
+  float: right;
+  background: none;
+  border: none;
 }
 
 .ui-slider-horizontal {
