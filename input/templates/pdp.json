@@ -726,7 +726,106 @@
 		}
 	},
 	"content" : {
-		"text" : "Products",
+	    "static": {
+			"contentText" : "Products",
+			"ratingText" : "Write first review",
+			"viewDetailsText" : "View Details",
+			"colorText" : "Color",
+			"sizeText" : "Size",
+			"sizeGuideText" : "Size Guide",
+			"addToBagText" : "Add to bag",
+			"addToWishlistText" : "Add item to wishlist",
+			"availableText" : "Available",
+			"productDetailsText" : "Product Details",
+			"deliveryAndReturnsText" : "Delivery & Returns",
+			"deliveryText" : "Delivery",
+			"returnsText" : "Returns",
+			"suggestions.text" : "You may also like",
+			"suggestions.sale" : "Sale",
+			"suggestions.new" : "New",
+			"suggestions.quickView" : "Quick view",
+			"suggestions.wishlist" : "Add item to wishlist",
+			"suggestions.moreColors" : "More colours",
+			"bagItems" : [
+				{
+					"text" : "1",
+					"value" : "",
+					"selected" : true
+				},
+				{
+					"text" : "2",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "3",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "4",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "5",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "6",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "7",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "8",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "9",
+					"value" : "",
+					"selected" : false
+				}
+			],
+			"rating" : [
+				{
+					"text" : "5 stars",
+					"value" : 5,
+					"description" : "Rocks!",
+					"url" : ""
+				},
+				{
+					"text" : "4 stars",
+					"value" : 4,
+					"description" : "Pretty good",
+					"url" : ""
+				},
+				{
+					"text" : "3 stars",
+					"value" : 3,
+					"description" : "Meh",
+					"url" : ""
+				},
+				{
+					"text" : "2 stars",
+					"value" : 2,
+					"description" : "Kinda bad",
+					"url" : ""
+				},
+				{
+					"text" : "1 star",
+					"value" : 1,
+					"description" : "Sucks big time",
+					"url" : ""
+				}
+			]
+		},
 		"breadcrumb" : [
 			{
 				"url" : "home/",
@@ -771,48 +870,10 @@
 		"product" : {
 			"text" : "Enditatem Product Name",
 			"sku" : "Sunrise #SUN123456",
-			"rating" : {
-				"text" : "Write first review",
-				"url" : "",
-				"list" : [
-					{
-						"text" : "5 stars",
-						"value" : 5,
-						"description" : "Rocks!",
-						"url" : ""
-					},
-					{
-						"text" : "4 stars",
-						"value" : 4,
-						"description" : "Pretty good",
-						"url" : ""
-					},
-					{
-						"text" : "3 stars",
-						"value" : 3,
-						"description" : "Meh",
-						"url" : ""
-					},
-					{
-						"text" : "2 stars",
-						"value" : 2,
-						"description" : "Kinda bad",
-						"url" : ""
-					},
-					{
-						"text" : "1 star",
-						"value" : 1,
-						"description" : "Sucks big time",
-						"url" : ""
-					}
-				]
-			},
 			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-			"viewDetails" : "View Details",
 			"price" : "€ 123,-",
 			"priceOld" : "€ 173,-",
 			"color" : {
-				"text" : "Color",
 				"list" : [
 					{
 						"text" : "Choose",
@@ -837,12 +898,11 @@
 				]
 			},
 			"size" : {
-				"text" : "Size",
 				"list" : [
 					{
 						"text" : "Choose",
 						"value" : "",
-						"selected" : false
+						"selected" : true
 					},
 					{
 						"text" : "S",
@@ -861,817 +921,77 @@
 					}
 				]
 			},
-			"sizeGuide" : "Size Guide",
-			"bagItems" : {
-				"list" : [
-					{
-						"text" : "1",
-						"value" : "",
-						"selected" : true
-					},
-					{
-						"text" : "2",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "3",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "4",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "5",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "6",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "7",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "8",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "9",
-						"value" : "",
-						"selected" : false
-					}
-				]
-			},
-			"addToBag" : "Add to bag",
-			"addToWishlist" : "Add item to wishlist",
-			"available" : "Available",
-			"productDetails" : {
-				"text" : "Product Details",
-				"list" : [
-					{
-						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-					},
-					{
-						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-					},
-					{
-						"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-					}
-				]
-			},
-			"deliveryAndReturns" : "Delivery & Returns",
-			"delivery" : {
-				"text" : "Delivery",
-				"list" : [
-					{
-						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-					},
-					{
-						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-					},
-					{
-						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-					}
-				]
-			},
-			"returns" : {
-				"text" : "Returns",
-				"list" : [
-					{
-						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-					},
-					{
-						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-					},
-					{
-						"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-					}
-				]
-			}
+			"productDetails" : [
+				{
+					"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				},
+				{
+					"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				},
+				{
+					"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				}
+			]
 		},
-		"suggestions" : {
-			"text" : "You may also like",
-			"sale" : "Sale",
-			"new" : "New",
-			"quickView" : "Quick view",
-			"wishlist" : "Add item to wishlist",
-			"moreColors" : "More colours",
+		"delivery" : {
 			"list" : [
 				{
-					"id" : "1",
+				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				},
+				{
+				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				},
+				{
+				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				}
+			]
+		},
+		"returns" : {
+			"list" : [
+				{
+				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				},
+				{
+				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				},
+				{
+				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				}
+			]
+		},
+		"suggestions" : {
+			"list" : [
+				{
 					"text" : "Enditatem Product Name Optional very long line two",
 					"description" : "Subline",
-					"image" : "assets/img/blue-jacket.jpg",
+					"imageUrl" : "assets/img/blue-jacket.jpg",
 					"price" : "€ 49,-",
-					"priceOld" : "€ 79,99",
-					"url" : "",
-					"wishlistUrl" : "",
-					"new" : true,
-					"moreColors" : true,
-					"quickviewGallery" : [
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						}
-					],
-					"product" : {
-						"text" : "Enditatem Product Name",
-						"sku" : "Sunrise #SUN123456",
-						"rating" : {
-							"text" : "Write first review",
-							"url" : "",
-							"list" : [
-								{
-									"text" : "5 stars",
-									"value" : 5,
-									"description" : "Rocks!",
-									"url" : ""
-								},
-								{
-									"text" : "4 stars",
-									"value" : 4,
-									"description" : "Pretty good",
-									"url" : ""
-								},
-								{
-									"text" : "3 stars",
-									"value" : 3,
-									"description" : "Meh",
-									"url" : ""
-								},
-								{
-									"text" : "2 stars",
-									"value" : 2,
-									"description" : "Kinda bad",
-									"url" : ""
-								},
-								{
-									"text" : "1 star",
-									"value" : 1,
-									"description" : "Sucks big time",
-									"url" : ""
-								}
-							]
-						},
-						"additionalDescription" : "This is the area for additional product information",
-						"viewDetails" : "View Details",
-						"price" : "€ 123,-",
-						"priceOld" : "€ 173,-",
-						"color" : {
-							"text" : "Color",
-							"list" : [
-								{
-									"text" : "Choose",
-									"value" : "",
-									"selected" : true
-								},
-								{
-									"text" : "Red",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "Blue",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "Green",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"size" : {
-							"text" : "Size",
-							"list" : [
-								{
-									"text" : "Choose",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "S",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "M",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "L",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"sizeGuide" : "Size Guide",
-						"bagItems" : {
-							"list" : [
-								{
-									"text" : "1",
-									"value" : "",
-									"selected" : true
-								},
-								{
-									"text" : "2",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "3",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "4",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "5",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "6",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "7",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "8",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "9",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"addToBag" : "Add to bag",
-						"addToWishlist" : "Add item to wishlist",
-						"available" : "Available"
-						}
-					},
+					"priceOld": "",
+					"productUrl" : ""
+				},
 				{
-					"id" : "2",
 					"text" : "Just one single line",
 					"description" : "",
-					"image" : "assets/img/blue-shirt.jpg",
+					"imageUrl" : "assets/img/blue-shirt.jpg",
 					"price" : "€ 149,-",
-					"priceOld" : "€ 250,-",
-					"url" : "",
-					"wishlistUrl" : "",
-					"new" : true,
-					"moreColors" : false,
-					"quickviewGallery" : [
-						{
-							"thumbImage" : "assets/img/blue-shirt.jpg",
-							"bigImage" : "assets/img/blue-shirt.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-shirt.jpg",
-							"bigImage" : "assets/img/blue-shirt.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-shirt.jpg",
-							"bigImage" : "assets/img/blue-shirt.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-shirt.jpg",
-							"bigImage" : "assets/img/blue-shirt.jpg"
-						}
-					],
-					"product" : {
-						"text" : "Enditatem Product Name",
-						"sku" : "Sunrise #SUN123456",
-						"rating" : {
-							"text" : "Write first review",
-							"url" : "",
-							"list" : [
-								{
-									"text" : "5 stars",
-									"value" : 5,
-									"description" : "Rocks!",
-									"url" : ""
-								},
-								{
-									"text" : "4 stars",
-									"value" : 4,
-									"description" : "Pretty good",
-									"url" : ""
-								},
-								{
-									"text" : "3 stars",
-									"value" : 3,
-									"description" : "Meh",
-									"url" : ""
-								},
-								{
-									"text" : "2 stars",
-									"value" : 2,
-									"description" : "Kinda bad",
-									"url" : ""
-								},
-								{
-									"text" : "1 star",
-									"value" : 1,
-									"description" : "Sucks big time",
-									"url" : ""
-								}
-							]
-						},
-						"additionalDescription" : "This is the area for additional product information",
-						"viewDetails" : "View Details",
-						"price" : "€ 123,-",
-						"priceOld" : "€ 173,-",
-						"color" : {
-							"text" : "Color",
-							"list" : [
-								{
-									"text" : "Choose",
-									"value" : "",
-									"selected" : true
-								},
-								{
-									"text" : "Red",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "Blue",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "Green",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"size" : {
-							"text" : "Size",
-							"list" : [
-								{
-									"text" : "Choose",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "S",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "M",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "L",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"sizeGuide" : "Size Guide",
-						"bagItems" : {
-							"list" : [
-								{
-									"text" : "1",
-									"value" : "",
-									"selected" : true
-								},
-								{
-									"text" : "2",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "3",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "4",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "5",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "6",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "7",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "8",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "9",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"addToBag" : "Add to bag",
-						"addToWishlist" : "Add item to wishlist",
-						"available" : "Available"
-						}
-					},
+					"priceOld": "",
+					"productUrl" : ""
+				},
 				{
-					"id" : "3",
 					"text" : "Headline",
 					"description" : "Enditatem Product Name Optional Line Two",
-					"image" : "assets/img/blue-jacket.jpg",
+					"imageUrl" : "assets/img/blue-jacket.jpg",
 					"price" : "€ 250,-",
-					"url" : "",
-					"wishlistUrl" : "",
-					"new" : false,
-					"moreColors" : true,
-					"quickviewGallery" : [
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						}
-					],
-					"product" : {
-						"text" : "Enditatem Product Name",
-						"sku" : "Sunrise #SUN123456",
-						"rating" : {
-							"text" : "Write first review",
-							"url" : "",
-							"list" : [
-								{
-									"text" : "5 stars",
-									"value" : 5,
-									"description" : "Rocks!",
-									"url" : ""
-								},
-								{
-									"text" : "4 stars",
-									"value" : 4,
-									"description" : "Pretty good",
-									"url" : ""
-								},
-								{
-									"text" : "3 stars",
-									"value" : 3,
-									"description" : "Meh",
-									"url" : ""
-								},
-								{
-									"text" : "2 stars",
-									"value" : 2,
-									"description" : "Kinda bad",
-									"url" : ""
-								},
-								{
-									"text" : "1 star",
-									"value" : 1,
-									"description" : "Sucks big time",
-									"url" : ""
-								}
-							]
-						},
-						"additionalDescription" : "This is the area for additional product information",
-						"viewDetails" : "View Details",
-						"price" : "€ 123,-",
-						"priceOld" : "€ 173,-",
-						"color" : {
-							"text" : "Color",
-							"list" : [
-								{
-									"text" : "Choose",
-									"value" : "",
-									"selected" : true
-								},
-								{
-									"text" : "Red",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "Blue",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "Green",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"size" : {
-							"text" : "Size",
-							"list" : [
-								{
-									"text" : "Choose",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "S",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "M",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "L",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"sizeGuide" : "Size Guide",
-						"bagItems" : {
-							"list" : [
-								{
-									"text" : "1",
-									"value" : "",
-									"selected" : true
-								},
-								{
-									"text" : "2",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "3",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "4",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "5",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "6",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "7",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "8",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "9",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"addToBag" : "Add to bag",
-						"addToWishlist" : "Add item to wishlist",
-						"available" : "Available"
-						}
-					},
+				  	"priceOld": "",
+				  	"productUrl" : ""
+				},
 				{
-					"id" : "4",
-					"text" : "Enditatem Product Name Optional very long line two",
-					"description" : "Subline",
-					"image" : "assets/img/blue-jacket.jpg",
-					"price" : "€ 49,-",
-					"priceOld" : "€ 79,99",
-					"url" : "",
-					"wishlistUrl" : "",
-					"new" : true,
-					"moreColors" : true,
-					"quickviewGallery" : [
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						},
-						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
-						}
-					],
-					"product" : {
-						"text" : "Enditatem Product Name",
-						"sku" : "Sunrise #SUN123456",
-						"rating" : {
-							"text" : "Write first review",
-							"url" : "",
-							"list" : [
-								{
-									"text" : "5 stars",
-									"value" : 5,
-									"description" : "Rocks!",
-									"url" : ""
-								},
-								{
-									"text" : "4 stars",
-									"value" : 4,
-									"description" : "Pretty good",
-									"url" : ""
-								},
-								{
-									"text" : "3 stars",
-									"value" : 3,
-									"description" : "Meh",
-									"url" : ""
-								},
-								{
-									"text" : "2 stars",
-									"value" : 2,
-									"description" : "Kinda bad",
-									"url" : ""
-								},
-								{
-									"text" : "1 star",
-									"value" : 1,
-									"description" : "Sucks big time",
-									"url" : ""
-								}
-							]
-						},
-						"additionalDescription" : "This is the area for additional product information",
-						"viewDetails" : "View Details",
-						"price" : "€ 123,-",
-						"priceOld" : "€ 173,-",
-						"color" : {
-							"text" : "Color",
-							"list" : [
-								{
-									"text" : "Choose",
-									"value" : "",
-									"selected" : true
-								},
-								{
-									"text" : "Red",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "Blue",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "Green",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"size" : {
-							"text" : "Size",
-							"list" : [
-								{
-									"text" : "Choose",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "S",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "M",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "L",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"sizeGuide" : "Size Guide",
-						"bagItems" : {
-							"list" : [
-								{
-									"text" : "1",
-									"value" : "",
-									"selected" : true
-								},
-								{
-									"text" : "2",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "3",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "4",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "5",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "6",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "7",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "8",
-									"value" : "",
-									"selected" : false
-								},
-								{
-									"text" : "9",
-									"value" : "",
-									"selected" : false
-								}
-							]
-						},
-						"addToBag" : "Add to bag",
-						"addToWishlist" : "Add item to wishlist",
-						"available" : "Available"
-						}
+					"text" : "Enditatem Product Name",
+					"description" : "",
+					"imageUrl" : "",
+					"price" : "€ 123,-",
+				  	"priceOld": "",
+				  	"productUrl" : ""
 				}
 			]
 		},
@@ -1701,5 +1021,5 @@
 	},
   "meta" : {
 	  "assetsPath": "assets/"
-	}
+  }
 }
