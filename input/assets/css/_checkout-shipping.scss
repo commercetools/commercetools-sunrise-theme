@@ -262,6 +262,11 @@
 	color: $dark-grey;
 }
 
+.checkout-discounted-price {
+	color: $grey;
+	text-decoration: line-through;
+}
+
 .checkout-promo-code {
 	margin: 0 0 1em;
 }

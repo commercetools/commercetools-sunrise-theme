@@ -168,6 +168,7 @@
           "quantity" : "Quantity",
           "quantityNumber" : "1",
           "priceTitle" : "Price",
+					"priceOld" : "100,00 €",
           "price" : "49,00 €",
           "totalTitle" : "Total",
           "total" : "49,00 €"
@@ -200,6 +201,7 @@
           "quantity" : "Quantity",
           "quantityNumber" : "1",
           "priceTitle" : "Price",
+					"priceOld" : "100,00 €",
           "price" : "49,00 €",
           "totalTitle" : "Total",
           "total" : "49,00 €"
