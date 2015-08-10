@@ -740,12 +740,21 @@
 			"deliveryAndReturnsText" : "Delivery & Returns",
 			"deliveryText" : "Delivery",
 			"returnsText" : "Returns",
-			"suggestions.text" : "You may also like",
-			"suggestions.sale" : "Sale",
-			"suggestions.new" : "New",
-			"suggestions.quickView" : "Quick view",
-			"suggestions.wishlist" : "Add item to wishlist",
-			"suggestions.moreColors" : "More colours",
+			"youMayLikeText" : "You may also like",
+			"saleText" : "Sale",
+			"newText" : "New",
+			"quickViewText" : "Quick view",
+			"wishlistText" : "Add item to wishlist",
+			"moreColorsText" : "More colours",
+		  	"reviewsText" : "Reviews",
+		  	"colorDefaultItem": {
+			    "text": "Choose Color",
+			  	"selected": true
+			},
+		  	"sizeDefaultItem": {
+			    "text": "Choose Size",
+			  	"selected": true
+			},
 			"bagItems" : [
 				{
 					"text" : "1",
@@ -995,9 +1004,7 @@
 				}
 			]
 		},
-		"reviews" : {
-			"text" : "Reviews"
-		},
+		"reviews" : {},
 		"wishlistWidged" : {
 			"text" : "Your Wishlist",
 			"number" : "45",
