@@ -18,15 +18,15 @@
         <div class="col-md-6">
           <div class="checkout-steps text-right">
             <div>
-              <a href="#"><span class="step-number step-number-active">1</span>
+              <a id="payment-checkout-stepone-link" href="#"><span class="step-number step-number-active">1</span>
               <span class="text-uppercase step-title step-title-active">{{content.shippingOne}}</span></a>
             </div>
             <div>
-              <a href="#"><span class="step-number">2</span>
+              <a id="payment-checkout-steptwo-link" href="#"><span class="step-number">2</span>
               <span class="text-uppercase step-title">{{content.paymentTwo}}</span></a>
             </div>
             <div>
-              <a href="#"><span class="step-number">3</span>
+              <a id="payment-checkout-stepthree-link" href="#"><span class="step-number">3</span>
               <span class="text-uppercase step-title">{{content.confirmationThree}}</span></a>
             </div>
           </div>
@@ -45,7 +45,7 @@
                   <div class="col-sm-4">
                     <div class="title">
                       <span class="text-uppercase">{{content.title}}</span><br>
-                      <select class="checkout-dropdown" name="title" form="title">
+                      <select id="shipping-title-select" class="checkout-dropdown" name="title" form="title">
                         {{#each content.chooseTitle.list}}
                           <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                         {{/each}}
@@ -57,43 +57,43 @@
                   <div class="col-sm-6">
                     <div class="first-name">
                       <span class="text-uppercase">{{content.firstName}}*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-firstname-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="last-name">
                       <span class="text-uppercase">{{content.lastName}}*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-lastname-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="address-one">
                       <span class="text-uppercase">{{content.addressOne}}*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-addressone-input"class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="address-two">
                       <span class="text-uppercase">{{content.addressTwo}}*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-addresstwo-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-8">
                     <div class="city">
                       <span class="text-uppercase">{{content.city}}*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-city-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="post-code">
                       <span class="text-uppercase">{{content.postCode}}*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-postcode-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="country">
                       <span class="text-uppercase">{{content.country}}*</span><br>
-                      <select class="checkout-dropdown" name="title" form="title">
+                      <select id="shipping-country-select" class="checkout-dropdown" name="title" form="title">
                         {{#each content.chooseCountry.list}}
                           <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                         {{/each}}
@@ -103,7 +103,7 @@
                   <div class="col-sm-6">
                     <div class="region">
                       <span class="text-uppercase">{{content.region}}</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-region-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                 </div>
@@ -112,14 +112,14 @@
                   <div class="col-sm-6">
                     <div class="primary-telephone">
                       <span class="text-uppercase">{{content.telNumber}}</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-telnumber-input" class="checkout-input-field" type="text">
                       <span class="tel-email-text">{{content.telNumberInfo}}</span>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="email-address">
                       <span class="text-uppercase">{{content.email}}*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-email-input" class="checkout-input-field" type="text">
                       <span class="tel-email-text">{{content.emailInfo}}</span>
                     </div>
                   </div>
@@ -127,8 +127,8 @@
                 <div class="row different-billing-row">
                   <div class="col-sm-12">
                     <div class="different-for-billing">
-                      <span id="different-billing-checkbox">
-                        <input type="checkbox">
+                      <span>
+                        <input id="different-billing-checkbox" type="checkbox">
                       </span>
                       <span>{{content.differentBilling}}</span>
                     </div>
@@ -141,31 +141,31 @@
                         <div class="col-sm-12">
                           <div class="address-one-different">
                             <span class="text-uppercase">{{content.diffAddressOne}}*</span><br>
-                            <input class="checkout-input-field" type="text">
+                            <input id="shipping-different-addressone-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-12">
                           <div class="address-two-different">
                             <span class="text-uppercase">{{content.diffAddressTwo}}*</span><br>
-                            <input class="checkout-input-field" type="text">
+                            <input id="shipping-different-addresstwo-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-8">
                           <div class="city-different">
                             <span class="text-uppercase">{{content.diffCity}}*</span><br>
-                            <input class="checkout-input-field" type="text">
+                            <input id="shipping-different-city-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-4">
                           <div class="post-code-different">
                             <span class="text-uppercase">{{content.diffPostCode}}*</span><br>
-                            <input class="checkout-input-field" type="text">
+                            <input id="shipping-different-postcode-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-6">
                           <div class="country-different">
                             <span class="text-uppercase">{{content.diffCountry}}*</span><br>
-                            <select class="checkout-dropdown" name="title" form="title">
+                            <select id="shipping-different-country-select" class="checkout-dropdown" name="title" form="title">
                               {{#each content.diffChooseCountry.list}}
                                 <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                               {{/each}}
@@ -175,7 +175,7 @@
                         <div class="col-sm-6">
                           <div class="region-different">
                             <span class="text-uppercase">{{content.diffRegion}}*</span><br>
-                            <input class="checkout-input-field" type="text">
+                            <input id="shipping-different-region-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                       </div>
@@ -188,7 +188,7 @@
                       <div class="text-uppercase shipping-method-title">{{content.shippingMethod}}</div>
                       {{#each content.delivery.list}}
                         <div class="shipping-method-option">
-                          <span><input class="shipping-method-radio" type="radio" name="delivery options" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
+                          <span><input id="{{id}}" class="shipping-method-radio" type="radio" name="delivery options" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
                           <span class="pull-right text-uppercase delivery-time">{{deliveryDays}}</span>
                           <a href="#"><span class="pull-right text-uppercase delivery-details">{{details}}</span></a>
                         </div>
@@ -199,7 +199,7 @@
                 <div class="row hidden-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
+                      <a href="#" id="shipping-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
                     </div>
                   </div>
                 </div>
@@ -213,7 +213,7 @@
                 <div class="row visible-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" class="btn text-uppercase checkout-checkout-btn">Continue Checkout</a>
+                      <a href="#" id="shipping-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
                     </div>
                   </div>
                 </div>
