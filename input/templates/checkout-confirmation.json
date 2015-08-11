@@ -10,15 +10,18 @@
 			"list" : [
 				{
 					"text" : "Imprint",
-					"url" : ""
+					"url" : "",
+					"id" : "confirmation-imprint-link"
 				},
 				{
 					"text" : "Privacy policy",
-					"url" : ""
+					"url" : "",
+					"id" : "confirmation-privacypolicy-link"
 				},
 				{
 					"text" : "Terms of use",
-					"url" : ""
+					"url" : "",
+					"id" : "confirmation-termsofuse-link"
 				}
 			]
 		}
