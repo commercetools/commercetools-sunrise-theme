@@ -34,8 +34,8 @@
     "forgotPasswordTitle" : "Forgot Password",
     "quickCheckoutBtn" : "Quick Checkout",
     "guestCheckoutTitle" : "Guest Checkout",
-    "guestCheckParagraph1" : "No problem, you do not need to create an account to place an order.",
-    "guestCheckParagraph2" : "To make future purchases even faster, you will have the option of creating an acocount during checkout.",
+    "guestCheckoutParagraph1" : "No problem, you do not need to create an account to place an order.",
+    "guestCheckoutParagraph2" : "To make future purchases even faster, you will have the option of creating an acocount during checkout.",
     "continueGuestBtn" : "Continue As Guest"
   },
   "meta" : {
