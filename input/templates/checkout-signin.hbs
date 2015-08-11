@@ -16,38 +16,38 @@
         <div class="col-sm-6">
           <div class="returning-customer">
             <div class="clearfix returning-customer-title">
-              <h4>Returning Customer Sign in</h4>
-              <span>Required*</span>
+              <h4>{{content.returningCustomerTitle}}</h4>
+              <span>{{content.required}}*</span>
             </div>
             <div class="returning-customer-field">
-              <span class="if-account-title">If you have an account, please sign in for faster checkout.</span>
+              <span class="if-account-title">{{content.ifYouHaveAccountTitle}}</span>
               <div class="row">
                 <div class="col-md-8 col-sm-12">
                   <div class="returning-customer-input">
-                    <span class="returning-customer-email-title">Email Address*</span>
+                    <span class="returning-customer-email-title">{{content.emailTitle}}*</span>
                     <input class="returning-customer-email" type="text">
-                    <span class="returning-customer-password-title">Password*</span>
+                    <span class="returning-customer-password-title">{{content.passwordTitle}}*</span>
                     <input class="returning-customer-password" type="password">
                     <div class="clearfix returning-customer-remember-forget">
-                      <span class="returning-customer-rememberme"><input type="checkbox"> Remember me</span>
-                      <span class="returning-customer-forgot"><a href="#">Forgot Password</a></span>
+                      <span class="returning-customer-rememberme"><input type="checkbox">{{content.rememberMeTitle}}</span>
+                      <span class="returning-customer-forgot"><a href="#">{{content.forgotPasswordTitle}}</a></span>
                     </div>
                   </div>
                 </div>
               </div>
-              <a class="quick-checkout-btn btn" href="#">Quick Checkout</a>
+              <a class="quick-checkout-btn btn" href="#">{{content.quickCheckoutBtn}}</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
           <div class="guest-checkout">
             <div class="clearfix guest-checkout-title">
-              <h4>Guest Checkout</h4>
-              <span>Required*</span>
+              <h4>{{content.guestCheckoutTitle}}</h4>
+              <span>{{content.required}}*</span>
             </div>
-            <span class="guest-checkout-first-paragraph">No problem, you do not need to create an account to place an order.</span>
-            <span class="guest-checkout-second-paragraph">To make future purchases even faster, you will have the option of creating an acocount during checkout.</span>
-            <a class="btn continue-guest-btn" href="#">Continue As Guest</a>
+            <span class="guest-checkout-first-paragraph">{{content.guestCheckParagraph1}}</span>
+            <span class="guest-checkout-second-paragraph">{{content.guestCheckParagraph2}}</span>
+            <a class="btn continue-guest-btn" href="#">{{content.continueGuestBtn}}</a>
           </div>
         </div>
       </div>

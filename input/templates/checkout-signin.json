@@ -24,7 +24,19 @@
 		}
 	},
   "content" : {
-    "secureCheckoutTitle" : "Secure Checkout - Sign In"
+    "secureCheckoutTitle" : "Secure Checkout - Sign In",
+    "returningCustomerTitle" : "Returning Customer Sign In",
+    "required" : "Required",
+    "ifYouHaveAccountTitle" : "If you have an account, please sign in for faster checkout.",
+    "emailTitle" : "Email Address",
+    "passwordTitle" : "Password",
+    "rememberMeTitle" : "Remember Me",
+    "forgotPasswordTitle" : "Forgot Password",
+    "quickCheckoutBtn" : "Quick Checkout",
+    "guestCheckoutTitle" : "Guest Checkout",
+    "guestCheckParagraph1" : "No problem, you do not need to create an account to place an order.",
+    "guestCheckParagraph2" : "To make future purchases even faster, you will have the option of creating an acocount during checkout.",
+    "continueGuestBtn" : "Continue As Guest"
   },
   "meta" : {
     "assetsPath": "assets/"
