@@ -746,14 +746,14 @@
 			"quickViewText" : "Quick view",
 			"wishlistText" : "Add item to wishlist",
 			"moreColorsText" : "More colours",
-		  	"reviewsText" : "Reviews",
-		  	"colorDefaultItem": {
-			    "text": "Choose Color",
-			  	"selected": true
+		  "reviewsText" : "Reviews",
+		  "colorDefaultItem": {
+				"text": "Choose Color",
+				"selected": true
 			},
-		  	"sizeDefaultItem": {
-			    "text": "Choose Size",
-			  	"selected": true
+	  	"sizeDefaultItem": {
+		    "text": "Choose Size",
+		  	"selected": true
 			},
 			"bagItems" : [
 				{
@@ -885,11 +885,6 @@
 			"color" : {
 				"list" : [
 					{
-						"text" : "Choose",
-						"value" : "",
-						"selected" : true
-					},
-					{
 						"text" : "Red",
 						"value" : "",
 						"selected" : false
@@ -908,11 +903,6 @@
 			},
 			"size" : {
 				"list" : [
-					{
-						"text" : "Choose",
-						"value" : "",
-						"selected" : true
-					},
 					{
 						"text" : "S",
 						"value" : "",
@@ -991,16 +981,16 @@
 					"description" : "Enditatem Product Name Optional Line Two",
 					"imageUrl" : "assets/img/blue-jacket.jpg",
 					"price" : "€ 250,-",
-				  	"priceOld": "",
-				  	"productUrl" : ""
+				  "priceOld": "",
+				  "productUrl" : ""
 				},
 				{
 					"text" : "Enditatem Product Name",
 					"description" : "",
-					"imageUrl" : "",
+					"imageUrl" : "assets/img/blue-shirt.jpg",
 					"price" : "€ 123,-",
-				  	"priceOld": "",
-				  	"productUrl" : ""
+				  "priceOld": "",
+				  "productUrl" : ""
 				}
 			]
 		},
