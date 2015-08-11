@@ -25,17 +25,17 @@
                 <div class="col-md-8 col-sm-12">
                   <div class="returning-customer-input">
                     <span class="returning-customer-email-title">{{content.emailTitle}}*</span>
-                    <input class="returning-customer-email" type="text">
+                    <input id="signin-email-input" class="returning-customer-email" type="text">
                     <span class="returning-customer-password-title">{{content.passwordTitle}}*</span>
-                    <input class="returning-customer-password" type="password">
+                    <input id="signin-password-input" class="returning-customer-password" type="password">
                     <div class="clearfix returning-customer-remember-forget">
-                      <span class="returning-customer-rememberme"><input type="checkbox">{{content.rememberMeTitle}}</span>
-                      <span class="returning-customer-forgot"><a href="#">{{content.forgotPasswordTitle}}</a></span>
+                      <span class="returning-customer-rememberme"><input id="signin-remember-me-input" type="checkbox">{{content.rememberMeTitle}}</span>
+                      <span class="returning-customer-forgot"><a id="signin-forgot-password-link" href="#">{{content.forgotPasswordTitle}}</a></span>
                     </div>
                   </div>
                 </div>
               </div>
-              <a class="quick-checkout-btn btn" href="#">{{content.quickCheckoutBtn}}</a>
+              <a id="signin-quick-checkout-btn" class="quick-checkout-btn btn" href="#">{{content.quickCheckoutBtn}}</a>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
             </div>
             <span class="guest-checkout-first-paragraph">{{content.guestCheckoutParagraph1}}</span>
             <span class="guest-checkout-second-paragraph">{{content.guestCheckoutParagraph2}}</span>
-            <a class="btn continue-guest-btn" href="#">{{content.continueGuestBtn}}</a>
+            <a id="signin-continue-as-guest-btn" class="btn continue-guest-btn" href="#">{{content.continueGuestBtn}}</a>
           </div>
         </div>
       </div>
