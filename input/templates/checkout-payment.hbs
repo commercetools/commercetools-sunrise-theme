@@ -18,15 +18,15 @@
         <div class="col-md-6">
           <div class="checkout-steps text-right">
             <div>
-              <a href="#"><span class="step-number">1</span>
+              <a id="payment-checkout-stepone-link" href="#"><span class="step-number">1</span>
               <span class="text-uppercase step-title">{{content.shippingOne}}</span></a>
             </div>
             <div>
-              <a href="#"><span class="step-number step-number-active">2</span>
+              <a id="payment-checkout-steptwo-link" href="#"><span class="step-number step-number-active">2</span>
               <span class="text-uppercase step-title step-title-active">{{content.paymentTwo}}</span></a>
             </div>
             <div>
-              <a href="#"><span class="step-number">3</span>
+              <a id="payment-checkout-stepthree-link" href="#"><span class="step-number">3</span>
               <span class="text-uppercase step-title">{{content.confirmationThree}}</span></a>
             </div>
           </div>
@@ -63,19 +63,19 @@
                     <div class="col-sm-12">
                       <div class="name-on-card">
                         <span class="text-uppercase">{{content.cardName}}*</span><br>
-                        <input class="checkout-input-field" type="text">
+                        <input id="payment-cardname-input" class="checkout-input-field" type="text">
                       </div>
                     </div>
                     <div class="col-sm-12">
                       <div class="card-number">
                         <span class="text-uppercase">{{content.cardNumber}}*</span><br>
-                        <input class="checkout-input-field card-number-input" type="text">
+                        <input id="payment-cardnumber-input" class="checkout-input-field card-number-input" type="text">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="expiry-date">
                         <span class="text-uppercase">{{content.expiryDateTitle}}*</span><br>
-                        <select class="checkout-dropdown">
+                        <select id="payment-expirymonth-select" class="checkout-dropdown">
                           {{#each content.expiryDate.list}}
                             <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                           {{/each}}
@@ -85,7 +85,7 @@
                     <div class="col-sm-6">
                       <div class="expiry-year">
                         <br>
-                        <select class="checkout-dropdown">
+                        <select id="payment-expiryyear-select" class="checkout-dropdown">
                           {{#each content.year.list}}
                             <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                           {{/each}}
@@ -95,7 +95,7 @@
                     <div class="col-sm-7">
                       <div class="security-code">
                         <span class="text-uppercase">{{content.securityCode}}*</span><br>
-                        <input class="checkout-input-field security-code-input" type="text">
+                        <input id="payment-securitycode-input" class="checkout-input-field security-code-input" type="text">
                         <span class="security-code-info" title="{{content.securityCodeTooltip}}"><img class="info-icon" src="{{meta.assetsPath}}img/information.png" alt="information icon"></span>
                       </div>
                     </div>
@@ -105,7 +105,7 @@
                 <div class="row hidden-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
+                      <a href="#" id="payment-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
                     </div>
                   </div>
                 </div>
@@ -119,7 +119,7 @@
                 <div class="row visible-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
+                      <a href="#" id="payment-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
                     </div>
                   </div>
                 </div>
