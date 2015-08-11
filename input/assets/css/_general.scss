@@ -35,7 +35,14 @@ a:hover {
 	color: inherit;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
+	/* Margin bottom by footer height */
+  margin-bottom: 50px;
   font-family: 'Source Sans Pro', sans-serif;
 
   // Resolves the bootstrap white gap issue
