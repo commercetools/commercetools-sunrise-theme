@@ -5,7 +5,7 @@
         <ul class="footer-title imprint-row">
           <li class="hidden-xs">{{footer.legalInfo.text}}</li>
           {{#each footer.legalInfo.list}}
-            <li><a href="{{url}}">{{text}}</a></li>
+            <li><a id="{{id}}" href="{{url}}">{{text}}</a></li>
           {{/each}}
           <li class="visible-xs">{{footer.legalInfo.text}}</li>
         </ul>

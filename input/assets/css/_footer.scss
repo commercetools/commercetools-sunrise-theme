@@ -21,6 +21,11 @@
   background: $black;
   padding: 1em 0;
   font-size: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 55px;
 }
 
 #footer ul {
@@ -33,7 +38,7 @@
 }
 
 .footer-title {
-  color: $dark-grey;
+  color: $grey;
   font-size: 1em;
   margin: 0 0;
 }

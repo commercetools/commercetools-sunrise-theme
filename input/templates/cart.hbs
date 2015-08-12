@@ -20,7 +20,7 @@
         </div>
         <div class="col-sm-6 col-xs-12">
           <div class="checkout-now">
-            <button class="pull-right text-uppercase checkout-now-btn">{{content.checkoutBtn}}</button>
+            <button id="cart-checkoutnow-btn" class="pull-right text-uppercase checkout-now-btn">{{content.checkoutBtn}}</button>
           </div>
         </div>
       </div>
@@ -55,15 +55,15 @@
                 </div>
                 <div class="col-sm-2 col-xs-6 text-center cart-edit-delete">
                   <div class="text-uppercase edit-delete-section">
-                    <a href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}</span></a>
+                    <a id="{{editId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}</span></a>
                   </div>
                   <div class="text-uppercase edit-delete-section">
-                    <a href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}</span></a>
+                    <a id="{{deleteId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}</span></a>
                   </div>
                 </div>
                 <div class="col-sm-2 col-xs-6">
                   <div class="quantity-spinner">
-                    <span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="1" max="10"><span class="input-number-increment">+</span>
+                    <span id="{{cartQuantityDecrementId}}" class="input-number-decrement">–</span><input id="{{cartQuantityValueId}}" class="input-number" type="text" value="1" min="1" max="10"><span id="{{cartQuantityIncrementId}}" class="input-number-increment">+</span>
                   </div>
                 </div>
                 <div class="col-sm-2 col-xs-7">
@@ -86,7 +86,7 @@
                 <div class="text-right promotion-info">
                   <span class="text-uppercase promo-info-text" title="{{content.cartItems.discountTooltip}}">{{content.cartItems.promoDiscount}}<img class="info-icon" src="{{meta.assetsPath}}img/information.png" alt="information icon"></span>
                   <input id="promo-code" type="text">
-                  <button class="text-uppercase promo-apply-btn">{{content.cartItems.applyBtn}}</button>
+                  <button id="cart-apply-promocode-btn" class="text-uppercase promo-apply-btn">{{content.cartItems.applyBtn}}</button>
                 </div>
               </div>
             </div>
@@ -144,17 +144,17 @@
       <div class="row bottom-cart-btns">
         <div class="col-sm-6 col-xs-12 visible-xs">
           <div class="checkout-now-bottom">
-            <a href="#"><button class="pull-right text-uppercase checkout-now-btn">{{content.checkoutBtn}}</button></a>
+            <a href="#"><button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">{{content.checkoutBtn}}</button></a>
           </div>
         </div>
         <div class="col-sm-6 col-xs-12">
           <div>
-            <a href="#"><button class="text-uppercase continue-shopping-btn">{{content.continueShoppingBtn}}</button></a>
+            <a href="#"><button id="cart-continueshopping-btn-xs" class="text-uppercase continue-shopping-btn">{{content.continueShoppingBtn}}</button></a>
           </div>
         </div>
         <div class="col-sm-6 col-xs-12 hidden-xs">
           <div class="checkout-now-bottom">
-            <a href="#"><button class="pull-right text-uppercase checkout-now-btn">{{content.checkoutBtn}}</button></a>
+            <a href="#"><button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">{{content.checkoutBtn}}</button></a>
           </div>
         </div>
       </div>

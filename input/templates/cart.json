@@ -740,12 +740,17 @@
           "size" : "M",
           "available" : "Available",
           "edit" : "Edit",
+					"editId" : "cart-edit-button-one",
           "delete" : "Delete",
+					"deleteId" : "cart-delette-button-one",
           "priceTitle" : "Price",
 					"priceOld" : "100,00 €",
           "price" : "49,00 €",
           "totalPriceTitle" : "Total Price",
-          "totalPrice" : "49,00 €"
+          "totalPrice" : "49,00 €",
+					"cartQuantityDecrementId" : "cart-quantity-decrement-one",
+					"cartQuantityValueId" : "cart-quantity-value-one",
+					"cartQuantityIncrementId" : "cart-quantity-increment-one"
         },
         {
           "nameHeadline" : "Enditatem Product Name",
@@ -757,11 +762,16 @@
           "size" : "M",
           "available" : "Available",
           "edit" : "Edit",
+					"editId" : "cart-edit-button-two",
           "delete" : "Delete",
+					"deleteId" : "cart-delette-button-two",
           "priceTitle" : "Price",
           "price" : "49,00 €",
           "totalPriceTitle" : "Total Price",
-          "totalPrice" : "49,00 €"
+          "totalPrice" : "49,00 €",
+					"cartQuantityDecrementId" : "cart-quantity-decrement-two",
+					"cartQuantityValueId" : "cart-quantity-value-two",
+					"cartQuantityIncrementId" : "cart-quantity-increment-two"
         }
       ],
 			"discountTooltip" : "Discount options additional information...",

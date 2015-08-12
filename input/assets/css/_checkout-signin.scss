@@ -1,0 +1,134 @@
+#checkout-signin-body {
+  background: $dirty-white;
+}
+
+.checkout-signin {
+  background: $dirty-white;
+}
+
+.returning-customer {
+  width: 100%;
+  background: $white;
+  border: 1px solid $light-grey;
+  padding: 20px;
+  margin-bottom: 14px;
+  .returning-customer-title {
+    border-bottom: 1px solid $light-grey;
+    padding-bottom: 20px;
+    h4 {
+      letter-spacing: 1px;
+      margin: 0;
+      float: left;
+      text-transform: uppercase;
+    }
+    span {
+      float: right;
+      color: $grey;
+    }
+  }
+  .returning-customer-field {
+    padding-top: 20px;
+    .if-account-title {
+      display: block;
+    }
+    .returning-customer-input {
+      padding-top: 30px;
+      .returning-customer-email-title {
+        display: block;
+        padding: 5px 0;
+        text-transform: uppercase;
+      }
+      .returning-customer-email {
+        width: 100%;
+        border: 1px solid $light-grey;
+        border-radius: 1px;
+        padding: 0.5em 0;
+      }
+      .returning-customer-password-title {
+        display: block;
+        padding: 15px 0 5px;
+        text-transform: uppercase;
+      }
+      .returning-customer-password {
+        width: 100%;
+        border: 1px solid $light-grey;
+        border-radius: 1px;
+        padding: 0.5em 0;
+      }
+      .returning-customer-remember-forget {
+        padding-top: 15px;
+        .returning-customer-rememberme {
+          display: block;
+          float: left;
+          text-transform: uppercase;
+          color: $dark-grey;
+          input {
+            margin-right: 5px;
+          }
+        }
+        .returning-customer-forgot {
+          display: block;
+          float: right;
+          text-transform: uppercase;
+          color: $dark-grey;
+          text-decoration: underline;
+        }
+      }
+    }
+    .quick-checkout-btn {
+      margin-top: 15px;
+      padding: 10px 30px;
+      letter-spacing: 1px;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+      background: $yellow;
+      &:hover {
+        background: lighten($yellow, 5%);
+      }
+    }
+  }
+}
+
+.guest-checkout {
+  width: 100%;
+  background: $white;
+  border: 1px solid $light-grey;
+  padding: 20px;
+  margin-bottom: 20px;
+  .guest-checkout-title {
+    border-bottom: 1px solid $light-grey;
+    padding-bottom: 20px;
+    h4 {
+      letter-spacing: 1px;
+      margin: 0;
+      float: left;
+      text-transform: uppercase;
+    }
+    span {
+      float: right;
+      color: $grey;
+    }
+  }
+  .guest-checkout-first-paragraph {
+    display: block;
+    padding-top: 20px;
+  }
+  .guest-checkout-second-paragraph {
+    display: block;
+    padding-top: 15px;
+    color: $dark-grey;
+  }
+  .continue-guest-btn {
+    margin-top: 15px;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: $yellow;
+    &:hover {
+      background: lighten($yellow, 5%);
+    }
+  }
+}

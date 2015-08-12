@@ -31,7 +31,7 @@
       <div>
         <select class="select-product-detail">
           <option value="{{content.static.colorDefaultItem.value}}" {{#if content.static.colorDefaultItem.selected}}selected{{/if}}>{{content.static.colorDefaultItem.text}}</option>
-          {{#each content.product.color}}
+          {{#each content.product.color.list}}
             <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
           {{/each}}
         </select>
@@ -42,7 +42,7 @@
       <div>
         <select class="select-product-detail">
             <option value="{{content.static.sizeDefaultItem.value}}" {{#if content.static.sizeDefaultItem.selected}}selected{{/if}}>{{content.static.sizeDefaultItem.text}}</option>
-            {{#each content.product.size}}
+            {{#each content.product.size.list}}
             <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
           {{/each}}
         </select>
@@ -112,13 +112,13 @@
           <div class="panel-body panel-body-pdp">
             <h4>{{content.static.deliveryText}}</h4>
             <ul>
-              {{#each content.delivery}}
+              {{#each content.delivery.list}}
                 <li>{{text}}</li>
               {{/each}}
             </ul>
             <h4>{{content.static.returnsText}}</h4>
             <ul>
-              {{#each content.returns}}
+              {{#each content.returns.list}}
                 <li>{{text}}</li>
               {{/each}}
             </ul>
