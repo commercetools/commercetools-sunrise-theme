@@ -14,45 +14,53 @@
 			"url" : ""
 		},
 		"location" : {
+			"locationDropdownToggleBtnId" : "pdp-location-dropdown-toggle-btn",
+			"languageSelectId" : "pdp-language-select",
+			"countrySelectId" : "pdp-country-select",
 			"language" : [
 				{
 					"text" : "German",
 					"value" : "",
-					"selected" : true
+					"selected" : true,
+					"languageOptionId" : "pdp-language-option-german"
 				},
 				{
 					"text" : "English",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"languageOptionId" : "pdp-language-option-english"
 				},
 				{
 					"text" : "French",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"languageOptionId" : "pdp-language-option-french"
 				}
 			],
 			"country" : [
 				{
 					"text" : "Germany",
 					"value" : "",
-					"selected" : true
+					"selected" : true,
+					"countryOptionId" : "pdp-country-option-germany"
 				},
 				{
 					"text" : "UK",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"countryOptionId" : "pdp-country-option-uk"
 				},
 				{
 					"text" : "France",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"countryOptionId" : "pdp-country-option-france"
 				}
 			]
 		},
 		"search" : {
-			"text" : "Search",
-			"textToggle" : "Toggle search field",
-			"url" : ""
+			"inputId" : "pdp-search-input",
+			"buttonId" : "pdp-search-button"
 		},
 		"user" : {
 			"isLoggedIn" : false,
@@ -646,7 +654,9 @@
 			"text" :  "Join our newsletter",
 			"textAlt" : "Subscribe",
 			"url" : "",
-			"placeholder" : "Your email ..."
+			"placeholder" : "Your email ...",
+			"inputId" : "pdp-newsletter-input",
+			"buttonId" : "pdp-newsletter-button"
 		},
 		"customerCare" : {
 			"text" : "Customer Care",
@@ -997,6 +1007,8 @@
 		"reviews" : {},
 		"wishlistWidged" : {
 			"text" : "Your Wishlist",
+			"wishlistBtnId" : "pdp-wishlist-btn",
+			"wishlistViewBtnId" : "pdp-wishlist-view-btn",
 			"number" : "45",
 			"recentAddedTitle" : "My recently added items",
 			"viewWishlist" : {

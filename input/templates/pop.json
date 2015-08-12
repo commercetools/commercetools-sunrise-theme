@@ -14,45 +14,53 @@
 			"url" : ""
 		},
 		"location" : {
+			"locationDropdownToggleBtnId" : "pop-location-dropdown-toggle-btn",
+			"languageSelectId" : "pop-language-select",
+			"countrySelectId" : "pop-country-select",
 			"language" : [
 				{
 					"text" : "German",
 					"value" : "",
-					"selected" : true
+					"selected" : true,
+					"languageOptionId" : "pop-language-option-german"
 				},
 				{
 					"text" : "English",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"languageOptionId" : "pop-language-option-english"
 				},
 				{
 					"text" : "French",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"languageOptionId" : "pop-language-option-french"
 				}
 			],
 			"country" : [
 				{
 					"text" : "Germany",
 					"value" : "",
-					"selected" : true
+					"selected" : true,
+					"countryOptionId" : "pop-country-option-germany"
 				},
 				{
 					"text" : "UK",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"countryOptionId" : "pop-country-option-uk"
 				},
 				{
 					"text" : "France",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"countryOptionId" : "pop-country-option-france"
 				}
 			]
 		},
 		"search" : {
-			"text" : "Search",
-			"textToggle" : "Toggle search field",
-			"url" : ""
+			"inputId" : "pop-search-input",
+			"buttonId" : "pop-search-button"
 		},
 		"user" : {
 			"isLoggedIn" : false,
@@ -646,7 +654,9 @@
 			"text" :  "Join our newsletter",
 			"textAlt" : "Subscribe",
 			"url" : "",
-			"placeholder" : "Your email ..."
+			"placeholder" : "Your email ...",
+			"inputId" : "pop-newsletter-input",
+			"buttonId" : "pop-newsletter-button"
 		},
 		"customerCare" : {
 			"text" : "Customer Care",
@@ -2583,6 +2593,8 @@
 		},
 		"wishlistWidged" : {
 			"text" : "Your Wishlist",
+			"wishlistBtnId" : "pop-wishlist-btn",
+			"wishlistViewBtnId" : "pop-wishlist-view-btn",
 			"number" : "45",
 			"recentAddedTitle" : "My recently added items",
 			"viewWishlist" : {
