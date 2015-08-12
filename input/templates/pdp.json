@@ -740,11 +740,20 @@
 			"contentText" : "Products",
 			"ratingText" : "Write first review",
 			"viewDetailsText" : "View Details",
+			"viewDetailsToggleBtnId" : "pdp-view-details-btn",
 			"colorText" : "Color",
+			"colorSelectId" : "pdp-color-select",
 			"sizeText" : "Size",
+			"productdetailsToggle" : "pdp-product-details-toggle",
+			"deliveryreturnsToggle" : "pdp-delivery-returns-toggle",
 			"sizeGuideText" : "Size Guide",
+			"sizeGuideId" : "pdp-size-select",
+			"sizeGuideBtnId" : "pdp-size-guide",
 			"addToBagText" : "Add to bag",
+			"addToBagBtn" : "pdp-add-to-bag-btn",
+			"bagItemsQuantity" : "pdp-bag-items-quantity-input",
 			"addToWishlistText" : "Add item to wishlist",
+			"addToWishlistBtn" : "pdp-add-to-wishlist-btn",
 			"availableText" : "Available",
 			"productDetailsText" : "Product Details",
 			"deliveryAndReturnsText" : "Delivery & Returns",
@@ -759,57 +768,68 @@
 		  "reviewsText" : "Reviews",
 		  "colorDefaultItem": {
 				"text": "Choose Color",
-				"selected": true
+				"selected": true,
+				"id" : "pdp-color-select-first-option"
 			},
 	  	"sizeDefaultItem": {
 		    "text": "Choose Size",
-		  	"selected": true
+		  	"selected": true,
+				"id" : "pdp-size-select-first-option"
 			},
 			"bagItems" : [
 				{
 					"text" : "1",
 					"value" : "",
-					"selected" : true
+					"selected" : true,
+					"id" : "pdp-bag-items-1"
 				},
 				{
 					"text" : "2",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"id" : "pdp-bag-items-2"
 				},
 				{
 					"text" : "3",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"id" : "pdp-bag-items-3"
 				},
 				{
 					"text" : "4",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"id" : "pdp-bag-items-4"
 				},
 				{
 					"text" : "5",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"id" : "pdp-bag-items-5"
 				},
 				{
 					"text" : "6",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"id" : "pdp-bag-items-6"
 				},
 				{
 					"text" : "7",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"id" : "pdp-bag-items-7"
 				},
 				{
 					"text" : "8",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"id" : "pdp-bag-items-8"
 				},
 				{
 					"text" : "9",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"id" : "pdp-bag-items-9"
 				}
 			],
 			"rating" : [
@@ -897,17 +917,20 @@
 					{
 						"text" : "Red",
 						"value" : "",
-						"selected" : false
+						"selected" : false,
+						"id" : "pdp-color-select-red"
 					},
 					{
 						"text" : "Blue",
 						"value" : "",
-						"selected" : false
+						"selected" : false,
+						"id" : "pdp-color-select-blue"
 					},
 					{
 						"text" : "Green",
 						"value" : "",
-						"selected" : false
+						"selected" : false,
+						"id" : "pdp-color-select-green"
 					}
 				]
 			},
@@ -916,17 +939,20 @@
 					{
 						"text" : "S",
 						"value" : "",
-						"selected" : false
+						"selected" : false,
+						"id" : "pdp-size-select-s"
 					},
 					{
 						"text" : "M",
 						"value" : "",
-						"selected" : false
+						"selected" : false,
+						"id" : "pdp-size-select-m"
 					},
 					{
 						"text" : "L",
 						"value" : "",
-						"selected" : false
+						"selected" : false,
+						"id" : "pdp-size-select-l"
 					}
 				]
 			},
