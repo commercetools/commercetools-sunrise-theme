@@ -240,10 +240,8 @@ $( "#different-billing-checkbox" ).click(function() {
 // Show credit card input fields only on 'credit card' selected
 $('.payment-text').change(function() {
   if($('#payment-type-credit-card').is(':checked')) {
-    console.log('checked');
     $('#credit-card-input-field').show();
   } else {
-    console.log('hide');
     $('#credit-card-input-field').hide();
   }
 })

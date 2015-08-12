@@ -47,17 +47,17 @@
         <div class="col-md-6">
           <div class="checkout-steps text-right">
             <div>
-              <a href="#"><span class="step-number">1</span>
+              <a id="confirmation-checkout-stepone-link" href="#"><span class="step-number">1</span>
               <span class="text-uppercase step-title">Shipping</span></a>
             </div>
             <div>
               <span class="step-divider"></span>
-              <a href="#"><span class="step-number">2</span>
+              <a id="confirmation-checkout-steptwo-link" href="#"><span class="step-number">2</span>
               <span class="text-uppercase step-title">Payment</span></a>
             </div>
             <div>
               <span class="step-divider-two"></span>
-              <a href="#"><span class="step-number step-number-active">3</span>
+              <a id="confirmation-checkout-stepthree-link" href="#"><span class="step-number step-number-active">3</span>
               <span class="text-uppercase step-title step-title-active">Confirmation</span></a>
             </div>
           </div>
@@ -70,7 +70,7 @@
               <div class="col-sm-4 checkout-first-col">
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">Shipping Address</span><a href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="hidden-sm checkout-summary-edit-icon" alt="">Edit</span></a>
+                    <span class="checkout-summary-title">Shipping Address</span><a id="confirmation-edit-shipping-btn" href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="hidden-sm checkout-summary-edit-icon" alt="">Edit</span></a>
                   </div>
                   <div class="checkout-summary-text">
                     <span>Mr. Bruce Wayne</span><br>
@@ -89,7 +89,7 @@
               <div class="col-sm-4 checkout-second-col">
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">Billing Address</span><a href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="hidden-sm checkout-summary-edit-icon" alt="">Edit</span></a>
+                    <span class="checkout-summary-title">Billing Address</span><a id="confirmation-edit-billing-btn" href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="hidden-sm checkout-summary-edit-icon" alt="">Edit</span></a>
                   </div>
                   <div class="checkout-summary-text">
                     <span>Mr. Bruce Wayne</span><br>
@@ -108,7 +108,7 @@
               <div class="col-sm-4 checkout-third-col">
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">Shipping Method</span><a href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="hidden-sm checkout-summary-edit-icon" alt="">Edit</span></a>
+                    <span class="checkout-summary-title">Shipping Method</span><a id="confirmation-edit-method-btn" href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="hidden-sm checkout-summary-edit-icon" alt="">Edit</span></a>
                   </div>
                   <div class="checkout-summary-text">
                     <span>DHL Standart - Delivery 3-5 Days</span>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">Payment Details</span><a href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="hidden-sm checkout-summary-edit-icon" alt="">Edit</span></a>
+                    <span class="checkout-summary-title">Payment Details</span><a id="confirmation-edit-details-btn" href="#"><span class="pull-right"><img src="assets/img/edit-1.png" class="hidden-sm checkout-summary-edit-icon" alt="">Edit</span></a>
                   </div>
                   <div class="checkout-summary-text">
                     <span>Credit Card</span><br>
@@ -206,8 +206,8 @@
             <div class="row">
               <div class="container">
                 <div class="follow-up">
-                  <input type="checkbox" name="save my details" value="" class="remember-me"><span>Save my details to create my personal account at SUNRISE</span><br>
-                  <input type="checkbox" name="add me to newsletter" value="" class="add-to-newsletter"><span>Please add me to the <span class="sunrise-newsletter"><a href="">SUNRISE Newsletter</a></span></span>
+                  <input id="confirmation-savedetails-input" type="checkbox" name="save my details" value="" class="remember-me"><span>Save my details to create my personal account at SUNRISE</span><br>
+                  <input id="confirmation-newsletter-input" type="checkbox" name="add me to newsletter" value="" class="add-to-newsletter"><span>Please add me to the <span class="sunrise-newsletter"><a href="">SUNRISE Newsletter</a></span></span>
                 </div>
               </div>
             </div>
@@ -256,9 +256,9 @@
                       </div>
                     </div>
                     <div class="complete-order">
-                      <a href="" class="btn complete-order-btn">Complete my order</a><br>
+                      <a id="confirmation-completeorder-btn" href="" class="btn complete-order-btn">Complete my order</a><br>
                       <div class="agree-to">
-                        <span class="">I agree to the </span><a href=""><span class="terms-link">Terms and Conditions</span></a>
+                        <span class="">I agree to the </span><a id="confirmation-termsandconditions-link" href=""><span class="terms-link">Terms and Conditions</span></a>
                       </div>
                     </div>
                   </div>
@@ -276,9 +276,9 @@
         <div class="col-sm-12">
           <ul class="footer-title imprint-row">
             <li class="hidden-xs">© 2015 Sunrise</li>
-              <li><a href="">Imprint</a></li>
-              <li><a href="">Privacy policy</a></li>
-              <li><a href="">Terms of use</a></li>
+              <li><a id="confirmation-imprint-link" href="">Imprint</a></li>
+              <li><a id="confirmation-privacypolicy-link" href="">Privacy policy</a></li>
+              <li><a id="confirmation-termsofuse-link" href="">Terms of use</a></li>
             <li class="visible-xs">© 2015 Sunrise</li>
           </ul>
         </div>

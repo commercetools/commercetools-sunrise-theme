@@ -46,15 +46,15 @@
         <div class="col-md-6">
           <div class="checkout-steps text-right">
             <div>
-              <a href="#"><span class="step-number">1</span>
+              <a id="payment-checkout-stepone-link" href="#"><span class="step-number">1</span>
               <span class="text-uppercase step-title">Shipping</span></a>
             </div>
             <div>
-              <a href="#"><span class="step-number step-number-active">2</span>
+              <a id="payment-checkout-steptwo-link" href="#"><span class="step-number step-number-active">2</span>
               <span class="text-uppercase step-title step-title-active">Payment</span></a>
             </div>
             <div>
-              <a href="#"><span class="step-number">3</span>
+              <a id="payment-checkout-stepthree-link" href="#"><span class="step-number">3</span>
               <span class="text-uppercase step-title">Confirmation</span></a>
             </div>
           </div>
@@ -101,19 +101,19 @@
                     <div class="col-sm-12">
                       <div class="name-on-card">
                         <span class="text-uppercase">Name on credit card*</span><br>
-                        <input class="checkout-input-field" type="text">
+                        <input id="payment-cardname-input" class="checkout-input-field" type="text">
                       </div>
                     </div>
                     <div class="col-sm-12">
                       <div class="card-number">
                         <span class="text-uppercase">Credit card number*</span><br>
-                        <input class="checkout-input-field card-number-input" type="text">
+                        <input id="payment-cardnumber-input" class="checkout-input-field card-number-input" type="text">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="expiry-date">
                         <span class="text-uppercase">Expiry data*</span><br>
-                        <select class="checkout-dropdown">
+                        <select id="payment-expirymonth-select" class="checkout-dropdown">
                             <option value="" selected>Month</option>
                             <option value="" >January</option>
                             <option value="" >February</option>
@@ -133,7 +133,7 @@
                     <div class="col-sm-6">
                       <div class="expiry-year">
                         <br>
-                        <select class="checkout-dropdown">
+                        <select id="payment-expiryyear-select" class="checkout-dropdown">
                             <option value="" selected>Year</option>
                             <option value="" >2050</option>
                             <option value="" >2100</option>
@@ -143,7 +143,7 @@
                     <div class="col-sm-7">
                       <div class="security-code">
                         <span class="text-uppercase">Security Code*</span><br>
-                        <input class="checkout-input-field security-code-input" type="text">
+                        <input id="payment-securitycode-input" class="checkout-input-field security-code-input" type="text">
                         <span class="security-code-info" title="Additional information about the security code goes here..."><img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
                       </div>
                     </div>
@@ -153,7 +153,7 @@
                 <div class="row hidden-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" class="btn text-uppercase checkout-checkout-btn">Continue Checkout</a>
+                      <a href="#" id="payment-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">Continue Checkout</a>
                     </div>
                   </div>
                 </div>
@@ -352,7 +352,7 @@
                 <div class="row visible-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" class="btn text-uppercase checkout-checkout-btn">Continue Checkout</a>
+                      <a href="#" id="payment-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">Continue Checkout</a>
                     </div>
                   </div>
                 </div>
@@ -369,9 +369,9 @@
         <div class="col-sm-12">
           <ul class="footer-title imprint-row">
             <li class="hidden-xs">© 2015 Sunrise</li>
-              <li><a href="">Imprint</a></li>
-              <li><a href="">Privacy policy</a></li>
-              <li><a href="">Terms of use</a></li>
+              <li><a id="payment-subfooter-imprint-link" href="">Imprint</a></li>
+              <li><a id="payment-subfooter-privacypolicy-link" href="">Privacy policy</a></li>
+              <li><a id="payment-subfooter-termsofuse-link" href="">Terms of use</a></li>
             <li class="visible-xs">© 2015 Sunrise</li>
           </ul>
         </div>

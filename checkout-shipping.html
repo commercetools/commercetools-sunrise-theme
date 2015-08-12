@@ -46,15 +46,15 @@
         <div class="col-md-6">
           <div class="checkout-steps text-right">
             <div>
-              <a href="#"><span class="step-number step-number-active">1</span>
+              <a id="payment-checkout-stepone-link" href="#"><span class="step-number step-number-active">1</span>
               <span class="text-uppercase step-title step-title-active">Shipping</span></a>
             </div>
             <div>
-              <a href="#"><span class="step-number">2</span>
+              <a id="payment-checkout-steptwo-link" href="#"><span class="step-number">2</span>
               <span class="text-uppercase step-title">Payment</span></a>
             </div>
             <div>
-              <a href="#"><span class="step-number">3</span>
+              <a id="payment-checkout-stepthree-link" href="#"><span class="step-number">3</span>
               <span class="text-uppercase step-title">Confirmation</span></a>
             </div>
           </div>
@@ -73,7 +73,7 @@
                   <div class="col-sm-4">
                     <div class="title">
                       <span class="text-uppercase">Title</span><br>
-                      <select class="checkout-dropdown" name="title" form="title">
+                      <select id="shipping-title-select" class="checkout-dropdown" name="title" form="title">
                           <option value="" selected>Choose</option>
                           <option value="" >Mr.</option>
                           <option value="" >Mrs.</option>
@@ -87,43 +87,43 @@
                   <div class="col-sm-6">
                     <div class="first-name">
                       <span class="text-uppercase">First Name*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-firstname-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="last-name">
                       <span class="text-uppercase">Last Name*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-lastname-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="address-one">
                       <span class="text-uppercase">Address 1*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-addressone-input"class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="address-two">
                       <span class="text-uppercase">Address 2*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-addresstwo-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-8">
                     <div class="city">
                       <span class="text-uppercase">City*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-city-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="post-code">
                       <span class="text-uppercase">Post Code*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-postcode-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="country">
                       <span class="text-uppercase">Country*</span><br>
-                      <select class="checkout-dropdown" name="title" form="title">
+                      <select id="shipping-country-select" class="checkout-dropdown" name="title" form="title">
                           <option value="" selected>Choose</option>
                           <option value="" >Germany</option>
                           <option value="" >France</option>
@@ -134,7 +134,7 @@
                   <div class="col-sm-6">
                     <div class="region">
                       <span class="text-uppercase">Region</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-region-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                 </div>
@@ -143,14 +143,14 @@
                   <div class="col-sm-6">
                     <div class="primary-telephone">
                       <span class="text-uppercase">Telephone Number</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-telnumber-input" class="checkout-input-field" type="text">
                       <span class="tel-email-text">Please provide your telephone number so the shipper can contact you during delivery</span>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="email-address">
                       <span class="text-uppercase">Email*</span><br>
-                      <input class="checkout-input-field" type="text">
+                      <input id="shipping-email-input" class="checkout-input-field" type="text">
                       <span class="tel-email-text">We require your email address to send your shipping and order confirmation</span>
                     </div>
                   </div>
@@ -158,8 +158,8 @@
                 <div class="row different-billing-row">
                   <div class="col-sm-12">
                     <div class="different-for-billing">
-                      <span id="different-billing-checkbox">
-                        <input type="checkbox">
+                      <span>
+                        <input id="different-billing-checkbox" type="checkbox">
                       </span>
                       <span>Use a different address for billing</span>
                     </div>
@@ -172,31 +172,31 @@
                         <div class="col-sm-12">
                           <div class="address-one-different">
                             <span class="text-uppercase">Address 1*</span><br>
-                            <input class="checkout-input-field" type="text">
+                            <input id="shipping-different-addressone-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-12">
                           <div class="address-two-different">
                             <span class="text-uppercase">Address 2*</span><br>
-                            <input class="checkout-input-field" type="text">
+                            <input id="shipping-different-addresstwo-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-8">
                           <div class="city-different">
                             <span class="text-uppercase">City*</span><br>
-                            <input class="checkout-input-field" type="text">
+                            <input id="shipping-different-city-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-4">
                           <div class="post-code-different">
                             <span class="text-uppercase">Post Code*</span><br>
-                            <input class="checkout-input-field" type="text">
+                            <input id="shipping-different-postcode-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-6">
                           <div class="country-different">
                             <span class="text-uppercase">Country*</span><br>
-                            <select class="checkout-dropdown" name="title" form="title">
+                            <select id="shipping-different-country-select" class="checkout-dropdown" name="title" form="title">
                                 <option value="" selected>Germany</option>
                                 <option value="" >France</option>
                                 <option value="" >Spain</option>
@@ -206,7 +206,7 @@
                         <div class="col-sm-6">
                           <div class="region-different">
                             <span class="text-uppercase">Region*</span><br>
-                            <input class="checkout-input-field" type="text">
+                            <input id="shipping-different-region-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                       </div>
@@ -218,17 +218,17 @@
                     <div class="shipping-method">
                       <div class="text-uppercase shipping-method-title">Shipping Method</div>
                         <div class="shipping-method-option">
-                          <span><input class="shipping-method-radio" type="radio" name="delivery options" value="" checked>DHL Standart</span>
+                          <span><input id="shipping-delivery-standart" class="shipping-method-radio" type="radio" name="delivery options" value="" checked>DHL Standart</span>
                           <span class="pull-right text-uppercase delivery-time">Delivery: 3-5 Days</span>
                           <a href="#"><span class="pull-right text-uppercase delivery-details">View Details</span></a>
                         </div>
                         <div class="shipping-method-option">
-                          <span><input class="shipping-method-radio" type="radio" name="delivery options" value="" >DHL Express</span>
+                          <span><input id="shipping-delivery-express" class="shipping-method-radio" type="radio" name="delivery options" value="" >DHL Express</span>
                           <span class="pull-right text-uppercase delivery-time">Delivery: 3-5 Days</span>
                           <a href="#"><span class="pull-right text-uppercase delivery-details">View Details</span></a>
                         </div>
                         <div class="shipping-method-option">
-                          <span><input class="shipping-method-radio" type="radio" name="delivery options" value="" >DHL Overnight</span>
+                          <span><input id="shipping-delivery-overnight" class="shipping-method-radio" type="radio" name="delivery options" value="" >DHL Overnight</span>
                           <span class="pull-right text-uppercase delivery-time">Delivery: 3-5 Days</span>
                           <a href="#"><span class="pull-right text-uppercase delivery-details">View Details</span></a>
                         </div>
@@ -238,7 +238,7 @@
                 <div class="row hidden-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" class="btn text-uppercase checkout-checkout-btn">Continue Checkout</a>
+                      <a href="#" id="shipping-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">Continue Checkout</a>
                     </div>
                   </div>
                 </div>
@@ -437,7 +437,7 @@
                 <div class="row visible-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" class="btn text-uppercase checkout-checkout-btn">Continue Checkout</a>
+                      <a href="#" id="shipping-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">Continue Checkout</a>
                     </div>
                   </div>
                 </div>
@@ -454,9 +454,9 @@
         <div class="col-sm-12">
           <ul class="footer-title imprint-row">
             <li class="hidden-xs">© 2015 Sunrise</li>
-              <li><a href="">Imprint</a></li>
-              <li><a href="">Privacy policy</a></li>
-              <li><a href="">Terms of use</a></li>
+              <li><a id="shipping-imprint-link" href="">Imprint</a></li>
+              <li><a id="shipping-privacypolicy-link" href="">Privacy policy</a></li>
+              <li><a id="shipping-termsofuse-link" href="">Terms of use</a></li>
             <li class="visible-xs">© 2015 Sunrise</li>
           </ul>
         </div>
