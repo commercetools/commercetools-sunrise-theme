@@ -793,6 +793,8 @@
     "continueShoppingBtn" : "Continue Shopping",
 		"wishlistWidged" : {
 			"text" : "Your Wishlist",
+			"wishlistBtnId" : "cart-wishlist-btn",
+			"wishlistViewBtnId" : "cart-wishlist-view-btn",
 			"number" : "45",
 			"recentAddedTitle" : "My recently added items",
 			"viewWishlist" : {
