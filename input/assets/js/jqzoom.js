@@ -108,7 +108,7 @@
 				}
 			}
 
-			// 循环小图
+			// Cycle Thumbnail
 			var $small = '';
 			if(!$ul.find(".bzoom_small_thumbs").length){
 				var top = _option.thumb_image_height+10,
