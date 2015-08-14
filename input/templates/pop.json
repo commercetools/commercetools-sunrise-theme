@@ -774,20 +774,24 @@
 			"close" : "Filter close",
 			"categories" : {
 				"text" : "Product type",
+				"categoriesClearBtnId" : "pop-categories-clear",
 				"list" : [
 					{
 						"text" : "Type-1",
 						"value" : "one",
+						"id" : "pop-product-type-one",
 						"selected" : true,
 						"children" : [
 							{
 								"text" : "sub-type 1",
 								"value" : "",
+								"id" : "pop-product-type-one-one",
 								"selected" : true
 							},
 							{
 								"text" : "sub-type 2",
 								"value" : "",
+								"id" : "pop-product-type-one-two",
 								"selected" : false
 							}
 						]
@@ -795,16 +799,19 @@
 					{
 						"text" : "Type-2",
 						"value" : "two",
+						"id" : "pop-product-type-two",
 						"selected" : false,
 						"children" : [
 							{
 								"text" : "sub-type 1",
 								"value" : "",
+								"id" : "pop-product-type-two-one",
 								"selected" : false
 							},
 							{
 								"text" : "sub-type 2",
 								"value" : "",
+								"id" : "pop-product-type-two-two",
 								"selected" : false
 							}
 						]
@@ -812,16 +819,19 @@
 					{
 						"text" : "Type-3",
 						"value" : "three",
+						"id" : "pop-product-type-three",
 						"selected" : false,
 						"children" : [
 							{
 								"text" : "sub-type 1",
 								"value" : "",
+								"id" : "pop-product-type-three-one",
 								"selected" : false
 							},
 							{
 								"text" : "sub-type 2",
 								"value" : "",
+								"id" : "pop-product-type-three-two",
 								"selected" : false
 							}
 						]
@@ -830,56 +840,67 @@
 			},
 			"size" : {
 				"text" : "Size",
+				"sizeClearBtnId" : "pop-size-clear",
 				"list" : [
 					{
 						"text" : "S",
 						"value" : "",
+						"id" : "pop-size-s",
 						"selected" : true
 					},
 					{
 						"text" : "M",
 						"value" : "",
+						"id" : "pop-size-m",
 						"selected" : false
 					},
 					{
 						"text" : "XL",
 						"value" : "",
+						"id" : "pop-size-xl",
 						"selected" : true
 					},
 					{
 						"text" : "XXL",
 						"value" : "",
+						"id" : "pop-size-xxl",
 						"selected" : false
 					}
 				]
 			},
 			"color" : {
 				"text" : "Color",
+				"colorClearBtnId" : "pop-color-clear",
 				"list" : [
 					{
 						"text" : "Black",
 						"value" : "",
+						"id" : "pop-color-black",
 						"selected" : false
 					},
 					{
 						"text" : "Blue",
 						"value" : "",
+						"id" : "pop-color-blue",
 						"selected" : true
 					},
 					{
 						"text" : "Multi",
 						"value" : "",
+						"id" : "pop-color-multi",
 						"selected" : false
 					},
 					{
 						"text" : "White",
 						"value" : "",
+						"id" : "pop-color-white",
 						"selected" : true
 					}
 				]
 			},
 			"price" : {
 				"text" : "Price",
+				"priceClearBtn" : "pop-price-clear",
 				"min" : 25,
 				"max" : 500,
 				"selected" : 50

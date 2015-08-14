@@ -14,7 +14,7 @@
           {{categories.text}}
         </div>
         <div class="col-xs-4">
-          <a class="text-right clear-btn" href="#">{{clear}}</a>
+          <a id="{{categories.categoriesClearBtnId}}" class="text-right clear-btn" href="#">{{clear}}</a>
         </div>
       </div>
       <div class="row">
@@ -24,7 +24,7 @@
               <div class="panel panel-default">
                 <div class="panel-heading" id="heading-one" role="tab">
                   <h4 class="panel-title">
-                    <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#{{value}}">
+                    <a aria-controls="collapse-one" aria-expanded="true" id="{{id}}" class="" data-parent="#accordion" data-toggle="collapse" href="#{{value}}">
                       {{text}}
                     </a>
                   </h4>
@@ -34,7 +34,7 @@
                     {{#each children}}
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}>
+                          <input id="{{id}}" type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}>
                           {{text}}
                         </label>
                       </div>
@@ -52,12 +52,12 @@
           {{size.text}}
         </div>
         <div class="col-xs-4">
-          <a class="text-right clear-btn" href="#">{{clear}}</a>
+          <a id="{{size.sizeClearBtnId}}" class="text-right clear-btn" href="#">{{clear}}</a>
         </div>
       </div>
       <div class="pop-filter-size">
         {{#each size.list}}
-          <input type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}><label>{{text}}</label><br>
+          <input id="{{id}}" type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}><label>{{text}}</label><br>
         {{/each}}
       </div>
       <hr class="hr">
@@ -66,12 +66,12 @@
           {{color.text}}
         </div>
         <div class="col-xs-4">
-          <a class="text-right clear-btn" href="#">{{clear}}</a>
+          <a id="{{color.colorClearBtnId}}" class="text-right clear-btn" href="#">{{clear}}</a>
         </div>
       </div>
       <div class="pop-filter-color">
         {{#each color.list}}
-          <input type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}><label>{{text}}</label><br>
+          <input id="{{id}}" type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}><label>{{text}}</label><br>
         {{/each}}
       </div>
       <hr class="hr">
@@ -80,7 +80,7 @@
           {{price.text}}
         </div>
         <div class="col-xs-4">
-          <a class="text-right clear-btn" href="#">{{clear}}</a>
+          <a id="{{price.priceClearBtn}}" class="text-right clear-btn" href="#">{{clear}}</a>
         </div>
       </div>
       <div class="row">
