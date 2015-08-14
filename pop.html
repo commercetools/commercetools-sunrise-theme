@@ -36,7 +36,7 @@
                   </button>
                 </li>
                 <!-- Toggles the search field on mobile / not visible on desktop -->
-                <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only">Toggle search field</span></button></li>
+                <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only"></span></button></li>
   
                 <li class="list-item-store"><a href="" class="store-select icon-marker"><span class="hidden-xs">STORES</span></a></li>
   
@@ -49,19 +49,19 @@
                 <li class="list-item-user"><a href="" class="link-user icon-user"><span class="hidden-xs hidden-sm">SIGN IN</span></a></li>
   
                 <li class="list-item-location clearfix">
-                  <button><img class="pull-right location-dropdown-toggle" src="assets/img/globe-2.png" alt="Location"></button>
+                  <button id="pop-location-dropdown-toggle-btn"><img class="pull-right location-dropdown-toggle" src="assets/img/globe-2.png" alt="Location"></button>
                   <div class="location-dropdown">
                     <span class="location-dropdown-label">Language</span>
-                    <select class="select location-select" name="language">
-                      <option value="" selected>German</option>
-                      <option value="" >English</option>
-                      <option value="" >French</option>
+                    <select id="pop-language-select" class="select location-select" name="language">
+                      <option id="pop-language-option-german" value="" selected>German</option>
+                      <option id="pop-language-option-english" value="" >English</option>
+                      <option id="pop-language-option-french" value="" >French</option>
                     </select>
                     <span class="location-dropdown-label">Country</span>
-                    <select class="select location-select" name="country">
-                      <option value="">Germany</option>
-                      <option value="">UK</option>
-                      <option value="">France</option>
+                    <select id="pop-country-select" class="select location-select" name="country">
+                      <option id="pop-country-option-germany" value="">Germany</option>
+                      <option id="pop-country-option-uk" value="">UK</option>
+                      <option id="pop-country-option-france" value="">France</option>
                     </select>
                   </div>
                 </li>
@@ -81,8 +81,8 @@
           </div>
           <div class="col-sm-4">
            <form class="search-box text-right" action="">
-              <input class="search-field" type="search" placeholder="Search" />
-              <button type="submit" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only">Search</span></button>
+              <input id="pop-search-input" class="search-field" type="search" placeholder="Search" />
+              <button type="submit" id="pop-search-button" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only"></span></button>
            </form>
           </div>
         </div>
@@ -381,7 +381,7 @@
                     Product type
                   </div>
                   <div class="col-xs-4">
-                    <a class="text-right clear-btn" href="#">Clear</a>
+                    <a id="pop-categories-clear" class="text-right clear-btn" href="#">Clear</a>
                   </div>
                 </div>
                 <div class="row">
@@ -390,7 +390,7 @@
                         <div class="panel panel-default">
                           <div class="panel-heading" id="heading-one" role="tab">
                             <h4 class="panel-title">
-                              <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#one">
+                              <a aria-controls="collapse-one" aria-expanded="true" id="pop-product-type-one" class="" data-parent="#accordion" data-toggle="collapse" href="#one">
                                 Type-1
                               </a>
                             </h4>
@@ -399,13 +399,13 @@
                             <div class="panel-body">
                                 <div class="checkbox">
                                   <label>
-                                    <input type="checkbox" value="" checked>
+                                    <input id="pop-product-type-one-one" type="checkbox" value="" checked>
                                     sub-type 1
                                   </label>
                                 </div>
                                 <div class="checkbox">
                                   <label>
-                                    <input type="checkbox" value="" >
+                                    <input id="pop-product-type-one-two" type="checkbox" value="" >
                                     sub-type 2
                                   </label>
                                 </div>
@@ -415,7 +415,7 @@
                         <div class="panel panel-default">
                           <div class="panel-heading" id="heading-one" role="tab">
                             <h4 class="panel-title">
-                              <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#two">
+                              <a aria-controls="collapse-one" aria-expanded="true" id="pop-product-type-two" class="" data-parent="#accordion" data-toggle="collapse" href="#two">
                                 Type-2
                               </a>
                             </h4>
@@ -424,13 +424,13 @@
                             <div class="panel-body">
                                 <div class="checkbox">
                                   <label>
-                                    <input type="checkbox" value="" >
+                                    <input id="pop-product-type-two-one" type="checkbox" value="" >
                                     sub-type 1
                                   </label>
                                 </div>
                                 <div class="checkbox">
                                   <label>
-                                    <input type="checkbox" value="" >
+                                    <input id="pop-product-type-two-two" type="checkbox" value="" >
                                     sub-type 2
                                   </label>
                                 </div>
@@ -440,7 +440,7 @@
                         <div class="panel panel-default">
                           <div class="panel-heading" id="heading-one" role="tab">
                             <h4 class="panel-title">
-                              <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#three">
+                              <a aria-controls="collapse-one" aria-expanded="true" id="pop-product-type-three" class="" data-parent="#accordion" data-toggle="collapse" href="#three">
                                 Type-3
                               </a>
                             </h4>
@@ -449,13 +449,13 @@
                             <div class="panel-body">
                                 <div class="checkbox">
                                   <label>
-                                    <input type="checkbox" value="" >
+                                    <input id="pop-product-type-three-one" type="checkbox" value="" >
                                     sub-type 1
                                   </label>
                                 </div>
                                 <div class="checkbox">
                                   <label>
-                                    <input type="checkbox" value="" >
+                                    <input id="pop-product-type-three-two" type="checkbox" value="" >
                                     sub-type 2
                                   </label>
                                 </div>
@@ -471,14 +471,14 @@
                     Size
                   </div>
                   <div class="col-xs-4">
-                    <a class="text-right clear-btn" href="#">Clear</a>
+                    <a id="pop-size-clear" class="text-right clear-btn" href="#">Clear</a>
                   </div>
                 </div>
                 <div class="pop-filter-size">
-                    <input type="checkbox" value="" checked><label>S</label><br>
-                    <input type="checkbox" value="" ><label>M</label><br>
-                    <input type="checkbox" value="" checked><label>XL</label><br>
-                    <input type="checkbox" value="" ><label>XXL</label><br>
+                    <input id="pop-size-s" type="checkbox" value="" checked><label>S</label><br>
+                    <input id="pop-size-m" type="checkbox" value="" ><label>M</label><br>
+                    <input id="pop-size-xl" type="checkbox" value="" checked><label>XL</label><br>
+                    <input id="pop-size-xxl" type="checkbox" value="" ><label>XXL</label><br>
                 </div>
                 <hr class="hr">
                 <div class="row color-box">
@@ -486,14 +486,14 @@
                     Color
                   </div>
                   <div class="col-xs-4">
-                    <a class="text-right clear-btn" href="#">Clear</a>
+                    <a id="pop-color-clear" class="text-right clear-btn" href="#">Clear</a>
                   </div>
                 </div>
                 <div class="pop-filter-color">
-                    <input type="checkbox" value="" ><label>Black</label><br>
-                    <input type="checkbox" value="" checked><label>Blue</label><br>
-                    <input type="checkbox" value="" ><label>Multi</label><br>
-                    <input type="checkbox" value="" checked><label>White</label><br>
+                    <input id="pop-color-black" type="checkbox" value="" ><label>Black</label><br>
+                    <input id="pop-color-blue" type="checkbox" value="" checked><label>Blue</label><br>
+                    <input id="pop-color-multi" type="checkbox" value="" ><label>Multi</label><br>
+                    <input id="pop-color-white" type="checkbox" value="" checked><label>White</label><br>
                 </div>
                 <hr class="hr">
                 <div class="row price-box">
@@ -501,7 +501,7 @@
                     Price
                   </div>
                   <div class="col-xs-4">
-                    <a class="text-right clear-btn" href="#">Clear</a>
+                    <a id="pop-price-clear" class="text-right clear-btn" href="#">Clear</a>
                   </div>
                 </div>
                 <div class="row">
@@ -831,7 +831,7 @@
                   <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only">Add item to wishlist</span>
                   </button>
-                  <img class="pop-product-image" src="" alt="Enditatem Product Name Optional very long line two" width="200" />
+                  <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Enditatem Product Name Optional very long line two</span>
                     <span class="name-subline">Subline</span>
@@ -902,7 +902,6 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
-                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -983,7 +982,7 @@
                   <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only">Add item to wishlist</span>
                   </button>
-                  <img class="pop-product-image" src="" alt="Just one single line" width="200" />
+                  <img class="pop-product-image" src="assets/img/blue-shirt.jpg" alt="Just one single line" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Just one single line</span>
                     <span class="name-subline"></span>
@@ -1054,7 +1053,6 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
-                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1133,7 +1131,7 @@
                   <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only">Add item to wishlist</span>
                   </button>
-                  <img class="pop-product-image" src="" alt="Headline" width="200" />
+                  <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Headline" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Headline</span>
                     <span class="name-subline">Enditatem Product Name Optional Line Two</span>
@@ -1203,7 +1201,6 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
-                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1284,7 +1281,7 @@
                   <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only">Add item to wishlist</span>
                   </button>
-                  <img class="pop-product-image" src="" alt="Enditatem Product Name Optional very long line two" width="200" />
+                  <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Enditatem Product Name Optional very long line two</span>
                     <span class="name-subline">Subline</span>
@@ -1355,7 +1352,6 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
-                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1436,7 +1432,7 @@
                   <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only">Add item to wishlist</span>
                   </button>
-                  <img class="pop-product-image" src="" alt="Just one single line" width="200" />
+                  <img class="pop-product-image" src="assets/img/blue-shirt.jpg" alt="Just one single line" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Just one single line</span>
                     <span class="name-subline"></span>
@@ -1507,7 +1503,6 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
-                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1586,7 +1581,7 @@
                   <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only">Add item to wishlist</span>
                   </button>
-                  <img class="pop-product-image" src="" alt="Headline" width="200" />
+                  <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Headline" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Headline</span>
                     <span class="name-subline">Enditatem Product Name Optional Line Two</span>
@@ -1656,7 +1651,6 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
-                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1737,7 +1731,7 @@
                   <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only">Add item to wishlist</span>
                   </button>
-                  <img class="pop-product-image" src="" alt="Enditatem Product Name Optional very long line two" width="200" />
+                  <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Enditatem Product Name Optional very long line two</span>
                     <span class="name-subline">Subline</span>
@@ -1808,7 +1802,6 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
-                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -1889,7 +1882,7 @@
                   <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only">Add item to wishlist</span>
                   </button>
-                  <img class="pop-product-image" src="" alt="Just one single line" width="200" />
+                  <img class="pop-product-image" src="assets/img/blue-shirt.jpg" alt="Just one single line" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Just one single line</span>
                     <span class="name-subline"></span>
@@ -1960,7 +1953,6 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
-                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -2039,7 +2031,7 @@
                   <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only">Add item to wishlist</span>
                   </button>
-                  <img class="pop-product-image" src="" alt="Headline" width="200" />
+                  <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Headline" width="200" />
                   <div class="pop-product-name">
                     <span class="name-headline">Headline</span>
                     <span class="name-subline">Enditatem Product Name Optional Line Two</span>
@@ -2109,7 +2101,6 @@
                             </div>
                             <div class="row">
                               <div class="col-sm-12">
-                                <p class="additional-description">This is the area for additional product information</p>
                                 <a href="#"><span class="view-details">View Details</span></a>
                               </div>
                             </div>
@@ -2217,7 +2208,7 @@
     </div>
   </div>
   <div class="wishlist">
-    <button class="hidden-xs wishlist-btn">
+    <button id="pop-wishlist-btn" class="hidden-xs wishlist-btn">
       <div class="wishlist-number">45</div>
     </button>
     <div class="wishlist-items hidden">
@@ -2229,7 +2220,7 @@
           <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
           <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
       </div>
-      <a href="" class="btn view-wishlist-btn">View your wishlist</a>
+      <a href="" id="pop-wishlist-view-btn" class="btn view-wishlist-btn">View your wishlist</a>
     </div>
   </div>
 
@@ -2275,8 +2266,8 @@
             </div>
             <div class="col-sm-7">
               <form class="email-submit" action="">
-                <input class="email-box" type="text" placeholder="Your email ...">
-                <button type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">Subscribe</span></button>
+                <input id="pop-newsletter-input" class="email-box" type="text" placeholder="Your email ...">
+                <button id="pop-newsletter-button" type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">Subscribe</span></button>
               </form>
             </div>
           </div>

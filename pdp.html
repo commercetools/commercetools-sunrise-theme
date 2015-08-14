@@ -36,7 +36,7 @@
                   </button>
                 </li>
                 <!-- Toggles the search field on mobile / not visible on desktop -->
-                <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only">Toggle search field</span></button></li>
+                <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only"></span></button></li>
   
                 <li class="list-item-store"><a href="" class="store-select icon-marker"><span class="hidden-xs">STORES</span></a></li>
   
@@ -49,19 +49,19 @@
                 <li class="list-item-user"><a href="" class="link-user icon-user"><span class="hidden-xs hidden-sm">SIGN IN</span></a></li>
   
                 <li class="list-item-location clearfix">
-                  <button><img class="pull-right location-dropdown-toggle" src="assets/img/globe-2.png" alt="Location"></button>
+                  <button id="pdp-location-dropdown-toggle-btn"><img class="pull-right location-dropdown-toggle" src="assets/img/globe-2.png" alt="Location"></button>
                   <div class="location-dropdown">
                     <span class="location-dropdown-label">Language</span>
-                    <select class="select location-select" name="language">
-                      <option value="" selected>German</option>
-                      <option value="" >English</option>
-                      <option value="" >French</option>
+                    <select id="pdp-language-select" class="select location-select" name="language">
+                      <option id="pdp-language-option-german" value="" selected>German</option>
+                      <option id="pdp-language-option-english" value="" >English</option>
+                      <option id="pdp-language-option-french" value="" >French</option>
                     </select>
                     <span class="location-dropdown-label">Country</span>
-                    <select class="select location-select" name="country">
-                      <option value="">Germany</option>
-                      <option value="">UK</option>
-                      <option value="">France</option>
+                    <select id="pdp-country-select" class="select location-select" name="country">
+                      <option id="pdp-country-option-germany" value="">Germany</option>
+                      <option id="pdp-country-option-uk" value="">UK</option>
+                      <option id="pdp-country-option-france" value="">France</option>
                     </select>
                   </div>
                 </li>
@@ -81,8 +81,8 @@
           </div>
           <div class="col-sm-4">
            <form class="search-box text-right" action="">
-              <input class="search-field" type="search" placeholder="Search" />
-              <button type="submit" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only">Search</span></button>
+              <input id="pdp-search-input" class="search-field" type="search" placeholder="Search" />
+              <button type="submit" id="pdp-search-button" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only"></span></button>
            </form>
           </div>
         </div>
@@ -407,7 +407,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <p class="pdp-product-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
-                <a href="#"><span class="view-details">View Details</span></a>
+                <a id="pdp-view-details-btn" href="#"><span class="view-details">View Details</span></a>
               </div>
             </div>
             <div class="row">
@@ -420,52 +420,52 @@
                 <li>
                   <p class="text-uppercase">Color</p>
                   <div>
-                    <select class="select-product-detail">
-                      <option value="" selected>Choose Color</option>
-                        <option value="" >Red</option>
-                        <option value="" >Blue</option>
-                        <option value="" >Green</option>
+                    <select id="pdp-color-select" class="select-product-detail">
+                      <option id="pdp-color-select-first-option" value="pdp-color-select-first-option" selected>Choose Color</option>
+                        <option id="pdp-color-select-red" value="" >Red</option>
+                        <option id="pdp-color-select-blue" value="" >Blue</option>
+                        <option id="pdp-color-select-green" value="" >Green</option>
                     </select>
                   </div>
                 </li>
                 <li>
                   <p class="text-uppercase">Size</p>
                   <div>
-                    <select class="select-product-detail">
-                        <option value="" selected>Choose Size</option>
-                        <option value="" >S</option>
-                        <option value="" >M</option>
-                        <option value="" >L</option>
+                    <select id="pdp-size-select" class="select-product-detail">
+                        <option id="" value="pdp-size-select-first-option" selected>Choose Size</option>
+                        <option id="pdp-size-select-s" value="" >S</option>
+                        <option id="pdp-size-select-m" value="" >M</option>
+                        <option id="pdp-size-select-l" value="" >L</option>
                     </select>
                   </div>
                 </li>
                 <li class="size-guide-li">
-                  <a href="#" data-toggle="modal" data-target="#size-guide"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">Size Guide</span></a>
+                  <a href="#" id="pdp-size-guide" data-toggle="modal" data-target="#size-guide"><span class="size-guide"><img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="size guide">Size Guide</span></a>
                 </li>
               </ul>
             </div>
             <div class="row">
               <ul class="list-inline">
                 <li>
-                  <select class="bag-items">
-                      <option value="" selected>1</option>
-                      <option value="" >2</option>
-                      <option value="" >3</option>
-                      <option value="" >4</option>
-                      <option value="" >5</option>
-                      <option value="" >6</option>
-                      <option value="" >7</option>
-                      <option value="" >8</option>
-                      <option value="" >9</option>
+                  <select id="pdp-bag-items-quantity-input" class="bag-items">
+                      <option id="pdp-bag-items-1" value="" selected>1</option>
+                      <option id="pdp-bag-items-2" value="" >2</option>
+                      <option id="pdp-bag-items-3" value="" >3</option>
+                      <option id="pdp-bag-items-4" value="" >4</option>
+                      <option id="pdp-bag-items-5" value="" >5</option>
+                      <option id="pdp-bag-items-6" value="" >6</option>
+                      <option id="pdp-bag-items-7" value="" >7</option>
+                      <option id="pdp-bag-items-8" value="" >8</option>
+                      <option id="pdp-bag-items-9" value="" >9</option>
                   </select>
                 </li>
                 <li>
-                  <button class="add-to-bag text-center">
+                  <button id="pdp-add-to-bag-btn" class="add-to-bag text-center">
                    <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="Add to bag">Add to bag
                   </button>
                 </li>
                 <li>
-                  <button type="button" class="btn pdp-product-heart">
+                  <button id="pdp-add-to-wishlist-btn" type="button" class="btn pdp-product-heart">
                     <span class="sr-only">Add item to wishlist</span>
                   </button>
                 </li>
@@ -484,7 +484,7 @@
                   <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingTwo">
                       <h4 class="panel-title product-accordion-title text-uppercase">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Product Details<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
+                        <a id="pdp-product-details-toggle" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Product Details<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
                         </a>
                       </h4>
                     </div>
@@ -501,7 +501,7 @@
                   <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingThree">
                       <h4 class="panel-title product-accordion-title text-uppercase">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Delivery &amp; Returns<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
+                        <a id="pdp-delivery-returns-toggle" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Delivery &amp; Returns<img class="accordion-plus" src="assets/img/plus79.png" alt="accordion content">
                         </a>
                       </h4>
                     </div>
@@ -632,7 +632,6 @@
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <p class="additional-description"></p>
                             <a href="#"><span class="view-details"></span></a>
                           </div>
                         </div>
@@ -743,7 +742,6 @@
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <p class="additional-description"></p>
                             <a href="#"><span class="view-details"></span></a>
                           </div>
                         </div>
@@ -854,7 +852,6 @@
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <p class="additional-description"></p>
                             <a href="#"><span class="view-details"></span></a>
                           </div>
                         </div>
@@ -965,7 +962,6 @@
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
-                            <p class="additional-description"></p>
                             <a href="#"><span class="view-details"></span></a>
                           </div>
                         </div>
@@ -1177,7 +1173,7 @@
     </div>
   </div>
   <div class="wishlist">
-    <button class="hidden-xs wishlist-btn">
+    <button id="pdp-wishlist-btn" class="hidden-xs wishlist-btn">
       <div class="wishlist-number">45</div>
     </button>
     <div class="wishlist-items hidden">
@@ -1189,7 +1185,7 @@
           <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
           <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
       </div>
-      <a href="" class="btn view-wishlist-btn">View your wishlist</a>
+      <a href="" id="pdp-wishlist-view-btn" class="btn view-wishlist-btn">View your wishlist</a>
     </div>
   </div>
 
@@ -1235,8 +1231,8 @@
             </div>
             <div class="col-sm-7">
               <form class="email-submit" action="">
-                <input class="email-box" type="text" placeholder="Your email ...">
-                <button type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">Subscribe</span></button>
+                <input id="pdp-newsletter-input" class="email-box" type="text" placeholder="Your email ...">
+                <button id="pdp-newsletter-button" type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">Subscribe</span></button>
               </form>
             </div>
           </div>
