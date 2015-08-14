@@ -1,5 +1,5 @@
 <div class="wishlist">
-  <button class="hidden-xs wishlist-btn">
+  <button id="{{content.wishlistWidged.wishlistBtnId}}" class="hidden-xs wishlist-btn">
     <div class="wishlist-number">{{content.wishlistWidged.number}}</div>
   </button>
   <div class="wishlist-items hidden">
@@ -11,6 +11,6 @@
         <img class="pull-left img-responsive wishlist-img" src="{{image}}" alt="wishlist item image">
       {{/each}}
     </div>
-    <a href="{{content.wishlistWidged.viewWishlist.url}}" class="btn view-wishlist-btn">{{content.wishlistWidged.viewWishlist.text}}</a>
+    <a href="{{content.wishlistWidged.viewWishlist.url}}" id="{{content.wishlistWidged.wishlistViewBtnId}}" class="btn view-wishlist-btn">{{content.wishlistWidged.viewWishlist.text}}</a>
   </div>
 </div>

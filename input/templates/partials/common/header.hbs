@@ -28,18 +28,18 @@
               <li class="list-item-user"><a href="{{header.user.signIn.url}}" class="link-user icon-user"><span class="hidden-xs hidden-sm">{{header.user.signIn.text}}</span></a></li>
 
               <li class="list-item-location clearfix">
-                <button><img class="pull-right location-dropdown-toggle" src="{{meta.assetsPath}}img/globe-2.png" alt="Location"></button>
+                <button id="{{header.location.locationDropdownToggleBtnId}}"><img class="pull-right location-dropdown-toggle" src="{{meta.assetsPath}}img/globe-2.png" alt="Location"></button>
                 <div class="location-dropdown">
                   <span class="location-dropdown-label">Language</span>
-                  <select class="select location-select" name="language">
+                  <select id="{{header.location.languageSelectId}}" class="select location-select" name="language">
                     {{#each header.location.language}}
-                    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+                    <option id="{{languageOptionId}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                     {{/each}}
                   </select>
                   <span class="location-dropdown-label">Country</span>
-                  <select class="select location-select" name="country">
+                  <select id="{{header.location.countrySelectId}}" class="select location-select" name="country">
                     {{#each header.location.country}}
-                    <option value="{{value}}">{{text}}</option>
+                    <option id="{{countryOptionId}}" value="{{value}}">{{text}}</option>
                     {{/each}}
                   </select>
                 </div>
@@ -60,8 +60,8 @@
         </div>
         <div class="col-sm-4">
          <form class="search-box text-right" action="{{header.search.url}}">
-            <input class="search-field" type="search" placeholder="Search" />
-            <button type="submit" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only">{{header.search.text}}</span></button>
+            <input id="{{header.search.inputId}}" class="search-field" type="search" placeholder="Search" />
+            <button type="submit" id="{{header.search.buttonId}}" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only">{{header.search.text}}</span></button>
          </form>
         </div>
       </div>

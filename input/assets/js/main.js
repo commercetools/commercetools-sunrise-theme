@@ -135,12 +135,6 @@ $("ul#bzoom").each( function(index, ul) {
   });
 });
 
-// Expand product information on click
-$( ".view-details" ).click(function() {
-  event.preventDefault();
-  $( this ).closest("div").find(".additional-description").slideToggle( "fast" )
-});
-
 // Toggle hidden/sliced description
 $(function() {
     var hiddenDescription = $('p.pdp-product-description');

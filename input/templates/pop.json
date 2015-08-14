@@ -14,45 +14,53 @@
 			"url" : ""
 		},
 		"location" : {
+			"locationDropdownToggleBtnId" : "pop-location-dropdown-toggle-btn",
+			"languageSelectId" : "pop-language-select",
+			"countrySelectId" : "pop-country-select",
 			"language" : [
 				{
 					"text" : "German",
 					"value" : "",
-					"selected" : true
+					"selected" : true,
+					"languageOptionId" : "pop-language-option-german"
 				},
 				{
 					"text" : "English",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"languageOptionId" : "pop-language-option-english"
 				},
 				{
 					"text" : "French",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"languageOptionId" : "pop-language-option-french"
 				}
 			],
 			"country" : [
 				{
 					"text" : "Germany",
 					"value" : "",
-					"selected" : true
+					"selected" : true,
+					"countryOptionId" : "pop-country-option-germany"
 				},
 				{
 					"text" : "UK",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"countryOptionId" : "pop-country-option-uk"
 				},
 				{
 					"text" : "France",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"countryOptionId" : "pop-country-option-france"
 				}
 			]
 		},
 		"search" : {
-			"text" : "Search",
-			"textToggle" : "Toggle search field",
-			"url" : ""
+			"inputId" : "pop-search-input",
+			"buttonId" : "pop-search-button"
 		},
 		"user" : {
 			"isLoggedIn" : false,
@@ -646,7 +654,9 @@
 			"text" :  "Join our newsletter",
 			"textAlt" : "Subscribe",
 			"url" : "",
-			"placeholder" : "Your email ..."
+			"placeholder" : "Your email ...",
+			"inputId" : "pop-newsletter-input",
+			"buttonId" : "pop-newsletter-button"
 		},
 		"customerCare" : {
 			"text" : "Customer Care",
@@ -764,20 +774,24 @@
 			"close" : "Filter close",
 			"categories" : {
 				"text" : "Product type",
+				"categoriesClearBtnId" : "pop-categories-clear",
 				"list" : [
 					{
 						"text" : "Type-1",
 						"value" : "one",
+						"id" : "pop-product-type-one",
 						"selected" : true,
 						"children" : [
 							{
 								"text" : "sub-type 1",
 								"value" : "",
+								"id" : "pop-product-type-one-one",
 								"selected" : true
 							},
 							{
 								"text" : "sub-type 2",
 								"value" : "",
+								"id" : "pop-product-type-one-two",
 								"selected" : false
 							}
 						]
@@ -785,16 +799,19 @@
 					{
 						"text" : "Type-2",
 						"value" : "two",
+						"id" : "pop-product-type-two",
 						"selected" : false,
 						"children" : [
 							{
 								"text" : "sub-type 1",
 								"value" : "",
+								"id" : "pop-product-type-two-one",
 								"selected" : false
 							},
 							{
 								"text" : "sub-type 2",
 								"value" : "",
+								"id" : "pop-product-type-two-two",
 								"selected" : false
 							}
 						]
@@ -802,16 +819,19 @@
 					{
 						"text" : "Type-3",
 						"value" : "three",
+						"id" : "pop-product-type-three",
 						"selected" : false,
 						"children" : [
 							{
 								"text" : "sub-type 1",
 								"value" : "",
+								"id" : "pop-product-type-three-one",
 								"selected" : false
 							},
 							{
 								"text" : "sub-type 2",
 								"value" : "",
+								"id" : "pop-product-type-three-two",
 								"selected" : false
 							}
 						]
@@ -820,56 +840,67 @@
 			},
 			"size" : {
 				"text" : "Size",
+				"sizeClearBtnId" : "pop-size-clear",
 				"list" : [
 					{
 						"text" : "S",
 						"value" : "",
+						"id" : "pop-size-s",
 						"selected" : true
 					},
 					{
 						"text" : "M",
 						"value" : "",
+						"id" : "pop-size-m",
 						"selected" : false
 					},
 					{
 						"text" : "XL",
 						"value" : "",
+						"id" : "pop-size-xl",
 						"selected" : true
 					},
 					{
 						"text" : "XXL",
 						"value" : "",
+						"id" : "pop-size-xxl",
 						"selected" : false
 					}
 				]
 			},
 			"color" : {
 				"text" : "Color",
+				"colorClearBtnId" : "pop-color-clear",
 				"list" : [
 					{
 						"text" : "Black",
 						"value" : "",
+						"id" : "pop-color-black",
 						"selected" : false
 					},
 					{
 						"text" : "Blue",
 						"value" : "",
+						"id" : "pop-color-blue",
 						"selected" : true
 					},
 					{
 						"text" : "Multi",
 						"value" : "",
+						"id" : "pop-color-multi",
 						"selected" : false
 					},
 					{
 						"text" : "White",
 						"value" : "",
+						"id" : "pop-color-white",
 						"selected" : true
 					}
 				]
 			},
 			"price" : {
 				"text" : "Price",
+				"priceClearBtn" : "pop-price-clear",
 				"min" : 25,
 				"max" : 500,
 				"selected" : 50
@@ -1002,7 +1033,7 @@
 					"id" : "1",
 					"text" : "Enditatem Product Name Optional very long line two",
 					"description" : "Subline",
-					"image" : "assets/img/blue-jacket.jpg",
+					"imageUrl" : "assets/img/blue-jacket.jpg",
 					"price" : "€ 49,-",
 					"priceOld" : "€ 79,99",
 					"url" : "",
@@ -1066,7 +1097,6 @@
 								}
 							]
 						},
-						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -1179,7 +1209,7 @@
 					"id" : "2",
 					"text" : "Just one single line",
 					"description" : "",
-					"image" : "assets/img/blue-shirt.jpg",
+					"imageUrl" : "assets/img/blue-shirt.jpg",
 					"price" : "€ 149,-",
 					"priceOld" : "€ 250,-",
 					"url" : "",
@@ -1243,7 +1273,6 @@
 								}
 							]
 						},
-						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -1356,7 +1385,7 @@
 					"id" : "3",
 					"text" : "Headline",
 					"description" : "Enditatem Product Name Optional Line Two",
-					"image" : "assets/img/blue-jacket.jpg",
+					"imageUrl" : "assets/img/blue-jacket.jpg",
 					"price" : "€ 250,-",
 					"url" : "",
 					"wishlistUrl" : "",
@@ -1419,7 +1448,6 @@
 								}
 							]
 						},
-						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -1532,7 +1560,7 @@
 					"id" : "4",
 					"text" : "Enditatem Product Name Optional very long line two",
 					"description" : "Subline",
-					"image" : "assets/img/blue-jacket.jpg",
+					"imageUrl" : "assets/img/blue-jacket.jpg",
 					"price" : "€ 49,-",
 					"priceOld" : "€ 79,99",
 					"url" : "",
@@ -1596,7 +1624,6 @@
 								}
 							]
 						},
-						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -1709,7 +1736,7 @@
 					"id" : "5",
 					"text" : "Just one single line",
 					"description" : "",
-					"image" : "assets/img/blue-shirt.jpg",
+					"imageUrl" : "assets/img/blue-shirt.jpg",
 					"price" : "€ 149,-",
 					"priceOld" : "€ 250,-",
 					"url" : "",
@@ -1773,7 +1800,6 @@
 								}
 							]
 						},
-						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -1886,7 +1912,7 @@
 					"id" : "6",
 					"text" : "Headline",
 					"description" : "Enditatem Product Name Optional Line Two",
-					"image" : "assets/img/blue-jacket.jpg",
+					"imageUrl" : "assets/img/blue-jacket.jpg",
 					"price" : "€ 250,-",
 					"url" : "",
 					"wishlistUrl" : "",
@@ -1949,7 +1975,6 @@
 								}
 							]
 						},
-						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -2062,7 +2087,7 @@
 					"id" : "7",
 					"text" : "Enditatem Product Name Optional very long line two",
 					"description" : "Subline",
-					"image" : "assets/img/blue-jacket.jpg",
+					"imageUrl" : "assets/img/blue-jacket.jpg",
 					"price" : "€ 49,-",
 					"priceOld" : "€ 79,99",
 					"url" : "",
@@ -2126,7 +2151,6 @@
 								}
 							]
 						},
-						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -2239,7 +2263,7 @@
 					"id" : "8",
 					"text" : "Just one single line",
 					"description" : "",
-					"image" : "assets/img/blue-shirt.jpg",
+					"imageUrl" : "assets/img/blue-shirt.jpg",
 					"price" : "€ 149,-",
 					"priceOld" : "€ 250,-",
 					"url" : "",
@@ -2303,7 +2327,6 @@
 								}
 							]
 						},
-						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -2416,7 +2439,7 @@
 					"id" : "9",
 					"text" : "Headline",
 					"description" : "Enditatem Product Name Optional Line Two",
-					"image" : "assets/img/blue-jacket.jpg",
+					"imageUrl" : "assets/img/blue-jacket.jpg",
 					"price" : "€ 250,-",
 					"url" : "",
 					"wishlistUrl" : "",
@@ -2479,7 +2502,6 @@
 								}
 							]
 						},
-						"additionalDescription" : "This is the area for additional product information",
 						"viewDetails" : "View Details",
 						"price" : "€ 123,-",
 						"priceOld" : "€ 173,-",
@@ -2592,6 +2614,8 @@
 		},
 		"wishlistWidged" : {
 			"text" : "Your Wishlist",
+			"wishlistBtnId" : "pop-wishlist-btn",
+			"wishlistViewBtnId" : "pop-wishlist-view-btn",
 			"number" : "45",
 			"recentAddedTitle" : "My recently added items",
 			"viewWishlist" : {

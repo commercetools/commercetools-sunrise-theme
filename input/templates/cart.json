@@ -14,38 +14,47 @@
 			"url" : ""
 		},
 		"location" : {
+			"locationDropdownToggleBtnId" : "cart-location-dropdown-toggle-btn",
+			"languageSelectId" : "cart-language-select",
+			"countrySelectId" : "cart-country-select",
 			"language" : [
 				{
 					"text" : "German",
 					"value" : "",
-					"selected" : true
+					"selected" : true,
+					"languageOptionId" : "cart-language-option-german"
 				},
 				{
 					"text" : "English",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"languageOptionId" : "cart-language-option-english"
 				},
 				{
 					"text" : "French",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"languageOptionId" : "cart-language-option-french"
 				}
 			],
 			"country" : [
 				{
 					"text" : "Germany",
 					"value" : "",
-					"selected" : true
+					"selected" : true,
+					"countryOptionId" : "cart-country-option-germany"
 				},
 				{
 					"text" : "UK",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"countryOptionId" : "cart-country-option-uk"
 				},
 				{
 					"text" : "France",
 					"value" : "",
-					"selected" : false
+					"selected" : false,
+					"countryOptionId" : "cart-country-option-france"
 				}
 			]
 		},
@@ -55,6 +64,10 @@
 				"text" : "SIGN IN",
 				"url" : ""
 			}
+		},
+		"search" : {
+			"inputId" : "cart-search-input",
+			"buttonId" : "cart-search-button"
 		},
 		"miniCart" : {
 			"text" : "YOUR BAG",
@@ -641,7 +654,9 @@
 			"text" :  "Join our newsletter",
 			"textAlt" : "Subscribe",
 			"url" : "",
-			"placeholder" : "Your email ..."
+			"placeholder" : "Your email ...",
+			"inputId" : "cart-newsletter-input",
+			"buttonId" : "cart-newsletter-button"
 		},
 		"customerCare" : {
 			"text" : "Customer Care",
@@ -793,6 +808,8 @@
     "continueShoppingBtn" : "Continue Shopping",
 		"wishlistWidged" : {
 			"text" : "Your Wishlist",
+			"wishlistBtnId" : "cart-wishlist-btn",
+			"wishlistViewBtnId" : "cart-wishlist-view-btn",
 			"number" : "45",
 			"recentAddedTitle" : "My recently added items",
 			"viewWishlist" : {
