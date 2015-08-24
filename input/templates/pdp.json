@@ -765,15 +765,15 @@
 			"quickViewText" : "Quick view",
 			"wishlistText" : "Add item to wishlist",
 			"moreColorsText" : "More colours",
-		  "reviewsText" : "Reviews",
-		  "colorDefaultItem": {
+			"reviewsText" : "Reviews",
+			"colorDefaultItem": {
 				"text": "Choose Color",
 				"selected": true,
 				"id" : "pdp-color-select-first-option"
 			},
-	  	"sizeDefaultItem": {
-		    "text": "Choose Size",
-		  	"selected": true,
+			"sizeDefaultItem": {
+				"text": "Choose Size",
+				"selected": true,
 				"id" : "pdp-size-select-first-option"
 			},
 			"bagItems" : [
@@ -994,42 +994,41 @@
 				}
 			]
 		},
-		"suggestions" : {
-			"list" : [
-				{
-					"text" : "Enditatem Product Name Optional very long line two",
-					"description" : "Subline",
-					"imageUrl" : "assets/img/blue-jacket.jpg",
-					"price" : "€ 49,-",
-					"priceOld": "",
-					"productUrl" : ""
-				},
-				{
-					"text" : "Just one single line",
-					"description" : "",
-					"imageUrl" : "assets/img/blue-shirt.jpg",
-					"price" : "€ 149,-",
-					"priceOld": "",
-					"productUrl" : ""
-				},
-				{
-					"text" : "Headline",
-					"description" : "Enditatem Product Name Optional Line Two",
-					"imageUrl" : "assets/img/blue-jacket.jpg",
-					"price" : "€ 250,-",
-				  "priceOld": "",
-				  "productUrl" : ""
-				},
-				{
-					"text" : "Enditatem Product Name",
-					"description" : "",
-					"imageUrl" : "assets/img/blue-shirt.jpg",
-					"price" : "€ 123,-",
-				  "priceOld": "",
-				  "productUrl" : ""
-				}
-			]
-		},
+		"suggestions" : [
+			{
+				"text" : "Enditatem Product Name Optional very long line two",
+				"description" : "Subline",
+				"imageUrl" : "assets/img/blue-jacket.jpg",
+				"price" : "€ 49,-",
+				"priceOld": "",
+				"productUrl" : "",
+			    "new": false
+			},
+			{
+				"text" : "Just one single line",
+				"description" : "",
+				"imageUrl" : "assets/img/blue-shirt.jpg",
+				"price" : "€ 149,-",
+				"priceOld": "",
+				"productUrl" : ""
+			},
+			{
+				"text" : "Headline",
+				"description" : "Enditatem Product Name Optional Line Two",
+				"imageUrl" : "assets/img/blue-jacket.jpg",
+				"price" : "€ 250,-",
+				"priceOld": "",
+				"productUrl" : ""
+			},
+			{
+				"text" : "Enditatem Product Name",
+				"description" : "",
+				"imageUrl" : "assets/img/blue-shirt.jpg",
+				"price" : "€ 123,-",
+				"priceOld": "",
+				"productUrl" : ""
+			}
+		],
 		"reviews" : {},
 		"wishlistWidged" : {
 			"text" : "Your Wishlist",
