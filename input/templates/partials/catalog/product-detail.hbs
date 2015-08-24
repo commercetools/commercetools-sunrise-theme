@@ -87,14 +87,14 @@
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingTwo">
           <h4 class="panel-title product-accordion-title text-uppercase">
-            <a id="{{content.static.productdetailsToggle}}" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">{{content.static.productDetailsText}}<img class="accordion-plus" src="{{meta.assetsPath}}img/plus79.png" alt="accordion content">
+            <a id="{{content.static.productDetailsToggleId}}" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">{{content.static.productDetailsText}}<img class="accordion-plus" src="{{meta.assetsPath}}img/plus79.png" alt="accordion content">
             </a>
           </h4>
         </div>
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
           <div class="panel-body panel-body-pdp">
             <ul>
-              {{#each content.product.productDetails}}
+              {{#each content.product.details}}
                 <li>{{text}}</li>
               {{/each}}
             </ul>
@@ -104,21 +104,21 @@
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingThree">
           <h4 class="panel-title product-accordion-title text-uppercase">
-            <a id="{{content.static.deliveryreturnsToggle}}" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{{content.static.deliveryAndReturnsText}}<img class="accordion-plus" src="{{meta.assetsPath}}img/plus79.png" alt="accordion content">
+            <a id="{{content.static.deliveryReturnsToggleId}}" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{{content.static.deliveryAndReturnsText}}<img class="accordion-plus" src="{{meta.assetsPath}}img/plus79.png" alt="accordion content">
             </a>
           </h4>
         </div>
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body panel-body-pdp">
-            <h4>{{content.static.deliveryText}}</h4>
+            <h4>{{content.static.shippingRatesText}}</h4>
             <ul>
-              {{#each content.delivery.list}}
+              {{#each content.shippingRates}}
                 <li>{{text}}</li>
               {{/each}}
             </ul>
             <h4>{{content.static.returnsText}}</h4>
             <ul>
-              {{#each content.returns.list}}
+              {{#each content.returns}}
                 <li>{{text}}</li>
               {{/each}}
             </ul>
