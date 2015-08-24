@@ -28,7 +28,7 @@
             <div class="row">
               <div class="col-sm-12">
                 <fieldset class="rating">
-                  {{#each static.rating}}
+                  {{#each content.static.rating}}
                     <input type="radio" id="star{{value}}" name="rating" value="{{value}}" /><label for="star{{value}}" title="{{description}}">{{text}}</label>
                   {{/each}}
                 </fieldset>
@@ -37,7 +37,7 @@
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <a href="#"><span class="view-details">{{static.viewDetailsText}}</span></a>
+                <a href="#"><span class="view-details">{{content.static.viewDetailsText}}</span></a>
               </div>
             </div>
             <div class="row">
@@ -48,7 +48,7 @@
             <div class="row select-row">
               <ul class="list-inline">
                 <li>
-                  <p class="text-uppercase">{{static.colorText}}</p>
+                  <p class="text-uppercase">{{content.static.colorText}}</p>
                   <div>
                     <select class="select-product-detail">
                       {{#each colors}}
@@ -58,7 +58,7 @@
                   </div>
                 </li>
                 <li>
-                  <p class="text-uppercase">{{static.sizeText}}</p>
+                  <p class="text-uppercase">{{content.static.sizeText}}</p>
                   <div>
                     <select class="select-product-detail">
                       {{#each sizes}}
@@ -73,19 +73,19 @@
               <ul class="list-inline">
                 <li>
                   <select class="bag-items">
-                    {{#each static.bagItems}}
+                    {{#each content.static.bagItems}}
                       <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                     {{/each}}
                   </select>
                 </li>
                 <li>
                   <button class="add-to-bag text-center">
-                   <img class="bag-thumb" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="{{static.addToBagText}}">{{static.addToBagText}}
+                   <img class="bag-thumb" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="{{content.static.addToBagText}}">{{content.static.addToBagText}}
                   </button>
                 </li>
                 <li>
                   <button type="button" class="btn pdp-product-heart">
-                    <span class="sr-only">{{static.addToWishlistText}}</span>
+                    <span class="sr-only">{{content.static.addToWishlistText}}</span>
                   </button>
                 </li>
                 <li>
