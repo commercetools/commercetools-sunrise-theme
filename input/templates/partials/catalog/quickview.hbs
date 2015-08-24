@@ -10,7 +10,7 @@
           <div class="col-sm-4">
             <div class="bzoom_wrap">
               <ul id="bzoom">
-                {{#each quickviewGallery}}
+                {{#each images}}
                   <li>
                     <img class="bzoom_thumb_image" src="{{thumbImage}}">
                     <img class="bzoom_big_image" src="{{bigImage}}">
@@ -22,46 +22,46 @@
           <div class="col-sm-6 col-sm-offset-2 product-description">
             <div class="row">
               <div class="col-sm-12">
-                <p><h1 class="text-uppercase pdp-product-title">{{product.text}}</h1><span class="grey-p quickview-sku">{{product.sku}}</span></p>
+                <p><h1 class="text-uppercase pdp-product-title">{{text}}</h1><span class="grey-p quickview-sku">{{sku}}</span></p>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12">
                 <fieldset class="rating">
-                  {{#each product.rating.list}}
+                  {{#each static.rating}}
                     <input type="radio" id="star{{value}}" name="rating" value="{{value}}" /><label for="star{{value}}" title="{{description}}">{{text}}</label>
                   {{/each}}
                 </fieldset>
-                <span class="star-rating-review"><a href="{{product.rating.url}}">{{product.rating.text}}</a></span>
+                <span class="star-rating-review"><a href="{{rating.url}}">{{rating.text}}</a></span>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <a href="#"><span class="view-details">{{product.viewDetails}}</span></a>
+                <a href="#"><span class="view-details">{{static.viewDetailsText}}</span></a>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12">
-                <p class="product-price">{{product.price}}</p>
+                <p class="product-price">{{price}}</p>
               </div>
             </div>
             <div class="row select-row">
               <ul class="list-inline">
                 <li>
-                  <p class="text-uppercase">{{product.color.text}}</p>
+                  <p class="text-uppercase">{{static.colorText}}</p>
                   <div>
                     <select class="select-product-detail">
-                      {{#each product.color.list}}
+                      {{#each colors}}
                         <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                       {{/each}}
                     </select>
                   </div>
                 </li>
                 <li>
-                  <p class="text-uppercase">{{product.size.text}}</p>
+                  <p class="text-uppercase">{{static.sizeText}}</p>
                   <div>
                     <select class="select-product-detail">
-                      {{#each product.size.list}}
+                      {{#each sizes}}
                         <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                       {{/each}}
                     </select>
@@ -73,24 +73,24 @@
               <ul class="list-inline">
                 <li>
                   <select class="bag-items">
-                    {{#each product.bagItems.list}}
+                    {{#each static.bagItems}}
                       <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                     {{/each}}
                   </select>
                 </li>
                 <li>
                   <button class="add-to-bag text-center">
-                   <img class="bag-thumb" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="{{addToBag}}">{{product.addToBag}}
+                   <img class="bag-thumb" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="{{static.addToBagText}}">{{static.addToBagText}}
                   </button>
                 </li>
                 <li>
                   <button type="button" class="btn pdp-product-heart">
-                    <span class="sr-only">{{product.addToWishlist}}</span>
+                    <span class="sr-only">{{static.addToWishlistText}}</span>
                   </button>
                 </li>
                 <li>
                   <div class="availability">
-                    <span class="glyphicon glyphicon-ok-sign"></span>{{product.available}}
+                    <span class="glyphicon glyphicon-ok-sign"></span>{{available}}
                   </div>
                 </li>
               </ul>
