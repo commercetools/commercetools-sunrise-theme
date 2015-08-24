@@ -1,14 +1,12 @@
-{{#with content.suggestions}}
 <div class="row">
   <div class="col-sm-12">
     <p class="text-center text-uppercase may-like">{{content.static.youMayLikeText}}</p>
   </div>
 </div>
 <div class="row">
-  {{#each list}}
+  {{#each content.suggestions}}
     <div class="col-xs-12 col-sm-6 col-md-3">
-      {{> catalog/product-thumbnail context=..}}
+      {{> catalog/product-thumbnail}}
     </div>
   {{/each}}
 </div>
-{{/with}}

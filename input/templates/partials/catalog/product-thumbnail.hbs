@@ -1,12 +1,12 @@
 <div class="shop-item" onclick="location.href='{{url}}'">
   {{#if priceOld}}
-    <div class="sale-flag">{{context.sale}}</div>
+    <div class="sale-flag">{{content.static.saleText}}</div>
   {{/if}}
   {{#if new}}
-    <div class="new-flag">{{context.new}}</div>
+    <div class="new-flag">{{content.static.newText}}</div>
   {{/if}}
   <button type="button" class="heart-xs visible-xs">
-    <span class="sr-only">{{context.wishlist}}</span>
+    <span class="sr-only">{{content.static.wishlistText}}</span>
   </button>
   <img class="pop-product-image" src="{{imageUrl}}" alt="{{text}}" width="200" />
   <div class="pop-product-name">
@@ -23,13 +23,13 @@
   </div>
   {{!-- Should this be a clickable link? Right now, you can't click it due to the overlay --}}
   <div class="pop-product-more-colors">
-    {{#if moreColors}}{{context.moreColors}}{{/if}}&nbsp;
+    {{#if moreColors}}{{content.static.moreColorsText}}{{/if}}&nbsp;
   </div>
   <div class="shop-item-overlay hidden-xs">
     <button type="button" class="quickview"
-     data-modal="quickview-modal-{{id}}">{{context.quickView}}</button>
+     data-modal="quickview-modal-{{id}}">{{content.static.quickViewText}}</button>
     <button type="button" class="heart">
-      <span class="sr-only">{{context.wishlist}}</span>
+      <span class="sr-only">{{content.static.wishlistText}}</span>
     </button>
   </div>
 </div>
