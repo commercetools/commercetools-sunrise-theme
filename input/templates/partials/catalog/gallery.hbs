@@ -2,14 +2,14 @@
     <ul id="bzoom">
         {{#each content.product.images}}
             <li>
-                <img class="bzoom_thumb_image" {{#if thumbImage}}src="{{thumbImage}}"{{/if}} src="{{placeholderImage}}">
-                <img class="bzoom_big_image" {{#if bigImage}}src="{{bigImage}}"{{/if}} src="{{placeholderImage}}">
+                <img class="bzoom_thumb_image" src="{{thumbImage}}">
+                <img class="bzoom_big_image" src="{{bigImage}}">
             </li>
         {{/each}}
     </ul>
 </div>
 <div class="gallery-mobile visible-xs">
     {{#each content.product.images}}
-        <img {{#if bigImage}}src="{{bigImage}}"{{/if}} src="{{placeholderImage}}" alt="Product Image" />
+        <img src="{{bigImage}}" alt="Product Image" />
     {{/each}}
 </div>
