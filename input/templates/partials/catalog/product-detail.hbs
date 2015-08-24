@@ -15,7 +15,7 @@
 </div>
 <div class="row">
   <div class="col-sm-12">
-    <p class="pdp-product-description">{{content.product.description}}</p>
+    <p class="pdp-product-description">{{{content.product.description}}}</p>
     <a id="{{content.static.viewDetailsToggleBtnId}}" href="#"><span class="view-details">{{content.static.viewDetailsText}}</span></a>
   </div>
 </div>
@@ -31,7 +31,7 @@
       <div>
         <select id="{{content.static.colorSelectId}}" class="select-product-detail">
           <option id="{{content.static.colorDefaultItem.id}}" value="{{content.static.colorDefaultItem.id}}" {{#if content.static.colorDefaultItem.selected}}selected{{/if}}>{{content.static.colorDefaultItem.text}}</option>
-          {{#each content.product.color.list}}
+          {{#each content.product.colors}}
             <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
           {{/each}}
         </select>
@@ -42,7 +42,7 @@
       <div>
         <select id="{{content.static.sizeGuideId}}" class="select-product-detail">
             <option id="{{content.static.sizeSelectFirstOptionId}}" value="{{content.static.sizeDefaultItem.id}}" {{#if content.static.sizeDefaultItem.selected}}selected{{/if}}>{{content.static.sizeDefaultItem.text}}</option>
-            {{#each content.product.size.list}}
+            {{#each content.product.sizes}}
             <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
           {{/each}}
         </select>
