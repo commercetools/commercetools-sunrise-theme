@@ -741,11 +741,11 @@
 			"ratingText" : "Write first review",
 			"viewDetailsText" : "View Details",
 			"viewDetailsToggleBtnId" : "pdp-view-details-btn",
-			"colorText" : "Color",
+			"colorsText" : "Color",
 			"colorSelectId" : "pdp-color-select",
-			"sizeText" : "Size",
-			"productdetailsToggle" : "pdp-product-details-toggle",
-			"deliveryreturnsToggle" : "pdp-delivery-returns-toggle",
+			"sizesText" : "Size",
+			"productDetailsToggleId" : "pdp-product-details-toggle",
+			"deliveryReturnsToggleId" : "pdp-delivery-returns-toggle",
 			"sizeGuideText" : "Size Guide",
 			"sizeGuideId" : "pdp-size-select",
 			"sizeGuideBtnId" : "pdp-size-guide",
@@ -757,7 +757,7 @@
 			"availableText" : "Available",
 			"productDetailsText" : "Product Details",
 			"deliveryAndReturnsText" : "Delivery & Returns",
-			"deliveryText" : "Delivery",
+			"shippingRatesText" : "Delivery",
 			"returnsText" : "Returns",
 			"youMayLikeText" : "You may also like",
 			"saleText" : "Sale",
@@ -884,150 +884,253 @@
 				"selected" : true
 			}
 		],
-		"gallery" : [
-			{
-				"thumbImage" : "assets/img/blue-shirt.jpg" ,
-				"bigImage" : "assets/img/blue-shirt.jpg",
-				"placeholderImage" : "http://placehold.it/350x150"
-			},
-			{
-				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg",
-				"placeholderImage" : "http://placehold.it/350x150"
-			},
-			{
-				"thumbImage" : "assets/img/blue-shirt.jpg" ,
-				"bigImage" : "assets/img/blue-shirt.jpg",
-				"placeholderImage" : "http://placehold.it/350x150"
-			},
-			{
-				"thumbImage" : "assets/img/blue-jacket.jpg" ,
-				"bigImage" : "assets/img/blue-jacket.jpg",
-				"placeholderImage" : "http://placehold.it/350x150"
-			}
-		],
 		"product" : {
 			"text" : "Enditatem Product Name",
 			"sku" : "Sunrise #SUN123456",
 			"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
 			"price" : "€ 123,-",
 			"priceOld" : "€ 173,-",
-			"color" : {
-				"list" : [
-					{
-						"text" : "Red",
-						"value" : "",
-						"selected" : false,
-						"id" : "pdp-color-select-red"
-					},
-					{
-						"text" : "Blue",
-						"value" : "",
-						"selected" : false,
-						"id" : "pdp-color-select-blue"
-					},
-					{
-						"text" : "Green",
-						"value" : "",
-						"selected" : false,
-						"id" : "pdp-color-select-green"
-					}
-				]
+			"images" : [
+			  {
+				"thumbImage" : "assets/img/blue-shirt.jpg" ,
+				"bigImage" : "assets/img/blue-shirt.jpg",
+				"placeholderImage" : "http://placehold.it/350x150"
+			  },
+			  {
+				"thumbImage" : "assets/img/blue-jacket.jpg" ,
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "http://placehold.it/350x150"
+			  },
+			  {
+				"thumbImage" : "assets/img/blue-shirt.jpg" ,
+				"bigImage" : "assets/img/blue-shirt.jpg",
+				"placeholderImage" : "http://placehold.it/350x150"
+			  },
+			  {
+				"thumbImage" : "assets/img/blue-jacket.jpg" ,
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "http://placehold.it/350x150"
+			  }
+			],
+			"colors" : [
+				{
+					"text" : "Red",
+					"value" : "",
+					"selected" : false,
+					"id" : "pdp-color-select-red"
+				},
+				{
+					"text" : "Blue",
+					"value" : "",
+					"selected" : false,
+					"id" : "pdp-color-select-blue"
+				},
+				{
+					"text" : "Green",
+					"value" : "",
+					"selected" : false,
+					"id" : "pdp-color-select-green"
+				}
+			],
+			"sizes" : [
+				{
+					"text" : "S",
+					"value" : "",
+					"selected" : false,
+					"id" : "pdp-size-select-s"
+				},
+				{
+					"text" : "M",
+					"value" : "",
+					"selected" : false,
+					"id" : "pdp-size-select-m"
+				},
+				{
+					"text" : "L",
+					"value" : "",
+					"selected" : false,
+					"id" : "pdp-size-select-l"
+				}
+			],
+			"details" : [
+				{
+					"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				},
+				{
+					"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				},
+				{
+					"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+				}
+			]
+		},
+		"shippingRates" : [
+			{
+				"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
 			},
-			"size" : {
-				"list" : [
-					{
-						"text" : "S",
-						"value" : "",
-						"selected" : false,
-						"id" : "pdp-size-select-s"
-					},
-					{
-						"text" : "M",
-						"value" : "",
-						"selected" : false,
-						"id" : "pdp-size-select-m"
-					},
-					{
-						"text" : "L",
-						"value" : "",
-						"selected" : false,
-						"id" : "pdp-size-select-l"
-					}
-				]
+			{
+				"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
 			},
-			"productDetails" : [
-				{
-					"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-				},
-				{
-					"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-				},
-				{
-					"text" : "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-				}
-			]
-		},
-		"delivery" : {
-			"list" : [
-				{
-				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-				},
-				{
-				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-				},
-				{
-				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-				}
-			]
-		},
-		"returns" : {
-			"list" : [
-				{
-				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-				},
-				{
-				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-				},
-				{
-				  	"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-				}
-			]
-		},
+			{
+				"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+			}
+		],
+		"returns" : [
+			{
+				"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+			},
+			{
+				"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+			},
+			{
+				"text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+			}
+		],
 		"suggestions" : [
 			{
 				"text" : "Enditatem Product Name Optional very long line two",
+			    "sku": "dasdasdad",
 				"description" : "Subline",
-				"imageUrl" : "assets/img/blue-jacket.jpg",
 				"price" : "€ 49,-",
 				"priceOld": "",
 				"productUrl" : "",
-			    "new": false
+			    "new": false,
+				"id" : "some-html-id",
+				"gallery" : [
+					{
+					  "thumbImage" : "assets/img/blue-shirt.jpg" ,
+					  "bigImage" : "assets/img/blue-shirt.jpg",
+					  "placeholderImage" : "http://placehold.it/350x150"
+					},
+					{
+					  "thumbImage" : "assets/img/blue-jacket.jpg" ,
+					  "bigImage" : "assets/img/blue-jacket.jpg",
+					  "placeholderImage" : "http://placehold.it/350x150"
+					},
+					{
+					  "thumbImage" : "assets/img/blue-shirt.jpg" ,
+					  "bigImage" : "assets/img/blue-shirt.jpg",
+					  "placeholderImage" : "http://placehold.it/350x150"
+					},
+					{
+					  "thumbImage" : "assets/img/blue-jacket.jpg" ,
+					  "bigImage" : "assets/img/blue-jacket.jpg",
+					  "placeholderImage" : "http://placehold.it/350x150"
+					}
+				],
+				"colors" : [
+					{
+					  "text" : "Red",
+					  "value" : "",
+					  "selected" : false,
+					  "id" : "pdp-color-select-red"
+					},
+					{
+					  "text" : "Blue",
+					  "value" : "",
+					  "selected" : false,
+					  "id" : "pdp-color-select-blue"
+					},
+					{
+					  "text" : "Green",
+					  "value" : "",
+					  "selected" : false,
+					  "id" : "pdp-color-select-green"
+					}
+				],
+				"sizes" : [
+					{
+					  "text" : "S",
+					  "value" : "",
+					  "selected" : false,
+					  "id" : "pdp-size-select-s"
+					},
+					{
+					  "text" : "M",
+					  "value" : "",
+					  "selected" : false,
+					  "id" : "pdp-size-select-m"
+					},
+					{
+					  "text" : "L",
+					  "value" : "",
+					  "selected" : false,
+					  "id" : "pdp-size-select-l"
+					}
+				]
 			},
-			{
-				"text" : "Just one single line",
-				"description" : "",
-				"imageUrl" : "assets/img/blue-shirt.jpg",
-				"price" : "€ 149,-",
-				"priceOld": "",
-				"productUrl" : ""
-			},
-			{
-				"text" : "Headline",
-				"description" : "Enditatem Product Name Optional Line Two",
-				"imageUrl" : "assets/img/blue-jacket.jpg",
-				"price" : "€ 250,-",
-				"priceOld": "",
-				"productUrl" : ""
-			},
-			{
-				"text" : "Enditatem Product Name",
-				"description" : "",
-				"imageUrl" : "assets/img/blue-shirt.jpg",
-				"price" : "€ 123,-",
-				"priceOld": "",
-				"productUrl" : ""
-			}
+		  {
+			"text" : "Enditatem Product Name Optional very long line two",
+			"sku": "dasdasdad",
+			"description" : "Subline",
+			"price" : "€ 49,-",
+			"priceOld": "",
+			"productUrl" : "",
+			"new": false,
+			"id" : "some-html-id",
+			"gallery" : [
+			  {
+				"thumbImage" : "assets/img/blue-shirt.jpg" ,
+				"bigImage" : "assets/img/blue-shirt.jpg",
+				"placeholderImage" : "http://placehold.it/350x150"
+			  },
+			  {
+				"thumbImage" : "assets/img/blue-jacket.jpg" ,
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "http://placehold.it/350x150"
+			  },
+			  {
+				"thumbImage" : "assets/img/blue-shirt.jpg" ,
+				"bigImage" : "assets/img/blue-shirt.jpg",
+				"placeholderImage" : "http://placehold.it/350x150"
+			  },
+			  {
+				"thumbImage" : "assets/img/blue-jacket.jpg" ,
+				"bigImage" : "assets/img/blue-jacket.jpg",
+				"placeholderImage" : "http://placehold.it/350x150"
+			  }
+			],
+			"colors" : [
+			  {
+				"text" : "Red",
+				"value" : "",
+				"selected" : false,
+				"id" : "pdp-color-select-red"
+			  },
+			  {
+				"text" : "Blue",
+				"value" : "",
+				"selected" : false,
+				"id" : "pdp-color-select-blue"
+			  },
+			  {
+				"text" : "Green",
+				"value" : "",
+				"selected" : false,
+				"id" : "pdp-color-select-green"
+			  }
+			],
+			"sizes" : [
+			  {
+				"text" : "S",
+				"value" : "",
+				"selected" : false,
+				"id" : "pdp-size-select-s"
+			  },
+			  {
+				"text" : "M",
+				"value" : "",
+				"selected" : false,
+				"id" : "pdp-size-select-m"
+			  },
+			  {
+				"text" : "L",
+				"value" : "",
+				"selected" : false,
+				"id" : "pdp-size-select-l"
+			  }
+			]
+		  }
 		],
 		"reviews" : {},
 		"wishlistWidged" : {
