@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "definitions": {
+    "pdpStatic": {
+      "type": "object",
+      "properties": {
+        "contentText": {"type": "string"},
+        "ratingText": {"type": "string"},
+        "viewDetailsText": {"type": "string"},
+        "colorsText": {"type": "string"},
+        "sizesText": {"type": "string"},
+        "sizeGuideText": {"type": "string"},
+        "addToBagText": {"type": "string"},
+        "addToWishlistText": {"type": "string"},
+        "availableText": {"type": "string"},
+        "productDetailsText": {"type": "string"},
+        "deliveryAndReturnsText": {"type": "string"},
+        "shippingRatesText": {"type": "string"},
+        "returnsText": {"type": "string"},
+        "youMayLikeText": {"type": "string"},
+        "saleText": {"type": "string"},
+        "newText": {"type": "string"},
+        "quickViewText": {"type": "string"},
+        "wishlistText": {"type": "string"},
+        "moreColorsText": {"type": "string"},
+        "reviewsText": {"type": "string"}
+      }
+    }
+  },
+
+  "title": "pdpContent",
+  "type": "object",
+  "properties": {
+    "static": {"$ref": "#/definitions/pdpStatic"},
+    "breadcrumbs": {
+      "type": "array",
+      "items": {"$ref": "common-schema.json#/definitions/product"}
+    },
+    "product": {"$ref": "common-schema.json#/definitions/product"},
+    "suggestions": {
+      "type": "array",
+      "items": {"$ref": "common-schema.json#/definitions/product"}
+    }
+  },
+  "required": ["static", "breadcrumbs", "product", "suggestions"]
+}

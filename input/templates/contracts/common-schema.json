@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "definitions": {
+    "image": {
+      "type": "object",
+      "properties": {
+        "thumbImage": {"type": "string"},
+        "bigImage": {"type": "string"}
+      },
+      "required": ["thumbImage", "bigImage"]
+    },
+
+    "selectable": {
+      "type": "object",
+      "properties": {
+        "text": {"type": "string"},
+        "description": {"type": "string"},
+        "value": {"type": "string"},
+        "selected": {"type": "boolean"}
+      },
+      "required": ["text", "selected"]
+    },
+
+    "detail": {
+      "type": "object",
+      "properties": {
+        "text": {"type": "string"},
+        "description": {"type": "string"}
+      },
+      "required": ["text"]
+    },
+
+    "link": {
+      "type": "object",
+      "properties": {
+        "text": {"type": "string"},
+        "url": {"type": "string"}
+      },
+      "required": ["text", "url"]
+    },
+
+    "product": {
+      "type": "object",
+      "properties": {
+        "text": {"type": "string"},
+        "description": {"type": "string"},
+        "sku": {"type": "string"},
+        "price": {"type": "string"},
+        "priceOld": {"type": "string"},
+        "images": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/image"},
+          "minItems": 1
+        },
+        "colors": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/selectable"}
+        },
+        "sizes": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/selectable"}
+        },
+        "details": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/detail"}
+        }
+      },
+      "required": ["text", "price", "images"]
+    }
+  }
+}
