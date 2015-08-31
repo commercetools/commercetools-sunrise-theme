@@ -821,7 +821,20 @@
 						"value" : "three",
 						"id" : "pop-product-type-three",
 						"selected" : false,
-						"url" : ""
+						"children" : [
+							{
+								"text" : "sub-type 1",
+								"value" : "",
+								"id" : "pop-product-type-three-one",
+								"selected" : false
+							},
+							{
+								"text" : "sub-type 2",
+								"value" : "",
+								"id" : "pop-product-type-three-two",
+								"selected" : false
+							}
+						]
 					}
 				]
 			},
