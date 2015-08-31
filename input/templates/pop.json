@@ -786,7 +786,7 @@
 								"text" : "sub-type 1",
 								"value" : "",
 								"id" : "pop-product-type-one-one",
-								"selected" : false
+								"selected" : true
 							},
 							{
 								"text" : "sub-type 2",
