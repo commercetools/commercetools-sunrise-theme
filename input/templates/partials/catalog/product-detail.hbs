@@ -110,18 +110,18 @@
         </div>
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body panel-body-pdp">
-            <h4>{{content.static.shippingRatesText}}</h4>
-            <ul>
-              {{#each content.shippingRates}}
-                <li>{{text}}</li>
-              {{/each}}
-            </ul>
-            <h4>{{content.static.returnsText}}</h4>
-            <ul>
-              {{#each content.returns}}
-                <li>{{text}}</li>
-              {{/each}}
-            </ul>
+            <p>
+              {{content.static.standardDeliveryText}}
+            </p>
+            <p>
+              {{content.static.expressDeliveryText}}
+            </p>
+            <p>
+              {{content.static.freeReturnsText}}
+            </p>
+            <p>
+              {{content.static.moreDeliveryInfoText}}
+            </p>
           </div>
         </div>
       </div>
