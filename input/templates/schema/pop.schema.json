@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "definitions": {
+    "static": {
+      "type": "object",
+      "properties": {
+
+      }
+    }
+  },
+
+  "title": "content",
+  "type": "object",
+  "properties": {
+    "static": {"$ref": "#/definitions/static"},
+    "breadcrumbs": {
+      "type": "array",
+      "items": {"$ref": "common.json#/definitions/product"}
+    }
+  },
+  "required": []
+}

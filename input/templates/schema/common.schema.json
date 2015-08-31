@@ -40,6 +40,20 @@
       "required": ["text", "url"]
     },
 
+    "link-tree": {
+      "allOf": [
+        {"$ref": "#/definitions/link"},
+        {
+          "properties": {
+            "children": {
+              "type": "array",
+              "items": {"$ref": "#/definitions/link-tree"}
+            }
+          }
+        }
+      ]
+    },
+
     "product": {
       "type": "object",
       "properties": {

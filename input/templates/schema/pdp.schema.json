@@ -2,45 +2,48 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
 
   "definitions": {
-    "pdpStatic": {
+    "static": {
       "type": "object",
       "properties": {
-        "contentText": {"type": "string"},
+        "contentHeading": {"type": "string"},
         "ratingText": {"type": "string"},
         "viewDetailsText": {"type": "string"},
-        "colorsText": {"type": "string"},
-        "sizesText": {"type": "string"},
+        "colorsHeading": {"type": "string"},
+        "sizesHeading": {"type": "string"},
         "sizeGuideText": {"type": "string"},
         "addToBagText": {"type": "string"},
         "addToWishlistText": {"type": "string"},
         "availableText": {"type": "string"},
-        "productDetailsText": {"type": "string"},
-        "deliveryAndReturnsText": {"type": "string"},
-        "shippingRatesText": {"type": "string"},
-        "returnsText": {"type": "string"},
-        "youMayLikeText": {"type": "string"},
+        "productDetailsHeading": {"type": "string"},
+        "deliveryAndReturnsHeading": {"type": "string"},
+        "suggestionsHeading": {"type": "string"},
         "saleText": {"type": "string"},
         "newText": {"type": "string"},
         "quickViewText": {"type": "string"},
         "wishlistText": {"type": "string"},
         "moreColorsText": {"type": "string"},
-        "reviewsText": {"type": "string"}
+        "reviewsHeading": {"type": "string"}
       }
     }
   },
 
-  "title": "pdpContent",
+  "title": "content",
   "type": "object",
   "properties": {
-    "static": {"$ref": "#/definitions/pdpStatic"},
+    "static": {"$ref": "#/definitions/static"},
     "breadcrumbs": {
       "type": "array",
-      "items": {"$ref": "common-schema.json#/definitions/product"}
+      "items": {"$ref": "common.json#/definitions/product"}
+      "minItems": 1,
+      "uniqueItems": true
     },
-    "product": {"$ref": "common-schema.json#/definitions/product"},
+    "product": {"$ref": "common.json#/definitions/product"},
     "suggestions": {
       "type": "array",
-      "items": {"$ref": "common-schema.json#/definitions/product"}
+      "items": {"$ref": "common.json#/definitions/product"},
+      "minItems": 4,
+      "maxItems": 4,
+      "uniqueItems": true
     }
   },
   "required": ["static", "breadcrumbs", "product", "suggestions"]

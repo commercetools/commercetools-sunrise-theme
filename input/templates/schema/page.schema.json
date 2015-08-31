@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "definitions": {
+
+    "newsLetterWidget": {
+      "type": "object",
+      "properties": {
+        "text" :  {"type": "string"},
+        "textAlt" : {"type": "string"},
+        "url" : {"type": "string"},
+        "placeholderText" : {"type": "string"}
+      }
+    },
+
+    "accessWidget": {
+      "type": "object",
+      "properties": {
+        "loggedIn": {"type": "boolean"},
+        "signIn": {"$ref": "common.json#/definitions/link"},
+        "signUp": {"$ref": "common.json#/definitions/link"}
+      }
+    },
+
+    "cartWidget": {
+      "type": "object",
+      "properties": {
+        "cartLink": {"$ref": "common.json#/definitions/link"},
+        "numItems": {"type": "integer"}
+      }
+    },
+
+    "localizationWidget": {
+      "languages": {
+        "type": "array",
+        "items": {"$ref": "common.json#/definitions/selectable"}
+      },
+      "countries": {
+        "type": "array",
+        "items": {"$ref": "common.json#/definitions/selectable"}
+      }
+    },
+
+    "navigation": {
+      "type": "object",
+      "properties": {
+        "newLink": {"$ref": "common.json#/definitions/link"},
+        "saleLink": {"$ref": "common.json#/definitions/link"},
+        "categories": {"$ref": "common.json#/definitions/link-tree"},
+        "brands": {"$ref": "common.json#/definitions/link-tree"}
+      }
+    },
+
+    "header": {
+      "type": "object",
+      "properties": {
+        "title": {"type": "string"},
+        "storesLink": {"$ref": "common.json#/definitions/link"},
+        "helpLink": {"$ref": "common.json#/definitions/link"},
+        "contactLink": {"$ref": "common.json#/definitions/link"},
+        "localizationWidget": {"$ref": "#/definitions/localizationWidget"},
+        "accessWidget": {"$ref": "#/definitions/accessWidget"},
+        "cartWidget": {"$ref": "#/definitions/cartWidget"},
+        "navigation": {"$ref": "#/definitions/navigation"},
+        "seo": {"$ref": "common.json#/definitions/detail"}
+      }
+    },
+
+    "footer": {
+      "type": "object",
+      "properties": {
+        "paySecureHeading": {"type": "string"},
+        "followUsText": {"type": "string"},
+        "newsletterWidget": {"$ref": "#/definitions/newsletterWidget"},
+        "customerCareHeading": {"type": "string"},
+        "customerCareLinks": {
+          "type": "array",
+          "items": {"$ref": "common.json#/definitions/link"},
+          "minItems": 5,
+          "uniqueItems": true
+        },
+        "aboutUsHeading": {"type": "string"},
+        "aboutUsLinks": {
+          "type": "array",
+          "items": {"$ref": "common.json#/definitions/link"},
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "shortcutsHeading": {"type": "string"},
+        "shortcutsLinks": {
+          "type": "array",
+          "items": {"$ref": "common.json#/definitions/link"},
+          "minItems": 4,
+          "uniqueItems": true
+        },
+        "legalInfoHeading": {"type": "string"},
+        "legalInfoLinks": {
+          "type": "array",
+          "items": {"$ref": "common.json#/definitions/link"},
+          "minItems": 3,
+          "uniqueItems": true
+        }
+      }
+    },
+
+    "meta": {
+      "type": "object",
+      "properties": {
+        "assetsPath": {"type": "string"}
+      }
+    }
+  },
+
+  "title": "page",
+  "type": "object",
+  "properties": {
+    "header" : {"$ref": "#/definitions/header"},
+    "footer": {"$ref": "#/definitions/footer"},
+    "seo": {"$ref": "common.json#/definitions/detail"},
+    "content": {
+      "oneOf": [
+        { "$ref": "pdp.json#/content" },
+        { "$ref": "pop.json#/content" }
+      ]
+    },
+    "meta": {"$ref": "#/definitions/meta"}
+  }
+}
