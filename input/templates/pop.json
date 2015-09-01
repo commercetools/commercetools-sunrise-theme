@@ -783,10 +783,16 @@
 						"selected" : true,
 						"children" : [
 							{
+								"text" : "All",
+								"value" : "",
+								"id" : "pop-product-type-one-all",
+								"selected" : true
+							},
+							{
 								"text" : "sub-type 1",
 								"value" : "",
 								"id" : "pop-product-type-one-one",
-								"selected" : true
+								"selected" : false
 							},
 							{
 								"text" : "sub-type 2",
