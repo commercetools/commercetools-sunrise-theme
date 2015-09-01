@@ -22,7 +22,18 @@
         "quickViewText": {"type": "string"},
         "wishlistText": {"type": "string"},
         "moreColorsText": {"type": "string"},
-        "reviewsHeading": {"type": "string"}
+        "reviewsHeading": {"type": "string"},
+        "sizeDefaultItem": {"$ref": "common.json#/definitions/selectable"},
+        "colorDefaultItem": {"$ref": "common.json#/definitions/selectable"},
+        "rating": {
+          "type": "array",
+          "items": {"$ref": "common.json#/definitions/selectable"}
+        },
+
+        "bagItems": {
+          "type": "array",
+          "items": {"$ref": "common.json#/definitions/selectable"}
+        }
       }
     }
   },
@@ -33,7 +44,7 @@
     "static": {"$ref": "#/definitions/static"},
     "breadcrumbs": {
       "type": "array",
-      "items": {"$ref": "common.json#/definitions/product"}
+      "items": {"$ref": "common.json#/definitions/product"},
       "minItems": 1,
       "uniqueItems": true
     },

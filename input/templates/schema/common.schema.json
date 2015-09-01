@@ -62,6 +62,21 @@
         "sku": {"type": "string"},
         "price": {"type": "string"},
         "priceOld": {"type": "string"},
+        "size": {"type": "string"},
+        "color": {"type": "string"},
+        "gender": {"type": "string"},
+        "style": {"type": "string"},
+        "season": {"type": "string"},
+        "available": {"type": "boolean"},
+        "ratingCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ratingAverage": {
+          "type": "number",
+          "minimum": 0
+        },
+        "ratingUrl": {"type": "string"},
         "images": {
           "type": "array",
           "items": {"$ref": "#/definitions/image"},
