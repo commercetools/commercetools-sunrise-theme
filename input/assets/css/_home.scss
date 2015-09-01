@@ -93,8 +93,9 @@
 // Banner option two
 .home-banner-option-two {
   .banner-container {
-    max-height: 500px;
+    height: 500px;
     img {
+      display: none;
       height: 100%;
       width: 100%;
     }
