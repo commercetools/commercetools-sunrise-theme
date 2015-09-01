@@ -126,11 +126,12 @@ $(".navbar-toggle").click(function() {
 
 // Product gallery - BZoom
 $("ul#bzoom").each( function(index, ul) {
+  var imgCount = $('#bzoom').data('count');
   $ul = $(ul);
   $ul.zoom({
     zoom_area_width: 300,
     // MORE OPTIONS HERE
-    small_thumbs: 4,
+    small_thumbs: imgCount,
     autoplay: false
   });
 });
