@@ -774,7 +774,6 @@
 			"close" : "Filter close",
 			"list" : [
 				{
-					"sliderRangeFacet" : true,
 					"hierarchicalSelectFacet" : true,
 					"facet" : {
 						"available" : true,
@@ -790,13 +789,13 @@
 									{
 										"value" : "Subtype-1",
 										"key" : "one-one",
-										"count" : "100",
+										"count" : "150",
 										"selected" : true
 									},
 									{
 										"value" : "Subtype-2",
 										"key" : "one-two",
-										"count" : "100",
+										"count" : "150",
 										"selected" : false
 									}
 								]
@@ -810,13 +809,13 @@
 									{
 										"value" : "Subtype-1",
 										"key" : "two-one",
-										"count" : "100",
+										"count" : "150",
 										"selected" : false
 									},
 									{
 										"value" : "Subtype-2",
 										"key" : "two-two",
-										"count" : "100",
+										"count" : "150",
 										"selected" : false
 									}
 								]
@@ -830,16 +829,114 @@
 									{
 										"value" : "Subtype-1",
 										"key" : "three-one",
-										"count" : "100",
+										"count" : "150",
 										"selected" : false
 									},
 									{
 										"value" : "Subtype-2",
 										"key" : "three-two",
-										"count" : "100",
+										"count" : "150",
 										"selected" : false
 									}
 								]
+							}
+						]
+					}
+				},
+				{
+					"selectFacet" : true,
+					"facet" : {
+						"available" : true,
+						"label" : "Size",
+						"key" : "product-type",
+						"limitedOptions" : [
+							{
+								"value" : "S",
+								"key" : "one",
+								"count" : "123",
+								"selected" : true
+							},
+							{
+								"value" : "M",
+								"key" : "two",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"value" : "L",
+								"key" : "three",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"value" : "XL",
+								"key" : "four",
+								"count" : "123",
+								"selected" : false
+							}
+						]
+					}
+				},
+				{
+					"selectFacet" : true,
+					"facet" : {
+						"available" : true,
+						"label" : "Color",
+						"key" : "product-type",
+						"limitedOptions" : [
+							{
+								"value" : "Red",
+								"key" : "one",
+								"count" : "123",
+								"selected" : true
+							},
+							{
+								"value" : "Blue",
+								"key" : "two",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"value" : "Pink",
+								"key" : "three",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"value" : "Mono",
+								"key" : "four",
+								"count" : "123",
+								"selected" : false
+							}
+						]
+					}
+				},
+				{
+					"sliderRangeFacet" : true,
+					"facet" : {
+						"available" : true,
+						"label" : "Price",
+						"key" : "product-type"
+					}
+				},
+				{
+					"sortedSelectFacet" : true,
+					"facet" : {
+						"available" : true,
+						"label" : "Brands",
+						"key" : "product-type",
+						"limitedOptions" : [
+							{
+								"value" : "Adidas",
+								"key" : "1",
+								"count" : "123",
+								"selected" : true
+							},
+							{
+								"value" : "Nike",
+								"key" : "2",
+								"count" : "123",
+								"selected" : false
 							}
 						]
 					}
