@@ -92,41 +92,42 @@
 
 // Banner option two
 .home-banner-option-two {
-  .banner-container {
-    height: 500px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .banner-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 5%;
+    text-align: center;
+    max-width: 40%;
+    background: rgba(255,255,255,0.6);
     img {
-      height: 100%;
-      width: 100%;
+      height: 40px;
+      width: 40px;
     }
-    .banner-text {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-      padding: 5%;
-      text-align: center;
-      max-width: 40%;
-      background: rgba(255,255,255,0.6);
-      .banner-title {
-        font-size: 22px;
-        font-weight: 200;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-      }
-      .banner-subtitle {
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        padding-bottom: 20px;
-      }
-      .banner-btn {
-        margin-top: 20px;
-        padding: 10px 20px;
-        text-transform: uppercase;
-        border: 2px solid $black;
-        letter-spacing: 1px;
-        &:hover {
-          background: $white;
-        }
+    .banner-title {
+      font-size: 22px;
+      font-weight: 200;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .banner-subtitle {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+    }
+    .banner-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      border: 2px solid $black;
+      letter-spacing: 1px;
+      &:hover {
+        background: $white;
       }
     }
   }
