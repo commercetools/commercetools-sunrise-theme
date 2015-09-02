@@ -772,190 +772,79 @@
 			"clear" : "Clear",
 			"open" : "Filter",
 			"close" : "Filter close",
-			"categories" : {
-				"text" : "Product type",
-				"categoriesClearBtnId" : "pop-categories-clear",
-				"list" : [
-					{
-						"text" : "Type-1",
-						"value" : "one",
-						"id" : "pop-product-type-one",
-						"selected" : true,
-						"children" : [
+			"list" : [
+				{
+					"sliderRangeFacet" : true,
+					"hierarchicalSelectFacet" : true,
+					"facet" : {
+						"available" : true,
+						"label" : "Product Type",
+						"key" : "product-type",
+						"limitedOptions" : [
 							{
-								"text" : "All",
-								"value" : "",
-								"id" : "pop-product-type-one-all",
-								"selected" : true
+								"value" : "Type-1",
+								"key" : "one",
+								"count" : "300",
+								"selected" : true,
+								"children" : [
+									{
+										"value" : "Subtype-1",
+										"key" : "one-one",
+										"count" : "100",
+										"selected" : true
+									},
+									{
+										"value" : "Subtype-2",
+										"key" : "one-two",
+										"count" : "100",
+										"selected" : false
+									}
+								]
 							},
 							{
-								"text" : "sub-type 1",
-								"value" : "",
-								"id" : "pop-product-type-one-one",
-								"selected" : false
+								"value" : "Type-2",
+								"key" : "two",
+								"count" : "300",
+								"selected" : false,
+								"children" : [
+									{
+										"value" : "Subtype-1",
+										"key" : "two-one",
+										"count" : "100",
+										"selected" : false
+									},
+									{
+										"value" : "Subtype-2",
+										"key" : "two-two",
+										"count" : "100",
+										"selected" : false
+									}
+								]
 							},
 							{
-								"text" : "sub-type 2",
-								"value" : "",
-								"id" : "pop-product-type-one-two",
-								"selected" : false
+								"value" : "Type-3",
+								"key" : "three",
+								"count" : "300",
+								"selected" : false,
+								"children" : [
+									{
+										"value" : "Subtype-1",
+										"key" : "three-one",
+										"count" : "100",
+										"selected" : false
+									},
+									{
+										"value" : "Subtype-2",
+										"key" : "three-two",
+										"count" : "100",
+										"selected" : false
+									}
+								]
 							}
 						]
-					},
-					{
-						"text" : "Type-2",
-						"value" : "two",
-						"id" : "pop-product-type-two",
-						"selected" : false,
-						"children" : [
-							{
-								"text" : "sub-type 1",
-								"value" : "",
-								"id" : "pop-product-type-two-one",
-								"selected" : false
-							},
-							{
-								"text" : "sub-type 2",
-								"value" : "",
-								"id" : "pop-product-type-two-two",
-								"selected" : false
-							}
-						]
-					},
-					{
-						"text" : "Type-3",
-						"value" : "three",
-						"id" : "pop-product-type-three",
-						"selected" : false,
-						"children" : [
-							{
-								"text" : "sub-type 1",
-								"value" : "",
-								"id" : "pop-product-type-three-one",
-								"selected" : false
-							},
-							{
-								"text" : "sub-type 2",
-								"value" : "",
-								"id" : "pop-product-type-three-two",
-								"selected" : false
-							}
-						]
 					}
-				]
-			},
-			"size" : {
-				"text" : "Size",
-				"sizeClearBtnId" : "pop-size-clear",
-				"list" : [
-					{
-						"text" : "S",
-						"value" : "",
-						"id" : "pop-size-s",
-						"selected" : true
-					},
-					{
-						"text" : "M",
-						"value" : "",
-						"id" : "pop-size-m",
-						"selected" : false
-					},
-					{
-						"text" : "XL",
-						"value" : "",
-						"id" : "pop-size-xl",
-						"selected" : true
-					},
-					{
-						"text" : "XXL",
-						"value" : "",
-						"id" : "pop-size-xxl",
-						"selected" : false
-					}
-				]
-			},
-			"color" : {
-				"text" : "Color",
-				"colorClearBtnId" : "pop-color-clear",
-				"list" : [
-					{
-						"text" : "Black",
-						"value" : "",
-						"id" : "pop-color-black",
-						"selected" : false
-					},
-					{
-						"text" : "Blue",
-						"value" : "",
-						"id" : "pop-color-blue",
-						"selected" : true
-					},
-					{
-						"text" : "Multi",
-						"value" : "",
-						"id" : "pop-color-multi",
-						"selected" : false
-					},
-					{
-						"text" : "White",
-						"value" : "",
-						"id" : "pop-color-white",
-						"selected" : true
-					}
-				]
-			},
-			"price" : {
-				"text" : "Price",
-				"priceClearBtn" : "pop-price-clear",
-				"min" : 25,
-				"max" : 500,
-				"selected" : 50
-			},
-			"brands" : {
-				"text" : "Brands",
-				"list" : [
-					{
-						"text" : "A.P.C",
-						"value" : "",
-						"selected" : true
-					},
-					{
-						"text" : "ACNE",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "ALEXANDER MCQUEEN",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "ALEXANDER WANG",
-						"value" : "",
-						"selected" : true
-					},
-					{
-						"text" : "ALEXANDER WANG",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "ALEXANDER WANG",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "ALEXANDER WANG",
-						"value" : "",
-						"selected" : false
-					},
-					{
-						"text" : "ALEXANDER WANG",
-						"value" : "",
-						"selected" : false
-					}
-				]
-			}
+				}
+			]
 		},
 		"pagination" : {
 			"currentPage" : 145,
