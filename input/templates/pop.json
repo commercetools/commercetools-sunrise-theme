@@ -848,7 +848,7 @@
 					"facet" : {
 						"available" : true,
 						"label" : "Size",
-						"key" : "product-type",
+						"key" : "size",
 						"limitedOptions" : [
 							{
 								"value" : "S",
@@ -882,7 +882,7 @@
 					"facet" : {
 						"available" : true,
 						"label" : "Color",
-						"key" : "product-type",
+						"key" : "color",
 						"limitedOptions" : [
 							{
 								"value" : "Red",
@@ -916,7 +916,7 @@
 					"facet" : {
 						"available" : true,
 						"label" : "Price",
-						"key" : "product-type"
+						"key" : "price"
 					}
 				},
 				{
@@ -924,7 +924,7 @@
 					"facet" : {
 						"available" : true,
 						"label" : "Brands",
-						"key" : "product-type",
+						"key" : "brands",
 						"limitedOptions" : [
 							{
 								"value" : "Adidas",
