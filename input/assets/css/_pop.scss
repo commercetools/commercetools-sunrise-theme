@@ -72,8 +72,7 @@
   font-size: 16px;
 }
 
-.pop-filter-size,
-.pop-filter-color {
+.pop-filter-list {
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
   column-count: 2;
@@ -156,7 +155,7 @@ a.clear-btn {
   overflow-y: scroll;
 }
 
-#brands-checkbox {
+.brands-checkbox {
   margin-left: 0;
 }
 
