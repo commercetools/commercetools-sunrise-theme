@@ -63,7 +63,7 @@
 
 // Size Box
 
-.product-type,
+.product-type-box,
 .size-box,
 .color-box,
 .brands-box,
@@ -72,14 +72,9 @@
   font-size: 16px;
 }
 
-.pop-filter-size,
-.pop-filter-color {
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
-  column-count: 2;
+.pop-filter-select {
   padding: 0.5em 0;
   label {
-    margin-left: 1em;
     font-weight: 400;
   }
 }
@@ -156,7 +151,9 @@ a.clear-btn {
   overflow-y: scroll;
 }
 
-#brands-checkbox {
+.brands-checkbox,
+.color-checkbox,
+.size-checkbox {
   margin-left: 0;
 }
 
