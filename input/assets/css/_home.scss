@@ -188,7 +188,6 @@
   }
   .banner-xs-two {
     border-left: 1px solid $white;
-    border-bottom: 1px solid $white;
     .banner-text {
       position: absolute;
       top: 0;
@@ -213,7 +212,7 @@
     }
   }
   .banner-sm {
-    border-top: 1px solid $white;
+    border-top: 2px solid $white;
     .banner-text {
       position: absolute;
       bottom: 0;
