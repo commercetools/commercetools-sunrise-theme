@@ -375,187 +375,202 @@
                     <p class="filter-products"><b>Filter Products</b></p>
                   </div>
                 </div>
-                <hr class="hr">
-                <div class="row product-type">
-                  <div class="col-xs-8 text-left">
-                    Product type
-                  </div>
-                  <div class="col-xs-4">
-                    <a id="pop-categories-clear" class="text-right clear-btn" href="#">Clear</a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
-                        <div class="panel panel-default">
-                          <div class="panel-heading" id="heading-one" role="tab">
-                            <h4 class="panel-title">
-                              <a aria-controls="collapse-one" aria-expanded="true" id="pop-product-type-one" class="" data-parent="#accordion" data-toggle="collapse" href="#one">
-                                Type-1
-                              </a>
-                            </h4>
-                          </div>
-                          <div aria-labelledby="heading-one" class="panel-collapse collapse in" id="one" role="tabpanel">
-                            <div class="panel-body">
-                                <div class="checkbox">
-                                  <label>
-                                    <input id="pop-product-type-one-all" type="checkbox" value="" checked>
-                                    All
-                                  </label>
-                                </div>
-                                <div class="checkbox">
-                                  <label>
-                                    <input id="pop-product-type-one-one" type="checkbox" value="" >
-                                    sub-type 1
-                                  </label>
-                                </div>
-                                <div class="checkbox">
-                                  <label>
-                                    <input id="pop-product-type-one-two" type="checkbox" value="" >
-                                    sub-type 2
-                                  </label>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="panel panel-default">
-                          <div class="panel-heading" id="heading-one" role="tab">
-                            <h4 class="panel-title">
-                              <a aria-controls="collapse-one" aria-expanded="true" id="pop-product-type-two" class="" data-parent="#accordion" data-toggle="collapse" href="#two">
-                                Type-2
-                              </a>
-                            </h4>
-                          </div>
-                          <div aria-labelledby="heading-one" class="panel-collapse collapse " id="two" role="tabpanel">
-                            <div class="panel-body">
-                                <div class="checkbox">
-                                  <label>
-                                    <input id="pop-product-type-two-one" type="checkbox" value="" >
-                                    sub-type 1
-                                  </label>
-                                </div>
-                                <div class="checkbox">
-                                  <label>
-                                    <input id="pop-product-type-two-two" type="checkbox" value="" >
-                                    sub-type 2
-                                  </label>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="panel panel-default">
-                          <div class="panel-heading" id="heading-one" role="tab">
-                            <h4 class="panel-title">
-                              <a aria-controls="collapse-one" aria-expanded="true" id="pop-product-type-three" class="" data-parent="#accordion" data-toggle="collapse" href="#three">
-                                Type-3
-                              </a>
-                            </h4>
-                          </div>
-                          <div aria-labelledby="heading-one" class="panel-collapse collapse " id="three" role="tabpanel">
-                            <div class="panel-body">
-                                <div class="checkbox">
-                                  <label>
-                                    <input id="pop-product-type-three-one" type="checkbox" value="" >
-                                    sub-type 1
-                                  </label>
-                                </div>
-                                <div class="checkbox">
-                                  <label>
-                                    <input id="pop-product-type-three-two" type="checkbox" value="" >
-                                    sub-type 2
-                                  </label>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
+          
+                    <hr class="hr">
+                    <div id="filter-product-type" class="row product-type-box">
+                      <div class="col-xs-8 text-left">
+                        Product Type
+                      </div>
+                      <div class="col-xs-4">
+                        <a class="text-right clear-btn" href="#"></a>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <hr class="hr">
-                <div class="row size-box">
-                  <div class="col-xs-8 text-left">
-                    Size
-                  </div>
-                  <div class="col-xs-4">
-                    <a id="pop-size-clear" class="text-right clear-btn" href="#">Clear</a>
-                  </div>
-                </div>
-                <div class="pop-filter-size">
-                    <input id="pop-size-s" type="checkbox" value="" checked><label>S</label><br>
-                    <input id="pop-size-m" type="checkbox" value="" ><label>M</label><br>
-                    <input id="pop-size-xl" type="checkbox" value="" checked><label>XL</label><br>
-                    <input id="pop-size-xxl" type="checkbox" value="" ><label>XXL</label><br>
-                </div>
-                <hr class="hr">
-                <div class="row color-box">
-                  <div class="col-xs-8 text-left">
-                    Color
-                  </div>
-                  <div class="col-xs-4">
-                    <a id="pop-color-clear" class="text-right clear-btn" href="#">Clear</a>
-                  </div>
-                </div>
-                <div class="pop-filter-color">
-                    <input id="pop-color-black" type="checkbox" value="" ><label>Black</label><br>
-                    <input id="pop-color-blue" type="checkbox" value="" checked><label>Blue</label><br>
-                    <input id="pop-color-multi" type="checkbox" value="" ><label>Multi</label><br>
-                    <input id="pop-color-white" type="checkbox" value="" checked><label>White</label><br>
-                </div>
-                <hr class="hr">
-                <div class="row price-box">
-                  <div class="col-xs-8">
-                    Price
-                  </div>
-                  <div class="col-xs-4">
-                    <a id="pop-price-clear" class="text-right clear-btn" href="#">Clear</a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12 slider-col">
-                    <div class="slider-range"></div>
-                    <input class="s1" name="s1" type="" value="€ 0" />
-                    <input class="s2" name="s2" type="" value="€ 1000" />
-                  </div>
-                </div>
-                <hr class="hr">
-                <div class="row brands-box">
-                  <div class="col-xs-8 text-left">
-                    Brands
-                  </div>
-                  <div class="col-xs-4">
-                    <a class="text-right clear-btn" href="#">Clear</a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="brands-list">
-                        <div class="checkbox">
-                          <input id="brands-checkbox" type="checkbox" checked><label>A.P.C</label>
+          
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+                              <div class="panel panel-default">
+                                <div class="panel-heading" id="heading-one" role="tab">
+                                  <h4 class="panel-title">
+                                    <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#Type-1">
+                                      Type-1 (300)
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div aria-labelledby="heading-one" class="panel-collapse collapse in" id="Type-1" role="tabpanel">
+                                  <div class="panel-body">
+                                      <div class="checkbox">
+                                        <label for="filter-one-one-Subtype-1">
+                                          <input id="filter-one-one-Subtype-1" type="checkbox" value="Subtype-1" checked>
+                                          Subtype-1 (150)
+                                        </label>
+                                      </div>
+                                      <div class="checkbox">
+                                        <label for="filter-one-two-Subtype-2">
+                                          <input id="filter-one-two-Subtype-2" type="checkbox" value="Subtype-2" >
+                                          Subtype-2 (150)
+                                        </label>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading" id="heading-one" role="tab">
+                                  <h4 class="panel-title">
+                                    <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#Type-2">
+                                      Type-2 (300)
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div aria-labelledby="heading-one" class="panel-collapse collapse " id="Type-2" role="tabpanel">
+                                  <div class="panel-body">
+                                      <div class="checkbox">
+                                        <label for="filter-two-one-Subtype-1">
+                                          <input id="filter-two-one-Subtype-1" type="checkbox" value="Subtype-1" >
+                                          Subtype-1 (150)
+                                        </label>
+                                      </div>
+                                      <div class="checkbox">
+                                        <label for="filter-two-two-Subtype-2">
+                                          <input id="filter-two-two-Subtype-2" type="checkbox" value="Subtype-2" >
+                                          Subtype-2 (150)
+                                        </label>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                <div class="panel-heading" id="heading-one" role="tab">
+                                  <h4 class="panel-title">
+                                    <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#Type-3">
+                                      Type-3 (300)
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div aria-labelledby="heading-one" class="panel-collapse collapse " id="Type-3" role="tabpanel">
+                                  <div class="panel-body">
+                                      <div class="checkbox">
+                                        <label for="filter-three-one-Subtype-1">
+                                          <input id="filter-three-one-Subtype-1" type="checkbox" value="Subtype-1" >
+                                          Subtype-1 (150)
+                                        </label>
+                                      </div>
+                                      <div class="checkbox">
+                                        <label for="filter-three-two-Subtype-2">
+                                          <input id="filter-three-two-Subtype-2" type="checkbox" value="Subtype-2" >
+                                          Subtype-2 (150)
+                                        </label>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
                         </div>
-                        <div class="checkbox">
-                          <input id="brands-checkbox" type="checkbox" ><label>ACNE</label>
-                        </div>
-                        <div class="checkbox">
-                          <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER MCQUEEN</label>
-                        </div>
-                        <div class="checkbox">
-                          <input id="brands-checkbox" type="checkbox" checked><label>ALEXANDER WANG</label>
-                        </div>
-                        <div class="checkbox">
-                          <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
-                        </div>
-                        <div class="checkbox">
-                          <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
-                        </div>
-                        <div class="checkbox">
-                          <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
-                        </div>
-                        <div class="checkbox">
-                          <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
-                        </div>
+                      </div>
+          
+          
+          
+          
+                    <hr class="hr">
+                    <div id="filter-size" class="row size-box">
+                      <div class="col-xs-8 text-left">
+                        Size
+                      </div>
+                      <div class="col-xs-4">
+                        <a class="text-right clear-btn" href="#"></a>
+                      </div>
                     </div>
-                  </div>
-                </div>
+          
+          
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="pop-filter-select">
+                              <input id="filter-one-S" class="one-checkbox" type="checkbox" value="S" checked/>
+                              <label for="filter-one-S">S (123)</label><br>
+                              <input id="filter-two-M" class="two-checkbox" type="checkbox" value="M" />
+                              <label for="filter-two-M">M (123)</label><br>
+                              <input id="filter-three-L" class="three-checkbox" type="checkbox" value="L" />
+                              <label for="filter-three-L">L (123)</label><br>
+                              <input id="filter-four-XL" class="four-checkbox" type="checkbox" value="XL" />
+                              <label for="filter-four-XL">XL (123)</label><br>
+                          </div>
+                        </div>
+                      </div>
+          
+          
+          
+                    <hr class="hr">
+                    <div id="filter-color" class="row color-box">
+                      <div class="col-xs-8 text-left">
+                        Color
+                      </div>
+                      <div class="col-xs-4">
+                        <a class="text-right clear-btn" href="#"></a>
+                      </div>
+                    </div>
+          
+          
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="pop-filter-select">
+                              <input id="filter-one-Red" class="one-checkbox" type="checkbox" value="Red" checked/>
+                              <label for="filter-one-Red">Red (123)</label><br>
+                              <input id="filter-two-Blue" class="two-checkbox" type="checkbox" value="Blue" />
+                              <label for="filter-two-Blue">Blue (123)</label><br>
+                              <input id="filter-three-Pink" class="three-checkbox" type="checkbox" value="Pink" />
+                              <label for="filter-three-Pink">Pink (123)</label><br>
+                              <input id="filter-four-Mono" class="four-checkbox" type="checkbox" value="Mono" />
+                              <label for="filter-four-Mono">Mono (123)</label><br>
+                          </div>
+                        </div>
+                      </div>
+          
+          
+          
+                    <hr class="hr">
+                    <div id="filter-price" class="row price-box">
+                      <div class="col-xs-8 text-left">
+                        Price
+                      </div>
+                      <div class="col-xs-4">
+                        <a class="text-right clear-btn" href="#"></a>
+                      </div>
+                    </div>
+          
+          
+          
+                      <div class="row">
+                        <div class="col-sm-12 slider-col">
+                          <div class="slider-range"></div>
+                          <input class="s1" name="s1" type="" value="€ 0" />
+                          <input class="s2" name="s2" type="" value="€ 1000" />
+                        </div>
+                      </div>
+          
+          
+                    <hr class="hr">
+                    <div id="filter-brands" class="row brands-box">
+                      <div class="col-xs-8 text-left">
+                        Brands
+                      </div>
+                      <div class="col-xs-4">
+                        <a class="text-right clear-btn" href="#"></a>
+                      </div>
+                    </div>
+          
+          
+          
+          
+                      <div class="pop-filter-select">
+                        <div class="brands-list">
+                            <input id="filter-1-Adidas" class="1-checkbox" type="checkbox" value="Adidas" checked/>
+                            <label for="filter-1-Adidas">Adidas (123)</label><br>
+                            <input id="filter-2-Nike" class="2-checkbox" type="checkbox" value="Nike" />
+                            <label for="filter-2-Nike">Nike (123)</label><br>
+                        </div>
+                      </div>
+          
+          
               </div>
             </div>
           </div>
@@ -605,187 +620,202 @@
                               <p class="filter-products"><b>Filter Products</b></p>
                             </div>
                           </div>
-                          <hr class="hr">
-                          <div class="row product-type">
-                            <div class="col-xs-8 text-left">
-                              Product type
-                            </div>
-                            <div class="col-xs-4">
-                              <a class="text-right clear-btn" href="#">Clear</a>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-12">
-                              <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
-                                  <div class="panel panel-default">
-                                    <div class="panel-heading" id="heading-one" role="tab">
-                                      <h4 class="panel-title">
-                                        <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#one">
-                                          Type-1
-                                        </a>
-                                      </h4>
-                                    </div>
-                                    <div aria-labelledby="heading-one" class="panel-collapse collapse in" id="one" role="tabpanel">
-                                      <div class="panel-body">
-                                          <div class="checkbox">
-                                            <label>
-                                              <input type="checkbox" value="" checked>
-                                              All
-                                            </label>
-                                          </div>
-                                          <div class="checkbox">
-                                            <label>
-                                              <input type="checkbox" value="" >
-                                              sub-type 1
-                                            </label>
-                                          </div>
-                                          <div class="checkbox">
-                                            <label>
-                                              <input type="checkbox" value="" >
-                                              sub-type 2
-                                            </label>
-                                          </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="panel panel-default">
-                                    <div class="panel-heading" id="heading-one" role="tab">
-                                      <h4 class="panel-title">
-                                        <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#two">
-                                          Type-2
-                                        </a>
-                                      </h4>
-                                    </div>
-                                    <div aria-labelledby="heading-one" class="panel-collapse collapse " id="two" role="tabpanel">
-                                      <div class="panel-body">
-                                          <div class="checkbox">
-                                            <label>
-                                              <input type="checkbox" value="" >
-                                              sub-type 1
-                                            </label>
-                                          </div>
-                                          <div class="checkbox">
-                                            <label>
-                                              <input type="checkbox" value="" >
-                                              sub-type 2
-                                            </label>
-                                          </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="panel panel-default">
-                                    <div class="panel-heading" id="heading-one" role="tab">
-                                      <h4 class="panel-title">
-                                        <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#three">
-                                          Type-3
-                                        </a>
-                                      </h4>
-                                    </div>
-                                    <div aria-labelledby="heading-one" class="panel-collapse collapse " id="three" role="tabpanel">
-                                      <div class="panel-body">
-                                          <div class="checkbox">
-                                            <label>
-                                              <input type="checkbox" value="" >
-                                              sub-type 1
-                                            </label>
-                                          </div>
-                                          <div class="checkbox">
-                                            <label>
-                                              <input type="checkbox" value="" >
-                                              sub-type 2
-                                            </label>
-                                          </div>
-                                      </div>
-                                    </div>
-                                  </div>
+            
+                              <hr class="hr">
+                              <div id="filter-product-type" class="row product-type-box">
+                                <div class="col-xs-8 text-left">
+                                  Product Type
+                                </div>
+                                <div class="col-xs-4">
+                                  <a class="text-right clear-btn" href="#"></a>
+                                </div>
                               </div>
-                            </div>
-                          </div>
-                          <hr class="hr">
-                          <div class="row size-box">
-                            <div class="col-xs-8 text-left">
-                              Size
-                            </div>
-                            <div class="col-xs-4">
-                              <a class="text-right clear-btn" href="#">Clear</a>
-                            </div>
-                          </div>
-                          <div class="pop-filter-size">
-                              <input type="checkbox" value="" checked><label>S</label><br>
-                              <input type="checkbox" value="" ><label>M</label><br>
-                              <input type="checkbox" value="" checked><label>XL</label><br>
-                              <input type="checkbox" value="" ><label>XXL</label><br>
-                          </div>
-                          <hr class="hr">
-                          <div class="row color-box">
-                            <div class="col-xs-8 text-left">
-                              Color
-                            </div>
-                            <div class="col-xs-4">
-                              <a class="text-right clear-btn" href="#">Clear</a>
-                            </div>
-                          </div>
-                          <div class="pop-filter-color">
-                              <input type="checkbox" value="" ><label>Black</label><br>
-                              <input type="checkbox" value="" checked><label>Blue</label><br>
-                              <input type="checkbox" value="" ><label>Multi</label><br>
-                              <input type="checkbox" value="" checked><label>White</label><br>
-                          </div>
-                          <hr class="hr">
-                          <div class="row price-box">
-                            <div class="col-xs-8">
-                              Price
-                            </div>
-                            <div class="col-xs-4">
-                              <a class="text-right clear-btn" href="#">Clear</a>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-12 slider-col">
-                              <div class="slider-range"></div>
-                              <input class="s1" name="s1" type="" value="€ 0" />
-                              <input class="s2" name="s2" type="" value="€ 1000" />
-                            </div>
-                          </div>
-                          <hr class="hr">
-                          <div class="row brands-box">
-                            <div class="col-xs-8 text-left">
-                              Brands
-                            </div>
-                            <div class="col-xs-4">
-                              <a class="text-right clear-btn" href="#">Clear</a>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-12">
-                              <div class="brands-list">
-                                  <div class="checkbox">
-                                    <input id="brands-checkbox" type="checkbox" checked><label>A.P.C</label>
+            
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" id="heading-one" role="tab">
+                                            <h4 class="panel-title">
+                                              <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#Type-1">
+                                                Type-1 (300)
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div aria-labelledby="heading-one" class="panel-collapse collapse in" id="Type-1" role="tabpanel">
+                                            <div class="panel-body">
+                                                <div class="checkbox">
+                                                  <label for="filter-one-one-Subtype-1">
+                                                    <input id="filter-one-one-Subtype-1" type="checkbox" value="Subtype-1" checked>
+                                                    Subtype-1 (150)
+                                                  </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                  <label for="filter-one-two-Subtype-2">
+                                                    <input id="filter-one-two-Subtype-2" type="checkbox" value="Subtype-2" >
+                                                    Subtype-2 (150)
+                                                  </label>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" id="heading-one" role="tab">
+                                            <h4 class="panel-title">
+                                              <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#Type-2">
+                                                Type-2 (300)
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div aria-labelledby="heading-one" class="panel-collapse collapse " id="Type-2" role="tabpanel">
+                                            <div class="panel-body">
+                                                <div class="checkbox">
+                                                  <label for="filter-two-one-Subtype-1">
+                                                    <input id="filter-two-one-Subtype-1" type="checkbox" value="Subtype-1" >
+                                                    Subtype-1 (150)
+                                                  </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                  <label for="filter-two-two-Subtype-2">
+                                                    <input id="filter-two-two-Subtype-2" type="checkbox" value="Subtype-2" >
+                                                    Subtype-2 (150)
+                                                  </label>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" id="heading-one" role="tab">
+                                            <h4 class="panel-title">
+                                              <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#Type-3">
+                                                Type-3 (300)
+                                              </a>
+                                            </h4>
+                                          </div>
+                                          <div aria-labelledby="heading-one" class="panel-collapse collapse " id="Type-3" role="tabpanel">
+                                            <div class="panel-body">
+                                                <div class="checkbox">
+                                                  <label for="filter-three-one-Subtype-1">
+                                                    <input id="filter-three-one-Subtype-1" type="checkbox" value="Subtype-1" >
+                                                    Subtype-1 (150)
+                                                  </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                  <label for="filter-three-two-Subtype-2">
+                                                    <input id="filter-three-two-Subtype-2" type="checkbox" value="Subtype-2" >
+                                                    Subtype-2 (150)
+                                                  </label>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
                                   </div>
-                                  <div class="checkbox">
-                                    <input id="brands-checkbox" type="checkbox" ><label>ACNE</label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER MCQUEEN</label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <input id="brands-checkbox" type="checkbox" checked><label>ALEXANDER WANG</label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
-                                  </div>
-                                  <div class="checkbox">
-                                    <input id="brands-checkbox" type="checkbox" ><label>ALEXANDER WANG</label>
-                                  </div>
+                                </div>
+            
+            
+            
+            
+                              <hr class="hr">
+                              <div id="filter-size" class="row size-box">
+                                <div class="col-xs-8 text-left">
+                                  Size
+                                </div>
+                                <div class="col-xs-4">
+                                  <a class="text-right clear-btn" href="#"></a>
+                                </div>
                               </div>
-                            </div>
-                          </div>
+            
+            
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <div class="pop-filter-select">
+                                        <input id="filter-one-S" class="one-checkbox" type="checkbox" value="S" checked/>
+                                        <label for="filter-one-S">S (123)</label><br>
+                                        <input id="filter-two-M" class="two-checkbox" type="checkbox" value="M" />
+                                        <label for="filter-two-M">M (123)</label><br>
+                                        <input id="filter-three-L" class="three-checkbox" type="checkbox" value="L" />
+                                        <label for="filter-three-L">L (123)</label><br>
+                                        <input id="filter-four-XL" class="four-checkbox" type="checkbox" value="XL" />
+                                        <label for="filter-four-XL">XL (123)</label><br>
+                                    </div>
+                                  </div>
+                                </div>
+            
+            
+            
+                              <hr class="hr">
+                              <div id="filter-color" class="row color-box">
+                                <div class="col-xs-8 text-left">
+                                  Color
+                                </div>
+                                <div class="col-xs-4">
+                                  <a class="text-right clear-btn" href="#"></a>
+                                </div>
+                              </div>
+            
+            
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <div class="pop-filter-select">
+                                        <input id="filter-one-Red" class="one-checkbox" type="checkbox" value="Red" checked/>
+                                        <label for="filter-one-Red">Red (123)</label><br>
+                                        <input id="filter-two-Blue" class="two-checkbox" type="checkbox" value="Blue" />
+                                        <label for="filter-two-Blue">Blue (123)</label><br>
+                                        <input id="filter-three-Pink" class="three-checkbox" type="checkbox" value="Pink" />
+                                        <label for="filter-three-Pink">Pink (123)</label><br>
+                                        <input id="filter-four-Mono" class="four-checkbox" type="checkbox" value="Mono" />
+                                        <label for="filter-four-Mono">Mono (123)</label><br>
+                                    </div>
+                                  </div>
+                                </div>
+            
+            
+            
+                              <hr class="hr">
+                              <div id="filter-price" class="row price-box">
+                                <div class="col-xs-8 text-left">
+                                  Price
+                                </div>
+                                <div class="col-xs-4">
+                                  <a class="text-right clear-btn" href="#"></a>
+                                </div>
+                              </div>
+            
+            
+            
+                                <div class="row">
+                                  <div class="col-sm-12 slider-col">
+                                    <div class="slider-range"></div>
+                                    <input class="s1" name="s1" type="" value="€ 0" />
+                                    <input class="s2" name="s2" type="" value="€ 1000" />
+                                  </div>
+                                </div>
+            
+            
+                              <hr class="hr">
+                              <div id="filter-brands" class="row brands-box">
+                                <div class="col-xs-8 text-left">
+                                  Brands
+                                </div>
+                                <div class="col-xs-4">
+                                  <a class="text-right clear-btn" href="#"></a>
+                                </div>
+                              </div>
+            
+            
+            
+            
+                                <div class="pop-filter-select">
+                                  <div class="brands-list">
+                                      <input id="filter-1-Adidas" class="1-checkbox" type="checkbox" value="Adidas" checked/>
+                                      <label for="filter-1-Adidas">Adidas (123)</label><br>
+                                      <input id="filter-2-Nike" class="2-checkbox" type="checkbox" value="Nike" />
+                                      <label for="filter-2-Nike">Nike (123)</label><br>
+                                  </div>
+                                </div>
+            
+            
                         </div>
                       </div>
                     </div>
