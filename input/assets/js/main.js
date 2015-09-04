@@ -154,6 +154,11 @@ $(function() {
     });
 });
 
+// Toggling plus and minus icons for product details accordion
+$(".pdp-accord-toggle").click(function() {
+    $(this).find(".accordion-plus").toggleClass("accordion-minus");
+});
+
 // Slick gallery init
 $(document).ready(function() {
   $('.gallery-mobile').slick({
