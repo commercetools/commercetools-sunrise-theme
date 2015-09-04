@@ -55,12 +55,10 @@
           {{#if selectFacet}}
             <div class="row">
               <div class="col-sm-12">
-                <div class="pop-filter-list">
+                <div class="pop-filter-select">
                   {{#each facet.limitedOptions}}
-                    <div class="checkbox">
-                      <input id="filter-{{key}}-{{value}}" class="{{key}}-checkbox" type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}/>
-                      <label for="filter-{{key}}-{{value}}">{{value}} ({{count}})</label>
-                    </div>
+                    <input id="filter-{{key}}-{{value}}" class="{{key}}-checkbox" type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}/>
+                    <label for="filter-{{key}}-{{value}}">{{value}} ({{count}})</label><br>
                   {{/each}}
                 </div>
               </div>
