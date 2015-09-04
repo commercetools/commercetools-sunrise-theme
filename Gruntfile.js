@@ -18,8 +18,7 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'input/', dest: 'output/', src: '*.html' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.hbs' },
-          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.hbs' },
-          { expand: true, cwd: 'input/templates/', dest: 'output/input/templates/', src: '**/*.hbs' }
+          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.hbs' }
         ]
       }
     },
@@ -122,7 +121,7 @@ module.exports = function(grunt) {
         silent: true,
         base: 'output'
       },
-      src: ['assets/**/*', '**/*.html', '**/*.hbs']
+      src: ['**/*']
     }
 
   });
