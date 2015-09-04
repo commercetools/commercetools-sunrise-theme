@@ -121,7 +121,7 @@ module.exports = function(grunt) {
         silent: true,
         base: 'output'
       },
-      src: ['assets/**/*', '**/*.html']
+      src: ['**/*']
     }
 
   });
