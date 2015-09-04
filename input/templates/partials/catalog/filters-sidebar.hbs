@@ -77,10 +77,12 @@
 
           {{#if sortedSelectFacet}}
             <div class="pop-filter-select">
-              {{#each facet.limitedOptions}}
-                <input id="filter-{{key}}-{{value}}" class="{{key}}-checkbox" type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}/>
-                <label for="filter-{{key}}-{{value}}">{{value}} ({{count}})</label><br>
-              {{/each}}
+              <div class="brands-list">
+                {{#each facet.limitedOptions}}
+                  <input id="filter-{{key}}-{{value}}" class="{{key}}-checkbox" type="checkbox" value="{{value}}" {{#if selected}}checked{{/if}}/>
+                  <label for="filter-{{key}}-{{value}}">{{value}} ({{count}})</label><br>
+                {{/each}}
+              </div>
             </div>
           {{/if}}
 
