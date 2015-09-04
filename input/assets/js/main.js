@@ -103,7 +103,7 @@ $(function() {
 
 // Adding dynamic ID to quickview modals
 $( ".quickview" ).click(function( event ) {
-  event.stopPropagation();
+  event.preventDefault();
   var modalId = event.target.getAttribute('data-modal')
   $("#" + modalId).modal('show');
 });
