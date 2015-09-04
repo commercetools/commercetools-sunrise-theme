@@ -167,6 +167,24 @@
   .banner-xs-one {
     background: $dark-blue;
     border-right: 1px solid $white;
+    .banner-text {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: none;
+      img {
+        height: 40px;
+        width: 40px;
+        margin: 20px 0 10px;
+      }
+      .banner-title {
+
+      }
+    }
   }
   .banner-xs-two {
     border-left: 1px solid $white;
