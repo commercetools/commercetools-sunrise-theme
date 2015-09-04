@@ -1,0 +1,130 @@
+{
+	"header" : {
+		"title" : "Sunrise - Checkout Confirmation Page",
+		"customerService" : "Need help? Customer Service",
+		"customerServiceNumber" : "+12 345 6000"
+	},
+	"footer" : {
+		"legalInfo" : {
+			"text" : "© 2015 Sunrise",
+			"list" : [
+				{
+					"text" : "Imprint",
+					"url" : ""
+				},
+				{
+					"text" : "Privacy policy",
+					"url" : ""
+				},
+				{
+					"text" : "Terms of use",
+					"url" : ""
+				}
+			]
+		}
+	},
+  "content" : {
+    "thankyouTitle" : "Thank you for your order!",
+    "emailSentTo" : "An email has been sent to",
+    "email" : "camilo@batman.com",
+    "emailSentToEnding" : "as a copy of this confirmation purchase",
+    "receiptBtn" : "Print Receipt",
+    "continueShoppingBtn" : "Continue Shopping",
+    "orderDetailsTitle" : "Your order details",
+    "orderNumberTitle" : "Order Number",
+    "orderNumber" : "01445678",
+    "orderDateTitle" : "Order Date",
+    "orderDate" : "Nov 14, 2015",
+    "shippingAddress" : {
+      "text" : "Shipping Address",
+      "name" : "Mr. Bruce Wayne",
+      "street" : "100 Gotham Street",
+      "city" : "Gothan City",
+      "region" : "Region",
+      "postCode" : "123456",
+      "country" : "Country",
+      "phoneTitle" : "Phone",
+      "phone" : "+49 123 4567899",
+      "emailTitle" : "Email",
+      "email" : "batman@commercetools.com"
+    },
+		"billingAddress" : {
+			"text" : "Billing Address",
+			"name" : "Mr. Bruce Wayne",
+			"street" : "100 Gotham Street",
+			"city" : "Gothan City",
+			"region" : "Region",
+			"postCode" : "123456",
+			"country" : "Country",
+			"phoneTitle" : "Phone",
+			"phone" : "+49 123 4567899",
+			"emailTitle" : "Email",
+			"email" : "batman@commercetools.com"
+		},
+		"shippingMethod" : {
+			"text" : "Shipping Method",
+			"description" : "DHL Standart - Delivery 3-5 Days"
+		},
+		"paymentDetails" : {
+			"text" : "Payment Details",
+			"type" : "Credit Card",
+			"name" : "Bruce Wayne",
+			"card" : "Visa",
+			"number" : "**** **** **** **56",
+			"date" : "09.18"
+		},
+    "cartItems" : {
+      "description" : "Product Description",
+      "quantity" : "Quantity",
+      "price" : "Price",
+      "totalPrice" : "Total Price",
+      "list" : [
+        {
+          "nameHeadline" : "Enditatem Product Name",
+          "nameSubline" : "Optional Line Two",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color: ",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size: ",
+          "size" : "M",
+          "available" : "Available",
+					"quantity" : "2",
+          "priceTitle" : "Price",
+          "price" : "49,00 €",
+          "totalPriceTitle" : "Total Price",
+          "totalPrice" : "49,00 €"
+        },
+        {
+          "nameHeadline" : "Enditatem Product Name",
+          "nameSubline" : "Optional Line Two",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color: ",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size: ",
+          "size" : "M",
+          "available" : "Available",
+					"quantity" : "3",
+          "priceTitle" : "Price",
+          "price" : "49,00 €",
+          "totalPriceTitle" : "Total Price",
+          "totalPrice" : "49,00 €"
+        }
+      ]
+    },
+		"totalSum" : {
+			"subtotalTitle" : "Subtotal",
+			"subtotal" : "107,00 €",
+			"orderDiscountTitle" : "Order Discount",
+			"orderDiscount" : "0,00 €",
+			"deliveryOption" : "Standart Delivery",
+			"delivery" : "0,00 €",
+			"taxTitle" : "Sales Tax",
+			"tax" : "20,00 €",
+			"orderTotalTitle" : "Order Total",
+			"orderTotal" : "117,00 €"
+		}
+  },
+  "meta" : {
+	"assetsPath": "assets/"
+  }
+}

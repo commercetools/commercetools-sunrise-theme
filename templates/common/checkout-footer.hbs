@@ -1,0 +1,15 @@
+<div class="sub-footer">
+  <div class="container">
+    <div class="row text-uppercase">
+      <div class="col-sm-12">
+        <ul class="footer-title imprint-row">
+          <li class="hidden-xs">{{footer.legalInfo.text}}</li>
+          {{#each footer.legalInfo.list}}
+            <li><a id="{{id}}" href="{{url}}">{{text}}</a></li>
+          {{/each}}
+          <li class="visible-xs">{{footer.legalInfo.text}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

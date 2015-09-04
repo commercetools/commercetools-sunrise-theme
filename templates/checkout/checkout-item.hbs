@@ -1,0 +1,98 @@
+<div class="order">
+  <div class="order-summary-items">
+    {{#each content.checkoutItem.list}}
+      <div class="order-summary-item">
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="order-summary-img">
+              <img class="img-responsive" src="{{image}}" alt="">
+            </div>
+          </div>
+          <div class="col-xs-8">
+            <div class="summary-item-info">
+              <span class="checkout-product-name">{{text}}</span><br>
+              <span class="checkout-product-name">{{description}}</span>
+            </div>
+            <div class="sku-code">
+              <span>{{sku}}</span>
+            </div>
+            <div class="checkout-color-size">
+              <span class="checkout-color">{{colorTitle}}:</span><span>{{color}}</span><br>
+              <span class="checkout-size">{{sizeTitle}}:</span><span>{{size}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-item-price">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="text-right">
+                <span class="text-uppercase pricing-titles">{{quantity}}</span><br>
+                <span>{{quantityNumber}} x</span>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="text-right order-item-value">
+                <span class="text-uppercase pricing-titles">{{priceTitle}}</span><br>
+                {{#if priceOld}}<span class="checkout-discounted-price">{{priceOld}}</span><br>{{/if}}
+                <span>{{price}}</span>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="text-right order-item-value">
+                <span class="text-uppercase pricing-titles">{{totalTitle}}</span><br>
+                <span>{{total}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <div class="checkout-total-price">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text-right checkout-promo-code">
+          <span class="text-uppercase promo-code-applied">{{content.promoCodeTitle}}</span>
+          <span class="text-uppercase">{{content.promoCode}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
+        <div class="text-right checkout-price-text">
+          <span>{{content.subtotalTitle}}</span><br>
+          <span>{{content.discountTitle}}</span><br>
+          <span>{{content.deliveryTitle}}</span>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+        <div class="text-right checkout-price-digits">
+          <span>{{content.subtotal}}</span><br>
+          <span>{{content.discount}}</span><br>
+          <span>{{content.deliverySum}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
+      <div class="text-right order-tax-total-text">
+        <span>{{content.taxTitle}}</span><br>
+        <span class="total-order-value">{{content.totalTitle}}</span>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+      <div class="text-right order-tax-total-digits">
+        <span>{{content.tax}}</span><br>
+        <span class="total-order-value">{{content.total}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div>
+        <span class="text-uppercase pull-right edit-quantity-order"><a href="#">{{content.editMyOrder}}</a></span>
+      </div>
+    </div>
+  </div>
+</div>

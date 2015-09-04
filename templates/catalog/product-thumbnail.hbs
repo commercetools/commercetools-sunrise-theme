@@ -1,0 +1,35 @@
+<div class="shop-item" onclick="location.href='{{url}}'">
+  {{#if priceOld}}
+    <div class="sale-flag">{{content.static.saleText}}</div>
+  {{/if}}
+  {{#if new}}
+    <div class="new-flag">{{content.static.newText}}</div>
+  {{/if}}
+  <button type="button" class="heart-xs visible-xs">
+    <span class="sr-only">{{content.static.wishlistText}}</span>
+  </button>
+  <img class="pop-product-image" src="{{images.0.bigImage}}" alt="{{text}}" width="200" />
+  <div class="pop-product-name">
+    <span class="name-headline">{{text}}</span>
+    <span class="name-subline">{{description}}</span>
+  </div>
+  <div class="pop-item-price">
+    {{#if priceOld}}
+      <span class="strikethrough">{{priceOld}}</span>
+      <span class="pop-item-price-old">{{price}}</span>
+    {{else}}
+      <span>{{price}}</span>
+    {{/if}}
+  </div>
+  <div class="pop-product-more-colors">
+    {{#if moreColors}}{{content.static.moreColorsText}}{{/if}}&nbsp;
+  </div>
+  <div class="shop-item-overlay hidden-xs">
+    <button type="button" class="quickview"
+     data-modal="quickview-modal-{{id}}">{{content.static.quickViewText}}</button>
+    <button type="button" class="heart">
+      <span class="sr-only">{{content.static.wishlistText}}</span>
+    </button>
+  </div>
+</div>
+{{> catalog/quickview}}

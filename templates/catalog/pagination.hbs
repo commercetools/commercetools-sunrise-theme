@@ -1,0 +1,15 @@
+{{#with content.pagination}}
+<li>
+  <a href="{{urlPrev}}" class="icon-prev">
+    <span class="sr-only">{{prev}}</span>
+  </a>
+</li>
+{{#each pages}}
+  <li><a href="{{url}}" {{#if selected}} class="active" {{/if}}>{{name}}</a></li>
+{{/each}}
+<li>
+  <a href="{{urlNext}}" class="icon-next">
+    <span class="sr-only">{{next}}</span>
+  </a>
+</li>
+{{/with}}

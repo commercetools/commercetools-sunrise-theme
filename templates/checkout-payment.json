@@ -1,0 +1,231 @@
+{
+	"header" : {
+		"title" : "Sunrise - Checkout Payment Page",
+		"customerService" : "Need help? Customer Service",
+		"customerServiceNumber" : "+12 345 6000"
+	},
+	"footer" : {
+		"legalInfo" : {
+			"text" : "© 2015 Sunrise",
+			"list" : [
+				{
+					"text" : "Imprint",
+					"url" : "",
+					"id" : "payment-subfooter-imprint-link"
+				},
+				{
+					"text" : "Privacy policy",
+					"url" : "",
+					"id" : "payment-subfooter-privacypolicy-link"
+				},
+				{
+					"text" : "Terms of use",
+					"url" : "",
+					"id" : "payment-subfooter-termsofuse-link"
+				}
+			]
+		}
+	},
+  "content" : {
+    "secureCheckoutTitle" : "Secure Checkout - Payment",
+    "shippingOne" : "Shipping",
+    "paymentTwo" : "Payment",
+    "confirmationThree" : "Confirmation",
+    "paymentInfoTitle" : "Payment Details",
+    "required" : "Required",
+    "paymentOptionTitle" : "Please provide one of the following payment options:",
+    "paymentOption" : {
+      "list" : [
+        {
+          "text" : "Credit Card",
+          "image" : "assets/img/mastercard4.png",
+          "value" : "",
+          "selected" : true,
+					"id" : "payment-type-credit-card"
+        },
+        {
+          "text" : "PayPal",
+          "image" : "assets/img/mastercard4.png",
+          "value" : "",
+          "selected" : false,
+					"id" : "payment-type-paypal"
+        },
+        {
+          "text" : "Pre-payment",
+          "image" : "assets/img/mastercard4.png",
+          "value" : "",
+          "selected" : false,
+					"id" : "payment-type-pre-payment"
+        }
+      ]
+    },
+    "cardName" : "Name on credit card",
+    "cardNumber" : "Credit card number",
+    "expiryDateTitle" : "Expiry data",
+    "expiryDate" : {
+      "list" : [
+				{
+          "text" : "Month",
+          "value" : "",
+          "selected" : true
+        },
+        {
+          "text" : "January",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "February",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "March",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "April",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "May",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "June",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "July",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "August",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "September",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "October",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "November",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "December",
+          "value" : "",
+          "selected" : false
+        }
+      ]
+    },
+    "year" : {
+      "list" : [
+				{
+          "text" : "Year",
+          "value" : "",
+          "selected" : true
+        },
+        {
+          "text" : "2050",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "2100",
+          "value" : "",
+          "selected" : false
+        }
+      ]
+    },
+    "securityCode" : "Security Code",
+    "securityCodeTooltip" : "Additional information about the security code goes here...",
+
+
+    "checkoutBtn" : "Continue Checkout",
+    "orderSummary" : "Order Summary",
+    "itemsTotal" : "3 items in total",
+    "checkoutItem" : {
+      "list" : [
+        {
+          "text" : "Enditatem Product Name",
+          "description" : "Optional Line Two",
+          "image" : "assets/img/blue-jacket.jpg",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size",
+          "size" : "M",
+          "quantity" : "Quantity",
+          "quantityNumber" : "1",
+					"priceOld" : "100,00 €",
+          "priceTitle" : "Price",
+          "price" : "49,00 €",
+          "totalTitle" : "Total",
+          "total" : "49,00 €"
+        },
+        {
+          "text" : "Enditatem Product Name",
+          "description" : "Optional Line Two",
+          "image" : "assets/img/blue-jacket.jpg",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size",
+          "size" : "M",
+          "quantity" : "Quantity",
+          "quantityNumber" : "1",
+          "priceTitle" : "Price",
+          "price" : "49,00 €",
+          "totalTitle" : "Total",
+          "total" : "49,00 €"
+        },
+        {
+          "text" : "Enditatem Product Name",
+          "description" : "Optional Line Two",
+          "image" : "assets/img/blue-jacket.jpg",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size",
+          "size" : "M",
+          "quantity" : "Quantity",
+          "quantityNumber" : "1",
+          "priceTitle" : "Price",
+					"priceOld" : "100,00 €",
+          "price" : "49,00 €",
+          "totalTitle" : "Total",
+          "total" : "49,00 €"
+        }
+      ]
+    },
+    "promoCodeTitle" : "Promotional Code Applied",
+    "promoCode" : "Sunny Sale",
+    "subtotalTitle" : "Subtotal",
+    "subtotal" : "107,00 €",
+    "discountTitle" : "Order Discount",
+    "discount" : "0,00 €",
+    "deliveryTitle" : "Standart Delivery",
+    "deliverySum" : "10,00 €",
+    "taxTitle" : "Sales Tax",
+    "tax" : "20,00 €",
+    "totalTitle" : "Order Total",
+    "total" : "123,00 €",
+    "editMyOrder" : "Edit my quantity order"
+  },
+  "meta" : {
+    "assetsPath": "assets/"
+  }
+}

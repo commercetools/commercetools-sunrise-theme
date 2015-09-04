@@ -1,0 +1,78 @@
+<div class="footer">
+  <div id="footer" class="container">
+    <div class="row text-uppercase">
+      <div class="col-sm-2">
+        <div class="footer-col">
+          <ul>
+            <li class="footer-title hidden-xs">{{footer.customerCare.text}}</li>
+            {{#each footer.customerCare.list}}
+              <li><a href="{{url}}">{{text}}</a></li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-2 hidden-xs">
+        <div class="footer-col">
+          <ul>
+            <li class="footer-title hidden-xs">{{footer.aboutUs.text}}</li>
+            {{#each footer.aboutUs.list}}
+              <li><a href="{{url}}">{{text}}</a></li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-2 hidden-xs">
+        <div class="footer-col">
+          <ul>
+            <li class="footer-title hidden-xs">{{footer.shortcuts.text}}</li>
+            {{#each footer.shortcuts.list}}
+              <li><a href="{{url}}">{{text}}</a></li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 text-center newsletter-box">
+        <div class="row">
+          <div class="col-sm-5 text-left footer-title-yellow">
+            <p>{{footer.newsletter.text}}</p>
+          </div>
+          <div class="col-sm-7">
+            <form class="email-submit" action="{{footer.newsletter.url}}">
+              <input id="{{footer.newsletter.inputId}}" class="email-box" type="text" placeholder="{{footer.newsletter.placeholder}}">
+              <button id="{{footer.newsletter.buttonId}}" type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">{{footer.newsletter.textAlt}}</span></button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 text-left card-info footer-title">
+            <p>{{footer.paySecure}}</p>
+            <img src="{{meta.assetsPath}}img/cards.png" alt="payment types" class="img-responsive payment-cards">
+          </div>
+          <div class="col-sm-4 text-left card-info footer-title">
+            <p>{{footer.followUs}}</p>
+            <ul class="social-icons">
+              <a href=""><li><img class="social-icon" src="{{meta.assetsPath}}img/Facebook.png" alt="facebook"></li></a>
+              <a href=""><li><img class="social-icon" src="{{meta.assetsPath}}img/Pinterest.png" alt="pinterest"></li></a>
+              <a href=""><li><img class="social-icon" src="{{meta.assetsPath}}img/Google.png" alt="google plus"></li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sub-footer">
+  <div class="container">
+    <div class="row text-uppercase">
+      <div class="col-sm-12">
+        <ul class="footer-title imprint-row">
+          <li class="hidden-xs">{{footer.legalInfo.text}}</li>
+          {{#each footer.legalInfo.list}}
+            <li><a href="{{url}}">{{text}}</a></li>
+          {{/each}}
+          <li class="visible-xs">{{footer.legalInfo.text}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,234 @@
+{
+	"header" : {
+		"title" : "Sunrise - Checkout Shipping Page",
+		"customerService" : "Need help? Customer Service",
+		"customerServiceNumber" : "+12 345 6000"
+	},
+	"footer" : {
+		"legalInfo" : {
+			"text" : "© 2015 Sunrise",
+			"list" : [
+				{
+					"text" : "Imprint",
+					"url" : "",
+					"id" : "shipping-imprint-link"
+				},
+				{
+					"text" : "Privacy policy",
+					"url" : "",
+					"id" : "shipping-privacypolicy-link"
+				},
+				{
+					"text" : "Terms of use",
+					"url" : "",
+					"id" : "shipping-termsofuse-link"
+				}
+			]
+		}
+	},
+  "content" : {
+    "secureCheckoutTitle" : "Secure Checkout - Shipping",
+    "shippingOne" : "Shipping",
+    "paymentTwo" : "Payment",
+    "confirmationThree" : "Confirmation",
+    "shippingInfoTitle" : "Shipping Information",
+    "required" : "Required",
+    "title" : "Title",
+    "chooseTitle" : {
+      "list" : [
+				{
+          "text" : "Choose",
+          "value" : "",
+          "selected" : true
+        },
+        {
+          "text" : "Mr.",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "Mrs.",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "Ms.",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "Dr.",
+          "value" : "",
+          "selected" : false
+        }
+      ]
+    },
+    "firstName" : "First Name",
+    "lastName" : "Last Name",
+    "addressOne" : "Address 1",
+    "addressTwo" : "Address 2",
+    "city" : "City",
+    "postCode" : "Post Code",
+    "country" : "Country",
+    "chooseCountry" : {
+      "list" : [
+				{
+          "text" : "Choose",
+          "value" : "",
+          "selected" : true
+        },
+        {
+          "text" : "Germany",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "France",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "Spain",
+          "value" : "",
+          "selected" : false
+        }
+      ]
+    },
+    "region" : "Region",
+    "telNumber" : "Telephone Number",
+    "telNumberInfo" : "Please provide your telephone number so the shipper can contact you during delivery",
+    "email" : "Email",
+    "emailInfo" : "We require your email address to send your shipping and order confirmation",
+    "differentBilling" : "Use a different address for billing",
+    "diffAddressOne" : "Address 1",
+    "diffAddressTwo" : "Address 2",
+    "diffCity" : "City",
+    "diffPostCode" : "Post Code",
+    "diffCountry" : "Country",
+    "diffChooseCountry" : {
+      "list" : [
+        {
+          "text" : "Germany",
+          "value" : "",
+          "selected" : true
+        },
+        {
+          "text" : "France",
+          "value" : "",
+          "selected" : false
+        },
+        {
+          "text" : "Spain",
+          "value" : "",
+          "selected" : false
+        }
+      ]
+    },
+    "diffRegion" : "Region",
+    "shippingMethod" : "Shipping Method",
+    "delivery" : {
+      "list" : [
+        {
+          "text" : "DHL Standart",
+          "value" : "",
+          "selected" : true,
+          "deliveryDays" : "Delivery: 3-5 Days",
+          "url" : "",
+          "details" : "View Details",
+					"id" : "shipping-delivery-standart"
+        },
+        {
+          "text" : "DHL Express",
+          "value" : "",
+          "selected" : false,
+          "deliveryDays" : "Delivery: 3-5 Days",
+          "url" : "",
+          "details" : "View Details",
+					"id" : "shipping-delivery-express"
+        },
+        {
+          "text" : "DHL Overnight",
+          "value" : "",
+          "selected" : false,
+          "deliveryDays" : "Delivery: 3-5 Days",
+          "url" : "",
+          "details" : "View Details",
+					"id" : "shipping-delivery-overnight"
+        }
+      ]
+    },
+    "checkoutBtn" : "Continue Checkout",
+    "orderSummary" : "Order Summary",
+    "itemsTotal" : "3 items in total",
+    "checkoutItem" : {
+      "list" : [
+        {
+          "text" : "Enditatem Product Name",
+          "description" : "Optional Line Two",
+          "image" : "assets/img/blue-jacket.jpg",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size",
+          "size" : "M",
+          "quantity" : "Quantity",
+          "quantityNumber" : "1",
+          "priceTitle" : "Price",
+					"priceOld" : "100,00 €",
+          "price" : "49,00 €",
+          "totalTitle" : "Total",
+          "total" : "49,00 €"
+        },
+        {
+          "text" : "Enditatem Product Name",
+          "description" : "Optional Line Two",
+          "image" : "assets/img/blue-jacket.jpg",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size",
+          "size" : "M",
+          "quantity" : "Quantity",
+          "quantityNumber" : "1",
+          "priceTitle" : "Price",
+          "price" : "49,00 €",
+          "totalTitle" : "Total",
+          "total" : "49,00 €"
+        },
+        {
+          "text" : "Enditatem Product Name",
+          "description" : "Optional Line Two",
+          "image" : "assets/img/blue-jacket.jpg",
+          "sku" : "Sunrise #SUN123456",
+          "colorTitle" : "Color",
+          "color" : "Navy Blue",
+          "sizeTitle" : "Size",
+          "size" : "M",
+          "quantity" : "Quantity",
+          "quantityNumber" : "1",
+          "priceTitle" : "Price",
+					"priceOld" : "100,00 €",
+          "price" : "49,00 €",
+          "totalTitle" : "Total",
+          "total" : "49,00 €"
+        }
+      ]
+    },
+    "promoCodeTitle" : "Promotional Code Applied",
+    "promoCode" : "Sunny Sale",
+    "subtotalTitle" : "Subtotal",
+    "subtotal" : "107,00 €",
+    "discountTitle" : "Order Discount",
+    "discount" : "0,00 €",
+    "deliveryTitle" : "Standart Delivery",
+    "deliverySum" : "10,00 €",
+    "taxTitle" : "Sales Tax",
+    "tax" : "20,00 €",
+    "totalTitle" : "Order Total",
+    "total" : "123,00 €",
+    "editMyOrder" : "Edit my shopping cart"
+  },
+  "meta" : {
+    "assetsPath": "assets/"
+  }
+}

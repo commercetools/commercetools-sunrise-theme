@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> common/htmlhead}}
+</head>
+
+<body>
+  <div class="darkbg hidden"></div>
+  {{> common/header}}
+  <div class="pop-page">
+    <div id="pop-page" class="container">
+      <div class="row">
+        <div class="col-xs-12 figure-col">
+          {{> catalog/banner}}
+        </div>
+      </div>
+      <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-xs-12">
+          {{> catalog/breadcrumb}}
+        </div>
+        <div class="product-filter hidden-xs">
+          {{> catalog/filters-sidebar}}
+        </div>
+        <div class="col-sm-9">
+          <div class="dark-overlay"></div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="jumbotron">
+                <p>{{content.jumbotron.category}}</p>
+                <h2>{{content.jumbotron.text}}</h2>
+                <h3>{{content.jumbotron.description}}</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row visible-xs">
+            <div class="col-xs-12">
+              <ul class="mobile-filter-list clearfix">
+                <li class="pull-left">
+                  <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="modal" data-target="#sidebar-overlay">{{content.filters.open}}</button>
+                </li>
+                <li class="pull-left">
+                  <select class="select">
+                    {{#each content.sort.list}}
+                      <option value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
+                    {{/each}}
+                  </select>
+                </li>
+                <li class="pull-left">
+                  <p class="item-count">{{content.pagination.currentPage}} {{content.pagination.pageSeparator}} {{content.pagination.totalPages}}</p>
+                </li>
+              </ul>
+            </div>
+            {{> catalog/sidebar-overlay}}
+          </div>
+          <hr class="hr hidden-xs">
+          <div class="row hidden-xs item-list-pagination">
+            <div class="col-xs-4 text-left">
+              <div class="styled-select icon-drop-down">
+                <select class="select">
+                  {{#each content.sort.list}}
+                    <option value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
+                  {{/each}}
+                </select>
+              </div>
+              <p class="item-count">{{content.pagination.currentPage}} {{content.pagination.pageSeparator}} {{content.pagination.totalPages}}</p>
+            </div>
+            <div class="col-xs-4 text-center pagination">
+              <ul class="page-numbers">
+                {{> catalog/pagination}}
+              </ul>
+            </div>
+            <div class="col-xs-4 text-right">
+              <p class="item-count">{{content.display.title}}</p>
+              <div class="styled-select icon-drop-down">
+                <select class="select">
+                  {{#each content.display.list}}
+                    <option value="{{value}}" {{#if selected}} selected {{/if}}>{{name}}</option>
+                  {{/each}}
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            {{#each content.products.list}}
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                {{> catalog/product-thumbnail context=../content.products}}
+              </div>
+            {{/each}}
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-center pagination">
+              <ul class="page-numbers page-numbers-bottom">
+                {{> catalog/pagination}}
+              </ul>
+            </div>
+          </div>
+          <hr class="hr">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="seo-title">{{seo.text}}</h1>
+              <p class="seo-text">{{seo.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> catalog/wishlist}}
+
+  {{> common/footer}}
+
+  {{> common/htmlscripts}}
+</body>
+
+</html>

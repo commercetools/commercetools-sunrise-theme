@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> common/htmlhead}}
+  </head>
+
+  <body>
+  {{> common/checkout-header}}
+  <div class="checkout-shipping">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="secure-payment">
+            <span><img class="secure-payment-icon" src="{{meta.assetsPath}}img/credit-card-lock.png" alt="secure payment"></span>
+            <span class="text-uppercase secure-payment-title">{{content.secureCheckoutTitle}}</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="checkout-steps text-right">
+            <div>
+              <a id="payment-checkout-stepone-link" href="#"><span class="step-number">1</span>
+              <span class="text-uppercase step-title">{{content.shippingOne}}</span></a>
+            </div>
+            <div>
+              <a id="payment-checkout-steptwo-link" href="#"><span class="step-number step-number-active">2</span>
+              <span class="text-uppercase step-title step-title-active">{{content.paymentTwo}}</span></a>
+            </div>
+            <div>
+              <a id="payment-checkout-stepthree-link" href="#"><span class="step-number">3</span>
+              <span class="text-uppercase step-title">{{content.confirmationThree}}</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="checkout">
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="shipping-info">
+                  <span class="text-uppercase payment-info-title">{{content.paymentInfoTitle}}</span>
+                  <span class="pull-right required-fields">{{content.required}}*</span>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="payment-options-title">
+                      <span>{{content.paymentOptionTitle}}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  {{#each content.paymentOption.list}}
+                    <div class="col-lg-3 col-md-4 col-sm-4">
+                      <div class="payment-type">
+                        <span><img src="{{image}}" class="payment-type-icon" alt="credit card"></span><br>
+                        <span><input id="{{id}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
+                      </div>
+                    </div>
+                  {{/each}}
+                </div>
+                <div class="row" id="credit-card-input-field">
+                  <div class="col-md-6 col-sm-8">
+                    <div class="col-sm-12">
+                      <div class="name-on-card">
+                        <span class="text-uppercase">{{content.cardName}}*</span><br>
+                        <input id="payment-cardname-input" class="checkout-input-field" type="text">
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="card-number">
+                        <span class="text-uppercase">{{content.cardNumber}}*</span><br>
+                        <input id="payment-cardnumber-input" class="checkout-input-field card-number-input" type="text">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="expiry-date">
+                        <span class="text-uppercase">{{content.expiryDateTitle}}*</span><br>
+                        <select id="payment-expirymonth-select" class="checkout-dropdown">
+                          {{#each content.expiryDate.list}}
+                            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+                          {{/each}}
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="expiry-year">
+                        <br>
+                        <select id="payment-expiryyear-select" class="checkout-dropdown">
+                          {{#each content.year.list}}
+                            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+                          {{/each}}
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="security-code">
+                        <span class="text-uppercase">{{content.securityCode}}*</span><br>
+                        <input id="payment-securitycode-input" class="checkout-input-field security-code-input" type="text">
+                        <span class="security-code-info" title="{{content.securityCodeTooltip}}"><img class="info-icon" src="{{meta.assetsPath}}img/information.png" alt="information icon"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr-checkout-payment">
+                <div class="row hidden-xs">
+                  <div class="col-sm-6">
+                    <div>
+                      <a href="#" id="payment-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-5">
+                <div class="order-summary">
+                  <span class="text-uppercase order-summary-title">{{content.orderSummary}}:</span>
+                  <span class="checkout-total-items">{{content.itemsTotal}}</span>
+                </div>
+                {{> checkout/checkout-item}}
+                <div class="row visible-xs">
+                  <div class="col-sm-6">
+                    <div>
+                      <a href="#" id="payment-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> common/checkout-footer}}
+  {{> common/htmlscripts}}
+  </body>
+</html>
