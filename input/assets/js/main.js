@@ -103,7 +103,7 @@ $(function() {
 
 // Adding dynamic ID to quickview modals
 $( ".quickview" ).click(function( event ) {
-  event.stopPropagation();
+  event.preventDefault();
   var modalId = event.target.getAttribute('data-modal')
   $("#" + modalId).modal('show');
 });
@@ -152,6 +152,11 @@ $(function() {
     $('.view-details').click(function() {
       $('.pdp-product-description span').toggleClass('hidden');
     });
+});
+
+// Toggling plus and minus icons for product details accordion
+$(".pdp-accord-toggle").click(function() {
+    $(this).find(".accordion-plus").toggleClass("accordion-minus");
 });
 
 // Slick gallery init
