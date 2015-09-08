@@ -16,6 +16,11 @@ $(document).ready(function(){
   });
 });
 
+// Toggling plus and minus icons for mobile navigation menu
+$(".dropdown-toggle").click(function() {
+  $(this).find(".mobile-plus-content").toggleClass("mobile-minus-content");
+});
+
   // Close dropdown when clicking outside of it
 // $(document).mouseup(function (e) {
 //   var container = $(".location-dropdown");
@@ -53,11 +58,6 @@ $(function() {
       collapsible: true
     });
   }
-});
-
-// Toggling plus and minus icons for mobile navigation menu
-$(".dropdown-toggle").click(function() {
-    $(this).find(".mobile-plus-content").toggleClass("mobile-minus-content");
 });
 
 // Disabling bootstrap menu close on 2nd+ level items
@@ -156,7 +156,11 @@ $(function() {
 
 // Toggling plus and minus icons for product details accordion
 $(".pdp-accord-toggle").click(function() {
-    $(this).find(".accordion-plus").toggleClass("accordion-minus");
+  if($('.accordion-plus').hasClass('accordion-minus') === false) {
+    $(this).find('.accordion-plus').addClass('accordion-minus');
+  } else {
+    $(this).find('.accordion-plus').removeClass('accordion-minus');
+  }
 });
 
 // Slick gallery init
