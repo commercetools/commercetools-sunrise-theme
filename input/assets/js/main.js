@@ -242,6 +242,8 @@ $( "#different-billing-checkbox" ).click(function() {
 /*****************************************************************************/
 
 // Show credit card input fields only on 'credit card' selected
+$('#credit-card-input-field').hide();
+
 $('.payment-text').change(function() {
   if($('#payment-type-credit-card').is(':checked')) {
     $('#credit-card-input-field').show();
