@@ -40,7 +40,7 @@
           "text" : "Credit Card",
           "image" : "assets/img/mastercard4.png",
           "value" : "",
-          "selected" : true,
+          "selected" : false,
 					"id" : "payment-type-credit-card"
         },
         {
