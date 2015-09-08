@@ -21,6 +21,9 @@ $(".dropdown-toggle").click(function() {
   $(this).find(".mobile-plus-content").toggleClass("mobile-minus-content");
 });
 
+// Apply active class to last item of breadcrumb
+$('.breadcrumb li').last().addClass('active');
+
   // Close dropdown when clicking outside of it
 // $(document).mouseup(function (e) {
 //   var container = $(".location-dropdown");
