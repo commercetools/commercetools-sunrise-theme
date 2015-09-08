@@ -299,4 +299,28 @@
       border-left: none;
     }
   }
+
+  // Banner option three
+  .home-banner-option-three {
+    .banner-left {
+      border-right: 0;
+    }
+    .banner-right {
+      border-left: 0;
+    }
+    .banner-sm {
+      border-top: 0;
+    }
+    .banner-xs-one {
+      border-right: 0;
+    }
+    .banner-xs-two {
+      border-left: 0;
+    }
+  }
+  .home-viewall {
+    .home-viewall-btn {
+      font-size: 16px;
+    }
+  }
 }
