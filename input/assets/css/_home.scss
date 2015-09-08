@@ -101,7 +101,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
     max-width: 40%;
     background: rgba(255,255,255,0.6);
@@ -299,7 +299,23 @@
       border-left: none;
     }
   }
-
+  // Banner option two
+  .home-banner-option-two {
+    .banner-text {
+      max-width: 70%;
+      .banner-title {
+        font-size: 18px;
+      }
+      .banner-subtitle {
+        padding-bottom: 0;
+        font-size: 14px;
+      }
+      .banner-btn {
+        margin-top: 0;
+        font-size: 14px;
+      }
+    }
+  }
   // Banner option three
   .home-banner-option-three {
     .banner-left {
@@ -318,6 +334,7 @@
       border-left: 0;
     }
   }
+  // View all products btn
   .home-viewall {
     .home-viewall-btn {
       font-size: 16px;
