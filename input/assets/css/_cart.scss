@@ -321,6 +321,10 @@
 	.order-total {
 		font-size: 1.2em;
 	}
+
+  	.sm-float-right-wrapper {
+		float: right;
+  	}
 }
 
 @media screen and (max-width: 420px) {
@@ -338,10 +342,6 @@
 @media screen and (max-width: 320px) {
 	.current-in-bag {
 		font-size: 0.7em;
-	}
-
-	.cart-edit-delete {
-	  	padding: 0.5em 0;
 	}
 
 	#promo-code {
