@@ -96,6 +96,13 @@
 
 .edit-delete-section {
 	padding: 0.5em 0;
+
+    // Inline contextual rules
+  	@media screen and (min-width: 999px) {
+	  	width: 70%;
+	  	text-align: left;
+	  	margin: 0 auto;
+	}
 }
 
 .cart-action-icon {
@@ -283,7 +290,6 @@
 	.cart-edit-delete {
 		border: none;
 		text-align: left;
-		padding: 0.5em 0;
 			.edit-delete-section {
 				display: inline;
 				padding-right: 1em;
@@ -322,6 +328,17 @@
 	.order-total {
 		font-size: 1.2em;
 	}
+
+  	.sm-float-right {
+		float: right;
+  	}
+}
+
+@media screen and (max-width: 420px) {
+  .cart-edit-delete {
+	font-size: 0.8em;
+	padding: 0.5em 0;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -334,9 +351,7 @@
 	.current-in-bag {
 		font-size: 0.7em;
 	}
-	.cart-edit-delete {
-		font-size: 0.8em;
-	}
+
 	#promo-code {
 		width: 250px;
 	}
