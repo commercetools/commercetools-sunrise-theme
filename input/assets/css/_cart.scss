@@ -96,6 +96,13 @@
 
 .edit-delete-section {
 	padding: 0.5em 0;
+
+    // Inline contextual rules
+  	@media screen and (min-width: 999px) {
+	  	width: 70%;
+	  	text-align: left;
+	  	margin: 0 auto;
+	}
 }
 
 .cart-action-icon {
@@ -322,7 +329,7 @@
 		font-size: 1.2em;
 	}
 
-  	.sm-float-right-wrapper {
+  	.sm-float-right {
 		float: right;
   	}
 }
