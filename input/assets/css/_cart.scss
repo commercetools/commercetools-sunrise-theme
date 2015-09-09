@@ -328,6 +328,9 @@
 	.product-info-text {
 		font-size: 0.9em;
 	}
+	.total-price-calc {
+		font-size: 0.9em;
+	}
 }
 
 @media screen and (max-width: 320px) {
@@ -339,9 +342,6 @@
 	}
 	#promo-code {
 		width: 250px;
-	}
-	.total-price-calc {
-		font-size: 0.9em;
 	}
 	.promo-info-text {
 		font-size: 0.8em;
