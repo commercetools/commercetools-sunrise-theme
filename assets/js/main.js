@@ -24,6 +24,13 @@ $(".dropdown-toggle").click(function() {
 // Apply active class to last item of breadcrumb
 $('.breadcrumb li').last().addClass('active');
 
+// Stop propagation and enable direct linking of categories
+$('.dropdown-toggle').click(function(event) {
+  if($(window).width() > 768) {
+    event.stopPropagation();
+  }
+});
+
   // Close dropdown when clicking outside of it
 // $(document).mouseup(function (e) {
 //   var container = $(".location-dropdown");
