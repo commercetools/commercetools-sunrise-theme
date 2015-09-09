@@ -115,18 +115,16 @@
     </div>
 
     <div class="container">
-      {{#with content.suggestions}}
       <h4 class="home-suggestions-title">{{text}}</h4>
       <hr class="home-suggestions-hr">
       <p class="home-suggestions-description">{{description}}</p>
       <div class="row">
-        {{#each list}}
+        {{#each content.suggestions.list}}
           <div class="col-xs-12 col-sm-6 col-md-3 ">
             {{> catalog/product-thumbnail context=..}}
           </div>
         {{/each}}
       </div>
-      {{/with}}
 
       <div class="home-viewall">
         <a href="" class="home-viewall-btn">View All New Products</a>
