@@ -17,6 +17,9 @@
 
 .payment-type {
   margin: 1em;
+  .payment-text {
+    margin-right: 1em;
+  }
 }
 
 .name-on-card,
@@ -30,18 +33,6 @@
 .payment-type-icon {
   height: 3em;
   padding-bottom: 0.5em;
-}
-
-.payment-type {
-  .payment-text {
-    margin-right: 1em;
-  }
-}
-
-.card-number-input {
-  background: url(../../../assets/img/mastercard4.png) no-repeat 95%;
-  background-size: 2.5em;
-
 }
 
 .security-code-input {
