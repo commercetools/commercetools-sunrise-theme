@@ -283,7 +283,6 @@
 	.cart-edit-delete {
 		border: none;
 		text-align: left;
-		padding: 0.5em 0;
 			.edit-delete-section {
 				display: inline;
 				padding-right: 1em;
@@ -324,6 +323,12 @@
 	}
 }
 
+@media screen and (max-width: 420px) {
+  .cart-edit-delete {
+	font-size: 0.8em;
+  }
+}
+
 @media screen and (max-width: 375px) {
 	.product-info-text {
 		font-size: 0.9em;
@@ -334,9 +339,11 @@
 	.current-in-bag {
 		font-size: 0.7em;
 	}
+
 	.cart-edit-delete {
-		font-size: 0.8em;
+	  	padding: 0.5em 0;
 	}
+
 	#promo-code {
 		width: 250px;
 	}
