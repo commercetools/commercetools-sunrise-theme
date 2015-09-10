@@ -244,7 +244,7 @@ $( "#different-billing-checkbox" ).click(function() {
 /*****************************************************************************/
 
 // Show credit card input fields only on 'credit card' selected
-$(function($jq) {
+$(function() {
   function setupPaymentListener() {
     $('.payment-text').change(function() {
       if($('#payment-type-credit-card').is(':checked')) {
@@ -254,6 +254,7 @@ $(function($jq) {
       }
     });
   }
-  $jq('#payment-type-credit-card').prop('checked', true);
+  
+  $('#payment-type-credit-card').prop('checked', true);
   setTimeout(setupPaymentListener, 0);
 });
