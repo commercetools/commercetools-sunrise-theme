@@ -309,21 +309,14 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .size-guide-li {
     padding-top: 1em;
   }
+}
+
+@media screen and (max-width: 360px) {
   .pdp-product-heart {
     margin: 1em 0 0 1em;
   }
 }
-
-// iPhone 6 size
-// @media screen and (max-width: 375px) {
-//
-// }
-//
-// // iPhone 5 size
-// @media screen and (max-width: 320px) {
-//
-// }
