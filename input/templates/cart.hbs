@@ -61,19 +61,19 @@
                     <a id="{{deleteId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}</span></a>
                   </div>
                 </div>
-                <div class="col-sm-2 col-xs-6">
+                <div class="col-sm-2 col-xs-6 sm-pull-right">
                   <div class="quantity-spinner">
                     <span id="{{cartQuantityDecrementId}}" class="input-number-decrement">–</span><input id="{{cartQuantityValueId}}" class="input-number" type="text" value="1" min="1" max="10"><span id="{{cartQuantityIncrementId}}" class="input-number-increment">+</span>
                   </div>
                 </div>
-                <div class="col-sm-2 col-xs-7">
+                <div class="col-sm-2 col-xs-8 sm-pull-right">
                   <div class="text-right cart-item-price">
                     <span class="visible-xs xs-price-title">{{priceTitle}}</span>
                     {{#if priceOld}}<span class="discounted-price">{{priceOld}}</span>{{/if}}
                     <span>{{price}}</span>
                   </div>
                 </div>
-                <div class="col-sm-2 col-xs-5">
+                <div class="col-sm-2 col-xs-5 sm-pull-right">
                   <div class="text-right cart-item-price">
                     <span class="visible-xs xs-price-title">{{totalPriceTitle}}</span>
                     <span>{{totalPrice}}</span>
