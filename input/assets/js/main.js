@@ -168,14 +168,14 @@ $(function() {
 $(function($jq) {
     $jq(".pdp-accord-toggle").click(function(e) {
         var context = $jq(this),
-            contextParent = context.parents('.panel-default'),
-            contextParentGroup = context.parents('.panel-group-pdp'),
-            contextButton = $jq('.accordion-plus', contextParent);
+            contextPanel = context.parents('.panel-default'),
+            contextPanelGroup = context.parents('.panel-group-pdp'),
+            contextButton = $jq('.accordion-plus', contextPanel);
 
         contextButton.toggleClass('accordion-minus');
 
         // Remove minus class on all other buttons
-        contextParentGroup.find('.accordion-plus').not(contextButton).removeClass('accordion-minus');
+        contextPanelGroup.find('.accordion-plus').not(contextButton).removeClass('accordion-minus');
     });
 });
 
