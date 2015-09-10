@@ -793,17 +793,17 @@
       "promoDiscount" : "Promotional Discount Info",
       "applyBtn" : "Apply",
       "subtotalTitle" : "Subtotal",
-      "subtotal" : "107,00 €",
+      "subtotal" : "1007,00 EUR",
       "orderDiscountTitle" : "Order Discount",
-      "orderDiscount" : "0,00 €",
+      "orderDiscount" : "0,00 EUR",
 			"deliveryTooltip" : "Delivery estimate options additional information...",
       "deliveryEstimate" : "Delivery estimate options",
       "deliveryOption" : "Standard Delivery",
-      "delivery" : "0,00 €",
+      "delivery" : "0,00 EUR",
       "taxTitle" : "Sales Tax",
-      "tax" : "20,00 €",
+      "tax" : "20,00 EUR",
       "orderTotalTitle" : "Order Total",
-      "orderTotal" : "117,00 €"
+      "orderTotal" : "1027,00 EUR"
     },
     "continueShoppingBtn" : "Continue Shopping",
 		"wishlistWidged" : {
