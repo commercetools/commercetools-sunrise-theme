@@ -52,8 +52,8 @@
                   {{#each content.paymentOption.list}}
                     <div class="col-lg-3 col-md-4 col-sm-4">
                       <div class="payment-type">
-                        <span><img src="{{image}}" class="payment-type-icon" alt="credit card"></span><br>
-                        <span><input id="{{id}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
+                        {{#if image}}<img src="{{image}}" class="payment-type-icon" alt="{{text}}">{{/if}}<br>
+                        <input id="{{id}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}
                       </div>
                     </div>
                   {{/each}}

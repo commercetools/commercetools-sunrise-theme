@@ -232,14 +232,6 @@ $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
 /*
 /*****************************************************************************/
 
-// Adding active on click to checkout steps
-(function($){
-  $('.step-number').click(function(){
-    $('.step-number-active').removeClass('step-number-active');
-    $(this).addClass('step-number-active');
-  });
-}(jQuery));
-
 // Slide toggle different shipping address on click
 $( "#different-billing-checkbox" ).click(function() {
   $( "#different-billing-address" ).slideToggle( "slow" )
