@@ -79,6 +79,11 @@ ul .bzoom_small_thumbs li,
   cursor: move;
 }
 
+// Collapse issue fix
+.bzoom_wrap {
+  height: 2px;
+}
+
 .bzoom_magnifier div { overflow: hidden; }
 
 .bzoom_wrap .bzoom_small_thumbs { overflow: hidden; }
@@ -94,12 +99,4 @@ ul .bzoom_small_thumbs li,
   -moz-box-shadow: 0 0 10px #ddd;
   box-shadow: 0 0 10px #ddd;
   border: 1px solid #535353;
-}
-
-/* Media queries */
-@media screen and (max-width: 767px) {
-  .bzoom_wrap {
-    height: 500px;;
-    margin-bottom: 2em;
-  }
 }
