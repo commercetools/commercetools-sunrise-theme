@@ -5,7 +5,26 @@
 /*****************************************************************************/
 
 .cart-page {
-	background: $dirty-white;
+  background: $dirty-white;
+  .edit-section-form {
+	display: none;
+  }
+
+  .single-cart-item {
+	height: 169px;
+	min-height: 169px;
+	.cart-edit-delete {
+	  height: 100%;
+	  min-height: 100%;
+
+	  .edit-section-options { }
+	  .edit-section-form {
+		select.form-control {
+		  margin-bottom: 10px;
+		}
+	  }
+	}
+  }
 }
 
 .current-in-bag {
@@ -29,6 +48,17 @@
 
 .checkout-now {
 	padding: 2em 0;
+}
+
+.default-btn {
+  border: 1px solid fade-out($dark-grey, 0.6);
+  color: $dark-grey;
+}
+
+.action-btn {
+  background: $yellow;
+  border: none;
+  color: $black;
 }
 
 .checkout-now-btn {
@@ -246,6 +276,17 @@
 /*****************************************************************************/
 
 @media screen and (max-width: 991px) {
+
+  .cart-page {
+	.cart-edit-delete {
+	  padding-top: 0;
+	}
+	.single-cart-item, .cart-edit-delete {
+	  height: auto;
+	  min-height: 0;
+	}
+  }
+
 	.current-in-bag {
 		font-size: 0.9em;
 	}

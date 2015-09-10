@@ -221,7 +221,49 @@ $(document).ready(function() {
     }
   };
 })();
-inputNumber($('.input-number'));
+$(function() {
+  inputNumber($('.input-number'));
+  var cartContentWrapper = $('.cart-content'),
+      cartItems = $('.single-cart-item', cartContentWrapper);
+
+  function cartItemManager() {
+    var item = $(this),
+        editSectionForm = $('.edit-section-form', item),
+        editSectionOptions = $('.edit-section-options', item),
+        editAction = $('.edit-action', editSectionOptions),
+        selectors = $('.selector', editSectionForm),
+        targets = $('.cart-color-size > span', item);
+
+    function closeForm() {
+      editSectionForm.hide(0, function() {
+        editSectionOptions.show();
+      });
+    }
+
+    function updateForm() {
+      selectors.each(function(index) {
+        $(targets[index]).text($(this).find('option:selected').text());
+      });
+      closeForm();
+    }
+
+    function openForm() {
+      var updateAction = $('.update-action', editSectionForm),
+          cancelAction = $('.cancel-action', editSectionForm);
+
+      editSectionOptions.hide(0, function() {
+        editSectionForm.show();
+
+        cancelAction.click(closeForm);
+        updateAction.click(updateForm);
+      });
+    }
+    
+    editAction.click(openForm);
+  }
+
+  cartItems.each(cartItemManager);
+});
 
 // jQuery UI - Tooltip on hover
 $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();

@@ -42,24 +42,53 @@
               </div>
             </div>
             {{#each content.cartItems.list}}
-              <div class="row single-cart-item">
+              <div id="product-row-{{productId}}" class="row single-cart-item">
                 <div class="col-sm-1 col-xs-4 product-img-col">
                   <img class="img-responsive cart-item-img" src="{{../meta.assetsPath}}img/blue-jacket.jpg" alt="cart item image">
                 </div>
                 <div class="col-sm-3 col-xs-8 product-info-text">
                   <p class="cart-item-name">{{nameHeadline}}<br>{{nameSubline}}</p>
                   <p class="grey-p">{{sku}}</p>
-                  <p class="cart-color-size">{{colorTitle}}<span class="black-p">{{color}}</span><br>{{sizeTitle}}<span class="black-p">{{size}}</span></p>
+                  <p class="cart-color-size">
+                      <!--:color-->
+                      {{colorTitle}}
+                      <span data-model="color" data-name="color-value" class="black-p">{{color}}</span>
+                      <!--:colorend-->
+                      <br>
+                      <!--:size-->
+                      {{sizeTitle}}
+                      <span data-model="size" data-name="size-value" class="black-p">{{size}}</span>
+                      <!--:sizeend-->
+                  </p>
                   <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
                   <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
                 </div>
                 <div class="col-sm-2 col-xs-6 text-center cart-edit-delete">
-                  <div class="text-uppercase edit-delete-section">
-                    <a id="{{editId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}</span></a>
-                  </div>
-                  <div class="text-uppercase edit-delete-section">
-                    <a id="{{deleteId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}</span></a>
-                  </div>
+                    <div class="edit-section-options">
+                        <div class="text-uppercase edit-delete-section">
+                            <a class="edit-action" id="{{editId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}</span></a>
+                        </div>
+                        <div class="text-uppercase edit-delete-section">
+                            <a id="{{deleteId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}</span></a>
+                        </div>
+                    </div>
+                    <div class="edit-section-form">
+                        <select data-model="color" data-name="color-select" class="selector checkout-dropdown">
+                            <option value="navy_blue">Navy Blue</option>
+                            <option value="beige">Beige</option>
+                        </select>
+                        <select data-model="size" data-name="size-select" class="selector checkout-dropdown">
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                        <div class="actions text-right">
+                            <button type="button" class="default-btn cancel-action">Cancel</button>
+                            <button type="button" class="action-btn update-action">Update</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-2 col-xs-6 sm-pull-right">
                   <div class="quantity-spinner">

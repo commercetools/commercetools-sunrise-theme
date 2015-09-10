@@ -746,6 +746,7 @@
       "totalPrice" : "Total Price",
       "list" : [
         {
+		  "productId": 1,
           "nameHeadline" : "Enditatem Product Name",
           "nameSubline" : "Optional Line Two",
           "sku" : "Sunrise #SUN123456",
@@ -768,6 +769,7 @@
 					"cartQuantityIncrementId" : "cart-quantity-increment-one"
         },
         {
+		  "productId": 2,
           "nameHeadline" : "Enditatem Product Name",
           "nameSubline" : "Optional Line Two",
           "sku" : "Sunrise #SUN123456",
@@ -806,7 +808,7 @@
       "orderTotal" : "1027,00 EUR"
     },
     "continueShoppingBtn" : "Continue Shopping",
-		"wishlistWidged" : {
+	"wishlistWidged" : {
 			"text" : "Your Wishlist",
 			"wishlistBtnId" : "cart-wishlist-btn",
 			"wishlistViewBtnId" : "cart-wishlist-view-btn",
@@ -827,7 +829,33 @@
 					"image" : "assets/img/blue-shirt.jpg"
 				}
 			]
-		}
+		},
+	"colorOptions": [{
+		"code": "navy_blue",
+		"name": "Navy Blue"
+	  }, {
+		"code": "old_black",
+		"name": "Old black"
+	  }, {
+	  	"code": "beige",
+	  	"name": "Beige"
+	}],
+	"sizeOptions": [{
+	  "code": "xs",
+	  "name": "XS"
+	}, {
+	  "code": "s",
+	  "name": "S"
+	}, {
+	  "code": "m",
+	  "name": "M"
+	}, {
+	  "code": "l",
+	  "name": "L"
+	}, {
+	  "code": "xl",
+	  "name": "XL"
+	}]
   },
   "meta" : {
 	"assetsPath": "assets/"
