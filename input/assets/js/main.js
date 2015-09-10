@@ -166,10 +166,12 @@ $(function() {
 
 // Toggling plus and minus icons for product details accordion
 $(function($jq) {
-    $jq(".pdp-accord-toggle").click(function(e) {
+    var pdpAccordion = $jq(".pdp-accord-toggle"),
+        contextPanelGroup = pdpAccordion.parents('.panel-group-pdp');
+
+    pdpAccordion.click(function(e) {
         var context = $jq(this),
             contextPanel = context.parents('.panel-default'),
-            contextPanelGroup = context.parents('.panel-group-pdp'),
             contextButton = $jq('.accordion-plus', contextPanel);
 
         contextButton.toggleClass('accordion-minus');
