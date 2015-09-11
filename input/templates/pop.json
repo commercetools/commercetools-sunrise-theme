@@ -781,19 +781,22 @@
 						"key" : "product-type",
 						"limitedOptions" : [
 							{
-								"value" : "Type-1",
+								"label" : "Type-1",
+								"value" : "type-1",
 								"key" : "one",
 								"count" : "300",
 								"selected" : true,
 								"children" : [
 									{
-										"value" : "Subtype-1",
+										"label" : "Subtype-1",
+										"value" : "subtype-1",
 										"key" : "one-one",
 										"count" : "150",
 										"selected" : true
 									},
 									{
-										"value" : "Subtype-2",
+										"label" : "Subtype-2",
+										"value" : "subtype-2",
 										"key" : "one-two",
 										"count" : "150",
 										"selected" : false
@@ -801,19 +804,22 @@
 								]
 							},
 							{
+								"label" : "Type-2",
 								"value" : "Type-2",
 								"key" : "two",
 								"count" : "300",
 								"selected" : false,
 								"children" : [
 									{
-										"value" : "Subtype-1",
+										"label" : "Subtype-1",
+										"value" : "subtype-1",
 										"key" : "two-one",
 										"count" : "150",
 										"selected" : false
 									},
 									{
-										"value" : "Subtype-2",
+										"label" : "Subtype-2",
+										"value" : "subtype-2",
 										"key" : "two-two",
 										"count" : "150",
 										"selected" : false
@@ -821,19 +827,22 @@
 								]
 							},
 							{
+								"label" : "Type-3",
 								"value" : "Type-3",
 								"key" : "three",
 								"count" : "300",
 								"selected" : false,
 								"children" : [
 									{
-										"value" : "Subtype-1",
+										"label" : "Subtype-1",
+										"value" : "subtype-1",
 										"key" : "three-one",
 										"count" : "150",
 										"selected" : false
 									},
 									{
-										"value" : "Subtype-2",
+										"label" : "Subtype-2",
+										"value" : "subtype-2",
 										"key" : "three-two",
 										"count" : "150",
 										"selected" : false
@@ -851,25 +860,29 @@
 						"key" : "size",
 						"limitedOptions" : [
 							{
-								"value" : "S",
+								"label" : "S",
+								"value" : "s",
 								"key" : "one",
 								"count" : "123",
 								"selected" : true
 							},
 							{
-								"value" : "M",
+								"label" : "M",
+								"value" : "m",
 								"key" : "two",
 								"count" : "123",
 								"selected" : false
 							},
 							{
-								"value" : "L",
+								"label" : "L",
+								"value" : "l",
 								"key" : "three",
 								"count" : "123",
 								"selected" : false
 							},
 							{
-								"value" : "XL",
+								"label" : "XL",
+								"value" : "xl",
 								"key" : "four",
 								"count" : "123",
 								"selected" : false
@@ -885,25 +898,29 @@
 						"key" : "color",
 						"limitedOptions" : [
 							{
-								"value" : "Red",
+								"label" : "Red",
+								"value" : "red",
 								"key" : "one",
 								"count" : "123",
 								"selected" : true
 							},
 							{
-								"value" : "Blue",
+								"label" : "Blue",
+								"value" : "blue",
 								"key" : "two",
 								"count" : "123",
 								"selected" : false
 							},
 							{
-								"value" : "Pink",
+								"label" : "Pink",
+								"value" : "pink",
 								"key" : "three",
 								"count" : "123",
 								"selected" : false
 							},
 							{
-								"value" : "Mono",
+								"label" : "Mono",
+								"value" : "mono",
 								"key" : "four",
 								"count" : "123",
 								"selected" : false
@@ -927,13 +944,15 @@
 						"key" : "brands",
 						"limitedOptions" : [
 							{
-								"value" : "Adidas",
+								"label" : "Adidas",
+								"value" : "adidas",
 								"key" : "1",
 								"count" : "123",
 								"selected" : true
 							},
 							{
-								"value" : "Nike",
+								"label" : "Nike",
+								"value" : "nike",
 								"key" : "2",
 								"count" : "123",
 								"selected" : false
