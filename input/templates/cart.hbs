@@ -52,12 +52,12 @@
                   <p class="cart-color-size">
                       <!--:color-->
                       {{colorTitle}}
-                      <span class="black-p">{{color}}</span>
+                      <span class="black-p" data-model="cartItem.color">{{color}}</span>
                       <!--:colorend-->
                       <br>
                       <!--:size-->
                       {{sizeTitle}}
-                      <span class="black-p">{{size}}</span>
+                      <span class="black-p" data-model="cartItem.size">{{size}}</span>
                       <!--:sizeend-->
                   </p>
                   <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
@@ -73,11 +73,11 @@
                         </div>
                     </div>
                     <div class="edit-section-form">
-                        <select class="selector checkout-dropdown">
+                        <select data-model="cartItem.color" class="selector checkout-dropdown">
                             <option value="navy_blue">Navy Blue</option>
                             <option value="beige">Beige</option>
                         </select>
-                        <select class="selector checkout-dropdown">
+                        <select data-model="cartItem.size" class="selector checkout-dropdown">
                             <option value="xs">XS</option>
                             <option value="s">S</option>
                             <option value="m">M</option>
