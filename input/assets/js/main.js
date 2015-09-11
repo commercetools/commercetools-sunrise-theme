@@ -148,23 +148,26 @@ $("ul#bzoom").each( function(index, ul) {
 
 // Toggle hidden/sliced description
 $(function() {
-    var hiddenDescription = $('p.pdp-product-description');
-    var generatedHidden, hiddenFlag;
+    var hiddenDescription = $('p.pdp-product-description'),
+        generatedHidden,
+        shownFlag,
+        hiddenDescriptionText;
 
-    hiddenDescription.each(function(){
-        var t = $(this).text();
-        if(t.length < 100) return;
-        $(this).html(
-            t.slice(0,100)+'<span>... </span>'+
-            '<span class="hidden">'+ t.slice(100,t.length)+'</span>'
+    if (hiddenDescription.length) {
+        hiddenDescription = hiddenDescription.first();
+        hiddenDescriptionText = hiddenDescription.text();
+
+        if (hiddenDescriptionText.length < 100) return;
+        hiddenDescription.html(
+            hiddenDescriptionText.slice(0,100)+'<span>... </span>'+
+            '<span class="hidden">'+ hiddenDescriptionText.slice(100, hiddenDescriptionText.length)+'</span>'
         );
         generatedHidden = $('.hidden', hiddenDescription);
-    });
-
+    }
     $('.view-details').click(function() {
         if (generatedHidden && generatedHidden.length) {
-            hiddenFlag = !!generatedHidden.hasClass('hidden');
-            $(this).text(hiddenFlag ? 'Hide details' : 'View details');
+            shownFlag = !!generatedHidden.hasClass('hidden');
+            $(this).text(shownFlag ? 'Hide details' : 'View details');
             generatedHidden.toggleClass('hidden');
         }
     });
