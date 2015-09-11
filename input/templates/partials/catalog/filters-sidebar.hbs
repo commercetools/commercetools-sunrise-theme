@@ -57,14 +57,16 @@
           {{#if sortedSelectFacet}}
             <div class="row">
               <div class="col-sm-12">
-                <div class="pop-filter-select">
-                  {{#each facet.limitedOptions}}
-                    <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
-                    <label for="filter-{{../facet.key}}-{{value}}">{{label}}
-                      {{#unless ../facet.countHidden}}({{count}}){{/unless}}
-                    </label>
-                    <br>
-                  {{/each}}
+                <div class="brands-list">
+                  <div class="pop-filter-select">
+                    {{#each facet.limitedOptions}}
+                      <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
+                      <label for="filter-{{../facet.key}}-{{value}}">{{label}}
+                        {{#unless ../facet.countHidden}}({{count}}){{/unless}}
+                      </label>
+                      <br>
+                    {{/each}}
+                  </div>
                 </div>
               </div>
             </div>
@@ -82,15 +84,13 @@
 
           {{#if selectFacet}}
             <div class="pop-filter-select">
-              <div class="brands-list">
-                {{#each facet.limitedOptions}}
-                  <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
-                  <label for="filter-{{../facet.key}}-{{value}}">{{label}}
-                    {{#unless ../facet.countHidden}}({{count}}){{/unless}}
-                  </label>
-                  <br>
-                {{/each}}
-              </div>
+              {{#each facet.limitedOptions}}
+                <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
+                <label for="filter-{{../facet.key}}-{{value}}">{{label}}
+                  {{#unless ../facet.countHidden}}({{count}}){{/unless}}
+                </label>
+                <br>
+              {{/each}}
             </div>
           {{/if}}
 
