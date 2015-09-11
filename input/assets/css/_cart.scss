@@ -11,16 +11,18 @@
   }
 
   .single-cart-item {
-	height: 169px;
-	min-height: 169px;
 	.cart-edit-delete {
-	  height: 100%;
-	  min-height: 100%;
-
 	  .edit-section-options { }
 	  .edit-section-form {
-		select.form-control {
+		select {
 		  margin-bottom: 10px;
+		  width: 100%;
+		  min-width: 100%;
+
+		  // contextual inline media query
+		  @media screen and (max-width: 768px) {
+			background-position-x: 97%;
+		  }
 		}
 	  }
 	}
@@ -275,15 +277,15 @@
 /*
 /*****************************************************************************/
 
+// MAX-WIDTH ------------------------------------------------------------------------------
 @media screen and (max-width: 991px) {
-
-  .cart-page {
-	.cart-edit-delete {
-	  padding-top: 0;
-	}
-	.single-cart-item, .cart-edit-delete {
-	  height: auto;
-	  min-height: 0;
+  .cart-edit-delete {
+	padding-top: 0;
+	.edit-section-form {
+	  font-size: 0.8em;
+	  button {
+		padding: 0.3em;
+	  }
 	}
   }
 
@@ -402,4 +404,24 @@
 	.promo-info-text {
 		font-size: 0.8em;
 	}
+}
+
+// MIN-WIDTH ------------------------------------------------------------------------------
+@media screen and (min-width: 991px) {
+  .single-cart-item {
+	height: 169px;
+	min-height: 169px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .single-cart-item {
+	min-height: 190px;
+	height: 190px;
+
+	.cart-edit-delete {
+	  min-height: 100%;
+	  height: 100%;
+	}
+  }
 }
