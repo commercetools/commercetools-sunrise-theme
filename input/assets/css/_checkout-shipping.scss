@@ -37,7 +37,7 @@
 	color: $dark-grey;
 	background: $white;
 	border-radius: 50%;
-	border: 2px solid $grey;
+	border: 1px solid $grey;
 	font-size: 1em;
 }
 
@@ -107,7 +107,7 @@
 	width: 100%;
 	border: 1px solid $light-grey;
 	border-radius: 1px;
-	padding: 0.5em 0;
+	padding: 0.5em 0.5em;
 	margin-top: 0.2em;
 }
 
@@ -240,6 +240,9 @@
 
 .checkout-color-size {
 	margin: 0.5em;
+	.checkout-color-size-field {
+		display: inline-block;
+	}
 }
 
 .checkout-color,
