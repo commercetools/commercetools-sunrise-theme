@@ -174,12 +174,20 @@ $(function() {
 });
 
 // Toggling plus and minus icons for product details accordion
-$(".pdp-accord-toggle").click(function() {
-  if($('.accordion-plus').hasClass('accordion-minus') === false) {
-    $(this).find('.accordion-plus').addClass('accordion-minus');
-  } else {
-    $(this).find('.accordion-plus').removeClass('accordion-minus');
-  }
+$(function($jq) {
+    var pdpAccordion = $jq(".pdp-accord-toggle"),
+        contextPanelGroup = pdpAccordion.parents('.panel-group-pdp');
+
+    pdpAccordion.click(function(e) {
+        var context = $jq(this),
+            contextPanel = context.parents('.panel-default'),
+            contextButton = $jq('.accordion-plus', contextPanel);
+
+        contextButton.toggleClass('accordion-minus');
+
+        // Remove minus class on all other buttons
+        contextPanelGroup.find('.accordion-plus').not(contextButton).removeClass('accordion-minus');
+    });
 });
 
 // Slick gallery init
