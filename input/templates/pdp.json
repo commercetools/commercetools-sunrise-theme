@@ -367,6 +367,7 @@
         {
           "text" : "Accessories",
           "url" : "",
+          "sale" : true,
           "children" : [
             {
               "text" : "Accessories",
