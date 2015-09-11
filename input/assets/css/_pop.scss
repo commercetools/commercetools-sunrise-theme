@@ -61,8 +61,6 @@
   border: none;
 }
 
-// Size Box
-
 .product-type-box,
 .size-box,
 .color-box,
@@ -77,6 +75,12 @@
   label {
     font-weight: 400;
   }
+}
+
+.two-column-select {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
 }
 
 // Price slider

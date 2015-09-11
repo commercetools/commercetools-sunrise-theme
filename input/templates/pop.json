@@ -855,6 +855,7 @@
 				{
 					"selectFacet" : true,
 					"facet" : {
+						"countHidden" : true,
 						"available" : true,
 						"label" : "Size",
 						"key" : "size",
