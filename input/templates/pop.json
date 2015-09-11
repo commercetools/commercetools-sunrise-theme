@@ -933,7 +933,9 @@
 					"facet" : {
 						"available" : true,
 						"label" : "Price",
-						"key" : "price"
+						"key" : "price",
+						"minValue" : "€ 0",
+						"maxValue" : "€ 1000"
 					}
 				},
 				{
