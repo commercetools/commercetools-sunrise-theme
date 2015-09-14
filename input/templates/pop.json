@@ -774,78 +774,87 @@
 			"close" : "Filter close",
 			"list" : [
 				{
-					"hierarchicalSelectFacet" : true,
+					"categorySelectFacet" : true,
 					"facet" : {
 						"available" : true,
 						"label" : "Product Type",
 						"key" : "product-type",
 						"limitedOptions" : [
 							{
-								"label" : "Type-1",
-								"value" : "type-1",
+								"label" : "Clothing",
+								"value" : "clothing",
 								"key" : "one",
-								"count" : "300",
+								"count" : "2",
 								"selected" : true,
 								"children" : [
 									{
-										"label" : "Subtype-1",
-										"value" : "subtype-1",
+										"label" : "Shirts",
+										"value" : "shirts",
 										"key" : "one-one",
-										"count" : "150",
-										"selected" : true
+										"count" : "300",
+										"selected" : true,
+										"children" : [
+											{
+												"label" : "T-shirts",
+												"value" : "tshirts",
+												"key" : "one-one-one",
+												"count" : "150",
+												"selected" : true
+											},
+											{
+												"label" : "Poloshirts",
+												"value" : "poloshirts",
+												"key" : "one-one-two",
+												"count" : "150",
+												"selected" : false
+											}
+										]
 									},
 									{
-										"label" : "Subtype-2",
-										"value" : "subtype-2",
+										"label" : "Jeans",
+										"value" : "jeans",
 										"key" : "one-two",
-										"count" : "150",
-										"selected" : false
-									}
-								]
-							},
-							{
-								"label" : "Type-2",
-								"value" : "Type-2",
-								"key" : "two",
-								"count" : "300",
-								"selected" : false,
-								"children" : [
-									{
-										"label" : "Subtype-1",
-										"value" : "subtype-1",
-										"key" : "two-one",
-										"count" : "150",
-										"selected" : false
+										"count" : "300",
+										"selected" : false,
+										"children" : [
+											{
+												"label" : "Slim fit",
+												"value" : "slimfit",
+												"key" : "one-two-one",
+												"count" : "150",
+												"selected" : true
+											},
+											{
+												"label" : "Straight",
+												"value" : "straight",
+												"key" : "one-two-two",
+												"count" : "150",
+												"selected" : true
+											}
+										]
 									},
 									{
-										"label" : "Subtype-2",
-										"value" : "subtype-2",
-										"key" : "two-two",
-										"count" : "150",
-										"selected" : false
-									}
-								]
-							},
-							{
-								"label" : "Type-3",
-								"value" : "Type-3",
-								"key" : "three",
-								"count" : "300",
-								"selected" : false,
-								"children" : [
-									{
-										"label" : "Subtype-1",
-										"value" : "subtype-1",
-										"key" : "three-one",
-										"count" : "150",
-										"selected" : false
-									},
-									{
-										"label" : "Subtype-2",
-										"value" : "subtype-2",
-										"key" : "three-two",
-										"count" : "150",
-										"selected" : false
+										"label" : "Jeans",
+										"value" : "jeans",
+										"key" : "one-two",
+										"count" : "300",
+										"selected" : false,
+										"children" : [
+											{
+												"label" : "Slim fit",
+												"value" : "slimfit",
+												"key" : "one-two-one",
+												"count" : "150",
+												"selected" : true
+											},
+											{
+												"label" : "Straight",
+												"value" : "straight",
+												"key" : "one-two-two",
+												"count" : "150",
+												"selected" : true
+											}
+										]
 									}
 								]
 							}

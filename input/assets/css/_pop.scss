@@ -77,6 +77,31 @@
   }
 }
 
+.dropdown-parent-category {
+  padding: 10px 0 0 0;
+  list-style: none;
+  a:hover {
+    color: $dark-grey;
+  }
+  .parent-category-list {
+
+  }
+}
+
+.dropdown-subcategory-one {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.dropdown-subcategory-two {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.category-active {
+  font-weight: bold;
+}
+
 .two-column-select {
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
@@ -198,10 +223,6 @@ a.clear-btn {
   margin-top: 10px;
   margin-bottom: 60px;
 }
-
-// Quickview modal
-
-
 
 /*****************************************************************************/
 /*
