@@ -197,9 +197,9 @@
 }
 
 .order-summary-items {
-  max-height: 42em;
+  max-height: 35em;
   overflow: scroll;
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .checkout-total-items {
@@ -213,7 +213,7 @@
 	background: lighten($light-grey, 10%);
 	border: 1px solid $light-grey;
 	margin: 1em;
-	padding-top: 2em;
+	/**padding-top: 2em;*/
 }
 
 .order-summary-img {
