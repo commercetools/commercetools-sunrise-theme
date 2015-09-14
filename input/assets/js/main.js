@@ -1,3 +1,89 @@
+window.sunrise = window.sunrise || {
+    helper: {
+        /**
+         * @param DOMList list
+         * @param string data
+         * @param string key
+         * @return DOMNode
+         */
+        findElementByDataAttribute: function(list, data, key) {
+            var found = null, item;
+            list.each(function() {
+                item = $(this);
+                if (item.data(key) === data) {
+                    found = item;
+                }
+            });
+            return found;
+        },
+        findColorByCode: function(code) {
+            var found = null, colors = sunrise.options.color;
+            colors.forEach(function(v) {
+                if (v.code === code) {
+                    found = v;
+                }
+            });
+            return found;
+        },
+        findColorByName: function(name) {
+            var found = null, colors = sunrise.options.color;
+            colors.forEach(function(v) {
+                if (v.name === name) {
+                    found = v;
+                }
+            });
+            return found;
+        },
+        findSizeByName: function(name) {
+            var found = null, sizes = sunrise.options.size;
+            sizes.forEach(function(v) {
+                if (v.name === name) {
+                    found = v;
+                }
+            });
+            return found;
+        },
+        findSizeBycode: function(code) {
+            var found = null, sizes = sunrise.options.size;
+            sizes.forEach(function(v) {
+                if (v.code === code) {
+                    found = v;
+                }
+            });
+            return found;
+        }
+    },
+    // General application-wide options
+    options: {
+        color: [{
+            code: 'navy_blue',
+            name: 'Navy Blue'
+        }, {
+            code: 'beige',
+            name: 'Beige'
+        }],
+        size: [{
+            code: 'xs',
+            name: 'XS'
+        },
+            {
+                code: 's',
+                name: 'S'
+            },
+            {
+                code: 'm',
+                name: 'M'
+            },
+            {
+                code: 'l',
+                name: 'L'
+            }, {
+                code: 'xl',
+                name: 'XL'
+            }]
+    }
+};
+
 /*****************************************************************************/
 /*
 /* NAVIGATION
@@ -238,7 +324,69 @@ $(document).ready(function() {
     }
   };
 })();
-inputNumber($('.input-number'));
+
+$(function() {
+    inputNumber($('.input-number'));
+    var cartContentWrapper = $('.cart-content'),
+        cartItems = $('.single-cart-item', cartContentWrapper);
+
+    /**
+     * Manage an instance of DOM representation of a cart-item
+     */
+    function cartItemManager() {
+        var item = $(this),
+            editSectionForm = $('.edit-section-form', item),
+            editSectionActions = $('.edit-section-options', item),
+            editAction = $('.edit-action', editSectionActions),
+            selectors = $('.selector', editSectionForm),
+            targets = $('.cart-color-size > span', item);
+
+        function closeForm() {
+            editSectionForm.hide(0, function() {
+                editSectionActions.show();
+            });
+        }
+
+        function updateForm() {
+          var matchingTarget;
+            selectors.each(function() {
+              matchingTarget = sunrise.helper.findElementByDataAttribute(targets, $(this).data('model'), 'model');
+              if (matchingTarget) {
+                matchingTarget.text($(this).find('option:selected').text());
+              }
+            });
+            closeForm();
+        }
+
+        function openForm() {
+            var updateAction = $('.update-action', editSectionForm),
+                cancelAction = $('.cancel-action', editSectionForm);
+            editSectionActions.hide(0, function() {
+                editSectionForm.show();
+                cancelAction.click(closeForm);
+                updateAction.click(updateForm);
+            });
+        }
+
+        var target, modelKey, matchingSelector, color, size;
+        targets.each(function(index) {
+            target = $(this);
+            modelKey = target.data('model');
+            matchingSelector = sunrise.helper.findElementByDataAttribute(selectors, modelKey, 'model');
+            if (modelKey === 'cartItem.size') {
+              size = sunrise.helper.findSizeByName(target.text().trim());
+              matchingSelector.val(size.code);
+            } else if (modelKey === 'cartItem.color') {
+              color = sunrise.helper.findColorByName(target.text().trim());
+              matchingSelector.val(color.code);
+            }
+        });
+
+        // setting up the listener.
+        editAction.click(openForm);
+    }
+    // cartItems.each(cartItemManager);
+});
 
 // jQuery UI - Tooltip on hover
 $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
