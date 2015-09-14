@@ -168,13 +168,6 @@ $( ".dropdown-submenu" ).click(function(event) {
     $( this ).toggleClass('open');
 });
 
-// Close hamburger menu on select click or outside
-$(function() {
-  $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function() {
-    $('.navbar-toggle:visible').click();
-  });
-});
-
 // Off-canvas menu
 $(document).ready(function() {
   $('[data-toggle="offcanvas"]').click(function() {
