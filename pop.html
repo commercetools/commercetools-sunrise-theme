@@ -325,100 +325,39 @@
                   </div>
                 </div>
           
-                    <hr class="hr">
-                    <div id="filter-product-type" class="row product-type-box">
-                      <div class="col-xs-8 text-left">
-                        Product Type
-                      </div>
-                      <div class="col-xs-4">
-                        <a class="text-right clear-btn" href="#">Clear</a>
-                      </div>
+                  <hr class="hr">
+                  <div id="filter-product-type" class="row product-type-box">
+                    <div class="col-xs-8 text-left">
+                      Product Type
                     </div>
-          
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
-                              <div class="panel panel-default">
-                                <div class="panel-heading" id="heading-one" role="tab">
-                                  <h4 class="panel-title">
-                                    <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#type-1">
-                                      Type-1 (300)
-                                    </a>
-                                  </h4>
-                                </div>
-                                <div aria-labelledby="heading-one" class="panel-collapse collapse in" id="type-1" role="tabpanel">
-                                  <div class="panel-body">
-                                      <div class="checkbox">
-                                        <label for="filter--subtype-1">
-                                          <input id="filter--subtype-1" type="checkbox" name="" value="subtype-1"  checked > Subtype-1
-                                          (150)
-                                        </label>
-                                      </div>
-                                      <div class="checkbox">
-                                        <label for="filter--subtype-2">
-                                          <input id="filter--subtype-2" type="checkbox" name="" value="subtype-2" > Subtype-2
-                                          (150)
-                                        </label>
-                                      </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="panel panel-default">
-                                <div class="panel-heading" id="heading-one" role="tab">
-                                  <h4 class="panel-title">
-                                    <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#Type-2">
-                                      Type-2 (300)
-                                    </a>
-                                  </h4>
-                                </div>
-                                <div aria-labelledby="heading-one" class="panel-collapse collapse " id="Type-2" role="tabpanel">
-                                  <div class="panel-body">
-                                      <div class="checkbox">
-                                        <label for="filter--subtype-1">
-                                          <input id="filter--subtype-1" type="checkbox" name="" value="subtype-1" > Subtype-1
-                                          (150)
-                                        </label>
-                                      </div>
-                                      <div class="checkbox">
-                                        <label for="filter--subtype-2">
-                                          <input id="filter--subtype-2" type="checkbox" name="" value="subtype-2" > Subtype-2
-                                          (150)
-                                        </label>
-                                      </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="panel panel-default">
-                                <div class="panel-heading" id="heading-one" role="tab">
-                                  <h4 class="panel-title">
-                                    <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#Type-3">
-                                      Type-3 (300)
-                                    </a>
-                                  </h4>
-                                </div>
-                                <div aria-labelledby="heading-one" class="panel-collapse collapse " id="Type-3" role="tabpanel">
-                                  <div class="panel-body">
-                                      <div class="checkbox">
-                                        <label for="filter--subtype-1">
-                                          <input id="filter--subtype-1" type="checkbox" name="" value="subtype-1" > Subtype-1
-                                          (150)
-                                        </label>
-                                      </div>
-                                      <div class="checkbox">
-                                        <label for="filter--subtype-2">
-                                          <input id="filter--subtype-2" type="checkbox" name="" value="subtype-2" > Subtype-2
-                                          (150)
-                                        </label>
-                                      </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-          
-          
-          
+                    <div class="col-xs-4">
+                      <a class="text-right clear-btn" href="#"></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="dropdown-parent-category">
+                            <li class="parent-category-list"><a href="#" id="parent-category-clothing">Clothing (2)</a></li>
+                              <ul class="dropdown-subcategory-one">
+                                  <li><a href="#" id="subcategory-one-shirts">Shirts (300)</a></li>
+                                  <ul class="dropdown-subcategory-two">
+                                      <li class="category-active"><a href="#" id="subcategory-two-tshirts" >T-shirts (150)</a></li>
+                                      <li ><a href="#" id="subcategory-two-poloshirts" >Poloshirts (150)</a></li>
+                                  </ul>
+                                  <li><a href="#" id="subcategory-one-jeans">Jeans (300)</a></li>
+                                  <ul class="dropdown-subcategory-two">
+                                      <li class="category-active"><a href="#" id="subcategory-two-slimfit" class="hidden">Slim fit (150)</a></li>
+                                      <li class="category-active"><a href="#" id="subcategory-two-straight" class="hidden">Straight (150)</a></li>
+                                  </ul>
+                                  <li><a href="#" id="subcategory-one-jeans">Jeans (300)</a></li>
+                                  <ul class="dropdown-subcategory-two">
+                                      <li class="category-active"><a href="#" id="subcategory-two-slimfit" class="hidden">Slim fit (150)</a></li>
+                                      <li class="category-active"><a href="#" id="subcategory-two-straight" class="hidden">Straight (150)</a></li>
+                                  </ul>
+                              </ul>
+                        </ul>
+                    </div>
+                  </div>
           
                     <hr class="hr">
                     <div id="filter-size" class="row size-box">
@@ -433,7 +372,9 @@
           
           
           
-                      <div class="pop-filter-select two-column-select">
+          
+          
+                      <div class="pop-filter-select select-facet two-column-select">
                           <input id="filter-size-s" class="size-checkbox" type="checkbox" name="size" value="s"  checked  />
                           <label for="filter-size-s">S
                             
@@ -469,8 +410,50 @@
           
           
           
-                      <div class="pop-filter-select ">
+          
+          
+                      <div class="pop-filter-select select-facet ">
                           <input id="filter-color-red" class="color-checkbox" type="checkbox" name="color" value="red"  checked  />
+                          <label for="filter-color-red">Red
+                            (123)
+                          </label>
+                          <br>
+                          <input id="filter-color-blue" class="color-checkbox" type="checkbox" name="color" value="blue"  checked  />
+                          <label for="filter-color-blue">Blue
+                            (123)
+                          </label>
+                          <br>
+                          <input id="filter-color-pink" class="color-checkbox" type="checkbox" name="color" value="pink"  />
+                          <label for="filter-color-pink">Pink
+                            (123)
+                          </label>
+                          <br>
+                          <input id="filter-color-mono" class="color-checkbox" type="checkbox" name="color" value="mono"  />
+                          <label for="filter-color-mono">Mono
+                            (123)
+                          </label>
+                          <br>
+                          <input id="filter-color-red" class="color-checkbox" type="checkbox" name="color" value="red"  />
+                          <label for="filter-color-red">Red
+                            (123)
+                          </label>
+                          <br>
+                          <input id="filter-color-blue" class="color-checkbox" type="checkbox" name="color" value="blue"  />
+                          <label for="filter-color-blue">Blue
+                            (123)
+                          </label>
+                          <br>
+                          <input id="filter-color-pink" class="color-checkbox" type="checkbox" name="color" value="pink"  />
+                          <label for="filter-color-pink">Pink
+                            (123)
+                          </label>
+                          <br>
+                          <input id="filter-color-mono" class="color-checkbox" type="checkbox" name="color" value="mono"  />
+                          <label for="filter-color-mono">Mono
+                            (123)
+                          </label>
+                          <br>
+                          <input id="filter-color-red" class="color-checkbox" type="checkbox" name="color" value="red"  />
                           <label for="filter-color-red">Red
                             (123)
                           </label>
@@ -504,6 +487,8 @@
           
           
           
+          
+          
                       <div class="row">
                         <div class="col-sm-12 slider-col">
                           <div class="slider-range"></div>
@@ -522,6 +507,8 @@
                         <a class="text-right clear-btn" href="#">Clear</a>
                       </div>
                     </div>
+          
+          
           
           
                       <div class="row">
@@ -599,101 +586,6 @@
                           </div>
             
                               <hr class="hr">
-                              <div id="filter-product-type" class="row product-type-box">
-                                <div class="col-xs-8 text-left">
-                                  Product Type
-                                </div>
-                                <div class="col-xs-4">
-                                  <a class="text-right clear-btn" href="#">Clear</a>
-                                </div>
-                              </div>
-            
-                                <div class="row">
-                                  <div class="col-sm-12">
-                                    <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
-                                        <div class="panel panel-default">
-                                          <div class="panel-heading" id="heading-one" role="tab">
-                                            <h4 class="panel-title">
-                                              <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#type-1">
-                                                Type-1 (300)
-                                              </a>
-                                            </h4>
-                                          </div>
-                                          <div aria-labelledby="heading-one" class="panel-collapse collapse in" id="type-1" role="tabpanel">
-                                            <div class="panel-body">
-                                                <div class="checkbox">
-                                                  <label for="filter--subtype-1">
-                                                    <input id="filter--subtype-1" type="checkbox" name="" value="subtype-1"  checked > Subtype-1
-                                                    (150)
-                                                  </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                  <label for="filter--subtype-2">
-                                                    <input id="filter--subtype-2" type="checkbox" name="" value="subtype-2" > Subtype-2
-                                                    (150)
-                                                  </label>
-                                                </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                          <div class="panel-heading" id="heading-one" role="tab">
-                                            <h4 class="panel-title">
-                                              <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#Type-2">
-                                                Type-2 (300)
-                                              </a>
-                                            </h4>
-                                          </div>
-                                          <div aria-labelledby="heading-one" class="panel-collapse collapse " id="Type-2" role="tabpanel">
-                                            <div class="panel-body">
-                                                <div class="checkbox">
-                                                  <label for="filter--subtype-1">
-                                                    <input id="filter--subtype-1" type="checkbox" name="" value="subtype-1" > Subtype-1
-                                                    (150)
-                                                  </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                  <label for="filter--subtype-2">
-                                                    <input id="filter--subtype-2" type="checkbox" name="" value="subtype-2" > Subtype-2
-                                                    (150)
-                                                  </label>
-                                                </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="panel panel-default">
-                                          <div class="panel-heading" id="heading-one" role="tab">
-                                            <h4 class="panel-title">
-                                              <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#Type-3">
-                                                Type-3 (300)
-                                              </a>
-                                            </h4>
-                                          </div>
-                                          <div aria-labelledby="heading-one" class="panel-collapse collapse " id="Type-3" role="tabpanel">
-                                            <div class="panel-body">
-                                                <div class="checkbox">
-                                                  <label for="filter--subtype-1">
-                                                    <input id="filter--subtype-1" type="checkbox" name="" value="subtype-1" > Subtype-1
-                                                    (150)
-                                                  </label>
-                                                </div>
-                                                <div class="checkbox">
-                                                  <label for="filter--subtype-2">
-                                                    <input id="filter--subtype-2" type="checkbox" name="" value="subtype-2" > Subtype-2
-                                                    (150)
-                                                  </label>
-                                                </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                    </div>
-                                  </div>
-                                </div>
-            
-            
-            
-            
-                              <hr class="hr">
                               <div id="filter-size" class="row size-box">
                                 <div class="col-xs-8 text-left">
                                   Size
@@ -702,6 +594,7 @@
                                   <a class="text-right clear-btn" href="#">Clear</a>
                                 </div>
                               </div>
+            
             
             
             
@@ -742,8 +635,49 @@
             
             
             
+            
                                 <div class="pop-filter-select ">
                                     <input id="filter-color-red" class="color-checkbox" type="checkbox" name="color" value="red"  checked  />
+                                    <label for="filter-color-red">Red
+                                      (123)
+                                    </label>
+                                    <br>
+                                    <input id="filter-color-blue" class="color-checkbox" type="checkbox" name="color" value="blue"  checked  />
+                                    <label for="filter-color-blue">Blue
+                                      (123)
+                                    </label>
+                                    <br>
+                                    <input id="filter-color-pink" class="color-checkbox" type="checkbox" name="color" value="pink"  />
+                                    <label for="filter-color-pink">Pink
+                                      (123)
+                                    </label>
+                                    <br>
+                                    <input id="filter-color-mono" class="color-checkbox" type="checkbox" name="color" value="mono"  />
+                                    <label for="filter-color-mono">Mono
+                                      (123)
+                                    </label>
+                                    <br>
+                                    <input id="filter-color-red" class="color-checkbox" type="checkbox" name="color" value="red"  />
+                                    <label for="filter-color-red">Red
+                                      (123)
+                                    </label>
+                                    <br>
+                                    <input id="filter-color-blue" class="color-checkbox" type="checkbox" name="color" value="blue"  />
+                                    <label for="filter-color-blue">Blue
+                                      (123)
+                                    </label>
+                                    <br>
+                                    <input id="filter-color-pink" class="color-checkbox" type="checkbox" name="color" value="pink"  />
+                                    <label for="filter-color-pink">Pink
+                                      (123)
+                                    </label>
+                                    <br>
+                                    <input id="filter-color-mono" class="color-checkbox" type="checkbox" name="color" value="mono"  />
+                                    <label for="filter-color-mono">Mono
+                                      (123)
+                                    </label>
+                                    <br>
+                                    <input id="filter-color-red" class="color-checkbox" type="checkbox" name="color" value="red"  />
                                     <label for="filter-color-red">Red
                                       (123)
                                     </label>
@@ -777,6 +711,7 @@
             
             
             
+            
                                 <div class="row">
                                   <div class="col-sm-12 slider-col">
                                     <div class="slider-range"></div>
@@ -795,6 +730,7 @@
                                   <a class="text-right clear-btn" href="#">Clear</a>
                                 </div>
                               </div>
+            
             
             
                                 <div class="row">

@@ -10,6 +10,37 @@
         </div>
       </div>
 
+      {{#if content.filters.categories.facet.available}}
+        <hr class="hr">
+        <div id="filter-{{content.filters.categories.facet.key}}" class="row {{content.filters.categories.facet.key}}-box">
+          <div class="col-xs-8 text-left">
+            {{content.filters.categories.facet.label}}
+          </div>
+          <div class="col-xs-4">
+            <a class="text-right clear-btn" href="#">{{../content.filters.clear}}</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+              <ul class="dropdown-parent-category">
+                {{#each content.filters.categories.facet.limitedOptions}}
+                  <li class="parent-category-list"><a href="#" id="parent-category-{{value}}">{{label}} ({{count}})</a></li>
+                    <ul class="dropdown-subcategory-one">
+                      {{#each children}}
+                        <li><a href="#" id="subcategory-one-{{value}}">{{label}} ({{count}})</a></li>
+                        <ul class="dropdown-subcategory-two">
+                          {{#each children}}
+                            <li {{#if selected}}class="category-active"{{/if}}><a href="#" id="subcategory-two-{{value}}" {{#unless ../selected}}class="hidden"{{/unless}}>{{label}} ({{count}})</a></li>
+                          {{/each}}
+                        </ul>
+                      {{/each}}
+                    </ul>
+                {{/each}}
+              </ul>
+          </div>
+        </div>
+      {{/if}}
+
       {{#each content.filters.list}}
         {{#if facet.available}}
           <hr class="hr">
@@ -54,6 +85,8 @@
             </div>
           {{/if}}
 
+
+
           {{#if sortedSelectFacet}}
             <div class="row">
               <div class="col-sm-12">
@@ -83,7 +116,7 @@
           {{/if}}
 
           {{#if selectFacet}}
-            <div class="pop-filter-select {{#if facet.countHidden}}two-column-select{{/if}}">
+            <div class="pop-filter-select select-facet {{#if facet.countHidden}}two-column-select{{/if}}">
               {{#each facet.limitedOptions}}
                 <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
                 <label for="filter-{{../facet.key}}-{{value}}">{{label}}
