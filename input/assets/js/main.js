@@ -398,9 +398,22 @@ $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
 /*****************************************************************************/
 
 // Slide toggle different shipping address on click
-$( "#different-billing-checkbox" ).click(function() {
-  $( "#different-billing-address" ).slideToggle( "slow" )
+$(function() {
+  var cacheInput    = $("#different-billing-checkbox"),
+      cacheAddress  = $("#different-billing-address"),
+      setupListener = function() {
+        cacheInput.click(function() {
+          cacheAddress.slideToggle( "slow" );
+        });
+      };
+
+  if (cacheInput.is(':checked')) {
+    cacheAddress.show();
+  }
+
+  setupListener();
 });
+
 
 /*****************************************************************************/
 /*
