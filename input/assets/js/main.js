@@ -385,7 +385,7 @@ $(function() {
         // setting up the listener.
         editAction.click(openForm);
     }
-    cartItems.each(cartItemManager);
+    // cartItems.each(cartItemManager);
 });
 
 // jQuery UI - Tooltip on hover
