@@ -90,7 +90,6 @@ window.sunrise = window.sunrise || {
 function sizeGuideTable(item, root) {
     this.item = item;
     this.root = root || $(window);
-    this.switched = false;
     this.copy = null;
 };
 
@@ -107,8 +106,7 @@ sizeGuideTable.prototype = {
     },
     render: function() {
         var rootWidth = this.root.width();
-        this.switched = !!(rootWidth < 600);
-        if (this.switched) {
+        if (!!(rootWidth < 600)) {
             this.split();
         } else {
             this.unSplit();
