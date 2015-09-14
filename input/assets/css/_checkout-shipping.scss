@@ -26,10 +26,12 @@
 
 .checkout-steps {
 	letter-spacing: 0.1em;
-	padding: 1.5em 0;
-		div {
-			display: inline;
-		}
+  line-height: 5em;
+  font-size: 0.9em;
+	/* padding: 1.5em 0; */
+  div {
+    display: inline;
+  }
 }
 
 .step-number {
@@ -323,9 +325,6 @@
 /*****************************************************************************/
 
 @media screen and (max-width: 1199px) {
-	.checkout-steps {
-		font-size: 0.9em;
-	}
 	.checkout-price-digits {
 		margin-right: 0;
 	}
