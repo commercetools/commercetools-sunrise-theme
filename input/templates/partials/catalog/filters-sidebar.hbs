@@ -83,7 +83,7 @@
           {{/if}}
 
           {{#if selectFacet}}
-            <div class="pop-filter-select {{#if facet.countHidden}}two-column-select{{/if}}">
+            <div class="pop-filter-select select-facet {{#if facet.countHidden}}two-column-select{{/if}}">
               {{#each facet.limitedOptions}}
                 <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
                 <label for="filter-{{../facet.key}}-{{value}}">{{label}}

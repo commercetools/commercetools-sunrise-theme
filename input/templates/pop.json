@@ -910,6 +910,62 @@
 								"value" : "blue",
 								"key" : "two",
 								"count" : "123",
+								"selected" : true
+							},
+							{
+								"label" : "Pink",
+								"value" : "pink",
+								"key" : "three",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Mono",
+								"value" : "mono",
+								"key" : "four",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Red",
+								"value" : "red",
+								"key" : "one",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Blue",
+								"value" : "blue",
+								"key" : "two",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Pink",
+								"value" : "pink",
+								"key" : "three",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Mono",
+								"value" : "mono",
+								"key" : "four",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Red",
+								"value" : "red",
+								"key" : "one",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Blue",
+								"value" : "blue",
+								"key" : "two",
+								"count" : "123",
 								"selected" : false
 							},
 							{

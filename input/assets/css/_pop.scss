@@ -145,8 +145,6 @@ a.clear-btn {
   padding-top: 5em;
 }
 
-// Brands box
-
 .brands-list {
   margin-top: 1em;
   padding: 1em;
@@ -163,6 +161,11 @@ a.clear-btn {
 
 .text-capitalize {
   text-transform: capitalize;
+}
+
+.select-facet {
+  max-height: 170px;
+  overflow-y: scroll;
 }
 
 // Section heading - Text
