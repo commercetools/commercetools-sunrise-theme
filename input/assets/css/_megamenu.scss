@@ -53,17 +53,16 @@
 
   &.sale {
     color: $red;
-    bottom: 2px;
 
     &::after {
       display: none;
     }
 
     &.icon-ribbon::before {
-      font-size: 28px;
+      font-size: 22px;
       position: relative;
       vertical-align: top;
-      bottom: 3px;
+      bottom: 0;
     }
   }
 }

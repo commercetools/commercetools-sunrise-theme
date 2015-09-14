@@ -57,14 +57,16 @@
           {{#if sortedSelectFacet}}
             <div class="row">
               <div class="col-sm-12">
-                <div class="pop-filter-select">
-                  {{#each facet.limitedOptions}}
-                    <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
-                    <label for="filter-{{../facet.key}}-{{value}}">{{label}}
-                      {{#unless ../facet.countHidden}}({{count}}){{/unless}}
-                    </label>
-                    <br>
-                  {{/each}}
+                <div class="brands-list">
+                  <div class="pop-filter-select">
+                    {{#each facet.limitedOptions}}
+                      <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
+                      <label for="filter-{{../facet.key}}-{{value}}">{{label}}
+                        {{#unless ../facet.countHidden}}({{count}}){{/unless}}
+                      </label>
+                      <br>
+                    {{/each}}
+                  </div>
                 </div>
               </div>
             </div>
@@ -74,23 +76,21 @@
             <div class="row">
               <div class="col-sm-12 slider-col">
                 <div class="slider-range"></div>
-                <input class="s1" name="s1" type="hidden" />
-                <input class="s2" name="s2" type="hidden" />
+                <input class="s1" name="s1" type="text" value="{{facet.minValue}}"/>
+                <input class="s2" name="s2" type="text" value="{{facet.maxValue}}"/>
               </div>
             </div>
           {{/if}}
 
           {{#if selectFacet}}
-            <div class="pop-filter-select">
-              <div class="brands-list">
-                {{#each facet.limitedOptions}}
-                  <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
-                  <label for="filter-{{../facet.key}}-{{value}}">{{label}}
-                    {{#unless ../facet.countHidden}}({{count}}){{/unless}}
-                  </label>
-                  <br>
-                {{/each}}
-              </div>
+            <div class="pop-filter-select {{#if facet.countHidden}}two-column-select{{/if}}">
+              {{#each facet.limitedOptions}}
+                <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
+                <label for="filter-{{../facet.key}}-{{value}}">{{label}}
+                  {{#unless ../facet.countHidden}}({{count}}){{/unless}}
+                </label>
+                <br>
+              {{/each}}
             </div>
           {{/if}}
 
