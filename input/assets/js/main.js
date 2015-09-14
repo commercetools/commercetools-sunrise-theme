@@ -81,6 +81,60 @@ window.sunrise = window.sunrise || {
                 code: 'xl',
                 name: 'XL'
             }]
+    },
+    class: {
+        sizeGuideTable: sizeGuideTable
+    }
+};
+
+function sizeGuideTable(item, root) {
+    this.item = item;
+    this.root = root || $(window);
+    this.switched = false;
+    this.copy = null;
+};
+
+sizeGuideTable.prototype = {
+    setupListeners: function() {
+        var deferred = $.Deferred();
+        var render = this.render.bind(this);
+        this.root.load(render);
+        this.root.on('redraw', render);
+        this.root.on('resize', render);
+
+        deferred.resolve();
+        return deferred.promise();
+    },
+    render: function() {
+        var rootWidth = this.root.width();
+        this.switched = !!(rootWidth < 600);
+        if (this.switched) {
+            this.split();
+        } else {
+            this.unSplit();
+        }
+    },
+    split: function() {
+        if (this.copy) {
+            return;
+        }
+
+        var copy;
+        copy = this.item.clone();
+        copy.addClass('copy').addClass('pinned');
+
+        this.item.wrap('<div class="table-wrapper clearfix"/>');
+        this.item.addClass('scrollable');
+        this.item.parent().append(copy);
+        this.copy = copy;
+    },
+    unSplit: function() {
+        if (this.copy) {
+            this.item.parent().find('.pinned').remove();
+            this.item.unwrap();
+            this.item.removeClass('scrollable');
+            this.copy = null;
+        }
     }
 };
 
@@ -250,6 +304,7 @@ $(function() {
         );
         generatedHidden = $('.hidden', hiddenDescription);
     }
+
     $('.view-details').click(function() {
         if (generatedHidden && generatedHidden.length) {
             shownFlag = !!generatedHidden.hasClass('hidden');
@@ -273,6 +328,18 @@ $(function($jq) {
 
         // Remove minus class on all other buttons
         contextPanelGroup.find('.accordion-plus').not(contextButton).removeClass('accordion-minus');
+    });
+});
+
+// Size-guide
+$(function() {
+    var pdpPage = $('.pdp-page'),
+        sizeGuideModal = $('#size-guide', pdpPage),
+        modalContentWrapper = $('.modal-content-wrapper', sizeGuideModal);
+
+    modalContentWrapper.each(function() {
+        var context = new sizeGuideTable($(this));
+        context.setupListeners().then(context.render.bind(context));
     });
 });
 
@@ -407,7 +474,7 @@ $(function() {
         });
       };
 
-  if (cacheInput.is(':checked')) {
+  if (cacheInput && cacheInput.is(':checked')) {
     cacheAddress.show();
   }
 
