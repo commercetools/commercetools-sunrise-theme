@@ -772,95 +772,95 @@
 			"clear" : "Clear",
 			"open" : "Filter",
 			"close" : "Filter close",
+			"categories" :
+			{
+				"facet" : {
+					"available" : true,
+					"label" : "Product Type",
+					"key" : "product-type",
+					"limitedOptions" : [
+						{
+							"label" : "Clothing",
+							"value" : "clothing",
+							"key" : "one",
+							"count" : "2",
+							"selected" : true,
+							"children" : [
+								{
+									"label" : "Shirts",
+									"value" : "shirts",
+									"key" : "one-one",
+									"count" : "300",
+									"selected" : true,
+									"children" : [
+										{
+											"label" : "T-shirts",
+											"value" : "tshirts",
+											"key" : "one-one-one",
+											"count" : "150",
+											"selected" : true
+										},
+										{
+											"label" : "Poloshirts",
+											"value" : "poloshirts",
+											"key" : "one-one-two",
+											"count" : "150",
+											"selected" : false
+										}
+									]
+								},
+								{
+									"label" : "Jeans",
+									"value" : "jeans",
+									"key" : "one-two",
+									"count" : "300",
+									"selected" : false,
+									"children" : [
+										{
+											"label" : "Slim fit",
+											"value" : "slimfit",
+											"key" : "one-two-one",
+											"count" : "150",
+											"selected" : true
+										},
+										{
+											"label" : "Straight",
+											"value" : "straight",
+											"key" : "one-two-two",
+											"count" : "150",
+											"selected" : true
+										}
+									]
+								},
+								{
+									"label" : "Jeans",
+									"value" : "jeans",
+									"key" : "one-two",
+									"count" : "300",
+									"selected" : false,
+									"children" : [
+										{
+											"label" : "Slim fit",
+											"value" : "slimfit",
+											"key" : "one-two-one",
+											"count" : "150",
+											"selected" : true
+										},
+										{
+											"label" : "Straight",
+											"value" : "straight",
+											"key" : "one-two-two",
+											"count" : "150",
+											"selected" : true
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
 			"list" : [
-				{
-					"categorySelectFacet" : true,
-					"facet" : {
-						"available" : true,
-						"label" : "Product Type",
-						"key" : "product-type",
-						"limitedOptions" : [
-							{
-								"label" : "Clothing",
-								"value" : "clothing",
-								"key" : "one",
-								"count" : "2",
-								"selected" : true,
-								"children" : [
-									{
-										"label" : "Shirts",
-										"value" : "shirts",
-										"key" : "one-one",
-										"count" : "300",
-										"selected" : true,
-										"children" : [
-											{
-												"label" : "T-shirts",
-												"value" : "tshirts",
-												"key" : "one-one-one",
-												"count" : "150",
-												"selected" : true
-											},
-											{
-												"label" : "Poloshirts",
-												"value" : "poloshirts",
-												"key" : "one-one-two",
-												"count" : "150",
-												"selected" : false
-											}
-										]
-									},
-									{
-										"label" : "Jeans",
-										"value" : "jeans",
-										"key" : "one-two",
-										"count" : "300",
-										"selected" : false,
-										"children" : [
-											{
-												"label" : "Slim fit",
-												"value" : "slimfit",
-												"key" : "one-two-one",
-												"count" : "150",
-												"selected" : true
-											},
-											{
-												"label" : "Straight",
-												"value" : "straight",
-												"key" : "one-two-two",
-												"count" : "150",
-												"selected" : true
-											}
-										]
-									},
-									{
-										"label" : "Jeans",
-										"value" : "jeans",
-										"key" : "one-two",
-										"count" : "300",
-										"selected" : false,
-										"children" : [
-											{
-												"label" : "Slim fit",
-												"value" : "slimfit",
-												"key" : "one-two-one",
-												"count" : "150",
-												"selected" : true
-											},
-											{
-												"label" : "Straight",
-												"value" : "straight",
-												"key" : "one-two-two",
-												"count" : "150",
-												"selected" : true
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				},
 				{
 					"selectFacet" : true,
 					"facet" : {
