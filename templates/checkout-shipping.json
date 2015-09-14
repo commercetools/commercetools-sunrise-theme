@@ -129,7 +129,7 @@
     "delivery" : {
       "list" : [
         {
-          "text" : "DHL Standart",
+          "text" : "DHL Standard",
           "value" : "",
           "selected" : true,
           "deliveryDays" : "Delivery: 3-5 Days",
