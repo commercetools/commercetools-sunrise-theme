@@ -18,6 +18,22 @@
                 </div>
               </div>
 
+                <hr class="hr">
+                <div class="row size-box">
+                    <div class="col-xs-12">
+                        <div class="text-left">
+                            Sort
+                        </div>
+                        <div class="pop-filter-select">
+                            <select class="select">
+                                {{#each content.sort.list}}
+                                    <option value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
               {{#each content.filters.list}}
                 {{#if facet.available}}
                   <hr class="hr">
