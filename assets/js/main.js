@@ -152,6 +152,14 @@ $(document).ready(function(){
   $(".location-dropdown-toggle").click(function () {
     $(".location-dropdown").slideToggle();
   });
+
+  // Closing dropdown on click outside of it
+  $('html').click(function() {
+    $('.location-dropdown').hide();
+  });
+  $('.list-item-location').click(function(event) {
+    event.stopPropagation();
+  });
 });
 
 // Toggling plus and minus icons for mobile navigation menu
