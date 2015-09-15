@@ -19,10 +19,51 @@
     margin-top: 20px;
     font-weight: bold;
   }
+
+  .scrollable, .pinned {
+    float: left;
+  }
+
+  .pinned {
+    position: absolute;
+    width: 35%;
+    padding-right: 2px;
+
+    td, th {
+      display:none;
+      &:first-of-type {
+        display: table-cell;
+        padding: 10px 0 10px 15px;
+      }
+    }
+
+    .tr-size {
+      td:first-of-type {
+        border-right: 1px solid fade-out(#2A343F, 0.6);
+      }
+    }
+  }
+
+  .scrollable {
+    width: 64%;
+    margin-left: 37%;
+    overflow-x: scroll;
+
+    h4 {
+      visibility: hidden;
+    }
+
+    th, td {
+      &:first-of-type {
+        display: none;
+      }
+    }
+  }
 }
 
 .size-guide-table {
   width: 100%;
+
   .tr-title {
     background: $dark-blue;
     color: $white;
@@ -31,33 +72,35 @@
       padding: 10px 15px;
       text-align: center;
       font-weight: 400;
-      }
     }
-    .tr-size {
-      border-bottom: 1px solid $dark-blue;
-      td {
-        padding: 10px 15px;
-        text-align: center;
-        cursor: default;
-        &:hover {
-          background: $yellow;
+  }
+
+  .tr-size {
+    border-bottom: 1px solid $dark-blue;
+    td {
+      padding: 10px 15px;
+      text-align: center;
+      cursor: default;
+      &:hover {
+        background: $yellow;
       }
     }
   }
 }
 
-
-.belt-table {
-  width: 100%;
-  .tr-title {
-    th,
-    td {
-      padding: 10px;
+@media screen and (min-width: 599px) {
+  .belt-table {
+    width: 100%;
+    .tr-title {
+      th,
+      td {
+        padding: 10px;
+      }
     }
-  }
-  .tr-size {
-    td {
-      padding: 10px;
+    .tr-size {
+      td {
+        padding: 10px;
+      }
     }
   }
 }
