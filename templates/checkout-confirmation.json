@@ -60,7 +60,7 @@
 		},
 		"shippingMethod" : {
 			"text" : "Shipping Method",
-			"description" : "DHL Standart - Delivery 3-5 Days"
+			"description" : "DHL Standard - Delivery 3-5 Days"
 		},
 		"paymentDetails" : {
 			"text" : "Payment Details",
@@ -128,7 +128,7 @@
 			"subtotal" : "107,00 €",
 			"orderDiscountTitle" : "Order Discount",
 			"orderDiscount" : "0,00 €",
-			"deliveryOption" : "Standart Delivery",
+			"deliveryOption" : "Standard Delivery",
 			"delivery" : "0,00 €",
 			"taxTitle" : "Sales Tax",
 			"tax" : "20,00 €",
