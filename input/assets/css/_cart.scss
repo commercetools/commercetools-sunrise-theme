@@ -5,7 +5,28 @@
 /*****************************************************************************/
 
 .cart-page {
-	background: $dirty-white;
+  background: $dirty-white;
+  .edit-section-form {
+	display: none;
+  }
+
+  .single-cart-item {
+	.cart-edit-delete {
+	  .edit-section-options { }
+	  .edit-section-form {
+		select {
+		  margin-bottom: 10px;
+		  width: 100%;
+		  min-width: 100%;
+
+		  // contextual inline media query
+		  @media screen and (max-width: 768px) {
+			background-position-x: 97%;
+		  }
+		}
+	  }
+	}
+  }
 }
 
 .current-in-bag {
@@ -31,6 +52,17 @@
 	padding: 2em 0;
 }
 
+.default-btn {
+  border: 1px solid fade-out($dark-grey, 0.6);
+  color: $dark-grey;
+}
+
+.action-btn {
+  background: $yellow;
+  border: none;
+  color: $black;
+}
+
 .checkout-now-btn {
 	background: url(../../assets/img/arrow-66.png) no-repeat 95% 13px $yellow;
 	background-size: 15px;
@@ -50,7 +82,7 @@
 }
 
 .cart-items-title {
-	margin: 1em;
+	margin: 1em 1em 0;
 	padding-bottom: 0.5em;
 	font-size: 0.9em;
 	color: $dark-grey;
@@ -111,7 +143,8 @@
 }
 
 .single-cart-item {
-	margin: 1em;
+	margin: 0 1em;
+	padding: 1em;
 	border-bottom: 1px solid $light-grey;
 }
 
@@ -119,7 +152,7 @@
 
 .input-number {
   width: 40px;
-  padding: 0 12px;
+  padding: 0 10px;
   margin: 0 0.5em;
   vertical-align: top;
   text-align: center;
@@ -152,7 +185,7 @@
 // Cart item price
 
 .cart-item-price {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 900;
 	.discounted-price {
 		text-decoration: line-through;
@@ -165,7 +198,7 @@
 // Promotion section
 
 .promotion-info {
-	margin: 0 1em 1em 1em;
+	margin: 1em;
 	border-bottom: 1px solid $light-grey;
 	padding-bottom: 1em;
 }
@@ -245,7 +278,18 @@
 /*
 /*****************************************************************************/
 
+// MAX-WIDTH ------------------------------------------------------------------------------
 @media screen and (max-width: 991px) {
+  .cart-edit-delete {
+	padding-top: 0;
+	.edit-section-form {
+	  font-size: 0.8em;
+	  button {
+		padding: 0.3em;
+	  }
+	}
+  }
+
 	.current-in-bag {
 		font-size: 0.9em;
 	}
@@ -361,4 +405,24 @@
 	.promo-info-text {
 		font-size: 0.8em;
 	}
+}
+
+// MIN-WIDTH ------------------------------------------------------------------------------
+@media screen and (min-width: 991px) {
+  .single-cart-item {
+	height: 169px;
+	min-height: 169px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .single-cart-item {
+	min-height: 230px;
+	height: 230px;
+
+	.cart-edit-delete {
+	  min-height: 100%;
+	  height: 100%;
+	}
+  }
 }

@@ -49,17 +49,49 @@
                 <div class="col-sm-3 col-xs-8 product-info-text">
                   <p class="cart-item-name">{{nameHeadline}}<br>{{nameSubline}}</p>
                   <p class="grey-p">{{sku}}</p>
-                  <p class="cart-color-size">{{colorTitle}}<span class="black-p">{{color}}</span><br>{{sizeTitle}}<span class="black-p">{{size}}</span></p>
+                  <p class="cart-color-size">
+                      <!--:color-->
+                      {{colorTitle}}
+                      <span class="black-p" data-model="cartItem.color">{{color}}</span>
+                      <!--:colorend-->
+                      <br>
+                      <!--:size-->
+                      {{sizeTitle}}
+                      <span class="black-p" data-model="cartItem.size">{{size}}</span>
+                      <!--:sizeend-->
+                  </p>
                   <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
                   <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
                 </div>
                 <div class="col-sm-2 col-xs-6 text-center cart-edit-delete">
-                  <div class="text-uppercase edit-delete-section">
-                    <a id="{{editId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}</span></a>
-                  </div>
-                  <div class="text-uppercase edit-delete-section">
-                    <a id="{{deleteId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}</span></a>
-                  </div>
+                    <div class="edit-section-options">
+                        <div class="text-uppercase edit-delete-section">
+                            <a class="edit-action" id="{{editId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}</span></a>
+                        </div>
+                        <div class="text-uppercase edit-delete-section">
+                            <a id="{{deleteId}}" href="#"><span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}</span></a>
+                        </div>
+                    </div>
+                    <div class="edit-section-form">
+                        <select data-model="cartItem.color" class="selector checkout-dropdown">
+                            <option value="navy_blue">Navy Blue</option>
+                            <option value="beige">Beige</option>
+                        </select>
+                        <select data-model="cartItem.size" class="selector checkout-dropdown">
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                        <div class="actions text-right">
+                            <button type="button" class="default-btn cancel-action">
+                                <span class="hidden-xs hidden-md hidden-lg">X</span>
+                                <span class="hidden-sm">Cancel</span>
+                            </button>
+                            <button type="button" class="action-btn update-action">Update</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-2 col-xs-6 sm-pull-right">
                   <div class="quantity-spinner">

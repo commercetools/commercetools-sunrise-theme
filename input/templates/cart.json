@@ -793,7 +793,7 @@
       "promoDiscount" : "Promotional Discount Info",
       "applyBtn" : "Apply",
       "subtotalTitle" : "Subtotal",
-      "subtotal" : "1007,00 EUR",
+      "subtotal" : "98,00 EUR",
       "orderDiscountTitle" : "Order Discount",
       "orderDiscount" : "0,00 EUR",
 			"deliveryTooltip" : "Delivery estimate options additional information...",
@@ -801,9 +801,9 @@
       "deliveryOption" : "Standard Delivery",
       "delivery" : "0,00 EUR",
       "taxTitle" : "Sales Tax",
-      "tax" : "20,00 EUR",
+      "tax" : "0,00 EUR",
       "orderTotalTitle" : "Order Total",
-      "orderTotal" : "1027,00 EUR"
+      "orderTotal" : "98,00 EUR"
     },
     "continueShoppingBtn" : "Continue Shopping",
 		"wishlistWidged" : {
@@ -831,5 +831,37 @@
   },
   "meta" : {
 	"assetsPath": "assets/"
+  },
+  "options": {
+	"size": [
+	  {
+		"code": "xs",
+		"name": "XS"
+	  },
+	  {
+		"code": "s",
+		"name": "S"
+	  },
+	  {
+		"code": "m",
+		"name": "M"
+	  },
+	  {
+		"code": "l",
+		"name": "L"
+	  }, {
+		"code": "xl",
+		"name": "XL"
+	  }
+	],
+	"color": [
+	  {
+		"code": "navy_blue",
+		"name": "Navy Blue"
+	  }, {
+		"code": "beige",
+		"name": "Beige"
+	  }
+	]
   }
 }

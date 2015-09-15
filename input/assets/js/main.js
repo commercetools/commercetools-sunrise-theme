@@ -1,3 +1,141 @@
+window.sunrise = window.sunrise || {
+    helper: {
+        /**
+         * @param DOMList list
+         * @param string data
+         * @param string key
+         * @return DOMNode
+         */
+        findElementByDataAttribute: function(list, data, key) {
+            var found = null, item;
+            list.each(function() {
+                item = $(this);
+                if (item.data(key) === data) {
+                    found = item;
+                }
+            });
+            return found;
+        },
+        findColorByCode: function(code) {
+            var found = null, colors = sunrise.options.color;
+            colors.forEach(function(v) {
+                if (v.code === code) {
+                    found = v;
+                }
+            });
+            return found;
+        },
+        findColorByName: function(name) {
+            var found = null, colors = sunrise.options.color;
+            colors.forEach(function(v) {
+                if (v.name === name) {
+                    found = v;
+                }
+            });
+            return found;
+        },
+        findSizeByName: function(name) {
+            var found = null, sizes = sunrise.options.size;
+            sizes.forEach(function(v) {
+                if (v.name === name) {
+                    found = v;
+                }
+            });
+            return found;
+        },
+        findSizeBycode: function(code) {
+            var found = null, sizes = sunrise.options.size;
+            sizes.forEach(function(v) {
+                if (v.code === code) {
+                    found = v;
+                }
+            });
+            return found;
+        }
+    },
+    // General application-wide options
+    options: {
+        color: [{
+            code: 'navy_blue',
+            name: 'Navy Blue'
+        }, {
+            code: 'beige',
+            name: 'Beige'
+        }],
+        size: [{
+            code: 'xs',
+            name: 'XS'
+        },
+            {
+                code: 's',
+                name: 'S'
+            },
+            {
+                code: 'm',
+                name: 'M'
+            },
+            {
+                code: 'l',
+                name: 'L'
+            }, {
+                code: 'xl',
+                name: 'XL'
+            }]
+    },
+    class: {
+        sizeGuideTable: sizeGuideTable
+    }
+};
+
+function sizeGuideTable(item, root) {
+    this.item = item;
+    this.root = root || $(window);
+    this.copy = null;
+};
+
+sizeGuideTable.prototype = {
+    setupListeners: function() {
+        var deferred = $.Deferred();
+        var render = this.render.bind(this);
+        this.root.load(render);
+        this.root.on('redraw', render);
+        this.root.on('resize', render);
+
+        deferred.resolve();
+        return deferred.promise();
+    },
+    render: function() {
+        var rootWidth = this.root.width();
+        if (!!(rootWidth < 600)) {
+            this.split();
+        } else {
+            this.unSplit();
+        }
+    },
+    split: function() {
+        if (this.copy) {
+            return;
+        }
+
+        var copy;
+        copy = this.item.clone();
+        copy.addClass('copy').addClass('pinned');
+
+        this.item.wrap('<div class="table-wrapper clearfix"/>');
+        this.item.addClass('scrollable');
+        this.item.parent().append(copy);
+        this.copy = copy;
+    },
+    unSplit: function() {
+        if (this.copy) {
+            this.item.parent().find('.pinned').remove();
+            this.item.unwrap();
+            this.item.removeClass('scrollable');
+            this.copy = null;
+        }
+    }
+};
+
 /*****************************************************************************/
 /*
 /* NAVIGATION
@@ -13,6 +151,14 @@ $(document).ready(function(){
   // Location dropdown
   $(".location-dropdown-toggle").click(function () {
     $(".location-dropdown").slideToggle();
+  });
+
+  // Closing dropdown on click outside of it
+  $('html').click(function() {
+    $('.location-dropdown').hide();
+  });
+  $('.list-item-location').click(function(event) {
+    event.stopPropagation();
   });
 });
 
@@ -80,13 +226,6 @@ $( ".dropdown-submenu" ).click(function(event) {
     $( this ).parents(".dropdown-submenu").addClass('open');
     // this is also open (or was)
     $( this ).toggleClass('open');
-});
-
-// Close hamburger menu on select click or outside
-$(function() {
-  $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function() {
-    $('.navbar-toggle:visible').click();
-  });
 });
 
 // Off-canvas menu
@@ -164,6 +303,7 @@ $(function() {
         );
         generatedHidden = $('.hidden', hiddenDescription);
     }
+
     $('.view-details').click(function() {
         if (generatedHidden && generatedHidden.length) {
             shownFlag = !!generatedHidden.hasClass('hidden');
@@ -187,6 +327,18 @@ $(function($jq) {
 
         // Remove minus class on all other buttons
         contextPanelGroup.find('.accordion-plus').not(contextButton).removeClass('accordion-minus');
+    });
+});
+
+// Size-guide
+$(function() {
+    var pdpPage = $('.pdp-page'),
+        sizeGuideModal = $('#size-guide', pdpPage),
+        modalContentWrapper = $('.modal-content-wrapper', sizeGuideModal);
+
+    modalContentWrapper.each(function() {
+        var context = new sizeGuideTable($(this));
+        context.setupListeners().then(context.render.bind(context));
     });
 });
 
@@ -238,7 +390,69 @@ $(document).ready(function() {
     }
   };
 })();
-inputNumber($('.input-number'));
+
+$(function() {
+    inputNumber($('.input-number'));
+    var cartContentWrapper = $('.cart-content'),
+        cartItems = $('.single-cart-item', cartContentWrapper);
+
+    /**
+     * Manage an instance of DOM representation of a cart-item
+     */
+    function cartItemManager() {
+        var item = $(this),
+            editSectionForm = $('.edit-section-form', item),
+            editSectionActions = $('.edit-section-options', item),
+            editAction = $('.edit-action', editSectionActions),
+            selectors = $('.selector', editSectionForm),
+            targets = $('.cart-color-size > span', item);
+
+        function closeForm() {
+            editSectionForm.hide(0, function() {
+                editSectionActions.show();
+            });
+        }
+
+        function updateForm() {
+          var matchingTarget;
+            selectors.each(function() {
+              matchingTarget = sunrise.helper.findElementByDataAttribute(targets, $(this).data('model'), 'model');
+              if (matchingTarget) {
+                matchingTarget.text($(this).find('option:selected').text());
+              }
+            });
+            closeForm();
+        }
+
+        function openForm() {
+            var updateAction = $('.update-action', editSectionForm),
+                cancelAction = $('.cancel-action', editSectionForm);
+            editSectionActions.hide(0, function() {
+                editSectionForm.show();
+                cancelAction.click(closeForm);
+                updateAction.click(updateForm);
+            });
+        }
+
+        var target, modelKey, matchingSelector, color, size;
+        targets.each(function(index) {
+            target = $(this);
+            modelKey = target.data('model');
+            matchingSelector = sunrise.helper.findElementByDataAttribute(selectors, modelKey, 'model');
+            if (modelKey === 'cartItem.size') {
+              size = sunrise.helper.findSizeByName(target.text().trim());
+              matchingSelector.val(size.code);
+            } else if (modelKey === 'cartItem.color') {
+              color = sunrise.helper.findColorByName(target.text().trim());
+              matchingSelector.val(color.code);
+            }
+        });
+
+        // setting up the listener.
+        editAction.click(openForm);
+    }
+    // cartItems.each(cartItemManager);
+});
 
 // jQuery UI - Tooltip on hover
 $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
@@ -250,9 +464,22 @@ $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
 /*****************************************************************************/
 
 // Slide toggle different shipping address on click
-$( "#different-billing-checkbox" ).click(function() {
-  $( "#different-billing-address" ).slideToggle( "slow" )
+$(function() {
+  var cacheInput    = $("#different-billing-checkbox"),
+      cacheAddress  = $("#different-billing-address"),
+      setupListener = function() {
+        cacheInput.click(function() {
+          cacheAddress.slideToggle( "slow" );
+        });
+      };
+
+  if (cacheInput && cacheInput.is(':checked')) {
+    cacheAddress.show();
+  }
+
+  setupListener();
 });
+
 
 /*****************************************************************************/
 /*

@@ -28,7 +28,9 @@
                         <li class="list-item-user"><a href="{{header.user.signIn.url}}" class="link-user icon-user"><span class="hidden-xs hidden-sm">{{header.user.signIn.text}}</span></a></li>
 
                         <li class="list-item-location clearfix">
-                            <button id="{{header.location.locationDropdownToggleBtnId}}"><img class="pull-right location-dropdown-toggle" src="{{meta.assetsPath}}img/globe-2.png" alt="Location"></button>
+                            <button id="{{header.location.locationDropdownToggleBtnId}}" class="location-dropdown-toggle">
+                                <img class="pull-right" src="{{meta.assetsPath}}img/globe-2.png" alt="Location">
+                            </button>
                             <div class="location-dropdown">
                                 <span class="location-dropdown-label">Language</span>
                                 <select id="{{header.location.languageSelectId}}" class="select location-select" name="language">
@@ -77,7 +79,7 @@
                                     <li class="col-sm-8">
                                         <div class="nav-accordion">
                                             {{#each children}}
-                                                <h3>{{text}}</h3>
+                                                <h3><a href="{{url}}">{{text}}</a></h3>
                                                 <ul>
                                                     {{#each children}}
                                                         <li><a href="{{url}}">{{text}}</a></li>

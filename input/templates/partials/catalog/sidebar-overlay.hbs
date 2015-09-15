@@ -18,6 +18,22 @@
                 </div>
               </div>
 
+                <hr class="hr">
+                <div class="row size-box">
+                    <div class="col-xs-12">
+                        <div class="text-left">
+                            Sort
+                        </div>
+                        <div class="pop-filter-select">
+                            <select class="select">
+                                {{#each content.sort.list}}
+                                    <option value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
               {{#each content.filters.list}}
                 {{#if facet.available}}
                   <hr class="hr">
@@ -30,7 +46,7 @@
                     </div>
                   </div>
 
-                  {{#if hierarchicalSelectFacet}}
+                  {{!-- {{#if hierarchicalSelectFacet}}
                     <div class="row">
                       <div class="col-sm-12">
                         <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
@@ -58,6 +74,28 @@
                             </div>
                           {{/each}}
                         </div>
+                      </div>
+                    </div>
+                  {{/if}} --}}
+
+                  {{#if categorySelectFacet}}
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <ul class="dropdown-parent-category">
+                            {{#each facet.limitedOptions}}
+                              <li class="parent-category-list"><a href="#" id="parent-category-{{value}}">{{label}} ({{count}})</a></li>
+                                <ul class="dropdown-subcategory-one">
+                                  {{#each children}}
+                                    <li><a href="#" id="subcategory-one-{{value}}">{{label}} ({{count}})</a></li>
+                                    <ul class="dropdown-subcategory-two">
+                                      {{#each children}}
+                                        <li {{#if selected}}class="category-active"{{/if}}><a href="#" id="subcategory-two-{{value}}" {{#unless ../selected}}class="hidden"{{/unless}}>{{label}} ({{count}})</a></li>
+                                      {{/each}}
+                                    </ul>
+                                  {{/each}}
+                                </ul>
+                            {{/each}}
+                          </ul>
                       </div>
                     </div>
                   {{/if}}

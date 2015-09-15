@@ -24,7 +24,7 @@
         </div>
         <div class="col-sm-9">
           <div class="dark-overlay"></div>
-          <div class="row">
+          <div class="row jumbotron-row">
             <div class="col-xs-12">
               <div class="jumbotron">
                 <p>{{content.jumbotron.category}}</p>
@@ -38,13 +38,6 @@
               <ul class="mobile-filter-list clearfix">
                 <li class="pull-left">
                   <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="modal" data-target="#sidebar-overlay">{{content.filters.open}}</button>
-                </li>
-                <li class="pull-left">
-                  <select class="select">
-                    {{#each content.sort.list}}
-                      <option value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
-                    {{/each}}
-                  </select>
                 </li>
                 <li class="pull-left">
                   <p class="item-count">{{content.pagination.currentPage}} {{content.pagination.pageSeparator}} {{content.pagination.totalPages}}</p>

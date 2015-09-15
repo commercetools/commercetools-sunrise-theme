@@ -77,6 +77,31 @@
   }
 }
 
+.dropdown-parent-category {
+  padding: 10px 0 0 0;
+  list-style: none;
+  a:hover {
+    color: $dark-grey;
+  }
+  .parent-category-list {
+
+  }
+}
+
+.dropdown-subcategory-one {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.dropdown-subcategory-two {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.category-active {
+  font-weight: bold;
+}
+
 .two-column-select {
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
@@ -145,8 +170,6 @@ a.clear-btn {
   padding-top: 5em;
 }
 
-// Brands box
-
 .brands-list {
   margin-top: 1em;
   padding: 1em;
@@ -163,6 +186,11 @@ a.clear-btn {
 
 .text-capitalize {
   text-transform: capitalize;
+}
+
+.select-facet {
+  max-height: 170px;
+  overflow-y: scroll;
 }
 
 // Section heading - Text
@@ -196,10 +224,6 @@ a.clear-btn {
   margin-bottom: 60px;
 }
 
-// Quickview modal
-
-
-
 /*****************************************************************************/
 /*
 /* MEDIA QUERIES
@@ -216,6 +240,10 @@ a.clear-btn {
 @media screen and (max-width: 768px) {
   .search-box {
     text-align: center;
+  }
+  
+  .jumbotron-row {
+    margin-top: 40px;
   }
 
   #footer {

@@ -19,18 +19,16 @@
         <div class="col-md-6">
           <div class="checkout-steps text-right">
             <div>
-              <a id="confirmation-checkout-stepone-link" href="#"><span class="step-number">1</span>
-              <span class="text-uppercase step-title">{{content.shippingOne}}</span></a>
+              <span id="confirmation-checkout-stepone-link" class="step-number">1</span>
+              <span class="text-uppercase step-title">{{content.shippingOne}}</span>
             </div>
             <div>
-              <span class="step-divider"></span>
-              <a id="confirmation-checkout-steptwo-link" href="#"><span class="step-number">2</span>
-              <span class="text-uppercase step-title">{{content.paymentTwo}}</span></a>
+              <span id="confirmation-checkout-steptwo-link" class="step-number">2</span>
+              <span class="text-uppercase step-title">{{content.paymentTwo}}</span>
             </div>
             <div>
-              <span class="step-divider-two"></span>
-              <a id="confirmation-checkout-stepthree-link" href="#"><span class="step-number step-number-active">3</span>
-              <span class="text-uppercase step-title step-title-active">{{content.confirmationThree}}</span></a>
+              <span id="confirmation-checkout-stepthree-link" class="step-number step-number-active">3</span>
+              <span class="text-uppercase step-title step-title-active">{{content.confirmationThree}}</span>
             </div>
           </div>
         </div>
@@ -149,7 +147,7 @@
               </div>
             {{/each}}
             <div class="row">
-              <div class="container">
+              <div class="col-xs-12">
                 <div class="follow-up">
                   <input id="confirmation-savedetails-input" type="checkbox" name="save my details" value="{{content.rememberMe.value}}" class="remember-me"><span>{{content.rememberMe.text}}</span><br>
                   <input id="confirmation-newsletter-input" type="checkbox" name="add me to newsletter" value="{{content.newsletter.value}}" class="add-to-newsletter"><span>{{content.newsletter.text}} <span class="sunrise-newsletter"><a href="{{content.newsletter.url}}">{{content.newsletter.description}}</a></span></span>

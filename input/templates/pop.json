@@ -772,86 +772,95 @@
 			"clear" : "Clear",
 			"open" : "Filter",
 			"close" : "Filter close",
+			"categories" :
+			{
+				"facet" : {
+					"available" : true,
+					"label" : "Product Type",
+					"key" : "product-type",
+					"limitedOptions" : [
+						{
+							"label" : "Clothing",
+							"value" : "clothing",
+							"key" : "one",
+							"count" : "2",
+							"selected" : true,
+							"children" : [
+								{
+									"label" : "Shirts",
+									"value" : "shirts",
+									"key" : "one-one",
+									"count" : "300",
+									"selected" : true,
+									"children" : [
+										{
+											"label" : "T-shirts",
+											"value" : "tshirts",
+											"key" : "one-one-one",
+											"count" : "150",
+											"selected" : true
+										},
+										{
+											"label" : "Poloshirts",
+											"value" : "poloshirts",
+											"key" : "one-one-two",
+											"count" : "150",
+											"selected" : false
+										}
+									]
+								},
+								{
+									"label" : "Jeans",
+									"value" : "jeans",
+									"key" : "one-two",
+									"count" : "300",
+									"selected" : false,
+									"children" : [
+										{
+											"label" : "Slim fit",
+											"value" : "slimfit",
+											"key" : "one-two-one",
+											"count" : "150",
+											"selected" : true
+										},
+										{
+											"label" : "Straight",
+											"value" : "straight",
+											"key" : "one-two-two",
+											"count" : "150",
+											"selected" : true
+										}
+									]
+								},
+								{
+									"label" : "Jeans",
+									"value" : "jeans",
+									"key" : "one-two",
+									"count" : "300",
+									"selected" : false,
+									"children" : [
+										{
+											"label" : "Slim fit",
+											"value" : "slimfit",
+											"key" : "one-two-one",
+											"count" : "150",
+											"selected" : true
+										},
+										{
+											"label" : "Straight",
+											"value" : "straight",
+											"key" : "one-two-two",
+											"count" : "150",
+											"selected" : true
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
 			"list" : [
-				{
-					"hierarchicalSelectFacet" : true,
-					"facet" : {
-						"available" : true,
-						"label" : "Product Type",
-						"key" : "product-type",
-						"limitedOptions" : [
-							{
-								"label" : "Type-1",
-								"value" : "type-1",
-								"key" : "one",
-								"count" : "300",
-								"selected" : true,
-								"children" : [
-									{
-										"label" : "Subtype-1",
-										"value" : "subtype-1",
-										"key" : "one-one",
-										"count" : "150",
-										"selected" : true
-									},
-									{
-										"label" : "Subtype-2",
-										"value" : "subtype-2",
-										"key" : "one-two",
-										"count" : "150",
-										"selected" : false
-									}
-								]
-							},
-							{
-								"label" : "Type-2",
-								"value" : "Type-2",
-								"key" : "two",
-								"count" : "300",
-								"selected" : false,
-								"children" : [
-									{
-										"label" : "Subtype-1",
-										"value" : "subtype-1",
-										"key" : "two-one",
-										"count" : "150",
-										"selected" : false
-									},
-									{
-										"label" : "Subtype-2",
-										"value" : "subtype-2",
-										"key" : "two-two",
-										"count" : "150",
-										"selected" : false
-									}
-								]
-							},
-							{
-								"label" : "Type-3",
-								"value" : "Type-3",
-								"key" : "three",
-								"count" : "300",
-								"selected" : false,
-								"children" : [
-									{
-										"label" : "Subtype-1",
-										"value" : "subtype-1",
-										"key" : "three-one",
-										"count" : "150",
-										"selected" : false
-									},
-									{
-										"label" : "Subtype-2",
-										"value" : "subtype-2",
-										"key" : "three-two",
-										"count" : "150",
-										"selected" : false
-									}
-								]
-							}
-						]
-					}
-				},
 				{
 					"selectFacet" : true,
 					"facet" : {
@@ -904,6 +913,62 @@
 								"key" : "one",
 								"count" : "123",
 								"selected" : true
+							},
+							{
+								"label" : "Blue",
+								"value" : "blue",
+								"key" : "two",
+								"count" : "123",
+								"selected" : true
+							},
+							{
+								"label" : "Pink",
+								"value" : "pink",
+								"key" : "three",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Mono",
+								"value" : "mono",
+								"key" : "four",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Red",
+								"value" : "red",
+								"key" : "one",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Blue",
+								"value" : "blue",
+								"key" : "two",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Pink",
+								"value" : "pink",
+								"key" : "three",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Mono",
+								"value" : "mono",
+								"key" : "four",
+								"count" : "123",
+								"selected" : false
+							},
+							{
+								"label" : "Red",
+								"value" : "red",
+								"key" : "one",
+								"count" : "123",
+								"selected" : false
 							},
 							{
 								"label" : "Blue",
