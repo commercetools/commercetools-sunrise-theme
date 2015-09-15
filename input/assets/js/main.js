@@ -497,3 +497,24 @@ $('.payment-text').change(function() {
     $('#credit-card-input-field').hide();
   }
 })
+
+$(function(jq) {
+  var caller = $("#demo01"),
+      modal  = $('#animatedModal'),
+      modalContent = $('.modal-content', modal);
+  caller.animatedModal({
+    color: 'rgba(245, 242, 234, 0.9)',
+    duration: 0.3,
+    overflow: 'scroll',
+    beforeOpen: function() {
+      if (caller.data('content')) {
+        var img = $('<img />');
+        img.attr('src', caller.data('content'));
+        modalContent.append(img);
+      }
+    },
+    afterClose: function() {
+      modalContent.empty();
+    }
+  });
+})

@@ -4,9 +4,22 @@
             <li>
                 <img class="bzoom_thumb_image" src="{{thumbImage}}">
                 <img class="bzoom_big_image" src="{{bigImage}}">
+                <a id="demo01" href="#animatedModal" data-content="{{bigImage}}">DEMO01</a>
             </li>
         {{/each}}
     </ul>
+    <div class="clearfix"></div>
+</div>
+<!--DEMO01-->
+<div id="animatedModal">
+    <div class="modal-header">
+        <a href="#" class="close-animatedModal clickable">
+            <img src="assets/img/delete-60px.png" width="40" height="40" />
+        </a>
+    </div>
+    <div class="modal-content">
+
+    </div>
 </div>
 <div class="gallery-mobile visible-xs">
     {{#each content.product.images}}
