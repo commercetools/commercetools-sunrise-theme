@@ -21,7 +21,12 @@
 </div>
 <div class="row">
   <div class="col-sm-12">
-    <p class="product-price">{{content.product.price}}</p>
+    <p class="product-price">
+        {{#if content.product.priceOld}}
+            <span class="discounted-price">{{content.product.priceOld}}</span>
+        {{/if}}
+        <span>{{content.product.price}}</span>
+    </p>
   </div>
 </div>
 <div class="row select-row">
