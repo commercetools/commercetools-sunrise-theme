@@ -737,7 +737,7 @@
 	},
   "content" : {
     "yourBag" : "Your bag:",
-    "itemsTotal" : "3 items in total",
+    "itemsTotal" : "2 items in total",
     "checkoutBtn" : "Checkout now",
     "cartItems" : {
       "description" : "Product Description",
