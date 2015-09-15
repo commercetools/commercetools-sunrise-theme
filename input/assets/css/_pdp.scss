@@ -96,7 +96,14 @@
 
 // Product price
 .product-price {
-	font-size: 2em;
+  font-size: 2em;
+  // @FIXME: Push this to a more general typography mixin-file
+  .discounted-price {
+    text-decoration: line-through;
+    color: fade-out($grey, 0.4);
+    font-size: 1em;
+    font-weight: 200;
+  }
 }
 
 // Color and Size buttons
