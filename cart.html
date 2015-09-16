@@ -20,272 +20,291 @@
 
 <body>
   <div class="darkbg hidden"></div>
-  
   <div class="navbar navbar-fixed-top">
   
-      <div class="header">
-          <header class="container">
-              <div class="row">
-                  <div class="col-xs-12">
-                      <ul class="nav-list">
-                          <!-- Toggle the menu on mobile -->
-                          <li class="list-item-nav-toggle">
-                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                  <span class="icon-bar"></span>
-                                  <span class="icon-bar"></span>
-                                  <span class="icon-bar"></span>
-                              </button>
-                          </li>
-                          <!-- Toggles the search field on mobile / not visible on desktop -->
-                          <li class="list-item-search"><button type="button" class="search-toggle icon-magnifying-glass"><span class="sr-only"></span></button></li>
+    <div class="header">
+      <header class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="nav-list">
+              <!-- Toggle the menu on mobile -->
+              <li class="list-item-nav-toggle">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </li>
+              <!-- Toggles the search field on mobile / not visible on desktop -->
+              <li class="list-item-search">
+                <button type="button" class="search-toggle icon-magnifying-glass">
+                  <span class="sr-only"></span>
+                </button>
+              </li>
   
-                          <li class="list-item-store"><a href="" class="store-select icon-marker"><span class="hidden-xs">STORES</span></a></li>
+              <li class="list-item-store">
+                <a href="" class="store-select icon-marker">
+                  <span class="hidden-xs">STORES</span>
+                </a>
+              </li>
   
-                          <li class="list-item-help"><a href="" class="link-help">HELP</a></li>
+              <li class="list-item-help"><a href="" class="link-help">HELP</a></li>
   
-                          <li class="list-item-call"><a href="" class="link-hotline">CALL US ON +44 123 456 000</a></li>
-                          <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
-                          <li class="list-item-bag"><a href="" class="not-empty link-your-bag icon-hand-bag"><span class="hidden-xs hidden-sm">YOUR BAG</span> <span class="cart-item-number">12</span></a></li>
+              <li class="list-item-call"><a href="" class="link-hotline">CALL US ON +44 123 456 000</a></li>
+              <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
+              <li class="list-item-bag">
+                <a href="" class="not-empty link-your-bag icon-hand-bag">
+                  <span class="hidden-xs hidden-sm">YOUR BAG</span>
+                  <span class="cart-item-number">12</span>
+                </a>
+              </li>
   
-                          <li class="list-item-user"><a href="" class="link-user icon-user"><span class="hidden-xs hidden-sm">SIGN IN</span></a></li>
+              <li class="list-item-user">
+                <a href="" class="link-user icon-user">
+                  <span class="hidden-xs hidden-sm">SIGN IN</span>
+                </a>
+              </li>
   
-                          <li class="list-item-location clearfix">
-                              <button id="cart-location-dropdown-toggle-btn" class="location-dropdown-toggle">
-                                  <img class="pull-right" src="assets/img/globe-2.png" alt="Location">
-                              </button>
-                              <div class="location-dropdown">
-                                  <span class="location-dropdown-label">Language</span>
-                                  <select id="cart-language-select" class="select location-select" name="language">
-                                          <option id="cart-language-option-german" value="" selected>German</option>
-                                          <option id="cart-language-option-english" value="" >English</option>
-                                          <option id="cart-language-option-french" value="" >French</option>
-                                  </select>
-                                  <span class="location-dropdown-label">Country</span>
-                                  <select id="cart-country-select" class="select location-select" name="country">
-                                          <option id="cart-country-option-germany" value="">Germany</option>
-                                          <option id="cart-country-option-uk" value="">UK</option>
-                                          <option id="cart-country-option-france" value="">France</option>
-                                  </select>
-                              </div>
-                          </li>
+              <li class="list-item-location clearfix">
+                <button id="cart-location-dropdown-toggle-btn" class="location-dropdown-toggle">
+                  <img class="pull-right" src="assets/img/globe-2.png" alt="Location">
+                </button>
+                <div class="location-dropdown">
+                  <span class="location-dropdown-label">Language</span>
+                  <select id="cart-language-select" class="select location-select" name="language">
+                      <option id="cart-language-option-german" value=""  selected >German</option>
+                      <option id="cart-language-option-english" value="" >English</option>
+                      <option id="cart-language-option-french" value="" >French</option>
+                  </select>
+                  <span class="location-dropdown-label">Country</span>
+                  <select id="cart-country-select" class="select location-select" name="country">
+                      <option id="cart-country-option-germany" value="">Germany</option>
+                      <option id="cart-country-option-uk" value="">UK</option>
+                      <option id="cart-country-option-france" value="">France</option>
+                  </select>
+                </div>
+              </li>
   
-                      </ul>
-                  </div>
-              </div>
-          </header>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </div>
+  
+    <div id="navigation" class="container">
+      <div class="row logo-search">
+        <div class="col-sm-8">
+          <a href="#" class="brand-logo">
+            <img class="img-responsive" src="assets/img/logo.svg" alt="SUNRISE Logo">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <form class="search-box text-right" action="">
+            <input id="cart-search-input" class="search-field" type="search" placeholder="Search" />
+            <button type="submit" id="cart-search-button" class="search-button">
+              <span class="icon-font icon-magnifying-glass"></span>
+              <span class="sr-only"></span>
+            </button>
+          </form>
+        </div>
       </div>
   
-      <div id="navigation" class="container">
-          <div class="row logo-search">
-              <div class="col-sm-8">
-                  <a href="#" class="brand-logo">
-                      <img class="img-responsive" src="assets/img/logo.svg" alt="SUNRISE Logo">
-                  </a>
-              </div>
-              <div class="col-sm-4">
-                  <form class="search-box text-right" action="">
-                      <input id="cart-search-input" class="search-field" type="search" placeholder="Search" />
-                      <button type="submit" id="cart-search-button" class="search-button"><span class="icon-font icon-magnifying-glass"></span><span class="sr-only"></span></button>
-                  </form>
-              </div>
+      <div class="row">
+        <div class="dropdown-megamenu navbar navbar-default">
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle " data-toggle="dropdown">Women<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                  <ul class="dropdown-menu megamenu row dropdown-submenu">
+                    <li class="col-sm-8">
+                      <div class="nav-accordion">
+                          <h3><a href="">Women</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                          <h3><a href="">Women</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                          <h3><a href="">Women</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="col-sm-4 hidden-xs">
+                      <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle " data-toggle="dropdown">Men<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                  <ul class="dropdown-menu megamenu row dropdown-submenu">
+                    <li class="col-sm-8">
+                      <div class="nav-accordion">
+                          <h3><a href="">Men</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                          </ul>
+                          <h3><a href="">Men</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                          <h3><a href="">Men</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="col-sm-4 hidden-xs">
+                      <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle " data-toggle="dropdown">Accessories<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                  <ul class="dropdown-menu megamenu row dropdown-submenu">
+                    <li class="col-sm-8">
+                      <div class="nav-accordion">
+                          <h3><a href="">Accessories</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                          </ul>
+                          <h3><a href="">Accessories</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                          <h3><a href="">Accessories</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href=""></a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="col-sm-4 hidden-xs">
+                      <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    </li>
+                  </ul>
+                </li>
+              <li class="visible-xs location-xs">
+                <div class="location-dropdown-xs">
+                  <ul>
+                    <li>
+                      <select class="select location-select" name="language">
+                          <option value=""  selected >German</option>
+                          <option value="" >English</option>
+                          <option value="" >French</option>
+                      </select>
+                    </li>
+                    <li>
+                      <select class="select location-select" name="country">
+                          <option value="">Germany</option>
+                          <option value="">UK</option>
+                          <option value="">France</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
-  
-          <div class="row">
-              <div class="dropdown-megamenu navbar navbar-default">
-                  <div class="navbar-collapse collapse">
-                      <ul class="nav navbar-nav">
-                              <li class="dropdown menu-large">
-                                  <a href="" class="dropdown-toggle " data-toggle="dropdown">Women<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                                  <ul class="dropdown-menu megamenu row dropdown-submenu">
-                                      <li class="col-sm-8">
-                                          <div class="nav-accordion">
-                                                  <h3><a href="">Women</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Basic example</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Sizing</a></li>
-                                                          <li><a href="">Nesting</a></li>
-                                                          <li><a href="">Vertical variation</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Glasses</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Lorem</a></li>
-                                                          <li><a href="">Ipsum</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Women</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Basic example</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Sizing</a></li>
-                                                          <li><a href="">Nesting</a></li>
-                                                          <li><a href="">Vertical variation</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Glasses</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Lorem</a></li>
-                                                          <li><a href="">Ipsum</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Women</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Basic example</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Sizing</a></li>
-                                                          <li><a href="">Nesting</a></li>
-                                                          <li><a href="">Vertical variation</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Glasses</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Lorem</a></li>
-                                                          <li><a href="">Ipsum</a></li>
-                                                  </ul>
-                                          </div>
-                                      </li>
-                                      <li class="col-sm-4 hidden-xs">
-                                          <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                                      </li>
-                                  </ul>
-                              </li>
-                              <li class="dropdown menu-large">
-                                  <a href="" class="dropdown-toggle " data-toggle="dropdown">Men<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                                  <ul class="dropdown-menu megamenu row dropdown-submenu">
-                                      <li class="col-sm-8">
-                                          <div class="nav-accordion">
-                                                  <h3><a href="">Men</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Basic example</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Sizing</a></li>
-                                                          <li><a href="">Nesting</a></li>
-                                                          <li><a href="">Vertical variation</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Glasses</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Lorem</a></li>
-                                                          <li><a href="">Very long navigation item</a></li>
-                                                          <li><a href="">Very long navigation items will be truncated</a></li>
-                                                          <li><a href="">Very long navigation item</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Sizing</a></li>
-                                                          <li><a href="">Nesting</a></li>
-                                                          <li><a href="">Very long navigation items will be truncated</a></li>
-                                                          <li><a href="">Very long navigation item</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Men</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Basic example</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Sizing</a></li>
-                                                          <li><a href="">Nesting</a></li>
-                                                          <li><a href="">Very long navigation items will be truncated</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Glasses</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Lorem</a></li>
-                                                          <li><a href="">Ipsum</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Men</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Basic example</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Very long navigation items will be truncated</a></li>
-                                                          <li><a href="">Nesting</a></li>
-                                                          <li><a href="">Vertical variation</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Glasses</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Lorem</a></li>
-                                                          <li><a href="">Ipsum</a></li>
-                                                  </ul>
-                                          </div>
-                                      </li>
-                                      <li class="col-sm-4 hidden-xs">
-                                          <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                                      </li>
-                                  </ul>
-                              </li>
-                              <li class="dropdown menu-large">
-                                  <a href="" class="dropdown-toggle " data-toggle="dropdown">Accessories<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                                  <ul class="dropdown-menu megamenu row dropdown-submenu">
-                                      <li class="col-sm-8">
-                                          <div class="nav-accordion">
-                                                  <h3><a href="">Accessories</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Basic example</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Sizing</a></li>
-                                                          <li><a href="">Nesting</a></li>
-                                                          <li><a href="">Vertical variation</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Glasses</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Lorem</a></li>
-                                                          <li><a href="">Very long navigation item</a></li>
-                                                          <li><a href="">Very long navigation items will be truncated</a></li>
-                                                          <li><a href="">Very long navigation item</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Sizing</a></li>
-                                                          <li><a href="">Nesting</a></li>
-                                                          <li><a href="">Very long navigation items will be truncated</a></li>
-                                                          <li><a href="">Very long navigation item</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Accessories</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Basic example</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Sizing</a></li>
-                                                          <li><a href="">Nesting</a></li>
-                                                          <li><a href="">Vertical variation</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Glasses</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Lorem</a></li>
-                                                          <li><a href="">Ipsum</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Accessories</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Basic example</a></li>
-                                                          <li><a href="">Button toolbar</a></li>
-                                                          <li><a href="">Sizing</a></li>
-                                                          <li><a href=""></a></li>
-                                                          <li><a href="">Vertical variation</a></li>
-                                                  </ul>
-                                                  <h3><a href="">Glasses</a></h3>
-                                                  <ul>
-                                                          <li><a href="">Lorem</a></li>
-                                                          <li><a href="">Ipsum</a></li>
-                                                  </ul>
-                                          </div>
-                                      </li>
-                                      <li class="col-sm-4 hidden-xs">
-                                          <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                                      </li>
-                                  </ul>
-                              </li>
-                          <li class="visible-xs location-xs">
-                              <div class="location-dropdown-xs">
-                                  <ul>
-                                      <li>
-                                          <select class="select location-select" name="language">
-                                                  <option value="" selected>German</option>
-                                                  <option value="" >English</option>
-                                                  <option value="" >French</option>
-                                          </select>
-                                      </li>
-                                      <li>
-                                          <select class="select location-select" name="country">
-                                                  <option value="">Germany</option>
-                                                  <option value="">UK</option>
-                                                  <option value="">France</option>
-                                          </select>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
+        </div>
       </div>
+    </div>
   </div>
   <div class="cart-page">
     <div class="container">
