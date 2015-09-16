@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
   <link href="assets/css/main.min.css" rel="stylesheet">
   <title>Sunrise - Product Overview Page</title>
 </head>
@@ -309,30 +310,43 @@
         <div class="row product-info-row-pdp">
           <div class="col-md-4 col-md-offset-1 col-sm-6">
             <div class="bzoom_wrap hidden-xs">
+                <a id="animated-modal-action" class="animated-modal-action" href="#animatedModal">
+                    <img src="assets/img/zoom-60px.png" width="25" height="25" />
+                </a>
                 <ul id="bzoom" data-count="4">
-                        <li>
-                            <img class="bzoom_thumb_image" src="assets/img/blue-shirt.jpg">
-                            <img class="bzoom_big_image" src="assets/img/blue-shirt.jpg">
-                        </li>
-                        <li>
-                            <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
-                            <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
-                        </li>
-                        <li>
-                            <img class="bzoom_thumb_image" src="assets/img/blue-shirt.jpg">
-                            <img class="bzoom_big_image" src="assets/img/blue-shirt.jpg">
-                        </li>
-                        <li>
-                            <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
-                            <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
-                        </li>
+                      <li data-modal-content="assets/img/blue-shirt.jpg">
+                          <img class="bzoom_thumb_image" src="assets/img/blue-shirt.jpg">
+                          <img class="bzoom_big_image" src="assets/img/blue-shirt.jpg">
+                      </li>
+                      <li data-modal-content="assets/img/blue-jacket.jpg">
+                          <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                          <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                      </li>
+                      <li data-modal-content="assets/img/blue-shirt.jpg">
+                          <img class="bzoom_thumb_image" src="assets/img/blue-shirt.jpg">
+                          <img class="bzoom_big_image" src="assets/img/blue-shirt.jpg">
+                      </li>
+                      <li data-modal-content="assets/img/blue-jacket.jpg">
+                          <img class="bzoom_thumb_image" src="assets/img/blue-jacket.jpg">
+                          <img class="bzoom_big_image" src="assets/img/blue-jacket.jpg">
+                      </li>
                 </ul>
+                <div id="animatedModal" class="animated-modal">
+                    <div class="modal-header">
+                        <a href="#" class="close-animatedModal clickable">
+                            <img src="assets/img/delete-60px.png" width="40" height="40" />
+                        </a>
+                    </div>
+                    <div class="modal-content">
+            
+                    </div>
+                </div>
             </div>
             <div class="gallery-mobile visible-xs">
-                    <img src="assets/img/blue-shirt.jpg" alt="Product Image" />
-                    <img src="assets/img/blue-jacket.jpg" alt="Product Image" />
-                    <img src="assets/img/blue-shirt.jpg" alt="Product Image" />
-                    <img src="assets/img/blue-jacket.jpg" alt="Product Image" />
+                  <img src="assets/img/blue-shirt.jpg" alt="Product Image" />
+                  <img src="assets/img/blue-jacket.jpg" alt="Product Image" />
+                  <img src="assets/img/blue-shirt.jpg" alt="Product Image" />
+                  <img src="assets/img/blue-jacket.jpg" alt="Product Image" />
             </div>
           </div>
           <div class="col-sm-6 product-description">
@@ -1238,6 +1252,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="assets/js/jqzoom.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
+  <script src="assets/js/animatedModal.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
