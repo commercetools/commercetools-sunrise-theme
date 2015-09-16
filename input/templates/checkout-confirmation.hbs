@@ -1,18 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {{> common/htmlhead}}
-  </head>
 
-  <body>
+<head>
+  {{> common/htmlhead}}
+</head>
+
+<body>
   {{> common/checkout-header}}
   <div class="checkout-shipping">
     <div class="container">
       <div class="row">
         <div class="col-md-7">
           <div class="secure-payment">
-            <span><img class="secure-payment-icon" src="{{meta.assetsPath}}img/credit-card-lock.png" alt="secure payment"></span>
+            <span>
+              <img class="secure-payment-icon" src="{{meta.assetsPath}}img/credit-card-lock.png" alt="secure payment">
+            </span>
             <span class="text-uppercase secure-payment-title">{{content.secureCheckoutTitle}}</span>
           </div>
         </div>
@@ -40,45 +42,73 @@
               <div class="col-sm-4 checkout-first-col">
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">{{content.shippingAddress.text}}</span><a id="confirmation-edit-shipping-btn" href="#"><span class="pull-right"><img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
+                    <span class="checkout-summary-title">{{content.shippingAddress.text}}</span>
+                    <a id="confirmation-edit-shipping-btn" href="#">
+                      <span class="pull-right">
+                        <img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span>
+                    </a>
                   </div>
                   <div class="checkout-summary-text">
-                    <span>{{content.shippingAddress.name}}</span><br>
-                    <span>{{content.shippingAddress.street}}</span><br>
-                    <span>{{content.shippingAddress.city}}</span><br>
-                    <span>{{content.shippingAddress.region}}</span><br>
-                    <span>{{content.shippingAddress.postCode}}</span><br>
+                    <span>{{content.shippingAddress.name}}</span>
+                    <br>
+                    <span>{{content.shippingAddress.street}}</span>
+                    <br>
+                    <span>{{content.shippingAddress.city}}</span>
+                    <br>
+                    <span>{{content.shippingAddress.region}}</span>
+                    <br>
+                    <span>{{content.shippingAddress.postCode}}</span>
+                    <br>
                     <span>{{content.shippingAddress.country}}</span>
                   </div>
                   <div>
-                    <span>{{content.shippingAddress.phoneTitle}}:</span><span> {{content.shippingAddress.phone}}</span><br>
-                    <span>{{content.shippingAddress.emailTitle}}:</span><span> {{content.shippingAddress.email}}</span>
+                    <span>{{content.shippingAddress.phoneTitle}}:</span>
+                    <span> {{content.shippingAddress.phone}}</span>
+                    <br>
+                    <span>{{content.shippingAddress.emailTitle}}:</span>
+                    <span> {{content.shippingAddress.email}}</span>
                   </div>
                 </div>
               </div>
               <div class="col-sm-4 checkout-second-col">
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">{{content.billingAddress.text}}</span><a id="confirmation-edit-billing-btn" href="#"><span class="pull-right"><img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
+                    <span class="checkout-summary-title">{{content.billingAddress.text}}</span>
+                    <a id="confirmation-edit-billing-btn" href="#">
+                      <span class="pull-right">
+                        <img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span>
+                    </a>
                   </div>
                   <div class="checkout-summary-text">
-                    <span>{{content.billingAddress.name}}</span><br>
-                    <span>{{content.billingAddress.street}}</span><br>
-                    <span>{{content.billingAddress.city}}</span><br>
-                    <span>{{content.billingAddress.region}}</span><br>
-                    <span>{{content.billingAddress.postCode}}</span><br>
+                    <span>{{content.billingAddress.name}}</span>
+                    <br>
+                    <span>{{content.billingAddress.street}}</span>
+                    <br>
+                    <span>{{content.billingAddress.city}}</span>
+                    <br>
+                    <span>{{content.billingAddress.region}}</span>
+                    <br>
+                    <span>{{content.billingAddress.postCode}}</span>
+                    <br>
                     <span>{{content.billingAddress.country}}</span>
                   </div>
                   <div>
-                    <span>{{content.billingAddress.phoneTitle}}:</span><span> {{content.shippingAddress.phone}}</span><br>
-                    <span>{{content.billingAddress.emailTitle}}:</span><span> {{content.shippingAddress.email}}</span>
+                    <span>{{content.billingAddress.phoneTitle}}:</span>
+                    <span> {{content.shippingAddress.phone}}</span>
+                    <br>
+                    <span>{{content.billingAddress.emailTitle}}:</span>
+                    <span> {{content.shippingAddress.email}}</span>
                   </div>
                 </div>
               </div>
               <div class="col-sm-4 checkout-third-col">
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">{{content.shippingMethod.text}}</span><a id="confirmation-edit-method-btn" href="#"><span class="pull-right"><img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
+                    <span class="checkout-summary-title">{{content.shippingMethod.text}}</span>
+                    <a id="confirmation-edit-method-btn" href="#">
+                      <span class="pull-right">
+                        <img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span>
+                    </a>
                   </div>
                   <div class="checkout-summary-text">
                     <span>{{content.shippingMethod.description}}</span>
@@ -86,13 +116,21 @@
                 </div>
                 <div class="checkout-summary">
                   <div class="text-uppercase">
-                    <span class="checkout-summary-title">{{content.paymentDetails.text}}</span><a id="confirmation-edit-details-btn" href="#"><span class="pull-right"><img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span></a>
+                    <span class="checkout-summary-title">{{content.paymentDetails.text}}</span>
+                    <a id="confirmation-edit-details-btn" href="#">
+                      <span class="pull-right">
+                        <img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span>
+                    </a>
                   </div>
                   <div class="checkout-summary-text">
-                    <span>{{content.paymentDetails.type}}</span><br>
-                    <span>{{content.paymentDetails.name}}</span><br>
-                    <span>{{content.paymentDetails.card}}</span><br>
-                    <span>{{content.paymentDetails.number}}</span><br>
+                    <span>{{content.paymentDetails.type}}</span>
+                    <br>
+                    <span>{{content.paymentDetails.name}}</span>
+                    <br>
+                    <span>{{content.paymentDetails.card}}</span>
+                    <br>
+                    <span>{{content.paymentDetails.number}}</span>
+                    <br>
                     <span>{{content.paymentDetails.date}}</span>
                   </div>
                 </div>
@@ -114,94 +152,113 @@
                     <span>{{content.cartItems.totalPrice}}</span>
                   </div>
                 </div>
-            </div>
-            {{#each content.cartItems.list}}
-              <div class="row single-cart-item">
-                <div class="col-sm-1 col-xs-4 product-img-col">
-                  <img class="img-responsive cart-item-img" src="{{../meta.assetsPath}}img/blue-jacket.jpg" alt="cart item image">
-                </div>
-                <div class="col-sm-3 col-xs-8 product-info-text">
-                  <p class="cart-item-name">{{nameHeadline}}<br>{{nameSubline}}</p>
-                  <p class="grey-p">{{sku}}</p>
-                  <p class="cart-color-size">{{colorTitle}}<span class="black-p">{{color}}</span><br>{{sizeTitle}}<span class="black-p">{{size}}</span></p>
-                  <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
-                  <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
-                </div>
-                <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
-                  <span class="visible-xs">Quantity:</span>
-                  <span class="quantity-number">{{quantity}}</span>
-                </div>
-                <div class="col-sm-2 col-xs-7">
-                  <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">{{priceTitle}}</span>
-                    {{#if priceOld}}<span class="discounted-price">{{priceOld}}</span>{{/if}}
-                    <span>{{price}}</span>
+              </div>
+              {{#each content.cartItems.list}}
+                <div class="row single-cart-item">
+                  <div class="col-sm-1 col-xs-4 product-img-col">
+                    <img class="img-responsive cart-item-img" src="{{../meta.assetsPath}}img/blue-jacket.jpg" alt="cart item image">
+                  </div>
+                  <div class="col-sm-3 col-xs-8 product-info-text">
+                    <p class="cart-item-name">{{nameHeadline}}
+                      <br>{{nameSubline}}</p>
+                    <p class="grey-p">{{sku}}</p>
+                    <p class="cart-color-size">{{colorTitle}}
+                      <span class="black-p">{{color}}</span>
+                      <br>{{sizeTitle}}
+                      <span class="black-p">{{size}}</span>
+                    </p>
+                    <p class="cart-item-availability grey-p hidden-xs">
+                      <span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
+                    <p class="cart-item-availability grey-p visible-xs">
+                      <span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
+                  </div>
+                  <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
+                    <span class="visible-xs">Quantity:</span>
+                    <span class="quantity-number">{{quantity}}</span>
+                  </div>
+                  <div class="col-sm-2 col-xs-7">
+                    <div class="text-right cart-item-price">
+                      <span class="visible-xs xs-price-title">{{priceTitle}}</span>
+                      {{#if priceOld}}
+                        <span class="discounted-price">{{priceOld}}</span>
+                      {{/if}}
+                      <span>{{price}}</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 col-xs-5">
+                    <div class="text-right cart-item-price">
+                      <span class="visible-xs xs-price-title">{{totalPriceTitle}}</span>
+                      <span>{{totalPrice}}</span>
+                    </div>
                   </div>
                 </div>
-                <div class="col-sm-2 col-xs-5">
-                  <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">{{totalPriceTitle}}</span>
-                    <span>{{totalPrice}}</span>
+              {{/each}}
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="follow-up">
+                    <input id="confirmation-savedetails-input" type="checkbox" name="save my details" value="{{content.rememberMe.value}}" class="remember-me">
+                    <span>{{content.rememberMe.text}}</span>
+                    <br>
+                    <input id="confirmation-newsletter-input" type="checkbox" name="add me to newsletter" value="{{content.newsletter.value}}" class="add-to-newsletter">
+                    <span>{{content.newsletter.text}}
+                      <span class="sunrise-newsletter"><a href="{{content.newsletter.url}}">{{content.newsletter.description}}</a></span>
+                    </span>
                   </div>
                 </div>
               </div>
-            {{/each}}
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="follow-up">
-                  <input id="confirmation-savedetails-input" type="checkbox" name="save my details" value="{{content.rememberMe.value}}" class="remember-me"><span>{{content.rememberMe.text}}</span><br>
-                  <input id="confirmation-newsletter-input" type="checkbox" name="add me to newsletter" value="{{content.newsletter.value}}" class="add-to-newsletter"><span>{{content.newsletter.text}} <span class="sunrise-newsletter"><a href="{{content.newsletter.url}}">{{content.newsletter.description}}</a></span></span>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="total-price-calc">
-                  <div class="row text-right payment-code-applied">
-                    <span class="payment-code-title">Promotion code applied:</span>
-                    <span class="payment-code">Sunny Sale</span>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-10 col-xs-7">
-                      <div class="text-right subtotal">
-                        <span class="subtotal-title">{{content.totalSum.subtotalTitle}}</span>
-                      </div>
-                      <div class="text-right">
-                        <span class="order-discount">{{content.totalSum.orderDiscountTitle}}</span>
-                      </div>
-                      <div class="text-right delivery-info">
-                        <span class="delivery-info-title">{{content.totalSum.deliveryOption}}</span>
-                      </div>
-                      <hr class="total-divider">
-                      <div class="text-right">
-                        <span>{{content.totalSum.taxTitle}}</span>
-                      </div>
-                      <div class="text-right">
-                        <span class="order-total">{{content.totalSum.orderTotalTitle}}</span>
-                      </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="total-price-calc">
+                    <div class="row text-right payment-code-applied">
+                      <span class="payment-code-title">Promotion code applied:</span>
+                      <span class="payment-code">Sunny Sale</span>
                     </div>
-                    <div class="col-sm-2 col-xs-5 text-right">
-                      <div>
-                        <span>{{content.totalSum.subtotal}}</span>
+                    <div class="row">
+                      <div class="col-sm-10 col-xs-7">
+                        <div class="text-right subtotal">
+                          <span class="subtotal-title">{{content.totalSum.subtotalTitle}}</span>
+                        </div>
+                        <div class="text-right">
+                          <span class="order-discount">{{content.totalSum.orderDiscountTitle}}</span>
+                        </div>
+                        <div class="text-right delivery-info">
+                          <span class="delivery-info-title">{{content.totalSum.deliveryOption}}</span>
+                        </div>
+                        <hr class="total-divider">
+                        <div class="text-right">
+                          <span>{{content.totalSum.taxTitle}}</span>
+                        </div>
+                        <div class="text-right">
+                          <span class="order-total">{{content.totalSum.orderTotalTitle}}</span>
+                        </div>
                       </div>
-                      <div>
-                        <span class="order-discount">{{content.totalSum.orderDiscount}}</span>
+                      <div class="col-sm-2 col-xs-5 text-right">
+                        <div>
+                          <span>{{content.totalSum.subtotal}}</span>
+                        </div>
+                        <div>
+                          <span class="order-discount">{{content.totalSum.orderDiscount}}</span>
+                        </div>
+                        <div>
+                          <span>{{content.totalSum.delivery}}</span>
+                        </div>
+                        <hr>
+                        <div>
+                          <span>{{content.totalSum.tax}}</span>
+                        </div>
+                        <div>
+                          <span class="order-total">{{content.totalSum.orderTotal}}</span>
+                        </div>
                       </div>
-                      <div>
-                        <span>{{content.totalSum.delivery}}</span>
-                      </div>
-                      <hr>
-                      <div>
-                        <span>{{content.totalSum.tax}}</span>
-                      </div>
-                      <div>
-                        <span class="order-total">{{content.totalSum.orderTotal}}</span>
-                      </div>
-                    </div>
-                    <div class="complete-order">
-                      <a id="confirmation-completeorder-btn" href="{{content.completeOrderBtn.url}}" class="btn complete-order-btn">{{content.completeOrderBtn.text}}</a><br>
-                      <div class="agree-to">
-                        <span class="">{{content.termsConditions.text}} </span><a id="confirmation-termsandconditions-link" href="{{content.termsConditions.url}}"><span class="terms-link">{{content.termsConditions.linkText}}</span></a>
+                      <div class="complete-order">
+                        <a id="confirmation-completeorder-btn" href="{{content.completeOrderBtn.url}}" class="btn complete-order-btn">{{content.completeOrderBtn.text}}</a>
+                        <br>
+                        <div class="agree-to">
+                          <span class="">{{content.termsConditions.text}} </span>
+                          <a id="confirmation-termsandconditions-link" href="{{content.termsConditions.url}}">
+                            <span class="terms-link">{{content.termsConditions.linkText}}</span>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -212,8 +269,7 @@
         </div>
       </div>
     </div>
-  </div>
-  {{> common/checkout-footer}}
-  {{> common/htmlscripts}}
-  </body>
+    {{> common/checkout-footer}} {{> common/htmlscripts}}
+</body>
+
 </html>

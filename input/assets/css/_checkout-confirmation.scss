@@ -3,43 +3,34 @@
 /* CHECKOUT-CONFIRMATION PAGE
 /*
 /*****************************************************************************/
-
 .checkout-summary {
   margin: 1em;
   padding: 1em;
   background: lighten($light-grey, 10%);
 }
-
 .checkout-summary-edit-icon {
   height: 18px;
   margin: 0 0.8em 0.5em 0;
 }
-
 .checkout-summary-title {
   font-weight: 900;
   letter-spacing: 0.1em;
 }
-
 .checkout-summary-text {
   padding: 1em 0;
 }
-
 .checkout-first-col {
   padding-right: 0;
 }
-
 .checkout-second-col {
   padding: 0;
 }
-
 .checkout-third-col {
   padding-left: 0;
 }
-
 .quantity-number {
   font-size: 1.2em;
 }
-
 .confirmation-products-title {
   margin: 1em;
   border-top: 1px solid $light-grey;
@@ -47,10 +38,9 @@
     margin-bottom: 0;
   }
   .single-cart-item {
-    margin: 1em 0 0 0;
+    margin: 1em 0 0;
   }
 }
-
 .follow-up {
   border-bottom: 1px solid $light-grey;
   .remember-me {
@@ -64,58 +54,49 @@
     color: $dark-grey;
   }
 }
-
 .payment-code-applied {
   padding-bottom: 0.5em;
   text-transform: uppercase;
   font-size: 0.8em;
   padding-right: 1em;
 }
-
 .payment-code-title {
   color: $dark-grey;
 }
-
 .payment-code {
   font-weight: 700;
 }
-
 .complete-order {
   text-align: right;
 }
-
 .complete-order-btn {
   width: 310px;
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
-	background: $yellow;
-	border: none;
-	margin: 1em;
-	padding: 0.5em 0;
-		&:hover {
-			background: lighten($yellow, 5%);
-		}
+  background: $yellow;
+  border: none;
+  margin: 1em;
+  padding: 0.5em 0;
+  &:hover {
+    background: lighten($yellow, 5%);
+  }
 }
-
 .agree-to {
-  margin-right: 1em;;
+  margin-right: 1em;
 }
-
 .terms-link {
   text-decoration: underline;
   color: $dark-grey;
 }
 
 // Media Queries
-
 @media screen and (min-width: 767px) {
   .checkout-first-col .checkout-summary,
   .checkout-second-col .checkout-summary {
     padding: 1em 1em 4.6em;
   }
 }
-
 @media screen and (max-width: 767px) {
   .complete-order-btn {
     width: 200px;
@@ -129,8 +110,7 @@
   .checkout-third-col {
     padding-left: 15px;
   }
-  .follow-up {
-    .remember-me,
+  .follow-up {.remember-me,
     .add-to-newsletter {
       margin-bottom: 0;
     }
