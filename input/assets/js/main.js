@@ -313,6 +313,30 @@ $(function() {
   });
 });
 
+// Full zoom gallery modal
+$(function() {
+  var caller = $(".animated-modal-action"),
+    modal  = $('#animatedModal'),
+    modalContent = $('.modal-content', modal),
+    bZoomContainer = $('#bzoom'),
+    activeBZoomImg;
+
+  caller.animatedModal({
+    duration: 0.3,
+    overflow: 'scroll',
+    beforeOpen: function() {
+      activeBZoomImg = $('.bzoom_thumb_active', bZoomContainer);
+      var img = $('<img />');
+      img.attr('src', activeBZoomImg.data('modal-content'));
+      modalContent.append(img);
+    },
+    afterClose: function() {
+      modalContent.empty();
+      activeBZoomImg = null;
+    }
+  });
+});
+
 // Toggling plus and minus icons for product details accordion
 $(function($jq) {
   var pdpAccordion = $jq(".pdp-accord-toggle"),
@@ -496,4 +520,4 @@ $('.payment-text').change(function() {
   } else {
     $('#credit-card-input-field').hide();
   }
-})
+});
