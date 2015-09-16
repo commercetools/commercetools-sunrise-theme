@@ -3,19 +3,15 @@
 /* POP PAGE
 /*
 /*****************************************************************************/
-
 .pop-page {
-    background: $dirty-white;
+  background: $dirty-white;
 }
-
 #pop-page {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
 .mobile-filter-row {
   padding: 1em 0;
 }
-
 .breadcrumb {
   background: none;
   padding: 1em 0;
@@ -23,23 +19,19 @@
   font-size: 0.9em;
   text-transform: uppercase;
 }
-
 .product-filter {
-	padding: 0;
+  padding: 0;
 }
 
 // Product type accordion menu
-
 .panel-heading,
 .panel-body {
-  padding: 0 0;
+  padding: 0;
 }
-
 .panel-group .panel-heading+.panel-collapse>.list-group,
 .panel-group .panel-heading+.panel-collapse>.panel-body {
   border-top: 0;
 }
-
 .panel-title {
   background-color: $dirty-white;
   font-size: 14px;
@@ -51,16 +43,13 @@
     color: $dark-grey;
   }
 }
-
 .panel-group .panel+.panel {
   margin-top: 0;
 }
-
 .panel {
   background-color: transparent;
   border: none;
 }
-
 .product-type-box,
 .size-box,
 .color-box,
@@ -69,16 +58,14 @@
   padding: 1em 0 0;
   font-size: 16px;
 }
-
 .pop-filter-select {
   padding: 0.5em 0;
   label {
     font-weight: 400;
   }
 }
-
 .dropdown-parent-category {
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
   list-style: none;
   a:hover {
     color: $dark-grey;
@@ -87,34 +74,28 @@
 
   }
 }
-
 .dropdown-subcategory-one {
   list-style: none;
   padding-left: 10px;
 }
-
 .dropdown-subcategory-two {
   list-style: none;
   padding-left: 20px;
 }
-
 .category-active {
   font-weight: bold;
 }
 
 // Price slider
-
 .slider-col {
   padding: 1.5em 2.2em 0;
 }
-
 .s1 {
   width: 50px;
   margin: 15px 0 10px -16px;
   background: none;
   border: none;
 }
-
 .s2 {
   width: 50px;
   margin: 15px -26px 10px 0;
@@ -122,32 +103,27 @@
   background: none;
   border: none;
 }
-
 .ui-slider-horizontal {
   height: 0.3em;
   background: $light-grey;
   border: none;
 }
-
 .ui-slider-horizontal .ui-slider-handle {
   top: -0.5em;
   border-radius: 50%;
   background: $dark-blue;
   border: none;
 }
-
 .ui-slider-range {
   background: $yellow;
 }
 
 // Buttons
-
 a.clear-btn {
   display: block;
   color: $dark-grey;
   font-size: 14px;
 }
-
 .clear-all-btn {
   border: 1px solid $grey;
   color: $dark-grey;
@@ -155,15 +131,12 @@ a.clear-btn {
   margin-bottom: 1em;
   padding: 0.5em 0;
 }
-
 .clear-btn-row {
   padding: 0 1em;
 }
-
 .language-currency-select {
   padding-top: 5em;
 }
-
 .brands-list {
   margin-top: 1em;
   padding: 1em;
@@ -171,53 +144,46 @@ a.clear-btn {
   max-height: 500px;
   overflow-y: scroll;
 }
-
 .brands-checkbox,
 .color-checkbox,
 .size-checkbox {
   margin-left: 0;
 }
-
 .text-capitalize {
   text-transform: capitalize;
 }
-
 .select-facet {
   max-height: 170px;
   overflow-y: scroll;
 }
-
 .two-column-select {
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
   column-count: 2;
   max-height: none;
 }
 
 // Section heading - Text
-
 .section-heading {
   font-size: 4em;
   font-weight: 200;
 }
-
 .product-title {
   font-size: 1.2em;
 }
-
 .page-prev,
 .page-next {
   height: 20px;
 }
 
 // SEO text area
-
 .seo-title {
   margin-top: 40px;
   font-weight: 300;
   text-align: center;
 }
-
 .seo-text {
   text-align: center;
   text-transform: none;
@@ -230,61 +196,49 @@ a.clear-btn {
 /* MEDIA QUERIES
 /*
 /*****************************************************************************/
-
 @media screen and (max-width: 991px) {
   .thumbnail-img {
     max-width: 100%;
     max-height: 100%;
   }
 }
-
 @media screen and (max-width: 768px) {
   .search-box {
     text-align: center;
   }
-
   .jumbotron-row {
     margin-top: 40px;
   }
-
   #footer {
     text-align: center;
   }
-
   .card-info {
     text-align: center;
   }
-
   .payment-cards {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-
   .dropdown-menu li a {
     text-align: center;
   }
-
   .navbar-default {
     text-align: center;
   }
-
   .overlay {
     display: none;
   }
-
   .newsletter-box {
     padding: 0;
   }
-
   .per-page {
     margin: 0.5em 0;
     background-position: 90px 6px;
   }
-
   .language-select-xs,
   .currency-select-xs {
-    background: url(../../../assets/img/arrow-67-white.png) no-repeat 70px 12px $dark-blue;
+    background: url("../../../assets/img/arrow-67-white.png") no-repeat 70px 12px $dark-blue;
     background-size: 1em;
     color: $white;
     font-size: 0.9em;
@@ -293,22 +247,18 @@ a.clear-btn {
     margin: 0;
   }
 }
-
 @media screen and (max-width: 437px) {
   .social-icons {
     padding-left: 0;
   }
-
   #pop-page,
   #footer {
     overflow-x: hidden;
   }
-
   .imprint-row {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 375px) {
   .footer-title-yellow {
     margin-left: 1em;
