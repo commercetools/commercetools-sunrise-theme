@@ -9,9 +9,10 @@
   background-color: $white;
   .bzoom_wrap {
     > .animated-modal-action {
-      display: block;
+      display: inline-block;
       width: 25px;
       height: 25px;
+      transform: translateY(370px) translateX(300px);
     }
 
     > .animated-modal {
