@@ -1,154 +1,135 @@
 .shop-item {
-    max-width: 270px;
-    position: relative;
-    background: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-    border: solid 1px $light-grey;
-    cursor: pointer;
-
-    &:hover .shop-item-overlay,
-    &:focus .shop-item-overlay {
-        opacity: 1;
+  max-width: 270px;
+  position: relative;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  border: solid 1px $light-grey;
+  cursor: pointer;
+  &:hover .shop-item-overlay,
+  &:focus .shop-item-overlay {
+    opacity: 1;
+  }
+  .pop-product-image {
+    margin: 0 auto 10px;
+    display: block;
+  }
+  .pop-product-name {
+    margin-top: 15px;
+    text-align: center;
+    text-transform: none;
+    padding: 0 20px;
+    min-height: 50px;
+    color: $dark-grey;
+    .name-headline,
+    .name-subline {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-
-    .pop-product-image {
-        margin: 0 auto 10px;
-        display: block;
+  }
+  .pop-item-price {
+    text-align: center;
+    font-weight: 700;
+    .strikethrough {
+      text-decoration: line-through;
     }
-
-    .pop-product-name {
-      margin-top: 15px;
-      text-align: center;
-      text-transform: none;
-      padding: 0 20px;
-      min-height: 50px;
-      color: $dark-grey;
-
-      .name-headline,
-      .name-subline {
-        display: block;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-
-    .pop-item-price {
-      text-align: center;
-      font-weight: 700;
-
-      .strikethrough {
-        text-decoration: line-through;
-      }
-
-      .pop-item-price-old {
-        color: $red;
-      }
-    }
-
-    .pop-product-more-colors {
-      color: $dark-grey;
-      text-align: center;
-      margin: 10px 0;
-      font-size: 12px;
-    }
-
-    .new-flag {
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      border-radius: 50%;
-      top: 10px;
-      text-align: center;
-      line-height: 36px;
-    }
-
-    .sale-flag {
-      border: 2px solid $red;
+    .pop-item-price-old {
       color: $red;
-      right: 10px;
+    }
+  }
+  .pop-product-more-colors {
+    color: $dark-grey;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 12px;
+  }
+  .new-flag {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    text-align: center;
+    line-height: 36px;
+  }
+  .sale-flag {
+    border: 2px solid $red;
+    color: $red;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+  }
+  .new-flag {
+    color: $black;
+    left: 10px;
+  }
+  .heart-xs {
+    width: 50px;
+    height: 50px;
+    background: url("../img/heart_sprite.png") no-repeat;
+    background-size: 170px;
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 380px;
+    left: 100px;
+    &:hover,
+    &:focus {
+      background-position: -60px;
+    }
+  }
+  .shop-item-overlay {
+    transition: ease all 0.25s;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 50, 50, .1);
+    outline: solid 10px white;
+    .quickview {
+      display: block;
+      margin: auto;
+      width: 150px;
+      height: 45px;
+      background: rgba(42, 52, 63, .85);
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 18px;
+      border: solid 2px transparent;
+      top: 150px;
+      position: relative;
+      &:hover,
+      &:focus {
+        border: solid 2px white;
+      }
+    }
+    .heart {
       width: 50px;
       height: 50px;
-      position: absolute;
-      border-radius: 50%;
-      top: 10px;
-      text-align: center;
-      line-height: 45px;
-      font-size: 16px;
+      background: url("../img/heart_sprite.png") no-repeat;
+      background-size: 170px;
+      padding: 0;
+      margin: auto;
+      display: block;
+      position: relative;
+      top: 170px;
+      &:hover,
+      &:focus {
+        background-position: -60px;
+      }
     }
-
-    .new-flag {
-      color: $black;
-      left: 10px;
-    }
-
-    .heart-xs {
-        width: 50px;
-        height: 50px;
-        background: url("../img/heart_sprite.png") no-repeat;
-        background-size: 170px;
-        padding: 0;
-        margin: auto;
-        display: block;
-        position: relative;
-        top: 380px;
-        left: 100px;
-
-        &:hover,
-        &:focus {
-            background-position: -60px;
-        }
-    }
-
-    .shop-item-overlay {
-        transition: ease all .25s;
-        opacity: 0;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(50, 50, 50, .1);
-        outline: solid 10px white;
-
-        .quickview {
-          display: block;
-          margin: auto;
-          width: 150px;
-          height: 45px;
-          background: rgba(42, 52, 63, .85);
-          color: #FFF;
-          text-transform: uppercase;
-          font-size: 18px;
-          border: solid 2px transparent;
-          top: 150px;
-          position: relative;
-
-          &:hover,
-          &:focus
-          {
-            border: solid 2px white;
-          }
-        }
-
-        .heart {
-            width: 50px;
-            height: 50px;
-            background: url("../img/heart_sprite.png") no-repeat;
-            background-size: 170px;
-            padding: 0;
-            margin: auto;
-            display: block;
-            position: relative;
-            top: 170px;
-
-            &:hover,
-            &:focus {
-                background-position: -60px;
-            }
-        }
-    }
+  }
 }
