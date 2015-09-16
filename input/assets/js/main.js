@@ -1,91 +1,93 @@
 window.sunrise = window.sunrise || {
-    helper: {
-      /**
-       * @param DOMList list
-       * @param string data
-       * @param string key
-       * @return DOMNode
-       */
-      findElementByDataAttribute: function(list, data, key) {
-        var found = null, item;
-        list.each(function() {
-          item = $(this);
-          if (item.data(key) === data) {
-            found = item;
-          }
-        });
-        return found;
-      },
-      findColorByCode: function(code) {
-        var found = null, colors = sunrise.options.color;
-        colors.forEach(function(v) {
-          if (v.code === code) {
-            found = v;
-          }
-        });
-        return found;
-      },
-      findColorByName: function(name) {
-        var found = null, colors = sunrise.options.color;
-        colors.forEach(function(v) {
-          if (v.name === name) {
-            found = v;
-          }
-        });
-        return found;
-      },
-      findSizeByName: function(name) {
-        var found = null, sizes = sunrise.options.size;
-        sizes.forEach(function(v) {
-          if (v.name === name) {
-            found = v;
-          }
-        });
-        return found;
-      },
-      findSizeBycode: function(code) {
-        var found = null, sizes = sunrise.options.size;
-        sizes.forEach(function(v) {
-          if (v.code === code) {
-            found = v;
-          }
-        });
-        return found;
-      }
+  helper: {
+    /**
+     * @param DOMList list
+     * @param string data
+     * @param string key
+     * @return DOMNode
+     */
+    findElementByDataAttribute: function(list, data, key) {
+      var found = null,
+        item;
+      list.each(function() {
+        item = $(this);
+        if (item.data(key) === data) {
+          found = item;
+        }
+      });
+      return found;
     },
-    // General application-wide options
-    options: {
-      color: [{
-        code: 'navy_blue',
-        name: 'Navy Blue'
-      }, {
-        code: 'beige',
-        name: 'Beige'
-      }],
-      size: [{
-        code: 'xs',
-        name: 'XS'
-      },
-        {
-          code: 's',
-          name: 'S'
-        },
-        {
-          code: 'm',
-          name: 'M'
-        },
-        {
-          code: 'l',
-          name: 'L'
-        }, {
-          code: 'xl',
-          name: 'XL'
-        }]
+    findColorByCode: function(code) {
+      var found = null,
+        colors = sunrise.options.color;
+      colors.forEach(function(v) {
+        if (v.code === code) {
+          found = v;
+        }
+      });
+      return found;
     },
-    class: {
-      sizeGuideTable: sizeGuideTable
+    findColorByName: function(name) {
+      var found = null,
+        colors = sunrise.options.color;
+      colors.forEach(function(v) {
+        if (v.name === name) {
+          found = v;
+        }
+      });
+      return found;
+    },
+    findSizeByName: function(name) {
+      var found = null,
+        sizes = sunrise.options.size;
+      sizes.forEach(function(v) {
+        if (v.name === name) {
+          found = v;
+        }
+      });
+      return found;
+    },
+    findSizeBycode: function(code) {
+      var found = null,
+        sizes = sunrise.options.size;
+      sizes.forEach(function(v) {
+        if (v.code === code) {
+          found = v;
+        }
+      });
+      return found;
     }
-  };
+  },
+  // General application-wide options
+  options: {
+    color: [{
+      code: 'navy_blue',
+      name: 'Navy Blue'
+    }, {
+      code: 'beige',
+      name: 'Beige'
+    }],
+    size: [{
+      code: 'xs',
+      name: 'XS'
+    }, {
+      code: 's',
+      name: 'S'
+    }, {
+      code: 'm',
+      name: 'M'
+    }, {
+      code: 'l',
+      name: 'L'
+    }, {
+      code: 'xl',
+      name: 'XL'
+    }]
+  },
+  class: {
+    sizeGuideTable: sizeGuideTable
+  }
+};
 
 function sizeGuideTable(item, root) {
   this.item = item;
@@ -142,14 +144,14 @@ sizeGuideTable.prototype = {
  /*
  /*****************************************************************************/
 
-$(document).ready(function(){
+$(document).ready(function() {
   // Toggle search bar on mobile
-  $('.search-toggle').click(function(){
+  $('.search-toggle').click(function() {
     $('.search-box').slideToggle();
   });
 
   // Location dropdown
-  $(".location-dropdown-toggle").click(function () {
+  $(".location-dropdown-toggle").click(function() {
     $(".location-dropdown").slideToggle();
   });
 
@@ -172,7 +174,7 @@ $('.breadcrumb li').last().addClass('active');
 
 // Stop propagation and enable direct linking of categories
 $('.dropdown-toggle').click(function(event) {
-  if($(window).width() > 768) {
+  if ($(window).width() > 768) {
     event.stopPropagation();
   }
 });
@@ -217,15 +219,15 @@ $(function() {
 });
 
 // Disabling bootstrap menu close on 2nd+ level items
-$( ".dropdown-submenu" ).click(function(event) {
+$(".dropdown-submenu").click(function(event) {
   // stop bootstrap.js to hide the parents
   event.stopPropagation();
   // hide the open children
-  $( this ).find(".dropdown-submenu").removeClass('open');
+  $(this).find(".dropdown-submenu").removeClass('open');
   // add 'open' class to all parents with class 'dropdown-submenu'
-  $( this ).parents(".dropdown-submenu").addClass('open');
+  $(this).parents(".dropdown-submenu").addClass('open');
   // this is also open (or was)
-  $( this ).toggleClass('open');
+  $(this).toggleClass('open');
 });
 
 // Off-canvas menu
@@ -251,15 +253,15 @@ $(function() {
 });
 
 // Adding dynamic ID to quickview modals
-$( ".quickview" ).click(function( event ) {
+$(".quickview").click(function(event) {
   event.preventDefault();
   var modalId = event.target.getAttribute('data-modal')
   $("#" + modalId).modal('show');
 });
 
 // Wishlist section
-$( ".wishlist-btn" ).click(function() {
-  $( ".wishlist-items" ).toggleClass("hidden");
+$(".wishlist-btn").click(function() {
+  $(".wishlist-items").toggleClass("hidden");
 });
 
 // Dark background on opened menu (mobile)
@@ -274,7 +276,7 @@ $(".navbar-toggle").click(function() {
  /*****************************************************************************/
 
 // Product gallery - BZoom
-$("ul#bzoom").each( function(index, ul) {
+$("ul#bzoom").each(function(index, ul) {
   var imgCount = $('#bzoom').data('count');
   $ul = $(ul);
   $ul.zoom({
@@ -298,8 +300,8 @@ $(function() {
 
     if (hiddenDescriptionText.length < 100) return;
     hiddenDescription.html(
-      hiddenDescriptionText.slice(0,100)+'<span>... </span>'+
-      '<span class="hidden">'+ hiddenDescriptionText.slice(100, hiddenDescriptionText.length)+'</span>'
+      hiddenDescriptionText.slice(0, 100) + '<span>... </span>' +
+      '<span class="hidden">' + hiddenDescriptionText.slice(100, hiddenDescriptionText.length) + '</span>'
     );
     generatedHidden = $('.hidden', hiddenDescription);
   }
@@ -316,7 +318,7 @@ $(function() {
 // Full zoom gallery modal
 $(function() {
   var caller = $(".animated-modal-action"),
-    modal  = $('#animatedModal'),
+    modal = $('#animatedModal'),
     modalContent = $('.modal-content', modal),
     bZoomContainer = $('#bzoom'),
     activeBZoomImg;
@@ -394,20 +396,23 @@ $(document).ready(function() {
     el.each(function() {
       init($(this));
     });
+
     function init(el) {
       el.prev().on('click', decrement);
       el.next().on('click', increment);
+
       function decrement() {
         var value = el[0].value;
         value--;
-        if(!min || value >= min) {
+        if (!min || value >= min) {
           el[0].value = value;
         }
       }
+
       function increment() {
         var value = el[0].value;
         value++;
-        if(!max || value <= max) {
+        if (!max || value <= max) {
           el[0].value = value++;
         }
       }
@@ -479,7 +484,7 @@ $(function() {
 });
 
 // jQuery UI - Tooltip on hover
-$( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
+$(".promo-info-text, .delivery-est, .security-code-info").tooltip();
 
 /*****************************************************************************/
 /*
@@ -489,11 +494,11 @@ $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
 
 // Slide toggle different shipping address on click
 $(function() {
-  var cacheInput    = $("#different-billing-checkbox"),
-    cacheAddress  = $("#different-billing-address"),
+  var cacheInput = $("#different-billing-checkbox"),
+    cacheAddress = $("#different-billing-address"),
     setupListener = function() {
       cacheInput.click(function() {
-        cacheAddress.slideToggle( "slow" );
+        cacheAddress.slideToggle("slow");
       });
     };
 
@@ -515,7 +520,7 @@ $(function() {
 $('#credit-card-input-field').hide();
 
 $('.payment-text').change(function() {
-  if($('#payment-type-credit-card').is(':checked')) {
+  if ($('#payment-type-credit-card').is(':checked')) {
     $('#credit-card-input-field').show();
   } else {
     $('#credit-card-input-field').hide();
