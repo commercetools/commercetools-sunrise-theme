@@ -281,7 +281,7 @@
 // MAX-WIDTH ------------------------------------------------------------------------------
 @media screen and (max-width: 991px) {
   .cart-edit-delete {
-    padding-top: 0;
+    padding-left: 1em;
     .edit-section-form {
       font-size: 0.8em;
       button {
@@ -333,7 +333,11 @@
   }
   .cart-edit-delete {
     border: none;
-    text-align: left;
+    text-align: right;
+    padding-right: 0;
+    .edit-section-options {
+      padding: 1em 0;
+    }
     .edit-delete-section {
       display: inline;
       padding-right: 1em;
