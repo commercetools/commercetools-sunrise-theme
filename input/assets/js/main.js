@@ -313,6 +313,30 @@ $(function() {
   });
 });
 
+$(function() {
+  var caller = $(".animated-modal-action"),
+    modal  = $('#animatedModal'),
+    modalContent = $('.modal-content', modal),
+    bZoomContainer = $('#bzoom'),
+    activeBZoomImg;
+
+  caller.animatedModal({
+    color: 'rgba(245, 242, 234, 0.9)',
+    duration: 0.3,
+    overflow: 'scroll',
+    beforeOpen: function() {
+      activeBZoomImg = $('.bzoom_thumb_active', bZoomContainer);
+      var img = $('<img />');
+      img.attr('src', activeBZoomImg.data('modal-content'));
+      modalContent.append(img);
+    },
+    afterClose: function() {
+      modalContent.empty();
+      activeBZoomImg = null;
+    }
+  });
+});
+
 // Toggling plus and minus icons for product details accordion
 $(function($jq) {
   var pdpAccordion = $jq(".pdp-accord-toggle"),
@@ -496,25 +520,4 @@ $('.payment-text').change(function() {
   } else {
     $('#credit-card-input-field').hide();
   }
-})
-
-$(function(jq) {
-  var caller = $("#demo01"),
-      modal  = $('#animatedModal'),
-      modalContent = $('.modal-content', modal);
-  caller.animatedModal({
-    color: 'rgba(245, 242, 234, 0.9)',
-    duration: 0.3,
-    overflow: 'scroll',
-    beforeOpen: function() {
-      if (caller.data('content')) {
-        var img = $('<img />');
-        img.attr('src', caller.data('content'));
-        modalContent.append(img);
-      }
-    },
-    afterClose: function() {
-      modalContent.empty();
-    }
-  });
-})
+});
