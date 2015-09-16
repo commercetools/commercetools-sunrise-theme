@@ -313,6 +313,7 @@ $(function() {
   });
 });
 
+// Full zoom gallery modal
 $(function() {
   var caller = $(".animated-modal-action"),
     modal  = $('#animatedModal'),
