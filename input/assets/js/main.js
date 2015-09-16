@@ -322,7 +322,6 @@ $(function() {
     activeBZoomImg;
 
   caller.animatedModal({
-    color: 'rgba(245, 242, 234, 0.9)',
     duration: 0.3,
     overflow: 'scroll',
     beforeOpen: function() {

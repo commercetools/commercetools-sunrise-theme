@@ -16,10 +16,10 @@
     }
 
     > .animated-modal {
-      background: fade-out($dirty-white, 0.4);
+      background: $white;
       box-shadow: none;
       .modal-content, .modal-header {
-        background: fade-out($dirty-white, 0.4);
+        background: $white;
         box-shadow: none;
         border: none;
         text-align: center;
