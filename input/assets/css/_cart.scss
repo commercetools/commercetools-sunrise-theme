@@ -111,13 +111,13 @@
 
   // Inline contextual rules
   @media screen and (min-width: 999px) {
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
   }
 }
 .cart-action-icon {
   height: 15px;
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 .single-cart-item {
   margin: 0 1em;
@@ -129,7 +129,6 @@
 .input-number {
   width: 40px;
   padding: 0 10px;
-  margin: 0 0.5em;
   vertical-align: top;
   text-align: center;
   outline: none;
