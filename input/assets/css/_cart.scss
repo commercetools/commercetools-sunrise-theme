@@ -12,7 +12,6 @@
 
   .single-cart-item {
     .cart-edit-delete {
-      .edit-section-options { }
       .edit-section-form {
         select {
           margin-bottom: 10px;
@@ -128,17 +127,17 @@
 
 .edit-delete-section {
   padding: 0.5em 0;
+  font-size: 12px;
 
   // Inline contextual rules
   @media screen and (min-width: 999px) {
-    width: 70%;
-    text-align: left;
+    width: 50%;
     margin: 0 auto;
   }
 }
 
 .cart-action-icon {
-  height: 20px;
+  height: 15px;
   margin-right: 1em;
 }
 
