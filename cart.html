@@ -311,7 +311,9 @@
       <div class="row">
         <div class="col-sm-8 col-xs-12">
           <div class="current-in-bag">
-            <span><img class="bag-icon-lg" src="assets/img/hand-bag-2-black.png" alt="bag icon"></span>
+            <span>
+              <img class="bag-icon-lg" src="assets/img/hand-bag-2-black.png" alt="bag icon">
+            </span>
             <span class="text-uppercase your-bag-txt">Your bag:</span>
             <span class="items-total-txt">2 items in total</span>
           </div>
@@ -339,329 +341,363 @@
                 <span>Total Price</span>
               </div>
             </div>
-              <div class="row single-cart-item">
-                <div class="col-sm-1 col-xs-4 product-img-col">
-                  <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
-                </div>
-                <div class="col-sm-3 col-xs-8 product-info-text">
-                  <p class="cart-item-name">Enditatem Product Name<br>Optional Line Two</p>
+            <div class="row single-cart-item">
+              <div class="col-sm-1 col-xs-4 product-img-col">
+                <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
+              </div>
+              <div class="col-sm-3 col-xs-8 product-info-text">
+                <p class="cart-item-name">Enditatem Product Name
+                  <br>Optional Line Two</p>
                   <p class="grey-p">Sunrise #SUN123456</p>
                   <p class="cart-color-size">
-                      <!--:color-->
-                      Color: 
-                      <span class="black-p" data-model="cartItem.color">Navy Blue</span>
-                      <!--:colorend-->
-                      <br>
-                      <!--:size-->
-                      Size: 
-                      <span class="black-p" data-model="cartItem.size">M</span>
-                      <!--:sizeend-->
+                    <!--:color-->
+                    Color: 
+                    <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                    <!--:colorend-->
+                    <br>
+                    <!--:size-->
+                    Size: 
+                    <span class="black-p" data-model="cartItem.size">M</span>
+                    <!--:sizeend-->
                   </p>
-                  <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>Available</p>
-                  <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>Available</p>
-                </div>
-                <div class="col-sm-2 col-xs-12 cart-edit-delete">
-                    <div class="edit-section-options">
-                        <div class="text-uppercase edit-delete-section">
-                            <a class="edit-action" id="cart-edit-button-one" href="#"><span><img class="cart-action-icon" src="assets/img/edit-1.png" alt="delete">Edit</span></a>
-                        </div>
-                        <div class="text-uppercase edit-delete-section">
-                            <a id="cart-delete-button-one" href="#"><span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">Delete</span></a>
-                        </div>
+                  <p class="cart-item-availability grey-p hidden-xs">
+                    <span class="glyphicon glyphicon-ok-sign"></span>Available</p>
+                    <p class="cart-item-availability grey-p visible-xs">
+                      <span class="glyphicon glyphicon-ok-sign"></span>Available</p>
                     </div>
-                    <div class="edit-section-form">
-                        <select data-model="cartItem.color" class="selector checkout-dropdown">
-                            <option value="navy_blue">Navy Blue</option>
-                            <option value="beige">Beige</option>
-                        </select>
-                        <select data-model="cartItem.size" class="selector checkout-dropdown">
-                            <option value="xs">XS</option>
-                            <option value="s">S</option>
-                            <option value="m">M</option>
-                            <option value="l">L</option>
-                            <option value="xl">XL</option>
-                        </select>
-                        <div class="actions text-right">
-                            <button type="button" class="default-btn cancel-action">
+                    <div class="col-sm-2 col-xs-12 cart-edit-delete">
+                      <div class="edit-section-options">
+                        <div class="text-uppercase edit-delete-section">
+                          <a class="edit-action" id="cart-edit-button-one" href="#">
+                            <span>
+                              <img class="cart-action-icon" src="assets/img/edit-1.png" alt="delete">Edit</span>
+                            </a>
+                          </div>
+                          <div class="text-uppercase edit-delete-section">
+                            <a id="cart-delete-button-one" href="#">
+                              <span>
+                                <img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">Delete</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="edit-section-form">
+                            <select data-model="cartItem.color" class="selector checkout-dropdown">
+                              <option value="navy_blue">Navy Blue</option>
+                              <option value="beige">Beige</option>
+                            </select>
+                            <select data-model="cartItem.size" class="selector checkout-dropdown">
+                              <option value="xs">XS</option>
+                              <option value="s">S</option>
+                              <option value="m">M</option>
+                              <option value="l">L</option>
+                              <option value="xl">XL</option>
+                            </select>
+                            <div class="actions text-right">
+                              <button type="button" class="default-btn cancel-action">
                                 <span class="hidden-xs hidden-md hidden-lg">X</span>
                                 <span class="hidden-sm">Cancel</span>
-                            </button>
-                            <button type="button" class="action-btn update-action">Update</button>
+                              </button>
+                              <button type="button" class="action-btn update-action">Update</button>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 col-xs-8 sm-pull-right">
-                  <div class="quantity-spinner">
-                    <span id="cart-quantity-decrement-one" class="input-number-decrement">–</span><input id="cart-quantity-value-one" class="input-number" type="text" value="1" min="1" max="10"><span id="cart-quantity-increment-one" class="input-number-increment">+</span>
-                  </div>
-                </div>
-                <div class="col-sm-2 col-xs-8 sm-pull-right">
-                  <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">Price</span>
-                    <span class="discounted-price">100,00 €</span>
-                    <span>49,00 €</span>
-                  </div>
-                </div>
-                <div class="col-sm-2 col-xs-5 sm-pull-right">
-                  <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">Total Price</span>
-                    <span>49,00 €</span>
-                  </div>
-                </div>
+                        <div class="col-sm-2 col-xs-8 sm-pull-right">
+                          <div class="quantity-spinner">
+                            <span id="cart-quantity-decrement-one" class="input-number-decrement">–</span>
+                            <input id="cart-quantity-value-one" class="input-number" type="text" value="1" min="1" max="10">
+                            <span id="cart-quantity-increment-one" class="input-number-increment">+</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-8 sm-pull-right">
+                          <div class="text-right cart-item-price">
+                            <span class="visible-xs xs-price-title">Price</span>
+                            <span class="discounted-price">100,00 €</span>
+                            <span>49,00 €</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-8 sm-pull-right">
+                          <div class="text-right cart-item-price">
+                            <span class="visible-xs xs-price-title">Total Price</span>
+                            <span>49,00 €</span>
+                          </div>
+                        </div>
+                      </div>
+            <div class="row single-cart-item">
+              <div class="col-sm-1 col-xs-4 product-img-col">
+                <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
               </div>
-              <div class="row single-cart-item">
-                <div class="col-sm-1 col-xs-4 product-img-col">
-                  <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
-                </div>
-                <div class="col-sm-3 col-xs-8 product-info-text">
-                  <p class="cart-item-name">Enditatem Product Name<br>Optional Line Two</p>
+              <div class="col-sm-3 col-xs-8 product-info-text">
+                <p class="cart-item-name">Enditatem Product Name
+                  <br>Optional Line Two</p>
                   <p class="grey-p">Sunrise #SUN123456</p>
                   <p class="cart-color-size">
-                      <!--:color-->
-                      Color: 
-                      <span class="black-p" data-model="cartItem.color">Navy Blue</span>
-                      <!--:colorend-->
-                      <br>
-                      <!--:size-->
-                      Size: 
-                      <span class="black-p" data-model="cartItem.size">M</span>
-                      <!--:sizeend-->
+                    <!--:color-->
+                    Color: 
+                    <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                    <!--:colorend-->
+                    <br>
+                    <!--:size-->
+                    Size: 
+                    <span class="black-p" data-model="cartItem.size">M</span>
+                    <!--:sizeend-->
                   </p>
-                  <p class="cart-item-availability grey-p hidden-xs"><span class="glyphicon glyphicon-ok-sign"></span>Available</p>
-                  <p class="cart-item-availability grey-p visible-xs"><span class="glyphicon glyphicon-ok-sign"></span>Available</p>
-                </div>
-                <div class="col-sm-2 col-xs-12 cart-edit-delete">
-                    <div class="edit-section-options">
-                        <div class="text-uppercase edit-delete-section">
-                            <a class="edit-action" id="cart-edit-button-two" href="#"><span><img class="cart-action-icon" src="assets/img/edit-1.png" alt="delete">Edit</span></a>
-                        </div>
-                        <div class="text-uppercase edit-delete-section">
-                            <a id="cart-delete-button-two" href="#"><span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">Delete</span></a>
-                        </div>
+                  <p class="cart-item-availability grey-p hidden-xs">
+                    <span class="glyphicon glyphicon-ok-sign"></span>Available</p>
+                    <p class="cart-item-availability grey-p visible-xs">
+                      <span class="glyphicon glyphicon-ok-sign"></span>Available</p>
                     </div>
-                    <div class="edit-section-form">
-                        <select data-model="cartItem.color" class="selector checkout-dropdown">
-                            <option value="navy_blue">Navy Blue</option>
-                            <option value="beige">Beige</option>
-                        </select>
-                        <select data-model="cartItem.size" class="selector checkout-dropdown">
-                            <option value="xs">XS</option>
-                            <option value="s">S</option>
-                            <option value="m">M</option>
-                            <option value="l">L</option>
-                            <option value="xl">XL</option>
-                        </select>
-                        <div class="actions text-right">
-                            <button type="button" class="default-btn cancel-action">
+                    <div class="col-sm-2 col-xs-12 cart-edit-delete">
+                      <div class="edit-section-options">
+                        <div class="text-uppercase edit-delete-section">
+                          <a class="edit-action" id="cart-edit-button-two" href="#">
+                            <span>
+                              <img class="cart-action-icon" src="assets/img/edit-1.png" alt="delete">Edit</span>
+                            </a>
+                          </div>
+                          <div class="text-uppercase edit-delete-section">
+                            <a id="cart-delete-button-two" href="#">
+                              <span>
+                                <img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">Delete</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="edit-section-form">
+                            <select data-model="cartItem.color" class="selector checkout-dropdown">
+                              <option value="navy_blue">Navy Blue</option>
+                              <option value="beige">Beige</option>
+                            </select>
+                            <select data-model="cartItem.size" class="selector checkout-dropdown">
+                              <option value="xs">XS</option>
+                              <option value="s">S</option>
+                              <option value="m">M</option>
+                              <option value="l">L</option>
+                              <option value="xl">XL</option>
+                            </select>
+                            <div class="actions text-right">
+                              <button type="button" class="default-btn cancel-action">
                                 <span class="hidden-xs hidden-md hidden-lg">X</span>
                                 <span class="hidden-sm">Cancel</span>
-                            </button>
-                            <button type="button" class="action-btn update-action">Update</button>
+                              </button>
+                              <button type="button" class="action-btn update-action">Update</button>
+                            </div>
+                          </div>
                         </div>
+                        <div class="col-sm-2 col-xs-8 sm-pull-right">
+                          <div class="quantity-spinner">
+                            <span id="cart-quantity-decrement-two" class="input-number-decrement">–</span>
+                            <input id="cart-quantity-value-two" class="input-number" type="text" value="1" min="1" max="10">
+                            <span id="cart-quantity-increment-two" class="input-number-increment">+</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-8 sm-pull-right">
+                          <div class="text-right cart-item-price">
+                            <span class="visible-xs xs-price-title">Price</span>
+                            <span>49,00 €</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-2 col-xs-8 sm-pull-right">
+                          <div class="text-right cart-item-price">
+                            <span class="visible-xs xs-price-title">Total Price</span>
+                            <span>49,00 €</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="text-right promotion-info">
+                            <span class="text-uppercase promo-info-text" title="Discount options additional information...">Promotional Discount Info
+                              <img class="info-icon" src="assets/img/information.png" alt="information icon">
+                            </span>
+                            <input id="promo-code" type="text">
+                            <button id="cart-apply-promocode-btn" class="text-uppercase promo-apply-btn">Apply</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="total-price-calc">
+                            <div class="row">
+                              <div class="col-xs-12 delivery-xs">
+                                <span class="visible-xs text-right delivery-est" title="Delivery estimate options additional information...">Delivery estimate options
+                                  <img class="info-icon" src="assets/img/information.png" alt="information icon">
+                                </span>
+                              </div>
+                              <div class="col-sm-9 col-md-10 col-xs-6">
+                                <div class="text-right subtotal">
+                                  <span class="subtotal-title">Subtotal</span>
+                                </div>
+                                <div class="text-right">
+                                  <span class="order-discount">Order Discount</span>
+                                </div>
+                                <div class="text-right delivery-info">
+                                  <span class="delivery-est hidden-xs" title="Delivery estimate options additional information...">Delivery estimate options
+                                    <img class="info-icon" src="assets/img/information.png" alt="information icon">
+                                  </span>
+                                  <span class="delivery-info-title">Standard Delivery</span>
+                                </div>
+                                <hr class="total-divider">
+                                <div class="text-right">
+                                  <span>Sales Tax</span>
+                                </div>
+                                <div class="text-right">
+                                  <span class="order-total">Order Total</span>
+                                </div>
+                              </div>
+                              <div class="col-sm-3 col-md-2 col-xs-6 text-right">
+                                <div>
+                                  <span>98,00 EUR</span>
+                                </div>
+                                <div>
+                                  <span class="order-discount">0,00 EUR</span>
+                                </div>
+                                <div>
+                                  <span>0,00 EUR</span>
+                                </div>
+                                <hr>
+                                <div>
+                                  <span>0,00 EUR</span>
+                                </div>
+                                <div>
+                                  <span class="order-total">98,00 EUR</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="col-sm-2 col-xs-8 sm-pull-right">
-                  <div class="quantity-spinner">
-                    <span id="cart-quantity-decrement-two" class="input-number-decrement">–</span><input id="cart-quantity-value-two" class="input-number" type="text" value="1" min="1" max="10"><span id="cart-quantity-increment-two" class="input-number-increment">+</span>
                   </div>
                 </div>
-                <div class="col-sm-2 col-xs-8 sm-pull-right">
-                  <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">Price</span>
-                    
-                    <span>49,00 €</span>
+                <div class="row bottom-cart-btns">
+                  <div class="col-sm-6 col-xs-12 visible-xs">
+                    <div class="checkout-now-bottom">
+                      <a href="#">
+                        <button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">Checkout now</button>
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="col-sm-2 col-xs-5 sm-pull-right">
-                  <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">Total Price</span>
-                    <span>49,00 €</span>
+                  <div class="col-sm-6 col-xs-12">
+                    <div>
+                      <a href="#">
+                        <button id="cart-continueshopping-btn-xs" class="text-uppercase continue-shopping-btn">Continue Shopping</button>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12 hidden-xs">
+                    <div class="checkout-now-bottom">
+                      <a href="#">
+                        <button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">Checkout now</button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="text-right promotion-info">
-                  <span class="text-uppercase promo-info-text" title="Discount options additional information...">Promotional Discount Info<img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
-                  <input id="promo-code" type="text">
-                  <button id="cart-apply-promocode-btn" class="text-uppercase promo-apply-btn">Apply</button>
-                </div>
-              </div>
             </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="total-price-calc">
-                  <div class="row">
-                    <div class="col-xs-12 delivery-xs">
-                      <span class="visible-xs text-right delivery-est" title="Delivery estimate options additional information...">Delivery estimate options<img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
-                    </div>
-                    <div class="col-sm-9 col-md-10 col-xs-6">
-                      <div class="text-right subtotal">
-                        <span class="subtotal-title">Subtotal</span>
-                      </div>
-                      <div class="text-right">
-                        <span class="order-discount">Order Discount</span>
-                      </div>
-                      <div class="text-right delivery-info">
-                        <span class="delivery-est hidden-xs" title="Delivery estimate options additional information...">Delivery estimate options<img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
-                        <span class="delivery-info-title">Standard Delivery</span>
-                      </div>
-                      <hr class="total-divider">
-                      <div class="text-right">
-                        <span>Sales Tax</span>
-                      </div>
-                      <div class="text-right">
-                        <span class="order-total">Order Total</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 col-md-2 col-xs-6 text-right">
-                      <div>
-                        <span>98,00 EUR</span>
-                      </div>
-                      <div>
-                        <span class="order-discount">0,00 EUR</span>
-                      </div>
-                      <div>
-                        <span>0,00 EUR</span>
-                      </div>
-                      <hr>
-                      <div>
-                        <span>0,00 EUR</span>
-                      </div>
-                      <div>
-                        <span class="order-total">98,00 EUR</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row bottom-cart-btns">
-        <div class="col-sm-6 col-xs-12 visible-xs">
-          <div class="checkout-now-bottom">
-            <a href="#"><button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">Checkout now</button></a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-xs-12">
-          <div>
-            <a href="#"><button id="cart-continueshopping-btn-xs" class="text-uppercase continue-shopping-btn">Continue Shopping</button></a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-xs-12 hidden-xs">
-          <div class="checkout-now-bottom">
-            <a href="#"><button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">Checkout now</button></a>
-          </div>
-        </div>
-      </div>
+            <div class="wishlist">
+  <button id="cart-wishlist-btn" class="hidden-xs wishlist-btn">
+    <div class="wishlist-number">45</div>
+  </button>
+  <div class="wishlist-items hidden">
+    <p class="wishlist-title">Your Wishlist
+      <span>(45)</span></p>
+    <span class="recently-added-title">My recently added items</span>
+    <div class="clearfix">
+        <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
+        <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
+        <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
     </div>
+    <a href="" id="cart-wishlist-view-btn" class="btn view-wishlist-btn">View your wishlist</a>
   </div>
-  <div class="wishlist">
-    <button id="cart-wishlist-btn" class="hidden-xs wishlist-btn">
-      <div class="wishlist-number">45</div>
-    </button>
-    <div class="wishlist-items hidden">
-      <p class="wishlist-title">Your Wishlist
-        <span>(45)</span></p>
-      <span class="recently-added-title">My recently added items</span>
-      <div class="clearfix">
-          <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
-          <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
-          <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
-      </div>
-      <a href="" id="cart-wishlist-view-btn" class="btn view-wishlist-btn">View your wishlist</a>
-    </div>
-  </div>
-  <div class="footer">
-    <div id="footer" class="container">
-      <div class="row text-uppercase">
-        <div class="col-sm-2">
-          <div class="footer-col">
-            <ul>
-              <li class="footer-title hidden-xs">Customer Care</li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">Help</a></li>
-                <li><a href="">Shipping</a></li>
-                <li><a href="">Returns</a></li>
-                <li><a href="">Size Guide</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-2 hidden-xs">
-          <div class="footer-col">
-            <ul>
-              <li class="footer-title hidden-xs">About Us</li>
-                <li><a href="">Our Story</a></li>
-                <li><a href="">Careers</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-2 hidden-xs">
-          <div class="footer-col">
-            <ul>
-              <li class="footer-title hidden-xs">Shortcuts</li>
-                <li><a href="">My Account</a></li>
-                <li><a href="">Store Locator</a></li>
-                <li><a href="">Gift Cards</a></li>
-                <li><a href="">Payment</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-6 text-center newsletter-box">
-          <div class="row">
-            <div class="col-sm-5 text-left footer-title-yellow">
-              <p>Join our newsletter</p>
-            </div>
-            <div class="col-sm-7">
-              <form class="email-submit" action="">
-                <input id="cart-newsletter-input" class="email-box" type="text" placeholder="Your email ...">
-                <button id="cart-newsletter-button" type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">Subscribe</span></button>
-              </form>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-8 text-left card-info footer-title">
-              <p>Pay securely with these payment methods</p>
-              <img src="assets/img/cards.png" alt="payment types" class="img-responsive payment-cards">
-            </div>
-            <div class="col-sm-4 text-left card-info footer-title">
-              <p>Follow us</p>
-              <ul class="social-icons">
-                <a href=""><li><img class="social-icon" src="assets/img/Facebook.png" alt="facebook"></li></a>
-                <a href=""><li><img class="social-icon" src="assets/img/Pinterest.png" alt="pinterest"></li></a>
-                <a href=""><li><img class="social-icon" src="assets/img/Google.png" alt="google plus"></li></a>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="sub-footer">
-    <div class="container">
-      <div class="row text-uppercase">
-        <div class="col-sm-12">
-          <ul class="footer-title imprint-row">
-            <li class="hidden-xs">© 2015 Sunrise</li>
-              <li><a href="">Imprint</a></li>
-              <li><a href="">Privacy policy</a></li>
-              <li><a href="">Terms of use</a></li>
-            <li class="visible-xs">© 2015 Sunrise</li>
+</div>
+ <div class="footer">
+  <div id="footer" class="container">
+    <div class="row text-uppercase">
+      <div class="col-sm-2">
+        <div class="footer-col">
+          <ul>
+            <li class="footer-title hidden-xs">Customer Care</li>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">Help</a></li>
+              <li><a href="">Shipping</a></li>
+              <li><a href="">Returns</a></li>
+              <li><a href="">Size Guide</a></li>
           </ul>
         </div>
       </div>
+      <div class="col-sm-2 hidden-xs">
+        <div class="footer-col">
+          <ul>
+            <li class="footer-title hidden-xs">About Us</li>
+              <li><a href="">Our Story</a></li>
+              <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-2 hidden-xs">
+        <div class="footer-col">
+          <ul>
+            <li class="footer-title hidden-xs">Shortcuts</li>
+              <li><a href="">My Account</a></li>
+              <li><a href="">Store Locator</a></li>
+              <li><a href="">Gift Cards</a></li>
+              <li><a href="">Payment</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6 text-center newsletter-box">
+        <div class="row">
+          <div class="col-sm-5 text-left footer-title-yellow">
+            <p>Join our newsletter</p>
+          </div>
+          <div class="col-sm-7">
+            <form class="email-submit" action="">
+              <input id="cart-newsletter-input" class="email-box" type="text" placeholder="Your email ...">
+              <button id="cart-newsletter-button" type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">Subscribe</span></button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 text-left card-info footer-title">
+            <p>Pay securely with these payment methods</p>
+            <img src="assets/img/cards.png" alt="payment types" class="img-responsive payment-cards">
+          </div>
+          <div class="col-sm-4 text-left card-info footer-title">
+            <p>Follow us</p>
+            <ul class="social-icons">
+              <a href=""><li><img class="social-icon" src="assets/img/Facebook.png" alt="facebook"></li></a>
+              <a href=""><li><img class="social-icon" src="assets/img/Pinterest.png" alt="pinterest"></li></a>
+              <a href=""><li><img class="social-icon" src="assets/img/Google.png" alt="google plus"></li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="assets/js/jqzoom.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
-  <script src="assets/js/animatedModal.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
+</div>
+<div class="sub-footer">
+  <div class="container">
+    <div class="row text-uppercase">
+      <div class="col-sm-12">
+        <ul class="footer-title imprint-row">
+          <li class="hidden-xs">© 2015 Sunrise</li>
+            <li><a href="">Imprint</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms of use</a></li>
+          <li class="visible-xs">© 2015 Sunrise</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="assets/js/jqzoom.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
+<script src="assets/js/animatedModal.min.js"></script>
+<script src="assets/js/main.js"></script>
 
-</html>
+          </body>
+
+          </html>
