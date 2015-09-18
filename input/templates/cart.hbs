@@ -87,22 +87,21 @@
                           </div>
                           <div class="edit-section-form">
                             <select data-model="cartItem.color" class="selector checkout-dropdown">
-                              <option value="navy_blue">Navy Blue</option>
-                              <option value="beige">Beige</option>
+                              {{#each availableColors}}
+                                <option value="{{value}}">{{label}}</option>
+                              {{/each}}
                             </select>
                             <select data-model="cartItem.size" class="selector checkout-dropdown">
-                              <option value="xs">XS</option>
-                              <option value="s">S</option>
-                              <option value="m">M</option>
-                              <option value="l">L</option>
-                              <option value="xl">XL</option>
+                              {{#each availableSizes}}
+                                <option value="{{value}}">{{label}}</option>
+                              {{/each}}
                             </select>
                             <div class="actions text-right">
                               <button type="button" class="default-btn cancel-action">
-                                <span class="hidden-xs hidden-md hidden-lg">X</span>
-                                <span class="hidden-sm">Cancel</span>
+                                <span class="hidden-xs hidden-md hidden-lg">{{editWidgedCancelXs}}</span>
+                                <span class="hidden-sm">{{editWidgedCancel}}</span>
                               </button>
-                              <button type="button" class="action-btn update-action">Update</button>
+                              <button type="button" class="action-btn update-action">{{editWidgedUpdate}}</button>
                             </div>
                           </div>
                         </div>

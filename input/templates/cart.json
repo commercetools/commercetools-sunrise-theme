@@ -751,11 +751,46 @@
           "sku" : "Sunrise #SUN123456",
           "colorTitle" : "Color: ",
           "color" : "Navy Blue",
+		  "availableColors" : [
+			  {
+				  "label" : "Navy Blue",
+				  "value" : "navy_blue"
+			  },
+			  {
+				  "label" : "Beige",
+				  "value" : "beige"
+			  }
+		  ],
           "sizeTitle" : "Size: ",
           "size" : "M",
+		  "availableSizes" : [
+			  {
+				  "label" : "XS",
+				  "value" : "xs"
+			  },
+			  {
+				  "label" : "S",
+				  "value" : "s"
+			  },
+			  {
+				  "label" : "M",
+				  "value" : "m"
+			  },
+			  {
+				  "label" : "L",
+				  "value" : "l"
+			  },
+			  {
+				  "label" : "XL",
+				  "value" : "xl"
+			  }
+		  ],
           "available" : "Available",
           "edit" : "Edit",
 					"editId" : "cart-edit-button-one",
+		  "editWidgedCancel" : "Cancel",
+		  "editWidgedCancelXs" : "X",
+		  "editWidgedUpdate" : "Update",
           "delete" : "Delete",
 					"deleteId" : "cart-delete-button-one",
           "priceTitle" : "Price",
@@ -773,11 +808,46 @@
           "sku" : "Sunrise #SUN123456",
           "colorTitle" : "Color: ",
           "color" : "Navy Blue",
+		  "availableColors" : [
+			  {
+				  "label" : "Navy Blue",
+				  "value" : "navy_blue"
+			  },
+			  {
+				  "label" : "Beige",
+				  "value" : "beige"
+			  }
+		  ],
           "sizeTitle" : "Size: ",
           "size" : "M",
+		  "availableSizes" : [
+			  {
+				  "label" : "XS",
+				  "value" : "xs"
+			  },
+			  {
+				  "label" : "S",
+				  "value" : "s"
+			  },
+			  {
+				  "label" : "M",
+				  "value" : "m"
+			  },
+			  {
+				  "label" : "L",
+				  "value" : "l"
+			  },
+			  {
+				  "label" : "XL",
+				  "value" : "xl"
+			  }
+		  ],
           "available" : "Available",
           "edit" : "Edit",
 					"editId" : "cart-edit-button-two",
+		  "editWidgedCancel" : "Cancel",
+		  "editWidgedCancelXs" : "X",
+		  "editWidgedUpdate" : "Update",
           "delete" : "Delete",
 					"deleteId" : "cart-delete-button-two",
           "priceTitle" : "Price",
