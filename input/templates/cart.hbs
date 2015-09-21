@@ -70,19 +70,19 @@
                 </div>
                 <div class="col-sm-2 col-xs-12 cart-edit-delete">
                   <div class="edit-section-options">
-                    <div class="text-uppercase edit-delete-section">
-                      <a class="edit-action" id="{{editId}}" href="#">
+                    <div class="edit-delete-section">
+                      <button type="submit" class="edit-action" id="{{editId}}" href="#">
                         <span>
                           <img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}
                         </span>
-                      </a>
+                      </button type="submit">
                     </div>
-                    <div class="text-uppercase edit-delete-section">
-                      <a id="{{deleteId}}" href="#">
+                    <div class="edit-delete-section">
+                      <button type="submit" id="{{deleteId}}" href="#">
                         <span>
                           <img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}
                         </span>
-                      </a>
+                      </button type="submit">
                     </div>
                   </div>
                   <div class="edit-section-form">
@@ -105,13 +105,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-2 col-xs-12 sm-pull-right">
-                  <div class="quantity-spinner">
+                <div class="col-sm-2 col-xs-12 clearfix">
+                  <div class="sm-pull-right visible-xs">
+                    <button type="submit" id="{{cartQuantitySubmitBtnId}}" class="quantity-submit-btn">{{cartQuantitySubmitBtn}}</button>
+                  </div>
+                  <div class="sm-pull-right quantity-spinner">
                     <span id="{{cartQuantityDecrementId}}" class="input-number-decrement">–</span>
                     <input id="{{cartQuantityValueId}}" class="input-number" type="text" value="1" min="1" max="10">
                     <span id="{{cartQuantityIncrementId}}" class="input-number-increment">+</span>
                   </div>
-                  <div class="sm-pull-right">
+                  <div class="sm-pull-right hidden-xs">
                     <button type="submit" id="{{cartQuantitySubmitBtnId}}" class="quantity-submit-btn">{{cartQuantitySubmitBtn}}</button>
                   </div>
                 </div>
