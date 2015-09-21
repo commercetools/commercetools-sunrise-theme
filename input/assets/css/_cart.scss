@@ -8,10 +8,8 @@
   .edit-section-form {
     display: none;
   }
-  .single-cart-item {
-    .cart-edit-delete {
-      .edit-section-form {
-        select {
+  .single-cart-item {.cart-edit-delete {
+    .edit-section-form {select {
           margin-bottom: 10px;
           width: 100%;
           min-width: 100%;
@@ -49,7 +47,7 @@
 }
 .action-btn {
   background: $yellow;
-  border: none;
+  border: 1px solid $yellow;
   color: $black;
 }
 .checkout-now-btn {
@@ -114,6 +112,9 @@
     width: 100%;
     text-align: center;
   }
+  button {
+    text-transform: uppercase;
+  }
 }
 .cart-action-icon {
   height: 15px;
@@ -152,6 +153,14 @@
   cursor: pointer;
   &:active {
     background: $yellow;
+  }
+}
+.quantity-submit-btn {
+  background: $yellow;
+  margin-top: 10px;
+  font-size: 12px;
+  &:hover {
+    background: lighten($yellow, 5%);
   }
 }
 
@@ -244,7 +253,6 @@
   .cart-edit-delete {
     padding-left: 1em;
     .edit-section-form {
-      font-size: 0.8em;
       button {
         padding: 0.3em;
       }
@@ -272,6 +280,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .single-cart-item {
+    padding: 1em 0;
+  }
   .current-in-bag {
     text-align: center;
     padding: 2em 0 0;
@@ -297,6 +308,9 @@
     .edit-section-options {
       padding: 1em 0;
     }
+    .edit-section-form {
+      padding: 10px 15px;
+    }
     .edit-delete-section {
       display: inline;
       padding-right: 1em;
@@ -312,6 +326,10 @@
   .input-number-increment,
   .input-number-decrement {
     width: 25px;
+  }
+  .quantity-submit-btn {
+    margin: 1px 0 5px 10px;
+    padding: 11px 15px;
   }
   .cart-item-price {
     padding: 1em 0;
