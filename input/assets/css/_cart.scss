@@ -154,6 +154,14 @@
     background: $yellow;
   }
 }
+.quantity-submit-btn {
+  background: $yellow;
+  margin-top: 10px;
+  font-size: 12px;
+  &:hover {
+    background: lighten($yellow, 5%);
+  }
+}
 
 // Cart item price
 .cart-item-price {
