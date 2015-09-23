@@ -14,16 +14,20 @@
   height: 100%;
   background: rgba(42, 52, 63, 0.3);
   z-index: 3;
-  .alert-overlay-box {
-    background: $dark-blue;
-    border: 1px solid $white;
-    margin: 5% auto;
-    width: 200px; //FIXME: should not be a fixed width
-    min-height: 100px;
-    .alert-overlay-text {
-      text-align: center;
-      color: $white;
-      line-height: 100px;
+  .alert-wrapper {
+    width: 100%;
+    position: fixed;
+    .alert-box {
+      background: $dark-blue;
+      border: 1px solid $white;
+      margin: 5% auto;
+      width: 200px; //FIXME: should not be a fixed width
+      min-height: 100px;
+      .alert-text {
+        text-align: center;
+        color: $white;
+        line-height: 100px;
+      }
     }
   }
 }
