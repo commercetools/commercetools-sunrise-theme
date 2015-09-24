@@ -1,7 +1,7 @@
-
 .pdp-page {
   padding-bottom: 2em;
   background-color: $white;
+  position: relative;
   .bzoom_wrap {
     > .animated-modal-action {
       display: inline-block;
@@ -9,17 +9,16 @@
       height: 25px;
       transform: translateY(370px) translateX(300px);
     }
-
     > .animated-modal {
       background: $white;
       box-shadow: none;
-      .modal-content, .modal-header {
+      .modal-content,
+      .modal-header {
         background: $white;
         box-shadow: none;
         border: none;
         text-align: center;
       }
-
       .modal-content {
         height: 100%;
         border-radius: 0;
@@ -28,18 +27,15 @@
           height: 100%;
         }
       }
-
       .modal-header {
         padding: 15px 0;
       }
     }
   }
 }
-
 .product-info-row-pdp {
   padding-top: 1em;
 }
-
 .pdp-product-title {
   font-size: 1.6em;
 }
@@ -56,47 +52,40 @@
 
 // Star rating
 .rating {
-  float:left;
+  float: left;
 }
-
 .rating:not(:checked) > input {
-  position:absolute;
-  top:-9999px;
-  clip:rect(0,0,0,0);
+  position: absolute;
+  top: -9999px;
+  clip: rect(0,0,0,0);
 }
-
 .rating:not(:checked) > label {
-  float:right;
-  width:1em;
-  overflow:hidden;
-  white-space:nowrap;
-  cursor:pointer;
-  font-size:120%;
-  line-height:1.2;
-  color:$grey;
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 120%;
+  line-height: 1.2;
+  color: $grey;
 }
-
 .rating:not(:checked) > label:before {
   content: '★ ';
 }
-
 .rating > input:checked ~ label {
   color: $yellow;
 }
-
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
   color: $yellow;
 }
-
 .rating > label:active {
-  position:relative;
-  top:2px;
-  left:2px;
+  position: relative;
+  top: 2px;
+  left: 2px;
 }
 
 // Star ratings - review
-
 .star-rating-review {
   font-size: 0.9em;
   text-decoration: underline;
@@ -115,7 +104,6 @@
   text-decoration: underline;
   font-size: 0.9em;
 }
-
 .additional-description {
   display: none;
   font-size: 0.9em;
@@ -124,6 +112,7 @@
 // Product price
 .product-price {
   font-size: 2em;
+
   // @FIXME: Push this to a more general typography mixin-file
   .discounted-price {
     text-decoration: line-through;
@@ -155,12 +144,10 @@
 .select-row {
   padding: 0 0 0.5em 1em;
 }
-
 .size-guide-thumb {
   height: 30px;
   padding-right: 0.5em;
 }
-
 .size-guide {
   text-transform: uppercase;
   color: $dark-grey;
@@ -185,13 +172,12 @@
   margin-right: 10px;
   font-weight: 900;
   background: $yellow;
-  padding: 5px 30px 2px 30px;
+  padding: 5px 30px 2px;
   text-transform: uppercase;
   &:hover {
     background: lighten($yellow, 5%);
   }
 }
-
 .bag-thumb {
   height: 25px;
   margin: 0.5em 0.9em 0.7em 0;
@@ -214,12 +200,10 @@
 .glyphicon-ok-sign:before {
   padding-right: 1em;
 }
-
 .glyphicon-ok-sign {
   color: $green;
   font-size: 0.9em;
 }
-
 .availability {
   color: $dark-grey;
   font-size: 0.9em;
@@ -233,12 +217,10 @@
   border-top: 1px solid $grey;
   padding: 0.5em 0;
 }
-
 .panel-group {
   margin-bottom: 0;
   padding-bottom: 1em;
 }
-
 .panel-body-pdp {
   padding: 0.3em 0;
   ul {
@@ -248,16 +230,14 @@
     font-size: 16px;
   }
 }
-
 .accordion-plus {
   height: 1em;
   float: right;
   margin-right: 1em;
 }
-
 .accordion-minus {
-  opacity: .5;
-  content: url(../../assets/img/minus-1.png);
+  opacity: 0.5;
+  content: url("../../assets/img/minus-1.png");
 }
 
 // Social share
@@ -266,7 +246,6 @@
   color: $dark-grey;
   font-size: 0.8em;
 }
-
 .pdp-social-icons {
   padding: 0;
 }
@@ -275,14 +254,12 @@
 .pdp-page-review {
   background: $dirty-white;
 }
-
 .may-like {
   letter-spacing: 0.1em;
   font-size: 1.9em;
   padding: 1em 0;
   margin: 0;
 }
-
 .text-red {
   color: $red;
 }
@@ -294,36 +271,28 @@
   padding: 1em 0;
   margin: 0;
 }
-
 .reviews-col {
   padding: 0 2em;
 }
-
 .single-comment {
   padding: 2em 0;
   border-bottom: 1px solid $light-grey;
 }
-
 .rated-stars {
   padding-right: 1em;
 }
-
 .comment-user {
   padding-top: 0.3em;
 }
-
 .comment-date {
   padding-left: 0.5em;
 }
-
 .review-top-comment {
   font-weight: 900;
 }
-
 .review-comment {
   color: $dark-grey;
 }
-
 .write-review-btn {
   color: $grey;
   text-transform: uppercase;
@@ -333,7 +302,6 @@
   border: 2px solid $grey;
   margin: 1em 0 1em 1em;
 }
-
 .showmore-reviews-btn {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -343,7 +311,6 @@
 }
 
 /* Media Queries */
-
 @media screen and (max-width: 1200px) {
   .size-guide-li {
     padding-top: 1em;
