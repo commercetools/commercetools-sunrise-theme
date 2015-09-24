@@ -1,7 +1,9 @@
+.alert-overlay-wrapper {
+  position: relative;
+}
 .pdp-page {
   padding-bottom: 2em;
   background-color: $white;
-  position: relative;
   .bzoom_wrap {
     > .animated-modal-action {
       display: inline-block;
