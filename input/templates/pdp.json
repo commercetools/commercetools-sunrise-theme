@@ -736,6 +736,12 @@
     }
   },
   "content" : {
+    "messages" : {
+      "reachedMaximumAlert" : "You have reached the maximum quantity you can add to your bag",
+      "itemAddedToBagAlert" : "This item has been added to your bag",
+      "viewYourBagAlert" : "View your bag",
+      "addToWishlistAlert" : "Add to wishlist"
+    },
     "static": {
       "contentText" : "Products",
       "ratingText" : "Write first review",
