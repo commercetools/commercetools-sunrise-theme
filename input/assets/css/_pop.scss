@@ -5,6 +5,31 @@
 /*****************************************************************************/
 .pop-page {
   background: $dirty-white;
+  position: relative;
+}
+.pop-alert-overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 52, 63, 0.3);
+  z-index: 3;
+  .pop-alert-wrapper {
+    width: 100%;
+    position: fixed;
+    .pop-alert-box {
+      background: $dark-blue;
+      border: 1px solid $white;
+      margin: 10% auto;
+      width: 200px; //FIXME: should not be a fixed width
+      min-height: 100px;
+      .pop-alert-text {
+        text-align: center;
+        color: $white;
+        line-height: 100px;
+      }
+    }
+  }
 }
 #pop-page {
   text-transform: uppercase;
