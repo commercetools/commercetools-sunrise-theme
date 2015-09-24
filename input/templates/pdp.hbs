@@ -11,32 +11,29 @@
   <div class="pdp-page">
     <div id="pdp-page" class="container">
       <div class="row">
-          <div class="col-xs-12 breadcrumb-col">
-            {{> catalog/breadcrumb}}
-          </div>
+        <div class="col-xs-12 breadcrumb-col">
+          {{> catalog/breadcrumb}}
         </div>
-        <div class="row product-info-row-pdp">
-          <div class="col-md-4 col-md-offset-1 col-sm-6">
-            {{> catalog/gallery}}
-          </div>
-          <div class="col-sm-6 product-description">
-            {{> catalog/product-detail}}
-          </div>
+      </div>
+      <div class="row product-info-row-pdp">
+        <div class="col-md-4 col-md-offset-1 col-sm-6">
+          {{> catalog/gallery}}
         </div>
-     </div>
+        <div class="col-sm-6 product-description">
+          {{> catalog/product-detail}}
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="pdp-page-review">
     <div class="container">
       {{> catalog/suggestions}}
-      <hr class="hr">
-      {{> catalog/reviews}}
+      <hr class="hr"> {{> catalog/reviews}}
     </div>
   </div>
   {{> catalog/wishlist}}
-
   {{> common/footer}}
-
   {{> common/htmlscripts}}
 </body>
 
