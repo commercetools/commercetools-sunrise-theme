@@ -1,13 +1,13 @@
 .error {
-  border: 1px solid $red;
+  border: 1px solid $red!important; // FIXME: remove !important
   color: $black;
-  background: rgba(213, 77, 77, .2);
+  background: rgba(213, 77, 77, .2)!important; // FIXME: remove !important
 }
 .error-message {
   z-index: 1;
   position: absolute;
   color: $white;
-  background: rgba(213, 77, 77, .8);
+  background: rgba(213, 77, 77, .9);
   padding: 5px 10px;
   margin-top: 5px;
   font-size: 12px;
@@ -22,7 +22,7 @@
   	position: absolute;
   	pointer-events: none;
   	border-color: rgba(213, 23, 30, 0);
-  	border-bottom-color: rgba(213, 77, 77, .8);
+  	border-bottom-color: rgba(213, 77, 77, .9);
   	border-width: 11px;
   	margin-left: -11px;
   }

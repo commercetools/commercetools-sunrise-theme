@@ -45,7 +45,7 @@
     <li>
       <p class="text-uppercase">{{content.static.sizesText}}</p>
       <div>
-        <select id="{{content.static.sizeGuideId}}" class="select-product-detail">
+        <select id="{{content.static.sizeGuideId}}" class="select-product-detail error">
           <option id="{{content.static.sizeSelectFirstOptionId}}" value="{{content.static.sizeDefaultItem.id}}" {{#if content.static.sizeDefaultItem.selected}}selected{{/if}}>{{content.static.sizeDefaultItem.text}}</option>
           {{#each content.product.sizes}}
           <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
