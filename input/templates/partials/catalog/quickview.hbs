@@ -53,28 +53,24 @@
                 <li>
                   <p class="text-uppercase">{{content.static.colorText}}</p>
                   <div>
-                    <select class="select-product-detail error">
+                    <select class="select-product-detail">
                       {{#each colors}}
                       <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                       {{/each}}
                     </select>
                   </div>
-                  <div class="error-message">
-                    Choose your color
-                  </div>
+                  {{> catalog/error-message}}
                 </li>
                 <li>
                   <p class="text-uppercase">{{content.static.sizeText}}</p>
                   <div>
-                    <select class="select-product-detail error">
+                    <select class="select-product-detail">
                       {{#each sizes}}
                       <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                       {{/each}}
                     </select>
                   </div>
-                  <div class="error-message">
-                    Choose your size
-                  </div>
+                  {{> catalog/error-message}}
                 </li>
               </ul>
             </div>
