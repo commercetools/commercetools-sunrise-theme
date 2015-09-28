@@ -63,8 +63,9 @@
                     <div class="col-sm-12">
                       <div class="name-on-card">
                         <span class="text-uppercase">{{content.cardName}}*</span><br>
-                        <input id="payment-cardname-input" class="checkout-input-field" type="text">
+                        <input id="payment-cardname-input" class="checkout-input-field error" type="text">
                       </div>
+                      {{> catalog/error-message}}
                     </div>
                     <div class="col-sm-12">
                       <div class="card-number">

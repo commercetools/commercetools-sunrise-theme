@@ -4,6 +4,7 @@
   background: rgba(213, 77, 77, .2);
 }
 .error-message {
+  z-index: 1;
   position: absolute;
   color: $white;
   background: rgba(213, 77, 77, .8);
