@@ -16,12 +16,13 @@
   z-index: 3;
   .pop-alert-wrapper {
     width: 100%;
+    max-height: 50px;
     position: fixed;
     .pop-alert-box {
       background: $dark-blue;
       border: 1px solid $white;
       margin: 10% auto;
-      width: 200px; //FIXME: should not be a fixed width
+      max-width: 200px;
       min-height: 100px;
       .pop-alert-text {
         text-align: center;

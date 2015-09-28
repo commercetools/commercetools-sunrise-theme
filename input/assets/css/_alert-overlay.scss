@@ -7,17 +7,25 @@
   z-index: 3;
   .alert-wrapper {
     width: 100%;
+    max-height: 50px;
     position: fixed;
     .alert-box {
       background: $dark-blue;
       border: 1px solid $white;
       margin: 10% auto;
-      width: 200px; //FIXME: should not be a fixed width
+      max-width: 300px;
       min-height: 100px;
+      text-align: center;
+      color: $white;
+      padding: 20px;
       .alert-text {
-        text-align: center;
-        color: $white;
-        line-height: 100px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .alert-link {
+        padding-top: 20px;
+        text-decoration: underline;
+        text-transform: uppercase;
       }
     }
   }

@@ -8,9 +8,13 @@
 <body>
   <div class="darkbg hidden"></div>
   {{> common/header}}
-  <div class="pdp-page">
-    <div id="pdp-page" class="container">
-      <div class="row">
+  <div class="alert-overlay-wrapper">
+    <div class="hidden">
+      {{> catalog/alert-overlay}}
+    </div>
+    <div class="pdp-page">
+      <div class="container">
+        <div class="row">
           <div class="col-xs-12 breadcrumb-col">
             {{> catalog/breadcrumb}}
           </div>
@@ -23,20 +27,18 @@
             {{> catalog/product-detail}}
           </div>
         </div>
-     </div>
-  </div>
-
-  <div class="pdp-page-review">
-    <div class="container">
-      {{> catalog/suggestions}}
-      <hr class="hr">
-      {{> catalog/reviews}}
+      </div>
+    </div>
+    <div class="pdp-page-review">
+      <div class="container">
+        {{> catalog/suggestions}}
+        <hr class="hr">
+        {{> catalog/reviews}}
+      </div>
     </div>
   </div>
   {{> catalog/wishlist}}
-
   {{> common/footer}}
-
   {{> common/htmlscripts}}
 </body>
 

@@ -740,6 +740,9 @@
 		"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
 	},
 	"content" : {
+		"messages" : {
+			"pleaseWait" : "Please wait..."
+		},
 		"text" : "Women",
 		"banner" : {
 			"text" : "Women",
@@ -1282,8 +1285,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "2",
 					"text" : "Just one single line",
@@ -1458,8 +1461,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "3",
 					"text" : "Headline",
@@ -1633,8 +1636,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "4",
 					"text" : "Enditatem Product Name Optional very long line two",
@@ -1809,8 +1812,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "5",
 					"text" : "Just one single line",
@@ -1985,8 +1988,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "6",
 					"text" : "Headline",
@@ -2160,8 +2163,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "7",
 					"text" : "Enditatem Product Name Optional very long line two",
@@ -2336,8 +2339,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "8",
 					"text" : "Just one single line",
@@ -2512,8 +2515,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "9",
 					"text" : "Headline",
@@ -2687,8 +2690,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
 					}
+				}
 			]
 		},
 		"wishlistWidged" : {
@@ -2715,6 +2718,6 @@
 		}
 	},
 	"meta" : {
-	  "assetsPath": "assets/"
+		"assetsPath": "assets/"
 	}
 }
