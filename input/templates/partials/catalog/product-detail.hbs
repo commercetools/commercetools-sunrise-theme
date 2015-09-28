@@ -7,7 +7,7 @@
   <div class="col-sm-12">
     <fieldset class="rating">
       {{#each content.static.rating}}
-        <input type="radio" id="star{{value}}" name="rating" value="{{value}}" /><label for="star{{value}}" title="{{description}}">{{text}}</label>
+      <input type="radio" id="star{{value}}" name="rating" value="{{value}}" /><label for="star{{value}}" title="{{description}}">{{text}}</label>
       {{/each}}
     </fieldset>
     <span class="star-rating-review"><a href="{{content.product.rating.url}}">{{content.product.rating.text}}</a></span>
@@ -22,10 +22,10 @@
 <div class="row">
   <div class="col-sm-12">
     <p class="product-price">
-        {{#if content.product.priceOld}}
-            <span class="discounted-price">{{content.product.priceOld}}</span>
-        {{/if}}
-        <span>{{content.product.price}}</span>
+      {{#if content.product.priceOld}}
+      <span class="discounted-price">{{content.product.priceOld}}</span>
+      {{/if}}
+      <span>{{content.product.price}}</span>
     </p>
   </div>
 </div>
@@ -37,7 +37,7 @@
         <select id="{{content.static.colorSelectId}}" class="select-product-detail error">
           <option id="{{content.static.colorDefaultItem.id}}" value="{{content.static.colorDefaultItem.id}}" {{#if content.static.colorDefaultItem.selected}}selected{{/if}}>{{content.static.colorDefaultItem.text}}</option>
           {{#each content.product.colors}}
-            <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+          <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
           {{/each}}
         </select>
         <div class="error-message">
@@ -49,9 +49,9 @@
       <p class="text-uppercase">{{content.static.sizesText}}</p>
       <div>
         <select id="{{content.static.sizeGuideId}}" class="select-product-detail error">
-            <option id="{{content.static.sizeSelectFirstOptionId}}" value="{{content.static.sizeDefaultItem.id}}" {{#if content.static.sizeDefaultItem.selected}}selected{{/if}}>{{content.static.sizeDefaultItem.text}}</option>
-            {{#each content.product.sizes}}
-            <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+          <option id="{{content.static.sizeSelectFirstOptionId}}" value="{{content.static.sizeDefaultItem.id}}" {{#if content.static.sizeDefaultItem.selected}}selected{{/if}}>{{content.static.sizeDefaultItem.text}}</option>
+          {{#each content.product.sizes}}
+          <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
           {{/each}}
         </select>
         <div class="error-message">
@@ -69,13 +69,13 @@
     <li>
       <select id="{{content.static.bagItemsQuantity}}" class="bag-items">
         {{#each content.static.bagItems}}
-          <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+        <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
         {{/each}}
       </select>
     </li>
     <li>
       <button id="{{content.static.addToBagBtn}}" class="add-to-bag text-center">
-       <img class="bag-thumb" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="{{content.static.addToBagText}}">{{content.static.addToBagText}}
+        <img class="bag-thumb" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="{{content.static.addToBagText}}">{{content.static.addToBagText}}
       </button>
     </li>
     <li>
@@ -106,7 +106,7 @@
           <div class="panel-body panel-body-pdp">
             <ul>
               {{#each content.product.details}}
-                <li>{{text}}</li>
+              <li>{{text}}</li>
               {{/each}}
             </ul>
           </div>
