@@ -306,9 +306,24 @@
       </div>
     </div>
   </div>
-  <div class="pdp-page">
-    <div id="pdp-page" class="container">
-      <div class="row">
+  <div class="alert-overlay-wrapper">
+    <div class="hidden">
+      <div class="alert-overlay">
+        <div class="alert-wrapper">
+          <div class="alert-box">
+            <div class="alert-text">
+              You have reached the maximum quantity you can add to your bag
+            </div>
+            <div class="alert-link">
+              <a href="#">Add to wishlist</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pdp-page">
+      <div class="container">
+        <div class="row">
           <div class="col-xs-12 breadcrumb-col">
             <ol class="breadcrumb">
             		<li>
@@ -766,126 +781,140 @@
             </div>
           </div>
         </div>
-     </div>
-  </div>
-
-  <div class="pdp-page-review">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <p class="text-center text-uppercase may-like">You may also like</p>
-        </div>
       </div>
-      <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="">
-              <div class="shop-item">
-                <button type="button" class="heart-xs visible-xs">
-                  <span class="sr-only"></span>
-                </button>
-                <img class="pop-product-image" src="" alt="Enditatem Product Name Optional very long line two" width="200" />
-                <div class="pop-product-name">
-                  <span class="name-headline">Enditatem Product Name Optional very long line two</span>
-                  <span class="name-subline">Subline</span>
-                </div>
-                <div class="pop-item-price">
-                    <span>€ 49,-</span>
-                </div>
-                <div class="pop-product-more-colors">
-                  &nbsp;
-                </div>
-                <div class="shop-item-overlay hidden-xs">
-                  <button type="button" class="quickview" data-modal="quickview-modal-some-html-id"></button>
-                  <button type="button" class="heart">
+    </div>
+    <div class="pdp-page-review">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="text-center text-uppercase may-like">You may also like</p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="">
+                <div class="shop-item">
+                  <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only"></span>
                   </button>
-                </div>
-              </div>
-            </a>
-            <!-- Modal -->
-            <div class="modal fade" id="quickview-modal-some-html-id" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog modal-dialog-quickview" role="document">
-                <div class="modal-content quickview-modal">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
+                  <img class="pop-product-image" src="" alt="Enditatem Product Name Optional very long line two" width="200" />
+                  <div class="pop-product-name">
+                    <span class="name-headline">Enditatem Product Name Optional very long line two</span>
+                    <span class="name-subline">Subline</span>
                   </div>
-                  <div class="modal-body">
-                    <div class="row product-info-row-pdp">
-                      <div class="col-sm-4">
-                        <div class="bzoom_wrap">
-                          <ul id="bzoom">
-                          </ul>
+                  <div class="pop-item-price">
+                      <span>€ 49,-</span>
+                  </div>
+                  <div class="pop-product-more-colors">
+                    &nbsp;
+                  </div>
+                  <div class="shop-item-overlay hidden-xs">
+                    <button type="button" class="quickview" data-modal="quickview-modal-some-html-id"></button>
+                    <button type="button" class="heart">
+                      <span class="sr-only"></span>
+                    </button>
+                  </div>
+                </div>
+              </a>
+              <!-- Modal -->
+              <div class="modal fade" id="quickview-modal-some-html-id" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-dialog-quickview" role="document">
+                  <div class="modal-content quickview-modal">
+                    <div>
+                      <div class="alert-overlay">
+                        <div class="alert-wrapper">
+                          <div class="alert-box">
+                            <div class="alert-text">
+                              
+                            </div>
+                            <div class="alert-link">
+                              <a href="#"></a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-sm-6 col-sm-offset-2 product-description">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <p><h1 class="text-uppercase pdp-product-title">Enditatem Product Name Optional very long line two</h1><span class="grey-p quickview-sku">dasdasdad</span></p>
+                    </div>
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row product-info-row-pdp">
+                        <div class="col-sm-4">
+                          <div class="bzoom_wrap">
+                            <ul id="bzoom">
+                            </ul>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <fieldset class="rating">
-                            </fieldset>
-                            <span class="star-rating-review"><a href=""></a></span>
+                        <div class="col-sm-6 col-sm-offset-2 product-description">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p><h1 class="text-uppercase pdp-product-title">Enditatem Product Name Optional very long line two</h1><span class="grey-p quickview-sku">dasdasdad</span></p>
+                            </div>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <a href="#"><span class="view-details"></span></a>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <fieldset class="rating">
+                              </fieldset>
+                              <span class="star-rating-review"><a href=""></a></span>
+                            </div>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <p class="product-price">€ 49,-</p>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <a href="#"><span class="view-details"></span></a>
+                            </div>
                           </div>
-                        </div>
-                        <div class="row select-row">
-                          <ul class="list-inline">
-                            <li>
-                              <p class="text-uppercase"></p>
-                              <div>
-                                <select class="select-product-detail">
-                                    <option value="" >Red</option>
-                                    <option value="" >Blue</option>
-                                    <option value="" >Green</option>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p class="product-price">€ 49,-</p>
+                            </div>
+                          </div>
+                          <div class="row select-row">
+                            <ul class="list-inline">
+                              <li>
+                                <p class="text-uppercase"></p>
+                                <div>
+                                  <select class="select-product-detail">
+                                      <option value="" >Red</option>
+                                      <option value="" >Blue</option>
+                                      <option value="" >Green</option>
+                                  </select>
+                                </div>
+                              </li>
+                              <li>
+                                <p class="text-uppercase"></p>
+                                <div>
+                                  <select class="select-product-detail">
+                                      <option value="" >S</option>
+                                      <option value="" >M</option>
+                                      <option value="" >L</option>
+                                  </select>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="list-inline">
+                              <li>
+                                <select class="bag-items">
                                 </select>
-                              </div>
-                            </li>
-                            <li>
-                              <p class="text-uppercase"></p>
-                              <div>
-                                <select class="select-product-detail">
-                                    <option value="" >S</option>
-                                    <option value="" >M</option>
-                                    <option value="" >L</option>
-                                </select>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="row">
-                          <ul class="list-inline">
-                            <li>
-                              <select class="bag-items">
-                              </select>
-                            </li>
-                            <li>
-                              <button class="add-to-bag text-center">
-                               <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">
-                              </button>
-                            </li>
-                            <li>
-                              <button type="button" class="btn pdp-product-heart">
-                                <span class="sr-only"></span>
-                              </button>
-                            </li>
-                            <li>
-                              <div class="availability">
-                                <span class="glyphicon glyphicon-ok-sign"></span>
-                              </div>
-                            </li>
-                          </ul>
+                              </li>
+                              <li>
+                                <button class="add-to-bag text-center">
+                                 <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">
+                                </button>
+                              </li>
+                              <li>
+                                <button type="button" class="btn pdp-product-heart">
+                                  <span class="sr-only"></span>
+                                </button>
+                              </li>
+                              <li>
+                                <div class="availability">
+                                  <span class="glyphicon glyphicon-ok-sign"></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -893,116 +922,130 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <a href="">
-              <div class="shop-item">
-                <button type="button" class="heart-xs visible-xs">
-                  <span class="sr-only"></span>
-                </button>
-                <img class="pop-product-image" src="" alt="Enditatem Product Name Optional very long line two" width="200" />
-                <div class="pop-product-name">
-                  <span class="name-headline">Enditatem Product Name Optional very long line two</span>
-                  <span class="name-subline">Subline</span>
-                </div>
-                <div class="pop-item-price">
-                    <span>€ 49,-</span>
-                </div>
-                <div class="pop-product-more-colors">
-                  &nbsp;
-                </div>
-                <div class="shop-item-overlay hidden-xs">
-                  <button type="button" class="quickview" data-modal="quickview-modal-some-html-id"></button>
-                  <button type="button" class="heart">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <a href="">
+                <div class="shop-item">
+                  <button type="button" class="heart-xs visible-xs">
                     <span class="sr-only"></span>
                   </button>
-                </div>
-              </div>
-            </a>
-            <!-- Modal -->
-            <div class="modal fade" id="quickview-modal-some-html-id" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog modal-dialog-quickview" role="document">
-                <div class="modal-content quickview-modal">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
+                  <img class="pop-product-image" src="" alt="Enditatem Product Name Optional very long line two" width="200" />
+                  <div class="pop-product-name">
+                    <span class="name-headline">Enditatem Product Name Optional very long line two</span>
+                    <span class="name-subline">Subline</span>
                   </div>
-                  <div class="modal-body">
-                    <div class="row product-info-row-pdp">
-                      <div class="col-sm-4">
-                        <div class="bzoom_wrap">
-                          <ul id="bzoom">
-                          </ul>
+                  <div class="pop-item-price">
+                      <span>€ 49,-</span>
+                  </div>
+                  <div class="pop-product-more-colors">
+                    &nbsp;
+                  </div>
+                  <div class="shop-item-overlay hidden-xs">
+                    <button type="button" class="quickview" data-modal="quickview-modal-some-html-id"></button>
+                    <button type="button" class="heart">
+                      <span class="sr-only"></span>
+                    </button>
+                  </div>
+                </div>
+              </a>
+              <!-- Modal -->
+              <div class="modal fade" id="quickview-modal-some-html-id" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-dialog-quickview" role="document">
+                  <div class="modal-content quickview-modal">
+                    <div>
+                      <div class="alert-overlay">
+                        <div class="alert-wrapper">
+                          <div class="alert-box">
+                            <div class="alert-text">
+                              
+                            </div>
+                            <div class="alert-link">
+                              <a href="#"></a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-sm-6 col-sm-offset-2 product-description">
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <p><h1 class="text-uppercase pdp-product-title">Enditatem Product Name Optional very long line two</h1><span class="grey-p quickview-sku">dasdasdad</span></p>
+                    </div>
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row product-info-row-pdp">
+                        <div class="col-sm-4">
+                          <div class="bzoom_wrap">
+                            <ul id="bzoom">
+                            </ul>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <fieldset class="rating">
-                            </fieldset>
-                            <span class="star-rating-review"><a href=""></a></span>
+                        <div class="col-sm-6 col-sm-offset-2 product-description">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p><h1 class="text-uppercase pdp-product-title">Enditatem Product Name Optional very long line two</h1><span class="grey-p quickview-sku">dasdasdad</span></p>
+                            </div>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <a href="#"><span class="view-details"></span></a>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <fieldset class="rating">
+                              </fieldset>
+                              <span class="star-rating-review"><a href=""></a></span>
+                            </div>
                           </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-sm-12">
-                            <p class="product-price">€ 49,-</p>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <a href="#"><span class="view-details"></span></a>
+                            </div>
                           </div>
-                        </div>
-                        <div class="row select-row">
-                          <ul class="list-inline">
-                            <li>
-                              <p class="text-uppercase"></p>
-                              <div>
-                                <select class="select-product-detail">
-                                    <option value="" >Red</option>
-                                    <option value="" >Blue</option>
-                                    <option value="" >Green</option>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <p class="product-price">€ 49,-</p>
+                            </div>
+                          </div>
+                          <div class="row select-row">
+                            <ul class="list-inline">
+                              <li>
+                                <p class="text-uppercase"></p>
+                                <div>
+                                  <select class="select-product-detail">
+                                      <option value="" >Red</option>
+                                      <option value="" >Blue</option>
+                                      <option value="" >Green</option>
+                                  </select>
+                                </div>
+                              </li>
+                              <li>
+                                <p class="text-uppercase"></p>
+                                <div>
+                                  <select class="select-product-detail">
+                                      <option value="" >S</option>
+                                      <option value="" >M</option>
+                                      <option value="" >L</option>
+                                  </select>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="list-inline">
+                              <li>
+                                <select class="bag-items">
                                 </select>
-                              </div>
-                            </li>
-                            <li>
-                              <p class="text-uppercase"></p>
-                              <div>
-                                <select class="select-product-detail">
-                                    <option value="" >S</option>
-                                    <option value="" >M</option>
-                                    <option value="" >L</option>
-                                </select>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="row">
-                          <ul class="list-inline">
-                            <li>
-                              <select class="bag-items">
-                              </select>
-                            </li>
-                            <li>
-                              <button class="add-to-bag text-center">
-                               <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">
-                              </button>
-                            </li>
-                            <li>
-                              <button type="button" class="btn pdp-product-heart">
-                                <span class="sr-only"></span>
-                              </button>
-                            </li>
-                            <li>
-                              <div class="availability">
-                                <span class="glyphicon glyphicon-ok-sign"></span>
-                              </div>
-                            </li>
-                          </ul>
+                              </li>
+                              <li>
+                                <button class="add-to-bag text-center">
+                                 <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="">
+                                </button>
+                              </li>
+                              <li>
+                                <button type="button" class="btn pdp-product-heart">
+                                  <span class="sr-only"></span>
+                                </button>
+                              </li>
+                              <li>
+                                <div class="availability">
+                                  <span class="glyphicon glyphicon-ok-sign"></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1010,101 +1053,21 @@
                 </div>
               </div>
             </div>
-          </div>
-      </div>
-      <hr class="hr">
-      <div class="row">
-        <div class="col-sm-12">
-          <p class="text-uppercase text-center reviews-title"></p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 reviews-col">
-          <div class="row">
-            <div class="col-sm-12">
-              <div>1 - 5 of 51 Reviews</div>
-            </div>
+        <hr class="hr">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="text-uppercase text-center reviews-title"></p>
           </div>
-          <div class="single-comment hidden-xs">
+        </div>
+        <div class="row">
+          <div class="col-sm-12 reviews-col">
             <div class="row">
               <div class="col-sm-12">
-                <div class="review-rating">
-                  <fieldset class="rating rated-stars">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                  </fieldset>
-                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                </div>
+                <div>1 - 5 of 51 Reviews</div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-              </div>
-            </div>
-          </div>
-          <div class="single-comment hidden-xs">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="review-rating">
-                  <fieldset class="rating rated-stars">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                  </fieldset>
-                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-              </div>
-            </div>
-          </div>
-          <div class="single-comment hidden-xs">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="review-rating">
-                  <fieldset class="rating rated-stars">
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
-                  </fieldset>
-                  <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
-              </div>
-            </div>
-          </div>
-          <div class="reviews-mobile visible-xs">
-            <div class="single-comment">
+            <div class="single-comment hidden-xs">
               <div class="row">
                 <div class="col-sm-12">
                   <div class="review-rating">
@@ -1130,7 +1093,7 @@
                 </div>
               </div>
             </div>
-            <div class="single-comment">
+            <div class="single-comment hidden-xs">
               <div class="row">
                 <div class="col-sm-12">
                   <div class="review-rating">
@@ -1156,12 +1119,92 @@
                 </div>
               </div>
             </div>
+            <div class="single-comment hidden-xs">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="review-rating">
+                    <fieldset class="rating rated-stars">
+                      <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                      <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                      <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                      <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                      <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                    </fieldset>
+                    <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-mobile visible-xs">
+              <div class="single-comment">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="review-rating">
+                      <fieldset class="rating rated-stars">
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                      </fieldset>
+                      <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="single-comment">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="review-rating">
+                      <fieldset class="rating rated-stars">
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+                      </fieldset>
+                      <p class="text-uppercase comment-user">John Smith<span class="grey-p comment-date"> 2 days ago</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="h4 review-top-comment">Lorem borem forem dorem morem</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="review-comment">Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom, Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom Boom boom boom.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <button type="button" class="btn write-review-btn">Write Review</button>
-        <button type="button" class="btn hidden-xs showmore-reviews-btn">Show More Reviews</button>
+        <div>
+          <button type="button" class="btn write-review-btn">Write Review</button>
+          <button type="button" class="btn hidden-xs showmore-reviews-btn">Show More Reviews</button>
+        </div>
       </div>
     </div>
   </div>
@@ -1181,7 +1224,6 @@
       <a href="" id="pdp-wishlist-view-btn" class="btn view-wishlist-btn">View your wishlist</a>
     </div>
   </div>
-
   <div class="footer">
     <div id="footer" class="container">
       <div class="row text-uppercase">
@@ -1262,7 +1304,6 @@
       </div>
     </div>
   </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
