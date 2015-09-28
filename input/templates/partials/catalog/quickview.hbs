@@ -2,6 +2,9 @@
 <div class="modal fade" id="quickview-modal-{{id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-dialog-quickview" role="document">
     <div class="modal-content quickview-modal">
+      <div>
+        {{> catalog/alert-overlay}} 
+      </div>
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="{{context.meta.assetsPath}}img/close.png" alt="close modal" /></span></button>
       </div>
