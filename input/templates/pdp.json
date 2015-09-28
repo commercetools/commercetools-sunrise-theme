@@ -742,6 +742,22 @@
       "viewYourBagAlert" : "View your bag",
       "addToWishlistAlert" : "Add to wishlist"
     },
+    "error" : [
+      {
+        "name" : "colorSelect",
+        "message" : "",
+        "fields" : [
+            {
+                "name" : "size",
+                "message" : "Choose your color"
+            },
+            {
+                "name" : "color",
+                "message" : "Choose your color"
+            }
+        ]
+      }
+    ],
     "static": {
       "contentText" : "Products",
       "ratingText" : "Write first review",
