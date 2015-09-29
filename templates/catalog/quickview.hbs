@@ -3,7 +3,7 @@
   <div class="modal-dialog modal-dialog-quickview" role="document">
     <div class="modal-content quickview-modal">
       <div>
-        {{> catalog/alert-overlay}} 
+        {{> catalog/alert-overlay}}
       </div>
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="{{context.meta.assetsPath}}img/close.png" alt="close modal" /></span></button>
@@ -14,10 +14,10 @@
             <div class="bzoom_wrap">
               <ul id="bzoom">
                 {{#each images}}
-                  <li>
-                    <img class="bzoom_thumb_image" src="{{thumbImage}}">
-                    <img class="bzoom_big_image" src="{{bigImage}}">
-                  </li>
+                <li>
+                  <img class="bzoom_thumb_image" src="{{thumbImage}}">
+                  <img class="bzoom_big_image" src="{{bigImage}}">
+                </li>
                 {{/each}}
               </ul>
             </div>
@@ -32,7 +32,7 @@
               <div class="col-sm-12">
                 <fieldset class="rating">
                   {{#each content.static.rating}}
-                    <input type="radio" id="star{{value}}" name="rating" value="{{value}}" /><label for="star{{value}}" title="{{description}}">{{text}}</label>
+                  <input type="radio" id="star{{value}}" name="rating" value="{{value}}" /><label for="star{{value}}" title="{{description}}">{{text}}</label>
                   {{/each}}
                 </fieldset>
                 <span class="star-rating-review"><a href="{{rating.url}}">{{rating.text}}</a></span>
@@ -55,7 +55,7 @@
                   <div>
                     <select class="select-product-detail">
                       {{#each colors}}
-                        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+                      <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                       {{/each}}
                     </select>
                   </div>
@@ -63,12 +63,13 @@
                 <li>
                   <p class="text-uppercase">{{content.static.sizeText}}</p>
                   <div>
-                    <select class="select-product-detail">
+                    <select class="select-product-detail error">
                       {{#each sizes}}
-                        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+                      <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                       {{/each}}
                     </select>
                   </div>
+                  {{> catalog/error-message}}
                 </li>
               </ul>
             </div>
@@ -77,13 +78,13 @@
                 <li>
                   <select class="bag-items">
                     {{#each content.static.bagItems}}
-                      <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+                    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                     {{/each}}
                   </select>
                 </li>
                 <li>
                   <button class="add-to-bag text-center">
-                   <img class="bag-thumb" src="{{context.meta.assetsPath}}img/hand-bag-2-black.png" alt="{{content.static.addToBagText}}">{{content.static.addToBagText}}
+                    <img class="bag-thumb" src="{{context.meta.assetsPath}}img/hand-bag-2-black.png" alt="{{content.static.addToBagText}}">{{content.static.addToBagText}}
                   </button>
                 </li>
                 <li>

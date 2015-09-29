@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {{> common/htmlhead}}
-  </head>
+<head>
+  {{> common/htmlhead}}
+</head>
 
-  <body>
+<body>
   {{> common/checkout-header}}
   <div class="checkout-shipping">
     <div class="container">
@@ -50,12 +50,12 @@
                 </div>
                 <div class="row">
                   {{#each content.paymentOption.list}}
-                    <div class="col-lg-3 col-md-4 col-sm-4">
-                      <div class="payment-type">
-                        {{#if image}}<img src="{{image}}" class="payment-type-icon" alt="{{text}}">{{/if}}<br>
-                        <input id="{{id}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}
-                      </div>
+                  <div class="col-lg-3 col-md-4 col-sm-4">
+                    <div class="payment-type">
+                      {{#if image}}<img src="{{image}}" class="payment-type-icon" alt="{{text}}">{{/if}}<br>
+                      <input id="{{id}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}
                     </div>
+                  </div>
                   {{/each}}
                 </div>
                 <div class="row" id="credit-card-input-field">
@@ -63,8 +63,9 @@
                     <div class="col-sm-12">
                       <div class="name-on-card">
                         <span class="text-uppercase">{{content.cardName}}*</span><br>
-                        <input id="payment-cardname-input" class="checkout-input-field" type="text">
+                        <input id="payment-cardname-input" class="checkout-input-field error" type="text">
                       </div>
+                      {{> catalog/error-message}}
                     </div>
                     <div class="col-sm-12">
                       <div class="card-number">
@@ -77,7 +78,7 @@
                         <span class="text-uppercase">{{content.expiryDateTitle}}*</span><br>
                         <select id="payment-expirymonth-select" class="checkout-dropdown">
                           {{#each content.expiryDate.list}}
-                            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+                          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                           {{/each}}
                         </select>
                       </div>
@@ -87,7 +88,7 @@
                         <br>
                         <select id="payment-expiryyear-select" class="checkout-dropdown">
                           {{#each content.year.list}}
-                            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+                          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                           {{/each}}
                         </select>
                       </div>
@@ -132,5 +133,5 @@
   </div>
   {{> common/checkout-footer}}
   {{> common/htmlscripts}}
-  </body>
+</body>
 </html>

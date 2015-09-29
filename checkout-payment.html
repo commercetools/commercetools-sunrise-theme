@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="assets/img/favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-    <link href="assets/css/main.min.css" rel="stylesheet">
-    <title>Sunrise - Checkout Payment Page</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+  <link href="assets/css/main.min.css" rel="stylesheet">
+  <title>Sunrise - Checkout Payment Page</title>
+</head>
 
-  <body>
+<body>
   <div class="checkout-header">
     <div class="container">
       <div class="row">
@@ -78,31 +78,34 @@
                   </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-4">
-                      <div class="payment-type">
-                        <img src="assets/img/payment-option-card.gif" class="payment-type-icon" alt="Credit Card"><br>
-                        <input id="payment-type-credit-card" class="payment-text" type="radio" name="payment" value="" >Credit Card
-                      </div>
+                  <div class="col-lg-3 col-md-4 col-sm-4">
+                    <div class="payment-type">
+                      <img src="assets/img/payment-option-card.gif" class="payment-type-icon" alt="Credit Card"><br>
+                      <input id="payment-type-credit-card" class="payment-text" type="radio" name="payment" value="" >Credit Card
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4">
-                      <div class="payment-type">
-                        <img src="assets/img/payment-option-paypal.png" class="payment-type-icon" alt="PayPal"><br>
-                        <input id="payment-type-paypal" class="payment-text" type="radio" name="payment" value="" >PayPal
-                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-4">
+                    <div class="payment-type">
+                      <img src="assets/img/payment-option-paypal.png" class="payment-type-icon" alt="PayPal"><br>
+                      <input id="payment-type-paypal" class="payment-text" type="radio" name="payment" value="" >PayPal
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-4">
-                      <div class="payment-type">
-                        <img src="assets/img/blank-img.jpg" class="payment-type-icon" alt="Pre-payment"><br>
-                        <input id="payment-type-pre-payment" class="payment-text" type="radio" name="payment" value="" >Pre-payment
-                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-4">
+                    <div class="payment-type">
+                      <img src="assets/img/blank-img.jpg" class="payment-type-icon" alt="Pre-payment"><br>
+                      <input id="payment-type-pre-payment" class="payment-text" type="radio" name="payment" value="" >Pre-payment
                     </div>
+                  </div>
                 </div>
                 <div class="row" id="credit-card-input-field">
                   <div class="col-md-6 col-sm-8">
                     <div class="col-sm-12">
                       <div class="name-on-card">
                         <span class="text-uppercase">Name on credit card*</span><br>
-                        <input id="payment-cardname-input" class="checkout-input-field" type="text">
+                        <input id="payment-cardname-input" class="checkout-input-field error" type="text">
+                      </div>
+                      <div class="error-message">
+                        This is an error message
                       </div>
                     </div>
                     <div class="col-sm-12">
@@ -115,19 +118,19 @@
                       <div class="expiry-date">
                         <span class="text-uppercase">Expiry data*</span><br>
                         <select id="payment-expirymonth-select" class="checkout-dropdown">
-                            <option value="" selected>Month</option>
-                            <option value="" >January</option>
-                            <option value="" >February</option>
-                            <option value="" >March</option>
-                            <option value="" >April</option>
-                            <option value="" >May</option>
-                            <option value="" >June</option>
-                            <option value="" >July</option>
-                            <option value="" >August</option>
-                            <option value="" >September</option>
-                            <option value="" >October</option>
-                            <option value="" >November</option>
-                            <option value="" >December</option>
+                          <option value="" selected>Month</option>
+                          <option value="" >January</option>
+                          <option value="" >February</option>
+                          <option value="" >March</option>
+                          <option value="" >April</option>
+                          <option value="" >May</option>
+                          <option value="" >June</option>
+                          <option value="" >July</option>
+                          <option value="" >August</option>
+                          <option value="" >September</option>
+                          <option value="" >October</option>
+                          <option value="" >November</option>
+                          <option value="" >December</option>
                         </select>
                       </div>
                     </div>
@@ -135,9 +138,9 @@
                       <div class="expiry-year">
                         <br>
                         <select id="payment-expiryyear-select" class="checkout-dropdown">
-                            <option value="" selected>Year</option>
-                            <option value="" >2050</option>
-                            <option value="" >2100</option>
+                          <option value="" selected>Year</option>
+                          <option value="" >2050</option>
+                          <option value="" >2100</option>
                         </select>
                       </div>
                     </div>
@@ -405,5 +408,5 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
   <script src="assets/js/animatedModal.min.js"></script>
   <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>
