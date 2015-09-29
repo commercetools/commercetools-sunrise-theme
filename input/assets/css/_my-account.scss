@@ -1,0 +1,20 @@
+.my-account-page {
+  height: 2000px; //FIXME: for dev purposes only
+}
+
+.my-account-page-title {
+  padding: 20px 0;
+  .my-account-page-title-icon {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .my-account-page-title-text {
+    font-size: 21px;
+    padding-left: 10px;
+  }
+}
+.my-account-page-content {
+  background: $white;
+  border: 1px solid $light-grey;
+  padding: 10px;
+}

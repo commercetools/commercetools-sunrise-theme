@@ -9,7 +9,31 @@
   <div class="darkbg hidden"></div>
   {{> common/header}}
   <div class="my-account-page">
-    Test
+    <div class="container">
+      <div class="my-account-page-title">
+        <img src="{{meta.assetsPath}}/img/user-2.png" class="my-account-page-title-icon" alt="Profile Icon" />
+        <span class="my-account-page-title-text">MY ACCOUNT</span>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          <div class="my-account-page-content">
+            <div class="row">
+              <div class="col-md-3">
+                Sidebar
+              </div>
+              <div class="col-md-9">
+                Content
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="my-account-page-banners">
+            Banners
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   {{> catalog/wishlist}}
   {{> common/footer}}

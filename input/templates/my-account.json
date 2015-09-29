@@ -740,37 +740,5 @@
   },
   "meta" : {
 	"assetsPath": "assets/"
-  },
-  "options": {
-	"size": [
-	  {
-		"code": "xs",
-		"name": "XS"
-	  },
-	  {
-		"code": "s",
-		"name": "S"
-	  },
-	  {
-		"code": "m",
-		"name": "M"
-	  },
-	  {
-		"code": "l",
-		"name": "L"
-	  }, {
-		"code": "xl",
-		"name": "XL"
-	  }
-	],
-	"color": [
-	  {
-		"code": "navy_blue",
-		"name": "Navy Blue"
-	  }, {
-		"code": "beige",
-		"name": "Beige"
-	  }
-	]
   }
 }
