@@ -32,6 +32,9 @@
     &:last-child {
       border-bottom: 1px solid $light-grey;
     }
+    &:hover {
+      background: $lighter-grey;
+    }
   }
   .active {
     background: $lighter-grey;
@@ -122,3 +125,5 @@
     margin-right: 5px;
   }
 }
+
+// Personal details editable content
