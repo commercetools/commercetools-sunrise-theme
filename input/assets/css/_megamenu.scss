@@ -190,7 +190,7 @@
     height: 15px;
     opacity: .5;
     float: right;
-    content: url(../../assets/img/minus-1.png);
+    content: url(../img/minus-1.png);
   }
 
   .nav-accordion {
@@ -267,7 +267,7 @@
         }
         .location-select {
           color: $white;
-          background: $dark-blue url("../../assets/img/arrow-67-white.png") no-repeat 90% 50%;
+          background: $dark-blue url("../img/arrow-67-white.png") no-repeat 90% 50%;
           background-size: 10px;
           padding-right: 30px;
           text-transform: capitalize;

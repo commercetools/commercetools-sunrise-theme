@@ -63,7 +63,7 @@
   color: $grey;
 }
 .checkout-dropdown {
-  background: url("../../assets/img/arrow-67-filled.png") no-repeat 90% 50% $white;
+  background: url("../img/arrow-67-filled.png") no-repeat 90% 50% $white;
   background-size: 12px;
   width: 100%;
   border: 1px solid $light-grey;
@@ -147,14 +147,14 @@
 }
 .checkout-checkout-btn {
   width: 100%;
-  background: url("../../assets/img/arrow-66.png") no-repeat 95% 13px $yellow;
+  background: url("../img/arrow-66.png") no-repeat 95% 13px $yellow;
   background-size: 15px;
   border: none;
   margin: 1em;
   padding: 0.5em 0;
   font-size: 1.2em;
   &:hover {
-    background: url("../../assets/img/arrow-66.png") no-repeat 95% 13px lighten($yellow, 5%);
+    background: url("../img/arrow-66.png") no-repeat 95% 13px lighten($yellow, 5%);
     background-size: 15px;
   }
 }
