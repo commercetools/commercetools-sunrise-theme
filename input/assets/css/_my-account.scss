@@ -32,3 +32,38 @@
     background: $lighter-grey;
   }
 }
+.banner-one {
+  min-height: 100px;
+  background: $dark-blue;
+  padding: 30px 10px;
+  text-transform: uppercase;
+  .banner-one-title {
+    color: $white;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .banner-hr {
+    width: 50px;
+    background: $white;
+    margin: 5px auto;
+  }
+  .banner-one-subtitle {
+    color: $white;
+    text-align: center;
+    font-size: 12px;
+  }
+  .banner-one-btn-wrapper {
+    margin-top: 15px;
+    text-align: center;
+    .banner-one-btn {
+      background: $yellow;
+      text-align: center;
+      padding: 8px 12px;
+      letter-spacing: 1px;
+      &:hover {
+        background: lighten($yellow, 5%);
+      }
+    }
+  }
+}
