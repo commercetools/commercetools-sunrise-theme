@@ -29,6 +29,7 @@
   .my-account-sidebar-items {
     padding: 10px;
     border-top: 1px solid $light-grey;
+    text-transform: uppercase;
     &:last-child {
       border-bottom: 1px solid $light-grey;
     }
@@ -51,6 +52,7 @@
   padding: 0 3px;
   color: $white;
   float: right;
+  font-size: 13px;
 }
 
 // Banners
@@ -140,11 +142,20 @@
   text-transform: none;
   font-size: 14px;
 }
-.personal-details-box-edit {
-  position: relative;
+.select-input {
+  background: url("../img/arrow-67-filled.png") no-repeat 90% 50% $white;
+  background-size: 12px;
+  border: 1px solid $light-grey;
+  border-radius: 1px;
+  padding: 0.5em 3em 0.5em 0.5em;
+  margin-top: 0.2em;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
 }
 .form-labels {
   text-transform: uppercase;
+  font-size: 12px;
 }
 .form-inputs {
   width: 100%;
@@ -154,9 +165,43 @@
   margin-top: 0.2em;
 }
 .form-sections {
-  margin: 10px 0;
+  padding-top: 15px;;
 }
 .form-notes {
   font-size: 12px;
   color: $dark-grey;
+}
+.personal-details-newsletter {
+  margin-bottom: 30px;
+  input {
+    margin-right: 5px;
+  }
+  a {
+    color: $dark-grey;
+    text-decoration: underline;
+  }
+}
+.personal-details-edit-btn {
+  .update-btn {
+    text-transform: uppercase;
+    background: $yellow;
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 15px;
+    &:hover {
+      background: lighten($yellow, 5%);
+    }
+  }
+  .cancel-btn {
+    border: 2px solid $grey;
+    color: $grey;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &:hover {
+      background: $grey;
+      color: $white;
+    }
+  }
 }
