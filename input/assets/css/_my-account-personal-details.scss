@@ -126,4 +126,37 @@
   }
 }
 
+// Helper classes
+.no-left-padding {
+  padding-left: 0;
+}
+.no-right-padding {
+  padding-right: 0;
+}
+
 // Personal details editable content
+.required-text {
+  color: $dark-grey;
+  text-transform: none;
+  font-size: 14px;
+}
+.personal-details-box-edit {
+  position: relative;
+}
+.form-labels {
+  text-transform: uppercase;
+}
+.form-inputs {
+  width: 100%;
+  border: 1px solid #D6D6D6;
+  border-radius: 1px;
+  padding: 0.5em;
+  margin-top: 0.2em;
+}
+.form-sections {
+  margin: 10px 0;
+}
+.form-notes {
+  font-size: 12px;
+  color: $dark-grey;
+}
