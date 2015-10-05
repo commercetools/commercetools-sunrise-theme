@@ -735,10 +735,97 @@
 			]
 		}
 	},
-  "content" : {
-
-  },
-  "meta" : {
-	"assetsPath": "assets/"
-  }
+	"content" : {
+		"pageTitle" : "My Account",
+		"sidebarItemOne" : {
+			"text" : "Personal Details",
+			"url" : ""
+		},
+		"sidebarItemTwo" : {
+			"text" : "Address Book",
+			"url" : ""
+		},
+		"sidebarItemThree" : {
+			"text" : "Payment Details",
+			"url" : ""
+		},
+		"sidebarItemFour" : {
+			"text" : "My Orders",
+			"url" : ""
+		},
+		"sidebarItemFive" : {
+			"text" : "Returns / Exchange",
+			"url" : ""
+		},
+		"sidebarItemSix" : {
+			"text" : "Wishlist",
+			"url" : "",
+			"wishlistItems" : "12"
+		},
+		"sidebarItemSeven" : {
+			"text" : "Sign Out",
+			"url" : ""
+		},
+		"welcomeName" : "Welcome back Bruce Wayne",
+		"welcomeDescription" : "for an even better customer service please provide your customer number:",
+		"customerNumber" : "1010101069691010",
+		"personalDetailsTitle" : "Your Personal Details",
+		"personalDetailsRequired" : "Required",
+		"personalDetails" : {
+			"name" : "Mr. Bruce Wayne",
+			"password" : "Password: ********",
+			"phone" : "Phone: +49 123 123 123 123",
+			"email" : "batman@gotham.com",
+			"subscribed" : "Subscribed to weekly newsletter",
+			"editBtn" : "Edit"
+		},
+		"editPersonalDetails" : {
+			"title" : "Title",
+			"titleOptions" : [
+				{
+					"text" : "Choose your title",
+					"value" : "choose your title",
+					"disabled" : true,
+					"selected" : true
+				},
+				{
+					"text" : "Mr.",
+					"value" : "mr",
+					"selected" : false
+				},
+				{
+					"text" : "Mrs.",
+					"value" : "mrs",
+					"selected" : false
+				}
+			],
+			"firstName" : "First Name",
+			"password" : "Password",
+			"primaryPhone" : "Primary Telephone Number",
+			"formNotesOne" : "Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla",
+			"secondName" : "Second Name",
+			"confirmPassword" : "Confirm Password",
+			"email" : "Email Address",
+			"formNotesTwo" : "Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla"
+		},
+		"addMeTo" : "Please add me to the",
+		"newsletter" : "SUNRISE Newsletter",
+		"updateBtn" : "Update Details",
+		"cancelBtn" : "Cancel",
+		"bannerOne" : {
+			"title" : "Your Sunrise",
+			"subTitle" : "Make the great days happen",
+			"button" : "Shop All",
+			"url" : ""
+		},
+		"bannerTwo" : {
+			"title" : "Your Sunrise",
+			"subTitle" : "Make the great days happen",
+			"button" : "Shop All",
+			"url" : ""
+		}
+	},
+	"meta" : {
+		"assetsPath": "assets/"
+	}
 }
