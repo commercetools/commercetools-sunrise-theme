@@ -164,7 +164,7 @@
   color: $dark-grey;
 }
 .personal-details-newsletter {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   input {
     margin-right: 5px;
   }
@@ -196,4 +196,7 @@
       color: $white;
     }
   }
+}
+.light-grey-hr {
+  border-top: 1px solid $light-grey;
 }
