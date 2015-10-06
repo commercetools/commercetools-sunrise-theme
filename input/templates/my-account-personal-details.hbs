@@ -22,6 +22,94 @@
                   <div class="my-account-sidebar-items active">
                     <a href="{{content.sidebarItemOne.url}}">{{content.sidebarItemOne.text}}</a>
                   </div>
+                  <div class="personal-details visible-xs">
+                    <div class="personal-details-text-one">
+                      {{content.welcomeName}}
+                    </div>
+                    <div class="personal-details-text-two">
+                      {{content.welcomeDescription}}<br>
+                      <span class="customer-number">{{content.customerNumber}}</span>
+                    </div>
+                    <div class="personal-details-landing-wrapper">
+                      <div class="personal-details-title">
+                        {{content.personalDetailsTitle}}
+                      </div>
+                      <div class="personal-details-box">
+                        <div>{{content.personalDetails.name}}</div>
+                        <div>{{content.personalDetails.password}}</div><br>
+                        <div>{{content.personalDetails.phone}}</div>
+                        <div>{{content.personalDetails.email}}</div><br>
+                        <div>{{content.personalDetails.subscribed}}</div>
+                        <div class="personal-details-box-edit">
+                          <button id="personal-details-edit-btn"><img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">{{content.personalDetails.editBtn}}</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="personal-details-edit-wrapper">
+                      <div class="personal-details-title">
+                        <span>{{content.personalDetailsTitle}}</span>
+                        <span class="pull-right required-text">{{content.personalDetailsRequired}}*</span>
+                      </div>
+                      <form action="">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="form-sections">
+                              <span class="form-labels">{{content.editPersonalDetails.title}}</span><br>
+                              <select class="select-input" name="" id="">
+                                {{#each content.editPersonalDetails.titleOptions}}
+                                  <option value="{{value}}" {{#if disabled}}disabled{{/if}} {{#if selected}}selected{{/if}}>{{text}}</option>
+                                {{/each}}
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="form-sections">
+                              <span class="form-labels">{{content.editPersonalDetails.firstName}}*</span><br>
+                              <input class="form-inputs" type="text">
+                            </div>
+                            <div class="form-sections">
+                              <span class="form-labels">{{content.editPersonalDetails.password}}*</span><br>
+                              <input class="form-inputs" type="text">
+                            </div>
+                            <div class="form-sections">
+                              <span class="form-labels">{{content.editPersonalDetails.primaryPhone}}*</span><br>
+                              <input class="form-inputs" type="text"><br>
+                              <span class="form-notes">{{content.editPersonalDetails.formNotesOne}}</span>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="form-sections">
+                              <span class="form-labels">{{content.editPersonalDetails.secondName}}*</span><br>
+                              <input class="form-inputs" type="text">
+                            </div>
+                            <div class="form-sections">
+                              <span class="form-labels">{{content.editPersonalDetails.confirmPassword}}*</span><br>
+                              <input class="form-inputs" type="text">
+                            </div>
+                            <div class="form-sections">
+                              <span class="form-labels">{{content.editPersonalDetails.email}}*</span><br>
+                              <input class="form-inputs" type="text"><br>
+                              <span class="form-notes">{{content.editPersonalDetails.formNotesTwo}}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <hr class="light-grey-hr">
+                      <div class="personal-details-newsletter">
+                        <span>
+                          <input type="checkbox">{{content.addMeTo}} <a href="">{{content.newsletter}}</a>
+                        </span>
+                      </div>
+                      <div class="personal-details-edit-btn">
+                        <span>
+                          <button class="update-btn">{{content.updateBtn}}</button>
+                          <button class="cancel-btn">{{content.cancelBtn}}</button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                   <div class="my-account-sidebar-items">
                     <a href="{{content.sidebarItemTwo.url}}">{{content.sidebarItemTwo.text}}</a>
                   </div>

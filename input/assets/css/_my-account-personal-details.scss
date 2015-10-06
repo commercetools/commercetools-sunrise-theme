@@ -128,6 +128,11 @@
     margin-right: 5px;
   }
 }
+.personal-details {
+  @media screen and (max-width: 767px) {
+    padding: 20px 0;
+  }
+}
 
 // Personal details editable content
 .required-text {
