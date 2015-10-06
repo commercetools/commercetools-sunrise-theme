@@ -49,65 +49,65 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="address-book-title">
-                        Address Book
+                        {{content.contentTitle}}
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="box-addresses-title">
-                        Default Addresses
+                        {{content.defaultAddressesTitle}}
                       </div>
                       <div class="address-book-dark-box">
-                        <div class="address-book-dark-box-title">Shipping Address</div>
-                        <div>Batman Robin</div>
-                        <div>100 Gotham Street</div>
-                        <div>Region</div>
-                        <div>01000</div>
-                        <div>Wonderland</div>
+                        <div class="address-book-dark-box-title">{{content.shippingAddress.title}}</div>
+                        <div>{{content.shippingAddress.name}}</div>
+                        <div>{{content.shippingAddress.address}}</div>
+                        <div>{{content.shippingAddress.region}}</div>
+                        <div>{{content.shippingAddress.postalCode}}</div>
+                        <div>{{content.shippingAddress.country}}</div>
                         <div class="address-box-edit-btn">
-                          <button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">Edit</button>
+                          <button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">{{content.shippingAddress.edit}}</button>
                         </div>
                       </div>
                       <div class="address-book-dark-box">
-                        <div class="address-book-dark-box-title">Billing Address</div>
-                        <div>Batman Robin</div>
-                        <div>100 Gotham Street</div>
-                        <div>Region</div>
-                        <div>01000</div>
-                        <div>Wonderland</div>
+                        <div class="address-book-dark-box-title">{{content.billingAddress.title}}</div>
+                        <div>{{content.billingAddress.name}}</div>
+                        <div>{{content.billingAddress.address}}</div>
+                        <div>{{content.billingAddress.region}}</div>
+                        <div>{{content.billingAddress.postalCode}}</div>
+                        <div>{{content.billingAddress.country}}</div>
                         <div class="address-box-edit-btn">
-                          <button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">Edit</button>
+                          <button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">{{content.billingAddress.edit}}</button>
                         </div>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="box-addresses-title">
-                        Secondary Address
+                        {{content.secondaryAddressTitle}}
                       </div>
                       <div class="address-book-white-box">
-                        <div>Batman Robin</div>
-                        <div>100 Gotham Street</div>
-                        <div>Region</div>
-                        <div>01000</div>
-                        <div>Country</div>
+                        <div>{{content.secondaryAddress.name}}</div>
+                        <div>{{content.secondaryAddress.address}}</div>
+                        <div>{{content.secondaryAddress.region}}</div>
+                        <div>{{content.secondaryAddress.postalCode}}</div>
+                        <div>{{content.secondaryAddress.country}}</div>
                         <div class="address-book-edit-delete">
-                          <span><button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="">Edit</button></span>
-                          <span><button><img src="{{meta.assetsPath}}/img/delete-60px.png" alt="">Delete</button></span>
+                          <span><button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="">{{content.secondaryAddress.edit}}</button></span>
+                          <span><button><img src="{{meta.assetsPath}}/img/delete-60px.png" alt="">{{content.secondaryAddress.delete}}</button></span>
                         </div>
                       </div>
                       <div class="box-addresses-title">
-                        Additional Address
+                        {{content.additionalAddressTitle}}
                       </div>
                       <div class="address-book-white-box">
-                        <div>Batman Robin</div>
-                        <div>100 Gotham Street</div>
-                        <div>Region</div>
-                        <div>01000</div>
-                        <div>Country</div>
+                        <div>{{content.additionalAddress.name}}</div>
+                        <div>{{content.additionalAddress.address}}</div>
+                        <div>{{content.additionalAddress.region}}</div>
+                        <div>{{content.additionalAddress.postalCode}}</div>
+                        <div>{{content.additionalAddress.country}}</div>
                         <div class="address-book-edit-delete">
-                          <span><button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="">Edit</button></span>
-                          <span><button><img src="{{meta.assetsPath}}/img/delete-60px.png" alt="">Delete</button></span>
+                          <span><button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="">{{content.additionalAddress.edit}}</button></span>
+                          <span><button><img src="{{meta.assetsPath}}/img/delete-60px.png" alt="">{{content.additionalAddress.delete}}</button></span>
                         </div>
                       </div>
                     </div>
@@ -115,7 +115,7 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="add-new-address-btn">
-                        <button>Add New Address</button>
+                        <button>{{content.addNewAddressBtn}}</button>
                       </div>
                     </div>
                   </div>
