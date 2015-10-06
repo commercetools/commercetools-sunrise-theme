@@ -6,6 +6,11 @@
   border: 1px solid $light-grey;
   padding: 20px;
 }
+.address-book-content {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 20px;
+  }
+}
 .address-book-title {
   text-transform: uppercase;
   font-size: 18px;
