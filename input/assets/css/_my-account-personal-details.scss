@@ -190,6 +190,9 @@
     &:hover {
       background: lighten($yellow, 5%);
     }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
   }
   .cancel-btn {
     border: 2px solid $grey;
