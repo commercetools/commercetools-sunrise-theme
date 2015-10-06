@@ -130,7 +130,7 @@
   -moz-appearance: none;
   appearance: none;
   margin: 0 10px 0 0;
-  background: transparent url("../../assets/img/arrow-67-filled.png") no-repeat 90% 50%;
+  background: transparent url("../img/arrow-67-filled.png") no-repeat 90% 50%;
   background-size: 12px;
   padding: 10px 50px 10px 10px;
   border-radius: 0;
@@ -159,7 +159,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: transparent url("../../assets/img/arrow-67-filled.png") no-repeat 80% 50%;
+  background: transparent url("../img/arrow-67-filled.png") no-repeat 80% 50%;
   background-size: 12px;
   color: $dark-grey;
   padding: 10px 30px 10px 10px;
@@ -238,7 +238,7 @@
 }
 .accordion-minus {
   opacity: 0.5;
-  content: url("../../assets/img/minus-1.png");
+  content: url("../img/minus-1.png");
 }
 
 // Social share

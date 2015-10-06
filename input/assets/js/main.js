@@ -516,3 +516,14 @@ $('.payment-text').change(function() {
     $('#credit-card-input-field').hide();
   }
 });
+
+/*
+My Account: Personal Details page
+*/
+
+// Hide/show personal details and edit section
+$('.personal-details-edit-wrapper').hide();
+$('.personal-details-edit-toggle').click(function() {
+  $('.personal-details-landing-wrapper').hide();
+  $('.personal-details-edit-wrapper').show();
+})
