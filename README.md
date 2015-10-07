@@ -15,6 +15,7 @@
 - [Checkout Sign In](http://sphereio.github.io/sphere-sunrise-design/checkout-signin.html)
 - [Home](http://sphereio.github.io/sphere-sunrise-design/home.html)
 - [My Account: Personal Details](http://sphereio.github.io/sphere-sunrise-design/my-account-personal-details.html)
+- [My Account: Address Book](http://sphereio.github.io/sphere-sunrise-design/my-account-address-book.html)
 
 
 ###Installation
