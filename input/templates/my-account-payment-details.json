@@ -766,7 +766,36 @@
 			"text" : "Sign Out",
 			"url" : ""
 		},
-        "contentTitle" : "Payment Details"
+        "contentTitle" : "Payment Details",
+        "defaultPaymentMethodTitle" : "Default Payment Method",
+        "defaultPaymentMethod" : {
+            "title" : "Credit Card",
+            "name" : "Bruce Wayne",
+            "type" : "Visa",
+            "number" : "**** **** **** **99",
+            "date" : "09.18",
+            "edit" : "Edit"
+        },
+        "addNewPaymentMethodBtn" : "Add New Payment Method",
+        "additionalPaymentMethodsTitle" : "Additional Payment Methods",
+        "additionalPaymentMethodOne" : {
+            "title" : "Credit Card",
+            "name" : "Bruce Wayne",
+            "type" : "Visa",
+            "number" : "**** **** **** **99",
+            "date" : "09.18",
+            "edit" : "Edit",
+            "delete" : "delete"
+        },
+        "additionalPaymentMethodTwo" : {
+            "title" : "Credit Card",
+            "name" : "Bruce Wayne",
+            "type" : "Visa",
+            "number" : "**** **** **** **99",
+            "date" : "09.18",
+            "edit" : "Edit",
+            "delete" : "delete"
+        }
 	},
 	"meta" : {
 		"assetsPath": "assets/"

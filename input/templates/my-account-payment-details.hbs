@@ -56,46 +56,46 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="payment-details-box-titles">
-                        Default Payment Method
+                        {{content.defaultPaymentMethodTitle}}
                       </div>
                       <div class="payment-details-dark-box">
-                        <div class="payment-details-dark-box-title">Credit Card</div>
-                        <div>Bruce Wayne</div>
-                        <div>Visa</div>
-                        <div>**** **** **** **99</div>
-                        <div>09.18</div>
+                        <div class="payment-details-dark-box-title">{{content.defaultPaymentMethod.title}}</div>
+                        <div>{{content.defaultPaymentMethod.name}}</div>
+                        <div>{{content.defaultPaymentMethod.type}}</div>
+                        <div>{{content.defaultPaymentMethod.number}}</div>
+                        <div>{{content.defaultPaymentMethod.date}}</div>
                         <div class="payment-details-box-edit-btn">
-                          <button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">Edit</button>
+                          <button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">{{content.defaultPaymentMethod.edit}}</button>
                         </div>
                       </div>
                       <div class="add-new-payment-btn">
-                        <button>Add New Payment Method</button>
+                        <button>{{content.addNewPaymentMethodBtn}}</button>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="payment-details-box-titles">
-                        Additional Payment Methods
+                        {{content.additionalPaymentMethodsTitle}}
                       </div>
                       <div class="payment-details-white-box">
-                        <div class="payment-details-white-box-title">Credit Card</div>
-                        <div>Bruce Wayne</div>
-                        <div>Visa</div>
-                        <div>**** **** **** **99</div>
-                        <div>09.18</div>
+                        <div class="payment-details-white-box-title">{{content.additionalPaymentMethodOne.title}}</div>
+                        <div>{{content.additionalPaymentMethodOne.name}}</div>
+                        <div>{{content.additionalPaymentMethodOne.type}}</div>
+                        <div>{{content.additionalPaymentMethodOne.number}}</div>
+                        <div>{{content.additionalPaymentMethodOne.date}}</div>
                         <div class="payment-details-edit-delete">
-                          <div><button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="">Edit</button></div>
-                          <div><button><img src="{{meta.assetsPath}}/img/delete-60px.png" alt="">Delete</button></div>
+                          <div><button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="">{{content.additionalPaymentMethodOne.edit}}</button></div>
+                          <div><button><img src="{{meta.assetsPath}}/img/delete-60px.png" alt="">{{content.additionalPaymentMethodOne.delete}}</button></div>
                         </div>
                       </div>
                       <div class="payment-details-white-box">
-                        <div class="payment-details-white-box-title">Credit Card</div>
-                        <div>Bruce Wayne</div>
-                        <div>Visa</div>
-                        <div>**** **** **** **99</div>
-                        <div>09.18</div>
+                        <div class="payment-details-white-box-title">{{content.additionalPaymentMethodTwo.title}}</div>
+                        <div>{{content.additionalPaymentMethodTwo.name}}</div>
+                        <div>{{content.additionalPaymentMethodTwo.type}}</div>
+                        <div>{{content.additionalPaymentMethodTwo.number}}</div>
+                        <div>{{content.additionalPaymentMethodTwo.date}}</div>
                         <div class="payment-details-edit-delete">
-                          <div><button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="">Edit</button></div>
-                          <div><button><img src="{{meta.assetsPath}}/img/delete-60px.png" alt="">Delete</button></div>
+                          <div><button><img src="{{meta.assetsPath}}/img/edit-1.png" alt="">{{content.additionalPaymentMethodTwo.edit}}</button></div>
+                          <div><button><img src="{{meta.assetsPath}}/img/delete-60px.png" alt="">{{content.additionalPaymentMethodTwo.delete}}</button></div>
                         </div>
                       </div>
                     </div>
