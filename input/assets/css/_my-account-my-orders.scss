@@ -24,6 +24,9 @@
 .my-orders-table-order {
   padding: 10px 0;
   border-bottom: 1px solid $light-grey;
+  span {
+    line-height: 30px //FIXME: temp solution
+  }
 }
 .my-orders-view-order-btn {
   letter-spacing: 1px;
