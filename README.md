@@ -2,9 +2,7 @@
 
 ![SPHERE.IO icon](https://admin.sphere.io/assets/images/sphere_logo_rgb_long.png)
 
-[![Build Status](https://travis-ci.org/sphereio/sphere-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/sphere-sunrise-design)
-
-[![Stories in Ready](https://badge.waffle.io/sphereio/sphere-sunrise-design.png?label=ready&title=Ready)](https://waffle.io/sphereio/sphere-sunrise-design)
+[![Build Status](https://travis-ci.org/sphereio/sphere-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/sphere-sunrise-design) [![Stories in Ready](https://badge.waffle.io/sphereio/sphere-sunrise-design.png?label=ready&title=Ready)](https://waffle.io/sphereio/sphere-sunrise-design)
 
 ###Demo
 - [Product Overview](http://sphereio.github.io/sphere-sunrise-design/pop.html)
