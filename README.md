@@ -16,6 +16,7 @@
 - [Home](http://sphereio.github.io/sphere-sunrise-design/home.html)
 - [My Account: Personal Details](http://sphereio.github.io/sphere-sunrise-design/my-account-personal-details.html)
 - [My Account: Address Book](http://sphereio.github.io/sphere-sunrise-design/my-account-address-book.html)
+- [My Account: Payment Details](http://sphereio.github.io/sphere-sunrise-design/my-account-payment-details.html)
 
 
 ###Installation
