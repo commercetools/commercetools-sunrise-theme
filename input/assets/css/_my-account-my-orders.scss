@@ -13,3 +13,23 @@
   padding: 0 0 10px;
   border-bottom: 1px solid $light-grey;
 }
+.my-orders-table-titles {
+  text-transform: uppercase;
+  color: $dark-grey;
+}
+.my-orders-table-wrapper {
+  padding: 30px 0 2px;
+  border-bottom: 1px solid $light-grey;
+}
+.my-orders-table-order {
+  padding: 10px 0;
+  border-bottom: 1px solid $light-grey;
+}
+.my-orders-view-order-btn {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 2px;
+  color: $white;
+  background: $grey;
+}
