@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> common/htmlhead}}
+</head>
+
+<body>
+  <div class="darkbg hidden"></div>
+  {{> common/header}}
+  <div class="my-orders">
+    <div class="container">
+      <div class="my-account-title">
+        <span class="my-account-title-text icon-user">{{content.pageTitle}}</span>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="my-orders-wrapper">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="my-account-sidebar">
+                  <div class="my-account-sidebar-items">
+                    <a href="{{content.sidebarItemOne.url}}">{{content.sidebarItemOne.text}}</a>
+                  </div>
+                  <div class="my-account-sidebar-items">
+                    <a href="{{content.sidebarItemTwo.url}}">{{content.sidebarItemTwo.text}}</a>
+                  </div>
+                  <div class="my-account-sidebar-items">
+                    <a href="{{content.sidebarItemThree.url}}">{{content.sidebarItemThree.text}}</a>
+                  </div>
+                  <div class="my-account-sidebar-items active">
+                    <a href="{{content.sidebarItemFour.url}}">{{content.sidebarItemFour.text}}</a>
+                  </div>
+                  <div class="my-account-sidebar-items">
+                    <a href="{{content.sidebarItemFive.url}}">{{content.sidebarItemFive.text}}</a>
+                  </div>
+                  <div class="my-account-sidebar-items clearfix">
+                    <a href="{{content.sidebarItemSix.url}}">
+                      <span><img class="sidebar-wishlist-heart hidden-sm" src="{{meta.assetsPath}}/img/heart-1.png" alt="heart icon"></span>{{content.sidebarItemSix.text}}<span class="sidebar-wishlist-quantity hidden-sm">{{content.sidebarItemSix.wishlistItems}}</span>
+                    </a>
+                  </div>
+                  <div class="my-account-sidebar-items">
+                    <a href="{{content.sidebarItemSeven.url}}">{{content.sidebarItemSeven.text}}</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <div class="my-orders-content">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="my-orders-title">
+                        {{content.contentTitle}}
+                      </div>
+                    </div>
+                  </div>
+                  desktop content goes here
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- {{> catalog/wishlist}} --}}
+  {{> common/footer}}
+  {{> common/htmlscripts}}
+</body>
+
+</html>
