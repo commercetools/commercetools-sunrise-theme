@@ -1,0 +1,5 @@
+apple: "There is one apple"
+apple_plural: "There are __count__ apples"
+hello:
+  world: "Hello __name__"
+  world_plural: "Hello __name__'"
