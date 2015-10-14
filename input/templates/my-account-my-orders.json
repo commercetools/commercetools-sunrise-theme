@@ -778,7 +778,39 @@
 				"date" : "08.05.15",
 				"total" : "100.00 €",
 				"paymentStatus" : "Paid",
-				"shipping" : "delivered",
+				"shipping" : "Delivered",
+				"view" : "View"
+			},
+			{
+				"orderNumber" : "1234567889952",
+				"date" : "08.05.15",
+				"total" : "100.00 €",
+				"paymentStatus" : "Paid",
+				"shipping" : "Delivered",
+				"view" : "View"
+			},
+			{
+				"orderNumber" : "1234567889952",
+				"date" : "08.05.15",
+				"total" : "100.00 €",
+				"paymentStatus" : "Paid",
+				"shipping" : "Delivered",
+				"view" : "View"
+			},
+			{
+				"orderNumber" : "1234567889952",
+				"date" : "08.05.15",
+				"total" : "100.00 €",
+				"paymentStatus" : "Paid",
+				"shipping" : "Delivered",
+				"view" : "View"
+			},
+			{
+				"orderNumber" : "1234567889952",
+				"date" : "08.05.15",
+				"total" : "100.00 €",
+				"paymentStatus" : "Paid",
+				"shipping" : "Delivered",
 				"view" : "View"
 			}
 		]

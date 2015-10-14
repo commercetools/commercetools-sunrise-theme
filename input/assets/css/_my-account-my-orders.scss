@@ -1,6 +1,11 @@
 .my-orders {
   padding-bottom: 50px;
 }
+.my-orders-content {
+  @media screen and (max-width: 767px) {
+    padding: 20px 0;
+  }
+}
 .my-orders-wrapper {
   background: $white;
   border: 1px solid $light-grey;
@@ -20,12 +25,20 @@
 .my-orders-table-wrapper {
   padding: 30px 0 2px;
   border-bottom: 1px solid $light-grey;
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+  }
 }
 .my-orders-table-order {
   padding: 10px 0;
   border-bottom: 1px solid $light-grey;
   span {
     line-height: 30px //FIXME: temp solution
+  }
+  @media screen and (max-width: 767px) {
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
 .my-orders-view-order-btn {
