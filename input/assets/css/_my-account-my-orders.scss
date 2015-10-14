@@ -2,6 +2,9 @@
   padding-bottom: 50px;
 }
 .my-orders-content {
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+    font-size: 0.9em;
+  }
   @media screen and (max-width: 767px) {
     padding: 20px 10px;
     font-size: 0.9em;
