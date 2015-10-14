@@ -766,7 +766,22 @@
 			"text" : "Sign Out",
 			"url" : ""
 		},
-        "contentTitle" : "My Orders"
+        "contentTitle" : "My Orders",
+		"orderNumberTitle" : "Order Number",
+		"dateTitle" : "Date",
+		"totalTitle" : "Total",
+		"paymentStatusTitle" : "Payment Status",
+		"shippingTitle" : "Shipping",
+		"order" : [
+			{
+				"orderNumber" : "1234567889952",
+				"date" : "08.05.15",
+				"total" : "100.00 €",
+				"paymentStatus" : "Paid",
+				"shipping" : "delivered",
+				"view" : "View"
+			}
+		]
 	},
 	"meta" : {
 		"assetsPath": "assets/"

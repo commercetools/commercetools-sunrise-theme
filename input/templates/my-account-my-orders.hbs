@@ -49,7 +49,7 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="my-orders-title">
-                        My Orders
+                        {{content.contentTitle}}
                       </div>
                     </div>
                   </div>
@@ -57,27 +57,27 @@
                     <div class="row">
                       <div class="col-sm-2">
                         <div class="my-orders-table-titles">
-                          Order Number
+                          {{content.orderNumberTitle}}
                         </div>
                       </div>
                       <div class="col-sm-2">
                         <div class="my-orders-table-titles">
-                          Date
+                          {{content.dateTitle}}
                         </div>
                       </div>
                       <div class="col-sm-2">
                         <div class="my-orders-table-titles">
-                          Total
+                          {{content.totalTitle}}
                         </div>
                       </div>
                       <div class="col-sm-2">
                         <div class="my-orders-table-titles">
-                          Payment Status
+                          {{content.paymentStatusTitle}}
                         </div>
                       </div>
                       <div class="col-sm-2">
                         <div class="my-orders-table-titles">
-                          Shipping
+                          {{content.shippingTitle}}
                         </div>
                       </div>
                       <div class="col-sm-2">
@@ -87,28 +87,30 @@
                       </div>
                     </div>
                   </div>
-                  <div class="my-orders-table-order">
-                    <div class="row">
-                      <div class="col-sm-2">
-                        <span>1234567889952</span>
-                      </div>
-                      <div class="col-sm-2">
-                        <span>08.05.15</span>
-                      </div>
-                      <div class="col-sm-2">
-                        <span>100.00 €</span>
-                      </div>
-                      <div class="col-sm-2">
-                        <span>Paid</span>
-                      </div>
-                      <div class="col-sm-2">
-                        <span>Delivered</span>
-                      </div>
-                      <div class="col-sm-2">
-                        <button class="my-orders-view-order-btn">View</button>
+                  {{#each content.order}}
+                    <div class="my-orders-table-order">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <span>{{orderNumber}}</span>
+                        </div>
+                        <div class="col-sm-2">
+                          <span>{{date}}</span>
+                        </div>
+                        <div class="col-sm-2">
+                          <span>{{total}}</span>
+                        </div>
+                        <div class="col-sm-2">
+                          <span>{{paymentStatus}}</span>
+                        </div>
+                        <div class="col-sm-2">
+                          <span>{{shipping}}</span>
+                        </div>
+                        <div class="col-sm-2">
+                          <button class="my-orders-view-order-btn">{{view}}</button>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  {{/each}}
                 </div>
               </div>
             </div>
