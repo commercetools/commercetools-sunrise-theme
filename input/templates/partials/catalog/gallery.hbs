@@ -1,6 +1,6 @@
 <div class="bzoom_wrap hidden-xs">
     <a id="animated-modal-action" class="animated-modal-action" href="#animatedModal">
-        <img src="assets/img/zoom-60px.png" width="25" height="25" />
+        <img src="{{meta.assetsPath}}img/zoom-60px.png" width="25" height="25" />
     </a>
     <ul id="bzoom" data-count="{{content.product.images.length}}">
       {{#each content.product.images}}
@@ -13,7 +13,7 @@
     <div id="animatedModal" class="animated-modal">
         <div class="modal-header">
             <a href="#" class="close-animatedModal clickable">
-                <img src="assets/img/delete-60px.png" width="40" height="40" />
+                <img src="{{meta.assetsPath}}img/delete-60px.png" width="40" height="40" />
             </a>
         </div>
         <div class="modal-content">
