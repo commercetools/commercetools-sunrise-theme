@@ -5,6 +5,8 @@ content:
     itemAddedToBagAlert: This item has been added to your bag
     viewYourBagAlert: View your bag
     addToWishlistAlert: Add to wishlist
+  display:
+    title: items per page
   static:
     contentText: Products
     ratingText: Write first review
@@ -13,7 +15,6 @@ content:
     sizesText: Size
     sizeGuideText: Size Guide
     addToBagText: Add to Bag
-    addToWishlistText: Add item to wishlist
     addToWishlistText: Add item to wishlist
     availableText: Available
     productDetailsText: Product Details
@@ -35,6 +36,3 @@ content:
     moreDeliveryInfoText: ""
   pagination:
     pageSeparator: of
-
-
-
