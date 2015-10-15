@@ -1,0 +1,40 @@
+content:
+  messages:
+    pleaseWait: Please wait...
+    reachedMaximumAlert: You have reached the maximum quantity you can add to your bag
+    itemAddedToBagAlert: This item has been added to your bag
+    viewYourBagAlert: View your bag
+    addToWishlistAlert: Add to wishlist
+  static:
+    contentText: Products
+    ratingText: Write first review
+    viewDetailsText: View Details
+    colorsText: Color
+    sizesText: Size
+    sizeGuideText: Size Guide
+    addToBagText: Add to Bag
+    addToWishlistText: Add item to wishlist
+    addToWishlistText: Add item to wishlist
+    availableText: Available
+    productDetailsText: Product Details
+    deliveryAndReturnsText: Delivery & Returns
+    shippingRatesText: Delivery
+    returnsText: Returns
+    youMayLikeText: You may also like
+    saleText: Sale
+    newText: New
+    quickViewText: Quick view
+    wishlistText: Add item to wishlist
+    moreColorsText: More colours
+    reviewsText: Reviews
+    colorDefaultItem: Choose Color
+    sizeDefaultItem: Choose Size
+    standardDeliveryText: Standard delivery - FREE for orders over €29.99, otherwise €3.00. Delivery within 4 working days.
+    expressDeliveryText: Express delivery - €6.00. Delivery within 2 working days.
+    freeReturnsText: Free return for all orders.
+    moreDeliveryInfoText: ""
+  pagination:
+    pageSeparator: of
+
+
+
