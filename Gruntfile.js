@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
     clean: {
       build: ['output/'],
-      dist: ['*.jar'] 
+      dist: ['*.jar']
     },
 
     copy: {
@@ -73,9 +73,12 @@ module.exports = function(grunt) {
 
     watch: {
       scripts: {
-        files: ['input/**/*'],
+        files: [
+          'input/**/*',
+          'locales/**/*'
+        ],
         tasks: ['build']
-      },
+      }
     },
 
     maven: {
@@ -107,7 +110,7 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
           { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" }
         ]
-      }      
+      }
     },
 
     'gh-pages': {
@@ -115,15 +118,22 @@ module.exports = function(grunt) {
         message: "Deploy to GitHub Pages",
         user: {
           name: 'automation-commercetools',
-          email: 'automation@commercetools.de'          
+          email: 'automation@commercetools.de'
         },
         repo: 'https://' + process.env.GH_TOKEN + '@github.com/sphereio/sphere-sunrise-design.git',
         silent: true,
         base: 'output'
       },
       src: ['**/*']
-    }
+    },
 
+    i18next: {
+      options: {
+        preload: ['de', 'en'],
+        lng: 'de',
+        fallbackLng: 'en'
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -137,10 +147,39 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'compile-handlebars']);
+  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'i18next', 'handlebars']);
   grunt.registerTask('release-patch', ['build', 'maven', 'clean:dist']);
   grunt.registerTask('release-minor', ['build', 'maven:release:minor', 'clean:dist']);
   grunt.registerTask('release-major', ['build', 'maven:release:major', 'clean:dist']);
   grunt.registerTask('publish', ['gh-pages-clean', 'build', 'gh-pages']);
 
+  grunt.registerTask('handlebars', 'handlebars', function() {
+    grunt.task.requires('i18next');
+    grunt.task.run('compile-handlebars');
+  });
+  grunt.registerTask('i18next', 'Internationalization init', function() {
+    var done = this.async();
+    var options = this.options({
+      preload: ['en'],
+      lng: 'en',
+      fallbackLng: 'en',
+      getAsync: false,
+      debug: false,
+      ns: {
+        namespaces: ['translations'],
+        defaultNs: 'translations'
+      },
+      resGetPath: 'locales/__lng__/__ns__.yaml'
+    });
+    Handlebars = require('handlebars');
+
+    i18n = require('i18next');
+
+    var yamlSync = require('i18next.yaml');
+    i18n.backend(yamlSync);
+
+    i18n.init(options, function (err, t) {
+      done(true);
+    });
+  });
 };

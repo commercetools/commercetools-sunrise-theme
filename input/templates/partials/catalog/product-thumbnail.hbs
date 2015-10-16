@@ -1,13 +1,13 @@
 <a href="{{url}}">
   <div class="shop-item">
     {{#if priceOld}}
-      <div class="sale-flag">{{content.static.saleText}}</div>
+      <div class="sale-flag">{{i18n "content.static.saleText"}}</div>
     {{/if}}
     {{#if new}}
-      <div class="new-flag">{{content.static.newText}}</div>
+      <div class="new-flag">{{i18n "content.static.newText"}}</div>
     {{/if}}
     <button type="button" class="heart-xs visible-xs">
-      <span class="sr-only">{{content.static.wishlistText}}</span>
+      <span class="sr-only">{{i18n "content.static.wishlistText"}}</span>
     </button>
     <img class="pop-product-image" src="{{images.0.bigImage}}" alt="{{text}}" width="200" />
     <div class="pop-product-name">
@@ -23,12 +23,12 @@
       {{/if}}
     </div>
     <div class="pop-product-more-colors">
-      {{#if moreColors}}{{content.static.moreColorsText}}{{/if}}&nbsp;
+      {{#if moreColors}}{{i18n "content.static.moreColorsText"}}{{/if}}&nbsp;
     </div>
     <div class="shop-item-overlay hidden-xs">
-      <button type="button" class="quickview" data-modal="quickview-modal-{{id}}">{{content.static.quickViewText}}</button>
+      <button type="button" class="quickview" data-modal="quickview-modal-{{id}}">{{i18n "content.static.quickViewText"}}</button>
       <button type="button" class="heart">
-        <span class="sr-only">{{content.static.wishlistText}}</span>
+        <span class="sr-only">{{i18n "content.static.wishlistText"}}</span>
       </button>
     </div>
   </div>
