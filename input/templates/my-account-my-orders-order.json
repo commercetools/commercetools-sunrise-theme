@@ -766,7 +766,95 @@
 			"text" : "Sign Out",
 			"url" : ""
 		},
-        "contentTitle" : "My Orders"
+        "contentTitle" : "My Orders",
+		"yourOrderTitle" : "Your Order Details",
+		"orderNumberTitle" : "Order number:",
+		"orderDateTitle" : "Order date:",
+		"orderNumber" : "01445678",
+		"orderDate" : "Nov 14, 2015",
+		"printReceiptBtn" : "Print Receipt",
+		"shippingAddress" : {
+			"title" : "Shipping Address",
+			"name" : "Mr. Bruce Wayne",
+			"address" : "100 Gotham Street",
+			"city" : "Gotham City",
+			"region" : "Region",
+			"postCode" : "123456",
+			"country" : "Country",
+			"number" : "Phone: +49 123 4567890",
+			"email" : "Email: bruce.wayne@commercetools.com"
+		},
+		"billingAddress" : {
+			"title" : "Shipping Address",
+			"name" : "Mr. Bruce Wayne",
+			"address" : "100 Gotham Street",
+			"city" : "Gotham City",
+			"region" : "Region",
+			"postCode" : "123456",
+			"country" : "Country",
+			"number" : "Phone: +49 123 4567890",
+			"email" : "Email: bruce.wayne@commercetools.com"
+		},
+		"shippingMethod" : {
+			"title" : "Shipping Method",
+			"text" : "HL Standart - Delivery 3-5 Days"
+		},
+		"paymentDetails" : {
+			"title" : "Payment Details",
+			"payment" : "Credit Card",
+			"name" : "Bruce Wayne",
+			"type" : "Visa",
+			"number" : "**** **** **** **99",
+			"date" : "09.18"
+		},
+		"promoCodeTitle" : "Promotional Code Applied:",
+		"promoCode" : "Sunny Sale",
+		"subtotalTitle" : "Subtotal",
+		"orderDiscountTitle" : "Order Discount",
+		"standartDeliveryTitle" : "Start Delivery",
+		"subtotal" : "200,00 €",
+		"orderDiscount" : "0,00 €",
+		"standartDelivery" : "10,00 €",
+		"salesTaxTitle" : "Sales Tax",
+		"orderTotalTitle" : "Order Total",
+		"salesTax" : "0,00 €",
+		"orderTotal" : "210,00 €",
+		"productDescriptionTitle" : "Product Description",
+		"quantityTitle" : "Quantity",
+		"priceTitle" : "Price",
+		"totalPriceTitle" : "Total Price",
+		"order" : [
+			{
+				"image" : "assets/img/blue-shirt.jpg",
+				"productTitleOne" : "Enditatem Product name",
+				"productTitleTwo" : "Optional Line Two",
+				"sku" : "Sunrise SUN#123456",
+				"colorTitle" : "Color:",
+				"sizeTitle" : "Size:",
+				"color" : "Navy Blue",
+				"size" : "XXL",
+				"available" : "Immediately available",
+				"quantity" : "1",
+				"discountedPrice" : "120,00 €",
+				"price" : "100,00 €",
+				"totalPrice" : "100,00 €"
+			},
+			{
+				"image" : "assets/img/blue-shirt.jpg",
+				"productTitleOne" : "Enditatem Product name",
+				"productTitleTwo" : "Optional Line Two",
+				"sku" : "Sunrise SUN#123456",
+				"colorTitle" : "Color:",
+				"sizeTitle" : "Size:",
+				"color" : "Navy Blue",
+				"size" : "XXL",
+				"available" : "Immediately available",
+				"quantity" : "1",
+				"discountedPrice" : "120,00 €",
+				"price" : "100,00 €",
+				"totalPrice" : "100,00 €"
+			}
+		]
 	},
 	"meta" : {
 		"assetsPath": "assets/"
