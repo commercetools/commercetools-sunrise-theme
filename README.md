@@ -19,6 +19,8 @@
 - [My Account: Payment Details](http://sphereio.github.io/sphere-sunrise-design/my-account-payment-details.html)
 - [My Account: My Orders](http://sphereio.github.io/sphere-sunrise-design/my-account-my-orders.html)
 - [My Account: My Orders - Single Order](http://sphereio.github.io/sphere-sunrise-design/my-account-my-orders-order.html)
+- [My Account: Returns / Exchange](http://sphereio.github.io/sphere-sunrise-design/my-account-returns-exchange.html)
+- [My Account: Returns / Exchange - Single Return](http://sphereio.github.io/sphere-sunrise-design/my-account-returns-exchange-order.html)
 
 
 ###Installation
