@@ -34,6 +34,42 @@
                   <div class="my-account-sidebar-items active">
                     <a href="{{content.sidebarItemFive.url}}">{{content.sidebarItemFive.text}}</a>
                   </div>
+                  <div class="my-orders-content visible-xs">
+                    <div class="my-orders-table-wrapper">
+                      <div class="row">
+                        <div class="col-xs-4">
+                          <div class="my-orders-table-titles">
+                            {{content.orderNumberTitle}}
+                          </div>
+                        </div>
+                        <div class="col-xs-4">
+                          <div class="my-orders-table-titles">
+                            {{content.refundTotalTitle}}
+                          </div>
+                        </div>
+                        <div class="col-xs-2">
+                          <div class="my-orders-table-titles">
+                            &nbsp;
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {{#each content.order}}
+                      <div class="my-orders-table-order">
+                        <div class="row">
+                          <div class="col-xs-4">
+                            <span>{{orderNumber}}</span>
+                          </div>
+                          <div class="col-xs-4">
+                            <span>{{refundTotal}}</span>
+                          </div>
+                          <div class="col-xs-2 text-right">
+                            <button class="my-orders-view-order-btn">{{view}}</button>
+                          </div>
+                        </div>
+                      </div>
+                    {{/each}}
+                  </div>
                   <div class="my-account-sidebar-items clearfix">
                     <a href="{{content.sidebarItemSix.url}}">
                       <span><img class="sidebar-wishlist-heart hidden-sm" src="{{meta.assetsPath}}/img/heart-1.png" alt="heart icon"></span>{{content.sidebarItemSix.text}}<span class="sidebar-wishlist-quantity hidden-sm">{{content.sidebarItemSix.wishlistItems}}</span>
@@ -45,7 +81,7 @@
                 </div>
               </div>
               <div class="col-sm-9">
-                <div class="my-orders-content">
+                <div class="my-orders-content hidden-xs">
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="my-orders-title">
