@@ -28,15 +28,24 @@
                   <div class="my-account-sidebar-items">
                     <a href="{{content.sidebarItemThree.url}}">{{content.sidebarItemThree.text}}</a>
                   </div>
-                  <div class="my-account-sidebar-items active">
+                  <div class="my-account-sidebar-items">
                     <a href="{{content.sidebarItemFour.url}}">{{content.sidebarItemFour.text}}</a>
+                  </div>
+                  <div class="my-account-sidebar-items active">
+                    <a href="{{content.sidebarItemFive.url}}">{{content.sidebarItemFive.text}}</a>
                   </div>
                   <div class="my-orders-order-content visible-xs">
                     <div class="your-order-details-wrapper">
                       <div class="your-order-details-title">{{content.yourOrderTitle}}</div>
                       <div class="your-order-details">
-                        <span class="your-order-details-titles">{{content.orderNumberTitle}}<br>{{content.orderDateTitle}}</span>
-                        <span class="your-order-details-info">{{content.orderNumber}}<br>{{content.orderDate}}</span>
+                        <div>
+                          <span class="your-order-details-titles">{{content.orderNumberTitle}}<br>{{content.orderDateTitle}}</span>
+                          <span class="your-order-details-info">{{content.orderNumber}}<br>{{content.orderDate}}</span>
+                        </div>
+                        <div>
+                          <span class="your-order-details-titles">{{content.receivedOnTitle}}<br>{{content.refundTotalTitle}}</span>
+                          <span class="your-order-details-info">{{content.receivedOn}}<br>{{content.refundTotal}}</span>
+                        </div>
                       </div>
                     </div>
                     <div class="row">
@@ -156,9 +165,6 @@
                       </div>
                     {{/each}}
                   </div>
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemFive.url}}">{{content.sidebarItemFive.text}}</a>
-                  </div>
                   <div class="my-account-sidebar-items clearfix">
                     <a href="{{content.sidebarItemSix.url}}">
                       <span><img class="sidebar-wishlist-heart hidden-sm" src="{{meta.assetsPath}}/img/heart-1.png" alt="heart icon"></span>{{content.sidebarItemSix.text}}<span class="sidebar-wishlist-quantity hidden-sm">{{content.sidebarItemSix.wishlistItems}}</span>
@@ -181,8 +187,14 @@
                   <div class="your-order-details-wrapper">
                     <div class="your-order-details-title">{{content.yourOrderTitle}}</div>
                     <div class="your-order-details">
-                      <span class="your-order-details-titles">{{content.orderNumberTitle}}<br>{{content.orderDateTitle}}</span>
-                      <span class="your-order-details-info">{{content.orderNumber}}<br>{{content.orderDate}}</span>
+                      <div>
+                        <span class="your-order-details-titles">{{content.orderNumberTitle}}<br>{{content.orderDateTitle}}</span>
+                        <span class="your-order-details-info">{{content.orderNumber}}<br>{{content.orderDate}}</span>
+                      </div>
+                      <div>
+                        <span class="your-order-details-titles">{{content.receivedOnTitle}}<br>{{content.refundTotalTitle}}</span>
+                        <span class="your-order-details-info">{{content.receivedOn}}<br>{{content.refundTotal}}</span>
+                      </div>
                     </div>
                     <button class="my-orders-print-receipt-btn">{{content.printReceiptBtn}}</button>
                   </div>

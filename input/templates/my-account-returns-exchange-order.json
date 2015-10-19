@@ -766,7 +766,7 @@
 			"text" : "Sign Out",
 			"url" : ""
 		},
-        "contentTitle" : "My Orders",
+        "contentTitle" : "Returns / Exchange",
 		"yourOrderTitle" : "Your Order Details",
 		"orderNumberTitle" : "Order number:",
 		"orderDateTitle" : "Order date:",
@@ -812,13 +812,17 @@
 		"subtotalTitle" : "Subtotal",
 		"orderDiscountTitle" : "Order Discount",
 		"standartDeliveryTitle" : "Start Delivery",
-		"subtotal" : "200,00 €",
+		"subtotal" : "150,00 €",
 		"orderDiscount" : "0,00 €",
 		"standartDelivery" : "10,00 €",
 		"salesTaxTitle" : "Sales Tax",
 		"orderTotalTitle" : "Order Total",
 		"salesTax" : "0,00 €",
-		"orderTotal" : "210,00 €",
+		"orderTotal" : "160,00 €",
+        "receivedOnTitle" : "Received On",
+        "refundTotalTitle" : "Refund Total",
+        "receivedOn" : "Nov 20, 2015",
+        "refundTotal" : "50,00 €",
 		"productDescriptionTitle" : "Product Description",
 		"quantityTitle" : "Quantity",
 		"priceTitle" : "Price",
@@ -835,9 +839,9 @@
 				"size" : "XXL",
 				"available" : "Immediately available",
 				"quantity" : "1",
-				"discountedPrice" : "120,00 €",
-				"price" : "100,00 €",
-				"totalPrice" : "100,00 €"
+				"discountedPrice" : "100,00 €",
+				"price" : "75,00 €",
+				"totalPrice" : "75,00 €"
 			},
 			{
 				"image" : "assets/img/blue-shirt.jpg",
@@ -850,9 +854,9 @@
 				"size" : "XXL",
 				"available" : "Immediately available",
 				"quantity" : "1",
-				"discountedPrice" : "120,00 €",
-				"price" : "100,00 €",
-				"totalPrice" : "100,00 €"
+                "discountedPrice" : "100,00 €",
+				"price" : "75,00 €",
+				"totalPrice" : "75,00 €"
 			}
 		]
 	},
