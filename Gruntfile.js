@@ -18,6 +18,7 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'input/', dest: 'output/', src: '*.html' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.hbs' },
+          { expand: true, cwd: 'locales/', dest: 'output/locales', src: '**/*.yaml' },
           { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.hbs' }
         ]
       }
@@ -130,7 +131,7 @@ module.exports = function(grunt) {
     i18next: {
       options: {
         preload: ['de', 'en'],
-        lng: 'de',
+        lng: 'en',
         fallbackLng: 'en'
       }
     }
