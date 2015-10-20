@@ -834,7 +834,7 @@
 					"id" : "1",
 					"text" : "Enditatem Product Name Optional very long line two",
 					"description" : "Subline",
-					"imageUrl" : "assets/img/blue-jacket.jpg",
+					"imageUrl" : "assets/img/blue-shirt.jpg",
 					"price" : "€ 49,-",
 					"priceOld" : "€ 79,99",
 					"url" : "",
@@ -843,20 +843,20 @@
 					"moreColors" : true,
 					"quickviewGallery" : [
 						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
+							"thumbImage" : "assets/img/blue-shirt.jpg",
+							"bigImage" : "assets/img/blue-shirt.jpg"
 						},
 						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
+							"thumbImage" : "assets/img/blue-shirt.jpg",
+							"bigImage" : "assets/img/blue-shirt.jpg"
 						},
 						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
+							"thumbImage" : "assets/img/blue-shirt.jpg",
+							"bigImage" : "assets/img/blue-shirt.jpg"
 						},
 						{
-							"thumbImage" : "assets/img/blue-jacket.jpg",
-							"bigImage" : "assets/img/blue-jacket.jpg"
+							"thumbImage" : "assets/img/blue-shirt.jpg",
+							"bigImage" : "assets/img/blue-shirt.jpg"
 						}
 					],
 					"product" : {
@@ -1010,7 +1010,7 @@
                     "id" : "2",
                     "text" : "Enditatem Product Name Optional very long line two",
                     "description" : "Subline",
-                    "imageUrl" : "assets/img/blue-jacket.jpg",
+                    "imageUrl" : "assets/img/blue-shirt.jpg",
                     "price" : "€ 49,-",
                     "priceOld" : "€ 79,99",
                     "url" : "",
@@ -1186,7 +1186,7 @@
                     "id" : "3",
                     "text" : "Enditatem Product Name Optional very long line two",
                     "description" : "Subline",
-                    "imageUrl" : "assets/img/blue-jacket.jpg",
+                    "imageUrl" : "assets/img/blue-shirt.jpg",
                     "price" : "€ 49,-",
                     "priceOld" : "€ 79,99",
                     "url" : "",
@@ -1195,20 +1195,20 @@
                     "moreColors" : true,
                     "quickviewGallery" : [
                         {
-                            "thumbImage" : "assets/img/blue-jacket.jpg",
-                            "bigImage" : "assets/img/blue-jacket.jpg"
+                            "thumbImage" : "assets/img/blue-shirt.jpg",
+                            "bigImage" : "assets/img/blue-shirt.jpg"
                         },
                         {
-                            "thumbImage" : "assets/img/blue-jacket.jpg",
-                            "bigImage" : "assets/img/blue-jacket.jpg"
+                            "thumbImage" : "assets/img/blue-shirt.jpg",
+                            "bigImage" : "assets/img/blue-shirt.jpg"
                         },
                         {
-                            "thumbImage" : "assets/img/blue-jacket.jpg",
-                            "bigImage" : "assets/img/blue-jacket.jpg"
+                            "thumbImage" : "assets/img/blue-shirt.jpg",
+                            "bigImage" : "assets/img/blue-shirt.jpg"
                         },
                         {
-                            "thumbImage" : "assets/img/blue-jacket.jpg",
-                            "bigImage" : "assets/img/blue-jacket.jpg"
+                            "thumbImage" : "assets/img/blue-shirt.jpg",
+                            "bigImage" : "assets/img/blue-shirt.jpg"
                         }
                     ],
                     "product" : {
