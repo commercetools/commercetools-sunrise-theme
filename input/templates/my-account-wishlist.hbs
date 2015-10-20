@@ -46,13 +46,62 @@
                 </div>
               </div>
               <div class="col-sm-9">
-                <div class="my-orders-order-content hidden-xs">
+                <div class="my-orders-order-content">
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="my-orders-title">
-                        {{content.contentTitle}}
+                        <span>{{content.contentTitle}}</span>
+                        <span class="my-account-wishlist-items-number">3 items it total</span>
                       </div>
                     </div>
+                  </div>
+                  <div class="my-account-wishlist-pagination">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="my-account-wishlist-clear">
+                          <button>Clear Wishlist</button>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 text-center pagination">
+                        <ul class="page-numbers">
+                          {{> catalog/pagination}}
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="my-account-wishlist-per-page">
+                          <span>Items per page</span>
+                          <select name="" id="">
+                            <option value="" selected>10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-account-wishlist-items-wrapper">
+                    <div class="row">
+                      {{#each content.products.list}}
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          {{> catalog/product-thumbnail context=..}}
+                          <div class="my-account-wishlist-remove-btn">
+                            <button>Remove</button>
+                          </div>
+                        </div>
+                      {{/each}}
+                    </div>
+                  </div>
+                  <div class="my-account-wishlist-pagination-bottom">
+                    <div class="row">
+                      <div class="col-sm-12 text-center pagination">
+                        <ul class="page-numbers">
+                          {{> catalog/pagination}}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-account-wishlist-clear-btn">
+                    <button>Clear Wishlist</button>
                   </div>
                 </div>
               </div>
