@@ -13,6 +13,7 @@
     color: $dark-grey;
     text-decoration: underline;
     padding: 0;
+    letter-spacing: 1px;
   }
 }
 .my-account-wishlist-per-page {
@@ -35,6 +36,7 @@
     border-radius: 2px;
     text-transform: uppercase;
     padding: 3px 20px;
+    letter-spacing: 1px;
     &:hover {
       color: $dark-grey;
       border-color: $dark-grey;
@@ -53,6 +55,7 @@
     border-radius: 2px;
     text-transform: uppercase;
     padding: 3px 20px;
+    letter-spacing: 1px;
     &:hover {
       color: $dark-grey;
       border-color: $dark-grey;
