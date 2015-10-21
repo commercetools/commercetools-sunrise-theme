@@ -56,7 +56,35 @@
                         {{#each content.products.list}}
                           <div class="col-xs-12 col-sm-6 col-md-4">
                             <div class="my-account-wishlist-item-wrapper">
-                              {{> catalog/product-thumbnail context=..}}
+                              <a href="{{url}}">
+                                <div class="shop-item">
+                                  {{#if priceOld}}
+                                    <div class="sale-flag">{{i18n "content.static.saleText"}}</div>
+                                  {{/if}}
+                                  {{#if new}}
+                                    <div class="new-flag">{{i18n "content.static.newText"}}</div>
+                                  {{/if}}
+                                  <button type="button" class="heart-xs visible-xs">
+                                    <span class="sr-only">{{i18n "content.static.wishlistText"}}</span>
+                                  </button>
+                                  <img class="pop-product-image" src="{{quickviewGallery.0.bigImage}}" alt="{{text}}" width="200" />
+                                  <div class="pop-product-name">
+                                    <span class="name-headline">{{text}}</span>
+                                    <span class="name-subline">{{description}}</span>
+                                  </div>
+                                  <div class="pop-item-price">
+                                    {{#if priceOld}}
+                                      <span class="strikethrough">{{priceOld}}</span>
+                                      <span class="pop-item-price-old">{{price}}</span>
+                                    {{else}}
+                                      <span>{{price}}</span>
+                                    {{/if}}
+                                  </div>
+                                  <div class="pop-product-more-colors">
+                                    {{#if moreColors}}{{i18n "content.static.moreColorsText"}}{{/if}}&nbsp;
+                                  </div>
+                                </div>
+                              </a>
                             </div>
                             <div class="my-account-wishlist-remove-btn">
                               <button>{{../content.removeBtn}}</button>
