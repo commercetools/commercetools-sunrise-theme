@@ -767,6 +767,9 @@
 			"url" : ""
 		},
         "contentTitle" : "My Wishlist:",
+		"itemsInTotal" : "3 items in total",
+		"clearWishlistBtn" : "Clear Wishlist",
+		"removeBtn" : "Remove",
         "pagination" : {
             "currentPage" : 145,
             "totalPages" : 234,
@@ -804,7 +807,7 @@
             ]
         },
         "display" : {
-            "title" : "items per page",
+            "title" : "Items per page",
             "list" : [
                 {
                     "name" : "12",
