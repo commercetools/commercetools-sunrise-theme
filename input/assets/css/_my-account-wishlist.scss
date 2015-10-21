@@ -1,6 +1,10 @@
 .my-account-wishlist-items-number {
   text-transform: none;
   color: $blue;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-top: 10px;
+  }
 }
 .my-account-wishlist-pagination {
   margin: 20px 0 50px 0;
@@ -31,6 +35,9 @@
 }
 .my-account-wishlist-remove-btn {
   margin-bottom: 20px;
+  @media screen and(max-width: 767px) {
+    text-align: center;
+  }
   button {
     color: $grey;
     border: 2px solid $grey;
@@ -50,6 +57,9 @@
 }
 .my-account-wishlist-clear-btn {
   margin-top: 20px;
+  @media screen and (max-width: 767px) {
+    margin: 10px 0;
+  }
   button {
     color: $grey;
     border: 2px solid $grey;
@@ -61,5 +71,10 @@
       color: $dark-grey;
       border-color: $dark-grey;
     }
+  }
+}
+.my-account-wishlist-item-wrapper {
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
   }
 }

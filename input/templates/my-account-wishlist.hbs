@@ -40,13 +40,39 @@
                       <span><img class="sidebar-wishlist-heart hidden-sm" src="{{meta.assetsPath}}/img/heart-1.png" alt="heart icon"></span>{{content.sidebarItemSix.text}}<span class="sidebar-wishlist-quantity hidden-sm">{{content.sidebarItemSix.wishlistItems}}</span>
                     </a>
                   </div>
+                  <div class="my-orders-order-content visible-xs">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="my-orders-title text-center">
+                          <span class="my-account-wishlist-items-number">{{content.itemsInTotal}}</span>
+                          <div class="my-account-wishlist-clear-btn">
+                            <button>{{content.clearWishlistBtn}}</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my-account-wishlist-items-wrapper">
+                      <div class="row">
+                        {{#each content.products.list}}
+                          <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="my-account-wishlist-item-wrapper">
+                              {{> catalog/product-thumbnail context=..}}
+                            </div>
+                            <div class="my-account-wishlist-remove-btn">
+                              <button>{{../content.removeBtn}}</button>
+                            </div>
+                          </div>
+                        {{/each}}
+                      </div>
+                    </div>
+                  </div>
                   <div class="my-account-sidebar-items">
                     <a href="{{content.sidebarItemSeven.url}}">{{content.sidebarItemSeven.text}}</a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-9">
-                <div class="my-orders-order-content">
+                <div class="my-orders-order-content hidden-xs">
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="my-orders-title">
