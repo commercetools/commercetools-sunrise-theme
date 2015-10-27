@@ -1,5 +1,5 @@
 {
-	"title" : "Sunrise - Product Overview Page",
+	"title" : "Sunrise - Page Title",
 	"stores" : {
 		"text" : "STORES",
 		"url" : ""
@@ -13,27 +13,27 @@
 		"url" : ""
 	},
 	"location" : {
-		"locationDropdownToggleBtnId" : "pop-location-dropdown-toggle-btn",
-		"languageSelectId" : "pop-language-select",
-		"countrySelectId" : "pop-country-select",
+		"locationDropdownToggleBtnId" : "location-dropdown-toggle-btn",
+		"languageSelectId" : "language-select",
+		"countrySelectId" : "country-select",
 		"language" : [
 			{
 				"text" : "German",
 				"value" : "",
 				"selected" : true,
-				"languageOptionId" : "pop-language-option-german"
+				"languageOptionId" : "language-option-german"
 			},
 			{
 				"text" : "English",
 				"value" : "",
 				"selected" : false,
-				"languageOptionId" : "pop-language-option-english"
+				"languageOptionId" : "language-option-english"
 			},
 			{
 				"text" : "French",
 				"value" : "",
 				"selected" : false,
-				"languageOptionId" : "pop-language-option-french"
+				"languageOptionId" : "language-option-french"
 			}
 		],
 		"country" : [
@@ -41,25 +41,25 @@
 				"text" : "Germany",
 				"value" : "",
 				"selected" : true,
-				"countryOptionId" : "pop-country-option-germany"
+				"countryOptionId" : "country-option-germany"
 			},
 			{
 				"text" : "UK",
 				"value" : "",
 				"selected" : false,
-				"countryOptionId" : "pop-country-option-uk"
+				"countryOptionId" : "country-option-uk"
 			},
 			{
 				"text" : "France",
 				"value" : "",
 				"selected" : false,
-				"countryOptionId" : "pop-country-option-france"
+				"countryOptionId" : "country-option-france"
 			}
 		]
 	},
 	"search" : {
-		"inputId" : "pop-search-input",
-		"buttonId" : "pop-search-button"
+		"inputId" : "search-input",
+		"buttonId" : "search-button"
 	},
 	"user" : {
 		"isLoggedIn" : false,

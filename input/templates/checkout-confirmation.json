@@ -1,31 +1,6 @@
 {
-	"header" : {
-		"title" : "Sunrise - Checkout Confirmation Page",
-		"customerService" : "Need help? Customer Service",
-		"customerServiceNumber" : "+12 345 6000"
-	},
-	"footer" : {
-		"legalInfo" : {
-			"text" : "© 2015 Sunrise",
-			"list" : [
-				{
-					"text" : "Imprint",
-					"url" : "",
-					"id" : "confirmation-imprint-link"
-				},
-				{
-					"text" : "Privacy policy",
-					"url" : "",
-					"id" : "confirmation-privacypolicy-link"
-				},
-				{
-					"text" : "Terms of use",
-					"url" : "",
-					"id" : "confirmation-termsofuse-link"
-				}
-			]
-		}
-	},
+	"header" : { "$ref" : "common/checkout-header.json" },
+	"footer" : { "$ref" : "common/checkout-footer.json" },
   "content" : {
     "secureCheckoutTitle" : "Secure Checkout - Confirmation",
     "shippingOne" : "Shipping",
