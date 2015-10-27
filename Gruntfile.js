@@ -3,11 +3,13 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON("package.json"),
 
+    // Configuration of 'grunt-contrib-clean' task, to remove all output folder
     clean: {
-      build: ['output/'],
+      build: ['output/', '**/*.json-resolved'],
       dist: ['*.jar']
     },
 
+    // Configuration of 'grunt-contrib-copy' task, to move files into the output folder
     copy: {
       dist: {
         files: [
@@ -17,6 +19,7 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/fonts/**/*' },
           { expand: true, cwd: 'input/', dest: 'output/', src: '*.html' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json' },
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.hbs' },
           { expand: true, cwd: 'locales/', dest: 'output/locales', src: '**/*.yaml' },
           { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.hbs' }
@@ -24,9 +27,11 @@ module.exports = function(grunt) {
       }
     },
 
+    // Configuration of 'grunt-contrib-coffee' task, to compile Coffeescript files into Javascript
     coffee: {
       dist: {
         options: {
+          // fails when no coffee file found
           //join: true
         },
         files: {
@@ -35,6 +40,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // Configuration of 'grunt-contrib-sass' task, to compile SASS files into CSS
     sass: {
       dist: {
         options: {
@@ -46,6 +52,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // Configuration of 'grunt-postcss' task, to optimize CSS files with vendor prefixes
     postcss: {
       options: {
         map: true,
@@ -57,6 +64,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // Configuration of 'grunt-compile-handlebars' task, to compile Handlebars files and JSON into HTML
     'compile-handlebars': {
       dist: {
         files: [{
@@ -66,12 +74,13 @@ module.exports = function(grunt) {
             dest: 'output/',
             ext: '.html'
         }],
-        templateData: '*.json', // compile-handlebars uses the template folder no matter what
+        templateData: '*.json-resolved', // compile-handlebars uses the template folder no matter what
         partials: 'input/templates/partials/**/*.hbs',
         helpers: 'input/templates/helpers/**/*.js'
       }
     },
 
+    // Configuration of 'grunt-contrib-watch' task, to watch for changes in order to run the build task again
     watch: {
       scripts: {
         files: [
@@ -82,6 +91,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // Configuration of 'grunt-maven-tasks' task, to generate the webjar and then install locally or deploy to bintray
     maven: {
       options: {
         type: "jar",
@@ -114,6 +124,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // Configuration of the 'grunt-gh-pages', to deploy the output to the GitHub Pages
     'gh-pages': {
       options: {
         message: "Deploy to GitHub Pages",
@@ -128,11 +139,25 @@ module.exports = function(grunt) {
       src: ['**/*']
     },
 
+    // Configuration of the 'i18next' task, to support internationalization in Handlebars
     i18next: {
       options: {
         preload: ['de', 'en'],
         lng: 'en',
         fallbackLng: 'en'
+      }
+    },
+
+    // Configuration of 'json-refs' task, to resolve JSON references
+    'json-refs': {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'input/templates',
+          src: '*.json',
+          dest: 'input/templates',
+          ext: '.json-resolved'
+        }]
       }
     }
   });
@@ -148,7 +173,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'i18next', 'handlebars']);
+  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'i18next', 'json-refs', 'handlebars']);
   grunt.registerTask('release-patch', ['build', 'maven', 'clean:dist']);
   grunt.registerTask('release-minor', ['build', 'maven:release:minor', 'clean:dist']);
   grunt.registerTask('release-major', ['build', 'maven:release:major', 'clean:dist']);
@@ -158,6 +183,7 @@ module.exports = function(grunt) {
     grunt.task.requires('i18next');
     grunt.task.run('compile-handlebars');
   });
+
   grunt.registerTask('i18next', 'Internationalization init', function() {
     var done = this.async();
     var options = this.options({
@@ -181,6 +207,57 @@ module.exports = function(grunt) {
 
     i18n.init(options, function (err, t) {
       done(true);
+    });
+  });
+
+  grunt.registerMultiTask('json-refs', 'Resolves all JSON References and returns a fully resolved equivalent', function() {
+    var done = this.async();
+    var doneFiles = 0;
+    var totalFiles = this.files.length;
+
+    // Default task configuration
+    var options = this.options({
+      partials: "input/templates/partials/"
+    });
+
+    // 'json-refs' configuration
+    var jsonRefsOptions = {
+      location: options.partials
+    };
+
+    var jsonRefs = require('json-refs');
+    var path = require('path');
+
+    this.files.forEach(function(file) {
+      if (file.src.length > 1) {
+        grunt.log.error("Multiple source files are not currently supported.");
+      } else {
+        var filepath = file.src[0];
+
+        if (!grunt.file.exists(filepath)) {
+          grunt.log.warn('Source file "' + filepath + '" not found.');
+        } else {
+          var json = grunt.file.readJSON(filepath);
+          // Resolve JSON references
+          jsonRefs.resolveRefs(json, jsonRefsOptions)
+          .then(function(result) {
+            if (result.err) {
+              grunt.log.error(err);
+            }
+            grunt.verbose.writeln(JSON.stringify(result.metadata));
+
+            // Write the resolved JSON to a new file
+            grunt.file.write(file.dest, JSON.stringify(result.resolved));
+            doneFiles++;
+            grunt.log.debug('File "' + file.dest + '" created (' + doneFiles + '/' + totalFiles + ')');
+
+            if (doneFiles >= totalFiles) {
+              grunt.log.debug('All '+ doneFiles +' JSON files resolved');
+              done(true);
+            }
+          });
+        }
+      }
     });
   });
 };

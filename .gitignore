@@ -6,5 +6,6 @@ output/
 *.codekit
 *.log
 *.jar
+*.json-resolved
 .idea
 /vendor/
