@@ -1,0 +1,88 @@
+{
+	"paySecure" : "Pay securely with these payment methods",
+	"followUs" : "Follow us",
+	"newsletter" : {
+		"text" :  "Join our newsletter",
+		"textAlt" : "Subscribe",
+		"url" : "",
+		"placeholder" : "Your email ...",
+		"inputId" : "newsletter-input",
+		"buttonId" : "newsletter-button"
+	},
+	"customerCare" : {
+		"text" : "Customer Care",
+		"list" : [
+			{
+				"text" : "Contact us",
+				"url" : ""
+			},
+			{
+				"text" : "Help",
+				"url" : ""
+			},
+			{
+				"text" : "Shipping",
+				"url" : ""
+			},
+			{
+				"text" : "Returns",
+				"url" : ""
+			},
+			{
+				"text" : "Size Guide",
+				"url" : ""
+			}
+		]
+	},
+	"aboutUs" : {
+		"text" : "About Us",
+		"list" : [
+			{
+				"text" : "Our Story",
+				"url" : ""
+			},
+			{
+				"text" : "Careers",
+				"url" : ""
+			}
+		]
+	},
+	"shortcuts" : {
+		"text" : "Shortcuts",
+		"list" : [
+			{
+				"text" : "My Account",
+				"url" : ""
+			},
+			{
+				"text" : "Store Locator",
+				"url" : ""
+			},
+			{
+				"text" : "Gift Cards",
+				"url" : ""
+			},
+			{
+				"text" : "Payment",
+				"url" : ""
+			}
+		]
+	},
+	"legalInfo" : {
+		"text" : "© 2015 Sunrise",
+		"list" : [
+			{
+				"text" : "Imprint",
+				"url" : ""
+			},
+			{
+				"text" : "Privacy policy",
+				"url" : ""
+			},
+			{
+				"text" : "Terms of use",
+				"url" : ""
+			}
+		]
+	}
+}
