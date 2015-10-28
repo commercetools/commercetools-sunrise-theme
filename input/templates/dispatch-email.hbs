@@ -1014,8 +1014,8 @@ body.outlook p {
 															<p style="text-align: center; margin-bottom: 0; color: #858585;">{{nameHeadline}}</p>
 															<p style="text-align: center; margin-bottom: 0; color: #858585;">{{nameSubline}}</p>
 															<p style="text-align: center; margin-bottom: 0;">{{#if oldPrice}}<span style="text-decoration: line-through; color: #858585; margin-right: 5px; font-size: 12px;">{{oldPrice}}</span>{{/if}}{{price}}</p>
-															{{#if sale}}<span style="display: block; position: absolute; top: 0; right: 0; padding: 10px; text-transform: uppercase; color: #D54D4D;">Sale</span>{{/if}}
-															{{#if new}}<span style="display: block; position: absolute; top: 0; left: 0; padding: 10px; text-transform: uppercase;">New</span>{{/if}}
+															{{#if sale}}<span style="display: block; position: absolute; top: 0; right: 0; padding: 10px; text-transform: uppercase; color: #D54D4D;">{{saleText}}</span>{{/if}}
+															{{#if new}}<span style="display: block; position: absolute; top: 0; left: 0; padding: 10px; text-transform: uppercase;">{{newText}}</span>{{/if}}
 														</td>
 														<td class="expander"></td>
 													</tr>
@@ -1036,8 +1036,10 @@ body.outlook p {
 					          <td class="wrapper last">
 					            <table class="twelve columns">
 					              <tr>
-					                <td>
+					                <td style="position: relative;">
 														<img style="width: 100%!important;" src="assets/img/banner_desktop.jpg">
+														<p style="position: absolute; color: #fff; bottom: 50px; padding: 0 0 10px 10px; text-transform: uppercase; letter-spacing: 1px; font-size: 28px; font-weight: 200;">{{content.bannerTitle}}</p>
+														<p style="position: absolute; color: #fff; bottom: 0; padding: 0 0 10px 10px; font-size: 14px; font-weight: 200;">{{content.bannerText}}</p>
 					                </td>
 					                <td class="expander"></td>
 					              </tr>
@@ -1058,7 +1060,7 @@ body.outlook p {
 					            <table class="twelve columns">
 					              <tr>
 					                <td>
-														<p style="margin-bottom: 0; padding-bottom: 20px; border-bottom: 1px solid #D6D6D6;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+														<p style="margin-bottom: 0; padding-bottom: 20px; border-bottom: 1px solid #D6D6D6;">{{content.bottomTextOne}}</p>
 					                </td>
 					                <td class="expander"></td>
 					              </tr>
@@ -1079,7 +1081,7 @@ body.outlook p {
 					            <table class="twelve columns">
 					              <tr>
 					                <td>
-														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus.</p>
+														<p>{{content.bottomTextTwo}}</p>
 					                </td>
 					                <td class="expander"></td>
 					              </tr>
