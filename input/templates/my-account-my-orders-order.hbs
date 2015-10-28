@@ -184,7 +184,7 @@
                       <span class="your-order-details-titles">{{content.orderNumberTitle}}<br>{{content.orderDateTitle}}</span>
                       <span class="your-order-details-info">{{content.orderNumber}}<br>{{content.orderDate}}</span>
                     </div>
-                    <button class="my-orders-print-receipt-btn">{{content.printReceiptBtn}}</button>
+                    <button onclick="window.print()" class="my-orders-print-receipt-btn">{{content.printReceiptBtn}}</button>
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
@@ -327,7 +327,7 @@
                     </div>
                   {{/each}}
                   <div class="order-print-receipt-btn-wrapper">
-                    <button class="order-print-receipt-btn">{{content.printReceiptBtn}}</button>
+                    <button onclick="window.print()" class="order-print-receipt-btn">{{content.printReceiptBtn}}</button>
                   </div>
                 </div>
               </div>
