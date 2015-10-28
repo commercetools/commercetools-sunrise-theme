@@ -789,7 +789,7 @@ body.outlook p {
 		            <table class="twelve columns">
 		              <tr>
 		                <td>
-		                  <img style="margin-left: 10px;" src="http://placehold.it/200x50">
+		                  <img style="margin-left: 10px; max-width: 200px;" src="{{meta.assetsPath}}img/logo-white-text.svg">
 		                </td>
 		                <td class="expander"></td>
 		              </tr>
@@ -807,10 +807,10 @@ body.outlook p {
 											<table class="twelve columns">
 												<tr>
 													<td>
-														<h1 style="font-weight: 200; padding: 20px 0; text-transform: uppercase; font-size: 28px;">Thank you for your order!</h1>
-														<p style="margin-bottom: 0;">Dear Mr. Wayne,<br>
-                            Many thanks for your recent order received on 28.10.2015.</p><br>
-                            <p style="margin-bottom: 0;">We are happy to confirm that the following items were dispatched on 29.10.2015.</p>
+														<h1 style="font-weight: 200; padding: 20px 0; text-transform: uppercase; font-size: 28px;">{{content.thankyouTitle}}</h1>
+														<p style="margin-bottom: 0;">{{content.dearUser}},<br>
+                            {{content.orderConfirmationText}}</p><br>
+                            <p style="margin-bottom: 0;">{{content.orderConfirmationTextTwo}}</p>
 													</td>
 													<td class="expander"></td>
 												</tr>
@@ -831,14 +831,14 @@ body.outlook p {
 											<table class="twelve columns">
 												<tr>
 													<td class="wrapper" style="background: #F5F5F5; padding: 10px; display: block; margin-bottom: 20px;">
-														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">Mr. Bruce Wayne</p>
-														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">100 Gotham Street</p>
-														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">Gotham City</p>
-														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">Region</p>
-														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">123456</p>
-														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">Country</p><br>
-														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">Phone: +49 123 4567890</p>
-														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">Email: bruce.wayne@commercetools.com</p>
+														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">{{content.orderDetails.name}}</p>
+														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">{{content.orderDetails.street}}</p>
+														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">{{content.orderDetails.city}}</p>
+														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">{{content.orderDetails.region}}</p>
+														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">{{content.orderDetails.postCode}}</p>
+														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">{{content.orderDetails.country}}</p><br>
+														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">{{content.orderDetails.phone}}</p>
+														<p style="font-size: 12px; color: #858585; margin-bottom: 0;">{{content.orderDetails.email}}</p>
 													</td>
 													<td class="expander"></td>
 												</tr>
@@ -850,141 +850,75 @@ body.outlook p {
 						</tr>
 					</table>
 
-					<table class="container" style="border-bottom: 1px solid #D6D6D6;">
-						<tr>
-							<td>
-								<table class="row">
-									<tr>
-										<td class="wrapper">
-											<table class="two columns">
-												<tr>
-													<td>
-														<img src="http://placehold.it/150x200">
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper">
-											<table class="four columns">
-												<tr>
-													<td>
-														<p style="margin-bottom: 0;">Enditatem Product Name</p>
-														<p style="margin-bottom: 0;">Optional Line Two</p>
-														<p style="margin-bottom: 0; font-size: 12px; color: #858585;">Sunrise #SUN123456</p>
-														<p style="margin-bottom: 0; font-size: 12px; display: inline-block;">Color:<br>Size:</p>
-														<p style="margin-bottom: 0; font-size: 12px; display: inline-block; color: #858585;">Navy Blue<br>M</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper">
-											<table class="two columns">
-												<tr>
-													<td>
-														<p style="margin-bottom: 0; font-size: 12px; text-transform: uppercase; color: #858585; text-align: right;">Quantity</p>
-														<p style="margin-bottom: 0; font-size: 12px; text-align: right;">1 x</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper">
-											<table class="two columns">
-												<tr>
-													<td>
-														<p style="margin-bottom: 0; font-size: 12px; text-transform: uppercase; color: #858585; text-align: right;">Price</p>
-														<p style="margin-bottom: 0; font-size: 12px; text-align: right;">100,00 €</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper last">
-											<table class="two columns">
-												<tr>
-													<td>
-														<p style="margin-bottom: 0; font-size: 12px; text-transform: uppercase; color: #858585; text-align: right;">Total</p>
-														<p style="margin-bottom: 0; font-size: 12px; text-align: right;">100,00 €</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-
-					<table class="container" style="border-bottom: 1px solid #D6D6D6;">
-						<tr>
-							<td>
-								<table class="row">
-									<tr>
-										<td class="wrapper">
-											<table class="two columns">
-												<tr>
-													<td>
-														<img src="http://placehold.it/150x200">
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper">
-											<table class="four columns">
-												<tr>
-													<td>
-														<p style="margin-bottom: 0;">Enditatem Product Name</p>
-														<p style="margin-bottom: 0;">Optional Line Two</p>
-														<p style="margin-bottom: 0; font-size: 12px; color: #858585;">Sunrise #SUN123456</p>
-														<p style="margin-bottom: 0; font-size: 12px; display: inline-block;">Color:<br>Size:</p>
-														<p style="margin-bottom: 0; font-size: 12px; display: inline-block; color: #858585;">Navy Blue<br>M</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper">
-											<table class="two columns">
-												<tr>
-													<td>
-														<p style="margin-bottom: 0; font-size: 12px; text-transform: uppercase; color: #858585; text-align: right;">Quantity</p>
-														<p style="margin-bottom: 0; font-size: 12px; text-align: right;">1 x</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper">
-											<table class="two columns">
-												<tr>
-													<td>
-														<p style="margin-bottom: 0; font-size: 12px; text-transform: uppercase; color: #858585; text-align: right;">Price</p>
-														<p style="margin-bottom: 0; font-size: 12px; text-align: right;">100,00 €</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper last">
-											<table class="two columns">
-												<tr>
-													<td>
-														<p style="margin-bottom: 0; font-size: 12px; text-transform: uppercase; color: #858585; text-align: right;">Total</p>
-														<p style="margin-bottom: 0; font-size: 12px; text-align: right;">100,00 €</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
+					{{#each content.order}}
+						<table class="container" style="border-bottom: 1px solid #D6D6D6;">
+							<tr>
+								<td>
+									<table class="row">
+										<tr>
+											<td class="wrapper">
+												<table class="two columns">
+													<tr>
+														<td>
+															<img src="{{image}}">
+														</td>
+														<td class="expander"></td>
+													</tr>
+												</table>
+											</td>
+											<td class="wrapper">
+												<table class="four columns">
+													<tr>
+														<td>
+															<p style="margin-bottom: 0;">{{nameHeadline}}</p>
+															<p style="margin-bottom: 0;">{{nameSubline}}</p>
+															<p style="margin-bottom: 0; font-size: 12px; color: #858585;">{{sku}}</p>
+															<p style="margin-bottom: 0; font-size: 12px; display: inline-block;">{{colorTitle}}<br>{{sizeTitle}}</p>
+															<p style="margin-bottom: 0; font-size: 12px; display: inline-block; color: #858585;">{{color}}<br>{{size}}</p>
+														</td>
+														<td class="expander"></td>
+													</tr>
+												</table>
+											</td>
+											<td class="wrapper">
+												<table class="two columns">
+													<tr>
+														<td>
+															<p style="margin-bottom: 0; font-size: 12px; text-transform: uppercase; color: #858585; text-align: right;">{{quantityTitle}}</p>
+															<p style="margin-bottom: 0; font-size: 12px; text-align: right;">{{quantity}} x</p>
+														</td>
+														<td class="expander"></td>
+													</tr>
+												</table>
+											</td>
+											<td class="wrapper">
+												<table class="two columns">
+													<tr>
+														<td>
+															<p style="margin-bottom: 0; font-size: 12px; text-transform: uppercase; color: #858585; text-align: right;">{{priceTitle}}</p>
+															<p style="margin-bottom: 0; font-size: 12px; text-align: right;">{{price}}</p>
+														</td>
+														<td class="expander"></td>
+													</tr>
+												</table>
+											</td>
+											<td class="wrapper last">
+												<table class="two columns">
+													<tr>
+														<td>
+															<p style="margin-bottom: 0; font-size: 12px; text-transform: uppercase; color: #858585; text-align: right;">{{totalPriceTitle}}</p>
+															<p style="margin-bottom: 0; font-size: 12px; text-align: right;">{{totalPrice}}</p>
+														</td>
+														<td class="expander"></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					{{/each}}
 
 					<table class="container" style="border-bottom: 1px solid #D6D6D6;">
 						<tr>
@@ -995,9 +929,9 @@ body.outlook p {
 					            <table class="twelve columns">
 					              <tr>
 													<td style="text-align: right;">
-														<p style="text-transform: uppercase; font-size: 12px; text-align: right;">Promotional Code Applied: Sunny Sale</p>
-														<p style="display: inline-block; min-width: 160px;">Subtotal<br>Order Discount<br>Standart Delivery</p>
-														<p style="display: inline-block; text-align: right;">200,00 €<br>0,00 €<br>10,00 €</p>
+														<p style="text-transform: uppercase; font-size: 12px; text-align: right;"><span style="color: #858585;">{{content.totalSum.promoCodeTitle}}:</span> {{content.totalSum.promoCode}}</p>
+														<p style="display: inline-block; text-align: right; margin-right: 50px;">{{content.totalSum.subtotalTitle}}<br>{{content.totalSum.orderDiscountTitle}}<br>{{content.totalSum.deliveryOption}}</p>
+														<p style="display: inline-block; text-align: right;">{{content.totalSum.subtotal}}<br>{{content.totalSum.orderDiscount}}<br>{{content.totalSum.delivery}}</p>
 													</td>
 					                <td class="expander"></td>
 					              </tr>
@@ -1018,8 +952,8 @@ body.outlook p {
 					            <table class="twelve columns">
 					              <tr>
 													<td style="text-align: right;">
-														<p style="display: inline-block; min-width: 160px;">Sales Tax<br>Estimated Order Total</p>
-														<p style="display: inline-block; text-align: right;">20,00 €<br>230,00 €</p>
+														<p style="display: inline-block; text-align: right; margin-right: 50px;">{{content.totalSum.taxTitle}}<br><span style="font-weight: bold; font-size: 16px;">{{content.totalSum.orderTotalTitle}}</span></p>
+														<p style="display: inline-block; text-align: right;">{{content.totalSum.tax}}<br><span style="font-weight: bold; font-size: 16px;">{{content.totalSum.orderTotal}}</span></p>
 													</td>
 					                <td class="expander"></td>
 					              </tr>
@@ -1053,7 +987,7 @@ body.outlook p {
 					            <table class="twelve columns">
 					              <tr>
 													<td>
-														<h1 style="text-align: center; font-weight: 200; text-transform: uppercase; font-size: 28px; padding: 30px 0 0 0;">You may also like</h1>
+														<h1 style="text-align: center; font-weight: 200; text-transform: uppercase; font-size: 28px; padding: 30px 0 0 0;">{{content.suggestionsTitle}}</h1>
 													</td>
 					                <td class="expander"></td>
 					              </tr>
@@ -1070,46 +1004,21 @@ body.outlook p {
 							<td>
 								<table class="row">
 					        <tr>
-					          <td class="wrapper">
-					            <table class="three columns">
-					              <tr>
-													<td>
-														<img src="http://placehold.it/400px100">
-													</td>
-					                <td class="expander"></td>
-					              </tr>
-					            </table>
-					          </td>
-										<td class="wrapper">
-					            <table class="three columns">
-					              <tr>
-													<td>
-														<img src="http://placehold.it/400px100">
-													</td>
-					                <td class="expander"></td>
-					              </tr>
-					            </table>
-					          </td>
-										<td class="wrapper">
-					            <table class="three columns">
-					              <tr>
-													<td>
-														<img src="http://placehold.it/400px100">
-													</td>
-					                <td class="expander"></td>
-					              </tr>
-					            </table>
-					          </td>
-										<td class="wrapper last">
-					            <table class="three columns">
-					              <tr>
-													<td>
-														<img src="http://placehold.it/400px100">
-													</td>
-					                <td class="expander"></td>
-					              </tr>
-					            </table>
-					          </td>
+										{{#each content.suggestions}}
+											<td class="wrapper {{#if last}}last{{/if}}">
+												<table class="four columns">
+													<tr>
+														<td style="border: 1px solid #D6D6D6;">
+															<img style="margin-bottom: 10px;" src="{{image}}">
+															<p style="text-align: center; margin-bottom: 0; font-size: 12px; color: #858585;">{{nameHeadline}}</p>
+															<p style="text-align: center; margin-bottom: 0; font-size: 12px; color: #858585;">{{nameSubline}}</p>
+															<p style="text-align: center; margin-bottom: 0; font-size: 12px;">{{price}}</p>
+														</td>
+														<td class="expander"></td>
+													</tr>
+												</table>
+											</td>
+										{{/each}}
 					        </tr>
 					      </table>
 							</td>
@@ -1125,7 +1034,7 @@ body.outlook p {
 					            <table class="twelve columns">
 					              <tr>
 					                <td>
-														<img style="width: 100%!important;" src="http://placehold.it/400px100">
+														<img style="width: 100%!important;" src="assets/img/banner_desktop.jpg">
 					                </td>
 					                <td class="expander"></td>
 					              </tr>
@@ -1186,7 +1095,7 @@ body.outlook p {
 		            <table class="twelve columns">
 		              <tr>
 		                <td>
-											<p style="margin-left: 10px;"><a href="#" style="color: #fff; text-decoration: underline; margin-right: 5px;">Terms</a> <a href="#" style="color: #fff; text-decoration: underline; margin-right: 5px;">Privacy</a> <a href="#" style="color: #fff; text-decoration: underline;">Unsubscribe</a></p>
+											<p style="margin-left: 10px;"><a href="#" style="color: #fff; text-decoration: underline; margin-right: 5px;">{{footer.terms}}</a> <a href="#" style="color: #fff; text-decoration: underline; margin-right: 5px;">{{footer.privacy}}</a> <a href="#" style="color: #fff; text-decoration: underline;">{{footer.unsubscribe}}</a></p>
 		                </td>
 		                <td class="expander"></td>
 		              </tr>

@@ -1,0 +1,96 @@
+{
+    "footer" : {
+        "terms" : "Terms",
+        "privacy" : "Privacy",
+        "unsubscribe" : "Unsubscribe"
+    },
+    "content" : {
+        "thankyouTitle" : "Thank you for your order!",
+        "dearUser" : "Dear Mr. Wayne",
+        "orderConfirmationText" : "Many thanks for your recent order received on 28.10.2015.",
+        "orderConfirmationTextTwo" : "We are happy to confirm that the following items were dispatched on 29.10.2015.",
+        "orderDetails" : {
+            "name" : "Mr. Bruce Wayne",
+            "street" : "100 Gotham City",
+            "city" : "Gotham City",
+            "region" : "Region",
+            "postCode" : "123456",
+            "country" : "Country",
+            "phone" : "Phone: +49 123 4567890",
+            "email" : "Email: bruce.wayne@commercetools.com"
+        },
+        "order" : [
+            {
+                "image" : "assets/img/blue-shirt.jpg",
+                "nameHeadline" : "Enditatem Product Name",
+                "nameSubline" : "Optional Line Two",
+                "sku" : "Sunrise #SUN123456",
+                "colorTitle" : "Color: ",
+                "color" : "Navy Blue",
+                "sizeTitle" : "Size: ",
+                "size" : "M",
+                "quantityTitle" : "Quantity",
+      			"quantity" : "1",
+                "priceTitle" : "Price",
+                "price" : "100,00 €",
+                "totalPriceTitle" : "Total",
+                "totalPrice" : "100,00 €"
+            },
+            {
+                "image" : "assets/img/blue-shirt.jpg",
+                "nameHeadline" : "Enditatem Product Name",
+                "nameSubline" : "Optional Line Two",
+                "sku" : "Sunrise #SUN123456",
+                "colorTitle" : "Color: ",
+                "color" : "Navy Blue",
+                "sizeTitle" : "Size: ",
+                "size" : "M",
+                "quantityTitle" : "Quantity",
+      			"quantity" : "1",
+                "priceTitle" : "Price",
+                "price" : "100,00 €",
+                "totalPriceTitle" : "Total",
+                "totalPrice" : "100,00 €"
+            }
+        ],
+        "totalSum" : {
+            "promoCodeTitle" : "Promotional Code Applied",
+            "promoCode" : "Sunny Sale",
+			"subtotalTitle" : "Subtotal",
+			"subtotal" : "200,00 €",
+			"orderDiscountTitle" : "Order Discount",
+			"orderDiscount" : "0,00 €",
+			"deliveryOption" : "Standard Delivery",
+			"delivery" : "10,00 €",
+			"taxTitle" : "Sales Tax",
+			"tax" : "20,00 €",
+			"orderTotalTitle" : "Order Total",
+			"orderTotal" : "230,00 €"
+		},
+        "suggestionsTitle" : "You may also like",
+        "suggestions" : [
+            {
+                "image" : "assets/img/blue-shirt.jpg",
+                "nameHeadline" : "Enditatem Product Name",
+                "nameSubline" : "Optional Line Two",
+                "price" : "€ 100,00"
+            },
+            {
+                "image" : "assets/img/blue-shirt.jpg",
+                "nameHeadline" : "Enditatem Product Name",
+                "nameSubline" : "Optional Line Two",
+                "price" : "€ 100,00"
+            },
+            {
+                "last" : true,
+                "image" : "assets/img/blue-shirt.jpg",
+                "nameHeadline" : "Enditatem Product Name",
+                "nameSubline" : "Optional Line Two",
+                "price" : "€ 100,00"
+            }
+        ]
+    },
+    "meta" : {
+        "assetsPath": "assets/"
+    }
+}
