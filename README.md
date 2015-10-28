@@ -22,6 +22,7 @@
 - [My Account: Returns / Exchange](http://sphereio.github.io/sphere-sunrise-design/my-account-returns-exchange.html)
 - [My Account: Returns / Exchange - Single Return](http://sphereio.github.io/sphere-sunrise-design/my-account-returns-exchange-order.html)
 - [My Account: Wishlist](http://sphereio.github.io/sphere-sunrise-design/my-account-wishlist.html)
+- [Confirmation Email](http://sphereio.github.io/sphere-sunrise-design/confirmation-email.html)
 
 
 ###Installation
