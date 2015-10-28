@@ -73,20 +73,25 @@
                 "image" : "assets/img/blue-shirt.jpg",
                 "nameHeadline" : "Enditatem Product Name",
                 "nameSubline" : "Optional Line Two",
-                "price" : "€ 100,00"
+                "price" : "€ 100,00",
+                "oldPrice" : "€ 200,00",
+                "sale" : true
             },
             {
                 "image" : "assets/img/blue-shirt.jpg",
                 "nameHeadline" : "Enditatem Product Name",
                 "nameSubline" : "Optional Line Two",
-                "price" : "€ 100,00"
+                "price" : "€ 100,00",
+                "new" : true
             },
             {
                 "last" : true,
                 "image" : "assets/img/blue-shirt.jpg",
                 "nameHeadline" : "Enditatem Product Name",
                 "nameSubline" : "Optional Line Two",
-                "price" : "€ 100,00"
+                "price" : "€ 100,00",
+                "oldPrice" : "€ 200,00",
+                "sale" : true
             }
         ]
     },
