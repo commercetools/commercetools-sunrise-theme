@@ -150,6 +150,11 @@ $(document).ready(function() {
     $('.search-box').slideToggle();
   });
 
+  // Your bag dropdown
+  $(".link-your-bag").click(function() {
+    $(".nav-minicart").slideToggle();
+  });
+
   // Location dropdown
   $(".location-dropdown-toggle").click(function() {
     $(".location-dropdown").slideToggle();
@@ -158,8 +163,9 @@ $(document).ready(function() {
   // Closing dropdown on click outside of it
   $('html').click(function() {
     $('.location-dropdown').hide();
+    $('.nav-minicart').hide();
   });
-  $('.list-item-location').click(function(event) {
+  $('.list-item-location, .list-item-bag, .nav-minicart').click(function(event) {
     event.stopPropagation();
   });
 });
@@ -178,6 +184,8 @@ $('.dropdown-toggle').click(function(event) {
     event.stopPropagation();
   }
 });
+
+
 
 /*****************************************************************************/
 /*
