@@ -22,6 +22,7 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.hbs' },
           { expand: true, cwd: 'locales/', dest: 'output/locales', src: '**/*.yaml' },
+          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.json' },
           { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.hbs' }
         ]
       }
@@ -173,15 +174,19 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'i18next', 'json-refs', 'handlebars']);
+  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'pre-handlebars', 'handlebars']);
   grunt.registerTask('release-patch', ['build', 'maven', 'clean:dist']);
   grunt.registerTask('release-minor', ['build', 'maven:release:minor', 'clean:dist']);
   grunt.registerTask('release-major', ['build', 'maven:release:major', 'clean:dist']);
   grunt.registerTask('publish', ['gh-pages-clean', 'build', 'gh-pages']);
 
-  grunt.registerTask('handlebars', 'handlebars', function() {
-    grunt.task.requires('i18next');
-    grunt.task.requires('json-refs');
+  grunt.registerTask('pre-handlebars', 'Tasks to be run before Handlebars', function() {
+    grunt.task.run('json-refs');
+    grunt.task.run('i18next');
+  });
+
+  grunt.registerTask('handlebars', 'Compiles Handlebars templates using JSON data', function() {
+    grunt.task.requires('pre-handlebars');
     grunt.task.run('compile-handlebars');
   });
 
@@ -238,10 +243,7 @@ module.exports = function(grunt) {
     });
     
     Promise.all(resolvedRefsPromises)
-    .then(function() {
-      if (err) {
-        grunt.log.error(err);
-      }
+    .then(function(result) {
       done(true);
     });
   });
