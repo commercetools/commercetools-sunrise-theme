@@ -268,17 +268,18 @@ module.exports = function(grunt) {
   };
 
   var writeResolvedFile = function(file, result) {
+    var written = false;
     if (result.err) {
       grunt.fail.warn(err);
-      return false;
-    }
-    grunt.verbose.writeln(JSON.stringify(result.metadata));
-    // Write the resolved JSON to a new file
-    var written = grunt.file.write(file.dest, JSON.stringify(result.resolved));
-    if (written) {
-      grunt.log.debug('File "' + file.dest + '" created');
     } else {
-      grunt.log.error('File "' + file.dest + '" failed on creation');
+      grunt.verbose.writeln(JSON.stringify(result.metadata));
+      // Write the resolved JSON to a new file
+      written = grunt.file.write(file.dest, JSON.stringify(result.resolved));
+      if (written) {
+        grunt.log.debug('File "' + file.dest + '" created');
+      } else {
+        grunt.log.error('File "' + file.dest + '" failed on creation');
+      }
     }
     return written;
   };
