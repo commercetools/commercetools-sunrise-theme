@@ -181,6 +181,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('handlebars', 'handlebars', function() {
     grunt.task.requires('i18next');
+    grunt.task.requires('json-refs');
     grunt.task.run('compile-handlebars');
   });
 
@@ -212,14 +213,10 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('json-refs', 'Resolves all JSON References and returns a fully resolved equivalent', function() {
     var done = this.async();
-    var doneFiles = 0;
-    var totalFiles = this.files.length;
-
     // Default task configuration
     var options = this.options({
       partials: "input/templates/partials/"
     });
-
     // 'json-refs' configuration
     var jsonRefsOptions = {
       location: options.partials
@@ -228,36 +225,59 @@ module.exports = function(grunt) {
     var jsonRefs = require('json-refs');
     var path = require('path');
 
-    this.files.forEach(function(file) {
-      if (file.src.length > 1) {
-        grunt.log.error("Multiple source files are not currently supported.");
-      } else {
-        var filepath = file.src[0];
-
-        if (!grunt.file.exists(filepath)) {
-          grunt.log.warn('Source file "' + filepath + '" not found.');
-        } else {
-          var json = grunt.file.readJSON(filepath);
-          // Resolve JSON references
-          jsonRefs.resolveRefs(json, jsonRefsOptions)
-          .then(function(result) {
-            if (result.err) {
-              grunt.log.error(err);
-            }
-            grunt.verbose.writeln(JSON.stringify(result.metadata));
-
-            // Write the resolved JSON to a new file
-            grunt.file.write(file.dest, JSON.stringify(result.resolved));
-            doneFiles++;
-            grunt.log.debug('File "' + file.dest + '" created (' + doneFiles + '/' + totalFiles + ')');
-
-            if (doneFiles >= totalFiles) {
-              grunt.log.debug('All '+ doneFiles +' JSON files resolved');
-              done(true);
-            }
-          });
-        }
+    var resolvedRefsPromises = this.files
+    .filter(removeInvalidFiles)
+    .filter(removeInexistentFiles)
+    .map(function(file) {
+      // Resolve JSON references
+      var json = grunt.file.readJSON(file.src[0]);
+      return jsonRefs.resolveRefs(json, jsonRefsOptions)
+      .then(function(result) {
+        return writeResolvedFile(file, result);
+      });
+    });
+    
+    Promise.all(resolvedRefsPromises)
+    .then(function() {
+      if (err) {
+        grunt.log.error(err);
       }
+      done(true);
     });
   });
+
+  var removeInvalidFiles = function(file) {
+    if (file.src.length != 1) {
+      grunt.fail.warn("Only a single source file is currently supported.");
+      return false;
+    } else {
+      return true;
+    }
+  };
+
+  var removeInexistentFiles = function(file) {
+    var filepath = file.src[0];
+    if(!grunt.file.exists(filepath)) {
+      grunt.log.warn('Source file "' + filepath + '" not found.');
+      return false;
+    } else {
+      return true;
+    }
+  };
+
+  var writeResolvedFile = function(file, result) {
+    if (result.err) {
+      grunt.fail.warn(err);
+      return false;
+    }
+    grunt.verbose.writeln(JSON.stringify(result.metadata));
+    // Write the resolved JSON to a new file
+    var written = grunt.file.write(file.dest, JSON.stringify(result.resolved));
+    if (written) {
+      grunt.log.debug('File "' + file.dest + '" created');
+    } else {
+      grunt.log.error('File "' + file.dest + '" failed on creation');
+    }
+    return written;
+  };
 };
