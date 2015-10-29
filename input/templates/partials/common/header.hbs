@@ -69,6 +69,7 @@
         <div class="col-xs-12">
           <div class="nav-minicart">
             <ul>
+              {{#each header.minicart}}
               <li>
 
                 <a class="img" href="#">
@@ -77,19 +78,19 @@
 
                 <p class="product-title">
                   <a href="#">
-                    Enditatem Product Name
+                    {{nameHeadline}}
                   </a>
                 </p>
                 <p class="product-title">
-                  Optinal Line two
+                  {{nameSubline}}
                 </p>
 
                 <div class="details">
-                  <p class="product-quantity">Quantity
-                    <span>1x</span>
+                  <p class="product-quantity">{{quantityText}}
+                    <span>{{quantity}}x</span>
                   </p>
-                  <p class="product-price">Price
-                    <span>49,00 €</span>
+                  <p class="product-price">{{priceText}}
+                    <span>{{price}}</span>
                   </p>
 
                   <button class="delete" type="submit" href="#">
@@ -99,79 +100,8 @@
                   </button>
 
                 </div>
-
-
               </li>
-              <li>
-
-                <a class="img" href="#">
-                  <img src="assets/img/blue-shirt.jpg" alt="Alt text" />
-                </a>
-
-                <p class="product-title">
-                  <a href="#">
-                    Enditatem Product Name
-                  </a>
-                </p>
-                <p class="product-title">
-                  Optinal Line two
-                </p>
-
-                <div class="details">
-                  <p class="product-quantity">Quantity
-                    <span>1x</span>
-                  </p>
-                  <p class="product-price">Price
-                    <span>49,00 €</span>
-                  </p>
-
-                  <button class="delete" type="submit" href="#">
-                    <span>
-                      <img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">
-                    </span>
-                  </button>
-
-                </div>
-
-
-              </li>
-
-              <li>
-
-                <a class="img" href="#">
-                  <img src="assets/img/blue-shirt.jpg" alt="Alt text" />
-                </a>
-
-                <p class="product-title">
-                  <a href="#">
-                    Enditatem Product Name
-                  </a>
-                </p>
-                <p class="product-title">
-                  Optinal Line two
-                </p>
-
-                <div class="details">
-                  <p class="product-quantity">Quantity
-                    <span>1x</span>
-                  </p>
-                  <p class="product-price">Price
-                    <span>49,00 €</span>
-                  </p>
-
-                  <button class="delete" type="submit" href="#">
-                    <span>
-                      <img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">
-                    </span>
-                  </button>
-
-                </div>
-
-
-              </li>
-
-
-
+              {{/each}}
             </ul>
 
             <div class="gradient"></div>
