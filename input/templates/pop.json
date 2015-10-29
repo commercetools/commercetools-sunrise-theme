@@ -1,41 +1,14 @@
 {
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
-	"seo" : {
-		"text" : "SEO TEXT AREA",
-		"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
-	},
 	"content" : {
-		"messages" : {
-			"pleaseWait" : "Please wait..."
+		"banner" : { "$ref" : "catalog/banner.json" },
+		"jumbotron" : { "$ref" : "catalog/jumbotron.json" },
+		"seo" : {
+			"text" : "SEO TEXT AREA",
+			"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
 		},
-		"text" : "Women",
-		"banner" : {
-			"text" : "Women",
-			"description" : "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
-			"imageMobile" : "assets/img/banner_mobile.jpg",
-			"imageDesktop" : "assets/img/banner_desktop.jpg"
-		},
-		"jumbotron" : {
-			"text" : "Coats",
-			"description" : "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
-			"category" : "Women"
-		},
-		"breadcrumb" : [
-			{
-				"url" : "home/",
-				"text" : "Home"
-			},
-			{
-				"url" : "women/",
-				"text" : "Women"
-			},
-			{
-				"url" : "coats/",
-				"text" : "Coats",
-				"selected" : true
-			}
-		],
+		"breadcrumb" : { "$ref" : "catalog/breadcrumb.json" },
 		"filters" : {
 			"text" : "Filter Products",
 			"clear" : "Clear",
@@ -299,77 +272,9 @@
 				}
 			]
 		},
-		"pagination" : {
-			"currentPage" : 145,
-			"totalPages" : 234,
-			"pageSeparator" : "of",
-			"next" : "Next",
-			"prev" : "Previous",
-			"urlNext" : "",
-			"urlPrev" : "",
-			"pages" : [
-				{
-					"name" : "1",
-					"url" : "",
-					"selected" : false
-				},
-				{
-					"name" : "2",
-					"url" : "",
-					"selected" : false
-				},
-				{
-					"name" : "3",
-					"url" : "",
-					"selected" : true
-				},
-				{
-					"name" : "4",
-					"url" : "",
-					"selected" : false
-				},
-				{
-					"name" : "5",
-					"url" : "",
-					"selected" : false
-				}
-			]
-		},
-		"display" : {
-			"title" : "items per page",
-			"list" : [
-				{
-					"name" : "12",
-					"value" : "12",
-					"selected" : false
-				},
-				{
-					"name" : "24",
-					"value" : "24",
-					"selected" : true
-				},
-				{
-					"name" : "48",
-					"value" : "48",
-					"selected" : false
-				}
-			]
-		},
-		"sort" : {
-			"text" : "Sort by price",
-			"list" : [
-				{
-					"text" : "Sort by: low",
-					"value" : "",
-					"selected" : false
-				},
-				{
-					"text" : "Sort by high",
-					"value" : "",
-					"selected" : true
-				}
-			]
-		},
+		"pagination" : { "$ref" : "catalog/pagination.json" },
+		"displaySelector" : { "$ref" : "catalog/display-selector.json" },
+		"sortSelector" : { "$ref" : "catalog/sort-selector.json" },
 		"products" : {
 			"sale" : "Sale",
 			"new" : "New",

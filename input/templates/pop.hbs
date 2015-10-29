@@ -35,11 +35,7 @@
           <div class="dark-overlay"></div>
           <div class="row jumbotron-row">
             <div class="col-xs-12">
-              <div class="jumbotron">
-                <p>{{content.jumbotron.category}}</p>
-                <h2>{{content.jumbotron.text}}</h2>
-                <h3>{{content.jumbotron.description}}</h3>
-              </div>
+              {{> catalog/jumbotron}}
             </div>
           </div>
           <div class="row visible-xs">
@@ -49,23 +45,16 @@
                   <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="modal" data-target="#sidebar-overlay">{{content.filters.open}}</button>
                 </li>
                 <li class="pull-left">
-                  <p class="item-count">{{content.pagination.currentPage}} {{i18n "content.pagination.pageSeparator"}} {{content.pagination.totalPages}}</p>
+                  {{> catalog/results-summary}}
                 </li>
               </ul>
             </div>
-            {{> catalog/sidebar-overlay}}
+            {{> catalog/filters-sidebar-mobile}}
           </div>
           <hr class="hr hidden-xs">
           <div class="row hidden-xs item-list-pagination">
             <div class="col-xs-4 text-left">
-              <div class="styled-select icon-drop-down">
-                <select class="select">
-                  {{#each content.sort.list}}
-                    <option value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
-                  {{/each}}
-                </select>
-              </div>
-              <p class="item-count">{{content.pagination.currentPage}} {{i18n "content.pagination.pageSeparator"}} {{content.pagination.totalPages}}</p>
+              {{> catalog/results-summary}}
             </div>
             <div class="col-xs-4 text-center pagination">
               <ul class="page-numbers">
@@ -73,14 +62,7 @@
               </ul>
             </div>
             <div class="col-xs-4 text-right">
-              <p class="item-count">{{i18n "content.display.title"}}</p>
-              <div class="styled-select icon-drop-down">
-                <select class="select">
-                  {{#each content.display.list}}
-                    <option value="{{value}}" {{#if selected}} selected {{/if}}>{{name}}</option>
-                  {{/each}}
-                </select>
-              </div>
+              {{> catalog/display-selector}}
             </div>
           </div>
           <div class="row">
@@ -100,8 +82,8 @@
           <hr class="hr">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="seo-title">{{seo.text}}</h1>
-              <p class="seo-text">{{seo.description}}</p>
+              <h1 class="seo-title">{{content.seo.text}}</h1>
+              <p class="seo-text">{{content.seo.description}}</p>
             </div>
           </div>
         </div>

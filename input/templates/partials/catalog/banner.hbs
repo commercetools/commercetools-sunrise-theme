@@ -1,10 +1,8 @@
-{{#with content.banner}}
 <figure class="figure-banner">
-  <img class="img-responsive hidden-sm hidden-md hidden-lg" src="{{imageMobile}}" alt="{{text}}">
-  <img class="img-responsive hidden-xs" src="{{imageDesktop}}" alt="{{text}}">
+  <img class="img-responsive hidden-sm hidden-md hidden-lg" src="{{content.banner.imageMobile}}" alt="{{content.banner.title}}">
+  <img class="img-responsive hidden-xs" src="{{content.banner.imageDesktop}}" alt="{{content.banner.title}}">
   <figcaption class="figcaption-banner-text">
-    <h2>{{text}}</h2>
-    <h3>{{description}}</h3>
+    <h2>{{content.banner.title}}</h2>
+    <h3>{{content.banner.description}}</h3>
   </figcaption>
 </figure>
-{{/with}}

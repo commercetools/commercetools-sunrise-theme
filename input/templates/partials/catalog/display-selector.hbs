@@ -1,0 +1,8 @@
+<p class="item-count">{{i18n "content.displaySelector.title"}}</p>
+<div class="styled-select icon-drop-down">
+	<select class="select">
+	  {{#each content.displaySelector.list}}
+	    <option value="{{value}}" {{#if selected}} selected {{/if}}>{{name}}</option>
+	  {{/each}}
+	</select>
+</div>

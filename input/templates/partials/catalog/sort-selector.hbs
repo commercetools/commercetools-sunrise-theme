@@ -1,0 +1,7 @@
+<div class="styled-select icon-drop-down">
+  <select class="select">
+	{{#each content.sortSelector.list}}
+	  <option value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
+    {{/each}}
+  </select>
+</div>
