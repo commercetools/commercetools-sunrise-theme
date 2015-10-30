@@ -222,11 +222,10 @@ $(function() {
 
     if (elementHeight > 42) {
       element.addClass('categories-brakes');
-      console.log("breaking");
-    } else {
-      console.log("not breaking");
     }
   }
+}
+
 });
 
 // Disabling bootstrap menu close on 2nd+ level items
