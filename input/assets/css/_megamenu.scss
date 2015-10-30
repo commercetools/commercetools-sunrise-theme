@@ -49,7 +49,7 @@
           display: block;
           width: 17% !important;
           float: right;
-          background: $grey-bluish;
+          background: rgba(52, 65, 78, 0.8);
           text-align: center;
           margin: 0px 16px 0px 0px !important;
 
@@ -57,7 +57,7 @@
             width: 100%;
 
             .dropdown-toggle {
-              font-size: 0.9em;
+              font-size: 18px;
               color: #fff;
 
               &:hover {
@@ -70,7 +70,7 @@
             }
 
             .megamenu {
-              background: $grey-bluish;
+              background: rgba(52, 65, 78, 0.8);
 
               h3 a {
                 color: #fff !important;

@@ -224,8 +224,6 @@ $(function() {
       element.addClass('categories-brakes');
     }
   }
-}
-
 });
 
 // Disabling bootstrap menu close on 2nd+ level items
