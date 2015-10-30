@@ -161,6 +161,20 @@
               </div>
             </li>
           </ul>
+          <ul class="nav navbar-nav categories-group-button">
+            <li class="dropdown menu-large">
+              <a href="" class="dropdown-toggle " data-toggle="dropdown">All categories</a>
+              <ul class="dropdown-menu megamenu row dropdown-submenu">
+                <li class="col-sm-12">
+                  <div class="nav-accordion">
+                    {{#each header.navMenu.categories}}
+                      <h3><a href="{{url}}">{{text}}</a></h3>
+                    {{/each}}
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
