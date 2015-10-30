@@ -5,33 +5,26 @@ content:
     itemAddedToBagAlert: This item has been added to your bag
     viewYourBagAlert: View your bag
     addToWishlistAlert: Add to wishlist
+    requiredField: Required field
+  general:
+    closeModal: Close Modal
   static:
     contentText: Products
-    ratingText: Write first review
-    viewDetailsText: View Details
-    colorsText: Color
-    sizesText: Size
-    sizeGuideText: Size Guide
-    addToBagText: Add to Bag
-    addToWishlistText: Add item to wishlist
-    availableText: Available
     productDetailsText: Product Details
     deliveryAndReturnsText: Delivery & Returns
     shippingRatesText: Delivery
     returnsText: Returns
     youMayLikeText: You may also like
-    saleText: Sale
-    newText: New
-    quickViewText: Quick view
-    wishlistText: Add item to wishlist
-    moreColorsText: More colours
     reviewsText: Reviews
-    colorDefaultItem: Choose Color
-    sizeDefaultItem: Choose Size
     standardDeliveryText: Standard delivery - FREE for orders over €29.99, otherwise €3.00. Delivery within 4 working days.
     expressDeliveryText: Express delivery - €6.00. Delivery within 2 working days.
     freeReturnsText: Free return for all orders.
     moreDeliveryInfoText: ""
+  filters:
+    title: Filter Products
+    open: Filter
+    close: Filter close
+    clear: Clear
   pagination:
     pageSeparator: of
     next: Next
@@ -40,3 +33,27 @@ content:
     title: items per page
   sortSelector:
     title: Sort by price
+  product:
+    sale: Sale
+    new: New
+    quickView: Quick view
+    addToBag: Add to Bag
+    addToWishlist: Add item to wishlist
+    moreColors: More colours
+    viewDetails: View Details
+    available: Available
+    sizeGuide: Size Guide
+    choose: Choose
+    writeReview: Write first review
+  ratings:
+    text5: 5 stars
+    text4: 4 stars
+    text3: 3 stars
+    text2: 2 stars
+    text1: 1 star
+    description5: Rocks!
+    description4: Pretty good
+    description3: Meh
+    description2: Kinda bad
+    description1: Sucks big time
+

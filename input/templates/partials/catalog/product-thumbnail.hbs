@@ -1,17 +1,19 @@
-<a href="{{url}}">
+<a id="link-product-thumbnail-{{id}}" href="{{url}}">
   <div class="shop-item">
     {{#if priceOld}}
-      <div class="sale-flag">{{i18n "content.static.saleText"}}</div>
+      <div class="sale-flag">{{i18n "content.product.sale"}}</div>
     {{/if}}
     {{#if new}}
-      <div class="new-flag">{{i18n "content.static.newText"}}</div>
+      <div class="new-flag">{{i18n "content.product.new"}}</div>
     {{/if}}
-    <button type="button" class="heart-xs visible-xs">
-      <span class="sr-only">{{i18n "content.static.wishlistText"}}</span>
-    </button>
-    <img class="pop-product-image" src="{{quickviewGallery.0.bigImage}}" alt="{{text}}" width="200" />
+    <form id="form-add-to-wishlist-mobile-{{id}}" name="add-to-wishlist-mobile" action="{{addToWishlistUrl}}">
+      <button type="submit" class="heart-xs visible-xs">
+        <span class="sr-only">{{i18n "content.product.addToWishlist"}}</span>
+      </button>
+    </form>
+    <img class="pop-product-image" src="{{gallery.mainImage}}" alt="{{name}}" width="200" />
     <div class="pop-product-name">
-      <span class="name-headline">{{text}}</span>
+      <span class="name-headline">{{name}}</span>
       <span class="name-subline">{{description}}</span>
     </div>
     <div class="pop-item-price">
@@ -23,13 +25,15 @@
       {{/if}}
     </div>
     <div class="pop-product-more-colors">
-      {{#if moreColors}}{{i18n "content.static.moreColorsText"}}{{/if}}&nbsp;
+      {{#if moreColors}}{{i18n "content.product.moreColors"}}{{/if}}&nbsp;
     </div>
     <div class="shop-item-overlay hidden-xs">
-      <button type="button" class="quickview" data-modal="quickview-modal-{{id}}">{{i18n "content.static.quickViewText"}}</button>
-      <button type="button" class="heart">
-        <span class="sr-only">{{i18n "content.static.wishlistText"}}</span>
-      </button>
+      <button type="button" class="quickview" data-modal="quickview-modal-{{id}}">{{i18n "content.product.quickView"}}</button>
+      <form id="form-add-to-wishlist-{{id}}" name="add-to-wishlist" action="{{addToWishlistUrl}}">
+        <button type="submit" class="heart">
+          <span class="sr-only">{{i18n "content.product.addToWishlist"}}</span>
+        </button>
+      </form>
     </div>
   </div>
 </a>

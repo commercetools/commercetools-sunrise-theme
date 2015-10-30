@@ -45,13 +45,13 @@
     <li>
       <p class="text-uppercase">{{i18n "content.static.sizesText"}}</p>
       <div>
-        <select id="{{content.static.sizeGuideId}}" class="select-product-detail error">
+        <select id="{{content.static.sizeGuideId}}" class="select-product-detail">
           <option id="{{content.static.sizeSelectFirstOptionId}}" value="{{content.static.sizeDefaultItem.id}}" {{#if content.static.sizeDefaultItem.selected}}selected{{/if}}>{{i18n "content.static.sizeDefaultItem"}}</option>
           {{#each content.product.sizes}}
           <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
           {{/each}}
         </select>
-        {{> catalog/error-message}}
+        {{> common/required-error-message}}
       </div>
     </li>
     <li class="size-guide-li">

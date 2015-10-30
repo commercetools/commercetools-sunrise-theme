@@ -1,12 +1,12 @@
 <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
   <button class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas" type="button">
-    <span class="sr-only">{{content.filters.close}}</span>
+    <span class="sr-only">{{i18n "content.filters.close"}}</span>
   </button>
   <div class="row">
     <div class="col-sm-12">
       <div class="row">
         <div class="col-sm-12 ">
-          <p class="filter-products"><b>{{content.filters.text}}</b></p>
+          <p class="filter-products"><b>{{i18n "content.filters.title"}}</b></p>
         </div>
       </div>
 
@@ -17,7 +17,7 @@
             {{content.filters.categories.facet.label}}
           </div>
           <div class="col-xs-4">
-            <a class="text-right clear-btn" href="#">{{../content.filters.clear}}</a>
+            <a class="text-right clear-btn" href="#">{{i18n "content.filters.clear"}}</a>
           </div>
         </div>
         <div class="row">
@@ -49,7 +49,7 @@
               {{facet.label}}
             </div>
             <div class="col-xs-4">
-              <a class="text-right clear-btn" href="#">{{../content.filters.clear}}</a>
+              <a class="text-right clear-btn" href="#">{{i18n "content.filters.clear"}}</a>
             </div>
           </div>
 
@@ -85,8 +85,6 @@
             </div>
           {{/if}}
 
-
-
           {{#if sortedSelectFacet}}
             <div class="row">
               <div class="col-sm-12">
@@ -105,16 +103,6 @@
             </div>
           {{/if}}
 
-          {{#if sliderRangeFacet}}
-            <div class="row">
-              <div class="col-sm-12 slider-col">
-                <div class="slider-range"></div>
-                <input class="s1" name="s1" type="text" value="{{facet.minValue}}"/>
-                <input class="s2" name="s2" type="text" value="{{facet.maxValue}}"/>
-              </div>
-            </div>
-          {{/if}}
-
           {{#if selectFacet}}
             <div class="pop-filter-select select-facet {{#if facet.countHidden}}two-column-select{{/if}}">
               {{#each facet.limitedOptions}}
@@ -124,6 +112,16 @@
                 </label>
                 <br>
               {{/each}}
+            </div>
+          {{/if}}
+
+          {{#if sliderRangeFacet}}
+            <div class="row">
+              <div class="col-sm-12 slider-col">
+                <div class="slider-range"></div>
+                <input class="s1" name="s1" type="text" value="{{facet.minValue}}"/>
+                <input class="s2" name="s2" type="text" value="{{facet.maxValue}}"/>
+              </div>
             </div>
           {{/if}}
 

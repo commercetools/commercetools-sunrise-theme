@@ -38,11 +38,15 @@
               {{> catalog/jumbotron}}
             </div>
           </div>
+
+          <!-- Mobile version -->
           <div class="row visible-xs">
             <div class="col-xs-12">
               <ul class="mobile-filter-list clearfix">
                 <li class="pull-left">
-                  <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="modal" data-target="#sidebar-overlay">{{content.filters.open}}</button>
+                  <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="modal" data-target="#sidebar-overlay">
+                    {{i18n "content.filters.open"}}
+                  </button>
                 </li>
                 <li class="pull-left">
                   {{> catalog/results-summary}}
@@ -51,6 +55,8 @@
             </div>
             {{> catalog/filters-sidebar-mobile}}
           </div>
+          <!-- End mobile version -->
+
           <hr class="hr hidden-xs">
           <div class="row hidden-xs item-list-pagination">
             <div class="col-xs-4 text-left">
