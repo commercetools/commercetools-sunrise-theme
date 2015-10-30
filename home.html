@@ -354,6 +354,8 @@
       </div>
     </div>
   </div>
+  
+  
 
   <div class="home-page">
 
@@ -454,16 +456,18 @@
       <p class="home-suggestions-description"></p>
       <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-3 ">
-            <a href="">
+            <a id="link-product-thumbnail-1" href="">
               <div class="shop-item">
                   <div class="sale-flag">Sale</div>
                   <div class="new-flag">New</div>
-                <button type="button" class="heart-xs visible-xs">
-                  <span class="sr-only">Add item to wishlist</span>
-                </button>
-                <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
+                <form id="form-add-to-wishlist-mobile-1" name="add-to-wishlist-mobile" action="">
+                  <button type="submit" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
+                </form>
+                <img class="pop-product-image" src="" alt="" width="200" />
                 <div class="pop-product-name">
-                  <span class="name-headline">Enditatem Product Name Optional very long line two</span>
+                  <span class="name-headline"></span>
                   <span class="name-subline">Subline</span>
                 </div>
                 <div class="pop-item-price">
@@ -475,32 +479,24 @@
                 </div>
                 <div class="shop-item-overlay hidden-xs">
                   <button type="button" class="quickview" data-modal="quickview-modal-1">Quick view</button>
-                  <button type="button" class="heart">
-                    <span class="sr-only">Add item to wishlist</span>
-                  </button>
+                  <form id="form-add-to-wishlist-1" name="add-to-wishlist" action="">
+                    <button type="submit" class="heart">
+                      <span class="sr-only">Add item to wishlist</span>
+                    </button>
+                  </form>
                 </div>
               </div>
             </a>
             <!-- Modal -->
-            <div class="modal fade" id="quickview-modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="quickview-modal-1" tabindex="-1" role="dialog" aria-labelledby="quickviewModal">
               <div class="modal-dialog modal-dialog-quickview" role="document">
                 <div class="modal-content quickview-modal">
-                  <div>
-                    <div class="alert-overlay">
-                      <div class="alert-wrapper">
-                        <div class="alert-box">
-                          <div class="alert-text">
-                            You have reached the maximum quantity you can add to your bag
-                          </div>
-                          <div class="alert-link">
-                            <a href="#">Add to wishlist</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="quickviewModal">
+                      <span aria-hidden="true">
+                        <img src="assets/img/close.png" alt="Close Modal" />
+                      </span>
+                    </button>
                   </div>
                   <div class="modal-body">
                     <div class="row product-info-row-pdp">
@@ -513,14 +509,24 @@
                       <div class="col-sm-6 col-sm-offset-2 product-description">
                         <div class="row">
                           <div class="col-sm-12">
-                            <p><h1 class="text-uppercase pdp-product-title">Enditatem Product Name Optional very long line two</h1><span class="grey-p quickview-sku"></span></p>
+                            <p><h1 class="text-uppercase pdp-product-title"></h1><span class="grey-p quickview-sku"></span></p>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <fieldset class="rating">
+                              <input type="radio" id="rating-1-star5" name="rating" value="5" />
+                              <label for="rating-1-star5" title="Rocks!">5 stars</label>
+                              <input type="radio" id="rating-1-star4" name="rating" value="4"  />
+                              <label for="rating-1-star4" title="Pretty good">4 stars</label>
+                              <input type="radio" id="rating-1-star3" name="rating" value="3"  />
+                              <label for="rating-1-star3" title="Meh">3 stars</label>
+                              <input type="radio" id="rating-1-star2" name="rating" value="2"  />
+                              <label for="rating-1-star2" title="Kinda bad">2 stars</label>
+                              <input type="radio" id="rating-1-star1" name="rating" value="1"  />
+                              <label for="rating-1-star1" title="Sucks big time">1 star</label>
                             </fieldset>
-                            <span class="star-rating-review"><a href=""></a></span>
+                            <span class="star-rating-review"><a href="">Write first review</a></span>
                           </div>
                         </div>
                         <div class="row">
@@ -533,42 +539,33 @@
                             <p class="product-price">€ 49,-</p>
                           </div>
                         </div>
-                        <div class="row select-row">
-                          <ul class="list-inline">
-                            <li>
-                              <p class="text-uppercase">Color</p>
-                              <div>
-                                <select class="select-product-detail">
+                        <form id="add-to-cart-quickview-1" name="add-to-cart-quickview" action="">
+                          <div class="row select-row">
+                            <ul class="list-inline">
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="list-inline">
+                              <li>
+                                <select name="quantity" class="bag-items">
                                 </select>
-                              </div>
-                            </li>
-                            <li>
-                              <p class="text-uppercase">Size</p>
-                              <div>
-                                <select class="select-product-detail error">
-                                </select>
-                              </div>
-                              <div class="error-message">
-                                This is an error message
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                              </li>
+                              <li>
+                                <button type="submit" class="add-to-bag text-center">
+                                  <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="Add to Bag">Add to Bag
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </form>
                         <div class="row">
                           <ul class="list-inline">
                             <li>
-                              <select class="bag-items">
-                              </select>
-                            </li>
-                            <li>
-                              <button class="add-to-bag text-center">
-                                <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="Add to Bag">Add to Bag
-                              </button>
-                            </li>
-                            <li>
-                              <button type="button" class="btn pdp-product-heart">
-                                <span class="sr-only">Add item to wishlist</span>
-                              </button>
+                              <form id="form-add-to-wishlist-quickview-1" name="add-to-wishlist-quickview" action="">
+                                <button type="submit" class="btn pdp-product-heart">
+                                  <span class="sr-only">Add item to wishlist</span>
+                                </button>
+                              </form>
                             </li>
                             <li>
                               <div class="availability">
@@ -585,16 +582,18 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 ">
-            <a href="">
+            <a id="link-product-thumbnail-2" href="">
               <div class="shop-item">
                   <div class="sale-flag">Sale</div>
                   <div class="new-flag">New</div>
-                <button type="button" class="heart-xs visible-xs">
-                  <span class="sr-only">Add item to wishlist</span>
-                </button>
-                <img class="pop-product-image" src="assets/img/blue-shirt.jpg" alt="Just one single line" width="200" />
+                <form id="form-add-to-wishlist-mobile-2" name="add-to-wishlist-mobile" action="">
+                  <button type="submit" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
+                </form>
+                <img class="pop-product-image" src="" alt="" width="200" />
                 <div class="pop-product-name">
-                  <span class="name-headline">Just one single line</span>
+                  <span class="name-headline"></span>
                   <span class="name-subline"></span>
                 </div>
                 <div class="pop-item-price">
@@ -606,32 +605,24 @@
                 </div>
                 <div class="shop-item-overlay hidden-xs">
                   <button type="button" class="quickview" data-modal="quickview-modal-2">Quick view</button>
-                  <button type="button" class="heart">
-                    <span class="sr-only">Add item to wishlist</span>
-                  </button>
+                  <form id="form-add-to-wishlist-2" name="add-to-wishlist" action="">
+                    <button type="submit" class="heart">
+                      <span class="sr-only">Add item to wishlist</span>
+                    </button>
+                  </form>
                 </div>
               </div>
             </a>
             <!-- Modal -->
-            <div class="modal fade" id="quickview-modal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="quickview-modal-2" tabindex="-1" role="dialog" aria-labelledby="quickviewModal">
               <div class="modal-dialog modal-dialog-quickview" role="document">
                 <div class="modal-content quickview-modal">
-                  <div>
-                    <div class="alert-overlay">
-                      <div class="alert-wrapper">
-                        <div class="alert-box">
-                          <div class="alert-text">
-                            You have reached the maximum quantity you can add to your bag
-                          </div>
-                          <div class="alert-link">
-                            <a href="#">Add to wishlist</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="quickviewModal">
+                      <span aria-hidden="true">
+                        <img src="assets/img/close.png" alt="Close Modal" />
+                      </span>
+                    </button>
                   </div>
                   <div class="modal-body">
                     <div class="row product-info-row-pdp">
@@ -644,14 +635,24 @@
                       <div class="col-sm-6 col-sm-offset-2 product-description">
                         <div class="row">
                           <div class="col-sm-12">
-                            <p><h1 class="text-uppercase pdp-product-title">Just one single line</h1><span class="grey-p quickview-sku"></span></p>
+                            <p><h1 class="text-uppercase pdp-product-title"></h1><span class="grey-p quickview-sku"></span></p>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <fieldset class="rating">
+                              <input type="radio" id="rating-2-star5" name="rating" value="5" />
+                              <label for="rating-2-star5" title="Rocks!">5 stars</label>
+                              <input type="radio" id="rating-2-star4" name="rating" value="4"  />
+                              <label for="rating-2-star4" title="Pretty good">4 stars</label>
+                              <input type="radio" id="rating-2-star3" name="rating" value="3"  />
+                              <label for="rating-2-star3" title="Meh">3 stars</label>
+                              <input type="radio" id="rating-2-star2" name="rating" value="2"  />
+                              <label for="rating-2-star2" title="Kinda bad">2 stars</label>
+                              <input type="radio" id="rating-2-star1" name="rating" value="1"  />
+                              <label for="rating-2-star1" title="Sucks big time">1 star</label>
                             </fieldset>
-                            <span class="star-rating-review"><a href=""></a></span>
+                            <span class="star-rating-review"><a href="">Write first review</a></span>
                           </div>
                         </div>
                         <div class="row">
@@ -664,42 +665,33 @@
                             <p class="product-price">€ 149,-</p>
                           </div>
                         </div>
-                        <div class="row select-row">
-                          <ul class="list-inline">
-                            <li>
-                              <p class="text-uppercase">Color</p>
-                              <div>
-                                <select class="select-product-detail">
+                        <form id="add-to-cart-quickview-2" name="add-to-cart-quickview" action="">
+                          <div class="row select-row">
+                            <ul class="list-inline">
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="list-inline">
+                              <li>
+                                <select name="quantity" class="bag-items">
                                 </select>
-                              </div>
-                            </li>
-                            <li>
-                              <p class="text-uppercase">Size</p>
-                              <div>
-                                <select class="select-product-detail error">
-                                </select>
-                              </div>
-                              <div class="error-message">
-                                This is an error message
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                              </li>
+                              <li>
+                                <button type="submit" class="add-to-bag text-center">
+                                  <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="Add to Bag">Add to Bag
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </form>
                         <div class="row">
                           <ul class="list-inline">
                             <li>
-                              <select class="bag-items">
-                              </select>
-                            </li>
-                            <li>
-                              <button class="add-to-bag text-center">
-                                <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="Add to Bag">Add to Bag
-                              </button>
-                            </li>
-                            <li>
-                              <button type="button" class="btn pdp-product-heart">
-                                <span class="sr-only">Add item to wishlist</span>
-                              </button>
+                              <form id="form-add-to-wishlist-quickview-2" name="add-to-wishlist-quickview" action="">
+                                <button type="submit" class="btn pdp-product-heart">
+                                  <span class="sr-only">Add item to wishlist</span>
+                                </button>
+                              </form>
                             </li>
                             <li>
                               <div class="availability">
@@ -716,14 +708,16 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 ">
-            <a href="">
+            <a id="link-product-thumbnail-3" href="">
               <div class="shop-item">
-                <button type="button" class="heart-xs visible-xs">
-                  <span class="sr-only">Add item to wishlist</span>
-                </button>
-                <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Headline" width="200" />
+                <form id="form-add-to-wishlist-mobile-3" name="add-to-wishlist-mobile" action="">
+                  <button type="submit" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
+                </form>
+                <img class="pop-product-image" src="" alt="" width="200" />
                 <div class="pop-product-name">
-                  <span class="name-headline">Headline</span>
+                  <span class="name-headline"></span>
                   <span class="name-subline">Enditatem Product Name Optional Line Two</span>
                 </div>
                 <div class="pop-item-price">
@@ -734,32 +728,24 @@
                 </div>
                 <div class="shop-item-overlay hidden-xs">
                   <button type="button" class="quickview" data-modal="quickview-modal-3">Quick view</button>
-                  <button type="button" class="heart">
-                    <span class="sr-only">Add item to wishlist</span>
-                  </button>
+                  <form id="form-add-to-wishlist-3" name="add-to-wishlist" action="">
+                    <button type="submit" class="heart">
+                      <span class="sr-only">Add item to wishlist</span>
+                    </button>
+                  </form>
                 </div>
               </div>
             </a>
             <!-- Modal -->
-            <div class="modal fade" id="quickview-modal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="quickview-modal-3" tabindex="-1" role="dialog" aria-labelledby="quickviewModal">
               <div class="modal-dialog modal-dialog-quickview" role="document">
                 <div class="modal-content quickview-modal">
-                  <div>
-                    <div class="alert-overlay">
-                      <div class="alert-wrapper">
-                        <div class="alert-box">
-                          <div class="alert-text">
-                            You have reached the maximum quantity you can add to your bag
-                          </div>
-                          <div class="alert-link">
-                            <a href="#">Add to wishlist</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="quickviewModal">
+                      <span aria-hidden="true">
+                        <img src="assets/img/close.png" alt="Close Modal" />
+                      </span>
+                    </button>
                   </div>
                   <div class="modal-body">
                     <div class="row product-info-row-pdp">
@@ -772,14 +758,24 @@
                       <div class="col-sm-6 col-sm-offset-2 product-description">
                         <div class="row">
                           <div class="col-sm-12">
-                            <p><h1 class="text-uppercase pdp-product-title">Headline</h1><span class="grey-p quickview-sku"></span></p>
+                            <p><h1 class="text-uppercase pdp-product-title"></h1><span class="grey-p quickview-sku"></span></p>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <fieldset class="rating">
+                              <input type="radio" id="rating-3-star5" name="rating" value="5" />
+                              <label for="rating-3-star5" title="Rocks!">5 stars</label>
+                              <input type="radio" id="rating-3-star4" name="rating" value="4"  />
+                              <label for="rating-3-star4" title="Pretty good">4 stars</label>
+                              <input type="radio" id="rating-3-star3" name="rating" value="3"  />
+                              <label for="rating-3-star3" title="Meh">3 stars</label>
+                              <input type="radio" id="rating-3-star2" name="rating" value="2"  />
+                              <label for="rating-3-star2" title="Kinda bad">2 stars</label>
+                              <input type="radio" id="rating-3-star1" name="rating" value="1"  />
+                              <label for="rating-3-star1" title="Sucks big time">1 star</label>
                             </fieldset>
-                            <span class="star-rating-review"><a href=""></a></span>
+                            <span class="star-rating-review"><a href="">Write first review</a></span>
                           </div>
                         </div>
                         <div class="row">
@@ -792,42 +788,33 @@
                             <p class="product-price">€ 250,-</p>
                           </div>
                         </div>
-                        <div class="row select-row">
-                          <ul class="list-inline">
-                            <li>
-                              <p class="text-uppercase">Color</p>
-                              <div>
-                                <select class="select-product-detail">
+                        <form id="add-to-cart-quickview-3" name="add-to-cart-quickview" action="">
+                          <div class="row select-row">
+                            <ul class="list-inline">
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="list-inline">
+                              <li>
+                                <select name="quantity" class="bag-items">
                                 </select>
-                              </div>
-                            </li>
-                            <li>
-                              <p class="text-uppercase">Size</p>
-                              <div>
-                                <select class="select-product-detail error">
-                                </select>
-                              </div>
-                              <div class="error-message">
-                                This is an error message
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                              </li>
+                              <li>
+                                <button type="submit" class="add-to-bag text-center">
+                                  <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="Add to Bag">Add to Bag
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </form>
                         <div class="row">
                           <ul class="list-inline">
                             <li>
-                              <select class="bag-items">
-                              </select>
-                            </li>
-                            <li>
-                              <button class="add-to-bag text-center">
-                                <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="Add to Bag">Add to Bag
-                              </button>
-                            </li>
-                            <li>
-                              <button type="button" class="btn pdp-product-heart">
-                                <span class="sr-only">Add item to wishlist</span>
-                              </button>
+                              <form id="form-add-to-wishlist-quickview-3" name="add-to-wishlist-quickview" action="">
+                                <button type="submit" class="btn pdp-product-heart">
+                                  <span class="sr-only">Add item to wishlist</span>
+                                </button>
+                              </form>
                             </li>
                             <li>
                               <div class="availability">
@@ -844,16 +831,18 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3 ">
-            <a href="">
+            <a id="link-product-thumbnail-4" href="">
               <div class="shop-item">
                   <div class="sale-flag">Sale</div>
                   <div class="new-flag">New</div>
-                <button type="button" class="heart-xs visible-xs">
-                  <span class="sr-only">Add item to wishlist</span>
-                </button>
-                <img class="pop-product-image" src="assets/img/blue-jacket.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
+                <form id="form-add-to-wishlist-mobile-4" name="add-to-wishlist-mobile" action="">
+                  <button type="submit" class="heart-xs visible-xs">
+                    <span class="sr-only">Add item to wishlist</span>
+                  </button>
+                </form>
+                <img class="pop-product-image" src="" alt="" width="200" />
                 <div class="pop-product-name">
-                  <span class="name-headline">Enditatem Product Name Optional very long line two</span>
+                  <span class="name-headline"></span>
                   <span class="name-subline">Subline</span>
                 </div>
                 <div class="pop-item-price">
@@ -865,32 +854,24 @@
                 </div>
                 <div class="shop-item-overlay hidden-xs">
                   <button type="button" class="quickview" data-modal="quickview-modal-4">Quick view</button>
-                  <button type="button" class="heart">
-                    <span class="sr-only">Add item to wishlist</span>
-                  </button>
+                  <form id="form-add-to-wishlist-4" name="add-to-wishlist" action="">
+                    <button type="submit" class="heart">
+                      <span class="sr-only">Add item to wishlist</span>
+                    </button>
+                  </form>
                 </div>
               </div>
             </a>
             <!-- Modal -->
-            <div class="modal fade" id="quickview-modal-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="quickview-modal-4" tabindex="-1" role="dialog" aria-labelledby="quickviewModal">
               <div class="modal-dialog modal-dialog-quickview" role="document">
                 <div class="modal-content quickview-modal">
-                  <div>
-                    <div class="alert-overlay">
-                      <div class="alert-wrapper">
-                        <div class="alert-box">
-                          <div class="alert-text">
-                            You have reached the maximum quantity you can add to your bag
-                          </div>
-                          <div class="alert-link">
-                            <a href="#">Add to wishlist</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/img/close.png" alt="close modal" /></span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="quickviewModal">
+                      <span aria-hidden="true">
+                        <img src="assets/img/close.png" alt="Close Modal" />
+                      </span>
+                    </button>
                   </div>
                   <div class="modal-body">
                     <div class="row product-info-row-pdp">
@@ -903,14 +884,24 @@
                       <div class="col-sm-6 col-sm-offset-2 product-description">
                         <div class="row">
                           <div class="col-sm-12">
-                            <p><h1 class="text-uppercase pdp-product-title">Enditatem Product Name Optional very long line two</h1><span class="grey-p quickview-sku"></span></p>
+                            <p><h1 class="text-uppercase pdp-product-title"></h1><span class="grey-p quickview-sku"></span></p>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <fieldset class="rating">
+                              <input type="radio" id="rating-4-star5" name="rating" value="5" />
+                              <label for="rating-4-star5" title="Rocks!">5 stars</label>
+                              <input type="radio" id="rating-4-star4" name="rating" value="4"  />
+                              <label for="rating-4-star4" title="Pretty good">4 stars</label>
+                              <input type="radio" id="rating-4-star3" name="rating" value="3"  />
+                              <label for="rating-4-star3" title="Meh">3 stars</label>
+                              <input type="radio" id="rating-4-star2" name="rating" value="2"  />
+                              <label for="rating-4-star2" title="Kinda bad">2 stars</label>
+                              <input type="radio" id="rating-4-star1" name="rating" value="1"  />
+                              <label for="rating-4-star1" title="Sucks big time">1 star</label>
                             </fieldset>
-                            <span class="star-rating-review"><a href=""></a></span>
+                            <span class="star-rating-review"><a href="">Write first review</a></span>
                           </div>
                         </div>
                         <div class="row">
@@ -923,42 +914,33 @@
                             <p class="product-price">€ 49,-</p>
                           </div>
                         </div>
-                        <div class="row select-row">
-                          <ul class="list-inline">
-                            <li>
-                              <p class="text-uppercase">Color</p>
-                              <div>
-                                <select class="select-product-detail">
+                        <form id="add-to-cart-quickview-4" name="add-to-cart-quickview" action="">
+                          <div class="row select-row">
+                            <ul class="list-inline">
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <ul class="list-inline">
+                              <li>
+                                <select name="quantity" class="bag-items">
                                 </select>
-                              </div>
-                            </li>
-                            <li>
-                              <p class="text-uppercase">Size</p>
-                              <div>
-                                <select class="select-product-detail error">
-                                </select>
-                              </div>
-                              <div class="error-message">
-                                This is an error message
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                              </li>
+                              <li>
+                                <button type="submit" class="add-to-bag text-center">
+                                  <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="Add to Bag">Add to Bag
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </form>
                         <div class="row">
                           <ul class="list-inline">
                             <li>
-                              <select class="bag-items">
-                              </select>
-                            </li>
-                            <li>
-                              <button class="add-to-bag text-center">
-                                <img class="bag-thumb" src="assets/img/hand-bag-2-black.png" alt="Add to Bag">Add to Bag
-                              </button>
-                            </li>
-                            <li>
-                              <button type="button" class="btn pdp-product-heart">
-                                <span class="sr-only">Add item to wishlist</span>
-                              </button>
+                              <form id="form-add-to-wishlist-quickview-4" name="add-to-wishlist-quickview" action="">
+                                <button type="submit" class="btn pdp-product-heart">
+                                  <span class="sr-only">Add item to wishlist</span>
+                                </button>
+                              </form>
                             </li>
                             <li>
                               <div class="availability">
@@ -984,19 +966,17 @@
   </div>
 
   <div class="wishlist">
-    <button id="" class="hidden-xs wishlist-btn">
-      <div class="wishlist-number">45</div>
+    <button id="wishlist-open-btn" class="hidden-xs wishlist-btn">
+      <div class="wishlist-number"></div>
     </button>
     <div class="wishlist-items hidden">
-      <p class="wishlist-title">Your Wishlist
-        <span>(45)</span></p>
+      <p class="wishlist-title">
+        Your Wishlist <span>()</span>
+      </p>
       <span class="recently-added-title">My recently added items</span>
       <div class="clearfix">
-          <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
-          <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
-          <img class="pull-left img-responsive wishlist-img" src="assets/img/blue-shirt.jpg" alt="wishlist item image">
       </div>
-      <a href="" id="" class="btn view-wishlist-btn">View your wishlist</a>
+      <a href="" id="wishlist-view-btn" class="btn view-wishlist-btn">View your wishlist</a>
     </div>
   </div>
   <div class="footer">

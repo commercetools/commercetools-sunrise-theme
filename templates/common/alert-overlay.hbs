@@ -1,12 +1,16 @@
+{{#if error.overlay}}
 <div class="alert-overlay">
   <div class="alert-wrapper">
     <div class="alert-box">
       <div class="alert-text">
-        {{i18n "content.messages.reachedMaximumAlert"}}
+        {{error.overlay.message}}
       </div>
+      {{#if error.overlay.link}}
       <div class="alert-link">
-        <a href="#">{{i18n "content.messages.addToWishlistAlert"}}</a>
+        <a href="{{error.overlay.link.url}}">{{error.overlay.link.text}}</a>
       </div>
+      {{/if}}
     </div>
   </div>
 </div>
+{{/if}}
