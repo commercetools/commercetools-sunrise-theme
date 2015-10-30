@@ -69,52 +69,28 @@
         <div class="col-xs-12">
           <div class="nav-minicart">
             <ul>
-              {{#each header.minicart}}
-              <li>
-
-                <a class="img" href="#">
-                  <img src="assets/img/blue-shirt.jpg" alt="Alt text" />
-                </a>
-
-                <p class="product-title">
-                  <a href="#">
-                    {{nameHeadline}}
-                  </a>
-                </p>
-                <p class="product-title">
-                  {{nameSubline}}
-                </p>
-
-                <div class="details">
-                  <p class="product-quantity">{{quantityText}}
-                    <span>{{quantity}}x</span>
-                  </p>
-                  <p class="product-price">{{priceText}}
-                    <span>{{price}}</span>
-                  </p>
-
-                  <button class="delete" type="submit" href="#">
-                    <span>
-                      <img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">
-                    </span>
-                  </button>
-
-                </div>
-              </li>
+              {{#each header.minicart.list}}
+                <li>
+                  <a class="img" href="#"><img src="{{../meta.assetsPath}}img/blue-shirt.jpg" alt="Alt text" /></a>
+                  <p class="product-title"><a href="#">{{nameHeadline}}</a></p>
+                  <p class="product-title">{{nameSubline}}</p>
+                  <div class="details">
+                    <p class="product-quantity">{{quantityText}}<span>{{quantity}}x</span></p>
+                    <p class="product-price">{{priceText}}<span>{{price}}</span></p>
+                    <button class="delete" type="submit" href="#">
+                      <span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete"></span>
+                    </button>
+                  </div>
+                </li>
               {{/each}}
             </ul>
-
             <div class="gradient"></div>
-
-            <p class="total-price">Total 117,00 €</p>
-
-            <button class="btn-grey">VIEW BAG</button>
-
-            <button class="btn-yellow">CHECKOUT</button>
-
-
+            <p class="total-price">{{header.minicart.totalPrice}}</p>
+            <button class="btn-grey">{{header.minicart.viewBagBtn}}</button>
+            <button class="btn-yellow">{{header.minicart.checkoutBtn}}</button>
           </div>
         </div>
+
       </div>
 
     </header>
