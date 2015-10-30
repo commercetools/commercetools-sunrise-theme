@@ -4,40 +4,14 @@
 	"content" : {
 		"banner" : { "$ref" : "catalog/banner.json" },
 		"jumbotron" : { "$ref" : "catalog/jumbotron.json" },
-		"seo" : {
-			"text" : "SEO TEXT AREA",
-			"description" : "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
-		},
+		"seo" : { "$ref" : "catalog/seo.json" },
 		"breadcrumb" : { "$ref" : "catalog/breadcrumb.json" },
 		"filters" : { "$ref" : "catalog/filters-sidebar.json" },
 		"pagination" : { "$ref" : "catalog/pagination.json" },
 		"displaySelector" : { "$ref" : "catalog/display-selector.json" },
 		"sortSelector" : { "$ref" : "catalog/sort-selector.json" },
 		"products" : { "$ref" : "catalog/product-list.json" },
-		"wishlistWidged" : {
-			"text" : "Your Wishlist",
-			"wishlistBtnId" : "pop-wishlist-btn",
-			"wishlistViewBtnId" : "pop-wishlist-view-btn",
-			"number" : "45",
-			"recentAddedTitle" : "My recently added items",
-			"viewWishlist" : {
-				"text" : "View your wishlist",
-				"url" : ""
-			},
-			"list" : [
-				{
-					"image" : "assets/img/blue-shirt.jpg"
-				},
-				{
-					"image" : "assets/img/blue-shirt.jpg"
-				},
-				{
-					"image" : "assets/img/blue-shirt.jpg"
-				}
-			]
-		}
-	},
-	"error" : {
+		"wishlist" : { "$ref" : "catalog/wishlist.json" }
 	},
 	"meta" : {
 		"assetsPath": "assets/",

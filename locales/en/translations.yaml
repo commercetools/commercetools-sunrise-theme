@@ -32,7 +32,7 @@ content:
   displaySelector:
     title: items per page
   sortSelector:
-    title: Sort by price
+    title: Sort
   product:
     sale: Sale
     new: New
@@ -56,4 +56,9 @@ content:
     description3: Meh
     description2: Kinda bad
     description1: Sucks big time
+  wishlist:
+    title: Your Wishlist
+    view: View your wishlist
+    recentlyAdded: My recently added items
+
 

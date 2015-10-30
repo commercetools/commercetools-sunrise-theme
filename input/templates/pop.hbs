@@ -60,6 +60,9 @@
           <hr class="hr hidden-xs">
           <div class="row hidden-xs item-list-pagination">
             <div class="col-xs-4 text-left">
+              <div class="styled-select icon-drop-down">
+                {{> catalog/sort-selector}}
+              </div>
               {{> catalog/results-summary}}
             </div>
             <div class="col-xs-4 text-center pagination">
@@ -88,8 +91,7 @@
           <hr class="hr">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="seo-title">{{content.seo.text}}</h1>
-              <p class="seo-text">{{content.seo.description}}</p>
+              {{> catalog/seo}}
             </div>
           </div>
         </div>

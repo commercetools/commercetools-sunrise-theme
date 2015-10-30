@@ -1,20 +1,24 @@
 <!-- Modal -->
-<div class="modal fade" id="sidebar-overlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="sidebar-overlay" tabindex="-1" role="dialog" aria-labelledby="filterSidebarMobileModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content sidebar-overlay-modal">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="{{meta.assetsPath}}img/close.png" alt="close modal" /></span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="filterSidebarMobileModal">
+          <span aria-hidden="true">
+            <img src="{{meta.assetsPath}}img/close.png" alt="{{i18n "content.general.closeModal"}}" />
+          </span>
+        </button>
       </div>
       <div class="modal-body">
         <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
           <button class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas" type="button">
-            <span class="sr-only">{{content.filters.close}}</span>
+            <span class="sr-only">{{i18n "content.filters.close"}}</span>
           </button>
           <div class="row">
             <div class="col-sm-12">
               <div class="row">
                 <div class="col-sm-12 ">
-                  <p class="filter-products"><b>{{content.filters.text}}</b></p>
+                  <p class="filter-products"><b>{{i18n "content.filters.title"}}</b></p>
                 </div>
               </div>
 
@@ -22,14 +26,10 @@
                 <div class="row size-box">
                     <div class="col-xs-12">
                         <div class="text-left">
-                            Sort
+                          {{i18n "content.sortSelector.title"}}
                         </div>
                         <div class="pop-filter-select">
-                            <select class="select">
-                                {{#each content.sort.list}}
-                                    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-                                {{/each}}
-                            </select>
+                          {{> catalog/sort-selector}}
                         </div>
                     </div>
                 </div>
