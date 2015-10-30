@@ -44,8 +44,8 @@
 		"bannerOption2" : {
 			"text" : "here comes the sum",
 			"subText" : "What inspires you?",
-			"descriptionOne" : "Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas",
-			"descriptionTwo" : "Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas Bananas",
+			"descriptionOne" : "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.",
+			"descriptionTwo" : "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.",
 			"bannerBtn" : "Shop Collection",
 			"url" : ""
 		},
@@ -57,7 +57,7 @@
 				"url" : ""
 			},
 			"bannerRightOne" : {
-				"text" : "Boom boom bananas, boom boom bananas"
+				"text" : "Donec nec justo eget felis facilisis fermentum."
 			},
 			"bannerRightTwo" : {
 				"text" : "Live by the sun",
