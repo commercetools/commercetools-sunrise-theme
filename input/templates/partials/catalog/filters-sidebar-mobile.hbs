@@ -16,12 +16,12 @@
           </button>
           <div class="row">
             <div class="col-sm-12">
-              <div class="row">
-                <div class="col-sm-12 ">
-                  <p class="filter-products"><b>{{i18n "content.filters.title"}}</b></p>
+              <form id="form-filter-products-mobile" name="filter-products-mobile" action="{{content.filterProductsUrl}}">
+                <div class="row">
+                  <div class="col-sm-12 ">
+                    <p class="filter-products"><b>{{i18n "content.filters.title"}}</b></p>
+                  </div>
                 </div>
-              </div>
-
                 <hr class="hr">
                 <div class="row size-box">
                     <div class="col-xs-12">
@@ -32,121 +32,12 @@
                           {{> catalog/sort-selector}}
                         </div>
                     </div>
-                </div>
-
-              {{#each content.filters.list}}
-                {{#if facet.available}}
-                  <hr class="hr">
-                  <div id="filter-{{facet.key}}" class="row {{facet.key}}-box">
-                    <div class="col-xs-8 text-left">
-                      {{facet.label}}
-                    </div>
-                    <div class="col-xs-4">
-                      <a class="text-right clear-btn" href="#">{{../content.filters.clear}}</a>
-                    </div>
-                  </div>
-
-                  {{!-- {{#if hierarchicalSelectFacet}}
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
-                          {{#each facet.limitedOptions}}
-                            <div class="panel panel-default">
-                              <div class="panel-heading" id="heading-one" role="tab">
-                                <h4 class="panel-title">
-                                  <a aria-controls="collapse-one" aria-expanded="true" class="" data-parent="#accordion" data-toggle="collapse" href="#{{value}}">
-                                    {{label}} {{#unless ../facet.countHidden}}({{count}}){{/unless}}
-                                  </a>
-                                </h4>
-                              </div>
-                              <div aria-labelledby="heading-one" class="panel-collapse collapse {{#if selected}}in{{/if}}" id="{{value}}" role="tabpanel">
-                                <div class="panel-body">
-                                  {{#each children}}
-                                    <div class="checkbox">
-                                      <label for="filter-{{../facet.key}}-{{value}}">
-                                        <input id="filter-{{../facet.key}}-{{value}}" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}}> {{label}}
-                                        {{#unless ../facet.countHidden}}({{count}}){{/unless}}
-                                      </label>
-                                    </div>
-                                  {{/each}}
-                                </div>
-                              </div>
-                            </div>
-                          {{/each}}
-                        </div>
-                      </div>
-                    </div>
-                  {{/if}} --}}
-
-                  {{#if categorySelectFacet}}
-                    <div class="row">
-                      <div class="col-sm-12">
-                          <ul class="dropdown-parent-category">
-                            {{#each facet.limitedOptions}}
-                              <li class="parent-category-list"><a href="#" id="parent-category-{{value}}">{{label}} ({{count}})</a></li>
-                                <ul class="dropdown-subcategory-one">
-                                  {{#each children}}
-                                    <li><a href="#" id="subcategory-one-{{value}}">{{label}} ({{count}})</a></li>
-                                    <ul class="dropdown-subcategory-two">
-                                      {{#each children}}
-                                        <li {{#if selected}}class="category-active"{{/if}}><a href="#" id="subcategory-two-{{value}}" {{#unless ../selected}}class="hidden"{{/unless}}>{{label}} ({{count}})</a></li>
-                                      {{/each}}
-                                    </ul>
-                                  {{/each}}
-                                </ul>
-                            {{/each}}
-                          </ul>
-                      </div>
-                    </div>
-                  {{/if}}
-
-                  {{#if sortedSelectFacet}}
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="brands-list">
-                          <div class="pop-filter-select">
-                            {{#each facet.limitedOptions}}
-                              <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
-                              <label for="filter-{{../facet.key}}-{{value}}">{{label}}
-                                {{#unless ../facet.countHidden}}({{count}}){{/unless}}
-                              </label>
-                              <br>
-                            {{/each}}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  {{/if}}
-
-                  {{#if sliderRangeFacet}}
-                    <div class="row">
-                      <div class="col-sm-12 slider-col">
-                        <div class="slider-range"></div>
-                        <input class="s1" name="s1" type="text" value="{{facet.minValue}}"/>
-                        <input class="s2" name="s2" type="text" value="{{facet.maxValue}}"/>
-                      </div>
-                    </div>
-                  {{/if}}
-
-                  {{#if selectFacet}}
-                    <div class="pop-filter-select {{#if facet.countHidden}}two-column-select{{/if}}">
-                      {{#each facet.limitedOptions}}
-                        <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
-                        <label for="filter-{{../facet.key}}-{{value}}">{{label}}
-                          {{#unless ../facet.countHidden}}({{count}}){{/unless}}
-                        </label>
-                        <br>
-                      {{/each}}
-                    </div>
-                  {{/if}}
-
-                {{/if}}
-              {{/each}}
-
+                </div>                
+                {{> catalog/facets}}
+              </form>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

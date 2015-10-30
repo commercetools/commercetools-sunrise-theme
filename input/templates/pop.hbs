@@ -24,78 +24,80 @@
           {{> catalog/banner}}
         </div>
       </div>
-      <div class="row row-offcanvas row-offcanvas-left">
-        <div class="col-xs-12">
-          {{> catalog/breadcrumb}}
-        </div>
-        <div class="product-filter hidden-xs">
-          {{> catalog/filters-sidebar}}
-        </div>
-        <div class="col-sm-9">
-          <div class="dark-overlay"></div>
-          <div class="row jumbotron-row">
-            <div class="col-xs-12">
-              {{> catalog/jumbotron}}
-            </div>
+      <form id="form-filter-products" name="filter-products" action="{{content.filterProductsUrl}}">
+        <div class="row row-offcanvas row-offcanvas-left">
+          <div class="col-xs-12">
+            {{> catalog/breadcrumb}}
           </div>
-
-          <!-- Mobile version -->
-          <div class="row visible-xs">
-            <div class="col-xs-12">
-              <ul class="mobile-filter-list clearfix">
-                <li class="pull-left">
-                  <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="modal" data-target="#sidebar-overlay">
-                    {{i18n "content.filters.open"}}
-                  </button>
-                </li>
-                <li class="pull-left">
-                  {{> catalog/results-summary}}
-                </li>
-              </ul>
-            </div>
-            {{> catalog/filters-sidebar-mobile}}
+          <div class="product-filter hidden-xs">
+            {{> catalog/filters-sidebar}}
           </div>
-          <!-- End mobile version -->
-
-          <hr class="hr hidden-xs">
-          <div class="row hidden-xs item-list-pagination">
-            <div class="col-xs-4 text-left">
-              <div class="styled-select icon-drop-down">
-                {{> catalog/sort-selector}}
+          <div class="col-sm-9">
+            <div class="dark-overlay"></div>
+            <div class="row jumbotron-row">
+              <div class="col-xs-12">
+                {{> catalog/jumbotron}}
               </div>
-              {{> catalog/results-summary}}
             </div>
-            <div class="col-xs-4 text-center pagination">
-              <ul class="page-numbers">
-                {{> catalog/pagination}}
-              </ul>
-            </div>
-            <div class="col-xs-4 text-right">
-              {{> catalog/display-selector}}
-            </div>
-          </div>
-          <div class="row">
-            {{#each content.products.list}}
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                {{> catalog/product-thumbnail context=..}}
+
+            <!-- Mobile version -->
+            <div class="row visible-xs">
+              <div class="col-xs-12">
+                <ul class="mobile-filter-list clearfix">
+                  <li class="pull-left">
+                    <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="modal" data-target="#sidebar-overlay">
+                      {{i18n "content.filters.open"}}
+                    </button>
+                  </li>
+                  <li class="pull-left">
+                    {{> catalog/results-summary}}
+                  </li>
+                </ul>
               </div>
-            {{/each}}
-          </div>
-          <div class="row">
-            <div class="col-xs-12 text-center pagination">
-              <ul class="page-numbers page-numbers-bottom">
-                {{> catalog/pagination}}
-              </ul>
+              {{> catalog/filters-sidebar-mobile}}
             </div>
-          </div>
-          <hr class="hr">
-          <div class="row">
-            <div class="col-sm-12">
-              {{> catalog/seo}}
+            <!-- End mobile version -->
+
+            <hr class="hr hidden-xs">
+            <div class="row hidden-xs item-list-pagination">
+              <div class="col-xs-4 text-left">
+                <div class="styled-select icon-drop-down">
+                  {{> catalog/sort-selector}}
+                </div>
+                {{> catalog/results-summary}}
+              </div>
+              <div class="col-xs-4 text-center pagination">
+                <ul class="page-numbers">
+                  {{> catalog/pagination}}
+                </ul>
+              </div>
+              <div class="col-xs-4 text-right">
+                {{> catalog/display-selector}}
+              </div>
+            </div>
+            <div class="row">
+              {{#each content.products.list}}
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                  {{> catalog/product-thumbnail context=..}}
+                </div>
+              {{/each}}
+            </div>
+            <div class="row">
+              <div class="col-xs-12 text-center pagination">
+                <ul class="page-numbers page-numbers-bottom">
+                  {{> catalog/pagination}}
+                </ul>
+              </div>
+            </div>
+            <hr class="hr">
+            <div class="row">
+              <div class="col-sm-12">
+                {{> catalog/seo}}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
   {{> catalog/wishlist}}
