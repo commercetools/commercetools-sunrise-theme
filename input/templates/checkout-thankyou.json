@@ -2,7 +2,6 @@
 	"header" : { "$ref" : "common/checkout-header.json" },
 	"footer" : { "$ref" : "common/checkout-footer.json" },
   "content" : {
-    "thankyouTitle" : "Thank you for your order!",
     "emailSentTo" : "An email has been sent to",
     "email" : "camilo@batman.com",
     "emailSentToEnding" : "as a copy of this confirmation purchase",
