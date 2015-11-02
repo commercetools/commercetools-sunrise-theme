@@ -6,9 +6,6 @@
           "confirmationStepActive": true
       },
     "secureCheckoutTitle" : "Secure Checkout - Confirmation",
-    "shippingOne" : "Shipping",
-    "paymentTwo" : "Payment",
-    "confirmationThree" : "Confirmation",
 		"editIconText" : "Edit",
 		"shippingAddress" : {
 			"text" : "Shipping Address",

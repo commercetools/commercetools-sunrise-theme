@@ -6,9 +6,6 @@
       "shippingStepActive": true
     },
     "secureCheckoutTitle" : "Secure Checkout - Shipping",
-    "shippingOne" : "Shipping",
-    "paymentTwo" : "Payment",
-    "confirmationThree" : "Confirmation",
     "shippingInfoTitle" : "Shipping Information",
     "required" : "Required",
     "title" : "Title",

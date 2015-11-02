@@ -1,4 +1,8 @@
 content:
+  checkout:
+    shipping: shipping
+    payment: payment
+    confirmation: confirmation
   messages:
     pleaseWait: Please wait...
     reachedMaximumAlert: You have reached the maximum quantity you can add to your bag
