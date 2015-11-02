@@ -145,6 +145,14 @@ sizeGuideTable.prototype = {
  /*****************************************************************************/
 
 $(document).ready(function() {
+
+  $(window).load(function(){
+    $(".nav-minicart ul, .order-summary-items").mCustomScrollbar({
+      theme:"dark",
+      scrollInertia:50
+    });
+  });
+
   // Toggle search bar on mobile
   $('.search-toggle').click(function() {
     $('.search-box').slideToggle();
@@ -205,14 +213,24 @@ $('.dropdown-toggle').click(function(event) {
  /*
  /*****************************************************************************/
 
-// Activate megamenu accordion on smaller screens
+
 $(function() {
   if ($(window).width() < 768) {
+    // Activate megamenu accordion on smaller screens
     $(".nav-accordion").accordion({
       heightStyle: "content",
       active: false,
       collapsible: true
     });
+  }
+  if ($(window).width() > 768) {
+    // Checks if there's a second row in the main menu, and if yes, it shows the group button
+    var element = $(".dropdown-megamenu");
+    var elementHeight = element.height();
+
+    if (elementHeight > 42) {
+      element.addClass('categories-brakes');
+    }
   }
 });
 
