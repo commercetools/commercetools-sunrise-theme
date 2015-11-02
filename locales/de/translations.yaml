@@ -1,7 +1,15 @@
 checkout:
-  shipping: Versand
-  payment: Zahlung
   confirmation: Bestätigung
+  confirmationPage:
+    title: Sicherer Bestellprozess - Versand
+  payment: Zahlung
+  paymentPage:
+    title: Sicherer Bestellprozess - Bezahlung
+  shipping: Versand
+  shippingPage:
+      title: Sicherer Bestellprozess - Versand
+  signInPage:
+    title: Secure Checkout - Login
 content:
   messages:
     pleaseWait: Bitte warten...

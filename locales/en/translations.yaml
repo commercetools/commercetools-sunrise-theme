@@ -1,7 +1,15 @@
 checkout:
-  shipping: shipping
-  payment: payment
   confirmation: confirmation
+  confirmationPage:
+    title: Secure Checkout - Confirmation
+  payment: payment
+  paymentPage:
+    title: Secure Checkout - Payment
+  shipping: shipping
+  shippingPage:
+    title: Secure Checkout - Shipping
+  signInPage:
+    title: Secure Checkout - Sign In
 content:
   messages:
     pleaseWait: Please wait...
