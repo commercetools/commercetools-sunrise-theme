@@ -145,6 +145,13 @@ sizeGuideTable.prototype = {
  /*****************************************************************************/
 
 $(document).ready(function() {
+
+  $(window).load(function(){
+    $(".nav-minicart ul, .order-summary-items").mCustomScrollbar({
+      theme:"dark"
+    });
+  });
+
   // Toggle search bar on mobile
   $('.search-toggle').click(function() {
     $('.search-box').slideToggle();
