@@ -171,7 +171,7 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="shipping-method">
-                      <div class="text-uppercase shipping-method-title">{{content.shippingMethod}}</div>
+                      <div class="text-uppercase shipping-method-title">{{i18n "checkout.shippingMethod"}}</div>
                       {{#each content.delivery.list}}
                         <div class="shipping-method-option">
                           <span><input id="{{id}}" class="shipping-method-radio" type="radio" name="delivery options" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
@@ -185,7 +185,7 @@
                 <div class="row hidden-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" id="shipping-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
+                      <a href="#" id="shipping-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">{{i18n "checkout.continueCheckout"}}</a>
                     </div>
                   </div>
                 </div>
@@ -195,7 +195,7 @@
                 <div class="row visible-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" id="shipping-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
+                      <a href="#" id="shipping-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">{{i18n "checkout.continueCheckout"}}</a>
                     </div>
                   </div>
                 </div>

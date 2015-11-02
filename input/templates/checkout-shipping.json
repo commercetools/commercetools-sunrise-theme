@@ -77,8 +77,6 @@
         }
       ]
     },
-    "diffRegion" : "Region",
-    "shippingMethod" : "Shipping Method",
     "delivery" : {
       "list" : [
         {
@@ -110,7 +108,6 @@
         }
       ]
     },
-    "checkoutBtn" : "Continue Checkout",
     "orderSummary" : "Order Summary",
     "itemsTotal" : "3 items in total",
     "checkoutItem" : {
