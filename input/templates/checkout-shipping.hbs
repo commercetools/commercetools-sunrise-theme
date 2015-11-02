@@ -97,24 +97,26 @@
                     <div class="primary-telephone">
                       <span class="text-uppercase">{{i18n "form.phone"}}</span><br>
                       <input id="shipping-telnumber-input" class="checkout-input-field" type="text">
-                      <span class="tel-email-text">{{content.telNumberInfo}}</span>
+                      <span class="tel-email-text">{{i18n "checkout.shippingPage.telNumberInfo"}}</span>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="email-address">
                       <span class="text-uppercase">{{i18n "form.email"}}*</span><br>
                       <input id="shipping-email-input" class="checkout-input-field" type="text">
-                      <span class="tel-email-text">{{content.emailInfo}}</span>
+                      <span class="tel-email-text">{{i18n "checkout.shippingPage.emailInfo"}}</span>
                     </div>
                   </div>
                 </div>
                 <div class="row different-billing-row">
                   <div class="col-sm-12">
                     <div class="different-for-billing">
-                      <span>
-                        <input id="different-billing-checkbox" type="checkbox">
-                      </span>
-                      <span>{{content.differentBilling}}</span>
+                      <label for="different-billing-checkbox">
+                        <span>
+                          <input id="different-billing-checkbox" type="checkbox">
+                        </span>
+                        <span>{{i18n "checkout.shippingPage.differentBillingAddressCheckboxLabel"}}</span>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -158,7 +160,7 @@
                         </div>
                         <div class="col-sm-6">
                           <div class="region-different">
-                            <span class="text-uppercase">{{content.diffRegion}}*</span><br>
+                            <span class="text-uppercase">{{i18n "form.region"}}*</span><br>
                             <input id="shipping-different-region-input" class="checkout-input-field" type="text">
                           </div>
                         </div>

@@ -10,7 +10,10 @@ checkout:
   shipping: Versand
   shippingInformation: Versand Information
   shippingPage:
-      title: Sicherer Bestellprozess - Versand
+    differentBillingAddressCheckboxLabel: Abweichende Adresse als Rechnungsadresse verwenden.
+    emailInfo: Bitte geben Sie Ihre E-Mail-Adresse an, damit wir Sie über den Status und Versand Ihrer Bestellung informieren können.
+    title: Sicherer Bestellprozess - Versand
+    telNumberInfo: Bitte geben Sie Ihre Telefonnummer an, damit unser Lieferant Sie über den Liefertermin informieren kann.
   signInPage:
     title: Secure Checkout - Login
   thankYouPage:

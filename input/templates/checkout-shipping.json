@@ -58,9 +58,6 @@
         }
       ]
     },
-    "telNumberInfo" : "Please provide your telephone number so the shipper can contact you during delivery",
-    "emailInfo" : "We require your email address to send your shipping and order confirmation",
-    "differentBilling" : "Use a different address for billing",
     "diffChooseCountry" : {
       "list" : [
         {
