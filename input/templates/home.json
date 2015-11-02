@@ -2,31 +2,6 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"carouselItems" : {
-			"list" : [
-				{
-					"image" : "assets/img/banner_desktop.jpg",
-					"title" : "Here Comes The Sun 1",
-					"description" : "Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants,",
-					"url" : "",
-					"buttonText" : "Shop Collection 1"
-				},
-				{
-					"image" : "assets/img/banner_desktop.jpg",
-					"title" : "Here Comes The Sun 2",
-					"description" : "Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants,",
-					"url" : "",
-					"buttonText" : "Shop Collection 2"
-				},
-				{
-					"image" : "assets/img/banner_desktop.jpg",
-					"title" : "Here Comes The Sun 3",
-					"description" : "Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants, Lorem Bananas Mee Wants,",
-					"url" : "",
-					"buttonText" : "Shop Collection 3"
-				}
-			]
-		},
 		"bannerOption1" : {
 			"bannerLeft" : {
 				"text" : "Live by the sun",
