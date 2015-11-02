@@ -1,7 +1,7 @@
 {
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
-  "content" : {
+	"content" : {
 		"carouselItems" : {
 			"list" : [
 				{
@@ -256,8 +256,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "2",
 					"text" : "Just one single line",
@@ -433,8 +433,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "3",
 					"text" : "Headline",
@@ -609,8 +609,8 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
-					},
+					}
+				},
 				{
 					"id" : "4",
 					"text" : "Enditatem Product Name Optional very long line two",
@@ -786,11 +786,11 @@
 						"addToBag" : "Add to bag",
 						"addToWishlist" : "Add item to wishlist",
 						"available" : "Available"
-						}
+					}
 				}
 			]
 		},
-    "wishlistWidged" : {
+		"wishlistWidged" : {
 			"text" : "Your Wishlist",
 			"number" : "45",
 			"recentAddedTitle" : "My recently added items",
@@ -810,8 +810,8 @@
 				}
 			]
 		}
-  },
-  "meta" : {
-	"assetsPath": "assets/"
-  }
+	},
+	"meta" : {
+		"assetsPath": "assets/"
+	}
 }
