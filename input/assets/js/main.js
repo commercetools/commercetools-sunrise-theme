@@ -148,7 +148,8 @@ $(document).ready(function() {
 
   $(window).load(function(){
     $(".nav-minicart ul, .order-summary-items").mCustomScrollbar({
-      theme:"dark"
+      theme:"dark",
+      scrollInertia:50
     });
   });
 
