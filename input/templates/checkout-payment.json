@@ -5,7 +5,6 @@
     "stepWidget" : {
        "paymentStepActive": true
     },
-    "secureCheckoutTitle" : "Secure Checkout - Payment",
     "paymentInfoTitle" : "Payment Details",
     "required" : "Required",
     "paymentOptionTitle" : "Please provide one of the following payment options:",

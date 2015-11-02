@@ -5,7 +5,6 @@
     "stepWidget" : {
       "shippingStepActive": true
     },
-    "secureCheckoutTitle" : "Secure Checkout - Shipping",
     "shippingInfoTitle" : "Shipping Information",
     "required" : "Required",
     "title" : "Title",
