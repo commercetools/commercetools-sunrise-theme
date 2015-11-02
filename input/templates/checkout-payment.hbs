@@ -13,20 +13,7 @@
           {{> checkout/secure-checkout-title}}
         </div>
         <div class="col-md-6">
-          <div class="checkout-steps text-right">
-            <div>
-              <span id="payment-checkout-stepone-link" class="step-number">1</span>
-              <span class="text-uppercase step-title">{{content.shippingOne}}</span>
-            </div>
-            <div>
-              <span id="payment-checkout-steptwo-link" class="step-number step-number-active">2</span>
-              <span class="text-uppercase step-title step-title-active">{{content.paymentTwo}}</span>
-            </div>
-            <div>
-              <span id="payment-checkout-stepthree-link" class="step-number">3</span>
-              <span class="text-uppercase step-title">{{content.confirmationThree}}</span>
-            </div>
-          </div>
+          {{> checkout/step-widget}}
         </div>
       </div>
       <div class="row">

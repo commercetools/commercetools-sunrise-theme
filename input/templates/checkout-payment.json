@@ -2,6 +2,9 @@
 	"header" : { "$ref" : "common/checkout-header.json" },
 	"footer" : { "$ref" : "common/checkout-footer.json" },
   "content" : {
+    "stepWidget" : {
+       "paymentStepActive": true
+    },
     "secureCheckoutTitle" : "Secure Checkout - Payment",
     "shippingOne" : "Shipping",
     "paymentTwo" : "Payment",
