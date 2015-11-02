@@ -5,7 +5,6 @@
     "stepWidget" : {
       "shippingStepActive": true
     },
-    "title" : "Title",
     "chooseTitle" : {
       "list" : [
 				{
@@ -35,13 +34,6 @@
         }
       ]
     },
-    "firstName" : "First Name",
-    "lastName" : "Last Name",
-    "addressOne" : "Address 1",
-    "addressTwo" : "Address 2",
-    "city" : "City",
-    "postCode" : "Post Code",
-    "country" : "Country",
     "chooseCountry" : {
       "list" : [
 				{
@@ -66,17 +58,9 @@
         }
       ]
     },
-    "region" : "Region",
-    "telNumber" : "Telephone Number",
     "telNumberInfo" : "Please provide your telephone number so the shipper can contact you during delivery",
-    "email" : "Email",
     "emailInfo" : "We require your email address to send your shipping and order confirmation",
     "differentBilling" : "Use a different address for billing",
-    "diffAddressOne" : "Address 1",
-    "diffAddressTwo" : "Address 2",
-    "diffCity" : "City",
-    "diffPostCode" : "Post Code",
-    "diffCountry" : "Country",
     "diffChooseCountry" : {
       "list" : [
         {

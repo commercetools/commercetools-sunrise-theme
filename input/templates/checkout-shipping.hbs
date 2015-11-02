@@ -28,7 +28,7 @@
                 <div class="row">
                   <div class="col-sm-4">
                     <div class="title">
-                      <span class="text-uppercase">{{content.title}}</span><br>
+                      <span class="text-uppercase">{{i18n "form.title"}}</span><br>
                       <select id="shipping-title-select" class="checkout-dropdown" name="title" form="title">
                         {{#each content.chooseTitle.list}}
                           <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
@@ -40,43 +40,43 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="first-name">
-                      <span class="text-uppercase">{{content.firstName}}*</span><br>
+                      <span class="text-uppercase">{{i18n "form.firstName"}}*</span><br>
                       <input id="shipping-firstname-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="last-name">
-                      <span class="text-uppercase">{{content.lastName}}*</span><br>
+                      <span class="text-uppercase">{{i18n "form.lastName"}}*</span><br>
                       <input id="shipping-lastname-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="address-one">
-                      <span class="text-uppercase">{{content.addressOne}}*</span><br>
+                      <span class="text-uppercase">{{i18n "form.addressOne"}}*</span><br>
                       <input id="shipping-addressone-input"class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="address-two">
-                      <span class="text-uppercase">{{content.addressTwo}}*</span><br>
+                      <span class="text-uppercase">{{i18n "form.addressTwo"}}*</span><br>
                       <input id="shipping-addresstwo-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-8">
                     <div class="city">
-                      <span class="text-uppercase">{{content.city}}*</span><br>
+                      <span class="text-uppercase">{{i18n "form.city"}}*</span><br>
                       <input id="shipping-city-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="post-code">
-                      <span class="text-uppercase">{{content.postCode}}*</span><br>
+                      <span class="text-uppercase">{{i18n "form.postCode"}}*</span><br>
                       <input id="shipping-postcode-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="country">
-                      <span class="text-uppercase">{{content.country}}*</span><br>
+                      <span class="text-uppercase">{{i18n "form.country"}}*</span><br>
                       <select id="shipping-country-select" class="checkout-dropdown" name="title" form="title">
                         {{#each content.chooseCountry.list}}
                           <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
@@ -86,7 +86,7 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="region">
-                      <span class="text-uppercase">{{content.region}}</span><br>
+                      <span class="text-uppercase">{{i18n "form.region"}}</span><br>
                       <input id="shipping-region-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
@@ -95,14 +95,14 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="primary-telephone">
-                      <span class="text-uppercase">{{content.telNumber}}</span><br>
+                      <span class="text-uppercase">{{i18n "form.phone"}}</span><br>
                       <input id="shipping-telnumber-input" class="checkout-input-field" type="text">
                       <span class="tel-email-text">{{content.telNumberInfo}}</span>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="email-address">
-                      <span class="text-uppercase">{{content.email}}*</span><br>
+                      <span class="text-uppercase">{{i18n "form.email"}}*</span><br>
                       <input id="shipping-email-input" class="checkout-input-field" type="text">
                       <span class="tel-email-text">{{content.emailInfo}}</span>
                     </div>
@@ -124,31 +124,31 @@
                       <div class="row">
                         <div class="col-sm-12">
                           <div class="address-one-different">
-                            <span class="text-uppercase">{{content.diffAddressOne}}*</span><br>
+                            <span class="text-uppercase">{{i18n "form.addressOne"}}*</span><br>
                             <input id="shipping-different-addressone-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-12">
                           <div class="address-two-different">
-                            <span class="text-uppercase">{{content.diffAddressTwo}}*</span><br>
+                            <span class="text-uppercase">{{i18n "form.addressTwo"}}*</span><br>
                             <input id="shipping-different-addresstwo-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-8">
                           <div class="city-different">
-                            <span class="text-uppercase">{{content.diffCity}}*</span><br>
+                            <span class="text-uppercase">{{i18n "form.city"}}*</span><br>
                             <input id="shipping-different-city-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-4">
                           <div class="post-code-different">
-                            <span class="text-uppercase">{{content.diffPostCode}}*</span><br>
+                            <span class="text-uppercase">{{i18n "form.postCode"}}*</span><br>
                             <input id="shipping-different-postcode-input" class="checkout-input-field" type="text">
                           </div>
                         </div>
                         <div class="col-sm-6">
                           <div class="country-different">
-                            <span class="text-uppercase">{{content.diffCountry}}*</span><br>
+                            <span class="text-uppercase">{{i18n "form.country"}}*</span><br>
                             <select id="shipping-different-country-select" class="checkout-dropdown" name="title" form="title">
                               {{#each content.diffChooseCountry.list}}
                                 <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>

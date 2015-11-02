@@ -81,4 +81,30 @@ content:
 
 
 form:
-  required: required
+  addressOne: Address 1
+  addressTwo: Address 2
+  apply: Apply
+  city: City
+  choose: Choose
+  country: Country
+  edit: Edit
+  email: Email
+  emailRequired: We require your email address to send your shipping and order confirmation
+  delete: Delete
+  firstName: First Name
+  formHasErrorsFlash: The form contains errors.
+  lastName: Last Name
+  personTitles:
+    mr: Mr.
+  personTitles:
+    mrs: Mrs.
+  personTitles:
+    ms: Ms.
+  personTitles:
+    dr: Dr.
+  phone: Telephone Number
+  phoneRequired: Please provide your telephone number so the shipper can contact you during delivery
+  postCode: Post Code
+  region: Region
+  required: Required
+  title: Title
