@@ -10,10 +10,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="secure-payment">
-            <span><img class="secure-payment-icon" src="{{meta.assetsPath}}img/credit-card-lock.png" alt="secure payment"></span>
-            <span class="text-uppercase secure-payment-title">{{content.secureCheckoutTitle}}</span>
-          </div>
+          {{> checkout/secure-checkout-title}}
       </div>
         <div class="col-md-6">
           <div class="checkout-steps text-right">
