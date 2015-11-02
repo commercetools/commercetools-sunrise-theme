@@ -1,0 +1,30 @@
+bannerOne:
+  first:
+    title: Live by the sun
+    subtitle: Make the great day happen
+    btn: Shop collection
+  second:
+    title: Live by the sun
+    subtitle: Make the great day happen
+    btn: Shop collection
+bannerTwo:
+  title: Here comes the sun
+  subtitle: What inspires you?
+  description1: Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis
+  description2: Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis
+  btn: Shop Collection
+bannerThree:
+  first:
+    title: Live by the sun
+    subtitle: Make the great day happen
+    btn: Shop collection
+  second:
+    title: Donec nec justo eget felis facilisis fermentum.
+  third:
+    title: Live by the sun
+    subtitle: Make the great day happen
+    btn: Shop collection
+  fourth:
+    title: Live by the sun
+    subtitle: Make the great day happen
+    btn: Shop collection

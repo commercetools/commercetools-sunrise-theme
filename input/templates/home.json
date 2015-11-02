@@ -2,51 +2,6 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"bannerOption1" : {
-			"bannerLeft" : {
-				"text" : "Live by the sun",
-				"description" : "Make the great day happen",
-				"bannerBtn" : "Shop Collection",
-				"url" : ""
-			},
-			"bannerRight" : {
-				"text" : "Live by the sun",
-				"description" : "Make the great day happen",
-				"bannerBtn" : "Shop Collection",
-				"url" : ""
-			}
-		},
-		"bannerOption2" : {
-			"text" : "here comes the sum",
-			"subText" : "What inspires you?",
-			"descriptionOne" : "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.",
-			"descriptionTwo" : "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.",
-			"bannerBtn" : "Shop Collection",
-			"url" : ""
-		},
-		"bannerOption3": {
-			"bannerLeft" : {
-				"text" : "Live by the sun",
-				"description" : "Make the great day happen",
-				"bannerBtn" : "Shop Collection",
-				"url" : ""
-			},
-			"bannerRightOne" : {
-				"text" : "Donec nec justo eget felis facilisis fermentum."
-			},
-			"bannerRightTwo" : {
-				"text" : "Live by the sun",
-				"description" : "Make the great day happen",
-				"bannerBtn" : "Shop Collection",
-				"url" : ""
-			},
-			"bannerRightThree" : {
-				"text" : "Live by the sun",
-				"description" : "Make the great day happen",
-				"bannerBtn" : "Shop Collection",
-				"url" : ""
-			}
-		},
 		"suggestions" : {
 			"text" : "Get Beach Ready",
 			"description" : "Why so serious?!",
