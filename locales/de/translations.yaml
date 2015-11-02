@@ -1,8 +1,8 @@
+checkout:
+  shipping: Versand
+  payment: Zahlung
+  confirmation: Bestätigung
 content:
-  checkout:
-    shipping: Versand
-    payment: Zahlung
-    confirmation: Bestätigung
   messages:
     pleaseWait: Bitte warten...
     reachedMaximumAlert: Sie haben die maximale Anzahl ihrem Warenkorb hinzugefügt
