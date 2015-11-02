@@ -2,6 +2,7 @@ checkout:
   confirmation: confirmation
   confirmationPage:
     title: Secure Checkout - Confirmation
+  continueCheckout: Continue Checkout
   payment: payment
   paymentInformation: Payment Details
   paymentPage:
@@ -9,6 +10,7 @@ checkout:
   returningCustomer: Returning Customer
   shipping: shipping
   shippingInformation: Shipping Information
+  shippingMethod: Shipping Method
   shippingPage:
     differentBillingAddressCheckboxLabel: Use a different address for billing
     emailInfo: We require your email address to send your shipping and order confirmation
