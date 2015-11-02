@@ -3,13 +3,18 @@ checkout:
   confirmationPage:
     title: Secure Checkout - Confirmation
   payment: payment
+  paymentInformation: Payment Details
   paymentPage:
     title: Secure Checkout - Payment
+  returningCustomer: Returning Customer
   shipping: shipping
+  shippingInformation: Shipping Information
   shippingPage:
     title: Secure Checkout - Shipping
   signInPage:
     title: Secure Checkout - Sign In
+  thankYouPage:
+    title: Thank you for your order!
 content:
   messages:
     pleaseWait: Please wait...
@@ -72,3 +77,8 @@ content:
     youMayLike: You may also like
   reviews:
     title: Reviews
+
+
+
+form:
+  required: required

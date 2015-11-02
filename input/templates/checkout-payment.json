@@ -5,8 +5,6 @@
     "stepWidget" : {
        "paymentStepActive": true
     },
-    "paymentInfoTitle" : "Payment Details",
-    "required" : "Required",
     "paymentOptionTitle" : "Please provide one of the following payment options:",
     "paymentOption" : {
       "list" : [

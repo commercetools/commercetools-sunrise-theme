@@ -2,8 +2,6 @@
 	"header" : { "$ref" : "common/checkout-header.json" },
 	"footer" : { "$ref" : "common/checkout-footer.json" },
   "content" : {
-    "returningCustomerTitle" : "Returning Customer",
-    "required" : "Required",
     "ifYouHaveAccountTitle" : "If you have an account, please sign in for faster checkout.",
     "emailTitle" : "Email Address",
     "passwordTitle" : "Password",

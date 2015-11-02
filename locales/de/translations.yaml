@@ -3,13 +3,18 @@ checkout:
   confirmationPage:
     title: Sicherer Bestellprozess - Versand
   payment: Zahlung
+  paymentInformation: Zahlungsdetails
   paymentPage:
     title: Sicherer Bestellprozess - Bezahlung
+  returningCustomer: Wiederkehrender Besucher
   shipping: Versand
+  shippingInformation: Versand Information
   shippingPage:
       title: Sicherer Bestellprozess - Versand
   signInPage:
     title: Secure Checkout - Login
+  thankYouPage:
+    title: Vielen Dank für Ihre Bestellung!
 content:
   messages:
     pleaseWait: Bitte warten...
@@ -48,3 +53,5 @@ content:
     moreDeliveryInfoText: ""
   pagination:
     pageSeparator: von
+form:
+  required: Pflichtfeld
