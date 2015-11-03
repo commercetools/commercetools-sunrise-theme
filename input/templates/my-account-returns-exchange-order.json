@@ -88,7 +88,6 @@
         "receivedOn" : "Nov 20, 2015",
         "refundTotal" : "50,00 €",
 		"productDescriptionTitle" : "Product Description",
-		"totalPriceTitle" : "Total Price",
 		"order" : [
 			{
 				"image" : "assets/img/blue-shirt.jpg",

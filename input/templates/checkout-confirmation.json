@@ -61,7 +61,6 @@
           "quantity" : 2,
           "priceOld" : "100,00 €",
           "price" : "49,00 €",
-          "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €"
         },
         {
@@ -75,7 +74,6 @@
           "delete" : "Delete",
           "quantity" : 3,
           "price" : "49,00 €",
-          "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €"
         }
       ]
