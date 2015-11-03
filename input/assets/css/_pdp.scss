@@ -119,8 +119,15 @@
   .discounted-price {
     text-decoration: line-through;
     color: fade-out($grey, 0.4);
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 200;
+  }
+}
+
+// List of product details (Color, size and size guide)
+.product-details-list {
+  > li {
+    margin-bottom: 15px;
   }
 }
 
@@ -130,11 +137,11 @@
   -moz-appearance: none;
   appearance: none;
   margin: 0 10px 0 0;
-  background: transparent url("../img/arrow-67-filled.png") no-repeat 90% 50%;
+  background: transparent url("../img/arrow-67-filled.png") no-repeat 95% 50%;
   background-size: 12px;
   padding: 10px 50px 10px 10px;
   border-radius: 0;
-  border: solid 2px $light-grey;
+  border: solid 1px $light-grey;
   color: $dark-grey;
   font-size: 12px;
   letter-spacing: 1px;
@@ -152,6 +159,25 @@
 .size-guide {
   text-transform: uppercase;
   color: $dark-grey;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+// List of product actions (Quantity, Add to bag & Add to wishlist)
+.product-actions-list {
+  padding: 0px 15px;
+
+  > li {
+    margin: 0px 0px 15px 0px;
+    vertical-align: top;
+
+    .bag-items {
+      height: 52px;
+      line-height: 52px;
+    }
+  }
 }
 
 // Number of bag items
