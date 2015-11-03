@@ -22,6 +22,7 @@ checkout:
     telNumberInfo: Please provide your telephone number so the shipper can contact you during delivery
   signInPage:
     title: Secure Checkout - Sign In
+  subtotal: Subtotal
   thankYouPage:
     title: Thank you for your order!
 common:

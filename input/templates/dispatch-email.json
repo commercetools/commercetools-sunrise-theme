@@ -49,7 +49,6 @@
         ],
         "totalSum" : {
             "promoCode" : "Sunny Sale",
-			"subtotalTitle" : "Subtotal",
 			"subtotal" : "200,00 €",
 			"orderDiscountTitle" : "Order Discount",
 			"orderDiscount" : "0,00 €",
