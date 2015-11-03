@@ -30,7 +30,7 @@
   </div>
 </div>
 <div class="row select-row">
-  <ul class="list-inline">
+  <ul class="product-details-list list-inline">
     <li>
       <p class="text-uppercase">{{i18n "content.static.colorsText"}}</p>
       <div>
@@ -55,13 +55,13 @@
       </div>
     </li>
     <li class="size-guide-li">
-      <a href="#" id="{{content.static.sizeGuideBtnId}}" data-toggle="modal" data-target="#size-guide"><span class="size-guide"><img class="size-guide-thumb" src="{{meta.assetsPath}}img/ruler-1.png" alt="size guide">{{i18n "content.static.sizeGuideText"}}</span></a>
+      <a href="#" id="{{content.static.sizeGuideBtnId}}" data-toggle="modal" data-target="#size-guide"><span class="size-guide tr-efx"><img class="size-guide-thumb" src="{{meta.assetsPath}}img/ruler-1.png" alt="size guide">{{i18n "content.static.sizeGuideText"}}</span></a>
     </li>
   </ul>
 </div>
 <div class="row">
-  <ul class="list-inline">
-    <li>
+  <ul class="product-actions-list list-inline">
+    <li class="bag-items-li">
       <select id="{{content.static.bagItemsQuantity}}" class="bag-items">
         {{#each content.static.bagItems}}
         <option id="{{id}}" value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
