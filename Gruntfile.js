@@ -20,12 +20,14 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/fonts/**/*' },
           { expand: true, cwd: 'input/', dest: 'output/', src: '*.html' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json' },
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.hbs' },
           { expand: true, cwd: 'locales/', dest: 'output/locales', src: '**/*.yaml' },
           { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.json' },
           { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.hbs' }
         ]
+      },
+      resolved: {
+        files: { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' }
       }
     },
 
@@ -87,7 +89,8 @@ module.exports = function(grunt) {
       scripts: {
         files: [
           'input/**/*',
-          'locales/**/*'
+          'locales/**/*',
+          '!input/**/*.json-resolved'
         ],
         tasks: ['build']
       }
@@ -175,7 +178,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'pre-handlebars', 'handlebars', 'clean:resolved']);
+  grunt.registerTask('build', ['clean', 'copy:dist', 'coffee', 'sass', 'postcss', 'pre-handlebars', 'handlebars', 'clean:resolved']);
   grunt.registerTask('release-patch', ['build', 'maven', 'clean:dist']);
   grunt.registerTask('release-minor', ['build', 'maven:release:minor', 'clean:dist']);
   grunt.registerTask('release-major', ['build', 'maven:release:major', 'clean:dist']);
@@ -183,6 +186,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('pre-handlebars', 'Tasks to be run before Handlebars', function() {
     grunt.task.run('json-refs');
+    //grunt.task.run('copy:resolved');
     grunt.task.run('i18next');
   });
 
