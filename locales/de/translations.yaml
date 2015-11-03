@@ -3,6 +3,7 @@ checkout:
   confirmationPage:
     title: Sicherer Bestellprozess - Versand
   continueCheckout: Weiter
+  editMyCart: Warenkorb bearbeiten
   itemsTotal: __count__ Artikel im Warenkorb
   orderDiscount: Bestelldiscount
   orderSummary: Bestellübersicht

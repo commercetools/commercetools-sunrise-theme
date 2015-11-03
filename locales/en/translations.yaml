@@ -3,6 +3,7 @@ checkout:
   confirmationPage:
     title: Secure Checkout - Confirmation
   continueCheckout: Continue Checkout
+  editMyCart: Edit my shopping cart
   itemsTotal: __count__ item in total
   itemsTotal_plural: __count__ items in total
   orderDiscount: Order Discount

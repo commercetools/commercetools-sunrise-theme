@@ -159,8 +159,7 @@
         "deliveryTitle" : "Standard Delivery",
         "deliverySum" : "10,00 €",
         "tax" : "20,00 €",
-        "total" : "123,00 €",
-        "editMyOrder" : "Edit my shopping cart"
+        "total" : "123,00 €"
     },
     "meta" : {
         "assetsPath": "assets/"
