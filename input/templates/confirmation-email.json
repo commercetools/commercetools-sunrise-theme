@@ -73,7 +73,6 @@
             }
         ],
         "totalSum" : {
-            "promoCodeTitle" : "Promotional Code Applied",
             "promoCode" : "Sunny Sale",
 			"subtotalTitle" : "Subtotal",
 			"subtotal" : "200,00 €",

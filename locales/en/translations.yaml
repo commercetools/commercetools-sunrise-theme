@@ -10,6 +10,7 @@ checkout:
   paymentInformation: Payment Details
   paymentPage:
     title: Secure Checkout - Payment
+  promoCodeApplied: Promotional Code Applied
   returningCustomer: Returning Customer
   shipping: shipping
   shippingInformation: Shipping Information

@@ -9,6 +9,7 @@ checkout:
   paymentInformation: Zahlungsdetails
   paymentPage:
     title: Sicherer Bestellprozess - Bezahlung
+  promoCodeApplied: Gutschein eingelöst
   returningCustomer: Wiederkehrender Besucher
   shipping: Versand
   shippingInformation: Versand Information
