@@ -1,5 +1,5 @@
 <div class="order-summary">
-    <span class="text-uppercase order-summary-title">{{content.orderSummary}}:</span>
-    <span class="checkout-total-items">{{content.itemsTotal}}</span>
+    <span class="text-uppercase order-summary-title">{{i18n "checkout.orderSummary"}}:</span>
+    <span class="checkout-total-items">{{i18n "checkout.itemsTotal" count=content.itemsTotal}}</span>
 </div>
 {{> checkout/checkout-item}}
