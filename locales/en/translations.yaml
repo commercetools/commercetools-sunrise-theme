@@ -5,6 +5,7 @@ checkout:
   continueCheckout: Continue Checkout
   itemsTotal: __count__ item in total
   itemsTotal_plural: __count__ items in total
+  orderDiscount: Order Discount
   orderSummary: Order Summary
   payment: payment
   paymentInformation: Payment Details

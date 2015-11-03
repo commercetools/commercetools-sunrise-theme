@@ -4,6 +4,7 @@ checkout:
     title: Sicherer Bestellprozess - Versand
   continueCheckout: Weiter
   itemsTotal: __count__ Artikel im Warenkorb
+  orderDiscount: Bestelldiscount
   orderSummary: Bestellübersicht
   payment: Zahlung
   paymentInformation: Zahlungsdetails
