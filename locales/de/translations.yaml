@@ -28,8 +28,9 @@ checkout:
   total: Gesamtpreis
 common:
   color: Farbe
-  size: Größe
+  price: Preis
   quantity: Anzahl
+  size: Größe
   salesTax: Mehrwertsteuer
   viewDetails: Details anzeigen
 content:
