@@ -90,7 +90,6 @@
         "receivedOn" : "Nov 20, 2015",
         "refundTotal" : "50,00 €",
 		"productDescriptionTitle" : "Product Description",
-		"quantityTitle" : "Quantity",
 		"priceTitle" : "Price",
 		"totalPriceTitle" : "Total Price",
 		"order" : [
@@ -102,7 +101,7 @@
 				"color" : "Navy Blue",
 				"size" : "XXL",
 				"available" : "Immediately available",
-				"quantity" : "1",
+				"quantity" : 1,
 				"discountedPrice" : "100,00 €",
 				"price" : "75,00 €",
 				"totalPrice" : "75,00 €"
@@ -115,7 +114,7 @@
 				"color" : "Navy Blue",
 				"size" : "XXL",
 				"available" : "Immediately available",
-				"quantity" : "1",
+				"quantity" : 1,
                 "discountedPrice" : "100,00 €",
 				"price" : "75,00 €",
 				"totalPrice" : "75,00 €"
