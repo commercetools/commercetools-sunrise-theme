@@ -21,6 +21,10 @@ checkout:
     title: Secure Checkout - Login
   thankYouPage:
     title: Vielen Dank für Ihre Bestellung!
+common:
+  color: Farbe
+  size: Größe
+  viewDetails: Details anzeigen
 content:
   messages:
     pleaseWait: Bitte warten...

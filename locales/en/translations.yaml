@@ -23,6 +23,10 @@ checkout:
     title: Secure Checkout - Sign In
   thankYouPage:
     title: Thank you for your order!
+common:
+  color: Color
+  size: Size
+  viewDetails: View Details
 content:
   messages:
     pleaseWait: Please wait...

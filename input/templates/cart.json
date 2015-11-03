@@ -15,7 +15,6 @@
           "nameHeadline" : "Enditatem Product Name",
           "nameSubline" : "Optional Line Two",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color: ",
           "color" : "Navy Blue",
 		  "availableColors" : [
 			  {
@@ -27,7 +26,6 @@
 				  "value" : "beige"
 			  }
 		  ],
-          "sizeTitle" : "Size: ",
           "size" : "M",
 		  "availableSizes" : [
 			  {
@@ -74,7 +72,6 @@
           "nameHeadline" : "Enditatem Product Name",
           "nameSubline" : "Optional Line Two",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color: ",
           "color" : "Navy Blue",
 		  "availableColors" : [
 			  {
@@ -86,7 +83,6 @@
 				  "value" : "beige"
 			  }
 		  ],
-          "sizeTitle" : "Size: ",
           "size" : "M",
 		  "availableSizes" : [
 			  {
