@@ -175,7 +175,6 @@
     "discount" : "0,00 €",
     "deliveryTitle" : "Standard Delivery",
     "deliverySum" : "10,00 €",
-    "taxTitle" : "Sales Tax",
     "tax" : "20,00 €",
     "totalTitle" : "Order Total",
     "total" : "123,00 €",
