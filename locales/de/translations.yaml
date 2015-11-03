@@ -2,6 +2,9 @@ checkout:
   confirmation: Bestätigung
   confirmationPage:
     title: Sicherer Bestellprozess - Versand
+  continueCheckout: Weiter
+  itemsTotal: __count__ Artikel im Warenkorb
+  orderSummary: Bestellübersicht
   payment: Zahlung
   paymentInformation: Zahlungsdetails
   paymentPage:

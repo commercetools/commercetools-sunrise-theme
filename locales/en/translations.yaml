@@ -3,6 +3,9 @@ checkout:
   confirmationPage:
     title: Secure Checkout - Confirmation
   continueCheckout: Continue Checkout
+  itemsTotal: __count__ item in total
+  itemsTotal_plural: __count__ items in total
+  orderSummary: Order Summary
   payment: payment
   paymentInformation: Payment Details
   paymentPage:

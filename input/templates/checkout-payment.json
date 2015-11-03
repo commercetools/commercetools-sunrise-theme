@@ -126,7 +126,6 @@
     "securityCodeTooltip" : "Additional information about the security code goes here...",
 
 
-    "orderSummary" : "Order Summary",
     "itemsTotal" : "3 items in total",
     "checkoutItem" : {
       "list" : [

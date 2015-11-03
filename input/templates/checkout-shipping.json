@@ -108,8 +108,7 @@
         }
       ]
     },
-    "orderSummary" : "Order Summary",
-    "itemsTotal" : "3 items in total",
+    "itemsTotal" : 0,
     "checkoutItem" : {
       "list" : [
         {
