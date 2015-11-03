@@ -54,12 +54,12 @@
                   <p class="grey-p">{{sku}}</p>
                   <p class="cart-color-size">
                     <!--:color-->
-                    {{colorTitle}}
+                    {{i18n "common.color"}}:
                     <span class="black-p" data-model="cartItem.color">{{color}}</span>
                     <!--:colorend-->
                     <br>
                     <!--:size-->
-                    {{sizeTitle}}
+                    {{i18n "common.size"}}:
                     <span class="black-p" data-model="cartItem.size">{{size}}</span>
                     <!--:sizeend-->
                   </p>
@@ -75,14 +75,14 @@
                         <span>
                           <img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}
                         </span>
-                      </button type="submit">
+                      </button>
                     </div>
                     <div class="edit-delete-section">
                       <button type="submit" id="{{deleteId}}" href="#">
                         <span>
                           <img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}
                         </span>
-                      </button type="submit">
+                      </button>
                     </div>
                   </div>
                   <div class="edit-section-form">

@@ -124,9 +124,7 @@
     },
     "securityCode" : "Security Code",
     "securityCodeTooltip" : "Additional information about the security code goes here...",
-
-
-    "itemsTotal" : "3 items in total",
+    "itemsTotal" : 3,
     "checkoutItem" : {
       "list" : [
         {
@@ -134,9 +132,7 @@
           "description" : "Optional Line Two",
           "image" : "assets/img/blue-jacket.jpg",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
           "color" : "Navy Blue",
-          "sizeTitle" : "Size",
           "size" : "M",
           "quantity" : "Quantity",
           "quantityNumber" : "1",
@@ -151,9 +147,7 @@
           "description" : "Optional Line Two",
           "image" : "assets/img/blue-jacket.jpg",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
           "color" : "Navy Blue",
-          "sizeTitle" : "Size",
           "size" : "M",
           "quantity" : "Quantity",
           "quantityNumber" : "1",
@@ -167,9 +161,7 @@
           "description" : "Optional Line Two",
           "image" : "assets/img/blue-jacket.jpg",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
           "color" : "Navy Blue",
-          "sizeTitle" : "Size",
           "size" : "M",
           "quantity" : "Quantity",
           "quantityNumber" : "1",
