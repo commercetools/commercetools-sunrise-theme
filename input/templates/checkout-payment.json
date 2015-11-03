@@ -138,7 +138,6 @@
 					"priceOld" : "100,00 €",
           "priceTitle" : "Price",
           "price" : "49,00 €",
-          "totalTitle" : "Total",
           "total" : "49,00 €"
         },
         {
@@ -151,7 +150,6 @@
           "quantity" : 1,
           "priceTitle" : "Price",
           "price" : "49,00 €",
-          "totalTitle" : "Total",
           "total" : "49,00 €"
         },
         {
@@ -165,7 +163,6 @@
           "priceTitle" : "Price",
 					"priceOld" : "100,00 €",
           "price" : "49,00 €",
-          "totalTitle" : "Total",
           "total" : "49,00 €"
         }
       ]
@@ -176,7 +173,6 @@
     "deliveryTitle" : "Standard Delivery",
     "deliverySum" : "10,00 €",
     "tax" : "20,00 €",
-    "totalTitle" : "Order Total",
     "total" : "123,00 €",
     "editMyOrder" : "Edit my quantity order"
   },

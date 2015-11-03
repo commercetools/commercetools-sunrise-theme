@@ -26,6 +26,7 @@ checkout:
   subtotal: Subtotal
   thankYouPage:
     title: Thank you for your order!
+  total: Total
 common:
   color: Color
   size: Size

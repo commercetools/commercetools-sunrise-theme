@@ -24,6 +24,7 @@ checkout:
   subtotal: Zwischensumme
   thankYouPage:
     title: Vielen Dank für Ihre Bestellung!
+  total: Gesamtpreis
 common:
   color: Farbe
   size: Größe
