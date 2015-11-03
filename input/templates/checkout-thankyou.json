@@ -63,7 +63,6 @@
           "size" : "M",
           "available" : "Available",
 					"quantity" : "2",
-          "priceTitle" : "Price",
           "price" : "49,00 €",
           "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €"
@@ -76,7 +75,6 @@
           "size" : "M",
           "available" : "Available",
           "quantity" : 3,
-          "priceTitle" : "Price",
           "price" : "49,00 €",
           "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €"

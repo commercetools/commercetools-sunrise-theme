@@ -53,7 +53,6 @@
                 "color" : "Navy Blue",
                 "size" : "M",
                 "quantity" : 1,
-                "priceTitle" : "Price",
                 "price" : "100,00 €",
                 "totalPriceTitle" : "Total",
                 "totalPrice" : "100,00 €"
@@ -66,7 +65,6 @@
                 "color" : "Navy Blue",
                 "size" : "M",
                 "quantity" : 1,
-                "priceTitle" : "Price",
                 "price" : "100,00 €",
                 "totalPriceTitle" : "Total",
                 "totalPrice" : "100,00 €"

@@ -30,8 +30,9 @@ checkout:
   total: Total
 common:
   color: Color
-  size: Size
+  price: Price
   quantity: quantity
+  size: Size
   salesTax: Sales Tax
   viewDetails: View Details
 content:

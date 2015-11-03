@@ -84,7 +84,6 @@
 		"salesTax" : "0,00 €",
 		"orderTotal" : "210,00 €",
 		"productDescriptionTitle" : "Product Description",
-		"priceTitle" : "Price",
 		"totalPriceTitle" : "Total Price",
 		"order" : [
 			{
