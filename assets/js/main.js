@@ -147,11 +147,15 @@ sizeGuideTable.prototype = {
 $(document).ready(function() {
 
   $(window).load(function(){
+    // makes the scrollbar's design the same in all browsers
     $(".nav-minicart ul, .order-summary-items").mCustomScrollbar({
       theme:"dark",
       scrollInertia:50
     });
   });
+
+  // "Select" elements becomes customized
+   $("select").selectBoxIt();
 
   // Toggle search bar on mobile
   $('.search-toggle').click(function() {
