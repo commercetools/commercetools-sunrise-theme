@@ -26,6 +26,7 @@ checkout:
 common:
   color: Color
   size: Size
+  quantity: quantity
   viewDetails: View Details
 content:
   messages:

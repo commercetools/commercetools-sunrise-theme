@@ -7,7 +7,6 @@
     "checkoutBtn" : "Checkout now",
     "cartItems" : {
       "description" : "Product Description",
-      "quantity" : "Quantity",
       "price" : "Price",
       "totalPrice" : "Total Price",
       "list" : [

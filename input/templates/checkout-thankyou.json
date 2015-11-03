@@ -52,7 +52,6 @@
 		},
     "cartItems" : {
       "description" : "Product Description",
-      "quantity" : "Quantity",
       "price" : "Price",
       "totalPrice" : "Total Price",
       "list" : [
@@ -76,7 +75,7 @@
           "color" : "Navy Blue",
           "size" : "M",
           "available" : "Available",
-					"quantity" : "3",
+          "quantity" : 3,
           "priceTitle" : "Price",
           "price" : "49,00 €",
           "totalPriceTitle" : "Total Price",

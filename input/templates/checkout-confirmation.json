@@ -46,7 +46,6 @@
 		},
     "cartItems" : {
       "description" : "Product Description",
-      "quantity" : "Quantity",
       "price" : "Price",
       "totalPrice" : "Total Price",
       "list" : [
@@ -59,9 +58,9 @@
           "available" : "Available",
           "edit" : "Edit",
           "delete" : "Delete",
-					"quantity" : "2",
+          "quantity" : 2,
           "priceTitle" : "Price",
-					"priceOld" : "100,00 €",
+          "priceOld" : "100,00 €",
           "price" : "49,00 €",
           "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €"
@@ -75,7 +74,7 @@
           "available" : "Available",
           "edit" : "Edit",
           "delete" : "Delete",
-					"quantity" : "3",
+          "quantity" : 3,
           "priceTitle" : "Price",
           "price" : "49,00 €",
           "totalPriceTitle" : "Total Price",
