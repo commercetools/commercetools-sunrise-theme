@@ -28,6 +28,7 @@ common:
   color: Farbe
   size: Größe
   quantity: Anzahl
+  salesTax: Mehrwertsteuer
   viewDetails: Details anzeigen
 content:
   messages:

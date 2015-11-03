@@ -30,6 +30,7 @@ common:
   color: Color
   size: Size
   quantity: quantity
+  salesTax: Sales Tax
   viewDetails: View Details
 content:
   messages:

@@ -134,7 +134,6 @@
       "deliveryEstimate" : "Delivery estimate options",
       "deliveryOption" : "Standard Delivery",
       "delivery" : "0,00 EUR",
-      "taxTitle" : "Sales Tax",
       "tax" : "0,00 EUR",
       "orderTotalTitle" : "Order Total",
       "orderTotal" : "98,00 EUR"
