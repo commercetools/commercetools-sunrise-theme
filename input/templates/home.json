@@ -316,26 +316,7 @@
 				]
 			}
 		],
-		"wishlistWidged" : {
-			"text" : "Your Wishlist",
-			"number" : "45",
-			"recentAddedTitle" : "My recently added items",
-			"viewWishlist" : {
-				"text" : "View your wishlist",
-				"url" : ""
-			},
-			"list" : [
-				{
-					"image" : "assets/img/blue-shirt.jpg"
-				},
-				{
-					"image" : "assets/img/blue-shirt.jpg"
-				},
-				{
-					"image" : "assets/img/blue-shirt.jpg"
-				}
-			]
-		}
+		"wishlist" : { "$ref" : "catalog/wishlist.json" }
 	},
 	"meta" : {
 		"assetsPath": "assets/",
