@@ -275,8 +275,8 @@ $(".navbar-toggle").click(function() {
 
 // Product gallery - BZoom
 $("ul#bzoom").each(function(index, ul) {
-  var imgCount = $('#bzoom').data('count');
   $ul = $(ul);
+  var imgCount = $ul.data('count');
   $ul.zoom({
     zoom_area_width: 300,
     // MORE OPTIONS HERE

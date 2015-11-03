@@ -1,0 +1,52 @@
+{
+	"name" : "Enditatem Product Name Optional very long line two",
+	"description" : "Subline",
+	"sku" : "Sunrise #SUN123456",
+	"price" : "€ 49,-",
+	"priceOld" : "€ 79,99",
+	"gallery" : { "$ref" : "product-gallery.json" },
+	"attributes" : [
+		{
+			"name" : "Color",
+			"key" : "color",
+			"list" : [
+				{
+					"text" : "Red",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "Blue",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "Green",
+					"value" : "",
+					"selected" : false
+				}
+			]
+		},
+		{
+			"name" : "Size",
+			"key" : "size",
+			"list" : [
+				{
+					"text" : "S",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "M",
+					"value" : "",
+					"selected" : false
+				},
+				{
+					"text" : "L",
+					"value" : "",
+					"selected" : false
+				}
+			]
+		}
+	]
+}

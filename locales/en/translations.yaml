@@ -7,17 +7,13 @@ content:
     addToWishlistAlert: Add to wishlist
     requiredField: Required field
   general:
-    closeModal: Close Modal
+    closeModal: Close
   static:
     contentText: Products
     productDetailsText: Product Details
     deliveryAndReturnsText: Delivery & Returns
     shippingRatesText: Delivery
     returnsText: Returns
-    youMayLikeText: You may also like
-    reviewsText: Reviews
-    standardDeliveryText: Standard delivery - FREE for orders over €29.99, otherwise €3.00. Delivery within 4 working days.
-    expressDeliveryText: Express delivery - €6.00. Delivery within 2 working days.
     freeReturnsText: Free return for all orders.
     moreDeliveryInfoText: ""
   filters:
@@ -60,5 +56,11 @@ content:
     title: Your Wishlist
     view: View your wishlist
     recentlyAdded: My recently added items
+  suggestions:
+    youMayLike: You may also like
+  reviews:
+    title: Reviews
+
+
 
 

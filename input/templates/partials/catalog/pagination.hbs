@@ -1,13 +1,13 @@
 <li>
-  <a href="{{content.pagination.urlPrevious}}" class="icon-prev">
+  <a href="{{pagination.urlPrevious}}" class="icon-prev">
     <span class="sr-only">{{i18n "content.pagination.previous"}}</span>
   </a>
 </li>
-{{#each content.pagination.pages}}
-  <li><a href="{{url}}" {{#if selected}} class="active" {{/if}}>{{name}}</a></li>
+{{#each pagination.pages}}
+  <li><a href="{{url}}" {{#if selected}}class="active"{{/if}}>{{name}}</a></li>
 {{/each}}
 <li>
-  <a href="{{content.pagination.urlNext}}" class="icon-next">
+  <a href="{{pagination.urlNext}}" class="icon-next">
     <span class="sr-only">{{i18n "content.pagination.next"}}</span>
   </a>
 </li>
