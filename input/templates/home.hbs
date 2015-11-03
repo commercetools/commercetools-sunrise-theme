@@ -13,11 +13,11 @@
     {{> catalog/home-banners}}
 
     <div class="container">
-      <h4 class="home-suggestions-title">{{text}}</h4>
+      <h4 class="home-suggestions-title">{{i18n "home:suggestions.title"}}</h4>
       <hr class="home-suggestions-hr">
-      <p class="home-suggestions-description">{{description}}</p>
+      <p class="home-suggestions-description">{{i18n "home:suggestions.subtitle"}}</p>
       <div class="row">
-        {{#each content.suggestions.list}}
+        {{#each content.suggestions}}
           <div class="col-xs-12 col-sm-6 col-md-3 ">
             {{> catalog/product-thumbnail context=..}}
           </div>
@@ -25,7 +25,7 @@
       </div>
 
       <div class="home-viewall">
-        <a href="" class="home-viewall-btn">View All New Products</a>
+        <a href="" class="home-viewall-btn">{{i18n "home:viewAllNewProductsBtn"}}</a>
         <hr class="home-viewall-hr">
       </div>
     </div>
