@@ -64,7 +64,6 @@
           "available" : "Available",
 					"quantity" : "2",
           "price" : "49,00 €",
-          "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €"
         },
         {
@@ -76,7 +75,6 @@
           "available" : "Available",
           "quantity" : 3,
           "price" : "49,00 €",
-          "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €"
         }
       ]

@@ -29,7 +29,6 @@
                 "size" : "M",
       			"quantity" : 1,
                 "price" : "100,00 €",
-                "totalPriceTitle" : "Total",
                 "totalPrice" : "100,00 €"
             },
             {
@@ -41,7 +40,6 @@
                 "size" : "M",
       			"quantity" : 1,
                 "price" : "100,00 €",
-                "totalPriceTitle" : "Total",
                 "totalPrice" : "100,00 €"
             }
         ],
