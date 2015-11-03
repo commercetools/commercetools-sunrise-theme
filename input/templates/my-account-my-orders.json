@@ -35,7 +35,6 @@
         "contentTitle" : "My Orders",
 		"orderNumberTitle" : "Order Number",
 		"dateTitle" : "Date",
-		"totalTitle" : "Total",
 		"paymentStatusTitle" : "Payment Status",
 		"shippingTitle" : "Shipping",
 		"order" : [

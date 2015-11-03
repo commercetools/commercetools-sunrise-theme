@@ -35,7 +35,6 @@
         "contentTitle" : "Returns / Exchange",
 		"orderNumberTitle" : "Order Number",
 		"receivedTitle" : "Received On",
-		"totalTitle" : "Total",
 		"refundTotalTitle" : "Refund Total",
 		"order" : [
 			{
