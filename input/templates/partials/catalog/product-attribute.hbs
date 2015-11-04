@@ -2,7 +2,7 @@
   <p class="text-uppercase">{{attribute.name}}</p>
   <div>
     <select name="attribute-{{attribute.key}}" class="select-product-detail">
-      <option>{{i18n "content.product.choose"}} {{attribute.name}}</option>
+      <option>{{i18n "choose"}} {{attribute.name}}</option>
       {{#each attribute.list}}
         <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
       {{/each}}
