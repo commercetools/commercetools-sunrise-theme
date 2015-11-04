@@ -65,24 +65,21 @@
 			{
 				"nameHeadline": "Enditatem Product name",
 				"nameSubline": "Optional Line two",
-				"quantityText": "Quantity",
-				"quantity": "1",
+				"quantity": 1,
 				"priceText": "Price",
 				"price": "49,00 €"
 			},
 			{
 				"nameHeadline": "Enditatem Product name",
 				"nameSubline": "Optional Line two",
-				"quantityText": "Quantity",
-				"quantity": "1",
+				"quantity": 1,
 				"priceText": "Price",
 				"price": "49,00 €"
 			},
 			{
 				"nameHeadline": "Enditatem Product name",
 				"nameSubline": "Optional Line two",
-				"quantityText": "Quantity",
-				"quantity": "1",
+				"quantity": 1,
 				"priceText": "Price",
 				"price": "49,00 €"
 			}

@@ -34,7 +34,7 @@
                 <span>{{content.cartItems.description}}</span>
               </div>
               <div class="col-sm-2">
-                <span>{{content.cartItems.quantity}}</span>
+                <span>{{i18n "common.quantity"}}</span>
               </div>
               <div class="col-sm-2 text-right">
                 <span>{{content.cartItems.price}}</span>
@@ -54,12 +54,12 @@
                   <p class="grey-p">{{sku}}</p>
                   <p class="cart-color-size">
                     <!--:color-->
-                    {{colorTitle}}
+                    {{i18n "common.color"}}:
                     <span class="black-p" data-model="cartItem.color">{{color}}</span>
                     <!--:colorend-->
                     <br>
                     <!--:size-->
-                    {{sizeTitle}}
+                    {{i18n "common.size"}}:
                     <span class="black-p" data-model="cartItem.size">{{size}}</span>
                     <!--:sizeend-->
                   </p>
@@ -75,14 +75,14 @@
                         <span>
                           <img class="cart-action-icon" src="{{../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}
                         </span>
-                      </button type="submit">
+                      </button>
                     </div>
                     <div class="edit-delete-section">
                       <button type="submit" id="{{deleteId}}" href="#">
                         <span>
                           <img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}
                         </span>
-                      </button type="submit">
+                      </button>
                     </div>
                   </div>
                   <div class="edit-section-form">
@@ -120,7 +120,7 @@
                 </div>
                 <div class="col-sm-2 col-xs-12 sm-pull-right">
                   <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">{{priceTitle}}</span>
+                    <span class="visible-xs xs-price-title">{{i18n "common.price"}}</span>
                     {{#if priceOld}}
                       <span class="discounted-price">{{priceOld}}</span>
                     {{/if}}
@@ -129,7 +129,7 @@
                 </div>
                 <div class="col-sm-2 col-xs-12 sm-pull-right">
                   <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">{{totalPriceTitle}}</span>
+                    <span class="visible-xs xs-price-title">{{i18n "checkout.total"}}</span>
                     <span>{{totalPrice}}</span>
                   </div>
                 </div>
@@ -157,7 +157,7 @@
                     </div>
                     <div class="col-sm-9 col-md-10 col-xs-6">
                       <div class="text-right subtotal">
-                        <span class="subtotal-title">{{content.cartItems.subtotalTitle}}</span>
+                        <span class="subtotal-title">{{i18n "checkout.subtotal"}}</span>
                       </div>
                       <div class="text-right">
                         <span class="order-discount">{{content.cartItems.orderDiscountTitle}}</span>
@@ -170,7 +170,7 @@
                       </div>
                       <hr class="total-divider">
                       <div class="text-right">
-                        <span>{{content.cartItems.taxTitle}}</span>
+                        <span>{{i18n "common.salesTax"}}</span>
                       </div>
                       <div class="text-right">
                         <span class="order-total">{{content.cartItems.orderTotalTitle}}</span>

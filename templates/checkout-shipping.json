@@ -1,209 +1,132 @@
 {
-	"header" : { "$ref" : "common/checkout-header.json" },
-	"footer" : { "$ref" : "common/checkout-footer.json" },
-  "content" : {
-    "secureCheckoutTitle" : "Secure Checkout - Shipping",
-    "shippingOne" : "Shipping",
-    "paymentTwo" : "Payment",
-    "confirmationThree" : "Confirmation",
-    "shippingInfoTitle" : "Shipping Information",
-    "required" : "Required",
-    "title" : "Title",
-    "chooseTitle" : {
-      "list" : [
-				{
-          "text" : "Choose",
-          "value" : "",
-          "selected" : true
+    "header" : { "$ref" : "common/checkout-header.json" },
+    "footer" : { "$ref" : "common/checkout-footer.json" },
+    "content" : {
+        "stepWidget" : {
+            "shippingStepActive": true
         },
-        {
-          "text" : "Mr.",
-          "value" : "",
-          "selected" : false
+        "chooseTitle" : {
+            "list" : [
+                {
+                    "text" : "Choose",
+                    "value" : "",
+                    "selected" : true
+                },
+                {
+                    "text" : "Mr.",
+                    "value" : "Mr.",
+                    "selected" : false
+                },
+                {
+                    "text" : "Mrs.",
+                    "value" : "Mrs.",
+                    "selected" : false
+                },
+                {
+                    "text" : "Ms.",
+                    "value" : "Ms.",
+                    "selected" : false
+                },
+                {
+                    "text" : "Dr.",
+                    "value" : "Dr.",
+                    "selected" : false
+                }
+            ]
         },
-        {
-          "text" : "Mrs.",
-          "value" : "",
-          "selected" : false
+        "chooseCountry" : {
+            "list" : [
+                {
+                    "text" : "Choose",
+                    "value" : "",
+                    "selected" : true
+                },
+                {
+                    "text" : "Germany",
+                    "value" : "DE",
+                    "selected" : false
+                },
+                {
+                    "text" : "France",
+                    "value" : "FR",
+                    "selected" : false
+                },
+                {
+                    "text" : "Spain",
+                    "value" : "ES",
+                    "selected" : false
+                }
+            ]
         },
-        {
-          "text" : "Ms.",
-          "value" : "",
-          "selected" : false
+        "diffChooseCountry" : {
+            "list" : [
+                {
+                    "text" : "Choose",
+                    "value" : "",
+                    "selected" : true
+                },
+                {
+                    "text" : "Germany",
+                    "value" : "DE",
+                    "selected" : true
+                },
+                {
+                    "text" : "France",
+                    "value" : "FR",
+                    "selected" : false
+                },
+                {
+                    "text" : "Spain",
+                    "value" : "ES",
+                    "selected" : false
+                }
+            ]
         },
-        {
-          "text" : "Dr.",
-          "value" : "",
-          "selected" : false
-        }
-      ]
+        "delivery" : {
+            "list" : [
+                {
+                    "text" : "DHL Standard",
+                    "value" : "dhl-standard",
+                    "selected" : true,
+                    "deliveryDays" : "Delivery: 3-5 Days",
+                    "url" : "",
+                    "id" : "shipping-delivery-standard"
+                },
+                {
+                    "text" : "DHL Express",
+                    "value" : "dhl-express",
+                    "selected" : false,
+                    "deliveryDays" : "Delivery: 3-5 Days",
+                    "url" : "",
+                    "id" : "shipping-delivery-express"
+                },
+                {
+                    "text" : "DHL Overnight",
+                    "value" : "dhl-overnight",
+                    "selected" : false,
+                    "deliveryDays" : "Delivery: 3-5 Days",
+                    "url" : "",
+                    "id" : "shipping-delivery-overnight"
+                }
+            ]
+        },
+        "itemsTotal" : 3,
+        "checkoutItem" : {
+            "list" : [
+                { "$ref" : "common/product-variant-1.json" },
+                { "$ref" : "common/product-variant-1.json" },
+                { "$ref" : "common/product-variant-1.json" }
+            ]
+        },
+        "promoCode" : "Sunny Sale",
+        "subtotal" : "107,00 €",
+        "discount" : "0,00 €",
+        "deliveryTitle" : "Standard Delivery",
+        "deliverySum" : "10,00 €",
+        "tax" : "20,00 €",
+        "total" : "123,00 €"
     },
-    "firstName" : "First Name",
-    "lastName" : "Last Name",
-    "addressOne" : "Address 1",
-    "addressTwo" : "Address 2",
-    "city" : "City",
-    "postCode" : "Post Code",
-    "country" : "Country",
-    "chooseCountry" : {
-      "list" : [
-				{
-          "text" : "Choose",
-          "value" : "",
-          "selected" : true
-        },
-        {
-          "text" : "Germany",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "France",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "Spain",
-          "value" : "",
-          "selected" : false
-        }
-      ]
-    },
-    "region" : "Region",
-    "telNumber" : "Telephone Number",
-    "telNumberInfo" : "Please provide your telephone number so the shipper can contact you during delivery",
-    "email" : "Email",
-    "emailInfo" : "We require your email address to send your shipping and order confirmation",
-    "differentBilling" : "Use a different address for billing",
-    "diffAddressOne" : "Address 1",
-    "diffAddressTwo" : "Address 2",
-    "diffCity" : "City",
-    "diffPostCode" : "Post Code",
-    "diffCountry" : "Country",
-    "diffChooseCountry" : {
-      "list" : [
-        {
-          "text" : "Germany",
-          "value" : "",
-          "selected" : true
-        },
-        {
-          "text" : "France",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "Spain",
-          "value" : "",
-          "selected" : false
-        }
-      ]
-    },
-    "diffRegion" : "Region",
-    "shippingMethod" : "Shipping Method",
-    "delivery" : {
-      "list" : [
-        {
-          "text" : "DHL Standard",
-          "value" : "",
-          "selected" : true,
-          "deliveryDays" : "Delivery: 3-5 Days",
-          "url" : "",
-          "details" : "View Details",
-					"id" : "shipping-delivery-standard"
-        },
-        {
-          "text" : "DHL Express",
-          "value" : "",
-          "selected" : false,
-          "deliveryDays" : "Delivery: 3-5 Days",
-          "url" : "",
-          "details" : "View Details",
-					"id" : "shipping-delivery-express"
-        },
-        {
-          "text" : "DHL Overnight",
-          "value" : "",
-          "selected" : false,
-          "deliveryDays" : "Delivery: 3-5 Days",
-          "url" : "",
-          "details" : "View Details",
-					"id" : "shipping-delivery-overnight"
-        }
-      ]
-    },
-    "checkoutBtn" : "Continue Checkout",
-    "orderSummary" : "Order Summary",
-    "itemsTotal" : "3 items in total",
-    "checkoutItem" : {
-      "list" : [
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
-          "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
-          "color" : "Navy Blue",
-          "sizeTitle" : "Size",
-          "size" : "M",
-          "quantity" : "Quantity",
-          "quantityNumber" : "1",
-          "priceTitle" : "Price",
-					"priceOld" : "100,00 €",
-          "price" : "49,00 €",
-          "totalTitle" : "Total",
-          "total" : "49,00 €"
-        },
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
-          "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
-          "color" : "Navy Blue",
-          "sizeTitle" : "Size",
-          "size" : "M",
-          "quantity" : "Quantity",
-          "quantityNumber" : "1",
-          "priceTitle" : "Price",
-          "price" : "49,00 €",
-          "totalTitle" : "Total",
-          "total" : "49,00 €"
-        },
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
-          "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
-          "color" : "Navy Blue",
-          "sizeTitle" : "Size",
-          "size" : "M",
-          "quantity" : "Quantity",
-          "quantityNumber" : "1",
-          "priceTitle" : "Price",
-					"priceOld" : "100,00 €",
-          "price" : "49,00 €",
-          "totalTitle" : "Total",
-          "total" : "49,00 €"
-        }
-      ]
-    },
-    "promoCodeTitle" : "Promotional Code Applied",
-    "promoCode" : "Sunny Sale",
-    "subtotalTitle" : "Subtotal",
-    "subtotal" : "107,00 €",
-    "discountTitle" : "Order Discount",
-    "discount" : "0,00 €",
-    "deliveryTitle" : "Standard Delivery",
-    "deliverySum" : "10,00 €",
-    "taxTitle" : "Sales Tax",
-    "tax" : "20,00 €",
-    "totalTitle" : "Order Total",
-    "total" : "123,00 €",
-    "editMyOrder" : "Edit my shopping cart"
-  },
-  "meta" : {
-    "assetsPath": "assets/"
-  }
+    "meta" : {
+        "assetsPath": "assets/"
+    }
 }

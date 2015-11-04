@@ -11,28 +11,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-7">
-          <div class="secure-payment">
-            <span>
-              <img class="secure-payment-icon" src="{{meta.assetsPath}}img/credit-card-lock.png" alt="secure payment">
-            </span>
-            <span class="text-uppercase secure-payment-title">{{content.secureCheckoutTitle}}</span>
-          </div>
+          {{> checkout/secure-checkout-title titleKey="checkout.confirmationPage.title"}}
         </div>
         <div class="col-md-5">
-          <div class="checkout-steps text-right">
-            <div>
-              <span id="confirmation-checkout-stepone-link" class="step-number">1</span>
-              <span class="text-uppercase step-title">{{content.shippingOne}}</span>
-            </div>
-            <div>
-              <span id="confirmation-checkout-steptwo-link" class="step-number">2</span>
-              <span class="text-uppercase step-title">{{content.paymentTwo}}</span>
-            </div>
-            <div>
-              <span id="confirmation-checkout-stepthree-link" class="step-number step-number-active">3</span>
-              <span class="text-uppercase step-title step-title-active">{{content.confirmationThree}}</span>
-            </div>
-          </div>
+          {{> checkout/step-widget}}
         </div>
       </div>
       <div class="row">
@@ -143,7 +125,7 @@
                     <span>{{content.cartItems.description}}</span>
                   </div>
                   <div class="col-sm-2 text-center">
-                    <span>{{content.cartItems.quantity}}</span>
+                    <span>{{i18n "common.quantity"}}</span>
                   </div>
                   <div class="col-sm-2 text-right">
                     <span>{{content.cartItems.price}}</span>
@@ -162,9 +144,9 @@
                     <p class="cart-item-name">{{nameHeadline}}
                       <br>{{nameSubline}}</p>
                     <p class="grey-p">{{sku}}</p>
-                    <p class="cart-color-size">{{colorTitle}}
+                    <p class="cart-color-size">{{i18n "common.color"}}:
                       <span class="black-p">{{color}}</span>
-                      <br>{{sizeTitle}}
+                      <br>{{i18n "common.size"}}:
                       <span class="black-p">{{size}}</span>
                     </p>
                     <p class="cart-item-availability grey-p hidden-xs">
@@ -178,7 +160,7 @@
                   </div>
                   <div class="col-sm-2 col-xs-7">
                     <div class="text-right cart-item-price">
-                      <span class="visible-xs xs-price-title">{{priceTitle}}</span>
+                      <span class="visible-xs xs-price-title">{{i18n "common.price"}}</span>
                       {{#if priceOld}}
                         <span class="discounted-price">{{priceOld}}</span>
                       {{/if}}
@@ -187,7 +169,7 @@
                   </div>
                   <div class="col-sm-2 col-xs-5">
                     <div class="text-right cart-item-price">
-                      <span class="visible-xs xs-price-title">{{totalPriceTitle}}</span>
+                      <span class="visible-xs xs-price-title">{{i18n "checkout.total"}}</span>
                       <span>{{totalPrice}}</span>
                     </div>
                   </div>
@@ -216,7 +198,7 @@
                     <div class="row">
                       <div class="col-sm-10 col-xs-7">
                         <div class="text-right subtotal">
-                          <span class="subtotal-title">{{content.totalSum.subtotalTitle}}</span>
+                          <span class="subtotal-title">{{i18n "checkout.subtotal"}}</span>
                         </div>
                         <div class="text-right">
                           <span class="order-discount">{{content.totalSum.orderDiscountTitle}}</span>
@@ -226,7 +208,7 @@
                         </div>
                         <hr class="total-divider">
                         <div class="text-right">
-                          <span>{{content.totalSum.taxTitle}}</span>
+                          <span>{{i18n "common.salesTax"}}</span>
                         </div>
                         <div class="text-right">
                           <span class="order-total">{{content.totalSum.orderTotalTitle}}</span>

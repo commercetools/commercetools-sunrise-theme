@@ -10,26 +10,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="secure-payment">
-            <span><img class="secure-payment-icon" src="{{meta.assetsPath}}img/credit-card-lock.png" alt="secure payment"></span>
-            <span class="text-uppercase secure-payment-title">{{content.secureCheckoutTitle}}</span>
-          </div>
+          {{> checkout/secure-checkout-title titleKey="checkout.paymentPage.title"}}
         </div>
         <div class="col-md-6">
-          <div class="checkout-steps text-right">
-            <div>
-              <span id="payment-checkout-stepone-link" class="step-number">1</span>
-              <span class="text-uppercase step-title">{{content.shippingOne}}</span>
-            </div>
-            <div>
-              <span id="payment-checkout-steptwo-link" class="step-number step-number-active">2</span>
-              <span class="text-uppercase step-title step-title-active">{{content.paymentTwo}}</span>
-            </div>
-            <div>
-              <span id="payment-checkout-stepthree-link" class="step-number">3</span>
-              <span class="text-uppercase step-title">{{content.confirmationThree}}</span>
-            </div>
-          </div>
+          {{> checkout/step-widget}}
         </div>
       </div>
       <div class="row">
@@ -38,8 +22,8 @@
             <div class="row">
               <div class="col-sm-7">
                 <div class="shipping-info">
-                  <span class="text-uppercase payment-info-title">{{content.paymentInfoTitle}}</span>
-                  <span class="pull-right required-fields">{{content.required}}*</span>
+                  <span class="text-uppercase payment-info-title">{{i18n "checkout.paymentInformation"}}</span>
+                  <span class="pull-right required-fields">{{i18n "form.required"}}*</span>
                 </div>
                 <div class="row">
                   <div class="col-sm-12">
@@ -106,21 +90,17 @@
                 <div class="row hidden-xs">
                   <div class="col-sm-8 col-md-6">
                     <div>
-                      <a href="#" id="payment-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
+                      <a href="#" id="payment-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">{{i18n "checkout.continueCheckout"}}</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-sm-5">
-                <div class="order-summary">
-                  <span class="text-uppercase order-summary-title">{{content.orderSummary}}:</span>
-                  <span class="checkout-total-items">{{content.itemsTotal}}</span>
-                </div>
-                {{> checkout/checkout-item}}
+                {{> checkout/vertical-order-summary}}
                 <div class="row visible-xs">
                   <div class="col-sm-6">
                     <div>
-                      <a href="#" id="payment-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">{{content.checkoutBtn}}</a>
+                      <a href="#" id="payment-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">{{i18n "checkout.continueCheckout"}}</a>
                     </div>
                   </div>
                 </div>

@@ -2,10 +2,9 @@
 	"header" : { "$ref" : "common/checkout-header.json" },
 	"footer" : { "$ref" : "common/checkout-footer.json" },
   "content" : {
-    "secureCheckoutTitle" : "Secure Checkout - Confirmation",
-    "shippingOne" : "Shipping",
-    "paymentTwo" : "Payment",
-    "confirmationThree" : "Confirmation",
+      "stepWidget" : {
+          "confirmationStepActive": true
+      },
 		"editIconText" : "Edit",
 		"shippingAddress" : {
 			"text" : "Shipping Address",
@@ -47,7 +46,6 @@
 		},
     "cartItems" : {
       "description" : "Product Description",
-      "quantity" : "Quantity",
       "price" : "Price",
       "totalPrice" : "Total Price",
       "list" : [
@@ -55,35 +53,27 @@
           "nameHeadline" : "Enditatem Product Name",
           "nameSubline" : "Optional Line Two",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color: ",
           "color" : "Navy Blue",
-          "sizeTitle" : "Size: ",
           "size" : "M",
           "available" : "Available",
           "edit" : "Edit",
           "delete" : "Delete",
-					"quantity" : "2",
-          "priceTitle" : "Price",
-					"priceOld" : "100,00 €",
+          "quantity" : 2,
+          "priceOld" : "100,00 €",
           "price" : "49,00 €",
-          "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €"
         },
         {
           "nameHeadline" : "Enditatem Product Name",
           "nameSubline" : "Optional Line Two",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color: ",
           "color" : "Navy Blue",
-          "sizeTitle" : "Size: ",
           "size" : "M",
           "available" : "Available",
           "edit" : "Edit",
           "delete" : "Delete",
-					"quantity" : "3",
-          "priceTitle" : "Price",
+          "quantity" : 3,
           "price" : "49,00 €",
-          "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €"
         }
       ]
@@ -99,13 +89,11 @@
 			"url" : ""
 		},
 		"totalSum" : {
-			"subtotalTitle" : "Subtotal",
 			"subtotal" : "107,00 €",
 			"orderDiscountTitle" : "Order Discount",
 			"orderDiscount" : "0,00 €",
 			"deliveryOption" : "Standard Delivery",
 			"delivery" : "0,00 €",
-			"taxTitle" : "Sales Tax",
 			"tax" : "20,00 €",
 			"orderTotalTitle" : "Order Total",
 			"orderTotal" : "117,00 €"
