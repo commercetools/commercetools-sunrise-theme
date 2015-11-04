@@ -10,22 +10,26 @@
           </div>
           <div class="col-xs-8">
             <div class="summary-item-info">
-              <span class="checkout-product-name">{{text}}</span><br>
+              <span class="checkout-product-name">{{name}}</span><br>
               <span class="checkout-product-name">{{description}}</span>
             </div>
             <div class="sku-code">
               <span>{{sku}}</span>
             </div>
-            <div class="checkout-color-size">
-              <div class="checkout-color-size-field">
-                <span class="checkout-color">{{i18n "common.color"}}:</span><br>
-                <span class="checkout-size">{{i18n "common.size"}}:</span>
-              </div>
-              <div class="checkout-color-size-field">
-                <span>{{color}}</span><br>
-                <span>{{size}}</span>
-              </div>
-            </div>
+            {{#if attributes.size}}
+              {{#if attributes.color}}
+                  <div class="checkout-color-size">
+                      <div class="checkout-color-size-field">
+                          <span class="checkout-color">{{i18n "common.color"}}:</span><br>
+                          <span class="checkout-size">{{i18n "common.size"}}:</span>
+                      </div>
+                      <div class="checkout-color-size-field">
+                          <span>{{attributes.color}}</span><br>
+                          <span>{{attributes.size}}</span>
+                      </div>
+                  </div>
+              {{/if}}
+            {{/if}}
           </div>
         </div>
         <div class="order-item-price">
