@@ -1,0 +1,9 @@
+<div class="{{containerClass}}">
+    <span class="text-uppercase">{{i18n "form.country"}}*</span><br>
+    <select id="{{selectId}}" class="checkout-dropdown" name="{{select.name}}">
+        <option value="" selected>{{i18n "form.choose"}}</option>
+      {{#each content.diffChooseCountry.list}}
+          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+      {{/each}}
+    </select>
+</div>

@@ -76,14 +76,7 @@
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="country">
-                      <span class="text-uppercase">{{i18n "form.country"}}*</span><br>
-                      <select id="shipping-country-select" class="checkout-dropdown" name="title" form="title">
-                        {{#each content.chooseCountry.list}}
-                          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-                        {{/each}}
-                      </select>
-                    </div>
+                    {{> checkout/choose-country containerClass="country" selectId="shipping-country-select" selectName="country" options=content.chooseCountry}}
                   </div>
                   <div class="col-sm-6">
                     <div class="region">
@@ -150,14 +143,7 @@
                           </div>
                         </div>
                         <div class="col-sm-6">
-                          <div class="country-different">
-                            <span class="text-uppercase">{{i18n "form.country"}}*</span><br>
-                            <select id="shipping-different-country-select" class="checkout-dropdown" name="title" form="title">
-                              {{#each content.diffChooseCountry.list}}
-                                <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-                              {{/each}}
-                            </select>
-                          </div>
+                          {{> checkout/choose-country containerClass="country-different" selectId="shipping-different-country-select" selectName="billingCountry" options=content.diffChooseCountry}}
                         </div>
                         <div class="col-sm-6">
                           <div class="region-different">

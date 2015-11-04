@@ -1,11 +1,6 @@
 {
     "list" : [
         {
-            "text" : "Choose",
-            "value" : "",
-            "selected" : true
-        },
-        {
             "text" : "Germany",
             "value" : "DE",
             "selected" : false
