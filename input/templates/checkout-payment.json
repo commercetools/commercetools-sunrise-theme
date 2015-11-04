@@ -127,41 +127,9 @@
     "itemsTotal" : 3,
     "checkoutItem" : {
       "list" : [
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
-          "sku" : "Sunrise #SUN123456",
-          "color" : "Navy Blue",
-          "size" : "M",
-          "quantity" : 1,
-					"priceOld" : "100,00 €",
-          "price" : "49,00 €",
-          "total" : "49,00 €"
-        },
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
-          "sku" : "Sunrise #SUN123456",
-          "color" : "Navy Blue",
-          "size" : "M",
-          "quantity" : 1,
-          "price" : "49,00 €",
-          "total" : "49,00 €"
-        },
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
-          "sku" : "Sunrise #SUN123456",
-          "color" : "Navy Blue",
-          "size" : "M",
-          "quantity" : 1,
-					"priceOld" : "100,00 €",
-          "price" : "49,00 €",
-          "total" : "49,00 €"
-        }
+          { "$ref" : "common/product-variant-1.json" },
+          { "$ref" : "common/product-variant-1.json" },
+          { "$ref" : "common/product-variant-1.json" }
       ]
     },
     "promoCode" : "Sunny Sale",
