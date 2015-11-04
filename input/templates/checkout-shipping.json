@@ -6,54 +6,8 @@
             "shippingStepActive": true
         },
         "chooseTitle" : { "$ref" : "checkout/choose-title.json" },
-        "chooseCountry" : {
-            "list" : [
-                {
-                    "text" : "Choose",
-                    "value" : "",
-                    "selected" : true
-                },
-                {
-                    "text" : "Germany",
-                    "value" : "DE",
-                    "selected" : false
-                },
-                {
-                    "text" : "France",
-                    "value" : "FR",
-                    "selected" : false
-                },
-                {
-                    "text" : "Spain",
-                    "value" : "ES",
-                    "selected" : false
-                }
-            ]
-        },
-        "diffChooseCountry" : {
-            "list" : [
-                {
-                    "text" : "Choose",
-                    "value" : "",
-                    "selected" : true
-                },
-                {
-                    "text" : "Germany",
-                    "value" : "DE",
-                    "selected" : true
-                },
-                {
-                    "text" : "France",
-                    "value" : "FR",
-                    "selected" : false
-                },
-                {
-                    "text" : "Spain",
-                    "value" : "ES",
-                    "selected" : false
-                }
-            ]
-        },
+        "chooseCountry" : { "$ref" : "checkout/choose-country.json" },
+        "diffChooseCountry" :  { "$ref" : "checkout/choose-country.json" },
         "delivery" : {
             "list" : [
                 {

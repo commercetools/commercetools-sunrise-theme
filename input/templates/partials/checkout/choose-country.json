@@ -1,0 +1,24 @@
+{
+    "list" : [
+        {
+            "text" : "Choose",
+            "value" : "",
+            "selected" : true
+        },
+        {
+            "text" : "Germany",
+            "value" : "DE",
+            "selected" : false
+        },
+        {
+            "text" : "France",
+            "value" : "FR",
+            "selected" : false
+        },
+        {
+            "text" : "Spain",
+            "value" : "ES",
+            "selected" : false
+        }
+    ]
+}
