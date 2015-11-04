@@ -5,10 +5,12 @@
         "stepWidget" : {
             "shippingStepActive": true
         },
-        "chooseTitle" : { "$ref" : "checkout/choose-title.json" },
-        "chooseCountry" : { "$ref" : "checkout/choose-country.json" },
-        "diffChooseCountry" :  { "$ref" : "checkout/choose-country.json" },
-        "delivery" : { "$ref" : "checkout/shipping-methods.json" },
+        "shippingForm" : {
+            "chooseTitle" : { "$ref" : "checkout/choose-title.json" },
+            "chooseCountry" : { "$ref" : "checkout/choose-country.json" },
+            "diffChooseCountry" :  { "$ref" : "checkout/choose-country.json" },
+            "delivery" : { "$ref" : "checkout/shipping-methods.json" }
+        },
         "cart" : { "$ref" : "checkout/cart.json" }
     },
     "meta" : {

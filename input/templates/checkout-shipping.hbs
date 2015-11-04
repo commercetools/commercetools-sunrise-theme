@@ -21,6 +21,11 @@
           <div class="checkout">
             <div class="row">
               <div class="col-sm-7">
+
+
+
+
+
                 <div class="shipping-info">
                   <span class="text-uppercase shipping-info-title">{{i18n "checkout.shippingInformation"}}</span>
                   <span class="pull-right required-fields">{{i18n "form.required"}}*</span>
@@ -113,7 +118,7 @@
                   <div class="col-sm-12">
                     <div class="shipping-method">
                       <div class="text-uppercase shipping-method-title">{{i18n "checkout.shippingMethod"}}</div>
-                      {{#each content.delivery.list}}
+                      {{#each content.shippingForm.delivery.list}}
                         <div class="shipping-method-option">
                           <span><input id="{{id}}" class="shipping-method-radio" type="radio" name="delivery options" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
                           <span class="pull-right text-uppercase delivery-time">{{deliveryDays}}</span>
