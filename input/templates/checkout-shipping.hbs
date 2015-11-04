@@ -29,11 +29,12 @@
                   <div class="col-sm-4">
                     <div class="title">
                       <span class="text-uppercase">{{i18n "form.title"}}</span><br>
-                      <select id="shipping-title-select" class="checkout-dropdown" name="title" form="title">
-                        {{#each content.chooseTitle.list}}
+                    <select id="shipping-title-select" class="checkout-dropdown" name="title" form="title">
+                        <option value="" selected>{{i18n "form.choose"}}</option>
+                      {{#each content.chooseTitle.list}}
                           <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-                        {{/each}}
-                      </select>
+                      {{/each}}
+                    </select>
                     </div>
                   </div>
                 </div>

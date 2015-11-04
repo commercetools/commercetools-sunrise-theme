@@ -5,35 +5,7 @@
         "stepWidget" : {
             "shippingStepActive": true
         },
-        "chooseTitle" : {
-            "list" : [
-                {
-                    "text" : "Choose",
-                    "value" : "",
-                    "selected" : true
-                },
-                {
-                    "text" : "Mr.",
-                    "value" : "Mr.",
-                    "selected" : false
-                },
-                {
-                    "text" : "Mrs.",
-                    "value" : "Mrs.",
-                    "selected" : false
-                },
-                {
-                    "text" : "Ms.",
-                    "value" : "Ms.",
-                    "selected" : false
-                },
-                {
-                    "text" : "Dr.",
-                    "value" : "Dr.",
-                    "selected" : false
-                }
-            ]
-        },
+        "chooseTitle" : { "$ref" : "checkout/choose-title.json" },
         "chooseCountry" : {
             "list" : [
                 {
