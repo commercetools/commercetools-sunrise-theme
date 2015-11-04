@@ -1,0 +1,11 @@
+{ 
+      "url" : "",
+      "addToCartUrl" : "",
+      "addToWishlistUrl" : "",
+      "addReviewUrl" : "",
+      "rating3" : true,
+      "new" : true,
+      "moreColors" : true,            
+      "data" : { "$ref" : "product-data.json" },
+      "details" : { "$ref" : "product-details.json" }
+}

@@ -1,9 +1,9 @@
 {{!--
-{{#if content.facets.categories.facet.available}}
+{{#if facets.categories.facet.available}}
   <hr class="hr">
-  <div id="filter-{{content.filters.categories.facet.key}}" class="row {{content.filters.categories.facet.key}}-box">
+  <div id="filter-{{facets.categories.facet.key}}" class="row {{facets.categories.facet.key}}-box">
     <div class="col-xs-8 text-left">
-      {{content.facets.categories.facet.label}}
+      {{facets.categories.facet.label}}
     </div>
     <div class="col-xs-4">
       <a class="text-right clear-btn" href="#">{{i18n "content.filters.clear"}}</a>
@@ -12,7 +12,7 @@
   <div class="row">
     <div class="col-sm-12">
         <ul class="dropdown-parent-category">
-          {{#each content.facets.categories.facet.limitedOptions}}
+          {{#each facets.categories.facet.limitedOptions}}
             <li class="parent-category-list"><a href="#" id="parent-category-{{value}}">{{label}} ({{count}})</a></li>
               <ul class="dropdown-subcategory-one">
                 {{#each children}}
@@ -31,7 +31,7 @@
 {{/if}}
 --}}
 
-{{#each content.facets.list}}
+{{#each facets.list}}
   {{#if facet.available}}
     <hr class="hr">
     <div id="filter-{{facet.key}}" class="row {{facet.key}}-box">

@@ -1,9 +1,9 @@
 <!-- Modal -->
-<div class="modal fade" id="sidebar-overlay" tabindex="-1" role="dialog" aria-labelledby="filterSidebarMobileModal">
+<div class="modal fade" id="sidebar-overlay" tabindex="-1" role="dialog" aria-labelledby="filter-sidebar-mobile-modal">
   <div class="modal-dialog" role="document">
     <div class="modal-content sidebar-overlay-modal">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="filterSidebarMobileModal">
+        <button type="button" class="close" data-dismiss="modal" aria-label="filter-sidebar-mobile-modal">
           <span aria-hidden="true">
             <img src="{{meta.assetsPath}}img/close.png" alt="{{i18n "content.general.closeModal"}}" />
           </span>
@@ -29,11 +29,11 @@
                           {{i18n "content.sortSelector.title"}}
                         </div>
                         <div class="pop-filter-select">
-                          {{> catalog/sort-selector}}
+                          {{> catalog/sort-selector sortSelector=content.sortSelector}}
                         </div>
                     </div>
                 </div>                
-                {{> catalog/facets}}
+                {{> catalog/facets facets=content.facets}}
               </form>
             </div>
           </div>

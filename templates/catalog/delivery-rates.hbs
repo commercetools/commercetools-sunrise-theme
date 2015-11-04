@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="headingDelivery">
+    <h4 class="panel-title product-accordion-title text-uppercase">
+      <a id="pdp-delivery-returns-toggle" class="collapsed pdp-accord-toggle" data-toggle="collapse" data-parent="#accordion-product-info" href="#collapseDelivery" aria-expanded="false" aria-controls="collapseDelivery">
+        {{i18n "content.static.deliveryAndReturnsText"}}
+        <img class="accordion-plus" src="{{meta.assetsPath}}img/plus79.png" alt="accordion content">
+      </a>
+    </h4>
+  </div>
+  <div id="collapseDelivery" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDelivery">
+    <div class="panel-body panel-body-pdp">
+      {{#each deliveryRates.list}}
+      <p>{{name}} - {{#if freeAbove}}FREE for orders over {{freeAbove}}, otherwise {{/if}} {{price}}. {{description}}</p>
+      {{/each}}
+      <p>
+        {{i18n "content.static.freeReturnsText"}}
+      </p>
+      <p>
+        {{i18n "content.static.moreDeliveryInfoText"}}
+      </p>
+    </div>
+  </div>
+</div>
