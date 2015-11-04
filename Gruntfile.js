@@ -6,6 +6,7 @@ module.exports = function(grunt) {
     // Configuration of 'grunt-contrib-clean' task, to remove all output folder
     clean: {
       build: ['output/', '**/*.json-resolved'],
+      resolved : ['input/**/*.json-resolved'],
       dist: ['*.jar']
     },
 
@@ -19,12 +20,14 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/fonts/**/*' },
           { expand: true, cwd: 'input/', dest: 'output/', src: '*.html' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json' },
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.hbs' },
           { expand: true, cwd: 'locales/', dest: 'output/locales', src: '**/*.yaml' },
           { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.json' },
           { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.hbs' }
         ]
+      },
+      resolved: {
+        files: { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' }
       }
     },
 
@@ -86,7 +89,8 @@ module.exports = function(grunt) {
       scripts: {
         files: [
           'input/**/*',
-          'locales/**/*'
+          'locales/**/*',
+          '!input/**/*.json-resolved'
         ],
         tasks: ['build']
       }
@@ -178,7 +182,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('build', ['clean', 'copy', 'coffee', 'sass', 'postcss', 'pre-handlebars', 'handlebars']);
+  grunt.registerTask('build', ['clean', 'copy:dist', 'coffee', 'sass', 'postcss', 'pre-handlebars', 'handlebars', 'clean:resolved']);
   grunt.registerTask('release-patch', ['build', 'maven', 'clean:dist']);
   grunt.registerTask('release-minor', ['build', 'maven:release:minor', 'clean:dist']);
   grunt.registerTask('release-major', ['build', 'maven:release:major', 'clean:dist']);
@@ -186,6 +190,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('pre-handlebars', 'Tasks to be run before Handlebars', function() {
     grunt.task.run('json-refs');
+    //grunt.task.run('copy:resolved');
     grunt.task.run('i18next');
   });
 
@@ -273,18 +278,31 @@ module.exports = function(grunt) {
 
   var writeResolvedFile = function(file, result) {
     var written = false;
-    if (result.err) {
-      grunt.fail.warn(err);
+    parseMetadata(result.metadata);
+    // Write the resolved JSON to a new file
+    written = grunt.file.write(file.dest, stringifyJson(result.resolved, 2));
+    if (written) {
+      grunt.log.debug('File "' + file.dest + '" created');
     } else {
-      grunt.verbose.writeln(JSON.stringify(result.metadata));
-      // Write the resolved JSON to a new file
-      written = grunt.file.write(file.dest, JSON.stringify(result.resolved));
-      if (written) {
-        grunt.log.debug('File "' + file.dest + '" created');
-      } else {
-        grunt.log.error('File "' + file.dest + '" failed on creation');
-      }
+      grunt.log.error('File "' + file.dest + '" failed on creation');
     }
     return written;
   };
+
+  var parseMetadata = function(json) {    
+    for (var key in json) {
+      if (json.hasOwnProperty(key)) {
+        var value = json[key];
+        if (json[key].hasOwnProperty("err")) {
+          grunt.log.error(stringifyJson(value, 2));
+        } else {
+          grunt.verbose.writeln(stringifyJson(value, 0));
+        }
+      }
+    }
+  }
+
+  var stringifyJson = function(json, space) {
+    return JSON.stringify(json, null, space);
+  }
 };

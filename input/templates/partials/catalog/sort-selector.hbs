@@ -1,5 +1,5 @@
 <select name="{{content.sortSelector.key}}" class="select">
-{{#each content.sortSelector.list}}
-  <option value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
+{{#each sortSelector.list}}
+  <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
 {{/each}}
 </select>

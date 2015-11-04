@@ -21,13 +21,13 @@
       </div>
       <div class="row">
         <div class="col-xs-12 figure-col">
-          {{> catalog/banner}}
+          {{> catalog/banner banner=content.banner}}
         </div>
       </div>
-      <form id="form-filter-products" name="filter-products" action="{{content.filterProductsUrl}}">
+      <!--form id="form-filter-products" name="filter-products" action="{{content.filterProductsUrl}}"-->
         <div class="row row-offcanvas row-offcanvas-left">
           <div class="col-xs-12">
-            {{> catalog/breadcrumb}}
+            {{> catalog/breadcrumb breadcrumb=content.breadcrumb}}
           </div>
           <div class="product-filter hidden-xs">
             {{> catalog/filters-sidebar}}
@@ -36,7 +36,7 @@
             <div class="dark-overlay"></div>
             <div class="row jumbotron-row">
               <div class="col-xs-12">
-                {{> catalog/jumbotron}}
+                {{> catalog/jumbotron jumbotron=content.jumbotron}}
               </div>
             </div>
 
@@ -50,7 +50,7 @@
                     </button>
                   </li>
                   <li class="pull-left">
-                    {{> catalog/results-summary}}
+                    {{> catalog/results-summary pagination=content.pagination}}
                   </li>
                 </ul>
               </div>
@@ -62,49 +62,43 @@
             <div class="row hidden-xs item-list-pagination">
               <div class="col-xs-4 text-left">
                 <div class="styled-select icon-drop-down">
-                  {{> catalog/sort-selector}}
+                  {{> catalog/sort-selector sortSelector=content.sortSelector}}
                 </div>
-                {{> catalog/results-summary}}
+                {{> catalog/results-summary pagination=content.pagination}}
               </div>
               <div class="col-xs-4 text-center pagination">
                 <ul class="page-numbers">
-                  {{> catalog/pagination}}
+                  {{> catalog/pagination pagination=content.pagination}}
                 </ul>
               </div>
               <div class="col-xs-4 text-right">
-                {{> catalog/display-selector}}
+                {{> catalog/display-selector displaySelector=content.displaySelector}}
               </div>
             </div>
-            <div class="row">
-              {{#each content.products.list}}
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                  {{> catalog/product-thumbnail context=..}}
-                </div>
-              {{/each}}
+            <div id="pop-product-list" class="row">
+              {{> catalog/product-list products=content.products}}
             </div>
             <div class="row">
               <div class="col-xs-12 text-center pagination">
                 <ul class="page-numbers page-numbers-bottom">
-                  {{> catalog/pagination}}
+                  {{> catalog/pagination pagination=content.pagination}}
                 </ul>
               </div>
             </div>
             <hr class="hr">
             <div class="row">
               <div class="col-sm-12">
-                {{> catalog/seo}}
+                {{> catalog/seo seo=content.seo}}
               </div>
             </div>
           </div>
         </div>
-      </form>
+      <!--/form-->
     </div>
   </div>
-  {{> catalog/wishlist}}
+  {{> catalog/wishlist wishlist=content.wishlist}}
 
   {{> common/footer}}
-
   {{> common/htmlscripts}}
 </body>
-
 </html>
