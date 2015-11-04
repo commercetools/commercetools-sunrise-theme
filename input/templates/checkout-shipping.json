@@ -8,34 +8,7 @@
         "chooseTitle" : { "$ref" : "checkout/choose-title.json" },
         "chooseCountry" : { "$ref" : "checkout/choose-country.json" },
         "diffChooseCountry" :  { "$ref" : "checkout/choose-country.json" },
-        "delivery" : {
-            "list" : [
-                {
-                    "text" : "DHL Standard",
-                    "value" : "dhl-standard",
-                    "selected" : true,
-                    "deliveryDays" : "Delivery: 3-5 Days",
-                    "url" : "",
-                    "id" : "shipping-delivery-standard"
-                },
-                {
-                    "text" : "DHL Express",
-                    "value" : "dhl-express",
-                    "selected" : false,
-                    "deliveryDays" : "Delivery: 3-5 Days",
-                    "url" : "",
-                    "id" : "shipping-delivery-express"
-                },
-                {
-                    "text" : "DHL Overnight",
-                    "value" : "dhl-overnight",
-                    "selected" : false,
-                    "deliveryDays" : "Delivery: 3-5 Days",
-                    "url" : "",
-                    "id" : "shipping-delivery-overnight"
-                }
-            ]
-        },
+        "delivery" : { "$ref" : "checkout/shipping-methods.json" },
         "itemsTotal" : 3,
         "checkoutItem" : {
             "list" : [
