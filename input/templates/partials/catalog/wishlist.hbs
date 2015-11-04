@@ -4,14 +4,14 @@
   </button>
   <div class="wishlist-items hidden">
     <p class="wishlist-title">
-      {{i18n "content.wishlist.title"}} <span>({{wishlist.quantity}})</span>
+      {{i18n "catalog:wishlist.title"}} <span>({{wishlist.quantity}})</span>
     </p>
-    <span class="recently-added-title">{{i18n "content.wishlist.recentlyAdded"}}</span>
+    <span class="recently-added-title">{{i18n "catalog:wishlist.recentlyAdded"}}</span>
     <div class="clearfix">
       {{#each wishlist.list}}
         <img class="pull-left img-responsive wishlist-img" src="{{imageUrl}}" alt="{{name}}">
       {{/each}}
     </div>
-    <a href="{{wishlist.url}}" id="wishlist-view-btn" class="btn view-wishlist-btn">{{i18n "content.wishlist.view"}}</a>
+    <a href="{{wishlist.url}}" id="wishlist-view-btn" class="btn view-wishlist-btn">{{i18n "catalog:wishlist.view"}}</a>
   </div>
 </div>

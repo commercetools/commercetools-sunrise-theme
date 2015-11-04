@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-heading" role="tab" id="headingProductDetails">
     <h4 class="panel-title product-accordion-title text-uppercase">
-      <a id="pdp-product-details-toggle" class="collapsed pdp-accord-toggle" data-toggle="collapse" data-parent="#accordion-product-info" href="#collapseProductDetails" aria-expanded="false" aria-controls="collapseProductDetails">{{i18n "content.static.productDetailsText"}}
+      <a id="pdp-product-details-toggle" class="collapsed pdp-accord-toggle" data-toggle="collapse" data-parent="#accordion-product-info" href="#collapseProductDetails" aria-expanded="false" aria-controls="collapseProductDetails">{{i18n "catalog:details.title"}}
         <img class="accordion-plus" src="{{meta.assetsPath}}img/plus79.png" alt="accordion content">
       </a>
     </h4>
@@ -9,7 +9,7 @@
   <div id="collapseProductDetails" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingProductDetails">
     <div class="panel-body panel-body-pdp">
       <ul>
-        {{#each details}}
+        {{#each product.details.list}}
         <li>{{text}}</li>
         {{/each}}
       </ul>

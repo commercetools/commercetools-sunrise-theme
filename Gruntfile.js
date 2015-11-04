@@ -151,7 +151,7 @@ module.exports = function(grunt) {
         lng: 'en',
         fallbackLng: 'en',
         ns: {
-          namespaces: ['translations', 'home'],
+          namespaces: ['translations', 'home', 'catalog'],
           defaultNs: 'translations'
         },
       }
@@ -293,7 +293,7 @@ module.exports = function(grunt) {
     for (var key in json) {
       if (json.hasOwnProperty(key)) {
         var value = json[key];
-        if (json[key].hasOwnProperty("err")) {
+        if (value.hasOwnProperty("err")) {
           grunt.log.error(stringifyJson(value, 2));
         } else {
           grunt.verbose.writeln(stringifyJson(value, 0));
