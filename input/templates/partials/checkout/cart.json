@@ -1,0 +1,17 @@
+{
+    "itemsTotal" : 3,
+    "tax" : "20,00 €",
+    "total" : "123,00 €",
+    "promoCode" : "Sunny Sale",
+    "subtotal" : "107,00 €",
+    "discount" : "0,00 €",
+    "deliverySum" : "10,00 €",
+    "deliveryTitle" : "Standard Delivery",
+    "lineItems" : {
+        "list" : [
+            { "$ref" : "../common/product-variant-1.json" },
+            { "$ref" : "../common/product-variant-1.json" },
+            { "$ref" : "../common/product-variant-1.json" }
+        ]
+    }
+}

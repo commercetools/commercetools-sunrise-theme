@@ -9,21 +9,7 @@
         "chooseCountry" : { "$ref" : "checkout/choose-country.json" },
         "diffChooseCountry" :  { "$ref" : "checkout/choose-country.json" },
         "delivery" : { "$ref" : "checkout/shipping-methods.json" },
-        "itemsTotal" : 3,
-        "checkoutItem" : {
-            "list" : [
-                { "$ref" : "common/product-variant-1.json" },
-                { "$ref" : "common/product-variant-1.json" },
-                { "$ref" : "common/product-variant-1.json" }
-            ]
-        },
-        "promoCode" : "Sunny Sale",
-        "subtotal" : "107,00 €",
-        "discount" : "0,00 €",
-        "deliveryTitle" : "Standard Delivery",
-        "deliverySum" : "10,00 €",
-        "tax" : "20,00 €",
-        "total" : "123,00 €"
+        "cart" : { "$ref" : "checkout/cart.json" }
     },
     "meta" : {
         "assetsPath": "assets/"
