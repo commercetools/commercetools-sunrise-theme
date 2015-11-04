@@ -51,30 +51,7 @@
                       <input id="shipping-lastname-input" class="checkout-input-field" type="text">
                     </div>
                   </div>
-                  <div class="col-sm-12">
-                    <div class="address-one">
-                      <span class="text-uppercase">{{i18n "form.addressOne"}}*</span><br>
-                      <input id="shipping-addressone-input"class="checkout-input-field" type="text">
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="address-two">
-                      <span class="text-uppercase">{{i18n "form.addressTwo"}}*</span><br>
-                      <input id="shipping-addresstwo-input" class="checkout-input-field" type="text">
-                    </div>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="city">
-                      <span class="text-uppercase">{{i18n "form.city"}}*</span><br>
-                      <input id="shipping-city-input" class="checkout-input-field" type="text">
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="post-code">
-                      <span class="text-uppercase">{{i18n "form.postCode"}}*</span><br>
-                      <input id="shipping-postcode-input" class="checkout-input-field" type="text">
-                    </div>
-                  </div>
+                  {{> checkout/address-form-part suffix=""}}
                   <div class="col-sm-6">
                     {{> checkout/choose-country containerClass="country" selectId="shipping-country-select" selectName="country" options=content.chooseCountry}}
                   </div>
@@ -118,30 +95,7 @@
                   <div class="col-sm-12">
                     <div id="different-billing-address">
                       <div class="row">
-                        <div class="col-sm-12">
-                          <div class="address-one-different">
-                            <span class="text-uppercase">{{i18n "form.addressOne"}}*</span><br>
-                            <input id="shipping-different-addressone-input" class="checkout-input-field" type="text">
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <div class="address-two-different">
-                            <span class="text-uppercase">{{i18n "form.addressTwo"}}*</span><br>
-                            <input id="shipping-different-addresstwo-input" class="checkout-input-field" type="text">
-                          </div>
-                        </div>
-                        <div class="col-sm-8">
-                          <div class="city-different">
-                            <span class="text-uppercase">{{i18n "form.city"}}*</span><br>
-                            <input id="shipping-different-city-input" class="checkout-input-field" type="text">
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="post-code-different">
-                            <span class="text-uppercase">{{i18n "form.postCode"}}*</span><br>
-                            <input id="shipping-different-postcode-input" class="checkout-input-field" type="text">
-                          </div>
-                        </div>
+                        {{> checkout/address-form-part suffix="-different"}}
                         <div class="col-sm-6">
                           {{> checkout/choose-country containerClass="country-different" selectId="shipping-different-country-select" selectName="billingCountry" options=content.diffChooseCountry}}
                         </div>
