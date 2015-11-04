@@ -1,14 +1,14 @@
 <a id="link-product-thumbnail{{index}}" href="{{product.url}}">
   <div class="shop-item">
     {{#if product.data.priceOld}}
-      <div class="sale-flag">{{i18n "content.product.sale"}}</div>
+      <div class="sale-flag">{{i18n "catalog:thumbnail.sale"}}</div>
     {{/if}}
     {{#if product.new}}
-      <div class="new-flag">{{i18n "content.product.new"}}</div>
+      <div class="new-flag">{{i18n "catalog:thumbnail.new"}}</div>
     {{/if}}
     <form id="form-add-to-wishlist-mobile{{index}}" name="add-to-wishlist-mobile" action="{{product.addToWishlistUrl}}">
       <button type="submit" class="heart-xs visible-xs">
-        <span class="sr-only">{{i18n "content.product.addToWishlist"}}</span>
+        <span class="sr-only">{{i18n "catalog:wishlist.add"}}</span>
       </button>
     </form>
     <img class="pop-product-image" src="{{product.data.gallery.mainImage}}" alt="{{product.data.name}}" width="200" />
@@ -25,15 +25,15 @@
       {{/if}}
     </div>
     <div class="pop-product-more-colors">
-      {{#if product.moreColors}}{{i18n "content.product.moreColors"}}{{/if}}&nbsp;
+      {{#if product.moreColors}}{{i18n "catalog:thumbnail.moreColors"}}{{/if}}&nbsp;
     </div>
     <div class="shop-item-overlay hidden-xs">
       <button type="button" class="quickview" data-modal="quickview-modal{{index}}">
-        {{i18n "content.product.quickView"}}
+        {{i18n "catalog:thumbnail.quickView"}}
       </button>      
       <form id="form-add-to-wishlist{{index}}" name="add-to-wishlist" action="{{product.addToWishlistUrl}}">
         <button type="submit" class="heart">
-          <span class="sr-only">{{i18n "content.product.addToWishlist"}}</span>
+          <span class="sr-only">{{i18n "catalog:wishlist.add"}}</span>
         </button>
       </form>
     </div>
