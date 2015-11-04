@@ -149,7 +149,11 @@ module.exports = function(grunt) {
       options: {
         preload: ['de', 'en'],
         lng: 'en',
-        fallbackLng: 'en'
+        fallbackLng: 'en',
+        ns: {
+          namespaces: ['translations', 'home'],
+          defaultNs: 'translations'
+        },
       }
     },
 
@@ -246,7 +250,7 @@ module.exports = function(grunt) {
         return writeResolvedFile(file, result);
       });
     });
-    
+
     Promise.all(resolvedRefsPromises)
     .then(function(result) {
       done(true);
