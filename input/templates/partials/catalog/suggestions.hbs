@@ -1,12 +1,5 @@
-<div class="row">
-  <div class="col-sm-12">
-    <p class="text-center text-uppercase may-like">{{i18n "catalog:suggestions.title"}}</p>
-  </div>
+{{#each content.suggestions.list}}
+<div class="col-xs-12 col-sm-6 col-md-3">
+  {{> catalog/product-thumbnail product=this index=@index meta=../meta}}
 </div>
-<div class="row">
-	{{#each content.suggestions.list}}
-	<div class="col-xs-12 col-sm-6 col-md-3">
-	  {{> catalog/product-thumbnail product=this index=@index meta=../meta}}
-	</div>
-	{{/each}}
-</div>
+{{/each}}
