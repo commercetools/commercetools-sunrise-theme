@@ -951,7 +951,7 @@ body.outlook p {
 															<p style="margin-bottom: 0;">{{nameHeadline}}</p>
 															<p style="margin-bottom: 0;">{{nameSubline}}</p>
 															<p style="margin-bottom: 0; color: #858585;">{{sku}}</p>
-															<p style="margin-bottom: 0; display: inline-block;">{{i18n "common.color"}}: <br>{{i18n "common.size"}}: </p>
+															<p style="margin-bottom: 0; display: inline-block;">{{colorTitle}}<br>{{sizeTitle}}</p>
 															<p style="margin-bottom: 0; display: inline-block; color: #858585;">{{color}}<br>{{size}}</p>
 														</td>
 														<td class="expander"></td>
@@ -962,7 +962,7 @@ body.outlook p {
 												<table class="two columns">
 													<tr>
 														<td>
-															<p style="margin-bottom: 0; text-transform: uppercase; color: #858585; text-align: right;">{{i18n "common.quantity"}}</p>
+															<p style="margin-bottom: 0; text-transform: uppercase; color: #858585; text-align: right;">{{quantityTitle}}</p>
 															<p style="margin-bottom: 0; text-align: right;">{{quantity}} x</p>
 														</td>
 														<td class="expander"></td>
@@ -973,7 +973,7 @@ body.outlook p {
 												<table class="two columns">
 													<tr>
 														<td>
-															<p style="margin-bottom: 0; text-transform: uppercase; color: #858585; text-align: right;">{{i18n "common.price"}}</p>
+															<p style="margin-bottom: 0; text-transform: uppercase; color: #858585; text-align: right;">{{priceTitle}}</p>
 															<p style="margin-bottom: 0; text-align: right;">{{price}}</p>
 														</td>
 														<td class="expander"></td>
@@ -984,7 +984,7 @@ body.outlook p {
 												<table class="two columns">
 													<tr>
 														<td>
-															<p style="margin-bottom: 0; text-transform: uppercase; color: #858585; text-align: right;">{{i18n "checkout.total"}}</p>
+															<p style="margin-bottom: 0; text-transform: uppercase; color: #858585; text-align: right;">{{totalPriceTitle}}</p>
 															<p style="margin-bottom: 0; text-align: right;">{{totalPrice}}</p>
 														</td>
 														<td class="expander"></td>
@@ -1007,8 +1007,8 @@ body.outlook p {
 					            <table class="twelve columns">
 					              <tr>
 													<td style="text-align: right;">
-														<p style="text-transform: uppercase; text-align: right;"><span style="color: #858585;">{{i18n "checkout.promoCodeApplied"}}:</span> {{content.totalSum.promoCode}}</p>
-														<p style="display: inline-block; text-align: right; margin-right: 50px;">{{i18n "checkout.subtotal"}}<br>{{content.totalSum.orderDiscountTitle}}<br>{{content.totalSum.deliveryOption}}</p>
+														<p style="text-transform: uppercase; text-align: right;"><span style="color: #858585;">{{content.totalSum.promoCodeTitle}}:</span> {{content.totalSum.promoCode}}</p>
+														<p style="display: inline-block; text-align: right; margin-right: 50px;">{{content.totalSum.subtotalTitle}}<br>{{content.totalSum.orderDiscountTitle}}<br>{{content.totalSum.deliveryOption}}</p>
 														<p style="display: inline-block; text-align: right;">{{content.totalSum.subtotal}}<br>{{content.totalSum.orderDiscount}}<br>{{content.totalSum.delivery}}</p>
 													</td>
 					                <td class="expander"></td>
@@ -1030,7 +1030,7 @@ body.outlook p {
 					            <table class="twelve columns">
 					              <tr>
 													<td style="text-align: right;">
-														<p style="display: inline-block; text-align: right; margin-right: 50px;">{{i18n "common.salesTax"}}<br><span style="font-weight: bold; font-size: 16px;">{{content.totalSum.orderTotalTitle}}</span></p>
+														<p style="display: inline-block; text-align: right; margin-right: 50px;">{{content.totalSum.taxTitle}}<br><span style="font-weight: bold; font-size: 16px;">{{content.totalSum.orderTotalTitle}}</span></p>
 														<p style="display: inline-block; text-align: right;">{{content.totalSum.tax}}<br><span style="font-weight: bold; font-size: 16px;">{{content.totalSum.orderTotal}}</span></p>
 													</td>
 					                <td class="expander"></td>
