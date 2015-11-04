@@ -8,16 +8,13 @@
   {{> common/checkout-header}}
   <div class="checkout-signin">
     <div class="container">
-      <div class="secure-payment">
-        <span><img class="secure-payment-icon" src="{{meta.assetsPath}}img/credit-card-lock.png" alt="secure payment"></span>
-        <span class="text-uppercase secure-payment-title">{{content.secureCheckoutTitle}}</span>
-      </div>
+      {{> checkout/secure-checkout-title titleKey="checkout.signInPage.title"}}
       <div class="row">
         <div class="col-sm-6">
           <div class="returning-customer">
             <div class="clearfix returning-customer-title">
               <h4>{{content.returningCustomerTitle}}</h4>
-              <span class="hidden-xs">{{content.required}}*</span>
+              <span class="hidden-xs">{{i18n "form.required"}}*</span>
             </div>
             <div class="returning-customer-field">
               <span class="if-account-title">{{content.ifYouHaveAccountTitle}}</span>

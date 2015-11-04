@@ -5,3 +5,72 @@ messages:
     viewYourBagAlert: View your bag
     addToWishlistAlert: Add to wishlist
     requiredField: Required field
+
+
+
+checkout:
+  confirmation: confirmation
+  confirmationPage:
+    title: Secure Checkout - Confirmation
+  continueCheckout: Continue Checkout
+  editMyCart: Edit my shopping cart
+  itemsTotal: __count__ item in total
+  itemsTotal_plural: __count__ items in total
+  orderDiscount: Order Discount
+  orderSummary: Order Summary
+  payment: payment
+  paymentInformation: Payment Details
+  paymentPage:
+    title: Secure Checkout - Payment
+  promoCodeApplied: Promotional Code Applied
+  returningCustomer: Returning Customer
+  shipping: shipping
+  shippingInformation: Shipping Information
+  shippingMethod: Shipping Method
+  shippingPage:
+    differentBillingAddressCheckboxLabel: Use a different address for billing
+    emailInfo: We require your email address to send your shipping and order confirmation
+    title: Secure Checkout - Shipping
+    telNumberInfo: Please provide your telephone number so the shipper can contact you during delivery
+  signInPage:
+    title: Secure Checkout - Sign In
+  subtotal: Subtotal
+  thankYouPage:
+    title: Thank you for your order!
+  total: Total
+common:
+  color: Color
+  price: Price
+  quantity: quantity
+  size: Size
+  salesTax: Sales Tax
+  viewDetails: View Details
+form:
+  addressOne: Address 1
+  addressTwo: Address 2
+  apply: Apply
+  city: City
+  choose: Choose
+  country: Country
+  edit: Edit
+  email: Email
+  emailRequired: We require your email address to send your shipping and order confirmation
+  delete: Delete
+  firstName: First Name
+  formHasErrorsFlash: The form contains errors.
+  lastName: Last Name
+  personTitles:
+    mr: Mr.
+  personTitles:
+    mrs: Mrs.
+  personTitles:
+    ms: Ms.
+  personTitles:
+    dr: Dr.
+  phone: Telephone Number
+  phoneRequired: Please provide your telephone number so the shipper can contact you during delivery
+  postCode: Post Code
+  region: Region
+  required: Required
+  title: Title
+

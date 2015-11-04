@@ -2,12 +2,9 @@
 	"header" : { "$ref" : "common/checkout-header.json" },
 	"footer" : { "$ref" : "common/checkout-footer.json" },
   "content" : {
-    "secureCheckoutTitle" : "Secure Checkout - Payment",
-    "shippingOne" : "Shipping",
-    "paymentTwo" : "Payment",
-    "confirmationThree" : "Confirmation",
-    "paymentInfoTitle" : "Payment Details",
-    "required" : "Required",
+    "stepWidget" : {
+       "paymentStepActive": true
+    },
     "paymentOptionTitle" : "Please provide one of the following payment options:",
     "paymentOption" : {
       "list" : [
@@ -127,78 +124,21 @@
     },
     "securityCode" : "Security Code",
     "securityCodeTooltip" : "Additional information about the security code goes here...",
-
-
-    "checkoutBtn" : "Continue Checkout",
-    "orderSummary" : "Order Summary",
-    "itemsTotal" : "3 items in total",
+    "itemsTotal" : 3,
     "checkoutItem" : {
       "list" : [
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
-          "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
-          "color" : "Navy Blue",
-          "sizeTitle" : "Size",
-          "size" : "M",
-          "quantity" : "Quantity",
-          "quantityNumber" : "1",
-					"priceOld" : "100,00 €",
-          "priceTitle" : "Price",
-          "price" : "49,00 €",
-          "totalTitle" : "Total",
-          "total" : "49,00 €"
-        },
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
-          "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
-          "color" : "Navy Blue",
-          "sizeTitle" : "Size",
-          "size" : "M",
-          "quantity" : "Quantity",
-          "quantityNumber" : "1",
-          "priceTitle" : "Price",
-          "price" : "49,00 €",
-          "totalTitle" : "Total",
-          "total" : "49,00 €"
-        },
-        {
-          "text" : "Enditatem Product Name",
-          "description" : "Optional Line Two",
-          "image" : "assets/img/blue-jacket.jpg",
-          "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color",
-          "color" : "Navy Blue",
-          "sizeTitle" : "Size",
-          "size" : "M",
-          "quantity" : "Quantity",
-          "quantityNumber" : "1",
-          "priceTitle" : "Price",
-					"priceOld" : "100,00 €",
-          "price" : "49,00 €",
-          "totalTitle" : "Total",
-          "total" : "49,00 €"
-        }
+          { "$ref" : "common/product-variant-1.json" },
+          { "$ref" : "common/product-variant-1.json" },
+          { "$ref" : "common/product-variant-1.json" }
       ]
     },
-    "promoCodeTitle" : "Promotional Code Applied",
     "promoCode" : "Sunny Sale",
-    "subtotalTitle" : "Subtotal",
     "subtotal" : "107,00 €",
-    "discountTitle" : "Order Discount",
     "discount" : "0,00 €",
     "deliveryTitle" : "Standard Delivery",
     "deliverySum" : "10,00 €",
-    "taxTitle" : "Sales Tax",
     "tax" : "20,00 €",
-    "totalTitle" : "Order Total",
-    "total" : "123,00 €",
-    "editMyOrder" : "Edit my quantity order"
+    "total" : "123,00 €"
   },
   "meta" : {
     "assetsPath": "assets/"

@@ -7,7 +7,6 @@
     "checkoutBtn" : "Checkout now",
     "cartItems" : {
       "description" : "Product Description",
-      "quantity" : "Quantity",
       "price" : "Price",
       "totalPrice" : "Total Price",
       "list" : [
@@ -15,7 +14,6 @@
           "nameHeadline" : "Enditatem Product Name",
           "nameSubline" : "Optional Line Two",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color: ",
           "color" : "Navy Blue",
 		  "availableColors" : [
 			  {
@@ -27,7 +25,6 @@
 				  "value" : "beige"
 			  }
 		  ],
-          "sizeTitle" : "Size: ",
           "size" : "M",
 		  "availableSizes" : [
 			  {
@@ -59,10 +56,8 @@
 		  "editWidgedUpdate" : "Update",
           "delete" : "Delete",
 					"deleteId" : "cart-delete-button-one",
-          "priceTitle" : "Price",
 					"priceOld" : "100,00 €",
           "price" : "49,00 €",
-          "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €",
 					"cartQuantityDecrementId" : "cart-quantity-decrement-one",
 					"cartQuantityValueId" : "cart-quantity-value-one",
@@ -74,7 +69,6 @@
           "nameHeadline" : "Enditatem Product Name",
           "nameSubline" : "Optional Line Two",
           "sku" : "Sunrise #SUN123456",
-          "colorTitle" : "Color: ",
           "color" : "Navy Blue",
 		  "availableColors" : [
 			  {
@@ -86,7 +80,6 @@
 				  "value" : "beige"
 			  }
 		  ],
-          "sizeTitle" : "Size: ",
           "size" : "M",
 		  "availableSizes" : [
 			  {
@@ -118,9 +111,7 @@
 		  "editWidgedUpdate" : "Update",
           "delete" : "Delete",
 					"deleteId" : "cart-delete-button-two",
-          "priceTitle" : "Price",
           "price" : "49,00 €",
-          "totalPriceTitle" : "Total Price",
           "totalPrice" : "49,00 €",
 					"cartQuantityDecrementId" : "cart-quantity-decrement-two",
 					"cartQuantityValueId" : "cart-quantity-value-two",
@@ -132,7 +123,6 @@
 			"discountTooltip" : "Discount options additional information...",
       "promoDiscount" : "Promotional Discount Info",
       "applyBtn" : "Apply",
-      "subtotalTitle" : "Subtotal",
       "subtotal" : "98,00 EUR",
       "orderDiscountTitle" : "Order Discount",
       "orderDiscount" : "0,00 EUR",
@@ -140,7 +130,6 @@
       "deliveryEstimate" : "Delivery estimate options",
       "deliveryOption" : "Standard Delivery",
       "delivery" : "0,00 EUR",
-      "taxTitle" : "Sales Tax",
       "tax" : "0,00 EUR",
       "orderTotalTitle" : "Order Total",
       "orderTotal" : "98,00 EUR"

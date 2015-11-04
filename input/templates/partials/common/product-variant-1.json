@@ -1,0 +1,14 @@
+{
+    "name": "Product Name 1",
+    "description": "Optional Line Two",
+    "image": "assets/img/blue-jacket.jpg",
+    "sku": "Sunrise #SUN123456",
+    "attributes": {
+        "color" : "Navy Blue",
+        "size" : "M"
+    },
+    "quantity" : 1,
+    "priceOld" : "100,00 €",
+    "price" : "49,00 €",
+    "total" : "49,00 €"
+}
