@@ -2,11 +2,8 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"suggestions" : { "$ref" : "catalog/product-list-suggestions.json"},
+		"suggestions" : { "$ref" : "catalog/product-list4.json" },
 		"wishlist" : { "$ref" : "catalog/wishlist.json" }
 	},
-	"meta" : {
-		"assetsPath": "assets/",
-		"bagItems" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
-	}
+	"meta" : { "$ref" : "common/meta.json" }
 }
