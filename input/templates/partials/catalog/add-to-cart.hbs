@@ -7,7 +7,7 @@
   <div class="row select-row">
     <ul class="list-inline">
       {{#each product.data.attributes}}
-        {{> catalog/product-attribute attribute=this meta=../meta}}
+        {{> catalog/product-attribute attribute=this meta=../meta variants=../product.data.variants identifiers=../product.data.variantIdentifiers}}
       {{/each}}
       <li class="size-guide-li">
         {{> catalog/size-guide}}
