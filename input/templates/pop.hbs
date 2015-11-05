@@ -14,7 +14,7 @@
         <div class="pop-alert-wrapper">
           <div class="pop-alert-box">
             <div class="pop-alert-text">
-              {{i18n "content.messages.pleaseWait"}}
+              {{i18n "messages.pleaseWait"}}
             </div>
           </div>
         </div>
@@ -29,16 +29,8 @@
           <div class="col-xs-12">
             {{> catalog/breadcrumb breadcrumb=content.breadcrumb}}
           </div>
-          <div class="product-filter hidden-xs">
-            {{> catalog/filters-sidebar}}
-          </div>
-          <div class="col-sm-9">
+          <div class="col-sm-12">
             <div class="dark-overlay"></div>
-            <div class="row jumbotron-row">
-              <div class="col-xs-12">
-                {{> catalog/jumbotron jumbotron=content.jumbotron}}
-              </div>
-            </div>
 
             <!-- Mobile version -->
             <div class="row visible-xs">
@@ -46,7 +38,7 @@
                 <ul class="mobile-filter-list clearfix">
                   <li class="pull-left">
                     <button type="button" class="offcanvas-btn offcanvas-open" data-toggle="modal" data-target="#sidebar-overlay">
-                      {{i18n "content.filters.open"}}
+                      {{i18n "catalog:filters.open"}}
                     </button>
                   </li>
                   <li class="pull-left">
@@ -58,22 +50,27 @@
             </div>
             <!-- End mobile version -->
 
-            <hr class="hr hidden-xs">
-            <div class="row hidden-xs item-list-pagination">
-              <div class="col-xs-4 text-left">
+            <div class="row item-list-pagination">
+              <div class="jumbotron-row">
+                {{> catalog/jumbotron jumbotron=content.jumbotron}}
+              </div>
+              <div class="col-xs-4 hidden-xs text-left">
                 <div class="custom-select-wrapper">
                   {{> catalog/sort-selector sortSelector=content.sortSelector}}
                 </div>
                 {{> catalog/results-summary pagination=content.pagination}}
               </div>
-              <div class="col-xs-4 text-center pagination">
+              <div class="col-xs-4 hidden-xs text-center pagination">
                 <ul class="page-numbers">
                   {{> catalog/pagination pagination=content.pagination}}
                 </ul>
               </div>
-              <div class="col-xs-4 text-right">
+              <div class="col-xs-4 hidden-xs text-right">
                 {{> catalog/display-selector displaySelector=content.displaySelector}}
               </div>
+            </div>
+            <div class="product-filter hidden-xs">
+              {{> catalog/filters-sidebar}}
             </div>
             <div id="pop-product-list" class="row">
               {{> catalog/product-list products=content.products}}

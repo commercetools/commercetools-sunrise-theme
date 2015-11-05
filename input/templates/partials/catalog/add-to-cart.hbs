@@ -1,4 +1,4 @@
-<form id="form-add-to-cart{{index}}" name="add-to-cart" action="{{product.addToCartUrl}}">
+<form id="form-add-to-cart{{index}}" name="add-to-cart" method="post" action="{{product.addToCartUrl}}">
   <div class="row select-row">
     <ul class="list-inline">
       {{#each product.data.attributes}}
@@ -6,7 +6,7 @@
       {{/each}}
       <li class="size-guide-li">
         {{> catalog/size-guide}}
-      </li>    
+      </li>
     </ul>
   </div>
   <div class="row">
@@ -20,8 +20,8 @@
       </li>
       <li>
         <button type="submit" class="add-to-bag text-center">
-          <img class="bag-thumb" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="{{i18n "content.product.addToBag"}}">
-          {{i18n "content.product.addToBag"}}
+          <img class="bag-thumb" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="{{i18n "catalog:cart.add"}}">
+          {{i18n "catalog:cart.add"}}
         </button>
       </li>
     </ul>

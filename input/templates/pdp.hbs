@@ -24,10 +24,12 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <p class="text-center text-uppercase may-like">{{i18n "content.suggestions.youMayLike"}}</p>
+          <p class="text-center text-uppercase may-like">{{i18n "catalog:suggestions.title"}}</p>
         </div>
       </div>
-      {{> catalog/suggestions}}
+      <div class="row">
+        {{> catalog/suggestions}}
+      </div>
       <hr class="hr">
       {{> catalog/reviews}}
     </div>
