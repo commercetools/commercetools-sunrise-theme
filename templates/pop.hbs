@@ -24,7 +24,6 @@
           {{> catalog/banner banner=content.banner}}
         </div>
       </div>
-      <!--form id="form-filter-products" name="filter-products" action="{{content.filterProductsUrl}}"-->
         <div class="row row-offcanvas row-offcanvas-left">
           <div class="col-xs-12">
             {{> catalog/breadcrumb breadcrumb=content.breadcrumb}}
@@ -50,28 +49,35 @@
             </div>
             <!-- End mobile version -->
 
-            <div class="row item-list-pagination">
-              <div class="jumbotron-row">
-                {{> catalog/jumbotron jumbotron=content.jumbotron}}
-              </div>
-              <div class="col-xs-4 hidden-xs text-left">
-                <div class="custom-select-wrapper">
-                  {{> catalog/sort-selector sortSelector=content.sortSelector}}
+            <form id="form-filter-products" name="filter-products" action="{{content.filterProductsUrl}}">
+              {{#if content.searchTerm}}
+                <input type="hidden" name="q" value="{{content.searchTerm}}"/>
+              {{/if}}
+
+              <div class="row item-list-pagination">
+                <div class="jumbotron-row">
+                  {{> catalog/jumbotron jumbotron=content.jumbotron}}
                 </div>
-                {{> catalog/results-summary pagination=content.pagination}}
+                <div class="col-xs-4 hidden-xs text-left">
+                  <div class="custom-select-wrapper">
+                    {{> catalog/sort-selector sortSelector=content.sortSelector}}
+                  </div>
+                  {{> catalog/results-summary pagination=content.pagination}}
+                </div>
+                <div class="col-xs-4 hidden-xs text-center pagination">
+                  <ul class="page-numbers">
+                    {{> catalog/pagination pagination=content.pagination}}
+                  </ul>
+                </div>
+                <div class="col-xs-4 hidden-xs text-right">
+                  {{> catalog/display-selector displaySelector=content.displaySelector}}
+                </div>
               </div>
-              <div class="col-xs-4 hidden-xs text-center pagination">
-                <ul class="page-numbers">
-                  {{> catalog/pagination pagination=content.pagination}}
-                </ul>
+              <div class="product-filter hidden-xs">
+                {{> catalog/filters-sidebar}}
               </div>
-              <div class="col-xs-4 hidden-xs text-right">
-                {{> catalog/display-selector displaySelector=content.displaySelector}}
-              </div>
-            </div>
-            <div class="product-filter hidden-xs">
-              {{> catalog/filters-sidebar}}
-            </div>
+            </form>
+
             <div id="pop-product-list" class="row">
               {{> catalog/product-list products=content.products}}
             </div>

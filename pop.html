@@ -395,7 +395,6 @@
             </figcaption>
           </figure>        </div>
       </div>
-      <!--form id="form-filter-products" name="filter-products" action=""-->
         <div class="row row-offcanvas row-offcanvas-left">
           <div class="col-xs-12">
             <ol class="breadcrumb">
@@ -446,334 +445,338 @@
                         </button>
                         <div class="row">
                           <div class="col-sm-12">
+              
                             <form id="form-filter-products-mobile" name="filter-products-mobile" action="">
+                                <input type="hidden" name="q" value="foo"/>
+              
                               <div class="row">
                                 <div class="col-sm-12 ">
                                   <p class="filter-products"><b>Filter Products</b></p>
                                 </div>
                               </div>
                               <hr class="hr">
-                              <div class="row size-box">
+                                <div class="row size-box">
                                   <div class="col-xs-12">
-                                      <div class="text-left">
-                                        Sort
-                                      </div>
-                                      <div class="pop-filter-select">
-                                        <select name="" class="select-product-detail">
-                                          <option value="" >Sort by: low</option>
-                                          <option value="" selected>Sort by high</option>
-                                        </select>
-                                      </div>
-                                  </div>
-                              </div>                
-                                  <hr class="hr">
-                                  <div id="filter-product-type" class="row product-type-box">
-                                    <div class="col-xs-8 text-left">
-                                      Product Type
+                                    <div class="text-left">
+                                      Sort
                                     </div>
-                                    <div class="col-xs-4">
-                                      <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
+                                    <div class="pop-filter-select">
+                                      <select name="" class="select-product-detail">
+                                        <option value="" >Sort by: low</option>
+                                        <option value="" selected>Sort by high</option>
+                                      </select>
                                     </div>
                                   </div>
-                              
-                                    <div class="row">
-                                      <div class="col-sm-12">
-                                          <ul class="dropdown-parent-category">
-                                              <li >
-                                                <a href="clothing">
-                                                  Clothing <span class="facet-count">(900)</span>
-                                                </a>
-                                                <ul class="dropdown-subcategory">
-                                                    <li >
-                                                      <a href="shirts">
-                                                        Shirts <span class="facet-count">(300)</span>
-                                                      </a>
-                                                      <ul class="dropdown-subcategory">
-                                                          <li >
-                                                            <a href="tshirts">
-                                                              T-shirts <span class="facet-count">(150)</span>
-                                                            </a>
-                                                            <ul class="dropdown-subcategory">
-                                                            </ul>
-                                                          </li>      <li class="category-active">
-                                                            <a href="poloshirts">
-                                                              Poloshirts <span class="facet-count">(150)</span>
-                                                            </a>
-                                                            <ul class="dropdown-subcategory">
-                                                            </ul>
-                                                          </li>  </ul>
-                                                    </li>      <li >
-                                                      <a href="jeans">
-                                                        Jeans <span class="facet-count">(200)</span>
-                                                      </a>
-                                                      <ul class="dropdown-subcategory">
-                                                      </ul>
-                                                    </li>      <li >
-                                                      <a href="shirts">
-                                                        Shirts <span class="facet-count">(200)</span>
-                                                      </a>
-                                                      <ul class="dropdown-subcategory">
-                                                      </ul>
-                                                    </li>      <li >
-                                                      <a href="jackets">
-                                                        Jackets <span class="facet-count">(200)</span>
-                                                      </a>
-                                                      <ul class="dropdown-subcategory">
-                                                      </ul>
-                                                    </li>  </ul>
-                                              </li>          <li >
-                                                <a href="shoes">
-                                                  Shoes <span class="facet-count">(20)</span>
-                                                </a>
-                                                <ul class="dropdown-subcategory">
-                                                </ul>
-                                              </li>          <li >
-                                                <a href="accessories">
-                                                  Accessories <span class="facet-count">(5)</span>
-                                                </a>
-                                                <ul class="dropdown-subcategory">
-                                                </ul>
-                                              </li>      </ul>
+                                </div>            
+                                    <hr class="hr">
+                                    <div id="filter-product-type" class="row product-type-box">
+                                      <div class="col-xs-8 text-left">
+                                        Product Type
+                                      </div>
+                                      <div class="col-xs-4">
+                                        <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
                                       </div>
                                     </div>
-                              
-                              
-                                  <hr class="hr">
-                                  <div id="filter-size" class="row size-box">
-                                    <div class="col-xs-8 text-left">
-                                      Size
-                                    </div>
-                                    <div class="col-xs-4">
-                                      <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
-                                    </div>
-                                  </div>
-                              
-                              
-                                    <div class="row">
-                                      <div class="col-sm-12">
-                                        <div class="pop-filter-select select-facet two-column-select">
-                                            <div>
-                                            <label for="filter-size-s">
-                                              <input id="filter-size-s"
-                                                     type="checkbox"
-                                                     name="size"
-                                                     value="s"
-                                                     checked />
-                                              S 
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-size-m">
-                                              <input id="filter-size-m"
-                                                     type="checkbox"
-                                                     name="size"
-                                                     value="m"
-                                                      />
-                                              M 
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-size-l">
-                                              <input id="filter-size-l"
-                                                     type="checkbox"
-                                                     name="size"
-                                                     value="l"
-                                                      />
-                                              L 
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-size-xl">
-                                              <input id="filter-size-xl"
-                                                     type="checkbox"
-                                                     name="size"
-                                                     value="xl"
-                                                      />
-                                              XL 
-                                            </label>        </div>
+                                
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                            <ul class="dropdown-parent-category">
+                                                <li >
+                                                  <a href="clothing">
+                                                    Clothing <span class="facet-count">(900)</span>
+                                                  </a>
+                                                  <ul class="dropdown-subcategory">
+                                                      <li >
+                                                        <a href="shirts">
+                                                          Shirts <span class="facet-count">(300)</span>
+                                                        </a>
+                                                        <ul class="dropdown-subcategory">
+                                                            <li >
+                                                              <a href="tshirts">
+                                                                T-shirts <span class="facet-count">(150)</span>
+                                                              </a>
+                                                              <ul class="dropdown-subcategory">
+                                                              </ul>
+                                                            </li>      <li class="category-active">
+                                                              <a href="poloshirts">
+                                                                Poloshirts <span class="facet-count">(150)</span>
+                                                              </a>
+                                                              <ul class="dropdown-subcategory">
+                                                              </ul>
+                                                            </li>  </ul>
+                                                      </li>      <li >
+                                                        <a href="jeans">
+                                                          Jeans <span class="facet-count">(200)</span>
+                                                        </a>
+                                                        <ul class="dropdown-subcategory">
+                                                        </ul>
+                                                      </li>      <li >
+                                                        <a href="shirts">
+                                                          Shirts <span class="facet-count">(200)</span>
+                                                        </a>
+                                                        <ul class="dropdown-subcategory">
+                                                        </ul>
+                                                      </li>      <li >
+                                                        <a href="jackets">
+                                                          Jackets <span class="facet-count">(200)</span>
+                                                        </a>
+                                                        <ul class="dropdown-subcategory">
+                                                        </ul>
+                                                      </li>  </ul>
+                                                </li>          <li >
+                                                  <a href="shoes">
+                                                    Shoes <span class="facet-count">(20)</span>
+                                                  </a>
+                                                  <ul class="dropdown-subcategory">
+                                                  </ul>
+                                                </li>          <li >
+                                                  <a href="accessories">
+                                                    Accessories <span class="facet-count">(5)</span>
+                                                  </a>
+                                                  <ul class="dropdown-subcategory">
+                                                  </ul>
+                                                </li>      </ul>
                                         </div>
                                       </div>
+                                
+                                
+                                    <hr class="hr">
+                                    <div id="filter-size" class="row size-box">
+                                      <div class="col-xs-8 text-left">
+                                        Size
+                                      </div>
+                                      <div class="col-xs-4">
+                                        <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
+                                      </div>
                                     </div>
-                              
-                                  <hr class="hr">
-                                  <div id="filter-color" class="row color-box">
-                                    <div class="col-xs-8 text-left">
-                                      Color
-                                    </div>
-                                    <div class="col-xs-4">
-                                      <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
-                                    </div>
-                                  </div>
-                              
-                              
-                                    <div class="row">
-                                      <div class="col-sm-12">
-                                        <div class="pop-filter-select select-facet ">
-                                            <div>
-                                            <label for="filter-color-red">
-                                              <input id="filter-color-red"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="red"
-                                                     checked />
-                                              Red <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-blue">
-                                              <input id="filter-color-blue"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="blue"
-                                                     checked />
-                                              Blue <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-pink">
-                                              <input id="filter-color-pink"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="pink"
-                                                      />
-                                              Pink <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-mono">
-                                              <input id="filter-color-mono"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="mono"
-                                                      />
-                                              Mono <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-red">
-                                              <input id="filter-color-red"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="red"
-                                                      />
-                                              Red <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-blue">
-                                              <input id="filter-color-blue"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="blue"
-                                                      />
-                                              Blue <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-pink">
-                                              <input id="filter-color-pink"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="pink"
-                                                      />
-                                              Pink <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-mono">
-                                              <input id="filter-color-mono"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="mono"
-                                                      />
-                                              Mono <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-red">
-                                              <input id="filter-color-red"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="red"
-                                                      />
-                                              Red <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-blue">
-                                              <input id="filter-color-blue"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="blue"
-                                                      />
-                                              Blue <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-pink">
-                                              <input id="filter-color-pink"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="pink"
-                                                      />
-                                              Pink <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-color-mono">
-                                              <input id="filter-color-mono"
-                                                     type="checkbox"
-                                                     name="color"
-                                                     value="mono"
-                                                      />
-                                              Mono <span class="facet-count">(123)</span>
-                                            </label>        </div>
+                                
+                                
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <div class="pop-filter-select select-facet two-column-select">
+                                              <div>
+                                              <label for="filter-size-s">
+                                                <input id="filter-size-s"
+                                                       type="checkbox"
+                                                       name="size"
+                                                       value="s"
+                                                       checked />
+                                                S 
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-size-m">
+                                                <input id="filter-size-m"
+                                                       type="checkbox"
+                                                       name="size"
+                                                       value="m"
+                                                        />
+                                                M 
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-size-l">
+                                                <input id="filter-size-l"
+                                                       type="checkbox"
+                                                       name="size"
+                                                       value="l"
+                                                        />
+                                                L 
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-size-xl">
+                                                <input id="filter-size-xl"
+                                                       type="checkbox"
+                                                       name="size"
+                                                       value="xl"
+                                                        />
+                                                XL 
+                                              </label>        </div>
+                                          </div>
                                         </div>
                                       </div>
+                                
+                                    <hr class="hr">
+                                    <div id="filter-color" class="row color-box">
+                                      <div class="col-xs-8 text-left">
+                                        Color
+                                      </div>
+                                      <div class="col-xs-4">
+                                        <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
+                                      </div>
                                     </div>
-                              
-                                  <hr class="hr">
-                                  <div id="filter-brands" class="row brands-box">
-                                    <div class="col-xs-8 text-left">
-                                      Brands
-                                    </div>
-                                    <div class="col-xs-4">
-                                      <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
-                                    </div>
-                                  </div>
-                              
-                              
-                                    <div class="row">
-                                      <div class="col-sm-12">
-                                        <div class="pop-filter-select select-facet ">
-                                            <div>
-                                            <label for="filter-brands-adidas">
-                                              <input id="filter-brands-adidas"
-                                                     type="checkbox"
-                                                     name="brands"
-                                                     value="adidas"
-                                                     checked />
-                                              Adidas <span class="facet-count">(123)</span>
-                                            </label>        </div>
-                                            <div>
-                                            <label for="filter-brands-nike">
-                                              <input id="filter-brands-nike"
-                                                     type="checkbox"
-                                                     name="brands"
-                                                     value="nike"
-                                                      />
-                                              Nike <span class="facet-count">(123)</span>
-                                            </label>        </div>
+                                
+                                
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <div class="pop-filter-select select-facet ">
+                                              <div>
+                                              <label for="filter-color-red">
+                                                <input id="filter-color-red"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="red"
+                                                       checked />
+                                                Red <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-blue">
+                                                <input id="filter-color-blue"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="blue"
+                                                       checked />
+                                                Blue <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-pink">
+                                                <input id="filter-color-pink"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="pink"
+                                                        />
+                                                Pink <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-mono">
+                                                <input id="filter-color-mono"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="mono"
+                                                        />
+                                                Mono <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-red">
+                                                <input id="filter-color-red"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="red"
+                                                        />
+                                                Red <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-blue">
+                                                <input id="filter-color-blue"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="blue"
+                                                        />
+                                                Blue <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-pink">
+                                                <input id="filter-color-pink"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="pink"
+                                                        />
+                                                Pink <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-mono">
+                                                <input id="filter-color-mono"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="mono"
+                                                        />
+                                                Mono <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-red">
+                                                <input id="filter-color-red"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="red"
+                                                        />
+                                                Red <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-blue">
+                                                <input id="filter-color-blue"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="blue"
+                                                        />
+                                                Blue <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-pink">
+                                                <input id="filter-color-pink"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="pink"
+                                                        />
+                                                Pink <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-color-mono">
+                                                <input id="filter-color-mono"
+                                                       type="checkbox"
+                                                       name="color"
+                                                       value="mono"
+                                                        />
+                                                Mono <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                          </div>
                                         </div>
                                       </div>
-                                    </div>
-                              
-                                  <hr class="hr">
-                                  <div id="filter-" class="row -box">
-                                    <div class="col-xs-8 text-left">
-                                      Price
-                                    </div>
-                                    <div class="col-xs-4">
-                                      <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
-                                    </div>
-                                  </div>
-                              
-                              
-                              
-                                    <div class="row">
-                                      <div class="col-sm-12 slider-col">
-                                    	<div class="slider-range"></div>
-                                    	<input name="minPrice" type="text" value="€ 0" class="s1"/>
-                                    	<input name="maxPrice" type="text" value="€ 1000" class="s2"/>
+                                
+                                    <hr class="hr">
+                                    <div id="filter-brands" class="row brands-box">
+                                      <div class="col-xs-8 text-left">
+                                        Brands
+                                      </div>
+                                      <div class="col-xs-4">
+                                        <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
                                       </div>
                                     </div>
+                                
+                                
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <div class="pop-filter-select select-facet ">
+                                              <div>
+                                              <label for="filter-brands-adidas">
+                                                <input id="filter-brands-adidas"
+                                                       type="checkbox"
+                                                       name="brands"
+                                                       value="adidas"
+                                                       checked />
+                                                Adidas <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                              <div>
+                                              <label for="filter-brands-nike">
+                                                <input id="filter-brands-nike"
+                                                       type="checkbox"
+                                                       name="brands"
+                                                       value="nike"
+                                                        />
+                                                Nike <span class="facet-count">(123)</span>
+                                              </label>        </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                
+                                    <hr class="hr">
+                                    <div id="filter-" class="row -box">
+                                      <div class="col-xs-8 text-left">
+                                        Price
+                                      </div>
+                                      <div class="col-xs-4">
+                                        <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
+                                      </div>
+                                    </div>
+                                
+                                
+                                
+                                      <div class="row">
+                                        <div class="col-sm-12 slider-col">
+                                      	<div class="slider-range"></div>
+                                      	<input name="minPrice" type="text" value="€ 0" class="s1"/>
+                                      	<input name="maxPrice" type="text" value="€ 1000" class="s2"/>
+                                        </div>
+                                      </div>
                             </form>
+              
                           </div>
                         </div>
                       </div>
@@ -784,384 +787,389 @@
             </div>
             <!-- End mobile version -->
 
-            <div class="row item-list-pagination">
-              <div class="jumbotron-row">
-                <div class="jumbotron">
-                	<p>Women</p>
-                	<h2>Coats</h2>
-                	<h3>Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.</h3>
-                </div>              </div>
-              <div class="col-xs-4 hidden-xs text-left">
-                <div class="custom-select-wrapper">
-                  <select name="" class="select-product-detail">
-                    <option value="" >Sort by: low</option>
-                    <option value="" selected>Sort by high</option>
-                  </select>
+            <form id="form-filter-products" name="filter-products" action="">
+                <input type="hidden" name="q" value="foo"/>
+
+              <div class="row item-list-pagination">
+                <div class="jumbotron-row">
+                  <div class="jumbotron">
+                  	<p>Women</p>
+                  	<h2>Coats</h2>
+                  	<h3>Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.</h3>
+                  </div>                </div>
+                <div class="col-xs-4 hidden-xs text-left">
+                  <div class="custom-select-wrapper">
+                    <select name="" class="select-product-detail">
+                      <option value="" >Sort by: low</option>
+                      <option value="" selected>Sort by high</option>
+                    </select>
+                  </div>
+                  <p class="item-count">
+                  	145 of 234
+                  </p>                </div>
+                <div class="col-xs-4 hidden-xs text-center pagination">
+                  <ul class="page-numbers">
+                    <li>
+                      <a href="" class="icon-prev">
+                        <span class="sr-only">Previous</span>
+                      </a>
+                    </li>
+                    
+                      <li><a href="">1</a></li>
+                      <li>...</li>
+                    
+                    
+                      <li><a href="" >70</a></li>
+                      <li><a href="" >71</a></li>
+                      <li><a href="" class="active">72</a></li>
+                      <li><a href="" >73</a></li>
+                      <li><a href="" >74</a></li>
+                    
+                      <li>...</li>
+                      <li><a href="">100</a></li>
+                    
+                    <li>
+                      <a href="" class="icon-next">
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>                  </ul>
                 </div>
-                <p class="item-count">
-                	145 of 234
-                </p>              </div>
-              <div class="col-xs-4 hidden-xs text-center pagination">
-                <ul class="page-numbers">
-                  <li>
-                    <a href="" class="icon-prev">
-                      <span class="sr-only">Previous</span>
-                    </a>
-                  </li>
-                  
-                    <li><a href="">1</a></li>
-                    <li>...</li>
-                  
-                  
-                    <li><a href="" >70</a></li>
-                    <li><a href="" >71</a></li>
-                    <li><a href="" class="active">72</a></li>
-                    <li><a href="" >73</a></li>
-                    <li><a href="" >74</a></li>
-                  
-                    <li>...</li>
-                    <li><a href="">100</a></li>
-                  
-                  <li>
-                    <a href="" class="icon-next">
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </li>                </ul>
-              </div>
-              <div class="col-xs-4 hidden-xs text-right">
-                <p class="item-count">items per page</p>
-                <div class="custom-select-wrapper">
-                	<select name="" class="select-product-detail">
-                	    <option value="12" >12</option>
-                	    <option value="24" selected>24</option>
-                	    <option value="48" >48</option>
-                	</select>
-                </div>
-              </div>
-            </div>
-            <div class="product-filter hidden-xs">
-              <div class="filter-options sidebar-offcanvas" id="sidebar">
-                <button class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas" type="button">
-                  <span class="sr-only">Filter close</span>
-                </button>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="row">
-                      <div class="col-sm-12 ">
-                        <p class="filter-products"><b>Filter Products</b></p>
-                      </div>
-                    </div>
-                        <hr class="hr">
-                        <div id="filter-product-type" class="row product-type-box">
-                          <div class="col-xs-8 text-left">
-                            Product Type
-                          </div>
-                          <div class="col-xs-4">
-                            <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
-                          </div>
-                        </div>
-                    
-                          <div class="row">
-                            <div class="col-sm-12">
-                                <ul class="dropdown-parent-category">
-                                    <li >
-                                      <a href="clothing">
-                                        Clothing <span class="facet-count">(900)</span>
-                                      </a>
-                                      <ul class="dropdown-subcategory">
-                                          <li >
-                                            <a href="shirts">
-                                              Shirts <span class="facet-count">(300)</span>
-                                            </a>
-                                            <ul class="dropdown-subcategory">
-                                                <li >
-                                                  <a href="tshirts">
-                                                    T-shirts <span class="facet-count">(150)</span>
-                                                  </a>
-                                                  <ul class="dropdown-subcategory">
-                                                  </ul>
-                                                </li>      <li class="category-active">
-                                                  <a href="poloshirts">
-                                                    Poloshirts <span class="facet-count">(150)</span>
-                                                  </a>
-                                                  <ul class="dropdown-subcategory">
-                                                  </ul>
-                                                </li>  </ul>
-                                          </li>      <li >
-                                            <a href="jeans">
-                                              Jeans <span class="facet-count">(200)</span>
-                                            </a>
-                                            <ul class="dropdown-subcategory">
-                                            </ul>
-                                          </li>      <li >
-                                            <a href="shirts">
-                                              Shirts <span class="facet-count">(200)</span>
-                                            </a>
-                                            <ul class="dropdown-subcategory">
-                                            </ul>
-                                          </li>      <li >
-                                            <a href="jackets">
-                                              Jackets <span class="facet-count">(200)</span>
-                                            </a>
-                                            <ul class="dropdown-subcategory">
-                                            </ul>
-                                          </li>  </ul>
-                                    </li>          <li >
-                                      <a href="shoes">
-                                        Shoes <span class="facet-count">(20)</span>
-                                      </a>
-                                      <ul class="dropdown-subcategory">
-                                      </ul>
-                                    </li>          <li >
-                                      <a href="accessories">
-                                        Accessories <span class="facet-count">(5)</span>
-                                      </a>
-                                      <ul class="dropdown-subcategory">
-                                      </ul>
-                                    </li>      </ul>
-                            </div>
-                          </div>
-                    
-                    
-                        <hr class="hr">
-                        <div id="filter-size" class="row size-box">
-                          <div class="col-xs-8 text-left">
-                            Size
-                          </div>
-                          <div class="col-xs-4">
-                            <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
-                          </div>
-                        </div>
-                    
-                    
-                          <div class="row">
-                            <div class="col-sm-12">
-                              <div class="pop-filter-select select-facet two-column-select">
-                                  <div>
-                                  <label for="filter-size-s">
-                                    <input id="filter-size-s"
-                                           type="checkbox"
-                                           name="size"
-                                           value="s"
-                                           checked />
-                                    S 
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-size-m">
-                                    <input id="filter-size-m"
-                                           type="checkbox"
-                                           name="size"
-                                           value="m"
-                                            />
-                                    M 
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-size-l">
-                                    <input id="filter-size-l"
-                                           type="checkbox"
-                                           name="size"
-                                           value="l"
-                                            />
-                                    L 
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-size-xl">
-                                    <input id="filter-size-xl"
-                                           type="checkbox"
-                                           name="size"
-                                           value="xl"
-                                            />
-                                    XL 
-                                  </label>        </div>
-                              </div>
-                            </div>
-                          </div>
-                    
-                        <hr class="hr">
-                        <div id="filter-color" class="row color-box">
-                          <div class="col-xs-8 text-left">
-                            Color
-                          </div>
-                          <div class="col-xs-4">
-                            <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
-                          </div>
-                        </div>
-                    
-                    
-                          <div class="row">
-                            <div class="col-sm-12">
-                              <div class="pop-filter-select select-facet ">
-                                  <div>
-                                  <label for="filter-color-red">
-                                    <input id="filter-color-red"
-                                           type="checkbox"
-                                           name="color"
-                                           value="red"
-                                           checked />
-                                    Red <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-blue">
-                                    <input id="filter-color-blue"
-                                           type="checkbox"
-                                           name="color"
-                                           value="blue"
-                                           checked />
-                                    Blue <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-pink">
-                                    <input id="filter-color-pink"
-                                           type="checkbox"
-                                           name="color"
-                                           value="pink"
-                                            />
-                                    Pink <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-mono">
-                                    <input id="filter-color-mono"
-                                           type="checkbox"
-                                           name="color"
-                                           value="mono"
-                                            />
-                                    Mono <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-red">
-                                    <input id="filter-color-red"
-                                           type="checkbox"
-                                           name="color"
-                                           value="red"
-                                            />
-                                    Red <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-blue">
-                                    <input id="filter-color-blue"
-                                           type="checkbox"
-                                           name="color"
-                                           value="blue"
-                                            />
-                                    Blue <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-pink">
-                                    <input id="filter-color-pink"
-                                           type="checkbox"
-                                           name="color"
-                                           value="pink"
-                                            />
-                                    Pink <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-mono">
-                                    <input id="filter-color-mono"
-                                           type="checkbox"
-                                           name="color"
-                                           value="mono"
-                                            />
-                                    Mono <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-red">
-                                    <input id="filter-color-red"
-                                           type="checkbox"
-                                           name="color"
-                                           value="red"
-                                            />
-                                    Red <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-blue">
-                                    <input id="filter-color-blue"
-                                           type="checkbox"
-                                           name="color"
-                                           value="blue"
-                                            />
-                                    Blue <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-pink">
-                                    <input id="filter-color-pink"
-                                           type="checkbox"
-                                           name="color"
-                                           value="pink"
-                                            />
-                                    Pink <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-color-mono">
-                                    <input id="filter-color-mono"
-                                           type="checkbox"
-                                           name="color"
-                                           value="mono"
-                                            />
-                                    Mono <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                              </div>
-                            </div>
-                          </div>
-                    
-                        <hr class="hr">
-                        <div id="filter-brands" class="row brands-box">
-                          <div class="col-xs-8 text-left">
-                            Brands
-                          </div>
-                          <div class="col-xs-4">
-                            <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
-                          </div>
-                        </div>
-                    
-                    
-                          <div class="row">
-                            <div class="col-sm-12">
-                              <div class="pop-filter-select select-facet ">
-                                  <div>
-                                  <label for="filter-brands-adidas">
-                                    <input id="filter-brands-adidas"
-                                           type="checkbox"
-                                           name="brands"
-                                           value="adidas"
-                                           checked />
-                                    Adidas <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                                  <div>
-                                  <label for="filter-brands-nike">
-                                    <input id="filter-brands-nike"
-                                           type="checkbox"
-                                           name="brands"
-                                           value="nike"
-                                            />
-                                    Nike <span class="facet-count">(123)</span>
-                                  </label>        </div>
-                              </div>
-                            </div>
-                          </div>
-                    
-                        <hr class="hr">
-                        <div id="filter-" class="row -box">
-                          <div class="col-xs-8 text-left">
-                            Price
-                          </div>
-                          <div class="col-xs-4">
-                            <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
-                          </div>
-                        </div>
-                    
-                    
-                    
-                          <div class="row">
-                            <div class="col-sm-12 slider-col">
-                          	<div class="slider-range"></div>
-                          	<input name="minPrice" type="text" value="€ 0" class="s1"/>
-                          	<input name="maxPrice" type="text" value="€ 1000" class="s2"/>
-                            </div>
-                          </div>
+                <div class="col-xs-4 hidden-xs text-right">
+                  <p class="item-count">items per page</p>
+                  <div class="custom-select-wrapper">
+                  	<select name="" class="select-product-detail">
+                  	    <option value="12" >12</option>
+                  	    <option value="24" selected>24</option>
+                  	    <option value="48" >48</option>
+                  	</select>
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="product-filter hidden-xs">
+                <div class="filter-options sidebar-offcanvas" id="sidebar">
+                  <button class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas" type="button">
+                    <span class="sr-only">Filter close</span>
+                  </button>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="row">
+                        <div class="col-sm-12 ">
+                          <p class="filter-products"><b>Filter Products</b></p>
+                        </div>
+                      </div>
+                          <hr class="hr">
+                          <div id="filter-product-type" class="row product-type-box">
+                            <div class="col-xs-8 text-left">
+                              Product Type
+                            </div>
+                            <div class="col-xs-4">
+                              <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
+                            </div>
+                          </div>
+                      
+                            <div class="row">
+                              <div class="col-sm-12">
+                                  <ul class="dropdown-parent-category">
+                                      <li >
+                                        <a href="clothing">
+                                          Clothing <span class="facet-count">(900)</span>
+                                        </a>
+                                        <ul class="dropdown-subcategory">
+                                            <li >
+                                              <a href="shirts">
+                                                Shirts <span class="facet-count">(300)</span>
+                                              </a>
+                                              <ul class="dropdown-subcategory">
+                                                  <li >
+                                                    <a href="tshirts">
+                                                      T-shirts <span class="facet-count">(150)</span>
+                                                    </a>
+                                                    <ul class="dropdown-subcategory">
+                                                    </ul>
+                                                  </li>      <li class="category-active">
+                                                    <a href="poloshirts">
+                                                      Poloshirts <span class="facet-count">(150)</span>
+                                                    </a>
+                                                    <ul class="dropdown-subcategory">
+                                                    </ul>
+                                                  </li>  </ul>
+                                            </li>      <li >
+                                              <a href="jeans">
+                                                Jeans <span class="facet-count">(200)</span>
+                                              </a>
+                                              <ul class="dropdown-subcategory">
+                                              </ul>
+                                            </li>      <li >
+                                              <a href="shirts">
+                                                Shirts <span class="facet-count">(200)</span>
+                                              </a>
+                                              <ul class="dropdown-subcategory">
+                                              </ul>
+                                            </li>      <li >
+                                              <a href="jackets">
+                                                Jackets <span class="facet-count">(200)</span>
+                                              </a>
+                                              <ul class="dropdown-subcategory">
+                                              </ul>
+                                            </li>  </ul>
+                                      </li>          <li >
+                                        <a href="shoes">
+                                          Shoes <span class="facet-count">(20)</span>
+                                        </a>
+                                        <ul class="dropdown-subcategory">
+                                        </ul>
+                                      </li>          <li >
+                                        <a href="accessories">
+                                          Accessories <span class="facet-count">(5)</span>
+                                        </a>
+                                        <ul class="dropdown-subcategory">
+                                        </ul>
+                                      </li>      </ul>
+                              </div>
+                            </div>
+                      
+                      
+                          <hr class="hr">
+                          <div id="filter-size" class="row size-box">
+                            <div class="col-xs-8 text-left">
+                              Size
+                            </div>
+                            <div class="col-xs-4">
+                              <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
+                            </div>
+                          </div>
+                      
+                      
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div class="pop-filter-select select-facet two-column-select">
+                                    <div>
+                                    <label for="filter-size-s">
+                                      <input id="filter-size-s"
+                                             type="checkbox"
+                                             name="size"
+                                             value="s"
+                                             checked />
+                                      S 
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-size-m">
+                                      <input id="filter-size-m"
+                                             type="checkbox"
+                                             name="size"
+                                             value="m"
+                                              />
+                                      M 
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-size-l">
+                                      <input id="filter-size-l"
+                                             type="checkbox"
+                                             name="size"
+                                             value="l"
+                                              />
+                                      L 
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-size-xl">
+                                      <input id="filter-size-xl"
+                                             type="checkbox"
+                                             name="size"
+                                             value="xl"
+                                              />
+                                      XL 
+                                    </label>        </div>
+                                </div>
+                              </div>
+                            </div>
+                      
+                          <hr class="hr">
+                          <div id="filter-color" class="row color-box">
+                            <div class="col-xs-8 text-left">
+                              Color
+                            </div>
+                            <div class="col-xs-4">
+                              <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
+                            </div>
+                          </div>
+                      
+                      
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div class="pop-filter-select select-facet ">
+                                    <div>
+                                    <label for="filter-color-red">
+                                      <input id="filter-color-red"
+                                             type="checkbox"
+                                             name="color"
+                                             value="red"
+                                             checked />
+                                      Red <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-blue">
+                                      <input id="filter-color-blue"
+                                             type="checkbox"
+                                             name="color"
+                                             value="blue"
+                                             checked />
+                                      Blue <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-pink">
+                                      <input id="filter-color-pink"
+                                             type="checkbox"
+                                             name="color"
+                                             value="pink"
+                                              />
+                                      Pink <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-mono">
+                                      <input id="filter-color-mono"
+                                             type="checkbox"
+                                             name="color"
+                                             value="mono"
+                                              />
+                                      Mono <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-red">
+                                      <input id="filter-color-red"
+                                             type="checkbox"
+                                             name="color"
+                                             value="red"
+                                              />
+                                      Red <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-blue">
+                                      <input id="filter-color-blue"
+                                             type="checkbox"
+                                             name="color"
+                                             value="blue"
+                                              />
+                                      Blue <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-pink">
+                                      <input id="filter-color-pink"
+                                             type="checkbox"
+                                             name="color"
+                                             value="pink"
+                                              />
+                                      Pink <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-mono">
+                                      <input id="filter-color-mono"
+                                             type="checkbox"
+                                             name="color"
+                                             value="mono"
+                                              />
+                                      Mono <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-red">
+                                      <input id="filter-color-red"
+                                             type="checkbox"
+                                             name="color"
+                                             value="red"
+                                              />
+                                      Red <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-blue">
+                                      <input id="filter-color-blue"
+                                             type="checkbox"
+                                             name="color"
+                                             value="blue"
+                                              />
+                                      Blue <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-pink">
+                                      <input id="filter-color-pink"
+                                             type="checkbox"
+                                             name="color"
+                                             value="pink"
+                                              />
+                                      Pink <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-color-mono">
+                                      <input id="filter-color-mono"
+                                             type="checkbox"
+                                             name="color"
+                                             value="mono"
+                                              />
+                                      Mono <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                </div>
+                              </div>
+                            </div>
+                      
+                          <hr class="hr">
+                          <div id="filter-brands" class="row brands-box">
+                            <div class="col-xs-8 text-left">
+                              Brands
+                            </div>
+                            <div class="col-xs-4">
+                              <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
+                            </div>
+                          </div>
+                      
+                      
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div class="pop-filter-select select-facet ">
+                                    <div>
+                                    <label for="filter-brands-adidas">
+                                      <input id="filter-brands-adidas"
+                                             type="checkbox"
+                                             name="brands"
+                                             value="adidas"
+                                             checked />
+                                      Adidas <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                    <div>
+                                    <label for="filter-brands-nike">
+                                      <input id="filter-brands-nike"
+                                             type="checkbox"
+                                             name="brands"
+                                             value="nike"
+                                              />
+                                      Nike <span class="facet-count">(123)</span>
+                                    </label>        </div>
+                                </div>
+                              </div>
+                            </div>
+                      
+                          <hr class="hr">
+                          <div id="filter-" class="row -box">
+                            <div class="col-xs-8 text-left">
+                              Price
+                            </div>
+                            <div class="col-xs-4">
+                              <a class="text-right clear-btn facet-clear-btn" href="#">Clear</a>
+                            </div>
+                          </div>
+                      
+                      
+                      
+                            <div class="row">
+                              <div class="col-sm-12 slider-col">
+                            	<div class="slider-range"></div>
+                            	<input name="minPrice" type="text" value="€ 0" class="s1"/>
+                            	<input name="maxPrice" type="text" value="€ 1000" class="s2"/>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+
             <div id="pop-product-list" class="row">
               <div class="col-xs-12 col-sm-6 col-md-4">
               <a id="link-product-thumbnail0" href="">
