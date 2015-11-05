@@ -2,6 +2,7 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
   "content" : {
+      "cart" : { "$ref" : "checkout/cart.json" },
     "yourBag" : "Your bag:",
     "itemsTotal" : "2 items in total",
     "checkoutBtn" : "Checkout now",

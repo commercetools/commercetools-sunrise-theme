@@ -32,6 +32,13 @@
                 {{> checkout/payment-confirmation}}
               </div>
             </div>
+
+
+            {{> checkout/order-summary mainClass="confirmation-products-title" editable=false checkoutConfirmation=true}}
+
+
+
+
             <div class="confirmation-products-title">
               <div class="row">
                 <div class="row text-uppercase hidden-xs cart-items-title">
@@ -50,6 +57,11 @@
                 </div>
               </div>
               {{#each content.cartItems.list}}
+
+
+
+
+
                 <div class="row single-cart-item">
                   <div class="col-sm-1 col-xs-4 product-img-col">
                     <img class="img-responsive cart-item-img" src="{{../meta.assetsPath}}img/blue-jacket.jpg" alt="cart item image">
@@ -88,6 +100,13 @@
                     </div>
                   </div>
                 </div>
+
+
+
+
+
+
+
               {{/each}}
               <div class="row">
                 <div class="col-xs-12">
@@ -102,6 +121,11 @@
                   </div>
                 </div>
               </div>
+
+
+
+
+
               <div class="row">
                 <div class="col-sm-12">
                   <div class="total-price-calc">
