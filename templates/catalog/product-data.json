@@ -1,7 +1,10 @@
 {
+	"id" : "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+	"variantId" : 1,
+	"slug" : "some-slug",
+	"sku" : "Sunrise #SUN123456",
 	"name" : "Enditatem Product Name Optional very long line two",
 	"description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-	"sku" : "Sunrise #SUN123456",
 	"price" : "€ 49,-",
 	"priceOld" : "€ 79,99",
 	"gallery" : { "$ref" : "product-gallery.json" },

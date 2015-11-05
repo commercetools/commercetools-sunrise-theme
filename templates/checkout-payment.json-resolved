@@ -1,0 +1,210 @@
+{
+  "header": {
+    "title": "Sunrise - Checkout Page",
+    "customerService": "Need help? Customer Service",
+    "customerServiceNumber": "+12 345 6000"
+  },
+  "footer": {
+    "legalInfo": {
+      "text": "© 2015 Sunrise",
+      "list": [
+        {
+          "text": "Imprint",
+          "url": "",
+          "id": "imprint-link"
+        },
+        {
+          "text": "Privacy policy",
+          "url": "",
+          "id": "privacypolicy-link"
+        },
+        {
+          "text": "Terms of use",
+          "url": "",
+          "id": "termsofuse-link"
+        }
+      ]
+    }
+  },
+  "content": {
+    "stepWidget": {
+      "paymentStepActive": true
+    },
+    "paymentOptionTitle": "Please provide one of the following payment options:",
+    "paymentOption": {
+      "list": [
+        {
+          "text": "Credit Card",
+          "image": "assets/img/payment-option-card.gif",
+          "value": "",
+          "selected": false,
+          "id": "payment-type-credit-card"
+        },
+        {
+          "text": "PayPal",
+          "image": "assets/img/payment-option-paypal.png",
+          "value": "",
+          "selected": false,
+          "id": "payment-type-paypal"
+        },
+        {
+          "text": "Pre-payment",
+          "image": "assets/img/blank-img.jpg",
+          "value": "",
+          "selected": false,
+          "id": "payment-type-pre-payment"
+        }
+      ]
+    },
+    "cardName": "Name on credit card",
+    "cardNumber": "Credit card number",
+    "expiryDateTitle": "Expiry data",
+    "expiryDate": {
+      "list": [
+        {
+          "text": "Month",
+          "value": "",
+          "selected": true
+        },
+        {
+          "text": "January",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "February",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "March",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "April",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "May",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "June",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "July",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "August",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "September",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "October",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "November",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "December",
+          "value": "",
+          "selected": false
+        }
+      ]
+    },
+    "year": {
+      "list": [
+        {
+          "text": "Year",
+          "value": "",
+          "selected": true
+        },
+        {
+          "text": "2050",
+          "value": "",
+          "selected": false
+        },
+        {
+          "text": "2100",
+          "value": "",
+          "selected": false
+        }
+      ]
+    },
+    "securityCode": "Security Code",
+    "securityCodeTooltip": "Additional information about the security code goes here...",
+    "itemsTotal": 3,
+    "checkoutItem": {
+      "list": [
+        {
+          "name": "Product Name 1",
+          "description": "Optional Line Two",
+          "image": "assets/img/blue-jacket.jpg",
+          "sku": "Sunrise #SUN123456",
+          "attributes": {
+            "color": "Navy Blue",
+            "size": "M"
+          },
+          "quantity": 1,
+          "priceOld": "100,00 €",
+          "price": "49,00 €",
+          "total": "49,00 €"
+        },
+        {
+          "name": "Product Name 1",
+          "description": "Optional Line Two",
+          "image": "assets/img/blue-jacket.jpg",
+          "sku": "Sunrise #SUN123456",
+          "attributes": {
+            "color": "Navy Blue",
+            "size": "M"
+          },
+          "quantity": 1,
+          "priceOld": "100,00 €",
+          "price": "49,00 €",
+          "total": "49,00 €"
+        },
+        {
+          "name": "Product Name 1",
+          "description": "Optional Line Two",
+          "image": "assets/img/blue-jacket.jpg",
+          "sku": "Sunrise #SUN123456",
+          "attributes": {
+            "color": "Navy Blue",
+            "size": "M"
+          },
+          "quantity": 1,
+          "priceOld": "100,00 €",
+          "price": "49,00 €",
+          "total": "49,00 €"
+        }
+      ]
+    },
+    "promoCode": "Sunny Sale",
+    "subtotal": "107,00 €",
+    "discount": "0,00 €",
+    "deliveryTitle": "Standard Delivery",
+    "deliverySum": "10,00 €",
+    "tax": "20,00 €",
+    "total": "123,00 €"
+  },
+  "meta": {
+    "assetsPath": "assets/"
+  }
+}

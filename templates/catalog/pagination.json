@@ -1,31 +1,39 @@
 {
 	"currentPage" : 145,
 	"totalPages" : 234,
-	"urlNext" : "",
-	"urlPrevious" : "",
+	"previousUrl" : "",
+	"nextUrl" : "",
+	"firstPage" : {
+		"text" : "1",
+		"url" : ""
+	},
+	"lastPage" : {
+		"text" : "100",
+		"url" : ""
+	},
 	"pages" : [
 		{
-			"name" : "1",
+			"text" : "70",
 			"url" : "",
 			"selected" : false
 		},
 		{
-			"name" : "2",
+			"text" : "71",
 			"url" : "",
 			"selected" : false
 		},
 		{
-			"name" : "3",
+			"text" : "72",
 			"url" : "",
 			"selected" : true
 		},
 		{
-			"name" : "4",
+			"text" : "73",
 			"url" : "",
 			"selected" : false
 		},
 		{
-			"name" : "5",
+			"text" : "74",
 			"url" : "",
 			"selected" : false
 		}
