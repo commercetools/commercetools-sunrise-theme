@@ -1,0 +1,29 @@
+<div class="checkout-summary">
+    <div class="text-uppercase">
+        <span class="checkout-summary-title">{{content.shippingAddress.text}}</span>
+        <a id="confirmation-edit-shipping-btn" href="#">
+                      <span class="pull-right">
+                        <img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span>
+        </a>
+    </div>
+    <div class="checkout-summary-text">
+        <span>{{content.shippingAddress.name}}</span>
+        <br>
+        <span>{{content.shippingAddress.street}}</span>
+        <br>
+        <span>{{content.shippingAddress.city}}</span>
+        <br>
+        <span>{{content.shippingAddress.region}}</span>
+        <br>
+        <span>{{content.shippingAddress.postCode}}</span>
+        <br>
+        <span>{{content.shippingAddress.country}}</span>
+    </div>
+    <div>
+        <span>{{content.shippingAddress.phoneTitle}}:</span>
+        <span> {{content.shippingAddress.phone}}</span>
+        <br>
+        <span>{{content.shippingAddress.emailTitle}}:</span>
+        <span> {{content.shippingAddress.email}}</span>
+    </div>
+</div>
