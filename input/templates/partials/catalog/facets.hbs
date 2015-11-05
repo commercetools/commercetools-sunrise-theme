@@ -1,36 +1,3 @@
-{{!--
-{{#if facets.categories.facet.available}}
-  <hr class="hr">
-  <div id="filter-{{facets.categories.facet.key}}" class="row {{facets.categories.facet.key}}-box">
-    <div class="col-xs-8 text-left">
-      {{facets.categories.facet.label}}
-    </div>
-    <div class="col-xs-4">
-      <a class="text-right clear-btn" href="#">{{i18n "catalog:filters.clear"}}</a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-        <ul class="dropdown-parent-category">
-          {{#each facets.categories.facet.limitedOptions}}
-            <li class="parent-category-list"><a href="#" id="parent-category-{{value}}">{{label}} ({{count}})</a></li>
-              <ul class="dropdown-subcategory-one">
-                {{#each children}}
-                  <li><a href="#" id="subcategory-one-{{value}}">{{label}} ({{count}})</a></li>
-                  <ul class="dropdown-subcategory-two">
-                    {{#each children}}
-                      <li {{#if selected}}class="category-active"{{/if}}><a href="#" id="subcategory-two-{{value}}" {{#unless ../selected}}class="hidden"{{/unless}}>{{label}} ({{count}})</a></li>
-                    {{/each}}
-                  </ul>
-                {{/each}}
-              </ul>
-          {{/each}}
-        </ul>
-    </div>
-  </div>
-{{/if}}
---}}
-
 {{#each facets.list}}
   {{#if facet.available}}
     <hr class="hr">
@@ -39,72 +6,20 @@
         {{facet.label}}
       </div>
       <div class="col-xs-4">
-        <a class="text-right clear-btn" href="#">{{i18n "catalog:filters.clear"}}</a>
+        <a class="text-right clear-btn facet-clear-btn" href="#">{{i18n "catalog:filters.clear"}}</a>
       </div>
     </div>
 
     {{#if hierarchicalSelectFacet}}
-      <div class="row">
-        <div class="col-sm-12">
-          <div aria-multiselectable="true" class="panel-group" id="facet-{{facet.key}}" role="tablist">
-            {{#each facet.limitedOptions}}
-              <div class="panel panel-default">
-                <div class="panel-heading" id="facet-heading-{{../facet.key}}-{{value}}" role="tab">
-                  <h4 class="panel-title">
-                    <a aria-controls="collapse-facet-{{../facet.key}}-{{value}}" aria-expanded="true" data-parent="#facet-{{../facet.key}}" data-toggle="collapse" href="#collapse-facet-{{../facet.key}}-{{value}}">
-                      {{label}} {{#unless ../facet.countHidden}}({{count}}){{/unless}}
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapse-facet-{{../facet.key}}-{{value}}" aria-labelledby="facet-heading-{{../facet.key}}-{{value}}" class="panel-collapse collapse {{#if selected}}in{{/if}}" role="tabpanel">
-                  <div class="panel-body">
-                    {{#each children}}
-                      <div class="checkbox">
-                        <label for="filter-{{../../facet.key}}-{{value}}">
-                          <input id="filter-{{../../facet.key}}-{{value}}" type="checkbox" name="{{../../facet.key}}" value="{{value}}" {{#if selected}}checked{{/if}}>
-                            {{label}} {{#unless ../../facet.countHidden}}({{count}}){{/unless}}
-                        </label>
-                      </div>
-                    {{/each}}
-                  </div>
-                </div>
-              </div>
-            {{/each}}
-          </div>
-        </div>
-      </div>
+      {{> catalog/facet-hierarchical-select}}
     {{/if}}
 
     {{#if selectFacet}}
-      {{#if facet.scrollable}}
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="brands-list">
-      {{/if}}
-          <div class="pop-filter-select {{#unless facet.scrollable}} select-facet {{#if facet.countHidden}}two-column-select{{/if}}{{/unless}}">
-            {{#each facet.limitedOptions}}
-              <input id="filter-{{../facet.key}}-{{value}}" class="{{../facet.key}}-checkbox" type="checkbox" name="{{../facet.key}}" value="{{value}}" {{#if selected}} checked {{/if}} />
-              <label for="filter-{{../facet.key}}-{{value}}">
-                {{label}} {{#unless ../facet.countHidden}}({{count}}){{/unless}}
-              </label>
-              <br>
-            {{/each}}
-          </div>
-      {{#if facet.scrollable}}
-          </div>
-        </div>
-      </div>
-      {{/if}}
+      {{> catalog/facet-select}}
     {{/if}}
 
     {{#if sliderRangeFacet}}
-      <div class="row">
-        <div class="col-sm-12 slider-col">
-          <div class="slider-range"></div>
-          <input name="{{facet.minKey}}" type="text" value="{{facet.minValue}}" class="s1"/>
-          <input name="{{facet.maxKey}}" type="text" value="{{facet.maxValue}}" class="s2"/>
-        </div>
-      </div>
+      {{> catalog/facet-slider-range}}
     {{/if}}
 
   {{/if}}

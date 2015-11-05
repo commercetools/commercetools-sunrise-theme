@@ -100,14 +100,15 @@
 
   }
 }
-.dropdown-subcategory-one {
-  list-style: none;
-  padding-left: 10px;
-}
-.dropdown-subcategory-two {
+.dropdown-subcategory {
   list-style: none;
   padding-left: 20px;
 }
+
+.facet-count {
+  color: $grey;
+}
+
 .category-active {
   font-weight: bold;
 }
