@@ -2,6 +2,7 @@
 	"header" : { "$ref" : "common/checkout-header.json" },
 	"footer" : { "$ref" : "common/checkout-footer.json" },
   "content" : {
+      "cart" : { "$ref" : "checkout/cart.json" },
       "stepWidget" : {
           "confirmationStepActive": true
       },
