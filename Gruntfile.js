@@ -27,7 +27,9 @@ module.exports = function(grunt) {
         ]
       },
       resolved: {
-        files: { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' }
+        files: [
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' }
+        ]
       }
     },
 
@@ -190,7 +192,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('pre-handlebars', 'Tasks to be run before Handlebars', function() {
     grunt.task.run('json-refs');
-    //grunt.task.run('copy:resolved');
+    grunt.task.run('copy:resolved');
     grunt.task.run('i18next');
   });
 
