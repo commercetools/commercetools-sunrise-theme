@@ -100,6 +100,13 @@
   padding: 1em 0 0;
   font-size: 16px;
 }
+.custom-select-wrapper {
+  display: inline-block;
+  line-height: 40px;
+  .select-product-detail {
+    background-color: $white;
+  }
+}
 .pop-filter-select {
   padding: 0.5em 0;
   label {

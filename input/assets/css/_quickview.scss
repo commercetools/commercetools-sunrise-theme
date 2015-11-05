@@ -3,7 +3,6 @@
   margin-top: 7%;
   width: 700px;
 }
-
 .modal-header {
   border-bottom: none;
   padding: 0;
@@ -12,7 +11,6 @@
     margin-right: -40px;
   }
 }
-
 .quickview-modal {
   border-radius: 0;
   height: 550px;
@@ -37,9 +35,12 @@
     padding-top: 10px;
   }
   .pdp-product-heart {
-    margin: 1em 0 1em 1em;
+    margin: 1em 0;
   }
   .size-guide-li {
     display: none;
   }
+}
+.quickview-wishlist-row {
+  margin-top: -30px;
 }
