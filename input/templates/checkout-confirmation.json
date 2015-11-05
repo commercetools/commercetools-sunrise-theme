@@ -6,33 +6,8 @@
       "stepWidget" : {
           "confirmationStepActive": true
       },
-		"editIconText" : "Edit",
-		"shippingAddress" : {
-			"text" : "Shipping Address",
-			"name" : "Mr. Bruce Wayne",
-			"street" : "100 Gotham Street",
-			"city" : "Gothan City",
-			"region" : "Region",
-			"postCode" : "123456",
-			"country" : "Country",
-			"phoneTitle" : "Phone",
-			"phone" : "+49 123 4567899",
-			"emailTitle" : "Email",
-			"email" : "batman@commercetools.com"
-		},
-		"billingAddress" : {
-			"text" : "Billing Address",
-			"name" : "Mr. Bruce Wayne",
-			"street" : "100 Gotham Street",
-			"city" : "Gothan City",
-			"region" : "Region",
-			"postCode" : "123456",
-			"country" : "Country",
-			"phoneTitle" : "Phone",
-			"phone" : "+49 123 4567899",
-			"emailTitle" : "Email",
-			"email" : "batman@commercetools.com"
-		},
+      "shippingAddress" : { "$ref" : "checkout/shipping-address.json" },
+      "billingAddress" : { "$ref" : "checkout/billing-address.json" },
 		"shippingMethod" : {
 			"text" : "Shipping Method",
 			"description" : "DHL Standard - Delivery 3-5 Days"

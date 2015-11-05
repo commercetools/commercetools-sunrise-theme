@@ -3,6 +3,8 @@
 	"footer" : { "$ref" : "common/checkout-footer.json" },
   "content" : {
       "order" : { "$ref" : "checkout/cart.json" },
+      "shippingAddress" : { "$ref" : "checkout/shipping-address.json" },
+      "billingAddress" : { "$ref" : "checkout/billing-address.json" },
     "emailSentTo" : "An email has been sent to",
     "email" : "camilo@batman.com",
     "emailSentToEnding" : "as a copy of this confirmation purchase",
@@ -13,32 +15,6 @@
     "orderNumber" : "01445678",
     "orderDateTitle" : "Order Date",
     "orderDate" : "Nov 14, 2015",
-    "shippingAddress" : {
-      "text" : "Shipping Address",
-      "name" : "Mr. Bruce Wayne",
-      "street" : "100 Gotham Street",
-      "city" : "Gothan City",
-      "region" : "Region",
-      "postCode" : "123456",
-      "country" : "Country",
-      "phoneTitle" : "Phone",
-      "phone" : "+49 123 4567899",
-      "emailTitle" : "Email",
-      "email" : "batman@commercetools.com"
-    },
-		"billingAddress" : {
-			"text" : "Billing Address",
-			"name" : "Mr. Bruce Wayne",
-			"street" : "100 Gotham Street",
-			"city" : "Gothan City",
-			"region" : "Region",
-			"postCode" : "123456",
-			"country" : "Country",
-			"phoneTitle" : "Phone",
-			"phone" : "+49 123 4567899",
-			"emailTitle" : "Email",
-			"email" : "batman@commercetools.com"
-		},
 		"shippingMethod" : {
 			"text" : "Shipping Method",
 			"description" : "DHL Standard - Delivery 3-5 Days"

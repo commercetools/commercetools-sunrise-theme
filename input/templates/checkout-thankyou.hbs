@@ -32,42 +32,10 @@
         <div class="thankyou-order-summary">
           <div class="row">
             <div class="col-sm-4 checkout-first-col">
-              <div class="checkout-summary">
-                <div class="text-uppercase">
-                  <span class="checkout-summary-title">{{content.shippingAddress.text}}</span>
-                </div>
-                <div class="checkout-summary-text">
-                  <span>{{content.shippingAddress.name}}</span><br>
-                  <span>{{content.shippingAddress.street}}</span><br>
-                  <span>{{content.shippingAddress.city}}</span><br>
-                  <span>{{content.shippingAddress.region}}</span><br>
-                  <span>{{content.shippingAddress.postCode}}</span><br>
-                  <span>{{content.shippingAddress.country}}</span>
-                </div>
-                <div>
-                  <span>{{content.shippingAddress.phoneTitle}}:</span><span> {{content.shippingAddress.phone}}</span><br>
-                  <span>{{content.shippingAddress.emailTitle}}:</span><span> {{content.shippingAddress.email}}</span>
-                </div>
-              </div>
+              {{> checkout/address-confirmation address=content.shippingAddress titleKey="checkout.shippingAddress" editable=false}}
             </div>
             <div class="col-sm-4 checkout-second-col">
-              <div class="checkout-summary">
-                <div class="text-uppercase">
-                  <span class="checkout-summary-title">{{content.billingAddress.text}}</span>
-                </div>
-                <div class="checkout-summary-text">
-                  <span>{{content.billingAddress.name}}</span><br>
-                  <span>{{content.billingAddress.street}}</span><br>
-                  <span>{{content.billingAddress.city}}</span><br>
-                  <span>{{content.billingAddress.region}}</span><br>
-                  <span>{{content.billingAddress.postCode}}</span><br>
-                  <span>{{content.billingAddress.country}}</span>
-                </div>
-                <div>
-                  <span>{{content.billingAddress.phoneTitle}}:</span><span> {{content.shippingAddress.phone}}</span><br>
-                  <span>{{content.billingAddress.emailTitle}}:</span><span> {{content.shippingAddress.email}}</span>
-                </div>
-              </div>
+              {{> checkout/address-confirmation address=content.billingAddress titleKey="checkout.billingAddress" editable=false}}
             </div>
             <div class="col-sm-4 checkout-third-col">
               <div class="checkout-summary">

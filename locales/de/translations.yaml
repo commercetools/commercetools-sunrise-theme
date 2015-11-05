@@ -1,4 +1,5 @@
 checkout:
+  billingAddress: Zahlungsadresse
   confirmation: Bestätigung
   confirmationPage:
     title: Sicherer Bestellprozess - Versand
@@ -14,6 +15,7 @@ checkout:
   promoCodeApplied: Gutschein eingelöst
   returningCustomer: Wiederkehrender Besucher
   shipping: Versand
+  shippingAddress: Versandadresse
   shippingInformation: Versand Information
   shippingPage:
     differentBillingAddressCheckboxLabel: Abweichende Adresse als Rechnungsadresse verwenden.
