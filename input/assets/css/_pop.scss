@@ -47,6 +47,22 @@
 }
 .product-filter {
   padding: 0;
+  width: 25%;
+  float: left;
+}
+.jumbotron {
+  margin: 0 15px;
+}
+
+#pop-product-list {
+  @media screen and (min-width: 767px) {
+    float: right;
+    width: 75%;
+  }
+}
+
+.jumbotron-row {
+  margin-bottom: 20px;
 }
 
 // Product type accordion menu
@@ -231,9 +247,6 @@ a.clear-btn {
 @media screen and (max-width: 768px) {
   .search-box {
     text-align: center;
-  }
-  .jumbotron-row {
-    margin-top: 40px;
   }
   #footer {
     text-align: center;
