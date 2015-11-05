@@ -3,6 +3,7 @@
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
 		"filterProductsUrl" : "",
+		"searchTerm" : "foo",
 		"banner" : { "$ref" : "catalog/banner.json" },
 		"jumbotron" : { "$ref" : "catalog/jumbotron.json" },
 		"seo" : { "$ref" : "catalog/seo.json" },

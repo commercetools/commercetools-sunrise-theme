@@ -16,25 +16,31 @@
           </button>
           <div class="row">
             <div class="col-sm-12">
+
               <form id="form-filter-products-mobile" name="filter-products-mobile" action="{{content.filterProductsUrl}}">
+                {{#if content.searchTerm}}
+                  <input type="hidden" name="q" value="{{content.searchTerm}}"/>
+                {{/if}}
+
                 <div class="row">
                   <div class="col-sm-12 ">
                     <p class="filter-products"><b>{{i18n "catalog:filters.title"}}</b></p>
                   </div>
                 </div>
                 <hr class="hr">
-                <div class="row size-box">
+                  <div class="row size-box">
                     <div class="col-xs-12">
-                        <div class="text-left">
-                          {{i18n "catalog:sortSelector.title"}}
-                        </div>
-                        <div class="pop-filter-select">
-                          {{> catalog/sort-selector sortSelector=content.sortSelector}}
-                        </div>
+                      <div class="text-left">
+                        {{i18n "catalog:sortSelector.title"}}
+                      </div>
+                      <div class="pop-filter-select">
+                        {{> catalog/sort-selector sortSelector=content.sortSelector}}
+                      </div>
                     </div>
-                </div>                
-                {{> catalog/facets facets=content.facets}}
+                  </div>            
+                  {{> catalog/facets facets=content.facets}}
               </form>
+
             </div>
           </div>
         </div>
