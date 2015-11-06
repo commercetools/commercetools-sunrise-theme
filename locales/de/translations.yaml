@@ -1,9 +1,16 @@
 checkout:
+  addToNewsletter: Bitte senden Sie mir den
+  agreeToTermsHtml: Ich stimme den <a id="confirmation-termsandconditions-link" href="__url__"> <span class="terms-link">AGB</span></a> zu
   billingAddress: Zahlungsadresse
+  completeMyOrder: Zahlungspflichtig bestellen
   confirmation: Bestätigung
   confirmationPage:
     title: Sicherer Bestellprozess - Versand
   continueCheckout: Weiter
+  continueShopping: Weiter einkaufen
+  discountApply: Anwenden
+  discountTooltip: Weitere Rabatt Informationen...
+  discountPromoInfo: Rabatte
   editMyCart: Warenkorb bearbeiten
   itemsTotal: __count__ Artikel im Warenkorb
   orderDiscount: Bestelldiscount
@@ -14,6 +21,7 @@ checkout:
     title: Sicherer Bestellprozess - Bezahlung
   promoCodeApplied: Gutschein eingelöst
   returningCustomer: Wiederkehrender Besucher
+  rememberMe: Meine Daten speichern für einen Account
   shipping: Versand
   shippingAddress: Versandadresse
   shippingInformation: Versand Information
@@ -28,8 +36,10 @@ checkout:
   thankYouPage:
     title: Vielen Dank für Ihre Bestellung!
   total: Gesamtpreis
+  yourBag: Ihr Einkaufswagen
 common:
   color: Farbe
+  description: Beschreibung
   price: Preis
   quantity: Anzahl
   size: Größe
@@ -77,6 +87,7 @@ form:
   addressOne: Adresse 1
   addressTwo: Adresse 2
   apply: Senden
+  cance: Abbrechen
   city: Stadt
   choose: Bitte wählen
   country: Land
@@ -100,4 +111,5 @@ form:
   postCode: PLZ
   region: Region
   required: Pflichtfeld
+  submit: Absenden
   title: Anrede

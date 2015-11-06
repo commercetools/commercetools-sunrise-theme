@@ -2,44 +2,49 @@
     <div class="row">
         <div class="row text-uppercase hidden-xs cart-items-title">
             <div class="col-sm-6">
-                <span>{{content.cartItems.description}}</span>
+                <span>{{i18n "common.description"}}</span>
             </div>
             <div class="col-sm-2{{#unless editable}} text-center{{/unless}}">
                 <span>{{i18n "common.quantity"}}</span>
             </div>
             <div class="col-sm-2 text-right">
-                <span>{{content.cartItems.price}}</span>
+                <span>{{i18n "common.price"}}</span>
             </div>
             <div class="col-sm-2 text-right">
-                <span>{{content.cartItems.totalPrice}}</span>
+                <span>{{i18n "checkout.total"}}</span>
             </div>
         </div>
     </div>
 
-  {{#each content.cartItems.list}}
+  {{#each cart.lineItems.list}}
       <div class="row single-cart-item">
           <div class="col-sm-1 col-xs-4 product-img-col">
-              <img class="img-responsive cart-item-img" src="{{../meta.assetsPath}}img/blue-jacket.jpg" alt="cart item image">
+              <img class="img-responsive cart-item-img" src="{{image}}" alt="cart item image">
           </div>
           <div class="col-sm-3 col-xs-8 product-info-text">
-              <p class="cart-item-name">{{nameHeadline}}
-                  <br>{{nameSubline}}</p>
+              <p class="cart-item-name">{{name}}
+                  <br>{{description}}</p>
               <p class="grey-p">{{sku}}</p>
-              <p class="cart-color-size">
-                  <!--:color-->
-                {{i18n "common.color"}}:
-                  <span class="black-p" data-model="cartItem.color">{{color}}</span>
-                  <!--:colorend-->
-                  <br>
-                  <!--:size-->
-                {{i18n "common.size"}}:
-                  <span class="black-p" data-model="cartItem.size">{{size}}</span>
-                  <!--:sizeend-->
-              </p>
-              <p class="cart-item-availability grey-p hidden-xs">
-                  <span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
-              <p class="cart-item-availability grey-p visible-xs">
-                  <span class="glyphicon glyphicon-ok-sign"></span>{{available}}</p>
+            {{#if attributes.color}}
+              {{#if attributes.size}}
+                  <p class="cart-color-size">
+                      <!--:color-->
+                    {{i18n "common.color"}}:
+                      <span class="black-p" data-model="cartItem.color">{{attributes.color}}</span>
+                      <!--:colorend-->
+                      <br>
+                      <!--:size-->
+                    {{i18n "common.size"}}:
+                      <span class="black-p" data-model="cartItem.size">{{attributes.size}}</span>
+                      <!--:sizeend-->
+                  </p>
+              {{/if}}
+            {{/if}}
+            {{#unless ../ordered}}
+                <p class="cart-item-availability grey-p">
+                    <span class="glyphicon glyphicon-ok-sign"></span>{{i18n "content.product.available"}}
+                </p>
+            {{/unless}}
           </div>
 
 
@@ -49,51 +54,55 @@
           <div class="col-sm-2 col-xs-12 cart-edit-delete">
               <div class="edit-section-options">
                   <div class="edit-delete-section">
-                      <button type="submit" class="edit-action" id="{{editId}}" href="#">
+                      <button type="submit" class="edit-action" id="cart-edit-button-{{@index}}" href="#">
                         <span>
-                          <img class="cart-action-icon" src="{{../../meta.assetsPath}}img/edit-1.png" alt="delete">{{edit}}
+                          <img class="cart-action-icon" src="{{../../meta.assetsPath}}img/edit-1.png" alt="delete">{{i18n "form.edit"}}
                         </span>
                       </button>
                   </div>
                   <div class="edit-delete-section">
-                      <button type="submit" id="{{deleteId}}" href="#">
+                      <button type="submit" id="cart-delete-button-{{@index}}" href="#">
                         <span>
-                          <img class="cart-action-icon" src="{{../../meta.assetsPath}}img/delete-1.png" alt="delete">{{delete}}
+                          <img class="cart-action-icon" src="{{../../meta.assetsPath}}img/delete-1.png" alt="delete">{{i18n "form.delete"}}
                         </span>
                       </button>
                   </div>
               </div>
-              <div class="edit-section-form">
-                  <select data-model="cartItem.color" class="selector checkout-dropdown">
-                    {{#each availableColors}}
-                        <option value="{{value}}">{{label}}</option>
-                    {{/each}}
-                  </select>
-                  <select data-model="cartItem.size" class="selector checkout-dropdown">
-                    {{#each availableSizes}}
-                        <option value="{{value}}">{{label}}</option>
-                    {{/each}}
-                  </select>
-                  <div class="actions text-right">
-                      <button type="button" class="default-btn cancel-action">
-                          <span class="hidden-xs hidden-md hidden-lg">{{editWidgedCancelXs}}</span>
-                          <span class="hidden-sm">{{editWidgedCancel}}</span>
-                      </button>
-                      <button type="button" class="action-btn update-action">{{editWidgedUpdate}}</button>
+            {{#if availableColors}}
+              {{#if availableSizes}}
+                  <div class="edit-section-form">
+                      <select data-model="cartItem.color" class="selector checkout-dropdown">
+                        {{#each availableColors}}
+                            <option value="{{value}}">{{label}}</option>
+                        {{/each}}
+                      </select>
+                      <select data-model="cartItem.size" class="selector checkout-dropdown">
+                        {{#each availableSizes}}
+                            <option value="{{value}}">{{label}}</option>
+                        {{/each}}
+                      </select>
+                      <div class="actions text-right">
+                          <button type="button" class="default-btn cancel-action">
+                              <span class="hidden-xs hidden-md hidden-lg">{{i18n "form.cancel"}}</span>
+                              <span class="hidden-sm">X</span>
+                          </button>
+                          <button type="button" class="action-btn update-action">{{editWidgedUpdate}}</button>
+                      </div>
                   </div>
-              </div>
+              {{/if}}
+            {{/if}}
           </div>
           <div class="col-sm-2 col-xs-12 clearfix">
               <div class="sm-pull-right visible-xs">
-                  <button type="submit" id="{{cartQuantitySubmitBtnId}}" class="quantity-submit-btn">{{cartQuantitySubmitBtn}}</button>
+                  <button type="submit" id="cart-quantity-submit-btn-{{@index}}" class="quantity-submit-btn">{{i18n "form.submit"}}</button>
               </div>
               <div class="sm-pull-right quantity-spinner">
-                  <span id="{{cartQuantityDecrementId}}" class="input-number-decrement">–</span>
-                  <input id="{{cartQuantityValueId}}" class="input-number" type="text" value="1" min="1" max="10">
-                  <span id="{{cartQuantityIncrementId}}" class="input-number-increment">+</span>
+                  <span id="cart-quantity-decrement-{{@index}}" class="input-number-decrement">–</span>
+                  <input id="cart-quantity-value-{{@index}}" class="input-number" type="text" value="1" min="1" max="10">
+                  <span id="cart-quantity-increment-{{@index}}" class="input-number-increment">+</span>
               </div>
               <div class="sm-pull-right hidden-xs">
-                  <button type="submit" id="{{cartQuantitySubmitBtnId}}" class="quantity-submit-btn">{{cartQuantitySubmitBtn}}</button>
+                  <button type="submit" id="cart-quantity-submit-btn-{{@index}}" class="quantity-submit-btn">{{i18n "form.submit"}}</button>
               </div>
           </div>
       {{else}}
@@ -120,7 +129,7 @@
           <div class="col-sm-2 {{#if editable}}col-xs-12 sm-pull-right{{else}}col-xs-5{{/if}}">
               <div class="text-right cart-item-price">
                   <span class="visible-xs xs-price-title">{{i18n "checkout.total"}}</span>
-                  <span>{{totalPrice}}</span>
+                  <span>{{total}}</span>
               </div>
           </div>
       </div>
@@ -136,11 +145,11 @@
       <div class="row">
           <div class="col-sm-12">
               <div class="text-right promotion-info">
-                  <span class="text-uppercase promo-info-text" title="{{content.cartItems.discountTooltip}}">{{content.cartItems.promoDiscount}}
+                  <span class="text-uppercase promo-info-text" title="{{i18n "checkout.discountTooltip"}}">{{i18n "checkout.discountPromoInfo"}}
                       <img class="info-icon" src="{{meta.assetsPath}}img/information.png" alt="information icon">
                   </span>
                   <input id="promo-code" type="text">
-                  <button id="cart-apply-promocode-btn" class="text-uppercase promo-apply-btn">{{content.cartItems.applyBtn}}</button>
+                  <button id="cart-apply-promocode-btn" class="text-uppercase promo-apply-btn">{{i18n "checkout.discountApply"}}</button>
               </div>
           </div>
       </div>
@@ -152,13 +161,24 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="follow-up">
-                <input id="confirmation-savedetails-input" type="checkbox" name="save my details" value="{{content.rememberMe.value}}" class="remember-me">
-                <span>{{content.rememberMe.text}}</span>
+                <label for="confirmation-savedetails-input">
+                    <input id="confirmation-savedetails-input" type="checkbox" name="save-account-details" value="{{content.newsletter.value}}" class="remember-me">
+                    <span>{{i18n "checkout.rememberMe"}}</span>
+                </label>
                 <br>
-                <input id="confirmation-newsletter-input" type="checkbox" name="add me to newsletter" value="{{content.newsletter.value}}" class="add-to-newsletter">
-                    <span>{{content.newsletter.text}}
-                        <span class="sunrise-newsletter"><a href="{{content.newsletter.url}}">{{content.newsletter.description}}</a></span>
+                <label for="confirmation-newsletter-input">
+                    <input id="confirmation-newsletter-input" type="checkbox" name="add-to-newsletter" value="true" class="add-to-newsletter">
+                    <span>{{i18n "checkout.addToNewsletter"}}
+                        <span class="sunrise-newsletter"><a href="{{content.newsletter.url}}">{{content.newsletter.name}}</a></span>
                     </span>
+                </label>
+                <br>
+                <label for="agree-to-input">
+                    <input id="agree-to-input" type="checkbox" name="agree-terms" value="false" class="agree-terms">
+                    <span>
+                        <span class="sunrise-newsletter">{{i18n "checkout.agreeToTermsHtml" url=content.termsConditions.url}}</span>
+                    </span>
+                </label>
             </div>
         </div>
     </div>
@@ -217,20 +237,11 @@
                     </div>
 
                   {{#if checkoutConfirmation}}
-                    <div class="complete-order">
-                        <a id="confirmation-completeorder-btn" href="{{content.completeOrderBtn.url}}" class="btn complete-order-btn">{{content.completeOrderBtn.text}}</a>
-                        <br>
-                        <div class="agree-to">
-                            <span class="">{{content.termsConditions.text}} </span>
-                            <a id="confirmation-termsandconditions-link" href="{{content.termsConditions.url}}">
-                                <span class="terms-link">{{content.termsConditions.linkText}}</span>
-                            </a>
-                        </div>
-                    </div>
+                      <div class="complete-order">
+                          <a id="confirmation-completeorder-btn" class="btn complete-order-btn">{{i18n "checkout.completeMyOrder"}}</a>
+                          <br>
+                      </div>
                   {{/if}}
-
-
-
                 </div>
             </div>
         </div>

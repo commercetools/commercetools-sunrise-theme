@@ -16,8 +16,8 @@
             <span>
               <img class="bag-icon-lg" src="{{meta.assetsPath}}img/hand-bag-2-black.png" alt="bag icon">
             </span>
-            <span class="text-uppercase your-bag-txt">{{content.yourBag}}</span>
-            <span class="items-total-txt">{{content.itemsTotal}}</span>
+            <span class="text-uppercase your-bag-txt">{{i18n "checkout.yourBag"}}: </span>
+            <span class="items-total-txt">{{i18n "checkout.itemsTotal" count=content.cart.itemsTotal}}</span>
           </div>
         </div>
         <div class="col-sm-4 col-xs-12">
@@ -49,7 +49,7 @@
         <div class="col-sm-6 col-xs-12 hidden-xs">
           <div class="checkout-now-bottom">
             <a href="#">
-              <button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">{{content.checkoutBtn}}</button>
+              <button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">{{i18n "common.checkout"}}</button>
             </a>
           </div>
         </div>

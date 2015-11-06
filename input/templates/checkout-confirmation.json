@@ -1,90 +1,35 @@
 {
-	"header" : { "$ref" : "common/checkout-header.json" },
-	"footer" : { "$ref" : "common/checkout-footer.json" },
-  "content" : {
-      "cart" : { "$ref" : "checkout/cart.json" },
-      "stepWidget" : {
-          "confirmationStepActive": true
-      },
-      "shippingAddress" : { "$ref" : "checkout/shipping-address.json" },
-      "billingAddress" : { "$ref" : "checkout/billing-address.json" },
-		"shippingMethod" : {
-			"text" : "Shipping Method",
-			"description" : "DHL Standard - Delivery 3-5 Days"
-		},
-		"paymentDetails" : {
-			"text" : "Payment Details",
-			"type" : "Credit Card",
-			"name" : "Bruce Wayne",
-			"card" : "Visa",
-			"number" : "**** **** **** **56",
-			"date" : "09.18"
-		},
-    "cartItems" : {
-      "description" : "Product Description",
-      "price" : "Price",
-      "totalPrice" : "Total Price",
-      "list" : [
-        {
-          "nameHeadline" : "Enditatem Product Name",
-          "nameSubline" : "Optional Line Two",
-          "sku" : "Sunrise #SUN123456",
-          "color" : "Navy Blue",
-          "size" : "M",
-          "available" : "Available",
-          "edit" : "Edit",
-          "delete" : "Delete",
-          "quantity" : 2,
-          "priceOld" : "100,00 €",
-          "price" : "49,00 €",
-          "totalPrice" : "49,00 €"
+    "header" : { "$ref" : "common/checkout-header.json" },
+    "footer" : { "$ref" : "common/checkout-footer.json" },
+    "content" : {
+        "cart" : { "$ref" : "checkout/cart.json" },
+        "stepWidget" : {
+            "confirmationStepActive": true
         },
-        {
-          "nameHeadline" : "Enditatem Product Name",
-          "nameSubline" : "Optional Line Two",
-          "sku" : "Sunrise #SUN123456",
-          "color" : "Navy Blue",
-          "size" : "M",
-          "available" : "Available",
-          "edit" : "Edit",
-          "delete" : "Delete",
-          "quantity" : 3,
-          "price" : "49,00 €",
-          "totalPrice" : "49,00 €"
+        "shippingAddress" : { "$ref" : "checkout/shipping-address.json" },
+        "billingAddress" : { "$ref" : "checkout/billing-address.json" },
+        "shippingMethod" : {
+            "text" : "Shipping Method",
+            "description" : "DHL Standard - Delivery 3-5 Days"
+        },
+        "paymentDetails" : {
+            "text" : "Payment Details",
+            "type" : "Credit Card",
+            "name" : "Bruce Wayne",
+            "card" : "Visa",
+            "number" : "**** **** **** **56",
+            "date" : "09.18"
+        },
+        "newsletter" : {
+            "name" : "SUNRISE Newsletter",
+            "value" : "true",
+            "url" : "newsletter.html"
+        },
+        "termsConditions" : {
+            "url" : "terms.html"
         }
-      ]
     },
-		"rememberMe" : {
-			"text" : "Save my details to create my personal account at SUNRISE",
-			"value" : ""
-		},
-		"newsletter" : {
-			"text" : "Please add me to the",
-			"description" : "SUNRISE Newsletter",
-			"value" : "",
-			"url" : ""
-		},
-		"totalSum" : {
-			"subtotal" : "107,00 €",
-			"orderDiscountTitle" : "Order Discount",
-			"orderDiscount" : "0,00 €",
-			"deliveryOption" : "Standard Delivery",
-			"delivery" : "0,00 €",
-			"tax" : "20,00 €",
-			"orderTotalTitle" : "Order Total",
-			"orderTotal" : "117,00 €"
-		},
-		"completeOrderBtn" : {
-			"text" : "Complete my order",
-			"url" : ""
-		},
-		"termsConditions" : {
-			"text" : "I agree to the",
-			"linkText" : "Terms and Conditions",
-			"url" : ""
-		}
-  },
-  "meta" : {
-	"assetsPath": "assets/"
-  }
+    "meta" : {
+        "assetsPath": "assets/"
+    }
 }

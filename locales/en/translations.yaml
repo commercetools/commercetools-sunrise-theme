@@ -1,9 +1,16 @@
 checkout:
+  addToNewsletter: Please add me to the
+  agreeToTermsHtml: I agree to the <a id="confirmation-termsandconditions-link" href="__url__"> <span class="terms-link">Terms and Conditions</span></a>
   billingAddress: Billing Address
+  completeMyOrder: Complete My Order
   confirmation: confirmation
   confirmationPage:
     title: Secure Checkout - Confirmation
   continueCheckout: Continue Checkout
+  continueShopping: Continue Checkout
+  discountApply: apply
+  discountTooltip: Discount options additional information...
+  discountPromoInfo: PROMOTIONAL DISCOUNT INFO
   editMyCart: Edit my shopping cart
   itemsTotal: __count__ item in total
   itemsTotal_plural: __count__ items in total
@@ -15,6 +22,7 @@ checkout:
     title: Secure Checkout - Payment
   promoCodeApplied: Promotional Code Applied
   returningCustomer: Returning Customer
+  rememberMe: Save my details to create my personal account at SUNRISE
   shipping: shipping
   shippingAddress: Shipping Address
   shippingInformation: Shipping Information
@@ -30,8 +38,11 @@ checkout:
   thankYouPage:
     title: Thank you for your order!
   total: Total
+  yourBag: Your Bag
 common:
   color: Color
+  checkout: Checkout
+  description: Description
   price: Price
   quantity: quantity
   size: Size
@@ -107,6 +118,7 @@ form:
   addressTwo: Address 2
   apply: Apply
   city: City
+  cancel: Cancel
   choose: Choose
   country: Country
   edit: Edit
@@ -129,4 +141,5 @@ form:
   postCode: Post Code
   region: Region
   required: Required
+  submit: Submit
   title: Title
