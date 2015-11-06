@@ -1131,6 +1131,19 @@
                 }
               ]
             },
+            "variants": {
+              "red-S": "variant1",
+              "red-M": "variant2",
+              "red-L": "variant3",
+              "blue-S": "variant4",
+              "blue-L": "variant5",
+              "green-S": "variant6",
+              "green-M": "variant7"
+            },
+            "variantIdentifiers": [
+              "color",
+              "size"
+            ],
             "attributes": [
               {
                 "name": "Color",
@@ -1138,20 +1151,41 @@
                 "list": [
                   {
                     "text": "Red",
-                    "value": "",
+                    "value": "red",
                     "selected": false
                   },
                   {
                     "text": "Blue",
-                    "value": "",
+                    "value": "blue",
                     "selected": false
                   },
                   {
                     "text": "Green",
-                    "value": "",
+                    "value": "green",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
               },
               {
                 "name": "Size",
@@ -1159,20 +1193,41 @@
                 "list": [
                   {
                     "text": "S",
-                    "value": "",
+                    "value": "S",
                     "selected": false
                   },
                   {
                     "text": "M",
-                    "value": "",
+                    "value": "M",
                     "selected": false
                   },
                   {
                     "text": "L",
-                    "value": "",
+                    "value": "L",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
               }
             ]
           },
@@ -1229,6 +1284,19 @@
                 }
               ]
             },
+            "variants": {
+              "red-S": "variant1",
+              "red-M": "variant2",
+              "red-L": "variant3",
+              "blue-S": "variant4",
+              "blue-L": "variant5",
+              "green-S": "variant6",
+              "green-M": "variant7"
+            },
+            "variantIdentifiers": [
+              "color",
+              "size"
+            ],
             "attributes": [
               {
                 "name": "Color",
@@ -1236,20 +1304,41 @@
                 "list": [
                   {
                     "text": "Red",
-                    "value": "",
+                    "value": "red",
                     "selected": false
                   },
                   {
                     "text": "Blue",
-                    "value": "",
+                    "value": "blue",
                     "selected": false
                   },
                   {
                     "text": "Green",
-                    "value": "",
+                    "value": "green",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
               },
               {
                 "name": "Size",
@@ -1257,20 +1346,41 @@
                 "list": [
                   {
                     "text": "S",
-                    "value": "",
+                    "value": "S",
                     "selected": false
                   },
                   {
                     "text": "M",
-                    "value": "",
+                    "value": "M",
                     "selected": false
                   },
                   {
                     "text": "L",
-                    "value": "",
+                    "value": "L",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
               }
             ]
           },
@@ -1327,6 +1437,19 @@
                 }
               ]
             },
+            "variants": {
+              "red-S": "variant1",
+              "red-M": "variant2",
+              "red-L": "variant3",
+              "blue-S": "variant4",
+              "blue-L": "variant5",
+              "green-S": "variant6",
+              "green-M": "variant7"
+            },
+            "variantIdentifiers": [
+              "color",
+              "size"
+            ],
             "attributes": [
               {
                 "name": "Color",
@@ -1334,20 +1457,41 @@
                 "list": [
                   {
                     "text": "Red",
-                    "value": "",
+                    "value": "red",
                     "selected": false
                   },
                   {
                     "text": "Blue",
-                    "value": "",
+                    "value": "blue",
                     "selected": false
                   },
                   {
                     "text": "Green",
-                    "value": "",
+                    "value": "green",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
               },
               {
                 "name": "Size",
@@ -1355,20 +1499,41 @@
                 "list": [
                   {
                     "text": "S",
-                    "value": "",
+                    "value": "S",
                     "selected": false
                   },
                   {
                     "text": "M",
-                    "value": "",
+                    "value": "M",
                     "selected": false
                   },
                   {
                     "text": "L",
-                    "value": "",
+                    "value": "L",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
               }
             ]
           },
@@ -1425,6 +1590,19 @@
                 }
               ]
             },
+            "variants": {
+              "red-S": "variant1",
+              "red-M": "variant2",
+              "red-L": "variant3",
+              "blue-S": "variant4",
+              "blue-L": "variant5",
+              "green-S": "variant6",
+              "green-M": "variant7"
+            },
+            "variantIdentifiers": [
+              "color",
+              "size"
+            ],
             "attributes": [
               {
                 "name": "Color",
@@ -1432,20 +1610,41 @@
                 "list": [
                   {
                     "text": "Red",
-                    "value": "",
+                    "value": "red",
                     "selected": false
                   },
                   {
                     "text": "Blue",
-                    "value": "",
+                    "value": "blue",
                     "selected": false
                   },
                   {
                     "text": "Green",
-                    "value": "",
+                    "value": "green",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
               },
               {
                 "name": "Size",
@@ -1453,20 +1652,41 @@
                 "list": [
                   {
                     "text": "S",
-                    "value": "",
+                    "value": "S",
                     "selected": false
                   },
                   {
                     "text": "M",
-                    "value": "",
+                    "value": "M",
                     "selected": false
                   },
                   {
                     "text": "L",
-                    "value": "",
+                    "value": "L",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
               }
             ]
           },
@@ -1523,6 +1743,19 @@
                 }
               ]
             },
+            "variants": {
+              "red-S": "variant1",
+              "red-M": "variant2",
+              "red-L": "variant3",
+              "blue-S": "variant4",
+              "blue-L": "variant5",
+              "green-S": "variant6",
+              "green-M": "variant7"
+            },
+            "variantIdentifiers": [
+              "color",
+              "size"
+            ],
             "attributes": [
               {
                 "name": "Color",
@@ -1530,20 +1763,41 @@
                 "list": [
                   {
                     "text": "Red",
-                    "value": "",
+                    "value": "red",
                     "selected": false
                   },
                   {
                     "text": "Blue",
-                    "value": "",
+                    "value": "blue",
                     "selected": false
                   },
                   {
                     "text": "Green",
-                    "value": "",
+                    "value": "green",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
               },
               {
                 "name": "Size",
@@ -1551,20 +1805,41 @@
                 "list": [
                   {
                     "text": "S",
-                    "value": "",
+                    "value": "S",
                     "selected": false
                   },
                   {
                     "text": "M",
-                    "value": "",
+                    "value": "M",
                     "selected": false
                   },
                   {
                     "text": "L",
-                    "value": "",
+                    "value": "L",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
               }
             ]
           },
@@ -1621,6 +1896,19 @@
                 }
               ]
             },
+            "variants": {
+              "red-S": "variant1",
+              "red-M": "variant2",
+              "red-L": "variant3",
+              "blue-S": "variant4",
+              "blue-L": "variant5",
+              "green-S": "variant6",
+              "green-M": "variant7"
+            },
+            "variantIdentifiers": [
+              "color",
+              "size"
+            ],
             "attributes": [
               {
                 "name": "Color",
@@ -1628,20 +1916,41 @@
                 "list": [
                   {
                     "text": "Red",
-                    "value": "",
+                    "value": "red",
                     "selected": false
                   },
                   {
                     "text": "Blue",
-                    "value": "",
+                    "value": "blue",
                     "selected": false
                   },
                   {
                     "text": "Green",
-                    "value": "",
+                    "value": "green",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
               },
               {
                 "name": "Size",
@@ -1649,20 +1958,41 @@
                 "list": [
                   {
                     "text": "S",
-                    "value": "",
+                    "value": "S",
                     "selected": false
                   },
                   {
                     "text": "M",
-                    "value": "",
+                    "value": "M",
                     "selected": false
                   },
                   {
                     "text": "L",
-                    "value": "",
+                    "value": "L",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
               }
             ]
           },
@@ -1719,6 +2049,19 @@
                 }
               ]
             },
+            "variants": {
+              "red-S": "variant1",
+              "red-M": "variant2",
+              "red-L": "variant3",
+              "blue-S": "variant4",
+              "blue-L": "variant5",
+              "green-S": "variant6",
+              "green-M": "variant7"
+            },
+            "variantIdentifiers": [
+              "color",
+              "size"
+            ],
             "attributes": [
               {
                 "name": "Color",
@@ -1726,20 +2069,41 @@
                 "list": [
                   {
                     "text": "Red",
-                    "value": "",
+                    "value": "red",
                     "selected": false
                   },
                   {
                     "text": "Blue",
-                    "value": "",
+                    "value": "blue",
                     "selected": false
                   },
                   {
                     "text": "Green",
-                    "value": "",
+                    "value": "green",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
               },
               {
                 "name": "Size",
@@ -1747,20 +2111,41 @@
                 "list": [
                   {
                     "text": "S",
-                    "value": "",
+                    "value": "S",
                     "selected": false
                   },
                   {
                     "text": "M",
-                    "value": "",
+                    "value": "M",
                     "selected": false
                   },
                   {
                     "text": "L",
-                    "value": "",
+                    "value": "L",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
               }
             ]
           },
@@ -1817,6 +2202,19 @@
                 }
               ]
             },
+            "variants": {
+              "red-S": "variant1",
+              "red-M": "variant2",
+              "red-L": "variant3",
+              "blue-S": "variant4",
+              "blue-L": "variant5",
+              "green-S": "variant6",
+              "green-M": "variant7"
+            },
+            "variantIdentifiers": [
+              "color",
+              "size"
+            ],
             "attributes": [
               {
                 "name": "Color",
@@ -1824,20 +2222,41 @@
                 "list": [
                   {
                     "text": "Red",
-                    "value": "",
+                    "value": "red",
                     "selected": false
                   },
                   {
                     "text": "Blue",
-                    "value": "",
+                    "value": "blue",
                     "selected": false
                   },
                   {
                     "text": "Green",
-                    "value": "",
+                    "value": "green",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
               },
               {
                 "name": "Size",
@@ -1845,20 +2264,41 @@
                 "list": [
                   {
                     "text": "S",
-                    "value": "",
+                    "value": "S",
                     "selected": false
                   },
                   {
                     "text": "M",
-                    "value": "",
+                    "value": "M",
                     "selected": false
                   },
                   {
                     "text": "L",
-                    "value": "",
+                    "value": "L",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
               }
             ]
           },
@@ -1915,6 +2355,19 @@
                 }
               ]
             },
+            "variants": {
+              "red-S": "variant1",
+              "red-M": "variant2",
+              "red-L": "variant3",
+              "blue-S": "variant4",
+              "blue-L": "variant5",
+              "green-S": "variant6",
+              "green-M": "variant7"
+            },
+            "variantIdentifiers": [
+              "color",
+              "size"
+            ],
             "attributes": [
               {
                 "name": "Color",
@@ -1922,20 +2375,41 @@
                 "list": [
                   {
                     "text": "Red",
-                    "value": "",
+                    "value": "red",
                     "selected": false
                   },
                   {
                     "text": "Blue",
-                    "value": "",
+                    "value": "blue",
                     "selected": false
                   },
                   {
                     "text": "Green",
-                    "value": "",
+                    "value": "green",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
               },
               {
                 "name": "Size",
@@ -1943,20 +2417,41 @@
                 "list": [
                   {
                     "text": "S",
-                    "value": "",
+                    "value": "S",
                     "selected": false
                   },
                   {
                     "text": "M",
-                    "value": "",
+                    "value": "M",
                     "selected": false
                   },
                   {
                     "text": "L",
-                    "value": "",
+                    "value": "L",
                     "selected": false
                   }
-                ]
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
               }
             ]
           },

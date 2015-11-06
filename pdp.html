@@ -494,30 +494,32 @@
                   <li>
                     <p class="text-uppercase">Color</p>
                     <div>
-                      <select name="attribute-color" class="select-product-detail">
+                      <select name="attribute-color" class="select-product-detail" data-cross-select="{&quot;red&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;,&quot;L&quot;]},&quot;blue&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;L&quot;]},&quot;green&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
                         <option>Choose Color</option>
-                          <option value="" >Red</option>
-                          <option value="" >Blue</option>
-                          <option value="" >Green</option>
+                          <option value="red" >Red</option>
+                          <option value="blue" >Blue</option>
+                          <option value="green" >Green</option>
                       </select>
                     </div>
                     <div class="error-message hidden">
                       content.messages.requiredField
                     </div>
-                  </li>        <li>
+                  </li>
+                  <li>
                     <p class="text-uppercase">Size</p>
                     <div>
-                      <select name="attribute-size" class="select-product-detail">
+                      <select name="attribute-size" class="select-product-detail" data-cross-select="{&quot;S&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;]},&quot;M&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;green&quot;]},&quot;L&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
                         <option>Choose Size</option>
-                          <option value="" >S</option>
-                          <option value="" >M</option>
-                          <option value="" >L</option>
+                          <option value="S" >S</option>
+                          <option value="M" >M</option>
+                          <option value="L" >L</option>
                       </select>
                     </div>
                     <div class="error-message hidden">
                       content.messages.requiredField
                     </div>
-                  </li>      <li class="size-guide-li">
+                  </li>
+                <li class="size-guide-li">
                   <a href="#" id="pdp-size-guide" data-toggle="modal" data-target="#size-guide">
                     <span class="size-guide">
                       <img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="Size Guide">
@@ -1016,30 +1018,32 @@
                                 <li>
                                   <p class="text-uppercase">Color</p>
                                   <div>
-                                    <select name="attribute-color" class="select-product-detail">
+                                    <select name="attribute-color" class="select-product-detail" data-cross-select="{&quot;red&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;,&quot;L&quot;]},&quot;blue&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;L&quot;]},&quot;green&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
                                       <option>Choose Color</option>
-                                        <option value="" >Red</option>
-                                        <option value="" >Blue</option>
-                                        <option value="" >Green</option>
+                                        <option value="red" >Red</option>
+                                        <option value="blue" >Blue</option>
+                                        <option value="green" >Green</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
                                     content.messages.requiredField
                                   </div>
-                                </li>        <li>
+                                </li>
+                                <li>
                                   <p class="text-uppercase">Size</p>
                                   <div>
-                                    <select name="attribute-size" class="select-product-detail">
+                                    <select name="attribute-size" class="select-product-detail" data-cross-select="{&quot;S&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;]},&quot;M&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;green&quot;]},&quot;L&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
                                       <option>Choose Size</option>
-                                        <option value="" >S</option>
-                                        <option value="" >M</option>
-                                        <option value="" >L</option>
+                                        <option value="S" >S</option>
+                                        <option value="M" >M</option>
+                                        <option value="L" >L</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
                                     content.messages.requiredField
                                   </div>
-                                </li>      <li class="size-guide-li">
+                                </li>
+                              <li class="size-guide-li">
                                 <a href="#" id="pdp-size-guide0" data-toggle="modal" data-target="#size-guide">
                                   <span class="size-guide">
                                     <img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="Size Guide">
@@ -1473,30 +1477,32 @@
                                 <li>
                                   <p class="text-uppercase">Color</p>
                                   <div>
-                                    <select name="attribute-color" class="select-product-detail">
+                                    <select name="attribute-color" class="select-product-detail" data-cross-select="{&quot;red&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;,&quot;L&quot;]},&quot;blue&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;L&quot;]},&quot;green&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
                                       <option>Choose Color</option>
-                                        <option value="" >Red</option>
-                                        <option value="" >Blue</option>
-                                        <option value="" >Green</option>
+                                        <option value="red" >Red</option>
+                                        <option value="blue" >Blue</option>
+                                        <option value="green" >Green</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
                                     content.messages.requiredField
                                   </div>
-                                </li>        <li>
+                                </li>
+                                <li>
                                   <p class="text-uppercase">Size</p>
                                   <div>
-                                    <select name="attribute-size" class="select-product-detail">
+                                    <select name="attribute-size" class="select-product-detail" data-cross-select="{&quot;S&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;]},&quot;M&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;green&quot;]},&quot;L&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
                                       <option>Choose Size</option>
-                                        <option value="" >S</option>
-                                        <option value="" >M</option>
-                                        <option value="" >L</option>
+                                        <option value="S" >S</option>
+                                        <option value="M" >M</option>
+                                        <option value="L" >L</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
                                     content.messages.requiredField
                                   </div>
-                                </li>      <li class="size-guide-li">
+                                </li>
+                              <li class="size-guide-li">
                                 <a href="#" id="pdp-size-guide1" data-toggle="modal" data-target="#size-guide">
                                   <span class="size-guide">
                                     <img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="Size Guide">
@@ -1930,30 +1936,32 @@
                                 <li>
                                   <p class="text-uppercase">Color</p>
                                   <div>
-                                    <select name="attribute-color" class="select-product-detail">
+                                    <select name="attribute-color" class="select-product-detail" data-cross-select="{&quot;red&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;,&quot;L&quot;]},&quot;blue&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;L&quot;]},&quot;green&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
                                       <option>Choose Color</option>
-                                        <option value="" >Red</option>
-                                        <option value="" >Blue</option>
-                                        <option value="" >Green</option>
+                                        <option value="red" >Red</option>
+                                        <option value="blue" >Blue</option>
+                                        <option value="green" >Green</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
                                     content.messages.requiredField
                                   </div>
-                                </li>        <li>
+                                </li>
+                                <li>
                                   <p class="text-uppercase">Size</p>
                                   <div>
-                                    <select name="attribute-size" class="select-product-detail">
+                                    <select name="attribute-size" class="select-product-detail" data-cross-select="{&quot;S&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;]},&quot;M&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;green&quot;]},&quot;L&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
                                       <option>Choose Size</option>
-                                        <option value="" >S</option>
-                                        <option value="" >M</option>
-                                        <option value="" >L</option>
+                                        <option value="S" >S</option>
+                                        <option value="M" >M</option>
+                                        <option value="L" >L</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
                                     content.messages.requiredField
                                   </div>
-                                </li>      <li class="size-guide-li">
+                                </li>
+                              <li class="size-guide-li">
                                 <a href="#" id="pdp-size-guide2" data-toggle="modal" data-target="#size-guide">
                                   <span class="size-guide">
                                     <img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="Size Guide">
@@ -2387,30 +2395,32 @@
                                 <li>
                                   <p class="text-uppercase">Color</p>
                                   <div>
-                                    <select name="attribute-color" class="select-product-detail">
+                                    <select name="attribute-color" class="select-product-detail" data-cross-select="{&quot;red&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;,&quot;L&quot;]},&quot;blue&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;L&quot;]},&quot;green&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
                                       <option>Choose Color</option>
-                                        <option value="" >Red</option>
-                                        <option value="" >Blue</option>
-                                        <option value="" >Green</option>
+                                        <option value="red" >Red</option>
+                                        <option value="blue" >Blue</option>
+                                        <option value="green" >Green</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
                                     content.messages.requiredField
                                   </div>
-                                </li>        <li>
+                                </li>
+                                <li>
                                   <p class="text-uppercase">Size</p>
                                   <div>
-                                    <select name="attribute-size" class="select-product-detail">
+                                    <select name="attribute-size" class="select-product-detail" data-cross-select="{&quot;S&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;]},&quot;M&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;green&quot;]},&quot;L&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
                                       <option>Choose Size</option>
-                                        <option value="" >S</option>
-                                        <option value="" >M</option>
-                                        <option value="" >L</option>
+                                        <option value="S" >S</option>
+                                        <option value="M" >M</option>
+                                        <option value="L" >L</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
                                     content.messages.requiredField
                                   </div>
-                                </li>      <li class="size-guide-li">
+                                </li>
+                              <li class="size-guide-li">
                                 <a href="#" id="pdp-size-guide3" data-toggle="modal" data-target="#size-guide">
                                   <span class="size-guide">
                                     <img class="size-guide-thumb" src="assets/img/ruler-1.png" alt="Size Guide">
