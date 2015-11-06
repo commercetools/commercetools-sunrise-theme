@@ -6,10 +6,60 @@
             "shippingStepActive": true
         },
         "shippingForm" : {
-            "chooseTitle" : { "$ref" : "checkout/choose-title.json" },
-            "chooseCountry" : { "$ref" : "checkout/choose-country.json" },
-            "diffChooseCountry" :  { "$ref" : "checkout/choose-country.json" },
-            "delivery" : { "$ref" : "checkout/shipping-methods.json" }
+            "billingAddressDifferentToBillingAddress": true,
+            "shippingAddress" : {
+                "salutations" : { "$ref" : "checkout/salutations.json" },
+                "firstName" : "John",
+                "lastName" : "Smith",
+                "streetName" : "Tardisstreet",
+                "streetNumber" : "1",
+                "city" : "London",
+                "region" : "London (Region)",
+                "postalCode" : "123456",
+                "countries" : { "$ref" : "checkout/choose-country.json" },
+                "phone" : "+49 123 4567899",
+                "email" : "thedoctor@commercetools.com"
+            },
+            "billingAddress" : {
+                "salutations" : { "$ref" : "checkout/salutations.json" },
+                "firstName" : "John",
+                "lastName" : "Smith (billing)",
+                "streetName" : "Duststreet 500",
+                "additionalAddressInfo" : "dust",
+                "city" : "",
+                "region" : "Utah",
+                "postalCode" : "56789",
+                "phone" : "+49 123 4567899 (billing)",
+                "email" : "billing@commercetools.com",
+                "countries" : {  "list" : [
+                    {
+                        "text" : "United Kingdom",
+                        "value" : "UK",
+                        "selected" : false
+                    },
+                    {
+                        "text" : "Germany",
+                        "value" : "DE",
+                        "selected" : false
+                    },
+                    {
+                        "text" : "France",
+                        "value" : "FR",
+                        "selected" : false
+                    },
+                    {
+                        "text" : "Spain",
+                        "value" : "ES",
+                        "selected" : false
+                    },
+                    {
+                        "text" : "USA",
+                        "value" : "US",
+                        "selected" : true
+                    }
+                ] }
+            },
+            "shippingMethods" : { "$ref" : "checkout/shipping-methods.json" }
         },
         "cart" : { "$ref" : "checkout/cart.json" }
     },

@@ -3,6 +3,5 @@
     "value" : "dhl-standard",
     "selected" : true,
     "deliveryDays" : "Delivery: 3-5 Days",
-    "url" : "",
-    "id" : "shipping-delivery-standard"
+    "url" : ""
 }

@@ -6,16 +6,14 @@
             "value" : "dhl-express",
             "selected" : false,
             "deliveryDays" : "Delivery: 3-5 Days",
-            "url" : "",
-            "id" : "shipping-delivery-express"
+            "url" : ""
         },
         {
             "text" : "DHL Overnight",
             "value" : "dhl-overnight",
             "selected" : false,
             "deliveryDays" : "Delivery: 3-5 Days",
-            "url" : "",
-            "id" : "shipping-delivery-overnight"
+            "url" : ""
         }
     ]
 }

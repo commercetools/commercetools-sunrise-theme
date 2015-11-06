@@ -3,7 +3,7 @@
         {
             "text" : "Mr.",
             "value" : "Mr.",
-            "selected" : false
+            "selected" : true
         },
         {
             "text" : "Mrs.",
