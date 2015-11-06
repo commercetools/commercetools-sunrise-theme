@@ -64,7 +64,7 @@
                   </div>
                   {{> catalog/results-summary pagination=content.pagination}}
                 </div>
-                <div class="col-xs-4 hidden-xs text-center pagination">
+                <div class="col-xs-4 hidden-xs text-center custom-pagination">
                   <ul class="page-numbers">
                     {{> catalog/pagination pagination=content.pagination}}
                   </ul>
@@ -82,7 +82,7 @@
               {{> catalog/product-list products=content.products}}
             </div>
             <div class="row">
-              <div class="col-xs-12 text-center pagination">
+              <div class="col-sm-9 col-sm-offset-3 col-xs-12 text-center custom-pagination">
                 <ul class="page-numbers page-numbers-bottom">
                   {{> catalog/pagination pagination=content.pagination}}
                 </ul>
