@@ -6,20 +6,6 @@
         "stepWidget" : {
             "confirmationStepActive": true
         },
-        "shippingAddress" : { "$ref" : "checkout/shipping-address.json" },
-        "billingAddress" : { "$ref" : "checkout/billing-address.json" },
-        "shippingMethod" : {
-            "text" : "Shipping Method",
-            "description" : "DHL Standard - Delivery 3-5 Days"
-        },
-        "paymentDetails" : {
-            "text" : "Payment Details",
-            "type" : "Credit Card",
-            "name" : "Bruce Wayne",
-            "card" : "Visa",
-            "number" : "**** **** **** **56",
-            "date" : "09.18"
-        },
         "newsletter" : {
             "name" : "SUNRISE Newsletter",
             "value" : "true",
