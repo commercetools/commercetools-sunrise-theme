@@ -13,9 +13,9 @@
   {{#each content.paymentOption.list}}
       <div class="col-lg-3 col-md-4 col-sm-4">
           <div class="payment-type">
-              <label for="{{id}}">
+              <label for="payment-type-{{value}}">
                 {{#if image}}<img src="{{image}}" class="payment-type-icon" alt="{{text}}">{{/if}}<br>
-                  <input id="{{id}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}
+                  <input id="payment-type-{{value}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}
               </label>
           </div>
       </div>
@@ -25,21 +25,22 @@
     <div class="col-md-6 col-sm-8">
         <div class="col-sm-12">
             <div class="name-on-card">
-                <span class="text-uppercase">{{content.cardName}}*</span><br>
+                <span class="text-uppercase">{{i18n "checkout.paymentPage.cardName"}}*</span><br>
                 <input id="payment-cardname-input" class="checkout-input-field" type="text">
             </div>
           {{> common/required-error-message}}
         </div>
         <div class="col-sm-12">
             <div class="card-number">
-                <span class="text-uppercase">{{content.cardNumber}}*</span><br>
+                <span class="text-uppercase">{{i18n "checkout.paymentPage.cardNumber"}}*</span><br>
                 <input id="payment-cardnumber-input" class="checkout-input-field card-number-input" type="text">
             </div>
         </div>
         <div class="col-sm-6">
             <div class="expiry-date">
-                <span class="text-uppercase">{{content.expiryDateTitle}}*</span><br>
+                <span class="text-uppercase">{{i18n "checkout.paymentPage.expiryDateTitle"}}*</span><br>
                 <select id="payment-expirymonth-select" class="checkout-dropdown">
+                    <option>{{i18n "form.month"}}</option>
                   {{#each content.expiryDate.list}}
                       <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                   {{/each}}
@@ -50,6 +51,7 @@
             <div class="expiry-year">
                 <br>
                 <select id="payment-expiryyear-select" class="checkout-dropdown">
+                    <option>{{i18n "form.year"}}</option>
                   {{#each content.year.list}}
                       <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
                   {{/each}}

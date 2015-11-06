@@ -18,8 +18,12 @@ checkout:
   payment: Zahlung
   paymentInformation: Zahlungsdetails
   paymentPage:
+    cardName: Name on credit card
+    cardNumber: Credit card number
+    expiryDateTitle: Expiry data
     title: Sicherer Bestellprozess - Bezahlung
     paymentOptionsTitle: Bitte wählen Sie eine Zahlungsart aus
+    securityCode: Security Code
   promoCodeApplied: Gutschein eingelöst
   returningCustomer: Wiederkehrender Besucher
   rememberMe: Meine Daten speichern für einen Account
@@ -99,6 +103,7 @@ form:
   firstName: Vorname
   formHasErrorsFlash: Das Formular enthält Fehler.
   lastName: Nachname
+  month: Monat
   personTitles:
     mr: Herr
   personTitles:
@@ -114,3 +119,4 @@ form:
   required: Pflichtfeld
   submit: Absenden
   title: Anrede
+  year: Jahr

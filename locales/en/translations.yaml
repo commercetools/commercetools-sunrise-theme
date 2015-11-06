@@ -19,8 +19,12 @@ checkout:
   payment: payment
   paymentInformation: Payment Details
   paymentPage:
+    cardName: Name on credit card
+    cardNumber: Credit card number
+    expiryDateTitle: Expiry data
     title: Secure Checkout - Payment
     paymentOptionsTitle: Please provide one of the following payment options
+    securityCode: Security Code
   promoCodeApplied: Promotional Code Applied
   returningCustomer: Returning Customer
   rememberMe: Save my details to create my personal account at SUNRISE
@@ -129,6 +133,7 @@ form:
   firstName: First Name
   formHasErrorsFlash: The form contains errors.
   lastName: Last Name
+  month: Month
   personTitles:
     mr: Mr.
   personTitles:
@@ -144,3 +149,4 @@ form:
   required: Required
   submit: Submit
   title: Title
+  year: Year
