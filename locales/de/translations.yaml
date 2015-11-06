@@ -19,6 +19,7 @@ checkout:
   paymentInformation: Zahlungsdetails
   paymentPage:
     title: Sicherer Bestellprozess - Bezahlung
+    paymentOptionsTitle: Bitte wählen Sie eine Zahlungsart aus
   promoCodeApplied: Gutschein eingelöst
   returningCustomer: Wiederkehrender Besucher
   rememberMe: Meine Daten speichern für einen Account
