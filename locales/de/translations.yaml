@@ -24,6 +24,7 @@ checkout:
     title: Sicherer Bestellprozess - Bezahlung
     paymentOptionsTitle: Bitte wählen Sie eine Zahlungsart aus
     securityCode: Security Code
+    securityCodeTooltip: Normalerweise befindet sich der Code auf der Rückseite.
   promoCodeApplied: Gutschein eingelöst
   returningCustomer: Wiederkehrender Besucher
   rememberMe: Meine Daten speichern für einen Account

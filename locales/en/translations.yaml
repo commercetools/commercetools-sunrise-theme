@@ -25,6 +25,7 @@ checkout:
     title: Secure Checkout - Payment
     paymentOptionsTitle: Please provide one of the following payment options
     securityCode: Security Code
+    securityCodeTooltip: normally you find it on the back of your card
   promoCodeApplied: Promotional Code Applied
   returningCustomer: Returning Customer
   rememberMe: Save my details to create my personal account at SUNRISE
