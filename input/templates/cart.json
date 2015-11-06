@@ -1,66 +1,11 @@
 {
-	"header" : { "$ref" : "common/header.json" },
-	"footer" : { "$ref" : "common/footer.json" },
-  "content" : {
-      "cart" : { "$ref" : "checkout/cart.json" },
-    "checkoutBtn" : "Checkout now",
-    "continueShoppingBtn" : "Continue Shopping",
-		"wishlistWidged" : {
-			"text" : "Your Wishlist",
-			"wishlistBtnId" : "cart-wishlist-btn",
-			"wishlistViewBtnId" : "cart-wishlist-view-btn",
-			"number" : "45",
-			"recentAddedTitle" : "My recently added items",
-			"viewWishlist" : {
-				"text" : "View your wishlist",
-				"url" : ""
-			},
-			"list" : [
-				{
-					"image" : "assets/img/blue-shirt.jpg"
-				},
-				{
-					"image" : "assets/img/blue-shirt.jpg"
-				},
-				{
-					"image" : "assets/img/blue-shirt.jpg"
-				}
-			]
-		}
-  },
-  "meta" : {
-	"assetsPath": "assets/"
-  },
-  "options": {
-	"size": [
-	  {
-		"code": "xs",
-		"name": "XS"
-	  },
-	  {
-		"code": "s",
-		"name": "S"
-	  },
-	  {
-		"code": "m",
-		"name": "M"
-	  },
-	  {
-		"code": "l",
-		"name": "L"
-	  }, {
-		"code": "xl",
-		"name": "XL"
-	  }
-	],
-	"color": [
-	  {
-		"code": "navy_blue",
-		"name": "Navy Blue"
-	  }, {
-		"code": "beige",
-		"name": "Beige"
-	  }
-	]
-  }
+    "header" : { "$ref" : "common/header.json" },
+    "footer" : { "$ref" : "common/footer.json" },
+    "content" : {
+        "cart" : { "$ref" : "checkout/cart.json" },
+        "wishlist" : { "$ref" : "catalog/wishlist.json" }
+    },
+    "meta" : {
+        "assetsPath": "assets/"
+    }
 }
