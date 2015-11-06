@@ -1,8 +1,8 @@
 <form id="form-add-to-cart{{index}}" name="add-to-cart" method="post" action="{{product.addToCartUrl}}">
-  <input type="hidden" name="productId" value="{{product.id}}">
-  <input type="hidden" name="variantId" value="{{product.variantId}}">
-  <input type="hidden" name="productSku" value="{{product.sku}}">
-  <input type="hidden" name="productSlug" value="{{product.slug}}">
+  <input type="hidden" name="productId" value="{{product.data.id}}">
+  <input type="hidden" name="variantId" value="{{product.data.variantId}}">
+  <input type="hidden" name="productSku" value="{{product.data.sku}}">
+  <input type="hidden" name="productSlug" value="{{product.data.slug}}">
 
   <div class="row select-row">
     <ul class="list-inline">
