@@ -165,18 +165,18 @@
             <div class="follow-up">
                 {{#if meta.features.myAccount.active}}
                     <label for="confirmation-savedetails-input">
-                        <input id="confirmation-savedetails-input" type="checkbox" name="save-account-details" value="remember" class="remember-me"{{#if content.checkoutForm.remember.value}}checked {{/if}}>
+                        <input id="confirmation-savedetails-input" type="checkbox" name="save-account-details" value="remember" class="remember-me"{{#if content.checkoutForm.remember.selected}}checked {{/if}}>
                         <span>{{i18n "checkout.rememberMe"}}</span>
                     </label>
                 {{/if}}
                 <label for="confirmation-newsletter-input">
-                    <input id="confirmation-newsletter-input" type="checkbox" name="add-to-newsletter" value="newsletter" class="add-to-newsletter"{{#if content.checkoutForm.newsletter.value}}checked {{/if}}>
+                    <input id="confirmation-newsletter-input" type="checkbox" name="add-to-newsletter" value="newsletter" class="add-to-newsletter"{{#if content.checkoutForm.newsletter.selected}}checked {{/if}}>
                     <span>{{i18n "checkout.addToNewsletter"}}
                         <span class="sunrise-newsletter"><a href="{{content.checkoutForm.newsletter.url}}">{{content.checkoutForm.newsletter.name}}</a></span>
                     </span>
                 </label>
                 <label for="agree-to-input">
-                    <input id="agree-to-input" type="checkbox" name="agree-terms" value="terms" class="agree-terms"{{#if content.checkoutForm.termsConditions.value}}checked {{/if}}>
+                    <input id="agree-to-input" type="checkbox" name="agree-terms" value="terms" class="agree-terms"{{#if content.checkoutForm.termsConditions.selected}}checked {{/if}}>
                     <span>
                         <span class="sunrise-newsletter">{{i18n "checkout.agreeToTermsHtml" url=content.checkoutForm.termsConditions.url}}</span>
                     </span>
