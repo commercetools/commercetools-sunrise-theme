@@ -43,13 +43,14 @@
 }
 .follow-up {
   border-bottom: 1px solid $light-grey;
-  .remember-me {
-    margin: 1em 1em 0.5em 0;
-  }
-  .add-to-newsletter {
+  label {
+    display: block;
     margin: 0 1em 0.5em 0;
   }
-  .agree-terms {
+  label:first-child {
+    margin: 1em 1em 0.5em 0;
+  }
+  label:last-child {
     margin: 0 1em 1em 0;
   }
 }
