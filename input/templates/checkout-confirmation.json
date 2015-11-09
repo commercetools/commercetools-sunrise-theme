@@ -11,12 +11,12 @@
             "csrfToken": "1234567890abcdef",
             "newsletter" : {
                 "name" : "SUNRISE Newsletter",
-                "value" : "true",
+                "value" : true,
                 "url" : "newsletter.html"
             },
             "termsConditions" : {
                 "url" : "terms.html",
-                "value" : "true"
+                "value" : true
             },
             "remember" : {
                 "value": true

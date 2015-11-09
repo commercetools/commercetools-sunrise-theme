@@ -1,5 +1,5 @@
 {
-    "header" : { "$ref" : "common/checkout-header.json" },
+    "header" : { "$ref" : "common/checkout-header.json"},
     "footer" : { "$ref" : "common/checkout-footer.json" },
     "content" : {
         "stepWidget" : {
