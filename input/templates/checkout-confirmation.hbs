@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-              {{> checkout/secure-checkout-title titleKey="checkout.confirmationPage.title"}}
+              {{> checkout/secure-checkout-title titleKey="checkout:confirmationPage.title"}}
             </div>
             <div class="col-md-5">
               {{> checkout/step-widget}}
@@ -24,10 +24,10 @@
                         <input type="hidden" name="csrfToken" value="{{content.checkoutForm.csrfToken}}"/>
                         <div class="row">
                             <div class="col-sm-4 checkout-first-col">
-                              {{> checkout/address-confirmation address=content.cart.shippingAddress titleKey="checkout.shippingAddress" editable=true editUrl=meta._links.editShippingAddress.href}}
+                              {{> checkout/address-confirmation address=content.cart.shippingAddress titleKey="checkout:shippingAddress" editable=true editUrl=meta._links.editShippingAddress.href}}
                             </div>
                             <div class="col-sm-4 checkout-second-col">
-                              {{> checkout/address-confirmation address=content.cart.billingAddress titleKey="checkout.billingAddress" editable=true editUrl=meta._links.editBillingAddress.href}}
+                              {{> checkout/address-confirmation address=content.cart.billingAddress titleKey="checkout:billingAddress" editable=true editUrl=meta._links.editBillingAddress.href}}
                             </div>
                             <div class="col-sm-4 checkout-third-col">
                               {{> checkout/shipping-method-confirmation shippingMethod=content.cart.shippingMethod editable=true}}

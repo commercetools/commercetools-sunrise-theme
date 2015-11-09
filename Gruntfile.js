@@ -151,7 +151,7 @@ module.exports = function(grunt) {
         lng: 'en',
         fallbackLng: 'en',
         ns: {
-          namespaces: ['translations', 'home'],
+          namespaces: ['translations', 'home', 'checkout'],
           defaultNs: 'translations'
         },
       }
@@ -289,7 +289,7 @@ module.exports = function(grunt) {
     return written;
   };
 
-  var parseMetadata = function(json) {    
+  var parseMetadata = function(json) {
     for (var key in json) {
       if (json.hasOwnProperty(key)) {
         var value = json[key];

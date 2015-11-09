@@ -1,7 +1,7 @@
 <form method="post" action="{{shippingForm.actionUrl}}">
     <input type="hidden" name="csrfToken" value="{{shippingForm.csrfToken}}"/>
     <div class="shipping-info">
-        <span class="text-uppercase shipping-info-title">{{i18n "checkout.shippingInformation"}}</span>
+        <span class="text-uppercase shipping-info-title">{{i18n "checkout:shippingInformation"}}</span>
         <span class="pull-right required-fields">{{i18n "form.required"}}*</span>
     </div>
   {{> checkout/address-form-elements form=shippingForm.shippingAddress suffix="Shipping"}}
@@ -12,7 +12,7 @@
                 <span>
                     <input id="different-billing-checkbox" type="checkbox"{{#if shippingForm.billingAddressDifferentToBillingAddress}} checked{{/if}}>
                 </span>
-                    <span>{{i18n "checkout.shippingPage.differentBillingAddressCheckboxLabel"}}</span>
+                    <span>{{i18n "checkout:shippingPage.differentBillingAddressCheckboxLabel"}}</span>
                 </label>
             </div>
         </div>
@@ -29,7 +29,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="shipping-method input-block" id="shipping-methods-setting">
-                <div class="text-uppercase shipping-method-title">{{i18n "checkout.shippingMethod"}}</div>
+                <div class="text-uppercase shipping-method-title">{{i18n "checkout:shippingMethod"}}</div>
               {{#each shippingForm.shippingMethods.list}}
                   <div class="shipping-method-option">
                       <label for="shipping-method-{{@index}}">

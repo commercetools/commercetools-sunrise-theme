@@ -1,0 +1,49 @@
+addToNewsletter: Bitte senden Sie mir den
+agreeToTermsHtml: Ich stimme den <a id="confirmation-termsandconditions-link" href="__url__"> <span class="terms-link">AGB</span></a> zu
+billingAddress: Zahlungsadresse
+completeMyOrder: Zahlungspflichtig bestellen
+confirmation: Bestätigung
+confirmationPage:
+  title: Sicherer Bestellprozess - Versand
+continueCheckout: Weiter
+continueShopping: Weiter einkaufen
+discountApply: Anwenden
+discountTooltip: Weitere Rabatt Informationen...
+discountPromoInfo: Rabatte
+editMyCart: Warenkorb bearbeiten
+itemsTotal: __count__ Artikel im Warenkorb
+orderDate: Bestelldatum
+orderDiscount: Bestelldiscount
+orderNumber: Bestellnummer
+orderSummary: Bestellübersicht
+payment: Zahlung
+paymentInformation: Zahlungsdetails
+paymentPage:
+  cardName: Name on credit card
+  cardNumber: Credit card number
+  expiryDateTitle: Expiry data
+  title: Sicherer Bestellprozess - Bezahlung
+  paymentOptionsTitle: Bitte wählen Sie eine Zahlungsart aus
+  securityCode: Security Code
+  securityCodeTooltip: Normalerweise befindet sich der Code auf der Rückseite.
+promoCodeApplied: Gutschein eingelöst
+returningCustomer: Wiederkehrender Besucher
+rememberMe: Meine Daten speichern für einen Account
+shipping: Versand
+shippingAddress: Versandadresse
+shippingInformation: Versand Information
+shippingPage:
+  differentBillingAddressCheckboxLabel: Abweichende Adresse als Rechnungsadresse verwenden.
+  emailInfo: Bitte geben Sie Ihre E-Mail-Adresse an, damit wir Sie über den Status und Versand Ihrer Bestellung informieren können.
+  title: Sicherer Bestellprozess - Versand
+  telNumberInfo: Bitte geben Sie Ihre Telefonnummer an, damit unser Lieferant Sie über den Liefertermin informieren kann.
+signInPage:
+  title: Secure Checkout - Login
+subtotal: Zwischensumme
+thankYouPage:
+  title: Vielen Dank für Ihre Bestellung!
+  emailSentToStart: Eine Email wurde versandt
+  emailSentToEnd: als Bestellbestätigung.
+  yourOrderDetails: Ihre Bestelldetails
+total: Gesamtpreis
+yourBag: Ihr Einkaufswagen
