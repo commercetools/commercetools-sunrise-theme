@@ -399,7 +399,7 @@ $(document).ready(function() {
         variantMap = $this.data('variants'),
         variantKey, variantId;
 
-    if (selectData[selected]) {
+    if (selectData && selectData[selected]) {
       $.each(selectData[selected], function (key) {
         var attribute = form.find("select[name='attribute-"+key+"']"),
             activeSelections = this,
