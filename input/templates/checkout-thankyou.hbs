@@ -16,10 +16,7 @@
             <span class="thankyou-confirmation">{{content.emailSentTo}}o <span class="thankyou-email">{{content.email}}</span><br>{{content.emailSentToEnding}}</span>
           </div>
           <div class="col-md-6">
-            <ul class="list-inline text-right thankyou-buttons">
-              {{!-- <li><button type="button" class="print-receipt-btn">{{content.receiptBtn}}</button></li> --}}
-              <li><a href="#" class="thankyou-continue-shopping-btn">{{i18n "checkout.continueShopping"}}</a></li>
-            </ul>
+            {{> checkout/continue-shopping-link}}
           </div>
         </div>
         <div class="thankyou-order-details">
@@ -63,10 +60,7 @@
           {{> checkout/order-summary cart=content.order mainClass="confirmation-products-title" editable=false ordered=true}}
         </div>
         <div>
-          <ul class="list-inline text-right thankyou-buttons">
-            {{!-- <li><button type="button" class="print-receipt-btn">{{content.receiptBtn}}</button></li> --}}
-            <li><a href="#" class="thankyou-continue-shopping-btn">{{i18n "checkout.continueShopping"}}</a></li>
-          </ul>
+          {{> checkout/continue-shopping-link}}
         </div>
       </div>
     </div>

@@ -10,5 +10,8 @@
     },
     "editShippingMethod": {
         "href": "checkout-shipping.html"
+    },
+    "continueShopping": {
+        "href": "pop.html"
     }
 }

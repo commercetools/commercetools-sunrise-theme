@@ -7,7 +7,7 @@ checkout:
   confirmationPage:
     title: Secure Checkout - Confirmation
   continueCheckout: Continue Checkout
-  continueShopping: Continue Checkout
+  continueShopping: Continue Shipping
   discountApply: apply
   discountTooltip: Discount options additional information...
   discountPromoInfo: PROMOTIONAL DISCOUNT INFO

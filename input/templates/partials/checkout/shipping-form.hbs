@@ -1,57 +1,46 @@
-<div class="shipping-info">
-    <span class="text-uppercase shipping-info-title">{{i18n "checkout.shippingInformation"}}</span>
-    <span class="pull-right required-fields">{{i18n "form.required"}}*</span>
-</div>
-{{> checkout/address-form-elements form=content.shippingForm.shippingAddress suffix="Shipping"}}
-<div class="row different-billing-row">
-    <div class="col-sm-12">
-        <div class="different-for-billing input-block">
-            <label for="different-billing-checkbox">
-              <span>
-                  <input id="different-billing-checkbox" type="checkbox"{{#if content.shippingForm.billingAddressDifferentToBillingAddress}} checked{{/if}}>
-              </span>
-                <span>{{i18n "checkout.shippingPage.differentBillingAddressCheckboxLabel"}}</span>
-            </label>
-        </div>
+<form method="post" action="{{shippingForm.action}}">
+    <input type="hidden" name="csrfToken" value="{{shippingForm.csrfToken}}"/>
+    <div class="shipping-info">
+        <span class="text-uppercase shipping-info-title">{{i18n "checkout.shippingInformation"}}</span>
+        <span class="pull-right required-fields">{{i18n "form.required"}}*</span>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm-12">
-        <div id="different-billing-address">
-            <div class="row">
-              {{> checkout/address-form-elements form=content.shippingForm.billingAddress suffix="Billing"}}
+  {{> checkout/address-form-elements form=shippingForm.shippingAddress suffix="Shipping"}}
+    <div class="row different-billing-row">
+        <div class="col-sm-12">
+            <div class="different-for-billing input-block">
+                <label for="different-billing-checkbox">
+                <span>
+                    <input id="different-billing-checkbox" type="checkbox"{{#if shippingForm.billingAddressDifferentToBillingAddress}} checked{{/if}}>
+                </span>
+                    <span>{{i18n "checkout.shippingPage.differentBillingAddressCheckboxLabel"}}</span>
+                </label>
             </div>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-sm-12">
-        <div class="shipping-method input-block">
-            <div class="text-uppercase shipping-method-title">{{i18n "checkout.shippingMethod"}}</div>
-          {{#each shippingForm.shippingMethods.list}}
-              <div class="shipping-method-option">
-                  <label for="shipping-method-{{@index}}">
-                      <span><input id="shipping-method-{{@index}}" class="shipping-method-radio" type="radio" name="delivery options" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
-                      <span class="pull-right text-uppercase delivery-time">{{deliveryDays}}</span>
-                      <a href="#"><span class="pull-right text-uppercase delivery-details">{{i18n "common.viewDetails"}}</span></a>
-                  </label>
-              </div>
-          {{/each}}
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="different-billing-address">
+                <div class="row">
+                  {{> checkout/address-form-elements form=shippingForm.billingAddress suffix="Billing"}}
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="row hidden-xs">
-    <div class="col-sm-6">
-        <div>
-            <a href="#" id="shipping-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">{{i18n "checkout.continueCheckout"}}</a>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="shipping-method input-block">
+                <div class="text-uppercase shipping-method-title">{{i18n "checkout.shippingMethod"}}</div>
+              {{#each shippingForm.shippingMethods.list}}
+                  <div class="shipping-method-option">
+                      <label for="shipping-method-{{@index}}">
+                          <span><input id="shipping-method-{{@index}}" class="shipping-method-radio" type="radio" name="delivery options" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
+                          <span class="pull-right text-uppercase delivery-time">{{deliveryDays}}</span>
+                          <a href="#"><span class="pull-right text-uppercase delivery-details">{{i18n "common.viewDetails"}}</span></a>
+                      </label>
+                  </div>
+              {{/each}}
+            </div>
         </div>
     </div>
-</div>
-
-<div class="row visible-xs">
-    <div class="col-sm-6">
-        <div>
-            <a href="#" id="shipping-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">{{i18n "checkout.continueCheckout"}}</a>
-        </div>
-    </div>
-</div>
+    {{> checkout/continue-checkout-button}}
+</form>
