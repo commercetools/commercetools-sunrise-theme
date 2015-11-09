@@ -7,7 +7,7 @@
             "confirmationStepActive": true
         },
         "checkoutForm" : {
-            "action": "checkout-thankyou.html",
+            "actionUrl": "checkout-thankyou.html",
             "csrfToken": "1234567890abcdef",
             "newsletter" : {
                 "name" : "SUNRISE Newsletter",
