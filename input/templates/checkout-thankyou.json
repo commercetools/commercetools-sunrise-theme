@@ -2,69 +2,7 @@
     "header" : { "$ref" : "common/checkout-header.json" },
     "footer" : { "$ref" : "common/checkout-footer.json" },
     "content" : {
-        "order" : { "$ref" : "checkout/cart.json" },
-        "shippingAddress" : { "$ref" : "checkout/shipping-address.json" },
-        "billingAddress" : { "$ref" : "checkout/billing-address.json" },
-        "emailSentTo" : "An email has been sent to",
-        "email" : "camilo@batman.com",
-        "emailSentToEnding" : "as a copy of this confirmation purchase",
-        "receiptBtn" : "Print Receipt",
-        "orderDetailsTitle" : "Your order details",
-        "orderNumberTitle" : "Order Number",
-        "orderNumber" : "01445678",
-        "orderDateTitle" : "Order Date",
-        "orderDate" : "Nov 14, 2015",
-        "shippingMethod" : {
-            "text" : "Shipping Method",
-            "description" : "DHL Standard - Delivery 3-5 Days"
-        },
-        "paymentDetails" : {
-            "text" : "Payment Details",
-            "type" : "Credit Card",
-            "name" : "Bruce Wayne",
-            "card" : "Visa",
-            "number" : "**** **** **** **56",
-            "date" : "09.18"
-        },
-        "cartItems" : {
-            "description" : "Product Description",
-            "price" : "Price",
-            "totalPrice" : "Total Price",
-            "list" : [
-                {
-                    "nameHeadline" : "Enditatem Product Name",
-                    "nameSubline" : "Optional Line Two",
-                    "sku" : "Sunrise #SUN123456",
-                    "color" : "Navy Blue",
-                    "size" : "M",
-                    "available" : "Available",
-                    "quantity" : "2",
-                    "price" : "49,00 €",
-                    "totalPrice" : "49,00 €"
-                },
-                {
-                    "nameHeadline" : "Enditatem Product Name",
-                    "nameSubline" : "Optional Line Two",
-                    "sku" : "Sunrise #SUN123456",
-                    "color" : "Navy Blue",
-                    "size" : "M",
-                    "available" : "Available",
-                    "quantity" : 3,
-                    "price" : "49,00 €",
-                    "totalPrice" : "49,00 €"
-                }
-            ]
-        },
-        "totalSum" : {
-            "subtotal" : "107,00 €",
-            "orderDiscountTitle" : "Order Discount",
-            "orderDiscount" : "0,00 €",
-            "deliveryOption" : "Standard Delivery",
-            "delivery" : "0,00 €",
-            "tax" : "20,00 €",
-            "orderTotalTitle" : "Order Total",
-            "orderTotal" : "117,00 €"
-        }
+        "order" : { "$ref" : "checkout/cart.json" }
     },
     "meta" : {
         "assetsPath": "assets/",

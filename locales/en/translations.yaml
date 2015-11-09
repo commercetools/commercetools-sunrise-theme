@@ -14,7 +14,9 @@ checkout:
   editMyCart: Edit my shopping cart
   itemsTotal: __count__ item in total
   itemsTotal_plural: __count__ items in total
+  orderDate: Order Date
   orderDiscount: Order Discount
+  orderNumber: Order Number
   orderSummary: Order Summary
   payment: payment
   paymentInformation: Payment Details
@@ -43,6 +45,9 @@ checkout:
   subtotal: Subtotal
   thankYouPage:
     title: Thank you for your order!
+    emailSentToStart: An email has been sent to
+    emailSentToEnd: as a copy of this confirmation purchase
+    yourOrderDetails: Your order details
   total: Total
   yourBag: Your Bag
 common:

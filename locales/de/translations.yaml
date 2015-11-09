@@ -13,7 +13,9 @@ checkout:
   discountPromoInfo: Rabatte
   editMyCart: Warenkorb bearbeiten
   itemsTotal: __count__ Artikel im Warenkorb
+  orderDate: Bestelldatum
   orderDiscount: Bestelldiscount
+  orderNumber: Bestellnummer
   orderSummary: Bestellübersicht
   payment: Zahlung
   paymentInformation: Zahlungsdetails
@@ -41,6 +43,9 @@ checkout:
   subtotal: Zwischensumme
   thankYouPage:
     title: Vielen Dank für Ihre Bestellung!
+    emailSentToStart: Eine Email wurde versandt
+    emailSentToEnd: als Bestellbestätigung.
+    yourOrderDetails: Ihre Bestelldetails
   total: Gesamtpreis
   yourBag: Ihr Einkaufswagen
 common:

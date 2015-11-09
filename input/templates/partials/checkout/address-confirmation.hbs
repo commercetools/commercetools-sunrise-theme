@@ -2,7 +2,7 @@
     <div class="text-uppercase">
         <span class="checkout-summary-title">{{i18n titleKey}}</span>
       {{#if editable}}
-        {{> checkout/edit-link id="confirmation-edit-shipping-btn" url=editUrl}}
+        {{> checkout/edit-link id="confirmation-edit-shipping-btn" url=editUrl enabled=editable}}
       {{/if}}
     </div>
     <div class="checkout-summary-text">

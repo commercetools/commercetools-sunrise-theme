@@ -13,17 +13,17 @@
       <div class="thankyou-page-content">
         <div class="row">
           <div class="col-md-6">
-            <span class="thankyou-confirmation">{{content.emailSentTo}} <span class="thankyou-email">{{content.email}}</span><br>{{content.emailSentToEnding}}</span>
+            <span class="thankyou-confirmation">{{i18n "checkout.thankYouPage.emailSentToStart"}} <span class="thankyou-email">{{content.order.customerEmail}}</span><br>{{i18n "checkout.thankYouPage.emailSentToEnd"}}</span>
           </div>
           <div class="col-md-6">
             {{> checkout/continue-shopping-link}}
           </div>
         </div>
         <div class="thankyou-order-details">
-          <div class="order-details-title">{{content.orderDetailsTitle}}</div>
+          <div class="order-details-title">{{i18n "checkout.thankYouPage.yourOrderDetails"}}</div>
           <div class="order-number-date">
-            <span class="number-date-title">{{content.orderNumberTitle}}<br>{{content.orderDateTitle}}</span>
-            <span class="black-p">{{content.orderNumber}}<br>{{content.orderDate}}</span>
+            <span class="number-date-title">{{i18n "checkout.orderNumber"}}<br>{{i18n "checkout.orderDate"}}</span>
+            <span class="black-p">{{content.order.orderNumber}}<br>{{content.order.orderDate}}</span>
           </div>
         </div>
         <div class="thankyou-order-summary">
@@ -35,26 +35,8 @@
               {{> checkout/address-confirmation address=content.billingAddress titleKey="checkout.billingAddress" editable=false}}
             </div>
             <div class="col-sm-4 checkout-third-col">
-              <div class="checkout-summary">
-                <div class="text-uppercase">
-                  <span class="checkout-summary-title">{{content.shippingMethod.text}}</span>
-                </div>
-                <div class="checkout-summary-text">
-                  <span>{{content.shippingMethod.description}}</span>
-                </div>
-              </div>
-              <div class="checkout-summary">
-                <div class="text-uppercase">
-                  <span class="checkout-summary-title">{{content.paymentDetails.text}}</span>
-                </div>
-                <div class="checkout-summary-text">
-                  <span>{{content.paymentDetails.type}}</span><br>
-                  <span>{{content.paymentDetails.name}}</span><br>
-                  <span>{{content.paymentDetails.card}}</span><br>
-                  <span>{{content.paymentDetails.number}}</span><br>
-                  <span>{{content.paymentDetails.date}}</span>
-                </div>
-              </div>
+              {{> checkout/shipping-method-confirmation shippingMethod=content.order.shippingMethod editable=false}}
+              {{> checkout/payment-confirmation paymentDetails=content.order.paymentDetails editable=false}}
             </div>
           </div>
           {{> checkout/order-summary cart=content.order mainClass="confirmation-products-title" editable=false ordered=true}}

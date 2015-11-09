@@ -30,8 +30,8 @@
                               {{> checkout/address-confirmation address=content.cart.billingAddress titleKey="checkout.billingAddress" editable=true editUrl=meta._links.editBillingAddress.href}}
                             </div>
                             <div class="col-sm-4 checkout-third-col">
-                              {{> checkout/shipping-method-confirmation shippingMethod=content.cart.shippingMethod}}
-                              {{> checkout/payment-confirmation paymentDetails=content.cart.paymentDetails}}
+                              {{> checkout/shipping-method-confirmation shippingMethod=content.cart.shippingMethod editable=true}}
+                              {{> checkout/payment-confirmation paymentDetails=content.cart.paymentDetails editable=true}}
                             </div>
                         </div>
                       {{> checkout/order-summary cart=content.cart mainClass="confirmation-products-title" editable=false checkoutConfirmation=true}}
