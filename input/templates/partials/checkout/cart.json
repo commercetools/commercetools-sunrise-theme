@@ -1,12 +1,15 @@
 {
     "itemsTotal" : 3,
-    "tax" : "20,00 €",
+    "salesTax" : "20,00 €",
     "total" : "123,00 €",
     "promoCode" : "Sunny Sale",
     "subtotal" : "107,00 €",
     "discount" : "0,00 €",
-    "deliverySum" : "10,00 €",
-    "deliveryTitle" : "Standard Delivery",
+    "shippingMethod" : {
+        "name" : "Standard Delivery",
+        "total": "10,00 €",
+        "description" : "DHL Standard - Delivery 3-5 Days"
+    },
     "lineItems" : {
         "list" : [
             { "$ref" : "../common/product-variant-1.json" },
@@ -16,10 +19,6 @@
     },
     "shippingAddress" : { "$ref" : "shipping-address.json" },
     "billingAddress" : { "$ref" : "billing-address.json" },
-    "shippingMethod" : {
-        "text" : "Shipping Method",
-        "description" : "DHL Standard - Delivery 3-5 Days"
-    },
     "paymentDetails" : {
         "text" : "Payment Details",
         "type" : "Credit Card",

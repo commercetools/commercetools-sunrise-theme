@@ -207,7 +207,7 @@
                             <span class="order-discount">{{i18n "checkout.orderDiscount"}}</span>
                         </div>
                         <div class="text-right delivery-info">
-                            <span class="delivery-info-title">{{cart.deliveryTitle}}</span>
+                            <span class="delivery-info-title">{{cart.shippingMethod.name}}</span>
                         </div>
                         <hr class="total-divider">
                         <div class="text-right">
@@ -225,11 +225,11 @@
                             <span class="order-discount">{{cart.discount}}</span>
                         </div>
                         <div>
-                            <span>{{cart.deliverySum}}</span>
+                            <span>{{cart.shippingMethod.total}}</span>
                         </div>
                         <hr>
                         <div>
-                            <span>{{cart.tax}}</span>
+                            <span>{{cart.salesTax}}</span>
                         </div>
                         <div>
                             <span class="order-total">{{cart.total}}</span>
