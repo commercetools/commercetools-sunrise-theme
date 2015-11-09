@@ -20,7 +20,7 @@
             <span class="items-total-txt">{{i18n "checkout.itemsTotal" count=content.cart.itemsTotal}}</span>
           </div>
         </div>
-        {{> checkout/start-checkout-link small=false bottom=false id="cart-checkoutnow-btn"}}
+        {{> checkout/start-checkout-link mobile=false bottom=false id="cart-checkoutnow-btn"}}
       </div>
       <div class="row">
         <div class="col-sm-12">
@@ -28,9 +28,9 @@
         </div>
       </div>
       <div class="row bottom-cart-btns">
-        {{> checkout/start-checkout-link small=true bottom=true}}
+        {{> checkout/start-checkout-link mobile=true bottom=true}}
         {{> checkout/continue-shopping-button-left}}
-        {{> checkout/start-checkout-link small=false bottom=true}}
+        {{> checkout/start-checkout-link mobile=false bottom=true}}
       </div>
     </div>
   </div>
