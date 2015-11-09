@@ -13,5 +13,14 @@
     },
     "continueShopping": {
         "href": "pop.html"
+    },
+    "checkout": {
+        "href": "checkout-shipping.html"
+    },
+    "home": {
+        "href": "home.html"
+    },
+    "cart": {
+        "href": "cart.html"
     }
 }

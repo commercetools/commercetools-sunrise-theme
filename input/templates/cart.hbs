@@ -20,11 +20,7 @@
             <span class="items-total-txt">{{i18n "checkout.itemsTotal" count=content.cart.itemsTotal}}</span>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="checkout-now">
-            <button id="cart-checkoutnow-btn" class="pull-right text-uppercase checkout-now-btn">{{i18n "common.checkout"}}</button>
-          </div>
-        </div>
+        {{> checkout/start-checkout-link small=false bottom=false id="cart-checkoutnow-btn"}}
       </div>
       <div class="row">
         <div class="col-sm-12">
@@ -32,27 +28,9 @@
         </div>
       </div>
       <div class="row bottom-cart-btns">
-        <div class="col-sm-6 col-xs-12 visible-xs">
-          <div class="checkout-now-bottom">
-            <a href="#">
-              <button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">{{i18n "checkout.continueCheckout"}}</button>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-xs-12">
-          <div>
-            <a href="#">
-              <button id="cart-continueshopping-btn-xs" class="text-uppercase continue-shopping-btn">{{i18n "checkout.continueShopping"}}</button>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-xs-12 hidden-xs">
-          <div class="checkout-now-bottom">
-            <a href="#">
-              <button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">{{i18n "common.checkout"}}</button>
-            </a>
-          </div>
-        </div>
+        {{> checkout/start-checkout-link small=true bottom=true}}
+        {{> checkout/continue-shopping-button-left}}
+        {{> checkout/start-checkout-link small=false bottom=true}}
       </div>
     </div>
   </div>

@@ -1,3 +1,4 @@
+<!-- start checkout-item -->
 <div class="order">
   <div class="order-summary-items">
     {{#each content.cart.lineItems.list}}
@@ -102,9 +103,10 @@
     <div class="col-sm-12">
       <div>
         <span class="text-uppercase pull-right edit-quantity-order">
-            <a href="#">{{i18n "checkout.editMyCart"}}</a>
+            <a href="{{meta._links.cart.href}}">{{i18n "checkout.editMyCart"}}</a>
         </span>
       </div>
     </div>
   </div>
 </div>
+<!-- end checkout-item -->

@@ -6,6 +6,7 @@
         "wishlist" : { "$ref" : "catalog/wishlist.json" }
     },
     "meta" : {
-        "assetsPath": "assets/"
+        "assetsPath": "assets/",
+        "_links" : { "$ref" : "checkout/checkout-links.json" }
     }
 }
