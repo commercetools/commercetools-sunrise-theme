@@ -2,10 +2,7 @@
     <div class="text-uppercase">
         <span class="checkout-summary-title">{{i18n titleKey}}</span>
       {{#if editable}}
-          <a id="confirmation-edit-shipping-btn" href="#">
-                      <span class="pull-right">
-                        <img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{i18n "form.edit"}}</span>
-          </a>
+        {{> checkout/edit-link id="confirmation-edit-shipping-btn" url=editUrl}}
       {{/if}}
     </div>
     <div class="checkout-summary-text">

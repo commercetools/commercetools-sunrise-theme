@@ -22,10 +22,10 @@
           <div class="checkout">
             <div class="row">
               <div class="col-sm-4 checkout-first-col">
-                {{> checkout/address-confirmation address=content.cart.shippingAddress titleKey="checkout.shippingAddress" editable=true}}
+                {{> checkout/address-confirmation address=content.cart.shippingAddress titleKey="checkout.shippingAddress" editable=true editUrl=meta._links.editShippingAddress.href}}
               </div>
               <div class="col-sm-4 checkout-second-col">
-                {{> checkout/address-confirmation address=content.cart.billingAddress titleKey="checkout.billingAddress" editable=true}}
+                {{> checkout/address-confirmation address=content.cart.billingAddress titleKey="checkout.billingAddress" editable=true editUrl=meta._links.editBillingAddress.href}}
               </div>
               <div class="col-sm-4 checkout-third-col">
                 {{> checkout/shipping-method-confirmation shippingMethod=content.cart.shippingMethod}}

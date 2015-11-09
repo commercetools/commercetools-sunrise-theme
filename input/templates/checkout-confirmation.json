@@ -6,16 +6,23 @@
         "stepWidget" : {
             "confirmationStepActive": true
         },
-        "newsletter" : {
-            "name" : "SUNRISE Newsletter",
-            "value" : "true",
-            "url" : "newsletter.html"
-        },
-        "termsConditions" : {
-            "url" : "terms.html"
+        "checkoutForm" : {
+            "newsletter" : {
+                "name" : "SUNRISE Newsletter",
+                "value" : "true",
+                "url" : "newsletter.html"
+            },
+            "termsConditions" : {
+                "url" : "terms.html",
+                "value" : "true"
+            },
+            "remember" : {
+                "value": true
+            }
         }
     },
     "meta" : {
-        "assetsPath": "assets/"
+        "assetsPath": "assets/",
+        "_links" : { "$ref" : "checkout/checkout-links.json" }
     }
 }

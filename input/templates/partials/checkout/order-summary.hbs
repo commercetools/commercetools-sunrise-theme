@@ -56,7 +56,7 @@
                   <div class="edit-delete-section">
                       <button type="submit" class="edit-action" id="cart-edit-button-{{@index}}" href="#">
                         <span>
-                          <img class="cart-action-icon" src="{{../../meta.assetsPath}}img/edit-1.png" alt="delete">{{i18n "form.edit"}}
+                          <img class="cart-action-icon" src="{{../../meta.assetsPath}}img/edit-1.png" alt="edit">{{i18n "form.edit"}}
                         </span>
                       </button>
                   </div>
@@ -162,21 +162,21 @@
         <div class="col-xs-12">
             <div class="follow-up">
                 <label for="confirmation-savedetails-input">
-                    <input id="confirmation-savedetails-input" type="checkbox" name="save-account-details" value="{{content.newsletter.value}}" class="remember-me">
+                    <input id="confirmation-savedetails-input" type="checkbox" name="save-account-details" value="remember" class="remember-me"{{#if content.checkoutForm.remember.value}}checked {{/if}}>
                     <span>{{i18n "checkout.rememberMe"}}</span>
                 </label>
                 <br>
                 <label for="confirmation-newsletter-input">
-                    <input id="confirmation-newsletter-input" type="checkbox" name="add-to-newsletter" value="true" class="add-to-newsletter">
+                    <input id="confirmation-newsletter-input" type="checkbox" name="add-to-newsletter" value="newsletter" class="add-to-newsletter"{{#if content.checkoutForm.newsletter.value}}checked {{/if}}>
                     <span>{{i18n "checkout.addToNewsletter"}}
-                        <span class="sunrise-newsletter"><a href="{{content.newsletter.url}}">{{content.newsletter.name}}</a></span>
+                        <span class="sunrise-newsletter"><a href="{{content.checkoutForm.newsletter.url}}">{{content.checkoutForm.newsletter.name}}</a></span>
                     </span>
                 </label>
                 <br>
                 <label for="agree-to-input">
-                    <input id="agree-to-input" type="checkbox" name="agree-terms" value="false" class="agree-terms">
+                    <input id="agree-to-input" type="checkbox" name="agree-terms" value="terms" class="agree-terms"{{#if content.checkoutForm.termsConditions.value}}checked {{/if}}>
                     <span>
-                        <span class="sunrise-newsletter">{{i18n "checkout.agreeToTermsHtml" url=content.termsConditions.url}}</span>
+                        <span class="sunrise-newsletter">{{i18n "checkout.agreeToTermsHtml" url=content.checkoutForm.termsConditions.url}}</span>
                     </span>
                 </label>
             </div>

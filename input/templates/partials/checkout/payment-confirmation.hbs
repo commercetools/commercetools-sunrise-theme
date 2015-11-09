@@ -1,10 +1,7 @@
 <div class="checkout-summary">
     <div class="text-uppercase">
         <span class="checkout-summary-title">{{paymentDetails.text}}</span>
-        <a id="confirmation-edit-details-btn" href="#">
-                      <span class="pull-right">
-                        <img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{editIconText}}</span>
-        </a>
+        {{> checkout/edit-link id="confirmation-edit-details-btn" url=meta._links.editPaymentInfo.href}}
     </div>
     <div class="checkout-summary-text">
         <span>{{paymentDetails.type}}</span>

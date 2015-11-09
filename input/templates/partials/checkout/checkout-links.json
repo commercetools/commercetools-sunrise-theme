@@ -1,0 +1,14 @@
+{
+    "editShippingAddress": {
+        "href": "checkout-shipping.html"
+    },
+    "editBillingAddress": {
+        "href": "checkout-shipping.html"
+    },
+    "editPaymentInfo": {
+        "href": "checkout-payment.html"
+    },
+    "editShippingMethod": {
+        "href": "checkout-shipping.html"
+    }
+}

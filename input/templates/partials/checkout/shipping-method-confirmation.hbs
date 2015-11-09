@@ -1,10 +1,7 @@
 <div class="checkout-summary">
     <div class="text-uppercase">
         <span class="checkout-summary-title">{{shippingMethod.text}}</span>
-        <a id="confirmation-edit-method-btn" href="#">
-                      <span class="pull-right">
-                        <img src="{{meta.assetsPath}}img/edit-1.png" class="checkout-summary-edit-icon" alt="">{{content.editIconText}}</span>
-        </a>
+        {{> checkout/edit-link id="confirmation-edit-method-btn" url=meta._links.editShippingMethod.href}}
     </div>
     <div class="checkout-summary-text">
         <span>{{shippingMethod.description}}</span>
