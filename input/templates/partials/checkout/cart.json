@@ -4,11 +4,7 @@
     "total" : "123,00 €",
     "promoCode" : "Sunny Sale",
     "subtotal" : "107,00 €",
-    "shippingMethod" : {
-        "name" : "Standard Delivery",
-        "total": "10,00 €",
-        "description" : "DHL Standard - Delivery 3-5 Days"
-    },
+    "shippingMethod" : {"$ref" : "shipping-method-1.json"},
     "lineItems" : {
         "list" : [
             { "$ref" : "../common/product-variant-1.json" },
