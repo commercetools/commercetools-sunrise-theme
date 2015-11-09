@@ -142,17 +142,19 @@
   {{/each}}
 
   {{#if editable}}
-      <div class="row">
-          <div class="col-sm-12">
-              <div class="text-right promotion-info">
-                  <span class="text-uppercase promo-info-text" title="{{i18n "checkout.discountTooltip"}}">{{i18n "checkout.discountPromoInfo"}}
-                      <img class="info-icon" src="{{meta.assetsPath}}img/information.png" alt="information icon">
-                  </span>
-                  <input id="promo-code" type="text">
-                  <button id="cart-apply-promocode-btn" class="text-uppercase promo-apply-btn">{{i18n "checkout.discountApply"}}</button>
-              </div>
-          </div>
-      </div>
+    {{#if meta.features.cartDiscounts.active}}
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-right promotion-info">
+                    <span class="text-uppercase promo-info-text" title="{{i18n "checkout.discountTooltip"}}">{{i18n "checkout.discountPromoInfo"}}
+                        <img class="info-icon" src="{{meta.assetsPath}}img/information.png" alt="information icon">
+                    </span>
+                    <input id="promo-code" type="text">
+                    <button id="cart-apply-promocode-btn" class="text-uppercase promo-apply-btn">{{i18n "checkout.discountApply"}}</button>
+                </div>
+            </div>
+        </div>
+    {{/if}}
   {{/if}}
 
 
@@ -191,10 +193,12 @@
             <div class="total-price-calc">
 
               {{#unless editable}}
+                {{#if meta.features.cartDiscounts.active}}
                   <div class="row text-right payment-code-applied">
                       <span class="payment-code-title">Promotion code applied:</span>
                       <span class="payment-code">Sunny Sale</span>
                   </div>
+                {{/if}}
               {{/unless}}
 
 
@@ -203,9 +207,11 @@
                         <div class="text-right subtotal">
                             <span class="subtotal-title">{{i18n "checkout.subtotal"}}</span>
                         </div>
+                        {{#if meta.features.cartDiscounts.active}}
                         <div class="text-right">
                             <span class="order-discount">{{i18n "checkout.orderDiscount"}}</span>
                         </div>
+                        {{/if}}
                         <div class="text-right delivery-info">
                             <span class="delivery-info-title">{{cart.shippingMethod.name}}</span>
                         </div>
@@ -221,9 +227,11 @@
                         <div>
                             <span>{{cart.subtotal}}</span>
                         </div>
+                        {{#if meta.features.cartDiscounts.active}}
                         <div>
                             <span class="order-discount">{{cart.discount}}</span>
                         </div>
+                        {{/if}}
                         <div>
                             <span>{{cart.shippingMethod.total}}</span>
                         </div>

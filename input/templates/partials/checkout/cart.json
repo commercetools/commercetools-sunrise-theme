@@ -4,7 +4,6 @@
     "total" : "123,00 €",
     "promoCode" : "Sunny Sale",
     "subtotal" : "107,00 €",
-    "discount" : "0,00 €",
     "shippingMethod" : {
         "name" : "Standard Delivery",
         "total": "10,00 €",
