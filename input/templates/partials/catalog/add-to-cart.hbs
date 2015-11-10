@@ -1,4 +1,4 @@
-<form id="form-add-to-cart{{index}}" name="add-to-cart" method="post" action="{{product.addToCartUrl}}">
+<form id="form-add-to-cart{{index}}" name="add-to-cart" method="post" action="{{product.addToCartUrl}}" onsubmit="return validateAddToCardForm()">
   <input type="hidden" name="productId" value="{{product.data.id}}">
   <input type="hidden" name="variantId" value="{{product.data.variantId}}">
   <input type="hidden" name="productSku" value="{{product.data.sku}}">
@@ -17,9 +17,9 @@
   <div class="row">
     <ul class="product-actions-list list-inline">
       <li class="bag-items-li">
-        <select name="quantity" class="bag-items">
+        <select value="" name="quantity" class="bag-items">
           {{#each meta.bagItems}}
-          <option value="{{this}}">{{this}}</option>
+          <option value="{{this}}" required>{{this}}</option>
           {{/each}}
         </select>
       </li>

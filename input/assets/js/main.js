@@ -388,6 +388,31 @@ $(document).ready(function() {
   });
 });
 
+// Validate add-to-cart form
+function validateAddToCardForm() {
+  // Color Attribute
+  var productAttributeColor  = document.forms['add-to-cart']['attribute-color'].value;
+  if (!productAttributeColor) {
+    console.log('Please choose color');
+    return false;
+  }
+  // Size Attribute
+  var productAttributeSize  = document.forms['add-to-cart']['attribute-size'].value;
+  if (!productAttributeSize) {
+    console.log('Please choose size');
+    return false;
+  }
+  // Item Quantity
+  var bagItems = document.forms['add-to-cart']['quantity'].value,
+      bagItemsInt = parseInt(bagItems, 10);
+  if (bagItemsInt < 1) {
+    console.log('Quantity has to be more than 1');
+    return false;
+  }
+
+  return true;
+}
+
 $(document).ready(function() {
   $("select.select-product-detail").change(function () {
     var $this = $(this),
