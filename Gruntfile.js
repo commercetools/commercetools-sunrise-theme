@@ -27,7 +27,9 @@ module.exports = function(grunt) {
         ]
       },
       resolved: {
-        files: { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' }
+        files: [
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' }
+        ]
       }
     },
 
@@ -151,7 +153,7 @@ module.exports = function(grunt) {
         lng: 'en',
         fallbackLng: 'en',
         ns: {
-          namespaces: ['translations', 'home', 'checkout'],
+          namespaces: ['translations', 'home', 'catalog', 'checkout'],
           defaultNs: 'translations'
         },
       }
@@ -190,7 +192,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('pre-handlebars', 'Tasks to be run before Handlebars', function() {
     grunt.task.run('json-refs');
-    //grunt.task.run('copy:resolved');
+    grunt.task.run('copy:resolved');
     grunt.task.run('i18next');
   });
 
@@ -293,7 +295,7 @@ module.exports = function(grunt) {
     for (var key in json) {
       if (json.hasOwnProperty(key)) {
         var value = json[key];
-        if (json[key].hasOwnProperty("err")) {
+        if (value.hasOwnProperty("err")) {
           grunt.log.error(stringifyJson(value, 2));
         } else {
           grunt.verbose.writeln(stringifyJson(value, 0));

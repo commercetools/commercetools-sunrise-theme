@@ -1,3 +1,10 @@
+close: Close
+choose: Choose
+messages:
+    pleaseWait: Please wait...
+    viewYourBagAlert: View your bag
+    addToWishlistAlert: Add to wishlist
+    requiredField: Required field
 common:
   color: Color
   checkout: Checkout
@@ -7,71 +14,6 @@ common:
   size: Size
   salesTax: Sales Tax
   viewDetails: View Details
-content:
-  messages:
-    pleaseWait: Please wait...
-    reachedMaximumAlert: You have reached the maximum quantity you can add to your bag
-    itemAddedToBagAlert: This item has been added to your bag
-    viewYourBagAlert: View your bag
-    addToWishlistAlert: Add to wishlist
-    requiredField: Required field
-  general:
-    closeModal: Close
-  static:
-    contentText: Products
-    productDetailsText: Product Details
-    deliveryAndReturnsText: Delivery & Returns
-    shippingRatesText: Delivery
-    returnsText: Returns
-    freeReturnsText: Free return for all orders.
-    moreDeliveryInfoText: ""
-  filters:
-    title: Filter Products
-    open: Filter
-    close: Filter close
-    clear: Clear
-  pagination:
-    pageSeparator: of
-    next: Next
-    previous: Previous
-  displaySelector:
-    title: items per page
-  sortSelector:
-    title: Sort
-  product:
-    sale: Sale
-    new: New
-    quickView: Quick view
-    addToBag: Add to Bag
-    addToWishlist: Add item to wishlist
-    moreColors: More colours
-    viewDetails: View Details
-    available: Available
-    sizeGuide: Size Guide
-    choose: Choose
-    writeReview: Write first review
-  ratings:
-    text5: 5 stars
-    text4: 4 stars
-    text3: 3 stars
-    text2: 2 stars
-    text1: 1 star
-    description5: Rocks!
-    description4: Pretty good
-    description3: Meh
-    description2: Kinda bad
-    description1: Sucks big time
-  wishlist:
-    title: Your Wishlist
-    view: View your wishlist
-    recentlyAdded: My recently added items
-  suggestions:
-    youMayLike: You may also like
-  reviews:
-    title: Reviews
-
-
-
 form:
   addressOne: Address 1
   addressTwo: Address 2
@@ -104,3 +46,4 @@ form:
   submit: Submit
   title: Title
   year: Year
+

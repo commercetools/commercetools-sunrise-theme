@@ -388,6 +388,70 @@ $(document).ready(function() {
   });
 });
 
+// Validate add-to-cart form
+function validateAddToCardForm() {
+  // Color Attribute
+  var productAttributeColor  = document.forms['add-to-cart']['attribute-color'].value;
+  if (!productAttributeColor) {
+    console.log('Please choose color');
+    return false;
+  }
+  // Size Attribute
+  var productAttributeSize  = document.forms['add-to-cart']['attribute-size'].value;
+  if (!productAttributeSize) {
+    console.log('Please choose size');
+    return false;
+  }
+  // Item Quantity
+  var bagItems = document.forms['add-to-cart']['quantity'].value,
+      bagItemsInt = parseInt(bagItems, 10);
+  if (bagItemsInt < 1) {
+    console.log('Quantity has to be more than 1');
+    return false;
+  }
+
+  return true;
+}
+
+$(document).ready(function() {
+  $("select.select-product-detail").change(function () {
+    var $this = $(this),
+        // find the form for the select element
+        form = $this.parents('form').first(),
+        selected = $this.find("option:selected").val(),
+        selectData = $this.data('cross-select'),
+        identifiers = $this.data('identifiers'),
+        variantMap = $this.data('variants'),
+        variantKey, variantId;
+
+    if (selectData && selectData[selected]) {
+      $.each(selectData[selected], function (key) {
+        var attribute = form.find("select[name='attribute-"+key+"']"),
+            activeSelections = this,
+            selectBox = attribute.data("selectBox-selectBoxIt");
+
+        // disable all options which are not available for selected value
+        attribute.find('option').each(function(key) {
+          var $this = $(this);
+          if (activeSelections.indexOf($this.val()) >= 0) {
+            selectBox.enableOption(key);
+          } else {
+            selectBox.disableOption(key);
+          }
+        });
+      });
+    }
+    if (identifiers) {
+      // build a variant key from variant identifiers to get the variantId
+      variantKey = identifiers.map(function(identifier) {
+        return form.find("select[name='attribute-"+identifier+"']").val();
+      }).join('-');
+      variantId = variantMap[variantKey];
+      form.find("input[name='variantId']").val(variantId);
+    }
+  });
+});
+
 /*****************************************************************************/
 /*
  /* CART PAGE

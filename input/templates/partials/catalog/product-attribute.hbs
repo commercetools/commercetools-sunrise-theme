@@ -1,10 +1,10 @@
 <li>
   <p class="text-uppercase">{{attribute.name}}</p>
   <div>
-    <select name="attribute-{{attribute.key}}" class="select-product-detail">
-      <option>{{i18n "content.product.choose"}} {{attribute.name}}</option>
+    <select name="attribute-{{attribute.key}}" class="select-product-detail" data-cross-select="{{json attribute.selectData}}" data-variants="{{json variants}}" data-identifiers="{{json identifiers}}">
+      <option value="">{{i18n "choose"}} {{attribute.name}}</option>
       {{#each attribute.list}}
-        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+        <option value="{{value}}" {{#if selected}}selected{{/if}} required>{{text}}</option>
       {{/each}}
     </select>
   </div>

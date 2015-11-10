@@ -1,6 +1,6 @@
-<p class="item-count">{{i18n "content.displaySelector.title"}}</p>
-<div class="styled-select icon-drop-down">
-	<select name="{{displaySelector.key}}" class="select">
+<p class="item-count">{{i18n "catalog:displaySelector.title"}}</p>
+<div class="custom-select-wrapper">
+	<select name="{{displaySelector.key}}" class="select-product-detail">
 	  {{#each displaySelector.list}}
 	    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{name}}</option>
 	  {{/each}}

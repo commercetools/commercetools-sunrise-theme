@@ -5,36 +5,42 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="filter-sidebar-mobile-modal">
           <span aria-hidden="true">
-            <img src="{{meta.assetsPath}}img/close.png" alt="{{i18n "content.general.closeModal"}}" />
+            <img src="{{meta.assetsPath}}img/close.png" alt="{{i18n "close"}}" />
           </span>
         </button>
       </div>
       <div class="modal-body">
         <div class="col-sm-3 filter-options sidebar-offcanvas" id="sidebar">
           <button class="offcanvas-btn offcanvas-btn-close icon-close" data-toggle="offcanvas" type="button">
-            <span class="sr-only">{{i18n "content.filters.close"}}</span>
+            <span class="sr-only">{{i18n "catalog:filters.close"}}</span>
           </button>
           <div class="row">
             <div class="col-sm-12">
+
               <form id="form-filter-products-mobile" name="filter-products-mobile" action="{{content.filterProductsUrl}}">
+                {{#if content.searchTerm}}
+                  <input type="hidden" name="q" value="{{content.searchTerm}}"/>
+                {{/if}}
+
                 <div class="row">
                   <div class="col-sm-12 ">
-                    <p class="filter-products"><b>{{i18n "content.filters.title"}}</b></p>
+                    <p class="filter-products"><b>{{i18n "catalog:filters.title"}}</b></p>
                   </div>
                 </div>
                 <hr class="hr">
-                <div class="row size-box">
+                  <div class="row size-box">
                     <div class="col-xs-12">
-                        <div class="text-left">
-                          {{i18n "content.sortSelector.title"}}
-                        </div>
-                        <div class="pop-filter-select">
-                          {{> catalog/sort-selector sortSelector=content.sortSelector}}
-                        </div>
+                      <div class="text-left">
+                        {{i18n "catalog:sortSelector.title"}}
+                      </div>
+                      <div class="pop-filter-select custom-select-wrapper">
+                        {{> catalog/sort-selector sortSelector=content.sortSelector}}
+                      </div>
                     </div>
-                </div>                
-                {{> catalog/facets facets=content.facets}}
+                  </div>
+                  {{> catalog/facets facets=content.facets}}
               </form>
+
             </div>
           </div>
         </div>
