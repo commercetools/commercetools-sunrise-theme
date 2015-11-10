@@ -13,11 +13,11 @@
         {{> catalog/size-guide}}
       </li>
     </ul>
-  </div>  
+  </div>
   <div class="row">
     <ul class="product-actions-list list-inline">
       <li class="bag-items-li">
-        <select name="quantity" class="bag-items">
+        <select value="" name="quantity" class="bag-items">
           {{#each meta.bagItems}}
           <option value="{{this}}" required>{{this}}</option>
           {{/each}}

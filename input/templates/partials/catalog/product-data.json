@@ -15,17 +15,17 @@
 			"list" : [
 				{
 					"text" : "Red",
-					"value" : "",
+					"value" : "red",
 					"selected" : false
 				},
 				{
 					"text" : "Blue",
-					"value" : "",
+					"value" : "blue",
 					"selected" : false
 				},
 				{
 					"text" : "Green",
-					"value" : "",
+					"value" : "green",
 					"selected" : false
 				}
 			]
@@ -36,17 +36,17 @@
 			"list" : [
 				{
 					"text" : "S",
-					"value" : "",
+					"value" : "s",
 					"selected" : false
 				},
 				{
 					"text" : "M",
-					"value" : "",
+					"value" : "m",
 					"selected" : false
 				},
 				{
 					"text" : "L",
-					"value" : "",
+					"value" : "l",
 					"selected" : false
 				}
 			]

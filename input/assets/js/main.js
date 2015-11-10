@@ -390,15 +390,23 @@ $(document).ready(function() {
 
 // Validate add-to-cart form
 function validateAddToCardForm() {
-  var productAttribute  = document.forms['add-to-cart']['attribute-color'].value;
-  if (productAttribute.length < 1 ) {
-    console.log('Please select a color');
+  // Color Attribute
+  var productAttributeColor  = document.forms['add-to-cart']['attribute-color'].value;
+  if (!productAttributeColor) {
+    console.log('Please choose color');
     return false;
   }
-
-  var bagItems = document.forms['add-to-cart']['quantity'].value;
-  if (bagItems < 2) {
-    console.log('You have to have atleast 2 items in the bag');
+  // Size Attribute
+  var productAttributeSize  = document.forms['add-to-cart']['attribute-size'].value;
+  if (!productAttributeSize) {
+    console.log('Please choose size');
+    return false;
+  }
+  // Item Quantity
+  var bagItems = document.forms['add-to-cart']['quantity'].value,
+      bagItemsInt = parseInt(bagItems, 10);
+  if (bagItemsInt < 1) {
+    console.log('Quantity has to be more than 1');
     return false;
   }
 
