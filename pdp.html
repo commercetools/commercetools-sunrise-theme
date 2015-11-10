@@ -483,7 +483,7 @@
                 <span>€ 49,-</span>
               </p>    </div>
           </div>
-          <form id="form-add-to-cart" name="add-to-cart" method="post" action="">
+          <form id="form-add-to-cart" name="add-to-cart" method="post" action="" onsubmit="return validateAddToCardForm()">
             <input type="hidden" name="productId" value="85fdf3ce-06bf-4c85-af6e-e190a2633ad5">
             <input type="hidden" name="variantId" value="1">
             <input type="hidden" name="productSku" value="Sunrise #SUN123456">
@@ -495,10 +495,10 @@
                     <p class="text-uppercase">Color</p>
                     <div>
                       <select name="attribute-color" class="select-product-detail" data-cross-select="{&quot;red&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;,&quot;L&quot;]},&quot;blue&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;L&quot;]},&quot;green&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
-                        <option>Choose Color</option>
-                          <option value="red" >Red</option>
-                          <option value="blue" >Blue</option>
-                          <option value="green" >Green</option>
+                        <option value="">Choose Color</option>
+                          <option value="red"  required>Red</option>
+                          <option value="blue"  required>Blue</option>
+                          <option value="green"  required>Green</option>
                       </select>
                     </div>
                     <div class="error-message hidden">
@@ -509,10 +509,10 @@
                     <p class="text-uppercase">Size</p>
                     <div>
                       <select name="attribute-size" class="select-product-detail" data-cross-select="{&quot;S&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;]},&quot;M&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;green&quot;]},&quot;L&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
-                        <option>Choose Size</option>
-                          <option value="S" >S</option>
-                          <option value="M" >M</option>
-                          <option value="L" >L</option>
+                        <option value="">Choose Size</option>
+                          <option value="S"  required>S</option>
+                          <option value="M"  required>M</option>
+                          <option value="L"  required>L</option>
                       </select>
                     </div>
                     <div class="error-message hidden">
@@ -779,16 +779,16 @@
             <div class="row">
               <ul class="product-actions-list list-inline">
                 <li class="bag-items-li">
-                  <select name="quantity" class="bag-items">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
+                  <select value="" name="quantity" class="bag-items">
+                    <option value="1" required>1</option>
+                    <option value="2" required>2</option>
+                    <option value="3" required>3</option>
+                    <option value="4" required>4</option>
+                    <option value="5" required>5</option>
+                    <option value="6" required>6</option>
+                    <option value="7" required>7</option>
+                    <option value="8" required>8</option>
+                    <option value="9" required>9</option>
                   </select>
                 </li>
                 <li>
@@ -1007,7 +1007,7 @@
                           </p>              </div>
                       </div>
                       <div class="row select-row">
-                        <form id="form-add-to-cart0" name="add-to-cart" method="post" action="">
+                        <form id="form-add-to-cart0" name="add-to-cart" method="post" action="" onsubmit="return validateAddToCardForm()">
                           <input type="hidden" name="productId" value="85fdf3ce-06bf-4c85-af6e-e190a2633ad5">
                           <input type="hidden" name="variantId" value="1">
                           <input type="hidden" name="productSku" value="Sunrise #SUN123456">
@@ -1019,10 +1019,10 @@
                                   <p class="text-uppercase">Color</p>
                                   <div>
                                     <select name="attribute-color" class="select-product-detail" data-cross-select="{&quot;red&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;,&quot;L&quot;]},&quot;blue&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;L&quot;]},&quot;green&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
-                                      <option>Choose Color</option>
-                                        <option value="red" >Red</option>
-                                        <option value="blue" >Blue</option>
-                                        <option value="green" >Green</option>
+                                      <option value="">Choose Color</option>
+                                        <option value="red"  required>Red</option>
+                                        <option value="blue"  required>Blue</option>
+                                        <option value="green"  required>Green</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
@@ -1033,10 +1033,10 @@
                                   <p class="text-uppercase">Size</p>
                                   <div>
                                     <select name="attribute-size" class="select-product-detail" data-cross-select="{&quot;S&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;]},&quot;M&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;green&quot;]},&quot;L&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
-                                      <option>Choose Size</option>
-                                        <option value="S" >S</option>
-                                        <option value="M" >M</option>
-                                        <option value="L" >L</option>
+                                      <option value="">Choose Size</option>
+                                        <option value="S"  required>S</option>
+                                        <option value="M"  required>M</option>
+                                        <option value="L"  required>L</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
@@ -1303,16 +1303,16 @@
                           <div class="row">
                             <ul class="product-actions-list list-inline">
                               <li class="bag-items-li">
-                                <select name="quantity" class="bag-items">
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="5">5</option>
-                                  <option value="6">6</option>
-                                  <option value="7">7</option>
-                                  <option value="8">8</option>
-                                  <option value="9">9</option>
+                                <select value="" name="quantity" class="bag-items">
+                                  <option value="1" required>1</option>
+                                  <option value="2" required>2</option>
+                                  <option value="3" required>3</option>
+                                  <option value="4" required>4</option>
+                                  <option value="5" required>5</option>
+                                  <option value="6" required>6</option>
+                                  <option value="7" required>7</option>
+                                  <option value="8" required>8</option>
+                                  <option value="9" required>9</option>
                                 </select>
                               </li>
                               <li>
@@ -1466,7 +1466,7 @@
                           </p>              </div>
                       </div>
                       <div class="row select-row">
-                        <form id="form-add-to-cart1" name="add-to-cart" method="post" action="">
+                        <form id="form-add-to-cart1" name="add-to-cart" method="post" action="" onsubmit="return validateAddToCardForm()">
                           <input type="hidden" name="productId" value="85fdf3ce-06bf-4c85-af6e-e190a2633ad5">
                           <input type="hidden" name="variantId" value="1">
                           <input type="hidden" name="productSku" value="Sunrise #SUN123456">
@@ -1478,10 +1478,10 @@
                                   <p class="text-uppercase">Color</p>
                                   <div>
                                     <select name="attribute-color" class="select-product-detail" data-cross-select="{&quot;red&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;,&quot;L&quot;]},&quot;blue&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;L&quot;]},&quot;green&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
-                                      <option>Choose Color</option>
-                                        <option value="red" >Red</option>
-                                        <option value="blue" >Blue</option>
-                                        <option value="green" >Green</option>
+                                      <option value="">Choose Color</option>
+                                        <option value="red"  required>Red</option>
+                                        <option value="blue"  required>Blue</option>
+                                        <option value="green"  required>Green</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
@@ -1492,10 +1492,10 @@
                                   <p class="text-uppercase">Size</p>
                                   <div>
                                     <select name="attribute-size" class="select-product-detail" data-cross-select="{&quot;S&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;]},&quot;M&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;green&quot;]},&quot;L&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
-                                      <option>Choose Size</option>
-                                        <option value="S" >S</option>
-                                        <option value="M" >M</option>
-                                        <option value="L" >L</option>
+                                      <option value="">Choose Size</option>
+                                        <option value="S"  required>S</option>
+                                        <option value="M"  required>M</option>
+                                        <option value="L"  required>L</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
@@ -1762,16 +1762,16 @@
                           <div class="row">
                             <ul class="product-actions-list list-inline">
                               <li class="bag-items-li">
-                                <select name="quantity" class="bag-items">
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="5">5</option>
-                                  <option value="6">6</option>
-                                  <option value="7">7</option>
-                                  <option value="8">8</option>
-                                  <option value="9">9</option>
+                                <select value="" name="quantity" class="bag-items">
+                                  <option value="1" required>1</option>
+                                  <option value="2" required>2</option>
+                                  <option value="3" required>3</option>
+                                  <option value="4" required>4</option>
+                                  <option value="5" required>5</option>
+                                  <option value="6" required>6</option>
+                                  <option value="7" required>7</option>
+                                  <option value="8" required>8</option>
+                                  <option value="9" required>9</option>
                                 </select>
                               </li>
                               <li>
@@ -1925,7 +1925,7 @@
                           </p>              </div>
                       </div>
                       <div class="row select-row">
-                        <form id="form-add-to-cart2" name="add-to-cart" method="post" action="">
+                        <form id="form-add-to-cart2" name="add-to-cart" method="post" action="" onsubmit="return validateAddToCardForm()">
                           <input type="hidden" name="productId" value="85fdf3ce-06bf-4c85-af6e-e190a2633ad5">
                           <input type="hidden" name="variantId" value="1">
                           <input type="hidden" name="productSku" value="Sunrise #SUN123456">
@@ -1937,10 +1937,10 @@
                                   <p class="text-uppercase">Color</p>
                                   <div>
                                     <select name="attribute-color" class="select-product-detail" data-cross-select="{&quot;red&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;,&quot;L&quot;]},&quot;blue&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;L&quot;]},&quot;green&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
-                                      <option>Choose Color</option>
-                                        <option value="red" >Red</option>
-                                        <option value="blue" >Blue</option>
-                                        <option value="green" >Green</option>
+                                      <option value="">Choose Color</option>
+                                        <option value="red"  required>Red</option>
+                                        <option value="blue"  required>Blue</option>
+                                        <option value="green"  required>Green</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
@@ -1951,10 +1951,10 @@
                                   <p class="text-uppercase">Size</p>
                                   <div>
                                     <select name="attribute-size" class="select-product-detail" data-cross-select="{&quot;S&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;]},&quot;M&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;green&quot;]},&quot;L&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
-                                      <option>Choose Size</option>
-                                        <option value="S" >S</option>
-                                        <option value="M" >M</option>
-                                        <option value="L" >L</option>
+                                      <option value="">Choose Size</option>
+                                        <option value="S"  required>S</option>
+                                        <option value="M"  required>M</option>
+                                        <option value="L"  required>L</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
@@ -2221,16 +2221,16 @@
                           <div class="row">
                             <ul class="product-actions-list list-inline">
                               <li class="bag-items-li">
-                                <select name="quantity" class="bag-items">
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="5">5</option>
-                                  <option value="6">6</option>
-                                  <option value="7">7</option>
-                                  <option value="8">8</option>
-                                  <option value="9">9</option>
+                                <select value="" name="quantity" class="bag-items">
+                                  <option value="1" required>1</option>
+                                  <option value="2" required>2</option>
+                                  <option value="3" required>3</option>
+                                  <option value="4" required>4</option>
+                                  <option value="5" required>5</option>
+                                  <option value="6" required>6</option>
+                                  <option value="7" required>7</option>
+                                  <option value="8" required>8</option>
+                                  <option value="9" required>9</option>
                                 </select>
                               </li>
                               <li>
@@ -2384,7 +2384,7 @@
                           </p>              </div>
                       </div>
                       <div class="row select-row">
-                        <form id="form-add-to-cart3" name="add-to-cart" method="post" action="">
+                        <form id="form-add-to-cart3" name="add-to-cart" method="post" action="" onsubmit="return validateAddToCardForm()">
                           <input type="hidden" name="productId" value="85fdf3ce-06bf-4c85-af6e-e190a2633ad5">
                           <input type="hidden" name="variantId" value="1">
                           <input type="hidden" name="productSku" value="Sunrise #SUN123456">
@@ -2396,10 +2396,10 @@
                                   <p class="text-uppercase">Color</p>
                                   <div>
                                     <select name="attribute-color" class="select-product-detail" data-cross-select="{&quot;red&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;,&quot;L&quot;]},&quot;blue&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;L&quot;]},&quot;green&quot;:{&quot;size&quot;:[&quot;S&quot;,&quot;M&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
-                                      <option>Choose Color</option>
-                                        <option value="red" >Red</option>
-                                        <option value="blue" >Blue</option>
-                                        <option value="green" >Green</option>
+                                      <option value="">Choose Color</option>
+                                        <option value="red"  required>Red</option>
+                                        <option value="blue"  required>Blue</option>
+                                        <option value="green"  required>Green</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
@@ -2410,10 +2410,10 @@
                                   <p class="text-uppercase">Size</p>
                                   <div>
                                     <select name="attribute-size" class="select-product-detail" data-cross-select="{&quot;S&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;,&quot;green&quot;]},&quot;M&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;green&quot;]},&quot;L&quot;:{&quot;color&quot;:[&quot;red&quot;,&quot;blue&quot;]}}" data-variants="{&quot;red-S&quot;:&quot;variant1&quot;,&quot;red-M&quot;:&quot;variant2&quot;,&quot;red-L&quot;:&quot;variant3&quot;,&quot;blue-S&quot;:&quot;variant4&quot;,&quot;blue-L&quot;:&quot;variant5&quot;,&quot;green-S&quot;:&quot;variant6&quot;,&quot;green-M&quot;:&quot;variant7&quot;}" data-identifiers="[&quot;color&quot;,&quot;size&quot;]">
-                                      <option>Choose Size</option>
-                                        <option value="S" >S</option>
-                                        <option value="M" >M</option>
-                                        <option value="L" >L</option>
+                                      <option value="">Choose Size</option>
+                                        <option value="S"  required>S</option>
+                                        <option value="M"  required>M</option>
+                                        <option value="L"  required>L</option>
                                     </select>
                                   </div>
                                   <div class="error-message hidden">
@@ -2680,16 +2680,16 @@
                           <div class="row">
                             <ul class="product-actions-list list-inline">
                               <li class="bag-items-li">
-                                <select name="quantity" class="bag-items">
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                  <option value="5">5</option>
-                                  <option value="6">6</option>
-                                  <option value="7">7</option>
-                                  <option value="8">8</option>
-                                  <option value="9">9</option>
+                                <select value="" name="quantity" class="bag-items">
+                                  <option value="1" required>1</option>
+                                  <option value="2" required>2</option>
+                                  <option value="3" required>3</option>
+                                  <option value="4" required>4</option>
+                                  <option value="5" required>5</option>
+                                  <option value="6" required>6</option>
+                                  <option value="7" required>7</option>
+                                  <option value="8" required>8</option>
+                                  <option value="9" required>9</option>
                                 </select>
                               </li>
                               <li>
