@@ -764,197 +764,255 @@
     }
   },
   "content": {
-    "yourBag": "Your bag:",
-    "itemsTotal": "2 items in total",
-    "checkoutBtn": "Checkout now",
-    "cartItems": {
-      "description": "Product Description",
-      "price": "Price",
-      "totalPrice": "Total Price",
-      "list": [
-        {
-          "nameHeadline": "Enditatem Product Name",
-          "nameSubline": "Optional Line Two",
-          "sku": "Sunrise #SUN123456",
-          "color": "Navy Blue",
-          "availableColors": [
-            {
-              "label": "Navy Blue",
-              "value": "navy_blue"
-            },
-            {
-              "label": "Beige",
-              "value": "beige"
-            }
-          ],
-          "size": "M",
-          "availableSizes": [
-            {
-              "label": "XS",
-              "value": "xs"
-            },
-            {
-              "label": "S",
-              "value": "s"
-            },
-            {
-              "label": "M",
-              "value": "m"
-            },
-            {
-              "label": "L",
-              "value": "l"
-            },
-            {
-              "label": "XL",
-              "value": "xl"
-            }
-          ],
-          "available": "Available",
-          "edit": "Edit",
-          "editId": "cart-edit-button-one",
-          "editWidgedCancel": "Cancel",
-          "editWidgedCancelXs": "X",
-          "editWidgedUpdate": "Update",
-          "delete": "Delete",
-          "deleteId": "cart-delete-button-one",
-          "priceOld": "100,00 €",
-          "price": "49,00 €",
-          "totalPrice": "49,00 €",
-          "cartQuantityDecrementId": "cart-quantity-decrement-one",
-          "cartQuantityValueId": "cart-quantity-value-one",
-          "cartQuantityIncrementId": "cart-quantity-increment-one",
-          "cartQuantitySubmitBtn": "Submit",
-          "cartQuantitySubmitBtnId": "cart-quantity-submit-btn-one"
-        },
-        {
-          "nameHeadline": "Enditatem Product Name",
-          "nameSubline": "Optional Line Two",
-          "sku": "Sunrise #SUN123456",
-          "color": "Navy Blue",
-          "availableColors": [
-            {
-              "label": "Navy Blue",
-              "value": "navy_blue"
-            },
-            {
-              "label": "Beige",
-              "value": "beige"
-            }
-          ],
-          "size": "M",
-          "availableSizes": [
-            {
-              "label": "XS",
-              "value": "xs"
-            },
-            {
-              "label": "S",
-              "value": "s"
-            },
-            {
-              "label": "M",
-              "value": "m"
-            },
-            {
-              "label": "L",
-              "value": "l"
-            },
-            {
-              "label": "XL",
-              "value": "xl"
-            }
-          ],
-          "available": "Available",
-          "edit": "Edit",
-          "editId": "cart-edit-button-two",
-          "editWidgedCancel": "Cancel",
-          "editWidgedCancelXs": "X",
-          "editWidgedUpdate": "Update",
-          "delete": "Delete",
-          "deleteId": "cart-delete-button-two",
-          "price": "49,00 €",
-          "totalPrice": "49,00 €",
-          "cartQuantityDecrementId": "cart-quantity-decrement-two",
-          "cartQuantityValueId": "cart-quantity-value-two",
-          "cartQuantityIncrementId": "cart-quantity-increment-two",
-          "cartQuantitySubmitBtn": "Submit",
-          "cartQuantitySubmitBtnId": "cart-quantity-submit-btn-two"
-        }
-      ],
-      "discountTooltip": "Discount options additional information...",
-      "promoDiscount": "Promotional Discount Info",
-      "applyBtn": "Apply",
-      "subtotal": "98,00 EUR",
-      "orderDiscountTitle": "Order Discount",
-      "orderDiscount": "0,00 EUR",
-      "deliveryTooltip": "Delivery estimate options additional information...",
-      "deliveryEstimate": "Delivery estimate options",
-      "deliveryOption": "Standard Delivery",
-      "delivery": "0,00 EUR",
-      "tax": "0,00 EUR",
-      "orderTotalTitle": "Order Total",
-      "orderTotal": "98,00 EUR"
-    },
-    "continueShoppingBtn": "Continue Shopping",
-    "wishlistWidged": {
-      "text": "Your Wishlist",
-      "wishlistBtnId": "cart-wishlist-btn",
-      "wishlistViewBtnId": "cart-wishlist-view-btn",
-      "number": "45",
-      "recentAddedTitle": "My recently added items",
-      "viewWishlist": {
-        "text": "View your wishlist",
-        "url": ""
+    "cart": {
+      "itemsTotal": 3,
+      "salesTax": "23.95 €",
+      "total": "150.00 €",
+      "promoCode": "Sunny Sale",
+      "subtotal": "147.00 €",
+      "shippingMethod": {
+        "name": "DHL Standard",
+        "value": "dhl-standard",
+        "selected": true,
+        "deliveryDays": "Delivery: 3-5 Days",
+        "url": "",
+        "total": "3,00 €",
+        "description": "DHL Standard - Delivery 3-5 Days"
       },
+      "lineItems": {
+        "list": [
+          {
+            "name": "Product Name 1",
+            "description": "Optional Line Two",
+            "image": "assets/img/blue-jacket.jpg",
+            "sku": "Sunrise #SUN123456",
+            "attributes": {
+              "color": "Navy Blue",
+              "size": "M"
+            },
+            "availableColors": [
+              {
+                "label": "Navy Blue",
+                "value": "navy_blue"
+              },
+              {
+                "label": "Beige",
+                "value": "beige"
+              }
+            ],
+            "availableSizes": [
+              {
+                "label": "XS",
+                "value": "xs"
+              },
+              {
+                "label": "S",
+                "value": "s"
+              },
+              {
+                "label": "M",
+                "value": "m"
+              },
+              {
+                "label": "L",
+                "value": "l"
+              },
+              {
+                "label": "XL",
+                "value": "xl"
+              }
+            ],
+            "quantity": 1,
+            "priceOld": "100,00 €",
+            "price": "49,00 €",
+            "total": "49,00 €"
+          },
+          {
+            "name": "Product Name 1",
+            "description": "Optional Line Two",
+            "image": "assets/img/blue-jacket.jpg",
+            "sku": "Sunrise #SUN123456",
+            "attributes": {
+              "color": "Navy Blue",
+              "size": "M"
+            },
+            "availableColors": [
+              {
+                "label": "Navy Blue",
+                "value": "navy_blue"
+              },
+              {
+                "label": "Beige",
+                "value": "beige"
+              }
+            ],
+            "availableSizes": [
+              {
+                "label": "XS",
+                "value": "xs"
+              },
+              {
+                "label": "S",
+                "value": "s"
+              },
+              {
+                "label": "M",
+                "value": "m"
+              },
+              {
+                "label": "L",
+                "value": "l"
+              },
+              {
+                "label": "XL",
+                "value": "xl"
+              }
+            ],
+            "quantity": 1,
+            "priceOld": "100,00 €",
+            "price": "49,00 €",
+            "total": "49,00 €"
+          },
+          {
+            "name": "Product Name 1",
+            "description": "Optional Line Two",
+            "image": "assets/img/blue-jacket.jpg",
+            "sku": "Sunrise #SUN123456",
+            "attributes": {
+              "color": "Navy Blue",
+              "size": "M"
+            },
+            "availableColors": [
+              {
+                "label": "Navy Blue",
+                "value": "navy_blue"
+              },
+              {
+                "label": "Beige",
+                "value": "beige"
+              }
+            ],
+            "availableSizes": [
+              {
+                "label": "XS",
+                "value": "xs"
+              },
+              {
+                "label": "S",
+                "value": "s"
+              },
+              {
+                "label": "M",
+                "value": "m"
+              },
+              {
+                "label": "L",
+                "value": "l"
+              },
+              {
+                "label": "XL",
+                "value": "xl"
+              }
+            ],
+            "quantity": 1,
+            "priceOld": "100,00 €",
+            "price": "49,00 €",
+            "total": "49,00 €"
+          }
+        ]
+      },
+      "shippingAddress": {
+        "title": "Dr.",
+        "salutation": "Herr",
+        "firstName": "John",
+        "lastName": "Smith",
+        "streetName": "1 Tardisstreet",
+        "city": "London",
+        "region": "London (Region)",
+        "postalCode": "123456",
+        "country": "United Kingdom",
+        "countryCode": "UK",
+        "phone": "+49 123 4567899",
+        "email": "thedoctor@commercetools.com"
+      },
+      "billingAddress": {
+        "title": "Dr.",
+        "salutation": "Herr",
+        "firstName": "John",
+        "lastName": "Smith (billing)",
+        "streetName": "Duststreet 500",
+        "city": "",
+        "region": "Utah",
+        "postalCode": "56789",
+        "phone": "+49 123 4567899 (billing)",
+        "email": "billing@commercetools.com"
+      },
+      "paymentDetails": {
+        "text": "Payment Details",
+        "type": "Credit Card",
+        "name": "P. Osgood",
+        "card": "Visa",
+        "number": "**** **** **** **56",
+        "date": "09.18"
+      },
+      "orderNumber": "01445678",
+      "orderDate": "Nov 10, 2015",
+      "customerEmail": "thedoctor@commercetools.com"
+    },
+    "wishlist": {
+      "url": "",
+      "quantity": 45,
       "list": [
         {
-          "image": "assets/img/blue-shirt.jpg"
+          "name": "some item",
+          "imageUrl": "assets/img/blue-shirt.jpg"
         },
         {
-          "image": "assets/img/blue-shirt.jpg"
+          "name": "some more item",
+          "imageUrl": "assets/img/blue-shirt.jpg"
         },
         {
-          "image": "assets/img/blue-shirt.jpg"
+          "name": "some other item",
+          "imageUrl": "assets/img/blue-shirt.jpg"
         }
       ]
     }
   },
   "meta": {
-    "assetsPath": "assets/"
-  },
-  "options": {
-    "size": [
-      {
-        "code": "xs",
-        "name": "XS"
+    "assetsPath": "assets/",
+    "_links": {
+      "editShippingAddress": {
+        "href": "checkout-shipping.html"
       },
-      {
-        "code": "s",
-        "name": "S"
+      "editBillingAddress": {
+        "href": "checkout-shipping.html"
       },
-      {
-        "code": "m",
-        "name": "M"
+      "editPaymentInfo": {
+        "href": "checkout-payment.html"
       },
-      {
-        "code": "l",
-        "name": "L"
+      "editShippingMethod": {
+        "href": "checkout-shipping.html#shipping-methods-setting"
       },
-      {
-        "code": "xl",
-        "name": "XL"
+      "continueShopping": {
+        "href": "pop.html"
+      },
+      "checkout": {
+        "href": "checkout-shipping.html"
+      },
+      "home": {
+        "href": "home.html"
+      },
+      "cart": {
+        "href": "cart.html"
       }
-    ],
-    "color": [
-      {
-        "code": "navy_blue",
-        "name": "Navy Blue"
+    },
+    "features": {
+      "myAccount": {
+        "active": false
       },
-      {
-        "code": "beige",
-        "name": "Beige"
+      "cartDiscounts": {
+        "active": false
       }
-    ]
+    }
   }
 }

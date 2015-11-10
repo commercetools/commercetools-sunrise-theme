@@ -1,213 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {{> common/htmlhead}}
-  </head>
+<head>
+  {{> common/htmlhead}}
+</head>
 
-  <body>
-  {{> common/checkout-header}}
-  <div class="checkout-shipping">
+<body>
+{{> common/checkout-header}}
+<div class="checkout-shipping">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          {{> checkout/secure-checkout-title titleKey="checkout.shippingPage.title"}}
-      </div>
-        <div class="col-md-6">
-          {{> checkout/step-widget}}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="checkout">
-            <div class="row">
-              <div class="col-sm-7">
-                <div class="shipping-info">
-                  <span class="text-uppercase shipping-info-title">{{i18n "checkout.shippingInformation"}}</span>
-                  <span class="pull-right required-fields">{{i18n "form.required"}}*</span>
-                </div>
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="title">
-                      <span class="text-uppercase">{{i18n "form.title"}}</span><br>
-                      <select id="shipping-title-select" class="checkout-dropdown" name="title" form="title">
-                        {{#each content.chooseTitle.list}}
-                          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-                        {{/each}}
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="first-name">
-                      <span class="text-uppercase">{{i18n "form.firstName"}}*</span><br>
-                      <input id="shipping-firstname-input" class="checkout-input-field" type="text">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="last-name">
-                      <span class="text-uppercase">{{i18n "form.lastName"}}*</span><br>
-                      <input id="shipping-lastname-input" class="checkout-input-field" type="text">
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="address-one">
-                      <span class="text-uppercase">{{i18n "form.addressOne"}}*</span><br>
-                      <input id="shipping-addressone-input"class="checkout-input-field" type="text">
-                    </div>
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="address-two">
-                      <span class="text-uppercase">{{i18n "form.addressTwo"}}*</span><br>
-                      <input id="shipping-addresstwo-input" class="checkout-input-field" type="text">
-                    </div>
-                  </div>
-                  <div class="col-sm-8">
-                    <div class="city">
-                      <span class="text-uppercase">{{i18n "form.city"}}*</span><br>
-                      <input id="shipping-city-input" class="checkout-input-field" type="text">
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="post-code">
-                      <span class="text-uppercase">{{i18n "form.postCode"}}*</span><br>
-                      <input id="shipping-postcode-input" class="checkout-input-field" type="text">
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="country">
-                      <span class="text-uppercase">{{i18n "form.country"}}*</span><br>
-                      <select id="shipping-country-select" class="checkout-dropdown" name="title" form="title">
-                        {{#each content.chooseCountry.list}}
-                          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-                        {{/each}}
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="region">
-                      <span class="text-uppercase">{{i18n "form.region"}}</span><br>
-                      <input id="shipping-region-input" class="checkout-input-field" type="text">
-                    </div>
-                  </div>
-                </div>
-                <hr>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="primary-telephone">
-                      <span class="text-uppercase">{{i18n "form.phone"}}</span><br>
-                      <input id="shipping-telnumber-input" class="checkout-input-field" type="text">
-                      <span class="tel-email-text">{{i18n "checkout.shippingPage.telNumberInfo"}}</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="email-address">
-                      <span class="text-uppercase">{{i18n "form.email"}}*</span><br>
-                      <input id="shipping-email-input" class="checkout-input-field" type="text">
-                      <span class="tel-email-text">{{i18n "checkout.shippingPage.emailInfo"}}</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row different-billing-row">
-                  <div class="col-sm-12">
-                    <div class="different-for-billing">
-                      <label for="different-billing-checkbox">
-                        <span>
-                          <input id="different-billing-checkbox" type="checkbox">
-                        </span>
-                        <span>{{i18n "checkout.shippingPage.differentBillingAddressCheckboxLabel"}}</span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div id="different-billing-address">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <div class="address-one-different">
-                            <span class="text-uppercase">{{i18n "form.addressOne"}}*</span><br>
-                            <input id="shipping-different-addressone-input" class="checkout-input-field" type="text">
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <div class="address-two-different">
-                            <span class="text-uppercase">{{i18n "form.addressTwo"}}*</span><br>
-                            <input id="shipping-different-addresstwo-input" class="checkout-input-field" type="text">
-                          </div>
-                        </div>
-                        <div class="col-sm-8">
-                          <div class="city-different">
-                            <span class="text-uppercase">{{i18n "form.city"}}*</span><br>
-                            <input id="shipping-different-city-input" class="checkout-input-field" type="text">
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="post-code-different">
-                            <span class="text-uppercase">{{i18n "form.postCode"}}*</span><br>
-                            <input id="shipping-different-postcode-input" class="checkout-input-field" type="text">
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="country-different">
-                            <span class="text-uppercase">{{i18n "form.country"}}*</span><br>
-                            <select id="shipping-different-country-select" class="checkout-dropdown" name="title" form="title">
-                              {{#each content.diffChooseCountry.list}}
-                                <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-                              {{/each}}
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="region-different">
-                            <span class="text-uppercase">{{i18n "form.region"}}*</span><br>
-                            <input id="shipping-different-region-input" class="checkout-input-field" type="text">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="shipping-method">
-                      <div class="text-uppercase shipping-method-title">{{i18n "checkout.shippingMethod"}}</div>
-                      {{#each content.delivery.list}}
-                        <div class="shipping-method-option">
-                          <span><input id="{{id}}" class="shipping-method-radio" type="radio" name="delivery options" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}</span>
-                          <span class="pull-right text-uppercase delivery-time">{{deliveryDays}}</span>
-                          <a href="#"><span class="pull-right text-uppercase delivery-details">{{i18n "common.viewDetails"}}</span></a>
-                        </div>
-                      {{/each}}
-                    </div>
-                  </div>
-                </div>
-                <div class="row hidden-xs">
-                  <div class="col-sm-6">
-                    <div>
-                      <a href="#" id="shipping-continue-checkout-btn" class="btn text-uppercase checkout-checkout-btn">{{i18n "checkout.continueCheckout"}}</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-5">
-                {{> checkout/vertical-order-summary}}
-                <div class="row visible-xs">
-                  <div class="col-sm-6">
-                    <div>
-                      <a href="#" id="shipping-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">{{i18n "checkout.continueCheckout"}}</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="row">
+            <div class="col-md-6">
+              {{> checkout/secure-checkout-title titleKey="checkout:shippingPage.title"}}
             </div>
-          </div>
+            <div class="col-md-6">
+              {{> checkout/step-widget}}
+            </div>
         </div>
-      </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="checkout">
+                    <div class="row">
+                        <div class="col-sm-7">
+                          {{> checkout/shipping-form shippingForm=content.shippingForm}}
+                        </div>
+                        <div class="col-sm-5">
+                          {{> checkout/order-summary-sidebar}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  {{> common/checkout-footer}}
-  {{> common/htmlscripts}}
+</div>
+{{> common/checkout-footer}}
+{{> common/htmlscripts}}
 </body>
 
 </html>

@@ -1,0 +1,143 @@
+<div class="{{mainClass}}">
+  {{> checkout/order-summary/header}}
+
+  {{#each cart.lineItems.list}}
+      <div class="row single-cart-item">
+          <div class="col-sm-1 col-xs-4 product-img-col">
+              <img class="img-responsive cart-item-img" src="{{image}}" alt="cart item image">
+          </div>
+          <div class="col-sm-3 col-xs-8 product-info-text">
+              <p class="cart-item-name">{{name}}
+                  <br>{{description}}</p>
+              <p class="grey-p">{{sku}}</p>
+            {{#if attributes.color}}
+              {{#if attributes.size}}
+                  <p class="cart-color-size">
+                      <!--:color-->
+                    {{i18n "common.color"}}:
+                      <span class="black-p" data-model="cartItem.color">{{attributes.color}}</span>
+                      <!--:colorend-->
+                      <br>
+                      <!--:size-->
+                    {{i18n "common.size"}}:
+                      <span class="black-p" data-model="cartItem.size">{{attributes.size}}</span>
+                      <!--:sizeend-->
+                  </p>
+              {{/if}}
+            {{/if}}
+            {{#unless ../ordered}}
+                <p class="cart-item-availability grey-p">
+                    <span class="glyphicon glyphicon-ok-sign"></span>{{i18n "content.product.available"}}
+                </p>
+            {{/unless}}
+          </div>
+
+
+
+
+      {{#if ../editable}}
+          <div class="col-sm-2 col-xs-12 cart-edit-delete">
+              <div class="edit-section-options">
+                  <div class="edit-delete-section">
+                      <button type="submit" class="edit-action" id="cart-edit-button-{{@index}}">
+                        <span>
+                          <img class="cart-action-icon" src="{{../../meta.assetsPath}}img/edit-1.png" alt="edit">{{i18n "form.edit"}}
+                        </span>
+                      </button>
+                  </div>
+                  <div class="edit-delete-section">
+                      <button type="submit" id="cart-delete-button-{{@index}}">
+                        <span>
+                          <img class="cart-action-icon" src="{{../../meta.assetsPath}}img/delete-1.png" alt="delete">{{i18n "form.delete"}}
+                        </span>
+                      </button>
+                  </div>
+              </div>
+            {{#if availableColors}}
+              {{#if availableSizes}}
+                  <div class="edit-section-form">
+                      <select data-model="cartItem.color" class="selector checkout-dropdown">
+                        {{#each availableColors}}
+                            <option value="{{value}}">{{label}}</option>
+                        {{/each}}
+                      </select>
+                      <select data-model="cartItem.size" class="selector checkout-dropdown">
+                        {{#each availableSizes}}
+                            <option value="{{value}}">{{label}}</option>
+                        {{/each}}
+                      </select>
+                      <div class="actions text-right">
+                          <button type="button" class="default-btn cancel-action">
+                              <span class="hidden-xs hidden-md hidden-lg">{{i18n "form.cancel"}}</span>
+                              <span class="hidden-sm">X</span>
+                          </button>
+                          <button type="button" class="action-btn update-action">{{i18n "form.submit"}}</button>
+                      </div>
+                  </div>
+              {{/if}}
+            {{/if}}
+          </div>
+          <div class="col-sm-2 col-xs-12 clearfix">
+              <div class="sm-pull-right visible-xs">
+                  <button type="submit" id="cart-quantity-submit-btn-{{@index}}" class="quantity-submit-btn">{{i18n "form.submit"}}</button>
+              </div>
+              <div class="sm-pull-right quantity-spinner">
+                  <span id="cart-quantity-decrement-{{@index}}" class="input-number-decrement">–</span>
+                  <input id="cart-quantity-value-{{@index}}" class="input-number" type="text" value="1" min="1" max="10">
+                  <span id="cart-quantity-increment-{{@index}}" class="input-number-increment">+</span>
+              </div>
+              <div class="sm-pull-right hidden-xs">
+                  <button type="submit" id="cart-quantity-submit-btn-{{@index}}" class="quantity-submit-btn">{{i18n "form.submit"}}</button>
+              </div>
+          </div>
+      {{else}}
+          <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
+              <span class="visible-xs">Quantity:</span>
+              <span class="quantity-number">{{quantity}}</span>
+          </div>
+      {{/if}}
+
+
+
+
+
+
+          <div class="col-sm-2 {{#if editable}}col-xs-12 sm-pull-right{{else}}col-xs-7{{/if}}">
+              <div class="text-right cart-item-price">
+                  <span class="visible-xs xs-price-title">{{i18n "common.price"}}</span>
+                {{#if priceOld}}
+                    <span class="discounted-price">{{priceOld}}</span>
+                {{/if}}
+                  <span>{{price}}</span>
+              </div>
+          </div>
+          <div class="col-sm-2 {{#if editable}}col-xs-12 sm-pull-right{{else}}col-xs-5{{/if}}">
+              <div class="text-right cart-item-price">
+                  <span class="visible-xs xs-price-title">{{i18n "checkout:total"}}</span>
+                  <span>{{total}}</span>
+              </div>
+          </div>
+      </div>
+
+
+
+
+
+
+  {{/each}}
+
+  {{> checkout/order-summary/discount-code-input}}
+    {{#if checkoutConfirmation}}
+  {{> checkout/order-summary/confirmation-checkboxes}}
+  {{/if}}
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="total-price-calc">
+              {{#unless editable}}
+                {{> checkout/order-summary/discount-summary}}
+              {{/unless}}
+              {{> checkout/order-summary/totals}}
+            </div>
+        </div>
+    </div>
+</div>

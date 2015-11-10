@@ -381,313 +381,431 @@
             <span>
               <img class="bag-icon-lg" src="assets/img/hand-bag-2-black.png" alt="bag icon">
             </span>
-            <span class="text-uppercase your-bag-txt">Your bag:</span>
-            <span class="items-total-txt">2 items in total</span>
+            <span class="text-uppercase your-bag-txt">Your Bag: </span>
+            <span class="items-total-txt">3 items in total</span>
           </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
-          <div class="checkout-now">
-            <button id="cart-checkoutnow-btn" class="pull-right text-uppercase checkout-now-btn">Checkout now</button>
-          </div>
+        <!-- start start-checkout-link.hbs -->
+            <div class="col-sm-4 col-xs-12">
+        
+            <div class="checkout-now">
+                <a href="checkout-shipping.html">
+                    <button class="pull-right text-uppercase checkout-now-btn" id="cart-checkoutnow-btn">Checkout</button>
+                </a>
+            </div>
         </div>
+        <!-- end start-checkout-link.hbs -->
       </div>
       <div class="row">
         <div class="col-sm-12">
           <div class="cart-content">
-            <div class="row text-uppercase hidden-xs cart-items-title">
-              <div class="col-sm-6">
-                <span>Product Description</span>
-              </div>
-              <div class="col-sm-2">
-                <span>quantity</span>
-              </div>
-              <div class="col-sm-2 text-right">
-                <span>Price</span>
-              </div>
-              <div class="col-sm-2 text-right">
-                <span>Total Price</span>
-              </div>
-            </div>
-              <div class="row single-cart-item">
-                <div class="col-sm-1 col-xs-4 product-img-col">
-                  <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
-                </div>
-                <div class="col-sm-3 col-xs-8 product-info-text">
-                  <p class="cart-item-name">Enditatem Product Name
-                    <br>Optional Line Two</p>
-                  <p class="grey-p">Sunrise #SUN123456</p>
-                  <p class="cart-color-size">
-                    <!--:color-->
-                    Color:
-                    <span class="black-p" data-model="cartItem.color">Navy Blue</span>
-                    <!--:colorend-->
-                    <br>
-                    <!--:size-->
-                    Size:
-                    <span class="black-p" data-model="cartItem.size">M</span>
-                    <!--:sizeend-->
-                  </p>
-                  <p class="cart-item-availability grey-p hidden-xs">
-                    <span class="glyphicon glyphicon-ok-sign"></span>Available</p>
-                  <p class="cart-item-availability grey-p visible-xs">
-                    <span class="glyphicon glyphicon-ok-sign"></span>Available</p>
-                </div>
-                <div class="col-sm-2 col-xs-12 cart-edit-delete">
-                  <div class="edit-section-options">
-                    <div class="edit-delete-section">
-                      <button type="submit" class="edit-action" id="cart-edit-button-one" href="#">
-                        <span>
-                          <img class="cart-action-icon" src="assets/img/edit-1.png" alt="delete">Edit
-                        </span>
-                      </button>
-                    </div>
-                    <div class="edit-delete-section">
-                      <button type="submit" id="cart-delete-button-one" href="#">
-                        <span>
-                          <img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">Delete
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="edit-section-form">
-                    <select data-model="cartItem.color" class="selector checkout-dropdown">
-                        <option value="navy_blue">Navy Blue</option>
-                        <option value="beige">Beige</option>
-                    </select>
-                    <select data-model="cartItem.size" class="selector checkout-dropdown">
-                        <option value="xs">XS</option>
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="xl">XL</option>
-                    </select>
-                    <div class="actions text-right">
-                      <button type="button" class="default-btn cancel-action">
-                        <span class="hidden-xs hidden-md hidden-lg">X</span>
-                        <span class="hidden-sm">Cancel</span>
-                      </button>
-                      <button type="button" class="action-btn update-action">Update</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-2 col-xs-12 clearfix">
-                  <div class="sm-pull-right visible-xs">
-                    <button type="submit" id="cart-quantity-submit-btn-one" class="quantity-submit-btn">Submit</button>
-                  </div>
-                  <div class="sm-pull-right quantity-spinner">
-                    <span id="cart-quantity-decrement-one" class="input-number-decrement">–</span>
-                    <input id="cart-quantity-value-one" class="input-number" type="text" value="1" min="1" max="10">
-                    <span id="cart-quantity-increment-one" class="input-number-increment">+</span>
-                  </div>
-                  <div class="sm-pull-right hidden-xs">
-                    <button type="submit" id="cart-quantity-submit-btn-one" class="quantity-submit-btn">Submit</button>
-                  </div>
-                </div>
-                <div class="col-sm-2 col-xs-12 sm-pull-right">
-                  <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">Price</span>
-                      <span class="discounted-price">100,00 €</span>
-                    <span>49,00 €</span>
-                  </div>
-                </div>
-                <div class="col-sm-2 col-xs-12 sm-pull-right">
-                  <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">Total</span>
-                    <span>49,00 €</span>
-                  </div>
-                </div>
-              </div>
-              <div class="row single-cart-item">
-                <div class="col-sm-1 col-xs-4 product-img-col">
-                  <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
-                </div>
-                <div class="col-sm-3 col-xs-8 product-info-text">
-                  <p class="cart-item-name">Enditatem Product Name
-                    <br>Optional Line Two</p>
-                  <p class="grey-p">Sunrise #SUN123456</p>
-                  <p class="cart-color-size">
-                    <!--:color-->
-                    Color:
-                    <span class="black-p" data-model="cartItem.color">Navy Blue</span>
-                    <!--:colorend-->
-                    <br>
-                    <!--:size-->
-                    Size:
-                    <span class="black-p" data-model="cartItem.size">M</span>
-                    <!--:sizeend-->
-                  </p>
-                  <p class="cart-item-availability grey-p hidden-xs">
-                    <span class="glyphicon glyphicon-ok-sign"></span>Available</p>
-                  <p class="cart-item-availability grey-p visible-xs">
-                    <span class="glyphicon glyphicon-ok-sign"></span>Available</p>
-                </div>
-                <div class="col-sm-2 col-xs-12 cart-edit-delete">
-                  <div class="edit-section-options">
-                    <div class="edit-delete-section">
-                      <button type="submit" class="edit-action" id="cart-edit-button-two" href="#">
-                        <span>
-                          <img class="cart-action-icon" src="assets/img/edit-1.png" alt="delete">Edit
-                        </span>
-                      </button>
-                    </div>
-                    <div class="edit-delete-section">
-                      <button type="submit" id="cart-delete-button-two" href="#">
-                        <span>
-                          <img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete">Delete
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="edit-section-form">
-                    <select data-model="cartItem.color" class="selector checkout-dropdown">
-                        <option value="navy_blue">Navy Blue</option>
-                        <option value="beige">Beige</option>
-                    </select>
-                    <select data-model="cartItem.size" class="selector checkout-dropdown">
-                        <option value="xs">XS</option>
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="xl">XL</option>
-                    </select>
-                    <div class="actions text-right">
-                      <button type="button" class="default-btn cancel-action">
-                        <span class="hidden-xs hidden-md hidden-lg">X</span>
-                        <span class="hidden-sm">Cancel</span>
-                      </button>
-                      <button type="button" class="action-btn update-action">Update</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-2 col-xs-12 clearfix">
-                  <div class="sm-pull-right visible-xs">
-                    <button type="submit" id="cart-quantity-submit-btn-two" class="quantity-submit-btn">Submit</button>
-                  </div>
-                  <div class="sm-pull-right quantity-spinner">
-                    <span id="cart-quantity-decrement-two" class="input-number-decrement">–</span>
-                    <input id="cart-quantity-value-two" class="input-number" type="text" value="1" min="1" max="10">
-                    <span id="cart-quantity-increment-two" class="input-number-increment">+</span>
-                  </div>
-                  <div class="sm-pull-right hidden-xs">
-                    <button type="submit" id="cart-quantity-submit-btn-two" class="quantity-submit-btn">Submit</button>
-                  </div>
-                </div>
-                <div class="col-sm-2 col-xs-12 sm-pull-right">
-                  <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">Price</span>
-                    <span>49,00 €</span>
-                  </div>
-                </div>
-                <div class="col-sm-2 col-xs-12 sm-pull-right">
-                  <div class="text-right cart-item-price">
-                    <span class="visible-xs xs-price-title">Total</span>
-                    <span>49,00 €</span>
-                  </div>
-                </div>
-              </div>
+            <!-- start checkout/order-summary/header -->
             <div class="row">
-              <div class="col-sm-12">
-                <div class="text-right promotion-info">
-                  <span class="text-uppercase promo-info-text" title="Discount options additional information...">Promotional Discount Info
-                    <img class="info-icon" src="assets/img/information.png" alt="information icon">
-                  </span>
-                  <input id="promo-code" type="text">
-                  <button id="cart-apply-promocode-btn" class="text-uppercase promo-apply-btn">Apply</button>
+                <div class="row text-uppercase hidden-xs cart-items-title">
+                    <div class="col-sm-6">
+                        <span>Description</span>
+                    </div>
+                    <div class="col-sm-2">
+                        <span>quantity</span>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <span>Price</span>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <span>Total</span>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="total-price-calc">
-                  <div class="row">
-                    <div class="col-xs-12 delivery-xs">
-                      <span class="visible-xs text-right delivery-est" title="Delivery estimate options additional information...">Delivery estimate options
-                        <img class="info-icon" src="assets/img/information.png" alt="information icon">
-                      </span>
+            <!-- end checkout/order-summary/header -->
+          
+                <div class="row single-cart-item">
+                    <div class="col-sm-1 col-xs-4 product-img-col">
+                        <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
                     </div>
-                    <div class="col-sm-9 col-md-10 col-xs-6">
-                      <div class="text-right subtotal">
-                        <span class="subtotal-title">Subtotal</span>
-                      </div>
-                      <div class="text-right">
-                        <span class="order-discount">Order Discount</span>
-                      </div>
-                      <div class="text-right delivery-info">
-                        <span class="delivery-est hidden-xs" title="Delivery estimate options additional information...">Delivery estimate options
-                          <img class="info-icon" src="assets/img/information.png" alt="information icon">
-                        </span>
-                        <span class="delivery-info-title">Standard Delivery</span>
-                      </div>
-                      <hr class="total-divider">
-                      <div class="text-right">
-                        <span>Sales Tax</span>
-                      </div>
-                      <div class="text-right">
-                        <span class="order-total">Order Total</span>
-                      </div>
+                    <div class="col-sm-3 col-xs-8 product-info-text">
+                        <p class="cart-item-name">Product Name 1
+                            <br>Optional Line Two</p>
+                        <p class="grey-p">Sunrise #SUN123456</p>
+                            <p class="cart-color-size">
+                                <!--:color-->
+                              Color:
+                                <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                                <!--:colorend-->
+                                <br>
+                                <!--:size-->
+                              Size:
+                                <span class="black-p" data-model="cartItem.size">M</span>
+                                <!--:sizeend-->
+                            </p>
+                          <p class="cart-item-availability grey-p">
+                              <span class="glyphicon glyphicon-ok-sign"></span>content.product.available
+                          </p>
                     </div>
-                    <div class="col-sm-3 col-md-2 col-xs-6 text-right">
-                      <div>
-                        <span>98,00 EUR</span>
-                      </div>
-                      <div>
-                        <span class="order-discount">0,00 EUR</span>
-                      </div>
-                      <div>
-                        <span>0,00 EUR</span>
-                      </div>
-                      <hr>
-                      <div>
-                        <span>0,00 EUR</span>
-                      </div>
-                      <div>
-                        <span class="order-total">98,00 EUR</span>
-                      </div>
+          
+          
+          
+          
+                    <div class="col-sm-2 col-xs-12 cart-edit-delete">
+                        <div class="edit-section-options">
+                            <div class="edit-delete-section">
+                                <button type="submit" class="edit-action" id="cart-edit-button-0">
+                                  <span>
+                                    <img class="cart-action-icon" src="img/edit-1.png" alt="edit">Edit
+                                  </span>
+                                </button>
+                            </div>
+                            <div class="edit-delete-section">
+                                <button type="submit" id="cart-delete-button-0">
+                                  <span>
+                                    <img class="cart-action-icon" src="img/delete-1.png" alt="delete">Delete
+                                  </span>
+                                </button>
+                            </div>
+                        </div>
+                            <div class="edit-section-form">
+                                <select data-model="cartItem.color" class="selector checkout-dropdown">
+                                      <option value="navy_blue">Navy Blue</option>
+                                      <option value="beige">Beige</option>
+                                </select>
+                                <select data-model="cartItem.size" class="selector checkout-dropdown">
+                                      <option value="xs">XS</option>
+                                      <option value="s">S</option>
+                                      <option value="m">M</option>
+                                      <option value="l">L</option>
+                                      <option value="xl">XL</option>
+                                </select>
+                                <div class="actions text-right">
+                                    <button type="button" class="default-btn cancel-action">
+                                        <span class="hidden-xs hidden-md hidden-lg">Cancel</span>
+                                        <span class="hidden-sm">X</span>
+                                    </button>
+                                    <button type="button" class="action-btn update-action">Submit</button>
+                                </div>
+                            </div>
                     </div>
+                    <div class="col-sm-2 col-xs-12 clearfix">
+                        <div class="sm-pull-right visible-xs">
+                            <button type="submit" id="cart-quantity-submit-btn-0" class="quantity-submit-btn">Submit</button>
+                        </div>
+                        <div class="sm-pull-right quantity-spinner">
+                            <span id="cart-quantity-decrement-0" class="input-number-decrement">–</span>
+                            <input id="cart-quantity-value-0" class="input-number" type="text" value="1" min="1" max="10">
+                            <span id="cart-quantity-increment-0" class="input-number-increment">+</span>
+                        </div>
+                        <div class="sm-pull-right hidden-xs">
+                            <button type="submit" id="cart-quantity-submit-btn-0" class="quantity-submit-btn">Submit</button>
+                        </div>
+                    </div>
+          
+          
+          
+          
+          
+          
+                    <div class="col-sm-2 col-xs-7">
+                        <div class="text-right cart-item-price">
+                            <span class="visible-xs xs-price-title">Price</span>
+                              <span class="discounted-price">100,00 €</span>
+                            <span>49,00 €</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-5">
+                        <div class="text-right cart-item-price">
+                            <span class="visible-xs xs-price-title">Total</span>
+                            <span>49,00 €</span>
+                        </div>
+                    </div>
+                </div>
+          
+          
+          
+          
+          
+          
+                <div class="row single-cart-item">
+                    <div class="col-sm-1 col-xs-4 product-img-col">
+                        <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
+                    </div>
+                    <div class="col-sm-3 col-xs-8 product-info-text">
+                        <p class="cart-item-name">Product Name 1
+                            <br>Optional Line Two</p>
+                        <p class="grey-p">Sunrise #SUN123456</p>
+                            <p class="cart-color-size">
+                                <!--:color-->
+                              Color:
+                                <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                                <!--:colorend-->
+                                <br>
+                                <!--:size-->
+                              Size:
+                                <span class="black-p" data-model="cartItem.size">M</span>
+                                <!--:sizeend-->
+                            </p>
+                          <p class="cart-item-availability grey-p">
+                              <span class="glyphicon glyphicon-ok-sign"></span>content.product.available
+                          </p>
+                    </div>
+          
+          
+          
+          
+                    <div class="col-sm-2 col-xs-12 cart-edit-delete">
+                        <div class="edit-section-options">
+                            <div class="edit-delete-section">
+                                <button type="submit" class="edit-action" id="cart-edit-button-1">
+                                  <span>
+                                    <img class="cart-action-icon" src="img/edit-1.png" alt="edit">Edit
+                                  </span>
+                                </button>
+                            </div>
+                            <div class="edit-delete-section">
+                                <button type="submit" id="cart-delete-button-1">
+                                  <span>
+                                    <img class="cart-action-icon" src="img/delete-1.png" alt="delete">Delete
+                                  </span>
+                                </button>
+                            </div>
+                        </div>
+                            <div class="edit-section-form">
+                                <select data-model="cartItem.color" class="selector checkout-dropdown">
+                                      <option value="navy_blue">Navy Blue</option>
+                                      <option value="beige">Beige</option>
+                                </select>
+                                <select data-model="cartItem.size" class="selector checkout-dropdown">
+                                      <option value="xs">XS</option>
+                                      <option value="s">S</option>
+                                      <option value="m">M</option>
+                                      <option value="l">L</option>
+                                      <option value="xl">XL</option>
+                                </select>
+                                <div class="actions text-right">
+                                    <button type="button" class="default-btn cancel-action">
+                                        <span class="hidden-xs hidden-md hidden-lg">Cancel</span>
+                                        <span class="hidden-sm">X</span>
+                                    </button>
+                                    <button type="button" class="action-btn update-action">Submit</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-12 clearfix">
+                        <div class="sm-pull-right visible-xs">
+                            <button type="submit" id="cart-quantity-submit-btn-1" class="quantity-submit-btn">Submit</button>
+                        </div>
+                        <div class="sm-pull-right quantity-spinner">
+                            <span id="cart-quantity-decrement-1" class="input-number-decrement">–</span>
+                            <input id="cart-quantity-value-1" class="input-number" type="text" value="1" min="1" max="10">
+                            <span id="cart-quantity-increment-1" class="input-number-increment">+</span>
+                        </div>
+                        <div class="sm-pull-right hidden-xs">
+                            <button type="submit" id="cart-quantity-submit-btn-1" class="quantity-submit-btn">Submit</button>
+                        </div>
+                    </div>
+          
+          
+          
+          
+          
+          
+                    <div class="col-sm-2 col-xs-7">
+                        <div class="text-right cart-item-price">
+                            <span class="visible-xs xs-price-title">Price</span>
+                              <span class="discounted-price">100,00 €</span>
+                            <span>49,00 €</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-5">
+                        <div class="text-right cart-item-price">
+                            <span class="visible-xs xs-price-title">Total</span>
+                            <span>49,00 €</span>
+                        </div>
+                    </div>
+                </div>
+          
+          
+          
+          
+          
+          
+                <div class="row single-cart-item">
+                    <div class="col-sm-1 col-xs-4 product-img-col">
+                        <img class="img-responsive cart-item-img" src="assets/img/blue-jacket.jpg" alt="cart item image">
+                    </div>
+                    <div class="col-sm-3 col-xs-8 product-info-text">
+                        <p class="cart-item-name">Product Name 1
+                            <br>Optional Line Two</p>
+                        <p class="grey-p">Sunrise #SUN123456</p>
+                            <p class="cart-color-size">
+                                <!--:color-->
+                              Color:
+                                <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                                <!--:colorend-->
+                                <br>
+                                <!--:size-->
+                              Size:
+                                <span class="black-p" data-model="cartItem.size">M</span>
+                                <!--:sizeend-->
+                            </p>
+                          <p class="cart-item-availability grey-p">
+                              <span class="glyphicon glyphicon-ok-sign"></span>content.product.available
+                          </p>
+                    </div>
+          
+          
+          
+          
+                    <div class="col-sm-2 col-xs-12 cart-edit-delete">
+                        <div class="edit-section-options">
+                            <div class="edit-delete-section">
+                                <button type="submit" class="edit-action" id="cart-edit-button-2">
+                                  <span>
+                                    <img class="cart-action-icon" src="img/edit-1.png" alt="edit">Edit
+                                  </span>
+                                </button>
+                            </div>
+                            <div class="edit-delete-section">
+                                <button type="submit" id="cart-delete-button-2">
+                                  <span>
+                                    <img class="cart-action-icon" src="img/delete-1.png" alt="delete">Delete
+                                  </span>
+                                </button>
+                            </div>
+                        </div>
+                            <div class="edit-section-form">
+                                <select data-model="cartItem.color" class="selector checkout-dropdown">
+                                      <option value="navy_blue">Navy Blue</option>
+                                      <option value="beige">Beige</option>
+                                </select>
+                                <select data-model="cartItem.size" class="selector checkout-dropdown">
+                                      <option value="xs">XS</option>
+                                      <option value="s">S</option>
+                                      <option value="m">M</option>
+                                      <option value="l">L</option>
+                                      <option value="xl">XL</option>
+                                </select>
+                                <div class="actions text-right">
+                                    <button type="button" class="default-btn cancel-action">
+                                        <span class="hidden-xs hidden-md hidden-lg">Cancel</span>
+                                        <span class="hidden-sm">X</span>
+                                    </button>
+                                    <button type="button" class="action-btn update-action">Submit</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-12 clearfix">
+                        <div class="sm-pull-right visible-xs">
+                            <button type="submit" id="cart-quantity-submit-btn-2" class="quantity-submit-btn">Submit</button>
+                        </div>
+                        <div class="sm-pull-right quantity-spinner">
+                            <span id="cart-quantity-decrement-2" class="input-number-decrement">–</span>
+                            <input id="cart-quantity-value-2" class="input-number" type="text" value="1" min="1" max="10">
+                            <span id="cart-quantity-increment-2" class="input-number-increment">+</span>
+                        </div>
+                        <div class="sm-pull-right hidden-xs">
+                            <button type="submit" id="cart-quantity-submit-btn-2" class="quantity-submit-btn">Submit</button>
+                        </div>
+                    </div>
+          
+          
+          
+          
+          
+          
+                    <div class="col-sm-2 col-xs-7">
+                        <div class="text-right cart-item-price">
+                            <span class="visible-xs xs-price-title">Price</span>
+                              <span class="discounted-price">100,00 €</span>
+                            <span>49,00 €</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-5">
+                        <div class="text-right cart-item-price">
+                            <span class="visible-xs xs-price-title">Total</span>
+                            <span>49,00 €</span>
+                        </div>
+                    </div>
+                </div>
+          
+          
+          
+          
+          
+          
+          
+            <!-- start checkout/order-summary/discount-code-input -->
+            <!-- end checkout/order-summary/discount-code-input -->
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="total-price-calc">
+                        <!-- start checkout/order-summary/totals -->
+                        <div class="row">
+                            <div class="col-sm-10 col-xs-7">
+                                <div class="text-right subtotal">
+                                    <span class="subtotal-title">Subtotal</span>
+                                </div>
+                                <div class="text-right delivery-info">
+                                    <span class="delivery-info-title">DHL Standard</span>
+                                </div>
+                                <hr class="total-divider">
+                                <div class="text-right">
+                                    <span>Sales Tax</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="order-total">Total</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-xs-5 text-right">
+                                <div>
+                                    <span>147.00 €</span>
+                                </div>
+                                <div>
+                                    <span>3,00 €</span>
+                                </div>
+                                <hr>
+                                <div>
+                                    <span>23.95 €</span>
+                                </div>
+                                <div>
+                                    <span class="order-total">150.00 €</span>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <!-- end checkout/order-summary/totals -->
+                      </div>
                   </div>
-                </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
       <div class="row bottom-cart-btns">
-        <div class="col-sm-6 col-xs-12 visible-xs">
-          <div class="checkout-now-bottom">
-            <a href="#">
-              <button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">Checkout now</button>
-            </a>
-          </div>
+        <!-- start start-checkout-link.hbs -->
+              <div class="col-sm-6 col-xs-12 visible-xs">
+        
+            <div class="checkout-now-bottom">
+                <a href="checkout-shipping.html">
+                    <button class="pull-right text-uppercase checkout-now-btn">Checkout</button>
+                </a>
+            </div>
         </div>
+        <!-- end start-checkout-link.hbs -->
+        <!-- start continue-shopping-button-left.hbs -->
         <div class="col-sm-6 col-xs-12">
-          <div>
-            <a href="#">
-              <button id="cart-continueshopping-btn-xs" class="text-uppercase continue-shopping-btn">Continue Shopping</button>
-            </a>
-          </div>
+            <div>
+                <a href="pop.html" class="text-uppercase continue-shopping-btn">Continue Shopping</a>
+            </div>
         </div>
-        <div class="col-sm-6 col-xs-12 hidden-xs">
-          <div class="checkout-now-bottom">
-            <a href="#">
-              <button id="cart-checkout-btn" class="pull-right text-uppercase checkout-now-btn">Checkout now</button>
-            </a>
-          </div>
+        <!-- end continue-shopping-button-left.hbs -->
+        <!-- start start-checkout-link.hbs -->
+              <div class="col-sm-6 col-xs-12 hidden-xs">
+        
+            <div class="checkout-now-bottom">
+                <a href="checkout-shipping.html">
+                    <button class="pull-right text-uppercase checkout-now-btn">Checkout</button>
+                </a>
+            </div>
         </div>
+        <!-- end start-checkout-link.hbs -->
       </div>
-    </div>
-  </div>
-  <div class="wishlist">
-    <button id="wishlist-open-btn" class="hidden-xs wishlist-btn">
-      <div class="wishlist-number"></div>
-    </button>
-    <div class="wishlist-items hidden">
-      <p class="wishlist-title">
-        Your Wishlist <span>()</span>
-      </p>
-      <span class="recently-added-title">My recently added items</span>
-      <div class="clearfix">
-      </div>
-      <a href="" id="wishlist-view-btn" class="btn view-wishlist-btn">View your wishlist</a>
     </div>
   </div>
   <div class="footer">

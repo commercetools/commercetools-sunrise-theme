@@ -1,146 +1,35 @@
 {
-	"header" : { "$ref" : "common/checkout-header.json" },
-	"footer" : { "$ref" : "common/checkout-footer.json" },
-  "content" : {
-    "stepWidget" : {
-       "paymentStepActive": true
+    "header" : { "$ref" : "common/checkout-header.json" },
+    "footer" : { "$ref" : "common/checkout-footer.json" },
+    "content" : {
+        "stepWidget" : {
+            "paymentStepActive": true
+        },
+        "paymentForm" : {
+            "actionUrl": "checkout-confirmation.html",
+            "csrfToken": "1234567890abcdef",
+            "paymentOptions" : { "$ref" : "checkout/payment-options.json" },
+            "expiryDate" : { "$ref" : "checkout/months.json" },
+            "year" : {
+                "list" : [
+                    {
+                        "text" : "2050",
+                        "value" : "",
+                        "selected" : false
+                    },
+                    {
+                        "text" : "2100",
+                        "value" : "",
+                        "selected" : false
+                    }
+                ]
+            }
+        },
+        "cart" : { "$ref" : "checkout/cart.json" }
     },
-    "paymentOptionTitle" : "Please provide one of the following payment options:",
-    "paymentOption" : {
-      "list" : [
-        {
-          "text" : "Credit Card",
-          "image" : "assets/img/payment-option-card.gif",
-          "value" : "",
-          "selected" : false,
-					"id" : "payment-type-credit-card"
-        },
-        {
-          "text" : "PayPal",
-          "image" : "assets/img/payment-option-paypal.png",
-          "value" : "",
-          "selected" : false,
-					"id" : "payment-type-paypal"
-        },
-        {
-          "text" : "Pre-payment",
-          "image" : "assets/img/blank-img.jpg",
-          "value" : "",
-          "selected" : false,
-					"id" : "payment-type-pre-payment"
-        }
-      ]
-    },
-    "cardName" : "Name on credit card",
-    "cardNumber" : "Credit card number",
-    "expiryDateTitle" : "Expiry data",
-    "expiryDate" : {
-      "list" : [
-				{
-          "text" : "Month",
-          "value" : "",
-          "selected" : true
-        },
-        {
-          "text" : "January",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "February",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "March",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "April",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "May",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "June",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "July",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "August",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "September",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "October",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "November",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "December",
-          "value" : "",
-          "selected" : false
-        }
-      ]
-    },
-    "year" : {
-      "list" : [
-				{
-          "text" : "Year",
-          "value" : "",
-          "selected" : true
-        },
-        {
-          "text" : "2050",
-          "value" : "",
-          "selected" : false
-        },
-        {
-          "text" : "2100",
-          "value" : "",
-          "selected" : false
-        }
-      ]
-    },
-    "securityCode" : "Security Code",
-    "securityCodeTooltip" : "Additional information about the security code goes here...",
-    "itemsTotal" : 3,
-    "checkoutItem" : {
-      "list" : [
-          { "$ref" : "common/product-variant-1.json" },
-          { "$ref" : "common/product-variant-1.json" },
-          { "$ref" : "common/product-variant-1.json" }
-      ]
-    },
-    "promoCode" : "Sunny Sale",
-    "subtotal" : "107,00 €",
-    "discount" : "0,00 €",
-    "deliveryTitle" : "Standard Delivery",
-    "deliverySum" : "10,00 €",
-    "tax" : "20,00 €",
-    "total" : "123,00 €"
-  },
-  "meta" : {
-    "assetsPath": "assets/"
-  }
+    "meta" : {
+        "assetsPath": "assets/",
+        "_links" : { "$ref" : "checkout/checkout-links.json" },
+        "features" : { "$ref" : "common/feature-flags.json" }
+    }
 }

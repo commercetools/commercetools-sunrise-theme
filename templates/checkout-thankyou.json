@@ -1,96 +1,12 @@
 {
-	"header" : { "$ref" : "common/checkout-header.json" },
-	"footer" : { "$ref" : "common/checkout-footer.json" },
-  "content" : {
-    "emailSentTo" : "An email has been sent to",
-    "email" : "camilo@batman.com",
-    "emailSentToEnding" : "as a copy of this confirmation purchase",
-    "receiptBtn" : "Print Receipt",
-    "continueShoppingBtn" : "Continue Shopping",
-    "orderDetailsTitle" : "Your order details",
-    "orderNumberTitle" : "Order Number",
-    "orderNumber" : "01445678",
-    "orderDateTitle" : "Order Date",
-    "orderDate" : "Nov 14, 2015",
-    "shippingAddress" : {
-      "text" : "Shipping Address",
-      "name" : "Mr. Bruce Wayne",
-      "street" : "100 Gotham Street",
-      "city" : "Gothan City",
-      "region" : "Region",
-      "postCode" : "123456",
-      "country" : "Country",
-      "phoneTitle" : "Phone",
-      "phone" : "+49 123 4567899",
-      "emailTitle" : "Email",
-      "email" : "batman@commercetools.com"
+    "header" : { "$ref" : "common/checkout-header.json" },
+    "footer" : { "$ref" : "common/checkout-footer.json" },
+    "content" : {
+        "order" : { "$ref" : "checkout/cart.json" }
     },
-		"billingAddress" : {
-			"text" : "Billing Address",
-			"name" : "Mr. Bruce Wayne",
-			"street" : "100 Gotham Street",
-			"city" : "Gothan City",
-			"region" : "Region",
-			"postCode" : "123456",
-			"country" : "Country",
-			"phoneTitle" : "Phone",
-			"phone" : "+49 123 4567899",
-			"emailTitle" : "Email",
-			"email" : "batman@commercetools.com"
-		},
-		"shippingMethod" : {
-			"text" : "Shipping Method",
-			"description" : "DHL Standard - Delivery 3-5 Days"
-		},
-		"paymentDetails" : {
-			"text" : "Payment Details",
-			"type" : "Credit Card",
-			"name" : "Bruce Wayne",
-			"card" : "Visa",
-			"number" : "**** **** **** **56",
-			"date" : "09.18"
-		},
-    "cartItems" : {
-      "description" : "Product Description",
-      "price" : "Price",
-      "totalPrice" : "Total Price",
-      "list" : [
-        {
-          "nameHeadline" : "Enditatem Product Name",
-          "nameSubline" : "Optional Line Two",
-          "sku" : "Sunrise #SUN123456",
-          "color" : "Navy Blue",
-          "size" : "M",
-          "available" : "Available",
-					"quantity" : "2",
-          "price" : "49,00 €",
-          "totalPrice" : "49,00 €"
-        },
-        {
-          "nameHeadline" : "Enditatem Product Name",
-          "nameSubline" : "Optional Line Two",
-          "sku" : "Sunrise #SUN123456",
-          "color" : "Navy Blue",
-          "size" : "M",
-          "available" : "Available",
-          "quantity" : 3,
-          "price" : "49,00 €",
-          "totalPrice" : "49,00 €"
-        }
-      ]
-    },
-		"totalSum" : {
-			"subtotal" : "107,00 €",
-			"orderDiscountTitle" : "Order Discount",
-			"orderDiscount" : "0,00 €",
-			"deliveryOption" : "Standard Delivery",
-			"delivery" : "0,00 €",
-			"tax" : "20,00 €",
-			"orderTotalTitle" : "Order Total",
-			"orderTotal" : "117,00 €"
-		}
-  },
-  "meta" : {
-	"assetsPath": "assets/"
-  }
+    "meta" : {
+        "assetsPath": "assets/",
+        "_links" : { "$ref" : "checkout/checkout-links.json" },
+        "features" : { "$ref" : "common/feature-flags.json" }
+    }
 }

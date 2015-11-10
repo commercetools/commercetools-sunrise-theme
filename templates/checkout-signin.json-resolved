@@ -39,6 +39,40 @@
     "continueGuestBtn": "Continue As Guest"
   },
   "meta": {
-    "assetsPath": "assets/"
+    "assetsPath": "assets/",
+    "_links": {
+      "editShippingAddress": {
+        "href": "checkout-shipping.html"
+      },
+      "editBillingAddress": {
+        "href": "checkout-shipping.html"
+      },
+      "editPaymentInfo": {
+        "href": "checkout-payment.html"
+      },
+      "editShippingMethod": {
+        "href": "checkout-shipping.html#shipping-methods-setting"
+      },
+      "continueShopping": {
+        "href": "pop.html"
+      },
+      "checkout": {
+        "href": "checkout-shipping.html"
+      },
+      "home": {
+        "href": "home.html"
+      },
+      "cart": {
+        "href": "cart.html"
+      }
+    },
+    "features": {
+      "myAccount": {
+        "active": false
+      },
+      "cartDiscounts": {
+        "active": false
+      }
+    }
   }
 }

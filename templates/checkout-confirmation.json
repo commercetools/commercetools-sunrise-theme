@@ -1,114 +1,31 @@
 {
-	"header" : { "$ref" : "common/checkout-header.json" },
-	"footer" : { "$ref" : "common/checkout-footer.json" },
-  "content" : {
-      "stepWidget" : {
-          "confirmationStepActive": true
-      },
-		"editIconText" : "Edit",
-		"shippingAddress" : {
-			"text" : "Shipping Address",
-			"name" : "Mr. Bruce Wayne",
-			"street" : "100 Gotham Street",
-			"city" : "Gothan City",
-			"region" : "Region",
-			"postCode" : "123456",
-			"country" : "Country",
-			"phoneTitle" : "Phone",
-			"phone" : "+49 123 4567899",
-			"emailTitle" : "Email",
-			"email" : "batman@commercetools.com"
-		},
-		"billingAddress" : {
-			"text" : "Billing Address",
-			"name" : "Mr. Bruce Wayne",
-			"street" : "100 Gotham Street",
-			"city" : "Gothan City",
-			"region" : "Region",
-			"postCode" : "123456",
-			"country" : "Country",
-			"phoneTitle" : "Phone",
-			"phone" : "+49 123 4567899",
-			"emailTitle" : "Email",
-			"email" : "batman@commercetools.com"
-		},
-		"shippingMethod" : {
-			"text" : "Shipping Method",
-			"description" : "DHL Standard - Delivery 3-5 Days"
-		},
-		"paymentDetails" : {
-			"text" : "Payment Details",
-			"type" : "Credit Card",
-			"name" : "Bruce Wayne",
-			"card" : "Visa",
-			"number" : "**** **** **** **56",
-			"date" : "09.18"
-		},
-    "cartItems" : {
-      "description" : "Product Description",
-      "price" : "Price",
-      "totalPrice" : "Total Price",
-      "list" : [
-        {
-          "nameHeadline" : "Enditatem Product Name",
-          "nameSubline" : "Optional Line Two",
-          "sku" : "Sunrise #SUN123456",
-          "color" : "Navy Blue",
-          "size" : "M",
-          "available" : "Available",
-          "edit" : "Edit",
-          "delete" : "Delete",
-          "quantity" : 2,
-          "priceOld" : "100,00 €",
-          "price" : "49,00 €",
-          "totalPrice" : "49,00 €"
+    "header" : { "$ref" : "common/checkout-header.json" },
+    "footer" : { "$ref" : "common/checkout-footer.json" },
+    "content" : {
+        "cart" : { "$ref" : "checkout/cart.json" },
+        "stepWidget" : {
+            "confirmationStepActive": true
         },
-        {
-          "nameHeadline" : "Enditatem Product Name",
-          "nameSubline" : "Optional Line Two",
-          "sku" : "Sunrise #SUN123456",
-          "color" : "Navy Blue",
-          "size" : "M",
-          "available" : "Available",
-          "edit" : "Edit",
-          "delete" : "Delete",
-          "quantity" : 3,
-          "price" : "49,00 €",
-          "totalPrice" : "49,00 €"
+        "checkoutForm" : {
+            "actionUrl": "checkout-thankyou.html",
+            "csrfToken": "1234567890abcdef",
+            "newsletter" : {
+                "name" : "SUNRISE Newsletter",
+                "selected" : true,
+                "url" : "newsletter.html"
+            },
+            "termsConditions" : {
+                "url" : "terms.html",
+                "selected" : true
+            },
+            "remember" : {
+                "selected": true
+            }
         }
-      ]
     },
-		"rememberMe" : {
-			"text" : "Save my details to create my personal account at SUNRISE",
-			"value" : ""
-		},
-		"newsletter" : {
-			"text" : "Please add me to the",
-			"description" : "SUNRISE Newsletter",
-			"value" : "",
-			"url" : ""
-		},
-		"totalSum" : {
-			"subtotal" : "107,00 €",
-			"orderDiscountTitle" : "Order Discount",
-			"orderDiscount" : "0,00 €",
-			"deliveryOption" : "Standard Delivery",
-			"delivery" : "0,00 €",
-			"tax" : "20,00 €",
-			"orderTotalTitle" : "Order Total",
-			"orderTotal" : "117,00 €"
-		},
-		"completeOrderBtn" : {
-			"text" : "Complete my order",
-			"url" : ""
-		},
-		"termsConditions" : {
-			"text" : "I agree to the",
-			"linkText" : "Terms and Conditions",
-			"url" : ""
-		}
-  },
-  "meta" : {
-	"assetsPath": "assets/"
-  }
+    "meta" : {
+        "assetsPath": "assets/",
+        "_links" : { "$ref" : "checkout/checkout-links.json" },
+        "features" : { "$ref" : "common/feature-flags.json" }
+    }
 }

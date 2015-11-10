@@ -1,6 +1,7 @@
+<!-- start checkout-item -->
 <div class="order">
   <div class="order-summary-items">
-    {{#each content.checkoutItem.list}}
+    {{#each content.cart.lineItems.list}}
       <div class="order-summary-item">
         <div class="row">
           <div class="col-xs-4">
@@ -49,7 +50,7 @@
             </div>
             <div class="col-xs-4">
               <div class="text-right order-item-value">
-                <span class="text-uppercase pricing-titles">{{i18n "checkout.total"}}</span><br>
+                <span class="text-uppercase pricing-titles">{{i18n "checkout:total"}}</span><br>
                 <span>{{total}}</span>
               </div>
             </div>
@@ -59,27 +60,35 @@
     {{/each}}
   </div>
   <div class="checkout-total-price">
+
+    {{#if meta.features.cartDiscounts.active}}
     <div class="row">
       <div class="col-sm-12">
         <div class="text-right checkout-promo-code">
-          <span class="text-uppercase promo-code-applied">{{i18n "checkout.promoCodeApplied"}}</span>
-          <span class="text-uppercase">{{content.promoCode}}</span>
+          <span class="text-uppercase promo-code-applied">{{i18n "checkout:promoCodeApplied"}}</span>
+          <span class="text-uppercase">{{content.cart.promoCode}}</span>
         </div>
       </div>
     </div>
+    {{/if}}
+
     <div class="row">
       <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
         <div class="text-right checkout-price-text">
-          <span>{{i18n "checkout.subtotal"}}</span><br>
-          <span>{{i18n "checkout.orderDiscount"}}</span><br>
-          <span>{{content.deliveryTitle}}</span>
+          <span>{{i18n "checkout:subtotal"}}</span><br>
+          {{#if meta.features.cartDiscounts.active}}
+          <span>{{i18n "checkout:orderDiscount"}}</span><br>
+          {{/if}}
+          <span>{{content.cart.shippingMethod.name}}</span>
         </div>
       </div>
       <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
         <div class="text-right checkout-price-digits">
-          <span>{{content.subtotal}}</span><br>
-          <span>{{content.discount}}</span><br>
-          <span>{{content.deliverySum}}</span>
+          <span>{{content.cart.subtotal}}</span><br>
+          {{#if meta.features.cartDiscounts.active}}
+          <span>{{content.cart.discount}}</span><br>
+          {{/if}}
+          <span>{{content.cart.shippingMethod.total}}</span>
         </div>
       </div>
     </div>
@@ -88,13 +97,13 @@
     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
       <div class="text-right order-tax-total-text">
         <span>{{i18n "common.salesTax"}}</span><br>
-        <span class="total-order-value">{{i18n "checkout.total"}}</span>
+        <span class="total-order-value">{{i18n "checkout:total"}}</span>
       </div>
     </div>
     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
       <div class="text-right order-tax-total-digits">
-        <span>{{content.tax}}</span><br>
-        <span class="total-order-value">{{content.total}}</span>
+        <span>{{content.cart.salesTax}}</span><br>
+        <span class="total-order-value">{{content.cart.total}}</span>
       </div>
     </div>
   </div>
@@ -102,9 +111,10 @@
     <div class="col-sm-12">
       <div>
         <span class="text-uppercase pull-right edit-quantity-order">
-            <a href="#">{{i18n "checkout.editMyCart"}}</a>
+            <a href="{{meta._links.cart.href}}">{{i18n "checkout:editMyCart"}}</a>
         </span>
       </div>
     </div>
   </div>
 </div>
+<!-- end checkout-item -->

@@ -1,132 +1,73 @@
 {
-    "header" : { "$ref" : "common/checkout-header.json" },
+    "header" : { "$ref" : "common/checkout-header.json"},
     "footer" : { "$ref" : "common/checkout-footer.json" },
     "content" : {
         "stepWidget" : {
             "shippingStepActive": true
         },
-        "chooseTitle" : {
-            "list" : [
-                {
-                    "text" : "Choose",
-                    "value" : "",
-                    "selected" : true
-                },
-                {
-                    "text" : "Mr.",
-                    "value" : "Mr.",
-                    "selected" : false
-                },
-                {
-                    "text" : "Mrs.",
-                    "value" : "Mrs.",
-                    "selected" : false
-                },
-                {
-                    "text" : "Ms.",
-                    "value" : "Ms.",
-                    "selected" : false
-                },
-                {
-                    "text" : "Dr.",
-                    "value" : "Dr.",
-                    "selected" : false
-                }
-            ]
+        "shippingForm" : {
+            "actionUrl": "checkout-payment.html",
+            "csrfToken": "1234567890abcdef",
+            "billingAddressDifferentToBillingAddress": true,
+            "shippingAddress" : {
+                "salutations" : { "$ref" : "checkout/salutations.json" },
+                "firstName" : "John",
+                "lastName" : "Smith",
+                "streetName" : "Tardisstreet",
+                "streetNumber" : "1",
+                "city" : "London",
+                "region" : "London (Region)",
+                "postalCode" : "123456",
+                "countries" : { "$ref" : "checkout/choose-country.json" },
+                "phone" : "+49 123 4567899",
+                "email" : "thedoctor@commercetools.com"
+            },
+            "billingAddress" : {
+                "salutations" : { "$ref" : "checkout/salutations.json" },
+                "firstName" : "John",
+                "lastName" : "Smith (billing)",
+                "streetName" : "Duststreet 500",
+                "additionalAddressInfo" : "dust",
+                "city" : "",
+                "region" : "Utah",
+                "postalCode" : "56789",
+                "phone" : "+49 123 4567899 (billing)",
+                "email" : "billing@commercetools.com",
+                "countries" : {  "list" : [
+                    {
+                        "text" : "United Kingdom",
+                        "value" : "UK",
+                        "selected" : false
+                    },
+                    {
+                        "text" : "Germany",
+                        "value" : "DE",
+                        "selected" : false
+                    },
+                    {
+                        "text" : "France",
+                        "value" : "FR",
+                        "selected" : false
+                    },
+                    {
+                        "text" : "Spain",
+                        "value" : "ES",
+                        "selected" : false
+                    },
+                    {
+                        "text" : "USA",
+                        "value" : "US",
+                        "selected" : true
+                    }
+                ] }
+            },
+            "shippingMethods" : { "$ref" : "checkout/shipping-methods.json" }
         },
-        "chooseCountry" : {
-            "list" : [
-                {
-                    "text" : "Choose",
-                    "value" : "",
-                    "selected" : true
-                },
-                {
-                    "text" : "Germany",
-                    "value" : "DE",
-                    "selected" : false
-                },
-                {
-                    "text" : "France",
-                    "value" : "FR",
-                    "selected" : false
-                },
-                {
-                    "text" : "Spain",
-                    "value" : "ES",
-                    "selected" : false
-                }
-            ]
-        },
-        "diffChooseCountry" : {
-            "list" : [
-                {
-                    "text" : "Choose",
-                    "value" : "",
-                    "selected" : true
-                },
-                {
-                    "text" : "Germany",
-                    "value" : "DE",
-                    "selected" : true
-                },
-                {
-                    "text" : "France",
-                    "value" : "FR",
-                    "selected" : false
-                },
-                {
-                    "text" : "Spain",
-                    "value" : "ES",
-                    "selected" : false
-                }
-            ]
-        },
-        "delivery" : {
-            "list" : [
-                {
-                    "text" : "DHL Standard",
-                    "value" : "dhl-standard",
-                    "selected" : true,
-                    "deliveryDays" : "Delivery: 3-5 Days",
-                    "url" : "",
-                    "id" : "shipping-delivery-standard"
-                },
-                {
-                    "text" : "DHL Express",
-                    "value" : "dhl-express",
-                    "selected" : false,
-                    "deliveryDays" : "Delivery: 3-5 Days",
-                    "url" : "",
-                    "id" : "shipping-delivery-express"
-                },
-                {
-                    "text" : "DHL Overnight",
-                    "value" : "dhl-overnight",
-                    "selected" : false,
-                    "deliveryDays" : "Delivery: 3-5 Days",
-                    "url" : "",
-                    "id" : "shipping-delivery-overnight"
-                }
-            ]
-        },
-        "itemsTotal" : 3,
-        "checkoutItem" : {
-            "list" : [
-                { "$ref" : "common/product-variant-1.json" },
-                { "$ref" : "common/product-variant-1.json" },
-                { "$ref" : "common/product-variant-1.json" }
-            ]
-        },
-        "promoCode" : "Sunny Sale",
-        "subtotal" : "107,00 €",
-        "discount" : "0,00 €",
-        "deliveryTitle" : "Standard Delivery",
-        "deliverySum" : "10,00 €",
-        "tax" : "20,00 €",
-        "total" : "123,00 €"
+        "cart" : { "$ref" : "checkout/cart.json" }
     },
     "meta" : {
-        "assetsPath": "assets/"
+        "assetsPath": "assets/",
+        "_links" : { "$ref" : "checkout/checkout-links.json" },
+        "features" : { "$ref" : "common/feature-flags.json" }
     }
 }

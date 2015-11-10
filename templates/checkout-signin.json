@@ -14,6 +14,8 @@
     "continueGuestBtn" : "Continue As Guest"
   },
   "meta" : {
-    "assetsPath": "assets/"
+      "assetsPath": "assets/",
+      "_links" : { "$ref" : "checkout/checkout-links.json" },
+      "features" : { "$ref" : "common/feature-flags.json" }
   }
 }
