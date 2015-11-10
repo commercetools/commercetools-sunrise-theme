@@ -388,6 +388,23 @@ $(document).ready(function() {
   });
 });
 
+// Validate add-to-cart form
+function validateAddToCardForm() {
+  var productAttribute  = document.forms['add-to-cart']['attribute-color'].value;
+  if (productAttribute.length < 1 ) {
+    console.log('Please select a color');
+    return false;
+  }
+
+  var bagItems = document.forms['add-to-cart']['quantity'].value;
+  if (bagItems < 2) {
+    console.log('You have to have atleast 2 items in the bag');
+    return false;
+  }
+
+  return true;
+}
+
 /*****************************************************************************/
 /*
  /* CART PAGE

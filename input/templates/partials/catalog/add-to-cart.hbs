@@ -1,4 +1,4 @@
-<form id="form-add-to-cart{{index}}" name="add-to-cart" method="post" action="{{product.addToCartUrl}}">
+<form id="form-add-to-cart{{index}}" name="add-to-cart" method="post" action="{{product.addToCartUrl}}" onsubmit="return validateAddToCardForm()">
   <input type="hidden" name="productId" value="{{product.data.id}}">
   <input type="hidden" name="variantId" value="{{product.data.variantId}}">
   <input type="hidden" name="productSku" value="{{product.data.sku}}">
@@ -13,7 +13,7 @@
         {{> catalog/size-guide}}
       </li>
     </ul>
-  </div>
+  </div>  
   <div class="row">
     <ul class="product-actions-list list-inline">
       <li class="bag-items-li">
