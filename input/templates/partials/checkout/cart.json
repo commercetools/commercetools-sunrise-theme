@@ -1,9 +1,9 @@
 {
     "itemsTotal" : 3,
-    "salesTax" : "20,00 €",
-    "total" : "123,00 €",
+    "salesTax" : "23.95 €",
+    "total" : "150.00 €",
     "promoCode" : "Sunny Sale",
-    "subtotal" : "107,00 €",
+    "subtotal" : "147.00 €",
     "shippingMethod" : {"$ref" : "shipping-method-1.json"},
     "lineItems" : {
         "list" : [
