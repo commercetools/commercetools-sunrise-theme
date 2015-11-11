@@ -115,7 +115,8 @@ module.exports = function(grunt) {
         },
         files: [
           { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
-          { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" }
+          { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" },
+          { expand: true, cwd: 'output/', src: "locales/**/*", filter: "isFile" }
         ]
       },
       release : {
@@ -126,7 +127,8 @@ module.exports = function(grunt) {
         },
         files: [
           { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
-          { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" }
+          { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" },
+          { expand: true, cwd: 'output/', src: "locales/**/*", filter: "isFile" }
         ]
       }
     },
