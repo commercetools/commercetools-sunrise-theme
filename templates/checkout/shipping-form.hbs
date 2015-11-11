@@ -33,7 +33,7 @@
         {{#each shippingForm.shippingMethods.list}}
         <div class="shipping-method-option">
           <label for="shipping-method-{{@index}}">
-            <span><input id="shipping-method-{{@index}}" class="shipping-method-radio" type="radio" name="delivery options" value="{{value}}" {{#if selected}}checked{{/if}}>{{name}}</span>
+            <span class="shipping-method-span"><input id="shipping-method-{{@index}}" class="shipping-method-radio" type="radio" name="delivery options" value="{{value}}" {{#if selected}}checked{{/if}}>{{name}}</span>
             <span class="text-uppercase delivery-time">{{deliveryDays}}</span>
           </label>
           <a href="{{url}}"><span class="pull-right text-uppercase delivery-details">{{i18n "common.viewDetails"}}</span></a>
