@@ -1,26 +1,26 @@
 <div class="row">
-    <div class="col-sm-4">
-        <div class="title">
-            <span class="text-uppercase">{{i18n "form.title"}}</span><br>
-            <select id="shipping-title-select" class="checkout-dropdown" name="title" form="title" required>
-                <option value="" selected>{{i18n "form.choose"}}</option>
-              {{#each form.salutations.list}}
-                  <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
-              {{/each}}
-            </select>
-        </div>
+  <div class="col-sm-4">
+    <div class="title">
+      <span class="text-uppercase">{{i18n "form.title"}}</span><br>
+      <select id="shipping-title-select" class="checkout-dropdown" name="title" form="title" required>
+        <option value="" selected>{{i18n "form.choose"}}</option>
+        {{#each form.salutations.list}}
+        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+        {{/each}}
+      </select>
     </div>
+  </div>
 </div>
 <div class="row">
-{{> form/input-text columnWidth=6 name="firstName" suffix=suffix labelKey="form.firstName" required=true value=form.firstName}}
-{{> form/input-text columnWidth=6 name="lastName" suffix=suffix labelKey="form.lastName" required=true value=form.lastName}}
-{{> form/input-text columnWidth=12 name="streetName" suffix=suffix labelKey="form.addressOne" required=true value=form.streetName}}
-{{> form/input-text columnWidth=12 name="additionalStreetInfo" suffix=suffix labelKey="form.addressTwo" required=false value=form.additionalAddressInfo}}
-{{> form/input-text columnWidth=8 name="city" suffix=suffix labelKey="form.city" required=true value=form.city}}
-{{> form/input-text columnWidth=4 name="postalCode" suffix=suffix labelKey="form.postCode" required=true value=form.postalCode}}
-<div class="col-sm-6">
-  {{> checkout/choose-country containerClass="country" selectId="shipping-country-select" selectName="country" options=form.countries}}
-</div>
+  {{> form/input-text columnWidth=6 name="firstName" suffix=suffix labelKey="form.firstName" required=true value=form.firstName}}
+  {{> form/input-text columnWidth=6 name="lastName" suffix=suffix labelKey="form.lastName" required=true value=form.lastName}}
+  {{> form/input-text columnWidth=12 name="streetName" suffix=suffix labelKey="form.addressOne" required=true value=form.streetName}}
+  {{> form/input-text columnWidth=12 name="additionalStreetInfo" suffix=suffix labelKey="form.addressTwo" required=false value=form.additionalAddressInfo}}
+  {{> form/input-text columnWidth=8 name="city" suffix=suffix labelKey="form.city" required=true value=form.city}}
+  {{> form/input-text columnWidth=4 name="postalCode" suffix=suffix labelKey="form.postCode" required=true value=form.postalCode}}
+  <div class="col-sm-6">
+    {{> checkout/choose-country containerClass="country" selectId="shipping-country-select" selectName="country" options=form.countries}}
+  </div>
   {{> form/input-text columnWidth=6 name="region" suffix=suffix labelKey="form.region" required=false value=form.region}}
 </div>
 <hr>
