@@ -107,13 +107,11 @@
   margin: 1em;
   display: none;
 }
-.addres-one-different,
-.addres-two-different,
-.city-different,
-.post-code-different,
-.country-different,
-.region-different {
-  margin-top: 0.5em;
+.shipping-method-span {
+  @media screen and (min-width: 991px) {
+    display: inline-block;
+    min-width: 150px;
+  }
 }
 .shipping-method-title {
   font-size: 1.1em;
