@@ -4,7 +4,7 @@
     <select name="attribute-{{attribute.key}}" class="select-product-detail" data-cross-select="{{json attribute.selectData}}" data-variants="{{json variants}}" data-identifiers="{{json identifiers}}">
       <option value="">{{i18n "choose"}} {{attribute.name}}</option>
       {{#each attribute.list}}
-        <option value="{{value}}" {{#if selected}}selected{{/if}} required>{{text}}</option>
+        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
       {{/each}}
     </select>
   </div>
