@@ -49,40 +49,16 @@
             "description": "Optional Line Two",
             "image": "assets/img/blue-jacket.jpg",
             "sku": "Sunrise #SUN123456",
-            "attributes": {
-              "color": "Navy Blue",
-              "size": "M"
-            },
-            "availableColors": [
+            "attributes": [
               {
-                "label": "Navy Blue",
-                "value": "navy_blue"
+                "label": "Color",
+                "key": "color",
+                "value": "Navy Blue"
               },
               {
-                "label": "Beige",
-                "value": "beige"
-              }
-            ],
-            "availableSizes": [
-              {
-                "label": "XS",
-                "value": "xs"
-              },
-              {
-                "label": "S",
-                "value": "s"
-              },
-              {
-                "label": "M",
-                "value": "m"
-              },
-              {
-                "label": "L",
-                "value": "l"
-              },
-              {
-                "label": "XL",
-                "value": "xl"
+                "label": "Size",
+                "key": "size",
+                "value": "M"
               }
             ],
             "quantity": 1,
@@ -95,40 +71,16 @@
             "description": "Optional Line Two",
             "image": "assets/img/blue-jacket.jpg",
             "sku": "Sunrise #SUN123456",
-            "attributes": {
-              "color": "Navy Blue",
-              "size": "M"
-            },
-            "availableColors": [
+            "attributes": [
               {
-                "label": "Navy Blue",
-                "value": "navy_blue"
+                "label": "Color",
+                "key": "color",
+                "value": "Navy Blue"
               },
               {
-                "label": "Beige",
-                "value": "beige"
-              }
-            ],
-            "availableSizes": [
-              {
-                "label": "XS",
-                "value": "xs"
-              },
-              {
-                "label": "S",
-                "value": "s"
-              },
-              {
-                "label": "M",
-                "value": "m"
-              },
-              {
-                "label": "L",
-                "value": "l"
-              },
-              {
-                "label": "XL",
-                "value": "xl"
+                "label": "Size",
+                "key": "size",
+                "value": "M"
               }
             ],
             "quantity": 1,
@@ -141,40 +93,16 @@
             "description": "Optional Line Two",
             "image": "assets/img/blue-jacket.jpg",
             "sku": "Sunrise #SUN123456",
-            "attributes": {
-              "color": "Navy Blue",
-              "size": "M"
-            },
-            "availableColors": [
+            "attributes": [
               {
-                "label": "Navy Blue",
-                "value": "navy_blue"
+                "label": "Color",
+                "key": "color",
+                "value": "Navy Blue"
               },
               {
-                "label": "Beige",
-                "value": "beige"
-              }
-            ],
-            "availableSizes": [
-              {
-                "label": "XS",
-                "value": "xs"
-              },
-              {
-                "label": "S",
-                "value": "s"
-              },
-              {
-                "label": "M",
-                "value": "m"
-              },
-              {
-                "label": "L",
-                "value": "l"
-              },
-              {
-                "label": "XL",
-                "value": "xl"
+                "label": "Size",
+                "key": "size",
+                "value": "M"
               }
             ],
             "quantity": 1,
