@@ -17,20 +17,18 @@
             <div class="sku-code">
               <span>{{sku}}</span>
             </div>
-            {{#if attributes.size}}
-              {{#if attributes.color}}
-                  <div class="checkout-color-size">
-                      <div class="checkout-color-size-field">
-                          <span class="checkout-color">{{i18n "common.color"}}:</span><br>
-                          <span class="checkout-size">{{i18n "common.size"}}:</span>
-                      </div>
-                      <div class="checkout-color-size-field">
-                          <span>{{attributes.color}}</span><br>
-                          <span>{{attributes.size}}</span>
-                      </div>
-                  </div>
-              {{/if}}
-            {{/if}}
+            <div class="checkout-attributes">
+                <div class="checkout-attribute-field">
+                {{#each attributes}}
+                    <span class="checkout-attribute">{{label}}</span>{{#unless @last}}<br>{{/unless}}
+                {{/each}}
+                </div>
+                <div class="checkout-attribute-field">
+                    {{#each attributes}}
+                        <span>{{value}}</span>{{#unless @last}}<br>{{/unless}}
+                    {{/each}}
+                </div>
+            </div>
           </div>
         </div>
         <div class="order-item-price">

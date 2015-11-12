@@ -101,12 +101,12 @@
   font-size: 12px;
   margin: 5px 0;
 }
-.order-detail-color-size-title {
+.order-detail-attributes-title {
   color: $dark-grey;
   display: inline-block;
   margin: 0 5px 5px 0;
 }
-.order-detail-color-size {
+.order-detail-attributes {
   display: inline-block;
   margin: 0 5px 5px 0;
 }
@@ -208,8 +208,8 @@
     font-style: italic;
   }
 
-  .order-detail-color-size-title,
-  .order-detail-color-size {
+  .order-detail-attributes-title,
+  .order-detail-attributes {
     font-size: 0.8em;
   }
 

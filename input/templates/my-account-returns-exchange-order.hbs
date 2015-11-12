@@ -134,13 +134,15 @@
                               <div class="order-detail-product-title">{{productTitleOne}}</div>
                               <div class="order-detail-product-title">{{productTitleTwo}}</div>
                               <div class="order-sku">{{sku}}</div>
-                              <div class="order-detail-color-size-title">
-                                <span>{{i18n "common.color"}}: </span><br>
-                                <span>{{i18n "common.size"}}: </span>
+                              <div class="order-detail-attributes-title">
+                              {{#each attributes}}
+                                  <span>{{label}}</span>{{#unless @last}}<br>{{/unless}}
+                              {{/each}}
                               </div>
-                              <div class="order-detail-color-size">
-                                <span>{{color}}</span><br>
-                                <span>{{size}}</span>
+                              <div class="order-detail-attributes">
+                              {{#each attributes}}
+                                  <span>{{value}}</span>{{#unless @last}}<br>{{/unless}}
+                              {{/each}}
                               </div>
                               <div class="order-detail-available">{{available}}</div>
                             </div>
@@ -308,13 +310,15 @@
                             <div class="order-detail-product-title">{{productTitleOne}}</div>
                             <div class="order-detail-product-title">{{productTitleTwo}}</div>
                             <div class="order-sku">{{sku}}</div>
-                            <div class="order-detail-color-size-title">
-                              <span>{{i18n "common.color"}}: </span><br>
-                              <span>{{i18n "common.size"}}: </span>
+                            <div class="order-detail-attributes-title">
+                            {{#each attributes}}
+                                <span>{{label}}</span>{{#unless @last}}<br>{{/unless}}
+                            {{/each}}
                             </div>
-                            <div class="order-detail-color-size">
-                              <span>{{color}}</span><br>
-                              <span>{{size}}</span>
+                            <div class="order-detail-attributes">
+                            {{#each attributes}}
+                                <span>{{value}}</span>{{#unless @last}}<br>{{/unless}}
+                            {{/each}}
                             </div>
                             <div class="order-detail-available">{{available}}</div>
                           </div>
