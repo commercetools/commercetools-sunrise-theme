@@ -479,7 +479,7 @@ $(function() {
       editSectionActions = $('.edit-section-options', item),
       editAction = $('.edit-action', editSectionActions),
       selectors = $('.selector', editSectionForm),
-      targets = $('.cart-color-size > span', item);
+      targets = $('.cart-attributes > span', item);
 
     function closeForm() {
       editSectionForm.hide(0, function() {

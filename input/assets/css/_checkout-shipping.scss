@@ -190,14 +190,13 @@
     color: $grey;
   }
 }
-.checkout-color-size {
+.checkout-attributes {
   margin: 0.5em;
-  .checkout-color-size-field {
+  .checkout-attribute-field {
     display: inline-block;
   }
 }
-.checkout-color,
-.checkout-size {
+.checkout-attribute {
   color: $dark-grey;
   padding-right: 1em;
 }
