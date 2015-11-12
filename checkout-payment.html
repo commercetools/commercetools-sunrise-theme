@@ -69,101 +69,101 @@
             <div class="row">
               <div class="col-sm-7">
                 <form method="post" action="checkout-confirmation.html">
-                    <input type="hidden" name="csrfToken" value="1234567890abcdef"/>
-                    <div class="shipping-info">
-                        <span class="text-uppercase payment-info-title">Payment Details</span>
-                        <span class="pull-right required-fields">Required*</span>
+                  <input type="hidden" name="csrfToken" value="1234567890abcdef"/>
+                  <div class="shipping-info">
+                    <span class="text-uppercase payment-info-title">Payment Details</span>
+                    <span class="pull-right required-fields">Required*</span>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="payment-options-title">
+                        <span>Please provide one of the following payment options:</span>
+                      </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="payment-options-title">
-                                <span>Please provide one of the following payment options:</span>
-                            </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-4">
+                      <div class="payment-type">
+                        <label for="payment-type-credit-card">
+                          <img src="assets/img/payment-option-card.gif" class="payment-type-icon" alt="Credit Card"><br>
+                          <input id="payment-type-credit-card" class="payment-text" type="radio" name="payment" value="credit-card" >Credit Card
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4">
+                      <div class="payment-type">
+                        <label for="payment-type-paypal">
+                          <img src="assets/img/payment-option-paypal.png" class="payment-type-icon" alt="PayPal"><br>
+                          <input id="payment-type-paypal" class="payment-text" type="radio" name="payment" value="paypal" >PayPal
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4">
+                      <div class="payment-type">
+                        <label for="payment-type-prepaid">
+                          <img src="assets/img/blank-img.jpg" class="payment-type-icon" alt="Pre-payment"><br>
+                          <input id="payment-type-prepaid" class="payment-text" type="radio" name="payment" value="prepaid" checked>Pre-payment
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" id="credit-card-input-field">
+                    <div class="col-md-6 col-sm-8">
+                      <div class="col-sm-12">
+                        <div class="name-on-card">
+                          <span class="text-uppercase">Name on credit card*</span><br>
+                          <input id="payment-cardname-input" class="checkout-input-field" type="text" required>
                         </div>
-                    </div>
-                    <div class="row">
-                          <div class="col-lg-3 col-md-4 col-sm-4">
-                              <div class="payment-type">
-                                  <label for="payment-type-credit-card">
-                                    <img src="assets/img/payment-option-card.gif" class="payment-type-icon" alt="Credit Card"><br>
-                                      <input id="payment-type-credit-card" class="payment-text" type="radio" name="payment" value="credit-card" >Credit Card
-                                  </label>
-                              </div>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-4">
-                              <div class="payment-type">
-                                  <label for="payment-type-paypal">
-                                    <img src="assets/img/payment-option-paypal.png" class="payment-type-icon" alt="PayPal"><br>
-                                      <input id="payment-type-paypal" class="payment-text" type="radio" name="payment" value="paypal" >PayPal
-                                  </label>
-                              </div>
-                          </div>
-                          <div class="col-lg-3 col-md-4 col-sm-4">
-                              <div class="payment-type">
-                                  <label for="payment-type-prepaid">
-                                    <img src="assets/img/blank-img.jpg" class="payment-type-icon" alt="Pre-payment"><br>
-                                      <input id="payment-type-prepaid" class="payment-text" type="radio" name="payment" value="prepaid" checked>Pre-payment
-                                  </label>
-                              </div>
-                          </div>
-                    </div>
-                    <div class="row" id="credit-card-input-field">
-                        <div class="col-md-6 col-sm-8">
-                            <div class="col-sm-12">
-                                <div class="name-on-card">
-                                    <span class="text-uppercase">Name on credit card*</span><br>
-                                    <input id="payment-cardname-input" class="checkout-input-field" type="text">
-                                </div>
-                              <div class="error-message hidden">
-                                content.messages.requiredField
-                              </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="card-number">
-                                    <span class="text-uppercase">Credit card number*</span><br>
-                                    <input id="payment-cardnumber-input" class="checkout-input-field card-number-input" type="text">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="expiry-date">
-                                    <span class="text-uppercase">Expiry data*</span><br>
-                                    <select id="payment-expirymonth-select" class="checkout-dropdown">
-                                        <option>Month</option>
-                                          <option value="1" >January</option>
-                                          <option value="2" >February</option>
-                                          <option value="3" >March</option>
-                                          <option value="4" >April</option>
-                                          <option value="5" >May</option>
-                                          <option value="6" >June</option>
-                                          <option value="7" >July</option>
-                                          <option value="8" >August</option>
-                                          <option value="9" >September</option>
-                                          <option value="10" >October</option>
-                                          <option value="11" >November</option>
-                                          <option value="12" >December</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="expiry-year">
-                                    <br>
-                                    <select id="payment-expiryyear-select" class="checkout-dropdown">
-                                        <option>Year</option>
-                                          <option value="" >2050</option>
-                                          <option value="" >2100</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-7">
-                                <div class="security-code">
-                                    <span class="text-uppercase">Security Code*</span><br>
-                                    <input id="payment-securitycode-input" class="checkout-input-field security-code-input" type="text">
-                                    <span class="security-code-info" title="normally you find it on the back of your card"><img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
-                                </div>
-                            </div>
+                        <div class="error-message hidden">
+                          content.messages.requiredField
                         </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="card-number">
+                          <span class="text-uppercase">Credit card number*</span><br>
+                          <input id="payment-cardnumber-input" class="checkout-input-field card-number-input" type="text" required>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="expiry-date">
+                          <span class="text-uppercase">Expiry data*</span><br>
+                          <select id="payment-expirymonth-select" class="checkout-dropdown" required>
+                            <option>Month</option>
+                            <option value="1" >January</option>
+                            <option value="2" >February</option>
+                            <option value="3" >March</option>
+                            <option value="4" >April</option>
+                            <option value="5" >May</option>
+                            <option value="6" >June</option>
+                            <option value="7" >July</option>
+                            <option value="8" >August</option>
+                            <option value="9" >September</option>
+                            <option value="10" >October</option>
+                            <option value="11" >November</option>
+                            <option value="12" >December</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="expiry-year">
+                          <br>
+                          <select id="payment-expiryyear-select" class="checkout-dropdown" required>
+                            <option>Year</option>
+                            <option value="" >2050</option>
+                            <option value="" >2100</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-7">
+                        <div class="security-code">
+                          <span class="text-uppercase">Security Code*</span><br>
+                          <input id="payment-securitycode-input" class="checkout-input-field security-code-input" type="text" required>
+                          <span class="security-code-info" title="normally you find it on the back of your card"><img class="info-icon" src="assets/img/information.png" alt="information icon"></span>
+                        </div>
+                      </div>
                     </div>
-                    <hr class="hr-checkout-payment">
+                  </div>
+                  <hr class="hr-checkout-payment">
                   <div class="row">
                       <div class="col-sm-6">
                           <div>
@@ -172,7 +172,6 @@
                       </div>
                   </div>
                 </form>
-                
               </div>
               <div class="col-sm-5">
                 <div class="order-summary">
