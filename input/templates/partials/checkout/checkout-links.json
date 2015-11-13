@@ -22,5 +22,11 @@
     },
     "cart": {
         "href": "cart.html"
+    },
+    "deleteLineItem": {
+        "href": "cart.html"
+    },
+    "changeLineItem": {
+        "href": "cart.html"
     }
 }

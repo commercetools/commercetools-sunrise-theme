@@ -5,8 +5,8 @@ module.exports = function(grunt) {
 
     // Configuration of 'grunt-contrib-clean' task, to remove all output folder
     clean: {
-      build: ['output/', '**/*.json-resolved'],
-      resolved : ['input/**/*.json-resolved'],
+      build: ['output/', '**/*.resolved-json'],
+      resolved : ['input/**/*.resolved-json'],
       dist: ['*.jar']
     },
 
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       },
       resolved: {
         files: [
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' }
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.resolved-json' }
         ]
       }
     },
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
             dest: 'output/',
             ext: '.html'
         }],
-        templateData: '*.json-resolved', // compile-handlebars uses the template folder no matter what
+        templateData: '*.resolved-json', // compile-handlebars uses the template folder no matter what
         partials: 'input/templates/partials/**/*.hbs',
         helpers: 'input/templates/helpers/**/*.js'
       }
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
         files: [
           'input/**/*',
           'locales/**/*',
-          '!input/**/*.json-resolved'
+          '!input/**/*.resolved-json'
         ],
         tasks: ['build']
       }
@@ -169,7 +169,7 @@ module.exports = function(grunt) {
           cwd: 'input/templates',
           src: '*.json',
           dest: 'input/templates',
-          ext: '.json-resolved'
+          ext: '.resolved-json'
         }]
       }
     }

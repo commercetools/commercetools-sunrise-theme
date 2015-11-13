@@ -467,65 +467,6 @@ $(document).ready(function() {
 
 $(function() {
   inputNumber($('.input-number'));
-  var cartContentWrapper = $('.cart-content'),
-    cartItems = $('.single-cart-item', cartContentWrapper);
-
-  /**
-   * Manage an instance of DOM representation of a cart-item
-   */
-  function cartItemManager() {
-    var item = $(this),
-      editSectionForm = $('.edit-section-form', item),
-      editSectionActions = $('.edit-section-options', item),
-      editAction = $('.edit-action', editSectionActions),
-      selectors = $('.selector', editSectionForm),
-      targets = $('.cart-attributes > span', item);
-
-    function closeForm() {
-      editSectionForm.hide(0, function() {
-        editSectionActions.show();
-      });
-    }
-
-    function updateForm() {
-      var matchingTarget;
-      selectors.each(function() {
-        matchingTarget = sunrise.helper.findElementByDataAttribute(targets, $(this).data('model'), 'model');
-        if (matchingTarget) {
-          matchingTarget.text($(this).find('option:selected').text());
-        }
-      });
-      closeForm();
-    }
-
-    function openForm() {
-      var updateAction = $('.update-action', editSectionForm),
-        cancelAction = $('.cancel-action', editSectionForm);
-      editSectionActions.hide(0, function() {
-        editSectionForm.show();
-        cancelAction.click(closeForm);
-        updateAction.click(updateForm);
-      });
-    }
-
-    var target, modelKey, matchingSelector, color, size;
-    targets.each(function(index) {
-      target = $(this);
-      modelKey = target.data('model');
-      matchingSelector = sunrise.helper.findElementByDataAttribute(selectors, modelKey, 'model');
-      if (modelKey === 'cartItem.size') {
-        size = sunrise.helper.findSizeByName(target.text().trim());
-        matchingSelector.val(size.code);
-      } else if (modelKey === 'cartItem.color') {
-        color = sunrise.helper.findColorByName(target.text().trim());
-        matchingSelector.val(color.code);
-      }
-    });
-
-    // setting up the listener.
-    editAction.click(openForm);
-  }
-  cartItems.each(cartItemManager);
 });
 
 // jQuery UI - Tooltip on hover
