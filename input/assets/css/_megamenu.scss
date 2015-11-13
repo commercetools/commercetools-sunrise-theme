@@ -318,7 +318,7 @@
 // Location options on mobile
 .location-xs {
   .location-dropdown-xs {
-    padding: 10px 15px;
+    padding: 10px 15px 100px;
     ul {
       text-align: left;
       padding: 0;
@@ -336,6 +336,19 @@
           text-transform: capitalize;
         }
       }
+    }
+    // Overwrite SelectBoxIt css
+    .selectboxit-list {
+      li {
+        display: block!important;
+        &:first-child {
+          padding: 0!important;
+        }
+      }
+    }
+    .selectboxit-text {
+      float: none!important;
+      text-overflow: inherit!important;
     }
   }
 }

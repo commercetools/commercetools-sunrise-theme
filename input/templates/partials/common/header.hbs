@@ -48,13 +48,13 @@
                 <img class="pull-right" src="{{meta.assetsPath}}img/globe-2.png" alt="Location">
               </button>
               <div class="location-dropdown">
-                <span class="location-dropdown-label">Language</span>
+                <span class="location-dropdown-label">{{i18n "common.language"}}</span>
                 <select id="{{header.location.languageSelectId}}" class="select location-select" name="language">
                   {{#each header.location.language}}
                     <option id="{{languageOptionId}}" value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
                   {{/each}}
                 </select>
-                <span class="location-dropdown-label">Country</span>
+                <span class="location-dropdown-label">{{i18n "common.country"}}</span>
                 <select id="{{header.location.countrySelectId}}" class="select location-select" name="country">
                   {{#each header.location.country}}
                     <option id="{{countryOptionId}}" value="{{value}}">{{text}}</option>

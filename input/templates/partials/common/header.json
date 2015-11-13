@@ -19,19 +19,19 @@
 		"language" : [
 			{
 				"text" : "German",
-				"value" : "",
+				"value" : "German",
 				"selected" : true,
 				"languageOptionId" : "language-option-german"
 			},
 			{
 				"text" : "English",
-				"value" : "",
+				"value" : "English",
 				"selected" : false,
 				"languageOptionId" : "language-option-english"
 			},
 			{
 				"text" : "French",
-				"value" : "",
+				"value" : "French",
 				"selected" : false,
 				"languageOptionId" : "language-option-french"
 			}
@@ -39,19 +39,19 @@
 		"country" : [
 			{
 				"text" : "Germany",
-				"value" : "",
+				"value" : "Germany",
 				"selected" : true,
 				"countryOptionId" : "country-option-germany"
 			},
 			{
 				"text" : "UK",
-				"value" : "",
+				"value" : "UK",
 				"selected" : false,
 				"countryOptionId" : "country-option-uk"
 			},
 			{
 				"text" : "France",
-				"value" : "",
+				"value" : "France",
 				"selected" : false,
 				"countryOptionId" : "country-option-france"
 			}
