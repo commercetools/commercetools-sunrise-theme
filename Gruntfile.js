@@ -5,8 +5,7 @@ module.exports = function(grunt) {
 
     // Configuration of 'grunt-contrib-clean' task, to remove all output folder
     clean: {
-      build: ['output/', '**/*.json-resolved'],
-      resolved : ['input/**/*.json-resolved'],
+      build: ['output/'],
       dist: ['*.jar']
     },
 
@@ -19,16 +18,10 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/img/**/*' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/fonts/**/*' },
           { expand: true, cwd: 'input/', dest: 'output/', src: '*.html' },
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.hbs' },
           { expand: true, cwd: 'locales/', dest: 'output/locales', src: '**/*.yaml' },
           { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.json' },
           { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.hbs' }
-        ]
-      },
-      resolved: {
-        files: [
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.json-resolved' }
         ]
       }
     },
@@ -75,12 +68,12 @@ module.exports = function(grunt) {
       dist: {
         files: [{
             expand: true,
-            cwd: 'input/templates',
+            cwd: 'output/templates',
             src: '*.hbs',
             dest: 'output/',
             ext: '.html'
         }],
-        templateData: '*.json-resolved', // compile-handlebars uses the template folder no matter what
+        templateData: '*.json', // compile-handlebars uses the template folder no matter what
         partials: 'input/templates/partials/**/*.hbs',
         helpers: 'input/templates/helpers/**/*.js'
       }
@@ -91,8 +84,7 @@ module.exports = function(grunt) {
       scripts: {
         files: [
           'input/**/*',
-          'locales/**/*',
-          '!input/**/*.json-resolved'
+          'locales/**/*'
         ],
         tasks: ['build']
       }
@@ -157,7 +149,7 @@ module.exports = function(grunt) {
         ns: {
           namespaces: ['translations', 'home', 'catalog', 'checkout'],
           defaultNs: 'translations'
-        },
+        }
       }
     },
 
@@ -168,8 +160,8 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'input/templates',
           src: '*.json',
-          dest: 'input/templates',
-          ext: '.json-resolved'
+          dest: 'output/templates',
+          ext: '.json'
         }]
       }
     }
@@ -186,7 +178,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('build', ['clean', 'copy:dist', 'coffee', 'sass', 'postcss', 'pre-handlebars', 'handlebars', 'clean:resolved']);
+  grunt.registerTask('build', ['clean', 'copy:dist', 'coffee', 'sass', 'postcss', 'pre-handlebars', 'handlebars']);
   grunt.registerTask('release-patch', ['build', 'maven', 'clean:dist']);
   grunt.registerTask('release-minor', ['build', 'maven:release:minor', 'clean:dist']);
   grunt.registerTask('release-major', ['build', 'maven:release:major', 'clean:dist']);
@@ -194,7 +186,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('pre-handlebars', 'Tasks to be run before Handlebars', function() {
     grunt.task.run('json-refs');
-    grunt.task.run('copy:resolved');
     grunt.task.run('i18next');
   });
 
