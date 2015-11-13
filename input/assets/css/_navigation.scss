@@ -235,6 +235,10 @@
       width: 120px!important;
       margin: -10px 0 0 10px!important;
     }
+    .selectboxit-text {
+      max-width: none!important;
+      width: 100px!important;
+    }
 
     @media screen and (min-width: 768px) {
       display: inline-block;
