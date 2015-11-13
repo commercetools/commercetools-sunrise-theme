@@ -1,0 +1,1903 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+  <link href="assets/css/selectboxit.css" rel="stylesheet">
+  <link href="assets/css/main.min.css" rel="stylesheet">
+  <title>Sunrise - Page Title</title>
+</head>
+
+<body>
+  <div class="darkbg hidden"></div>
+  <div class="navbar navbar-fixed-top">
+  
+    <div class="header">
+      <header class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="nav-list">
+              <!-- Toggle the menu on mobile -->
+              <li class="list-item-nav-toggle">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </li>
+              <!-- Toggles the search field on mobile / not visible on desktop -->
+              <li class="list-item-search">
+                <button type="button" class="search-toggle icon-magnifying-glass">
+                  <span class="sr-only"></span>
+                </button>
+              </li>
+  
+              <li class="list-item-store">
+                <a href="" class="store-select icon-marker">
+                  <span class="hidden-xs">STORES</span>
+                </a>
+              </li>
+  
+              <li class="list-item-help"><a href="" class="link-help">HELP</a></li>
+  
+              <li class="list-item-call"><a href="" class="link-hotline">CALL US ON +44 123 456 000</a></li>
+              <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
+              <li class="list-item-bag">
+                <button href="" class="not-empty link-your-bag icon-hand-bag">
+                  <span class="hidden-xs hidden-sm">YOUR BAG</span>
+                  <span class="cart-item-number">12</span>
+                </button>
+              </li>
+  
+              <li class="list-item-user">
+                <a href="" class="link-user icon-user">
+                  <span class="hidden-xs hidden-sm">SIGN IN</span>
+                </a>
+              </li>
+  
+              <li class="list-item-location clearfix">
+                <button id="location-dropdown-toggle-btn" class="location-dropdown-toggle">
+                  <img class="pull-right" src="assets/img/globe-2.png" alt="Location">
+                </button>
+                <div class="location-dropdown">
+                  <span class="location-dropdown-label">Language</span>
+                  <select id="language-select" class="select location-select" name="language">
+                      <option id="language-option-german" value=""  selected >German</option>
+                      <option id="language-option-english" value="" >English</option>
+                      <option id="language-option-french" value="" >French</option>
+                  </select>
+                  <span class="location-dropdown-label">Country</span>
+                  <select id="country-select" class="select location-select" name="country">
+                      <option id="country-option-germany" value="">Germany</option>
+                      <option id="country-option-uk" value="">UK</option>
+                      <option id="country-option-france" value="">France</option>
+                  </select>
+                </div>
+              </li>
+  
+            </ul>
+          </div>
+  
+          <div class="col-xs-12">
+            <div class="nav-minicart">
+              <ul>
+                  <li>
+                    <a class="img" href="#"><img src="assets/img/blue-shirt.jpg" alt="Alt text" /></a>
+                    <p class="product-title"><a href="#">Enditatem Product name</a></p>
+                    <p class="product-title">Optional Line two</p>
+                    <div class="details">
+                      <p class="product-quantity">quantity<span>1x</span></p>
+                      <p class="product-price">Price<span>49,00 €</span></p>
+                      <button class="delete" type="submit" href="#">
+                        <span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete"></span>
+                      </button>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="img" href="#"><img src="assets/img/blue-shirt.jpg" alt="Alt text" /></a>
+                    <p class="product-title"><a href="#">Enditatem Product name</a></p>
+                    <p class="product-title">Optional Line two</p>
+                    <div class="details">
+                      <p class="product-quantity">quantity<span>1x</span></p>
+                      <p class="product-price">Price<span>49,00 €</span></p>
+                      <button class="delete" type="submit" href="#">
+                        <span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete"></span>
+                      </button>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="img" href="#"><img src="assets/img/blue-shirt.jpg" alt="Alt text" /></a>
+                    <p class="product-title"><a href="#">Enditatem Product name</a></p>
+                    <p class="product-title">Optional Line two</p>
+                    <div class="details">
+                      <p class="product-quantity">quantity<span>1x</span></p>
+                      <p class="product-price">Price<span>49,00 €</span></p>
+                      <button class="delete" type="submit" href="#">
+                        <span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete"></span>
+                      </button>
+                    </div>
+                  </li>
+              </ul>
+              <div class="gradient"></div>
+              <p class="total-price">Total 117,00 €</p>
+              <button class="btn-grey">View Bag</button>
+              <button class="btn-yellow">Checkout</button>
+            </div>
+          </div>
+  
+        </div>
+  
+      </header>
+    </div>
+  
+    <div id="navigation" class="container">
+      <div class="row logo-search">
+        <div class="col-sm-8">
+          <a href="#" class="brand-logo">
+            <img class="img-responsive" src="assets/img/logo.svg" alt="SUNRISE Logo">
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <form class="search-box text-right" action="">
+            <input id="search-input" class="search-field" type="search" placeholder="Search" required/>
+            <button type="submit" id="search-button" class="search-button">
+              <span class="icon-font icon-magnifying-glass"></span>
+              <span class="sr-only"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="dropdown-megamenu navbar navbar-default">
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle " data-toggle="dropdown">Women<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                  <ul class="dropdown-menu megamenu row dropdown-submenu">
+                    <li class="col-sm-8">
+                      <div class="nav-accordion">
+                          <h3><a href="">Women</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                          <h3><a href="">Women</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                          <h3><a href="">Women</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="col-sm-4 hidden-xs">
+                      <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle " data-toggle="dropdown">Men<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                  <ul class="dropdown-menu megamenu row dropdown-submenu">
+                    <li class="col-sm-8">
+                      <div class="nav-accordion">
+                          <h3><a href="">Men</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                          </ul>
+                          <h3><a href="">Men</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                          <h3><a href="">Men</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="col-sm-4 hidden-xs">
+                      <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle " data-toggle="dropdown">Accessories<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
+                  <ul class="dropdown-menu megamenu row dropdown-submenu">
+                    <li class="col-sm-8">
+                      <div class="nav-accordion">
+                          <h3><a href="">Accessories</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Very long navigation items will be truncated</a></li>
+                              <li><a href="">Very long navigation item</a></li>
+                          </ul>
+                          <h3><a href="">Accessories</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href="">Nesting</a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                          <h3><a href="">Accessories</a></h3>
+                          <ul>
+                              <li><a href="">Basic example</a></li>
+                              <li><a href="">Button toolbar</a></li>
+                              <li><a href="">Sizing</a></li>
+                              <li><a href=""></a></li>
+                              <li><a href="">Vertical variation</a></li>
+                          </ul>
+                          <h3><a href="">Glasses</a></h3>
+                          <ul>
+                              <li><a href="">Lorem</a></li>
+                              <li><a href="">Ipsum</a></li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="col-sm-4 hidden-xs">
+                      <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    </li>
+                  </ul>
+                </li>
+              <li class="visible-xs location-xs">
+                <div class="location-dropdown-xs">
+                  <ul>
+                    <li>
+                      <select class="select location-select" name="language">
+                          <option value=""  selected >German</option>
+                          <option value="" >English</option>
+                          <option value="" >French</option>
+                      </select>
+                    </li>
+                    <li>
+                      <select class="select location-select" name="country">
+                          <option value="">Germany</option>
+                          <option value="">UK</option>
+                          <option value="">France</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav categories-group-button">
+              <li class="dropdown menu-large">
+                <a href="" class="dropdown-toggle " data-toggle="dropdown">All categories</a>
+                <ul class="dropdown-menu megamenu row dropdown-submenu">
+                  <li class="col-sm-12">
+                    <div class="nav-accordion">
+                        <h3><a href="">Women</a></h3>
+                        <h3><a href="">Men</a></h3>
+                        <h3><a href="">Accessories</a></h3>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="my-orders">
+    <div class="container">
+      <div class="my-account-title">
+        <span class="my-account-title-text icon-user">My Account</span>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="my-orders-wrapper">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="my-account-sidebar">
+                  <div class="my-account-sidebar-items">
+                    <a href="">Personal Details</a>
+                  </div>
+                  <div class="my-account-sidebar-items">
+                    <a href="">Address Book</a>
+                  </div>
+                  <div class="my-account-sidebar-items">
+                    <a href="">Payment Details</a>
+                  </div>
+                  <div class="my-account-sidebar-items">
+                    <a href="">My Orders</a>
+                  </div>
+                  <div class="my-account-sidebar-items">
+                    <a href="">Returns / Exchange</a>
+                  </div>
+                  <div class="my-account-sidebar-items active clearfix">
+                    <a href="">
+                      <span><img class="sidebar-wishlist-heart hidden-sm" src="assets//img/heart-1.png" alt="heart icon"></span>Wishlist<span class="sidebar-wishlist-quantity hidden-sm">12</span>
+                    </a>
+                  </div>
+                  <div class="my-orders-order-content visible-xs">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="my-orders-title text-center">
+                          <span class="my-account-wishlist-items-number">3 items in total</span>
+                          <div class="my-account-wishlist-clear-btn">
+                            <button>Clear Wishlist</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my-account-wishlist-items-wrapper">
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="my-account-wishlist-item-wrapper">
+                              <a href="">
+                                <div class="shop-item">
+                                    <div class="sale-flag">content.static.saleText</div>
+                                    <div class="new-flag">content.static.newText</div>
+                                  <button type="button" class="heart-xs visible-xs">
+                                    <span class="sr-only">content.static.wishlistText</span>
+                                  </button>
+                                  <img class="pop-product-image" src="assets/img/blue-shirt.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
+                                  <div class="pop-product-name">
+                                    <span class="name-headline">Enditatem Product Name Optional very long line two</span>
+                                    <span class="name-subline">Subline</span>
+                                  </div>
+                                  <div class="pop-item-price">
+                                      <span class="strikethrough">€ 79,99</span>
+                                      <span class="pop-item-price-old">€ 49,-</span>
+                                  </div>
+                                  <div class="pop-product-more-colors">
+                                    content.static.moreColorsText&nbsp;
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="my-account-wishlist-remove-btn">
+                              <button>Remove</button>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="my-account-wishlist-item-wrapper">
+                              <a href="">
+                                <div class="shop-item">
+                                    <div class="sale-flag">content.static.saleText</div>
+                                    <div class="new-flag">content.static.newText</div>
+                                  <button type="button" class="heart-xs visible-xs">
+                                    <span class="sr-only">content.static.wishlistText</span>
+                                  </button>
+                                  <img class="pop-product-image" src="assets/img/blue-shirt.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
+                                  <div class="pop-product-name">
+                                    <span class="name-headline">Enditatem Product Name Optional very long line two</span>
+                                    <span class="name-subline">Subline</span>
+                                  </div>
+                                  <div class="pop-item-price">
+                                      <span class="strikethrough">€ 79,99</span>
+                                      <span class="pop-item-price-old">€ 49,-</span>
+                                  </div>
+                                  <div class="pop-product-more-colors">
+                                    content.static.moreColorsText&nbsp;
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="my-account-wishlist-remove-btn">
+                              <button>Remove</button>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="my-account-wishlist-item-wrapper">
+                              <a href="">
+                                <div class="shop-item">
+                                    <div class="sale-flag">content.static.saleText</div>
+                                    <div class="new-flag">content.static.newText</div>
+                                  <button type="button" class="heart-xs visible-xs">
+                                    <span class="sr-only">content.static.wishlistText</span>
+                                  </button>
+                                  <img class="pop-product-image" src="assets/img/blue-shirt.jpg" alt="Enditatem Product Name Optional very long line two" width="200" />
+                                  <div class="pop-product-name">
+                                    <span class="name-headline">Enditatem Product Name Optional very long line two</span>
+                                    <span class="name-subline">Subline</span>
+                                  </div>
+                                  <div class="pop-item-price">
+                                      <span class="strikethrough">€ 79,99</span>
+                                      <span class="pop-item-price-old">€ 49,-</span>
+                                  </div>
+                                  <div class="pop-product-more-colors">
+                                    content.static.moreColorsText&nbsp;
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="my-account-wishlist-remove-btn">
+                              <button>Remove</button>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-account-sidebar-items">
+                    <a href="">Sign Out</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <div class="my-orders-order-content hidden-xs">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="my-orders-title">
+                        <span>My Wishlist:</span>
+                        <span class="my-account-wishlist-items-number">3 items in total</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-account-wishlist-pagination">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="my-account-wishlist-clear">
+                          <button>Clear Wishlist</button>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 text-center pagination">
+                        <ul class="page-numbers">
+                          <li>
+                            <a href="" class="icon-prev">
+                              <span class="sr-only">Previous</span>
+                            </a>
+                          </li>
+                          
+                          
+                          
+                          
+                          
+                          <li>
+                            <a href="" class="icon-next">
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </li>                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="my-account-wishlist-per-page">
+                          <span class="hidden-sm">Items per page</span>
+                          <select>
+                              <option value="12" >12</option>
+                              <option value="24" selected>24</option>
+                              <option value="48" >48</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-account-wishlist-items-wrapper">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <a id="link-product-thumbnail" href="">
+                            <div class="shop-item">
+                              <form id="form-add-to-wishlist-mobile" name="add-to-wishlist-mobile" action="">
+                                <button type="submit" class="heart-xs visible-xs">
+                                  <span class="sr-only">Add item to wishlist</span>
+                                </button>
+                              </form>
+                              <img class="pop-product-image" src="" alt="" width="200" />
+                              <div class="pop-product-name">
+                                <span class="name-headline"></span>
+                                <span class="name-subline"></span>
+                              </div>
+                              <div class="pop-item-price">
+                                  <span></span>
+                              </div>
+                              <div class="pop-product-more-colors">
+                                &nbsp;
+                              </div>
+                              <div class="shop-item-overlay hidden-xs">
+                                <button type="button" class="quickview" data-modal="quickview-modal">
+                                  Quick view
+                                </button>      
+                                <form id="form-add-to-wishlist" name="add-to-wishlist" action="">
+                                  <button type="submit" class="heart">
+                                    <span class="sr-only">Add item to wishlist</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </a>
+                          <!-- Modal -->
+                          <div class="modal fade" id="quickview-modal" tabindex="-1" role="dialog" aria-labelledby="quickviewModal">
+                            <div class="modal-dialog modal-dialog-quickview" role="document">
+                              <div class="modal-content quickview-modal">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">
+                                      <img src="img/close.png" alt="Close" />
+                                    </span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row product-info-row-pdp">
+                                    <div class="col-sm-4">
+                                      <div class="bzoom_wrap">
+                                        <ul id="bzoom" data-count="">
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6 col-sm-offset-2 product-description">
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <p>
+                                            <h1 class="text-uppercase pdp-product-title"></h1>
+                                            <span class="grey-p quickview-sku"></span>
+                                          </p>              </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <fieldset class="rating">
+                                            <input type="radio" id="rating-star5" name="rating" value="5" />
+                                            <label for="rating-star5" title="Rocks!">
+                                              5 stars
+                                            </label>
+                                            <input type="radio" id="rating-star4" name="rating" value="4"  />
+                                            <label for="rating-star4" title="Pretty good">
+                                              4 stars
+                                            </label>
+                                            <input type="radio" id="rating-star3" name="rating" value="3"  />
+                                            <label for="rating-star3" title="Meh">
+                                              3 stars
+                                            </label>
+                                            <input type="radio" id="rating-star2" name="rating" value="2"  />
+                                            <label for="rating-star2" title="Kinda bad">
+                                              2 stars
+                                            </label>
+                                            <input type="radio" id="rating-star1" name="rating" value="1"  />
+                                            <label for="rating-star1" title="Sucks big time">
+                                              1 star
+                                            </label>
+                                          </fieldset>
+                                          <span class="star-rating-review">
+                                            <a href="">Write first review</a>
+                                          </span>              </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <a href="#">
+                                            <span class="view-details">View Details</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <p class="product-price">
+                                            <span></span>
+                                          </p>              </div>
+                                      </div>
+                                      <div class="row select-row">
+                                        <form id="form-add-to-cart" name="add-to-cart" method="post" action="">
+                                          <input type="hidden" name="productId" value="">
+                                          <input type="hidden" name="variantId" value="">
+                                          <input type="hidden" name="productSku" value="">
+                                          <input type="hidden" name="productSlug" value="">
+                                        
+                                          <div class="row select-row">
+                                            <ul class="list-inline">
+                                              <li class="size-guide-li">
+                                                <a href="#" id="pdp-size-guide" data-toggle="modal" data-target="#size-guide">
+                                                  <span class="size-guide">
+                                                    <img class="size-guide-thumb" src="img/ruler-1.png" alt="Size Guide">
+                                                    Size Guide
+                                                  </span>
+                                                </a>
+                                                
+                                                <div class="modal fade" id="size-guide" tabindex="-1" role="dialog" aria-labelledby="sizeGuide">
+                                                  <div class="modal-dialog" role="document">
+                                                    <div class="modal-content size-guide-content">
+                                                      <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="content.general.closeModal">
+                                                          <span aria-hidden="true">
+                                                            <img src="img/close.png" alt="content.general.closeModal" />
+                                                          </span>
+                                                
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <div class="clothing-wrapper modal-content-wrapper">
+                                                          <h4>Clothing</h4>
+                                                          <table class="size-guide-table">
+                                                            <tbody>
+                                                              <tr class="tr-title">
+                                                                <th>&nbsp;</th>
+                                                                <th>XXS</th>
+                                                                <th>XS</th>
+                                                                <th>S</th>
+                                                                <th>M</th>
+                                                                <th>L</th>
+                                                                <th>XL</th>
+                                                                <th>XXL</th>
+                                                                <th>XXXL</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Italy</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                                <td>48</td>
+                                                                <td>50</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Germany</td>
+                                                                <td>32</td>
+                                                                <td>34</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>France</td>
+                                                                <td>34</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                                <td>48</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>UK</td>
+                                                                <td>4</td>
+                                                                <td>6</td>
+                                                                <td>8</td>
+                                                                <td>10</td>
+                                                                <td>12</td>
+                                                                <td>14</td>
+                                                                <td>16</td>
+                                                                <td>18</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>USA</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                                <td>4</td>
+                                                                <td>6</td>
+                                                                <td>8</td>
+                                                                <td>10</td>
+                                                                <td>12</td>
+                                                                <td>14</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Moncler</td>
+                                                                <td>-</td>
+                                                                <td>0</td>
+                                                                <td>1</td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td>4</td>
+                                                                <td>5</td>
+                                                                <td>6</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </div>
+                                                
+                                                       <div class="shoes-wrapper modal-content-wrapper">
+                                                          <h4>Shoes</h4>
+                                                          <table class="size-guide-table">
+                                                            <tbody>
+                                                              <tr class="tr-title">
+                                                                <th>Men</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Europe</td>
+                                                                <td>35</td>
+                                                                <td>35,5</td>
+                                                                <td>36</td>
+                                                                <td>36,5</td>
+                                                                <td>37</td>
+                                                                <td>37,5</td>
+                                                                <td>38</td>
+                                                                <td>38,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>UK</td>
+                                                                <td>2</td>
+                                                                <td>2,5</td>
+                                                                <td>3</td>
+                                                                <td>3,5</td>
+                                                                <td>4</td>
+                                                                <td>4,5</td>
+                                                                <td>5</td>
+                                                                <td>5,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>USA</td>
+                                                                <td>5</td>
+                                                                <td>5,5</td>
+                                                                <td>6</td>
+                                                                <td>6,5</td>
+                                                                <td>7</td>
+                                                                <td>7,5</td>
+                                                                <td>8</td>
+                                                                <td>8,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Japan</td>
+                                                                <td>22</td>
+                                                                <td>22,5</td>
+                                                                <td>23</td>
+                                                                <td>23,5</td>
+                                                                <td>24</td>
+                                                                <td>24,5</td>
+                                                                <td>25</td>
+                                                                <td>25,5</td>
+                                                              </tr>
+                                                              <tr class="tr-title">
+                                                                <th>Women</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Europe</td>
+                                                                <td>39</td>
+                                                                <td>39,5</td>
+                                                                <td>40</td>
+                                                                <td>40,5</td>
+                                                                <td>41</td>
+                                                                <td>41,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>UK</td>
+                                                                <td>6</td>
+                                                                <td>6,5</td>
+                                                                <td>7</td>
+                                                                <td>7,5</td>
+                                                                <td>8</td>
+                                                                <td>8,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>USA</td>
+                                                                <td>9</td>
+                                                                <td>9,5</td>
+                                                                <td>10</td>
+                                                                <td>10,5</td>
+                                                                <td>11</td>
+                                                                <td>11,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Japan</td>
+                                                                <td>26</td>
+                                                                <td>-</td>
+                                                                <td>26</td>
+                                                                <td>-</td>
+                                                                <td>26,5</td>
+                                                                <td>-</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </div>
+                                                
+                                                        <div class="belt-wrapper modal-content-wrapper">
+                                                          <h4>Belt</h4>
+                                                          <table class="size-guide-table belt-table">
+                                                            <tbody>
+                                                              <tr class="tr-title">
+                                                                <th>Size</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>cm</td>
+                                                                <td>70</td>
+                                                                <td>75</td>
+                                                                <td>80</td>
+                                                                <td>85</td>
+                                                                <td>90</td>
+                                                                <td>95</td>
+                                                                <td>100</td>
+                                                                <td>105</td>
+                                                                <td>110</td>
+                                                                <td>115</td>
+                                                                <td>120</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                          <div class="row">
+                                            <ul class="product-actions-list list-inline">
+                                              <li class="bag-items-li">
+                                                <select value="" name="quantity" class="bag-items" required>
+                                                </select>
+                                              </li>
+                                              <li>
+                                                <button type="submit" class="add-to-bag text-center">
+                                                  <img class="bag-thumb" src="img/hand-bag-2-black.png" alt="Add to Bag">
+                                                  Add to Bag
+                                                </button>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </form>
+                                      </div>
+                                      <div class="quickview-wishlist-row">
+                                        <ul class="list-inline">
+                                          <li>
+                                            <form id="form-add-to-wishlist" name="add-to-wishlist" action="">
+                                              <button type="submit" class="btn pdp-product-heart">
+                                                <span class="sr-only">Add item to wishlist</span>
+                                              </button>
+                                            </form>                </li>
+                                          <li>
+                                            <div class="availability">
+                                              <span class="glyphicon glyphicon-ok-sign"></span>Available
+                                            </div>                </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="my-account-wishlist-remove-btn">
+                            <button>Remove</button>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <a id="link-product-thumbnail" href="">
+                            <div class="shop-item">
+                              <form id="form-add-to-wishlist-mobile" name="add-to-wishlist-mobile" action="">
+                                <button type="submit" class="heart-xs visible-xs">
+                                  <span class="sr-only">Add item to wishlist</span>
+                                </button>
+                              </form>
+                              <img class="pop-product-image" src="" alt="" width="200" />
+                              <div class="pop-product-name">
+                                <span class="name-headline"></span>
+                                <span class="name-subline"></span>
+                              </div>
+                              <div class="pop-item-price">
+                                  <span></span>
+                              </div>
+                              <div class="pop-product-more-colors">
+                                &nbsp;
+                              </div>
+                              <div class="shop-item-overlay hidden-xs">
+                                <button type="button" class="quickview" data-modal="quickview-modal">
+                                  Quick view
+                                </button>      
+                                <form id="form-add-to-wishlist" name="add-to-wishlist" action="">
+                                  <button type="submit" class="heart">
+                                    <span class="sr-only">Add item to wishlist</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </a>
+                          <!-- Modal -->
+                          <div class="modal fade" id="quickview-modal" tabindex="-1" role="dialog" aria-labelledby="quickviewModal">
+                            <div class="modal-dialog modal-dialog-quickview" role="document">
+                              <div class="modal-content quickview-modal">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">
+                                      <img src="img/close.png" alt="Close" />
+                                    </span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row product-info-row-pdp">
+                                    <div class="col-sm-4">
+                                      <div class="bzoom_wrap">
+                                        <ul id="bzoom" data-count="">
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6 col-sm-offset-2 product-description">
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <p>
+                                            <h1 class="text-uppercase pdp-product-title"></h1>
+                                            <span class="grey-p quickview-sku"></span>
+                                          </p>              </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <fieldset class="rating">
+                                            <input type="radio" id="rating-star5" name="rating" value="5" />
+                                            <label for="rating-star5" title="Rocks!">
+                                              5 stars
+                                            </label>
+                                            <input type="radio" id="rating-star4" name="rating" value="4"  />
+                                            <label for="rating-star4" title="Pretty good">
+                                              4 stars
+                                            </label>
+                                            <input type="radio" id="rating-star3" name="rating" value="3"  />
+                                            <label for="rating-star3" title="Meh">
+                                              3 stars
+                                            </label>
+                                            <input type="radio" id="rating-star2" name="rating" value="2"  />
+                                            <label for="rating-star2" title="Kinda bad">
+                                              2 stars
+                                            </label>
+                                            <input type="radio" id="rating-star1" name="rating" value="1"  />
+                                            <label for="rating-star1" title="Sucks big time">
+                                              1 star
+                                            </label>
+                                          </fieldset>
+                                          <span class="star-rating-review">
+                                            <a href="">Write first review</a>
+                                          </span>              </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <a href="#">
+                                            <span class="view-details">View Details</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <p class="product-price">
+                                            <span></span>
+                                          </p>              </div>
+                                      </div>
+                                      <div class="row select-row">
+                                        <form id="form-add-to-cart" name="add-to-cart" method="post" action="">
+                                          <input type="hidden" name="productId" value="">
+                                          <input type="hidden" name="variantId" value="">
+                                          <input type="hidden" name="productSku" value="">
+                                          <input type="hidden" name="productSlug" value="">
+                                        
+                                          <div class="row select-row">
+                                            <ul class="list-inline">
+                                              <li class="size-guide-li">
+                                                <a href="#" id="pdp-size-guide" data-toggle="modal" data-target="#size-guide">
+                                                  <span class="size-guide">
+                                                    <img class="size-guide-thumb" src="img/ruler-1.png" alt="Size Guide">
+                                                    Size Guide
+                                                  </span>
+                                                </a>
+                                                
+                                                <div class="modal fade" id="size-guide" tabindex="-1" role="dialog" aria-labelledby="sizeGuide">
+                                                  <div class="modal-dialog" role="document">
+                                                    <div class="modal-content size-guide-content">
+                                                      <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="content.general.closeModal">
+                                                          <span aria-hidden="true">
+                                                            <img src="img/close.png" alt="content.general.closeModal" />
+                                                          </span>
+                                                
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <div class="clothing-wrapper modal-content-wrapper">
+                                                          <h4>Clothing</h4>
+                                                          <table class="size-guide-table">
+                                                            <tbody>
+                                                              <tr class="tr-title">
+                                                                <th>&nbsp;</th>
+                                                                <th>XXS</th>
+                                                                <th>XS</th>
+                                                                <th>S</th>
+                                                                <th>M</th>
+                                                                <th>L</th>
+                                                                <th>XL</th>
+                                                                <th>XXL</th>
+                                                                <th>XXXL</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Italy</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                                <td>48</td>
+                                                                <td>50</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Germany</td>
+                                                                <td>32</td>
+                                                                <td>34</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>France</td>
+                                                                <td>34</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                                <td>48</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>UK</td>
+                                                                <td>4</td>
+                                                                <td>6</td>
+                                                                <td>8</td>
+                                                                <td>10</td>
+                                                                <td>12</td>
+                                                                <td>14</td>
+                                                                <td>16</td>
+                                                                <td>18</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>USA</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                                <td>4</td>
+                                                                <td>6</td>
+                                                                <td>8</td>
+                                                                <td>10</td>
+                                                                <td>12</td>
+                                                                <td>14</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Moncler</td>
+                                                                <td>-</td>
+                                                                <td>0</td>
+                                                                <td>1</td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td>4</td>
+                                                                <td>5</td>
+                                                                <td>6</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </div>
+                                                
+                                                       <div class="shoes-wrapper modal-content-wrapper">
+                                                          <h4>Shoes</h4>
+                                                          <table class="size-guide-table">
+                                                            <tbody>
+                                                              <tr class="tr-title">
+                                                                <th>Men</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Europe</td>
+                                                                <td>35</td>
+                                                                <td>35,5</td>
+                                                                <td>36</td>
+                                                                <td>36,5</td>
+                                                                <td>37</td>
+                                                                <td>37,5</td>
+                                                                <td>38</td>
+                                                                <td>38,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>UK</td>
+                                                                <td>2</td>
+                                                                <td>2,5</td>
+                                                                <td>3</td>
+                                                                <td>3,5</td>
+                                                                <td>4</td>
+                                                                <td>4,5</td>
+                                                                <td>5</td>
+                                                                <td>5,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>USA</td>
+                                                                <td>5</td>
+                                                                <td>5,5</td>
+                                                                <td>6</td>
+                                                                <td>6,5</td>
+                                                                <td>7</td>
+                                                                <td>7,5</td>
+                                                                <td>8</td>
+                                                                <td>8,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Japan</td>
+                                                                <td>22</td>
+                                                                <td>22,5</td>
+                                                                <td>23</td>
+                                                                <td>23,5</td>
+                                                                <td>24</td>
+                                                                <td>24,5</td>
+                                                                <td>25</td>
+                                                                <td>25,5</td>
+                                                              </tr>
+                                                              <tr class="tr-title">
+                                                                <th>Women</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Europe</td>
+                                                                <td>39</td>
+                                                                <td>39,5</td>
+                                                                <td>40</td>
+                                                                <td>40,5</td>
+                                                                <td>41</td>
+                                                                <td>41,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>UK</td>
+                                                                <td>6</td>
+                                                                <td>6,5</td>
+                                                                <td>7</td>
+                                                                <td>7,5</td>
+                                                                <td>8</td>
+                                                                <td>8,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>USA</td>
+                                                                <td>9</td>
+                                                                <td>9,5</td>
+                                                                <td>10</td>
+                                                                <td>10,5</td>
+                                                                <td>11</td>
+                                                                <td>11,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Japan</td>
+                                                                <td>26</td>
+                                                                <td>-</td>
+                                                                <td>26</td>
+                                                                <td>-</td>
+                                                                <td>26,5</td>
+                                                                <td>-</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </div>
+                                                
+                                                        <div class="belt-wrapper modal-content-wrapper">
+                                                          <h4>Belt</h4>
+                                                          <table class="size-guide-table belt-table">
+                                                            <tbody>
+                                                              <tr class="tr-title">
+                                                                <th>Size</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>cm</td>
+                                                                <td>70</td>
+                                                                <td>75</td>
+                                                                <td>80</td>
+                                                                <td>85</td>
+                                                                <td>90</td>
+                                                                <td>95</td>
+                                                                <td>100</td>
+                                                                <td>105</td>
+                                                                <td>110</td>
+                                                                <td>115</td>
+                                                                <td>120</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                          <div class="row">
+                                            <ul class="product-actions-list list-inline">
+                                              <li class="bag-items-li">
+                                                <select value="" name="quantity" class="bag-items" required>
+                                                </select>
+                                              </li>
+                                              <li>
+                                                <button type="submit" class="add-to-bag text-center">
+                                                  <img class="bag-thumb" src="img/hand-bag-2-black.png" alt="Add to Bag">
+                                                  Add to Bag
+                                                </button>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </form>
+                                      </div>
+                                      <div class="quickview-wishlist-row">
+                                        <ul class="list-inline">
+                                          <li>
+                                            <form id="form-add-to-wishlist" name="add-to-wishlist" action="">
+                                              <button type="submit" class="btn pdp-product-heart">
+                                                <span class="sr-only">Add item to wishlist</span>
+                                              </button>
+                                            </form>                </li>
+                                          <li>
+                                            <div class="availability">
+                                              <span class="glyphicon glyphicon-ok-sign"></span>Available
+                                            </div>                </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="my-account-wishlist-remove-btn">
+                            <button>Remove</button>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                          <a id="link-product-thumbnail" href="">
+                            <div class="shop-item">
+                              <form id="form-add-to-wishlist-mobile" name="add-to-wishlist-mobile" action="">
+                                <button type="submit" class="heart-xs visible-xs">
+                                  <span class="sr-only">Add item to wishlist</span>
+                                </button>
+                              </form>
+                              <img class="pop-product-image" src="" alt="" width="200" />
+                              <div class="pop-product-name">
+                                <span class="name-headline"></span>
+                                <span class="name-subline"></span>
+                              </div>
+                              <div class="pop-item-price">
+                                  <span></span>
+                              </div>
+                              <div class="pop-product-more-colors">
+                                &nbsp;
+                              </div>
+                              <div class="shop-item-overlay hidden-xs">
+                                <button type="button" class="quickview" data-modal="quickview-modal">
+                                  Quick view
+                                </button>      
+                                <form id="form-add-to-wishlist" name="add-to-wishlist" action="">
+                                  <button type="submit" class="heart">
+                                    <span class="sr-only">Add item to wishlist</span>
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </a>
+                          <!-- Modal -->
+                          <div class="modal fade" id="quickview-modal" tabindex="-1" role="dialog" aria-labelledby="quickviewModal">
+                            <div class="modal-dialog modal-dialog-quickview" role="document">
+                              <div class="modal-content quickview-modal">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">
+                                      <img src="img/close.png" alt="Close" />
+                                    </span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row product-info-row-pdp">
+                                    <div class="col-sm-4">
+                                      <div class="bzoom_wrap">
+                                        <ul id="bzoom" data-count="">
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-sm-6 col-sm-offset-2 product-description">
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <p>
+                                            <h1 class="text-uppercase pdp-product-title"></h1>
+                                            <span class="grey-p quickview-sku"></span>
+                                          </p>              </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <fieldset class="rating">
+                                            <input type="radio" id="rating-star5" name="rating" value="5" />
+                                            <label for="rating-star5" title="Rocks!">
+                                              5 stars
+                                            </label>
+                                            <input type="radio" id="rating-star4" name="rating" value="4"  />
+                                            <label for="rating-star4" title="Pretty good">
+                                              4 stars
+                                            </label>
+                                            <input type="radio" id="rating-star3" name="rating" value="3"  />
+                                            <label for="rating-star3" title="Meh">
+                                              3 stars
+                                            </label>
+                                            <input type="radio" id="rating-star2" name="rating" value="2"  />
+                                            <label for="rating-star2" title="Kinda bad">
+                                              2 stars
+                                            </label>
+                                            <input type="radio" id="rating-star1" name="rating" value="1"  />
+                                            <label for="rating-star1" title="Sucks big time">
+                                              1 star
+                                            </label>
+                                          </fieldset>
+                                          <span class="star-rating-review">
+                                            <a href="">Write first review</a>
+                                          </span>              </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <a href="#">
+                                            <span class="view-details">View Details</span>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-sm-12">
+                                          <p class="product-price">
+                                            <span></span>
+                                          </p>              </div>
+                                      </div>
+                                      <div class="row select-row">
+                                        <form id="form-add-to-cart" name="add-to-cart" method="post" action="">
+                                          <input type="hidden" name="productId" value="">
+                                          <input type="hidden" name="variantId" value="">
+                                          <input type="hidden" name="productSku" value="">
+                                          <input type="hidden" name="productSlug" value="">
+                                        
+                                          <div class="row select-row">
+                                            <ul class="list-inline">
+                                              <li class="size-guide-li">
+                                                <a href="#" id="pdp-size-guide" data-toggle="modal" data-target="#size-guide">
+                                                  <span class="size-guide">
+                                                    <img class="size-guide-thumb" src="img/ruler-1.png" alt="Size Guide">
+                                                    Size Guide
+                                                  </span>
+                                                </a>
+                                                
+                                                <div class="modal fade" id="size-guide" tabindex="-1" role="dialog" aria-labelledby="sizeGuide">
+                                                  <div class="modal-dialog" role="document">
+                                                    <div class="modal-content size-guide-content">
+                                                      <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="content.general.closeModal">
+                                                          <span aria-hidden="true">
+                                                            <img src="img/close.png" alt="content.general.closeModal" />
+                                                          </span>
+                                                
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <div class="clothing-wrapper modal-content-wrapper">
+                                                          <h4>Clothing</h4>
+                                                          <table class="size-guide-table">
+                                                            <tbody>
+                                                              <tr class="tr-title">
+                                                                <th>&nbsp;</th>
+                                                                <th>XXS</th>
+                                                                <th>XS</th>
+                                                                <th>S</th>
+                                                                <th>M</th>
+                                                                <th>L</th>
+                                                                <th>XL</th>
+                                                                <th>XXL</th>
+                                                                <th>XXXL</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Italy</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                                <td>48</td>
+                                                                <td>50</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Germany</td>
+                                                                <td>32</td>
+                                                                <td>34</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>France</td>
+                                                                <td>34</td>
+                                                                <td>36</td>
+                                                                <td>38</td>
+                                                                <td>40</td>
+                                                                <td>42</td>
+                                                                <td>44</td>
+                                                                <td>46</td>
+                                                                <td>48</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>UK</td>
+                                                                <td>4</td>
+                                                                <td>6</td>
+                                                                <td>8</td>
+                                                                <td>10</td>
+                                                                <td>12</td>
+                                                                <td>14</td>
+                                                                <td>16</td>
+                                                                <td>18</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>USA</td>
+                                                                <td>0</td>
+                                                                <td>2</td>
+                                                                <td>4</td>
+                                                                <td>6</td>
+                                                                <td>8</td>
+                                                                <td>10</td>
+                                                                <td>12</td>
+                                                                <td>14</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Moncler</td>
+                                                                <td>-</td>
+                                                                <td>0</td>
+                                                                <td>1</td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td>4</td>
+                                                                <td>5</td>
+                                                                <td>6</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </div>
+                                                
+                                                       <div class="shoes-wrapper modal-content-wrapper">
+                                                          <h4>Shoes</h4>
+                                                          <table class="size-guide-table">
+                                                            <tbody>
+                                                              <tr class="tr-title">
+                                                                <th>Men</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Europe</td>
+                                                                <td>35</td>
+                                                                <td>35,5</td>
+                                                                <td>36</td>
+                                                                <td>36,5</td>
+                                                                <td>37</td>
+                                                                <td>37,5</td>
+                                                                <td>38</td>
+                                                                <td>38,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>UK</td>
+                                                                <td>2</td>
+                                                                <td>2,5</td>
+                                                                <td>3</td>
+                                                                <td>3,5</td>
+                                                                <td>4</td>
+                                                                <td>4,5</td>
+                                                                <td>5</td>
+                                                                <td>5,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>USA</td>
+                                                                <td>5</td>
+                                                                <td>5,5</td>
+                                                                <td>6</td>
+                                                                <td>6,5</td>
+                                                                <td>7</td>
+                                                                <td>7,5</td>
+                                                                <td>8</td>
+                                                                <td>8,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Japan</td>
+                                                                <td>22</td>
+                                                                <td>22,5</td>
+                                                                <td>23</td>
+                                                                <td>23,5</td>
+                                                                <td>24</td>
+                                                                <td>24,5</td>
+                                                                <td>25</td>
+                                                                <td>25,5</td>
+                                                              </tr>
+                                                              <tr class="tr-title">
+                                                                <th>Women</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Europe</td>
+                                                                <td>39</td>
+                                                                <td>39,5</td>
+                                                                <td>40</td>
+                                                                <td>40,5</td>
+                                                                <td>41</td>
+                                                                <td>41,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>UK</td>
+                                                                <td>6</td>
+                                                                <td>6,5</td>
+                                                                <td>7</td>
+                                                                <td>7,5</td>
+                                                                <td>8</td>
+                                                                <td>8,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>USA</td>
+                                                                <td>9</td>
+                                                                <td>9,5</td>
+                                                                <td>10</td>
+                                                                <td>10,5</td>
+                                                                <td>11</td>
+                                                                <td>11,5</td>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>Japan</td>
+                                                                <td>26</td>
+                                                                <td>-</td>
+                                                                <td>26</td>
+                                                                <td>-</td>
+                                                                <td>26,5</td>
+                                                                <td>-</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </div>
+                                                
+                                                        <div class="belt-wrapper modal-content-wrapper">
+                                                          <h4>Belt</h4>
+                                                          <table class="size-guide-table belt-table">
+                                                            <tbody>
+                                                              <tr class="tr-title">
+                                                                <th>Size</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                                <th>&nbsp;</th>
+                                                              </tr>
+                                                              <tr class="tr-size">
+                                                                <td>cm</td>
+                                                                <td>70</td>
+                                                                <td>75</td>
+                                                                <td>80</td>
+                                                                <td>85</td>
+                                                                <td>90</td>
+                                                                <td>95</td>
+                                                                <td>100</td>
+                                                                <td>105</td>
+                                                                <td>110</td>
+                                                                <td>115</td>
+                                                                <td>120</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                          <div class="row">
+                                            <ul class="product-actions-list list-inline">
+                                              <li class="bag-items-li">
+                                                <select value="" name="quantity" class="bag-items" required>
+                                                </select>
+                                              </li>
+                                              <li>
+                                                <button type="submit" class="add-to-bag text-center">
+                                                  <img class="bag-thumb" src="img/hand-bag-2-black.png" alt="Add to Bag">
+                                                  Add to Bag
+                                                </button>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </form>
+                                      </div>
+                                      <div class="quickview-wishlist-row">
+                                        <ul class="list-inline">
+                                          <li>
+                                            <form id="form-add-to-wishlist" name="add-to-wishlist" action="">
+                                              <button type="submit" class="btn pdp-product-heart">
+                                                <span class="sr-only">Add item to wishlist</span>
+                                              </button>
+                                            </form>                </li>
+                                          <li>
+                                            <div class="availability">
+                                              <span class="glyphicon glyphicon-ok-sign"></span>Available
+                                            </div>                </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="my-account-wishlist-remove-btn">
+                            <button>Remove</button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="my-account-wishlist-pagination-bottom">
+                    <div class="row">
+                      <div class="col-sm-12 text-center pagination">
+                        <ul class="page-numbers">
+                          <li>
+                            <a href="" class="icon-prev">
+                              <span class="sr-only">Previous</span>
+                            </a>
+                          </li>
+                          
+                          
+                          
+                          
+                          
+                          <li>
+                            <a href="" class="icon-next">
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </li>                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-account-wishlist-clear-btn">
+                    <button>Clear Wishlist</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div id="footer" class="container">
+      <div class="row text-uppercase">
+        <div class="col-sm-2">
+          <div class="footer-col">
+            <ul>
+              <li class="footer-title hidden-xs">Customer Care</li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Shipping</a></li>
+                <li><a href="">Returns</a></li>
+                <li><a href="">Size Guide</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-2 hidden-xs">
+          <div class="footer-col">
+            <ul>
+              <li class="footer-title hidden-xs">About Us</li>
+                <li><a href="">Our Story</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-2 hidden-xs">
+          <div class="footer-col">
+            <ul>
+              <li class="footer-title hidden-xs">Shortcuts</li>
+                <li><a href="">My Account</a></li>
+                <li><a href="">Store Locator</a></li>
+                <li><a href="">Gift Cards</a></li>
+                <li><a href="">Payment</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 text-center newsletter-box">
+          <div class="row">
+            <div class="col-sm-5 text-left footer-title-yellow">
+              <p>Join our newsletter</p>
+            </div>
+            <div class="col-sm-7">
+              <form class="email-submit" action="">
+                <input id="newsletter-input" class="email-box" type="text" placeholder="Your email ..." required>
+                <button id="newsletter-button" type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">Subscribe</span></button>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 text-left card-info footer-title">
+              <p>Pay securely with these payment methods</p>
+              <img src="assets/img/cards.png" alt="payment types" class="img-responsive payment-cards">
+            </div>
+            <div class="col-sm-4 text-left card-info footer-title">
+              <p>Follow us</p>
+              <ul class="social-icons">
+                <a href=""><li><img class="social-icon" src="assets/img/Facebook.png" alt="facebook"></li></a>
+                <a href=""><li><img class="social-icon" src="assets/img/Pinterest.png" alt="pinterest"></li></a>
+                <a href=""><li><img class="social-icon" src="assets/img/Google.png" alt="google plus"></li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row text-uppercase">
+        <div class="col-sm-12">
+          <ul class="footer-title imprint-row">
+            <li class="hidden-xs">© 2015 Sunrise</li>
+              <li><a href="">Imprint</a></li>
+              <li><a href="">Privacy policy</a></li>
+              <li><a href="">Terms of use</a></li>
+            <li class="visible-xs">© 2015 Sunrise</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="assets/js/jqzoom.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/js/animatedModal.min.js"></script>
+  <script src="assets/js/selectboxit.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

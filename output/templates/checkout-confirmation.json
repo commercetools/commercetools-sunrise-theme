@@ -1,0 +1,31 @@
+{
+    "header" : { "$ref" : "common/checkout-header.json" },
+    "footer" : { "$ref" : "common/checkout-footer.json" },
+    "content" : {
+        "cart" : { "$ref" : "checkout/cart.json" },
+        "stepWidget" : {
+            "confirmationStepActive": true
+        },
+        "checkoutForm" : {
+            "actionUrl": "checkout-thankyou.html",
+            "csrfToken": "1234567890abcdef",
+            "newsletter" : {
+                "name" : "SUNRISE Newsletter",
+                "selected" : true,
+                "url" : "newsletter.html"
+            },
+            "termsConditions" : {
+                "url" : "terms.html",
+                "selected" : true
+            },
+            "remember" : {
+                "selected": true
+            }
+        }
+    },
+    "meta" : {
+        "assetsPath": "assets/",
+        "_links" : { "$ref" : "checkout/checkout-links.json" },
+        "features" : { "$ref" : "common/feature-flags.json" }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "header" : { "$ref" : "common/header.json" },
+    "footer" : { "$ref" : "common/footer.json" },
+    "content" : {
+        "cart" : { "$ref" : "checkout/cart.json" },
+        "wishlist" : { "$ref" : "catalog/wishlist.json" }
+    },
+    "meta" : {
+        "assetsPath": "assets/",
+        "_links" : { "$ref" : "checkout/checkout-links.json" },
+        "features" : { "$ref" : "common/feature-flags.json" }
+    }
+}

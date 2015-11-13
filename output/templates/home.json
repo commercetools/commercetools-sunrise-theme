@@ -1,0 +1,9 @@
+{
+	"header" : { "$ref" : "common/header.json" },
+	"footer" : { "$ref" : "common/footer.json" },
+	"content" : {
+		"suggestions" : { "$ref" : "catalog/product-list4.json" },
+		"wishlist" : { "$ref" : "catalog/wishlist.json" }
+	},
+	"meta" : { "$ref" : "common/meta.json" }
+}

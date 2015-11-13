@@ -2,7 +2,6 @@
 .sass-cache/
 .grunt/
 node_modules/
-output/
 *.codekit
 *.log
 *.jar

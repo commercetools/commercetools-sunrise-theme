@@ -1,0 +1,28 @@
+{
+    "itemsTotal" : 3,
+    "salesTax" : "23.95 €",
+    "total" : "150.00 €",
+    "promoCode" : "Sunny Sale",
+    "subtotal" : "147.00 €",
+    "shippingMethod" : {"$ref" : "shipping-method-1.json"},
+    "lineItems" : {
+        "list" : [
+            { "$ref" : "../common/product-variant-1.json" },
+            { "$ref" : "../common/product-variant-1.json" },
+            { "$ref" : "../common/product-variant-1.json" }
+        ]
+    },
+    "shippingAddress" : { "$ref" : "shipping-address.json" },
+    "billingAddress" : { "$ref" : "billing-address.json" },
+    "paymentDetails" : {
+        "text" : "Payment Details",
+        "type" : "Credit Card",
+        "name" : "P. Osgood",
+        "card" : "Visa",
+        "number" : "**** **** **** **56",
+        "date" : "09.18"
+    },
+    "orderNumber" : "01445678",
+    "orderDate" : "Nov 10, 2015",
+    "customerEmail" : "thedoctor@commercetools.com"
+}
