@@ -14,6 +14,8 @@ common:
   size: Size
   salesTax: Sales Tax
   viewDetails: View Details
+  language: Language
+  country: Country
 form:
   addressOne: Address 1
   addressTwo: Address 2
@@ -46,4 +48,3 @@ form:
   submit: Submit
   title: Title
   year: Year
-
