@@ -12,6 +12,7 @@
             { "$ref" : "../common/product-variant-1.json" }
         ]
     },
+    "csrfToken": "Test123",
     "shippingAddress" : { "$ref" : "shipping-address.json" },
     "billingAddress" : { "$ref" : "billing-address.json" },
     "paymentDetails" : {

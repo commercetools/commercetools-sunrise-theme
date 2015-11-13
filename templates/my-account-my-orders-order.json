@@ -1,119 +1,881 @@
 {
-	"header" : { "$ref" : "common/header.json" },
-	"footer" : { "$ref" : "common/footer.json" },
-	"content" : {
-		"pageTitle" : "My Account",
-		"sidebarItemOne" : {
-			"text" : "Personal Details",
-			"url" : ""
-		},
-		"sidebarItemTwo" : {
-			"text" : "Address Book",
-			"url" : ""
-		},
-		"sidebarItemThree" : {
-			"text" : "Payment Details",
-			"url" : ""
-		},
-		"sidebarItemFour" : {
-			"text" : "My Orders",
-			"url" : ""
-		},
-		"sidebarItemFive" : {
-			"text" : "Returns / Exchange",
-			"url" : ""
-		},
-		"sidebarItemSix" : {
-			"text" : "Wishlist",
-			"url" : "",
-			"wishlistItems" : "12"
-		},
-		"sidebarItemSeven" : {
-			"text" : "Sign Out",
-			"url" : ""
-		},
-        "contentTitle" : "My Orders",
-		"yourOrderTitle" : "Your Order Details",
-		"orderNumberTitle" : "Order number:",
-		"orderDateTitle" : "Order date:",
-		"orderNumber" : "01445678",
-		"orderDate" : "Nov 14, 2015",
-		"printReceiptBtn" : "Print Receipt",
-		"shippingAddress" : {
-			"title" : "Shipping Address",
-			"name" : "Mr. Bruce Wayne",
-			"address" : "100 Gotham Street",
-			"city" : "Gotham City",
-			"region" : "Region",
-			"postCode" : "123456",
-			"country" : "Country",
-			"number" : "Phone: +49 123 4567890",
-			"email" : "Email: bruce.wayne@commercetools.com"
-		},
-		"billingAddress" : {
-			"title" : "Shipping Address",
-			"name" : "Mr. Bruce Wayne",
-			"address" : "100 Gotham Street",
-			"city" : "Gotham City",
-			"region" : "Region",
-			"postCode" : "123456",
-			"country" : "Country",
-			"number" : "Phone: +49 123 4567890",
-			"email" : "Email: bruce.wayne@commercetools.com"
-		},
-		"shippingMethod" : {
-			"title" : "Shipping Method",
-			"text" : "HL Standart - Delivery 3-5 Days"
-		},
-		"paymentDetails" : {
-			"title" : "Payment Details",
-			"payment" : "Credit Card",
-			"name" : "Bruce Wayne",
-			"type" : "Visa",
-			"number" : "**** **** **** **99",
-			"date" : "09.18"
-		},
-		"promoCode" : "Sunny Sale",
-		"orderDiscountTitle" : "Order Discount",
-		"standartDeliveryTitle" : "Start Delivery",
-		"subtotal" : "200,00 €",
-		"orderDiscount" : "0,00 €",
-		"standartDelivery" : "10,00 €",
-		"salesTaxTitle" : "Sales Tax",
-		"orderTotalTitle" : "Order Total",
-		"salesTax" : "0,00 €",
-		"orderTotal" : "210,00 €",
-		"productDescriptionTitle" : "Product Description",
-		"order" : [
-			{
-				"image" : "assets/img/blue-shirt.jpg",
-				"productTitleOne" : "Enditatem Product name",
-				"productTitleTwo" : "Optional Line Two",
-				"sku" : "Sunrise SUN#123456",
-				"color" : "Navy Blue",
-				"size" : "XXL",
-				"available" : "Immediately available",
-				"quantity" : 1,
-				"discountedPrice" : "120,00 €",
-				"price" : "100,00 €",
-				"totalPrice" : "100,00 €"
-			},
-			{
-				"image" : "assets/img/blue-shirt.jpg",
-				"productTitleOne" : "Enditatem Product name",
-				"productTitleTwo" : "Optional Line Two",
-				"sku" : "Sunrise SUN#123456",
-				"color" : "Navy Blue",
-				"size" : "XXL",
-				"available" : "Immediately available",
-				"quantity" : 1,
-				"discountedPrice" : "120,00 €",
-				"price" : "100,00 €",
-				"totalPrice" : "100,00 €"
-			}
-		]
-	},
-	"meta" : {
-		"assetsPath": "assets/"
-	}
+  "header": {
+    "title": "Sunrise - Page Title",
+    "stores": {
+      "text": "STORES",
+      "url": ""
+    },
+    "help": {
+      "text": "HELP",
+      "url": ""
+    },
+    "callUs": {
+      "text": "CALL US ON +44 123 456 000",
+      "url": ""
+    },
+    "location": {
+      "locationDropdownToggleBtnId": "location-dropdown-toggle-btn",
+      "languageSelectId": "language-select",
+      "countrySelectId": "country-select",
+      "language": [
+        {
+          "text": "German",
+          "value": "German",
+          "selected": true,
+          "languageOptionId": "language-option-german"
+        },
+        {
+          "text": "English",
+          "value": "English",
+          "selected": false,
+          "languageOptionId": "language-option-english"
+        },
+        {
+          "text": "French",
+          "value": "French",
+          "selected": false,
+          "languageOptionId": "language-option-french"
+        }
+      ],
+      "country": [
+        {
+          "text": "Germany",
+          "value": "Germany",
+          "selected": true,
+          "countryOptionId": "country-option-germany"
+        },
+        {
+          "text": "UK",
+          "value": "UK",
+          "selected": false,
+          "countryOptionId": "country-option-uk"
+        },
+        {
+          "text": "France",
+          "value": "France",
+          "selected": false,
+          "countryOptionId": "country-option-france"
+        }
+      ]
+    },
+    "minicart": {
+      "totalPrice": "Total 117,00 €",
+      "viewBagBtn": "View Bag",
+      "checkoutBtn": "Checkout",
+      "list": [
+        {
+          "nameHeadline": "Enditatem Product name",
+          "nameSubline": "Optional Line two",
+          "quantity": 1,
+          "priceText": "Price",
+          "price": "49,00 €"
+        },
+        {
+          "nameHeadline": "Enditatem Product name",
+          "nameSubline": "Optional Line two",
+          "quantity": 1,
+          "priceText": "Price",
+          "price": "49,00 €"
+        },
+        {
+          "nameHeadline": "Enditatem Product name",
+          "nameSubline": "Optional Line two",
+          "quantity": 1,
+          "priceText": "Price",
+          "price": "49,00 €"
+        }
+      ]
+    },
+    "search": {
+      "inputId": "search-input",
+      "buttonId": "search-button"
+    },
+    "user": {
+      "isLoggedIn": false,
+      "signIn": {
+        "text": "SIGN IN",
+        "url": ""
+      }
+    },
+    "miniCart": {
+      "text": "YOUR BAG",
+      "url": "",
+      "numItems": 12
+    },
+    "navMenu": {
+      "new": {
+        "text": "New",
+        "url": ""
+      },
+      "sale": {
+        "text": "Sale",
+        "url": ""
+      },
+      "categories": [
+        {
+          "text": "Women",
+          "url": "",
+          "children": [
+            {
+              "text": "Women",
+              "url": "",
+              "children": [
+                {
+                  "text": "Basic example",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Sizing",
+                  "url": ""
+                },
+                {
+                  "text": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Vertical variation",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Glasses",
+              "url": "",
+              "children": [
+                {
+                  "text": "Lorem",
+                  "url": ""
+                },
+                {
+                  "text": "Ipsum",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Women",
+              "url": "",
+              "children": [
+                {
+                  "text": "Basic example",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Sizing",
+                  "url": ""
+                },
+                {
+                  "text": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Vertical variation",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Glasses",
+              "url": "",
+              "children": [
+                {
+                  "text": "Lorem",
+                  "url": ""
+                },
+                {
+                  "text": "Ipsum",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Women",
+              "url": "",
+              "children": [
+                {
+                  "text": "Basic example",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Sizing",
+                  "url": ""
+                },
+                {
+                  "text": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Vertical variation",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Glasses",
+              "url": "",
+              "children": [
+                {
+                  "text": "Lorem",
+                  "url": ""
+                },
+                {
+                  "text": "Ipsum",
+                  "url": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Men",
+          "url": "",
+          "children": [
+            {
+              "text": "Men",
+              "url": "",
+              "children": [
+                {
+                  "text": "Basic example",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Sizing",
+                  "url": ""
+                },
+                {
+                  "text": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Vertical variation",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Glasses",
+              "url": "",
+              "children": [
+                {
+                  "text": "Lorem",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation item",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation items will be truncated",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation item",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Sizing",
+                  "url": ""
+                },
+                {
+                  "text": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation items will be truncated",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation item",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Men",
+              "url": "",
+              "children": [
+                {
+                  "text": "Basic example",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Sizing",
+                  "url": ""
+                },
+                {
+                  "text": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation items will be truncated",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Glasses",
+              "url": "",
+              "children": [
+                {
+                  "text": "Lorem",
+                  "url": ""
+                },
+                {
+                  "text": "Ipsum",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Men",
+              "url": "",
+              "children": [
+                {
+                  "text": "Basic example",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation items will be truncated",
+                  "url": ""
+                },
+                {
+                  "text": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Vertical variation",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Glasses",
+              "url": "",
+              "children": [
+                {
+                  "text": "Lorem",
+                  "url": ""
+                },
+                {
+                  "text": "Ipsum",
+                  "url": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Accessories",
+          "url": "",
+          "children": [
+            {
+              "text": "Accessories",
+              "url": "",
+              "children": [
+                {
+                  "text": "Basic example",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Sizing",
+                  "url": ""
+                },
+                {
+                  "text": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Vertical variation",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Glasses",
+              "url": "",
+              "children": [
+                {
+                  "text": "Lorem",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation item",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation items will be truncated",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation item",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Sizing",
+                  "url": ""
+                },
+                {
+                  "text": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation items will be truncated",
+                  "url": ""
+                },
+                {
+                  "text": "Very long navigation item",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Accessories",
+              "url": "",
+              "children": [
+                {
+                  "text": "Basic example",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Sizing",
+                  "url": ""
+                },
+                {
+                  "text": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Vertical variation",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Glasses",
+              "url": "",
+              "children": [
+                {
+                  "text": "Lorem",
+                  "url": ""
+                },
+                {
+                  "text": "Ipsum",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Accessories",
+              "url": "",
+              "children": [
+                {
+                  "text": "Basic example",
+                  "url": ""
+                },
+                {
+                  "text": "Button toolbar",
+                  "url": ""
+                },
+                {
+                  "text": "Sizing",
+                  "url": ""
+                },
+                {
+                  "title": "Nesting",
+                  "url": ""
+                },
+                {
+                  "text": "Vertical variation",
+                  "url": ""
+                }
+              ]
+            },
+            {
+              "text": "Glasses",
+              "url": "",
+              "children": [
+                {
+                  "text": "Lorem",
+                  "url": ""
+                },
+                {
+                  "text": "Ipsum",
+                  "url": ""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "brands": {
+        "text": "Brands",
+        "url": "",
+        "children": [
+          {
+            "text": "Brands",
+            "url": "",
+            "children": [
+              {
+                "text": "Basic example",
+                "url": ""
+              },
+              {
+                "text": "Button toolbar",
+                "url": ""
+              },
+              {
+                "text": "Sizing",
+                "url": ""
+              },
+              {
+                "text": "Nesting",
+                "url": ""
+              },
+              {
+                "text": "Vertical variation",
+                "url": ""
+              }
+            ]
+          },
+          {
+            "text": "Glasses",
+            "url": "",
+            "children": [
+              {
+                "text": "Lorem",
+                "url": ""
+              },
+              {
+                "text": "Ipsum",
+                "url": ""
+              }
+            ]
+          },
+          {
+            "text": "Brands",
+            "url": "",
+            "children": [
+              {
+                "text": "Basic example",
+                "url": ""
+              },
+              {
+                "text": "Button toolbar",
+                "url": ""
+              },
+              {
+                "text": "Sizing",
+                "url": ""
+              },
+              {
+                "text": "Nesting",
+                "url": ""
+              },
+              {
+                "text": "Vertical variation",
+                "url": ""
+              }
+            ]
+          },
+          {
+            "text": "Glasses",
+            "url": "",
+            "children": [
+              {
+                "text": "Lorem",
+                "url": ""
+              },
+              {
+                "text": "Ipsum",
+                "url": ""
+              }
+            ]
+          },
+          {
+            "text": "Brands",
+            "url": "",
+            "children": [
+              {
+                "text": "Basic example",
+                "url": ""
+              },
+              {
+                "text": "Button toolbar",
+                "url": ""
+              },
+              {
+                "text": "Sizing",
+                "url": ""
+              },
+              {
+                "text": "Nesting",
+                "url": ""
+              },
+              {
+                "text": "Vertical variation",
+                "url": ""
+              }
+            ]
+          },
+          {
+            "text": "Glasses",
+            "url": "",
+            "children": [
+              {
+                "text": "Lorem",
+                "url": ""
+              },
+              {
+                "text": "Ipsum",
+                "url": ""
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "paySecure": "Pay securely with these payment methods",
+    "followUs": "Follow us",
+    "newsletter": {
+      "text": "Join our newsletter",
+      "textAlt": "Subscribe",
+      "url": "",
+      "placeholder": "Your email ...",
+      "inputId": "newsletter-input",
+      "buttonId": "newsletter-button"
+    },
+    "customerCare": {
+      "text": "Customer Care",
+      "list": [
+        {
+          "text": "Contact us",
+          "url": ""
+        },
+        {
+          "text": "Help",
+          "url": ""
+        },
+        {
+          "text": "Shipping",
+          "url": ""
+        },
+        {
+          "text": "Returns",
+          "url": ""
+        },
+        {
+          "text": "Size Guide",
+          "url": ""
+        }
+      ]
+    },
+    "aboutUs": {
+      "text": "About Us",
+      "list": [
+        {
+          "text": "Our Story",
+          "url": ""
+        },
+        {
+          "text": "Careers",
+          "url": ""
+        }
+      ]
+    },
+    "shortcuts": {
+      "text": "Shortcuts",
+      "list": [
+        {
+          "text": "My Account",
+          "url": ""
+        },
+        {
+          "text": "Store Locator",
+          "url": ""
+        },
+        {
+          "text": "Gift Cards",
+          "url": ""
+        },
+        {
+          "text": "Payment",
+          "url": ""
+        }
+      ]
+    },
+    "legalInfo": {
+      "text": "© 2015 Sunrise",
+      "list": [
+        {
+          "text": "Imprint",
+          "url": ""
+        },
+        {
+          "text": "Privacy policy",
+          "url": ""
+        },
+        {
+          "text": "Terms of use",
+          "url": ""
+        }
+      ]
+    }
+  },
+  "content": {
+    "pageTitle": "My Account",
+    "sidebarItemOne": {
+      "text": "Personal Details",
+      "url": ""
+    },
+    "sidebarItemTwo": {
+      "text": "Address Book",
+      "url": ""
+    },
+    "sidebarItemThree": {
+      "text": "Payment Details",
+      "url": ""
+    },
+    "sidebarItemFour": {
+      "text": "My Orders",
+      "url": ""
+    },
+    "sidebarItemFive": {
+      "text": "Returns / Exchange",
+      "url": ""
+    },
+    "sidebarItemSix": {
+      "text": "Wishlist",
+      "url": "",
+      "wishlistItems": "12"
+    },
+    "sidebarItemSeven": {
+      "text": "Sign Out",
+      "url": ""
+    },
+    "contentTitle": "My Orders",
+    "yourOrderTitle": "Your Order Details",
+    "orderNumberTitle": "Order number:",
+    "orderDateTitle": "Order date:",
+    "orderNumber": "01445678",
+    "orderDate": "Nov 14, 2015",
+    "printReceiptBtn": "Print Receipt",
+    "shippingAddress": {
+      "title": "Shipping Address",
+      "name": "Mr. Bruce Wayne",
+      "address": "100 Gotham Street",
+      "city": "Gotham City",
+      "region": "Region",
+      "postCode": "123456",
+      "country": "Country",
+      "number": "Phone: +49 123 4567890",
+      "email": "Email: bruce.wayne@commercetools.com"
+    },
+    "billingAddress": {
+      "title": "Shipping Address",
+      "name": "Mr. Bruce Wayne",
+      "address": "100 Gotham Street",
+      "city": "Gotham City",
+      "region": "Region",
+      "postCode": "123456",
+      "country": "Country",
+      "number": "Phone: +49 123 4567890",
+      "email": "Email: bruce.wayne@commercetools.com"
+    },
+    "shippingMethod": {
+      "title": "Shipping Method",
+      "text": "HL Standart - Delivery 3-5 Days"
+    },
+    "paymentDetails": {
+      "title": "Payment Details",
+      "payment": "Credit Card",
+      "name": "Bruce Wayne",
+      "type": "Visa",
+      "number": "**** **** **** **99",
+      "date": "09.18"
+    },
+    "promoCode": "Sunny Sale",
+    "orderDiscountTitle": "Order Discount",
+    "standartDeliveryTitle": "Start Delivery",
+    "subtotal": "200,00 €",
+    "orderDiscount": "0,00 €",
+    "standartDelivery": "10,00 €",
+    "salesTaxTitle": "Sales Tax",
+    "orderTotalTitle": "Order Total",
+    "salesTax": "0,00 €",
+    "orderTotal": "210,00 €",
+    "productDescriptionTitle": "Product Description",
+    "order": [
+      {
+        "image": "assets/img/blue-shirt.jpg",
+        "productTitleOne": "Enditatem Product name",
+        "productTitleTwo": "Optional Line Two",
+        "sku": "Sunrise SUN#123456",
+        "color": "Navy Blue",
+        "size": "XXL",
+        "available": "Immediately available",
+        "quantity": 1,
+        "discountedPrice": "120,00 €",
+        "price": "100,00 €",
+        "totalPrice": "100,00 €"
+      },
+      {
+        "image": "assets/img/blue-shirt.jpg",
+        "productTitleOne": "Enditatem Product name",
+        "productTitleTwo": "Optional Line Two",
+        "sku": "Sunrise SUN#123456",
+        "color": "Navy Blue",
+        "size": "XXL",
+        "available": "Immediately available",
+        "quantity": 1,
+        "discountedPrice": "120,00 €",
+        "price": "100,00 €",
+        "totalPrice": "100,00 €"
+      }
+    ]
+  },
+  "meta": {
+    "assetsPath": "assets/"
+  }
 }

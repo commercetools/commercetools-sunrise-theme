@@ -1,21 +1,84 @@
 {
-	"header" : { "$ref" : "common/checkout-header.json" },
-	"footer" : { "$ref" : "common/checkout-footer.json" },
-  "content" : {
-    "ifYouHaveAccountTitle" : "If you have an account, please sign in for faster checkout.",
-    "emailTitle" : "Email Address",
-    "passwordTitle" : "Password",
-    "rememberMeTitle" : "Remember Me",
-    "forgotPasswordTitle" : "Forgot Password",
-    "quickCheckoutBtn" : "Quick Checkout",
-    "guestCheckoutTitle" : "Guest Checkout",
-    "guestCheckoutParagraph1" : "No problem, you do not need to create an account to place an order.",
-    "guestCheckoutParagraph2" : "To make future purchases even faster, you will have the option of creating an acocount during checkout.",
-    "continueGuestBtn" : "Continue As Guest"
+  "header": {
+    "title": "Sunrise - Checkout Page",
+    "customerService": "Need help? Customer Service",
+    "customerServiceNumber": "+12 345 6000"
   },
-  "meta" : {
-      "assetsPath": "assets/",
-      "_links" : { "$ref" : "checkout/checkout-links.json" },
-      "features" : { "$ref" : "common/feature-flags.json" }
+  "footer": {
+    "legalInfo": {
+      "text": "© 2015 Sunrise",
+      "list": [
+        {
+          "text": "Imprint",
+          "url": "",
+          "id": "imprint-link"
+        },
+        {
+          "text": "Privacy policy",
+          "url": "",
+          "id": "privacypolicy-link"
+        },
+        {
+          "text": "Terms of use",
+          "url": "",
+          "id": "termsofuse-link"
+        }
+      ]
+    }
+  },
+  "content": {
+    "ifYouHaveAccountTitle": "If you have an account, please sign in for faster checkout.",
+    "emailTitle": "Email Address",
+    "passwordTitle": "Password",
+    "rememberMeTitle": "Remember Me",
+    "forgotPasswordTitle": "Forgot Password",
+    "quickCheckoutBtn": "Quick Checkout",
+    "guestCheckoutTitle": "Guest Checkout",
+    "guestCheckoutParagraph1": "No problem, you do not need to create an account to place an order.",
+    "guestCheckoutParagraph2": "To make future purchases even faster, you will have the option of creating an acocount during checkout.",
+    "continueGuestBtn": "Continue As Guest"
+  },
+  "meta": {
+    "assetsPath": "assets/",
+    "_links": {
+      "editShippingAddress": {
+        "href": "checkout-shipping.html"
+      },
+      "editBillingAddress": {
+        "href": "checkout-shipping.html"
+      },
+      "editPaymentInfo": {
+        "href": "checkout-payment.html"
+      },
+      "editShippingMethod": {
+        "href": "checkout-shipping.html#shipping-methods-setting"
+      },
+      "continueShopping": {
+        "href": "pop.html"
+      },
+      "checkout": {
+        "href": "checkout-shipping.html"
+      },
+      "home": {
+        "href": "home.html"
+      },
+      "cart": {
+        "href": "cart.html"
+      },
+      "deleteLineItem": {
+        "href": "cart.html"
+      },
+      "changeLineItem": {
+        "href": "cart.html"
+      }
+    },
+    "features": {
+      "myAccount": {
+        "active": false
+      },
+      "cartDiscounts": {
+        "active": false
+      }
+    }
   }
 }
