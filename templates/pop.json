@@ -781,17 +781,12 @@
     "breadcrumb": {
       "links": [
         {
-          "url": "home/",
-          "text": "Home"
-        },
-        {
           "url": "women/",
           "text": "Women"
         },
         {
           "url": "coats/",
-          "text": "Coats",
-          "selected": true
+          "text": "Coats"
         }
       ]
     },
