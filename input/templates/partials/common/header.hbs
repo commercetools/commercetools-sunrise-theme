@@ -94,8 +94,8 @@
             </ul>
             <div class="gradient"></div>
             <p class="total-price">{{header.miniCart.totalPrice}}</p>
-            <button class="btn-grey">{{header.miniCart.viewBagBtn}}</button>
-            <button class="btn-yellow">{{header.miniCart.checkoutBtn}}</button>
+            <a href="{{meta._links.cart.href}}" class="btn-grey">{{header.miniCart.viewBagBtn}}</a>
+            <a href="{{meta._links.checkout.href}}" class="btn-yellow">{{header.miniCart.checkoutBtn}}</a>
           </div>
         </div>
         {{/if}}
@@ -108,7 +108,7 @@
   <div id="navigation" class="container">
     <div class="row logo-search">
       <div class="col-sm-8">
-        <a href="#" class="brand-logo">
+        <a href="{{meta._links.home.href}}" class="brand-logo">
           <img class="img-responsive" src="{{meta.assetsPath}}img/logo.svg" alt="SUNRISE Logo">
         </a>
       </div>
