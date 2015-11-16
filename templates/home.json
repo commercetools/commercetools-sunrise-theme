@@ -761,6 +761,32 @@
     }
   },
   "content": {
+    "banners": {
+      "bannerOne": {
+        "first": {
+          "href": "pop.html"
+        },
+        "second": {
+          "href": "pop.html"
+        }
+      },
+      "bannerTwo": {
+        "first": {
+          "href": "pop.html"
+        }
+      },
+      "bannerThree": {
+        "first": {
+          "href": "pop.html"
+        },
+        "third": {
+          "href": "pop.html"
+        },
+        "fourth": {
+          "href": "pop.html"
+        }
+      }
+    },
     "suggestions": {
       "list": [
         {
@@ -1439,6 +1465,9 @@
       },
       "changeLineItem": {
         "href": "cart.html"
+      },
+      "newProducts": {
+        "href": "pop.html"
       },
       "self": {
         "href": "#"
