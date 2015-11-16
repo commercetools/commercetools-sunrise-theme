@@ -31,12 +31,12 @@
           <div class="col-sm-2 col-xs-12 cart-edit-delete">
               <div class="edit-section-options">
                   <div class="edit-delete-section">
-                  <form action="{{../meta._links.deleteLineItem.href}}" method="post">
+                  <form action="{{@root.meta._links.deleteLineItem.href}}" method="post">
                       <input type="hidden" name="csrfToken" value="{{../cart.csrfToken}}"/>
                       <input type="hidden" name="lineItemId" value="{{lineItemId}}">
                       <button type="submit" id="cart-delete-button-{{@index}}">
                         <span>
-                          <img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete">{{i18n "form.delete"}}
+                          <img class="cart-action-icon" src="{{@root.meta.assetsPath}}img/delete-1.png" alt="delete">{{i18n "form.delete"}}
                         </span>
                       </button>
                   </form>
@@ -44,7 +44,7 @@
               </div>
           </div>
           <div class="col-sm-2 col-xs-12 clearfix">
-              <form action="{{../meta._links.changeLineItem.href}}" method="post">
+              <form action="{{@root.meta._links.changeLineItem.href}}" method="post">
                   <input type="hidden" name="csrfToken" value="{{cartForm.csrfToken}}"/>
               <input type="hidden" name="lineItemId" value="{{lineItemId}}">
               <div class="sm-pull-right visible-xs">

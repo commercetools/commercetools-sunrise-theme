@@ -71,14 +71,14 @@
             <ul>
               {{#each header.minicart.list}}
                 <li>
-                  <a class="img" href="#"><img src="{{../meta.assetsPath}}img/blue-shirt.jpg" alt="Alt text" /></a>
+                  <a class="img" href="#"><img src="{{@root.meta.assetsPath}}img/blue-shirt.jpg" alt="Alt text" /></a>
                   <p class="product-title"><a href="#">{{nameHeadline}}</a></p>
                   <p class="product-title">{{nameSubline}}</p>
                   <div class="details">
                     <p class="product-quantity">{{i18n "common.quantity"}}<span>{{quantity}}x</span></p>
                     <p class="product-price">{{priceText}}<span>{{price}}</span></p>
                     <button class="delete" type="submit" href="#">
-                      <span><img class="cart-action-icon" src="{{../meta.assetsPath}}img/delete-1.png" alt="delete"></span>
+                      <span><img class="cart-action-icon" src="{{@root.meta.assetsPath}}img/delete-1.png" alt="delete"></span>
                     </button>
                   </div>
                 </li>
@@ -120,7 +120,7 @@
           <ul class="nav navbar-nav">
             {{#each header.navMenu.categories}}
               <li class="dropdown menu-large">
-                <a href="{{url}}" class="dropdown-toggle {{#if sale}}sale icon-ribbon{{/if}}" data-toggle="dropdown">{{text}}<img class="mobile-plus-content visible-xs" src="{{../meta.assetsPath}}img/plus79.png" alt="plus content"></a>
+                <a href="{{url}}" class="dropdown-toggle {{#if sale}}sale icon-ribbon{{/if}}" data-toggle="dropdown">{{text}}<img class="mobile-plus-content visible-xs" src="{{@root.meta.assetsPath}}img/plus79.png" alt="plus content"></a>
                 <ul class="dropdown-menu megamenu row dropdown-submenu">
                   <li class="col-sm-8">
                     <div class="nav-accordion">
@@ -135,7 +135,7 @@
                     </div>
                   </li>
                   <li class="col-sm-4 hidden-xs">
-                    <img src="{{../meta.assetsPath}}img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                    <img src="{{@root.meta.assetsPath}}img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
                   </li>
                 </ul>
               </li>
