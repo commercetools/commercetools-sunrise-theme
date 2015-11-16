@@ -49,6 +49,7 @@
             "description": "Optional Line Two",
             "image": "assets/img/blue-jacket.jpg",
             "lineItemId": "123456",
+            "url": "pdp.html",
             "sku": "Sunrise #SUN123456",
             "attributes": [
               {
@@ -72,6 +73,7 @@
             "description": "Optional Line Two",
             "image": "assets/img/blue-jacket.jpg",
             "lineItemId": "123456",
+            "url": "pdp.html",
             "sku": "Sunrise #SUN123456",
             "attributes": [
               {
@@ -95,6 +97,7 @@
             "description": "Optional Line Two",
             "image": "assets/img/blue-jacket.jpg",
             "lineItemId": "123456",
+            "url": "pdp.html",
             "sku": "Sunrise #SUN123456",
             "attributes": [
               {

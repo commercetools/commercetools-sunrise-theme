@@ -58,7 +58,9 @@
         }
       ]
     },
-    "minicart": {
+    "miniCart": {
+      "url": "cart.html",
+      "numItems": 12,
       "totalPrice": "Total 117,00 €",
       "viewBagBtn": "View Bag",
       "checkoutBtn": "Checkout",
@@ -96,11 +98,6 @@
         "text": "SIGN IN",
         "url": ""
       }
-    },
-    "miniCart": {
-      "text": "YOUR BAG",
-      "url": "",
-      "numItems": 12
     },
     "navMenu": {
       "new": {

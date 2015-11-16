@@ -58,7 +58,9 @@
         }
       ]
     },
-    "minicart": {
+    "miniCart": {
+      "url": "cart.html",
+      "numItems": 12,
       "totalPrice": "Total 117,00 €",
       "viewBagBtn": "View Bag",
       "checkoutBtn": "Checkout",
@@ -96,11 +98,6 @@
         "text": "SIGN IN",
         "url": ""
       }
-    },
-    "miniCart": {
-      "text": "YOUR BAG",
-      "url": "",
-      "numItems": 12
     },
     "navMenu": {
       "new": {
@@ -782,8 +779,8 @@
       ]
     },
     "product": {
-      "url": "",
-      "addToCartUrl": "",
+      "url": "pdp.html",
+      "addToCartUrl": "cart.html",
       "addToWishlistUrl": "",
       "addReviewUrl": "",
       "rating3": true,
@@ -952,8 +949,8 @@
     "suggestions": {
       "list": [
         {
-          "url": "",
-          "addToCartUrl": "",
+          "url": "pdp.html",
+          "addToCartUrl": "cart.html",
           "addToWishlistUrl": "",
           "addReviewUrl": "",
           "rating3": true,
@@ -1105,8 +1102,8 @@
           }
         },
         {
-          "url": "",
-          "addToCartUrl": "",
+          "url": "pdp.html",
+          "addToCartUrl": "cart.html",
           "addToWishlistUrl": "",
           "addReviewUrl": "",
           "rating3": true,
@@ -1258,8 +1255,8 @@
           }
         },
         {
-          "url": "",
-          "addToCartUrl": "",
+          "url": "pdp.html",
+          "addToCartUrl": "cart.html",
           "addToWishlistUrl": "",
           "addReviewUrl": "",
           "rating3": true,
@@ -1411,8 +1408,8 @@
           }
         },
         {
-          "url": "",
-          "addToCartUrl": "",
+          "url": "pdp.html",
+          "addToCartUrl": "cart.html",
           "addToWishlistUrl": "",
           "addReviewUrl": "",
           "rating3": true,
