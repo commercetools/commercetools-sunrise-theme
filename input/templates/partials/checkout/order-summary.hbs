@@ -7,8 +7,9 @@
               <img class="img-responsive cart-item-img" src="{{image}}" alt="cart item image">
           </div>
           <div class="col-sm-3 col-xs-8 product-info-text">
-              <p class="cart-item-name">{{name}}
-                  <br>{{description}}</p>
+              <p class="cart-item-name">
+                <a href="{{url}}">{{name}}</a>
+                <br>{{description}}</p>
               <p class="grey-p">{{sku}}</p>
               <p class="cart-attributes">
               {{#each attributes}}
