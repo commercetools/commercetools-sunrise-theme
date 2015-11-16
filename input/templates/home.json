@@ -2,6 +2,32 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
+		"banners": {
+			"bannerOne": {
+				"first": {
+					"href": "pop.html"
+				},
+				"second": {
+					"href": "pop.html"
+				}
+			},
+			"bannerTwo": {
+				"first": {
+					"href": "pop.html"
+				}
+			},
+			"bannerThree": {
+				"first": {
+					"href": "pop.html"
+				},
+				"third": {
+					"href": "pop.html"
+				},
+				"fourth": {
+					"href": "pop.html"
+				}
+			}
+		},
 		"suggestions" : { "$ref" : "catalog/product-list4.json" },
 		"wishlist" : { "$ref" : "catalog/wishlist.json" }
 	},

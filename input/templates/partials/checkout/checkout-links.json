@@ -29,6 +29,9 @@
     "changeLineItem": {
         "href": "cart.html"
     },
+    "newProducts": {
+        "href": "pop.html"
+    },
     "self": {
         "href": "#"
     }
