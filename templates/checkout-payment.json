@@ -297,6 +297,9 @@
       },
       "changeLineItem": {
         "href": "cart.html"
+      },
+      "self": {
+        "href": "#"
       }
     },
     "features": {
