@@ -31,10 +31,17 @@
             <li class="list-item-call"><a href="{{header.callUs.url}}" class="link-hotline">{{header.callUs.text}}</a></li>
             <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
             <li class="list-item-bag">
-              <button href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag">
-                <span class="hidden-xs hidden-sm">{{header.miniCart.text}}</span>
-                <span class="cart-item-number">{{header.miniCart.numItems}}</span>
-              </button>
+              {{#if header.miniCart.list }}
+                  <button href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag">
+                      <span class="hidden-xs hidden-sm">{{header.miniCart.text}}</span>
+                      <span class="cart-item-number">{{header.miniCart.numItems}}</span>
+                  </button>
+              {{else}}
+                  <a href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag">
+                      <span class="hidden-xs hidden-sm">{{header.miniCart.text}}</span>
+                      <span class="cart-item-number">{{header.miniCart.numItems}}</span>
+                  </a>
+              {{/if}}
             </li>
 
             <li class="list-item-user">
@@ -69,7 +76,7 @@
         <div class="col-xs-12">
           <div class="nav-minicart">
             <ul>
-              {{#each header.minicart.list}}
+              {{#each header.miniCart.list}}
                 <li>
                   <a class="img" href="#"><img src="{{@root.meta.assetsPath}}img/blue-shirt.jpg" alt="Alt text" /></a>
                   <p class="product-title"><a href="#">{{nameHeadline}}</a></p>
@@ -85,9 +92,9 @@
               {{/each}}
             </ul>
             <div class="gradient"></div>
-            <p class="total-price">{{header.minicart.totalPrice}}</p>
-            <button class="btn-grey">{{header.minicart.viewBagBtn}}</button>
-            <button class="btn-yellow">{{header.minicart.checkoutBtn}}</button>
+            <p class="total-price">{{header.miniCart.totalPrice}}</p>
+            <button class="btn-grey">{{header.miniCart.viewBagBtn}}</button>
+            <button class="btn-yellow">{{header.miniCart.checkoutBtn}}</button>
           </div>
         </div>
 
