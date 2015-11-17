@@ -1,0 +1,73 @@
+.signup-box-wrapper {
+  background: $white;
+  border: 1px solid $light-grey;
+  padding: 20px;
+}
+.signup-box-title {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.signup-box-required {
+  color: $dark-grey;
+}
+.signup-box-hr {
+  margin: 10px 0;
+  border-top: 1px solid $light-grey;
+}
+.signup-box-description {
+  padding: 20px 0 30px;
+}
+.signup-box-input {
+  margin-top: 10px;
+  span {
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  input {
+    width: 100%;
+    padding: 5px 10px;
+  }
+}
+.signup-box-newsletter {
+  letter-spacing: 1px;
+  margin-top: 40px;
+  input {
+    margin-right: 5px;
+  }
+  a {
+    color: $dark-grey;
+    text-decoration: underline;
+  }
+}
+.signup-box-terms {
+  letter-spacing: 1px;
+  margin-top: 5px;
+  input {
+    margin-right: 5px;
+  }
+  a {
+    color: $dark-grey;
+    text-decoration: underline;
+  }
+}
+.signup-box-policy {
+  letter-spacing: 1px;
+  margin-top: 5px;
+  a {
+    color: $dark-grey;
+    text-decoration: underline;
+  }
+}
+.signup-register-btn {
+  background-color: $yellow;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  &:hover {
+    background-color: lighten($yellow, 5%);
+  }
+}
