@@ -5,10 +5,10 @@
   font-weight: 200;
   font-size: 26px;
   letter-spacing: 1px;
-  padding-bottom: 20px;
+  padding: 20px 0 40px;
 }
 .popular-search-phrases-wrapper {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   border-bottom: 1px solid $light-grey;
   .popular-search-phrases {
     column-count: 4;
@@ -21,5 +21,5 @@
   font-weight: 200;
   font-size: 26px;
   letter-spacing: 1px;
-  padding: 20px 0;
+  padding: 40px 0;
 }
