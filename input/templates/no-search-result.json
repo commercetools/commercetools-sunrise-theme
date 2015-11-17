@@ -3,7 +3,8 @@
     "footer" : { "$ref" : "common/footer.json" },
     "content" : {
         "breadcrumb" : { "$ref" : "catalog/breadcrumb.json" },
-        "suggestions" : { "$ref" : "catalog/product-list4.json" }
+        "suggestions" : { "$ref" : "catalog/product-list4.json" },
+        "phrases" : { "$ref" : "catalog/popular-search-phrases.json" }
     },
     "meta" : { "$ref" : "common/meta.json" }
 }
