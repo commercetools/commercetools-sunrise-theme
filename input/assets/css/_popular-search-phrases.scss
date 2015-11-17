@@ -12,6 +12,9 @@
   border-bottom: 1px solid $light-grey;
   .popular-search-phrases {
     column-count: 4;
+    @media screen and (max-width: 767px) {
+      column-count: 2;
+    }
   }
 }
 .popular-products-title {
