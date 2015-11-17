@@ -3,7 +3,7 @@ loginBox:
   title: Returning Customer Sign In
   required: Required Fields
   description: If you have an account, please sign in for a faster checkout
-  email: Rmail
+  email: Email
   password: Password
   rememberMe: Remember Me
   forgotPassword: Forgot Password

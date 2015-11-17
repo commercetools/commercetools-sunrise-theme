@@ -15,3 +15,8 @@
 .login-signup-box-wrapper {
   padding-bottom: 50px;
 }
+.signup-box-mobile {
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
+  }
+}
