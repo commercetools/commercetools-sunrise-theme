@@ -1,0 +1,28 @@
+pageTitle: Customer Sign In
+loginBox:
+  title: Returning Customer Sign In
+  required: Required Fields
+  description: If you have an account, please sign in for a faster checkout
+  email: Email
+  password: Password
+  rememberMe: Remember Me
+  forgotPassword: Forgot Password
+  signIn: Sign In
+signupBox:
+  title: New Customer Registration
+  required: Required Fields
+  description: Create an account to store your products, easy checkouts, customer discounts, benefits and more.
+  titleSelect: Title
+  firstName: First Name
+  secondName: Second Name
+  email: Email
+  confirmEmail: Confirm Email
+  password: Password
+  confirmPassword: Confirm Password
+  pleaseAddMe: Please add me to the
+  newsletter: SUNRISE Newsletter
+  agreeTo: I agree to the
+  termsAndConditions: Terms and Conditions
+  personalInfo: Sunrise does not share or sell personal information. See
+  privacyPolicy: Privacy Policy
+  registerNow: Register Now
