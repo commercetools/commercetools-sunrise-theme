@@ -32,15 +32,15 @@
             <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
             <li class="list-item-bag">
               {{#if header.miniCart.list }}
-                  <button href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag">
-                      <span class="hidden-xs hidden-sm">{{header.miniCart.text}}</span>
-                      <span class="cart-item-number">{{header.miniCart.numItems}}</span>
-                  </button>
+              <button href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag">
+                <span class="hidden-xs hidden-sm">{{header.miniCart.text}}</span>
+                <span class="cart-item-number">{{header.miniCart.numItems}}</span>
+              </button>
               {{else}}
-                  <a href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag">
-                      <span class="hidden-xs hidden-sm">{{header.miniCart.text}}</span>
-                      <span class="cart-item-number">{{header.miniCart.numItems}}</span>
-                  </a>
+              <a href="{{header.miniCart.url}}" class="not-empty link-your-bag icon-hand-bag">
+                <span class="hidden-xs hidden-sm">{{header.miniCart.text}}</span>
+                <span class="cart-item-number">{{header.miniCart.numItems}}</span>
+              </a>
               {{/if}}
             </li>
 
@@ -58,13 +58,13 @@
                 <span class="location-dropdown-label">{{i18n "common.language"}}</span>
                 <select id="{{header.location.languageSelectId}}" class="select location-select" name="language">
                   {{#each header.location.language}}
-                    <option id="{{languageOptionId}}" value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
+                  <option id="{{languageOptionId}}" value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
                   {{/each}}
                 </select>
                 <span class="location-dropdown-label">{{i18n "common.country"}}</span>
                 <select id="{{header.location.countrySelectId}}" class="select location-select" name="country">
                   {{#each header.location.country}}
-                    <option id="{{countryOptionId}}" value="{{value}}">{{text}}</option>
+                  <option id="{{countryOptionId}}" value="{{value}}">{{text}}</option>
                   {{/each}}
                 </select>
               </div>
@@ -78,18 +78,18 @@
           <div class="nav-minicart">
             <ul>
               {{#each header.miniCart.list}}
-                <li>
-                  <a class="img" href="#"><img src="{{@root.meta.assetsPath}}img/blue-shirt.jpg" alt="Alt text" /></a>
-                  <p class="product-title"><a href="#">{{nameHeadline}}</a></p>
-                  <p class="product-title">{{nameSubline}}</p>
-                  <div class="details">
-                    <p class="product-quantity">{{i18n "common.quantity"}}<span>{{quantity}}x</span></p>
-                    <p class="product-price">{{priceText}}<span>{{price}}</span></p>
-                    <button class="delete" type="submit" href="#">
-                      <span><img class="cart-action-icon" src="{{@root.meta.assetsPath}}img/delete-1.png" alt="delete"></span>
-                    </button>
-                  </div>
-                </li>
+              <li>
+                <a class="img" href="#"><img src="{{@root.meta.assetsPath}}img/blue-shirt.jpg" alt="Alt text" /></a>
+                <p class="product-title"><a href="#">{{nameHeadline}}</a></p>
+                <p class="product-title">{{nameSubline}}</p>
+                <div class="details">
+                  <p class="product-quantity">{{i18n "common.quantity"}}<span>{{quantity}}x</span></p>
+                  <p class="product-price">{{priceText}}<span>{{price}}</span></p>
+                  <button class="delete" type="submit" href="#">
+                    <span><img class="cart-action-icon" src="{{@root.meta.assetsPath}}img/delete-1.png" alt="delete"></span>
+                  </button>
+                </div>
+              </li>
               {{/each}}
             </ul>
             <div class="gradient"></div>
@@ -128,26 +128,26 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             {{#each header.navMenu.categories}}
-              <li class="dropdown menu-large">
-                <a href="{{url}}" class="dropdown-toggle {{#if sale}}sale icon-ribbon{{/if}}" data-toggle="dropdown">{{text}}<img class="mobile-plus-content visible-xs" src="{{@root.meta.assetsPath}}img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-8">
-                    <div class="nav-accordion">
+            <li class="dropdown menu-large">
+              <a href="{{url}}" class="dropdown-toggle {{#if sale}}sale icon-ribbon{{/if}}" data-toggle="dropdown">{{text}}<img class="mobile-plus-content visible-xs" src="{{@root.meta.assetsPath}}img/plus79.png" alt="plus content"></a>
+              <ul class="dropdown-menu megamenu row dropdown-submenu">
+                <li class="col-sm-8">
+                  <div class="nav-accordion">
+                    {{#each children}}
+                    <h3><a href="{{url}}">{{text}}</a></h3>
+                    <ul>
                       {{#each children}}
-                        <h3><a href="{{url}}">{{text}}</a></h3>
-                        <ul>
-                          {{#each children}}
-                            <li><a href="{{url}}">{{text}}</a></li>
-                          {{/each}}
-                        </ul>
+                      <li><a href="{{url}}">{{text}}</a></li>
                       {{/each}}
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="{{@root.meta.assetsPath}}img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
-              </li>
+                    </ul>
+                    {{/each}}
+                  </div>
+                </li>
+                <li class="col-sm-4 hidden-xs">
+                  <img src="{{@root.meta.assetsPath}}img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                </li>
+              </ul>
+            </li>
             {{/each}}
             <li class="visible-xs location-xs">
               <div class="location-dropdown-xs">
@@ -155,14 +155,14 @@
                   <li>
                     <select class="select location-select" name="language">
                       {{#each header.location.language}}
-                        <option value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
+                      <option value="{{value}}" {{#if selected}} selected {{/if}}>{{text}}</option>
                       {{/each}}
                     </select>
                   </li>
                   <li>
                     <select class="select location-select" name="country">
                       {{#each header.location.country}}
-                        <option value="{{value}}">{{text}}</option>
+                      <option value="{{value}}">{{text}}</option>
                       {{/each}}
                     </select>
                   </li>
@@ -177,7 +177,7 @@
                 <li class="col-sm-12">
                   <div class="nav-accordion">
                     {{#each header.navMenu.categories}}
-                      <h3><a href="{{url}}">{{text}}</a></h3>
+                    <h3><a href="{{url}}">{{text}}</a></h3>
                     {{/each}}
                   </div>
                 </li>
