@@ -55,12 +55,15 @@
             {{/if}}
 
             <div class="row item-list-pagination">
-              <div class="jumbotron-row">
-                {{> catalog/jumbotron jumbotron=content.jumbotron}}
-              </div>
-              <div class="search-results-row">
-                {{> catalog/search-result searchResult=content.searchResult}}
-              </div>
+              {{#if content.searchResult}}
+                <div class="search-results-row">
+                  {{> catalog/search-result searchResult=content.searchResult}}
+                </div>
+              {{else}}
+                <div class="jumbotron-row">
+                  {{> catalog/jumbotron jumbotron=content.jumbotron}}
+                </div>
+              {{/if}}
               <div class="col-xs-4 hidden-xs text-left">
                 <div class="custom-select-wrapper">
                   {{> catalog/sort-selector sortSelector=content.sortSelector}}
