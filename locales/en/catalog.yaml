@@ -5,7 +5,7 @@ thumbnail:
   sale: Sale
   new: New
   quickView: Quick view
-  moreColors: More colours  
+  moreColors: More colours
 filters:
   title: Filter Products
   open: Filter
@@ -48,11 +48,16 @@ suggestions:
   title: You may also like
 reviews:
   title: Reviews
-  write: Write first review  
+  write: Write first review
 details:
   title: Product Details
   view: View Details
 delivery:
   title: Delivery & Returns
   freeReturns: Free return for all orders.
-  moreDeliveryInfo: "" 
+  moreDeliveryInfo: ""
+searchResult:
+  title: Search Results
+  of: of
+  searchResultsFor: Search Results for
+  warning: There were no products that contained all of the words in your query. These results contain some of the words.
