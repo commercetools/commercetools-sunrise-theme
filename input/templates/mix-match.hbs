@@ -8,17 +8,21 @@
 <body>
   <div class="darkbg hidden"></div>
   {{> common/header}}
-  <div class="container">
-    {{> catalog/breadcrumb breadcrumb=content.breadcrumb}}
-
-    MIX AND MATCH PAGEY
-    
 
 
+  <div class="mix-match-page">
+    <div class="container">
+      {{> catalog/breadcrumb breadcrumb=content.breadcrumb}}
+      <div class="row">
+        <div class="col-md-6">
+          {{> catalog/product-gallery gallery=content.gallery}}
+        </div>
+        <div class="col-md-6">
 
+        </div>
+      </div>
+    </div>
   </div>
-
-
 
 
   {{> common/footer}}
