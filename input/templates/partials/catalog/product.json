@@ -1,12 +1,12 @@
 {
-      "url" : "pdp.html",
-      "addToCartUrl" : "cart.html",
-      "addToWishlistUrl" : "",
-      "addReviewUrl" : "",
-      "rating3" : true,
-      "sale" : true,
-      "new" : true,
-      "moreColors" : true,
-      "data" : { "$ref" : "product-data.json" },
-      "details" : { "$ref" : "product-details.json" }
+    "url" : "pdp.html",
+    "addToCartUrl" : "cart.html",
+    "addToWishlistUrl" : "",
+    "addReviewUrl" : "",
+    "rating3" : true,
+    "sale" : true,
+    "new" : true,
+    "moreColors" : true,
+    "data" : { "$ref" : "product-data.json" },
+    "details" : { "$ref" : "product-details.json" }
 }
