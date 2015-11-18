@@ -2,10 +2,10 @@
   <div class="col-sm-4">
     <div class="title">
       <span class="text-uppercase">{{i18n "form.title"}}</span><br>
-      <select id="shipping-title-select" class="checkout-dropdown" name="title{{suffix}}" form="title" required>
+      <select id="shipping-title-select" class="checkout-dropdown" name="title{{suffix}}">
         <option value="" selected>{{i18n "form.choose"}}</option>
         {{#each form.salutations.list}}
-        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+        <option value="{{text}}" {{#if selected}}selected{{/if}}>{{text}}</option>
         {{/each}}
       </select>
     </div>
