@@ -1,0 +1,78 @@
+{
+	"new" : {
+		"text" : "New",
+		"url" : ""
+	},
+	"sale" : {
+		"text" : "Sale",
+		"url" : ""
+	},
+	"categories" : [
+		{
+			"text" : "Women",
+			"url" : "",
+			"children" : [
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" }
+			]
+		},
+		{
+			"text" : "Men",
+			"url" : "",
+			"children" : [
+				{ "$ref": "category3.json" },
+				{ "$ref": "category2.json" },
+				{ "$ref": "category3.json" },
+				{ "$ref": "category2.json" },
+				{ "$ref": "category3.json" },
+				{ "$ref": "category2.json" }
+			]
+		},
+		{
+			"text" : "Accessories",
+			"url" : "",
+			"children" : [
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" },
+				{ "$ref": "category1.json"	},
+				{ "$ref": "category2.json" }
+			]
+		}
+	],
+	"brands" : {
+		"text" : "Brands",
+		"url" : "",
+		"children" : [
+				{ "$ref": "category3.json" },
+				{ "$ref": "category2.json" },
+				{ "$ref": "category3.json" },
+				{ "$ref": "category2.json" },
+				{ "$ref": "category3.json" },
+				{ "$ref": "category2.json" }
+		]
+	}
+}

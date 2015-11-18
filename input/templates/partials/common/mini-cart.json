@@ -1,0 +1,27 @@
+{
+	"numItems" : 12,
+	"totalPrice" : "Total 117,00 €",
+	"list" : [
+		{
+			"nameHeadline": "Enditatem Product name",
+			"nameSubline": "Optional Line two",
+			"quantity": 1,
+			"priceText": "Price",
+			"price": "49,00 €"
+		},
+		{
+			"nameHeadline": "Enditatem Product name",
+			"nameSubline": "Optional Line two",
+			"quantity": 1,
+			"priceText": "Price",
+			"price": "49,00 €"
+		},
+		{
+			"nameHeadline": "Enditatem Product name",
+			"nameSubline": "Optional Line two",
+			"quantity": 1,
+			"priceText": "Price",
+			"price": "49,00 €"
+		}
+	]
+}

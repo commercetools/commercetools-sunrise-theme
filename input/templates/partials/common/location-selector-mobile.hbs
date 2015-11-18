@@ -1,0 +1,20 @@
+<div class="location-dropdown-xs">
+  <form action="@root.meta._links.selectLocation.href" method="POST">
+    <ul>
+      <li>
+        <select name="language" id="language-select-mobile" class="select location-select">
+          {{#each location.language}}
+          <option value="{{value}}" {{#if selected}} selected {{/if}}>{{label}}</option>
+          {{/each}}
+        </select>
+      </li>
+      <li>
+        <select name="country" id="country-select-mobile" class="select location-select">
+          {{#each location.country}}
+          <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+          {{/each}}
+        </select>
+      </li>
+    </ul>
+  </form>
+</div>

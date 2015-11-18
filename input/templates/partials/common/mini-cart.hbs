@@ -1,0 +1,35 @@
+{{#if miniCart.list }}
+  <button class="not-empty link-your-bag icon-hand-bag">
+    <span class="hidden-xs hidden-sm">{{i18n "header.cart"}}</span>
+    <span class="cart-item-number">{{miniCart.numItems}}</span>
+  </button>
+  <div class="col-xs-12">
+    <div class="nav-minicart">
+      <ul>
+        {{#each miniCart.list}}
+        <li>
+          <a class="img" href="#"><img src="{{@root.meta.assetsPath}}img/blue-shirt.jpg" alt="Alt text" /></a>
+          <p class="product-title"><a href="#">{{nameHeadline}}</a></p>
+          <p class="product-title">{{nameSubline}}</p>
+          <div class="details">
+            <p class="product-quantity">{{i18n "common.quantity"}}<span>{{quantity}}x</span></p>
+            <p class="product-price">{{priceText}}<span>{{price}}</span></p>
+            <button class="delete" type="submit" href="#">
+              <span><img class="cart-action-icon" src="{{@root.meta.assetsPath}}img/delete-1.png" alt="delete"></span>
+            </button>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+      <div class="gradient"></div>
+      <p class="total-price">{{miniCart.totalPrice}}</p>
+      <a href="{{@root.meta._links.cart.href}}" class="btn-grey">{{miniCart.viewBagBtn}}</a>
+      <a href="{{@root.meta._links.checkout.href}}" class="btn-yellow">{{miniCart.checkoutBtn}}</a>
+    </div>
+  </div>
+{{else}}
+<a href="{{@root.meta._links.cart.href}}" class="not-empty link-your-bag icon-hand-bag">
+  <span class="hidden-xs hidden-sm">{{i18n "header.cart"}}</span>
+  <span class="cart-item-number">0</span>
+</a>
+{{/if}}
