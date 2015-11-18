@@ -774,6 +774,11 @@
       "description": "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
       "subtitle": "Women"
     },
+    "searchResult": {
+      "resultsPerPage": "1 - 18",
+      "resultsTotal": "3851",
+      "keyword": "poppy doll shirt"
+    },
     "seo": {
       "text": "SEO TEXT AREA",
       "description": "SEO Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
