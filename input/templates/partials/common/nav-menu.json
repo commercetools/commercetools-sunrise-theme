@@ -12,54 +12,54 @@
 			"text" : "Women",
 			"url" : "",
 			"children" : [
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" }
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" }
 			]
 		},
 		{
 			"text" : "Men",
 			"url" : "",
 			"children" : [
-				{ "$ref": "category3.json" },
-				{ "$ref": "category2.json" },
-				{ "$ref": "category3.json" },
-				{ "$ref": "category2.json" },
-				{ "$ref": "category3.json" },
-				{ "$ref": "category2.json" }
+				{ "$ref": "category-3.json" },
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-3.json" },
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-3.json" },
+				{ "$ref": "category-2.json" }
 			]
 		},
 		{
 			"text" : "Accessories",
 			"url" : "",
 			"children" : [
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" },
-				{ "$ref": "category1.json"	},
-				{ "$ref": "category2.json" }
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-1.json"	},
+				{ "$ref": "category-2.json" }
 			]
 		}
 	],
@@ -67,12 +67,12 @@
 		"text" : "Brands",
 		"url" : "",
 		"children" : [
-				{ "$ref": "category3.json" },
-				{ "$ref": "category2.json" },
-				{ "$ref": "category3.json" },
-				{ "$ref": "category2.json" },
-				{ "$ref": "category3.json" },
-				{ "$ref": "category2.json" }
+				{ "$ref": "category-3.json" },
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-3.json" },
+				{ "$ref": "category-2.json" },
+				{ "$ref": "category-3.json" },
+				{ "$ref": "category-2.json" }
 		]
 	}
 }

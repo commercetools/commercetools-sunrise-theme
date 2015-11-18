@@ -2,6 +2,7 @@ close: Close
 choose: Choose
 home: Home
 more: More
+delete: Delete
 messages:
     pleaseWait: Please wait...
     viewYourBagAlert: View your bag
@@ -12,6 +13,7 @@ common:
   checkout: Checkout
   description: Description
   price: Price
+  totalPrice: Total __totalPrice__
   quantity: quantity
   size: Size
   salesTax: Sales Tax

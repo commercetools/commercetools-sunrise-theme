@@ -1,6 +1,6 @@
 {{#if miniCart.list }}
   <button class="not-empty link-your-bag icon-hand-bag">
-    <span class="hidden-xs hidden-sm">{{i18n "header.cart"}}</span>
+    <span class="hidden-xs hidden-sm">{{i18n "header.miniCart"}}</span>
     <span class="cart-item-number">{{miniCart.numItems}}</span>
   </button>
   <div class="col-xs-12">
@@ -8,23 +8,27 @@
       <ul>
         {{#each miniCart.list}}
         <li>
-          <a class="img" href="#"><img src="{{@root.meta.assetsPath}}img/blue-shirt.jpg" alt="Alt text" /></a>
-          <p class="product-title"><a href="#">{{nameHeadline}}</a></p>
-          <p class="product-title">{{nameSubline}}</p>
-          <div class="details">
-            <p class="product-quantity">{{i18n "common.quantity"}}<span>{{quantity}}x</span></p>
-            <p class="product-price">{{priceText}}<span>{{price}}</span></p>
-            <button class="delete" type="submit" href="#">
-              <span><img class="cart-action-icon" src="{{@root.meta.assetsPath}}img/delete-1.png" alt="delete"></span>
-            </button>
-          </div>
+          <form action="{{@root.meta._links.deleteLineItem.href}}" method="post">
+            <a class="img" href="{{url}}"><img src="{{image}}" alt="{{name}}" /></a>
+            <p class="product-title"><a href="{{url}}">{{name}}</a></p>
+            <p class="product-title">{{description}}</p>
+            <div class="details">
+              <p class="product-quantity">{{i18n "common.quantity"}}<span>{{quantity}}x</span></p>
+              <p class="product-price">{{i18n "common.price"}}<span>{{price}}</span></p>
+                <input type="hidden" name="lineItemId" value="{{lineItemId}}">
+                <button type="submit" id="cart-delete-button-{{@index}}">
+                <button type="submit" id="minicart-delete-button" class="delete">
+                  <span><img class="cart-action-icon" src="{{@root.meta.assetsPath}}img/delete-1.png" alt="{{i18n "delete"}}"></span>
+                </button>
+            </div>
+          </form>
         </li>
         {{/each}}
       </ul>
       <div class="gradient"></div>
-      <p class="total-price">{{miniCart.totalPrice}}</p>
-      <a href="{{@root.meta._links.cart.href}}" class="btn-grey">{{miniCart.viewBagBtn}}</a>
-      <a href="{{@root.meta._links.checkout.href}}" class="btn-yellow">{{miniCart.checkoutBtn}}</a>
+      <p class="total-price">{{i18n "common.totalPrice" totalPrice=miniCart.totalPrice}}</p>
+      <a href="{{@root.meta._links.cart.href}}" class="btn-grey">{{i18n "header.viewBag"}}</a>
+      <a href="{{@root.meta._links.checkout.href}}" class="btn-yellow">{{i18n "header.checkout"}}</a>
     </div>
   </div>
 {{else}}
