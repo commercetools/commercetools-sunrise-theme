@@ -1,4 +1,33 @@
 .mix-match-page {
-  height: 700px; // TODO: only for dev
+  min-height: 600px; // TODO: only for dev
   background-color: $white;
+}
+.mix-match-page-title {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.mix-match-product-description {
+  .mix-match-product-name {
+    font-size: 20px;
+  }
+  .mix-match-product-sku {
+    color: $dark-grey;
+    font-size: 12px;
+    padding: 5px 0;
+  }
+  .mix-match-product-oldprice {
+    text-decoration: line-through;
+    color: $dark-grey;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .mix-match-product-price {
+    font-size: 20px;
+    color: $red;
+  }
+}
+.mix-match-product-attributes {
+  padding-top: 10px;
 }
