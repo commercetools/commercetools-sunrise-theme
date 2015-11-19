@@ -40,7 +40,49 @@
   },
   "meta": {
     "assetsPath": "assets/",
+    "csrfToken": "Test123",
+    "bagQuantityOptions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
     "_links": {
+      "self": {
+        "href": "#"
+      },
+      "stores": {
+        "href": "stores.html"
+      },
+      "help": {
+        "href": "help.html"
+      },
+      "selectLocation": {
+        "href": "location.html"
+      },
+      "home": {
+        "href": "home.html"
+      },
+      "newProducts": {
+        "href": "pop.html"
+      },
+      "search": {
+        "href": "pop.html"
+      },
+      "signIn": {
+        "href": "signIn.html"
+      },
+      "checkout": {
+        "href": "checkout-shipping.html"
+      },
+      "cart": {
+        "href": "cart.html"
+      },
       "editShippingAddress": {
         "href": "checkout-shipping.html"
       },
@@ -56,26 +98,11 @@
       "continueShopping": {
         "href": "pop.html"
       },
-      "checkout": {
-        "href": "checkout-shipping.html"
-      },
-      "home": {
-        "href": "home.html"
-      },
-      "cart": {
-        "href": "cart.html"
-      },
       "deleteLineItem": {
         "href": "cart.html"
       },
       "changeLineItem": {
         "href": "cart.html"
-      },
-      "newProducts": {
-        "href": "pop.html"
-      },
-      "self": {
-        "href": "#"
       }
     },
     "features": {

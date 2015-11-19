@@ -28,9 +28,9 @@
   },
   "content": {
     "cart": {
-      "itemsTotal": 3,
+      "totalItems": 3,
+      "totalPrice": "150.00 €",
       "salesTax": "23.95 €",
-      "total": "150.00 €",
       "promoCode": "Sunny Sale",
       "subtotal": "147.00 €",
       "shippingMethod": {
@@ -39,7 +39,7 @@
         "selected": true,
         "deliveryDays": "Delivery: 3-5 Days",
         "url": "",
-        "total": "3,00 €",
+        "price": "3,00 €",
         "description": "DHL Standard - Delivery 3-5 Days"
       },
       "lineItems": {
@@ -66,7 +66,7 @@
             "quantity": 1,
             "priceOld": "100,00 €",
             "price": "49,00 €",
-            "total": "49,00 €"
+            "totalPrice": "49,00 €"
           },
           {
             "name": "Product Name 1",
@@ -90,7 +90,7 @@
             "quantity": 1,
             "priceOld": "100,00 €",
             "price": "49,00 €",
-            "total": "49,00 €"
+            "totalPrice": "49,00 €"
           },
           {
             "name": "Product Name 1",
@@ -114,11 +114,10 @@
             "quantity": 1,
             "priceOld": "100,00 €",
             "price": "49,00 €",
-            "total": "49,00 €"
+            "totalPrice": "49,00 €"
           }
         ]
       },
-      "csrfToken": "Test123",
       "shippingAddress": {
         "title": "Dr.",
         "salutation": "Herr",
@@ -162,7 +161,6 @@
     },
     "checkoutForm": {
       "actionUrl": "checkout-thankyou.html",
-      "csrfToken": "1234567890abcdef",
       "newsletter": {
         "name": "SUNRISE Newsletter",
         "selected": true,
@@ -179,7 +177,49 @@
   },
   "meta": {
     "assetsPath": "assets/",
+    "csrfToken": "Test123",
+    "bagQuantityOptions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
     "_links": {
+      "self": {
+        "href": "#"
+      },
+      "stores": {
+        "href": "stores.html"
+      },
+      "help": {
+        "href": "help.html"
+      },
+      "selectLocation": {
+        "href": "location.html"
+      },
+      "home": {
+        "href": "home.html"
+      },
+      "newProducts": {
+        "href": "pop.html"
+      },
+      "search": {
+        "href": "pop.html"
+      },
+      "signIn": {
+        "href": "signIn.html"
+      },
+      "checkout": {
+        "href": "checkout-shipping.html"
+      },
+      "cart": {
+        "href": "cart.html"
+      },
       "editShippingAddress": {
         "href": "checkout-shipping.html"
       },
@@ -195,26 +235,11 @@
       "continueShopping": {
         "href": "pop.html"
       },
-      "checkout": {
-        "href": "checkout-shipping.html"
-      },
-      "home": {
-        "href": "home.html"
-      },
-      "cart": {
-        "href": "cart.html"
-      },
       "deleteLineItem": {
         "href": "cart.html"
       },
       "changeLineItem": {
         "href": "cart.html"
-      },
-      "newProducts": {
-        "href": "pop.html"
-      },
-      "self": {
-        "href": "#"
       }
     },
     "features": {

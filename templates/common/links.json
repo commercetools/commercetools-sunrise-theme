@@ -1,0 +1,57 @@
+{
+    "self": {
+        "href": "#"
+    },
+    "stores": {
+        "href": "stores.html"
+    },
+    "help": {
+        "href": "help.html"
+    },
+    "selectLocation": {
+        "href": "location.html"
+    },
+
+    "home": {
+        "href": "home.html"
+    },
+    "newProducts": {
+        "href": "pop.html"
+    },
+    "search": {
+        "href": "pop.html"
+    },
+
+    "signIn": {
+        "href" : "signIn.html"
+    },
+    
+    "checkout": {
+        "href": "checkout-shipping.html"
+    },
+    "cart": {
+        "href": "cart.html"
+    },
+    "editShippingAddress": {
+        "href": "checkout-shipping.html"
+    },
+    "editBillingAddress": {
+        "href": "checkout-shipping.html"
+    },
+    "editPaymentInfo": {
+        "href": "checkout-payment.html"
+    },
+    "editShippingMethod": {
+        "href": "checkout-shipping.html#shipping-methods-setting"
+    },
+    "continueShopping": {
+        "href": "pop.html"
+    },
+    "deleteLineItem": {
+        "href": "cart.html"
+    },
+    "changeLineItem": {
+        "href": "cart.html"
+    }
+
+}

@@ -30,6 +30,7 @@
         <div class="row">
           <div class="col-xs-12">
             <ul class="nav-list">
+  
               <!-- Toggle the menu on mobile -->
               <li class="list-item-nav-toggle">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -38,33 +39,104 @@
                   <span class="icon-bar"></span>
                 </button>
               </li>
+              <!-- End -->
+  
               <!-- Toggles the search field on mobile / not visible on desktop -->
               <li class="list-item-search">
                 <button type="button" class="search-toggle icon-magnifying-glass">
-                  <span class="sr-only"></span>
+                  <span class="sr-only">Search</span>
                 </button>
               </li>
+              <!-- End -->
   
               <li class="list-item-store">
-                <a href="" class="store-select icon-marker">
-                  <span class="hidden-xs">STORES</span>
+                <a href="stores.html" class="store-select icon-marker">
+                  <span class="hidden-xs">Stores</span>
                 </a>
               </li>
   
-              <li class="list-item-help"><a href="" class="link-help">HELP</a></li>
+              <li class="list-item-help">
+                <a href="help.html" class="link-help">Help</a>
+              </li>
   
-              <li class="list-item-call"><a href="" class="link-hotline">CALL US ON +44 123 456 000</a></li>
-              <!-- Add or remove class "not-emtpy" to change styling of shopping bag -->
+              <li class="list-item-call">
+                <a href="tel:0044123456000" class="link-hotline">Call us on +44 123 456 000</a>
+              </li>
+  
               <li class="list-item-bag">
-                <button href="cart.html" class="not-empty link-your-bag icon-hand-bag">
-                  <span class="hidden-xs hidden-sm"></span>
-                  <span class="cart-item-number">12</span>
-                </button>
+                  <button class="not-empty link-your-bag icon-hand-bag">
+                    <span class="hidden-xs hidden-sm">Cart</span>
+                    <span class="cart-item-number">12</span>
+                  </button>
+                  <div class="col-xs-12">
+                    <div class="nav-minicart">
+                      <ul>
+                        <li>
+                          <form action="cart.html" method="post">
+                            <input type="hidden" name="csrfToken" value="Test123"/>
+                            <a class="img" href="pdp.html"><img src="assets/img/blue-jacket.jpg" alt="Product Name 1" /></a>
+                            <p class="product-title"><a href="pdp.html">Product Name 1</a></p>
+                            <p class="product-title">Optional Line Two</p>
+                            <div class="details">
+                              <p class="product-quantity">quantity<span>1x</span></p>
+                              <p class="product-price">Price<span>49,00 €</span></p>
+                                <input type="hidden" name="lineItemId" value="123456">
+                                <button type="submit" id="minicart-delete-button-0" class="delete">
+                                  <span>
+                                    <img class="cart-action-icon" src="assets/img/delete-1.png" alt="Delete">
+                                  </span>
+                                </button>
+                            </div>
+                          </form>
+                        </li>
+                        <li>
+                          <form action="cart.html" method="post">
+                            <input type="hidden" name="csrfToken" value="Test123"/>
+                            <a class="img" href="pdp.html"><img src="assets/img/blue-jacket.jpg" alt="Product Name 1" /></a>
+                            <p class="product-title"><a href="pdp.html">Product Name 1</a></p>
+                            <p class="product-title">Optional Line Two</p>
+                            <div class="details">
+                              <p class="product-quantity">quantity<span>1x</span></p>
+                              <p class="product-price">Price<span>49,00 €</span></p>
+                                <input type="hidden" name="lineItemId" value="123456">
+                                <button type="submit" id="minicart-delete-button-1" class="delete">
+                                  <span>
+                                    <img class="cart-action-icon" src="assets/img/delete-1.png" alt="Delete">
+                                  </span>
+                                </button>
+                            </div>
+                          </form>
+                        </li>
+                        <li>
+                          <form action="cart.html" method="post">
+                            <input type="hidden" name="csrfToken" value="Test123"/>
+                            <a class="img" href="pdp.html"><img src="assets/img/blue-jacket.jpg" alt="Product Name 1" /></a>
+                            <p class="product-title"><a href="pdp.html">Product Name 1</a></p>
+                            <p class="product-title">Optional Line Two</p>
+                            <div class="details">
+                              <p class="product-quantity">quantity<span>1x</span></p>
+                              <p class="product-price">Price<span>49,00 €</span></p>
+                                <input type="hidden" name="lineItemId" value="123456">
+                                <button type="submit" id="minicart-delete-button-2" class="delete">
+                                  <span>
+                                    <img class="cart-action-icon" src="assets/img/delete-1.png" alt="Delete">
+                                  </span>
+                                </button>
+                            </div>
+                          </form>
+                        </li>
+                      </ul>
+                      <div class="gradient"></div>
+                      <p class="total-price">Total 117,00 €</p>
+                      <a href="cart.html" class="btn-grey">View Bag</a>
+                      <a href="checkout-shipping.html" class="btn-yellow">Checkout</a>
+                    </div>
+                  </div>
               </li>
   
               <li class="list-item-user">
-                <a href="" class="link-user icon-user">
-                  <span class="hidden-xs hidden-sm">SIGN IN</span>
+                <a href="signIn.html" class="link-user icon-user">
+                  <span class="hidden-xs hidden-sm">Sign In</span>
                 </a>
               </li>
   
@@ -73,92 +145,42 @@
                   <img class="pull-right" src="assets/img/globe-2.png" alt="Location">
                 </button>
                 <div class="location-dropdown">
-                  <span class="location-dropdown-label">Language</span>
-                  <select id="language-select" class="select location-select" name="language">
-                    <option id="language-option-german" value="German"  selected >German</option>
-                    <option id="language-option-english" value="English" >English</option>
-                    <option id="language-option-french" value="French" >French</option>
-                  </select>
-                  <span class="location-dropdown-label">Country</span>
-                  <select id="country-select" class="select location-select" name="country">
-                    <option id="country-option-germany" value="Germany">Germany</option>
-                    <option id="country-option-uk" value="UK">UK</option>
-                    <option id="country-option-france" value="France">France</option>
-                  </select>
-                </div>
-              </li>
-  
+                  <form action="location.html" method="POST">
+                    <input type="hidden" name="csrfToken" value="Test123"/>
+                    <span class="location-dropdown-label">Language</span>
+                    <select name="language" id="language-select" class="select location-select">
+                      <option value="de" >German</option>
+                      <option value="en" selected>English</option>
+                      <option value="fr" >French</option>
+                    </select>
+                    <span class="location-dropdown-label">Country</span>
+                    <select name="country" id="country-select" class="select location-select">
+                      <option value="DE" >Germany</option>
+                      <option value="UK" selected>UK</option>
+                      <option value="FR" >France</option>
+                    </select>
+                  </form>
+                </div>            </li>
             </ul>
           </div>
-  
-          <div class="col-xs-12">
-            <div class="nav-minicart">
-              <ul>
-                <li>
-                  <a class="img" href="#"><img src="assets/img/blue-shirt.jpg" alt="Alt text" /></a>
-                  <p class="product-title"><a href="#">Enditatem Product name</a></p>
-                  <p class="product-title">Optional Line two</p>
-                  <div class="details">
-                    <p class="product-quantity">quantity<span>1x</span></p>
-                    <p class="product-price">Price<span>49,00 €</span></p>
-                    <button class="delete" type="submit" href="#">
-                      <span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete"></span>
-                    </button>
-                  </div>
-                </li>
-                <li>
-                  <a class="img" href="#"><img src="assets/img/blue-shirt.jpg" alt="Alt text" /></a>
-                  <p class="product-title"><a href="#">Enditatem Product name</a></p>
-                  <p class="product-title">Optional Line two</p>
-                  <div class="details">
-                    <p class="product-quantity">quantity<span>1x</span></p>
-                    <p class="product-price">Price<span>49,00 €</span></p>
-                    <button class="delete" type="submit" href="#">
-                      <span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete"></span>
-                    </button>
-                  </div>
-                </li>
-                <li>
-                  <a class="img" href="#"><img src="assets/img/blue-shirt.jpg" alt="Alt text" /></a>
-                  <p class="product-title"><a href="#">Enditatem Product name</a></p>
-                  <p class="product-title">Optional Line two</p>
-                  <div class="details">
-                    <p class="product-quantity">quantity<span>1x</span></p>
-                    <p class="product-price">Price<span>49,00 €</span></p>
-                    <button class="delete" type="submit" href="#">
-                      <span><img class="cart-action-icon" src="assets/img/delete-1.png" alt="delete"></span>
-                    </button>
-                  </div>
-                </li>
-              </ul>
-              <div class="gradient"></div>
-              <p class="total-price">Total 117,00 €</p>
-              <a href="" class="btn-grey">View Bag</a>
-              <a href="" class="btn-yellow">Checkout</a>
-            </div>
-          </div>
-  
         </div>
-  
       </header>
     </div>
   
     <div id="navigation" class="container">
       <div class="row logo-search">
         <div class="col-sm-8">
-          <a href="" class="brand-logo">
-            <img class="img-responsive" src="assets/img/logo.svg" alt="SUNRISE Logo">
-          </a>
-        </div>
+          <a href="home.html" class="brand-logo">
+            <img class="img-responsive" src="assets/img/logo.svg" alt="SUNRISE">
+          </a>      </div>
         <div class="col-sm-4">
-          <form class="search-box text-right" action="">
-            <input id="search-input" class="search-field" type="search" placeholder="Search" required/>
+          <form id="form-search" action="pop.html" class="search-box text-right">
+            <input name="q" type="search" placeholder="Search" id="search-input" class="search-field" required/>
             <button type="submit" id="search-button" class="search-button">
               <span class="icon-font icon-magnifying-glass"></span>
-              <span class="sr-only"></span>
+              <span class="sr-only">Search</span>
             </button>
-          </form>
-        </div>
+          </form>      </div>
       </div>
   
       <div class="row">
@@ -166,192 +188,453 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="dropdown menu-large">
-                <a href="" class="dropdown-toggle " data-toggle="dropdown">Women<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-8">
-                    <div class="nav-accordion">
-                      <h3><a href="">Women</a></h3>
-                      <ul>
-                        <li><a href="">Basic example</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Sizing</a></li>
-                        <li><a href="">Nesting</a></li>
-                        <li><a href="">Vertical variation</a></li>
-                      </ul>
-                      <h3><a href="">Glasses</a></h3>
-                      <ul>
-                        <li><a href="">Lorem</a></li>
-                        <li><a href="">Ipsum</a></li>
-                      </ul>
-                      <h3><a href="">Women</a></h3>
-                      <ul>
-                        <li><a href="">Basic example</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Sizing</a></li>
-                        <li><a href="">Nesting</a></li>
-                        <li><a href="">Vertical variation</a></li>
-                      </ul>
-                      <h3><a href="">Glasses</a></h3>
-                      <ul>
-                        <li><a href="">Lorem</a></li>
-                        <li><a href="">Ipsum</a></li>
-                      </ul>
-                      <h3><a href="">Women</a></h3>
-                      <ul>
-                        <li><a href="">Basic example</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Sizing</a></li>
-                        <li><a href="">Nesting</a></li>
-                        <li><a href="">Vertical variation</a></li>
-                      </ul>
-                      <h3><a href="">Glasses</a></h3>
-                      <ul>
-                        <li><a href="">Lorem</a></li>
-                        <li><a href="">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  New
+                  <img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="More">
+                </a>
               </li>
+              
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle " data-toggle="dropdown">
+                    Women
+                    <img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="More">
+                  </a>
+                    <ul class="dropdown-menu megamenu row dropdown-submenu">
+                      <li class="col-sm-8">
+                        <div class="nav-accordion">
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                      <li class="col-sm-4 hidden-xs">
+                        <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                      </li>
+                    </ul>
+                </li>
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle " data-toggle="dropdown">
+                    Men
+                    <img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="More">
+                  </a>
+                    <ul class="dropdown-menu megamenu row dropdown-submenu">
+                      <li class="col-sm-8">
+                        <div class="nav-accordion">
+                            <h3><a href="">Shoes</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Shoes</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Shoes</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                      <li class="col-sm-4 hidden-xs">
+                        <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                      </li>
+                    </ul>
+                </li>
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle " data-toggle="dropdown">
+                    Accessories
+                    <img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="More">
+                  </a>
+                    <ul class="dropdown-menu megamenu row dropdown-submenu">
+                      <li class="col-sm-8">
+                        <div class="nav-accordion">
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                            <h3><a href="">Belts</a></h3>
+                            <ul>
+                                <li><a href="">Basic example</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Vertical variation</a></li>
+                            </ul>
+                            <h3><a href="">Glasses</a></h3>
+                            <ul>
+                                <li><a href="">Lorem</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                                <li><a href="">Button toolbar</a></li>
+                                <li><a href="">Sizing</a></li>
+                                <li><a href="">Nesting</a></li>
+                                <li><a href="">Very long navigation items will be truncated</a></li>
+                                <li><a href="">Very long navigation item</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                      <li class="col-sm-4 hidden-xs">
+                        <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
+                      </li>
+                    </ul>
+                </li>
+              
               <li class="dropdown menu-large">
-                <a href="" class="dropdown-toggle " data-toggle="dropdown">Men<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-8">
-                    <div class="nav-accordion">
-                      <h3><a href="">Men</a></h3>
-                      <ul>
-                        <li><a href="">Basic example</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Sizing</a></li>
-                        <li><a href="">Nesting</a></li>
-                        <li><a href="">Vertical variation</a></li>
-                      </ul>
-                      <h3><a href="">Glasses</a></h3>
-                      <ul>
-                        <li><a href="">Lorem</a></li>
-                        <li><a href="">Very long navigation item</a></li>
-                        <li><a href="">Very long navigation items will be truncated</a></li>
-                        <li><a href="">Very long navigation item</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Sizing</a></li>
-                        <li><a href="">Nesting</a></li>
-                        <li><a href="">Very long navigation items will be truncated</a></li>
-                        <li><a href="">Very long navigation item</a></li>
-                      </ul>
-                      <h3><a href="">Men</a></h3>
-                      <ul>
-                        <li><a href="">Basic example</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Sizing</a></li>
-                        <li><a href="">Nesting</a></li>
-                        <li><a href="">Very long navigation items will be truncated</a></li>
-                      </ul>
-                      <h3><a href="">Glasses</a></h3>
-                      <ul>
-                        <li><a href="">Lorem</a></li>
-                        <li><a href="">Ipsum</a></li>
-                      </ul>
-                      <h3><a href="">Men</a></h3>
-                      <ul>
-                        <li><a href="">Basic example</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Very long navigation items will be truncated</a></li>
-                        <li><a href="">Nesting</a></li>
-                        <li><a href="">Vertical variation</a></li>
-                      </ul>
-                      <h3><a href="">Glasses</a></h3>
-                      <ul>
-                        <li><a href="">Lorem</a></li>
-                        <li><a href="">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  Brands
+                  <img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="More">
+                </a>
               </li>
-              <li class="dropdown menu-large">
-                <a href="" class="dropdown-toggle " data-toggle="dropdown">Accessories<img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="plus content"></a>
-                <ul class="dropdown-menu megamenu row dropdown-submenu">
-                  <li class="col-sm-8">
-                    <div class="nav-accordion">
-                      <h3><a href="">Accessories</a></h3>
-                      <ul>
-                        <li><a href="">Basic example</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Sizing</a></li>
-                        <li><a href="">Nesting</a></li>
-                        <li><a href="">Vertical variation</a></li>
-                      </ul>
-                      <h3><a href="">Glasses</a></h3>
-                      <ul>
-                        <li><a href="">Lorem</a></li>
-                        <li><a href="">Very long navigation item</a></li>
-                        <li><a href="">Very long navigation items will be truncated</a></li>
-                        <li><a href="">Very long navigation item</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Sizing</a></li>
-                        <li><a href="">Nesting</a></li>
-                        <li><a href="">Very long navigation items will be truncated</a></li>
-                        <li><a href="">Very long navigation item</a></li>
-                      </ul>
-                      <h3><a href="">Accessories</a></h3>
-                      <ul>
-                        <li><a href="">Basic example</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Sizing</a></li>
-                        <li><a href="">Nesting</a></li>
-                        <li><a href="">Vertical variation</a></li>
-                      </ul>
-                      <h3><a href="">Glasses</a></h3>
-                      <ul>
-                        <li><a href="">Lorem</a></li>
-                        <li><a href="">Ipsum</a></li>
-                      </ul>
-                      <h3><a href="">Accessories</a></h3>
-                      <ul>
-                        <li><a href="">Basic example</a></li>
-                        <li><a href="">Button toolbar</a></li>
-                        <li><a href="">Sizing</a></li>
-                        <li><a href=""></a></li>
-                        <li><a href="">Vertical variation</a></li>
-                      </ul>
-                      <h3><a href="">Glasses</a></h3>
-                      <ul>
-                        <li><a href="">Lorem</a></li>
-                        <li><a href="">Ipsum</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="col-sm-4 hidden-xs">
-                    <img src="assets/img/menu-teaser.jpg" alt="Summer 2015 – What inspires you?" class="img-responsive megamenu-img">
-                  </li>
-                </ul>
-              </li>
+              
+                <li class="dropdown menu-large">
+                  <a href="" class="dropdown-toggle sale icon-ribbon" data-toggle="dropdown">
+                    Sale
+                    <img class="mobile-plus-content visible-xs" src="assets/img/plus79.png" alt="More">
+                  </a>
+                </li>
               <li class="visible-xs location-xs">
                 <div class="location-dropdown-xs">
-                  <ul>
-                    <li>
-                      <select class="select location-select" name="language">
-                        <option value="German"  selected >German</option>
-                        <option value="English" >English</option>
-                        <option value="French" >French</option>
-                      </select>
-                    </li>
-                    <li>
-                      <select class="select location-select" name="country">
-                        <option value="Germany">Germany</option>
-                        <option value="UK">UK</option>
-                        <option value="France">France</option>
-                      </select>
-                    </li>
-                  </ul>
-                </div>
-              </li>
+                  <form action="location.html" method="POST">
+                    <input type="hidden" name="csrfToken" value="Test123"/>
+                    <ul>
+                      <li>
+                        <select name="language" id="language-select-mobile" class="select location-select">
+                          <option value="de" >German</option>
+                          <option value="en"  selected >English</option>
+                          <option value="fr" >French</option>
+                        </select>
+                      </li>
+                      <li>
+                        <select name="country" id="country-select-mobile" class="select location-select">
+                          <option value="DE" >Germany</option>
+                          <option value="UK" selected>UK</option>
+                          <option value="FR" >France</option>
+                        </select>
+                      </li>
+                    </ul>
+                  </form>
+                </div>            </li>
             </ul>
             <ul class="nav navbar-nav categories-group-button">
               <li class="dropdown menu-large">
@@ -366,8 +649,7 @@
                   </li>
                 </ul>
               </li>
-            </ul>
-          </div>
+            </ul>        </div>
         </div>
       </div>
     </div>

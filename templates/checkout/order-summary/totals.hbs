@@ -22,7 +22,7 @@
     </div>
     <div class="col-sm-2 col-xs-5 text-right">
         <div>
-            <span>{{cart.subtotal}}</span>
+            <span>{{cart.subtotalPrice}}</span>
         </div>
       {{#if meta.features.cartDiscounts.active}}
           <div>
@@ -30,14 +30,14 @@
           </div>
       {{/if}}
         <div>
-            <span>{{cart.shippingMethod.total}}</span>
+            <span>{{cart.shippingMethod.totalPrice}}</span>
         </div>
         <hr>
         <div>
             <span>{{cart.salesTax}}</span>
         </div>
         <div>
-            <span class="order-total">{{cart.total}}</span>
+            <span class="order-total">{{cart.totalPrice}}</span>
         </div>
     </div>
 
