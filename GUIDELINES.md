@@ -1,6 +1,6 @@
 - Always work with Pull Requests when working with the template (this is extremely important when touching any JSON file). Otherwise the work cannot be reviewed properly, thus fixing wrong stuff becomes complicated.
 
-- Always mention @lauraluiz in the PR when modifying some .hbs or .json file, so it can be reviewed and validated, and to be aware of how this will affect the backend side too.
+- Always mention `@lauraluiz` in the PR when modifying some .hbs or .json file, so it can be reviewed and validated, and to be aware of how this will affect the backend side too.
 
 - Do not modify JSON files unless we all agree on that (extending is okay, as long as it is reviewed). The JSON files is the contract between the template and all the shops using it, so it cannot be changed lightly.
  
