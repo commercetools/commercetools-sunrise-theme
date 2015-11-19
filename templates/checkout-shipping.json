@@ -189,7 +189,7 @@
       "totalPrice": "150.00 €",
       "salesTax": "23.95 €",
       "promoCode": "Sunny Sale",
-      "subtotal": "147.00 €",
+      "subtotalPrice": "147.00 €",
       "shippingMethod": {
         "name": "DHL Standard",
         "value": "dhl-standard",
