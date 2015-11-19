@@ -4,56 +4,62 @@
       <div class="col-sm-2">
         <div class="footer-col">
           <ul>
-            <li class="footer-title hidden-xs">{{footer.customerCare.text}}</li>
-            {{#each footer.customerCare.list}}
-              <li><a href="{{url}}">{{text}}</a></li>
-            {{/each}}
+            <li class="footer-title hidden-xs">{{i18n "footer.customerCare"}}</li>
+            <li><a href="{{@root.meta._links.contactUs.href}}">{{i18n "footer.contactUs"}}</a></li>
+            <li><a href="{{@root.meta._links.help.href}}">{{i18n "footer.help"}}</a></li>
+            <li><a href="{{@root.meta._links.shipping.href}}">{{i18n "footer.shipping"}}</a></li>
+            <li><a href="{{@root.meta._links.returns.href}}">{{i18n "footer.returns"}}</a></li>
+            <li><a href="{{@root.meta._links.sizeGuide.href}}">{{i18n "footer.sizeGuide"}}</a></li>
           </ul>
         </div>
       </div>
       <div class="col-sm-2 hidden-xs">
         <div class="footer-col">
           <ul>
-            <li class="footer-title hidden-xs">{{footer.aboutUs.text}}</li>
-            {{#each footer.aboutUs.list}}
-              <li><a href="{{url}}">{{text}}</a></li>
-            {{/each}}
+            <li class="footer-title hidden-xs">{{i18n "footer.aboutUs"}}</li>
+            <li><a href="{{@root.meta._links.ourStory.href}}">{{i18n "footer.ourStory"}}</a></li>
+            <li><a href="{{@root.meta._links.careers.href}}">{{i18n "footer.careers"}}</a></li>
           </ul>
         </div>
       </div>
       <div class="col-sm-2 hidden-xs">
         <div class="footer-col">
           <ul>
-            <li class="footer-title hidden-xs">{{footer.shortcuts.text}}</li>
-            {{#each footer.shortcuts.list}}
-              <li><a href="{{url}}">{{text}}</a></li>
-            {{/each}}
+            <li class="footer-title hidden-xs">{{i18n "footer.shortcuts"}}</li>
+            <li><a href="{{@root.meta._links.myAccount.href}}">{{i18n "footer.myAccount"}}</a></li>
+            <li><a href="{{@root.meta._links.storeLocator.href}}">{{i18n "footer.storeLocator"}}</a></li>
+            <li><a href="{{@root.meta._links.giftCards.href}}">{{i18n "footer.giftCards"}}</a></li>
+            <li><a href="{{@root.meta._links.payment.href}}">{{i18n "footer.payment"}}</a></li>
           </ul>
         </div>
       </div>
       <div class="col-sm-6 text-center newsletter-box">
         <div class="row">
           <div class="col-sm-5 text-left footer-title-yellow">
-            <p>{{footer.newsletter.text}}</p>
+            <p>{{i18n "footer.joinNewsletter"}}</p>
           </div>
           <div class="col-sm-7">
-            <form class="email-submit" action="{{footer.newsletter.url}}">
-              <input id="{{footer.newsletter.inputId}}" class="email-box" type="text" placeholder="{{footer.newsletter.placeholder}}" required>
-              <button id="{{footer.newsletter.buttonId}}" type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">{{footer.newsletter.textAlt}}</span></button>
+            <form action="{{@root.meta._links.newsletter.href}}" method="POST" id="form-newsletter" class="email-submit">
+              <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
+              <input name="email" id="newsletter-input" class="email-box" type="email" placeholder="{{i18n "footer.yourEmail"}}" required>
+              <button id="newsletter-button" type="submit" class="search-button">
+                <span class="icon-font icon-next"></span>
+                <span class="sr-only">{{i18n "footer.subscribe"}}</span>
+              </button>
             </form>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-8 text-left card-info footer-title">
-            <p>{{footer.paySecure}}</p>
+            <p>{{i18n "footer.paySecure"}}</p>
             <img src="{{meta.assetsPath}}img/cards.png" alt="payment types" class="img-responsive payment-cards">
           </div>
           <div class="col-sm-4 text-left card-info footer-title">
-            <p>{{footer.followUs}}</p>
+            <p>{{i18n "footer.followUs"}}</p>
             <ul class="social-icons">
-              <a href=""><li><img class="social-icon" src="{{meta.assetsPath}}img/Facebook.png" alt="facebook"></li></a>
-              <a href=""><li><img class="social-icon" src="{{meta.assetsPath}}img/Pinterest.png" alt="pinterest"></li></a>
-              <a href=""><li><img class="social-icon" src="{{meta.assetsPath}}img/Google.png" alt="google plus"></li></a>
+              <a href=""><li><img class="social-icon" src="{{meta.assetsPath}}img/Facebook.png" alt="Facebook"></li></a>
+              <a href=""><li><img class="social-icon" src="{{meta.assetsPath}}img/Pinterest.png" alt="Pinterest"></li></a>
+              <a href=""><li><img class="social-icon" src="{{meta.assetsPath}}img/Google.png" alt="Google+"></li></a>
             </ul>
           </div>
         </div>
@@ -66,11 +72,11 @@
     <div class="row text-uppercase">
       <div class="col-sm-12">
         <ul class="footer-title imprint-row">
-          <li class="hidden-xs">{{footer.legalInfo.text}}</li>
-          {{#each footer.legalInfo.list}}
-            <li><a href="{{url}}">{{text}}</a></li>
-          {{/each}}
-          <li class="visible-xs">{{footer.legalInfo.text}}</li>
+          <li class="hidden-xs">{{i18n "footer.legalInfo"}}</li>
+            <li><a href="{{@root.meta._links.imprint.href}}">{{i18n "footer.imprint"}}</a></li>
+            <li><a href="{{@root.meta._links.privacyPolicy.href}}">{{i18n "footer.privacyPolicy"}}</a></li>
+            <li><a href="{{@root.meta._links.termsOfUse.href}}">{{i18n "footer.termsOfUse"}}</a></li>
+          <li class="visible-xs">{{i18n "footer.legalInfo"}}</li>
         </ul>
       </div>
     </div>
