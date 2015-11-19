@@ -49,7 +49,7 @@
             <div class="col-xs-4">
               <div class="text-right order-item-value">
                 <span class="text-uppercase pricing-titles">{{i18n "checkout:total"}}</span><br>
-                <span>{{total}}</span>
+                <span>{{totalPrice}}</span>
               </div>
             </div>
           </div>
@@ -82,11 +82,11 @@
       </div>
       <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
         <div class="text-right checkout-price-digits">
-          <span>{{content.cart.subtotal}}</span><br>
+          <span>{{content.cart.subtotalPrice}}</span><br>
           {{#if meta.features.cartDiscounts.active}}
           <span>{{content.cart.discount}}</span><br>
           {{/if}}
-          <span>{{content.cart.shippingMethod.total}}</span>
+          <span>{{content.cart.shippingMethod.price}}</span>
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@
     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
       <div class="text-right order-tax-total-digits">
         <span>{{content.cart.salesTax}}</span><br>
-        <span class="total-order-value">{{content.cart.total}}</span>
+        <span class="total-order-value">{{content.cart.totalPrice}}</span>
       </div>
     </div>
   </div>

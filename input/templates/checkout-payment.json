@@ -7,7 +7,6 @@
         },
         "paymentForm" : {
             "actionUrl": "checkout-confirmation.html",
-            "csrfToken": "1234567890abcdef",
             "paymentOptions" : { "$ref" : "checkout/payment-options.json" },
             "expiryDate" : { "$ref" : "checkout/months.json" },
             "year" : {
@@ -27,9 +26,5 @@
         },
         "cart" : { "$ref" : "checkout/cart.json" }
     },
-    "meta" : {
-        "assetsPath": "assets/",
-        "_links" : { "$ref" : "checkout/checkout-links.json" },
-        "features" : { "$ref" : "common/feature-flags.json" }
-    }
+    "meta" : { "$ref" : "common/meta.json" }
 }

@@ -21,7 +21,7 @@
             <div class="col-sm-12">
                 <div class="checkout">
                     <form method="post" action="{{content.checkoutForm.actionUrl}}">
-                        <input type="hidden" name="csrfToken" value="{{content.checkoutForm.csrfToken}}"/>
+                        <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
                         <div class="row">
                             <div class="col-sm-4 checkout-first-col">
                               {{> checkout/address-confirmation address=content.cart.shippingAddress titleKey="checkout:shippingAddress" editable=true editUrl=meta._links.editShippingAddress.href}}

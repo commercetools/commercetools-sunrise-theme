@@ -1,6 +1,7 @@
 close: Close
 choose: Choose
 home: Home
+more: More
 messages:
     pleaseWait: Please wait...
     viewYourBagAlert: View your bag
@@ -11,12 +12,29 @@ common:
   checkout: Checkout
   description: Description
   price: Price
+  totalPrice: Total __totalPrice__
   quantity: quantity
   size: Size
   salesTax: Sales Tax
   viewDetails: View Details
+header:
+  stores: Stores
+  help: Help
+  callUs: Call us on __phoneNumber__
+  miniCart: Cart
+  viewBag: View Bag
+  checkout: Checkout
+  search: Search
+  signIn: Sign In
   language: Language
   country: Country
+  location: Location
+  search: Search
+  allCategories: All categories
+  teaser: Summer 2015 – What inspires you?
+  new: New
+  sale: Sale
+  brands: Brands
 form:
   addressOne: Address 1
   addressTwo: Address 2
@@ -35,11 +53,8 @@ form:
   month: Month
   personTitles:
     mr: Mr.
-  personTitles:
     mrs: Mrs.
-  personTitles:
     ms: Ms.
-  personTitles:
     dr: Dr.
   phone: Phone
   phoneRequired: Please provide your telephone number so the shipper can contact you during delivery

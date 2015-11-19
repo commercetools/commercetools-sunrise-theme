@@ -5,9 +5,5 @@
         "cart" : { "$ref" : "checkout/cart.json" },
         "wishlist" : { "$ref" : "catalog/wishlist.json" }
     },
-    "meta" : {
-        "assetsPath": "assets/",
-        "_links" : { "$ref" : "checkout/checkout-links.json" },
-        "features" : { "$ref" : "common/feature-flags.json" }
-    }
+    "meta" : { "$ref" : "common/meta.json" }
 }
