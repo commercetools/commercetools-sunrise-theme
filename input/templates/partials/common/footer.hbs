@@ -40,7 +40,8 @@
           </div>
           <div class="col-sm-7">
             <form action="{{@root.meta._links.newsletter.href}}" method="POST" id="form-newsletter" class="email-submit">
-              <input name="email" id="newsletter-input" class="email-box" type="text" placeholder="{{i18n "footer.yourEmail"}}" required>
+              <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
+              <input name="email" id="newsletter-input" class="email-box" type="email" placeholder="{{i18n "footer.yourEmail"}}" required>
               <button id="newsletter-button" type="submit" class="search-button">
                 <span class="icon-font icon-next"></span>
                 <span class="sr-only">{{i18n "footer.subscribe"}}</span>
