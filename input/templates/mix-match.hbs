@@ -18,11 +18,9 @@
           {{> catalog/product-gallery gallery=content.gallery}}
         </div>
         <div class="col-sm-6">
-            <div class="mix-match-page-title">Mix &amp; Match</div>
-            <div>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-            </div>
-            {{> catalog/mix-match-product}}
+            <div class="mix-match-page-title">{{i18n "mix-match:mixMatch.title"}}</div>
+            <div>{{i18n "mix-match:mixMatch.description"}}</div>
+            {{> catalog/mix-match-product products=content.mixMatchProducts}}
         </div>
       </div>
     </div>

@@ -1,46 +1,41 @@
-<div class="mix-match-product">
-  <div class="row">
-    <div class="col-xs-3">
-      <div class="mix-match-product-img">
-        <img class="img-responsive" src="{{meta.assetsPath}}img/blue-shirt.jpg" alt="product image">
+{{#each products.list}}
+  <div class="mix-match-product">
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="mix-match-product-img">
+          <img class="img-responsive" src="{{image}}" alt="product image">
+        </div>
       </div>
-    </div>
-    <div class="col-xs-9">
-      <div class="mix-match-product-description">
-        <div class="mix-match-product-name">Enditatem Product Line One</div>
-        <div class="mix-match-product-name">Enditatem Product Line Two</div>
-        <div class="mix-match-product-sku">SKU #SUN1234567</div>
-        <div>
-          <span class="mix-match-product-oldprice">€ 200,00</span>
-          <span class="mix-match-product-price">€ 150,00</span>
+      <div class="col-xs-9">
+        <div class="mix-match-product-description">
+          <div class="mix-match-product-name">{{name}}</div>
+          <div class="mix-match-product-sku">{{sku}}</div>
+          <div>
+            {{#if priceOld}}<span class="mix-match-product-oldprice">{{priceOld}}</span>{{/if}}
+            <span class="mix-match-product-price">{{price}}</span>
+          </div>
         </div>
       </div>
     </div>
+    <div class="mix-match-product-attributes">
+      <ul class="list-inline">
+        {{#each attributes}}
+          <li>
+            <div class="mix-match-product-attr-title">{{name}}</div>
+            <select name="" id="">
+              {{#each list}}
+                <option value="{{value}}">{{text}}</option>
+              {{/each}}
+            </select>
+          </li>
+        {{/each}}
+        <li>
+          <div class="mix-match-product-add-input">
+            <input id="" type="checkbox">
+            <label for="">{{i18n "mix-match:mixMatch.addProduct"}}</label>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="mix-match-product-attributes">
-    <ul class="list-inline">
-      <li>
-        <div class="mix-match-product-attr-title">Color</div>
-        <select name="" id="">
-          <option value="red">Red</option>
-          <option value="blue">Blue</option>
-          <option value="green">Green</option>
-        </select>
-      </li>
-      <li>
-        <div class="mix-match-product-attr-title">Size</div>
-        <select name="" id="">
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-        </select>
-      </li>
-      <li>
-        <div class="mix-match-product-add-input">
-          <input id="" type="checkbox">
-          <label for="">Add Product</label>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+{{/each}}
