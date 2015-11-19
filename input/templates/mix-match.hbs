@@ -21,14 +21,13 @@
           <div class="mix-match-page-title">{{i18n "mix-match:mixMatch.title"}}</div>
           <div>{{i18n "mix-match:mixMatch.description"}}</div>
           {{> catalog/mix-match-product products=content.mixMatchProducts}}
-          <ul class="list-inline">
-            <li>
-              {{> catalog/add-to-bag-btn}}
-            </li>
-            <li>
-              {{> catalog/add-to-wishlist-btn text=true}}
-            </li>
-          </ul>
+          <div class="mix-match-bag-wishlist">
+            {{> catalog/add-to-bag-btn}}
+            {{> catalog/add-to-wishlist-btn text=true}}
+          </div>
+          <div class="panel-group panel-group-pdp" id="accordion-product-info" role="tablist" aria-multiselectable="true">
+            {{> catalog/delivery-rates}}
+          </div>
         </div>
       </div>
     </div>
