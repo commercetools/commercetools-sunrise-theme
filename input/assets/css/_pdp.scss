@@ -195,22 +195,6 @@
   border: 2px solid $yellow;
 }
 
-// Add to bag button
-.add-to-bag {
-  margin-right: 10px;
-  font-weight: 900;
-  background: $yellow;
-  padding: 5px 30px 2px;
-  text-transform: uppercase;
-  &:hover {
-    background: lighten($yellow, 5%);
-  }
-}
-.bag-thumb {
-  height: 25px;
-  margin: 0.5em 0.9em 0.7em 0;
-}
-
 // Add to wishlish
 .pdp-product-heart {
   width: 50px;

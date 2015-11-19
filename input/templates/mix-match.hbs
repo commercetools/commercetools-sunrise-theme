@@ -21,6 +21,14 @@
           <div class="mix-match-page-title">{{i18n "mix-match:mixMatch.title"}}</div>
           <div>{{i18n "mix-match:mixMatch.description"}}</div>
           {{> catalog/mix-match-product products=content.mixMatchProducts}}
+          <ul class="list-inline">
+            <li>
+              {{> catalog/add-to-bag-btn}}
+            </li>
+            <li>
+              add to wishlist
+            </li>
+          </ul>
         </div>
       </div>
     </div>
