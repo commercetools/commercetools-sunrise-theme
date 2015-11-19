@@ -1,14 +1,15 @@
-{{#if miniCart.list }}
+{{#if miniCart.lineItems.list }}
   <button class="not-empty link-your-bag icon-hand-bag">
     <span class="hidden-xs hidden-sm">{{i18n "header.miniCart"}}</span>
-    <span class="cart-item-number">{{miniCart.numItems}}</span>
+    <span class="cart-item-number">{{miniCart.totalItems}}</span>
   </button>
   <div class="col-xs-12">
     <div class="nav-minicart">
       <ul>
-        {{#each miniCart.list}}
+        {{#each miniCart.lineItems.list}}
         <li>
           <form action="{{@root.meta._links.deleteLineItem.href}}" method="post">
+            <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
             <a class="img" href="{{url}}"><img src="{{image}}" alt="{{name}}" /></a>
             <p class="product-title"><a href="{{url}}">{{name}}</a></p>
             <p class="product-title">{{description}}</p>
@@ -16,9 +17,10 @@
               <p class="product-quantity">{{i18n "common.quantity"}}<span>{{quantity}}x</span></p>
               <p class="product-price">{{i18n "common.price"}}<span>{{price}}</span></p>
                 <input type="hidden" name="lineItemId" value="{{lineItemId}}">
-                <button type="submit" id="cart-delete-button-{{@index}}">
-                <button type="submit" id="minicart-delete-button" class="delete">
-                  <span><img class="cart-action-icon" src="{{@root.meta.assetsPath}}img/delete-1.png" alt="{{i18n "delete"}}"></span>
+                <button type="submit" id="minicart-delete-button-{{@index}}" class="delete">
+                  <span>
+                    <img class="cart-action-icon" src="{{@root.meta.assetsPath}}img/delete-1.png" alt="{{i18n "form.delete"}}">
+                  </span>
                 </button>
             </div>
           </form>

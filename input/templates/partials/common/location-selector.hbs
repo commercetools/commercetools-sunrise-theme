@@ -3,6 +3,7 @@
 </button>
 <div class="location-dropdown">
   <form action="{{@root.meta._links.selectLocation.href}}" method="POST">
+    <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
     <span class="location-dropdown-label">{{i18n "header.language"}}</span>
     <select name="language" id="language-select" class="select location-select">
       {{#each location.language}}

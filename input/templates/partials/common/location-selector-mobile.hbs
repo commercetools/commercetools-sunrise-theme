@@ -1,5 +1,6 @@
 <div class="location-dropdown-xs">
   <form action="{{@root.meta._links.selectLocation.href}}" method="POST">
+    <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
     <ul>
       <li>
         <select name="language" id="language-select-mobile" class="select location-select">

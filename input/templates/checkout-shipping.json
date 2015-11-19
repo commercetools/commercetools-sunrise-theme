@@ -7,7 +7,6 @@
         },
         "shippingForm" : {
             "actionUrl": "checkout-payment.html",
-            "csrfToken": "1234567890abcdef",
             "billingAddressDifferentToBillingAddress": true,
             "shippingAddress" : {
                 "salutations" : { "$ref" : "checkout/salutations.json" },

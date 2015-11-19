@@ -7,7 +7,6 @@
         },
         "paymentForm" : {
             "actionUrl": "checkout-confirmation.html",
-            "csrfToken": "1234567890abcdef",
             "paymentOptions" : { "$ref" : "checkout/payment-options.json" },
             "expiryDate" : { "$ref" : "checkout/months.json" },
             "year" : {

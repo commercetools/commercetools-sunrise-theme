@@ -1,7 +1,7 @@
 {
-    "itemsTotal" : 3,
+    "totalItems" : 3,
+    "totalPrice" : "150.00 €",
     "salesTax" : "23.95 €",
-    "total" : "150.00 €",
     "promoCode" : "Sunny Sale",
     "subtotal" : "147.00 €",
     "shippingMethod" : {"$ref" : "shipping-method-1.json"},
@@ -12,7 +12,6 @@
             { "$ref" : "../common/product-variant-1.json" }
         ]
     },
-    "csrfToken": "Test123",
     "shippingAddress" : { "$ref" : "shipping-address.json" },
     "billingAddress" : { "$ref" : "billing-address.json" },
     "paymentDetails" : {

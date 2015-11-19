@@ -8,7 +8,6 @@
         },
         "checkoutForm" : {
             "actionUrl": "checkout-thankyou.html",
-            "csrfToken": "1234567890abcdef",
             "newsletter" : {
                 "name" : "SUNRISE Newsletter",
                 "selected" : true,

@@ -1,9 +1,11 @@
 {
-	"numItems" : 12,
+	"totalItems" : 12,
 	"totalPrice" : "117,00 €",
-	"list" : [
-	    { "$ref" : "product-variant-1.json" },
-	    { "$ref" : "product-variant-1.json" },
-	    { "$ref" : "product-variant-1.json" }
-	]
+    "lineItems" : {
+        "list" : [
+            { "$ref" : "../common/product-variant-1.json" },
+            { "$ref" : "../common/product-variant-1.json" },
+            { "$ref" : "../common/product-variant-1.json" }
+        ]
+    }
 }
