@@ -1011,11 +1011,11 @@
           <div class="footer-col">
             <ul>
               <li class="footer-title hidden-xs">Customer Care</li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">Help</a></li>
-                <li><a href="">Shipping</a></li>
-                <li><a href="">Returns</a></li>
-                <li><a href="">Size Guide</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+              <li><a href="help.html">Help</a></li>
+              <li><a href="shipping.html">Shipping</a></li>
+              <li><a href="returns.html">Returns</a></li>
+              <li><a href="sizeguide.html">Size Guide</a></li>
             </ul>
           </div>
         </div>
@@ -1023,8 +1023,8 @@
           <div class="footer-col">
             <ul>
               <li class="footer-title hidden-xs">About Us</li>
-                <li><a href="">Our Story</a></li>
-                <li><a href="">Careers</a></li>
+              <li><a href="ourstory.html">Our Story</a></li>
+              <li><a href="careers.html">Careers</a></li>
             </ul>
           </div>
         </div>
@@ -1032,10 +1032,10 @@
           <div class="footer-col">
             <ul>
               <li class="footer-title hidden-xs">Shortcuts</li>
-                <li><a href="">My Account</a></li>
-                <li><a href="">Store Locator</a></li>
-                <li><a href="">Gift Cards</a></li>
-                <li><a href="">Payment</a></li>
+              <li><a href="myaccount.html">My Account</a></li>
+              <li><a href="stores.html">Store Locator</a></li>
+              <li><a href="giftcards.html">Gift Cards</a></li>
+              <li><a href="payment.html">Payment</a></li>
             </ul>
           </div>
         </div>
@@ -1045,9 +1045,13 @@
               <p>Join our newsletter</p>
             </div>
             <div class="col-sm-7">
-              <form class="email-submit" action="">
-                <input id="newsletter-input" class="email-box" type="text" placeholder="Your email ..." required>
-                <button id="newsletter-button" type="submit" class="search-button"><span class="icon-font icon-next"></span><span class="sr-only">Subscribe</span></button>
+              <form action="newsletter.html" method="POST" id="form-newsletter" class="email-submit">
+                <input type="hidden" name="csrfToken" value="Test123"/>
+                <input name="email" id="newsletter-input" class="email-box" type="email" placeholder="Your email..." required>
+                <button id="newsletter-button" type="submit" class="search-button">
+                  <span class="icon-font icon-next"></span>
+                  <span class="sr-only">Subscribe</span>
+                </button>
               </form>
             </div>
           </div>
@@ -1059,9 +1063,9 @@
             <div class="col-sm-4 text-left card-info footer-title">
               <p>Follow us</p>
               <ul class="social-icons">
-                <a href=""><li><img class="social-icon" src="assets/img/Facebook.png" alt="facebook"></li></a>
-                <a href=""><li><img class="social-icon" src="assets/img/Pinterest.png" alt="pinterest"></li></a>
-                <a href=""><li><img class="social-icon" src="assets/img/Google.png" alt="google plus"></li></a>
+                <a href=""><li><img class="social-icon" src="assets/img/Facebook.png" alt="Facebook"></li></a>
+                <a href=""><li><img class="social-icon" src="assets/img/Pinterest.png" alt="Pinterest"></li></a>
+                <a href=""><li><img class="social-icon" src="assets/img/Google.png" alt="Google+"></li></a>
               </ul>
             </div>
           </div>
@@ -1075,9 +1079,9 @@
         <div class="col-sm-12">
           <ul class="footer-title imprint-row">
             <li class="hidden-xs">© 2015 Sunrise</li>
-              <li><a href="">Imprint</a></li>
-              <li><a href="">Privacy policy</a></li>
-              <li><a href="">Terms of use</a></li>
+              <li><a href="imprint.html">Imprint</a></li>
+              <li><a href="privacy.html">Privacy policy</a></li>
+              <li><a href="terms.html">Terms of use</a></li>
             <li class="visible-xs">© 2015 Sunrise</li>
           </ul>
         </div>

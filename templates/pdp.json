@@ -1578,94 +1578,7 @@
       }
     }
   },
-  "footer": {
-    "paySecure": "Pay securely with these payment methods",
-    "followUs": "Follow us",
-    "newsletter": {
-      "text": "Join our newsletter",
-      "textAlt": "Subscribe",
-      "url": "",
-      "placeholder": "Your email ...",
-      "inputId": "newsletter-input",
-      "buttonId": "newsletter-button"
-    },
-    "customerCare": {
-      "text": "Customer Care",
-      "list": [
-        {
-          "text": "Contact us",
-          "url": ""
-        },
-        {
-          "text": "Help",
-          "url": ""
-        },
-        {
-          "text": "Shipping",
-          "url": ""
-        },
-        {
-          "text": "Returns",
-          "url": ""
-        },
-        {
-          "text": "Size Guide",
-          "url": ""
-        }
-      ]
-    },
-    "aboutUs": {
-      "text": "About Us",
-      "list": [
-        {
-          "text": "Our Story",
-          "url": ""
-        },
-        {
-          "text": "Careers",
-          "url": ""
-        }
-      ]
-    },
-    "shortcuts": {
-      "text": "Shortcuts",
-      "list": [
-        {
-          "text": "My Account",
-          "url": ""
-        },
-        {
-          "text": "Store Locator",
-          "url": ""
-        },
-        {
-          "text": "Gift Cards",
-          "url": ""
-        },
-        {
-          "text": "Payment",
-          "url": ""
-        }
-      ]
-    },
-    "legalInfo": {
-      "text": "© 2015 Sunrise",
-      "list": [
-        {
-          "text": "Imprint",
-          "url": ""
-        },
-        {
-          "text": "Privacy policy",
-          "url": ""
-        },
-        {
-          "text": "Terms of use",
-          "url": ""
-        }
-      ]
-    }
-  },
+  "footer": {},
   "content": {
     "breadcrumb": {
       "links": [
@@ -2501,14 +2414,50 @@
       "self": {
         "href": "#"
       },
-      "stores": {
-        "href": "stores.html"
+      "selectLocation": {
+        "href": "location.html"
+      },
+      "newsletter": {
+        "href": "newsletter.html"
+      },
+      "contactUs": {
+        "href": "contactus.html"
       },
       "help": {
         "href": "help.html"
       },
-      "selectLocation": {
-        "href": "location.html"
+      "shipping": {
+        "href": "shipping.html"
+      },
+      "returns": {
+        "href": "returns.html"
+      },
+      "sizeGuide": {
+        "href": "sizeguide.html"
+      },
+      "ourStory": {
+        "href": "ourstory.html"
+      },
+      "careers": {
+        "href": "careers.html"
+      },
+      "storeLocator": {
+        "href": "stores.html"
+      },
+      "giftCards": {
+        "href": "giftcards.html"
+      },
+      "payment": {
+        "href": "payment.html"
+      },
+      "imprint": {
+        "href": "imprint.html"
+      },
+      "privacyPolicy": {
+        "href": "privacy.html"
+      },
+      "termsOfUse": {
+        "href": "terms.html"
       },
       "home": {
         "href": "home.html"
@@ -2522,10 +2471,19 @@
       "signIn": {
         "href": "signIn.html"
       },
+      "myAccount": {
+        "href": "myaccount.html"
+      },
       "checkout": {
         "href": "checkout-shipping.html"
       },
       "cart": {
+        "href": "cart.html"
+      },
+      "deleteLineItem": {
+        "href": "cart.html"
+      },
+      "changeLineItem": {
         "href": "cart.html"
       },
       "editShippingAddress": {
@@ -2542,12 +2500,6 @@
       },
       "continueShopping": {
         "href": "pop.html"
-      },
-      "deleteLineItem": {
-        "href": "cart.html"
-      },
-      "changeLineItem": {
-        "href": "cart.html"
       }
     },
     "features": {

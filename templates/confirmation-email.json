@@ -115,14 +115,50 @@
       "self": {
         "href": "#"
       },
-      "stores": {
-        "href": "stores.html"
+      "selectLocation": {
+        "href": "location.html"
+      },
+      "newsletter": {
+        "href": "newsletter.html"
+      },
+      "contactUs": {
+        "href": "contactus.html"
       },
       "help": {
         "href": "help.html"
       },
-      "selectLocation": {
-        "href": "location.html"
+      "shipping": {
+        "href": "shipping.html"
+      },
+      "returns": {
+        "href": "returns.html"
+      },
+      "sizeGuide": {
+        "href": "sizeguide.html"
+      },
+      "ourStory": {
+        "href": "ourstory.html"
+      },
+      "careers": {
+        "href": "careers.html"
+      },
+      "storeLocator": {
+        "href": "stores.html"
+      },
+      "giftCards": {
+        "href": "giftcards.html"
+      },
+      "payment": {
+        "href": "payment.html"
+      },
+      "imprint": {
+        "href": "imprint.html"
+      },
+      "privacyPolicy": {
+        "href": "privacy.html"
+      },
+      "termsOfUse": {
+        "href": "terms.html"
       },
       "home": {
         "href": "home.html"
@@ -136,10 +172,19 @@
       "signIn": {
         "href": "signIn.html"
       },
+      "myAccount": {
+        "href": "myaccount.html"
+      },
       "checkout": {
         "href": "checkout-shipping.html"
       },
       "cart": {
+        "href": "cart.html"
+      },
+      "deleteLineItem": {
+        "href": "cart.html"
+      },
+      "changeLineItem": {
         "href": "cart.html"
       },
       "editShippingAddress": {
@@ -156,12 +201,6 @@
       },
       "continueShopping": {
         "href": "pop.html"
-      },
-      "deleteLineItem": {
-        "href": "cart.html"
-      },
-      "changeLineItem": {
-        "href": "cart.html"
       }
     },
     "features": {
