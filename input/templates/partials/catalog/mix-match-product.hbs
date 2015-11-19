@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-xs-3">
       <div class="mix-match-product-img">
-        <img class="img-responsive" src="http://placehold.it/150x200" alt="product image">
+        <img class="img-responsive" src="{{meta.assetsPath}}img/blue-shirt.jpg" alt="product image">
       </div>
     </div>
     <div class="col-xs-9">
@@ -20,7 +20,7 @@
   <div class="mix-match-product-attributes">
     <ul class="list-inline">
       <li>
-        <div>Color</div>
+        <div class="mix-match-product-attr-title">Color</div>
         <select name="" id="">
           <option value="red">Red</option>
           <option value="blue">Blue</option>
@@ -28,7 +28,7 @@
         </select>
       </li>
       <li>
-        <div>Size</div>
+        <div class="mix-match-product-attr-title">Size</div>
         <select name="" id="">
           <option value="m">M</option>
           <option value="l">L</option>
@@ -36,8 +36,10 @@
         </select>
       </li>
       <li>
-        <input type="checkbox">
-        <label for="">Add Product</label>
+        <div class="mix-match-product-add-input">
+          <input id="" type="checkbox">
+          <label for="">Add Product</label>
+        </div>
       </li>
     </ul>
   </div>
