@@ -1,5 +1,5 @@
 .mix-match-page {
-  min-height: 600px; // TODO: only for dev
+  min-height: 600px; // TODO: temporary
   background-color: $white;
 }
 .mix-match-page-title {
@@ -7,4 +7,8 @@
   font-size: 28px;
   font-weight: 200;
   letter-spacing: 1px;
+}
+// Hide thumbnails from product gallery TODO: temporary
+.bzoom_small_thumbs {
+  display: none;
 }
