@@ -4,7 +4,8 @@
     "content" : {
         "breadcrumb" : { "$ref" : "catalog/breadcrumb.json" },
         "gallery" : { "$ref" : "catalog/product-gallery.json" },
-        "mixMatchProducts" : { "$ref" : "catalog/mix-match-product3.json" }
+        "mixMatchProducts" : { "$ref" : "catalog/mix-match-product3.json" },
+        "suggestions" : { "$ref" : "catalog/product-list4.json" }
     },
     "meta" : { "$ref" : "common/meta.json" }
 }

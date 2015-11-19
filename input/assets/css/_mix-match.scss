@@ -1,8 +1,7 @@
-.mix-match-page {
-  min-height: 600px; // TODO: temp
+.mix-match {
   background-color: $white;
 }
-.mix-match-page-title {
+.mix-match-title {
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 200;
@@ -19,5 +18,15 @@
   padding: 10px 0 20px;
   .social-icons {
     margin-left: -40px; // TODO: temp, weird left padding fix
+  }
+}
+.mix-match-suggestions {
+  .mix-match-suggestions-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 26px;
+    letter-spacing: 1px;
+    padding: 40px 0;
   }
 }
