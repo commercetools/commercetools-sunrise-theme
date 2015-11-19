@@ -1,5 +1,5 @@
 .mix-match-page {
-  min-height: 600px; // TODO: temporary
+  min-height: 600px; // TODO: temp
   background-color: $white;
 }
 .mix-match-page-title {
@@ -8,10 +8,16 @@
   font-weight: 200;
   letter-spacing: 1px;
 }
-// Hide thumbnails from product gallery TODO: temporary
+// Hide thumbnails from product gallery TODO: temp
 .bzoom_small_thumbs {
   display: none;
 }
 .mix-match-bag-wishlist {
   padding: 30px 0 20px;
+}
+.mix-match-social-icons {
+  padding: 10px 0 20px;
+  .social-icons {
+    margin-left: -40px; // TODO: temp, weird left padding fix
+  }
 }
