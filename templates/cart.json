@@ -1698,7 +1698,6 @@
         "email": "billing@commercetools.com"
       },
       "paymentDetails": {
-        "text": "Payment Details",
         "type": "Credit Card",
         "name": "P. Osgood",
         "card": "Visa",

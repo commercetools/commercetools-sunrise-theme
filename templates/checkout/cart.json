@@ -15,7 +15,6 @@
     "shippingAddress" : { "$ref" : "shipping-address.json" },
     "billingAddress" : { "$ref" : "billing-address.json" },
     "paymentDetails" : {
-        "text" : "Payment Details",
         "type" : "Credit Card",
         "name" : "P. Osgood",
         "card" : "Visa",
