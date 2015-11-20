@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/sphereio/sphere-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/sphere-sunrise-design) [![Stories in Ready](https://badge.waffle.io/sphereio/sphere-sunrise-design.png?label=ready&title=Ready)](https://waffle.io/sphereio/sphere-sunrise-design)
 
 ###Demo
+- [Home](http://sphereio.github.io/sphere-sunrise-design/home.html)
 - [Product Overview](http://sphereio.github.io/sphere-sunrise-design/pop.html)
 - [Product Detail](http://sphereio.github.io/sphere-sunrise-design/pdp.html)
 - [Cart Detail](http://sphereio.github.io/sphere-sunrise-design/cart.html)
@@ -13,7 +14,6 @@
 - [Checkout Payment (3/5)](http://sphereio.github.io/sphere-sunrise-design/checkout-payment.html)
 - [Checkout Confirmation (4/5)](http://sphereio.github.io/sphere-sunrise-design/checkout-confirmation.html)
 - [Checkout Thank You (5/5)](http://sphereio.github.io/sphere-sunrise-design/checkout-thankyou.html)
-- [Home](http://sphereio.github.io/sphere-sunrise-design/home.html)
 - [My Account: Personal Details](http://sphereio.github.io/sphere-sunrise-design/my-account-personal-details.html)
 - [My Account: Address Book](http://sphereio.github.io/sphere-sunrise-design/my-account-address-book.html)
 - [My Account: Payment Details](http://sphereio.github.io/sphere-sunrise-design/my-account-payment-details.html)
