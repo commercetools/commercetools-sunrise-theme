@@ -1,8 +1,5 @@
 {
       "url" : "pdp.html",
-      "addToCartUrl" : "cart.html",
-      "addToWishlistUrl" : "",
-      "addReviewUrl" : "",
       "rating3" : true,
       "sale" : true,
       "new" : true,
