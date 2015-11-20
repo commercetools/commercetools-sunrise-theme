@@ -30,3 +30,22 @@
     padding: 40px 0;
   }
 }
+.mix-match-view-more {
+  position: absolute;
+  top: 450px;
+  .mix-match-view-more-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .mix-match-view-more-list {
+    li {
+      color: $dark-grey;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

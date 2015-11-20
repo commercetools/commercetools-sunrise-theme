@@ -5,7 +5,25 @@
         "breadcrumb" : { "$ref" : "catalog/breadcrumb.json" },
         "gallery" : { "$ref" : "catalog/product-gallery.json" },
         "mixMatchProducts" : { "$ref" : "catalog/mix-match-product3.json" },
-        "suggestions" : { "$ref" : "catalog/product-list4.json" }
+        "suggestions" : { "$ref" : "catalog/product-list4.json" },
+        "viewMore" : [
+            {
+                "name" : "Knitwear",
+                "url" : ""
+            },
+            {
+                "name" : "Mix & Match",
+                "url" : ""
+            },
+            {
+                "name" : "Patns",
+                "url" : ""
+            },
+            {
+                "name" : "Shorts",
+                "url" : ""
+            }
+        ]
     },
     "meta" : { "$ref" : "common/meta.json" }
 }

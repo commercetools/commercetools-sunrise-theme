@@ -61,3 +61,5 @@ searchResult:
   of: of
   searchResultsFor: Search Results for
   warning: There were no products that contained all of the words in your query. These results contain some of the words.
+viewMore:
+  title: View More
