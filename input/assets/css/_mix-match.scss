@@ -6,6 +6,11 @@
   font-size: 28px;
   font-weight: 200;
   letter-spacing: 1px;
+  padding-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    padding-top: 40px;
+    text-align: center;
+  }
 }
 // Hide thumbnails from product gallery TODO: temp
 .bzoom_small_thumbs {
@@ -18,6 +23,9 @@
   padding: 10px 0 20px;
   .social-icons {
     margin-left: -40px; // TODO: temp, weird left padding fix
+    @media screen and (max-width: 375px) {
+      margin-left: 0;
+    }
   }
 }
 .mix-match-suggestions {
