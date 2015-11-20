@@ -1799,6 +1799,15 @@
       "search": {
         "href": "pop.html"
       },
+      "addToCart": {
+        "href": "cart.html"
+      },
+      "addToWishlist": {
+        "href": "wishlist.html"
+      },
+      "addReview": {
+        "href": "pdp.html"
+      },
       "signIn": {
         "href": "signIn.html"
       },

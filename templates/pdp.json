@@ -1594,9 +1594,6 @@
     },
     "product": {
       "url": "pdp.html",
-      "addToCartUrl": "cart.html",
-      "addToWishlistUrl": "",
-      "addReviewUrl": "",
       "rating3": true,
       "sale": true,
       "new": true,
@@ -1764,9 +1761,6 @@
       "list": [
         {
           "url": "pdp.html",
-          "addToCartUrl": "cart.html",
-          "addToWishlistUrl": "",
-          "addReviewUrl": "",
           "rating3": true,
           "sale": true,
           "new": true,
@@ -1917,9 +1911,6 @@
         },
         {
           "url": "pdp.html",
-          "addToCartUrl": "cart.html",
-          "addToWishlistUrl": "",
-          "addReviewUrl": "",
           "rating3": true,
           "sale": true,
           "new": true,
@@ -2070,9 +2061,6 @@
         },
         {
           "url": "pdp.html",
-          "addToCartUrl": "cart.html",
-          "addToWishlistUrl": "",
-          "addReviewUrl": "",
           "rating3": true,
           "sale": true,
           "new": true,
@@ -2223,9 +2211,6 @@
         },
         {
           "url": "pdp.html",
-          "addToCartUrl": "cart.html",
-          "addToWishlistUrl": "",
-          "addReviewUrl": "",
           "rating3": true,
           "sale": true,
           "new": true,
@@ -2467,6 +2452,15 @@
       },
       "search": {
         "href": "pop.html"
+      },
+      "addToCart": {
+        "href": "cart.html"
+      },
+      "addToWishlist": {
+        "href": "wishlist.html"
+      },
+      "addReview": {
+        "href": "pdp.html"
       },
       "signIn": {
         "href": "signIn.html"
