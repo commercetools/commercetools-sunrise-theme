@@ -159,7 +159,6 @@
       "confirmationStepActive": true
     },
     "checkoutForm": {
-      "actionUrl": "checkout-thankyou.html",
       "newsletter": {
         "name": "SUNRISE Newsletter",
         "selected": true,
@@ -264,6 +263,15 @@
       "checkout": {
         "href": "checkout-shipping.html"
       },
+      "checkoutConfirmation": {
+        "href": "checkout-confirmation.html"
+      },
+      "checkoutConfirmationSubmit": {
+        "href": "checkout-thankyou.html"
+      },
+      "checkoutThankYou": {
+        "href": "checkout-thankyou.html"
+      },
       "cart": {
         "href": "cart.html"
       },
@@ -279,8 +287,14 @@
       "editBillingAddress": {
         "href": "checkout-shipping.html"
       },
+      "checkoutAddressesSubmit": {
+        "href": "checkout-payment.html"
+      },
       "editPaymentInfo": {
         "href": "checkout-payment.html"
+      },
+      "checkoutPaymentSubmit": {
+        "href": "checkout-confirmation.html"
       },
       "editShippingMethod": {
         "href": "checkout-shipping.html#shipping-methods-setting"

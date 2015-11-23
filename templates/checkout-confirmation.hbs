@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="checkout">
-                    <form method="post" action="{{content.checkoutForm.actionUrl}}">
+                    <form method="post" action="{{@root.meta._links.checkoutConfirmationSubmit.href}}">
                         <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
                         <div class="row">
                             <div class="col-sm-4 checkout-first-col">
