@@ -4,14 +4,14 @@
         <div class="follow-up">
           {{#if meta.features.myAccount.active}}
               <label for="confirmation-savedetails-input">
-                  <input id="confirmation-savedetails-input" type="checkbox" name="save-account-details"
+                  <input id="confirmation-savedetails-input" type="checkbox" name="saveAccountDetails"
                          value="remember"
                          class="remember-me"{{#if content.checkoutForm.remember.selected}}checked {{/if}}>
                   <span>{{i18n "checkout:rememberMe"}}</span>
               </label>
           {{/if}}
             <label for="confirmation-newsletter-input">
-                <input id="confirmation-newsletter-input" type="checkbox" name="add-to-newsletter" value="newsletter"
+                <input id="confirmation-newsletter-input" type="checkbox" name="subscribeNewsletter" value="newsletter"
                        class="add-to-newsletter"{{#if content.checkoutForm.newsletter.selected}}checked {{/if}}>
                     <span>{{i18n "checkout:addToNewsletter"}}
                         <span class="sunrise-newsletter"><a
@@ -19,7 +19,7 @@
                     </span>
             </label>
             <label for="agree-to-input">
-                <input id="agree-to-input" type="checkbox" name="agree-terms" value="terms"
+                <input id="agree-to-input" type="checkbox" name="agreeTerms" value="terms"
                        class="agree-terms"{{#if content.checkoutForm.termsConditions.selected}}checked {{/if}}>
                     <span>
                         <span class="sunrise-newsletter">{{{i18n "checkout:agreeToTermsHtml" url=content.checkoutForm.termsConditions.url}}}</span>

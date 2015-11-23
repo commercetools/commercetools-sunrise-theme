@@ -4,28 +4,7 @@
     "customerService": "Need help? Customer Service",
     "customerServiceNumber": "+12 345 6000"
   },
-  "footer": {
-    "legalInfo": {
-      "text": "© 2015 Sunrise",
-      "list": [
-        {
-          "text": "Imprint",
-          "url": "",
-          "id": "imprint-link"
-        },
-        {
-          "text": "Privacy policy",
-          "url": "",
-          "id": "privacypolicy-link"
-        },
-        {
-          "text": "Terms of use",
-          "url": "",
-          "id": "termsofuse-link"
-        }
-      ]
-    }
-  },
+  "footer": {},
   "content": {
     "stepWidget": {
       "shippingStepActive": true
