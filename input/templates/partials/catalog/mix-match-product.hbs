@@ -3,23 +3,23 @@
     <div class="row">
       <div class="col-xs-3">
         <div class="mix-match-product-img">
-          <img class="img-responsive" src="{{image}}" alt="product image">
+          <img class="img-responsive" src="{{data.gallery.mainImage}}" alt="product image">
         </div>
       </div>
       <div class="col-xs-9">
         <div class="mix-match-product-description">
-          <div class="mix-match-product-name">{{name}}</div>
-          <div class="mix-match-product-sku">{{sku}}</div>
+          <div class="mix-match-product-name">{{data.name}}</div>
+          <div class="mix-match-product-sku">{{data.sku}}</div>
           <div>
-            {{#if priceOld}}<span class="mix-match-product-oldprice">{{priceOld}}</span>{{/if}}
-            <span class="mix-match-product-price">{{price}}</span>
+            {{#if sale}}<span class="mix-match-product-oldprice">{{data.priceOld}}</span>{{/if}}
+            <span class="mix-match-product-price">{{data.price}}</span>
           </div>
         </div>
       </div>
     </div>
     <div class="mix-match-product-attributes">
       <ul class="list-inline">
-        {{#each attributes}}
+        {{#each data.attributes}}
           <li>
             <div class="mix-match-product-attr-title">{{name}}</div>
             <select name="" id="">
