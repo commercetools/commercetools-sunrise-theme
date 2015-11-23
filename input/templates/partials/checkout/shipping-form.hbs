@@ -36,7 +36,7 @@
           <label for="shipping-method-{{@index}}">
             <span class="shipping-method-span">
                 <input id="shipping-method-{{@index}}" class="shipping-method-radio" type="radio" name="shippingMethodId" value="{{value}}" {{#if selected}}checked{{/if}}{{!-- if it is only one element --}}{{#unless selected}}{{#if @first}}{{#if @last}}checked{{/if}}{{/if}}{{/unless}}>
-                {{name}}
+                {{label}}
             </span>
             <span class="text-uppercase delivery-time">{{deliveryDays}}</span>
           </label>

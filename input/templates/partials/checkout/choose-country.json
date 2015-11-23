@@ -1,22 +1,22 @@
 {
     "list" : [
         {
-            "text" : "United Kingdom",
+            "label" : "United Kingdom",
             "value" : "UK",
             "selected" : true
         },
         {
-            "text" : "Germany",
+            "label" : "Germany",
             "value" : "DE",
             "selected" : false
         },
         {
-            "text" : "France",
+            "label" : "France",
             "value" : "FR",
             "selected" : false
         },
         {
-            "text" : "Spain",
+            "label" : "Spain",
             "value" : "ES",
             "selected" : false
         }

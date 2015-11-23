@@ -17,7 +17,7 @@
       <div class="payment-type">
         <label for="payment-type-{{value}}">
           {{#if image}}<img src="{{@root.meta.assetsPath}}{{image}}" class="payment-type-icon" alt="{{text}}">{{/if}}<br>
-          <input id="payment-type-{{value}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{text}}
+          <input id="payment-type-{{value}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{label}}
         </label>
       </div>
     </div>

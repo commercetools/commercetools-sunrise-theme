@@ -1,22 +1,22 @@
 {
     "list" : [
         {
-            "text" : "Mr.",
+            "label" : "Mr.",
             "value" : "Mr.",
             "selected" : true
         },
         {
-            "text" : "Mrs.",
+            "label" : "Mrs.",
             "value" : "Mrs.",
             "selected" : false
         },
         {
-            "text" : "Ms.",
+            "label" : "Ms.",
             "value" : "Ms.",
             "selected" : false
         },
         {
-            "text" : "Dr.",
+            "label" : "Dr.",
             "value" : "Dr.",
             "selected" : false
         }
