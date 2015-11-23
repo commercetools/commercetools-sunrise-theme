@@ -1,0 +1,12 @@
+{
+    "header" : { "$ref" : "common/header.json" },
+    "footer" : { "$ref" : "common/footer.json" },
+    "content" : {
+        "breadcrumb" : { "$ref" : "catalog/breadcrumb.json" },
+        "gallery" : { "$ref" : "catalog/product-gallery.json" },
+        "mixMatchProducts" : { "$ref" : "catalog/product-list3.json" },
+        "suggestions" : { "$ref" : "catalog/product-list4.json" },
+        "viewMore" : { "$ref" : "catalog/view-more.json" }
+    },
+    "meta" : { "$ref" : "common/meta.json" }
+}
