@@ -7,7 +7,6 @@
             "confirmationStepActive": true
         },
         "checkoutForm" : {
-            "actionUrl": "checkout-thankyou.html",
             "newsletter" : {
                 "name" : "SUNRISE Newsletter",
                 "selected" : true,

@@ -6,7 +6,6 @@
             "shippingStepActive": true
         },
         "shippingForm" : {
-            "actionUrl": "checkout-payment.html",
             "billingAddressDifferentToBillingAddress": true,
             "shippingAddress" : {
                 "salutations" : { "$ref" : "checkout/salutations.json" },

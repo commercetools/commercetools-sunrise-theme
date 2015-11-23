@@ -1,4 +1,4 @@
-<form method="post" action="{{paymentForm.actionUrl}}">
+<form method="post" action="{{@root.meta._links.checkoutPaymentSubmit.href}}">
   <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
   <div class="shipping-info">
     <span class="text-uppercase payment-info-title">{{i18n "checkout:paymentInformation"}}</span>

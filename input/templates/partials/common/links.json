@@ -23,17 +23,22 @@
     "addToCart" : { "href": "cart.html" },
     "addToWishlist": { "href": "wishlist.html" },
     "addReview": { "href": "pdp.html"},
-    
+
     "signIn": { "href" : "signIn.html" },
     "myAccount": { "href": "myaccount.html" },
-    
+
     "checkout": { "href": "checkout-shipping.html" },
+    "checkoutConfirmation": { "href": "checkout-confirmation.html" },
+    "checkoutConfirmationSubmit": { "href": "checkout-thankyou.html" },
+    "checkoutThankYou": { "href": "checkout-thankyou.html" },
     "cart": { "href": "cart.html" },
     "deleteLineItem": { "href": "cart.html" },
     "changeLineItem": { "href": "cart.html" },
     "editShippingAddress": { "href": "checkout-shipping.html" },
     "editBillingAddress": { "href": "checkout-shipping.html" },
+    "checkoutAddressesSubmit": { "href": "checkout-payment.html" },
     "editPaymentInfo": { "href": "checkout-payment.html" },
+    "checkoutPaymentSubmit": { "href": "checkout-confirmation.html" },
     "editShippingMethod": { "href": "checkout-shipping.html#shipping-methods-setting" },
     "continueShopping": { "href": "pop.html" }
 }

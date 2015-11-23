@@ -6,7 +6,6 @@
             "paymentStepActive": true
         },
         "paymentForm" : {
-            "actionUrl": "checkout-confirmation.html",
             "paymentOptions" : { "$ref" : "checkout/payment-options.json" },
             "expiryDate" : { "$ref" : "checkout/months.json" },
             "year" : {
