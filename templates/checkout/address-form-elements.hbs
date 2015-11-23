@@ -5,7 +5,7 @@
       <select id="shipping-title-select" class="checkout-dropdown" name="title{{suffix}}">
         <option value="" selected>{{i18n "form.choose"}}</option>
         {{#each form.salutations.list}}
-        <option value="{{text}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
         {{/each}}
       </select>
     </div>

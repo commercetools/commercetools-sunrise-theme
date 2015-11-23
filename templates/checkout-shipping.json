@@ -15,22 +15,22 @@
         "salutations": {
           "list": [
             {
-              "text": "Mr.",
+              "label": "Mr.",
               "value": "Mr.",
               "selected": true
             },
             {
-              "text": "Mrs.",
+              "label": "Mrs.",
               "value": "Mrs.",
               "selected": false
             },
             {
-              "text": "Ms.",
+              "label": "Ms.",
               "value": "Ms.",
               "selected": false
             },
             {
-              "text": "Dr.",
+              "label": "Dr.",
               "value": "Dr.",
               "selected": false
             }
@@ -46,22 +46,22 @@
         "countries": {
           "list": [
             {
-              "text": "United Kingdom",
+              "label": "United Kingdom",
               "value": "UK",
               "selected": true
             },
             {
-              "text": "Germany",
+              "label": "Germany",
               "value": "DE",
               "selected": false
             },
             {
-              "text": "France",
+              "label": "France",
               "value": "FR",
               "selected": false
             },
             {
-              "text": "Spain",
+              "label": "Spain",
               "value": "ES",
               "selected": false
             }
@@ -74,22 +74,22 @@
         "salutations": {
           "list": [
             {
-              "text": "Mr.",
+              "label": "Mr.",
               "value": "Mr.",
               "selected": true
             },
             {
-              "text": "Mrs.",
+              "label": "Mrs.",
               "value": "Mrs.",
               "selected": false
             },
             {
-              "text": "Ms.",
+              "label": "Ms.",
               "value": "Ms.",
               "selected": false
             },
             {
-              "text": "Dr.",
+              "label": "Dr.",
               "value": "Dr.",
               "selected": false
             }

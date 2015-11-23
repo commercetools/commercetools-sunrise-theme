@@ -3,7 +3,7 @@
   <select id="{{selectId}}" class="checkout-dropdown" name="{{selectName}}{{suffix}}">
     <option value="" selected>{{i18n "form.choose"}}</option>
     {{#each options.list}}
-    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
+    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
     {{/each}}
   </select>
 </div>
