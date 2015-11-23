@@ -113,7 +113,5 @@
 			}
 		]
 	},
-	"meta" : {
-		"assetsPath": "assets/"
-	}
+    "meta" : { "$ref" : "common/meta.json" }
 }

@@ -13,9 +13,5 @@
     "guestCheckoutParagraph2" : "To make future purchases even faster, you will have the option of creating an acocount during checkout.",
     "continueGuestBtn" : "Continue As Guest"
   },
-  "meta" : {
-      "assetsPath": "assets/",
-      "_links" : { "$ref" : "checkout/checkout-links.json" },
-      "features" : { "$ref" : "common/feature-flags.json" }
-  }
+  "meta" : { "$ref" : "common/meta.json" }
 }

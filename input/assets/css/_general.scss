@@ -116,3 +116,15 @@ button {
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+
+.alert {
+  margin: 10px 15px 20px;
+  padding: 10px 15px;
+  border-radius: 2px;
+  background: $white;
+  text-transform: none;
+}
+
+.alert-danger {
+  border: 1px solid $red;
+}

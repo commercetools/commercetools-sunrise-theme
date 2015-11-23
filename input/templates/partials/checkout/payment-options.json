@@ -2,19 +2,19 @@
     "list" : [
         {
             "text" : "Credit Card",
-            "image" : "assets/img/payment-option-card.gif",
+            "image" : "img/payment-option-card.gif",
             "value" : "credit-card",
             "selected" : false
         },
         {
             "text" : "PayPal",
-            "image" : "assets/img/payment-option-paypal.png",
+            "image" : "img/payment-option-paypal.png",
             "value" : "paypal",
             "selected" : false
         },
         {
             "text" : "Pre-payment",
-            "image" : "assets/img/blank-img.jpg",
+            "image" : "img/blank-img.jpg",
             "value" : "prepaid",
             "selected" : true
         }

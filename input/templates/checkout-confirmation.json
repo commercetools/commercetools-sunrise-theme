@@ -8,7 +8,6 @@
         },
         "checkoutForm" : {
             "actionUrl": "checkout-thankyou.html",
-            "csrfToken": "1234567890abcdef",
             "newsletter" : {
                 "name" : "SUNRISE Newsletter",
                 "selected" : true,
@@ -23,9 +22,5 @@
             }
         }
     },
-    "meta" : {
-        "assetsPath": "assets/",
-        "_links" : { "$ref" : "checkout/checkout-links.json" },
-        "features" : { "$ref" : "common/feature-flags.json" }
-    }
+    "meta" : { "$ref" : "common/meta.json" }
 }

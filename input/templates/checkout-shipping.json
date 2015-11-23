@@ -7,7 +7,6 @@
         },
         "shippingForm" : {
             "actionUrl": "checkout-payment.html",
-            "csrfToken": "1234567890abcdef",
             "billingAddressDifferentToBillingAddress": true,
             "shippingAddress" : {
                 "salutations" : { "$ref" : "checkout/salutations.json" },
@@ -65,9 +64,5 @@
         },
         "cart" : { "$ref" : "checkout/cart.json" }
     },
-    "meta" : {
-        "assetsPath": "assets/",
-        "_links" : { "$ref" : "checkout/checkout-links.json" },
-        "features" : { "$ref" : "common/feature-flags.json" }
-    }
+    "meta" : { "$ref" : "common/meta.json" }
 }
