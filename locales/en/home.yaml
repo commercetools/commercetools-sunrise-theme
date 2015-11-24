@@ -1,17 +1,17 @@
 bannerOne:
   first:
-    title: Live by the sun
+    title: Summer Essentials
     subtitle: Make the great day happen
     btn: Shop collection
   second:
-    title: Live by the sun
+    title: Summer lovin'
     subtitle: Make the great day happen
     btn: Shop collection
 bannerTwo:
   title: Here comes the sun
-  subtitle: What inspires you?
-  description1: Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis
-  description2: Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis
+  subtitle: FABULOUS EVERY DAY - SUMMER CHIC
+  description1: Between rising temperature outside and cool A/C inside, dressing for the  the summer can be a tricky business. Luckily, we pulled together the most inspiring looks for. Check out our must-to-have-it pieces
+  description2: The weather is heating up, but you don’t have the right outfit yet. Thankfully, we are here to help you out. Spring break is upon us and it's essential to migrate. So whether you're jetting off to Ibiza or Majorca for a party vacation or getting away to greener pastures - here are the fashion pieces we'll be stashing in our favorite getaway bags.
   btn: Shop Collection
 bannerThree:
   first:
@@ -19,9 +19,9 @@ bannerThree:
     subtitle: Make the great day happen
     btn: Shop collection
   second:
-    title: Donec nec justo eget felis facilisis fermentum.
+    title: SUMMER FASHION 2016
   third:
-    title: Live by the sun
+    title: Trendy Sunglasses
     subtitle: Make the great day happen
     btn: Shop collection
   fourth:
