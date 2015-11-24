@@ -1,9 +1,9 @@
-<a id="link-product-thumbnail{{index}}" href="{{product.url}}">
+<a id="link-product-thumbnail{{index}}" href="{{thumbnail.product.variant.url}}">
   <div class="shop-item">
-    {{#if product.sale}}
+    {{#if thumbnail.sale}}
       <div class="sale-flag">{{i18n "catalog:thumbnail.sale"}}</div>
     {{/if}}
-    {{#if product.new}}
+    {{#if thumbnail.new}}
       <div class="new-flag">{{i18n "catalog:thumbnail.new"}}</div>
     {{/if}}
     <form id="form-add-to-wishlist-mobile{{index}}" name="add-to-wishlist-mobile" action="{{@root.meta._links.addToWishlist.href}}">
@@ -11,21 +11,21 @@
         <span class="sr-only">{{i18n "catalog:wishlist.add"}}</span>
       </button>
     </form>
-    <img class="pop-product-image" src="{{product.data.gallery.mainImage}}" alt="{{product.data.name}}" width="200" />
+    <img class="pop-product-image" src="{{thumbnail.product.variant.image}}" alt="{{thumbnail.product.variant.name}}" width="200" />
     <div class="pop-product-name">
-      <span class="name-headline">{{product.data.name}}</span>
-      <span class="name-subline">{{product.data.description}}</span>
+      <span class="name-headline">{{thumbnail.product.variant.name}}</span>
+      <span class="name-subline">{{thumbnail.product.variant.description}}</span>
     </div>
     <div class="pop-item-price">
-      {{#if product.data.priceOld}}
-        <span class="strikethrough">{{product.data.priceOld}}</span>
-        <span class="pop-item-price-old">{{product.data.price}}</span>
+      {{#if thumbnail.product.variant.priceOld}}
+        <span class="strikethrough">{{thumbnail.product.variant.priceOld}}</span>
+        <span class="pop-item-price-old">{{thumbnail.product.variant.price}}</span>
       {{else}}
-        <span>{{product.data.price}}</span>
+        <span>{{thumbnail.product.variant.price}}</span>
       {{/if}}
     </div>
     <div class="pop-product-more-colors">
-      {{#if product.moreColors}}{{i18n "catalog:thumbnail.moreColors"}}{{/if}}&nbsp;
+      {{#if thumbnail.moreColors}}{{i18n "catalog:thumbnail.moreColors"}}{{/if}}&nbsp;
     </div>
     <div class="shop-item-overlay hidden-xs">
       <button type="button" class="quickview" data-modal="quickview-modal{{index}}">

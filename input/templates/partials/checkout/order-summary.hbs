@@ -13,7 +13,7 @@
               <p class="grey-p">{{sku}}</p>
               <p class="cart-attributes">
               {{#each attributes}}
-                  {{label}}
+                  {{name}}
                   <span class="black-p" data-model="cartItem.{{key}}">{{value}}</span>
                   {{#unless @last}}<br>{{/unless}}
               {{/each}}

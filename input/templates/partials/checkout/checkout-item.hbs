@@ -20,13 +20,13 @@
             <div class="checkout-attributes">
                 <div class="checkout-attribute-field">
                 {{#each attributes}}
-                    <span class="checkout-attribute">{{label}}</span>{{#unless @last}}<br>{{/unless}}
+                    <span class="checkout-attribute">{{name}}</span>{{#unless @last}}<br>{{/unless}}
                 {{/each}}
                 </div>
                 <div class="checkout-attribute-field">
-                    {{#each attributes}}
-                        <span>{{value}}</span>{{#unless @last}}<br>{{/unless}}
-                    {{/each}}
+                {{#each attributes}}
+                    <span>{{value}}</span>{{#unless @last}}<br>{{/unless}}
+                {{/each}}
                 </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
     <div class="col-sm-12">
       <div>
         <span class="text-uppercase pull-right edit-quantity-order">
-            <a href="{{meta._links.cart.href}}">{{i18n "checkout:editMyCart"}}</a>
+            <a href="{{@root.meta._links.cart.href}}">{{i18n "checkout:editMyCart"}}</a>
         </span>
       </div>
     </div>
