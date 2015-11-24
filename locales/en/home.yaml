@@ -5,7 +5,7 @@ bannerOne:
     btn: Shop collection
   second:
     title: Summer lovin'
-    subtitle: Make the great day happen
+    subtitle: Summer Must Have Outfits
     btn: Shop collection
 bannerTwo:
   title: Here comes the sun
@@ -16,17 +16,17 @@ bannerTwo:
 bannerThree:
   first:
     title: Unique style for every saison
-    subtitle: Make the great day happen
+    subtitle: Fashion styles 2016
     btn: Shop collection
   second:
     title: SUMMER FASHION 2016
   third:
     title: Trendy Sunglasses
-    subtitle: Make the great day happen
+    subtitle: Accessories for the perfect summer
     btn: Shop collection
   fourth:
-    title: Live by the sun
-    subtitle: Make the great day happen
+    title: Must to have it
+    subtitle: Hot pieces for the summer 
     btn: Shop collection
 suggestions:
   title: Get beach ready
