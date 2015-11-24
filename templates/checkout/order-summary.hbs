@@ -9,11 +9,11 @@
           <div class="col-sm-3 col-xs-8 product-info-text">
               <p class="cart-item-name">
                 <a href="{{url}}">{{name}}</a>
-                <br>{{description}}</p>
+              </p>
               <p class="grey-p">{{sku}}</p>
               <p class="cart-attributes">
               {{#each attributes}}
-                  {{label}}
+                  {{name}}
                   <span class="black-p" data-model="cartItem.{{key}}">{{value}}</span>
                   {{#unless @last}}<br>{{/unless}}
               {{/each}}

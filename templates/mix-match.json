@@ -39,76 +39,313 @@
       "lineItems": {
         "list": [
           {
-            "name": "Product Name 1",
-            "description": "Optional Line Two",
-            "image": "assets/img/blue-jacket.jpg",
+            "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+            "variantId": 1,
             "lineItemId": "123456",
+            "slug": "some-slug",
+            "name": "Enditatem Product Name Optional very long line two",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+            "image": "assets/img/blue-jacket.jpg",
             "url": "pdp.html",
             "sku": "Sunrise #SUN123456",
-            "attributes": [
-              {
-                "label": "Color",
-                "key": "color",
-                "value": "Navy Blue"
-              },
-              {
-                "label": "Size",
-                "key": "size",
-                "value": "M"
-              }
-            ],
             "quantity": 1,
             "priceOld": "100,00 €",
             "price": "49,00 €",
-            "totalPrice": "49,00 €"
+            "totalPrice": "49,00 €",
+            "attributes": [
+              {
+                "name": "Color",
+                "key": "color",
+                "value": "Navy Blue",
+                "list": [
+                  {
+                    "label": "Red",
+                    "value": "red",
+                    "selected": false
+                  },
+                  {
+                    "label": "Navy Blue",
+                    "value": "blue",
+                    "selected": true
+                  },
+                  {
+                    "label": "Green",
+                    "value": "green",
+                    "selected": false
+                  }
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "Size",
+                "key": "size",
+                "value": "M",
+                "list": [
+                  {
+                    "label": "S",
+                    "value": "S",
+                    "selected": false
+                  },
+                  {
+                    "label": "M",
+                    "value": "M",
+                    "selected": true
+                  },
+                  {
+                    "label": "L",
+                    "value": "L",
+                    "selected": false
+                  }
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
+              }
+            ]
           },
           {
-            "name": "Product Name 1",
-            "description": "Optional Line Two",
-            "image": "assets/img/blue-jacket.jpg",
+            "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+            "variantId": 1,
             "lineItemId": "123456",
+            "slug": "some-slug",
+            "name": "Enditatem Product Name Optional very long line two",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+            "image": "assets/img/blue-jacket.jpg",
             "url": "pdp.html",
             "sku": "Sunrise #SUN123456",
-            "attributes": [
-              {
-                "label": "Color",
-                "key": "color",
-                "value": "Navy Blue"
-              },
-              {
-                "label": "Size",
-                "key": "size",
-                "value": "M"
-              }
-            ],
             "quantity": 1,
             "priceOld": "100,00 €",
             "price": "49,00 €",
-            "totalPrice": "49,00 €"
+            "totalPrice": "49,00 €",
+            "attributes": [
+              {
+                "name": "Color",
+                "key": "color",
+                "value": "Navy Blue",
+                "list": [
+                  {
+                    "label": "Red",
+                    "value": "red",
+                    "selected": false
+                  },
+                  {
+                    "label": "Navy Blue",
+                    "value": "blue",
+                    "selected": true
+                  },
+                  {
+                    "label": "Green",
+                    "value": "green",
+                    "selected": false
+                  }
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "Size",
+                "key": "size",
+                "value": "M",
+                "list": [
+                  {
+                    "label": "S",
+                    "value": "S",
+                    "selected": false
+                  },
+                  {
+                    "label": "M",
+                    "value": "M",
+                    "selected": true
+                  },
+                  {
+                    "label": "L",
+                    "value": "L",
+                    "selected": false
+                  }
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
+              }
+            ]
           },
           {
-            "name": "Product Name 1",
-            "description": "Optional Line Two",
-            "image": "assets/img/blue-jacket.jpg",
+            "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+            "variantId": 1,
             "lineItemId": "123456",
+            "slug": "some-slug",
+            "name": "Enditatem Product Name Optional very long line two",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+            "image": "assets/img/blue-jacket.jpg",
             "url": "pdp.html",
             "sku": "Sunrise #SUN123456",
-            "attributes": [
-              {
-                "label": "Color",
-                "key": "color",
-                "value": "Navy Blue"
-              },
-              {
-                "label": "Size",
-                "key": "size",
-                "value": "M"
-              }
-            ],
             "quantity": 1,
             "priceOld": "100,00 €",
             "price": "49,00 €",
-            "totalPrice": "49,00 €"
+            "totalPrice": "49,00 €",
+            "attributes": [
+              {
+                "name": "Color",
+                "key": "color",
+                "value": "Navy Blue",
+                "list": [
+                  {
+                    "label": "Red",
+                    "value": "red",
+                    "selected": false
+                  },
+                  {
+                    "label": "Navy Blue",
+                    "value": "blue",
+                    "selected": true
+                  },
+                  {
+                    "label": "Green",
+                    "value": "green",
+                    "selected": false
+                  }
+                ],
+                "selectData": {
+                  "red": {
+                    "size": [
+                      "S",
+                      "M",
+                      "L"
+                    ]
+                  },
+                  "blue": {
+                    "size": [
+                      "S",
+                      "L"
+                    ]
+                  },
+                  "green": {
+                    "size": [
+                      "S",
+                      "M"
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "Size",
+                "key": "size",
+                "value": "M",
+                "list": [
+                  {
+                    "label": "S",
+                    "value": "S",
+                    "selected": false
+                  },
+                  {
+                    "label": "M",
+                    "value": "M",
+                    "selected": true
+                  },
+                  {
+                    "label": "L",
+                    "value": "L",
+                    "selected": false
+                  }
+                ],
+                "selectData": {
+                  "S": {
+                    "color": [
+                      "red",
+                      "blue",
+                      "green"
+                    ]
+                  },
+                  "M": {
+                    "color": [
+                      "red",
+                      "green"
+                    ]
+                  },
+                  "L": {
+                    "color": [
+                      "red",
+                      "blue"
+                    ]
+                  }
+                }
+              }
+            ]
           }
         ]
       }
@@ -1593,7 +1830,6 @@
       ]
     },
     "gallery": {
-      "mainImage": "assets/img/blue-jacket.jpg",
       "list": [
         {
           "thumbImage": "assets/img/blue-jacket.jpg",
@@ -1616,71 +1852,39 @@
     "mixMatchProducts": {
       "list": [
         {
-          "url": "pdp.html",
           "rating3": true,
-          "sale": true,
-          "new": true,
-          "moreColors": true,
-          "data": {
-            "id": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+          "variant": {
+            "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
             "variantId": 1,
+            "lineItemId": "123456",
             "slug": "some-slug",
-            "sku": "Sunrise #SUN123456",
             "name": "Enditatem Product Name Optional very long line two",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "price": "€ 49,-",
-            "priceOld": "€ 79,99",
-            "gallery": {
-              "mainImage": "assets/img/blue-jacket.jpg",
-              "list": [
-                {
-                  "thumbImage": "assets/img/blue-jacket.jpg",
-                  "bigImage": "assets/img/blue-jacket.jpg"
-                },
-                {
-                  "thumbImage": "assets/img/blue-shirt.jpg",
-                  "bigImage": "assets/img/blue-shirt.jpg"
-                },
-                {
-                  "thumbImage": "assets/img/blue-jacket.jpg",
-                  "bigImage": "assets/img/blue-jacket.jpg"
-                },
-                {
-                  "thumbImage": "assets/img/blue-shirt.jpg",
-                  "bigImage": "assets/img/blue-shirt.jpg"
-                }
-              ]
-            },
-            "variants": {
-              "red-S": "variant1",
-              "red-M": "variant2",
-              "red-L": "variant3",
-              "blue-S": "variant4",
-              "blue-L": "variant5",
-              "green-S": "variant6",
-              "green-M": "variant7"
-            },
-            "variantIdentifiers": [
-              "color",
-              "size"
-            ],
+            "image": "assets/img/blue-jacket.jpg",
+            "url": "pdp.html",
+            "sku": "Sunrise #SUN123456",
+            "quantity": 1,
+            "priceOld": "100,00 €",
+            "price": "49,00 €",
+            "totalPrice": "49,00 €",
             "attributes": [
               {
                 "name": "Color",
                 "key": "color",
+                "value": "Navy Blue",
                 "list": [
                   {
-                    "text": "Red",
+                    "label": "Red",
                     "value": "red",
                     "selected": false
                   },
                   {
-                    "text": "Blue",
+                    "label": "Navy Blue",
                     "value": "blue",
-                    "selected": false
+                    "selected": true
                   },
                   {
-                    "text": "Green",
+                    "label": "Green",
                     "value": "green",
                     "selected": false
                   }
@@ -1710,19 +1914,20 @@
               {
                 "name": "Size",
                 "key": "size",
+                "value": "M",
                 "list": [
                   {
-                    "text": "S",
+                    "label": "S",
                     "value": "S",
                     "selected": false
                   },
                   {
-                    "text": "M",
+                    "label": "M",
                     "value": "M",
-                    "selected": false
+                    "selected": true
                   },
                   {
-                    "text": "L",
+                    "label": "L",
                     "value": "L",
                     "selected": false
                   }
@@ -1763,74 +1968,75 @@
                 "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
               }
             ]
-          }
+          },
+          "gallery": {
+            "list": [
+              {
+                "thumbImage": "assets/img/blue-jacket.jpg",
+                "bigImage": "assets/img/blue-jacket.jpg"
+              },
+              {
+                "thumbImage": "assets/img/blue-shirt.jpg",
+                "bigImage": "assets/img/blue-shirt.jpg"
+              },
+              {
+                "thumbImage": "assets/img/blue-jacket.jpg",
+                "bigImage": "assets/img/blue-jacket.jpg"
+              },
+              {
+                "thumbImage": "assets/img/blue-shirt.jpg",
+                "bigImage": "assets/img/blue-shirt.jpg"
+              }
+            ]
+          },
+          "variants": {
+            "red-S": "variant1",
+            "red-M": "variant2",
+            "red-L": "variant3",
+            "blue-S": "variant4",
+            "blue-L": "variant5",
+            "green-S": "variant6",
+            "green-M": "variant7"
+          },
+          "variantIdentifiers": [
+            "color",
+            "size"
+          ]
         },
         {
-          "url": "pdp.html",
           "rating3": true,
-          "sale": true,
-          "new": true,
-          "moreColors": true,
-          "data": {
-            "id": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+          "variant": {
+            "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
             "variantId": 1,
+            "lineItemId": "123456",
             "slug": "some-slug",
-            "sku": "Sunrise #SUN123456",
             "name": "Enditatem Product Name Optional very long line two",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "price": "€ 49,-",
-            "priceOld": "€ 79,99",
-            "gallery": {
-              "mainImage": "assets/img/blue-jacket.jpg",
-              "list": [
-                {
-                  "thumbImage": "assets/img/blue-jacket.jpg",
-                  "bigImage": "assets/img/blue-jacket.jpg"
-                },
-                {
-                  "thumbImage": "assets/img/blue-shirt.jpg",
-                  "bigImage": "assets/img/blue-shirt.jpg"
-                },
-                {
-                  "thumbImage": "assets/img/blue-jacket.jpg",
-                  "bigImage": "assets/img/blue-jacket.jpg"
-                },
-                {
-                  "thumbImage": "assets/img/blue-shirt.jpg",
-                  "bigImage": "assets/img/blue-shirt.jpg"
-                }
-              ]
-            },
-            "variants": {
-              "red-S": "variant1",
-              "red-M": "variant2",
-              "red-L": "variant3",
-              "blue-S": "variant4",
-              "blue-L": "variant5",
-              "green-S": "variant6",
-              "green-M": "variant7"
-            },
-            "variantIdentifiers": [
-              "color",
-              "size"
-            ],
+            "image": "assets/img/blue-jacket.jpg",
+            "url": "pdp.html",
+            "sku": "Sunrise #SUN123456",
+            "quantity": 1,
+            "priceOld": "100,00 €",
+            "price": "49,00 €",
+            "totalPrice": "49,00 €",
             "attributes": [
               {
                 "name": "Color",
                 "key": "color",
+                "value": "Navy Blue",
                 "list": [
                   {
-                    "text": "Red",
+                    "label": "Red",
                     "value": "red",
                     "selected": false
                   },
                   {
-                    "text": "Blue",
+                    "label": "Navy Blue",
                     "value": "blue",
-                    "selected": false
+                    "selected": true
                   },
                   {
-                    "text": "Green",
+                    "label": "Green",
                     "value": "green",
                     "selected": false
                   }
@@ -1860,19 +2066,20 @@
               {
                 "name": "Size",
                 "key": "size",
+                "value": "M",
                 "list": [
                   {
-                    "text": "S",
+                    "label": "S",
                     "value": "S",
                     "selected": false
                   },
                   {
-                    "text": "M",
+                    "label": "M",
                     "value": "M",
-                    "selected": false
+                    "selected": true
                   },
                   {
-                    "text": "L",
+                    "label": "L",
                     "value": "L",
                     "selected": false
                   }
@@ -1913,74 +2120,75 @@
                 "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
               }
             ]
-          }
+          },
+          "gallery": {
+            "list": [
+              {
+                "thumbImage": "assets/img/blue-jacket.jpg",
+                "bigImage": "assets/img/blue-jacket.jpg"
+              },
+              {
+                "thumbImage": "assets/img/blue-shirt.jpg",
+                "bigImage": "assets/img/blue-shirt.jpg"
+              },
+              {
+                "thumbImage": "assets/img/blue-jacket.jpg",
+                "bigImage": "assets/img/blue-jacket.jpg"
+              },
+              {
+                "thumbImage": "assets/img/blue-shirt.jpg",
+                "bigImage": "assets/img/blue-shirt.jpg"
+              }
+            ]
+          },
+          "variants": {
+            "red-S": "variant1",
+            "red-M": "variant2",
+            "red-L": "variant3",
+            "blue-S": "variant4",
+            "blue-L": "variant5",
+            "green-S": "variant6",
+            "green-M": "variant7"
+          },
+          "variantIdentifiers": [
+            "color",
+            "size"
+          ]
         },
         {
-          "url": "pdp.html",
           "rating3": true,
-          "sale": true,
-          "new": true,
-          "moreColors": true,
-          "data": {
-            "id": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+          "variant": {
+            "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
             "variantId": 1,
+            "lineItemId": "123456",
             "slug": "some-slug",
-            "sku": "Sunrise #SUN123456",
             "name": "Enditatem Product Name Optional very long line two",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "price": "€ 49,-",
-            "priceOld": "€ 79,99",
-            "gallery": {
-              "mainImage": "assets/img/blue-jacket.jpg",
-              "list": [
-                {
-                  "thumbImage": "assets/img/blue-jacket.jpg",
-                  "bigImage": "assets/img/blue-jacket.jpg"
-                },
-                {
-                  "thumbImage": "assets/img/blue-shirt.jpg",
-                  "bigImage": "assets/img/blue-shirt.jpg"
-                },
-                {
-                  "thumbImage": "assets/img/blue-jacket.jpg",
-                  "bigImage": "assets/img/blue-jacket.jpg"
-                },
-                {
-                  "thumbImage": "assets/img/blue-shirt.jpg",
-                  "bigImage": "assets/img/blue-shirt.jpg"
-                }
-              ]
-            },
-            "variants": {
-              "red-S": "variant1",
-              "red-M": "variant2",
-              "red-L": "variant3",
-              "blue-S": "variant4",
-              "blue-L": "variant5",
-              "green-S": "variant6",
-              "green-M": "variant7"
-            },
-            "variantIdentifiers": [
-              "color",
-              "size"
-            ],
+            "image": "assets/img/blue-jacket.jpg",
+            "url": "pdp.html",
+            "sku": "Sunrise #SUN123456",
+            "quantity": 1,
+            "priceOld": "100,00 €",
+            "price": "49,00 €",
+            "totalPrice": "49,00 €",
             "attributes": [
               {
                 "name": "Color",
                 "key": "color",
+                "value": "Navy Blue",
                 "list": [
                   {
-                    "text": "Red",
+                    "label": "Red",
                     "value": "red",
                     "selected": false
                   },
                   {
-                    "text": "Blue",
+                    "label": "Navy Blue",
                     "value": "blue",
-                    "selected": false
+                    "selected": true
                   },
                   {
-                    "text": "Green",
+                    "label": "Green",
                     "value": "green",
                     "selected": false
                   }
@@ -2010,19 +2218,20 @@
               {
                 "name": "Size",
                 "key": "size",
+                "value": "M",
                 "list": [
                   {
-                    "text": "S",
+                    "label": "S",
                     "value": "S",
                     "selected": false
                   },
                   {
-                    "text": "M",
+                    "label": "M",
                     "value": "M",
-                    "selected": false
+                    "selected": true
                   },
                   {
-                    "text": "L",
+                    "label": "L",
                     "value": "L",
                     "selected": false
                   }
@@ -2063,29 +2272,168 @@
                 "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
               }
             ]
-          }
+          },
+          "gallery": {
+            "list": [
+              {
+                "thumbImage": "assets/img/blue-jacket.jpg",
+                "bigImage": "assets/img/blue-jacket.jpg"
+              },
+              {
+                "thumbImage": "assets/img/blue-shirt.jpg",
+                "bigImage": "assets/img/blue-shirt.jpg"
+              },
+              {
+                "thumbImage": "assets/img/blue-jacket.jpg",
+                "bigImage": "assets/img/blue-jacket.jpg"
+              },
+              {
+                "thumbImage": "assets/img/blue-shirt.jpg",
+                "bigImage": "assets/img/blue-shirt.jpg"
+              }
+            ]
+          },
+          "variants": {
+            "red-S": "variant1",
+            "red-M": "variant2",
+            "red-L": "variant3",
+            "blue-S": "variant4",
+            "blue-L": "variant5",
+            "green-S": "variant6",
+            "green-M": "variant7"
+          },
+          "variantIdentifiers": [
+            "color",
+            "size"
+          ]
         }
       ]
     },
     "suggestions": {
       "list": [
         {
-          "url": "pdp.html",
-          "rating3": true,
           "sale": true,
           "new": true,
           "moreColors": true,
-          "data": {
-            "id": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
-            "variantId": 1,
-            "slug": "some-slug",
-            "sku": "Sunrise #SUN123456",
-            "name": "Enditatem Product Name Optional very long line two",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "price": "€ 49,-",
-            "priceOld": "€ 79,99",
+          "product": {
+            "rating3": true,
+            "variant": {
+              "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+              "variantId": 1,
+              "lineItemId": "123456",
+              "slug": "some-slug",
+              "name": "Enditatem Product Name Optional very long line two",
+              "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+              "image": "assets/img/blue-jacket.jpg",
+              "url": "pdp.html",
+              "sku": "Sunrise #SUN123456",
+              "quantity": 1,
+              "priceOld": "100,00 €",
+              "price": "49,00 €",
+              "totalPrice": "49,00 €",
+              "attributes": [
+                {
+                  "name": "Color",
+                  "key": "color",
+                  "value": "Navy Blue",
+                  "list": [
+                    {
+                      "label": "Red",
+                      "value": "red",
+                      "selected": false
+                    },
+                    {
+                      "label": "Navy Blue",
+                      "value": "blue",
+                      "selected": true
+                    },
+                    {
+                      "label": "Green",
+                      "value": "green",
+                      "selected": false
+                    }
+                  ],
+                  "selectData": {
+                    "red": {
+                      "size": [
+                        "S",
+                        "M",
+                        "L"
+                      ]
+                    },
+                    "blue": {
+                      "size": [
+                        "S",
+                        "L"
+                      ]
+                    },
+                    "green": {
+                      "size": [
+                        "S",
+                        "M"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "Size",
+                  "key": "size",
+                  "value": "M",
+                  "list": [
+                    {
+                      "label": "S",
+                      "value": "S",
+                      "selected": false
+                    },
+                    {
+                      "label": "M",
+                      "value": "M",
+                      "selected": true
+                    },
+                    {
+                      "label": "L",
+                      "value": "L",
+                      "selected": false
+                    }
+                  ],
+                  "selectData": {
+                    "S": {
+                      "color": [
+                        "red",
+                        "blue",
+                        "green"
+                      ]
+                    },
+                    "M": {
+                      "color": [
+                        "red",
+                        "green"
+                      ]
+                    },
+                    "L": {
+                      "color": [
+                        "red",
+                        "blue"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "details": {
+              "list": [
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                },
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                },
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                }
+              ]
+            },
             "gallery": {
-              "mainImage": "assets/img/blue-jacket.jpg",
               "list": [
                 {
                   "thumbImage": "assets/img/blue-jacket.jpg",
@@ -2117,125 +2465,132 @@
             "variantIdentifiers": [
               "color",
               "size"
-            ],
-            "attributes": [
-              {
-                "name": "Color",
-                "key": "color",
-                "list": [
-                  {
-                    "text": "Red",
-                    "value": "red",
-                    "selected": false
-                  },
-                  {
-                    "text": "Blue",
-                    "value": "blue",
-                    "selected": false
-                  },
-                  {
-                    "text": "Green",
-                    "value": "green",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "red": {
-                    "size": [
-                      "S",
-                      "M",
-                      "L"
-                    ]
-                  },
-                  "blue": {
-                    "size": [
-                      "S",
-                      "L"
-                    ]
-                  },
-                  "green": {
-                    "size": [
-                      "S",
-                      "M"
-                    ]
-                  }
-                }
-              },
-              {
-                "name": "Size",
-                "key": "size",
-                "list": [
-                  {
-                    "text": "S",
-                    "value": "S",
-                    "selected": false
-                  },
-                  {
-                    "text": "M",
-                    "value": "M",
-                    "selected": false
-                  },
-                  {
-                    "text": "L",
-                    "value": "L",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "S": {
-                    "color": [
-                      "red",
-                      "blue",
-                      "green"
-                    ]
-                  },
-                  "M": {
-                    "color": [
-                      "red",
-                      "green"
-                    ]
-                  },
-                  "L": {
-                    "color": [
-                      "red",
-                      "blue"
-                    ]
-                  }
-                }
-              }
-            ]
-          },
-          "details": {
-            "list": [
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              },
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              },
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              }
             ]
           }
         },
         {
-          "url": "pdp.html",
-          "rating3": true,
           "sale": true,
           "new": true,
           "moreColors": true,
-          "data": {
-            "id": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
-            "variantId": 1,
-            "slug": "some-slug",
-            "sku": "Sunrise #SUN123456",
-            "name": "Enditatem Product Name Optional very long line two",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "price": "€ 49,-",
-            "priceOld": "€ 79,99",
+          "product": {
+            "rating3": true,
+            "variant": {
+              "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+              "variantId": 1,
+              "lineItemId": "123456",
+              "slug": "some-slug",
+              "name": "Enditatem Product Name Optional very long line two",
+              "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+              "image": "assets/img/blue-jacket.jpg",
+              "url": "pdp.html",
+              "sku": "Sunrise #SUN123456",
+              "quantity": 1,
+              "priceOld": "100,00 €",
+              "price": "49,00 €",
+              "totalPrice": "49,00 €",
+              "attributes": [
+                {
+                  "name": "Color",
+                  "key": "color",
+                  "value": "Navy Blue",
+                  "list": [
+                    {
+                      "label": "Red",
+                      "value": "red",
+                      "selected": false
+                    },
+                    {
+                      "label": "Navy Blue",
+                      "value": "blue",
+                      "selected": true
+                    },
+                    {
+                      "label": "Green",
+                      "value": "green",
+                      "selected": false
+                    }
+                  ],
+                  "selectData": {
+                    "red": {
+                      "size": [
+                        "S",
+                        "M",
+                        "L"
+                      ]
+                    },
+                    "blue": {
+                      "size": [
+                        "S",
+                        "L"
+                      ]
+                    },
+                    "green": {
+                      "size": [
+                        "S",
+                        "M"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "Size",
+                  "key": "size",
+                  "value": "M",
+                  "list": [
+                    {
+                      "label": "S",
+                      "value": "S",
+                      "selected": false
+                    },
+                    {
+                      "label": "M",
+                      "value": "M",
+                      "selected": true
+                    },
+                    {
+                      "label": "L",
+                      "value": "L",
+                      "selected": false
+                    }
+                  ],
+                  "selectData": {
+                    "S": {
+                      "color": [
+                        "red",
+                        "blue",
+                        "green"
+                      ]
+                    },
+                    "M": {
+                      "color": [
+                        "red",
+                        "green"
+                      ]
+                    },
+                    "L": {
+                      "color": [
+                        "red",
+                        "blue"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "details": {
+              "list": [
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                },
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                },
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                }
+              ]
+            },
             "gallery": {
-              "mainImage": "assets/img/blue-jacket.jpg",
               "list": [
                 {
                   "thumbImage": "assets/img/blue-jacket.jpg",
@@ -2267,125 +2622,132 @@
             "variantIdentifiers": [
               "color",
               "size"
-            ],
-            "attributes": [
-              {
-                "name": "Color",
-                "key": "color",
-                "list": [
-                  {
-                    "text": "Red",
-                    "value": "red",
-                    "selected": false
-                  },
-                  {
-                    "text": "Blue",
-                    "value": "blue",
-                    "selected": false
-                  },
-                  {
-                    "text": "Green",
-                    "value": "green",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "red": {
-                    "size": [
-                      "S",
-                      "M",
-                      "L"
-                    ]
-                  },
-                  "blue": {
-                    "size": [
-                      "S",
-                      "L"
-                    ]
-                  },
-                  "green": {
-                    "size": [
-                      "S",
-                      "M"
-                    ]
-                  }
-                }
-              },
-              {
-                "name": "Size",
-                "key": "size",
-                "list": [
-                  {
-                    "text": "S",
-                    "value": "S",
-                    "selected": false
-                  },
-                  {
-                    "text": "M",
-                    "value": "M",
-                    "selected": false
-                  },
-                  {
-                    "text": "L",
-                    "value": "L",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "S": {
-                    "color": [
-                      "red",
-                      "blue",
-                      "green"
-                    ]
-                  },
-                  "M": {
-                    "color": [
-                      "red",
-                      "green"
-                    ]
-                  },
-                  "L": {
-                    "color": [
-                      "red",
-                      "blue"
-                    ]
-                  }
-                }
-              }
-            ]
-          },
-          "details": {
-            "list": [
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              },
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              },
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              }
             ]
           }
         },
         {
-          "url": "pdp.html",
-          "rating3": true,
           "sale": true,
           "new": true,
           "moreColors": true,
-          "data": {
-            "id": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
-            "variantId": 1,
-            "slug": "some-slug",
-            "sku": "Sunrise #SUN123456",
-            "name": "Enditatem Product Name Optional very long line two",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "price": "€ 49,-",
-            "priceOld": "€ 79,99",
+          "product": {
+            "rating3": true,
+            "variant": {
+              "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+              "variantId": 1,
+              "lineItemId": "123456",
+              "slug": "some-slug",
+              "name": "Enditatem Product Name Optional very long line two",
+              "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+              "image": "assets/img/blue-jacket.jpg",
+              "url": "pdp.html",
+              "sku": "Sunrise #SUN123456",
+              "quantity": 1,
+              "priceOld": "100,00 €",
+              "price": "49,00 €",
+              "totalPrice": "49,00 €",
+              "attributes": [
+                {
+                  "name": "Color",
+                  "key": "color",
+                  "value": "Navy Blue",
+                  "list": [
+                    {
+                      "label": "Red",
+                      "value": "red",
+                      "selected": false
+                    },
+                    {
+                      "label": "Navy Blue",
+                      "value": "blue",
+                      "selected": true
+                    },
+                    {
+                      "label": "Green",
+                      "value": "green",
+                      "selected": false
+                    }
+                  ],
+                  "selectData": {
+                    "red": {
+                      "size": [
+                        "S",
+                        "M",
+                        "L"
+                      ]
+                    },
+                    "blue": {
+                      "size": [
+                        "S",
+                        "L"
+                      ]
+                    },
+                    "green": {
+                      "size": [
+                        "S",
+                        "M"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "Size",
+                  "key": "size",
+                  "value": "M",
+                  "list": [
+                    {
+                      "label": "S",
+                      "value": "S",
+                      "selected": false
+                    },
+                    {
+                      "label": "M",
+                      "value": "M",
+                      "selected": true
+                    },
+                    {
+                      "label": "L",
+                      "value": "L",
+                      "selected": false
+                    }
+                  ],
+                  "selectData": {
+                    "S": {
+                      "color": [
+                        "red",
+                        "blue",
+                        "green"
+                      ]
+                    },
+                    "M": {
+                      "color": [
+                        "red",
+                        "green"
+                      ]
+                    },
+                    "L": {
+                      "color": [
+                        "red",
+                        "blue"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "details": {
+              "list": [
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                },
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                },
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                }
+              ]
+            },
             "gallery": {
-              "mainImage": "assets/img/blue-jacket.jpg",
               "list": [
                 {
                   "thumbImage": "assets/img/blue-jacket.jpg",
@@ -2417,125 +2779,132 @@
             "variantIdentifiers": [
               "color",
               "size"
-            ],
-            "attributes": [
-              {
-                "name": "Color",
-                "key": "color",
-                "list": [
-                  {
-                    "text": "Red",
-                    "value": "red",
-                    "selected": false
-                  },
-                  {
-                    "text": "Blue",
-                    "value": "blue",
-                    "selected": false
-                  },
-                  {
-                    "text": "Green",
-                    "value": "green",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "red": {
-                    "size": [
-                      "S",
-                      "M",
-                      "L"
-                    ]
-                  },
-                  "blue": {
-                    "size": [
-                      "S",
-                      "L"
-                    ]
-                  },
-                  "green": {
-                    "size": [
-                      "S",
-                      "M"
-                    ]
-                  }
-                }
-              },
-              {
-                "name": "Size",
-                "key": "size",
-                "list": [
-                  {
-                    "text": "S",
-                    "value": "S",
-                    "selected": false
-                  },
-                  {
-                    "text": "M",
-                    "value": "M",
-                    "selected": false
-                  },
-                  {
-                    "text": "L",
-                    "value": "L",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "S": {
-                    "color": [
-                      "red",
-                      "blue",
-                      "green"
-                    ]
-                  },
-                  "M": {
-                    "color": [
-                      "red",
-                      "green"
-                    ]
-                  },
-                  "L": {
-                    "color": [
-                      "red",
-                      "blue"
-                    ]
-                  }
-                }
-              }
-            ]
-          },
-          "details": {
-            "list": [
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              },
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              },
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              }
             ]
           }
         },
         {
-          "url": "pdp.html",
-          "rating3": true,
           "sale": true,
           "new": true,
           "moreColors": true,
-          "data": {
-            "id": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
-            "variantId": 1,
-            "slug": "some-slug",
-            "sku": "Sunrise #SUN123456",
-            "name": "Enditatem Product Name Optional very long line two",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "price": "€ 49,-",
-            "priceOld": "€ 79,99",
+          "product": {
+            "rating3": true,
+            "variant": {
+              "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+              "variantId": 1,
+              "lineItemId": "123456",
+              "slug": "some-slug",
+              "name": "Enditatem Product Name Optional very long line two",
+              "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+              "image": "assets/img/blue-jacket.jpg",
+              "url": "pdp.html",
+              "sku": "Sunrise #SUN123456",
+              "quantity": 1,
+              "priceOld": "100,00 €",
+              "price": "49,00 €",
+              "totalPrice": "49,00 €",
+              "attributes": [
+                {
+                  "name": "Color",
+                  "key": "color",
+                  "value": "Navy Blue",
+                  "list": [
+                    {
+                      "label": "Red",
+                      "value": "red",
+                      "selected": false
+                    },
+                    {
+                      "label": "Navy Blue",
+                      "value": "blue",
+                      "selected": true
+                    },
+                    {
+                      "label": "Green",
+                      "value": "green",
+                      "selected": false
+                    }
+                  ],
+                  "selectData": {
+                    "red": {
+                      "size": [
+                        "S",
+                        "M",
+                        "L"
+                      ]
+                    },
+                    "blue": {
+                      "size": [
+                        "S",
+                        "L"
+                      ]
+                    },
+                    "green": {
+                      "size": [
+                        "S",
+                        "M"
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "Size",
+                  "key": "size",
+                  "value": "M",
+                  "list": [
+                    {
+                      "label": "S",
+                      "value": "S",
+                      "selected": false
+                    },
+                    {
+                      "label": "M",
+                      "value": "M",
+                      "selected": true
+                    },
+                    {
+                      "label": "L",
+                      "value": "L",
+                      "selected": false
+                    }
+                  ],
+                  "selectData": {
+                    "S": {
+                      "color": [
+                        "red",
+                        "blue",
+                        "green"
+                      ]
+                    },
+                    "M": {
+                      "color": [
+                        "red",
+                        "green"
+                      ]
+                    },
+                    "L": {
+                      "color": [
+                        "red",
+                        "blue"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "details": {
+              "list": [
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                },
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                },
+                {
+                  "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
+                }
+              ]
+            },
             "gallery": {
-              "mainImage": "assets/img/blue-jacket.jpg",
               "list": [
                 {
                   "thumbImage": "assets/img/blue-jacket.jpg",
@@ -2567,105 +2936,6 @@
             "variantIdentifiers": [
               "color",
               "size"
-            ],
-            "attributes": [
-              {
-                "name": "Color",
-                "key": "color",
-                "list": [
-                  {
-                    "text": "Red",
-                    "value": "red",
-                    "selected": false
-                  },
-                  {
-                    "text": "Blue",
-                    "value": "blue",
-                    "selected": false
-                  },
-                  {
-                    "text": "Green",
-                    "value": "green",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "red": {
-                    "size": [
-                      "S",
-                      "M",
-                      "L"
-                    ]
-                  },
-                  "blue": {
-                    "size": [
-                      "S",
-                      "L"
-                    ]
-                  },
-                  "green": {
-                    "size": [
-                      "S",
-                      "M"
-                    ]
-                  }
-                }
-              },
-              {
-                "name": "Size",
-                "key": "size",
-                "list": [
-                  {
-                    "text": "S",
-                    "value": "S",
-                    "selected": false
-                  },
-                  {
-                    "text": "M",
-                    "value": "M",
-                    "selected": false
-                  },
-                  {
-                    "text": "L",
-                    "value": "L",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "S": {
-                    "color": [
-                      "red",
-                      "blue",
-                      "green"
-                    ]
-                  },
-                  "M": {
-                    "color": [
-                      "red",
-                      "green"
-                    ]
-                  },
-                  "L": {
-                    "color": [
-                      "red",
-                      "blue"
-                    ]
-                  }
-                }
-              }
-            ]
-          },
-          "details": {
-            "list": [
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              },
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              },
-              {
-                "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
-              }
             ]
           }
         }
