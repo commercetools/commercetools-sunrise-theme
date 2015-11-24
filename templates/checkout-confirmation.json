@@ -13,7 +13,7 @@
       "promoCode": "Sunny Sale",
       "subtotalPrice": "147.00 €",
       "shippingMethod": {
-        "name": "DHL Standard",
+        "label": "DHL Standard",
         "value": "dhl-standard",
         "selected": true,
         "deliveryDays": "Delivery: 3-5 Days",

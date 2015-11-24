@@ -137,7 +137,7 @@
       "shippingMethods": {
         "list": [
           {
-            "name": "DHL Standard",
+            "label": "DHL Standard",
             "value": "dhl-standard",
             "selected": true,
             "deliveryDays": "Delivery: 3-5 Days",
@@ -146,14 +146,14 @@
             "description": "DHL Standard - Delivery 3-5 Days"
           },
           {
-            "name": "DHL Express",
+            "label": "DHL Express",
             "value": "dhl-express",
             "selected": false,
             "deliveryDays": "Delivery: 3-5 Days",
             "url": ""
           },
           {
-            "name": "DHL Overnight",
+            "label": "DHL Overnight",
             "value": "dhl-overnight",
             "selected": false,
             "deliveryDays": "Delivery: 3-5 Days",
@@ -169,7 +169,7 @@
       "promoCode": "Sunny Sale",
       "subtotalPrice": "147.00 €",
       "shippingMethod": {
-        "name": "DHL Standard",
+        "label": "DHL Standard",
         "value": "dhl-standard",
         "selected": true,
         "deliveryDays": "Delivery: 3-5 Days",
