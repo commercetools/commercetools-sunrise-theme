@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-sm-12">
-    <div class="pop-filter-select select-facet {{#if facet.countHidden}}two-column-select{{/if}}">
+    <div class="pop-filter-select select-facet {{#unless displayList}}two-column-select{{/unless}}">
       {{#each facet.limitedOptions}}
         <div>
         {{> catalog/facet-option-input facet=../facet option=this}}
