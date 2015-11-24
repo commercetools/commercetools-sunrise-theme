@@ -1,5 +1,9 @@
 .mix-match {
   background-color: $white;
+  // Hide thumbnails from product gallery TODO: temp
+  .bzoom_small_thumbs {
+    display: none;
+  }
 }
 .mix-match-title {
   text-transform: uppercase;
@@ -12,10 +16,7 @@
     text-align: center;
   }
 }
-// Hide thumbnails from product gallery TODO: temp
-.bzoom_small_thumbs {
-  display: none;
-}
+
 .mix-match-bag-wishlist {
   padding: 30px 0 20px;
 }
