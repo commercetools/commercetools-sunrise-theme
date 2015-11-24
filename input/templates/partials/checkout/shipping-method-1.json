@@ -1,5 +1,5 @@
 {
-    "name" : "DHL Standard",
+    "label" : "DHL Standard",
     "value" : "dhl-standard",
     "selected" : true,
     "deliveryDays" : "Delivery: 3-5 Days",
