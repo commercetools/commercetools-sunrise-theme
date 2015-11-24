@@ -73,6 +73,8 @@
                 <div class="checkout">
                     <form method="post" action="checkout-thankyou.html">
                         <input type="hidden" name="csrfToken" value="Test123"/>
+                        <!-- start global-form-errors -->
+                        <!-- end global-form-errors -->
                         <div class="row">
                             <div class="col-sm-4 checkout-first-col">
                               <div class="checkout-summary">
@@ -374,7 +376,7 @@
                                             </span>
                                     </label>
                                     <label for="agree-to-input">
-                                        <input id="agree-to-input" type="checkbox" name="agreeTerms" value="terms"
+                                        <input id="agree-to-input" type="checkbox" name="agreeTerms" value="true"
                                                class="agree-terms"checked >
                                             <span>
                                                 <span class="sunrise-newsletter">I agree to the <a id="confirmation-termsandconditions-link" href="terms.html"> <span class="terms-link">Terms and Conditions</span></a></span>
