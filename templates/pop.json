@@ -2097,6 +2097,7 @@
           "sliderRangeFacet": true,
           "facet": {
             "available": true,
+            "key": "price",
             "label": "Price",
             "minKey": "minPrice",
             "maxKey": "maxPrice",
