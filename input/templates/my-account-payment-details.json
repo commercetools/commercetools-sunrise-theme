@@ -1,0 +1,67 @@
+{
+	"header" : { "$ref" : "common/header.json" },
+	"footer" : { "$ref" : "common/footer.json" },
+	"content" : {
+		"pageTitle" : "My Account",
+		"sidebarItemOne" : {
+			"text" : "Personal Details",
+			"url" : ""
+		},
+		"sidebarItemTwo" : {
+			"text" : "Address Book",
+			"url" : ""
+		},
+		"sidebarItemThree" : {
+			"text" : "Payment Details",
+			"url" : ""
+		},
+		"sidebarItemFour" : {
+			"text" : "My Orders",
+			"url" : ""
+		},
+		"sidebarItemFive" : {
+			"text" : "Returns / Exchange",
+			"url" : ""
+		},
+		"sidebarItemSix" : {
+			"text" : "Wishlist",
+			"url" : "",
+			"wishlistItems" : "12"
+		},
+		"sidebarItemSeven" : {
+			"text" : "Sign Out",
+			"url" : ""
+		},
+        "contentTitle" : "Payment Details",
+        "defaultPaymentMethodTitle" : "Default Payment Method",
+        "defaultPaymentMethod" : {
+            "title" : "Credit Card",
+            "name" : "Bruce Wayne",
+            "type" : "Visa",
+            "number" : "**** **** **** **99",
+            "date" : "09.18",
+            "edit" : "Edit"
+        },
+        "addNewPaymentMethodBtn" : "Add New Payment Method",
+        "additionalPaymentMethodsTitle" : "Additional Payment Methods",
+        "additionalPaymentMethodOne" : {
+            "title" : "Credit Card",
+            "name" : "Bruce Wayne",
+            "type" : "Visa",
+            "number" : "**** **** **** **99",
+            "date" : "09.18",
+            "edit" : "Edit",
+            "delete" : "delete"
+        },
+        "additionalPaymentMethodTwo" : {
+            "title" : "Credit Card",
+            "name" : "Bruce Wayne",
+            "type" : "Visa",
+            "number" : "**** **** **** **99",
+            "date" : "09.18",
+            "edit" : "Edit",
+            "delete" : "delete"
+        }
+	},
+    "meta" : { "$ref" : "common/meta.json" }
+}

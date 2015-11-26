@@ -35,6 +35,11 @@ a:hover {
 	color: inherit;
 }
 
+// Labels
+label {
+	font-weight: 400;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -103,26 +108,23 @@ button {
 	border-radius: 0;
 }
 
-// Color and size select buttons
+// Transition color effect
+.tr-efx {
+	-webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
 
-.styled-select {
-   -webkit-appearance: none;
-   -moz-appearance:    none;
-   appearance:         none;
-   width: 100%;
-   cursor: pointer;
-   overflow: hidden;
-   display: inline;
-   position: relative;
-   border-radius: 0;
-   border: none;
+.alert {
+  margin: 10px 15px 20px;
+  padding: 10px 15px;
+  border-radius: 2px;
+  background: $white;
+  text-transform: none;
+}
 
-   &.icon-drop-down::before {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    color: $dark-grey;
-		transform: scale(0.7);
-		pointer-events: none;
-   }
+.alert-danger {
+  border: 1px solid $red;
 }

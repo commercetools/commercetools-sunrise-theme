@@ -1,0 +1,19 @@
+{
+	"list" : [
+		{
+			"label" : "12",
+			"value" : "12",
+			"selected" : false
+		},
+		{
+			"label" : "24",
+			"value" : "24",
+			"selected" : true
+		},
+		{
+			"label" : "48",
+			"value" : "48",
+			"selected" : false
+		}
+	]
+}

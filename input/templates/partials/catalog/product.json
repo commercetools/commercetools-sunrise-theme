@@ -1,0 +1,17 @@
+{
+  "rating3" : true,
+  "variant" : { "$ref" : "product-variant.json" },
+  "details" : { "$ref" : "product-details.json" },
+  "gallery" : { "$ref" : "product-gallery.json" },
+  "variant" : { "$ref" : "../common/product-variant-1.json" },
+  "variants": {
+    "red-S": "variant1",
+    "red-M": "variant2",
+    "red-L": "variant3",
+    "blue-S": "variant4",
+    "blue-L": "variant5",
+    "green-S": "variant6",
+    "green-M": "variant7"
+  },
+  "variantIdentifiers": ["color", "size"]
+}

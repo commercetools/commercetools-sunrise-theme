@@ -1,35 +1,7 @@
 {
-	"header" : {
-		"title" : "Sunrise - Checkout Sign In Page",
-		"customerService" : "Need help? Customer Service",
-		"customerServiceNumber" : "+12 345 6000"
-	},
-	"footer" : {
-		"legalInfo" : {
-			"text" : "© 2015 Sunrise",
-			"list" : [
-				{
-					"text" : "Imprint",
-					"url" : "",
-					"id" : "signin-subfooter-imprint-link"
-				},
-				{
-					"text" : "Privacy policy",
-					"url" : "",
-					"id" : "signin-subfooter-privacypolicy-link"
-				},
-				{
-					"text" : "Terms of use",
-					"url" : "",
-					"id" : "signin-subfooter-termsofuse-link"
-				}
-			]
-		}
-	},
+	"header" : { "$ref" : "common/checkout-header.json" },
+	"footer" : { "$ref" : "common/checkout-footer.json" },
   "content" : {
-    "secureCheckoutTitle" : "Secure Checkout - Sign In",
-    "returningCustomerTitle" : "Returning Customer",
-    "required" : "Required",
     "ifYouHaveAccountTitle" : "If you have an account, please sign in for faster checkout.",
     "emailTitle" : "Email Address",
     "passwordTitle" : "Password",
@@ -41,7 +13,5 @@
     "guestCheckoutParagraph2" : "To make future purchases even faster, you will have the option of creating an acocount during checkout.",
     "continueGuestBtn" : "Continue As Guest"
   },
-  "meta" : {
-    "assetsPath": "assets/"
-  }
+  "meta" : { "$ref" : "common/meta.json" }
 }

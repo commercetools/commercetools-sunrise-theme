@@ -1,0 +1,78 @@
+{
+	"header" : { "$ref" : "common/header.json" },
+	"footer" : { "$ref" : "common/footer.json" },
+	"content" : {
+		"pageTitle" : "My Account",
+		"sidebarItemOne" : {
+			"text" : "Personal Details",
+			"url" : ""
+		},
+		"sidebarItemTwo" : {
+			"text" : "Address Book",
+			"url" : ""
+		},
+		"sidebarItemThree" : {
+			"text" : "Payment Details",
+			"url" : ""
+		},
+		"sidebarItemFour" : {
+			"text" : "My Orders",
+			"url" : ""
+		},
+		"sidebarItemFive" : {
+			"text" : "Returns / Exchange",
+			"url" : ""
+		},
+		"sidebarItemSix" : {
+			"text" : "Wishlist",
+			"url" : "",
+			"wishlistItems" : "12"
+		},
+		"sidebarItemSeven" : {
+			"text" : "Sign Out",
+			"url" : ""
+		},
+        "contentTitle" : "Returns / Exchange",
+		"orderNumberTitle" : "Order Number",
+		"receivedTitle" : "Received On",
+		"refundTotalTitle" : "Refund Total",
+		"order" : [
+			{
+				"orderNumber" : "1234567889952",
+				"receivedOn" : "08.05.15",
+				"total" : "100.00 €",
+				"refundTotal" : "50,00 €",
+				"view" : "View"
+			},
+            {
+				"orderNumber" : "1234567889952",
+				"receivedOn" : "08.05.15",
+				"total" : "100.00 €",
+				"refundTotal" : "50,00 €",
+				"view" : "View"
+			},
+            {
+				"orderNumber" : "1234567889952",
+				"receivedOn" : "08.05.15",
+				"total" : "100.00 €",
+				"refundTotal" : "50,00 €",
+				"view" : "View"
+			},
+            {
+				"orderNumber" : "1234567889952",
+				"receivedOn" : "08.05.15",
+				"total" : "100.00 €",
+				"refundTotal" : "50,00 €",
+				"view" : "View"
+			},
+            {
+				"orderNumber" : "1234567889952",
+				"receivedOn" : "08.05.15",
+				"total" : "100.00 €",
+				"refundTotal" : "50,00 €",
+				"view" : "View"
+			}
+		]
+	},
+    "meta" : { "$ref" : "common/meta.json" }
+}

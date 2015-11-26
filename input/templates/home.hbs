@@ -1,140 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {{> common/htmlhead}}
-  </head>
+<head>
+  {{> common/htmlhead}}
+</head>
 
-  <body>
+<body>
   <div class="darkbg hidden"></div>
   {{> common/header}}
 
   <div class="home-page">
-    {{!-- <div class="slick-homepage">
-      {{#each content.carouselItems.list}}
-        <div class="home-carousel-item">
-          <img src="{{image}}" alt="Carousel banner image" />
-          <div class="home-carousel-caption">
-            <h4 class="home-carousel-title">{{title}}</h4>
-            <hr class="home-carousel-hr">
-            <p>{{description}}</p>
-            <a href="{{url}}" class="btn home-carousel-btn">{{buttonText}}</a>
-          </div>
-        </div>
-      {{/each}}
-    </div> --}}
 
-    <div class="home-banner-option-one">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 nopadding banner-left">
-            <img class="img-responsive" src="{{meta.assetsPath}}img/leather-691609.jpg" alt="Banner image" />
-            <div class="banner-text">
-              <h4 class="banner-title">{{content.bannerOption1.bannerLeft.text}}</h4>
-              <p class="banner-paragraph">{{content.bannerOption1.bannerLeft.description}}</p>
-              <a href="{{content.bannerOption1.bannerLeft.url}}" class="btn banner-btn">{{content.bannerOption1.bannerLeft.bannerBtn}}</a>
-            </div>
-          </div>
-          <div class="col-sm-6 nopadding banner-right">
-            <img class="img-responsive" src="{{meta.assetsPath}}img/woman-692767_1920.jpg" alt="Banner image" />
-            <div class="banner-text">
-              <h4 class="banner-title">{{content.bannerOption1.bannerRight.text}}</h4>
-              <p class="banner-paragraph">{{content.bannerOption1.bannerRight.description}}</p>
-              <a href="{{content.bannerOption1.bannerRight.url}}" class="btn banner-btn">{{content.bannerOption1.bannerRight.bannerBtn}}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="home-banner-option-two">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 nopadding">
-            <img class="img-responsive" src="{{meta.assetsPath}}img/home_tile_3.jpg" alt="Banner image" />
-            <div class="banner-text">
-              <img  class="hidden-xs" src="{{meta.assetsPath}}img/sun-logo.png" alt="Sunrise logo" />
-              <h4 class="banner-title">{{content.bannerOption2.text}}</h4>
-              <p class="banner-subtitle">{{content.bannerOption2.subText}}</p>
-              <p class="hidden-xs hidden-sm">{{content.bannerOption2.descriptionOne}}</p>
-              <p class="hidden-xs hidden-sm">{{content.bannerOption2.descriptionTwo}}</p>
-              <a class="btn banner-btn" href="{{content.bannerOption2.url}}">{{content.bannerOption2.bannerBtn}}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="home-banner-option-three">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 nopadding banner-left">
-            <img class="img-responsive" src="{{meta.assetsPath}}img/shoes-690608_1280.jpg" alt="Banner image" />
-            <div class="banner-text">
-              <h4 class="banner-title">{{content.bannerOption3.bannerLeft.text}}</h4>
-              <p class="banner-paragraph">{{content.bannerOption3.bannerLeft.description}}</p>
-              <a href="{{content.bannerOption3.bannerLeft.url}}" class="btn banner-btn">{{content.bannerOption3.bannerLeft.bannerBtn}}</a>
-            </div>
-          </div>
-          <div class="col-sm-6 noppading banner-right">
-            <div class="row">
-              <div class="col-sm-6 nopadding">
-                <div class="banner-xs-one">
-                  <img class="img-responsive" src="{{meta.assetsPath}}img/blue-box.png" alt="Banner image" />
-                  <div class="banner-text">
-                    <img src="{{meta.assetsPath}}img/sun-logo.png" alt="Sunrise logo" />
-                    <h4 class="banner-title">{{content.bannerOption3.bannerRightOne.text}}</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 nopadding">
-                <div class="banner-xs-two">
-                  <img class="img-responsive" src="{{meta.assetsPath}}img/home_tile_6.jpg" alt="Banner image" />
-                  <div class="banner-text">
-                    <h4 class="banner-title">{{content.bannerOption3.bannerRightTwo.text}}</h4>
-                    <p class="banner-paragraph">{{content.bannerOption3.bannerRightTwo.description}}</p>
-                    <a href="{{content.bannerOption3.bannerRightTwo.url}}" class="btn banner-btn">{{content.bannerOption3.bannerRightTwo.bannerBtn}}</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 nopadding">
-                <div class="banner-sm">
-                  <img class="img-responsive" src="{{meta.assetsPath}}img/woman-422706_1280.jpg" alt="Banner image" />
-                  <div class="banner-text">
-                    <h4 class="banner-title">{{content.bannerOption3.bannerRightThree.text}}</h4>
-                    <p class="banner-paragraph">{{content.bannerOption3.bannerRightThree.description}}</p>
-                    <a href="{{content.bannerOption3.bannerRightThree.url}}" class="btn banner-btn">{{content.bannerOption3.bannerRightThree.bannerBtn}}</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    {{> catalog/home-banners}}
 
     <div class="container">
-      <h4 class="home-suggestions-title">{{text}}</h4>
-      <hr class="home-suggestions-hr">
-      <p class="home-suggestions-description">{{description}}</p>
+      <h4 class="home-suggestions-title">{{i18n "home:suggestions.title"}}</h4>
+      <hr class="home-suggestions-hr"/>
+      <p class="home-suggestions-description">{{i18n "home:suggestions.subtitle"}}</p>
       <div class="row">
-        {{#each content.suggestions.list}}
-          <div class="col-xs-12 col-sm-6 col-md-3 ">
-            {{> catalog/product-thumbnail context=..}}
-          </div>
-        {{/each}}
+        {{> catalog/suggestions}}
       </div>
-
       <div class="home-viewall">
-        <a href="" class="home-viewall-btn">View All New Products</a>
+        <a href="{{meta._links.newProducts.href}}" class="home-viewall-btn">{{i18n "home:viewAllNewProductsBtn"}}</a>
         <hr class="home-viewall-hr">
       </div>
     </div>
   </div>
+  {{> catalog/wishlist wishlist=content.wishlist}}
 
-  {{> catalog/wishlist}}
   {{> common/footer}}
   {{> common/htmlscripts}}
-  </body>
+</body>
 </html>

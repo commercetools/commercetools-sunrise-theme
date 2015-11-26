@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> common/htmlhead}}
+</head>
+
+<body>
+  <div class="darkbg hidden"></div>
+  {{> common/header}}
+  <div class="container">
+
+    <div class="my-account-login-page-title">
+      <span class="icon-user">{{i18n "my-account-login:pageTitle"}}</span>
+    </div>
+
+    <div class="login-signup-box-wrapper">
+      <div class="row">
+        <div class="col-sm-6">
+          {{> catalog/login-box}}
+        </div>
+        <div class="col-sm-6">
+          <div class="signup-box-mobile">
+            {{> catalog/signup-box}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  {{> common/footer}}
+  {{> common/htmlscripts}}
+</body>
+</html>

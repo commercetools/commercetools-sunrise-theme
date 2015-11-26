@@ -1,91 +1,93 @@
 window.sunrise = window.sunrise || {
-    helper: {
-      /**
-       * @param DOMList list
-       * @param string data
-       * @param string key
-       * @return DOMNode
-       */
-      findElementByDataAttribute: function(list, data, key) {
-        var found = null, item;
-        list.each(function() {
-          item = $(this);
-          if (item.data(key) === data) {
-            found = item;
-          }
-        });
-        return found;
-      },
-      findColorByCode: function(code) {
-        var found = null, colors = sunrise.options.color;
-        colors.forEach(function(v) {
-          if (v.code === code) {
-            found = v;
-          }
-        });
-        return found;
-      },
-      findColorByName: function(name) {
-        var found = null, colors = sunrise.options.color;
-        colors.forEach(function(v) {
-          if (v.name === name) {
-            found = v;
-          }
-        });
-        return found;
-      },
-      findSizeByName: function(name) {
-        var found = null, sizes = sunrise.options.size;
-        sizes.forEach(function(v) {
-          if (v.name === name) {
-            found = v;
-          }
-        });
-        return found;
-      },
-      findSizeBycode: function(code) {
-        var found = null, sizes = sunrise.options.size;
-        sizes.forEach(function(v) {
-          if (v.code === code) {
-            found = v;
-          }
-        });
-        return found;
-      }
+  helper: {
+    /**
+     * @param DOMList list
+     * @param string data
+     * @param string key
+     * @return DOMNode
+     */
+    findElementByDataAttribute: function(list, data, key) {
+      var found = null,
+        item;
+      list.each(function() {
+        item = $(this);
+        if (item.data(key) === data) {
+          found = item;
+        }
+      });
+      return found;
     },
-    // General application-wide options
-    options: {
-      color: [{
-        code: 'navy_blue',
-        name: 'Navy Blue'
-      }, {
-        code: 'beige',
-        name: 'Beige'
-      }],
-      size: [{
-        code: 'xs',
-        name: 'XS'
-      },
-        {
-          code: 's',
-          name: 'S'
-        },
-        {
-          code: 'm',
-          name: 'M'
-        },
-        {
-          code: 'l',
-          name: 'L'
-        }, {
-          code: 'xl',
-          name: 'XL'
-        }]
+    findColorByCode: function(code) {
+      var found = null,
+        colors = sunrise.options.color;
+      colors.forEach(function(v) {
+        if (v.code === code) {
+          found = v;
+        }
+      });
+      return found;
     },
-    class: {
-      sizeGuideTable: sizeGuideTable
+    findColorByName: function(name) {
+      var found = null,
+        colors = sunrise.options.color;
+      colors.forEach(function(v) {
+        if (v.name === name) {
+          found = v;
+        }
+      });
+      return found;
+    },
+    findSizeByName: function(name) {
+      var found = null,
+        sizes = sunrise.options.size;
+      sizes.forEach(function(v) {
+        if (v.name === name) {
+          found = v;
+        }
+      });
+      return found;
+    },
+    findSizeBycode: function(code) {
+      var found = null,
+        sizes = sunrise.options.size;
+      sizes.forEach(function(v) {
+        if (v.code === code) {
+          found = v;
+        }
+      });
+      return found;
     }
-  };
+  },
+  // General application-wide options
+  options: {
+    color: [{
+      code: 'navy_blue',
+      name: 'Navy Blue'
+    }, {
+      code: 'beige',
+      name: 'Beige'
+    }],
+    size: [{
+      code: 'xs',
+      name: 'XS'
+    }, {
+      code: 's',
+      name: 'S'
+    }, {
+      code: 'm',
+      name: 'M'
+    }, {
+      code: 'l',
+      name: 'L'
+    }, {
+      code: 'xl',
+      name: 'XL'
+    }]
+  },
+  class: {
+    sizeGuideTable: sizeGuideTable
+  }
+};
 
 function sizeGuideTable(item, root) {
   this.item = item;
@@ -142,22 +144,40 @@ sizeGuideTable.prototype = {
  /*
  /*****************************************************************************/
 
-$(document).ready(function(){
+$(document).ready(function() {
+
+  $(window).load(function(){
+    // makes the scrollbar's design the same in all browsers
+    $(".nav-minicart ul, .order-summary-items").mCustomScrollbar({
+      theme:"dark",
+      scrollInertia:50
+    });
+  });
+
+  // "Select" elements becomes customized
+   $("select").selectBoxIt();
+
   // Toggle search bar on mobile
-  $('.search-toggle').click(function(){
+  $('.search-toggle').click(function() {
     $('.search-box').slideToggle();
   });
 
+  // Your bag dropdown
+  $(".link-your-bag").click(function() {
+    $(".nav-minicart").slideToggle();
+  });
+
   // Location dropdown
-  $(".location-dropdown-toggle").click(function () {
+  $(".location-dropdown-toggle").click(function() {
     $(".location-dropdown").slideToggle();
   });
 
   // Closing dropdown on click outside of it
   $('html').click(function() {
     $('.location-dropdown').hide();
+    $('.nav-minicart').hide();
   });
-  $('.list-item-location').click(function(event) {
+  $('.list-item-location, .list-item-bag, .nav-minicart').click(function(event) {
     event.stopPropagation();
   });
 });
@@ -172,32 +192,10 @@ $('.breadcrumb li').last().addClass('active');
 
 // Stop propagation and enable direct linking of categories
 $('.dropdown-toggle').click(function(event) {
-  if($(window).width() > 768) {
+  if ($(window).width() > 768) {
     event.stopPropagation();
   }
 });
-
-// Close dropdown when clicking outside of it
-// $(document).mouseup(function (e) {
-//   var container = $(".location-dropdown");
-//   if (!container.is(e.target) // if the target of the click isn't the container
-//     && container.has(e.target).length === 0) // nor a descendant of the container
-//   {
-//     container.hide();
-//   }
-// });
-
-/*****************************************************************************/
-/*
- /* HOME PAGE
- /*
- /*****************************************************************************/
-
-// $(document).ready(function() {
-//   $(".slick-homepage").slick({
-//     dots: true
-//   });
-// });
 
 /*****************************************************************************/
 /*
@@ -205,27 +203,37 @@ $('.dropdown-toggle').click(function(event) {
  /*
  /*****************************************************************************/
 
-// Activate megamenu accordion on smaller screens
+
 $(function() {
   if ($(window).width() < 768) {
+    // Activate megamenu accordion on smaller screens
     $(".nav-accordion").accordion({
       heightStyle: "content",
       active: false,
       collapsible: true
     });
   }
+  if ($(window).width() > 768) {
+    // Checks if there's a second row in the main menu, and if yes, it shows the group button
+    var element = $(".dropdown-megamenu");
+    var elementHeight = element.height();
+
+    if (elementHeight > 42) {
+      element.addClass('categories-brakes');
+    }
+  }
 });
 
 // Disabling bootstrap menu close on 2nd+ level items
-$( ".dropdown-submenu" ).click(function(event) {
+$(".dropdown-submenu").click(function(event) {
   // stop bootstrap.js to hide the parents
   event.stopPropagation();
   // hide the open children
-  $( this ).find(".dropdown-submenu").removeClass('open');
+  $(this).find(".dropdown-submenu").removeClass('open');
   // add 'open' class to all parents with class 'dropdown-submenu'
-  $( this ).parents(".dropdown-submenu").addClass('open');
+  $(this).parents(".dropdown-submenu").addClass('open');
   // this is also open (or was)
-  $( this ).toggleClass('open');
+  $(this).toggleClass('open');
 });
 
 // Off-canvas menu
@@ -251,15 +259,15 @@ $(function() {
 });
 
 // Adding dynamic ID to quickview modals
-$( ".quickview" ).click(function( event ) {
+$(".quickview").click(function(event) {
   event.preventDefault();
   var modalId = event.target.getAttribute('data-modal')
   $("#" + modalId).modal('show');
 });
 
 // Wishlist section
-$( ".wishlist-btn" ).click(function() {
-  $( ".wishlist-items" ).toggleClass("hidden");
+$(".wishlist-btn").click(function() {
+  $(".wishlist-items").toggleClass("hidden");
 });
 
 // Dark background on opened menu (mobile)
@@ -274,9 +282,9 @@ $(".navbar-toggle").click(function() {
  /*****************************************************************************/
 
 // Product gallery - BZoom
-$("ul#bzoom").each( function(index, ul) {
-  var imgCount = $('#bzoom').data('count');
+$("ul#bzoom").each(function(index, ul) {
   $ul = $(ul);
+  var imgCount = $ul.data('count');
   $ul.zoom({
     zoom_area_width: 300,
     // MORE OPTIONS HERE
@@ -298,8 +306,8 @@ $(function() {
 
     if (hiddenDescriptionText.length < 100) return;
     hiddenDescription.html(
-      hiddenDescriptionText.slice(0,100)+'<span>... </span>'+
-      '<span class="hidden">'+ hiddenDescriptionText.slice(100, hiddenDescriptionText.length)+'</span>'
+      hiddenDescriptionText.slice(0, 100) + '<span>... </span>' +
+      '<span class="hidden">' + hiddenDescriptionText.slice(100, hiddenDescriptionText.length) + '</span>'
     );
     generatedHidden = $('.hidden', hiddenDescription);
   }
@@ -316,7 +324,7 @@ $(function() {
 // Full zoom gallery modal
 $(function() {
   var caller = $(".animated-modal-action"),
-    modal  = $('#animatedModal'),
+    modal = $('#animatedModal'),
     modalContent = $('.modal-content', modal),
     bZoomContainer = $('#bzoom'),
     activeBZoomImg;
@@ -380,6 +388,45 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $("select.select-product-detail").change(function () {
+    var $this = $(this),
+        // find the form for the select element
+        form = $this.parents('form').first(),
+        selected = $this.find("option:selected").val(),
+        selectData = $this.data('cross-select'),
+        identifiers = $this.data('identifiers'),
+        variantMap = $this.data('variants'),
+        variantKey, variantId;
+
+    if (selectData && selectData[selected]) {
+      $.each(selectData[selected], function (key) {
+        var attribute = form.find("select[name='attribute-"+key+"']"),
+            activeSelections = this,
+            selectBox = attribute.data("selectBox-selectBoxIt");
+
+        // disable all options which are not available for selected value
+        attribute.find('option').each(function(key) {
+          var $this = $(this);
+          if (activeSelections.indexOf($this.val()) >= 0) {
+            selectBox.enableOption(key);
+          } else {
+            selectBox.disableOption(key);
+          }
+        });
+      });
+    }
+    if (identifiers) {
+      // build a variant key from variant identifiers to get the variantId
+      variantKey = identifiers.map(function(identifier) {
+        return form.find("select[name='attribute-"+identifier+"']").val();
+      }).join('-');
+      variantId = variantMap[variantKey];
+      form.find("input[name='variantId']").val(variantId);
+    }
+  });
+});
+
 /*****************************************************************************/
 /*
  /* CART PAGE
@@ -394,20 +441,23 @@ $(document).ready(function() {
     el.each(function() {
       init($(this));
     });
+
     function init(el) {
       el.prev().on('click', decrement);
       el.next().on('click', increment);
+
       function decrement() {
         var value = el[0].value;
         value--;
-        if(!min || value >= min) {
+        if (!min || value >= min) {
           el[0].value = value;
         }
       }
+
       function increment() {
         var value = el[0].value;
         value++;
-        if(!max || value <= max) {
+        if (!max || value <= max) {
           el[0].value = value++;
         }
       }
@@ -417,69 +467,10 @@ $(document).ready(function() {
 
 $(function() {
   inputNumber($('.input-number'));
-  var cartContentWrapper = $('.cart-content'),
-    cartItems = $('.single-cart-item', cartContentWrapper);
-
-  /**
-   * Manage an instance of DOM representation of a cart-item
-   */
-  function cartItemManager() {
-    var item = $(this),
-      editSectionForm = $('.edit-section-form', item),
-      editSectionActions = $('.edit-section-options', item),
-      editAction = $('.edit-action', editSectionActions),
-      selectors = $('.selector', editSectionForm),
-      targets = $('.cart-color-size > span', item);
-
-    function closeForm() {
-      editSectionForm.hide(0, function() {
-        editSectionActions.show();
-      });
-    }
-
-    function updateForm() {
-      var matchingTarget;
-      selectors.each(function() {
-        matchingTarget = sunrise.helper.findElementByDataAttribute(targets, $(this).data('model'), 'model');
-        if (matchingTarget) {
-          matchingTarget.text($(this).find('option:selected').text());
-        }
-      });
-      closeForm();
-    }
-
-    function openForm() {
-      var updateAction = $('.update-action', editSectionForm),
-        cancelAction = $('.cancel-action', editSectionForm);
-      editSectionActions.hide(0, function() {
-        editSectionForm.show();
-        cancelAction.click(closeForm);
-        updateAction.click(updateForm);
-      });
-    }
-
-    var target, modelKey, matchingSelector, color, size;
-    targets.each(function(index) {
-      target = $(this);
-      modelKey = target.data('model');
-      matchingSelector = sunrise.helper.findElementByDataAttribute(selectors, modelKey, 'model');
-      if (modelKey === 'cartItem.size') {
-        size = sunrise.helper.findSizeByName(target.text().trim());
-        matchingSelector.val(size.code);
-      } else if (modelKey === 'cartItem.color') {
-        color = sunrise.helper.findColorByName(target.text().trim());
-        matchingSelector.val(color.code);
-      }
-    });
-
-    // setting up the listener.
-    editAction.click(openForm);
-  }
-  // cartItems.each(cartItemManager);
 });
 
 // jQuery UI - Tooltip on hover
-$( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
+$(".promo-info-text, .delivery-est, .security-code-info").tooltip();
 
 /*****************************************************************************/
 /*
@@ -489,11 +480,11 @@ $( ".promo-info-text, .delivery-est, .security-code-info" ).tooltip();
 
 // Slide toggle different shipping address on click
 $(function() {
-  var cacheInput    = $("#different-billing-checkbox"),
-    cacheAddress  = $("#different-billing-address"),
+  var cacheInput = $("#different-billing-checkbox"),
+    cacheAddress = $("#different-billing-address"),
     setupListener = function() {
       cacheInput.click(function() {
-        cacheAddress.slideToggle( "slow" );
+        cacheAddress.slideToggle("slow");
       });
     };
 
@@ -515,9 +506,20 @@ $(function() {
 $('#credit-card-input-field').hide();
 
 $('.payment-text').change(function() {
-  if($('#payment-type-credit-card').is(':checked')) {
+  if ($('#payment-type-credit-card').is(':checked')) {
     $('#credit-card-input-field').show();
   } else {
     $('#credit-card-input-field').hide();
   }
 });
+
+/*
+My Account: Personal Details page
+*/
+
+// Hide/show personal details and edit section
+$('.personal-details-edit-wrapper').hide();
+$('.personal-details-edit-toggle').click(function() {
+  $('.personal-details-landing-wrapper').hide();
+  $('.personal-details-edit-wrapper').show();
+})

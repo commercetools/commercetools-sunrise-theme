@@ -194,11 +194,6 @@
     }
   }
 
-  // Location select (language, country/currenct)
-  /*.location-dropdown-toggle:hover {
-    transform: scale(1.1);
-  }*/
-
   .location-dropdown-label {
     font-size: 0.8em;
     padding-left: 1.1em;
@@ -215,18 +210,34 @@
       display: none;
       position: relative;
       background: $dark-blue;
-      height: 160px;
+      height: 170px;
       width: 140px;
       top: -2px;
       .location-select {
         width: 120px;
         color: $white;
         border: 1px solid $white;
-        background: transparent url("../../assets/img/arrow-67-white.png") no-repeat 90% 50%;
+        background: transparent url("../img/arrow-67-white.png") no-repeat 90% 50%;
         background-size: 10px;
         margin: 10px;
         text-transform: capitalize;
       }
+    }
+    li {
+      display: block;
+      border: none;
+    }
+    // Overwrite SelectBoxIt library css
+    .selectboxit-btn {
+      width: 120px!important;
+    }
+    .selectboxit-list {
+      width: 120px!important;
+      margin: -10px 0 0 10px!important;
+    }
+    .selectboxit-text {
+      max-width: none!important;
+      width: 100px!important;
     }
 
     @media screen and (min-width: 768px) {
@@ -275,6 +286,7 @@
   .list-item-bag {
     float: right;
     border: none;
+    position: relative;
 
     @media screen and (min-width: 768px) {
       border-right: solid 1px #404953;
@@ -284,6 +296,7 @@
       color: $white;
       padding: 10px 20px;
       position: relative;
+      text-transform: uppercase;
 
       @media screen and (min-width: 768px) {
         padding: 15px 20px;
@@ -423,4 +436,190 @@
   width: 300px;
   margin: 6px 0;
   height: 30px;
+}
+
+
+.nav-minicart {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: $white;
+  border: 1px $light-grey solid;
+  border-top: 0;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  color: $black;
+
+  ul {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+    max-height: 13em;
+    border-bottom: 1px $light-grey solid;
+
+    li {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: auto;
+      border-bottom: 1px $light-grey solid;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      color: $black;
+      border-right: 0;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      a.img {
+        width: 70px;
+        border: 1px $light-grey solid;
+        float: left;
+        margin-right: 15px;
+
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        float: left;
+        text-transform: none;
+        letter-spacing: normal;
+
+        &.product-title {
+          margin: 0;
+          font-size: 1.1em;
+          line-height: 1.2em;
+          width: 70%;
+        }
+      }
+
+      .details {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+
+        p {
+          margin: 0;
+          font-size: 1.2em;
+          text-align: right;
+          padding-right: 15px;
+          margin-right: 15px;
+          border-right: 1px $light-grey solid;
+          color: $dark-grey;
+          font-size: 1em;
+          text-transform: uppercase;
+
+          span {
+            display: block;
+            color: $black;
+          }
+        }
+
+        .delete {
+          display: block;
+          margin-top: 8px;
+          float: left;
+
+          img {
+            margin: 0;
+          }
+        }
+      }
+
+    }
+  }
+
+
+  @mixin gradient-white() {
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMDEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.01) 1%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(255,255,255,0.01)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.01) 1%,rgba(255,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+  }
+
+  .gradient {
+    width: 100%;
+    height: 30px;
+    float: left;
+    position: relative;
+    left: 0px;
+    margin-top: -41px;
+    @include gradient-white;
+  }
+
+  .total-price {
+    text-align: right;
+    color: $black;
+    margin: 20px 0px;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .btn-grey {
+    left: 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .btn-yellow {
+    position: absolute;
+    right: 15px; //padding from parent box
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .btn-grey,
+  .btn-yellow {
+    width: 46%;
+    display: inline-block;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 370px;
+    right: 15px;
+
+    ul {
+      max-height: 22em;
+
+      li {
+        a.img {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+// BUTTON GREY DEFAULT STYLE
+
+.btn-grey {
+  background: none;
+  border: 2px solid $light-grey;
+  color: $grey;
+  margin-right: 0.5em;
+  padding: 0.4em 1em;
+  font-size: 1.2em;
+  &:hover {
+    color: $dark-grey;
+    border: 2px solid $dark-grey;
+  }
+}
+
+.btn-yellow {
+  border: none;
+  color: $black;
+  background: $yellow;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  &:hover {
+    background: lighten($yellow, 5%);
+  }
 }

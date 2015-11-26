@@ -1,12 +1,5 @@
-<div class="row">
-  <div class="col-sm-12">
-    <p class="text-center text-uppercase may-like">{{content.static.youMayLikeText}}</p>
-  </div>
+{{#each content.suggestions.list}}
+<div class="col-xs-12 col-sm-6 col-md-3">
+  {{> catalog/product-thumbnail thumbnail=this index=@index}}
 </div>
-<div class="row">
-  {{#each content.suggestions}}
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      {{> catalog/product-thumbnail context=..}}
-    </div>
-  {{/each}}
-</div>
+{{/each}}

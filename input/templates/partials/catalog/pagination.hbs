@@ -1,15 +1,26 @@
-{{#with content.pagination}}
 <li>
-  <a href="{{urlPrev}}" class="icon-prev">
-    <span class="sr-only">{{prev}}</span>
+  <a href="{{pagination.previousUrl}}" class="icon-prev">
+    <span class="sr-only">{{i18n "catalog:pagination.previous"}}</span>
   </a>
 </li>
-{{#each pages}}
-  <li><a href="{{url}}" {{#if selected}} class="active" {{/if}}>{{name}}</a></li>
+
+{{#if pagination.firstPage}}
+  <li><a href="{{pagination.firstPage.url}}">{{pagination.firstPage.text}}</a></li>
+  <li>...</li>
+{{/if}}
+
+
+{{#each pagination.pages}}
+  <li><a href="{{url}}" {{#if selected}}class="active"{{/if}}>{{text}}</a></li>
 {{/each}}
+
+{{#if pagination.lastPage}}
+  <li>...</li>
+  <li><a href="{{pagination.lastPage.url}}">{{pagination.lastPage.text}}</a></li>
+{{/if}}
+
 <li>
-  <a href="{{urlNext}}" class="icon-next">
-    <span class="sr-only">{{next}}</span>
+  <a href="{{pagination.nextUrl}}" class="icon-next">
+    <span class="sr-only">{{i18n "catalog:pagination.next"}}</span>
   </a>
 </li>
-{{/with}}

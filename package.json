@@ -1,6 +1,6 @@
 {
   "name": "sphere-sunrise-design",
-  "version": "0.15.0-SNAPSHOT",
+  "version": "0.36.0-SNAPSHOT",
   "description": "Compiles Handlebars templates with JSON data, outputting static HTML files.",
   "private": true,
   "repository": {
@@ -30,6 +30,10 @@
     "grunt-gh-pages": "^0.10.0",
     "grunt-maven-tasks": "^1.3.2",
     "grunt-postcss": "^0.5.0",
+    "handlebars": ">= 1",
+    "i18next": ">= 1",
+    "i18next.yaml": "^1.6.0",
+    "json-refs": "^1.1.2",
     "node-sass": "^3.1.2"
   }
 }

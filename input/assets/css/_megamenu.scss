@@ -37,6 +37,61 @@
   .dropdown.menu-large.open .megamenu {
     padding: 20px;
   }
+
+  .dropdown-megamenu {
+
+    .nav-accordion {
+      a {
+        &:hover {
+          color: $dark-grey;
+        }
+      }
+    }
+
+    &.categories-brakes {
+
+      .navbar-nav {
+        width: 80%;
+        height: 42px;
+        overflow: hidden;
+
+      &.categories-group-button {
+            display: block;
+            width: 17% !important;
+            float: right;
+            background: rgba(52, 65, 78, 0.8);
+            text-align: center;
+            margin: 0px 16px 0px 0px !important;
+
+            .menu-large {
+              width: 100%;
+
+              .dropdown-toggle {
+                font-size: 18px;
+                color: #fff;
+
+                &:hover {
+                  color: #fff;
+                }
+
+                &:after {
+                  border-color: #fff !important;
+                }
+              }
+
+              .megamenu {
+                background: rgba(52, 65, 78, 0.8);
+
+                h3 a {
+                  color: #fff !important;
+                }
+              }
+            }
+        }
+      }
+    }
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -190,7 +245,7 @@
     height: 15px;
     opacity: .5;
     float: right;
-    content: url(../../assets/img/minus-1.png);
+    content: url(../img/minus-1.png);
   }
 
   .nav-accordion {
@@ -199,6 +254,10 @@
 
   .dropdown-toggle:hover {
     border-bottom: none;
+  }
+
+  .categories-group-button {
+    display: none;
   }
 }
 
@@ -246,6 +305,10 @@
   .megamenu-img {
     margin-top: 20px;
   }
+
+  .categories-group-button {
+    display: none;
+  }
 }
 
 .ui-accordion .ui-accordion-header {
@@ -255,7 +318,7 @@
 // Location options on mobile
 .location-xs {
   .location-dropdown-xs {
-    padding: 10px 15px;
+    padding: 10px 15px 100px;
     ul {
       text-align: left;
       padding: 0;
@@ -267,12 +330,25 @@
         }
         .location-select {
           color: $white;
-          background: $dark-blue url("../../assets/img/arrow-67-white.png") no-repeat 90% 50%;
+          background: $dark-blue url("../img/arrow-67-white.png") no-repeat 90% 50%;
           background-size: 10px;
           padding-right: 30px;
           text-transform: capitalize;
         }
       }
+    }
+    // Overwrite SelectBoxIt css
+    .selectboxit-list {
+      li {
+        display: block!important;
+        &:first-child {
+          padding: 0!important;
+        }
+      }
+    }
+    .selectboxit-text {
+      float: none!important;
+      text-overflow: inherit!important;
     }
   }
 }

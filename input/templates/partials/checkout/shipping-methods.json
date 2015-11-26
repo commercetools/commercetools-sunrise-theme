@@ -1,0 +1,19 @@
+{
+    "list" : [
+        { "$ref" : "shipping-method-1.json" },
+        {
+            "label" : "DHL Express",
+            "value" : "dhl-express",
+            "selected" : false,
+            "deliveryDays" : "Delivery: 3-5 Days",
+            "url" : ""
+        },
+        {
+            "label" : "DHL Overnight",
+            "value" : "dhl-overnight",
+            "selected" : false,
+            "deliveryDays" : "Delivery: 3-5 Days",
+            "url" : ""
+        }
+    ]
+}

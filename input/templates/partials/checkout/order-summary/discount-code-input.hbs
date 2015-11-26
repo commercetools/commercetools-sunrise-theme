@@ -1,0 +1,19 @@
+<!-- start checkout/order-summary/discount-code-input -->
+{{#if editable}}
+  {{#if meta.features.cartDiscounts.active}}
+      <div class="row">
+          <div class="col-sm-12">
+              <div class="text-right promotion-info">
+                    <span class="text-uppercase promo-info-text"
+                          title="{{i18n "checkout:discountTooltip"}}">{{i18n "checkout:discountPromoInfo"}}
+                        <img class="info-icon" src="{{@root.meta.assetsPath}}img/information.png" alt="information icon">
+                    </span>
+                  <input id="promo-code" type="text">
+                  <button id="cart-apply-promocode-btn"
+                          class="text-uppercase promo-apply-btn">{{i18n "checkout:discountApply"}}</button>
+              </div>
+          </div>
+      </div>
+  {{/if}}
+{{/if}}
+<!-- end checkout/order-summary/discount-code-input -->

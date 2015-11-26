@@ -1,7 +1,10 @@
 <ol class="breadcrumb">
-	{{#each content.breadcrumb}}
+	<li>
+		<a href="/" {{#unless breadcrumb.links}}class="active"{{/unless}}>{{i18n "home"}}</a>
+	</li>
+	{{#each breadcrumb.links}}
 		<li>
-			<a href="{{url}}">{{text}}</a>
+			<a href="{{url}}" {{#if @last}}class="active"{{/if}}>{{text}}</a>
 		</li>
 	{{/each}}
 </ol>
