@@ -442,7 +442,8 @@
 .nav-minicart {
   display: none;
   position: absolute;
-  width: 100%;
+  width: 500%; // TODO: temp fix
+  right: 0;
   background: $white;
   border: 1px $light-grey solid;
   border-top: 0;
@@ -564,7 +565,7 @@
   }
 
   .btn-grey {
-    left: 0;
+    float: left;
     text-transform: uppercase;
     text-align: center;
   }
