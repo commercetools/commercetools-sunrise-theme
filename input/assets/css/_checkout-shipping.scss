@@ -121,6 +121,8 @@
   font-size: 1.1em;
   letter-spacing: 0.1em;
   padding-bottom: 1em;
+  border-bottom: 1px solid $light-grey;
+  margin: 15px 0 20px;
 }
 .shipping-method-option {
   background: lighten($light-grey, 10%);
