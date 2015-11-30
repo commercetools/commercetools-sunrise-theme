@@ -37,26 +37,7 @@
 		"clearWishlistBtn" : "Clear Wishlist",
 		"removeBtn" : "Remove",
         "pagination" : { "$ref" : "catalog/pagination.json" },
-        "display" : {
-            "title" : "Items per page",
-            "list" : [
-                {
-                    "name" : "12",
-                    "value" : "12",
-                    "selected" : false
-                },
-                {
-                    "name" : "24",
-                    "value" : "24",
-                    "selected" : true
-                },
-                {
-                    "name" : "48",
-                    "value" : "48",
-                    "selected" : false
-                }
-            ]
-        },
+        "displaySelector" : { "$ref" : "catalog/display-selector.json" },
 		"products" : { "$ref" : "catalog/product-list3.json" }
 	},
     "meta" : { "$ref" : "common/meta.json" }
