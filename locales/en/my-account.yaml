@@ -1,0 +1,18 @@
+myAccount:
+  title: My Account
+myAccountSidebar:
+  personalDetails: Personal Details
+  addressBook: Address Book
+  paymentDetails: Payment Details
+  myOrders: My Orders
+  returnsExchange: Returns / Exchange
+  wishlist: Wishlist
+  signOut: Sign Out
+personalDetails:
+  shopAllBtn: Shop All
+  bannerOne:
+    title: Your Sunrise
+    subtitle: Make the great days happen
+  bannerTwo:
+    title: Your Sunrise
+    subtitle: Make the great days happen
