@@ -54,10 +54,14 @@
                     </div>
                     <div class="my-account-wishlist-items-wrapper">
                       <div class="row">
-                        {{> catalog/product-list products=content.products}}
-                        <div class="my-account-wishlist-remove-btn">
-                          <button>Remove Btn</button>
-                        </div>
+                        {{#each content.products.list}}
+                          <div class="col-xs-12">
+                            {{> catalog/product-thumbnail thumbnail=this index=@index}}
+                          </div>
+                          <div class="my-account-wishlist-remove-btn">
+                            <button>Remove Btn</button>
+                          </div>
+                        {{/each}}
                       </div>
                     </div>
                   </div>
@@ -81,12 +85,12 @@
                   <div class="my-account-wishlist-items-wrapper hidden-xs">
                     <div class="row">
                       {{#each content.products.list}}
-                      <div class="col-xs-12 col-sm-6 col-md-4">
-                      {{> catalog/product-thumbnail thumbnail=this index=@index}}
-                      </div>
-                      <div class="my-account-wishlist-remove-btn">
-                        <button>{{i18n "catalog:removeBtn.title"}}</button>
-                      </div>
+                        <div class="col-sm-6 col-md-4">
+                          {{> catalog/product-thumbnail thumbnail=this index=@index}}
+                          <div class="my-account-wishlist-remove-btn">
+                            <button>{{i18n "catalog:removeBtn.title"}}</button>
+                          </div>
+                        </div>
                       {{/each}}
                     </div>
                   </div>
