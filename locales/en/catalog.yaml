@@ -16,7 +16,7 @@ pagination:
   next: Next
   previous: Previous
 displaySelector:
-  title: items per page
+  title: Items per page
 sortSelector:
   title: Sort
 ratings:
@@ -63,3 +63,5 @@ searchResult:
   warning: There were no products that contained all of the words in your query. These results contain some of the words.
 viewMore:
   title: View More
+removeBtn:
+  title: Remove
