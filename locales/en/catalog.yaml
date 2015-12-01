@@ -16,7 +16,7 @@ pagination:
   next: Next
   previous: Previous
 displaySelector:
-  title: items per page
+  title: Items per page
 sortSelector:
   title: Sort
 ratings:

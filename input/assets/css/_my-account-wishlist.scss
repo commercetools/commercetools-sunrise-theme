@@ -19,6 +19,10 @@
 }
 .my-account-wishlist-per-page {
   text-align: right;
+  .wishlist-display-selector-title {
+    display: inline-block;
+    padding: 10px 10px 0;
+  }
   .selectboxit-btn {
     background: transparent url("../img/arrow-67-filled.png") no-repeat 95% 50%;
     background-size: 12px;
