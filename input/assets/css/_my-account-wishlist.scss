@@ -6,6 +6,11 @@
     margin-top: 10px;
   }
 }
+.my-account-wishlist-items-wrapper {
+  @media screen and (max-width: 767px) {
+    padding-top: 30px;
+  }
+}
 .my-account-wishlist-pagination {
   margin: 20px 0 50px 0;
 }
