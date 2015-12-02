@@ -1,0 +1,25 @@
+<div class="my-account-sidebar">
+  <div {{#if positionOne}}id="my-account-mobile-content"{{/if}} class="my-account-sidebar-items active">
+    <a href="{{content.sidebarItemOne.url}}">{{i18n "my-account:myAccountSidebar.personalDetails"}}</a>
+  </div>
+  <div {{#if positionTwo}}id="mobile-content"{{/if}}class="my-account-sidebar-items">
+    <a href="{{content.sidebarItemTwo.url}}">{{i18n "my-account:myAccountSidebar.addressBook"}}</a>
+  </div>
+  <div {{#if positionThree}}id="mobile-content"{{/if}}class="my-account-sidebar-items">
+    <a href="{{content.sidebarItemThree.url}}">{{i18n "my-account:myAccountSidebar.paymentDetails"}}</a>
+  </div>
+  <div {{#if positionFour}}id="mobile-content"{{/if}}class="my-account-sidebar-items">
+    <a href="{{content.sidebarItemFour.url}}">{{i18n "my-account:myAccountSidebar.myOrders"}}</a>
+  </div>
+  <div {{#if positionFive}}id="mobile-content"{{/if}}class="my-account-sidebar-items">
+    <a href="{{content.sidebarItemFive.url}}">{{i18n "my-account:myAccountSidebar.returnsExchange"}}</a>
+  </div>
+  <div {{#if positionSix}}id="mobile-content"{{/if}}class="my-account-sidebar-items clearfix">
+    <a href="{{content.sidebarItemSix.url}}">
+      <span><img class="sidebar-wishlist-heart hidden-sm" src="{{meta.assetsPath}}/img/heart-1.png" alt="heart icon"></span>{{i18n "my-account:myAccountSidebar.wishlist"}}<span class="sidebar-wishlist-quantity hidden-sm">{{content.sidebarItemSix.wishlistItems}}</span>
+    </a>
+  </div>
+  <div {{#if positionSeven}}id="mobile-content"{{/if}}class="my-account-sidebar-items">
+    <a href="{{content.sidebarItemSeven.url}}">{{i18n "my-account:myAccountSidebar.signOut"}}</a>
+  </div>
+</div>

@@ -439,6 +439,6 @@ $('.personal-details-edit-toggle').click(function() {
 // Move desktop content to sidebar for mobile
 $(function() {
   if($(window).width() < 767) {
-    $("#desktop-content").insertAfter("#mobile-content");
+    $("#my-account-desktop-content").insertAfter("#my-account-mobile-content");
   }
 });

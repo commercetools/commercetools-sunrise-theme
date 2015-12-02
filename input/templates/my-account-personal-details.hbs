@@ -18,33 +18,9 @@
           <div class="my-account-content">
             <div class="row">
               <div class="col-sm-3">
-                <div class="my-account-sidebar">
-                  <div id="mobile-content" class="my-account-sidebar-items active">
-                    <a href="{{content.sidebarItemOne.url}}">{{i18n "my-account:myAccountSidebar.personalDetails"}}</a>
-                  </div>
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemTwo.url}}">{{i18n "my-account:myAccountSidebar.addressBook"}}</a>
-                  </div>
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemThree.url}}">{{i18n "my-account:myAccountSidebar.paymentDetails"}}</a>
-                  </div>
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemFour.url}}">{{i18n "my-account:myAccountSidebar.myOrders"}}</a>
-                  </div>
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemFive.url}}">{{i18n "my-account:myAccountSidebar.returnsExchange"}}</a>
-                  </div>
-                  <div class="my-account-sidebar-items clearfix">
-                    <a href="{{content.sidebarItemSix.url}}">
-                      <span><img class="sidebar-wishlist-heart hidden-sm" src="{{meta.assetsPath}}/img/heart-1.png" alt="heart icon"></span>{{i18n "my-account:myAccountSidebar.wishlist"}}<span class="sidebar-wishlist-quantity hidden-sm">{{content.sidebarItemSix.wishlistItems}}</span>
-                    </a>
-                  </div>
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemSeven.url}}">{{i18n "my-account:myAccountSidebar.signOut"}}</a>
-                  </div>
-                </div>
+                {{> catalog/my-account-sidebar positionOne=true}}
               </div>
-              <div id="desktop-content" class="col-sm-9">
+              <div id="my-account-desktop-content" class="col-sm-9">
                 <div class="personal-details">
                   <div class="personal-details-text-one">
                     <span>{{i18n "my-account:personalDetails.welcomeBack"}}</span>
