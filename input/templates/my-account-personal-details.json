@@ -32,10 +32,8 @@
 			"text" : "Sign Out",
 			"url" : ""
 		},
-		"welcomeName" : "Welcome back Bruce Wayne",
-		"welcomeDescription" : "for an even better customer service please provide your customer number:",
+		"welcomeName" : "Bruce Wayne",
 		"customerNumber" : "1010101069691010",
-		"personalDetailsTitle" : "Your Personal Details",
 		"personalDetailsRequired" : "Required",
 		"personalDetails" : {
 			"name" : "Mr. Bruce Wayne",
