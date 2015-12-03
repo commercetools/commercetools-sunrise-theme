@@ -82,5 +82,8 @@
     &:hover {
       background: lighten($yellow, 5%);
     }
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
   }
 }
