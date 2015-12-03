@@ -12,77 +12,27 @@
   <div class="my-orders">
     <div class="container">
       <div class="my-account-title">
-        <span class="my-account-title-text icon-user">{{content.pageTitle}}</span>
+        <span class="my-account-title-text icon-user">{{i18n "my-account:myAccount.title"}}</span>
       </div>
       <div class="row">
         <div class="col-sm-12">
           <div class="my-orders-wrapper">
             <div class="row">
               <div class="col-sm-3">
-                <div class="my-account-sidebar">
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemOne.url}}">{{content.sidebarItemOne.text}}</a>
-                  </div>
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemTwo.url}}">{{content.sidebarItemTwo.text}}</a>
-                  </div>
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemThree.url}}">{{content.sidebarItemThree.text}}</a>
-                  </div>
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemFour.url}}">{{content.sidebarItemFour.text}}</a>
-                  </div>
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemFive.url}}">{{content.sidebarItemFive.text}}</a>
-                  </div>
-                  <div class="my-account-sidebar-items active clearfix">
-                    <a href="{{content.sidebarItemSix.url}}">
-                      <span><img class="sidebar-wishlist-heart hidden-sm" src="{{meta.assetsPath}}/img/heart-1.png" alt="heart icon"></span>{{content.sidebarItemSix.text}}<span class="sidebar-wishlist-quantity hidden-sm">{{content.sidebarItemSix.wishlistItems}}</span>
-                    </a>
-                  </div>
-                  {{!-- Wishlist content on mobile START --}}
-                  <div class="my-orders-order-content visible-xs">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="my-orders-title text-center">
-                          <span class="my-account-wishlist-items-number">{{content.itemsInTotal}}</span>
-                          <div class="my-account-wishlist-clear-btn">
-                            <button>{{content.clearWishlistBtn}}</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="my-account-wishlist-items-wrapper">
-                      <div class="row">
-                        {{#each content.products.list}}
-                          <div class="col-xs-12">
-                            {{> catalog/product-thumbnail thumbnail=this index=@index}}
-                          </div>
-                          <div class="my-account-wishlist-remove-btn">
-                            <button>Remove Btn</button>
-                          </div>
-                        {{/each}}
-                      </div>
-                    </div>
-                  </div>
-                  {{!-- Wishlist content on mobile END --}}
-                  <div class="my-account-sidebar-items">
-                    <a href="{{content.sidebarItemSeven.url}}">{{content.sidebarItemSeven.text}}</a>
-                  </div>
-                </div>
+                {{> catalog/my-account-sidebar positionSix=true}}
               </div>
-              <div class="col-sm-9">
-                <div class="my-orders-order-content hidden-xs">
+              <div id="my-account-desktop-content" class="col-sm-9">
+                <div class="my-orders-order-content">
                   <div class="row">
                     <div class="col-sm-12">
-                      <div class="my-orders-title">
+                      <div class="my-orders-title hidden-xs">
                         <span>{{content.contentTitle}}</span>
                         <span class="my-account-wishlist-items-number">{{content.itemsInTotal}}</span>
                       </div>
                     </div>
                   </div>
                   {{> catalog/my-account-wishlist-pagination}}
-                  <div class="my-account-wishlist-items-wrapper hidden-xs">
+                  <div class="my-account-wishlist-items-wrapper">
                     <div class="row">
                       {{#each content.products.list}}
                         <div class="col-sm-6 col-md-4">
