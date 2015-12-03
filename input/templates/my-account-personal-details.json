@@ -2,36 +2,6 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"pageTitle" : "My Account",
-		"sidebarItemOne" : {
-			"text" : "Personal Details",
-			"url" : ""
-		},
-		"sidebarItemTwo" : {
-			"text" : "Address Book",
-			"url" : ""
-		},
-		"sidebarItemThree" : {
-			"text" : "Payment Details",
-			"url" : ""
-		},
-		"sidebarItemFour" : {
-			"text" : "My Orders",
-			"url" : ""
-		},
-		"sidebarItemFive" : {
-			"text" : "Returns / Exchange",
-			"url" : ""
-		},
-		"sidebarItemSix" : {
-			"text" : "Wishlist",
-			"url" : "",
-			"wishlistItems" : "12"
-		},
-		"sidebarItemSeven" : {
-			"text" : "Sign Out",
-			"url" : ""
-		},
 		"welcomeName" : "Bruce Wayne",
 		"customerNumber" : "1010101069691010",
 		"personalDetailsRequired" : "Required",
@@ -73,21 +43,7 @@
 			"formNotesTwo" : "Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla"
 		},
 		"addMeTo" : "Please add me to the",
-		"newsletter" : "SUNRISE Newsletter",
-		"updateBtn" : "Update Details",
-		"cancelBtn" : "Cancel",
-		"bannerOne" : {
-			"title" : "Your Sunrise",
-			"subTitle" : "Make the great days happen",
-			"button" : "Shop All",
-			"url" : ""
-		},
-		"bannerTwo" : {
-			"title" : "Your Sunrise",
-			"subTitle" : "Make the great days happen",
-			"button" : "Shop All",
-			"url" : ""
-		}
+		"newsletter" : "SUNRISE Newsletter"
 	},
     "meta" : { "$ref" : "common/meta.json" }
 }
