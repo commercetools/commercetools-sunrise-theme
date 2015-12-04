@@ -435,3 +435,10 @@ $('.personal-details-edit-toggle').click(function() {
   $('.personal-details-landing-wrapper').hide();
   $('.personal-details-edit-wrapper').show();
 })
+
+// Move desktop content to sidebar for mobile
+$(function() {
+  if($(window).width() < 767) {
+    $("#my-account-desktop-content").insertAfter("#my-account-mobile-content");
+  }
+});

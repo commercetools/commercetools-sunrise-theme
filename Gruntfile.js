@@ -147,7 +147,7 @@ module.exports = function(grunt) {
         lng: 'de',
         fallbackLng: 'en',
         ns: {
-          namespaces: ['translations', 'home', 'catalog', 'checkout', 'my-account-login', 'no-search-result', 'mix-match'],
+          namespaces: ['translations', 'home', 'catalog', 'checkout', 'my-account-login', 'no-search-result', 'mix-match', 'my-account'],
           defaultNs: 'translations'
         }
       }
