@@ -1817,36 +1817,6 @@
   },
   "footer": {},
   "content": {
-    "pageTitle": "My Account",
-    "sidebarItemOne": {
-      "text": "Personal Details",
-      "url": ""
-    },
-    "sidebarItemTwo": {
-      "text": "Address Book",
-      "url": ""
-    },
-    "sidebarItemThree": {
-      "text": "Payment Details",
-      "url": ""
-    },
-    "sidebarItemFour": {
-      "text": "My Orders",
-      "url": ""
-    },
-    "sidebarItemFive": {
-      "text": "Returns / Exchange",
-      "url": ""
-    },
-    "sidebarItemSix": {
-      "text": "Wishlist",
-      "url": "",
-      "wishlistItems": "12"
-    },
-    "sidebarItemSeven": {
-      "text": "Sign Out",
-      "url": ""
-    },
     "contentTitle": "My Orders",
     "orderNumberTitle": "Order Number",
     "dateTitle": "Date",
