@@ -16,13 +16,13 @@
 
     <div class="contact-form-content-wrapper">
       <div class="contact-form-title-row">
-        <span class="contact-form-title">Please fill in our contact form</span>
-        <span class="hidden-xs contact-form-required">Required Fields*</span>
+        <span class="contact-form-title">{{i18n "contactForm.pleaseFill"}}</span>
+        <span class="hidden-xs contact-form-required">{{i18n "form.required"}}*</span>
       </div>
       <div class="contact-form-description">
-        <div>Our multilingual Customer Experience team is available 24/7 for nay question, styling advice or placing orders.</div>
-        <div>Call us on: +49 (89) 222 435 1234</div>
-        <div class="contact-form-description-respond">We aim to respond within 24 working hours.</div>
+        <div>{{i18n "contactForm.customerSupport"}}</div>
+        <div>{{i18n "contactForm.callUsOn"}}</div>
+        <div class="contact-form-description-respond">{{i18n "contactForm.responseTime"}}</div>
       </div>
       <div>
         {{> form/contact-form-form form=content}}

@@ -88,3 +88,8 @@ form:
   submit: Submit
   title: Title
   year: Year
+contactForm:
+  pleaseFill: Please fill in our contact form
+  customerSupport: Our multilingual Customer Experience team is available 24/7 for nay question, styling advice or placing orders.
+  callUsOn: Call us on +49 (89) 222 435 1234
+  responseTime: We aim to respond within 24 working hours.
