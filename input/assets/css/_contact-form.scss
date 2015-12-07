@@ -1,0 +1,40 @@
+.contact-form-content-wrapper {
+  background: $white;
+  border: 1px solid $light-grey;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.contact-form-title-row {
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: 20px;
+  .contact-form-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  .contact-form-required {
+    color: $dark-grey;
+    float: right;
+  }
+}
+.contact-form-description {
+  padding-top: 20px;
+  .contact-form-description-respond {
+    padding-top: 20px;
+  }
+}
+#input-message-textArea {
+  min-height: 150px;
+}
+.contact-form-form-submit-btn {
+  button {
+    margin-top: 20px;
+    margin-left: 14px;
+    background-color: $yellow;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
