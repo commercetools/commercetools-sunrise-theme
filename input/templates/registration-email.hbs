@@ -784,7 +784,7 @@ body.outlook p {
         <center>
 
 					<!-- Header -->
-					<table class="container">
+					<table class="container-fluid">
 						<tr>
 							<td>
 								<table class="row">
@@ -814,9 +814,36 @@ body.outlook p {
 											<table class="twelve columns">
 												<tr>
 													<td>
-														<h1 style="font-weight: 200; padding: 20px 0; text-transform: uppercase; font-size: 28px;">{{content.thankyouTitle}}</h1>
-														<p style="margin-bottom: 0;">{{content.dearUser}},<br>
-                            {{content.orderConfirmationText}}</p>
+														<h1 style="font-weight: 200; padding: 20px 0; text-transform: uppercase; font-size: 28px;">{{content.registrationTitle}}</h1>
+														<p style="margin-bottom: 0;">
+                              {{content.dearUser}}
+                            </p><br>
+                            <p style="margin-bottom: 0;">
+                              {{content.registrationText}}:
+                            </p><br>
+                            <p style="margin-bottom: 0;">
+                              {{content.registrationTextTwo}}
+                            </p><br>
+                            <p style="margin: 0 0 0 15px;">
+                              {{content.registrationTextThree}}
+                            </p><br>
+                            <p style="margin-bottom: 0;">
+                              {{content.registrationTextFour}}
+                            </p><br>
+                            <p style="margin-bottom: 0;">
+                              {{content.registrationTextFive}}
+                            </p><br>
+                            <p style="margin-bottom: 0;">
+                              {{content.registrationWishes}}<br>
+                              {{content.registrationWho}}
+                            </p><br>
+                            <p style="margin-bottom: 0;">
+                              {{content.companyEmail}}<br>
+                              {{content.companyAddressOne}}<br>
+                              {{content.companyAddressTwo}}<br>
+                              {{content.companyRegistrationNumber}}<br>
+                              {{content.companyVatNumber}}
+                            </p>
 													</td>
 													<td class="expander"></td>
 												</tr>
@@ -824,227 +851,6 @@ body.outlook p {
 										</td>
 									</tr>
 								</table>
-							</td>
-						</tr>
-					</table>
-
-					<table class="container">
-						<tr>
-							<td>
-								<table class="row">
-									<tr>
-										<td class="wrapper last" style="border-top: 1px solid #D6D6D6; border-bottom: 1px solid #D6D6D6;">
-											<table class="twelve columns">
-												<tr>
-													<td>
-														<p style="margin-bottom: 0; text-transform: uppercase; padding-left: 10px;">{{content.orderNumber}}</p>
-														<p style="margin-bottom: 0; text-transform: uppercase; padding-left: 10px;">{{content.orderDate}}</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-
-					<table class="container">
-						<tr>
-							<td>
-								<table class="row">
-									<tr>
-										<td class="wrapper">
-											<table class="six columns">
-												<tr>
-													<td class="wrapper" style="background: #F5F5F5; padding: 10px; display: block; margin-bottom: 20px;">
-														<p style="text-transform: uppercase;">{{content.shippingAddress.title}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.shippingAddress.name}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.shippingAddress.street}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.shippingAddress.city}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.shippingAddress.region}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.shippingAddress.postCode}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.shippingAddress.country}}</p><br>
-														<p style="color: #858585; margin-bottom: 0;">{{content.shippingAddress.phone}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.shippingAddress.email}}</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper last">
-											<table class="six columns">
-												<tr>
-													<td class="wrapper" style="background: #F5F5F5; padding: 10px; display: block; margin-bottom: 20px;">
-														<p style="text-transform: uppercase;">{{content.billingAddress.title}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.billingAddress.name}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.billingAddress.street}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.billingAddress.city}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.billingAddress.region}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.billingAddress.postCode}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.billingAddress.country}}</p><br>
-														<p style="color: #858585; margin-bottom: 0;">{{content.billingAddress.phone}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.billingAddress.email}}</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-
-					<table class="container" style="border-bottom: 1px solid #D6D6D6;">
-						<tr>
-							<td>
-								<table class="row">
-									<tr>
-										<td class="wrapper">
-											<table class="six columns">
-												<tr>
-													<td class="wrapper" style="background: #F5F5F5; padding: 10px; display: block; margin-bottom: 20px;">
-														<p style="text-transform: uppercase;">{{content.shippingMethod.title}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.shippingMethod.name}}</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-										<td class="wrapper last">
-											<table class="six columns">
-												<tr>
-													<td class="wrapper" style="background: #F5F5F5; padding: 10px; display: block; margin-bottom: 20px;">
-														<p style="text-transform: uppercase;">{{content.paymentDetails.title}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.paymentDetails.card}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.paymentDetails.name}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.paymentDetails.type}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.paymentDetails.number}}</p>
-														<p style="color: #858585; margin-bottom: 0;">{{content.paymentDetails.date}}</p>
-													</td>
-													<td class="expander"></td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-
-					{{#each content.order}}
-						<table class="container" style="border-bottom: 1px solid #D6D6D6;">
-							<tr>
-								<td>
-									<table class="row">
-										<tr>
-											<td class="wrapper">
-												<table class="two columns">
-													<tr>
-														<td>
-															<img src="{{image}}">
-														</td>
-														<td class="expander"></td>
-													</tr>
-												</table>
-											</td>
-											<td class="wrapper">
-												<table class="four columns">
-													<tr>
-														<td>
-															<p style="margin-bottom: 0;">{{nameHeadline}}</p>
-															<p style="margin-bottom: 0;">{{nameSubline}}</p>
-															<p style="margin-bottom: 0; color: #858585;">{{sku}}</p>
-															<p style="margin-bottom: 0; display: inline-block;">{{colorTitle}}<br>{{sizeTitle}}</p>
-															<p style="margin-bottom: 0; display: inline-block; color: #858585;">{{color}}<br>{{size}}</p>
-														</td>
-														<td class="expander"></td>
-													</tr>
-												</table>
-											</td>
-											<td class="wrapper">
-												<table class="two columns">
-													<tr>
-														<td>
-															<p style="margin-bottom: 0; text-transform: uppercase; color: #858585; text-align: right;">{{quantityTitle}}</p>
-															<p style="margin-bottom: 0; text-align: right;">{{quantity}} x</p>
-														</td>
-														<td class="expander"></td>
-													</tr>
-												</table>
-											</td>
-											<td class="wrapper">
-												<table class="two columns">
-													<tr>
-														<td>
-															<p style="margin-bottom: 0; text-transform: uppercase; color: #858585; text-align: right;">{{priceTitle}}</p>
-															<p style="margin-bottom: 0; text-align: right;">{{price}}</p>
-														</td>
-														<td class="expander"></td>
-													</tr>
-												</table>
-											</td>
-											<td class="wrapper last">
-												<table class="two columns">
-													<tr>
-														<td>
-															<p style="margin-bottom: 0; text-transform: uppercase; color: #858585; text-align: right;">{{totalPriceTitle}}</p>
-															<p style="margin-bottom: 0; text-align: right;">{{totalPrice}}</p>
-														</td>
-														<td class="expander"></td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					{{/each}}
-
-					<table class="container" style="border-bottom: 1px solid #D6D6D6;">
-						<tr>
-							<td>
-								<table class="row">
-					        <tr>
-					          <td class="wrapper last">
-					            <table class="twelve columns">
-					              <tr>
-													<td style="text-align: right;">
-														<p style="text-transform: uppercase; text-align: right;"><span style="color: #858585;">{{content.totalSum.promoCodeTitle}}:</span> {{content.totalSum.promoCode}}</p>
-														<p style="display: inline-block; text-align: right; margin-right: 50px;">{{content.totalSum.subtotalTitle}}<br>{{content.totalSum.orderDiscountTitle}}<br>{{content.totalSum.deliveryOption}}</p>
-														<p style="display: inline-block; text-align: right;">{{content.totalSum.subtotal}}<br>{{content.totalSum.orderDiscount}}<br>{{content.totalSum.delivery}}</p>
-													</td>
-					                <td class="expander"></td>
-					              </tr>
-					            </table>
-					          </td>
-					        </tr>
-					      </table>
-							</td>
-						</tr>
-					</table>
-
-					<table class="container">
-						<tr>
-							<td>
-								<table class="row">
-					        <tr>
-					          <td class="wrapper last">
-					            <table class="twelve columns">
-					              <tr>
-													<td style="text-align: right;">
-														<p style="display: inline-block; text-align: right; margin-right: 50px;">{{content.totalSum.taxTitle}}<br><span style="font-weight: bold; font-size: 16px;">{{content.totalSum.orderTotalTitle}}</span></p>
-														<p style="display: inline-block; text-align: right;">{{content.totalSum.tax}}<br><span style="font-weight: bold; font-size: 16px;">{{content.totalSum.orderTotal}}</span></p>
-													</td>
-					                <td class="expander"></td>
-					              </tr>
-					            </table>
-					          </td>
-					        </tr>
-					      </table>
 							</td>
 						</tr>
 					</table>
@@ -1081,27 +887,6 @@ body.outlook p {
 					            <table class="twelve columns">
 					              <tr>
 					                <td>
-														<p style="margin-bottom: 0; padding-bottom: 20px; border-bottom: 1px solid #D6D6D6;">{{content.bottomTextOne}}</p>
-					                </td>
-					                <td class="expander"></td>
-					              </tr>
-					            </table>
-					          </td>
-					        </tr>
-					      </table>
-							</td>
-						</tr>
-					</table>
-
-					<table class="container">
-						<tr>
-							<td>
-								<table class="row">
-					        <tr>
-					          <td class="wrapper last">
-					            <table class="twelve columns">
-					              <tr>
-					                <td>
 														<p>{{content.bottomTextTwo}}</p>
 					                </td>
 					                <td class="expander"></td>
@@ -1115,7 +900,7 @@ body.outlook p {
 					</table>
 
 					<!-- Footer -->
-					<table class="container">
+					<table class="container-fluid">
 						<tr>
 							<td>
 								<table class="row">
