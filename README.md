@@ -26,6 +26,7 @@
 - [Confirmation Email](http://sphereio.github.io/sphere-sunrise-design/confirmation-email.html)
 - [Dispatch Email](http://sphereio.github.io/sphere-sunrise-design/dispatch-email.html)
 - [Registration Email](http://sphereio.github.io/sphere-sunrise-design/registration-email.html)
+- [Password Reset Email](http://sphereio.github.io/sphere-sunrise-design/password-reset-email.html)
 - [No Search Result](http://sphereio.github.io/sphere-sunrise-design/no-search-result.html)
 - [Mix & Match](http://sphereio.github.io/sphere-sunrise-design/mix-match.html)
 
