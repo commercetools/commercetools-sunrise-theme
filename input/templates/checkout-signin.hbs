@@ -27,7 +27,7 @@
                     <input id="signin-password-input" class="returning-customer-password" type="password">
                     <div class="clearfix returning-customer-remember-forget">
                       <span class="returning-customer-rememberme"><input id="signin-remember-me-input" type="checkbox">{{content.rememberMeTitle}}</span>
-                      <span class="returning-customer-forgot"><a id="signin-forgot-password-link" href="#">{{content.forgotPasswordTitle}}</a></span>
+                      <span class="returning-customer-forgot"><a id="signin-forgot-password-link" data-toggle="modal" data-target="#forgot-password-modal">{{content.forgotPasswordTitle}}</a></span>
                     </div>
                   </div>
                 </div>
@@ -49,6 +49,7 @@
       </div>
     </div>
   </div>
+  {{> catalog/forgot-password}}
   {{> common/checkout-footer}}
   {{> common/htmlscripts}}
   </body>
