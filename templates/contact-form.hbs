@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> common/htmlhead}}
+</head>
+
+<body>
+  <div class="darkbg hidden"></div>
+  {{> common/header}}
+  <div class="container">
+
+    <div class="my-account-login-page-title">
+      <span class="icon-user">{{i18n "catalog:contactUs.title"}}</span>
+    </div>
+
+    <div class="contact-form-content-wrapper">
+      <div class="contact-form-title-row">
+        <span class="contact-form-title">{{i18n "contactForm.pleaseFill"}}</span>
+        <span class="hidden-xs contact-form-required">{{i18n "form.required"}}*</span>
+      </div>
+      <div class="contact-form-description">
+        <div>{{i18n "contactForm.customerSupport"}}</div>
+        <div>{{i18n "contactForm.callUsOn"}}</div>
+        <div class="contact-form-description-respond">{{i18n "contactForm.responseTime"}}</div>
+      </div>
+      <div>
+        {{> form/contact-form-form form=content}}
+      </div>
+    </div>
+
+  </div>
+  {{> common/footer}}
+  {{> common/htmlscripts}}
+</body>
+</html>
