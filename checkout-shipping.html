@@ -34,7 +34,7 @@
         </div>
         <div class="col-sm-8 col-xs-12">
           <div class="checkout-header-callus">
-            <span class="">Brauchen Sie Hilfe? Kundenservice</span>
+            <span class="">Need help? Customer Service</span>
             <span class="checkout-header-number"><img class="phone-icon" src="assets/img/phone.png" alt="phone icon" />+12 345 6000</span>
           </div>
         </div>
@@ -47,22 +47,22 @@
         <div class="col-md-6">
           <div class="secure-payment">
               <span><img class="secure-payment-icon" src="assets/img/credit-card-lock.png" alt="secure payment"></span>
-              <span class="text-uppercase secure-payment-title">Sicherer Bestellprozess - Versand</span>
+              <span class="text-uppercase secure-payment-title">Secure Checkout - Shipping</span>
           </div>
         </div>
         <div class="col-md-6">
           <div class="checkout-steps text-right">
               <div>
                   <span class="step-number step-number-active">1</span>
-                  <span class="text-uppercase step-title step-title-active">Versand</span>
+                  <span class="text-uppercase step-title step-title-active">Shipping</span>
               </div>
               <div>
                   <span class="step-number">2</span>
-                  <span class="text-uppercase step-title">Zahlung</span>
+                  <span class="text-uppercase step-title">payment</span>
               </div>
               <div>
                   <span class="step-number">3</span>
-                  <span class="text-uppercase step-title">Bestätigung</span>
+                  <span class="text-uppercase step-title">confirmation</span>
               </div>
           </div>
         </div>
@@ -75,17 +75,17 @@
                 <form method="post" action="checkout-payment.html">
                   <input type="hidden" name="csrfToken" value="Test123"/>
                   <div class="shipping-info">
-                    <span class="text-uppercase shipping-info-title">Versand Information</span>
-                    <span class="pull-right required-fields">Pflichtfeld*</span>
+                    <span class="text-uppercase shipping-info-title">Shipping Information</span>
+                    <span class="pull-right required-fields">Required*</span>
                   </div>
                   <!-- start global-form-errors -->
                   <!-- end global-form-errors -->
                   <div class="row">
                     <div class="col-sm-4">
                       <div class="title">
-                        <span class="text-uppercase">Anrede</span><br>
+                        <span class="text-uppercase">Title</span><br>
                         <select id="shipping-title-select" class="checkout-dropdown" name="titleShipping">
-                          <option value="" selected>Bitte wählen</option>
+                          <option value="" selected>Choose</option>
                           <option value="Mr." selected>Mr.</option>
                           <option value="Mrs." >Mrs.</option>
                           <option value="Ms." >Ms.</option>
@@ -97,45 +97,45 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="input-block">
-                        <span class="text-uppercase">Vorname<abbr title="Pflichtfeld">*</abbr></span><br>
+                        <span class="text-uppercase">First Name<abbr title="Required">*</abbr></span><br>
                         <input id="input-firstName-Shipping" class="checkout-input-field" type="text" name="firstNameShipping" value="John">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="input-block">
-                        <span class="text-uppercase">Nachname<abbr title="Pflichtfeld">*</abbr></span><br>
+                        <span class="text-uppercase">Last Name<abbr title="Required">*</abbr></span><br>
                         <input id="input-lastName-Shipping" class="checkout-input-field" type="text" name="lastNameShipping" value="Smith">
                       </div>
                     </div>
                     <div class="col-sm-12">
                       <div class="input-block">
-                        <span class="text-uppercase">Adresse 1<abbr title="Pflichtfeld">*</abbr></span><br>
+                        <span class="text-uppercase">Address 1<abbr title="Required">*</abbr></span><br>
                         <input id="input-streetName-Shipping" class="checkout-input-field" type="text" name="streetNameShipping" value="Tardisstreet">
                       </div>
                     </div>
                     <div class="col-sm-12">
                       <div class="input-block">
-                        <span class="text-uppercase">Adresse 2</span><br>
+                        <span class="text-uppercase">Address 2</span><br>
                         <input id="input-additionalStreetInfo-Shipping" class="checkout-input-field" type="text" name="additionalStreetInfoShipping" value="">
                       </div>
                     </div>
                     <div class="col-sm-8">
                       <div class="input-block">
-                        <span class="text-uppercase">Stadt<abbr title="Pflichtfeld">*</abbr></span><br>
+                        <span class="text-uppercase">City<abbr title="Required">*</abbr></span><br>
                         <input id="input-city-Shipping" class="checkout-input-field" type="text" name="cityShipping" value="London">
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <div class="input-block">
-                        <span class="text-uppercase">PLZ<abbr title="Pflichtfeld">*</abbr></span><br>
+                        <span class="text-uppercase">Post Code<abbr title="Required">*</abbr></span><br>
                         <input id="input-postalCode-Shipping" class="checkout-input-field" type="text" name="postalCodeShipping" value="123456">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="input-block">
-                        <span class="text-uppercase">Land*</span><br>
+                        <span class="text-uppercase">Country*</span><br>
                         <select id="shipping-country-select" class="checkout-dropdown" name="countryShipping">
-                          <option value="" selected>Bitte wählen</option>
+                          <option value="" selected>Choose</option>
                           <option value="UK" selected>United Kingdom</option>
                           <option value="DE" >Germany</option>
                           <option value="FR" >France</option>
@@ -154,13 +154,13 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="input-block">
-                        <span class="text-uppercase">Telefonnummer</span><br>
+                        <span class="text-uppercase">Phone</span><br>
                         <input id="input-phone-Shipping" class="checkout-input-field" type="text" name="phoneShipping" value="+49 123 4567899">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="input-block">
-                        <span class="text-uppercase">Email<abbr title="Pflichtfeld">*</abbr></span><br>
+                        <span class="text-uppercase">Email<abbr title="Required">*</abbr></span><br>
                         <input id="input-email-Shipping" class="checkout-input-field" type="text" name="emailShipping" value="thedoctor@commercetools.com">
                       </div>
                     </div>
@@ -172,7 +172,7 @@
                           <span>
                             <input id="different-billing-checkbox" type="checkbox" value="true" name="billingAddressDifferentToBillingAddress" checked>
                           </span>
-                          <span>Abweichende Adresse als Rechnungsadresse verwenden.</span>
+                          <span>Use a different address for billing</span>
                         </label>
                       </div>
                     </div>
@@ -184,9 +184,9 @@
                           <div class="row">
                             <div class="col-sm-4">
                               <div class="title">
-                                <span class="text-uppercase">Anrede</span><br>
+                                <span class="text-uppercase">Title</span><br>
                                 <select id="shipping-title-select" class="checkout-dropdown" name="titleBilling">
-                                  <option value="" selected>Bitte wählen</option>
+                                  <option value="" selected>Choose</option>
                                   <option value="Mr." selected>Mr.</option>
                                   <option value="Mrs." >Mrs.</option>
                                   <option value="Ms." >Ms.</option>
@@ -198,45 +198,45 @@
                           <div class="row">
                             <div class="col-sm-6">
                               <div class="input-block">
-                                <span class="text-uppercase">Vorname<abbr title="Pflichtfeld">*</abbr></span><br>
+                                <span class="text-uppercase">First Name<abbr title="Required">*</abbr></span><br>
                                 <input id="input-firstName-Billing" class="checkout-input-field" type="text" name="firstNameBilling" value="John">
                               </div>
                             </div>
                             <div class="col-sm-6">
                               <div class="input-block">
-                                <span class="text-uppercase">Nachname<abbr title="Pflichtfeld">*</abbr></span><br>
+                                <span class="text-uppercase">Last Name<abbr title="Required">*</abbr></span><br>
                                 <input id="input-lastName-Billing" class="checkout-input-field" type="text" name="lastNameBilling" value="Smith (billing)">
                               </div>
                             </div>
                             <div class="col-sm-12">
                               <div class="input-block">
-                                <span class="text-uppercase">Adresse 1<abbr title="Pflichtfeld">*</abbr></span><br>
+                                <span class="text-uppercase">Address 1<abbr title="Required">*</abbr></span><br>
                                 <input id="input-streetName-Billing" class="checkout-input-field" type="text" name="streetNameBilling" value="Duststreet 500">
                               </div>
                             </div>
                             <div class="col-sm-12">
                               <div class="input-block">
-                                <span class="text-uppercase">Adresse 2</span><br>
+                                <span class="text-uppercase">Address 2</span><br>
                                 <input id="input-additionalStreetInfo-Billing" class="checkout-input-field" type="text" name="additionalStreetInfoBilling" value="">
                               </div>
                             </div>
                             <div class="col-sm-8">
                               <div class="input-block">
-                                <span class="text-uppercase">Stadt<abbr title="Pflichtfeld">*</abbr></span><br>
+                                <span class="text-uppercase">City<abbr title="Required">*</abbr></span><br>
                                 <input id="input-city-Billing" class="checkout-input-field" type="text" name="cityBilling" value="">
                               </div>
                             </div>
                             <div class="col-sm-4">
                               <div class="input-block">
-                                <span class="text-uppercase">PLZ<abbr title="Pflichtfeld">*</abbr></span><br>
+                                <span class="text-uppercase">Post Code<abbr title="Required">*</abbr></span><br>
                                 <input id="input-postalCode-Billing" class="checkout-input-field" type="text" name="postalCodeBilling" value="56789">
                               </div>
                             </div>
                             <div class="col-sm-6">
                               <div class="input-block">
-                                <span class="text-uppercase">Land*</span><br>
+                                <span class="text-uppercase">Country*</span><br>
                                 <select id="shipping-country-select" class="checkout-dropdown" name="countryBilling">
-                                  <option value="" selected>Bitte wählen</option>
+                                  <option value="" selected>Choose</option>
                                   <option value="UK" ></option>
                                   <option value="DE" ></option>
                                   <option value="FR" ></option>
@@ -256,13 +256,13 @@
                           <div class="row">
                             <div class="col-sm-6">
                               <div class="input-block">
-                                <span class="text-uppercase">Telefonnummer</span><br>
+                                <span class="text-uppercase">Phone</span><br>
                                 <input id="input-phone-Billing" class="checkout-input-field" type="text" name="phoneBilling" value="+49 123 4567899 (billing)">
                               </div>
                             </div>
                             <div class="col-sm-6">
                               <div class="input-block">
-                                <span class="text-uppercase">Email<abbr title="Pflichtfeld">*</abbr></span><br>
+                                <span class="text-uppercase">Email<abbr title="Required">*</abbr></span><br>
                                 <input id="input-email-Billing" class="checkout-input-field" type="text" name="emailBilling" value="billing@commercetools.com">
                               </div>
                             </div>
@@ -274,7 +274,7 @@
                   <div class="row">
                       <div class="col-sm-6">
                           <div>
-                              <button id="shipping-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">Weiter</button>
+                              <button id="shipping-continue-checkout-btn-xs" class="btn text-uppercase checkout-checkout-btn">Continue Checkout</button>
                           </div>
                       </div>
                   </div>
@@ -282,7 +282,7 @@
               </div>
               <div class="col-sm-5">
                 <div class="order-summary">
-                    <span class="text-uppercase order-summary-title">Bestellübersicht:</span>
+                    <span class="text-uppercase order-summary-title">Order Summary:</span>
                     <span class="checkout-total-items">3 items in total</span>
                 </div>
                 <!-- start checkout-item -->
@@ -318,20 +318,20 @@
                           <div class="row">
                             <div class="col-xs-4">
                               <div class="text-right">
-                                <span class="text-uppercase pricing-titles">Anzahl</span><br>
+                                <span class="text-uppercase pricing-titles">quantity</span><br>
                                 <span>1 x</span>
                               </div>
                             </div>
                             <div class="col-xs-4">
                               <div class="text-right order-item-value">
-                                <span class="text-uppercase pricing-titles">Preis</span><br>
+                                <span class="text-uppercase pricing-titles">Price</span><br>
                                 <span class="checkout-discounted-price">100,00 €</span><br>
                                 <span>49,00 €</span>
                               </div>
                             </div>
                             <div class="col-xs-4">
                               <div class="text-right order-item-value">
-                                <span class="text-uppercase pricing-titles">Gesamtpreis</span><br>
+                                <span class="text-uppercase pricing-titles">Total</span><br>
                                 <span>49,00 €</span>
                               </div>
                             </div>
@@ -368,20 +368,20 @@
                           <div class="row">
                             <div class="col-xs-4">
                               <div class="text-right">
-                                <span class="text-uppercase pricing-titles">Anzahl</span><br>
+                                <span class="text-uppercase pricing-titles">quantity</span><br>
                                 <span>1 x</span>
                               </div>
                             </div>
                             <div class="col-xs-4">
                               <div class="text-right order-item-value">
-                                <span class="text-uppercase pricing-titles">Preis</span><br>
+                                <span class="text-uppercase pricing-titles">Price</span><br>
                                 <span class="checkout-discounted-price">100,00 €</span><br>
                                 <span>49,00 €</span>
                               </div>
                             </div>
                             <div class="col-xs-4">
                               <div class="text-right order-item-value">
-                                <span class="text-uppercase pricing-titles">Gesamtpreis</span><br>
+                                <span class="text-uppercase pricing-titles">Total</span><br>
                                 <span>49,00 €</span>
                               </div>
                             </div>
@@ -418,20 +418,20 @@
                           <div class="row">
                             <div class="col-xs-4">
                               <div class="text-right">
-                                <span class="text-uppercase pricing-titles">Anzahl</span><br>
+                                <span class="text-uppercase pricing-titles">quantity</span><br>
                                 <span>1 x</span>
                               </div>
                             </div>
                             <div class="col-xs-4">
                               <div class="text-right order-item-value">
-                                <span class="text-uppercase pricing-titles">Preis</span><br>
+                                <span class="text-uppercase pricing-titles">Price</span><br>
                                 <span class="checkout-discounted-price">100,00 €</span><br>
                                 <span>49,00 €</span>
                               </div>
                             </div>
                             <div class="col-xs-4">
                               <div class="text-right order-item-value">
-                                <span class="text-uppercase pricing-titles">Gesamtpreis</span><br>
+                                <span class="text-uppercase pricing-titles">Total</span><br>
                                 <span>49,00 €</span>
                               </div>
                             </div>
@@ -445,8 +445,8 @@
                     <div class="row">
                       <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
                         <div class="text-right checkout-price-text">
-                          <span>Zwischensumme</span><br>
-                          <span>Versand</span>
+                          <span>Subtotal</span><br>
+                          <span>Shipping</span>
                         </div>
                       </div>
                       <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
@@ -460,8 +460,8 @@
                   <div class="row">
                     <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7">
                       <div class="text-right order-tax-total-text">
-                        <span>Mehrwertsteuer</span><br>
-                        <span class="total-order-value">Gesamtpreis</span>
+                        <span>Sales Tax</span><br>
+                        <span class="total-order-value">Total</span>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
@@ -475,7 +475,7 @@
                     <div class="col-sm-12">
                       <div>
                         <span class="text-uppercase pull-right edit-quantity-order">
-                            <a href="cart.html">Warenkorb bearbeiten</a>
+                            <a href="cart.html">Edit my shopping cart</a>
                         </span>
                       </div>
                     </div>
