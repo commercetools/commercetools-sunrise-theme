@@ -23,9 +23,6 @@
     padding-top: 20px;
   }
 }
-#input-message-textArea {
-  min-height: 150px;
-}
 .contact-form-form-submit-btn {
   button {
     margin-top: 20px;
@@ -36,5 +33,18 @@
     padding: 10px 40px;
     font-size: 16px;
     font-weight: bold;
+  }
+}
+.contact-form-form-textarea {
+  margin: 7px 30px;
+  label {
+    text-transform: uppercase;
+  }
+  textarea {
+    width: 100%;
+    resize: none;
+    display: block;
+    border: 1px solid $light-grey;
+    padding: 7px;
   }
 }
