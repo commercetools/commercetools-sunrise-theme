@@ -29,6 +29,7 @@
 - [Password Reset Email](http://sphereio.github.io/sphere-sunrise-design/password-reset-email.html)
 - [No Search Result](http://sphereio.github.io/sphere-sunrise-design/no-search-result.html)
 - [Mix & Match](http://sphereio.github.io/sphere-sunrise-design/mix-match.html)
+- [Contact Form](http://sphereio.github.io/sphere-sunrise-design/contact-form.html)
 
 
 
