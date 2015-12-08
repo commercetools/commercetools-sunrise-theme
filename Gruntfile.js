@@ -144,7 +144,7 @@ module.exports = function(grunt) {
     i18next: {
       options: {
         preload: ['de', 'en'],
-        lng: 'de',
+        lng: 'en',
         fallbackLng: 'en',
         ns: {
           namespaces: ['translations', 'home', 'catalog', 'checkout', 'my-account-login', 'no-search-result', 'mix-match', 'my-account'],
