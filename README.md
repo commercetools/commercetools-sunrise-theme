@@ -32,6 +32,7 @@
 - [Contact Form](http://sphereio.github.io/sphere-sunrise-design/contact-form.html)
 - [Store Finder](http://sphereio.github.io/sphere-sunrise-design/store-finder.html)
 - [FAQ Page](http://sphereio.github.io/sphere-sunrise-design/faq.html)
+- [Imprint Page](http://sphereio.github.io/sphere-sunrise-design/imprint.html)
 
 
 
