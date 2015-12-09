@@ -99,7 +99,6 @@ forgotPasswordModal:
   description: Please submit your email address to receive a password reset link
 storeFinder:
   title: Store Finder
-  sectionTitle: Store Finder
   description: Please select your region or enter your postcode
   postcode: Postcode
   lookUp: Look Up
