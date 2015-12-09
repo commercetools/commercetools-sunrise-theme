@@ -1,0 +1,43 @@
+{
+	"header" : { "$ref" : "common/header.json" },
+	"footer" : { "$ref" : "common/footer.json" },
+	"content" : {
+        "regionSelector" : [
+            {
+                "label" : "Region 1",
+                "value" : "Region1",
+                "selected" : false
+            },
+            {
+                "label" : "Region 2",
+                "value" : "Region2",
+                "selected" : false
+            }
+        ],
+        "citySelector" : [
+            {
+                "label" : "City 1",
+                "value" : "City1",
+                "selected" : false
+            },
+            {
+                "label" : "City 2",
+                "value" : "City2",
+                "selected" : false
+            }
+        ],
+        "storeSelector" : [
+            {
+                "label" : "Store 1",
+                "value" : "Store1",
+                "selected" : false
+            },
+            {
+                "label" : "Store 2",
+                "value" : "Store2",
+                "selected" : false
+            }
+        ]
+	},
+	"meta" : { "$ref" : "common/meta.json" }
+}

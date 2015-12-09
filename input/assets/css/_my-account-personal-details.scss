@@ -6,9 +6,11 @@
 .my-account-title {
   padding: 20px 0;
   .my-account-title-text {
-    font-size: 21px;
     padding-left: 10px;
+    font-size: 28px;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 200;
     &:before {
       font-size: 26px;
       position: relative;

@@ -30,6 +30,7 @@
 - [No Search Result](http://sphereio.github.io/sphere-sunrise-design/no-search-result.html)
 - [Mix & Match](http://sphereio.github.io/sphere-sunrise-design/mix-match.html)
 - [Contact Form](http://sphereio.github.io/sphere-sunrise-design/contact-form.html)
+- [Store Finder](http://sphereio.github.io/sphere-sunrise-design/store-finder.html)
 
 
 
