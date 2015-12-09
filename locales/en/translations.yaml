@@ -111,3 +111,7 @@ storeFinder:
   selectStore: Select Store
   address: Address
   workingHours: Working Hours
+faq:
+  title: FAQS
+  delivery: Delivery
+  returns: Returns
