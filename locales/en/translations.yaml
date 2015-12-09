@@ -94,3 +94,20 @@ contactForm:
   callUsOn: Call us on +49 (89) 222 435 1234
   responseTime: We aim to respond within 24 working hours.
   message: Message
+forgotPasswordModal:
+  title: Forgotten your password
+  description: Please submit your email address to receive a password reset link
+storeFinder:
+  title: Store Finder
+  sectionTitle: Store Finder
+  description: Please select your region or enter your postcode
+  postcode: Postcode
+  lookUp: Look Up
+  orRegion: Or Region
+  city: City
+  store: Store
+  selectRegion: Select Region
+  selectCity: Select City
+  selectStore: Select Store
+  address: Address
+  workingHours: Working Hours

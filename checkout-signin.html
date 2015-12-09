@@ -65,7 +65,7 @@
                     <input id="signin-password-input" class="returning-customer-password" type="password">
                     <div class="clearfix returning-customer-remember-forget">
                       <span class="returning-customer-rememberme"><input id="signin-remember-me-input" type="checkbox">Remember Me</span>
-                      <span class="returning-customer-forgot"><a id="signin-forgot-password-link" href="#">Forgot Password</a></span>
+                      <span class="returning-customer-forgot"><a id="signin-forgot-password-link" data-toggle="modal" data-target="#forgot-password-modal">Forgot Password</a></span>
                     </div>
                   </div>
                 </div>
@@ -83,6 +83,24 @@
             <span class="guest-checkout-second-paragraph">To make future purchases even faster, you will have the option of creating an acocount during checkout.</span>
             <a id="signin-continue-as-guest-btn" class="btn continue-guest-btn" href="#">Continue As Guest</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="forgot-password-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModal">
+    <div class="modal-dialog">
+      <div class="modal-content password-reset-modal-content">
+        <div>
+          <div class="forgotten-password-title">Forgotten your password</div>
+          <div class="forgotten-password-description">Please submit your email address to receive a password reset link</div>
+          <hr>
+          <form id="" action="" method="post">
+            <div class="forgot-password-input">
+              <label for="password-reset-email">Email</label>
+              <input type="text" name="password-reset-email" value="" required>
+              <button id="password-reset-submit-btn">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
