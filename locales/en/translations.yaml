@@ -108,6 +108,18 @@ storeFinder:
   selectCity: Select City
   address: Address
   workingHours: Working Hours
+  addressLineOne: Sunrise Street 10
+  addressLineTwo: Sunrise, 10116
+  addressLineThree: Sunrise
+  addressLineFour: "123456789123"
+  standartHours:
+    title: Standart Opening Hours
+    monFri: "Monday-Friday: 09.00 - 20.00"
+    weekend: "Weekend: 09.00 - 20.00"
+  holidayHours:
+    title: Holiday Opening Hours
+    monFri: "Monday-Friday: 09.00 - 20.00"
+    weekend: "Weekend: 09.00 - 20.00"
 faq:
   title: FAQS
   delivery: Delivery
