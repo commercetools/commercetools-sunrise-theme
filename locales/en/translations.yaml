@@ -104,10 +104,8 @@ storeFinder:
   lookUp: Look Up
   orRegion: Or Region
   city: City
-  store: Store
   selectRegion: Select Region
   selectCity: Select City
-  selectStore: Select Store
   address: Address
   workingHours: Working Hours
 faq:

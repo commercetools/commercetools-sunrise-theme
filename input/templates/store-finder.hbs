@@ -18,13 +18,11 @@
           <div class="store-finder-box">
             <form id="" action="" method="post">
               <div>
-                <label class="store-finder-label" for="postcode">{{i18n "storeFinder.postcode"}}
-                  <input class="store-finder-input" type="text" name="postcode" value="">
-                </label>
-                <button id="" class="store-finder-submit-btn">{{i18n "storeFinder.lookUp"}}</button>
+                <label class="store-finder-label" for="postcode">{{i18n "storeFinder.postcode"}}</label><br>
+                <input class="store-finder-input" type="text" name="postcode" value="">
               </div>
               <div class="store-finder-option-select">
-                <label class="store-finder-label" for="region">{{i18n "storeFinder.orRegion"}}</label>
+                <label class="store-finder-label" for="region">{{i18n "storeFinder.orRegion"}}</label><br>
                 <select id="" class="store-finder-select" name="region">
                   <option value="">{{i18n "storeFinder.selectRegion"}}</option>
                   {{#each content.regionSelector}}
@@ -32,12 +30,8 @@
                   {{/each}}
                 </select>
               </div>
-            </form>
-          </div>
-          <div id="store-finder-box-2" class="store-finder-box">
-            <form id="" action="" method="post">
               <div class="store-finder-option-select">
-                <label class="store-finder-label" for="city">{{i18n "storeFinder.city"}}</label>
+                <label class="store-finder-label" for="city">{{i18n "storeFinder.city"}}</label><br>
                 <select id="" class="store-finder-select" name="city">
                   <option value="">{{i18n "storeFinder.selectCity"}}</option>
                   {{#each content.citySelector}}
@@ -45,15 +39,7 @@
                   {{/each}}
                 </select>
               </div>
-              <div class="store-finder-option-select">
-                <label class="store-finder-label" for="store">{{i18n "storeFinder.store"}}</label>
-                <select id="" class="store-finder-select" name="store">
-                  <option value="">{{i18n "storeFinder.selectStore"}}</option>
-                  {{#each content.storeSelector}}
-                    <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
-                  {{/each}}
-                </select>
-              </div>
+              <button id="" class="store-finder-submit-btn">{{i18n "storeFinder.lookUp"}}</button>
             </form>
           </div>
           {{!-- Individual store information is currently hardcoded, needs to be adjusted according to the way the data will be fetched --}}
