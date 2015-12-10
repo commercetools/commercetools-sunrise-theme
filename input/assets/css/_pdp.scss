@@ -12,8 +12,7 @@
   > .animated-modal {
     background: $white;
     box-shadow: none;
-    .modal-content,
-    .modal-header {
+    .modal-content {
       background: $white;
       box-shadow: none;
       border: none;
@@ -28,7 +27,9 @@
       }
     }
     .modal-header {
-      padding: 15px 0;
+      background: $white;
+      padding: 20px 20px 0;
+      text-align: right;
     }
   }
 }
