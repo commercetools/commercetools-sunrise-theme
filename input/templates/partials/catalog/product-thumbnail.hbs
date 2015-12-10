@@ -25,12 +25,23 @@
       {{/if}}
     </div>
     <div class="pop-product-more-colors">
-      {{#if thumbnail.moreColors}}{{i18n "catalog:thumbnail.moreColors"}}{{/if}}&nbsp;
+      {{!-- {{#if thumbnail.moreColors}}{{i18n "catalog:thumbnail.moreColors"}}{{/if}}&nbsp; --}}
+      <ul class="list-inline">
+        <li>
+          <div class="product-thumbnail-swatch-red"></div>
+        </li>
+        <li>
+          <div class="product-thumbnail-swatch-green"></div>
+        </li>
+        <li>
+          <div class="product-thumbnail-swatch-blue"></div>
+        </li>
+      </ul>
     </div>
     <div class="shop-item-overlay hidden-xs">
       <button type="button" class="quickview" data-modal="quickview-modal{{index}}">
         {{i18n "catalog:thumbnail.quickView"}}
-      </button>      
+      </button>
       <form id="form-add-to-wishlist{{index}}" name="add-to-wishlist" action="{{@root.meta._links.addToWishlist.href}}">
         <button type="submit" class="heart">
           <span class="sr-only">{{i18n "catalog:wishlist.add"}}</span>
