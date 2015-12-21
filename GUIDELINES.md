@@ -26,16 +26,6 @@
 
 - Do not use i18n for email templates.
 
-- Partials can accept named parameters with literals:
-```
-{{> checkout/secure-checkout-title titleKey="checkout.confirmationPage.title"}}
-```
-being secure-checkout-title as follows:
-```
-<span class="text-uppercase secure-payment-title">{{i18n titleKey}}</span>
-```
+- Partials can accept named parameters with literals: `{{> checkout/secure-checkout-title titleKey="checkout.confirmationPage.title"}}`, being secure-checkout-title as follows: `<span class="text-uppercase secure-payment-title">{{i18n titleKey}}</span>`
 
-- Use string, number and boolean JSON types as appropiate (mind the quotes!)
-```
-string: "foo", number: 3, boolean: false
-```
+- Use string, number and boolean JSON types as appropiate (mind the quotes!) `string: "foo", number: 3, boolean: false`
