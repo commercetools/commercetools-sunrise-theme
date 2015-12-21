@@ -14,11 +14,11 @@
     <div class="faq-wrapper">
       <div class="faq-section-title">{{i18n "faq.delivery"}}</div>
       {{#each content.deliveryFaqs}}
-        {{> catalog/faq-accordion}}
+        {{> catalog/faq-accordion key="delivery"}}
       {{/each}}
       <div class="faq-section-title">{{i18n "faq.returns"}}</div>
       {{#each content.returnsFaqs}}
-        {{> catalog/faq-accordion}}
+        {{> catalog/faq-accordion key="returns"}}
       {{/each}}
     </div>
   </div>

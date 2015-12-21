@@ -102,7 +102,7 @@
 }
 .custom-select-wrapper {
   display: inline-block;
-  line-height: 40px;
+  line-height: 30px;
   .select-product-detail {
     background-color: $white;
   }
@@ -119,19 +119,18 @@
   a:hover {
     color: $dark-grey;
   }
-  .parent-category-list {
-
+  a:before {
+    content: "- ";
+    padding-right: 5px;
   }
 }
 .dropdown-subcategory {
   list-style: none;
   padding-left: 20px;
 }
-
 .facet-count {
   color: $dark-grey;
 }
-
 .category-active {
   font-weight: bold;
 }

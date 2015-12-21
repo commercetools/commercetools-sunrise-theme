@@ -3,13 +3,13 @@
         {
             "name" : "Standard delivery",
             "description" : "Delivery within 4 working days",
-            "price" : "€3.00",
+            "price" : "€3,00",
             "freeAbove" : "€29.99"
         },
         {
             "name" : "Express delivery",
             "description" : "Delivery within 4 working days",
-            "price" : "€6.00"
+            "price" : "€6,00"
         }
     ]
 }
