@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
   grunt.initConfig({
 
+    languages: ["en", "de"],
+
     pkg: grunt.file.readJSON("package.json"),
 
     // Configuration of 'grunt-contrib-clean' task, to remove all output folder
@@ -62,7 +64,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'output/templates',
             src: '*.hbs',
-            dest: 'output/',
+            dest: "output/<%= lng %>/",
             ext: '.html'
         }],
         templateData: '*.json', // compile-handlebars uses the template folder no matter what
@@ -75,7 +77,7 @@ module.exports = function(grunt) {
     i18next: {
       options: {
         preload: ['de', 'en'],
-        lng: 'en',
+        lng: "<%= lng %>",
         fallbackLng: 'en',
         ns: {
           namespaces: ['translations', 'home', 'catalog', 'checkout', 'my-account-login', 'no-search-result', 'mix-match', 'my-account'],
@@ -119,8 +121,8 @@ module.exports = function(grunt) {
         destFolder: "/META-INF/resources/webjars",
         gitpush: true
       },
-      install : {
-        options : {
+      install: {
+        options: {
           goal: "install"
         },
         files: [
@@ -129,8 +131,8 @@ module.exports = function(grunt) {
           { expand: true, cwd: 'output/', src: "locales/**/*", filter: "isFile" }
         ]
       },
-      release : {
-        options : {
+      release: {
+        options: {
           goal: "release",
           repositoryId: "commercetools-bintray",
           url: "https://api.bintray.com/maven/commercetools/maven/<%= pkg.name %>"
@@ -170,20 +172,23 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('build', ['clean:dist', 'build-assets', 'build-templates']);
+  grunt.registerTask('build', ['clean', 'build-assets', 'build-templates']);
   grunt.registerTask('build-assets', ['clean:assets', 'copy:assets', 'sass', 'postcss']);
-  grunt.registerTask('build-templates', ['clean:templates', 'copy:templates', 'pre-handlebars', 'handlebars']);
+  grunt.registerTask('build-templates', ['clean:templates', 'copy:templates', 'json-refs', 'generate-html']);
   grunt.registerTask('release', ['build', 'maven:release', 'clean:dist']);
   grunt.registerTask('install', ['build', 'maven:install', 'clean:dist']);
   grunt.registerTask('publish', ['gh-pages-clean', 'build', 'gh-pages']);
 
-  grunt.registerTask('pre-handlebars', 'Tasks to be run before Handlebars', function() {
-    grunt.task.run('json-refs');
-    grunt.task.run('i18next');
+  grunt.registerTask('generate-html', 'Generates HTML files from the Handlebars templates for every defined language', function() {
+    grunt.config('languages').forEach(function(language) {
+      grunt.task.run('generate-localized-html:' + language);
+    })
   });
 
-  grunt.registerTask('handlebars', 'Compiles Handlebars templates using JSON data', function() {
-    grunt.task.requires('pre-handlebars');
-    grunt.task.run('compile-handlebars');
+  grunt.registerTask('generate-localized-html', 'Generates HTML files from the Handlebars templates for the given language', function(language) {
+      grunt.log.debug("Building site for language " + language);
+      grunt.config.set("lng", language);
+      grunt.task.run('i18next');
+      grunt.task.run('compile-handlebars');
   });
 };
