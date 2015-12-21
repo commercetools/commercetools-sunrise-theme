@@ -35,6 +35,11 @@
 - [Imprint Page](http://sphereio.github.io/sphere-sunrise-design/en/imprint.html)
 
 
+###How to use
+All releases can be found in a Maven repository hosted by Bintray:
+https://dl.bintray.com/commercetools/maven/io/sphere/sphere-sunrise-design/
+
+You can then import it to your project as a Webjar dependency.
 
 ###Installation
 
