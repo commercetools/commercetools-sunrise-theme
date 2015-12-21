@@ -2149,18 +2149,23 @@
     "displaySelector": {
       "list": [
         {
+          "label": "9",
+          "value": "9",
+          "selected": true
+        },
+        {
           "label": "12",
           "value": "12",
           "selected": false
         },
         {
-          "label": "24",
-          "value": "24",
-          "selected": true
+          "label": "15",
+          "value": "15",
+          "selected": false
         },
         {
-          "label": "48",
-          "value": "48",
+          "label": "All",
+          "value": "all",
           "selected": false
         }
       ]

@@ -379,10 +379,6 @@
         "selected": true,
         "url": "newsletter.html"
       },
-      "termsConditions": {
-        "url": "terms.html",
-        "selected": true
-      },
       "remember": {
         "selected": true
       }

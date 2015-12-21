@@ -1840,18 +1840,6 @@
         "value": "City2",
         "selected": false
       }
-    ],
-    "storeSelector": [
-      {
-        "label": "Store 1",
-        "value": "Store1",
-        "selected": false
-      },
-      {
-        "label": "Store 2",
-        "value": "Store2",
-        "selected": false
-      }
     ]
   },
   "meta": {

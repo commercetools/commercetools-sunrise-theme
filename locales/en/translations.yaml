@@ -99,18 +99,27 @@ forgotPasswordModal:
   description: Please submit your email address to receive a password reset link
 storeFinder:
   title: Store Finder
-  sectionTitle: Store Finder
   description: Please select your region or enter your postcode
   postcode: Postcode
   lookUp: Look Up
   orRegion: Or Region
   city: City
-  store: Store
   selectRegion: Select Region
   selectCity: Select City
-  selectStore: Select Store
   address: Address
   workingHours: Working Hours
+  addressLineOne: Sunrise Street 10
+  addressLineTwo: Sunrise, 10116
+  addressLineThree: Sunrise
+  addressLineFour: "123456789123"
+  standartHours:
+    title: Standart Opening Hours
+    monFri: "Monday-Friday: 09.00 - 20.00"
+    weekend: "Weekend: 09.00 - 20.00"
+  holidayHours:
+    title: Holiday Opening Hours
+    monFri: "Monday-Friday: 09.00 - 20.00"
+    weekend: "Weekend: 09.00 - 20.00"
 faq:
   title: FAQS
   delivery: Delivery

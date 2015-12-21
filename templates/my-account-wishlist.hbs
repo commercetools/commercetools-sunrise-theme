@@ -36,7 +36,7 @@
                     <div class="row">
                       {{#each content.products.list}}
                         <div class="col-sm-6 col-md-4">
-                          {{> catalog/product-thumbnail thumbnail=this index=@index}}
+                          {{> catalog/product-thumbnail thumbnail=this index=@index wishlist=true}}
                           <div class="my-account-wishlist-remove-btn">
                             <button>{{i18n "catalog:removeBtn.title"}}</button>
                           </div>
