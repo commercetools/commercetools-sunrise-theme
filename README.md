@@ -53,9 +53,9 @@
 
 `grunt publish` to publish the generated site to GitHub Pages (requires $GH_TOKEN)
 
-`grunt release-[patch|minor|major]` to release the current version to the Maven Bintray repository and prepare a new version (requires commercetools-bintray repository ID in Maven's settings.xml)
+`grunt release` to release the current version to the Maven Bintray repository (requires commercetools-bintray repository ID in Maven's settings.xml) and move to the next development version
 
-`grunt clean build maven:install` to install to local maven repository (~/.m2/repository/io/sphere/sphere-sunrise-design)
+`grunt install` to install to local maven repository (~/.m2/repository/io/sphere/sphere-sunrise-design)
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
@@ -73,13 +73,8 @@ Once the project is built, the generated site is located in the `output/` folder
   - Copy any JS file in `input/assets/js/` to `output/assets/js/`
   - Copy any file in `input/assets/img/` to `output/assets/img/`
   - Copy any file in `input/assets/font/` to `output/assets/font/`
-  - Copy any Handlebars template in `input/templates/` to `output/templates/` (it flattens any directory)
-  - Copy any HTML file in `input/` to `output/` (be careful not to use the same name as a Handlebars template or it will be overwritten)
-
-
-`grunt coffee`
-  - Compile and concatenate any Coffeescript file inside `input/assets/js/` into `output/assets/js/coffee.js`
-
+  - Copy any Handlebars template and JSON data in `input/templates/` to `output/templates/`
+  - Copy any YAML file in `locales/` to `output/locales`
 
 `grunt sass`
   - Processes `input/assets/css/main.scss` into `output/assets/css/main.min.css`
@@ -87,5 +82,8 @@ Once the project is built, the generated site is located in the `output/` folder
 `grunt postcss`
   - Adds vendor-prefixed CSS properties to `output/assets/css/main.min.css`
 
-`grunt compile-handlebars`
+`grunt build-assets`
+  - Generates CSS files and copies all other assets from `input/assets/` to `output/assets/`
+
+`grunt build-templates`
   - Generates HTML files from the Handlebars templates and JSON data defined in `input/templates/` and the partial templates defined in `input/templates/partials/` into `output/`
