@@ -45,7 +45,7 @@
             "slug": "some-slug",
             "name": "Enditatem Product Name Optional very long line two",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "image": "assets/img/blue-jacket.jpg",
+            "image": "../assets/img/blue-jacket.jpg",
             "url": "pdp.html",
             "sku": "Sunrise #SUN123456",
             "quantity": 1,
@@ -148,7 +148,7 @@
             "slug": "some-slug",
             "name": "Enditatem Product Name Optional very long line two",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "image": "assets/img/blue-jacket.jpg",
+            "image": "../assets/img/blue-jacket.jpg",
             "url": "pdp.html",
             "sku": "Sunrise #SUN123456",
             "quantity": 1,
@@ -251,7 +251,7 @@
             "slug": "some-slug",
             "name": "Enditatem Product Name Optional very long line two",
             "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "image": "assets/img/blue-jacket.jpg",
+            "image": "../assets/img/blue-jacket.jpg",
             "url": "pdp.html",
             "sku": "Sunrise #SUN123456",
             "quantity": 1,
@@ -1875,7 +1875,7 @@
     "productDescriptionTitle": "Product Description",
     "order": [
       {
-        "image": "assets/img/blue-shirt.jpg",
+        "image": "../assets/img/blue-shirt.jpg",
         "productTitleOne": "Enditatem Product name",
         "productTitleTwo": "Optional Line Two",
         "sku": "Sunrise SUN#123456",
@@ -1888,7 +1888,7 @@
         "totalPrice": "75,00 €"
       },
       {
-        "image": "assets/img/blue-shirt.jpg",
+        "image": "../assets/img/blue-shirt.jpg",
         "productTitleOne": "Enditatem Product name",
         "productTitleTwo": "Optional Line Two",
         "sku": "Sunrise SUN#123456",
@@ -1903,7 +1903,7 @@
     ]
   },
   "meta": {
-    "assetsPath": "assets/",
+    "assetsPath": "../assets/",
     "csrfToken": "Test123",
     "bagQuantityOptions": [
       1,
