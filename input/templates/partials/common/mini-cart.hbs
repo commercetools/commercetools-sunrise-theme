@@ -12,7 +12,6 @@
             <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
             <a class="img" href="{{url}}"><img src="{{image}}" alt="{{name}}" /></a>
             <p class="product-title"><a href="{{url}}">{{name}}</a></p>
-            <p class="product-title">{{description}}</p>
             <div class="details">
               <p class="product-quantity">{{i18n "common.quantity"}}<span>{{quantity}}x</span></p>
               <p class="product-price">{{i18n "common.price"}}<span>{{price}}</span></p>
@@ -35,7 +34,7 @@
   </div>
 {{else}}
 <a href="{{@root.meta._links.cart.href}}" class="not-empty link-your-bag icon-hand-bag">
-  <span class="hidden-xs hidden-sm">{{i18n "header.cart"}}</span>
-  <span class="cart-item-number">0</span>
+  <span class="hidden-xs hidden-sm">{{i18n "header.miniCart"}}</span>
+  <span class="cart-item-number">{{miniCart.totalItems}}</span>
 </a>
 {{/if}}

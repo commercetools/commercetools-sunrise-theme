@@ -1,94 +1,6 @@
-window.sunrise = window.sunrise || {
-  helper: {
-    /**
-     * @param DOMList list
-     * @param string data
-     * @param string key
-     * @return DOMNode
-     */
-    findElementByDataAttribute: function(list, data, key) {
-      var found = null,
-        item;
-      list.each(function() {
-        item = $(this);
-        if (item.data(key) === data) {
-          found = item;
-        }
-      });
-      return found;
-    },
-    findColorByCode: function(code) {
-      var found = null,
-        colors = sunrise.options.color;
-      colors.forEach(function(v) {
-        if (v.code === code) {
-          found = v;
-        }
-      });
-      return found;
-    },
-    findColorByName: function(name) {
-      var found = null,
-        colors = sunrise.options.color;
-      colors.forEach(function(v) {
-        if (v.name === name) {
-          found = v;
-        }
-      });
-      return found;
-    },
-    findSizeByName: function(name) {
-      var found = null,
-        sizes = sunrise.options.size;
-      sizes.forEach(function(v) {
-        if (v.name === name) {
-          found = v;
-        }
-      });
-      return found;
-    },
-    findSizeBycode: function(code) {
-      var found = null,
-        sizes = sunrise.options.size;
-      sizes.forEach(function(v) {
-        if (v.code === code) {
-          found = v;
-        }
-      });
-      return found;
-    }
-  },
-  // General application-wide options
-  options: {
-    color: [{
-      code: 'navy_blue',
-      name: 'Navy Blue'
-    }, {
-      code: 'beige',
-      name: 'Beige'
-    }],
-    size: [{
-      code: 'xs',
-      name: 'XS'
-    }, {
-      code: 's',
-      name: 'S'
-    }, {
-      code: 'm',
-      name: 'M'
-    }, {
-      code: 'l',
-      name: 'L'
-    }, {
-      code: 'xl',
-      name: 'XL'
-    }]
-  },
-  class: {
-    sizeGuideTable: sizeGuideTable
-  }
-};
-
+/**
+ * sizeGuideTable
+ */
 function sizeGuideTable(item, root) {
   this.item = item;
   this.root = root || $(window);
@@ -523,3 +435,10 @@ $('.personal-details-edit-toggle').click(function() {
   $('.personal-details-landing-wrapper').hide();
   $('.personal-details-edit-wrapper').show();
 })
+
+// Move desktop content to sidebar for mobile
+$(function() {
+  if($(window).width() < 767) {
+    $("#my-account-desktop-content").insertAfter("#my-account-mobile-content");
+  }
+});

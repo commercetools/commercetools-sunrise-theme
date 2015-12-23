@@ -2,36 +2,6 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"pageTitle" : "My Account",
-		"sidebarItemOne" : {
-			"text" : "Personal Details",
-			"url" : ""
-		},
-		"sidebarItemTwo" : {
-			"text" : "Address Book",
-			"url" : ""
-		},
-		"sidebarItemThree" : {
-			"text" : "Payment Details",
-			"url" : ""
-		},
-		"sidebarItemFour" : {
-			"text" : "My Orders",
-			"url" : ""
-		},
-		"sidebarItemFive" : {
-			"text" : "Returns / Exchange",
-			"url" : ""
-		},
-		"sidebarItemSix" : {
-			"text" : "Wishlist",
-			"url" : "",
-			"wishlistItems" : "12"
-		},
-		"sidebarItemSeven" : {
-			"text" : "Sign Out",
-			"url" : ""
-		},
         "contentTitle" : "Returns / Exchange",
 		"yourOrderTitle" : "Your Order Details",
 		"orderNumberTitle" : "Order number:",
@@ -90,7 +60,7 @@
 		"productDescriptionTitle" : "Product Description",
 		"order" : [
 			{
-				"image" : "assets/img/blue-shirt.jpg",
+				"image" : "../assets/img/blue-shirt.jpg",
 				"productTitleOne" : "Enditatem Product name",
 				"productTitleTwo" : "Optional Line Two",
 				"sku" : "Sunrise SUN#123456",
@@ -103,7 +73,7 @@
 				"totalPrice" : "75,00 €"
 			},
 			{
-				"image" : "assets/img/blue-shirt.jpg",
+				"image" : "../assets/img/blue-shirt.jpg",
 				"productTitleOne" : "Enditatem Product name",
 				"productTitleTwo" : "Optional Line Two",
 				"sku" : "Sunrise SUN#123456",

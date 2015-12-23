@@ -5,30 +5,41 @@
 [![Build Status](https://travis-ci.org/sphereio/sphere-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/sphere-sunrise-design) [![Stories in Ready](https://badge.waffle.io/sphereio/sphere-sunrise-design.png?label=ready&title=Ready)](https://waffle.io/sphereio/sphere-sunrise-design)
 
 ###Demo
-- [Home](http://sphereio.github.io/sphere-sunrise-design/home.html)
-- [Product Overview](http://sphereio.github.io/sphere-sunrise-design/pop.html)
-- [Product Detail](http://sphereio.github.io/sphere-sunrise-design/pdp.html)
-- [Cart Detail](http://sphereio.github.io/sphere-sunrise-design/cart.html)
-- [Checkout Sign In (1/5)](http://sphereio.github.io/sphere-sunrise-design/checkout-signin.html)
-- [Checkout Shipping (2/5)](http://sphereio.github.io/sphere-sunrise-design/checkout-shipping.html)
-- [Checkout Payment (3/5)](http://sphereio.github.io/sphere-sunrise-design/checkout-payment.html)
-- [Checkout Confirmation (4/5)](http://sphereio.github.io/sphere-sunrise-design/checkout-confirmation.html)
-- [Checkout Thank You (5/5)](http://sphereio.github.io/sphere-sunrise-design/checkout-thankyou.html)
-- [My Account: Personal Details](http://sphereio.github.io/sphere-sunrise-design/my-account-personal-details.html)
-- [My Account: Address Book](http://sphereio.github.io/sphere-sunrise-design/my-account-address-book.html)
-- [My Account: Payment Details](http://sphereio.github.io/sphere-sunrise-design/my-account-payment-details.html)
-- [My Account: My Orders](http://sphereio.github.io/sphere-sunrise-design/my-account-my-orders.html)
-- [My Account: My Orders - Single Order](http://sphereio.github.io/sphere-sunrise-design/my-account-my-orders-order.html)
-- [My Account: Returns / Exchange](http://sphereio.github.io/sphere-sunrise-design/my-account-returns-exchange.html)
-- [My Account: Returns / Exchange - Single Return](http://sphereio.github.io/sphere-sunrise-design/my-account-returns-exchange-order.html)
-- [My Account: Wishlist](http://sphereio.github.io/sphere-sunrise-design/my-account-wishlist.html)
-- [My Account: Login](http://sphereio.github.io/sphere-sunrise-design/my-account-login.html)
-- [Confirmation Email](http://sphereio.github.io/sphere-sunrise-design/confirmation-email.html)
-- [Dispatch Email](http://sphereio.github.io/sphere-sunrise-design/dispatch-email.html)
-- [No Search Result](http://sphereio.github.io/sphere-sunrise-design/no-search-result.html)
-- [Mix & Match](http://sphereio.github.io/sphere-sunrise-design/mix-match.html)
+- [Home](http://sphereio.github.io/sphere-sunrise-design/en/home.html)
+- [Product Overview](http://sphereio.github.io/sphere-sunrise-design/en/pop.html)
+- [Product Detail](http://sphereio.github.io/sphere-sunrise-design/en/pdp.html)
+- [Cart Detail](http://sphereio.github.io/sphere-sunrise-design/en/cart.html)
+- [Checkout Sign In (1/5)](http://sphereio.github.io/sphere-sunrise-design/en/checkout-signin.html)
+- [Checkout Shipping (2/5)](http://sphereio.github.io/sphere-sunrise-design/en/checkout-shipping.html)
+- [Checkout Payment (3/5)](http://sphereio.github.io/sphere-sunrise-design/en/checkout-payment.html)
+- [Checkout Confirmation (4/5)](http://sphereio.github.io/sphere-sunrise-design/en/checkout-confirmation.html)
+- [Checkout Thank You (5/5)](http://sphereio.github.io/sphere-sunrise-design/en/checkout-thankyou.html)
+- [My Account: Personal Details](http://sphereio.github.io/sphere-sunrise-design/en/my-account-personal-details.html)
+- [My Account: Address Book](http://sphereio.github.io/sphere-sunrise-design/en/my-account-address-book.html)
+- [My Account: Payment Details](http://sphereio.github.io/sphere-sunrise-design/en/my-account-payment-details.html)
+- [My Account: My Orders](http://sphereio.github.io/sphere-sunrise-design/en/my-account-my-orders.html)
+- [My Account: My Orders - Single Order](http://sphereio.github.io/sphere-sunrise-design/en/my-account-my-orders-order.html)
+- [My Account: Returns / Exchange](http://sphereio.github.io/sphere-sunrise-design/en/my-account-returns-exchange.html)
+- [My Account: Returns / Exchange - Single Return](http://sphereio.github.io/sphere-sunrise-design/en/my-account-returns-exchange-order.html)
+- [My Account: Wishlist](http://sphereio.github.io/sphere-sunrise-design/en/my-account-wishlist.html)
+- [My Account: Login](http://sphereio.github.io/sphere-sunrise-design/en/my-account-login.html)
+- [Confirmation Email](http://sphereio.github.io/sphere-sunrise-design/en/confirmation-email.html)
+- [Dispatch Email](http://sphereio.github.io/sphere-sunrise-design/en/dispatch-email.html)
+- [Registration Email](http://sphereio.github.io/sphere-sunrise-design/en/registration-email.html)
+- [Password Reset Email](http://sphereio.github.io/sphere-sunrise-design/en/password-reset-email.html)
+- [No Search Result](http://sphereio.github.io/sphere-sunrise-design/en/no-search-result.html)
+- [Mix & Match](http://sphereio.github.io/sphere-sunrise-design/en/mix-match.html)
+- [Contact Form](http://sphereio.github.io/sphere-sunrise-design/en/contact-form.html)
+- [Store Finder](http://sphereio.github.io/sphere-sunrise-design/en/store-finder.html)
+- [FAQ Page](http://sphereio.github.io/sphere-sunrise-design/en/faq.html)
+- [Imprint Page](http://sphereio.github.io/sphere-sunrise-design/en/imprint.html)
 
 
+###How to use
+All releases can be found in a Maven repository hosted by Bintray:
+https://dl.bintray.com/commercetools/maven/io/sphere/sphere-sunrise-design/
+
+You can then import it to your project as a Webjar dependency.
 
 ###Installation
 
@@ -47,9 +58,9 @@
 
 `grunt publish` to publish the generated site to GitHub Pages (requires $GH_TOKEN)
 
-`grunt release-[patch|minor|major]` to release the current version to the Maven Bintray repository and prepare a new version (requires commercetools-bintray repository ID in Maven's settings.xml)
+`grunt release` to release the current version to the Maven Bintray repository (requires commercetools-bintray repository ID in Maven's settings.xml) and move to the next development version
 
-`grunt clean build maven:install` to install to local maven repository (~/.m2/repository/io/sphere/sphere-sunrise-design)
+`grunt install` to install to local maven repository (~/.m2/repository/io/sphere/sphere-sunrise-design)
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
@@ -67,13 +78,8 @@ Once the project is built, the generated site is located in the `output/` folder
   - Copy any JS file in `input/assets/js/` to `output/assets/js/`
   - Copy any file in `input/assets/img/` to `output/assets/img/`
   - Copy any file in `input/assets/font/` to `output/assets/font/`
-  - Copy any Handlebars template in `input/templates/` to `output/templates/` (it flattens any directory)
-  - Copy any HTML file in `input/` to `output/` (be careful not to use the same name as a Handlebars template or it will be overwritten)
-
-
-`grunt coffee`
-  - Compile and concatenate any Coffeescript file inside `input/assets/js/` into `output/assets/js/coffee.js`
-
+  - Copy any Handlebars template and JSON data in `input/templates/` to `output/templates/`
+  - Copy any YAML file in `locales/` to `output/locales`
 
 `grunt sass`
   - Processes `input/assets/css/main.scss` into `output/assets/css/main.min.css`
@@ -81,5 +87,8 @@ Once the project is built, the generated site is located in the `output/` folder
 `grunt postcss`
   - Adds vendor-prefixed CSS properties to `output/assets/css/main.min.css`
 
-`grunt compile-handlebars`
+`grunt build-assets`
+  - Generates CSS files and copies all other assets from `input/assets/` to `output/assets/`
+
+`grunt build-templates`
   - Generates HTML files from the Handlebars templates and JSON data defined in `input/templates/` and the partial templates defined in `input/templates/partials/` into `output/`

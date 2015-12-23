@@ -6,11 +6,13 @@
     margin-top: 10px;
   }
 }
+.my-account-wishlist-items-wrapper {
+  @media screen and (max-width: 767px) {
+    padding-top: 30px;
+  }
+}
 .my-account-wishlist-pagination {
   margin: 20px 0 50px 0;
-  .page-numbers {
-    margin: 0;
-  }
 }
 .my-account-wishlist-clear {
   button {
@@ -22,15 +24,15 @@
 }
 .my-account-wishlist-per-page {
   text-align: right;
-  select {
-    appearance: none;
-    border: 1px solid $grey;
-    padding: 3px 30px 3px 5px;
-    background: transparent url("../img/arrow-67-filled.png") no-repeat 80% 50%;
-    background-size: 10px;
-    border-radius: 2px;
-    border: 1px solid $grey;
-    margin-left: 10px;
+  .wishlist-display-selector-title {
+    display: inline-block;
+    padding: 10px 10px 0;
+  }
+  .selectboxit-btn {
+    background: transparent url("../img/arrow-67-filled.png") no-repeat 95% 50%;
+    background-size: 12px;
+    border: solid 1px #D6D6D6;
+    min-width: 50px;
   }
 }
 .my-account-wishlist-remove-btn {

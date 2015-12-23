@@ -15,7 +15,10 @@
   margin-right: 1em;
 }
 .secure-payment-title {
-  font-size: 1.7em;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 200;
 }
 
 // Checkout steps
@@ -121,6 +124,8 @@
   font-size: 1.1em;
   letter-spacing: 0.1em;
   padding-bottom: 1em;
+  border-bottom: 1px solid $light-grey;
+  margin: 15px 0 20px;
 }
 .shipping-method-option {
   background: lighten($light-grey, 10%);

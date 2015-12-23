@@ -133,6 +133,9 @@
     color: $dark-grey;
     border: 2px solid $dark-grey;
   }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 /*****************************************************************************/
