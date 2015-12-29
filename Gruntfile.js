@@ -37,6 +37,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // Configuration of 'grunt-contrib-imagemin' task, to compress images
     imagemin: {
       dist: {
         files: [{
@@ -69,6 +70,16 @@ module.exports = function(grunt) {
       },
       dist: {
         src: 'output/assets/css/main.min.css'
+      }
+    },
+
+    // Configuration of 'grunt-contrib-uglify' task, to minify JS files
+    uglify: {
+      dist: {
+        files: [
+          { 'output/assets/js/main.min.js': 'output/assets/js/main.js' },
+          { 'output/assets/js/jqzoom.min.js': 'output/assets/js/jqzoom.js' }
+        ]
       }
     },
 
@@ -187,6 +198,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-compile-handlebars');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-maven-tasks');
@@ -195,7 +207,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('build', ['clean', 'build-images', 'build-assets', 'build-templates']);
   grunt.registerTask('build-images', ['clean:images', 'copy:images', 'imagemin']);
-  grunt.registerTask('build-assets', ['clean:assets', 'copy:assets', 'sass', 'postcss']);
+  grunt.registerTask('build-assets', ['clean:assets', 'copy:assets', 'sass', 'postcss', 'uglify']);
   grunt.registerTask('build-templates', ['clean:templates', 'copy:templates', 'json-refs', 'generate-html']);
   grunt.registerTask('release', ['build', 'maven:release', 'clean:dist']);
   grunt.registerTask('install', ['build', 'maven:install', 'clean:dist']);
