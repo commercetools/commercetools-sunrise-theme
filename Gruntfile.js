@@ -8,18 +8,23 @@ module.exports = function(grunt) {
     // Configuration of 'grunt-contrib-clean' task, to remove all output folder
     clean: {
       output: ['output/'],
-      assets: ['output/assets/'],
+      images: ['output/assets/img/'],
+      assets: ['output/assets/css/', 'output/assets/js/', 'output/assets/fonts/'],
       templates: ['output/templates/', 'output/locales', 'output/*.html'],
       dist: ['*.jar']
     },
 
     // Configuration of 'grunt-contrib-copy' task, to move files into the output folder
     copy: {
+      images: {
+        files: [
+          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/img/**/*' }
+        ]
+      },
       assets: {
         files: [
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/css/*.css' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/js/*.js' },
-          { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/img/**/*' },
           { expand: true, cwd: 'input/', dest: 'output/', src: 'assets/fonts/**/*' }
         ]
       },
@@ -27,9 +32,19 @@ module.exports = function(grunt) {
         files: [
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.hbs' },
           { expand: true, cwd: 'locales/', dest: 'output/locales', src: '**/*.yaml' },
-          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.json' },
-          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.hbs' }
+          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.{hbs,json}' }
         ]
+      }
+    },
+
+    imagemin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'output/assets/img/',
+          src: ['**/*.{png,jpg,gif,svg}'],
+          dest: 'output/assets/img/'
+        }]
       }
     },
 
@@ -99,10 +114,14 @@ module.exports = function(grunt) {
       }
     },
 
-    // Configuration of 'grunt-contrib-watch' task, to watch for changes in order to run the build task again
+    // Configuration of 'grunt-contrib-watch' task, to watch for changes in order to run the build tasks again
     watch: {
+      images: {
+        files: ['input/assets/img/**/*'],
+        tasks: ['build-images']
+      },
       assets: {
-        files: ['input/assets/**/*'],
+        files: ['input/assets/css/**/*', 'input/assets/js/**/*', 'input/assets/fonts/**/*'],
         tasks: ['build-assets']
       },
       templates: {
@@ -165,6 +184,7 @@ module.exports = function(grunt) {
   grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-compile-handlebars');
@@ -173,7 +193,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('build', ['clean', 'build-assets', 'build-templates']);
+  grunt.registerTask('build', ['clean', 'build-images', 'build-assets', 'build-templates']);
+  grunt.registerTask('build-images', ['clean:images', 'copy:images', 'imagemin']);
   grunt.registerTask('build-assets', ['clean:assets', 'copy:assets', 'sass', 'postcss']);
   grunt.registerTask('build-templates', ['clean:templates', 'copy:templates', 'json-refs', 'generate-html']);
   grunt.registerTask('release', ['build', 'maven:release', 'clean:dist']);
