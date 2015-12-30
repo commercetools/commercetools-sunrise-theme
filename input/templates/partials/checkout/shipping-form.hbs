@@ -1,31 +1,19 @@
-<form method="post" action="{{@root.meta._links.checkoutAddressesSubmit.href}}">
+<form method="post" action="{{@root.meta._links.checkoutShippingSubmit.href}}">
   <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
-  <div class="shipping-info">
-    <span class="text-uppercase shipping-info-title">{{i18n "checkout:shippingInformation"}}</span>
-    <span class="pull-right required-fields">{{i18n "form.required"}}*</span>
-  </div>
-  {{> checkout/global-form-errors errors=shippingForm.errors}}
-  {{> checkout/address-form-elements form=shippingForm.shippingAddress suffix="Shipping"}}
-  <div class="row different-billing-row">
-    <div class="col-sm-12">
-      <div class="different-for-billing input-block">
-        <label for="different-billing-checkbox">
-          <span>
-            <input id="different-billing-checkbox" type="checkbox" value="true" name="billingAddressDifferentToBillingAddress"{{#if shippingForm.billingAddressDifferentToBillingAddress}} checked{{/if}}>
+  <div class="shipping-method input-block" id="shipping-methods-setting">
+    <div class="text-uppercase shipping-method-title">{{i18n "checkout:shippingForm"}}</div>
+    {{#each shippingForm.shippingMethods.list}}
+      <div class="shipping-method-option">
+        <label for="shipping-method-{{@index}}">
+          <span class="shipping-method-span">
+            <input id="shipping-method-{{@index}}" class="shipping-method-radio" type="radio" name="shippingMethodId" value="{{value}}" {{#if selected}}checked{{/if}}{{!-- if it is only one element --}}{{#unless selected}}{{#if @first}}{{#if @last}}checked{{/if}}{{/if}}{{/unless}}>
+            {{label}}
           </span>
-          <span>{{i18n "checkout:shippingPage.differentBillingAddressCheckboxLabel"}}</span>
+          <span class="text-uppercase delivery-time">{{deliveryDays}}</span>
         </label>
+        <a href="{{url}}"><span class="pull-right text-uppercase delivery-details">{{i18n "common.viewDetails"}}</span></a>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <div id="different-billing-address">
-        <div class="row">
-          {{> checkout/address-form-elements form=shippingForm.billingAddress suffix="Billing"}}
-        </div>
-      </div>
-    </div>
+    {{/each}}
   </div>
   {{> checkout/continue-checkout-button}}
 </form>
