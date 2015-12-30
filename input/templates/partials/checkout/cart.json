@@ -12,8 +12,8 @@
             { "$ref" : "../common/product-variant-1.json" }
         ]
     },
-    "shippingAddress" : { "$ref" : "shipping-address.json" },
-    "billingAddress" : { "$ref" : "billing-address.json" },
+    "shippingAddress" : { "$ref" : "address-shipping.json" },
+    "billingAddress" : { "$ref" : "address-billing.json" },
     "paymentDetails" : {
         "type" : "Credit Card",
         "name" : "P. Osgood",
