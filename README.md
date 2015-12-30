@@ -75,12 +75,17 @@ Once the project is built, the generated site is located in the `output/` folder
   - Removes the `output/` folder with the generate site
 
 `grunt copy`
-  - Copy any CSS file in `input/assets/css/` to `output/assets/css/`
-  - Copy any JS file in `input/assets/js/` to `output/assets/js/`
-  - Copy any file in `input/assets/img/` to `output/assets/img/`
-  - Copy any file in `input/assets/font/` to `output/assets/font/`
-  - Copy any Handlebars template and JSON data in `input/templates/` to `output/templates/`
-  - Copy any YAML file in `locales/` to `output/locales`
+  - `:images` copies any file in `input/assets/img/` to `output/assets/img/`
+  - `:assets` copies any
+    - `*.css` file in `input/assets/css/` to `output/assets/css/`
+    - `*.js` file in `input/assets/js/` to `output/assets/js/`
+    - file in `input/assets/font/` to `output/assets/font/`
+  - `:templates` copies any
+    - `*.hbs` and `*.json` files in `input/templates/` to `output/templates/`
+    - `*.yaml` file in `locales/` to `output/locales`
+
+`grunt imagemin`
+  - Compresses any PNG, JPG, GIF and SVG in `output/assets/img/`
 
 `grunt sass`
   - Processes `input/assets/css/main.scss` into `output/assets/css/main.min.css`
@@ -88,8 +93,11 @@ Once the project is built, the generated site is located in the `output/` folder
 `grunt postcss`
   - Adds vendor-prefixed CSS properties to `output/assets/css/main.min.css`
 
+`grunt build-images`
+  - Cleans up, copies and compresses all images
+
 `grunt build-assets`
-  - Generates CSS files and copies all other assets from `input/assets/` to `output/assets/`
+  - Cleans up, generates and optimizes all CSS, JS and font files
 
 `grunt build-templates`
-  - Generates HTML files from the Handlebars templates and JSON data defined in `input/templates/` and the partial templates defined in `input/templates/partials/` into `output/`
+  - Generates HTML files from the Handlebars templates and JSON data defined in `input/templates/` and the partial templates defined in `input/templates/partials/`
