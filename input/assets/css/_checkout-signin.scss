@@ -30,22 +30,16 @@
         padding: 5px 0;
         text-transform: uppercase;
       }
-      .returning-customer-email {
+      .returning-customer-email,
+      .returning-customer-password {
         width: 100%;
         border: 1px solid $light-grey;
         border-radius: 1px;
-        padding: 0.5em 0;
       }
       .returning-customer-password-title {
         display: block;
         padding: 15px 0 5px;
         text-transform: uppercase;
-      }
-      .returning-customer-password {
-        width: 100%;
-        border: 1px solid $light-grey;
-        border-radius: 1px;
-        padding: 0.5em 0;
       }
       .returning-customer-remember-forget {
         padding-top: 15px;
