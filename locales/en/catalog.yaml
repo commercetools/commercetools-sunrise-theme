@@ -24,8 +24,8 @@ displaySelector:
 sortSelector:
   title: Sort
   new: New first
-  priceDesc: Price: Descending
-  priceAsc: Price: Ascending
+  priceDesc: "Price: Descending"
+  priceAsc: "Price: Ascending"
 ratings:
   text5: 5 stars
   text4: 4 stars
