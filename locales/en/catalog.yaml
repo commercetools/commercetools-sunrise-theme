@@ -11,6 +11,10 @@ filters:
   open: Filter
   close: Filter close
   clear: Clear
+  productType: Product Type
+  color: Color
+  size: Size
+  brand: Brand
 pagination:
   pageSeparator: of
   next: Next
@@ -19,6 +23,9 @@ displaySelector:
   title: Items per page
 sortSelector:
   title: Sort
+  new: New first
+  priceDesc: "Price: Descending"
+  priceAsc: "Price: Ascending"
 ratings:
   text5: 5 stars
   text4: 4 stars
