@@ -3,8 +3,6 @@ agreeToTermsHtml: I agree to the <a id="confirmation-termsandconditions-link" hr
 billingAddress: Billing Address
 completeMyOrder: Complete My Order
 confirmation: confirmation
-confirmationPage:
-  title: Secure Checkout - Confirmation
 continueCheckout: Continue Checkout
 continueShopping: Continue Shopping
 discountApply: apply
@@ -20,14 +18,6 @@ orderNumber: Order Number
 orderSummary: Order Summary
 payment: payment
 paymentInformation: Payment Details
-paymentPage:
-  cardName: Name on credit card
-  cardNumber: Credit card number
-  expiryDateTitle: Expiry data
-  title: Secure Checkout - Payment
-  paymentOptionsTitle: Please provide one of the following payment options
-  securityCode: Security Code
-  securityCodeTooltip: normally you find it on the back of your card
 promoCodeApplied: Promotional Code Applied
 returningCustomer: Returning Customer
 rememberMe: Save my details to create my personal account at SUNRISE
@@ -35,18 +25,30 @@ shipping: Shipping
 shippingAddress: Shipping Address
 shippingInformation: Shipping Information
 shippingMethod: Shipping Method
-shippingPage:
-  differentBillingAddressCheckboxLabel: Use a different address for billing
-  emailInfo: We require your email address to send your shipping and order confirmation
-  title: Secure Checkout - Shipping
-  telNumberInfo: Please provide your telephone number so the shipper can contact you during delivery
+subtotal: Subtotal
+total: Total
+yourBag: Your Bag
+cartDetailPage:
+  title: Your Cart
 signInPage:
   title: Secure Checkout - Sign In
-subtotal: Subtotal
+shippingPage:
+  title: Secure Checkout - Shipping
+  differentBillingAddressCheckboxLabel: Use a different address for billing
+  emailInfo: We require your email address to send your shipping and order confirmation
+  telNumberInfo: Please provide your telephone number so the shipper can contact you during delivery
+paymentPage:
+  title: Secure Checkout - Payment
+  cardName: Name on credit card
+  cardNumber: Credit card number
+  expiryDateTitle: Expiry data
+  paymentOptionsTitle: Please provide one of the following payment options
+  securityCode: Security Code
+  securityCodeTooltip: normally you find it on the back of your card
+confirmationPage:
+  title: Secure Checkout - Confirmation
 thankYouPage:
   title: Thank you for your order!
   emailSentToStart: An email has been sent to
   emailSentToEnd: as a copy of this confirmation purchase
   yourOrderDetails: Your order details
-total: Total
-yourBag: Your Bag
