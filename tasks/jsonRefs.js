@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     });
     // 'json-refs' configuration
     var jsonRefsOptions = {
-      location: options.partials
+      relativeBase: options.partials
     };
 
     var jsonRefs = require('json-refs');
@@ -23,6 +23,8 @@ module.exports = function(grunt) {
       return jsonRefs.resolveRefs(json, jsonRefsOptions)
       .then(function(result) {
         return writeResolvedFile(file, result);
+      }, function(err) {
+        grunt.log.error(err.stack);
       });
     });
 
@@ -52,8 +54,9 @@ module.exports = function(grunt) {
   };
 
   var writeResolvedFile = function(file, result) {
+    grunt.log.debug(result.refs);
     var written = false;
-    parseMetadata(result.metadata);
+    parseMetadata(result.resolved);
     // Write the resolved JSON to a new file
     written = grunt.file.write(file.dest, stringifyJson(result.resolved, 2));
     if (written) {
