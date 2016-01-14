@@ -144,7 +144,7 @@
                   <img class="pull-right" src="../assets/img/globe-2.png" alt="Location">
                 </button>
                 <div class="location-dropdown">
-                  <form action="location.html" method="POST">
+                  <form action="language.html" method="POST">
                     <input type="hidden" name="csrfToken" value="Test123"/>
                     <span class="location-dropdown-label">Language</span>
                     <select name="language" id="language-select" class="select location-select">
@@ -152,6 +152,9 @@
                       <option value="en" selected>English</option>
                       <option value="fr" >French</option>
                     </select>
+                  </form>
+                  <form action="country.html" method="POST">
+                    <input type="hidden" name="csrfToken" value="Test123"/>
                     <span class="location-dropdown-label">Country</span>
                     <select name="country" id="country-select" class="select location-select">
                       <option value="DE" >Germany</option>
@@ -159,7 +162,8 @@
                       <option value="FR" >France</option>
                     </select>
                   </form>
-                </div>            </li>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -614,7 +618,7 @@
                 </li>
               <li class="visible-xs location-xs">
                 <div class="location-dropdown-xs">
-                  <form action="location.html" method="POST">
+                  <form action="language.html" method="POST">
                     <input type="hidden" name="csrfToken" value="Test123"/>
                     <ul>
                       <li>
@@ -624,6 +628,11 @@
                           <option value="fr" >French</option>
                         </select>
                       </li>
+                    </ul>
+                  </form>
+                  <form action="country.html" method="POST">
+                    <input type="hidden" name="csrfToken" value="Test123"/>
+                    <ul>
                       <li>
                         <select name="country" id="country-select-mobile" class="select location-select">
                           <option value="DE" >Germany</option>
@@ -633,7 +642,8 @@
                       </li>
                     </ul>
                   </form>
-                </div>            </li>
+                </div>
+              </li>
             </ul>
             <ul class="nav navbar-nav categories-group-button">
               <li class="dropdown menu-large">

@@ -1920,8 +1920,11 @@
       "self": {
         "href": "#"
       },
-      "selectLocation": {
-        "href": "location.html"
+      "selectLanguage": {
+        "href": "language.html"
+      },
+      "selectCountry": {
+        "href": "country.html"
       },
       "newsletter": {
         "href": "newsletter.html"
