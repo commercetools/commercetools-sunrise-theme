@@ -9,7 +9,7 @@ install:
   - npm install
 
 script:
-  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then grunt publish; fi
+  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then grunt publish; else grunt build; fi
 
 branches:
   only:
