@@ -146,7 +146,7 @@
                   <img class="pull-right" src="../assets/img/globe-2.png" alt="Location">
                 </button>
                 <div class="location-dropdown">
-                  <form action="language.html" method="POST">
+                  <form id="form-select-language" action="language.html" method="POST">
                     <input type="hidden" name="csrfToken" value="Test123"/>
                     <span class="location-dropdown-label">Language</span>
                     <select name="language" id="language-select" class="select location-select">
@@ -155,7 +155,7 @@
                       <option value="fr" >French</option>
                     </select>
                   </form>
-                  <form action="country.html" method="POST">
+                  <form id="form-select-country" action="country.html" method="POST">
                     <input type="hidden" name="csrfToken" value="Test123"/>
                     <span class="location-dropdown-label">Country</span>
                     <select name="country" id="country-select" class="select location-select">
@@ -164,8 +164,7 @@
                       <option value="FR" >France</option>
                     </select>
                   </form>
-                </div>
-              </li>
+                </div>            </li>
             </ul>
           </div>
         </div>
@@ -620,7 +619,7 @@
                 </li>
               <li class="visible-xs location-xs">
                 <div class="location-dropdown-xs">
-                  <form action="language.html" method="POST">
+                  <form id="form-select-language-mobile" action="language.html" method="POST">
                     <input type="hidden" name="csrfToken" value="Test123"/>
                     <ul>
                       <li>
@@ -632,7 +631,7 @@
                       </li>
                     </ul>
                   </form>
-                  <form action="country.html" method="POST">
+                  <form id="form-select-country-mobile" action="country.html" method="POST">
                     <input type="hidden" name="csrfToken" value="Test123"/>
                     <ul>
                       <li>
