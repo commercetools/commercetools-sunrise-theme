@@ -66,7 +66,7 @@ module.exports = function(grunt) {
       options: {
         map: true,
         //diff: true,
-        processors: require('autoprefixer-core')
+        processors: require('autoprefixer')
       },
       dist: {
         src: 'output/assets/css/main.min.css'

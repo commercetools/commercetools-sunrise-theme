@@ -54,7 +54,6 @@ module.exports = function(grunt) {
   };
 
   var writeResolvedFile = function(file, result) {
-    grunt.log.debug(result.refs);
     var written = false;
     parseMetadata(result.resolved);
     // Write the resolved JSON to a new file
