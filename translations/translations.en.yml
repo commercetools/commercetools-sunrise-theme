@@ -1,0 +1,128 @@
+close: Close
+choose: Choose
+home: Home
+more: More
+messages:
+  pleaseWait: Please wait...
+  viewYourBagAlert: View your bag
+  addToWishlistAlert: Add to wishlist
+  requiredField: Required field
+common:
+  color: Color
+  checkout: Checkout
+  description: Description
+  price: Price
+  totalPrice: Total __totalPrice__
+  quantity: quantity
+  size: Size
+  salesTax: Sales Tax
+  viewDetails: View Details
+header:
+  title: Sunrise
+  stores: Stores
+  help: Help
+  callUs: Call us on __phoneNumber__
+  miniCart: Cart
+  viewBag: View Bag
+  checkout: Checkout
+  search: Search
+  signIn: Sign In
+  language: Language
+  country: Country
+  location: Location
+  allCategories: All categories
+  teaser: Summer 2015 – What inspires you?
+  new: New
+  sale: Sale
+  brands: Brands
+footer:
+  paySecure: Pay securely with these payment methods
+  followUs: Follow us
+  joinNewsletter: Join our newsletter
+  subscribe: Subscribe
+  yourEmail: Your email...
+  customerCare: Customer Care
+  contactUs: Contact Us
+  help: Help
+  shipping: Shipping
+  returns: Returns
+  sizeGuide: Size Guide
+  aboutUs: About Us
+  ourStory: Our Story
+  careers: Careers
+  shortcuts: Shortcuts
+  myAccount: My Account
+  storeLocator: Store Locator
+  giftCards: Gift Cards
+  payment: Payment
+  legalInfo: © 2015 Sunrise
+  imprint: Imprint
+  privacyPolicy: Privacy policy
+  termsOfUse: Terms of use
+form:
+  addressOne: Address 1
+  addressTwo: Address 2
+  apply: Apply
+  city: City
+  cancel: Cancel
+  choose: Choose
+  country: Country
+  edit: Edit
+  email: Email
+  emailRequired: We require your email address to send your shipping and order confirmation
+  delete: Delete
+  firstName: First Name
+  formHasErrorsFlash: The form contains errors.
+  lastName: Last Name
+  month: Month
+  personTitles:
+    mr: Mr.
+    mrs: Mrs.
+    ms: Ms.
+    dr: Dr.
+  phone: Phone
+  phoneRequired: Please provide your telephone number so the shipper can contact you during delivery
+  postCode: Post Code
+  region: Region
+  required: Required
+  submit: Submit
+  title: Title
+  year: Year
+contactForm:
+  pleaseFill: Please fill in our contact form
+  customerSupport: Our multilingual Customer Experience team is available 24/7 for any question, styling advice or placing orders.
+  callUsOn: Call us on +49 (89) 222 435 1234
+  responseTime: We aim to respond within 24 working hours.
+  message: Message
+forgotPasswordModal:
+  title: Forgotten your password
+  description: Please submit your email address to receive a password reset link
+storeFinder:
+  title: Store Finder
+  description: Please select your region or enter your postcode
+  postcode: Postcode
+  lookUp: Look Up
+  orRegion: Or Region
+  city: City
+  selectRegion: Select Region
+  selectCity: Select City
+  address: Address
+  workingHours: Working Hours
+  addressLineOne: Sunrise Street 10
+  addressLineTwo: Sunrise, 10116
+  addressLineThree: Sunrise
+  addressLineFour: "123456789123"
+  standartHours:
+    title: Standart Opening Hours
+    monFri: "Monday-Friday: 09.00 - 20.00"
+    weekend: "Weekend: 09.00 - 20.00"
+  holidayHours:
+    title: Holiday Opening Hours
+    monFri: "Monday-Friday: 09.00 - 20.00"
+    weekend: "Weekend: 09.00 - 20.00"
+faq:
+  title: FAQS
+  delivery: Delivery
+  returns: Returns
+imprint:
+  title: Imprint

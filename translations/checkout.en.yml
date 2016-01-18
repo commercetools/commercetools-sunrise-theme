@@ -1,0 +1,54 @@
+addToNewsletter: Please add me to the
+agreeToTermsHtml: I agree to the <a id="confirmation-termsandconditions-link" href="__url__"> <span class="terms-link">Terms and Conditions</span></a>
+billingAddress: Billing Address
+completeMyOrder: Complete My Order
+confirmation: confirmation
+continueCheckout: Continue Checkout
+continueShopping: Continue Shopping
+discountApply: apply
+discountTooltip: Discount options additional information...
+discountPromoInfo: PROMOTIONAL DISCOUNT INFO
+editMyCart: Edit my shopping cart
+itemsTotal: __count__ item in total
+itemsTotal_plural: __count__ items in total
+needHelpCustomerService: Need help? Customer Service
+orderDate: Order Date
+orderDiscount: Order Discount
+orderNumber: Order Number
+orderSummary: Order Summary
+payment: payment
+paymentInformation: Payment Details
+promoCodeApplied: Promotional Code Applied
+returningCustomer: Returning Customer
+rememberMe: Save my details to create my personal account at SUNRISE
+shipping: Shipping
+shippingAddress: Shipping Address
+shippingInformation: Shipping Information
+shippingMethod: Shipping Method
+subtotal: Subtotal
+total: Total
+yourBag: Your Bag
+cartDetailPage:
+  title: Your Cart
+signInPage:
+  title: Secure Checkout - Sign In
+shippingPage:
+  title: Secure Checkout - Shipping
+  differentBillingAddressCheckboxLabel: Use a different address for billing
+  emailInfo: We require your email address to send your shipping and order confirmation
+  telNumberInfo: Please provide your telephone number so the shipper can contact you during delivery
+paymentPage:
+  title: Secure Checkout - Payment
+  cardName: Name on credit card
+  cardNumber: Credit card number
+  expiryDateTitle: Expiry data
+  paymentOptionsTitle: Please provide one of the following payment options
+  securityCode: Security Code
+  securityCodeTooltip: normally you find it on the back of your card
+confirmationPage:
+  title: Secure Checkout - Confirmation
+thankYouPage:
+  title: Thank you for your order!
+  emailSentToStart: An email has been sent to
+  emailSentToEnd: as a copy of this confirmation purchase
+  yourOrderDetails: Your order details

@@ -1,0 +1,34 @@
+bannerOne:
+  first:
+    title: Summer Essentials
+    subtitle: Make the great day happen
+    btn: Shop collection
+  second:
+    title: Summer lovin'
+    subtitle: Summer Must Have Outfits
+    btn: Shop collection
+bannerTwo:
+  title: Here comes the sun
+  subtitle: FABULOUS EVERY DAY - SUMMER CHIC
+  description1: Between rising temperature outside and cool A/C inside, dressing for the  the summer can be a tricky business. Luckily, we pulled together the most inspiring looks for. Check out our must-to-have-it pieces
+  description2: The weather is heating up, but you don’t have the right outfit yet. Thankfully, we are here to help you out. Spring break is upon us and it's essential to migrate. So whether you're jetting off to Ibiza or Majorca for a party vacation or getting away to greener pastures - here are the fashion pieces we'll be stashing in our favorite getaway bags.
+  btn: Shop Collection
+bannerThree:
+  first:
+    title: Unique style for every season
+    subtitle: Fashion styles 2016
+    btn: Shop collection
+  second:
+    title: SUMMER FASHION 2016
+  third:
+    title: Trendy Sunglasses
+    subtitle: Accessories for the perfect summer
+    btn: Shop collection
+  fourth:
+    title: Must to have it
+    subtitle: Hot pieces for the summer 
+    btn: Shop collection
+suggestions:
+  title: Get beach ready
+  subtitle: Get your sun on
+viewAllNewProductsBtn: View all new products

@@ -1,0 +1,76 @@
+messages:
+  reachedMaximumQuantity: You have reached the maximum quantity you can add to your bag
+  itemAddedToCart: This item has been added to your bag
+thumbnail:
+  sale: Sale
+  new: New
+  quickView: Quick view
+  moreColors: More colours
+filters:
+  title: Filter Products
+  open: Filter
+  close: Filter close
+  clear: Clear
+  productType: Product Type
+  color: Color
+  size: Size
+  brand: Brand
+pagination:
+  pageSeparator: of
+  next: Next
+  previous: Previous
+displaySelector:
+  title: Items per page
+sortSelector:
+  title: Sort
+  new: New first
+  priceDesc: "Price: Descending"
+  priceAsc: "Price: Ascending"
+ratings:
+  text5: 5 stars
+  text4: 4 stars
+  text3: 3 stars
+  text2: 2 stars
+  text1: 1 star
+  description5: Rocks!
+  description4: Pretty good
+  description3: Meh
+  description2: Kinda bad
+  description1: Sucks big time
+availability:
+  available: Available
+sizeGuide:
+  title: Size Guide
+  clothing: Clothing
+  shoes: Shoes
+  belt: Belt
+cart:
+  add: Add to Bag
+wishlist:
+  title: Your Wishlist
+  add: Add item to wishlist
+  view: View your wishlist
+  recentlyAdded: My recently added items
+suggestions:
+  title: You may also like
+reviews:
+  title: Reviews
+  write: Write first review
+details:
+  title: Product Details
+  view: View Details
+delivery:
+  title: Delivery & Returns
+  freeReturns: Free return for all orders.
+  moreDeliveryInfo: ""
+searchResult:
+  title: Search Results
+  of: of
+  searchResultsFor: Search Results for
+  warning: There were no products that contained all of the words in your query. These results contain some of the words.
+viewMore:
+  title: View More
+removeBtn:
+  title: Remove
+contactUs:
+  title: Contact Us
