@@ -32,7 +32,16 @@ module.exports = function(grunt) {
         files: [
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.hbs' },
           { expand: true, cwd: 'locales/', dest: 'output/locales', src: '**/*.yaml' },
-          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.{hbs,json}' }
+          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.{hbs,json}' },
+          { expand: true, cwd: 'locales/', dest: 'output/translations/', src: '**/*.yaml', rename:
+            function(dest, src) {
+              var locale = src.substring(0, src.indexOf('/')),
+                  fileName = src.substring(src.indexOf('/')),
+                  domain = fileName.substring(0, fileName.indexOf('.yaml'))
+              ;
+              return dest + domain + '.' + locale + '.yml';
+            }
+          }
         ]
       }
     },
