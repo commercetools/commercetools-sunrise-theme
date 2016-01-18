@@ -128,311 +128,77 @@
       "lineItems": {
         "list": [
           {
-            "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
-            "variantId": 1,
             "lineItemId": "123456",
-            "slug": "some-slug",
-            "name": "Enditatem Product Name Optional very long line two",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "image": "../assets/img/blue-jacket.jpg",
-            "url": "pdp.html",
-            "sku": "Sunrise #SUN123456",
             "quantity": 1,
-            "priceOld": "100,00 €",
-            "price": "49,00 €",
             "totalPrice": "49,00 €",
+            "variant": {
+              "name": "Enditatem Product Name Optional very long line two",
+              "image": "../assets/img/blue-jacket.jpg",
+              "url": "pdp.html",
+              "sku": "Sunrise #SUN123456",
+              "priceOld": "100,00 €",
+              "price": "49,00 €"
+            },
             "attributes": [
               {
                 "name": "Color",
                 "key": "color",
-                "value": "Navy Blue",
-                "list": [
-                  {
-                    "label": "Red",
-                    "value": "red",
-                    "selected": false
-                  },
-                  {
-                    "label": "Navy Blue",
-                    "value": "blue",
-                    "selected": true
-                  },
-                  {
-                    "label": "Green",
-                    "value": "green",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "red": {
-                    "size": [
-                      "S",
-                      "M",
-                      "L"
-                    ]
-                  },
-                  "blue": {
-                    "size": [
-                      "S",
-                      "L"
-                    ]
-                  },
-                  "green": {
-                    "size": [
-                      "S",
-                      "M"
-                    ]
-                  }
-                }
+                "value": "Navy Blue"
               },
               {
                 "name": "Size",
                 "key": "size",
-                "value": "M",
-                "list": [
-                  {
-                    "label": "S",
-                    "value": "S",
-                    "selected": false
-                  },
-                  {
-                    "label": "M",
-                    "value": "M",
-                    "selected": true
-                  },
-                  {
-                    "label": "L",
-                    "value": "L",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "S": {
-                    "color": [
-                      "red",
-                      "blue",
-                      "green"
-                    ]
-                  },
-                  "M": {
-                    "color": [
-                      "red",
-                      "green"
-                    ]
-                  },
-                  "L": {
-                    "color": [
-                      "red",
-                      "blue"
-                    ]
-                  }
-                }
+                "value": "M"
               }
             ]
           },
           {
-            "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
-            "variantId": 1,
             "lineItemId": "123456",
-            "slug": "some-slug",
-            "name": "Enditatem Product Name Optional very long line two",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "image": "../assets/img/blue-jacket.jpg",
-            "url": "pdp.html",
-            "sku": "Sunrise #SUN123456",
             "quantity": 1,
-            "priceOld": "100,00 €",
-            "price": "49,00 €",
             "totalPrice": "49,00 €",
+            "variant": {
+              "name": "Enditatem Product Name Optional very long line two",
+              "image": "../assets/img/blue-jacket.jpg",
+              "url": "pdp.html",
+              "sku": "Sunrise #SUN123456",
+              "priceOld": "100,00 €",
+              "price": "49,00 €"
+            },
             "attributes": [
               {
                 "name": "Color",
                 "key": "color",
-                "value": "Navy Blue",
-                "list": [
-                  {
-                    "label": "Red",
-                    "value": "red",
-                    "selected": false
-                  },
-                  {
-                    "label": "Navy Blue",
-                    "value": "blue",
-                    "selected": true
-                  },
-                  {
-                    "label": "Green",
-                    "value": "green",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "red": {
-                    "size": [
-                      "S",
-                      "M",
-                      "L"
-                    ]
-                  },
-                  "blue": {
-                    "size": [
-                      "S",
-                      "L"
-                    ]
-                  },
-                  "green": {
-                    "size": [
-                      "S",
-                      "M"
-                    ]
-                  }
-                }
+                "value": "Navy Blue"
               },
               {
                 "name": "Size",
                 "key": "size",
-                "value": "M",
-                "list": [
-                  {
-                    "label": "S",
-                    "value": "S",
-                    "selected": false
-                  },
-                  {
-                    "label": "M",
-                    "value": "M",
-                    "selected": true
-                  },
-                  {
-                    "label": "L",
-                    "value": "L",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "S": {
-                    "color": [
-                      "red",
-                      "blue",
-                      "green"
-                    ]
-                  },
-                  "M": {
-                    "color": [
-                      "red",
-                      "green"
-                    ]
-                  },
-                  "L": {
-                    "color": [
-                      "red",
-                      "blue"
-                    ]
-                  }
-                }
+                "value": "M"
               }
             ]
           },
           {
-            "productId": "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
-            "variantId": 1,
             "lineItemId": "123456",
-            "slug": "some-slug",
-            "name": "Enditatem Product Name Optional very long line two",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
-            "image": "../assets/img/blue-jacket.jpg",
-            "url": "pdp.html",
-            "sku": "Sunrise #SUN123456",
             "quantity": 1,
-            "priceOld": "100,00 €",
-            "price": "49,00 €",
             "totalPrice": "49,00 €",
+            "variant": {
+              "name": "Enditatem Product Name Optional very long line two",
+              "image": "../assets/img/blue-jacket.jpg",
+              "url": "pdp.html",
+              "sku": "Sunrise #SUN123456",
+              "priceOld": "100,00 €",
+              "price": "49,00 €"
+            },
             "attributes": [
               {
                 "name": "Color",
                 "key": "color",
-                "value": "Navy Blue",
-                "list": [
-                  {
-                    "label": "Red",
-                    "value": "red",
-                    "selected": false
-                  },
-                  {
-                    "label": "Navy Blue",
-                    "value": "blue",
-                    "selected": true
-                  },
-                  {
-                    "label": "Green",
-                    "value": "green",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "red": {
-                    "size": [
-                      "S",
-                      "M",
-                      "L"
-                    ]
-                  },
-                  "blue": {
-                    "size": [
-                      "S",
-                      "L"
-                    ]
-                  },
-                  "green": {
-                    "size": [
-                      "S",
-                      "M"
-                    ]
-                  }
-                }
+                "value": "Navy Blue"
               },
               {
                 "name": "Size",
                 "key": "size",
-                "value": "M",
-                "list": [
-                  {
-                    "label": "S",
-                    "value": "S",
-                    "selected": false
-                  },
-                  {
-                    "label": "M",
-                    "value": "M",
-                    "selected": true
-                  },
-                  {
-                    "label": "L",
-                    "value": "L",
-                    "selected": false
-                  }
-                ],
-                "selectData": {
-                  "S": {
-                    "color": [
-                      "red",
-                      "blue",
-                      "green"
-                    ]
-                  },
-                  "M": {
-                    "color": [
-                      "red",
-                      "green"
-                    ]
-                  },
-                  "L": {
-                    "color": [
-                      "red",
-                      "blue"
-                    ]
-                  }
-                }
+                "value": "M"
               }
             ]
           }

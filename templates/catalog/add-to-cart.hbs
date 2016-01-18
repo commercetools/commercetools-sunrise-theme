@@ -1,13 +1,13 @@
 <form id="form-add-to-cart{{index}}" name="add-to-cart" method="post" action="{{@root.meta._links.addToCart.href}}">
   <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
-  <input type="hidden" name="productId" value="{{product.variant.productId}}">
-  <input type="hidden" name="variantId" value="{{product.variant.variantId}}">
+  <input type="hidden" name="productId" value="{{product.productId}}">
+  <input type="hidden" name="variantId" value="{{product.variantId}}">
   <input type="hidden" name="productSku" value="{{product.variant.sku}}">
-  <input type="hidden" name="productSlug" value="{{product.variant.slug}}">
+  <input type="hidden" name="productSlug" value="{{product.slug}}">
 
   <div class="row select-row">
     <ul class="list-inline">
-      {{#each product.variant.attributes}}
+      {{#each product.attributes}}
         {{> catalog/product-attribute attribute=this variants=../product.variants identifiers=../product.variantIdentifiers}}
       {{/each}}
       <li class="size-guide-li">
