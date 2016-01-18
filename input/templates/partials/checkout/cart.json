@@ -7,9 +7,9 @@
     "shippingMethod" : {"$ref" : "shipping-method-1.json"},
     "lineItems" : {
         "list" : [
-            { "$ref" : "../common/product-variant-1.json" },
-            { "$ref" : "../common/product-variant-1.json" },
-            { "$ref" : "../common/product-variant-1.json" }
+            { "$ref" : "../checkout/line-item.json" },
+            { "$ref" : "../checkout/line-item.json" },
+            { "$ref" : "../checkout/line-item.json" }
         ]
     },
     "shippingAddress" : { "$ref" : "address-shipping.json" },
