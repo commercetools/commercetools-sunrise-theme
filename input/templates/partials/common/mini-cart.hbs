@@ -10,11 +10,11 @@
         <li>
           <form action="{{@root.meta._links.deleteLineItem.href}}" method="post">
             <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
-            <a class="img" href="{{url}}"><img src="{{image}}" alt="{{name}}" /></a>
-            <p class="product-title"><a href="{{url}}">{{name}}</a></p>
+            <a class="img" href="{{variant.url}}"><img src="{{variant.image}}" alt="{{variant.name}}" /></a>
+            <p class="product-title"><a href="{{variant.url}}">{{variant.name}}</a></p>
             <div class="details">
               <p class="product-quantity">{{i18n "common.quantity"}}<span>{{quantity}}x</span></p>
-              <p class="product-price">{{i18n "common.price"}}<span>{{price}}</span></p>
+              <p class="product-price">{{i18n "common.price"}}<span>{{totalPrice}}</span></p>
                 <input type="hidden" name="lineItemId" value="{{lineItemId}}">
                 <button type="submit" id="minicart-delete-button-{{@index}}" class="delete">
                   <span>
