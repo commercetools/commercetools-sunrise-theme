@@ -2,7 +2,7 @@
 
 ![SPHERE.IO icon](https://admin.sphere.io/assets/images/sphere_logo_rgb_long.png)
 
-[![Build Status](https://travis-ci.org/sphereio/commercetools-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/commercetools-sunrise-design) [![Stories in Ready](https://badge.waffle.io/sphereio/commercetools-sunrise-design.png?label=ready&title=Ready)](https://waffle.io/sphereio/commercetools-sunrise-design) [ ![Download](https://api.bintray.com/packages/commercetools/maven/sphere-sunrise-design/images/download.svg) ](https://bintray.com/commercetools/maven/sphere-sunrise-design/_latestVersion)
+[![Build Status](https://travis-ci.org/sphereio/commercetools-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/commercetools-sunrise-design) [![Stories in Ready](https://badge.waffle.io/sphereio/commercetools-sunrise-design.png?label=ready&title=Ready)](https://waffle.io/sphereio/commercetools-sunrise-design) [ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-design/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-design/_latestVersion)
 
 ###Demo
 - [Home](http://sphereio.github.io/commercetools-sunrise-design/en/home.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-design/de/home.html) )
@@ -38,7 +38,8 @@
 
 ###How to use
 All releases can be found in a Maven repository hosted by Bintray:
-https://dl.bintray.com/commercetools/maven/io/sphere/sphere-sunrise-design/
+- From `v0.46.0`: https://dl.bintray.com/commercetools/maven/io/sphere/commercetools-sunrise-design/
+- Before `v0.46.0`: https://dl.bintray.com/commercetools/maven/io/sphere/sphere-sunrise-design/
 
 You can then import it to your project as a [Webjar](http://www.webjars.org/) dependency.
 
