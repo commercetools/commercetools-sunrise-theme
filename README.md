@@ -38,8 +38,7 @@
 
 ###How to use
 All releases can be found in a Maven repository hosted by Bintray:
-- From `v0.46.0`: https://dl.bintray.com/commercetools/maven/io/sphere/commercetools-sunrise-design/
-- Before `v0.46.0`: https://dl.bintray.com/commercetools/maven/io/sphere/sphere-sunrise-design/
+https://dl.bintray.com/commercetools/maven/io/sphere/commercetools-sunrise-design/
 
 You can then import it to your project as a [Webjar](http://www.webjars.org/) dependency.
 
