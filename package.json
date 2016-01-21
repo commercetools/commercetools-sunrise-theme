@@ -1,22 +1,23 @@
 {
-  "name": "sphere-sunrise-design",
+  "name": "commercetools-sunrise-design",
   "version": "0.46.0-SNAPSHOT",
   "description": "Compiles Handlebars templates with JSON data, outputting static HTML files.",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/sphereio/sphere-sunrise-design.git"
+    "url": "git://github.com/sphereio/commercetools-sunrise-design.git"
   },
   "keywords": [
     "Sunrise",
-    "SPHERE.IO",
-    "template"
+    "commercetools",
+    "template",
+    "Handlebars"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sphereio/sphere-sunrise-design/issues"
+    "url": "https://github.com/sphereio/commercetools-sunrise-design/issues"
   },
-  "homepage": "https://github.com/sphereio/sphere-sunrise-design#readme",
+  "homepage": "https://github.com/sphereio/commercetools-sunrise-design#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-compile-handlebars": "^2.0.0",

@@ -2,16 +2,16 @@
     "name": "commercetools/sunrise-design",
     "license": "MIT",
     "description": "Compiles Handlebars templates with JSON data, outputting static HTML files.",
-    "homepage": "https://github.com/sphereio/sphere-sunrise-design",
+    "homepage": "https://github.com/sphereio/commercetools-sunrise-design",
     "support": {
         "email": "support@sphere.io",
-        "forum": "http://support.sphere.io",
-        "issues": "https://github.com/sphereio/sphere-sunrise-design/issues"
+        "issues": "https://github.com/sphereio/commercetools-sunrise-design/issues"
     },
     "keywords": [
         "Sunrise",
-        "SPHERE.IO",
-        "template"
+        "commercetools",
+        "template",
+        "Handlebars"
     ],
     "require": {}
 }

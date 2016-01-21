@@ -61,7 +61,7 @@ You can then import it to your project as a [Webjar](http://www.webjars.org/) de
 
 `grunt release` to release the current version to the Maven Bintray repository (requires commercetools-bintray repository ID in Maven's settings.xml) and move to the next development version
 
-`grunt install` to install to local maven repository (~/.m2/repository/io/sphere/sphere-sunrise-design)
+`grunt install` to install to local maven repository (~/.m2/repository/io/sphere/commercetools-sunrise-design)
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 

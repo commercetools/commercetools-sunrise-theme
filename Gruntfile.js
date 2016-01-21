@@ -154,7 +154,7 @@ module.exports = function(grunt) {
     maven: {
       options: {
         type: "jar",
-        groupId: 'io.sphere',
+        groupId: 'io.commercetools',
         artifactId: "<%= pkg.name %>",
         version: "<%= pkg.version %>",
         destFolder: "/META-INF/resources/webjars",
@@ -193,7 +193,7 @@ module.exports = function(grunt) {
           name: 'automation-commercetools',
           email: 'automation@commercetools.de'
         },
-        repo: 'https://' + process.env.GH_TOKEN + '@github.com/sphereio/sphere-sunrise-design.git',
+        repo: 'https://' + process.env.GH_TOKEN + '@github.com/sphereio/commercetools-sunrise-design.git',
         silent: true,
         base: 'output'
       },
