@@ -29,16 +29,32 @@ module.exports = function(grunt) {
         ]
       },
       templates: {
+        options: {
+          process: function(content, srcPath) {
+            var cleanPath = srcPath.replace("input/templates/partials/", "").replace("input/templates/", "");
+            var prepended = "<!-- start " + cleanPath + " -->\n";
+            var appended = "<!-- end " + cleanPath + " -->\n";
+            var lastChar = content.slice(-1);
+            if (lastChar != "\n") {
+              content = content + "\n";
+            }
+            return prepended + content + appended;
+          }
+        },
         files: [
           { expand: true, cwd: 'input/', dest: 'output/', src: 'templates/*.hbs' },
+          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.hbs' }
+        ]
+      },
+      others: {
+        files: [
+          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.json' },
           { expand: true, cwd: 'locales/', dest: 'output/locales', src: '**/*.yaml' },
-          { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.{hbs,json}' },
           { expand: true, cwd: 'locales/', dest: 'output/translations/', src: '**/*.yaml', rename:
             function(dest, src) {
               var locale = src.substring(0, src.indexOf('/')),
                   fileName = src.substring(src.indexOf('/')),
-                  domain = fileName.substring(0, fileName.indexOf('.yaml'))
-              ;
+                  domain = fileName.substring(0, fileName.indexOf('.yaml'));
               return dest + domain + '.' + locale + '.yml';
             }
           }
@@ -208,7 +224,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['clean', 'build-images', 'build-assets', 'build-templates']);
   grunt.registerTask('build-images', ['clean:images', 'copy:images', 'imagemin']);
   grunt.registerTask('build-assets', ['clean:assets', 'copy:assets', 'sass', 'postcss', 'uglify']);
-  grunt.registerTask('build-templates', ['clean:templates', 'copy:templates', 'json-refs', 'generate-html']);
+  grunt.registerTask('build-templates', ['clean:templates', 'copy:templates', 'copy:others', 'json-refs', 'generate-html']);
   grunt.registerTask('release', ['build', 'maven:release', 'clean:dist']);
   grunt.registerTask('install', ['build', 'maven:install', 'clean:dist']);
   grunt.registerTask('publish', ['gh-pages-clean', 'build', 'gh-pages']);
