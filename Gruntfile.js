@@ -34,6 +34,10 @@ module.exports = function(grunt) {
             var cleanPath = srcPath.replace("input/templates/partials/", "").replace("input/templates/", "");
             var prepended = "<!-- start " + cleanPath + " -->\n";
             var appended = "<!-- end " + cleanPath + " -->\n";
+            var lastChar = content.slice(-1);
+            if (lastChar != "\n") {
+              content = content + "\n";
+            }
             return prepended + content + appended;
           }
         },
