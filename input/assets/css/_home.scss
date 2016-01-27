@@ -292,3 +292,15 @@
     }
   }
 }
+
+.aspect-ratio {
+  &--4to3 {
+    @include aspect-ratio(4,3);
+  }
+  &--8to3 {
+    @include aspect-ratio(8,3);
+  }
+  &--16to9 {
+    @include aspect-ratio(16,9);
+  }
+}
