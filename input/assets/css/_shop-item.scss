@@ -11,10 +11,9 @@
   &:focus .shop-item-overlay {
     opacity: 1;
   }
+
   .pop-product-image {
-    margin: 0 auto 10px;
-    display: block;
-    min-height: 265px;
+    @include aspect-ratio(3,4);
   }
   .pop-product-name {
     margin-top: 15px;
