@@ -12,7 +12,9 @@
         <span class="sr-only">{{i18n "catalog:wishlist.add"}}</span>
       </button>
     </form>
-    <img class="pop-product-image img-lazy" data-original="{{thumbnail.product.variant.image}}" alt="{{thumbnail.product.variant.name}}" width="200" />
+    <div class="pop-product-image">
+      <img class="img-lazy" data-original="{{thumbnail.product.variant.image}}" alt="{{thumbnail.product.variant.name}}" />
+    </div>
     <div class="pop-product-name">
       <span class="name-headline">{{thumbnail.product.variant.name}}</span>
       <span class="name-subline">{{thumbnail.product.variant.description}}</span>
