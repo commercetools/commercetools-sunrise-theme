@@ -131,8 +131,8 @@ module.exports = function(grunt) {
         lng: "<%= lng %>",
         fallbackLng: 'en',
         ns: {
-          namespaces: ['translations', 'home', 'catalog', 'checkout', 'my-account-login', 'no-search-result', 'mix-match', 'my-account'],
-          defaultNs: 'translations'
+          namespaces: ['main', 'home', 'catalog', 'checkout', 'my-account-login', 'no-search-result', 'mix-match', 'my-account'],
+          defaultNs: 'main'
         }
       }
     },

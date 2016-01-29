@@ -9,8 +9,8 @@ module.exports = function(grunt) {
       getAsync: false,
       debug: false,
       ns: {
-        namespaces: ['translations'],
-        defaultNs: 'translations'
+        namespaces: ['main'],
+        defaultNs: 'main'
       },
       resGetPath: 'input/i18n/__lng__/__ns__.yaml'
     });
