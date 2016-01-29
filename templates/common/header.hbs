@@ -20,23 +20,23 @@
             <!-- Toggles the search field on mobile / not visible on desktop -->
             <li class="list-item-search">
               <button type="button" class="search-toggle icon-magnifying-glass">
-                <span class="sr-only">{{i18n "header.search"}}</span>
+                <span class="sr-only">{{i18n "main:header.search"}}</span>
               </button>
             </li>
             <!-- End -->
 
             <li class="list-item-store">
               <a href="{{@root.meta._links.storeLocator.href}}" class="store-select icon-marker">
-                <span class="hidden-xs">{{i18n "header.stores"}}</span>
+                <span class="hidden-xs">{{i18n "main:header.stores"}}</span>
               </a>
             </li>
 
             <li class="list-item-help">
-              <a href="{{@root.meta._links.help.href}}" class="link-help">{{i18n "header.help"}}</a>
+              <a href="{{@root.meta._links.help.href}}" class="link-help">{{i18n "main:header.help"}}</a>
             </li>
 
             <li class="list-item-call">
-              <a href="tel:0044123456000" class="link-hotline">{{i18n "header.callUs" phoneNumber="+44 123 456 000"}}</a>
+              <a href="tel:0044123456000" class="link-hotline">{{i18n "main:header.callUs" phoneNumber="+44 123 456 000"}}</a>
             </li>
 
             <li class="list-item-bag">
@@ -46,7 +46,7 @@
             {{#unless user.isLoggedIn}}
             <li class="list-item-user">
               <a href="{{@root.meta._links.signIn.href}}" class="link-user icon-user">
-                <span class="hidden-xs hidden-sm">{{i18n "header.signIn"}}</span>
+                <span class="hidden-xs hidden-sm">{{i18n "main:header.signIn"}}</span>
               </a>
             </li>
             {{/unless}}

@@ -1,7 +1,7 @@
 <!-- start form/input-text.hbs -->
 <div class="col-sm-{{columnWidth}}">
   <div class="input-block">
-    <span class="text-uppercase">{{i18n labelKey}}{{#if required}}<abbr title="{{i18n "form.required"}}">*</abbr>{{/if}}</span><br>
+    <span class="text-uppercase">{{i18n labelKey}}{{#if required}}<abbr title="{{i18n "main:form.required"}}">*</abbr>{{/if}}</span><br>
     <input id="input-{{name}}-{{suffix}}" class="checkout-input-field" type="text" name="{{name}}{{suffix}}" value="{{value}}">
     {{#if additionalInfoKey}}
     <span class="tel-email-text">{{i18n additionalInfoKey}}</span>
