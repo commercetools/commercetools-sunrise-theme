@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       output: ['output/'],
       images: ['output/assets/img/'],
       assets: ['output/assets/css/', 'output/assets/js/', 'output/assets/fonts/'],
-      templates: ['output/templates/', 'output/locales', 'output/*.html'],
+      templates: ['output/templates/', 'output/i18n/', 'output/*.html'],
       dist: ['*.jar']
     },
 
@@ -49,8 +49,8 @@ module.exports = function(grunt) {
       others: {
         files: [
           { expand: true, cwd: 'input/templates/partials/', dest: 'output/templates/', src: '**/*.json' },
-          { expand: true, cwd: 'locales/', dest: 'output/locales', src: '**/*.yaml' },
-          { expand: true, cwd: 'locales/', dest: 'output/translations/', src: '**/*.yaml', rename:
+          { expand: true, cwd: 'input/i18n/', dest: 'output/i18n', src: '**/*.yaml' },
+          { expand: true, cwd: 'input/i18n/', dest: 'output/translations/', src: '**/*.yaml', rename:
             function(dest, src) {
               var locale = src.substring(0, src.indexOf('/')),
                   fileName = src.substring(src.indexOf('/')),
@@ -161,7 +161,7 @@ module.exports = function(grunt) {
         tasks: ['build-assets']
       },
       templates: {
-        files: ['input/templates/**/*', 'locales/**/*'],
+        files: ['input/templates/**/*', 'input/i18n/**/*'],
         tasks: ['build-templates']
       }
     },
@@ -184,7 +184,7 @@ module.exports = function(grunt) {
         files: [
           { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
           { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" },
-          { expand: true, cwd: 'output/', src: "locales/**/*", filter: "isFile" }
+          { expand: true, cwd: 'output/', src: "i18n/**/*", filter: "isFile" }
         ]
       },
       release: {
@@ -196,7 +196,7 @@ module.exports = function(grunt) {
         files: [
           { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
           { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" },
-          { expand: true, cwd: 'output/', src: "locales/**/*", filter: "isFile" }
+          { expand: true, cwd: 'output/', src: "i18n/**/*", filter: "isFile" }
         ]
       }
     },

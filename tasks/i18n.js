@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         namespaces: ['translations'],
         defaultNs: 'translations'
       },
-      resGetPath: 'locales/__lng__/__ns__.yaml'
+      resGetPath: 'input/i18n/__lng__/__ns__.yaml'
     });
     Handlebars = require('handlebars');
 
