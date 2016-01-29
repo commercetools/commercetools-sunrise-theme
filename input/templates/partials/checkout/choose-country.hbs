@@ -1,7 +1,7 @@
 <div class="input-block">
-  <span class="text-uppercase">{{i18n "form.country"}}*</span><br>
+  <span class="text-uppercase">{{i18n "main:form.country"}}*</span><br>
   <select id="{{selectId}}" class="checkout-dropdown" name="{{selectName}}{{suffix}}">
-    <option value="" selected>{{i18n "form.choose"}}</option>
+    <option value="" selected>{{i18n "main:form.choose"}}</option>
     {{#each options.list}}
     <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
     {{/each}}
