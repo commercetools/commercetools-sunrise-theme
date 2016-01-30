@@ -1,4 +1,3 @@
-<!-- start catalog/facet-option-input.hbs -->
 <label for="filter-{{facet.key}}-{{option.value}}">
   <input id="filter-{{facet.key}}-{{option.value}}"
          type="{{#if facet.multiSelect}}checkbox{{else}}radio{{/if}}"
@@ -7,4 +6,3 @@
          {{#if selected}}checked{{/if}} />
   {{option.label}} {{#unless facet.countHidden}}<span class="facet-count">({{option.count}})</span>{{/unless}}
 </label>
-<!-- end catalog/facet-option-input.hbs -->

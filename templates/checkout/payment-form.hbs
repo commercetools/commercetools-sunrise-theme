@@ -1,4 +1,3 @@
-<!-- start checkout/payment-form.hbs -->
 <form method="post" action="{{@root.meta._links.checkoutPaymentSubmit.href}}">
   <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
   <div class="shipping-info">
@@ -73,4 +72,3 @@
   <hr class="hr-checkout-payment">
   {{> checkout/continue-checkout-button}}
 </form>
-<!-- end checkout/payment-form.hbs -->
