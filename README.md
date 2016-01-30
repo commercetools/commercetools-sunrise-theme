@@ -35,14 +35,6 @@
 - [FAQ Page](http://sphereio.github.io/commercetools-sunrise-design/en/faq.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-design/de/faq.html) )
 - [Imprint Page](http://sphereio.github.io/commercetools-sunrise-design/en/imprint.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-design/de/imprint.html) )
 
-
-###How to use
-All releases can be found in a Maven repository hosted by Bintray:
-- `>= v0.46.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/commercetools-sunrise-design/
-- `< v0.46.0`: https://dl.bintray.com/commercetools/maven/io/sphere/sphere-sunrise-design/
-
-You can then import it to your project as a [Webjar](http://www.webjars.org/) dependency.
-
 ###Installation
 
 - Install [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/)
@@ -50,7 +42,23 @@ You can then import it to your project as a [Webjar](http://www.webjars.org/) de
 - Install [Grunt](http://gruntjs.com/getting-started)
 - Run `npm install` in the project root to install the project dependencies.
 
-###Usage
+###How to use
+
+Import it to your project as a [WebJars](http://www.webjars.org/) dependency.
+
+You can obtain this or your template's WebJar as explained below.
+
+#####Use this template
+All releases can be found in a Maven repository hosted by Bintray:
+- `>= v0.46.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/commercetools-sunrise-design/
+- `< v0.46.0`: https://dl.bintray.com/commercetools/maven/io/sphere/sphere-sunrise-design/
+
+#####Use your own template
+Fork or copy the project and apply the corresponding modifications.
+
+Once ready, run `grunt webjars` to generate the WebJar.
+
+###Commands
 
 #####Useful commands
 
@@ -60,9 +68,11 @@ You can then import it to your project as a [Webjar](http://www.webjars.org/) de
 
 `grunt publish` to publish the generated site to GitHub Pages (requires $GH_TOKEN)
 
-`grunt release` to release the current version to the Maven Bintray repository (requires commercetools-bintray repository ID in Maven's settings.xml) and move to the next development version
+`grunt webjars` to create the WebJars file in the root directory of the project
 
 `grunt install` to install to local maven repository (~/.m2/repository/io/sphere/commercetools-sunrise-design)
+
+`grunt release` to release the current version to the Maven Bintray repository (requires commercetools-bintray repository ID in Maven's settings.xml) and move to the next development version
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
@@ -83,7 +93,7 @@ Once the project is built, the generated site is located in the `output/` folder
     - file in `input/assets/font/` to `output/assets/font/`
   - `:templates` copies any
     - `*.hbs` and `*.json` files in `input/templates/` to `output/templates/`
-    - `*.yaml` file in `locales/` to `output/locales`
+    - `*.yml` file in `locales/` to `output/locales`
 
 `grunt imagemin`
   - Compresses any PNG, JPG, GIF and SVG in `output/assets/img/`
