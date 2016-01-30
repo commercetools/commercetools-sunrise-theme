@@ -3,7 +3,7 @@ module.exports = {
   // 'i18n': supports internationalization in Handlebars
 
   options: {
-    preload: ['de', 'en'],
+    preload: "<%= languages %>",
     lng: "<%= lng %>",
     fallbackLng: 'en',
     ns: {

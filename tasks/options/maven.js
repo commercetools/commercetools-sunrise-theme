@@ -1,6 +1,6 @@
 module.exports = {
 
-  // 'grunt-maven-tasks': generates the webjar and optionally places it to somewhere
+  // 'grunt-maven-tasks': generates the webjar and optionally places it somewhere
 
   options: {
     type: "jar",
@@ -12,9 +12,9 @@ module.exports = {
     gitpushtag: true
   },
 
-  install: {
+  webjars: {
     options: {
-      goal: "install"
+      goal: "package"
     },
     files: [
       { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
@@ -23,17 +23,20 @@ module.exports = {
     ],
   },
 
+  install: {
+    options: {
+      goal: "install"
+    },
+    files: "<%= maven.webjars.files %>"
+  },
+
   release: {
     options: {
       goal: "release",
       repositoryId: "commercetools-bintray",
       url: "https://api.bintray.com/maven/commercetools/maven/<%= pkg.name %>"
     },
-    files: [
-      { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
-      { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" },
-      { expand: true, cwd: 'output/', src: "i18n/**/*", filter: "isFile" }
-    ],
+    files: "<%= maven.webjars.files %>"
   }
 
 }
