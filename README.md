@@ -83,7 +83,7 @@ Once the project is built, the generated site is located in the `output/` folder
     - file in `input/assets/font/` to `output/assets/font/`
   - `:templates` copies any
     - `*.hbs` and `*.json` files in `input/templates/` to `output/templates/`
-    - `*.yaml` file in `locales/` to `output/locales`
+    - `*.yml` file in `locales/` to `output/locales`
 
 `grunt imagemin`
   - Compresses any PNG, JPG, GIF and SVG in `output/assets/img/`
