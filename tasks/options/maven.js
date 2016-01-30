@@ -17,9 +17,24 @@ module.exports = {
       goal: "package"
     },
     files: [
-      { expand: true, cwd: 'output/assets/', src: "**/*", filter: "isFile" },
-      { expand: true, cwd: 'output/', src: "templates/**/*", filter: "isFile" },
-      { expand: true, cwd: 'output/', src: "i18n/**/*", filter: "isFile" }
+      {
+        expand: true,
+        cwd: 'output/assets/',
+        src: "**/*",
+        filter: "isFile"
+      },
+      {
+        expand: true,
+        cwd: 'output/',
+        src: "templates/**/*",
+        filter: "isFile"
+      },
+      {
+        expand: true,
+        cwd: 'output/',
+        src: "i18n/**/*",
+        filter: "isFile"
+      }
     ],
   },
 
