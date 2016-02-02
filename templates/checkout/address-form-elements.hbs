@@ -12,19 +12,19 @@
   </div>
 </div>
 <div class="row">
-  {{> form/input-text columnWidth=6 name="firstName" suffix=suffix labelKey="form.firstName" required=true value=form.firstName}}
-  {{> form/input-text columnWidth=6 name="lastName" suffix=suffix labelKey="form.lastName" required=true value=form.lastName}}
-  {{> form/input-text columnWidth=12 name="streetName" suffix=suffix labelKey="form.addressOne" required=true value=form.streetName}}
-  {{> form/input-text columnWidth=12 name="additionalStreetInfo" suffix=suffix labelKey="form.addressTwo" required=false value=form.additionalStreetInfo}}
-  {{> form/input-text columnWidth=8 name="city" suffix=suffix labelKey="form.city" required=true value=form.city}}
-  {{> form/input-text columnWidth=4 name="postalCode" suffix=suffix labelKey="form.postCode" required=true value=form.postalCode}}
+  {{> form/input-text columnWidth=6 name="firstName" labelKey="form.firstName" required=true value=form.firstName}}
+  {{> form/input-text columnWidth=6 name="lastName" labelKey="form.lastName" required=true value=form.lastName}}
+  {{> form/input-text columnWidth=12 name="streetName" labelKey="form.addressOne" required=true value=form.streetName}}
+  {{> form/input-text columnWidth=12 name="additionalStreetInfo" labelKey="form.addressTwo" required=false value=form.additionalStreetInfo}}
+  {{> form/input-text columnWidth=8 name="city" labelKey="form.city" required=true value=form.city}}
+  {{> form/input-text columnWidth=4 name="postalCode" labelKey="form.postCode" required=true value=form.postalCode}}
   <div class="col-sm-6">
-    {{> checkout/choose-country containerClass="country" suffix=suffix selectId="shipping-country-select" selectName="country" options=form.countries}}
+    {{> checkout/choose-country containerClass="country" selectId="shipping-country-select" selectName="country" options=form.countries}}
   </div>
-  {{> form/input-text columnWidth=6 name="region" suffix=suffix labelKey="form.region" required=false value=form.region}}
+  {{> form/input-text columnWidth=6 name="region" labelKey="form.region" required=false value=form.region}}
 </div>
 <hr>
 <div class="row">
-  {{> form/input-text columnWidth=6 name="phone" suffix=suffix labelKey="form.phone" required=false value=form.phone}}
-  {{> form/input-text columnWidth=6 name="email" suffix=suffix labelKey="form.email" required=true value=form.email}}
+  {{> form/input-text columnWidth=6 name="phone" labelKey="form.phone" required=false value=form.phone}}
+  {{> form/input-text columnWidth=6 name="email" labelKey="form.email" required=true value=form.email}}
 </div>
