@@ -1,3 +1,4 @@
+<!-- start catalog/add-to-cart.hbs -->
 <form id="form-add-to-cart{{index}}" name="add-to-cart" method="post" action="{{@root.meta._links.addToCart.href}}">
   <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
   <input type="hidden" name="productId" value="{{product.productId}}">
@@ -33,3 +34,4 @@
     </ul>
   </div>
 </form>
+<!-- end catalog/add-to-cart.hbs -->

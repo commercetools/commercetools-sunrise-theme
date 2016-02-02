@@ -1,3 +1,4 @@
+<!-- start checkout/shipping-form.hbs -->
 <form method="post" action="{{@root.meta._links.checkoutShippingSubmit.href}}">
   <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
   <div class="shipping-method input-block" id="shipping-methods-setting">
@@ -17,3 +18,4 @@
   </div>
   {{> checkout/continue-checkout-button}}
 </form>
+<!-- end checkout/shipping-form.hbs -->

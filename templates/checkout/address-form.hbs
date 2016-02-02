@@ -1,3 +1,4 @@
+<!-- start checkout/address-form.hbs -->
 <form method="post" action="{{@root.meta._links.checkoutAddressesSubmit.href}}">
   <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
   <div class="shipping-info">
@@ -29,3 +30,4 @@
   </div>
   {{> checkout/continue-checkout-button}}
 </form>
+<!-- end checkout/address-form.hbs -->

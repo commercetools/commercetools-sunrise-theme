@@ -1,3 +1,4 @@
+<!-- start checkout/remove-line-item-form.hbs -->
 <form action="{{@root.meta._links.deleteLineItem.href}}" method="post">
     <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
     <input type="hidden" name="lineItemId" value="{{lineItemId}}">
@@ -8,3 +9,4 @@
     </span>
     </button>
 </form>
+<!-- end checkout/remove-line-item-form.hbs -->

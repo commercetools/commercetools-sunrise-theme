@@ -1,3 +1,4 @@
+<!-- start catalog/product-rating.hbs -->
 <fieldset class="rating">
   <input type="radio" id="rating{{index}}-star5" name="rating" value="5" {{#if product.rating5}}checked{{/if}}/>
   <label for="rating{{index}}-star5" title="{{i18n "catalog:ratings.description5"}}">
@@ -23,3 +24,4 @@
 <span class="star-rating-review">
   <a href="{{@root.meta._links.addReview.href}}">{{i18n "catalog:reviews.write"}}</a>
 </span>
+<!-- end catalog/product-rating.hbs -->
