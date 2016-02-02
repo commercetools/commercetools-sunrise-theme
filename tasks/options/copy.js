@@ -66,13 +66,13 @@ module.exports = {
       { expand: true,
         cwd: 'input/i18n/',
         dest: 'output/i18n',
-        src: '**/*.yml'
+        src: '**/*.yaml'
       },
       {
         expand: true,
         cwd: 'input/i18n/',
         dest: 'output/translations/',
-        src: '**/*.yml',
+        src: '**/*.yaml',
         rename: renameI18nFiles
       }
     ]
@@ -94,6 +94,6 @@ var writeTemplateFileHints = function(content, srcPath) {
 var renameI18nFiles = function(dest, src) {
   var locale = src.substring(0, src.indexOf('/')),
       fileName = src.substring(src.indexOf('/')),
-      domain = fileName.substring(0, fileName.indexOf('.yml'));
+      domain = fileName.substring(0, fileName.indexOf('.yaml'));
   return dest + domain + '.' + locale + '.yml';
 }
