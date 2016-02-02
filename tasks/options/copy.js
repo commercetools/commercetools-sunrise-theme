@@ -78,22 +78,22 @@ module.exports = {
     ]
   }
 
-}
-
-var writeTemplateFileHints = function(content, srcPath) {
-  var cleanPath = srcPath.replace("input/templates/partials/", "").replace("input/templates/", "");
-  var prepended = "<!-- start " + cleanPath + " -->\n";
-  var appended = "<!-- end " + cleanPath + " -->\n";
-  var lastChar = content.slice(-1);
-  if (lastChar != "\n") {
-    content = content + "\n";
+  var writeTemplateFileHints = function(content, srcPath) {
+    var cleanPath = srcPath.replace("input/templates/partials/", "").replace("input/templates/", "");
+    var prepended = "<!-- start " + cleanPath + " -->\n";
+    var appended = "<!-- end " + cleanPath + " -->\n";
+    var lastChar = content.slice(-1);
+    if (lastChar != "\n") {
+      content = content + "\n";
+    }
+    return prepended + content + appended;
   }
-  return prepended + content + appended;
-}
 
-var renameI18nFiles = function(dest, src) {
-  var locale = src.substring(0, src.indexOf('/')),
-      fileName = src.substring(src.indexOf('/')),
-      domain = fileName.substring(0, fileName.indexOf('.yaml'));
-  return dest + domain + '.' + locale + '.yml';
+  var renameI18nFiles = function(dest, src) {
+    var locale = src.substring(0, src.indexOf('/')),
+        fileName = src.substring(src.indexOf('/')),
+        domain = fileName.substring(0, fileName.indexOf('.yaml'))
+    ;
+    return dest + domain + '.' + locale + '.yml';
+  }
 }
