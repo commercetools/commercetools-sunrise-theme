@@ -1,5 +1,5 @@
 .home-page {
-  background: $dirty-white;
+  background: $spring-wood;
 }
 
 // No margin/padding helper class
@@ -32,11 +32,11 @@
     }
     .banner-btn {
       margin-bottom: 10px;
-      background: $yellow;
+      background: $my-sin;
       padding: 10px 20px;
-      color: $black;
+      color: $mine-shaft;
       &:hover {
-        background: lighten($yellow, 5%);
+        background: lighten($my-sin, 5%);
       }
     }
   }
@@ -77,7 +77,7 @@
       margin-top: 20px;
       padding: 10px 20px;
       text-transform: uppercase;
-      border: 2px solid $black;
+      border: 2px solid $mine-shaft;
       letter-spacing: 1px;
       &:hover {
         background: $white;
@@ -110,16 +110,16 @@
     }
     .banner-btn {
       margin-bottom: 10px;
-      background: $yellow;
+      background: $my-sin;
       padding: 10px 20px;
-      color: $black;
+      color: $mine-shaft;
       &:hover {
-        background: lighten($yellow, 5%);
+        background: lighten($my-sin, 5%);
       }
     }
   }
   .banner-xs-one {
-    background: $dark-blue;
+    background: $ebony-clay;
     border-right: 1px solid $white;
     .banner-text {
       position: absolute;
@@ -156,11 +156,11 @@
       }
       .banner-btn {
         margin-bottom: 10px;
-        background: $yellow;
+        background: $my-sin;
         padding: 10px 20px;
-        color: $black;
+        color: $mine-shaft;
         &:hover {
-          background: lighten($yellow, 5%);
+          background: lighten($my-sin, 5%);
         }
       }
     }
@@ -182,11 +182,11 @@
       }
       .banner-btn {
         margin-bottom: 10px;
-        background: $yellow;
+        background: $my-sin;
         padding: 10px 20px;
-        color: $black;
+        color: $mine-shaft;
         &:hover {
-          background: lighten($yellow, 5%);
+          background: lighten($my-sin, 5%);
         }
       }
     }
@@ -206,14 +206,14 @@
 .home-suggestions-hr {
   width: 50px;
   text-align: center;
-  border-top: 1px solid $dark-grey;
+  border-top: 1px solid $gray;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .home-suggestions-description {
   text-align: center;
-  color: $dark-grey;
+  color: $gray;
   letter-spacing: 1px;
   margin-bottom: 40px;
 }
@@ -223,22 +223,22 @@
   padding: 30px 0;
   margin-bottom: 25px;
   .home-viewall-btn {
-    background: $yellow;
+    background: $my-sin;
     text-transform: uppercase;
     padding: 10px 20px;
     margin-top: 15px;
     letter-spacing: 1px;
     font-size: 18px;
-    color: $black;
+    color: $mine-shaft;
     &:hover {
-      background: lighten($yellow, 5%);
+      background: lighten($my-sin, 5%);
     }
-    border-left: 25px solid $dirty-white;
-    border-right: 25px solid $dirty-white;
+    border-left: 25px solid $spring-wood;
+    border-right: 25px solid $spring-wood;
   }
   .home-viewall-hr {
     margin: -12px 0 8px 0;
-    border-top: 1px solid $light-grey;
+    border-top: 1px solid $alto;
   }
 }
 

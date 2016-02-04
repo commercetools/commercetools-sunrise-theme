@@ -4,7 +4,7 @@
 /*
 /*****************************************************************************/
 .cart-page {
-  background: $dirty-white;
+  background: $spring-wood;
   .edit-section-form {
     display: none;
   }
@@ -36,7 +36,7 @@
 }
 .items-total-txt {
   font-size: 1.5em;
-  color: $blue;
+  color: $ship-cove;
 }
 .checkout-now {
   padding: 1.5em 0;
@@ -46,60 +46,60 @@
   padding: 0;
 }
 .default-btn {
-  border: 1px solid fade-out($dark-grey, 0.6);
-  color: $dark-grey;
+  border: 1px solid fade-out($gray, 0.6);
+  color: $gray;
 }
 .action-btn {
-  background: $yellow;
-  border: 1px solid $yellow;
-  color: $black;
+  background: $my-sin;
+  border: 1px solid $my-sin;
+  color: $mine-shaft;
 }
 .checkout-now-btn {
-  background: url("../img/arrow-66.png") no-repeat 95% 13px $yellow;
+  background: url("../img/arrow-66.png") no-repeat 95% 13px $my-sin;
   background-size: 15px;
   border: none;
-  color: $black;
+  color: $mine-shaft;
   padding: 0.5em 2em;
   font-size: 1.2em;
   text-align: center;
   &:hover {
-    background: url("../img/arrow-66.png") no-repeat 95% 13px lighten($yellow, 5%);
+    background: url("../img/arrow-66.png") no-repeat 95% 13px lighten($my-sin, 5%);
     background-size: 15px;
   }
 }
 .cart-content {
   background: $white;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
 }
 .cart-items-title {
   margin: 1em 1em 0;
   padding-bottom: 0.5em;
   font-size: 0.9em;
-  color: $dark-grey;
-  border-bottom: 1px solid $light-grey;
+  color: $gray;
+  border-bottom: 1px solid $alto;
 }
 .product-img-col {
   padding: 0;
 }
 .cart-item-img {
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
 }
 .cart-item-name {
   font-size: 1.2em;
 }
 .cart-attributes {
   font-size: 1.1em;
-  color: $dark-grey;
+  color: $gray;
 }
 .cart-item-availability {
   font-size: 0.9em;
 }
 .black-p {
-  color: $black;
+  color: $mine-shaft;
 }
 .cart-edit-delete {
-  border-left: 1px solid $light-grey;
-  border-right: 1px solid $light-grey;
+  border-left: 1px solid $alto;
+  border-right: 1px solid $alto;
 }
 .quantity-spinner {
   -webkit-user-select: none;
@@ -128,7 +128,7 @@
 .single-cart-item {
   margin: 0 1em;
   padding: 1em;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
 }
 
 // Quantity counter / spinner
@@ -142,7 +142,7 @@
 .input-number,
 .input-number-decrement,
 .input-number-increment {
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   height: 40px;
   user-select: none;
   font-size: 1.2em;
@@ -157,16 +157,16 @@
   font-weight: bold;
   cursor: pointer;
   &:active {
-    background: $yellow;
+    background: $my-sin;
   }
 }
 .quantity-submit-btn {
   padding-top: 3px;
-  background: $yellow;
+  background: $my-sin;
   margin-top: 10px;
   font-size: 12px;
   &:hover {
-    background: lighten($yellow, 5%);
+    background: lighten($my-sin, 5%);
   }
 }
 
@@ -176,7 +176,7 @@
   font-weight: 900;
   .discounted-price {
     text-decoration: line-through;
-    color: $grey;
+    color: $silver-chalice;
     font-size: 1em;
     font-weight: 200;
   }
@@ -185,11 +185,11 @@
 // Promotion section
 .promotion-info {
   margin: 1em;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
   padding-bottom: 1em;
 }
 .promo-info-text {
-  color: $dark-grey;
+  color: $gray;
   padding-right: 1em;
   letter-spacing: 0.1em;
 }
@@ -201,17 +201,17 @@
   padding: 0.5em;
   width: 300px;
   margin: 0 1em -1em 0;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
 }
 .promo-apply-btn {
   background: none;
-  border: 2px solid $light-grey;
-  color: $grey;
+  border: 2px solid $alto;
+  color: $silver-chalice;
   margin-right: 0.5em;
   padding: 0.5em 1em;
   &:hover {
-    color: $dark-grey;
-    border: 2px solid $dark-grey;
+    color: $gray;
+    border: 2px solid $gray;
   }
 }
 
@@ -222,10 +222,10 @@
   letter-spacing: 0.1em;
 }
 .order-discount {
-  color: $grey;
+  color: $silver-chalice;
 }
 .delivery-est {
-  color: $grey;
+  color: $silver-chalice;
 }
 .order-total {
   font-size: 1.2em;
@@ -236,8 +236,8 @@
 .continue-shopping-btn {
   background: url("../img/arrow-67-black.png") no-repeat 5% 13px transparent;
   background-size: 15px;
-  border: 1px solid $dark-grey;
-  color: $dark-grey;
+  border: 1px solid $gray;
+  color: $gray;
   padding: 0.4em 2em;
   font-size: 1.2em;
   text-align: center;
@@ -344,7 +344,7 @@
   }
   .xs-price-title {
     font-size: 0.9em;
-    color: $dark-grey;
+    color: $gray;
   }
   .cart-action-icon {
     height: 15px;

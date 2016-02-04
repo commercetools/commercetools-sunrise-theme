@@ -6,7 +6,7 @@
 
 .navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
   background: $white;
 }
 
@@ -26,7 +26,7 @@
   .navbar-default .navbar-nav > li:hover > a::after,
   .navbar-default .navbar-nav > li > a:hover::after {
     content: "";
-    border-bottom: solid 2px $black;
+    border-bottom: solid 2px $mine-shaft;
     position: relative;
     top: 2px;
     width: 100%;
@@ -43,7 +43,7 @@
     .nav-accordion {
       a {
         &:hover {
-          color: $dark-grey;
+          color: $gray;
         }
       }
     }
@@ -101,13 +101,13 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: $black;
+  color: $mine-shaft;
   padding: 20px 15px;
   font-size: 18px;
   text-transform: uppercase;
 
   &.sale {
-    color: $red;
+    color: $valencia;
 
     &::after {
       display: none;
@@ -133,7 +133,7 @@
 .navbar-nav>li>.megamenu {
   padding: 0;
   width: 100%;
-  border: solid 1px $light-grey;
+  border: solid 1px $alto;
   border-top: none;
   box-shadow: none;
 }
@@ -143,7 +143,7 @@
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: $dark-blue;
+  background-color: $ebony-clay;
 }
 
 .navbar-default .navbar-toggle:focus,
@@ -173,9 +173,9 @@
         -webkit-column-count: 3; /* Chrome, Safari, Opera */
         -moz-column-count: 3; /* Firefox */
         column-count: 3;
-        -webkit-column-rule: 1px outset $light-grey; /* Chrome, Safari, Opera */
-        -moz-column-rule: 1px outset $light-grey; /* Firefox */
-        column-rule: 1px outset $light-grey;
+        -webkit-column-rule: 1px outset $alto; /* Chrome, Safari, Opera */
+        -moz-column-rule: 1px outset $alto; /* Firefox */
+        column-rule: 1px outset $alto;
         -webkit-column-gap: 7em; /* Chrome, Safari, Opera */
         -moz-column-gap: 7em; /* Firefox */
         column-gap: 7em;
@@ -216,7 +216,7 @@
   }
 
   .navbar-nav .open .dropdown-menu .dropdown-header {
-    color: $dark-blue;
+    color: $ebony-clay;
   }
 
   .navbar-collapse {
@@ -232,7 +232,7 @@
   }
 
   .navbar-default .navbar-nav > li:nth-child(n+2) {
-    border-top: 1px solid $light-grey;
+    border-top: 1px solid $alto;
   }
 
   .mobile-plus-content {
@@ -330,7 +330,7 @@
         }
         .location-select {
           color: $white;
-          background: $dark-blue url("../img/arrow-67-white.png") no-repeat 90% 50%;
+          background: $ebony-clay url("../img/arrow-67-white.png") no-repeat 90% 50%;
           background-size: 10px;
           padding-right: 30px;
           text-transform: capitalize;

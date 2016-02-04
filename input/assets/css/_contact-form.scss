@@ -1,11 +1,11 @@
 .contact-form-content-wrapper {
   background: $white;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   margin-bottom: 50px;
   padding: 20px;
 }
 .contact-form-title-row {
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
   padding-bottom: 20px;
   .contact-form-title {
     text-transform: uppercase;
@@ -13,7 +13,7 @@
     font-size: 16px;
   }
   .contact-form-required {
-    color: $dark-grey;
+    color: $gray;
     float: right;
   }
 }
@@ -27,7 +27,7 @@
   button {
     margin-top: 20px;
     margin-left: 14px;
-    background-color: $yellow;
+    background-color: $my-sin;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 40px;
@@ -44,7 +44,7 @@
     width: 100%;
     resize: none;
     display: block;
-    border: 1px solid $light-grey;
+    border: 1px solid $alto;
     padding: 7px;
   }
 }

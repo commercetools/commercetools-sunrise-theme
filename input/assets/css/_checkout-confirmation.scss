@@ -6,7 +6,7 @@
 .checkout-summary {
   margin: 1em;
   padding: 1em;
-  background: lighten($light-grey, 10%);
+  background: lighten($alto, 10%);
 }
 .checkout-summary-edit-icon {
   height: 18px;
@@ -33,7 +33,7 @@
 }
 .confirmation-products-title {
   margin: 1em;
-  border-top: 1px solid $light-grey;
+  border-top: 1px solid $alto;
   .cart-items-title {
     margin-bottom: 0;
   }
@@ -42,7 +42,7 @@
   }
 }
 .follow-up {
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
   label {
     display: block;
     margin: 0 1em 0.5em 0;
@@ -61,7 +61,7 @@
   padding-right: 1em;
 }
 .payment-code-title {
-  color: $dark-grey;
+  color: $gray;
 }
 .payment-code {
   font-weight: 700;
@@ -74,12 +74,12 @@
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
-  background: $yellow;
+  background: $my-sin;
   border: none;
   margin: 1em;
   padding: 0.5em 0;
   &:hover {
-    background: lighten($yellow, 5%);
+    background: lighten($my-sin, 5%);
   }
 }
 .agree-to {
@@ -87,7 +87,7 @@
 }
 .terms-link {
   text-decoration: underline;
-  color: $dark-grey;
+  color: $gray;
 }
 
 // Media Queries

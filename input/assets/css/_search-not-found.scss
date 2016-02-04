@@ -4,24 +4,24 @@
   .search-results-title {
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: $dark-grey;
+    color: $gray;
   }
   .search-results {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: $red;
+    color: $valencia;
     font-size: 38px;
     font-weight: 200;
   }
   .search-not-found-hr {
-    border-top: 1px solid $light-grey;
+    border-top: 1px solid $alto;
     width: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 }
 .not-found-keyword {
-  color: $red;
+  color: $valencia;
   font-size: 28px;
   font-weight: 200;
 }
@@ -35,6 +35,6 @@
   }
 }
 .search-not-found-hr-bottom {
-  border-top: 1px solid $light-grey;
+  border-top: 1px solid $alto;
   margin-top: 40px;
 }

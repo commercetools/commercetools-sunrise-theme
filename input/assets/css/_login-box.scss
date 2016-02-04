@@ -1,6 +1,6 @@
 .login-box-wrapper {
   background: $white;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   padding: 20px;
 }
 .login-box-title {
@@ -8,11 +8,11 @@
   font-size: 18px;
 }
 .login-box-required {
-  color: $dark-grey;
+  color: $gray;
 }
 .login-box-hr {
   margin: 10px 0;
-  border-top: 1px solid $light-grey;
+  border-top: 1px solid $alto;
 }
 .login-box-description {
   padding: 20px 0 30px;
@@ -37,7 +37,7 @@
 .login-box-remember-me {
   margin-top: 10px;
   label {
-    color: $dark-grey;
+    color: $gray;
     text-transform: uppercase;
   }
   input {
@@ -48,12 +48,12 @@
   margin-top: 10px;
   a {
     text-decoration: underline;
-    color: $dark-grey;
+    color: $gray;
     text-transform: uppercase;
   }
 }
 .login-box-sign-in-btn {
-  background-color: $yellow;
+  background-color: $my-sin;
   text-transform: uppercase;
   padding: 10px 15px;
   margin-top: 10px;
@@ -61,6 +61,6 @@
   font-size: 18px;
   letter-spacing: 1px;
   &:hover {
-    background-color: lighten($yellow, 5%);
+    background-color: lighten($my-sin, 5%);
   }
 }
