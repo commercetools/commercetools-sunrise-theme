@@ -4,13 +4,13 @@
   {{#each cart.lineItems.list}}
       <div class="row single-cart-item">
           <div class="col-sm-1 col-xs-4 product-img-col">
-              <img class="img-responsive cart-item-img" src="{{image}}" alt="cart item image">
+              <img class="img-responsive cart-item-img" src="{{variant.image}}" alt="{{variant.name}}">
           </div>
           <div class="col-sm-3 col-xs-8 product-info-text">
               <p class="cart-item-name">
-                <a href="{{url}}">{{name}}</a>
+                <a href="{{variant.url}}">{{variant.name}}</a>
               </p>
-              <p class="grey-p">{{sku}}</p>
+              <p class="grey-p">{{variant.sku}}</p>
               <p class="cart-attributes">
               {{#each attributes}}
                   {{name}}
@@ -41,7 +41,7 @@
           </div>
       {{else}}
           <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
-              <span class="visible-xs">Quantity:</span>
+              <span class="visible-xs">{{i18n "main:common.quantity"}}:</span>
               <span class="quantity-number">{{quantity}}</span>
           </div>
       {{/if}}
@@ -53,11 +53,11 @@
 
           <div class="col-sm-2 {{#if editable}}col-xs-12 sm-pull-right{{else}}col-xs-7{{/if}}">
               <div class="text-right cart-item-price">
-                  <span class="visible-xs xs-price-title">{{i18n "common.price"}}</span>
-                {{#if priceOld}}
-                    <span class="discounted-price">{{priceOld}}</span>
+                  <span class="visible-xs xs-price-title">{{i18n "main:common.price"}}</span>
+                {{#if variant.priceOld}}
+                    <span class="discounted-price">{{variant.priceOld}}</span>
                 {{/if}}
-                  <span>{{price}}</span>
+                  <span>{{variant.price}}</span>
               </div>
           </div>
           <div class="col-sm-2 {{#if editable}}col-xs-12 sm-pull-right{{else}}col-xs-5{{/if}}">

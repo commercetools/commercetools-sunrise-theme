@@ -25,6 +25,7 @@
     background: rgba(0,0,0,0.5);
     text-transform: uppercase;
     letter-spacing: 1px;
+    z-index: 100;
     .banner-title {
       font-size: 22px;
       font-weight: 200;
@@ -56,6 +57,7 @@
     text-align: center;
     max-width: 40%;
     background: rgba(255,255,255,0.6);
+    z-index: 100;
     img {
       height: 40px;
       width: 40px;
@@ -101,6 +103,7 @@
     background: rgba(0,0,0,0.5);
     text-transform: uppercase;
     letter-spacing: 1px;
+    z-index: 100;
     .banner-title {
       font-size: 22px;
       font-weight: 200;
@@ -290,5 +293,17 @@
     .home-viewall-btn {
       font-size: 16px;
     }
+  }
+}
+
+.aspect-ratio {
+  &--4to3 {
+    @include aspect-ratio(4,3);
+  }
+  &--8to3 {
+    @include aspect-ratio(8,3);
+  }
+  &--16to9 {
+    @include aspect-ratio(16,9);
   }
 }

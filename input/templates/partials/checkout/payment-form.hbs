@@ -2,7 +2,7 @@
   <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
   <div class="shipping-info">
     <span class="text-uppercase payment-info-title">{{i18n "checkout:paymentInformation"}}</span>
-    <span class="pull-right-fields">{{i18n "form.required"}}*</span>
+    <span class="pull-right-fields">{{i18n "main:form.required"}}*</span>
   </div>
   <div class="row">
     <div class="col-sm-12">
@@ -42,7 +42,7 @@
         <div class="expiry-date">
           <span class="text-uppercase">{{i18n "checkout:paymentPage.expiryDateTitle"}}*</span><br>
           <select id="payment-expirymonth-select" class="checkout-dropdown">
-            <option>{{i18n "form.month"}}</option>
+            <option>{{i18n "main:form.month"}}</option>
             {{#each content.paymentForm.expiryDate.list}}
             <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
             {{/each}}
@@ -53,7 +53,7 @@
         <div class="expiry-year">
           <br>
           <select id="payment-expiryyear-select" class="checkout-dropdown">
-            <option>{{i18n "form.year"}}</option>
+            <option>{{i18n "main:form.year"}}</option>
             {{#each content.paymentForm.year.list}}
             <option value="{{value}}" {{#if selected}}selected{{/if}}>{{text}}</option>
             {{/each}}

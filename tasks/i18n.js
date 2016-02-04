@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  grunt.registerTask('i18next', 'Internationalization init', function() {
+  grunt.registerTask('i18n', 'Internationalization init', function() {
     var done = this.async();
     var options = this.options({
       preload: ['en'],
@@ -9,10 +9,10 @@ module.exports = function(grunt) {
       getAsync: false,
       debug: false,
       ns: {
-        namespaces: ['translations'],
-        defaultNs: 'translations'
+        namespaces: ['main'],
+        defaultNs: 'main'
       },
-      resGetPath: 'locales/__lng__/__ns__.yaml'
+      resGetPath: 'input/i18n/__lng__/__ns__.yaml'
     });
     Handlebars = require('handlebars');
 

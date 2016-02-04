@@ -1,0 +1,40 @@
+{
+    "header" : { "$ref" : "common/checkout-header.json"},
+    "footer" : { "$ref" : "common/checkout-footer.json" },
+    "content" : {
+        "stepWidget" : {
+            "shippingStepActive": true
+        },
+        "addressForm" : {
+            "billingAddressDifferentToBillingAddress": true,
+            "shippingAddress" : {
+                "salutations" : { "$ref" : "checkout/salutations.json" },
+                "firstName" : "John",
+                "lastName" : "Smith",
+                "streetName" : "Tardisstreet",
+                "streetNumber" : "1",
+                "city" : "London",
+                "region" : "London (Region)",
+                "postalCode" : "123456",
+                "countries" : { "$ref" : "checkout/choose-country-1.json" },
+                "phone" : "+49 123 4567899",
+                "email" : "thedoctor@commercetools.com"
+            },
+            "billingAddress" : {
+                "salutations" : { "$ref" : "checkout/salutations.json" },
+                "firstName" : "John",
+                "lastName" : "Smith (billing)",
+                "streetName" : "Duststreet 500",
+                "additionalAddressInfo" : "dust",
+                "city" : "",
+                "region" : "Utah",
+                "postalCode" : "56789",
+                "phone" : "+49 123 4567899 (billing)",
+                "email" : "billing@commercetools.com",
+                "countries" : { "$ref" : "checkout/choose-country-2.json" }
+            }
+        },
+        "cart" : { "$ref" : "checkout/cart.json" }
+    },
+    "meta" : { "$ref" : "common/meta.json" }
+}

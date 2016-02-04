@@ -1,0 +1,31 @@
+<form method="post" action="{{@root.meta._links.checkoutAddressesSubmit.href}}">
+  <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
+  <div class="shipping-info">
+    <span class="text-uppercase shipping-info-title">{{i18n "checkout:shippingInformation"}}</span>
+    <span class="pull-right required-fields">{{i18n "main:form.required"}}*</span>
+  </div>
+  {{> checkout/global-form-errors errors=addressForm.errors}}
+  {{> checkout/address-form-elements form=addressForm.shippingAddress suffix="Shipping"}}
+  <div class="row different-billing-row">
+    <div class="col-sm-12">
+      <div class="different-for-billing input-block">
+        <label for="different-billing-checkbox">
+          <span>
+            <input id="different-billing-checkbox" type="checkbox" value="true" name="billingAddressDifferentToBillingAddress"{{#if addressForm.billingAddressDifferentToBillingAddress}} checked{{/if}}>
+          </span>
+          <span>{{i18n "checkout:shippingPage.differentBillingAddressCheckboxLabel"}}</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="different-billing-address">
+        <div class="row">
+          {{> checkout/address-form-elements form=addressForm.billingAddress suffix="Billing"}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> checkout/continue-checkout-button}}
+</form>

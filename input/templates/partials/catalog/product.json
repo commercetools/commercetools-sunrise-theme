@@ -1,4 +1,7 @@
 {
+  "productId" : "85fdf3ce-06bf-4c85-af6e-e190a2633ad5",
+  "variantId" : 1,
+  "description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
   "rating3" : true,
   "variant" : { "$ref" : "product-variant.json" },
   "details" : { "$ref" : "product-details.json" },
@@ -13,5 +16,83 @@
     "green-S": "variant6",
     "green-M": "variant7"
   },
-  "variantIdentifiers": ["color", "size"]
+  "variantIdentifiers": ["color", "size"],
+  "attributes": [
+        {
+            "name": "Color",
+            "key": "color",
+            "list" : [
+                {
+                    "label" : "Red",
+                    "value" : "red",
+                    "selected" : false
+                },
+                {
+                    "label" : "Navy Blue",
+                    "value" : "blue",
+                    "selected" : true
+                },
+                {
+                    "label" : "Green",
+                    "value" : "green",
+                    "selected" : false
+                }
+            ],
+            "selectData": {
+                "red": {
+                    "size": [
+                        "S", "M", "L"
+                    ]
+                },
+                "blue": {
+                    "size": [
+                        "S", "L"
+                    ]
+                },
+                "green": {
+                    "size": [
+                        "S", "M"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Size",
+            "key": "size",
+            "list" : [
+                {
+                    "label" : "S",
+                    "value" : "S",
+                    "selected" : false
+                },
+                {
+                    "label" : "M",
+                    "value" : "M",
+                    "selected" : true
+                },
+                {
+                    "label" : "L",
+                    "value" : "L",
+                    "selected" : false
+                }
+            ],
+            "selectData": {
+                "S": {
+                    "color": [
+                        "red", "blue", "green"
+                    ]
+                },
+                "M": {
+                    "color": [
+                        "red", "green"
+                    ]
+                },
+                "L": {
+                    "color": [
+                        "red", "blue"
+                    ]
+                }
+            }
+        }
+    ]
 }

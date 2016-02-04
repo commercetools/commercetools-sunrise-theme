@@ -1,0 +1,53 @@
+addToNewsletter: Bitte senden Sie mir den
+agreeToTermsHtml: Ich stimme den <a id="confirmation-termsandconditions-link" href="__url__"> <span class="terms-link">AGB</span></a> zu
+billingAddress: Zahlungsadresse
+completeMyOrder: Zahlungspflichtig bestellen
+confirmation: Bestätigung
+continueCheckout: Weiter
+continueShopping: Weiter einkaufen
+discountApply: Anwenden
+discountTooltip: Weitere Rabatt Informationen...
+discountPromoInfo: Rabatte
+editMyCart: Warenkorb bearbeiten
+itemsTotal: __count__ Artikel im Warenkorb
+needHelpCustomerService: Brauchen Sie Hilfe? Kundenservice
+orderDate: Bestelldatum
+orderDiscount: Bestelldiscount
+orderNumber: Bestellnummer
+orderSummary: Bestellübersicht
+payment: Zahlung
+paymentInformation: Zahlungsdetails
+promoCodeApplied: Gutschein eingelöst
+returningCustomer: Wiederkehrender Besucher
+rememberMe: Meine Daten speichern für einen Account
+shipping: Versand
+shippingAddress: Versandadresse
+shippingInformation: Versand Information
+shippingMethod: Shipping Method
+subtotal: Zwischensumme
+total: Gesamtpreis
+yourBag: Ihr Einkaufswagen
+cartDetailPage:
+  title: Ihr Einkaufswagen
+signInPage:
+  title: Sicherer Bestellprozess - Anmeldung
+shippingPage:
+  title: Sicherer Bestellprozess - Versand
+  differentBillingAddressCheckboxLabel: Abweichende Adresse als Rechnungsadresse verwenden.
+  emailInfo: Bitte geben Sie Ihre E-Mail-Adresse an, damit wir Sie über den Status und Versand Ihrer Bestellung informieren können.
+  telNumberInfo: Bitte geben Sie Ihre Telefonnummer an, damit unser Lieferant Sie über den Liefertermin informieren kann.
+paymentPage:
+  title: Sicherer Bestellprozess - Bezahlung
+  cardName: Name on credit card
+  cardNumber: Credit card number
+  expiryDateTitle: Expiry data
+  paymentOptionsTitle: Bitte wählen Sie eine Zahlungsart aus
+  securityCode: Security Code
+  securityCodeTooltip: Normalerweise befindet sich der Code auf der Rückseite.
+confirmationPage:
+  title: Sicherer Bestellprozess - Versand
+thankYouPage:
+  title: Vielen Dank für Ihre Bestellung!
+  emailSentToStart: Eine Email wurde versandt
+  emailSentToEnd: als Bestellbestätigung.
+  yourOrderDetails: Ihre Bestelldetails

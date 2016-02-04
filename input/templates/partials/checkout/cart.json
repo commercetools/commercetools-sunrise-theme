@@ -7,13 +7,13 @@
     "shippingMethod" : {"$ref" : "shipping-method-1.json"},
     "lineItems" : {
         "list" : [
-            { "$ref" : "../common/product-variant-1.json" },
-            { "$ref" : "../common/product-variant-1.json" },
-            { "$ref" : "../common/product-variant-1.json" }
+            { "$ref" : "../checkout/line-item.json" },
+            { "$ref" : "../checkout/line-item.json" },
+            { "$ref" : "../checkout/line-item.json" }
         ]
     },
-    "shippingAddress" : { "$ref" : "shipping-address.json" },
-    "billingAddress" : { "$ref" : "billing-address.json" },
+    "shippingAddress" : { "$ref" : "address-shipping.json" },
+    "billingAddress" : { "$ref" : "address-billing.json" },
     "paymentDetails" : {
         "type" : "Credit Card",
         "name" : "P. Osgood",

@@ -195,15 +195,44 @@ $(".navbar-toggle").click(function() {
 
 // Product gallery - BZoom
 $("ul#bzoom").each(function(index, ul) {
-  $ul = $(ul);
-  var imgCount = $ul.data('count');
-  $ul.zoom({
+  ul = $(ul);
+  var imgCount = ul.find('li.gallery-image').length;
+  ul.zoom({
     zoom_area_width: 300,
     // MORE OPTIONS HERE
     small_thumbs: imgCount,
     autoplay: false
   });
 });
+
+// Lazy loading for images
+$(function() {
+  var loadImage = function(self, imgSource) {
+    self.hide();
+    if (self.is("img")) {
+      self.attr("src", imgSource);
+    } else {
+      self.css("background-image", "url('" + imgSource + "')");
+    }
+    self.fadeIn("slow");
+    return self.removeClass("img-lazy").removeAttr("data-original");
+  };
+
+  var placeholder = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+  $(".img-lazy").each(function() {
+    var self = $(this);
+    if (self.parent().is(":visible")) {
+      if (self.is("img")) {
+        self.attr("src", placeholder);
+      }
+      var imgSource = self.data("original");
+      return $("<img />").bind("load", function() {
+        return loadImage(self, imgSource);
+      }).attr("src", imgSource);
+    }
+  });
+});
+
 
 // Toggle hidden/sliced description
 $(function() {
