@@ -7,7 +7,7 @@
   width: 50px;
   background: url("../img/heart_sprite.png") no-repeat 4px 3px;
   background-size: 150px;
-  background-color: $red;
+  background-color: $valencia;
   color: $white;
   &:hover {
     opacity: 0.9;
@@ -20,7 +20,7 @@
 }
 
 .wishlist-items {
-  border: 1px solid $lighter-grey;
+  border: 1px solid $wild-sand;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.2);
   position: fixed;
   right: 50px;
@@ -29,7 +29,7 @@
   width: 380px;
   background: $white;
   .view-wishlist-btn {
-    color: $red;
+    color: $valencia;
   }
 }
 
@@ -44,23 +44,23 @@
 
 .recently-added-title {
   padding-left: 10px;
-  color: $dark-grey;
+  color: $gray;
 }
 
 .wishlist-img {
   height: 150px;
   margin: 10px 0 0 10px;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
 }
 
 .view-wishlist-btn {
-  border: 2px solid $red;
+  border: 2px solid $valencia;
   background: $white;
   text-transform: uppercase;
   margin: 20px 0 0 10px;
   letter-spacing: 1px;
   &:hover {
-    background: $red;
+    background: $valencia;
     color: $white;
   }
 }

@@ -19,7 +19,7 @@
   select.select {
     height: 30px;
     padding: 0 30px 0 10px;
-    color: $dark-grey;
+    color: $gray;
   }
 
   .item-count {
@@ -36,7 +36,7 @@
 
 .custom-pagination {
   .active {
-    color: $yellow;
+    color: $my-sin;
   }
 
   .page-numbers {
@@ -52,11 +52,11 @@
   .page-numbers li {
     display: inline-block;
     font-size: 12px;
-    color: $dark-grey;
+    color: $gray;
 
     a:hover,
     a:focus {
-      color: $yellow;
+      color: $my-sin;
     }
   }
 

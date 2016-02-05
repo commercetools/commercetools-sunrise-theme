@@ -9,26 +9,26 @@
 .thankyou-page-content {
   background-color: $white;
   padding: 14px;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   margin-bottom: 28px;
 }
 
 .thankyou-confirmation {
   .thankyou-email {
-    color: $blue;
+    color: $ship-cove;
   }
 }
 
 .print-receipt-btn {
-  color: $dark-grey;
+  color: $gray;
   font-size: 1.2em;
   padding: 10px 20px;
-  border: 1px solid $dark-grey;
+  border: 1px solid $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
   &:hover {
-    color: $black;
-    border: 1px solid $black;
+    color: $mine-shaft;
+    border: 1px solid $mine-shaft;
   }
 }
 
@@ -37,20 +37,20 @@
 }
 
 .thankyou-continue-shopping-btn {
-  background: $yellow;
+  background: $my-sin;
   font-size: 1.2em;
   font-weight: bold;
   text-transform: uppercase;
   padding: 12px 20px;
   letter-spacing: 1px;
   &:hover {
-    background: lighten($yellow, 5%);
+    background: lighten($my-sin, 5%);
   }
 }
 
 .order-details-title {
   text-transform: uppercase;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
   padding: 14px 0;
   letter-spacing: 1px;
   font-size: 1.1em;
@@ -58,7 +58,7 @@
 
 .order-number-date {
   padding: 12px 0;
-  color: $dark-grey;
+  color: $gray;
   span {
     display: inline-block;
   }

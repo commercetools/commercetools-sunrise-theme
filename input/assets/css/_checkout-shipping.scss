@@ -4,7 +4,7 @@
 /*
 /*****************************************************************************/
 .checkout-shipping {
-  background: $dirty-white;
+  background: $spring-wood;
 }
 .secure-payment {
   padding: 1em 0;
@@ -33,14 +33,14 @@
 }
 .step-number {
   padding: 0.6em 1em;
-  color: $dark-grey;
+  color: $gray;
   background: $white;
   border-radius: 50%;
-  border: 1px solid $grey;
+  border: 1px solid $silver-chalice;
   font-size: 1em;
 }
 .step-number-active {
-  background: $grey;
+  background: $silver-chalice;
   color: $white;
 }
 .step-title {
@@ -50,26 +50,26 @@
 // Shipping information
 .checkout {
   background: $white;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   margin-bottom: 2em;
 }
 .shipping-info {
   margin: 1em;
   padding-bottom: 1em;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
 }
 .shipping-info-title {
   font-size: 1.1em;
   letter-spacing: 0.1em;
 }
 .required-fields {
-  color: $grey;
+  color: $silver-chalice;
 }
 .checkout-dropdown {
   background: url("../img/arrow-67-filled.png") no-repeat 90% 50% $white;
   background-size: 12px;
   width: 100%;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   border-radius: 1px;
   padding: 0.5em;
   margin: 0.2em 0;
@@ -86,13 +86,13 @@
 }
 .checkout-input-field {
   width: 100%;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   border-radius: 1px;
   padding: 0.5em;
   margin-top: 0.2em;
 }
 .tel-email-text {
-  color: $dark-grey;
+  color: $gray;
   font-size: 0.9em;
 }
 .different-billing-row {
@@ -102,7 +102,7 @@
   margin: 0 0.5em;
 }
 .different-for-billing {
-  background: lighten($light-grey, 10%);
+  background: lighten($alto, 10%);
   border-radius: 2px;
   padding: 0.5em 0;
 }
@@ -124,11 +124,11 @@
   font-size: 1.1em;
   letter-spacing: 0.1em;
   padding-bottom: 1em;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
   margin: 15px 0 20px;
 }
 .shipping-method-option {
-  background: lighten($light-grey, 10%);
+  background: lighten($alto, 10%);
   border-radius: 2px;
   padding: 0.5em;
   margin-bottom: 0.1em;
@@ -137,7 +137,7 @@
   letter-spacing: 0.05em;
 }
 .delivery-details {
-  color: $dark-grey;
+  color: $gray;
   letter-spacing: 0.05em;
 }
 .shipping-method .shipping-method-radio {
@@ -145,14 +145,14 @@
 }
 .checkout-checkout-btn {
   width: 100%;
-  background: url("../img/arrow-66.png") no-repeat 95% 13px $yellow;
+  background: url("../img/arrow-66.png") no-repeat 95% 13px $my-sin;
   background-size: 15px;
   border: none;
   margin: 1em;
   padding: 0.5em 0;
   font-size: 1.2em;
   &:hover {
-    background: url("../img/arrow-66.png") no-repeat 95% 13px lighten($yellow, 5%);
+    background: url("../img/arrow-66.png") no-repeat 95% 13px lighten($my-sin, 5%);
     background-size: 15px;
   }
 }
@@ -171,19 +171,19 @@
 .checkout-total-items {
   font-size: 1.1em;
   letter-spacing: 0.1em;
-  color: $blue;
+  color: $ship-cove;
   padding-left: 0.5em;
 }
 .order {
-  background: lighten($light-grey, 10%);
-  border: 1px solid $light-grey;
+  background: lighten($alto, 10%);
+  border: 1px solid $alto;
   margin: 1em;
   /**padding-top: 2em;*/
 }
 .order-summary-img {
   padding: 0.5em;
   img {
-    border: 1px solid $light-grey;
+    border: 1px solid $alto;
   }
 }
 .summary-item-info {
@@ -195,7 +195,7 @@
 .sku-code {
   margin: 0.5em;
   span {
-    color: $grey;
+    color: $silver-chalice;
   }
 }
 .checkout-attributes {
@@ -205,29 +205,29 @@
   }
 }
 .checkout-attribute {
-  color: $dark-grey;
+  color: $gray;
   padding-right: 1em;
 }
 .order-item-price {
   margin: 1em;
   padding-bottom: 1em;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
 }
 .order-item-value {
-  border-left: 1px solid $light-grey;
+  border-left: 1px solid $alto;
 }
 .pricing-titles {
-  color: $dark-grey;
+  color: $gray;
 }
 .checkout-discounted-price {
-  color: $grey;
+  color: $silver-chalice;
   text-decoration: line-through;
 }
 .checkout-promo-code {
   margin: 0 0 1em;
 }
 .promo-code-applied {
-  color: $dark-grey;
+  color: $gray;
   padding-right: 1em;
 }
 .checkout-price-text,
@@ -237,7 +237,7 @@
   letter-spacing: 0.1em;
 }
 .checkout-total-price {
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
   margin: 1em;
 }
 .order-tax-total-text {
@@ -252,7 +252,7 @@
 }
 .edit-quantity-order {
   font-size: 0.9em;
-  color: $dark-grey;
+  color: $gray;
   text-decoration: underline;
   margin: 1em;
   letter-spacing: 0.05em;
@@ -312,7 +312,7 @@
     margin-right: 2em;
   }
   .step-title-active {
-    border-bottom: 1px solid $dark-blue;
+    border-bottom: 1px solid $ebony-clay;
   }
   .step-number {
     display: none;

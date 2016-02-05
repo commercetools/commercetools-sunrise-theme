@@ -5,19 +5,31 @@
 /*****************************************************************************/
 
 $white: #FFFFFF;
-$lighter-grey: #F5F5F5;
-$light-grey: #D6D6D6;
-$grey: #ADADAD;
-$dark-grey: #858585;
-$black: #333333;
-$yellow: #FFBA27;
-$red: #D54D4D;
-$dark-blue: #2A343F;
-$steel: #AAAEB2;
-$lighter-steel: #D9D7CE;
-$dirty-white: #F5F2EA;
-$green: #699E63;
-$blue: #6989C2;
+
+// GRAY
+$alto: #D6D6D6;
+$bombay: #AAAEB2;
+$gray: #858585;
+$silver-chalice: #ADADAD;
+$spring-wood: #F5F2EA;
+$timberwolf: #D9D7CE;
+$wild-sand: #F5F5F5;
+
+// BLUE
+$ebony-clay: #2A343F;
+$ship-cove: #6989C2;
+
+// BLACK
+$mine-shaft: #333333;
+
+// YELLOW
+$my-sin: #FFBA27;
+
+// RED
+$valencia: #D54D4D;
+
+// GREEN
+$highland: #699E63;
 
 /*****************************************************************************/
 /*
@@ -46,7 +58,7 @@ html {
 }
 
 body {
-  background-color: $dirty-white;
+  background-color: $spring-wood;
 
 	/* Margin bottom by footer height */
   margin-bottom: 50px;
@@ -79,13 +91,13 @@ a:focus {
 .hr {
   border: none;
   margin: 0;
-  background: $lighter-steel;
+  background: $timberwolf;
   height: 1px;
 }
 
 .hr-short {
   border: none;
-  background: $lighter-steel;
+  background: $timberwolf;
   height: 1px;
   width: 50px;
   margin: 0 auto;
@@ -126,5 +138,5 @@ button {
 }
 
 .alert-danger {
-  border: 1px solid $red;
+  border: 1px solid $valencia;
 }

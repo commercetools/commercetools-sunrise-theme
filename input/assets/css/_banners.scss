@@ -29,9 +29,9 @@ figure.figure-banner {
 .container .jumbotron, .container-fluid .jumbotron {
   background: none;
   border-radius: 0;
-  border: solid 1px $lighter-steel;
+  border: solid 1px $timberwolf;
   margin-bottom: 0;
-  color: $dark-grey;
+  color: $gray;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -42,10 +42,10 @@ figure.figure-banner {
   }
 
   h2 {
-    color: $black;
+    color: $mine-shaft;
 
     &::after {
-      background: $dark-grey;
+      background: $gray;
     }
   }
 }

@@ -1,10 +1,10 @@
 .mix-match-product {
   padding: 40px 0 20px;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
 }
 .mix-match-product-img {
   img {
-    border: 1px solid $light-grey;
+    border: 1px solid $alto;
   }
 }
 .mix-match-product-description {
@@ -12,19 +12,19 @@
     font-size: 20px;
   }
   .mix-match-product-sku {
-    color: $dark-grey;
+    color: $gray;
     font-size: 12px;
     padding: 10px 0;
   }
   .mix-match-product-oldprice {
     text-decoration: line-through;
-    color: $dark-grey;
+    color: $gray;
     font-size: 18px;
     margin-right: 5px;
   }
   .mix-match-product-price {
     font-size: 20px;
-    color: $red;
+    color: $valencia;
     letter-spacing: 1px;
   }
 }

@@ -13,17 +13,17 @@
   right: 0;
   text-transform: uppercase;
   padding: 10px 20px;
-  color: $grey;
-  border: 2px solid $grey;
+  color: $silver-chalice;
+  border: 2px solid $silver-chalice;
   font-size: 18px;
   &:hover {
-    color: $dark-grey;
-    border: 2px solid $dark-grey;
+    color: $gray;
+    border: 2px solid $gray;
   }
 }
 .your-order-details {
   .your-order-details-titles {
-    color: $dark-grey;
+    color: $gray;
     min-width: 100px;
   }
   .your-order-details-info {
@@ -34,13 +34,13 @@
   }
 }
 .my-orders-order-dark-box {
-  background: $lighter-grey;
+  background: $wild-sand;
   padding: 15px 10px;
-  color: $dark-grey;
+  color: $gray;
   position: relative;
   margin-bottom: 15px;
   .my-orders-order-dark-box-title {
-    color: $black;
+    color: $mine-shaft;
     font-size: 14px;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -49,11 +49,11 @@
 .my-orders-order-price-summary-wrapper {
   padding: 15px 0;
   margin-bottom: 20px;
-  border-top: 1px solid $light-grey;
-  border-bottom: 1px solid $light-grey;
+  border-top: 1px solid $alto;
+  border-bottom: 1px solid $alto;
 }
 .my-orders-order-promocode-title {
-  color: $dark-grey;
+  color: $gray;
   text-transform: uppercase;
   font-size: 13px;
 }
@@ -75,7 +75,7 @@
   margin: 10px 0;
   margin-left: auto;
   height: 2px;
-  background-color: $light-grey;
+  background-color: $alto;
   text-align: right;
   width: 250px;;
 }
@@ -84,25 +84,25 @@
   font-weight: bold;
 }
 .order-list-summary-titles-wrapper {
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
   text-transform: uppercase;
-  color: $dark-grey;
+  color: $gray;
   padding-bottom: 10px;
 }
 .order-detail-wrapper {
   padding: 20px 0;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
 }
 .order-detail-product-title {
   font-size: 16px;
 }
 .order-sku {
-  color: $dark-grey;
+  color: $gray;
   font-size: 12px;
   margin: 5px 0;
 }
 .order-detail-attributes-title {
-  color: $dark-grey;
+  color: $gray;
   display: inline-block;
   margin: 0 5px 5px 0;
 }
@@ -111,12 +111,12 @@
   margin: 0 5px 5px 0;
 }
 .order-detail-available {
-  color: $dark-grey;
+  color: $gray;
   font-size: 12px;
 }
 .order-detail-discount-price {
   text-decoration: line-through;
-  color: $dark-grey;
+  color: $gray;
   font-size: 12px;
 }
 .order-print-receipt-btn-wrapper {
@@ -126,12 +126,12 @@
 .order-print-receipt-btn {
   text-transform: uppercase;
   padding: 10px 20px;
-  color: $grey;
-  border: 2px solid $grey;
+  color: $silver-chalice;
+  border: 2px solid $silver-chalice;
   font-size: 18px;
   &:hover {
-    color: $dark-grey;
-    border: 2px solid $dark-grey;
+    color: $gray;
+    border: 2px solid $gray;
   }
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
