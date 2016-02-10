@@ -58,57 +58,33 @@ Fork or copy the project and apply the corresponding modifications.
 
 Once ready, run `grunt webjars` to generate the WebJar.
 
-###Commands
+###How to develop
 
-#####Useful commands
+All source files are located in `input/` folder.
+Once the project is built, the generated site is located in the `output/` folder.
+
+#####Commands
 
 `grunt` to build the generated site and watch for changes
 
-`grunt build` to build the generated site
-
-`grunt publish` to publish the generated site to GitHub Pages (requires $GH_TOKEN)
+`grunt build` to build the whole generated site, or
+  - `grunt build-images` to build only images
+  - `grunt build-assets` to build only CSS, JS and font files
+  - `grunt build-templates` to build only i18n and HBS files, additionally it builds HTML files from the Handlebars templates and JSON data
 
 `grunt webjars` to create the WebJars file in the root directory of the project
 
-`grunt install` to install to local maven repository (~/.m2/repository/io/sphere/commercetools-sunrise-design)
+`grunt install` to install to local maven repository (~/.m2/repository/io/commercetools/commercetools-sunrise-design)
 
-`grunt release` to release the current version to the Maven Bintray repository (requires commercetools-bintray repository ID in Maven's settings.xml) and move to the next development version
+`grunt release` to release the current version to the Maven Bintray repository (requires `commercetools-bintray` repository ID in Maven's `settings.xml`) and move to the next development version
+
+`grunt publish` to publish the generated site to GitHub Pages (requires the environment variable `$GH_TOKEN` of your GitHub repository)
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
-#####Generated site
-
-Once the project is built, the generated site is located in the `output/` folder.
-
 #####Executed tasks
 
-`grunt clean`
-  - Removes the `output/` folder with the generate site
-
-`grunt copy`
-  - `:images` copies any file in `input/assets/img/` to `output/assets/img/`
-  - `:assets` copies any
-    - `*.css` file in `input/assets/css/` to `output/assets/css/`
-    - `*.js` file in `input/assets/js/` to `output/assets/js/`
-    - file in `input/assets/font/` to `output/assets/font/`
-  - `:templates` copies any
-    - `*.hbs` and `*.json` files in `input/templates/` to `output/templates/`
-    - `*.yaml` file in `input/i18n/` to `output/i18n`
-
-`grunt imagemin`
-  - Compresses any PNG, JPG, GIF and SVG in `output/assets/img/`
-
-`grunt sass`
-  - Processes `input/assets/css/main.scss` into `output/assets/css/main.min.css`
-
-`grunt postcss`
-  - Adds vendor-prefixed CSS properties to `output/assets/css/main.min.css`
-
-`grunt build-images`
-  - Cleans up, copies and compresses all images
-
-`grunt build-assets`
-  - Cleans up, generates and optimizes all CSS, JS and font files
-
-`grunt build-templates`
-  - Generates HTML files from the Handlebars templates and JSON data defined in `input/templates/` and the partial templates defined in `input/templates/partials/`
+- Compiles Sass to CSS files
+- CSS and JS files are minified
+- Adds vendor-prefixed CSS properties with [Autoprefixer](https://github.com/postcss/autoprefixer)
+- Compresses any PNG, JPG, GIF and SVG image file with [Imagemin](https://github.com/imagemin/imagemin)
