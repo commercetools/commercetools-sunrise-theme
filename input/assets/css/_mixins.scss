@@ -47,3 +47,9 @@
     z-index: 10;
   }
 }
+
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
