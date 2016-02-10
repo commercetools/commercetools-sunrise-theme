@@ -126,13 +126,6 @@
   }
 }
 
-// List of product details (Color, size and size guide)
-.product-details-list {
-  > li {
-    margin-bottom: 15px;
-  }
-}
-
 // Color and Size buttons
 .select-product-detail {
   -webkit-appearance: none;
@@ -251,6 +244,16 @@
 .accordion-minus {
   opacity: 0.5;
   content: url("../img/minus-1.png");
+}
+
+.product-features-list, .product-details-list, .product-delivery-list {
+  padding-left: 10px;
+  list-style: none;
+  &>li span {
+    text-transform: uppercase;
+    color: $gray;
+    padding-right: 4px;
+  }
 }
 
 // Social share
