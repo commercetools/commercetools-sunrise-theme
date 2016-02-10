@@ -53,7 +53,7 @@ ul .bzoom_small_thumbs li,
 .bzoom img {
   vertical-align: bottom;
   width: 50px;
-  height: 70px
+  height: auto !important;
 }
 
 .bzoom .bzoom_zoom_area,
@@ -92,6 +92,9 @@ ul .bzoom_small_thumbs li,
   border: 1px solid #FFF;
   margin: 0px 10px 0px 0px;
   position: relative;
+  > img {
+    height: auto !important;
+  }
 }
 
 .bzoom_wrap ul li.bzoom_smallthumb_active {
