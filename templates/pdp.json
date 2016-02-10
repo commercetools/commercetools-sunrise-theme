@@ -1609,6 +1609,20 @@
         "price": "49,00 €"
       },
       "details": {
+        "features": [
+          {
+            "name": "color",
+            "value": "red"
+          },
+          {
+            "name": "size",
+            "value": "M"
+          },
+          {
+            "name": "material",
+            "value": "Wool"
+          }
+        ],
         "list": [
           {
             "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
@@ -1747,12 +1761,16 @@
           "name": "Standard delivery",
           "description": "Delivery within 4 working days",
           "price": "€3,00",
-          "freeAbove": "€29.99"
+          "freeAbove": "€29,99"
         },
         {
           "name": "Express delivery",
-          "description": "Delivery within 4 working days",
+          "description": "Delivery the next morning",
           "price": "€6,00"
+        },
+        {
+          "name": "Special delivery",
+          "price": "€12,00"
         }
       ]
     },
@@ -1776,6 +1794,20 @@
               "price": "49,00 €"
             },
             "details": {
+              "features": [
+                {
+                  "name": "color",
+                  "value": "red"
+                },
+                {
+                  "name": "size",
+                  "value": "M"
+                },
+                {
+                  "name": "material",
+                  "value": "Wool"
+                }
+              ],
               "list": [
                 {
                   "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
@@ -1927,6 +1959,20 @@
               "price": "49,00 €"
             },
             "details": {
+              "features": [
+                {
+                  "name": "color",
+                  "value": "red"
+                },
+                {
+                  "name": "size",
+                  "value": "M"
+                },
+                {
+                  "name": "material",
+                  "value": "Wool"
+                }
+              ],
               "list": [
                 {
                   "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
@@ -2078,6 +2124,20 @@
               "price": "49,00 €"
             },
             "details": {
+              "features": [
+                {
+                  "name": "color",
+                  "value": "red"
+                },
+                {
+                  "name": "size",
+                  "value": "M"
+                },
+                {
+                  "name": "material",
+                  "value": "Wool"
+                }
+              ],
               "list": [
                 {
                   "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
@@ -2229,6 +2289,20 @@
               "price": "49,00 €"
             },
             "details": {
+              "features": [
+                {
+                  "name": "color",
+                  "value": "red"
+                },
+                {
+                  "name": "size",
+                  "value": "M"
+                },
+                {
+                  "name": "material",
+                  "value": "Wool"
+                }
+              ],
               "list": [
                 {
                   "text": "Minions ipsum hahaha jiji jeje potatoooo hahaha chasy hahaha me want bananaaa!"
