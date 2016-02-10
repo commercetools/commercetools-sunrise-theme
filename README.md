@@ -57,7 +57,7 @@ Fork or copy the project to create your own template, then apply your modificati
 1. Run `grunt`
 2. Modify the source files located in `input/` folder
 3. Check your changes by accessing the desired HTML file generated in the `output/` folder
-4. Once ready, run `grunt webjars` and move the generated JAR to the `lib/` folder of your Sunrise-based project
+4. Once ready, run `grunt webjars` and move the generated JAR file to the `lib/` folder of your Sunrise-based project
 
 ###Tasks
 
