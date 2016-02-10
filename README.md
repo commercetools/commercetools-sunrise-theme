@@ -46,19 +46,13 @@
 
 Import it to your project as a [WebJars](http://www.webjars.org/) dependency.
 
-You can obtain this or your template's WebJar as explained below.
-
-#####Use this template
-All releases can be found in a Maven repository hosted by Bintray:
+All releases for this template can be found in a Maven repository hosted by Bintray:
 - `>= v0.46.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/commercetools-sunrise-design/
 - `< v0.46.0`: https://dl.bintray.com/commercetools/maven/io/sphere/sphere-sunrise-design/
 
-#####Use your own template
-Fork or copy the project and apply the corresponding modifications.
-
-Once ready, run `grunt webjars` to generate the WebJar.
-
 ##How to develop
+
+Fork or copy the project to create your own template, then apply your modifications as follows:
 
 1. Run `grunt`
 2. Modify the source files located in `input/` folder
