@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/sphereio/commercetools-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/commercetools-sunrise-design) [![Stories in Ready](https://badge.waffle.io/sphereio/commercetools-sunrise-design.png?label=ready&title=Ready)](https://waffle.io/sphereio/commercetools-sunrise-design) [ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-design/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-design/_latestVersion)
 
-###Demo
+##Demo
 - [Home](http://sphereio.github.io/commercetools-sunrise-design/en/home.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-design/de/home.html) )
 - [Product Overview](http://sphereio.github.io/commercetools-sunrise-design/en/pop.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-design/de/pop.html) )
 - [Product Detail](http://sphereio.github.io/commercetools-sunrise-design/en/pdp.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-design/de/pdp.html) )
@@ -35,14 +35,14 @@
 - [FAQ Page](http://sphereio.github.io/commercetools-sunrise-design/en/faq.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-design/de/faq.html) )
 - [Imprint Page](http://sphereio.github.io/commercetools-sunrise-design/en/imprint.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-design/de/imprint.html) )
 
-###Installation
+##Installation
 
 - Install [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/)
 - Install [Sass](http://sass-lang.com/install)
 - Install [Grunt](http://gruntjs.com/getting-started)
 - Run `npm install` in the project root to install the project dependencies.
 
-###How to use
+##How to use
 
 Import it to your project as a [WebJars](http://www.webjars.org/) dependency.
 
@@ -58,33 +58,40 @@ Fork or copy the project and apply the corresponding modifications.
 
 Once ready, run `grunt webjars` to generate the WebJar.
 
-###How to develop
+##How to develop
 
-All source files are located in `input/` folder.
-Once the project is built, the generated site is located in the `output/` folder.
+1. Run `grunt`
+2. Modify the source files located in `input/` folder
+3. Check your changes by accessing the desired HTML file generated in the `output/` folder
 
-#####Commands
+Building the generated site also performs these tasks:
+- Compiles Sass to CSS files
+- Minifies CSS and JS files
+- Adds vendor-prefixed CSS properties with [Autoprefixer](https://github.com/postcss/autoprefixer)
+- Compresses any PNG, JPG, GIF and SVG image file with [Imagemin](https://github.com/imagemin/imagemin)
 
-`grunt` to build the generated site and watch for changes
+###Commands
 
-`grunt build` to build the whole generated site, or
-  - `grunt build-images` to build only images
-  - `grunt build-assets` to build only CSS, JS and font files
-  - `grunt build-templates` to build only i18n and HBS files, additionally it builds HTML files from the Handlebars templates and JSON data
-
-`grunt webjars` to create the WebJars file in the root directory of the project
-
-`grunt install` to install to local maven repository (~/.m2/repository/io/commercetools/commercetools-sunrise-design)
-
-`grunt release` to release the current version to the Maven Bintray repository (requires `commercetools-bintray` repository ID in Maven's `settings.xml`) and move to the next development version
-
-`grunt publish` to publish the generated site to GitHub Pages (requires the environment variable `$GH_TOKEN` of your GitHub repository)
+Besides `grunt`, which builds the whole generated site and watches for changes, there are other commands available.
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
-#####Executed tasks
+##### Generate HTML site
 
-- Compiles Sass to CSS files
-- CSS and JS files are minified
-- Adds vendor-prefixed CSS properties with [Autoprefixer](https://github.com/postcss/autoprefixer)
-- Compresses any PNG, JPG, GIF and SVG image file with [Imagemin](https://github.com/imagemin/imagemin)
+- `grunt build` to build the whole generated site
+
+- `grunt build-images` to build only images
+
+- `grunt build-assets` to build only CSS, JS and font files
+
+- `grunt build-templates` to build only i18n and HBS files, besides building HTML files from the Handlebars templates and JSON data
+
+##### Generate WebJars file
+- `grunt webjars` to create the WebJars file in the root directory of the project
+
+- `grunt install` to install to local maven repository (~/.m2/repository/io/commercetools/commercetools-sunrise-design)
+
+- `grunt release` to release the current version to the Maven Bintray repository (requires `commercetools-bintray` repository ID in Maven's `settings.xml`) and move to the next development version
+
+##### Publish to GitHub pages
+- `grunt publish` to publish the generated site to GitHub Pages (requires the environment variable `$GH_TOKEN` of your GitHub repository)
