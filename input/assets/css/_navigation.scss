@@ -229,16 +229,16 @@
     }
     // Overwrite SelectBoxIt library css
     .selectboxit-btn {
-      width: 160px!important;
+      width: 160px !important;
     }
     .selectboxit-list {
-      min-width: inherit!important;
-      width: 160px!important;
-      margin: -10px 0 0 10px!important;
+      min-width: inherit !important;
+      width: 160px !important;
+      margin: -10px 0 0 10px !important;
     }
     .selectboxit-text {
-      max-width: none!important;
-      width: 120px!important;
+      max-width: none !important;
+      width: 120px !important;
     }
     .selectboxit-option-anchor {
       @include truncate;

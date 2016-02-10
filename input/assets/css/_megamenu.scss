@@ -340,15 +340,15 @@
     // Overwrite SelectBoxIt css
     .selectboxit-list {
       li {
-        display: block!important;
+        display: block !important;
         &:first-child {
-          padding: 0!important;
+          padding: 0 !important;
         }
       }
     }
     .selectboxit-text {
-      float: none!important;
-      text-overflow: inherit!important;
+      float: none !important;
+      text-overflow: inherit !important;
     }
   }
 }
