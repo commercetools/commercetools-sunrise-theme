@@ -40,7 +40,7 @@
 - Install [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/)
 - Install [Sass](http://sass-lang.com/install)
 - Install [Grunt](http://gruntjs.com/getting-started)
-- Run `npm install` in the project root to install the project dependencies.
+- Run `npm install` in the project root to install the project dependencies
 
 ##How to use
 
