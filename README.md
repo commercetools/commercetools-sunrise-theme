@@ -46,7 +46,7 @@
 
 You can import it to your project as a [WebJars](http://www.webjars.org/) dependency.
 
-All releases for this template can be found in a Maven repository hosted by Bintray:
+All releases for this template can be found in a Maven repository hosted by [Bintray](https://bintray.com/):
 - `>= v0.46.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/commercetools-sunrise-design/
 - `< v0.46.0`: https://dl.bintray.com/commercetools/maven/io/sphere/sphere-sunrise-design/
 
