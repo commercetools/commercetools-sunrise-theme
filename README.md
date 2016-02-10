@@ -63,6 +63,9 @@ Once ready, run `grunt webjars` to generate the WebJar.
 1. Run `grunt`
 2. Modify the source files located in `input/` folder
 3. Check your changes by accessing the desired HTML file generated in the `output/` folder
+4. Once ready, run `grunt webjars` and move the generated JAR to the `lib/` folder of your Sunrise-based project
+
+###Tasks
 
 Building the generated site also performs these tasks:
 - Compiles Sass to CSS files
@@ -72,7 +75,7 @@ Building the generated site also performs these tasks:
 
 ###Commands
 
-Besides `grunt`, which builds the whole generated site and watches for changes, there are other commands available.
+Besides `grunt`, which builds the whole generated site and watches for changes, there are other commands available. Below are listed a non-exhaustive list of them.
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
