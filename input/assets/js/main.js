@@ -194,7 +194,7 @@ $(".navbar-toggle").click(function() {
  /*****************************************************************************/
 
 // Product gallery - BZoom
-$("ul#bzoom").each(function(index, ul) {
+$("ul.bzoom").each(function(index, ul) {
   ul = $(ul);
   var imgCount = ul.find('li.gallery-image').length;
   ul.zoom({
@@ -267,7 +267,7 @@ $(function() {
   var caller = $(".animated-modal-action"),
     modal = $('#animatedModal'),
     modalContent = $('.modal-content', modal),
-    bZoomContainer = $('#bzoom'),
+    bZoomContainer = $('.bzoom'),
     activeBZoomImg;
 
   caller.animatedModal({

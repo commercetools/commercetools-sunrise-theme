@@ -29,7 +29,7 @@
 			}
 		},
 		"suggestions" : { "$ref" : "catalog/product-list4.json" },
-		"wishlist" : { "$ref" : "catalog/wishlist.json" }
+		"wishlist" : { "$ref" : "common/wishlist.json" }
 	},
 	"meta" : { "$ref" : "common/meta.json" }
 }
