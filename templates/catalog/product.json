@@ -3,9 +3,8 @@
   "variantId" : 1,
   "description" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
   "rating3" : true,
-  "variant" : { "$ref" : "product-variant.json" },
-  "details" : { "$ref" : "product-details.json" },
-  "gallery" : { "$ref" : "product-gallery.json" },
+  "details" : { "$ref" : "pdp/product-details.json" },
+  "gallery" : { "$ref" : "pdp/product-gallery.json" },
   "variant" : { "$ref" : "../common/product-variant-1.json" },
   "variants": {
     "red-S": "variant1",

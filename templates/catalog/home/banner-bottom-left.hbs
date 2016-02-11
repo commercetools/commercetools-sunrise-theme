@@ -1,0 +1,15 @@
+<!-- start catalog/home/banner-bottom-left.hbs -->
+<div class="aspect-ratio aspect-ratio--4to3">
+  <picture>
+    <source srcset="{{@root.meta.assetsPath}}img/shoes_large-4to3.jpg" media="(min-width: 1200px)">
+    <source srcset="{{@root.meta.assetsPath}}img/shoes_medium-4to3.jpg" media="(min-width: 768px)">
+    <img src="{{@root.meta.assetsPath}}img/shoes_small-4to3.jpg" class="img-responsive" alt="Banner image">
+  </picture>
+</div>
+
+<div class="banner-text">
+  <h4 class="banner-title">{{i18n "home:bannerThree.first.title"}}</h4>
+  <p class="banner-paragraph">{{i18n "home:bannerThree.first.subtitle"}}</p>
+  <a href="{{content.banners.bannerThree.first.href}}" class="btn banner-btn">{{i18n "home:bannerThree.first.btn"}}</a>
+</div>
+<!-- end catalog/home/banner-bottom-left.hbs -->

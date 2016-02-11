@@ -1,0 +1,18 @@
+<!-- start catalog/home/banner-middle.hbs -->
+<div class="aspect-ratio aspect-ratio--8to3">
+  <picture>
+    <source srcset="{{@root.meta.assetsPath}}img/man_large-8to3.jpg" media="(min-width: 1200px)">
+    <source srcset="{{@root.meta.assetsPath}}img/man_medium-8to3.jpg" media="(min-width: 768px)">
+    <img src="{{@root.meta.assetsPath}}img/man_small-8to3.jpg" class="img-responsive" alt="Banner image">
+  </picture>
+</div>
+
+<div class="banner-text">
+  <img  class="hidden-xs" src="{{@root.meta.assetsPath}}img/sun-logo.png" alt="Sunrise logo" />
+  <h4 class="banner-title">{{i18n "home:bannerTwo.title"}}</h4>
+  <p class="banner-subtitle">{{i18n "home:bannerTwo.subtitle"}}</p>
+  <p class="hidden-xs hidden-sm">{{i18n "home:bannerTwo.description1"}}</p>
+  <p class="hidden-xs hidden-sm">{{i18n "home:bannerTwo.description2"}}</p>
+  <a class="btn banner-btn" href="{{content.banners.bannerTwo.first.href}}">{{i18n "home:bannerTwo.btn"}}</a>
+</div>
+<!-- end catalog/home/banner-middle.hbs -->

@@ -13,9 +13,9 @@
         <div class="row product-info-row-pdp">
           <div class="col-sm-4">
             <div class="bzoom_wrap">
-              <ul id="bzoom" data-count="{{thumbnail.product.gallery.list.length}}">
+              <ul class="bzoom">
                 {{#each thumbnail.product.gallery.list}}
-                <li>
+                <li class="gallery-image">
                   <img class="bzoom_thumb_image" src="{{thumbImage}}"/>
                   <img class="bzoom_big_image" src="{{bigImage}}"/>
                 </li>

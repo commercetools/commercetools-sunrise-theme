@@ -1,0 +1,38 @@
+<!-- start myaccount/login-box.hbs -->
+<div class="login-box-wrapper">
+  <div class="clearfix">
+    <div class="pull-left">
+      <div class="login-box-title">{{i18n "my-account-login:loginBox.title"}}</div>
+    </div>
+    <div class="pull-right">
+      <div class="login-box-required">{{i18n "my-account-login:loginBox.required"}}*</div>
+    </div>
+  </div>
+  <hr class="login-box-hr">
+  <div class="login-box-description">{{i18n "my-account-login:loginBox.description"}}</div>
+  <div class="login-box-input-wrapper">
+    <div class="login-box-input">
+      <span>{{i18n "my-account-login:loginBox.email"}}*</span><br>
+      <input type="email" name="" value="">
+    </div>
+    <div class="login-box-input">
+      <span>{{i18n "my-account-login:loginBox.password"}}*</span><br>
+      <input type="password" name="" value="">
+    </div>
+    <div class="clearfix">
+      <div class="pull-left">
+        <div class="login-box-remember-me">
+          <input type="checkbox" name="" value="">
+          <label for="">{{i18n "my-account-login:loginBox.rememberMe"}}</label>
+        </div>
+      </div>
+      <div class="pull-right">
+        <div class="login-box-forgot-password">
+          <a href="#">{{i18n "my-account-login:loginBox.forgotPassword"}}</a>
+        </div>
+      </div>
+    </div>
+    <button class="login-box-sign-in-btn">{{i18n "my-account-login:loginBox.signIn"}}</button>
+  </div>
+</div>
+<!-- end myaccount/login-box.hbs -->

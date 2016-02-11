@@ -1,0 +1,15 @@
+<!-- start catalog/home/banner-top-right.hbs -->
+<div class="aspect-ratio aspect-ratio--4to3">
+  <picture>
+    <source srcset="{{@root.meta.assetsPath}}img/woman_large-4to3.jpg" media="(min-width: 1200px)">
+    <source srcset="{{@root.meta.assetsPath}}img/woman_medium-4to3.jpg" media="(min-width: 768px)">
+    <img src="{{@root.meta.assetsPath}}img/woman_small-4to3.jpg" class="img-responsive" alt="Banner image">
+  </picture>
+</div>
+
+<div class="banner-text">
+  <h4 class="banner-title">{{i18n "home:bannerOne.second.title"}}</h4>
+  <p class="banner-paragraph">{{i18n "home:bannerOne.second.subtitle"}}</p>
+  <a href="{{content.banners.bannerOne.second.href}}" class="btn banner-btn">{{i18n "home:bannerOne.second.btn"}}</a>
+</div>
+<!-- end catalog/home/banner-top-right.hbs -->

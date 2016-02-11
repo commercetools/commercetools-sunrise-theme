@@ -1,0 +1,15 @@
+<!-- start catalog/home/banner-bottom-right-3.hbs -->
+<div class="aspect-ratio aspect-ratio--8to3">
+  <picture>
+    <source srcset="{{@root.meta.assetsPath}}img/woman_large-8to3.jpg" media="(min-width: 1200px)">
+    <source srcset="{{@root.meta.assetsPath}}img/woman_medium-8to3.jpg" media="(min-width: 768px)">
+    <img src="{{@root.meta.assetsPath}}img/woman_small-8to3.jpg" class="img-responsive" alt="Banner image">
+  </picture>
+</div>
+
+<div class="banner-text">
+  <h4 class="banner-title">{{i18n "home:bannerThree.fourth.title"}}</h4>
+  <p class="banner-paragraph">{{i18n "home:bannerThree.fourth.subtitle"}}</p>
+  <a href="{{content.banners.bannerThree.fourth.href}}" class="btn banner-btn">{{i18n "home:bannerThree.fourth.btn"}}</a>
+</div>
+<!-- end catalog/home/banner-bottom-right-3.hbs -->
