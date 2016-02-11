@@ -4,17 +4,17 @@
 	"content" : {
 		"filterProductsUrl" : "",
 		"searchTerm" : "foo",
-		"banner" : { "$ref" : "catalog/banner.json" },
-		"jumbotron" : { "$ref" : "catalog/jumbotron.json" },
-		"searchResult" : { "$ref" : "catalog/search-result.json" },
-		"seo" : { "$ref" : "catalog/seo.json" },
+		"banner" : { "$ref" : "catalog/pop/banner.json" },
+		"jumbotron" : { "$ref" : "catalog/pop/jumbotron.json" },
+		"searchResult" : { "$ref" : "catalog/pop/search-result.json" },
+		"seo" : { "$ref" : "catalog/pop/seo.json" },
 		"breadcrumb" : { "$ref" : "catalog/breadcrumb.json" },
-		"facets" : { "$ref" : "catalog/facets.json" },
-		"pagination" : { "$ref" : "catalog/pagination.json" },
-		"displaySelector" : { "$ref" : "catalog/display-selector.json" },
-		"sortSelector" : { "$ref" : "catalog/sort-selector.json" },
+		"facets" : { "$ref" : "catalog/pop/facets.json" },
+		"pagination" : { "$ref" : "common/pagination.json" },
+		"displaySelector" : { "$ref" : "catalog/pop/display-selector.json" },
+		"sortSelector" : { "$ref" : "catalog/pop/sort-selector.json" },
 		"products" : { "$ref" : "catalog/product-list9.json" },
-		"wishlist" : { "$ref" : "catalog/wishlist.json" }
+		"wishlist" : { "$ref" : "common/wishlist.json" }
 	},
 	"meta" : { "$ref" : "common/meta.json" }
 }

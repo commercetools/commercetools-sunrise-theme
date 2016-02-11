@@ -14,22 +14,22 @@
       {{> catalog/breadcrumb breadcrumb=content.breadcrumb}}
       <div class="row">
         <div class="col-md-4 col-md-offset-1 col-sm-6">
-          {{> catalog/product-gallery gallery=content.gallery}}
-          {{> catalog/view-more hiddenXs=true}}
+          {{> catalog/pdp/product-gallery gallery=content.gallery}}
+          {{> catalog/pdp/view-more hiddenXs=true}}
         </div>
         <div class="col-sm-6">
           <div class="mix-match-title">{{i18n "mix-match:mixMatch.title"}}</div>
           <div>{{i18n "mix-match:mixMatch.description"}}</div>
-          {{> catalog/mix-match-product-list products=content.mixMatchProducts}}
+          {{> catalog/pdp/mix-match-product-list products=content.mixMatchProducts}}
           <div class="mix-match-bag-wishlist">
-            {{> catalog/add-to-bag-btn}}
-            {{> catalog/add-to-wishlist-btn text=true}}
+            {{> catalog/pdp/add-to-bag-btn}}
+            {{> catalog/pdp/add-to-wishlist-btn text=true}}
           </div>
           <div class="panel-group panel-group-pdp" id="accordion-product-info" role="tablist" aria-multiselectable="true">
-            {{> catalog/delivery-rates}}
+            {{> catalog/pdp/delivery-rates}}
           </div>
           <div class="mix-match-social-icons">
-            {{> catalog/social-icons}}
+            {{> catalog/pdp/social-icons}}
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
       <div class="mix-match-suggestions-title">{{i18n "catalog:suggestions.title"}}</div>
       {{> catalog/suggestions}}
       <hr class="hr">
-      {{> catalog/reviews}}
+      {{> catalog/pdp/reviews}}
     </div>
   </div>
 

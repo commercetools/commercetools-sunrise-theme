@@ -6,8 +6,8 @@
 		"itemsInTotal" : "3 items in total",
 		"clearWishlistBtn" : "Clear Wishlist",
 		"removeBtn" : "Remove",
-        "pagination" : { "$ref" : "catalog/pagination.json" },
-        "displaySelector" : { "$ref" : "catalog/display-selector.json" },
+        "pagination" : { "$ref" : "common/pagination.json" },
+        "displaySelector" : { "$ref" : "catalog/pop/display-selector.json" },
 		"products" : { "$ref" : "catalog/product-list3.json" }
 	},
     "meta" : { "$ref" : "common/meta.json" }

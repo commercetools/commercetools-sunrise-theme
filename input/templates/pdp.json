@@ -4,10 +4,10 @@
     "content" : {
         "breadcrumb" : { "$ref" : "catalog/breadcrumb.json" },
         "product" : { "$ref" : "catalog/product.json" },
-        "deliveryRates" : { "$ref" : "catalog/delivery-rates.json" },
+        "deliveryRates" : { "$ref" : "catalog/pdp/delivery-rates.json" },
         "suggestions" : { "$ref" : "catalog/product-list4.json" },
-        "reviews" : { "$ref" : "catalog/reviews.json" },
-        "wishlist" : { "$ref" :  "catalog/wishlist.json" }
+        "reviews" : { "$ref" : "catalog/pdp/reviews.json" },
+        "wishlist" : { "$ref" :  "common/wishlist.json" }
     },
     "meta" : { "$ref" : "common/meta.json" }
 }

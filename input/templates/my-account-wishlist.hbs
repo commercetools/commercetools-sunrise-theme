@@ -19,7 +19,7 @@
           <div class="my-orders-wrapper">
             <div class="row">
               <div class="col-sm-3">
-                {{> catalog/my-account-sidebar positionSix=true}}
+                {{> myaccount/my-account-sidebar positionSix=true}}
               </div>
               <div id="my-account-desktop-content" class="col-sm-9">
                 <div class="my-orders-order-content">
@@ -31,7 +31,7 @@
                       </div>
                     </div>
                   </div>
-                  {{> catalog/my-account-wishlist-pagination}}
+                  {{> myaccount/my-account-wishlist-pagination}}
                   <div class="my-account-wishlist-items-wrapper">
                     <div class="row">
                       {{#each content.products.list}}
@@ -48,7 +48,7 @@
                     <div class="row">
                       <div class="col-sm-12 hidden-xs text-center custom-pagination">
                         <ul class="page-numbers">
-                          {{> catalog/pagination pagination=content.pagination}}
+                          {{> common/pagination pagination=content.pagination}}
                         </ul>
                       </div>
                     </div>
@@ -64,7 +64,7 @@
       </div>
     </div>
   </div>
-  {{!-- {{> catalog/wishlist}} --}}
+  {{!-- {{> common/wishlist}} --}}
   {{> common/footer}}
   {{> common/htmlscripts}}
 </body>
