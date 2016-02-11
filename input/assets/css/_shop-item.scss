@@ -14,6 +14,7 @@
 
   .pop-product-image {
     @include aspect-ratio(3,4);
+    margin: 10px;
   }
   .pop-product-name {
     margin-top: 15px;
