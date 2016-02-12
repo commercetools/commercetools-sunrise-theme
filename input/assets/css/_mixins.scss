@@ -40,10 +40,16 @@
     max-width: 100%;
     height: auto;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: 10;
+    transform: translateY(-50%);
   }
+}
+
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

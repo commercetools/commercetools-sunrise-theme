@@ -211,7 +211,7 @@
       position: relative;
       background: $ebony-clay;
       padding-bottom: 10px;
-      width: 140px;
+      width: 180px;
       top: -2px;
       .location-select {
         width: 120px;
@@ -229,15 +229,21 @@
     }
     // Overwrite SelectBoxIt library css
     .selectboxit-btn {
-      width: 120px!important;
+      width: 160px !important;
     }
     .selectboxit-list {
-      width: 120px!important;
-      margin: -10px 0 0 10px!important;
+      min-width: inherit !important;
+      width: 160px !important;
+      margin: -10px 0 0 10px !important;
+      text-transform: initial;
+      font-size: 12px;
     }
     .selectboxit-text {
-      max-width: none!important;
-      width: 100px!important;
+      max-width: none !important;
+      width: 120px !important;
+    }
+    .selectboxit-option-anchor {
+      @include truncate;
     }
 
     @media screen and (min-width: 768px) {
@@ -476,7 +482,7 @@
 
       a.img {
         width: 70px;
-        border: 1px $alto solid;
+        min-height: 90px;
         float: left;
         margin-right: 15px;
 
