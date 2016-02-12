@@ -1,8 +1,6 @@
-# Sunrise template
+# Commercetools Sunrise Theme
 
-![SPHERE.IO icon](https://admin.sphere.io/assets/images/sphere_logo_rgb_long.png)
-
-[![Build Status](https://travis-ci.org/sphereio/commercetools-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/commercetools-sunrise-design) [![Stories in Ready](https://badge.waffle.io/sphereio/commercetools-sunrise-design.png?label=ready&title=Ready)](https://waffle.io/sphereio/commercetools-sunrise-design) [ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-design/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-design/_latestVersion)
+[![Build Status](https://travis-ci.org/sphereio/commercetools-sunrise-design.png?branch=master)](https://travis-ci.org/sphereio/commercetools-sunrise-design) [![Stories in Ready](https://badge.waffle.io/sphereio/commercetools-sunrise-design.png?label=ready&title=Ready)](https://waffle.io/sphereio/commercetools-sunrise-design) [ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-theme/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-theme/_latestVersion)
 
 ##Demo
 - [Home](http://sphereio.github.io/commercetools-sunrise-design/site/en/home.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-design/site/de/home.html) )
@@ -47,8 +45,8 @@
 You can import it to your project as a [WebJars](http://www.webjars.org/) dependency.
 
 All releases for this template can be found in a Maven repository hosted by [Bintray](https://bintray.com/):
-- `>= v0.46.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/commercetools-sunrise-design/
-- `< v0.46.0`: https://dl.bintray.com/commercetools/maven/io/sphere/sphere-sunrise-design/
+- `>= v0.53.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/commercetools-sunrise-theme/
+- `< v0.53.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/commercetools-sunrise-design/
 
 ##How to develop
 

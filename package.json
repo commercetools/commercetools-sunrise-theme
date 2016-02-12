@@ -1,5 +1,5 @@
 {
-  "name": "sunrise-theme",
+  "name": "commercetools-sunrise-theme",
   "version": "0.53.0-SNAPSHOT",
   "description": "Theme for commercetools Sunrise online shop",
   "repository": {
@@ -14,7 +14,7 @@
     "maven": {
       "groupId": "io.commercetools.sunrise",
       "repositoryId": "commercetools-bintray",
-      "url": "https://api.bintray.com/maven/commercetools/maven/sunrise-theme"
+      "url": "https://api.bintray.com/maven/commercetools/maven/commercetools-sunrise-theme"
     }
   },
   "bugs": {
