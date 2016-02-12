@@ -60,7 +60,7 @@
 		"productDescriptionTitle" : "Product Description",
 		"order" : [
 			{
-				"image" : "../assets/img/blue-shirt.jpg",
+				"image" : "../../assets/img/blue-shirt.jpg",
 				"productTitleOne" : "Enditatem Product name",
 				"productTitleTwo" : "Optional Line Two",
 				"sku" : "Sunrise SUN#123456",
@@ -73,7 +73,7 @@
 				"totalPrice" : "75,00 €"
 			},
 			{
-				"image" : "../assets/img/blue-shirt.jpg",
+				"image" : "../../assets/img/blue-shirt.jpg",
 				"productTitleOne" : "Enditatem Product name",
 				"productTitleTwo" : "Optional Line Two",
 				"sku" : "Sunrise SUN#123456",
