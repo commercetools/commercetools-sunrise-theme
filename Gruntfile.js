@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   var config = {
     pkg: grunt.file.readJSON('package.json'),
     env: process.env,
+
     languages: ["en", "de"]
   };
    

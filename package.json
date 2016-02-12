@@ -1,23 +1,36 @@
 {
-  "name": "commercetools-sunrise-design",
+  "name": "sunrise-theme",
   "version": "0.53.0-SNAPSHOT",
-  "description": "Compiles Handlebars templates with JSON data, outputting static HTML files.",
-  "private": true,
+  "description": "Theme for commercetools Sunrise online shop",
   "repository": {
     "type": "git",
     "url": "git://github.com/sphereio/commercetools-sunrise-design.git"
   },
-  "keywords": [
-    "Sunrise",
-    "commercetools",
-    "template",
-    "Handlebars"
-  ],
-  "license": "MIT",
+  "config": {
+    "github": {
+      "username": "automation-commercetools",
+      "email": "automation@commercetools.de"
+    },
+    "maven": {
+      "groupId": "io.commercetools.sunrise",
+      "repositoryId": "commercetools-bintray",
+      "url": "https://api.bintray.com/maven/commercetools/maven/sunrise-theme"
+    }
+  },
   "bugs": {
     "url": "https://github.com/sphereio/commercetools-sunrise-design/issues"
   },
   "homepage": "https://github.com/sphereio/commercetools-sunrise-design#readme",
+  "keywords": [
+    "Sunrise",
+    "commercetools",
+    "theme",
+    "template",
+    "i18n",
+    "Handlebars"
+  ],
+  "private": true,
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.2.3",
     "glob": "^6.0.4",
