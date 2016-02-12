@@ -44,8 +44,8 @@
 
 You can import the theme to your project as a [WebJars](http://www.webjars.org/) dependency.
 
-All releases for this template can be found in a Maven repository hosted by [Bintray](https://bintray.com/):
-- `>= v0.53.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/commercetools-sunrise-theme/
+All releases for this theme can be found in a Maven repository hosted by [Bintray](https://bintray.com/):
+- `>= v0.53.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/sunrise/commercetools-sunrise-theme/
 - `< v0.53.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/commercetools-sunrise-design/
 
 ##How to develop
