@@ -44,7 +44,7 @@
             "totalPrice": "49,00 €",
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../assets/img/blue-jacket.jpg",
+              "image": "../../assets/img/blue-jacket.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -69,7 +69,7 @@
             "totalPrice": "49,00 €",
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../assets/img/blue-jacket.jpg",
+              "image": "../../assets/img/blue-jacket.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -94,7 +94,7 @@
             "totalPrice": "49,00 €",
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../assets/img/blue-jacket.jpg",
+              "image": "../../assets/img/blue-jacket.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -1636,26 +1636,26 @@
             "gallery": {
               "list": [
                 {
-                  "thumbImage": "../assets/img/blue-jacket.jpg",
-                  "bigImage": "../assets/img/blue-jacket.jpg"
+                  "thumbImage": "../../assets/img/blue-jacket.jpg",
+                  "bigImage": "../../assets/img/blue-jacket.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-shirt.jpg",
-                  "bigImage": "../assets/img/blue-shirt.jpg"
+                  "thumbImage": "../../assets/img/blue-shirt.jpg",
+                  "bigImage": "../../assets/img/blue-shirt.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-jacket.jpg",
-                  "bigImage": "../assets/img/blue-jacket.jpg"
+                  "thumbImage": "../../assets/img/blue-jacket.jpg",
+                  "bigImage": "../../assets/img/blue-jacket.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-shirt.jpg",
-                  "bigImage": "../assets/img/blue-shirt.jpg"
+                  "thumbImage": "../../assets/img/blue-shirt.jpg",
+                  "bigImage": "../../assets/img/blue-shirt.jpg"
                 }
               ]
             },
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../assets/img/blue-jacket.jpg",
+              "image": "../../assets/img/blue-jacket.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -1801,26 +1801,26 @@
             "gallery": {
               "list": [
                 {
-                  "thumbImage": "../assets/img/blue-jacket.jpg",
-                  "bigImage": "../assets/img/blue-jacket.jpg"
+                  "thumbImage": "../../assets/img/blue-jacket.jpg",
+                  "bigImage": "../../assets/img/blue-jacket.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-shirt.jpg",
-                  "bigImage": "../assets/img/blue-shirt.jpg"
+                  "thumbImage": "../../assets/img/blue-shirt.jpg",
+                  "bigImage": "../../assets/img/blue-shirt.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-jacket.jpg",
-                  "bigImage": "../assets/img/blue-jacket.jpg"
+                  "thumbImage": "../../assets/img/blue-jacket.jpg",
+                  "bigImage": "../../assets/img/blue-jacket.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-shirt.jpg",
-                  "bigImage": "../assets/img/blue-shirt.jpg"
+                  "thumbImage": "../../assets/img/blue-shirt.jpg",
+                  "bigImage": "../../assets/img/blue-shirt.jpg"
                 }
               ]
             },
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../assets/img/blue-jacket.jpg",
+              "image": "../../assets/img/blue-jacket.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -1966,26 +1966,26 @@
             "gallery": {
               "list": [
                 {
-                  "thumbImage": "../assets/img/blue-jacket.jpg",
-                  "bigImage": "../assets/img/blue-jacket.jpg"
+                  "thumbImage": "../../assets/img/blue-jacket.jpg",
+                  "bigImage": "../../assets/img/blue-jacket.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-shirt.jpg",
-                  "bigImage": "../assets/img/blue-shirt.jpg"
+                  "thumbImage": "../../assets/img/blue-shirt.jpg",
+                  "bigImage": "../../assets/img/blue-shirt.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-jacket.jpg",
-                  "bigImage": "../assets/img/blue-jacket.jpg"
+                  "thumbImage": "../../assets/img/blue-jacket.jpg",
+                  "bigImage": "../../assets/img/blue-jacket.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-shirt.jpg",
-                  "bigImage": "../assets/img/blue-shirt.jpg"
+                  "thumbImage": "../../assets/img/blue-shirt.jpg",
+                  "bigImage": "../../assets/img/blue-shirt.jpg"
                 }
               ]
             },
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../assets/img/blue-jacket.jpg",
+              "image": "../../assets/img/blue-jacket.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -2131,26 +2131,26 @@
             "gallery": {
               "list": [
                 {
-                  "thumbImage": "../assets/img/blue-jacket.jpg",
-                  "bigImage": "../assets/img/blue-jacket.jpg"
+                  "thumbImage": "../../assets/img/blue-jacket.jpg",
+                  "bigImage": "../../assets/img/blue-jacket.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-shirt.jpg",
-                  "bigImage": "../assets/img/blue-shirt.jpg"
+                  "thumbImage": "../../assets/img/blue-shirt.jpg",
+                  "bigImage": "../../assets/img/blue-shirt.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-jacket.jpg",
-                  "bigImage": "../assets/img/blue-jacket.jpg"
+                  "thumbImage": "../../assets/img/blue-jacket.jpg",
+                  "bigImage": "../../assets/img/blue-jacket.jpg"
                 },
                 {
-                  "thumbImage": "../assets/img/blue-shirt.jpg",
-                  "bigImage": "../assets/img/blue-shirt.jpg"
+                  "thumbImage": "../../assets/img/blue-shirt.jpg",
+                  "bigImage": "../../assets/img/blue-shirt.jpg"
                 }
               ]
             },
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../assets/img/blue-jacket.jpg",
+              "image": "../../assets/img/blue-jacket.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",

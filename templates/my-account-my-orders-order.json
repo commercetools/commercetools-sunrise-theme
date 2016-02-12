@@ -44,7 +44,7 @@
             "totalPrice": "49,00 €",
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../assets/img/blue-jacket.jpg",
+              "image": "../../assets/img/blue-jacket.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -69,7 +69,7 @@
             "totalPrice": "49,00 €",
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../assets/img/blue-jacket.jpg",
+              "image": "../../assets/img/blue-jacket.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -94,7 +94,7 @@
             "totalPrice": "49,00 €",
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../assets/img/blue-jacket.jpg",
+              "image": "../../assets/img/blue-jacket.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -1667,7 +1667,7 @@
     "productDescriptionTitle": "Product Description",
     "order": [
       {
-        "image": "../assets/img/blue-shirt.jpg",
+        "image": "../../assets/img/blue-shirt.jpg",
         "productTitleOne": "Enditatem Product name",
         "productTitleTwo": "Optional Line Two",
         "sku": "Sunrise SUN#123456",
@@ -1680,7 +1680,7 @@
         "totalPrice": "100,00 €"
       },
       {
-        "image": "../assets/img/blue-shirt.jpg",
+        "image": "../../assets/img/blue-shirt.jpg",
         "productTitleOne": "Enditatem Product name",
         "productTitleTwo": "Optional Line Two",
         "sku": "Sunrise SUN#123456",
