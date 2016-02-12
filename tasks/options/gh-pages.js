@@ -1,14 +1,14 @@
 module.exports = {
 
-  // 'grunt-gh-pages': deploys the output to the GitHub Pages
+  // 'grunt-gh-pages': deploys the output to the GitHub Pages using Travis
 
   options: {
     message: "Deploy to GitHub Pages",
     user: {
-      name: 'automation-commercetools',
-      email: 'automation@commercetools.de'
+      name: "<%= pkg.config.github.username %>",
+      email: "<%= pkg.config.github.email %>"
     },
-    repo: 'https://' + process.env.GH_TOKEN + '@github.com/sphereio/commercetools-sunrise-design.git',
+    repo: 'https://<%= env.GH_TOKEN %>@github.com/<%= env.TRAVIS_REPO_SLUG %>.git',
     silent: true,
     base: 'output'
   },
