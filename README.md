@@ -75,7 +75,7 @@ Build the site for your theme and access the HTML files to see how it looks like
 
 - `grunt build-assets` to build only CSS, JS and font files
 
-- `grunt build-templates` to build only i18n and HBS files, besides building HTML files from the Handlebars templates and JSON data
+- `grunt build-templates` to build only i18n and HBS files, besides generating the HTML files from the Handlebars templates and the JSON data
 
 Building the generated site also performs these tasks:
 - Compiles [Sass](http://sass-lang.com/) to CSS files
