@@ -1627,7 +1627,7 @@
     "newsletter": "SUNRISE Newsletter"
   },
   "meta": {
-    "assetsPath": "../assets/",
+    "assetsPath": "../../assets/",
     "csrfToken": "Test123",
     "bagQuantityOptions": [
       1,

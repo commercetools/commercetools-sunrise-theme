@@ -1,0 +1,132 @@
+<!-- start checkout-signin.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="commercetools" />
+    <link rel="icon" href="../../assets/img/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+    <link href="../../assets/css/selectboxit.min.css" rel="stylesheet">
+    <link href="../../assets/css/main.min.css" rel="stylesheet">
+    <title>Sunrise - Checkout Page</title>
+  </head>
+
+  <body id="checkout-signin-body">
+  <div class="checkout-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12">
+          <a href="home.html" class="brand-logo">
+            <img class="checkout-header-logo img-responsive" src="../../assets/img/logo-white-text.svg" alt="SUNRISE Logo">
+          </a>
+        </div>
+        <div class="col-sm-8 col-xs-12">
+          <div class="checkout-header-callus">
+            <span class="">Brauchen Sie Hilfe? Kundenservice</span>
+            <span class="checkout-header-number"><img class="phone-icon" src="../../assets/img/phone.png" alt="phone icon" />+12 345 6000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="checkout-signin">
+    <div class="container">
+      <div class="secure-payment">
+          <span><img class="secure-payment-icon" src="../../assets/img/credit-card-lock.png" alt="secure payment"></span>
+          <span class="text-uppercase secure-payment-title">Sicherer Bestellprozess - Anmeldung</span>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="returning-customer">
+            <div class="clearfix returning-customer-title">
+              <h4></h4>
+              <span class="hidden-xs">Pflichtfeld*</span>
+            </div>
+            <div class="returning-customer-field">
+              <span class="if-account-title">If you have an account, please sign in for faster checkout.</span>
+              <div class="row">
+                <div class="col-md-8 col-sm-12">
+                  <div class="returning-customer-input">
+                    <span class="returning-customer-email-title">Email Address*</span>
+                    <input id="signin-email-input" class="returning-customer-email" type="text">
+                    <span class="returning-customer-password-title">Password*</span>
+                    <input id="signin-password-input" class="returning-customer-password" type="password">
+                    <div class="clearfix returning-customer-remember-forget">
+                      <span class="returning-customer-rememberme"><input id="signin-remember-me-input" type="checkbox">Remember Me</span>
+                      <span class="returning-customer-forgot"><a id="signin-forgot-password-link" data-toggle="modal" data-target="#forgot-password-modal">Forgot Password</a></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a id="signin-quick-checkout-btn" class="quick-checkout-btn btn" href="#">Quick Checkout</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="guest-checkout">
+            <div class="clearfix guest-checkout-title">
+              <h4>Guest Checkout</h4>
+            </div>
+            <span class="guest-checkout-first-paragraph">No problem, you do not need to create an account to place an order.</span>
+            <span class="guest-checkout-second-paragraph">To make future purchases even faster, you will have the option of creating an acocount during checkout.</span>
+            <a id="signin-continue-as-guest-btn" class="btn continue-guest-btn" href="#">Continue As Guest</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="forgot-password-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModal">
+    <div class="modal-dialog">
+      <div class="modal-content password-reset-modal-content">
+        <div>
+          <div class="forgotten-password-title">Forgotten your password</div>
+          <div class="forgotten-password-description">Please submit your email address to receive a password reset link</div>
+          <hr>
+          <form id="" action="" method="post">
+            <div class="forgot-password-input">
+              <label for="password-reset-email">Email</label>
+              <input type="text" name="password-reset-email" value="" required>
+              <button id="password-reset-submit-btn">Absenden</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-footer">
+      <div class="container">
+          <div class="row text-uppercase">
+              <div class="col-sm-12">
+                  <ul class="footer-title imprint-row">
+                      <li class="hidden-xs">© 2015 Sunrise</li>
+                      <li><a href="imprint.html">Imprint</a></li>
+                      <li><a href="privacy.html">Privacy policy</a></li>
+                      <li><a href="terms.html">Terms of use</a></li>
+                      <li class="visible-xs">© 2015 Sunrise</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="../../assets/js/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/jqzoom.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../assets/js/animatedModal.min.js"></script>
+  <script src="../../assets/js/selectboxit.min.js"></script>
+  <script src="../../assets/js/main.min.js"></script>
+  </body>
+</html>
+<!-- end checkout-signin.hbs -->

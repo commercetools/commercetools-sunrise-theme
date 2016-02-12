@@ -17,7 +17,7 @@
     "continueGuestBtn": "Continue As Guest"
   },
   "meta": {
-    "assetsPath": "../assets/",
+    "assetsPath": "../../assets/",
     "csrfToken": "Test123",
     "bagQuantityOptions": [
       1,
