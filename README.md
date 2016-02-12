@@ -59,14 +59,6 @@ Set it up as explained in the _[Installation](#installation)_ section, then appl
 3. Check your changes by accessing the desired HTML file generated in the `output/` folder
 4. Once ready, enable the theme in your Sunrise project following one of the methods described in _[Create WebJars file](#create-webjars-file)_
 
-###Tasks
-
-Building the generated site also performs these tasks:
-- Compiles [Sass](http://sass-lang.com/) to CSS files
-- Minifies CSS and JS files
-- Adds vendor-prefixed CSS properties with [Autoprefixer](https://github.com/postcss/autoprefixer)
-- Compresses any PNG, JPG, GIF and SVG image file with [Imagemin](https://github.com/imagemin/imagemin)
-
 ###Commands
 
 Besides `grunt`, which builds the whole generated site (`grunt build`) and watches for changes, there are other commands available. Below are listed a non-exhaustive list of them.
@@ -84,6 +76,12 @@ Build the site for your theme and access the HTML files to see how it looks like
 - `grunt build-assets` to build only CSS, JS and font files
 
 - `grunt build-templates` to build only i18n and HBS files, besides building HTML files from the Handlebars templates and JSON data
+
+Building the generated site also performs these tasks:
+- Compiles [Sass](http://sass-lang.com/) to CSS files
+- Minifies CSS and JS files
+- Adds vendor-prefixed CSS properties with [Autoprefixer](https://github.com/postcss/autoprefixer)
+- Compresses any PNG, JPG, GIF and SVG image file with [Imagemin](https://github.com/imagemin/imagemin)
 
 ##### Create WebJars file
 
