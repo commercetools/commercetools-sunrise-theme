@@ -50,12 +50,14 @@ All releases for this template can be found in a Maven repository hosted by [Bin
 
 ##How to develop
 
-Fork or copy the project to create your own template, then apply your modifications as follows:
+[Fork](https://help.github.com/articles/fork-a-repo/) or [copy](https://help.github.com/articles/duplicating-a-repository/) the project to create your own theme.
+
+Set it up as explained in the _[Installation](#installation)_ section, then apply your modifications as follows:
 
 1. Run `grunt`
 2. Modify the source files located in `input/` folder
 3. Check your changes by accessing the desired HTML file generated in the `output/` folder
-4. Once ready, run `grunt webjars` and move the generated JAR file to the `lib/` folder of your Sunrise-based project
+4. Once ready, enable the theme in your Sunrise project following one of the methods described in _[Create WebJars file](#create-webjars-file)_
 
 ###Tasks
 
@@ -67,11 +69,13 @@ Building the generated site also performs these tasks:
 
 ###Commands
 
-Besides `grunt`, which builds the whole generated site and watches for changes, there are other commands available. Below are listed a non-exhaustive list of them.
+Besides `grunt`, which builds the whole generated site (`grunt build`) and watches for changes, there are other commands available. Below are listed a non-exhaustive list of them.
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
 ##### Generate HTML site
+
+Build the site for your theme and access the HTML files to see how it looks like. 
 
 - `grunt build` to build the whole generated site
 
@@ -81,12 +85,18 @@ Notice you can always add `--verbose` and/or `--debug` to any command in order t
 
 - `grunt build-templates` to build only i18n and HBS files, besides building HTML files from the Handlebars templates and JSON data
 
-##### Generate WebJars file
-- `grunt webjars` to create the WebJars file in the root directory of the project
+##### Create WebJars file
 
-- `grunt install` to install to local maven repository (~/.m2/repository/io/commercetools/commercetools-sunrise-design)
+Create a WebJars file from this theme and apply it to any Sunrise project. There are three possible ways to achieve this:
 
-- `grunt release` to release the current version to the Maven Bintray repository (requires `commercetools-bintray` repository ID in Maven's `settings.xml`) and move to the next development version
+- `grunt webjars` to create the WebJars file in the root directory of the project, you can then apply it by placing the generated JAR file in the folder for unmanaged dependencies of your Sunrise project (i.e. `lib/` is the default folder for Sunrise)
+
+- `grunt install` to install the current snapshot version to your local maven repository (`~/.m2/repository/io/commercetools/sunrise/commercetools-sunrise-theme`) and apply it to your project as a dependency from a local environment
+
+- `grunt release` to release the current version to a remote Maven repository and move to the next development version, this way you could publicly distribute your theme and let anyone apply it to their Sunrise project as a dependency
 
 ##### Publish to GitHub pages
-- `grunt publish` to publish the generated site to GitHub Pages (requires the environment variable `$GH_TOKEN` of your GitHub repository)
+
+Publish the generated `output/` folder to [GitHub Pages](https://pages.github.com/), so that you can easily access and share the generated HTML files of your theme, as well as all other files. Notice that you need to grant [Travis CI](https://travis-ci.org/) access to your GitHub repository, so you should [define an environment variable](https://docs.travis-ci.com/user/environment-variables) named `$GH_TOKEN` in `.travis.yml` containing a [GitHub Access Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
+
+- `grunt publish` to publish the generated site to GitHub Pages via [Travis CI](https://travis-ci.org/)
