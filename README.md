@@ -50,7 +50,7 @@ All releases for this theme can be found in a Maven repository hosted by [Bintra
 
 ##How to develop
 
-[Fork](https://help.github.com/articles/fork-a-repo/) or [copy](https://help.github.com/articles/duplicating-a-repository/) the project to create your own theme.
+[Fork](https://help.github.com/articles/fork-a-repo/) or [copy](https://help.github.com/articles/duplicating-a-repository/) the project to create your own theme. Do not forget to adapt `package.json` and optionally `.travis.yml` to your project.
 
 Set it up as explained in the _[Installation](#installation)_ section, then apply your modifications as follows:
 
@@ -91,12 +91,12 @@ Create a WebJars file from this theme and apply it to any Sunrise project. There
 
 - `grunt install` to install the current snapshot version to your local maven repository (`~/.m2/repository/io/commercetools/sunrise/commercetools-sunrise-theme`) and apply it to your project as a dependency from a local environment
 
-- `grunt release` to release the current version to a remote Maven repository and move to the next development version, this way you could publicly distribute your theme and let anyone apply it to their Sunrise application as a project dependency
+- `grunt release` to release the current version to a remote Maven repository and move to the next development version, this way you could publicly distribute your theme and let anyone apply it to their Sunrise application as a project dependency (requires that you set up `config.maven` in `package.json` accordingly to your remote Maven repository)
 
 #### Publish to GitHub pages
 
 Publish the generated `output/` folder to [GitHub Pages](https://pages.github.com/), so that you can easily access and share the generated HTML files of your theme, as well as all other files.
 
-- `grunt publish` to publish the generated site to GitHub Pages
+- `grunt publish` to publish the generated site to GitHub Pages (requires that you set up `config.github` in `package.json` accordingly to your GitHub repository)
 
 Notice that you need to enable [Travis CI](https://travis-ci.org/) and grant it access to your GitHub repository, therefore you should [define an environment variable](https://docs.travis-ci.com/user/environment-variables) named `$GH_TOKEN` in `.travis.yml` containing a [GitHub Access Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
