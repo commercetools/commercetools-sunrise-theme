@@ -338,6 +338,7 @@ $(document).ready(function() {
         selectData = $this.data('cross-select'),
         identifiers = $this.data('identifiers'),
         variantMap = $this.data('variants'),
+        reload = $this.data('reload'),
         variantKey, variantId;
 
     if (selectData && selectData[selected]) {
@@ -362,8 +363,12 @@ $(document).ready(function() {
       variantKey = identifiers.map(function(identifier) {
         return form.find("select[name='attribute-"+identifier+"']").val();
       }).join('-');
-      variantId = variantMap[variantKey];
-      form.find("input[name='variantId']").val(variantId);
+      if (reload) {
+        window.location = variantMap[variantKey].url;
+      } else {
+        variantId = variantMap[variantKey].id;
+        form.find("input[name='variantId']").val(variantId);
+      }
     }
   });
 });
