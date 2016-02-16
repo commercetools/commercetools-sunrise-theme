@@ -41,6 +41,7 @@
         {
             "name": "Color",
             "key": "color",
+            "reload": true,
             "list" : [
                 {
                     "label" : "Red",
