@@ -1717,13 +1717,34 @@
               "price": "49,00 €"
             },
             "variants": {
-              "red-S": "variant1",
-              "red-M": "variant2",
-              "red-L": "variant3",
-              "blue-S": "variant4",
-              "blue-L": "variant5",
-              "green-S": "variant6",
-              "green-M": "variant7"
+              "red-S": {
+                "id": "variant1",
+                "url": "pdp.html?var=1"
+              },
+              "red-M": {
+                "id": "variant2",
+                "url": "pdp.html?var=2"
+              },
+              "red-L": {
+                "id": "variant3",
+                "url": "pdp.html?var=3"
+              },
+              "blue-S": {
+                "id": "variant4",
+                "url": "pdp.html?var=4"
+              },
+              "blue-L": {
+                "id": "variant5",
+                "url": "pdp.html?var=5"
+              },
+              "green-S": {
+                "id": "variant6",
+                "url": "pdp.html?var=6"
+              },
+              "green-M": {
+                "id": "variant7",
+                "url": "pdp.html?var=7"
+              }
             },
             "variantIdentifiers": [
               "color",
@@ -1733,6 +1754,7 @@
               {
                 "name": "Color",
                 "key": "color",
+                "reload": true,
                 "list": [
                   {
                     "label": "Red",
@@ -1882,13 +1904,34 @@
               "price": "49,00 €"
             },
             "variants": {
-              "red-S": "variant1",
-              "red-M": "variant2",
-              "red-L": "variant3",
-              "blue-S": "variant4",
-              "blue-L": "variant5",
-              "green-S": "variant6",
-              "green-M": "variant7"
+              "red-S": {
+                "id": "variant1",
+                "url": "pdp.html?var=1"
+              },
+              "red-M": {
+                "id": "variant2",
+                "url": "pdp.html?var=2"
+              },
+              "red-L": {
+                "id": "variant3",
+                "url": "pdp.html?var=3"
+              },
+              "blue-S": {
+                "id": "variant4",
+                "url": "pdp.html?var=4"
+              },
+              "blue-L": {
+                "id": "variant5",
+                "url": "pdp.html?var=5"
+              },
+              "green-S": {
+                "id": "variant6",
+                "url": "pdp.html?var=6"
+              },
+              "green-M": {
+                "id": "variant7",
+                "url": "pdp.html?var=7"
+              }
             },
             "variantIdentifiers": [
               "color",
@@ -1898,6 +1941,7 @@
               {
                 "name": "Color",
                 "key": "color",
+                "reload": true,
                 "list": [
                   {
                     "label": "Red",
@@ -2047,13 +2091,34 @@
               "price": "49,00 €"
             },
             "variants": {
-              "red-S": "variant1",
-              "red-M": "variant2",
-              "red-L": "variant3",
-              "blue-S": "variant4",
-              "blue-L": "variant5",
-              "green-S": "variant6",
-              "green-M": "variant7"
+              "red-S": {
+                "id": "variant1",
+                "url": "pdp.html?var=1"
+              },
+              "red-M": {
+                "id": "variant2",
+                "url": "pdp.html?var=2"
+              },
+              "red-L": {
+                "id": "variant3",
+                "url": "pdp.html?var=3"
+              },
+              "blue-S": {
+                "id": "variant4",
+                "url": "pdp.html?var=4"
+              },
+              "blue-L": {
+                "id": "variant5",
+                "url": "pdp.html?var=5"
+              },
+              "green-S": {
+                "id": "variant6",
+                "url": "pdp.html?var=6"
+              },
+              "green-M": {
+                "id": "variant7",
+                "url": "pdp.html?var=7"
+              }
             },
             "variantIdentifiers": [
               "color",
@@ -2063,6 +2128,7 @@
               {
                 "name": "Color",
                 "key": "color",
+                "reload": true,
                 "list": [
                   {
                     "label": "Red",
