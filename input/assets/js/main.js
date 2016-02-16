@@ -362,7 +362,7 @@ $(document).ready(function() {
       variantKey = identifiers.map(function(identifier) {
         return form.find("select[name='attribute-"+identifier+"']").val();
       }).join('-');
-      variantId = variantMap[variantKey];
+      variantId = variantMap[variantKey].id;
       form.find("input[name='variantId']").val(variantId);
     }
   });
