@@ -330,16 +330,10 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("select.select-product-detail").change(function () {
-    var $this = $(this),
-        // find the form for the select element
-        form = $this.parents('form').first(),
-        selected = $this.find("option:selected").val(),
-        selectData = $this.data('cross-select'),
-        identifiers = $this.data('identifiers'),
-        variantMap = $this.data('variants'),
-        reload = $this.data('reload'),
-        variantKey, variantId;
+
+  var disableNonAvailableOptions = function(select, form) {
+    var selected = select.find("option:selected").val(),
+        selectData = select.data('cross-select');
 
     if (selectData && selectData[selected]) {
       $.each(selectData[selected], function (key) {
@@ -349,27 +343,49 @@ $(document).ready(function() {
 
         // disable all options which are not available for selected value
         attribute.find('option').each(function(key) {
-          var $this = $(this);
-          if (activeSelections.indexOf($this.val()) >= 0) {
+          if (activeSelections.indexOf($(this).val()) >= 0) {
             selectBox.enableOption(key);
           } else {
             selectBox.disableOption(key);
           }
         });
+        // refresh dropdown to avoid leaving it focused
+        selectBox.refresh();
       });
     }
+  };
+
+  var enableSelectedCombination = function(select, form) {
+    var identifiers = select.data('identifiers'),
+        variantMap = select.data('variants'),
+        reload = select.data('reload');
+
     if (identifiers) {
-      // build a variant key from variant identifiers to get the variantId
-      variantKey = identifiers.map(function(identifier) {
+      // build a variant key from variant identifiers to get the variant information
+      var variantKey = identifiers.map(function(identifier) {
         return form.find("select[name='attribute-"+identifier+"']").val();
       }).join('-');
+
       if (reload) {
         window.location = variantMap[variantKey].url;
       } else {
-        variantId = variantMap[variantKey].id;
+        var variantId = variantMap[variantKey].id;
         form.find("input[name='variantId']").val(variantId);
       }
     }
+  }
+
+  $("select.select-product-detail").each(function () {
+    var select = $(this),
+        form = select.closest('form');
+    disableNonAvailableOptions(select, form);
+  });
+
+  $("select.select-product-detail").change(function () {
+    var select = $(this),
+        form = select.closest('form');
+    disableNonAvailableOptions(select, form);
+    enableSelectedCombination(select, form);
   });
 });
 
