@@ -349,6 +349,8 @@ $(document).ready(function() {
             selectBox.disableOption(key);
           }
         });
+        // refresh dropdown to avoid leaving it focused
+        selectBox.refresh();
       });
     }
   };
@@ -373,16 +375,18 @@ $(document).ready(function() {
     }
   }
 
+  $("select.select-product-detail").each(function () {
+    var select = $(this),
+        form = select.closest('form');
+    disableNonAvailableOptions(select, form);
+  });
+
   $("select.select-product-detail").change(function () {
-    // find the form for the select element
-    var select = $(this);
-    var form = select.parents('form').first();
+    var select = $(this),
+        form = select.closest('form');
     disableNonAvailableOptions(select, form);
     enableSelectedCombination(select, form);
   });
-
-
-  //disableNonAvailableOptions()
 });
 
 /*****************************************************************************/
