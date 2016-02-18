@@ -1,6 +1,6 @@
 module.exports = {
 
-  // 'grunt-gh-pages': deploys the output to the GitHub Pages using Travis
+  // 'grunt-gh-pages': deploys the output to the GitHub Pages
 
   options: {
     message: "Deploy to GitHub Pages",
