@@ -1,6 +1,6 @@
 module.exports = {
 
-  // 'grunt-gh-pages': deploys the output to the GitHub Pages using Travis
+  // 'grunt-gh-pages': deploys the output to the GitHub Pages
 
   options: {
     message: "Deploy to GitHub Pages",
@@ -8,7 +8,7 @@ module.exports = {
       name: "<%= pkg.config.github.username %>",
       email: "<%= pkg.config.github.email %>"
     },
-    repo: 'https://<%= env.GH_TOKEN %>@github.com/<%= env.TRAVIS_REPO_SLUG %>.git',
+    repo: 'https://<%= env.GH_TOKEN %>@github.com/<%= pkg.config.github.repoSlug %>.git',
     silent: true,
     base: 'output'
   },
