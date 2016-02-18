@@ -9,7 +9,8 @@
   "config": {
     "github": {
       "username": "automation-commercetools",
-      "email": "automation@commercetools.de"
+      "email": "automation@commercetools.de",
+      "repoSlug": "sphereio/commercetools-sunrise-theme"
     },
     "maven": {
       "groupId": "io.commercetools.sunrise",
