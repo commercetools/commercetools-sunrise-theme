@@ -97,6 +97,6 @@ Create a WebJars file from this theme and apply it to any Sunrise project. There
 
 Publish the generated `output/` folder to [GitHub Pages](https://pages.github.com/), so that you can easily access and share the generated HTML files of your theme, as well as all other files.
 
-- `grunt publish` to publish the generated site to GitHub Pages (requires that you set up `config.github` in `package.json` accordingly to your GitHub repository and an environmental variable `GH_TOKEN` is provided containing a [GitHub Access Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/))
+- `grunt publish` to publish the generated site to GitHub Pages (requires that you set up `config.github` in `package.json` accordingly to your GitHub repository and that an environmental variable `GH_TOKEN` is provided containing a [GitHub Access Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/))
 
 If you want to publish to GitHub Pages each time your theme changes, all you need to do is enable [Travis CI](https://travis-ci.org/) for your project and define the environment variable `GH_TOKEN` as explained in the [Travis CI Documentation](https://docs.travis-ci.com/user/environment-variables).
