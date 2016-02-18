@@ -65,7 +65,7 @@ Besides `grunt`, which builds the whole generated site (`grunt build`) and watch
 
 Notice you can always add `--verbose` and/or `--debug` to any command in order to obtain more information.
 
-#### Generate HTML site
+#### Generate HTML Site
 
 Build the site for your theme and access the HTML files to see how it looks like. 
 
@@ -83,7 +83,7 @@ Building the generated site also performs these tasks:
 - Adds vendor-prefixed CSS properties with [Autoprefixer](https://github.com/postcss/autoprefixer)
 - Compresses any PNG, JPG, GIF and SVG image file with [Imagemin](https://github.com/imagemin/imagemin)
 
-#### Create WebJars file
+#### Create WebJars File
 
 Create a WebJars file from this theme and apply it to any Sunrise project. There are three possible ways to achieve this:
 
@@ -93,10 +93,10 @@ Create a WebJars file from this theme and apply it to any Sunrise project. There
 
 - `grunt release` to release the current version to a remote Maven repository and move to the next development version, this way you could publicly distribute your theme and let anyone apply it to their Sunrise application as a project dependency (requires that you set up `config.maven` in `package.json` accordingly to your remote Maven repository)
 
-#### Publish to GitHub pages
+#### Publish to GitHub Pages
 
 Publish the generated `output/` folder to [GitHub Pages](https://pages.github.com/), so that you can easily access and share the generated HTML files of your theme, as well as all other files.
 
-- `grunt publish` to publish the generated site to GitHub Pages (requires that you set up `config.github` in `package.json` accordingly to your GitHub repository)
+- `grunt publish` to publish the generated site to GitHub Pages (requires that you set up `config.github` in `package.json` accordingly to your GitHub repository and an environmental variable `GH_TOKEN` is provided containing a [GitHub Access Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/))
 
-Notice that this Grunt task is designed to be running on [Travis CI](https://travis-ci.org/) by default, so you need to enable it for your project. In order to grant it access to your GitHub repository, [define an environment variable](https://docs.travis-ci.com/user/environment-variables) named `$GH_TOKEN` in `.travis.yml` containing a [GitHub Access Token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
+If you want to publish to GitHub Pages each time your theme changes, all you need to do is enable [Travis CI](https://travis-ci.org/) for your project and define the environment variable `GH_TOKEN` as explained in the [Travis CI Documentation](https://docs.travis-ci.com/user/environment-variables).
