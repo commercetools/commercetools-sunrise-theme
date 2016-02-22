@@ -50,7 +50,7 @@ All releases for this theme can be found in a Maven repository hosted by [Bintra
 
 ##How to develop
 
-[Fork](https://help.github.com/articles/fork-a-repo/) or [copy](https://help.github.com/articles/duplicating-a-repository/) the project to create your own theme. Do not forget to adapt `package.json` and optionally `.travis.yml` to your project.
+[Fork](https://help.github.com/articles/fork-a-repo/) or [copy](https://help.github.com/articles/duplicating-a-repository/) the project and adapt `package.json` to create your own theme.
 
 Set it up as explained in the _[Installation](#installation)_ section, then apply your modifications as follows:
 
