@@ -86,7 +86,12 @@ ul .bzoom_small_thumbs li,
 
 .bzoom_magnifier div { overflow: hidden; }
 
-.bzoom_wrap .bzoom_small_thumbs { overflow: hidden; }
+.bzoom_wrap .bzoom_small_thumbs {
+  overflow: hidden;
+  > ul {
+    width: 100% !important;
+  }
+}
 
 .bzoom_wrap .bzoom_small_thumbs li {
   border: 1px solid #FFF;
@@ -94,6 +99,7 @@ ul .bzoom_small_thumbs li,
   position: relative;
   > img {
     height: auto !important;
+    width: 48px !important;
   }
 }
 
