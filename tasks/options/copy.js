@@ -83,6 +83,11 @@ module.exports = {
         src: '**/*.json'
       },
       { expand: true,
+        cwd: 'input/',
+        dest: 'output/',
+        src: 'composer.json'
+      },
+      { expand: true,
         cwd: 'input/i18n/',
         dest: 'output/i18n',
         src: '**/*.yaml'
@@ -95,6 +100,13 @@ module.exports = {
         rename: renameI18nFiles
       }
     ]
+  },
+  composer: {
+    files: [{
+      expand: true,
+      cwd: 'output/',
+      dest: 'composer/',
+      src: '**/*'
+    }]
   }
-
 }

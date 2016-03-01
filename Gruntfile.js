@@ -22,6 +22,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build-assets', ['clean:assets', 'copy:assets', 'sass', 'postcss', 'uglify']);
   grunt.registerTask('build-templates', ['clean:templates', 'copy:templates', 'copy:others', 'json-refs', 'generate-html']);
 
+  grunt.registerTask('release-composer', ['build', 'copy:composer']);
   grunt.registerTask('webjars', ['build', 'maven:webjars']);
   grunt.registerTask('install', ['build', 'maven:install', 'clean:dist']);
   grunt.registerTask('release', ['build', 'maven:release', 'clean:dist']);
