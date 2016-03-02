@@ -1,5 +1,6 @@
 // PRIMARY ACTION: COMPLETE PROFILE
-%primary-action-profile {
+%primary-action-profile,
+.primary-action {
   color: $mine-shaft;
   text-transform: uppercase;
   background: {
