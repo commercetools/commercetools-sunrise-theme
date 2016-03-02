@@ -23,7 +23,7 @@
       border-radius: 0;
       img {
         max-width: 80%;
-        height: 100%;
+        height: auto;
       }
     }
     .modal-header {
@@ -51,7 +51,7 @@
 
 // Product information title
 .grey-p {
-  color: $grey;
+  color: $silver-chalice;
 }
 
 // Star rating
@@ -71,17 +71,17 @@
   cursor: pointer;
   font-size: 120%;
   line-height: 1.2;
-  color: $grey;
+  color: $silver-chalice;
 }
 .rating:not(:checked) > label:before {
   content: '★ ';
 }
 .rating > input:checked ~ label {
-  color: $yellow;
+  color: $my-sin;
 }
 .rating:not(:checked) > label:hover,
 .rating:not(:checked) > label:hover ~ label {
-  color: $yellow;
+  color: $my-sin;
 }
 .rating > label:active {
   position: relative;
@@ -99,15 +99,16 @@
 // Product description
 .pdp-product-description {
   font-size: 0.9em;
+
+  .morelink {
+    color: $gray;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 0.9em;
+  }
 }
 
 // Product information text
-.view-details {
-  color: $dark-grey;
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-size: 0.9em;
-}
 .additional-description {
   display: none;
   font-size: 0.9em;
@@ -120,16 +121,9 @@
   // @FIXME: Push this to a more general typography mixin-file
   .discounted-price {
     text-decoration: line-through;
-    color: fade-out($grey, 0.4);
+    color: fade-out($silver-chalice, 0.4);
     font-size: 0.8em;
     font-weight: 200;
-  }
-}
-
-// List of product details (Color, size and size guide)
-.product-details-list {
-  > li {
-    margin-bottom: 15px;
   }
 }
 
@@ -143,8 +137,8 @@
   background-size: 12px;
   padding: 10px 50px 10px 10px;
   border-radius: 0;
-  border: solid 1px $light-grey;
-  color: $dark-grey;
+  border: solid 1px $alto;
+  color: $gray;
   font-size: 12px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -160,10 +154,10 @@
 }
 .size-guide {
   text-transform: uppercase;
-  color: $dark-grey;
+  color: $gray;
 
   &:hover {
-    color: $black;
+    color: $mine-shaft;
   }
 }
 
@@ -189,11 +183,11 @@
   appearance: none;
   background: transparent url("../img/arrow-67-filled.png") no-repeat 80% 50%;
   background-size: 12px;
-  color: $dark-grey;
+  color: $gray;
   padding: 10px 30px 10px 10px;
   margin: 0 10px 0 1em;
   border-radius: 0;
-  border: 2px solid $yellow;
+  border: 2px solid $my-sin;
 }
 
 // Add to wishlish
@@ -214,11 +208,11 @@
   padding-right: 1em;
 }
 .glyphicon-ok-sign {
-  color: $green;
+  color: $highland;
   font-size: 0.9em;
 }
 .availability {
-  color: $dark-grey;
+  color: $gray;
   font-size: 0.9em;
   padding: 1em 0;
 }
@@ -227,7 +221,7 @@
 .product-accordion-title {
   background: $white;
   letter-spacing: 0.1em;
-  border-top: 1px solid $grey;
+  border-top: 1px solid $silver-chalice;
   padding: 0.5em 0;
 }
 .panel-group {
@@ -253,10 +247,20 @@
   content: url("../img/minus-1.png");
 }
 
+.product-features-list, .product-details-list, .product-delivery-list {
+  padding-left: 10px;
+  list-style: none;
+  &>li span {
+    text-transform: uppercase;
+    color: $gray;
+    padding-right: 4px;
+  }
+}
+
 // Social share
 .social-share {
   text-transform: uppercase;
-  color: $dark-grey;
+  color: $gray;
   font-size: 0.8em;
 }
 .pdp-social-icons {
@@ -265,7 +269,7 @@
 
 // You may also like section
 .pdp-page-review {
-  background: $dirty-white;
+  background: $spring-wood;
 }
 .may-like {
   letter-spacing: 0.1em;
@@ -275,7 +279,7 @@
   font-weight: 200;
 }
 .text-red {
-  color: $red;
+  color: $valencia;
 }
 
 // Reviews Section
@@ -291,7 +295,7 @@
 }
 .single-comment {
   padding: 2em 0;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
 }
 .rated-stars {
   padding-right: 1em;
@@ -306,15 +310,15 @@
   font-weight: 900;
 }
 .review-comment {
-  color: $dark-grey;
+  color: $gray;
 }
 .write-review-btn {
-  color: $grey;
+  color: $silver-chalice;
   text-transform: uppercase;
   background: $white;
   font-weight: bold;
   letter-spacing: 1px;
-  border: 2px solid $grey;
+  border: 2px solid $silver-chalice;
   margin: 1em 0 1em 1em;
 }
 .showmore-reviews-btn {

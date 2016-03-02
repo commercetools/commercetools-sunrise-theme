@@ -194,7 +194,7 @@ $(".navbar-toggle").click(function() {
  /*****************************************************************************/
 
 // Product gallery - BZoom
-$("ul#bzoom").each(function(index, ul) {
+$("ul.bzoom").each(function(index, ul) {
   ul = $(ul);
   var imgCount = ul.find('li.gallery-image').length;
   ul.zoom({
@@ -236,29 +236,35 @@ $(function() {
 
 // Toggle hidden/sliced description
 $(function() {
-  var hiddenDescription = $('p.pdp-product-description'),
-    generatedHidden,
-    shownFlag,
-    hiddenDescriptionText;
-
-  if (hiddenDescription.length) {
-    hiddenDescription = hiddenDescription.first();
-    hiddenDescriptionText = hiddenDescription.text();
-
-    if (hiddenDescriptionText.length < 100) return;
-    hiddenDescription.html(
-      hiddenDescriptionText.slice(0, 100) + '<span>... </span>' +
-      '<span class="hidden">' + hiddenDescriptionText.slice(100, hiddenDescriptionText.length) + '</span>'
-    );
-    generatedHidden = $('.hidden', hiddenDescription);
-  }
-
-  $('.view-details').click(function() {
-    if (generatedHidden && generatedHidden.length) {
-      shownFlag = !!generatedHidden.hasClass('hidden');
-      $(this).text(shownFlag ? 'Hide details' : 'View details');
-      generatedHidden.toggleClass('hidden');
+  var showChar = 300; // How many characters are shown by default
+  var ellipsestext = "...";
+  
+  $('.more').each(function() {
+    var description = $(this),
+        moretext = description.data("text-show"),
+        content = description.html();
+    if (content.length > showChar) {
+      var displayed = content.substr(0, showChar),
+          hidden = content.substr(showChar, content.length - showChar); 
+      var html = displayed + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + hidden + '</span>&nbsp;&nbsp;<a href="#" class="morelink">' + moretext + '</a></span>';
+      description.html(html);
     }
+  });
+
+  $(".morelink").click(function(){
+    var morelink = $(this),
+        morecontent = morelink.parent(),
+        description = morecontent.parent();
+    if(morelink.hasClass("less")) {
+      morelink.removeClass("less");
+      morelink.html(description.data("text-show"));
+    } else {
+      morelink.addClass("less");
+      morelink.html(description.data("text-hide"));
+    }
+    morecontent.prev().toggle();
+    morelink.prev().toggle();
+    return false;
   });
 });
 
@@ -267,7 +273,7 @@ $(function() {
   var caller = $(".animated-modal-action"),
     modal = $('#animatedModal'),
     modalContent = $('.modal-content', modal),
-    bZoomContainer = $('#bzoom'),
+    bZoomContainer = $('.bzoom'),
     activeBZoomImg;
 
   caller.animatedModal({
@@ -330,15 +336,10 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $("select.select-product-detail").change(function () {
-    var $this = $(this),
-        // find the form for the select element
-        form = $this.parents('form').first(),
-        selected = $this.find("option:selected").val(),
-        selectData = $this.data('cross-select'),
-        identifiers = $this.data('identifiers'),
-        variantMap = $this.data('variants'),
-        variantKey, variantId;
+
+  var disableNonAvailableOptions = function(select, form) {
+    var selected = select.find("option:selected").val(),
+        selectData = select.data('cross-select');
 
     if (selectData && selectData[selected]) {
       $.each(selectData[selected], function (key) {
@@ -348,23 +349,49 @@ $(document).ready(function() {
 
         // disable all options which are not available for selected value
         attribute.find('option').each(function(key) {
-          var $this = $(this);
-          if (activeSelections.indexOf($this.val()) >= 0) {
+          if (activeSelections.indexOf($(this).val()) >= 0) {
             selectBox.enableOption(key);
           } else {
             selectBox.disableOption(key);
           }
         });
+        // refresh dropdown to avoid leaving it focused
+        selectBox.refresh();
       });
     }
+  };
+
+  var enableSelectedCombination = function(select, form) {
+    var identifiers = select.data('identifiers'),
+        variantMap = select.data('variants'),
+        reload = select.data('reload');
+
     if (identifiers) {
-      // build a variant key from variant identifiers to get the variantId
-      variantKey = identifiers.map(function(identifier) {
+      // build a variant key from variant identifiers to get the variant information
+      var variantKey = identifiers.map(function(identifier) {
         return form.find("select[name='attribute-"+identifier+"']").val();
       }).join('-');
-      variantId = variantMap[variantKey];
-      form.find("input[name='variantId']").val(variantId);
+
+      if (reload) {
+        window.location = variantMap[variantKey].url;
+      } else {
+        var variantId = variantMap[variantKey].id;
+        form.find("input[name='variantId']").val(variantId);
+      }
     }
+  }
+
+  $("select.select-product-detail").each(function () {
+    var select = $(this),
+        form = select.closest('form');
+    disableNonAvailableOptions(select, form);
+  });
+
+  $("select.select-product-detail").change(function () {
+    var select = $(this),
+        form = select.closest('form');
+    disableNonAvailableOptions(select, form);
+    enableSelectedCombination(select, form);
   });
 });
 

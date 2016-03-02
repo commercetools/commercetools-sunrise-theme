@@ -3,7 +3,7 @@
 }
 .address-book-wrapper {
   background: $white;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   padding: 20px;
 }
 .address-book-content {
@@ -16,7 +16,7 @@
   font-size: 18px;
   letter-spacing: 1px;
   padding: 0 0 10px;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
 }
 .box-addresses-title {
   text-transform: uppercase;
@@ -24,13 +24,13 @@
   padding: 20px 0 10px;
 }
 .address-book-dark-box {
-  background: $lighter-grey;
+  background: $wild-sand;
   padding: 15px 10px;
-  color: $dark-grey;
+  color: $gray;
   position: relative;
   margin-bottom: 15px;
   .address-book-dark-box-title {
-    color: $black;
+    color: $mine-shaft;
     font-size: 14px;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -51,9 +51,9 @@
   }
 }
 .address-book-white-box {
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   padding: 15px 10px;
-  color: $dark-grey;
+  color: $gray;
   position: relative;
 }
 .address-book-edit-delete {
@@ -73,14 +73,14 @@
 .add-new-address-btn {
   button {
     text-transform: uppercase;
-    background: $yellow;
+    background: $my-sin;
     padding: 10px 20px;
     font-weight: bold;
     letter-spacing: 1px;
     margin-right: 15px;
     font-size: 16px;
     &:hover {
-      background: lighten($yellow, 5%);
+      background: lighten($my-sin, 5%);
     }
     @media screen and (max-width: 767px) {
       margin-top: 15px;

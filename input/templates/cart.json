@@ -3,7 +3,7 @@
     "footer" : { "$ref" : "common/footer.json" },
     "content" : {
         "cart" : { "$ref" : "checkout/cart.json" },
-        "wishlist" : { "$ref" : "catalog/wishlist.json" }
+        "wishlist" : { "$ref" : "common/wishlist.json" }
     },
     "meta" : { "$ref" : "common/meta.json" }
 }

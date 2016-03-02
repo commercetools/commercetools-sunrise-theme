@@ -4,7 +4,7 @@
 /*
 /*****************************************************************************/
 .pop-page {
-  background: $dirty-white;
+  background: $spring-wood;
   position: relative;
 }
 .pop-alert-overlay {
@@ -19,7 +19,7 @@
     max-height: 50px;
     position: fixed;
     .pop-alert-box {
-      background: $dark-blue;
+      background: $ebony-clay;
       border: 1px solid $white;
       margin: 10% auto;
       max-width: 200px;
@@ -75,14 +75,14 @@
   border-top: 0;
 }
 .panel-title {
-  background-color: $dirty-white;
+  background-color: $spring-wood;
   font-size: 14px;
   margin-top: 10px;
   a.collapsed {
     font-weight: 400;
   }
   a:hover {
-    color: $dark-grey;
+    color: $gray;
   }
 }
 .panel-group .panel+.panel {
@@ -117,7 +117,7 @@
   padding: 10px 0 0;
   list-style: none;
   a:hover {
-    color: $dark-grey;
+    color: $gray;
   }
   a:before {
     content: "- ";
@@ -129,7 +129,7 @@
   padding-left: 20px;
 }
 .facet-count {
-  color: $dark-grey;
+  color: $gray;
 }
 .category-active {
   font-weight: bold;
@@ -154,28 +154,28 @@
 }
 .ui-slider-horizontal {
   height: 0.3em;
-  background: $light-grey;
+  background: $alto;
   border: none;
 }
 .ui-slider-horizontal .ui-slider-handle {
   top: -0.5em;
   border-radius: 50%;
-  background: $dark-blue;
+  background: $ebony-clay;
   border: none;
 }
 .ui-slider-range {
-  background: $yellow;
+  background: $my-sin;
 }
 
 // Buttons
 a.clear-btn {
   display: block;
-  color: $dark-grey;
+  color: $gray;
   font-size: 14px;
 }
 .clear-all-btn {
-  border: 1px solid $grey;
-  color: $dark-grey;
+  border: 1px solid $silver-chalice;
+  color: $gray;
   background: $white;
   margin-bottom: 1em;
   padding: 0.5em 0;
@@ -189,7 +189,7 @@ a.clear-btn {
 .brands-list {
   margin-top: 1em;
   padding: 1em;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   max-height: 500px;
   overflow-y: scroll;
 }
@@ -284,7 +284,7 @@ a.clear-btn {
   }
   .language-select-xs,
   .currency-select-xs {
-    background: url("../../img/arrow-67-white.png") no-repeat 70px 12px $dark-blue;
+    background: url("../../img/arrow-67-white.png") no-repeat 70px 12px $ebony-clay;
     background-size: 1em;
     color: $white;
     font-size: 0.9em;

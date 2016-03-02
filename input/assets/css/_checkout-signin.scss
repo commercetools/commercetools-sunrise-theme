@@ -1,11 +1,11 @@
 .returning-customer {
   width: 100%;
   background: $white;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   padding: 20px;
   margin-bottom: 14px;
   .returning-customer-title {
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid $alto;
     padding-bottom: 20px;
     h4 {
       letter-spacing: 1px;
@@ -15,7 +15,7 @@
     }
     span {
       float: right;
-      color: $grey;
+      color: $silver-chalice;
     }
   }
   .returning-customer-field {
@@ -33,7 +33,7 @@
       .returning-customer-email,
       .returning-customer-password {
         width: 100%;
-        border: 1px solid $light-grey;
+        border: 1px solid $alto;
         border-radius: 1px;
       }
       .returning-customer-password-title {
@@ -47,7 +47,7 @@
           display: block;
           float: left;
           text-transform: uppercase;
-          color: $dark-grey;
+          color: $gray;
           input {
             margin-right: 5px;
           }
@@ -56,7 +56,7 @@
           display: block;
           float: right;
           text-transform: uppercase;
-          color: $dark-grey;
+          color: $gray;
           text-decoration: underline;
           cursor: pointer;
         }
@@ -69,9 +69,9 @@
       font-size: 18px;
       text-transform: uppercase;
       font-weight: bold;
-      background: $yellow;
+      background: $my-sin;
       &:hover {
-        background: lighten($yellow, 5%);
+        background: lighten($my-sin, 5%);
       }
     }
   }
@@ -80,11 +80,11 @@
 .guest-checkout {
   width: 100%;
   background: $white;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   padding: 20px;
   margin-bottom: 20px;
   .guest-checkout-title {
-    border-bottom: 1px solid $light-grey;
+    border-bottom: 1px solid $alto;
     padding-bottom: 20px;
     h4 {
       letter-spacing: 1px;
@@ -94,7 +94,7 @@
     }
     span {
       float: right;
-      color: $grey;
+      color: $silver-chalice;
     }
   }
   .guest-checkout-first-paragraph {
@@ -104,7 +104,7 @@
   .guest-checkout-second-paragraph {
     display: block;
     padding-top: 15px;
-    color: $dark-grey;
+    color: $gray;
   }
   .continue-guest-btn {
     margin-top: 15px;
@@ -113,9 +113,9 @@
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
-    background: $yellow;
+    background: $my-sin;
     &:hover {
-      background: lighten($yellow, 5%);
+      background: lighten($my-sin, 5%);
     }
   }
 }

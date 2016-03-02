@@ -12,7 +12,7 @@
 }
 .my-orders-wrapper {
   background: $white;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   padding: 20px;
 }
 .my-orders-title {
@@ -20,22 +20,22 @@
   font-size: 18px;
   letter-spacing: 1px;
   padding: 0 0 10px;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
 }
 .my-orders-table-titles {
   text-transform: uppercase;
-  color: $dark-grey;
+  color: $gray;
 }
 .my-orders-table-wrapper {
   padding: 30px 0 2px;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
   @media screen and (max-width: 767px) {
     padding-top: 0;
   }
 }
 .my-orders-table-order {
   padding: 10px 0;
-  border-bottom: 1px solid $light-grey;
+  border-bottom: 1px solid $alto;
   span {
     line-height: 30px //FIXME: temp solution
   }
@@ -51,5 +51,5 @@
   padding: 5px 10px;
   border-radius: 2px;
   color: $white;
-  background: $grey;
+  background: $silver-chalice;
 }

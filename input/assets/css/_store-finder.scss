@@ -7,7 +7,7 @@
 }
 .store-finder-wrapper {
   padding: 20px;
-  border: 1px solid $light-grey;
+  border: 1px solid $alto;
   background-color: $white;
   margin-bottom: 50px;
 }
@@ -18,7 +18,7 @@
   font-size: 16px;
 }
 .store-finder-box {
-  background: lighten($light-grey, 10%);
+  background: lighten($alto, 10%);
   margin-top: 20px;
   padding: 20px;
 }
@@ -27,18 +27,18 @@
   min-width: 70px;
 }
 .store-finder-input {
-  border: solid 1px $light-grey;
+  border: solid 1px $alto;
   padding: 7px;
 }
 .store-finder-submit-btn {
   text-transform: uppercase;
-  background-color: $yellow;
+  background-color: $my-sin;
   padding: 8px 16px;
   letter-spacing: 1px;
   font-weight: bold;
   margin-top: 20px;
   &:hover {
-    background-color: lighten($yellow, 5%);
+    background-color: lighten($my-sin, 5%);
   }
 }
 .store-finder-select {
@@ -48,8 +48,8 @@
   background-size: 12px;
   padding: 10px 50px 10px 10px;
   border-radius: 0;
-  border: solid 1px $light-grey;
-  color: $dark-grey;
+  border: solid 1px $alto;
+  color: $gray;
   font-size: 12px;
   letter-spacing: 1px;
   cursor: pointer;

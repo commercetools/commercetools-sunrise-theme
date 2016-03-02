@@ -5,10 +5,10 @@ module.exports = {
   options: {
     message: "Deploy to GitHub Pages",
     user: {
-      name: 'automation-commercetools',
-      email: 'automation@commercetools.de'
+      name: "<%= pkg.config.github.username %>",
+      email: "<%= pkg.config.github.email %>"
     },
-    repo: 'https://' + process.env.GH_TOKEN + '@github.com/sphereio/commercetools-sunrise-design.git',
+    repo: 'https://<%= env.GH_TOKEN %>@github.com/<%= pkg.config.github.repoSlug %>.git',
     silent: true,
     base: 'output'
   },

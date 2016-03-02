@@ -9,15 +9,18 @@
   </div>
   <div id="collapseDelivery" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDelivery">
     <div class="panel-body panel-body-pdp">
-      {{#each deliveryRates.list}}
-      <p>{{name}} - {{#if freeAbove}}FREE for orders over {{freeAbove}}, otherwise {{/if}} {{price}}. {{description}}</p>
-      {{/each}}
-      <p>
-        {{i18n "catalog:delivery.freeReturns"}}
-      </p>
-      <p>
-        {{i18n "catalog:delivery.moreDeliveryInfo"}}
-      </p>
+      <ul class="product-delivery-list">
+
+        {{#each deliveryRates.list}}
+        <li>
+          <span>{{name}}:</span> {{price}}{{#if freeAbove}} (FREE for orders above {{freeAbove}}){{/if}}
+          {{#if description}}. {{description}}.{{/if}}
+        </li>
+        {{/each}}
+        
+        <li>{{i18n "catalog:delivery.freeReturns"}}</li>
+        <li>{{i18n "catalog:delivery.moreDeliveryInfo"}}</li>
+      </ul>
     </div>
   </div>
 </div>

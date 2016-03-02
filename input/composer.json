@@ -1,0 +1,12 @@
+{
+    "name": "commercetools/sunrise-theme",
+    "description": "Commercetools Sunrise theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jens Schulze",
+            "email": "jens.schulze@commercetools.de"
+        }
+    ],
+    "require": {}
+}

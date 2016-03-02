@@ -12,7 +12,7 @@
 - Never create a page index.html (or index.hbs). It can be useful to have a index.html in GitHub Pages in the future, so let's better reserve it.
 
 ###Some other considerations
-- Create Handlebars partials of every element in the UI susceptible to be changed (so that you can choose to override only specific elements but still use the last version of sunrise-design) (e.g. sidebars, breadcrumb...) and specially those that are used in different templates, to avoid duplication (e.g. thumbnails, header, footer...).
+- Create Handlebars partials of every element in the UI susceptible to be changed (so that you can choose to override only specific elements but still use the last version of commercetools-sunrise-theme) (e.g. sidebars, breadcrumb...) and specially those that are used in different templates, to avoid duplication (e.g. thumbnails, header, footer...).
 
 - Create JSON partials (with JSON reference e.g. `"$ref" : "common/footer.json"`) for (ideally, although there might be exceptions to the rule) every Handlebars partial.
 

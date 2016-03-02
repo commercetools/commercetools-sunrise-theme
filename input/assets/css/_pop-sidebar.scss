@@ -6,10 +6,10 @@
 
 .offcanvas-btn {
   font-size: 12px;
-  color: $grey;
+  color: $silver-chalice;
   background: $white;
   padding: 8px 12px;
-  border: solid 2px $grey;
+  border: solid 2px $silver-chalice;
   text-transform: uppercase;
   letter-spacing: 1px;
   height: 40px;
@@ -17,13 +17,13 @@
   &:hover,
   &:focus {
     color: $white;
-    background: $grey;
+    background: $silver-chalice;
   }
 }
 
 .offcanvas-btn-close {
-  color: $black;
-  background: $yellow;
+  color: $mine-shaft;
+  background: $my-sin;
   width: 50px;
   height: 50px;
   border: none;
@@ -35,8 +35,8 @@
 
   &:hover,
   &:focus {
-    color: $black;
-    background: $yellow;
+    color: $mine-shaft;
+    background: $my-sin;
   }
 
   &::before {
@@ -65,8 +65,8 @@ select.select {
   background: $white;
   padding: 8px;
   border-radius: 0;
-  border: solid 2px $light-grey;
-  color: $grey;
+  border: solid 2px $alto;
+  color: $silver-chalice;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
@@ -103,18 +103,18 @@ select.select {
 // Sidebar overlay (modal)
 
 .sidebar-overlay-modal {
-  background: $dirty-white;
+  background: $spring-wood;
   border-radius: 0;
   .modal-header {
     height: 63px;
   }
   .close {
     margin: -1px;
-    background: $dark-blue;
+    background: $ebony-clay;
     opacity: 1;
     padding: 17px;
     &:hover {
-      background: lighten($dark-blue, 5%);
+      background: lighten($ebony-clay, 5%);
     }
   }
 }

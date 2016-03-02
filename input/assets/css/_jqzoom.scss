@@ -53,7 +53,7 @@ ul .bzoom_small_thumbs li,
 .bzoom img {
   vertical-align: bottom;
   width: 50px;
-  height: 70px
+  height: auto !important;
 }
 
 .bzoom .bzoom_zoom_area,
@@ -86,12 +86,21 @@ ul .bzoom_small_thumbs li,
 
 .bzoom_magnifier div { overflow: hidden; }
 
-.bzoom_wrap .bzoom_small_thumbs { overflow: hidden; }
+.bzoom_wrap .bzoom_small_thumbs {
+  overflow: hidden;
+  > ul {
+    width: 100% !important;
+  }
+}
 
 .bzoom_wrap .bzoom_small_thumbs li {
   border: 1px solid #FFF;
   margin: 0px 10px 0px 0px;
   position: relative;
+  > img {
+    height: auto !important;
+    width: 48px !important;
+  }
 }
 
 .bzoom_wrap ul li.bzoom_smallthumb_active {

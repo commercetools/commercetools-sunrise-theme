@@ -8,7 +8,7 @@ module.exports = {
         expand: true,
         cwd: 'output/templates',
         src: '*.hbs',
-        dest: "output/<%= lng %>/",
+        dest: "output/site/<%= lng %>/",
         ext: '.html'
       }
     ],

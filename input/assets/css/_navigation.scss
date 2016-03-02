@@ -6,7 +6,7 @@
 
 .header {
   height: 50px;
-  background: $dark-blue;
+  background: $ebony-clay;
 //  overflow: hidden;
   z-index: 9999;
   position: relative;
@@ -117,7 +117,7 @@
       border: none;
 
       .store-select {
-        color: $steel;
+        color: $bombay;
         padding: 15px 10px 15px 0;
         font-size: 12px;
 
@@ -139,7 +139,7 @@
     display: none;
 
     .link-help {
-      color: $steel;
+      color: $bombay;
       padding: 15px 10px;
       font-size: 12px;
 
@@ -159,7 +159,7 @@
     display: none;
 
     .link-hotline {
-      color: $steel;
+      color: $bombay;
       padding: 15px 10px;
       font-size: 12px;
 
@@ -209,9 +209,9 @@
     .location-dropdown {
       display: none;
       position: relative;
-      background: $dark-blue;
+      background: $ebony-clay;
       padding-bottom: 10px;
-      width: 140px;
+      width: 180px;
       top: -2px;
       .location-select {
         width: 120px;
@@ -229,15 +229,21 @@
     }
     // Overwrite SelectBoxIt library css
     .selectboxit-btn {
-      width: 120px!important;
+      width: 160px !important;
     }
     .selectboxit-list {
-      width: 120px!important;
-      margin: -10px 0 0 10px!important;
+      min-width: inherit !important;
+      width: 160px !important;
+      margin: -10px 0 0 10px !important;
+      text-transform: initial;
+      font-size: 12px;
     }
     .selectboxit-text {
-      max-width: none!important;
-      width: 100px!important;
+      max-width: none !important;
+      width: 120px !important;
+    }
+    .selectboxit-option-anchor {
+      @include truncate;
     }
 
     @media screen and (min-width: 768px) {
@@ -320,12 +326,12 @@
       }
 
       &.not-empty {
-        color: $black;
-        background: $yellow;
+        color: $mine-shaft;
+        background: $my-sin;
 
         .cart-item-number {
           color: $white;
-          background: $red;
+          background: $valencia;
         }
 
         @media screen and (min-width: 768px) {
@@ -338,8 +344,8 @@
 
       .cart-item-number {
         position: absolute;
-        color: $dark-blue;
-        background: $yellow;
+        color: $ebony-clay;
+        background: $my-sin;
         width: 20px;
         height: 20px;
         border-radius: 50%;
@@ -406,7 +412,7 @@
   .search-field {
     height: 40px;
     width: 100%;
-    background: $dirty-white;
+    background: $spring-wood;
     border: 1px solid rgba(170, 174, 178, 0.5);
     border-radius: 2px;
     margin: 0;
@@ -422,7 +428,7 @@
     top: 20px;
     right: 0;
     font-size: 22px;
-    color: $dark-blue;
+    color: $ebony-clay;
     padding: 8px 10px 8px 20px;
     line-height: 10px;
 
@@ -445,11 +451,11 @@
   width: 500%; // TODO: temp fix
   right: 0;
   background: $white;
-  border: 1px $light-grey solid;
+  border: 1px $alto solid;
   border-top: 0;
   padding: 20px 15px;
   box-sizing: border-box;
-  color: $black;
+  color: $mine-shaft;
 
   ul {
     position: relative;
@@ -457,17 +463,17 @@
     padding: 0;
     list-style: none;
     max-height: 13em;
-    border-bottom: 1px $light-grey solid;
+    border-bottom: 1px $alto solid;
 
     li {
       width: 100%;
       overflow: hidden;
       position: relative;
       height: auto;
-      border-bottom: 1px $light-grey solid;
+      border-bottom: 1px $alto solid;
       padding-bottom: 20px;
       margin-bottom: 15px;
-      color: $black;
+      color: $mine-shaft;
       border-right: 0;
 
       &:last-child {
@@ -476,7 +482,7 @@
 
       a.img {
         width: 70px;
-        border: 1px $light-grey solid;
+        min-height: 90px;
         float: left;
         margin-right: 15px;
 
@@ -508,14 +514,14 @@
           text-align: right;
           padding-right: 15px;
           margin-right: 15px;
-          border-right: 1px $light-grey solid;
-          color: $dark-grey;
+          border-right: 1px $alto solid;
+          color: $gray;
           font-size: 1em;
           text-transform: uppercase;
 
           span {
             display: block;
-            color: $black;
+            color: $mine-shaft;
           }
         }
 
@@ -558,7 +564,7 @@
 
   .total-price {
     text-align: right;
-    color: $black;
+    color: $mine-shaft;
     margin: 20px 0px;
     font-size: 1.3em;
     font-weight: bold;
@@ -603,24 +609,24 @@
 
 .btn-grey {
   background: none;
-  border: 2px solid $light-grey;
-  color: $grey;
+  border: 2px solid $alto;
+  color: $silver-chalice;
   margin-right: 0.5em;
   padding: 0.4em 1em;
   font-size: 1.2em;
   &:hover {
-    color: $dark-grey;
-    border: 2px solid $dark-grey;
+    color: $gray;
+    border: 2px solid $gray;
   }
 }
 
 .btn-yellow {
   border: none;
-  color: $black;
-  background: $yellow;
+  color: $mine-shaft;
+  background: $my-sin;
   padding: 0.5em 1em;
   font-size: 1.2em;
   &:hover {
-    background: lighten($yellow, 5%);
+    background: lighten($my-sin, 5%);
   }
 }

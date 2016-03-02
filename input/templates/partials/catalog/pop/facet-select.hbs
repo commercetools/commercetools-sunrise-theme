@@ -3,7 +3,7 @@
     <div class="pop-filter-select select-facet {{#unless displayList}}two-column-select{{/unless}}">
       {{#each facet.limitedOptions}}
         <div>
-        {{> catalog/facet-option-input facet=../facet option=this}}
+        {{> catalog/pop/facet-option-input facet=../facet option=this}}
         </div>
       {{/each}}
     </div>

@@ -10,22 +10,17 @@
 
   <div class="home-page">
 
-    {{> catalog/home-banners}}
+    {{> catalog/home/home-banners}}
 
     <div class="container">
-      <h4 class="home-suggestions-title">{{i18n "home:suggestions.title"}}</h4>
-      <hr class="home-suggestions-hr"/>
-      <p class="home-suggestions-description">{{i18n "home:suggestions.subtitle"}}</p>
-      <div class="row">
-        {{> catalog/suggestions}}
-      </div>
+      {{> catalog/home/home-suggestions}}
+      
       <div class="home-viewall">
-        <a href="{{meta._links.newProducts.href}}" class="home-viewall-btn">{{i18n "home:viewAllNewProductsBtn"}}</a>
-        <hr class="home-viewall-hr">
+        {{> catalog/home/view-all}}
       </div>
     </div>
   </div>
-  {{> catalog/wishlist wishlist=content.wishlist}}
+  {{> common/wishlist wishlist=content.wishlist}}
 
   {{> common/footer}}
   {{> common/htmlscripts}}

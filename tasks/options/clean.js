@@ -3,7 +3,8 @@ module.exports = {
   // 'grunt-contrib-clean': remove files
 
   output: [
-    'output/'
+    'output/',
+    'composer/'
   ],
 
   images: [
@@ -19,7 +20,8 @@ module.exports = {
   templates: [
     'output/templates/',
     'output/i18n/',
-    'output/*.html'
+    'output/*.html',
+    'output/*.json'
   ],
 
   dist: [

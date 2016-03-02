@@ -8,11 +8,11 @@
   }
   .close {
     margin: -1px;
-    background: $dark-blue;
+    background: $ebony-clay;
     opacity: 1;
     padding: 17px;
     &:hover {
-      background: lighten($dark-blue, 5%);
+      background: lighten($ebony-clay, 5%);
     }
   }
   h4 {
@@ -65,7 +65,7 @@
   width: 100%;
 
   .tr-title {
-    background: $dark-blue;
+    background: $ebony-clay;
     color: $white;
     th,
     td {
@@ -76,13 +76,13 @@
   }
 
   .tr-size {
-    border-bottom: 1px solid $dark-blue;
+    border-bottom: 1px solid $ebony-clay;
     td {
       padding: 10px 15px;
       text-align: center;
       cursor: default;
       &:hover {
-        background: $yellow;
+        background: $my-sin;
       }
     }
   }

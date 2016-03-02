@@ -4,7 +4,7 @@ module.exports = {
 
   options: {
     type: "jar",
-    groupId: 'io.commercetools',
+    groupId: "<%= pkg.config.maven.groupId %>",
     artifactId: "<%= pkg.name %>",
     version: "<%= pkg.version %>",
     destFolder: "/META-INF/resources/webjars",
@@ -48,8 +48,8 @@ module.exports = {
   release: {
     options: {
       goal: "release",
-      repositoryId: "commercetools-bintray",
-      url: "https://api.bintray.com/maven/commercetools/maven/<%= pkg.name %>"
+      repositoryId: "<%= pkg.config.maven.repositoryId %>",
+      url: "<%= pkg.config.maven.url %>"
     },
     files: "<%= maven.webjars.files %>"
   }

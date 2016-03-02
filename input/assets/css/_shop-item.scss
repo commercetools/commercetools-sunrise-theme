@@ -5,7 +5,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
-  border: solid 1px $light-grey;
+  border: solid 1px $alto;
   cursor: pointer;
   &:hover .shop-item-overlay,
   &:focus .shop-item-overlay {
@@ -14,6 +14,7 @@
 
   .pop-product-image {
     @include aspect-ratio(3,4);
+    margin: 10px;
   }
   .pop-product-name {
     margin-top: 15px;
@@ -21,7 +22,7 @@
     text-transform: none;
     padding: 0 20px;
     min-height: 50px;
-    color: $dark-grey;
+    color: $gray;
     .name-headline,
     .name-subline {
       display: block;
@@ -37,11 +38,11 @@
       text-decoration: line-through;
     }
     .pop-item-price-old {
-      color: $red;
+      color: $valencia;
     }
   }
   .pop-product-more-colors {
-    color: $dark-grey;
+    color: $gray;
     text-align: center;
     margin: 10px 0;
     font-size: 12px;
@@ -49,17 +50,17 @@
   .product-thumbnail-swatch-red {
     width: 10px;
     height: 10px;
-    background-color: $red;
+    background-color: $valencia;
   }
   .product-thumbnail-swatch-green {
     width: 10px;
     height: 10px;
-    background-color: $green;
+    background-color: $highland;
   }
   .product-thumbnail-swatch-blue {
     width: 10px;
     height: 10px;
-    background-color: $blue;
+    background-color: $ship-cove;
   }
   .new-flag {
     width: 40px;
@@ -72,8 +73,8 @@
     z-index: 100;
   }
   .sale-flag {
-    border: 2px solid $red;
-    color: $red;
+    border: 2px solid $valencia;
+    color: $valencia;
     right: 10px;
     width: 50px;
     height: 50px;
@@ -86,7 +87,7 @@
     z-index: 100;
   }
   .new-flag {
-    color: $black;
+    color: $mine-shaft;
     left: 10px;
   }
   .heart-xs {
