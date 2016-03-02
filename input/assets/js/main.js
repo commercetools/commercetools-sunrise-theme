@@ -236,29 +236,35 @@ $(function() {
 
 // Toggle hidden/sliced description
 $(function() {
-  var hiddenDescription = $('p.pdp-product-description'),
-    generatedHidden,
-    shownFlag,
-    hiddenDescriptionText;
-
-  if (hiddenDescription.length) {
-    hiddenDescription = hiddenDescription.first();
-    hiddenDescriptionText = hiddenDescription.text();
-
-    if (hiddenDescriptionText.length < 100) return;
-    hiddenDescription.html(
-      hiddenDescriptionText.slice(0, 100) + '<span>... </span>' +
-      '<span class="hidden">' + hiddenDescriptionText.slice(100, hiddenDescriptionText.length) + '</span>'
-    );
-    generatedHidden = $('.hidden', hiddenDescription);
-  }
-
-  $('.view-details').click(function() {
-    if (generatedHidden && generatedHidden.length) {
-      shownFlag = !!generatedHidden.hasClass('hidden');
-      $(this).text(shownFlag ? 'Hide details' : 'View details');
-      generatedHidden.toggleClass('hidden');
+  var showChar = 300; // How many characters are shown by default
+  var ellipsestext = "...";
+  
+  $('.more').each(function() {
+    var description = $(this),
+        moretext = description.data("text-show"),
+        content = description.html();
+    if (content.length > showChar) {
+      var displayed = content.substr(0, showChar),
+          hidden = content.substr(showChar, content.length - showChar); 
+      var html = displayed + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + hidden + '</span>&nbsp;&nbsp;<a href="#" class="morelink">' + moretext + '</a></span>';
+      description.html(html);
     }
+  });
+
+  $(".morelink").click(function(){
+    var morelink = $(this),
+        morecontent = morelink.parent(),
+        description = morecontent.parent();
+    if(morelink.hasClass("less")) {
+      morelink.removeClass("less");
+      morelink.html(description.data("text-show"));
+    } else {
+      morelink.addClass("less");
+      morelink.html(description.data("text-hide"));
+    }
+    morecontent.prev().toggle();
+    morelink.prev().toggle();
+    return false;
   });
 });
 

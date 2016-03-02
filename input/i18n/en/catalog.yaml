@@ -56,9 +56,11 @@ suggestions:
 reviews:
   title: Reviews
   write: Write first review
+description:
+  show: Show more
+  hide: Show less
 details:
   title: Product Details
-  view: View Details
 delivery:
   title: Delivery & Returns
   freeReturns: Free return for all orders.
