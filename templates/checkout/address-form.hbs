@@ -5,7 +5,7 @@
     <span class="text-uppercase shipping-info-title">{{i18n "checkout:shippingInformation"}}</span>
     <span class="pull-right required-fields">{{i18n "main:form.required"}}*</span>
   </div>
-  {{> checkout/global-form-errors errors=addressForm.errors}}
+  {{> form/global-errors errors=addressForm.errors}}
   {{> checkout/address-form-elements form=addressForm.shippingAddress suffix="Shipping"}}
   <div class="row different-billing-row">
     <div class="col-sm-12">

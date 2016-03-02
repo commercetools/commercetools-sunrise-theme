@@ -11,28 +11,32 @@
   <hr class="login-box-hr">
   <div class="login-box-description">{{i18n "my-account-login:loginBox.description"}}</div>
   <div class="login-box-input-wrapper">
-    <div class="login-box-input">
-      <span>{{i18n "my-account-login:loginBox.email"}}*</span><br>
-      <input type="email" name="" value="">
-    </div>
-    <div class="login-box-input">
-      <span>{{i18n "my-account-login:loginBox.password"}}*</span><br>
-      <input type="password" name="" value="">
-    </div>
-    <div class="clearfix">
-      <div class="pull-left">
-        <div class="login-box-remember-me">
-          <input type="checkbox" name="" value="">
-          <label for="">{{i18n "my-account-login:loginBox.rememberMe"}}</label>
+    <form id="form-sign-in" method="post" action="{{@root.meta._links.logInSubmit.href}}">
+      <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
+        {{> form/global-errors errors=content.logInForm.errors}}
+        <div class="login-box-input">
+          <span>{{i18n "my-account-login:loginBox.email"}}*</span><br>
+          <input type="email" name="username" value="{{content.logInForm.username}}">
         </div>
-      </div>
-      <div class="pull-right">
-        <div class="login-box-forgot-password">
-          <a href="#">{{i18n "my-account-login:loginBox.forgotPassword"}}</a>
+        <div class="login-box-input">
+          <span>{{i18n "my-account-login:loginBox.password"}}*</span><br>
+          <input type="password" name="password">
         </div>
-      </div>
-    </div>
-    <button class="login-box-sign-in-btn">{{i18n "my-account-login:loginBox.signIn"}}</button>
+        <div class="clearfix">
+          <div class="pull-left">
+            <div class="login-box-remember-me">
+              <input type="checkbox" name="rememberMe" value="{{content.logInForm.rememberMe}}">
+              <label for="">{{i18n "my-account-login:loginBox.rememberMe"}}</label>
+            </div>
+          </div>
+          <div class="pull-right">
+            <div class="login-box-forgot-password">
+              <a href="#">{{i18n "my-account-login:loginBox.forgotPassword"}}</a>
+            </div>
+          </div>
+        </div>
+        <button class="login-box-sign-in-btn">{{i18n "my-account-login:loginBox.signIn"}}</button>
+    </form>
   </div>
 </div>
 <!-- end myaccount/login-box.hbs -->

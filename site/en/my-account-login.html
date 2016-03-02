@@ -132,11 +132,11 @@
                   </div>
               </li>
   
-              <li class="list-item-user">
-                <a href="signIn.html" class="link-user icon-user">
-                  <span class="hidden-xs hidden-sm">Sign In</span>
-                </a>
-              </li>
+                  <li class="list-item-user">
+                      <a href="signIn.html" class="link-user icon-user">
+                          <span class="hidden-xs hidden-sm">Sign In</span>
+                      </a>
+                  </li>
   
               <li class="list-item-location clearfix">
                 <button id="location-dropdown-toggle-btn" class="location-dropdown-toggle">
@@ -683,103 +683,99 @@
             <hr class="login-box-hr">
             <div class="login-box-description">If you have an account, please sign in for a faster checkout</div>
             <div class="login-box-input-wrapper">
-              <div class="login-box-input">
-                <span>Email*</span><br>
-                <input type="email" name="" value="">
-              </div>
-              <div class="login-box-input">
-                <span>Password*</span><br>
-                <input type="password" name="" value="">
-              </div>
-              <div class="clearfix">
-                <div class="pull-left">
-                  <div class="login-box-remember-me">
-                    <input type="checkbox" name="" value="">
-                    <label for="">Remember Me</label>
+              <form id="form-sign-in" method="post" action="">
+                <input type="hidden" name="csrfToken" value="Test123"/>
+                  <div class="login-box-input">
+                    <span>Email*</span><br>
+                    <input type="email" name="username" value="">
                   </div>
-                </div>
-                <div class="pull-right">
-                  <div class="login-box-forgot-password">
-                    <a href="#">Forgot Password</a>
+                  <div class="login-box-input">
+                    <span>Password*</span><br>
+                    <input type="password" name="password">
                   </div>
-                </div>
-              </div>
-              <button class="login-box-sign-in-btn">Sign In</button>
+                  <div class="clearfix">
+                    <div class="pull-left">
+                      <div class="login-box-remember-me">
+                        <input type="checkbox" name="rememberMe" value="">
+                        <label for="">Remember Me</label>
+                      </div>
+                    </div>
+                    <div class="pull-right">
+                      <div class="login-box-forgot-password">
+                        <a href="#">Forgot Password</a>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="login-box-sign-in-btn">Sign In</button>
+              </form>
             </div>
-          </div>
-        </div>
+          </div>        </div>
         <div class="col-sm-6">
           <div class="signup-box-mobile">
             <div class="signup-box-wrapper">
-              <div class="clearfix">
-                <div class="pull-left">
-                  <div class="signup-box-title">New Customer Registration</div>
-                </div>
-                <div class="pull-right">
-                  <div class="signup-box-required">Required Fields*</div>
-                </div>
-              </div>
-              <hr class="signup-box-hr">
-              <div class="signup-box-description">Create an account to store your products, easy checkouts, customer discounts, benefits and more.</div>
-              <div class="signup-box-input">
-                <span>Title</span><br>
-                <select>
-                    <option value="Mr." selected></option>
-                    <option value="Mrs." ></option>
-                    <option value="Ms." ></option>
-                    <option value="Dr." ></option>
-                </select>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="signup-box-input">
-                    <span>First Name*</span><br>
-                    <input type="text" name="" value="">
+                <form id="form-sign-up" method="post" action="">
+                    <input type="hidden" name="csrfToken" value="Test123"/>
+                  <div class="clearfix">
+                    <div class="pull-left">
+                      <div class="signup-box-title">New Customer Registration</div>
+                    </div>
+                    <div class="pull-right">
+                      <div class="signup-box-required">Required Fields*</div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-sm-6">
+                  <hr class="signup-box-hr">
+                  <div class="signup-box-description">Create an account to store your products, easy checkouts, customer discounts, benefits and more.</div>
                   <div class="signup-box-input">
-                    <span>Second Name*</span><br>
-                    <input type="text" name="" value="">
+                    <span>Title</span><br>
+                    <select name="title">
+                    </select>
                   </div>
-                </div>
-              </div>
-              <hr class="signup-box-hr">
-              <div class="signup-box-input">
-                <span>Email*</span><br>
-                <input type="email" name="" value="">
-              </div>
-              <div class="signup-box-input">
-                <span>Confirm Email*</span><br>
-                <input type="email" name="" value="">
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="signup-box-input">
+                        <span>First Name*</span><br>
+                        <input type="text" name="firstName" value="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="signup-box-input">
+                        <span>Second Name*</span><br>
+                        <input type="text" name="lastName" value="">
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="signup-box-hr">
                   <div class="signup-box-input">
-                    <span>Password*</span><br>
-                    <input type="password" name="" value="">
+                    <span>Email*</span><br>
+                    <input type="email" name="email" value="">
                   </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="signup-box-input">
-                    <span>Confirm Password*</span><br>
-                    <input type="password" name="" value="">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="signup-box-input">
+                        <span>Password*</span><br>
+                        <input type="password" name="password">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="signup-box-input">
+                        <span>Confirm Password*</span><br>
+                        <input type="password" name="confirmPassword">
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <hr class="signup-box-hr">
-              <div class="signup-box-newsletter">
-                <input type="checkbox" name="" value="">
-                <span>Please add me to the <a href="">SUNRISE Newsletter</a></span>
-              </div>
-              <div class="signup-box-terms">
-                <input type="checkbox" name="" value="">
-                <span>I agree to the <a href="">Terms and Conditions</a></span>
-              </div>
-              <div class="signup-box-policy">Sunrise does not share or sell personal information. See <a href="#">Privacy Policy</a></div>
-              <button class="signup-register-btn">Register Now</button>
-            </div>
-          </div>
+                  <hr class="signup-box-hr">
+                  <div class="signup-box-newsletter">
+                    <input type="checkbox" name="joinNewsletter" value="true">
+                    <span>Please add me to the <a href="">SUNRISE Newsletter</a></span>
+                  </div>
+                  <div class="signup-box-terms">
+                    <input type="checkbox" name="agreeToTerms" value="true" >
+                    <span>I agree to the <a href="#">Terms and Conditions</a></span>
+                  </div>
+                  <div class="signup-box-policy">Sunrise does not share or sell personal information. See <a href="#">Privacy Policy</a></div>
+                  <button class="signup-register-btn">Register Now</button>
+                </form>
+            </div>          </div>
         </div>
       </div>
     </div>

@@ -43,13 +43,24 @@
               {{> common/mini-cart miniCart=header.miniCart}}
             </li>
 
-            {{#unless user.isLoggedIn}}
-            <li class="list-item-user">
-              <a href="{{@root.meta._links.signIn.href}}" class="link-user icon-user">
-                <span class="hidden-xs hidden-sm">{{i18n "main:header.signIn"}}</span>
-              </a>
-            </li>
-            {{/unless}}
+            {{#if @root.meta.user.loggedIn}}
+                <li class="list-item-user">
+                    <a href="{{@root.meta._links.logOut.href}}" class="link-user">
+                        <span>{{i18n "main:header.signOut"}}</span>
+                    </a>
+                </li>
+                <li class="list-item-user">
+                    <a href="{{@root.meta._links.myAccount.href}}" class="link-user icon-user">
+                        <span class="hidden-xs hidden-sm">{{@root.meta.user.name}}</span>
+                    </a>
+                </li>
+            {{else}}
+                <li class="list-item-user">
+                    <a href="{{@root.meta._links.signIn.href}}" class="link-user icon-user">
+                        <span class="hidden-xs hidden-sm">{{i18n "main:header.signIn"}}</span>
+                    </a>
+                </li>
+            {{/if}}
 
             {{#if header.location}}
             <li class="list-item-location clearfix">

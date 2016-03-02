@@ -23,7 +23,7 @@
                 <div class="checkout">
                     <form method="post" action="{{@root.meta._links.checkoutConfirmationSubmit.href}}">
                         <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
-                        {{> checkout/global-form-errors errors=content.checkoutForm.errors}}
+                        {{> form/global-errors errors=content.checkoutForm.errors}}
                         <div class="row">
                             <div class="col-sm-4 checkout-first-col">
                               {{> checkout/address-confirmation address=content.cart.shippingAddress titleKey="checkout:shippingAddress" editable=true editUrl=meta._links.editShippingAddress.href}}
