@@ -99,15 +99,16 @@
 // Product description
 .pdp-product-description {
   font-size: 0.9em;
+
+  .morelink {
+    color: $gray;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 0.9em;
+  }
 }
 
 // Product information text
-.view-details {
-  color: $gray;
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-size: 0.9em;
-}
 .additional-description {
   display: none;
   font-size: 0.9em;
