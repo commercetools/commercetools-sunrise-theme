@@ -1,7 +1,7 @@
 <div class="signup-box-wrapper">
     <form id="form-sign-up" method="post" action="{{@root.meta._links.signUpSubmit.href}}">
         <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
-        {{> checkout/global-form-errors errors=content.signUpForm.errors}}
+        {{> form/global-errors errors=content.signUpForm.errors}}
       <div class="clearfix">
         <div class="pull-left">
           <div class="signup-box-title">{{i18n "my-account-login:signupBox.title"}}</div>

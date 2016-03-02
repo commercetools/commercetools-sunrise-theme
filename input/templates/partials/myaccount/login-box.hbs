@@ -12,7 +12,7 @@
   <div class="login-box-input-wrapper">
     <form id="form-sign-in" method="post" action="{{@root.meta._links.logInSubmit.href}}">
       <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
-        {{> checkout/global-form-errors errors=content.logInForm.errors}}
+        {{> form/global-errors errors=content.logInForm.errors}}
         <div class="login-box-input">
           <span>{{i18n "my-account-login:loginBox.email"}}*</span><br>
           <input type="email" name="username" value="{{content.logInForm.username}}">
