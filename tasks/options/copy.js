@@ -102,11 +102,19 @@ module.exports = {
     ]
   },
   composer: {
-    files: [{
-      expand: true,
-      cwd: 'output/',
-      dest: 'composer/',
-      src: '**/*'
-    }]
+    files: [
+      {
+        expand: true,
+        cwd: 'output/',
+        dest: 'composer/',
+        src: '**/*'
+      },
+      {
+        expand: true,
+        cwd: '/',
+        dest: 'composer/',
+        src: 'README.md'
+      }
+    ]
   }
 }
