@@ -52,15 +52,11 @@
     text-transform: uppercase;
   }
 }
+
 .login-box-sign-in-btn {
-  background-color: $my-sin;
-  text-transform: uppercase;
+  @extend %primary-action-profile;
   padding: 10px 15px;
   margin-top: 10px;
-  font-weight: bold;
   font-size: 18px;
   letter-spacing: 1px;
-  &:hover {
-    background-color: lighten($my-sin, 5%);
-  }
 }

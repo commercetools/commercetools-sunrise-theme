@@ -37,15 +37,10 @@
 }
 
 .thankyou-continue-shopping-btn {
-  background: $my-sin;
+  @extend %primary-action-profile;
   font-size: 1.2em;
-  font-weight: bold;
-  text-transform: uppercase;
   padding: 12px 20px;
   letter-spacing: 1px;
-  &:hover {
-    background: lighten($my-sin, 5%);
-  }
 }
 
 .order-details-title {

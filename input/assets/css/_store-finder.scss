@@ -31,15 +31,10 @@
   padding: 7px;
 }
 .store-finder-submit-btn {
-  text-transform: uppercase;
-  background-color: $my-sin;
+  @extend %primary-action-profile;
   padding: 8px 16px;
   letter-spacing: 1px;
-  font-weight: bold;
   margin-top: 20px;
-  &:hover {
-    background-color: lighten($my-sin, 5%);
-  }
 }
 .store-finder-select {
   appearance: none;
