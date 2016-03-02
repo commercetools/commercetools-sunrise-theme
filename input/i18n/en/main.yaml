@@ -27,6 +27,7 @@ header:
   checkout: Checkout
   search: Search
   signIn: Sign In
+  signOut: Log Out
   language: Language
   country: Country
   location: Location
