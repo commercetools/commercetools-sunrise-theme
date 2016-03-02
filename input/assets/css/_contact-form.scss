@@ -25,14 +25,12 @@
 }
 .contact-form-form-submit-btn {
   button {
+    @extend %primary-profile-action;
     margin-top: 20px;
     margin-left: 14px;
-    background-color: $my-sin;
-    text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 40px;
     font-size: 16px;
-    font-weight: bold;
   }
 }
 .contact-form-form-textarea {

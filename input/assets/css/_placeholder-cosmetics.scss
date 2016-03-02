@@ -1,0 +1,13 @@
+// PRIMARY ACTION: COMPLETE PROFILE
+%primary-action-profile {
+  color: $mine-shaft;
+  text-transform: uppercase;
+  background: {
+    color: $my-sin;
+    repeat: no-repeat;
+  }
+
+  &:hover {
+    background: lighten($my-sin, 5%);
+  }
+}
