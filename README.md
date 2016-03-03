@@ -82,6 +82,7 @@ Building the generated site also performs these tasks:
 - Minifies CSS and JS files
 - Adds vendor-prefixed CSS properties with [Autoprefixer](https://github.com/postcss/autoprefixer)
 - Compresses any PNG, JPG, GIF and SVG image file with [Imagemin](https://github.com/imagemin/imagemin)
+- Fingerprints all web assets
 
 #### Create WebJars File
 
