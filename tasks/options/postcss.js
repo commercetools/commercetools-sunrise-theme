@@ -3,8 +3,6 @@ module.exports = {
     // 'grunt-postcss': optimizes CSS files with vendor prefixes
     
     options: {
-      map: true,
-      //diff: true,
       processors: require('autoprefixer')
     },
 

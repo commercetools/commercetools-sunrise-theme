@@ -7,7 +7,7 @@ module.exports = {
      style: 'compressed'
     },
     files: {
-      'output/assets/css/main.min.css' : 'input/assets/css/main.scss'
+      'output/assets/css/main.min.css' : 'output/assets/css/sass/main.scss'
     }
   }
 
