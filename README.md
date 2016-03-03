@@ -85,7 +85,7 @@ Building the generated site also performs these tasks:
 
 #### Create WebJars File
 
-Create a WebJars file from this theme and apply it to any Sunrise project. There are three possible ways to achieve this:
+Create a WebJars file from this theme and apply it to any [Sunrise Java](https://github.com/sphereio/commercetools-sunrise-java) project. There are three possible ways to achieve this:
 
 - `grunt build-webjar` to create the WebJar in the root directory of the project, so that you can apply it by placing the generated JAR file in the folder for unmanaged dependencies of your Sunrise project (i.e. `lib/` is the default folder for Sunrise)
 
