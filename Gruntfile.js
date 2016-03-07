@@ -17,17 +17,22 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['build', 'watch']);
 
-  grunt.registerTask('build', ['clean', 'build-images', 'build-assets', 'build-templates']);
-  grunt.registerTask('build-images', ['clean:images', 'copy:images', 'imagemin']);
-  grunt.registerTask('build-assets', ['clean:assets', 'copy:assets', 'sass', 'postcss', 'uglify']);
-  grunt.registerTask('build-templates', ['clean:templates', 'copy:templates', 'copy:others', 'json-refs', 'generate-html']);
+  grunt.registerTask('build', ['clean', 'internal-build-images', 'internal-build-assets', 'internal-build-templates', 'assetFingerprint']);
+  grunt.registerTask('build-images', ['clean:images', 'internal-build-images', 'assetFingerprint:images']);
+  grunt.registerTask('build-assets', ['clean:assets', 'internal-build-assets', 'assetFingerprint:assets']);
+  grunt.registerTask('build-templates', ['clean:templates', 'internal-build-templates', 'assetFingerprint']);
 
   grunt.registerTask('release-composer', ['build', 'copy:composer']);
-  grunt.registerTask('webjars', ['build', 'maven:webjars']);
-  grunt.registerTask('install', ['build', 'maven:install', 'clean:dist']);
-  grunt.registerTask('release', ['build', 'maven:release', 'clean:dist']);
+  
+  grunt.registerTask('build-webjar', ['build', 'maven:webjars']);
+  grunt.registerTask('install-webjar', ['build', 'maven:install', 'clean:dist']);
+  grunt.registerTask('release-webjar', ['build', 'maven:release', 'clean:dist']);
 
   grunt.registerTask('publish', ['gh-pages-clean', 'build', 'gh-pages']);
+
+  grunt.registerTask('internal-build-images', ['copy:images', 'imagemin']);
+  grunt.registerTask('internal-build-assets', ['copy:assets', 'sass', 'postcss', 'uglify']);
+  grunt.registerTask('internal-build-templates', ['copy:templates', 'copy:others', 'json-refs', 'generate-html']);
 
 };
 

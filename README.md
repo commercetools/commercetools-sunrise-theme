@@ -82,16 +82,17 @@ Building the generated site also performs these tasks:
 - Minifies CSS and JS files
 - Adds vendor-prefixed CSS properties with [Autoprefixer](https://github.com/postcss/autoprefixer)
 - Compresses any PNG, JPG, GIF and SVG image file with [Imagemin](https://github.com/imagemin/imagemin)
+- Fingerprints all web assets
 
 #### Create WebJars File
 
-Create a WebJars file from this theme and apply it to any Sunrise project. There are three possible ways to achieve this:
+Create a WebJars file from this theme and apply it to any [Sunrise Java](https://github.com/sphereio/commercetools-sunrise-java) project. There are three possible ways to achieve this:
 
-- `grunt webjars` to create the WebJars file in the root directory of the project, so that you can apply it by placing the generated JAR file in the folder for unmanaged dependencies of your Sunrise project (i.e. `lib/` is the default folder for Sunrise)
+- `grunt build-webjar` to create the WebJar in the root directory of the project, so that you can apply it by placing the generated JAR file in the folder for unmanaged dependencies of your Sunrise project (i.e. `lib/` is the default folder for Sunrise)
 
-- `grunt install` to install the current snapshot version to your local maven repository (`~/.m2/repository/io/commercetools/sunrise/commercetools-sunrise-theme`) and apply it to your project as a dependency from a local environment
+- `grunt install-webjar` to install the current snapshot version to your local maven repository (`~/.m2/repository/io/commercetools/sunrise/commercetools-sunrise-theme`) and apply it to your project as a dependency from a local environment
 
-- `grunt release` to release the current version to a remote Maven repository and move to the next development version, this way you could publicly distribute your theme and let anyone apply it to their Sunrise application as a project dependency (requires that you set up `config.maven` in `package.json` accordingly to your remote Maven repository)
+- `grunt release-webjar` to release the current version to a remote Maven repository and move to the next development version, this way you could publicly distribute your theme and let anyone apply it to their Sunrise application as a project dependency (requires that you set up `config.maven` in `package.json` accordingly to your remote Maven repository)
 
 #### Publish to GitHub Pages
 
