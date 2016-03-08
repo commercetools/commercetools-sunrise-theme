@@ -12,7 +12,7 @@ module.exports = {
   },
   templates: {
     files: ['input/templates/**/*', 'input/i18n/**/*'],
-    tasks: ['build-templates']
+    tasks: ['build'] // Required for fingerprinting
   }
 
 }
