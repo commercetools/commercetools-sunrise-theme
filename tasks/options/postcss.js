@@ -1,7 +1,7 @@
 module.exports = {
 
     // 'grunt-postcss': optimizes CSS files with vendor prefixes
-    
+
     options: {
       processors: require('autoprefixer')
     },
@@ -10,4 +10,4 @@ module.exports = {
       src: 'output/assets/css/main.min.css'
     }
 
-}
+};
