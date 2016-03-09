@@ -5,7 +5,8 @@ module.exports = {
     findAndReplaceFiles: [
       "output/assets/css/**/*.{css,map}",
       "output/assets/js/**/*.js",
-      "output/templates/**/*.hbs",
+      "output/templates/**/*.{hbs,json}",
+      "output/i18n/**/*.yaml",
       "output/site/**/*.html"
     ],
     keepOriginalFiles: false
