@@ -24,14 +24,22 @@ module.exports = function(grunt) {
     grunt.task.run('copy:site-assets');
   }
 
-  grunt.registerTask('default', ['build', 'watch']);
-  grunt.registerTask('build', 'build the site versions', function(language) {
-    grunt.task.run('clean');
+  grunt.registerTask('build', 'build the site versions', function(language, skip) {
+    if (!skip) {
+      grunt.task.run('clean');
+    }
+    
     if (language) {
       build(language);
     } else {
       grunt.config('languages').forEach(build);
     }
+  });
+
+  grunt.registerTask('dev', '', function(language) {
+    grunt.config.set('lng', language);
+    grunt.task.run('browserSync');
+    grunt.task.run('watch');
   });
 
   grunt.registerTask('build-images', ['clean:images', 'internal-build-images', 'assetFingerprint:images']);
