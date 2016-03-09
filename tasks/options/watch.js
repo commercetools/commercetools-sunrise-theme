@@ -15,4 +15,4 @@ module.exports = {
     tasks: ['build-templates']
   }
 
-}
+};
