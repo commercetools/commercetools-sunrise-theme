@@ -4,15 +4,15 @@ module.exports = {
 
   images: {
     files: ['input/assets/img/**/*'],
-    tasks: ['build-images']
+    tasks: ['build:<%= lng %>:true']
   },
   assets: {
     files: ['input/assets/css/**/*', 'input/assets/js/**/*', 'input/assets/fonts/**/*'],
-    tasks: ['build-assets']
+    tasks: ['build:<%= lng %>:true']
   },
   templates: {
     files: ['input/templates/**/*', 'input/i18n/**/*'],
-    tasks: ['build-templates']
+    tasks: ['build:<%= lng %>:true']
   }
 
 };

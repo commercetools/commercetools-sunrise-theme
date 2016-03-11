@@ -2,8 +2,8 @@ module.exports = {
   dev: {
     bsFiles: {
       src : [
-        'output/site/<%= lng %>/**/*.css',
-        'output/site/<%= lng %>/**/*.js',
+        'output/site/<%= lng %>/assets/css/**/*.css',
+        'output/site/<%= lng %>/assets/js/**/*.js',
         'output/site/<%= lng %>/*.html'
       ]
     },

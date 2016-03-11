@@ -37,6 +37,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('dev', '', function(language) {
+    language = language || 'en';
     grunt.config.set('lng', language);
     grunt.task.run('browserSync');
     grunt.task.run('watch');
