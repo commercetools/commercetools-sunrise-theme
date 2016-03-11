@@ -17,4 +17,4 @@ module.exports = {
     helpers: 'input/templates/helpers/**/*.js'
   }
 
-}
+};

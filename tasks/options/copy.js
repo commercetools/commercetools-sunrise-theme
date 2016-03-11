@@ -34,25 +34,25 @@ module.exports = {
 
   assets: {
     files: [
-      { 
+      {
         expand: true,
         cwd: 'input/',
         dest: 'output/',
         src: 'assets/css/**/*.css'
       },
-      { 
+      {
         expand: true,
         cwd: 'input/assets/css/',
         dest: 'output/assets/css/sass/',
         src: '**/*.scss'
       },
-      { 
+      {
         expand: true,
         cwd: 'input/',
         dest: 'output/',
-        src: 'assets/js/**/*.js' 
+        src: 'assets/js/**/*.js'
       },
-      { 
+      {
         expand: true,
         cwd: 'input/',
         dest: 'output/',
@@ -66,7 +66,7 @@ module.exports = {
       process: writeTemplateFileHints
     },
     files: [
-      { 
+      {
         expand: true,
         cwd: 'input/',
         dest: 'output/',
@@ -122,5 +122,14 @@ module.exports = {
         src: 'README.md'
       }
     ]
+  },
+
+  'site-assets': {
+    files: [{
+      expand: true,
+      cwd: 'output/assets',
+      src: '**/*',
+      dest: 'output/site/<%= lng %>/assets'
+    }]
   }
-}
+};

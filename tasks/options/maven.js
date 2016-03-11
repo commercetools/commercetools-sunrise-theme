@@ -54,4 +54,4 @@ module.exports = {
     files: "<%= maven.webjars.files %>"
   }
 
-}
+};

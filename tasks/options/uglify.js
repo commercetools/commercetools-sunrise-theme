@@ -1,4 +1,4 @@
-module.exports = {      
+module.exports = {
 
   // 'grunt-contrib-uglify': minifies JS files
 
@@ -9,4 +9,4 @@ module.exports = {
     ]
   }
 
-}
+};
