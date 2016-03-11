@@ -19,6 +19,7 @@ module.exports = {
         cwd: "output/assets",
         src: [
           "img/**/*",
+          "!img/cms/**/*",
           "!img/favicon.ico"
         ],
         dest: "output/assets"
