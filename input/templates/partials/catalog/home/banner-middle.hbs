@@ -1,16 +1,18 @@
 <div class="aspect-ratio aspect-ratio--8to3">
   <picture>
-    <source srcset="{{cms "home:bannerMiddle.imageLarge"}}" media="(min-width: 1200px)">
-    <source srcset="{{cms "home:bannerMiddle.imageMedium"}}" media="(min-width: 768px)">
-    <img src="{{cms "home:bannerMiddle.imageSmall"}}" class="img-responsive">
+    <source srcset="{{cms "banner:homeMiddle.imageLarge"}}" media="(min-width: 1200px)">
+    <source srcset="{{cms "banner:homeMiddle.imageMedium"}}" media="(min-width: 768px)">
+    <img src="{{cms "banner:homeMiddle.imageSmall"}}" class="img-responsive">
   </picture>
 </div>
 
 <div class="banner-text">
   <h4 class="banner-title">
-    {{{cms "home:bannerMiddle.title"}}}
+    {{{cms "banner:homeMiddle.title"}}}
   </h4>
-  <p class="banner-subtitle">{{{cms "home:bannerMiddle.subtitle"}}}</p>
-  <p class="hidden-xs hidden-sm">{{{cms "home:bannerMiddle.description"}}}</p>
-  <a class="btn banner-btn" href="{{cms "home:bannerMiddle.linkHref"}}">{{cms "home:bannerMiddle.linkText"}}</a>
+  <p class="banner-subtitle">{{{cms "banner:homeMiddle.subtitle"}}}</p>
+  <p class="hidden-xs hidden-sm">{{{cms "banner:homeMiddle.description"}}}</p>
+  <a class="btn banner-btn" href="{{cms "banner:homeMiddle.linkHref"}}">
+    {{cms "banner:homeMiddle.linkText"}}
+  </a>
 </div>

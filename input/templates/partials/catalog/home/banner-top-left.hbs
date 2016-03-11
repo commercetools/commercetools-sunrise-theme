@@ -1,13 +1,15 @@
 <div class="aspect-ratio aspect-ratio--4to3">
   <picture>
-    <source srcset="{{cms "home:bannerTopLeft.imageLarge"}}" media="(min-width: 1200px)">
-    <source srcset="{{cms "home:bannerTopLeft.imageMedium"}}" media="(min-width: 768px)">
-    <img src="{{cms "home:bannerTopLeft.imageSmall"}}" class="img-responsive">
+    <source srcset="{{cms "banner:homeTopLeft.imageLarge"}}" media="(min-width: 1200px)">
+    <source srcset="{{cms "banner:homeTopLeft.imageMedium"}}" media="(min-width: 768px)">
+    <img src="{{cms "banner:homeTopLeft.imageSmall"}}" class="img-responsive">
   </picture>
 </div>
 
 <div class="banner-text">
-  <h4 class="banner-title">{{{cms "home:bannerTopLeft.title"}}}</h4>
-  <p class="banner-paragraph">{{{cms "home:bannerTopLeft.subtitle"}}}</p>
-  <a href="{{cms "home:bannerTopLeft.linkHref"}}" class="btn banner-btn">{{cms "home:bannerTopLeft.linkText"}}</a>
+  <h4 class="banner-title">{{{cms "banner:homeTopLeft.title"}}}</h4>
+  <p class="banner-paragraph">{{{cms "banner:homeTopLeft.subtitle"}}}</p>
+  <a href="{{cms "banner:homeTopLeft.linkHref"}}" class="btn banner-btn">
+    {{cms "banner:homeTopLeft.linkText"}}
+  </a>
 </div>

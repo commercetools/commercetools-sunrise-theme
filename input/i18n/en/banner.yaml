@@ -1,4 +1,4 @@
-bannerTopLeft:
+homeTopLeft:
   title: Summer Essentials
   subtitle: Make the great day happen
   linkText: Shop collection
@@ -7,7 +7,7 @@ bannerTopLeft:
   imageMedium: ../../assets/img/leather_medium-4to3.jpg
   imageLarge: ../../assets/img/leather_large-4to3.jpg
 
-bannerTopRight:
+homeTopRight:
   title: Summer Lovin'
   subtitle: Summer must have outfits
   linkText: Shop collection
@@ -16,7 +16,7 @@ bannerTopRight:
   imageMedium: ../../assets/img/woman_medium-4to3.jpg
   imageLarge: ../../assets/img/woman_large-4to3.jpg
 
-bannerMiddle:
+homeMiddle:
   title: <img class="hidden-xs" src="../../assets/img/sun-logo.png"/><br/><br/>Here comes the sun
   subtitle: FABULOUS EVERY DAY - SUMMER CHIC
   description: Between rising temperature outside and cool A/C inside, dressing for the  the summer can be a tricky business. Luckily, we pulled together the most inspiring looks for. Check out our must-to-have-it pieces.<br/><br/>The weather is heating up, but you don’t have the right outfit yet. Thankfully, we are here to help you out. Spring break is upon us and it's essential to migrate. So whether you're jetting off to Ibiza or Majorca for a party vacation or getting away to greener pastures - here are the fashion pieces we'll be stashing in our favorite getaway bags.
@@ -26,7 +26,7 @@ bannerMiddle:
   imageMedium: ../../assets/img/man_medium-8to3.jpg
   imageLarge: ../../assets/img/man_large-8to3.jpg
 
-bannerBottomLeft:
+homeBottomLeft:
   title: Unique style for every season
   subtitle: Fashion styles 2016
   linkText: Shop collection
@@ -35,13 +35,13 @@ bannerBottomLeft:
   imageMedium: ../../assets/img/shoes_medium-4to3.jpg
   imageLarge: ../../assets/img/shoes_large-4to3.jpg
 
-bannerBottomRight1:
+homeBottomRight1:
   title: <img src="../../assets/img/sun-logo.png"/><br/><br/>SUMMER FASHION 2016
   imageSmall: ../../assets/img/blue-bg_small-4to3.png
   imageMedium: ../../assets/img/blue-bg_medium-4to3.png
   imageLarge: ../../assets/img/blue-bg_large-4to3.png
 
-bannerBottomRight2:
+homeBottomRight2:
   title: Trendy Sunglasses
   subtitle: Accessories for the perfect summer
   linkText: Shop collection
@@ -50,7 +50,7 @@ bannerBottomRight2:
   imageMedium: ../../assets/img/sunglass_medium-4to3.jpg
   imageLarge: ../../assets/img/sunglass_large-4to3.jpg
 
-bannerBottomRight3:
+homeBottomRight3:
   title: Must to have it
   subtitle: Hot pieces for the summer 
   linkText: Shop collection
@@ -59,10 +59,10 @@ bannerBottomRight3:
   imageMedium: ../../assets/img/woman_medium-8to3.jpg
   imageLarge: ../../assets/img/woman_large-8to3.jpg
 
-suggestions:
+homeSuggestions:
   title: Get beach ready
   subtitle: Get your sun on
 
-viewProducts:
+homeViewProducts:
   linkText: View all new products
   linkHref: pop.html?c=all
