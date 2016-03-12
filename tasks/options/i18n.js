@@ -9,7 +9,7 @@ module.exports = {
     ns: {
       namespaces: [
         'main',
-        'home',
+        'banner',
         'catalog',
         'checkout',
         'my-account-login',

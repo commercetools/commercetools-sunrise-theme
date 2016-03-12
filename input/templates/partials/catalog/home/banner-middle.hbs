@@ -1,16 +1,18 @@
 <div class="aspect-ratio aspect-ratio--8to3">
   <picture>
-    <source srcset="{{@root.meta.assetsPath}}img/man_large-8to3.jpg" media="(min-width: 1200px)">
-    <source srcset="{{@root.meta.assetsPath}}img/man_medium-8to3.jpg" media="(min-width: 768px)">
-    <img src="{{@root.meta.assetsPath}}img/man_small-8to3.jpg" class="img-responsive" alt="Banner image">
+    <source srcset="{{cms "banner:homeMiddle.imageLarge"}}" media="(min-width: 1200px)">
+    <source srcset="{{cms "banner:homeMiddle.imageMedium"}}" media="(min-width: 768px)">
+    <img src="{{cms "banner:homeMiddle.imageSmall"}}" class="img-responsive">
   </picture>
 </div>
 
 <div class="banner-text">
-  <img  class="hidden-xs" src="{{@root.meta.assetsPath}}img/sun-logo.png" alt="Sunrise logo" />
-  <h4 class="banner-title">{{i18n "home:bannerTwo.title"}}</h4>
-  <p class="banner-subtitle">{{i18n "home:bannerTwo.subtitle"}}</p>
-  <p class="hidden-xs hidden-sm">{{i18n "home:bannerTwo.description1"}}</p>
-  <p class="hidden-xs hidden-sm">{{i18n "home:bannerTwo.description2"}}</p>
-  <a class="btn banner-btn" href="{{content.banners.bannerTwo.first.href}}">{{i18n "home:bannerTwo.btn"}}</a>
+  <h4 class="banner-title">
+    {{{cms "banner:homeMiddle.title"}}}
+  </h4>
+  <p class="banner-subtitle">{{{cms "banner:homeMiddle.subtitle"}}}</p>
+  <p class="hidden-xs hidden-sm">{{{cms "banner:homeMiddle.description"}}}</p>
+  <a class="btn banner-btn" href="{{cms "banner:homeMiddle.linkHref"}}">
+    {{cms "banner:homeMiddle.linkText"}}
+  </a>
 </div>
