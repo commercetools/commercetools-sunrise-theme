@@ -2,19 +2,19 @@
     "list" : [
         {
             "label" : "Credit Card",
-            "image" : "img/payment-option-card.gif",
+            "image" : "img/payment-option-card-911d1826fde4546025462fc13875e2a0.gif",
             "value" : "credit-card",
             "selected" : false
         },
         {
             "label" : "PayPal",
-            "image" : "img/payment-option-paypal.png",
+            "image" : "img/payment-option-paypal-d00850532a79141d525c9914bd43cf98.png",
             "value" : "paypal",
             "selected" : false
         },
         {
             "label" : "Pre-payment",
-            "image" : "img/blank-img.jpg",
+            "image" : "img/blank-img-751459b54b2d093a64bf2a331a8c82a0.jpg",
             "value" : "prepaid",
             "selected" : true
         }

@@ -1,15 +1,17 @@
 <!-- start catalog/home/banner-top-right.hbs -->
 <div class="aspect-ratio aspect-ratio--4to3">
   <picture>
-    <source srcset="{{@root.meta.assetsPath}}img/woman_large-4to3-17e8b36917215f05acec38784a504f3f.jpg" media="(min-width: 1200px)">
-    <source srcset="{{@root.meta.assetsPath}}img/woman_medium-4to3-5e926626d017902a91432edb62899c6e.jpg" media="(min-width: 768px)">
-    <img src="{{@root.meta.assetsPath}}img/woman_small-4to3-6eb4165189448630e6fc1a86e9eabe4f.jpg" class="img-responsive" alt="Banner image">
+    <source srcset="{{cms "banner:homeTopRight.imageLarge"}}" media="(min-width: 1200px)">
+    <source srcset="{{cms "banner:homeTopRight.imageMedium"}}" media="(min-width: 768px)">
+    <img src="{{cms "banner:homeTopRight.imageSmall"}}" class="img-responsive">
   </picture>
 </div>
 
 <div class="banner-text">
-  <h4 class="banner-title">{{i18n "home:bannerOne.second.title"}}</h4>
-  <p class="banner-paragraph">{{i18n "home:bannerOne.second.subtitle"}}</p>
-  <a href="{{content.banners.bannerOne.second.href}}" class="btn banner-btn">{{i18n "home:bannerOne.second.btn"}}</a>
+  <h4 class="banner-title">{{{cms "banner:homeTopRight.title"}}}</h4>
+  <p class="banner-paragraph">{{{cms "banner:homeTopRight.subtitle"}}}</p>
+  <a href="{{cms "banner:homeTopRight.linkHref"}}" class="btn banner-btn">
+    {{cms "banner:homeTopRight.linkText"}}
+  </a>
 </div>
 <!-- end catalog/home/banner-top-right.hbs -->
