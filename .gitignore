@@ -10,3 +10,4 @@ output/
 .idea
 /vendor/
 *.sublime-*
+composer
