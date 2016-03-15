@@ -9,7 +9,7 @@ if [ "$TRAVIS_REPO_SLUG" == "sphereio/commercetools-sunrise-theme" ] && [ "$TRAV
     git config --global github.token "${GH_TOKEN}"
 
     echo -e "Adding subtree for release...\n"
-    git subtree add -q --prefix composer ${SPLIT_REPO} master --squash > /dev/null
+    git subtree add -q --prefix composer ${SPLIT_REPO} master --squash > /dev/null 2>&1
 
     grunt release-composer
 
@@ -19,7 +19,8 @@ if [ "$TRAVIS_REPO_SLUG" == "sphereio/commercetools-sunrise-theme" ] && [ "$TRAV
     git commit -m "${LAST_LOG_ENTRY}"
 
     echo -e "Pushing output to subtree...\n"
-    git subtree push -q --prefix composer ${SPLIT_REPO} master --squash > /dev/null
+    git subtree push -q --prefix composer ${SPLIT_REPO} master --squash > /dev/null 2>&1
+
     git reset --hard origin/master
 
     echo -e "Subtree split done.\n"
