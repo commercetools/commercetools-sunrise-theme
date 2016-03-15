@@ -7,7 +7,6 @@ if [ "$TRAVIS_REPO_SLUG" == "sphereio/commercetools-sunrise-theme" ] && [ "$TRAV
 
     git config --global user.email "automation@commercetools.de"
     git config --global user.name "Travis CI"
-    git config --global github.token "${GH_TOKEN}"
 
     grunt release-composer
 
