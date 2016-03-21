@@ -23,7 +23,7 @@ rememberMe: Meine Daten speichern für einen Account
 shipping: Versand
 shippingAddress: Versandadresse
 shippingInformation: Versand Information
-shippingMethod: Shipping Method
+shippingMethod: Versandart
 subtotal: Zwischensumme
 total: Gesamtpreis
 yourBag: Ihr Einkaufswagen
@@ -38,11 +38,11 @@ shippingPage:
   telNumberInfo: Bitte geben Sie Ihre Telefonnummer an, damit unser Lieferant Sie über den Liefertermin informieren kann.
 paymentPage:
   title: Sicherer Bestellprozess - Bezahlung
-  cardName: Name on credit card
-  cardNumber: Credit card number
-  expiryDateTitle: Expiry data
+  cardName: Name auf der Kreditkarte
+  cardNumber: Kreditkartennummer
+  expiryDateTitle: Gültig bis
   paymentOptionsTitle: Bitte wählen Sie eine Zahlungsart aus
-  securityCode: Security Code
+  securityCode: Prüfnummer
   securityCodeTooltip: Normalerweise befindet sich der Code auf der Rückseite.
 confirmationPage:
   title: Sicherer Bestellprozess - Versand
