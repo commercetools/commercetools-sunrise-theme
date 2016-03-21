@@ -1,0 +1,78 @@
+messages:
+  reachedMaximumQuantity: Sie haben die maximale Bestellmenge erreicht.
+  itemAddedToCart: Der Artikel wurde in den Warenkorb gelegt.
+thumbnail:
+  sale: Sale
+  new: Neu
+  quickView: Schnellansicht
+  moreColors: Mehr Farben
+filters:
+  title: Artikel filtern
+  open: Filter öffnen
+  close: Filter schließen
+  clear: Alle löschen
+  productType: Produktart
+  color: Farbe
+  size: Größe
+  brand: Marke
+pagination:
+  pageSeparator: von
+  next: Nächste
+  previous: Zurück
+displaySelector:
+  title: Artikel pro Seite
+sortSelector:
+  title: Sortierung
+  new: Neu eingetroffen
+  priceDesc: "Preis absteigend"
+  priceAsc: "Preis aufsteigend"
+ratings:
+  text5: 5 Sterne
+  text4: 4 Sterne
+  text3: 3 Sterne
+  text2: 2 Sterne
+  text1: 1 Stern
+  description5: Rocks!
+  description4: Pretty good
+  description3: Meh
+  description2: Kinda bad
+  description1: Sucks big time
+availability:
+  available: Verfügbar
+sizeGuide:
+  title: Größentabelle
+  clothing: Bekleidung
+  shoes: Schuhe
+  belt: Gürtel
+cart:
+  add: In den Warenkorb
+wishlist:
+  title: Ihre Wunschliste
+  add: Auf den Wunschzettel
+  view: Wunschliste ansehen
+  recentlyAdded: Zuletzt hinzugefügte Artikel
+suggestions:
+  title: Das könnte Ihnen auch gefallen
+reviews:
+  title: Kundenbewertungen
+  write: Erste Kundenbewertung schreiben
+description:
+  show: Mehr
+  hide: Weniger
+details:
+  title: Produktdetails
+delivery:
+  title: Versand & Retoure
+  freeReturns: Kostenlose Retoure
+  moreDeliveryInfo: Versandinformationen
+searchResult:
+  title: Suchergebnisse
+  of: für
+  searchResultsFor: Suchergenisse für
+  warning: Ihre Suche nach "" ergab leider 0 Treffer. Diese Suchergebnisse enthalten Ähnlichkeiten.
+viewMore:
+  title: Mehr anzeigen
+removeBtn:
+  title: Entfernen
+contactUs:
+  title: Kontaktieren Sie uns
