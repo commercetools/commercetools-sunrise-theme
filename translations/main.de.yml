@@ -1,128 +1,129 @@
-close: Close
-choose: Choose
+close: Schließen
+choose: Auswählen
 home: Home
-more: More
+more: Mehr
 messages:
   pleaseWait: Bitte warten...
-  viewYourBagAlert: Warenkorb anzeigen
-  addToWishlistAlert: Zur Wunschliste hinzufügen
-  requiredField: Required field
+  viewYourBagAlert: Warenkorb ansehen
+  addToWishlistAlert: Auf den Wunschzettel
+  requiredField: Pflichtfeld
 common:
   color: Farbe
   checkout: Checkout
   description: Beschreibung
-  price: Preis
-  totalPrice: Total __totalPrice__
-  quantity: Anzahl
+  price: Price
+  totalPrice: Gesamtpreis
+  quantity: Menge
   size: Größe
-  salesTax: Mehrwertsteuer
-  viewDetails: Details anzeigen
+  salesTax: MwSt.
+  viewDetails: Details ansehen
 header:
   title: Sunrise
-  stores: Stores
-  help: Help
-  callUs: Call us on __phoneNumber__
-  miniCart: Cart
-  viewBag: View Bag
+  stores: Filiale
+  help: Hilfe
+  callUs: Rufen Sie uns +49 (89) 222 435 1234
+  miniCart: Warenkorb
+  viewBag: Warenkorb ansehen
   checkout: Checkout
-  search: Search
-  signIn: Sign In
-  language: Language
-  country: Country
-  location: Location
-  allCategories: All categories
-  teaser: Summer 2015 – What inspires you?
-  new: New
+  search: Suche
+  signIn: Log In
+  signOut: Log Out
+  language: Sprache
+  country: Land
+  location: Ort
+  allCategories: Alle Kategorien
+  teaser: Sommer 2015 – Was ist Ihre Inspiration?
+  new: Neu
   sale: Sale
-  brands: Brands
+  brands: Marken
 footer:
-  paySecure: Pay securely with these payment methods
+  paySecure: Sicher zahlen
   followUs: Follow us
-  joinNewsletter: Join our newsletter
-  subscribe: Subscribe
-  yourEmail: Your email...
-  customerCare: Customer Care
-  contactUs: Contact Us
-  help: Help
-  shipping: Shipping
-  returns: Returns
-  sizeGuide: Size Guide
-  aboutUs: About Us
-  ourStory: Our Story
-  careers: Careers
+  joinNewsletter: Newsletter abonnieren
+  subscribe: Anmelden
+  yourEmail: Ihre E-Mail-Adresse...
+  customerCare: Kundenservice
+  contactUs: Kontaktieren Sie uns
+  help: Hilfe
+  shipping: Versand
+  returns: Retoure
+  sizeGuide: Größentabelle
+  aboutUs: Über uns
+  ourStory: Unsere Geschichte
+  careers: Karriere
   shortcuts: Shortcuts
-  myAccount: My Account
-  storeLocator: Store Locator
-  giftCards: Gift Cards
-  payment: Payment
+  myAccount: Mein Konto
+  storeLocator: Filiale suchen
+  giftCards: Geschenkkarten
+  payment: Zahlung
   legalInfo: © 2015 Sunrise
-  imprint: Imprint
-  privacyPolicy: Privacy policy
-  termsOfUse: Terms of use
+  imprint: Impressum
+  privacyPolicy: Datenschutz
+  termsOfUse: AGB
 form:
   addressOne: Adresse 1
   addressTwo: Adresse 2
-  apply: Senden
-  cance: Abbrechen
+  apply: Weiter
   city: Stadt
-  choose: Bitte wählen
+  cancel: Abbrechen
+  choose: Auswählen
   country: Land
-  edit: Editieren
-  email: Email
-  email.required: Bitte geben Sie Ihre E-Mail-Adresse an, damit wir Sie über den Status und Versand Ihrer Bestellung informieren können.
-  delete: Entfernen
+  edit: Bearbeiten
+  email: E-Mail-Adresse
+  emailRequired: Wir benötigen Ihre E-Mail-Adresse, um Ihnen die Bestell- und Versand-Bestätigungs-E-Mails zu senden.
+  delete: Löschen
   firstName: Vorname
-  formHasErrorsFlash: Das Formular enthält Fehler.
+  formHasErrorsFlash: Es ist ein Fehler aufgetreten
   lastName: Nachname
   month: Monat
   personTitles:
     mr: Herr
     mrs: Frau
-    ms: Fräulein
+    ms: Frau
     dr: Dr.
-  phone: Telefonnummer
-  phoneRequired: Bitte geben Sie Ihre Telefonnummer an, damit unser Lieferant Sie über den Liefertermin informieren kann.
+  phone: Telefon
+  phoneRequired: Bitte geben Sie Ihre Telefonnummer an, damit der Lieferant Sie bei der Zustellung kontaktieren kann.
   postCode: PLZ
   region: Region
   required: Pflichtfeld
-  submit: Absenden
-  title: Anrede
+  submit: Weiter
+  title: Titel
   year: Jahr
 contactForm:
-  pleaseFill: Please fill in our contact form
-  customerSupport: Our multilingual Customer Experience team is available 24/7 for any question, styling advice or placing orders.
-  callUsOn: Call us on +49 (89) 222 435 1234
-  responseTime: We aim to respond within 24 working hours.
-  message: Message
+  pleaseFill: Kontaktformular ausfüllen
+  customerSupport: Unser Kundenservice ist rund um die Uhr für Sie bei allen Fragen zur Bestellung oder Styling Beratung erreichbar.
+  callUsOn: Rufen Sie uns an +49 (89) 222 435 1234
+  responseTime: Wir bemühen uns Ihnen innerhalb von 24 Stunden zu antworten.
+  message: Nachricht
 forgotPasswordModal:
-  title: Forgotten your password
-  description: Please submit your email address to receive a password reset link
+  title: Passwort vergessen
+  description: Geben Sie Ihre Emailadresse ein und klicken Sie auf "Passwort zurücksetzen" und wir senden Ihnen einen Link, um ein neues Passwort zu setzen.
 storeFinder:
-  title: Store Finder
-  description: Please select your region or enter your postcode
-  postcode: Postcode
-  lookUp: Look Up
-  orRegion: Or Region
-  city: City
-  selectRegion: Select Region
-  selectCity: Select City
-  address: Address
-  workingHours: Working Hours
+  title: Filiale suchen
+  description: Bitte geben Sie eine Region oder PLZ ein
+  postcode: PLZ
+  lookUp: Suchen
+  orRegion: oder Region
+  city: Stadt
+  selectRegion: Region auswählen
+  selectCity: Stadt auswählen
+  address: Adresse
+  workingHours: Öffungszeit
   addressLineOne: Sunrise Street 10
   addressLineTwo: Sunrise, 10116
   addressLineThree: Sunrise
   addressLineFour: "123456789123"
   standartHours:
-    title: Standart Opening Hours
-    monFri: "Monday-Friday: 09.00 - 20.00"
-    weekend: "Weekend: 09.00 - 20.00"
+    title: Öffungszeit
+    monFri: "Montag-Freitag: 09.00 - 20.00"
+    weekend: "Samstag: 09.00 - 20.00"
   holidayHours:
-    title: Holiday Opening Hours
-    monFri: "Monday-Friday: 09.00 - 20.00"
-    weekend: "Weekend: 09.00 - 20.00"
+    title: Öffungszeit über die Feiertage
+    monFri: "Montag-Freitag: 09.00 - 20.00"
+    weekend: "Samstag: 09.00 - 20.00"
 faq:
   title: FAQS
-  delivery: Delivery
-  returns: Returns
+  delivery: Versand
+  returns: Retoure
 imprint:
-  title: Imprint
+  title: Impressum
