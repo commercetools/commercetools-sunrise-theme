@@ -1,0 +1,8 @@
+searchNotFound:
+  title: Suchergebnisse
+  notFound: Nicht gefunden
+  keyword: Null
+  description: Es gab leider keine Treffer für Ihre Suche nach "xxxxx". Prüfe die Schreibweise oder suche nach einem Synonym.
+popularSearchPhrases:
+  title: Häufig gesuchte Wörter
+  suggestionsTitle: Beliebte Artikel
