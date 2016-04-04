@@ -12,7 +12,7 @@ common:
   checkout: Checkout
   description: Beschreibung
   price: Price
-  totalPrice: Gesamtpreis
+  totalPrice: Gesamtpreis __totalPrice__
   quantity: Menge
   size: Größe
   salesTax: MwSt.
@@ -21,7 +21,7 @@ header:
   title: Sunrise
   stores: Filiale
   help: Hilfe
-  callUs: Rufen Sie uns +49 (89) 222 435 1234
+  callUs: Rufen Sie uns auf __phoneNumber__ an
   miniCart: Warenkorb
   viewBag: Warenkorb ansehen
   checkout: Checkout
