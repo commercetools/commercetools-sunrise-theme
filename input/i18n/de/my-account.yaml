@@ -1,0 +1,23 @@
+myAccount:
+  title: Mein Konto
+myAccountSidebar:
+  personalDetails: Meine Benutzerdaten
+  addressBook: Adressbuch
+  paymentDetails: Meine Zahlungdaten
+  myOrders: Meine Bestellungen
+  returnsExchange: Meine Retouren
+  wishlist: Wunschliste
+  signOut: Abmelden
+personalDetails:
+  shopAllBtn: Alles bestellen
+  updateBtn: Details aktualisieren
+  cancelBtn: Abbrechen
+  bannerOne:
+    title: Dein Sunrise
+    subtitle: Urlaub in der Sonne
+  bannerTwo:
+    title: Sunrise Shop 
+    subtitle: Neue Saison, neuer Style
+  welcomeBack: Willkommen zurück
+  welcomeDescription: Für einen besseren Kundenservice geben Sie bitte Ihre Kundennummer an.
+  personalDetailsTitle: Ihre Benutzerdaten
