@@ -12,7 +12,7 @@ module.exports = {
     keepOriginalFiles: false
   },
 
-  images: {
+  dist: {
     files: [
       {
         expand: true,
@@ -20,19 +20,7 @@ module.exports = {
         src: [
           "img/**/*",
           "!img/cms/**/*",
-          "!img/favicon.ico"
-        ],
-        dest: "output/assets"
-      }
-    ]
-  },
-
-  assets: {
-    files: [
-      {
-        expand: true,
-        cwd: "output/assets",
-        src: [
+          "!img/favicon.ico",
           "fonts/**/*",
           "js/**/*.js"
         ],

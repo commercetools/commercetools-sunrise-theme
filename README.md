@@ -77,12 +77,13 @@ Build the site for your theme and access the HTML files to see how it looks like
 
 - `grunt build-templates` to build only i18n and HBS files, besides generating the HTML files from the Handlebars templates and the JSON data
 
+- `grunt build-release` behaves exactly as `build`, but additionally it fingerprints all web assets
+
 Building the generated site also performs these tasks:
 - Compiles [Sass](http://sass-lang.com/) to CSS files
 - Minifies CSS and JS files
 - Adds vendor-prefixed CSS properties with [Autoprefixer](https://github.com/postcss/autoprefixer)
 - Compresses any PNG, JPG, GIF and SVG image file with [Imagemin](https://github.com/imagemin/imagemin)
-- Fingerprints all web assets
 
 #### Create WebJars File
 
