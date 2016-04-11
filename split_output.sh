@@ -8,7 +8,7 @@ if [ "$TRAVIS_REPO_SLUG" == "sphereio/commercetools-sunrise-theme" ] && [ "$TRAV
     git config --global user.email "automation@commercetools.de"
     git config --global user.name "Travis CI"
 
-    grunt release-composer
+    grunt build-composer
 
     OUT=$(mktemp -d ${HOME}/output.XXXXXXXXXX)
     REPO=$(mktemp -d ${HOME}/theme.XXXXXXXXXX)

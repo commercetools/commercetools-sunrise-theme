@@ -23,7 +23,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build-templates', ['clean:templates', 'internal-build-templates']);
   grunt.registerTask('build-release', ['build', 'assetFingerprint']);
 
-  grunt.registerTask('release-composer', ['build-release', 'copy:composer', 'clean']);
+  grunt.registerTask('build-composer', ['build-release', 'copy:composer']);
   
   grunt.registerTask('build-webjar', ['build-release', 'maven:webjars', 'clean']);
   grunt.registerTask('install-webjar', ['build-release', 'maven:install', 'clean']);
