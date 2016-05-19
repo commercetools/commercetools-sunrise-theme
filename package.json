@@ -4,13 +4,13 @@
   "description": "Theme for commercetools Sunrise online shop",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sphereio/commercetools-sunrise-theme.git"
+    "url": "git://github.com/commercetools/commercetools-sunrise-theme.git"
   },
   "config": {
     "github": {
       "username": "automation-commercetools",
       "email": "automation@commercetools.de",
-      "repoSlug": "sphereio/commercetools-sunrise-theme"
+      "repoSlug": "commercetools/commercetools-sunrise-theme"
     },
     "maven": {
       "groupId": "io.commercetools.sunrise",
@@ -19,9 +19,9 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/sphereio/commercetools-sunrise-theme/issues"
+    "url": "https://github.com/commercetools/commercetools-sunrise-theme/issues"
   },
-  "homepage": "https://github.com/sphereio/commercetools-sunrise-theme#readme",
+  "homepage": "https://github.com/commercetools/commercetools-sunrise-theme#readme",
   "keywords": [
     "Sunrise",
     "commercetools",

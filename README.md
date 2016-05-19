@@ -1,37 +1,37 @@
 # Commercetools Sunrise Theme
 
-[![Build Status](https://travis-ci.org/sphereio/commercetools-sunrise-theme.png?branch=master)](https://travis-ci.org/sphereio/commercetools-sunrise-theme) [![Stories in Ready](https://badge.waffle.io/sphereio/commercetools-sunrise-theme.png?label=ready&title=Ready)](https://waffle.io/sphereio/commercetools-sunrise-theme) [ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-theme/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-theme/_latestVersion)
+[![Build Status](https://travis-ci.org/commercetools/commercetools-sunrise-theme.png?branch=master)](https://travis-ci.org/commercetools/commercetools-sunrise-theme) [![Stories in Ready](https://badge.waffle.io/commercetools/commercetools-sunrise-theme.png?label=ready&title=Ready)](https://waffle.io/commercetools/commercetools-sunrise-theme) [ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-theme/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-theme/_latestVersion)
 
 ##Demo
-- [Home](http://sphereio.github.io/commercetools-sunrise-theme/site/en/home.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/home.html) )
-- [Product Overview](http://sphereio.github.io/commercetools-sunrise-theme/site/en/pop.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/pop.html) )
-- [Product Detail](http://sphereio.github.io/commercetools-sunrise-theme/site/en/pdp.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/pdp.html) )
-- [Cart Detail](http://sphereio.github.io/commercetools-sunrise-theme/site/en/cart.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/cart.html) )
-- [Checkout Sign In (1/6)](http://sphereio.github.io/commercetools-sunrise-theme/site/en/checkout-signin.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/checkout-signin.html) )
-- [Checkout Shipping Address (2/6)](http://sphereio.github.io/commercetools-sunrise-theme/site/en/checkout-address.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/checkout-address.html) )
-- [Checkout Shipping Method (3/6)](http://sphereio.github.io/commercetools-sunrise-theme/site/en/checkout-shipping.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/checkout-shipping.html) )
-- [Checkout Payment (4/6)](http://sphereio.github.io/commercetools-sunrise-theme/site/en/checkout-payment.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/checkout-payment.html) )
-- [Checkout Confirmation (5/6)](http://sphereio.github.io/commercetools-sunrise-theme/site/en/checkout-confirmation.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/checkout-confirmation.html) )
-- [Checkout Thank You (6/6)](http://sphereio.github.io/commercetools-sunrise-theme/site/en/checkout-thankyou.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/checkout-thankyou.html) )
-- [My Account: Personal Details](http://sphereio.github.io/commercetools-sunrise-theme/site/en/my-account-personal-details.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/my-account-personal-details.html) )
-- [My Account: Address Book](http://sphereio.github.io/commercetools-sunrise-theme/site/en/my-account-address-book.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/my-account-address-book.html) )
-- [My Account: Payment Details](http://sphereio.github.io/commercetools-sunrise-theme/site/en/my-account-payment-details.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/my-account-payment-details.html) )
-- [My Account: My Orders](http://sphereio.github.io/commercetools-sunrise-theme/site/en/my-account-my-orders.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/my-account-my-orders.html) )
-- [My Account: My Orders - Single Order](http://sphereio.github.io/commercetools-sunrise-theme/site/en/my-account-my-orders-order.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/my-account-my-orders-order.html) )
-- [My Account: Returns / Exchange](http://sphereio.github.io/commercetools-sunrise-theme/site/en/my-account-returns-exchange.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/my-account-returns-exchange.html) )
-- [My Account: Returns / Exchange - Single Return](http://sphereio.github.io/commercetools-sunrise-theme/site/en/my-account-returns-exchange-order.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/my-account-returns-exchange-order.html) )
-- [My Account: Wishlist](http://sphereio.github.io/commercetools-sunrise-theme/site/en/my-account-wishlist.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/my-account-wishlist.html) )
-- [My Account: Login](http://sphereio.github.io/commercetools-sunrise-theme/site/en/my-account-login.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/my-account-login.html) )
-- [Confirmation Email](http://sphereio.github.io/commercetools-sunrise-theme/site/en/confirmation-email.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/confirmation-email.html) )
-- [Dispatch Email](http://sphereio.github.io/commercetools-sunrise-theme/site/en/dispatch-email.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/dispatch-email.html) )
-- [Registration Email](http://sphereio.github.io/commercetools-sunrise-theme/site/en/registration-email.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/registration-email.html) )
-- [Password Reset Email](http://sphereio.github.io/commercetools-sunrise-theme/site/en/password-reset-email.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/password-reset-email.html) )
-- [No Search Result](http://sphereio.github.io/commercetools-sunrise-theme/site/en/no-search-result.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/no-search-result.html) )
-- [Mix & Match](http://sphereio.github.io/commercetools-sunrise-theme/site/en/mix-match.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/mix-match.html) )
-- [Contact Form](http://sphereio.github.io/commercetools-sunrise-theme/site/en/contact-form.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/contact-form.html) )
-- [Store Finder](http://sphereio.github.io/commercetools-sunrise-theme/site/en/store-finder.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/store-finder.html) )
-- [FAQ Page](http://sphereio.github.io/commercetools-sunrise-theme/site/en/faq.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/faq.html) )
-- [Imprint Page](http://sphereio.github.io/commercetools-sunrise-theme/site/en/imprint.html) ( [DE](http://sphereio.github.io/commercetools-sunrise-theme/site/de/imprint.html) )
+- [Home](http://commercetools.github.io/commercetools-sunrise-theme/site/en/home.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/home.html) )
+- [Product Overview](http://commercetools.github.io/commercetools-sunrise-theme/site/en/pop.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/pop.html) )
+- [Product Detail](http://commercetools.github.io/commercetools-sunrise-theme/site/en/pdp.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/pdp.html) )
+- [Cart Detail](http://commercetools.github.io/commercetools-sunrise-theme/site/en/cart.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/cart.html) )
+- [Checkout Sign In (1/6)](http://commercetools.github.io/commercetools-sunrise-theme/site/en/checkout-signin.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/checkout-signin.html) )
+- [Checkout Shipping Address (2/6)](http://commercetools.github.io/commercetools-sunrise-theme/site/en/checkout-address.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/checkout-address.html) )
+- [Checkout Shipping Method (3/6)](http://commercetools.github.io/commercetools-sunrise-theme/site/en/checkout-shipping.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/checkout-shipping.html) )
+- [Checkout Payment (4/6)](http://commercetools.github.io/commercetools-sunrise-theme/site/en/checkout-payment.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/checkout-payment.html) )
+- [Checkout Confirmation (5/6)](http://commercetools.github.io/commercetools-sunrise-theme/site/en/checkout-confirmation.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/checkout-confirmation.html) )
+- [Checkout Thank You (6/6)](http://commercetools.github.io/commercetools-sunrise-theme/site/en/checkout-thankyou.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/checkout-thankyou.html) )
+- [My Account: Personal Details](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-personal-details.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-personal-details.html) )
+- [My Account: Address Book](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-address-book.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-address-book.html) )
+- [My Account: Payment Details](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-payment-details.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-payment-details.html) )
+- [My Account: My Orders](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-my-orders.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-my-orders.html) )
+- [My Account: My Orders - Single Order](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-my-orders-order.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-my-orders-order.html) )
+- [My Account: Returns / Exchange](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-returns-exchange.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-returns-exchange.html) )
+- [My Account: Returns / Exchange - Single Return](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-returns-exchange-order.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-returns-exchange-order.html) )
+- [My Account: Wishlist](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-wishlist.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-wishlist.html) )
+- [My Account: Login](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-login.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-login.html) )
+- [Confirmation Email](http://commercetools.github.io/commercetools-sunrise-theme/site/en/confirmation-email.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/confirmation-email.html) )
+- [Dispatch Email](http://commercetools.github.io/commercetools-sunrise-theme/site/en/dispatch-email.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/dispatch-email.html) )
+- [Registration Email](http://commercetools.github.io/commercetools-sunrise-theme/site/en/registration-email.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/registration-email.html) )
+- [Password Reset Email](http://commercetools.github.io/commercetools-sunrise-theme/site/en/password-reset-email.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/password-reset-email.html) )
+- [No Search Result](http://commercetools.github.io/commercetools-sunrise-theme/site/en/no-search-result.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/no-search-result.html) )
+- [Mix & Match](http://commercetools.github.io/commercetools-sunrise-theme/site/en/mix-match.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/mix-match.html) )
+- [Contact Form](http://commercetools.github.io/commercetools-sunrise-theme/site/en/contact-form.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/contact-form.html) )
+- [Store Finder](http://commercetools.github.io/commercetools-sunrise-theme/site/en/store-finder.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/store-finder.html) )
+- [FAQ Page](http://commercetools.github.io/commercetools-sunrise-theme/site/en/faq.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/faq.html) )
+- [Imprint Page](http://commercetools.github.io/commercetools-sunrise-theme/site/en/imprint.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/imprint.html) )
 
 ##Installation
 
@@ -67,7 +67,7 @@ Notice you can always add `--verbose` and/or `--debug` to any command in order t
 
 #### Generate HTML Site
 
-Build the site for your theme and access the HTML files to see how it looks like. 
+Build the site for your theme and access the HTML files to see how it looks like.
 
 - `grunt build` to build the whole generated site
 
