@@ -2,13 +2,13 @@
     "list" : [
         {
             "label" : "Credit Card",
-            "image" : "img/payment-option-card-911d1826fde4546025462fc13875e2a0.gif",
+            "image" : "img/payment-option-card-3c4d2aca302c5ed9cccac9d5befb0399.gif",
             "value" : "credit-card",
             "selected" : false
         },
         {
             "label" : "PayPal",
-            "image" : "img/payment-option-paypal-d00850532a79141d525c9914bd43cf98.png",
+            "image" : "img/payment-option-paypal-7b1309a85889f621767f2e05f511937b.png",
             "value" : "paypal",
             "selected" : false
         },
