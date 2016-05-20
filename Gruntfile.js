@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build-composer', ['build-release', 'copy:composer']);
   
-  grunt.registerTask('build-webjar', ['build-release', 'maven:webjars', 'clean']);
+  grunt.registerTask('build-webjar', ['build-release', 'maven:webjars']);
   grunt.registerTask('install-webjar', ['build-release', 'maven:install', 'clean']);
   grunt.registerTask('release-webjar', ['build-release', 'maven:release', 'clean']);
 
