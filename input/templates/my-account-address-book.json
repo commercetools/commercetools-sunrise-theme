@@ -22,8 +22,8 @@
 			"country" : "Country",
 			"edit" : "Edit"
 		},
-		"secondaryAddressTitle" : "Secondary Address",
-		"secondaryAddress" : {
+		"additionalAddressTitle" : "Additional Addresses",
+		"additionalAddress" : {
 			"name" : "Bruce Wayne",
 			"address" : "100 Gotham Street",
 			"region" : "Gotham",
@@ -32,8 +32,7 @@
 			"edit" : "Edit",
 			"delete" : "Delete"
 		},
-		"additionalAddressTitle" : "Additional Address",
-		"additionalAddress" : {
+		"secondaryAddress" : {
 			"name" : "Bruce Wayne",
 			"address" : "100 Gotham Street",
 			"region" : "Gotham",
