@@ -12,9 +12,7 @@
 			"postalCode" : "11111",
 			"country" : "Country",
 			"edit" : "Edit"
-		},
-		"saveAddressBtn" : "Save changes",
-		"cancelAddressBtn" : "Cancel editing"
+		}
 	},
     "meta" : { "$ref" : "common/meta.json" }
 }
