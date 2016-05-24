@@ -21,3 +21,9 @@ personalDetails:
   welcomeBack: Welcome back
   welcomeDescription: for an even better customer service please provide your customer number
   personalDetailsTitle: Your Personal Details
+shippingAddress:
+  sameBillingAddressCheckboxLabel: Use as same address for billing
+  sameDeliveryAddressCheckboxLabel: Use as same address for delivery
+buttons:
+  saveAddressBtn: Save changes
+  cancelAddressBtn: Cancel editing
