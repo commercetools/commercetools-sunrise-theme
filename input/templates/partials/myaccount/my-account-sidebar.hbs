@@ -20,6 +20,9 @@
     </a>
   </div>
   <div {{#if positionSeven}}id="my-account-mobile-content"{{/if}}class="my-account-sidebar-items {{#if positionSeven}}active{{/if}}">
+    <a href="{{content.sidebarItemSeven.url}}">{{i18n "my-account:myAccountSidebar.changePassword"}}</a>
+  </div>
+  <div {{#if positionEight}}id="my-account-mobile-content"{{/if}}class="my-account-sidebar-items {{#if positionEight}}active{{/if}}">
     <a href="{{content.sidebarItemSeven.url}}">{{i18n "my-account:myAccountSidebar.signOut"}}</a>
   </div>
 </div>

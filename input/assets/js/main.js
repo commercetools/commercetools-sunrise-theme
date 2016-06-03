@@ -238,14 +238,14 @@ $(function() {
 $(function() {
   var showChar = 300; // How many characters are shown by default
   var ellipsestext = "...";
-  
+
   $('.more').each(function() {
     var description = $(this),
         moretext = description.data("text-show"),
         content = description.html();
     if (content.length > showChar) {
       var displayed = content.substr(0, showChar),
-          hidden = content.substr(showChar, content.length - showChar); 
+          hidden = content.substr(showChar, content.length - showChar);
       var html = displayed + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + hidden + '</span>&nbsp;&nbsp;<a href="#" class="morelink">' + moretext + '</a></span>';
       description.html(html);
     }
@@ -498,3 +498,18 @@ $(function() {
     $("#my-account-desktop-content").insertAfter("#my-account-mobile-content");
   }
 });
+
+/*
+My Account: Change password
+*/
+
+$('.password-feedback-wrapper').hide();
+$('.password-change-btn').click(function() {
+  $('.change-password-wrapper').hide();
+  $('.password-feedback-wrapper').fadeIn();
+})
+
+$('.password-back-btn').click(function() {
+  $('.password-feedback-wrapper').hide();
+  $('.change-password-wrapper').fadeIn();
+})
