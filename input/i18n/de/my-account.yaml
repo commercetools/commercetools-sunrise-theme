@@ -21,9 +21,19 @@ personalDetails:
   welcomeBack: Willkommen zurück
   welcomeDescription: Für einen besseren Kundenservice geben Sie bitte Ihre Kundennummer an.
   personalDetailsTitle: Ihre Benutzerdaten
-shippingAddress:
-  sameBillingAddressCheckboxLabel: Als meine Rechnungadresse verwenden
-  sameDeliveryAddressCheckboxLabel: Als meine Lieferadresse verwenden
+addressBook:
+  useAsDefaultBillingAddressCheckboxLabel: Als meine Rechnungadresse verwenden
+  useAsDefaultShippingAddressCheckboxLabel: Als meine Lieferadresse verwenden
+  contentTitle : Addressbuch
+  defaultAddressesTitle : Standard-Adressen
+  additionalAddressTitle: Weitere Adressen
+  addNewAddressBtn : Neue Adresse hinzufügen
+  editBtn: Bearbeiten
+  deleteBtn: Löschen
+  billingAddressTitle: Rechnungsadresse
+  shippingAddressTitle: Lieferadresse
+  normalAddressTitle: Addresse
+
 buttons:
   saveAddressBtn: Änderungen speichern
   cancelAddressBtn: Abbrechen
