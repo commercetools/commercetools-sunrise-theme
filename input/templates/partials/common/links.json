@@ -43,5 +43,6 @@
     "editPaymentInfo": { "href": "checkout-payment.html" },
     "checkoutPaymentSubmit": { "href": "checkout-confirmation.html" },
     "editShippingMethod": { "href": "checkout-shipping.html#shipping-methods-setting" },
-    "continueShopping": { "href": "pop.html" }
+    "continueShopping": { "href": "pop.html" },
+    "changePassword": { "href": "my-account-change-password.html" }
 }

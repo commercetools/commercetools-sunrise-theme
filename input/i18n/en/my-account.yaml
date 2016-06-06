@@ -40,6 +40,10 @@ addressBook:
 buttons:
   saveAddressBtn: Save changes
   cancelAddressBtn: Cancel editing
+  edit: Edit
+  delete: Delete
+  addNewAddress: Add New Address
+
 changePassword:
   labelTxt: Password
   confirmLabelTxt: Confirm password
@@ -47,6 +51,3 @@ changePassword:
   changeBtn: Change password
   backBtn: Back
   feedbackMessage: Password changed successfully.
-  edit: Edit
-  delete: Delete
-  addNewAddress: Add New Address
