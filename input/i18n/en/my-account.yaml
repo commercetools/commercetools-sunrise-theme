@@ -22,9 +22,21 @@ personalDetails:
   welcomeBack: Welcome back
   welcomeDescription: for an even better customer service please provide your customer number
   personalDetailsTitle: Your Personal Details
-shippingAddress:
-  sameBillingAddressCheckboxLabel: Use as same address for billing
-  sameDeliveryAddressCheckboxLabel: Use as same address for delivery
+addressBook:
+  title : Address Book
+  normalAddress:
+    title: Address
+  defaultAddresses:
+    title: Default Addresses
+  additionalAddress:
+    title: Additional addresses
+  billingAddress:
+    title: Billing Address
+    label: Use as default address for billing
+  shippingAddress:
+    title: Shipping Address
+    label: Use as default address for shipping
+
 buttons:
   saveAddressBtn: Save changes
   cancelAddressBtn: Cancel editing
@@ -35,3 +47,6 @@ changePassword:
   changeBtn: Change password
   backBtn: Back
   feedbackMessage: Password changed successfully.
+  edit: Edit
+  delete: Delete
+  addNewAddress: Add New Address

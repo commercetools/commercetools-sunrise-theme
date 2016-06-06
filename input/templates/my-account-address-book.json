@@ -2,46 +2,34 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"contentTitle" : "Address Book",
-		"defaultAddressesTitle" : "Default Addresses",
 		"shippingAddress" : {
-			"title" : "Shipping Address",
 			"name" : "Bruce Wayne",
 			"address" : "100 Gotham Street",
 			"region" : "Gotham",
 			"postalCode" : "11111",
-			"country" : "Country",
-			"edit" : "Edit"
+			"country" : "Country"
 		},
 		"billingAddress" : {
-			"title" : "Billing Address",
 			"name" : "Bruce Wayne",
 			"address" : "100 Gotham Street",
 			"region" : "Gotham",
 			"postalCode" : "11111",
-			"country" : "Country",
-			"edit" : "Edit"
+			"country" : "Country"
 		},
-		"additionalAddressTitle" : "Additional Addresses",
 		"additionalAddress" : {
 			"name" : "Bruce Wayne",
 			"address" : "100 Gotham Street",
 			"region" : "Gotham",
 			"postalCode" : "11111",
-			"country" : "Country",
-			"edit" : "Edit",
-			"delete" : "Delete"
+			"country" : "Country"
 		},
 		"secondaryAddress" : {
 			"name" : "Bruce Wayne",
 			"address" : "100 Gotham Street",
 			"region" : "Gotham",
 			"postalCode" : "11111",
-			"country" : "Country",
-			"edit" : "Edit",
-			"delete" : "Delete"
-		},
-		"addNewAddressBtn" : "Add New Address"
+			"country" : "Country"
+		}
 	},
     "meta" : { "$ref" : "common/meta.json" }
 }

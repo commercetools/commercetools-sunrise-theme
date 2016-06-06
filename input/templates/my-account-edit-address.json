@@ -2,16 +2,13 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"contentTitle" : "Address Book",
-		"defaultAddressesTitle" : "Default Addresses",
 		"shippingAddress" : {
 			"title" : "Shipping Address",
 			"name" : "Bruce Wayne",
 			"address" : "100 Gotham Street",
 			"region" : "Gotham",
 			"postalCode" : "11111",
-			"country" : "Country",
-			"edit" : "Edit"
+			"country" : "Country"
 		}
 	},
     "meta" : { "$ref" : "common/meta.json" }
