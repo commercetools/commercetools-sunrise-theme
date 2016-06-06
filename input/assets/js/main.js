@@ -492,24 +492,35 @@ $('.personal-details-edit-toggle').click(function() {
   $('.personal-details-edit-wrapper').show();
 })
 
+// Initializes editable data
+function openForm(formClassName) {
+    $("." + formClassName + "-hide").hide();
+    $("." + formClassName + "-show").fadeIn();
+}
+
+function closeForm(formClassName) {
+    $("." + formClassName + "-hide").fadeIn();
+    $("." + formClassName + "-show").hide();
+}
+
+function initializeEditableData(formClassName) {
+   var formWrapper = $(formClassName);
+   if (formWrapper.hasClass("in")) {
+      console.log('has class IN');
+      openForm(formClassName);
+   } else {
+     console.log('CLOSES');
+      closeForm(formClassName);
+   }
+   $("." + formClassName + "-show-btn").click(function(){ console.log('SHOWS BTN CLICKED'); openForm(formClassName); });
+   $("." + formClassName + "-hide-btn").click(function(){ console.log('HIDE BTN CLICKED'); closeForm(formClassName); });
+}
+
+initializeEditableData("personal-details-edit");
+
 // Move desktop content to sidebar for mobile
 $(function() {
   if($(window).width() < 767) {
     $("#my-account-desktop-content").insertAfter("#my-account-mobile-content");
   }
 });
-
-/*
-My Account: Change password
-*/
-
-$('.password-feedback-wrapper').hide();
-$('.password-change-btn').click(function() {
-  $('.change-password-wrapper').hide();
-  $('.password-feedback-wrapper').fadeIn();
-})
-
-$('.password-back-btn').click(function() {
-  $('.password-feedback-wrapper').hide();
-  $('.change-password-wrapper').fadeIn();
-})

@@ -30,7 +30,7 @@
                     {{i18n "my-account:personalDetails.welcomeDescription"}}<br>
                     <span class="customer-number">{{content.customerNumber}}</span>
                   </div>
-                  <div class="personal-details-landing-wrapper">
+                  <div class="personal-details-landing-wrapper personal-details-edit-hide">
                     <div class="personal-details-title">
                       {{i18n "my-account:personalDetails.personalDetailsTitle"}}
                     </div>
@@ -40,16 +40,18 @@
                       <div>{{content.personalDetails.email}}</div><br>
                       <div>{{content.personalDetails.subscribed}}</div>
                       <div class="personal-details-box-edit">
-                        <button class="personal-details-edit-toggle"><img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">{{i18n "main:form.edit"}}</button>
+                        <button class="personal-details-edit-show-btn"><img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">{{i18n "main:form.edit"}}</button>
                       </div>
                     </div>
                   </div>
-                  <div class="personal-details-edit-wrapper">
-                    <div class="personal-details-title">
-                      <span>{{i18n "my-account:personalDetails.personalDetailsTitle"}}</span>
-                      <span class="pull-right required-text">{{i18n "main:form.required"}}*</span>
-                    </div>
-                    <form action="">
+                  <div class="personal-details-edit personal-details-edit-show in">
+                    <form id="form-personal-details" action="{{@root.meta._links.personalDetails.href}}" method="POST">
+                     <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
+                     <input type="hidden" name="id" value="{{content.address.id}}"/>
+                      <div class="personal-details-title">
+                        <span>{{i18n "my-account:personalDetails.personalDetailsTitle"}}</span>
+                        <span class="pull-right required-text">{{i18n "main:form.required"}}*</span>
+                      </div>
                       <div class="row">
                         <div class="col-sm-12">
                           <div class="form-sections">
@@ -86,19 +88,19 @@
                           </div>
                         </div>
                       </div>
+                      <hr class="light-grey-hr">
+                      <div class="personal-details-newsletter">
+                        <span>
+                          <input type="checkbox">{{content.addMeTo}} <a href="">{{content.newsletter}}</a>
+                        </span>
+                      </div>
+                      <div class="personal-details-edit-btn">
+                        <span>
+                          <button type="submit" class="update-btn">{{i18n "my-account:personalDetails.updateBtn"}}</button>
+                          <button class="cancel-btn personal-details-edit-hide-btn">{{i18n "my-account:personalDetails.cancelBtn"}}</button>
+                        </span>
+                      </div>
                     </form>
-                    <hr class="light-grey-hr">
-                    <div class="personal-details-newsletter">
-                      <span>
-                        <input type="checkbox">{{content.addMeTo}} <a href="">{{content.newsletter}}</a>
-                      </span>
-                    </div>
-                    <div class="personal-details-edit-btn">
-                      <span>
-                        <button class="update-btn">{{i18n "my-account:personalDetails.updateBtn"}}</button>
-                        <button class="cancel-btn">{{i18n "my-account:personalDetails.cancelBtn"}}</button>
-                      </span>
-                    </div>
                   </div>
                 </div>
               </div>
