@@ -22,18 +22,23 @@ personalDetails:
   welcomeDescription: Für einen besseren Kundenservice geben Sie bitte Ihre Kundennummer an.
   personalDetailsTitle: Ihre Benutzerdaten
 addressBook:
-  useAsDefaultBillingAddressCheckboxLabel: Als meine Rechnungadresse verwenden
-  useAsDefaultShippingAddressCheckboxLabel: Als meine Lieferadresse verwenden
-  contentTitle : Addressbuch
-  defaultAddressesTitle : Standard-Adressen
-  additionalAddressTitle: Weitere Adressen
-  addNewAddressBtn : Neue Adresse hinzufügen
-  editBtn: Bearbeiten
-  deleteBtn: Löschen
-  billingAddressTitle: Rechnungsadresse
-  shippingAddressTitle: Lieferadresse
-  normalAddressTitle: Addresse
+  title : Addressbuch
+  normalAddress:
+    title: Addresse
+  defaultAddresses:
+    title: Standard-Adressen
+  additionalAddress:
+    title: Weitere Adressen
+  billingAddress:
+    title: Rechnungsadresse
+    label: Als meine Rechnungadresse verwenden
+  shippingAddress:
+    title: Lieferadresse
+    label: Als meine Lieferadresse verwenden
 
 buttons:
   saveAddressBtn: Änderungen speichern
   cancelAddressBtn: Abbrechen
+  edit: Bearbeiten
+  delete: Löschen
+  addNewAddress: Neue Adresse hinzufügen

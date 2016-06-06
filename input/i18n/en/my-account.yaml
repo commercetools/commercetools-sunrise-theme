@@ -22,18 +22,23 @@ personalDetails:
   welcomeDescription: for an even better customer service please provide your customer number
   personalDetailsTitle: Your Personal Details
 addressBook:
-  useAsDefaultBillingAddressCheckboxLabel: Use as default address for billing
-  useAsDefaultShippingAddressCheckboxLabel: Use as default address for shipping
-  contentTitle : Address Book
-  defaultAddressesTitle : Default Addresses
-  additionalAddressTitle: Additional addresses
-  addNewAddressBtn : Add New Address
-  editBtn: Edit
-  deleteBtn: Delete
-  billingAddressTitle: Billing Address
-  shippingAddressTitle: Shipping Address
-  normalAddressTitle: Address
+  title : Address Book
+  normalAddress:
+    title: Address
+  defaultAddresses:
+    title: Default Addresses
+  additionalAddress:
+    title: Additional addresses
+  billingAddress:
+    title: Billing Address
+    label: Use as default address for billing
+  shippingAddress:
+    title: Shipping Address
+    label: Use as default address for shipping
 
 buttons:
   saveAddressBtn: Save changes
   cancelAddressBtn: Cancel editing
+  edit: Edit
+  delete: Delete
+  addNewAddress: Add New Address
