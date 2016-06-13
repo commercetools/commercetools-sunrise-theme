@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$TRAVIS_REPO_SLUG" == "sphereio/commercetools-sunrise-theme" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ] ; then
+if [ "$TRAVIS_REPO_SLUG" == "commercetools/commercetools-sunrise-theme" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ] ; then
 
     export SPLIT_REPO=https://${GH_TOKEN}@github.com/jayS-de/sunrise-theme
     export LAST_LOG_ENTRY=`git log --pretty=format:%B -1`
