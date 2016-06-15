@@ -5,13 +5,13 @@
 <div>{{address.postalCode}}</div>
 <div>{{address.country}}</div>
 <div class="address-book-edit-delete">
-  <a href="{{addressEditUrl}}">
+  <a href="{{address.editUrl}}">
     <img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">
     {{i18n "my-account:buttons.edit"}}
   </a>
 </div>
 <div>
-  <a href="{{addressDeleteUrl}}">
+  <a href="{{address.deleteUrl}}">
     <img src="{{meta.assetsPath}}/img/delete-60px.png" alt="delete icon">
     {{i18n "my-account:buttons.delete"}}
   </a>
