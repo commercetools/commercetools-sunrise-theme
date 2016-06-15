@@ -1,0 +1,18 @@
+<div>{{address.title}} {{address.firstName}} {{address.lastName}}</div>
+<div>{{address.streetName}}</div>
+<div>{{address.additionalStreetInfo}}</div>
+<div>{{address.region}}</div>
+<div>{{address.postalCode}}</div>
+<div>{{address.country}}</div>
+<div class="address-book-edit-delete">
+  <a href="{{addressEditUrl}}">
+    <img src="{{meta.assetsPath}}/img/edit-1.png" alt="edit icon">
+    {{i18n "my-account:buttons.edit"}}
+  </a>
+</div>
+<div>
+  <a href="{{addressDeleteUrl}}">
+    <img src="{{meta.assetsPath}}/img/delete-60px.png" alt="delete icon">
+    {{i18n "my-account:buttons.delete"}}
+  </a>
+</div>
