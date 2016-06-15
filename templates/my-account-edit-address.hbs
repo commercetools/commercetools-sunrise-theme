@@ -1,0 +1,68 @@
+<!-- start my-account-edit-address.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> common/htmlhead}}
+</head>
+
+<body>
+  <div class="darkbg hidden"></div>
+  {{> common/header}}
+  <div class="address-book">
+    <div class="container">
+      <div class="my-account-title">
+        <span class="my-account-title-text icon-user">{{i18n "my-account:myAccount.title"}}</span>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="address-book-wrapper">
+            <div class="row">
+              <div class="col-sm-3">
+                {{> myaccount/my-account-sidebar positionTwo=true}}
+              </div>
+              <div id="my-account-desktop-content" class="col-sm-9">
+                <div class="address-book-content edit-address-book-content">
+                  <form id="form-edit-my-address-book" action="{{@root.meta._links.editMyAddressBook.href}}" method="POST">
+                    <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
+                    <input type="hidden" name="id" value="{{content.address.id}}"/>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="address-book-title hidden-xs">
+                          {{i18n "my-account:addressBook.title"}} > {{i18n "my-account:addressBook.normalAddress.title"}} > {{i18n "my-account:buttons.edit"}}
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        {{> myaccount/edit-address-form-elements form=addressForm.billingAddress suffix="Billing"}}
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="edit-address-book-footer">
+                          <div class="btn-grey push-left">
+                            <a href="{{@root.meta._links.myAddressBook.href}}">{{i18n "my-account:buttons.cancelAddressBtn"}}</button>
+                          </div>
+                          <div class="add-new-address-btn push-right">
+                            <button type="submit">{{i18n "my-account:buttons.saveAddressBtn"}}</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- {{> common/wishlist}} --}}
+  {{> common/footer}}
+  {{> common/htmlscripts}}
+</body>
+
+</html>
+<!-- end my-account-edit-address.hbs -->

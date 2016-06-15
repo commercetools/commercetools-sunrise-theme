@@ -1787,6 +1787,12 @@
       "checkout": {
         "href": "checkout-shipping.html"
       },
+      "myAddressBook": {
+        "href": "my-account-address-book.html"
+      },
+      "editMyAddressBook": {
+        "href": "my-account-edit-address.html"
+      },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"
       },

@@ -1,0 +1,50 @@
+<!-- start myaccount/edit-address-form-elements.hbs -->
+<div class="row">
+  <div class="col-sm-4">
+    <div class="title">
+      <span class="text-uppercase">{{i18n "main:form.title"}}</span><br>
+      <select id="shipping-title-select" class="checkout-dropdown" name="title{{suffix}}">
+        <option value="" selected>{{i18n "main:form.choose"}}</option>
+        {{#each form.salutations.list}}
+        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+</div>
+<div class="row">
+  {{> form/input-text columnWidth=6 name="firstName" labelKey="form.firstName" required=true value=form.firstName}}
+  {{> form/input-text columnWidth=6 name="lastName" labelKey="form.lastName" required=true value=form.lastName}}
+  {{> form/input-text columnWidth=12 name="streetName" labelKey="form.addressOne" required=true value=form.streetName}}
+  {{> form/input-text columnWidth=12 name="additionalStreetInfo" labelKey="form.addressTwo" required=false value=form.additionalStreetInfo}}
+  {{> form/input-text columnWidth=8 name="city" labelKey="form.city" required=true value=form.city}}
+  {{> form/input-text columnWidth=4 name="postalCode" labelKey="form.postCode" required=true value=form.postalCode}}
+  <div class="col-sm-6">
+    {{> checkout/choose-country containerClass="country" selectId="shipping-country-select" selectName="country" options=form.countries}}
+  </div>
+  {{> form/input-text columnWidth=6 name="region" labelKey="form.region" required=false value=form.region}}
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="input-block">
+      <label for="billing-checkbox">
+        <span>
+          <input id="default-billing-checkbox" type="checkbox" name="defaultBillingAddress">
+        </span>
+        <span>{{i18n "my-account:addressBook.billingAddress.label"}}</span>
+      </label>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="input-block">
+      <label for="delivery-checkbox">
+        <span>
+          <input id="default-shipping-checkbox" type="checkbox" name="defaultShippingAddress">
+        </span>
+        <span>{{i18n "my-account:addressBook.shippingAddress.label"}}</span>
+      </label>
+    </div>
+  </div>
+</div>
+<!-- end myaccount/edit-address-form-elements.hbs -->

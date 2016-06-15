@@ -1583,47 +1583,34 @@
   },
   "footer": {},
   "content": {
-    "contentTitle": "Address Book",
-    "defaultAddressesTitle": "Default Addresses",
     "shippingAddress": {
-      "title": "Shipping Address",
       "name": "Bruce Wayne",
       "address": "100 Gotham Street",
       "region": "Gotham",
       "postalCode": "11111",
-      "country": "Country",
-      "edit": "Edit"
+      "country": "Country"
     },
     "billingAddress": {
-      "title": "Billing Address",
       "name": "Bruce Wayne",
       "address": "100 Gotham Street",
       "region": "Gotham",
       "postalCode": "11111",
-      "country": "Country",
-      "edit": "Edit"
+      "country": "Country"
     },
-    "secondaryAddressTitle": "Secondary Address",
-    "secondaryAddress": {
-      "name": "Bruce Wayne",
-      "address": "100 Gotham Street",
-      "region": "Gotham",
-      "postalCode": "11111",
-      "country": "Country",
-      "edit": "Edit",
-      "delete": "Delete"
-    },
-    "additionalAddressTitle": "Additional Address",
     "additionalAddress": {
       "name": "Bruce Wayne",
       "address": "100 Gotham Street",
       "region": "Gotham",
       "postalCode": "11111",
-      "country": "Country",
-      "edit": "Edit",
-      "delete": "Delete"
+      "country": "Country"
     },
-    "addNewAddressBtn": "Add New Address"
+    "secondaryAddress": {
+      "name": "Bruce Wayne",
+      "address": "100 Gotham Street",
+      "region": "Gotham",
+      "postalCode": "11111",
+      "country": "Country"
+    }
   },
   "meta": {
     "assetsPath": "../../assets/",
@@ -1717,6 +1704,12 @@
       },
       "checkout": {
         "href": "checkout-shipping.html"
+      },
+      "myAddressBook": {
+        "href": "my-account-address-book.html"
+      },
+      "editMyAddressBook": {
+        "href": "my-account-edit-address.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"

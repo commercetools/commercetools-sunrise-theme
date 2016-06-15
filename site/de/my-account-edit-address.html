@@ -1,4 +1,4 @@
-<!-- start my-account-returns-exchange-order.hbs -->
+<!-- start my-account-edit-address.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -662,21 +662,21 @@
     </div>
   </div>
   
-  <div class="my-orders">
+  <div class="address-book">
     <div class="container">
       <div class="my-account-title">
         <span class="my-account-title-text icon-user">Mein Konto</span>
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <div class="my-orders-wrapper">
+          <div class="address-book-wrapper">
             <div class="row">
               <div class="col-sm-3">
                 <div class="my-account-sidebar">
                   <div  class="my-account-sidebar-items ">
                     <a href="">Meine Benutzerdaten</a>
                   </div>
-                  <div class="my-account-sidebar-items ">
+                  <div id="my-account-mobile-content"class="my-account-sidebar-items active">
                     <a href="">Adressbuch</a>
                   </div>
                   <div class="my-account-sidebar-items ">
@@ -685,7 +685,7 @@
                   <div class="my-account-sidebar-items ">
                     <a href="">Meine Bestellungen</a>
                   </div>
-                  <div id="my-account-mobile-content"class="my-account-sidebar-items active">
+                  <div class="my-account-sidebar-items ">
                     <a href="">Meine Retouren</a>
                   </div>
                   <div class="my-account-sidebar-items clearfix ">
@@ -699,202 +699,119 @@
                 </div>
               </div>
               <div id="my-account-desktop-content" class="col-sm-9">
-                <div class="my-orders-order-content">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="my-orders-title hidden-xs">
-                        Returns / Exchange
-                      </div>
-                    </div>
-                  </div>
-                  <div class="your-order-details-wrapper">
-                    <div class="your-order-details-title">Your Order Details</div>
-                    <div class="your-order-details">
-                      <div>
-                        <span class="your-order-details-titles">Order number:<br>Order date:</span>
-                        <span class="your-order-details-info">01445678<br>Nov 14, 2015</span>
-                      </div>
-                      <div>
-                        <span class="your-order-details-titles">Received On<br>Refund Total</span>
-                        <span class="your-order-details-info">Nov 20, 2015<br>50,00 €</span>
-                      </div>
-                    </div>
-                    <button class="my-orders-print-receipt-btn hidden-xs">Print Receipt</button>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="my-orders-order-dark-box">
-                        <div class="my-orders-order-dark-box-title">Shipping Address</div>
-                        <div>Mr. Bruce Wayne</div>
-                        <div>100 Gotham Street</div>
-                        <div>Gotham City</div>
-                        <div>Region</div>
-                        <div>123456</div>
-                        <div>Country</div><br>
-                        <div>Phone: +49 123 4567890</div>
-                        <div>Email: bruce.wayne@commercetools.com</div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="my-orders-order-dark-box">
-                        <div class="my-orders-order-dark-box-title">Shipping Address</div>
-                        <div>Mr. Bruce Wayne</div>
-                        <div>100 Gotham Street</div>
-                        <div>Gotham City</div>
-                        <div>Region</div>
-                        <div>123456</div>
-                        <div>Country</div><br>
-                        <div>Phone: +49 123 4567890</div>
-                        <div>Email: bruce.wayne@commercetools.com</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="my-orders-order-dark-box">
-                        <div class="my-orders-order-dark-box-title">Shipping Method</div>
-                        <div>HL Standart - Delivery 3-5 Days</div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="my-orders-order-dark-box">
-                        <div class="my-orders-order-dark-box-title">Payment Details</div>
-                        <div>Credit Card</div>
-                        <div>Bruce Wayne</div>
-                        <div>Visa</div>
-                        <div>**** **** **** **99</div>
-                        <div>09.18</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="my-orders-order-price-summary-wrapper">
-                    <div class="text-right">
-                      <span class="my-orders-order-promocode-title">Gutschein eingelöst</span>
-                      <span class="my-orders-order-promocode">Sunny Sale</span>
-                    </div>
-                    <div class="text-right">
-                      <div class="my-orders-order-price-titles">
-                        <span>Zwischensumme</span><br>
-                        <span>Order Discount</span><br>
-                        <span>Start Delivery</span>
-                      </div>
-                      <div class="my-orders-order-price">
-                        <span>150,00 €</span><br>
-                        <span>0,00 €</span><br>
-                        <span>10,00 €</span>
-                      </div>
-                      <div class="order-hr"></div>
-                      <div class="my-orders-order-price-titles">
-                        <span>Sales Tax</span><br>
-                        <span class="order-total-big">Order Total</span>
-                      </div>
-                      <div class="my-orders-order-price">
-                        <span>0,00 €</span><br>
-                        <span class="order-total-big">160,00 €</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="order-list-summary-titles-wrapper">
+                <div class="address-book-content edit-address-book-content">
+                  <form id="form-edit-my-address-book" action="my-account-edit-address.html" method="POST">
+                    <input type="hidden" name="csrfToken" value="Test123"/>
+                    <input type="hidden" name="id" value=""/>
                     <div class="row">
-                      <div class="col-sm-6">
-                        <div>
-                          Product Description
-                        </div>
-                      </div>
-                      <div class="col-sm-2">
-                        <div class="text-right">
-                          Menge
-                        </div>
-                      </div>
-                      <div class="col-sm-2">
-                        <div class="text-right">
-                          Price
-                        </div>
-                      </div>
-                      <div class="col-sm-2">
-                        <div class="text-right">
-                          main:checkout:total
+                      <div class="col-sm-12">
+                        <div class="address-book-title hidden-xs">
+                          Addressbuch > Addresse > Bearbeiten
                         </div>
                       </div>
                     </div>
-                  </div>
-                    <div class="order-detail-wrapper">
-                      <div class="row">
-                        <div class="col-sm-2">
-                          <div>
-                            <img class="img-responsive" src="../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg" alt="Product image">
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div>
-                            <div class="order-detail-product-title">Enditatem Product name</div>
-                            <div class="order-detail-product-title">Optional Line Two</div>
-                            <div class="order-sku">Sunrise SUN#123456</div>
-                            <div class="order-detail-attributes-title">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="title">
+                              <span class="text-uppercase">Titel</span><br>
+                              <select id="shipping-title-select" class="checkout-dropdown" name="titleBilling">
+                                <option value="" selected>Auswählen</option>
+                              </select>
                             </div>
-                            <div class="order-detail-attributes">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <span class="text-uppercase">Vorname<abbr title="Pflichtfeld">*</abbr></span><br>
+                              <input id="input-firstName-Billing" class="checkout-input-field" type="text" name="firstNameBilling" value="">
                             </div>
-                            <div class="order-detail-available">Immediately available</div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <span class="text-uppercase">Nachname<abbr title="Pflichtfeld">*</abbr></span><br>
+                              <input id="input-lastName-Billing" class="checkout-input-field" type="text" name="lastNameBilling" value="">
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="input-block">
+                              <span class="text-uppercase">Adresse 1<abbr title="Pflichtfeld">*</abbr></span><br>
+                              <input id="input-streetName-Billing" class="checkout-input-field" type="text" name="streetNameBilling" value="">
+                            </div>
+                          </div>
+                          <div class="col-sm-12">
+                            <div class="input-block">
+                              <span class="text-uppercase">Adresse 2</span><br>
+                              <input id="input-additionalStreetInfo-Billing" class="checkout-input-field" type="text" name="additionalStreetInfoBilling" value="">
+                            </div>
+                          </div>
+                          <div class="col-sm-8">
+                            <div class="input-block">
+                              <span class="text-uppercase">Stadt<abbr title="Pflichtfeld">*</abbr></span><br>
+                              <input id="input-city-Billing" class="checkout-input-field" type="text" name="cityBilling" value="">
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="input-block">
+                              <span class="text-uppercase">PLZ<abbr title="Pflichtfeld">*</abbr></span><br>
+                              <input id="input-postalCode-Billing" class="checkout-input-field" type="text" name="postalCodeBilling" value="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <span class="text-uppercase">Land*</span><br>
+                              <select id="shipping-country-select" class="checkout-dropdown" name="countryBilling">
+                                <option value="" selected>Auswählen</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <span class="text-uppercase">Region</span><br>
+                              <input id="input-region-Billing" class="checkout-input-field" type="text" name="regionBilling" value="">
+                            </div>
                           </div>
                         </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            1
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <label for="billing-checkbox">
+                                <span>
+                                  <input id="default-billing-checkbox" type="checkbox" name="defaultBillingAddress">
+                                </span>
+                                <span>Als meine Rechnungadresse verwenden</span>
+                              </label>
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            <span class="order-detail-discount-price">100,00 €</span>
-                            <span>75,00 €</span>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            75,00 €
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <label for="delivery-checkbox">
+                                <span>
+                                  <input id="default-shipping-checkbox" type="checkbox" name="defaultShippingAddress">
+                                </span>
+                                <span>Als meine Lieferadresse verwenden</span>
+                              </label>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="order-detail-wrapper">
-                      <div class="row">
-                        <div class="col-sm-2">
-                          <div>
-                            <img class="img-responsive" src="../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg" alt="Product image">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="edit-address-book-footer">
+                          <div class="btn-grey push-left">
+                            <a href="my-account-address-book.html">Abbrechen</button>
                           </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div>
-                            <div class="order-detail-product-title">Enditatem Product name</div>
-                            <div class="order-detail-product-title">Optional Line Two</div>
-                            <div class="order-sku">Sunrise SUN#123456</div>
-                            <div class="order-detail-attributes-title">
-                            </div>
-                            <div class="order-detail-attributes">
-                            </div>
-                            <div class="order-detail-available">Immediately available</div>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            1
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            <span class="order-detail-discount-price">100,00 €</span>
-                            <span>75,00 €</span>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            75,00 €
+                          <div class="add-new-address-btn push-right">
+                            <button type="submit">Änderungen speichern</button>
                           </div>
                         </div>
                       </div>
                     </div>
-                  <div class="order-print-receipt-btn-wrapper">
-                    <button class="order-print-receipt-btn">Print Receipt</button>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -999,4 +916,4 @@
 </body>
 
 </html>
-<!-- end my-account-returns-exchange-order.hbs -->
+<!-- end my-account-edit-address.hbs -->

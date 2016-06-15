@@ -16,8 +16,29 @@ personalDetails:
     title: Dein Sunrise
     subtitle: Urlaub in der Sonne
   bannerTwo:
-    title: Sunrise Shop 
+    title: Sunrise Shop
     subtitle: Neue Saison, neuer Style
   welcomeBack: Willkommen zurück
   welcomeDescription: Für einen besseren Kundenservice geben Sie bitte Ihre Kundennummer an.
   personalDetailsTitle: Ihre Benutzerdaten
+addressBook:
+  title : Addressbuch
+  normalAddress:
+    title: Addresse
+  defaultAddresses:
+    title: Standard-Adressen
+  additionalAddress:
+    title: Weitere Adressen
+  billingAddress:
+    title: Rechnungsadresse
+    label: Als meine Rechnungadresse verwenden
+  shippingAddress:
+    title: Lieferadresse
+    label: Als meine Lieferadresse verwenden
+
+buttons:
+  saveAddressBtn: Änderungen speichern
+  cancelAddressBtn: Abbrechen
+  edit: Bearbeiten
+  delete: Löschen
+  addNewAddress: Neue Adresse hinzufügen
