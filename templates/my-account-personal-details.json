@@ -1615,11 +1615,9 @@
         }
       ],
       "firstName": "First Name",
-      "password": "Password",
       "primaryPhone": "Primary Telephone Number",
       "formNotesOne": "Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla",
       "secondName": "Second Name",
-      "confirmPassword": "Confirm Password",
       "email": "Email Address",
       "formNotesTwo": "Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla"
     },
@@ -1763,6 +1761,12 @@
       },
       "continueShopping": {
         "href": "pop.html"
+      },
+      "changePassword": {
+        "href": "my-account-change-password.html"
+      },
+      "personalDetails": {
+        "href": "my-account-personal-details.html"
       }
     },
     "features": {

@@ -8,6 +8,7 @@ myAccountSidebar:
   returnsExchange: Returns / Exchange
   wishlist: Wishlist
   signOut: Sign Out
+  changePassword: Change password
 personalDetails:
   shopAllBtn: Shop All
   updateBtn: Update Details
@@ -42,3 +43,11 @@ buttons:
   edit: Edit
   delete: Delete
   addNewAddress: Add New Address
+
+changePassword:
+  labelTxt: Password
+  confirmLabelTxt: Confirm password
+  changePasswordTitle: Change your password
+  changeBtn: Change password
+  backBtn: Back
+  feedbackMessage: Password changed successfully.

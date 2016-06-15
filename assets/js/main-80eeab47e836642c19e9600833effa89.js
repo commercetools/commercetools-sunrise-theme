@@ -238,14 +238,14 @@ $(function() {
 $(function() {
   var showChar = 300; // How many characters are shown by default
   var ellipsestext = "...";
-  
+
   $('.more').each(function() {
     var description = $(this),
         moretext = description.data("text-show"),
         content = description.html();
     if (content.length > showChar) {
       var displayed = content.substr(0, showChar),
-          hidden = content.substr(showChar, content.length - showChar); 
+          hidden = content.substr(showChar, content.length - showChar);
       var html = displayed + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + hidden + '</span>&nbsp;&nbsp;<a href="#" class="morelink">' + moretext + '</a></span>';
       description.html(html);
     }
@@ -491,6 +491,32 @@ $('.personal-details-edit-toggle').click(function() {
   $('.personal-details-landing-wrapper').hide();
   $('.personal-details-edit-wrapper').show();
 })
+
+// Initializes editable data
+function openForm(formClassName) {
+    $("." + formClassName + "-hide").hide();
+    $("." + formClassName + "-show").fadeIn();
+}
+
+function closeForm(formClassName) {
+    $("." + formClassName + "-hide").fadeIn();
+    $("." + formClassName + "-show").hide();
+}
+
+function initializeEditableData(formClassName) {
+   var formWrapper = $(formClassName);
+   if (formWrapper.hasClass("in")) {
+      console.log('has class IN');
+      openForm(formClassName);
+   } else {
+     console.log('CLOSES');
+      closeForm(formClassName);
+   }
+   $("." + formClassName + "-show-btn").click(function(){ console.log('SHOWS BTN CLICKED'); openForm(formClassName); });
+   $("." + formClassName + "-hide-btn").click(function(){ console.log('HIDE BTN CLICKED'); closeForm(formClassName); });
+}
+
+initializeEditableData("personal-details-edit");
 
 // Move desktop content to sidebar for mobile
 $(function() {

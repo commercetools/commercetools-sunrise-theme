@@ -274,6 +274,12 @@
       },
       "continueShopping": {
         "href": "pop.html"
+      },
+      "changePassword": {
+        "href": "my-account-change-password.html"
+      },
+      "personalDetails": {
+        "href": "my-account-personal-details.html"
       }
     },
     "features": {

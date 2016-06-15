@@ -672,12 +672,13 @@
           <div class="my-account-content">
             <div class="row">
               <div class="col-sm-3">
+                <!-- start myaccount/my-account-sidebar.hbs -->
                 <div class="my-account-sidebar">
                   <div id="my-account-mobile-content" class="my-account-sidebar-items active">
                     <a href="">Personal Details</a>
                   </div>
                   <div class="my-account-sidebar-items ">
-                    <a href="">Address Book</a>
+                    <a href="my-account-address-book.html">Address Book</a>
                   </div>
                   <div class="my-account-sidebar-items ">
                     <a href="">Payment Details</a>
@@ -694,9 +695,13 @@
                     </a>
                   </div>
                   <div class="my-account-sidebar-items ">
+                    <a href="my-account-change-password.html">Change password</a>
+                  </div>
+                  <div class="my-account-sidebar-items ">
                     <a href="">Sign Out</a>
                   </div>
                 </div>
+                <!-- end myaccount/my-account-sidebar.hbs -->
               </div>
               <div id="my-account-desktop-content" class="col-sm-9">
                 <div class="personal-details">
@@ -708,27 +713,28 @@
                     for an even better customer service please provide your customer number<br>
                     <span class="customer-number">1010101069691010</span>
                   </div>
-                  <div class="personal-details-landing-wrapper">
+                  <div class="personal-details-landing-wrapper personal-details-edit-hide">
                     <div class="personal-details-title">
                       Your Personal Details
                     </div>
                     <div class="personal-details-box">
                       <div>Mr. Bruce Wayne</div>
-                      <div>Password: ********</div><br>
                       <div>Phone: +49 123 123 123 123</div>
                       <div>batman@gotham.com</div><br>
                       <div>Subscribed to weekly newsletter</div>
                       <div class="personal-details-box-edit">
-                        <button class="personal-details-edit-toggle"><img src="../../assets//img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="edit icon">Edit</button>
+                        <button class="personal-details-edit-show-btn"><img src="../../assets//img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="edit icon">Edit</button>
                       </div>
                     </div>
                   </div>
-                  <div class="personal-details-edit-wrapper">
-                    <div class="personal-details-title">
-                      <span>Your Personal Details</span>
-                      <span class="pull-right required-text">Required*</span>
-                    </div>
-                    <form action="">
+                  <div class="personal-details-edit personal-details-edit-show in">
+                    <form id="form-personal-details" action="my-account-personal-details.html" method="POST">
+                     <input type="hidden" name="csrfToken" value="Test123"/>
+                     <input type="hidden" name="id" value=""/>
+                      <div class="personal-details-title">
+                        <span>Your Personal Details</span>
+                        <span class="pull-right required-text">Required*</span>
+                      </div>
                       <div class="row">
                         <div class="col-sm-12">
                           <div class="form-sections">
@@ -748,11 +754,7 @@
                             <input class="form-inputs" type="text">
                           </div>
                           <div class="form-sections">
-                            <span class="form-labels">Password*</span><br>
-                            <input class="form-inputs" type="text">
-                          </div>
-                          <div class="form-sections">
-                            <span class="form-labels">Primary Telephone Number*</span><br>
+                            <span class="form-labels">Primary Telephone Number</span><br>
                             <input class="form-inputs" type="text"><br>
                             <span class="form-notes">Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla</span>
                           </div>
@@ -763,29 +765,25 @@
                             <input class="form-inputs" type="text">
                           </div>
                           <div class="form-sections">
-                            <span class="form-labels">Confirm Password*</span><br>
-                            <input class="form-inputs" type="text">
-                          </div>
-                          <div class="form-sections">
                             <span class="form-labels">Email Address*</span><br>
                             <input class="form-inputs" type="text"><br>
                             <span class="form-notes">Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla</span>
                           </div>
                         </div>
                       </div>
+                      <hr class="light-grey-hr">
+                      <div class="personal-details-newsletter">
+                        <span>
+                          <input type="checkbox">Please add me to the <a href="">SUNRISE Newsletter</a>
+                        </span>
+                      </div>
+                      <div class="personal-details-edit-btn">
+                        <span>
+                          <button type="submit" class="update-btn">Update Details</button>
+                          <button class="cancel-btn personal-details-edit-hide-btn">Cancel</button>
+                        </span>
+                      </div>
                     </form>
-                    <hr class="light-grey-hr">
-                    <div class="personal-details-newsletter">
-                      <span>
-                        <input type="checkbox">Please add me to the <a href="">SUNRISE Newsletter</a>
-                      </span>
-                    </div>
-                    <div class="personal-details-edit-btn">
-                      <span>
-                        <button class="update-btn">Update Details</button>
-                        <button class="cancel-btn">Cancel</button>
-                      </span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -919,7 +917,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="../../assets/js/animatedModal.min-7345a731ae2c14daa28eaa1a7cf166c5.js"></script>
   <script src="../../assets/js/selectboxit.min-3a414ae410dd205fa8fff2027c297a89.js"></script>
-  <script src="../../assets/js/main.min-9d201714d9f46d37c9b86d5e8c83a4a0.js"></script>
+  <script src="../../assets/js/main.min-bbfa0b1f9b3e4bf36ec962ac8f167e37.js"></script>
 </body>
 
 </html>
