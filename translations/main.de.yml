@@ -60,6 +60,22 @@ footer:
   imprint: Impressum
   privacyPolicy: Datenschutz
   termsOfUse: AGB
+order:
+  paymentStatus:
+    title: Payment Status
+    balanceDue: Balance due
+    failed: Failed
+    pending: Pending
+    creditOwed: Credit owed
+    paid: Paid
+  shippingStatus:
+    title: Shipping Status
+    shipped: Shipped
+    ready: Ready
+    pending: Pending
+    partial: Partial
+    backorder: Backorder
+    delayed: Delayed
 form:
   addressOne: Adresse 1
   addressTwo: Adresse 2

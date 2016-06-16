@@ -1583,116 +1583,135 @@
   },
   "footer": {},
   "content": {
-    "pageTitle": "My Account",
-    "sidebarItemOne": {
-      "text": "Personal Details",
-      "url": ""
-    },
-    "sidebarItemTwo": {
-      "text": "Address Book",
-      "url": ""
-    },
-    "sidebarItemThree": {
-      "text": "Payment Details",
-      "url": ""
-    },
-    "sidebarItemFour": {
-      "text": "My Orders",
-      "url": ""
-    },
-    "sidebarItemFive": {
-      "text": "Returns / Exchange",
-      "url": ""
-    },
-    "sidebarItemSix": {
-      "text": "Wishlist",
-      "url": "",
-      "wishlistItems": "12"
-    },
-    "sidebarItemSeven": {
-      "text": "Sign Out",
-      "url": ""
-    },
-    "contentTitle": "My Orders",
-    "yourOrderTitle": "Your Order Details",
-    "orderNumberTitle": "Order number:",
-    "orderDateTitle": "Order date:",
-    "orderNumber": "01445678",
-    "orderDate": "Nov 14, 2015",
-    "printReceiptBtn": "Print Receipt",
-    "shippingAddress": {
-      "title": "Shipping Address",
-      "name": "Mr. Bruce Wayne",
-      "address": "100 Gotham Street",
-      "city": "Gotham City",
-      "region": "Region",
-      "postCode": "123456",
-      "country": "Country",
-      "number": "Phone: +49 123 4567890",
-      "email": "Email: bruce.wayne@commercetools.com"
-    },
-    "billingAddress": {
-      "title": "Shipping Address",
-      "name": "Mr. Bruce Wayne",
-      "address": "100 Gotham Street",
-      "city": "Gotham City",
-      "region": "Region",
-      "postCode": "123456",
-      "country": "Country",
-      "number": "Phone: +49 123 4567890",
-      "email": "Email: bruce.wayne@commercetools.com"
-    },
-    "shippingMethod": {
-      "title": "Shipping Method",
-      "text": "HL Standart - Delivery 3-5 Days"
-    },
-    "paymentDetails": {
-      "title": "Payment Details",
-      "payment": "Credit Card",
-      "name": "Bruce Wayne",
-      "type": "Visa",
-      "number": "**** **** **** **99",
-      "date": "09.18"
-    },
-    "promoCode": "Sunny Sale",
-    "orderDiscountTitle": "Order Discount",
-    "standartDeliveryTitle": "Start Delivery",
-    "subtotal": "200,00 €",
-    "orderDiscount": "0,00 €",
-    "standartDelivery": "10,00 €",
-    "salesTaxTitle": "Sales Tax",
-    "orderTotalTitle": "Order Total",
-    "salesTax": "0,00 €",
-    "orderTotal": "210,00 €",
-    "productDescriptionTitle": "Product Description",
-    "order": [
-      {
-        "image": "../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg",
-        "productTitleOne": "Enditatem Product name",
-        "productTitleTwo": "Optional Line Two",
-        "sku": "Sunrise SUN#123456",
-        "color": "Navy Blue",
-        "size": "XXL",
-        "available": "Immediately available",
-        "quantity": 1,
-        "discountedPrice": "120,00 €",
-        "price": "100,00 €",
-        "totalPrice": "100,00 €"
+    "order": {
+      "orderNumber": "01445678",
+      "orderDate": "Nov 10, 2015",
+      "customerEmail": "thedoctor@commercetools.com",
+      "totalPrice": "150.00 €",
+      "salesTax": "23.95 €",
+      "promoCode": "Sunny Sale",
+      "subtotalPrice": "147.00 €",
+      "lineItems": {
+        "list": [
+          {
+            "lineItemId": "123456",
+            "quantity": 1,
+            "totalPrice": "49,00 €",
+            "variant": {
+              "name": "Enditatem Product Name Optional very long line two",
+              "image": "../../assets/img/blue-jacket-890da240ed08cedad3f0b9274d436497.jpg",
+              "url": "pdp.html",
+              "sku": "Sunrise #SUN123456",
+              "priceOld": "100,00 €",
+              "price": "49,00 €"
+            },
+            "attributes": [
+              {
+                "name": "Color",
+                "key": "color",
+                "value": "Navy Blue"
+              },
+              {
+                "name": "Size",
+                "key": "size",
+                "value": "M"
+              }
+            ]
+          },
+          {
+            "lineItemId": "123456",
+            "quantity": 1,
+            "totalPrice": "49,00 €",
+            "variant": {
+              "name": "Enditatem Product Name Optional very long line two",
+              "image": "../../assets/img/blue-jacket-890da240ed08cedad3f0b9274d436497.jpg",
+              "url": "pdp.html",
+              "sku": "Sunrise #SUN123456",
+              "priceOld": "100,00 €",
+              "price": "49,00 €"
+            },
+            "attributes": [
+              {
+                "name": "Color",
+                "key": "color",
+                "value": "Navy Blue"
+              },
+              {
+                "name": "Size",
+                "key": "size",
+                "value": "M"
+              }
+            ]
+          },
+          {
+            "lineItemId": "123456",
+            "quantity": 1,
+            "totalPrice": "49,00 €",
+            "variant": {
+              "name": "Enditatem Product Name Optional very long line two",
+              "image": "../../assets/img/blue-jacket-890da240ed08cedad3f0b9274d436497.jpg",
+              "url": "pdp.html",
+              "sku": "Sunrise #SUN123456",
+              "priceOld": "100,00 €",
+              "price": "49,00 €"
+            },
+            "attributes": [
+              {
+                "name": "Color",
+                "key": "color",
+                "value": "Navy Blue"
+              },
+              {
+                "name": "Size",
+                "key": "size",
+                "value": "M"
+              }
+            ]
+          }
+        ]
       },
-      {
-        "image": "../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg",
-        "productTitleOne": "Enditatem Product name",
-        "productTitleTwo": "Optional Line Two",
-        "sku": "Sunrise SUN#123456",
-        "color": "Navy Blue",
-        "size": "XXL",
-        "available": "Immediately available",
-        "quantity": 1,
-        "discountedPrice": "120,00 €",
-        "price": "100,00 €",
-        "totalPrice": "100,00 €"
+      "shippingAddress": {
+        "title": "Mr.",
+        "firstName": "Bruce",
+        "lastName": "Wayne",
+        "streetName": "100 Gotham Street",
+        "additionalStreetInfo": "Basement",
+        "city": "Gotham",
+        "region": "NY",
+        "postalCode": "11111",
+        "country": "United States",
+        "email": "someone@somewhere.com",
+        "phone": "5555-24-64"
+      },
+      "billingAddress": {
+        "title": "Mrs.",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "streetName": "404 Ave.",
+        "additionalStreetInfo": "Garden house",
+        "city": "Berlin",
+        "region": "Berlin",
+        "postalCode": "80808",
+        "country": "Germany",
+        "phone": "5555-24-64"
+      },
+      "shippingMethod": {
+        "label": "DHL Standard",
+        "value": "dhl-standard",
+        "selected": true,
+        "deliveryDays": "Delivery: 3-5 Days",
+        "url": "",
+        "price": "3,00 €",
+        "description": "DHL Standard - Delivery 3-5 Days"
+      },
+      "paymentDetails": {
+        "type": "Credit Card",
+        "name": "P. Osgood",
+        "card": "Visa",
+        "number": "**** **** **** **56",
+        "date": "09.18"
       }
-    ]
+    }
   },
   "meta": {
     "assetsPath": "../../assets/",
@@ -1798,6 +1817,9 @@
       },
       "myAddressBookEditAddressSubmit": {
         "href": "my-account-address-book.html"
+      },
+      "myOrders": {
+        "href": "my-account-my-orders.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"

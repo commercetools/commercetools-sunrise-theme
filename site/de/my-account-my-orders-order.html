@@ -1,4 +1,5 @@
 <!-- start my-account-my-orders-order.hbs -->
+<!-- start my-account-my-orders-order.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -687,14 +688,14 @@
                     <a href="">Meine Zahlungdaten</a>
                   </div>
                   <div id="my-account-mobile-content"class="my-account-sidebar-items active">
-                    <a href="">Meine Bestellungen</a>
+                    <a href="my-account-my-orders.html">Meine Bestellungen</a>
                   </div>
                   <div class="my-account-sidebar-items ">
                     <a href="">Meine Retouren</a>
                   </div>
                   <div class="my-account-sidebar-items clearfix ">
                     <a href="">
-                      <span><img class="sidebar-wishlist-heart hidden-sm" src="../../assets//img/heart-1-9d7b6606aac1a8be257fa530467e7d91.png" alt="heart icon"></span>Wunschliste<span class="sidebar-wishlist-quantity hidden-sm">12</span>
+                      <span><img class="sidebar-wishlist-heart hidden-sm" src="../../assets//img/heart-1-9d7b6606aac1a8be257fa530467e7d91.png" alt="heart icon"></span>Wunschliste<span class="sidebar-wishlist-quantity hidden-sm"></span>
                     </a>
                   </div>
                   <div class="my-account-sidebar-items">
@@ -708,15 +709,15 @@
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="my-orders-title hidden-xs">
-                        My Orders
+                          Meine Bestellungen
                       </div>
                     </div>
                   </div>
                   <div class="your-order-details-wrapper">
                     <div class="your-order-details-title">Your Order Details</div>
                     <div class="your-order-details">
-                      <span class="your-order-details-titles">Order number:<br>Order date:</span>
-                      <span class="your-order-details-info">01445678<br>Nov 14, 2015</span>
+                      <span class="your-order-details-titles">Order number<br>Order date</span>
+                      <span class="your-order-details-info">01445678<br>Nov 10, 2015</span>
                     </div>
                     <button onclick="window.print()" class="my-orders-print-receipt-btn hidden-xs">Print Receipt</button>
                   </div>
@@ -726,25 +727,25 @@
                         <div class="my-orders-order-dark-box-title">Shipping Address</div>
                         <div>Mr. Bruce Wayne</div>
                         <div>100 Gotham Street</div>
-                        <div>Gotham City</div>
-                        <div>Region</div>
-                        <div>123456</div>
-                        <div>Country</div><br>
-                        <div>Phone: +49 123 4567890</div>
-                        <div>Email: bruce.wayne@commercetools.com</div>
+                        <div>Basement</div>
+                        <div>Gotham</div>
+                        <div>11111 NY</div>
+                        <div>United States</div><br>
+                        <div>5555-24-64</div>
+                        <div>someone@somewhere.com</div>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="my-orders-order-dark-box">
-                        <div class="my-orders-order-dark-box-title">Shipping Address</div>
-                        <div>Mr. Bruce Wayne</div>
-                        <div>100 Gotham Street</div>
-                        <div>Gotham City</div>
-                        <div>Region</div>
-                        <div>123456</div>
-                        <div>Country</div><br>
-                        <div>Phone: +49 123 4567890</div>
-                        <div>Email: bruce.wayne@commercetools.com</div>
+                        <div class="my-orders-order-dark-box-title">Billing Address</div>
+                        <div>Mrs. Jane Doe</div>
+                        <div>404 Ave.</div>
+                        <div>Garden house</div>
+                        <div>Berlin</div>
+                        <div>80808 Berlin</div>
+                        <div>Germany</div><br>
+                        <div>5555-24-64</div>
+                        <div></div>
                       </div>
                     </div>
                   </div>
@@ -752,145 +753,201 @@
                     <div class="col-sm-6">
                       <div class="my-orders-order-dark-box">
                         <div class="my-orders-order-dark-box-title">Shipping Method</div>
-                        <div>HL Standart - Delivery 3-5 Days</div>
+                          <div>
+                              DHL Standard
+                              - DHL Standard - Delivery 3-5 Days
+                          </div>
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="my-orders-order-dark-box">
                         <div class="my-orders-order-dark-box-title">Payment Details</div>
+                        <div></div>
+                        <div>P. Osgood</div>
                         <div>Credit Card</div>
-                        <div>Bruce Wayne</div>
-                        <div>Visa</div>
-                        <div>**** **** **** **99</div>
+                        <div>**** **** **** **56</div>
                         <div>09.18</div>
                       </div>
                     </div>
                   </div>
                   <div class="my-orders-order-price-summary-wrapper">
                     <div class="text-right">
-                      <span class="my-orders-order-promocode-title">Gutschein eingelöst</span>
-                      <span class="my-orders-order-promocode">Sunny Sale</span>
-                    </div>
-                    <div class="text-right">
-                      <div class="my-orders-order-price-titles">
-                        <span>Gesamtpreis</span><br>
-                        <span>Order Discount</span><br>
-                        <span>Start Delivery</span>
-                      </div>
-                      <div class="my-orders-order-price">
-                        <span>200,00 €</span><br>
-                        <span>0,00 €</span><br>
-                        <span>10,00 €</span>
-                      </div>
-                      <div class="order-hr"></div>
-                      <div class="my-orders-order-price-titles">
-                        <span>Sales Tax</span><br>
-                        <span class="order-total-big">Order Total</span>
-                      </div>
-                      <div class="my-orders-order-price">
-                        <span>0,00 €</span><br>
-                        <span class="order-total-big">210,00 €</span>
-                      </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-sm-10 col-xs-7">
+                                <div class="text-right subtotal">
+                                    <span class="subtotal-title">Zwischensumme</span>
+                                </div>
+                                <div class="text-right delivery-info">
+                                    <span class="delivery-info-title">Versand</span>
+                                </div>
+                                <hr class="total-divider">
+                                <div class="text-right">
+                                    <span>MwSt.</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="order-total">Gesamtpreis</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-xs-5 text-right">
+                                <div>
+                                    <span>147.00 €</span>
+                                </div>
+                                <div>
+                                    <span>3,00 €</span>
+                                </div>
+                                <hr>
+                                <div>
+                                    <span>23.95 €</span>
+                                </div>
+                                <div>
+                                    <span class="order-total">150.00 €</span>
+                                </div>
+                            </div>
+                        
+                        </div>                    </div>
                   </div>
                   <div class="order-list-summary-titles-wrapper">
                     <div class="row">
                       <div class="col-sm-6">
                         <div>
-                          Product Description
+                            Description
                         </div>
                       </div>
                       <div class="col-sm-2">
                         <div class="text-right">
-                          Menge
+                            Quantity
                         </div>
                       </div>
                       <div class="col-sm-2">
                         <div class="text-right">
-                          
+                            Price
                         </div>
                       </div>
                       <div class="col-sm-2">
                         <div class="text-right">
-                          Gesamtpreis
+                            Total
                         </div>
                       </div>
                     </div>
                   </div>
-                    <div class="order-detail-wrapper">
-                      <div class="row">
-                        <div class="col-sm-2">
-                          <div>
-                            <img class="img-responsive" src="../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg" alt="Product image">
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div>
-                            <div class="order-detail-product-title">Enditatem Product name</div>
-                            <div class="order-detail-product-title">Optional Line Two</div>
-                            <div class="order-sku">Sunrise SUN#123456</div>
-                            <div class="order-detail-attributes-title">
+                        <div class="order-detail-wrapper">
+                            <div class="row">
+                                <div class="col-sm-1 col-xs-4 product-img-col">
+                                    <img class="img-responsive cart-item-img" src="../../assets/img/blue-jacket-890da240ed08cedad3f0b9274d436497.jpg" alt="Enditatem Product Name Optional very long line two">
+                                </div>
+                                <div class="col-sm-3 col-xs-8 product-info-text">
+                                    <p class="cart-item-name">
+                                        <a href="pdp.html">Enditatem Product Name Optional very long line two</a>
+                                    </p>
+                                    <p class="grey-p">Sunrise #SUN123456</p>
+                                    <p class="cart-attributes">
+                                            Color
+                                            <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                                            <br>
+                                            Size
+                                            <span class="black-p" data-model="cartItem.size">M</span>
+                                            
+                                    </p>
+                                </div>
+                                <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
+                                    <span class="visible-xs">Menge:</span>
+                                    <span class="quantity-number">1</span>
+                                </div>
+
+                                <div class="col-sm-2 col-xs-7">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Price</span>
+                                            <span class="discounted-price">100,00 €</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-5">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Gesamtpreis</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="order-detail-attributes">
+                        </div>
+                        <div class="order-detail-wrapper">
+                            <div class="row">
+                                <div class="col-sm-1 col-xs-4 product-img-col">
+                                    <img class="img-responsive cart-item-img" src="../../assets/img/blue-jacket-890da240ed08cedad3f0b9274d436497.jpg" alt="Enditatem Product Name Optional very long line two">
+                                </div>
+                                <div class="col-sm-3 col-xs-8 product-info-text">
+                                    <p class="cart-item-name">
+                                        <a href="pdp.html">Enditatem Product Name Optional very long line two</a>
+                                    </p>
+                                    <p class="grey-p">Sunrise #SUN123456</p>
+                                    <p class="cart-attributes">
+                                            Color
+                                            <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                                            <br>
+                                            Size
+                                            <span class="black-p" data-model="cartItem.size">M</span>
+                                            
+                                    </p>
+                                </div>
+                                <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
+                                    <span class="visible-xs">Menge:</span>
+                                    <span class="quantity-number">1</span>
+                                </div>
+
+                                <div class="col-sm-2 col-xs-7">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Price</span>
+                                            <span class="discounted-price">100,00 €</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-5">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Gesamtpreis</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="order-detail-available">Immediately available</div>
-                          </div>
                         </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            1
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            <span class="order-detail-discount-price">120,00 €</span>
-                            <span>100,00 €</span>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            100,00 €
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="order-detail-wrapper">
-                      <div class="row">
-                        <div class="col-sm-2">
-                          <div>
-                            <img class="img-responsive" src="../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg" alt="Product image">
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div>
-                            <div class="order-detail-product-title">Enditatem Product name</div>
-                            <div class="order-detail-product-title">Optional Line Two</div>
-                            <div class="order-sku">Sunrise SUN#123456</div>
-                            <div class="order-detail-attributes-title">
+                        <div class="order-detail-wrapper">
+                            <div class="row">
+                                <div class="col-sm-1 col-xs-4 product-img-col">
+                                    <img class="img-responsive cart-item-img" src="../../assets/img/blue-jacket-890da240ed08cedad3f0b9274d436497.jpg" alt="Enditatem Product Name Optional very long line two">
+                                </div>
+                                <div class="col-sm-3 col-xs-8 product-info-text">
+                                    <p class="cart-item-name">
+                                        <a href="pdp.html">Enditatem Product Name Optional very long line two</a>
+                                    </p>
+                                    <p class="grey-p">Sunrise #SUN123456</p>
+                                    <p class="cart-attributes">
+                                            Color
+                                            <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                                            <br>
+                                            Size
+                                            <span class="black-p" data-model="cartItem.size">M</span>
+                                            
+                                    </p>
+                                </div>
+                                <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
+                                    <span class="visible-xs">Menge:</span>
+                                    <span class="quantity-number">1</span>
+                                </div>
+
+                                <div class="col-sm-2 col-xs-7">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Price</span>
+                                            <span class="discounted-price">100,00 €</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-5">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Gesamtpreis</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="order-detail-attributes">
-                            </div>
-                            <div class="order-detail-available">Immediately available</div>
-                          </div>
                         </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            1
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            <span class="order-detail-discount-price">120,00 €</span>
-                            <span>100,00 €</span>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="text-right">
-                            100,00 €
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
                   <div class="order-print-receipt-btn-wrapper">
                     <button onclick="window.print()" class="order-print-receipt-btn">Print Receipt</button>
                   </div>
@@ -998,4 +1055,5 @@
 </body>
 
 </html>
+<!-- end my-account-my-orders-order.hbs -->
 <!-- end my-account-my-orders-order.hbs -->

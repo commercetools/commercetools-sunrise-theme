@@ -1763,6 +1763,9 @@
       "myAddressBookEditAddressSubmit": {
         "href": "my-account-address-book.html"
       },
+      "myOrders": {
+        "href": "my-account-my-orders.html"
+      },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"
       },

@@ -1593,7 +1593,9 @@
         "city": "Gotham",
         "region": "NY",
         "postalCode": "11111",
-        "country": "United States"
+        "country": "United States",
+        "email": "someone@somewhere.com",
+        "phone": "5555-24-64"
       },
       "addressEditUrl": "my-account-edit-address.html",
       "addressDeleteUrl": "my-account-address-book.html"
@@ -1608,7 +1610,8 @@
         "city": "Berlin",
         "region": "Berlin",
         "postalCode": "80808",
-        "country": "Germany"
+        "country": "Germany",
+        "phone": "5555-24-64"
       },
       "addressEditUrl": "my-account-edit-address.html",
       "addressDeleteUrl": "my-account-address-book.html"
@@ -1624,7 +1627,8 @@
           "city": "Berlin",
           "region": "Berlin",
           "postalCode": "80808",
-          "country": "Germany"
+          "country": "Germany",
+          "phone": "5555-24-64"
         },
         "addressEditUrl": "my-account-edit-address.html",
         "addressDeleteUrl": "my-account-address-book.html"
@@ -1639,7 +1643,9 @@
           "city": "Gotham",
           "region": "NY",
           "postalCode": "11111",
-          "country": "United States"
+          "country": "United States",
+          "email": "someone@somewhere.com",
+          "phone": "5555-24-64"
         },
         "addressEditUrl": "my-account-edit-address.html",
         "addressDeleteUrl": "my-account-address-book.html"
@@ -1750,6 +1756,9 @@
       },
       "myAddressBookEditAddressSubmit": {
         "href": "my-account-address-book.html"
+      },
+      "myOrders": {
+        "href": "my-account-my-orders.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"

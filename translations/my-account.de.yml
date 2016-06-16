@@ -34,14 +34,41 @@ addressBook:
   shippingAddress:
     title: Lieferadresse
     label: Als meine Lieferadresse verwenden
-
-buttons:
-  saveAddressBtn: Änderungen speichern
-  cancelAddressBtn: Abbrechen
-  edit: Bearbeiten
-  delete: Löschen
-  addNewAddress: Neue Adresse hinzufügen
-
+  buttons:
+    saveAddressBtn: Änderungen speichern
+    cancelAddressBtn: Abbrechen
+    edit: Bearbeiten
+    delete: Löschen
+    addNewAddress: Neue Adresse hinzufügen
+myOrders:
+  title: Meine Bestellungen
+  orderNumber: Order Number
+  creationDate: Date
+  totalPrice: Total
+  paymentStatus: Payment Status
+  shippingStatus: Shipping Status
+  view: View
+myOrder:
+  title: Your Order Details
+  orderNumber: Order number
+  creationDate: Order date
+  print: Print Receipt
+  shippingAddress: Shipping Address
+  billingAddress: Billing Address
+  shippingMethod: Shipping Method
+  paymentDetails: Payment Details
+  price:
+    discountCode: Promotional Code Applied
+    subtotal: Subtotal
+    cartDiscount: Order Discount
+    shipping: Shipping
+    taxes: Sales Tax
+    total: Total
+  items:
+    productDescription: Description
+    quantity: Quantity
+    unitPrice: Price
+    totalPrice: Total
 changePassword:
   oldPasswordLabelTxt: Aktuelles Passwort
   newPasswordLabelTxt: Neues Passwort

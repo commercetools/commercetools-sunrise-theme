@@ -6,20 +6,13 @@
   "footer": {},
   "content": {
     "order": {
-      "totalItems": 3,
+      "orderNumber": "01445678",
+      "orderDate": "Nov 10, 2015",
+      "customerEmail": "thedoctor@commercetools.com",
       "totalPrice": "150.00 €",
       "salesTax": "23.95 €",
       "promoCode": "Sunny Sale",
       "subtotalPrice": "147.00 €",
-      "shippingMethod": {
-        "label": "DHL Standard",
-        "value": "dhl-standard",
-        "selected": true,
-        "deliveryDays": "Delivery: 3-5 Days",
-        "url": "",
-        "price": "3,00 €",
-        "description": "DHL Standard - Delivery 3-5 Days"
-      },
       "lineItems": {
         "list": [
           {
@@ -100,30 +93,38 @@
         ]
       },
       "shippingAddress": {
-        "title": "Dr.",
-        "salutation": "Herr",
-        "firstName": "John",
-        "lastName": "Smith",
-        "streetName": "1 Tardisstreet",
-        "city": "London",
-        "region": "London (Region)",
-        "postalCode": "123456",
-        "country": "United Kingdom",
-        "countryCode": "UK",
-        "phone": "+49 123 4567899",
-        "email": "thedoctor@commercetools.com"
+        "title": "Mr.",
+        "firstName": "Bruce",
+        "lastName": "Wayne",
+        "streetName": "100 Gotham Street",
+        "additionalStreetInfo": "Basement",
+        "city": "Gotham",
+        "region": "NY",
+        "postalCode": "11111",
+        "country": "United States",
+        "email": "someone@somewhere.com",
+        "phone": "5555-24-64"
       },
       "billingAddress": {
-        "title": "Dr.",
-        "salutation": "Herr",
-        "firstName": "John",
-        "lastName": "Smith (billing)",
-        "streetName": "Duststreet 500",
-        "city": "",
-        "region": "Utah",
-        "postalCode": "56789",
-        "phone": "+49 123 4567899 (billing)",
-        "email": "billing@commercetools.com"
+        "title": "Mrs.",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "streetName": "404 Ave.",
+        "additionalStreetInfo": "Garden house",
+        "city": "Berlin",
+        "region": "Berlin",
+        "postalCode": "80808",
+        "country": "Germany",
+        "phone": "5555-24-64"
+      },
+      "shippingMethod": {
+        "label": "DHL Standard",
+        "value": "dhl-standard",
+        "selected": true,
+        "deliveryDays": "Delivery: 3-5 Days",
+        "url": "",
+        "price": "3,00 €",
+        "description": "DHL Standard - Delivery 3-5 Days"
       },
       "paymentDetails": {
         "type": "Credit Card",
@@ -131,10 +132,7 @@
         "card": "Visa",
         "number": "**** **** **** **56",
         "date": "09.18"
-      },
-      "orderNumber": "01445678",
-      "orderDate": "Nov 10, 2015",
-      "customerEmail": "thedoctor@commercetools.com"
+      }
     }
   },
   "meta": {
@@ -241,6 +239,9 @@
       },
       "myAddressBookEditAddressSubmit": {
         "href": "my-account-address-book.html"
+      },
+      "myOrders": {
+        "href": "my-account-my-orders.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"
