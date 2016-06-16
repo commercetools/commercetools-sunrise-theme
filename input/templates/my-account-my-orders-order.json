@@ -2,7 +2,7 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"order" : { "$ref" : "common/cart-like-1.json" }
+		"order" : { "$ref" : "common/cart-like.json" }
 	},
   "meta" : { "$ref" : "common/meta.json" }
 }
