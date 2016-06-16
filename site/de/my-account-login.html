@@ -133,7 +133,7 @@
               </li>
   
                   <li class="list-item-user">
-                      <a href="signIn.html" class="link-user icon-user">
+                      <a href="my-account-login.html" class="link-user icon-user">
                           <span class="hidden-xs hidden-sm">Log In</span>
                       </a>
                   </li>
@@ -683,71 +683,87 @@
             <hr class="login-box-hr">
             <div class="login-box-description">Für einen schnelleren Checkout Prozess, melden Sie sich bitte mit Ihrem persönlichen Kundenkonto ein.</div>
             <div class="login-box-input-wrapper">
-              <form id="form-sign-in" method="post" action="">
+              <form id="form-sign-in" method="POST" action="my-account-personal-details.html">
                 <input type="hidden" name="csrfToken" value="Test123"/>
-                  <div class="login-box-input">
-                    <span>E-Mail*</span><br>
-                    <input type="email" name="username" value="">
-                  </div>
-                  <div class="login-box-input">
-                    <span>Passwort*</span><br>
-                    <input type="password" name="password">
-                  </div>
-                  <div class="clearfix">
-                    <div class="pull-left">
-                      <div class="login-box-remember-me">
-                        <input type="checkbox" name="rememberMe" value="">
-                        <label for="">Angemeldet bleiben</label>
-                      </div>
-                    </div>
-                    <div class="pull-right">
-                      <div class="login-box-forgot-password">
-                        <a href="#">Passwort vergessen</a>
-                      </div>
+                <div class="row">
+                      <div class="alert alert-info">Some feedback message.</div>
+                      <div class="alert alert-danger">Some error message.</div>
+                </div>
+                <div class="login-box-input">
+                  <span>E-Mail*</span><br>
+                  <input type="email" name="username" value="somebody@somewhere.com">
+                </div>
+                <div class="login-box-input">
+                  <span>Passwort*</span><br>
+                  <input type="password" name="password">
+                </div>
+                <div class="clearfix">
+                  <div class="pull-left">
+                    <div class="login-box-remember-me">
+                      <input id="form-login-remember-me" type="checkbox" name="rememberMe" value="true" checked>
+                      <label for="form-login-remember-me">Angemeldet bleiben</label>
                     </div>
                   </div>
-                  <button class="login-box-sign-in-btn">Anmelden</button>
+                  <div class="pull-right">
+                    <div class="login-box-forgot-password">
+                      <a href="#">Passwort vergessen</a>
+                    </div>
+                  </div>
+                </div>
+                <button class="login-box-sign-in-btn">Anmelden</button>
               </form>
             </div>
           </div>        </div>
         <div class="col-sm-6">
           <div class="signup-box-mobile">
             <div class="signup-box-wrapper">
-                <form id="form-sign-up" method="post" action="">
-                    <input type="hidden" name="csrfToken" value="Test123"/>
-                  <div class="clearfix">
-                    <div class="pull-left">
-                      <div class="signup-box-title">Neukunden Resigstrierung</div>
-                    </div>
-                    <div class="pull-right">
-                      <div class="signup-box-required">Pflichtfeld*</div>
-                    </div>
+              <form id="form-sign-up" method="post" action="my-account-personal-details.html">
+                <input type="hidden" name="csrfToken" value="Test123"/>
+                <div class="clearfix">
+                  <div class="pull-left">
+                    <div class="signup-box-title">Neukunden Resigstrierung</div>
                   </div>
-                  <hr class="signup-box-hr">
-                  <div class="signup-box-description">Konto einrichten, um das Shoppen noch einfacher zu machen.</div>
+                  <div class="pull-right">
+                    <div class="signup-box-required">Pflichtfeld*</div>
+                  </div>
+                </div>
+                <hr class="signup-box-hr">
+                <div class="signup-box-description">Konto einrichten, um das Shoppen noch einfacher zu machen.</div>
+                  <div class="row">
+                        <div class="alert alert-info">Some feedback message.</div>
+                        <div class="alert alert-danger">Some error message.</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
                    <div class="signup-box-input">
                      <span class="text-uppercase">Titel</span><br>
                      <select id="title" class="checkout-dropdown" name="title">
                        <option value="" selected>Auswählen</option>
+                       <option value="Mr." selected>Mr.</option>
+                       <option value="Mrs." >Mrs.</option>
+                       <option value="Ms." >Ms.</option>
+                       <option value="Dr." >Dr.</option>
                      </select>
-                   </div>      <div class="row">
+                   </div>     </div>
+                 </div>
+                  <div class="row">
                     <div class="col-sm-6">
                       <div class="signup-box-input">
                         <span>Vorname*</span><br>
-                        <input type="text" name="firstName" value="">
+                        <input type="text" name="firstName" value="Bruce">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="signup-box-input">
                         <span>Nachname*</span><br>
-                        <input type="text" name="lastName" value="">
+                        <input type="text" name="lastName" value="Wayne">
                       </div>
                     </div>
                   </div>
                   <hr class="signup-box-hr">
                   <div class="signup-box-input">
                     <span>E-Mail*</span><br>
-                    <input type="email" name="email" value="">
+                    <input type="email" name="email" value="somebody@somewhere.com">
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
@@ -765,11 +781,11 @@
                   </div>
                   <hr class="signup-box-hr">
                   <div class="signup-box-newsletter">
-                    <input type="checkbox" name="joinNewsletter" value="true">
+                    <input type="checkbox" name="joinNewsletter" value="true" checked>
                     <span>Anmeldung zum <a href="">SUNRISE Newsletter</a></span>
                   </div>
                   <div class="signup-box-terms">
-                    <input type="checkbox" name="agreeToTerms" value="true" >
+                    <input type="checkbox" name="agreeToTerms" value="true" checked>
                     <span>Ich stimme den "" zu. <a href="#">AGB</a></span>
                   </div>
                   <div class="signup-box-policy">Ihre persönliche Daten werden vertaulich behandelt. <a href="#">Datenschutz</a></div>
@@ -809,7 +825,7 @@
           <div class="footer-col">
             <ul>
               <li class="footer-title hidden-xs">Shortcuts</li>
-              <li><a href="myaccount.html">Mein Konto</a></li>
+              <li><a href="my-account-personal-details.html">Mein Konto</a></li>
               <li><a href="stores.html">Filiale suchen</a></li>
               <li><a href="giftcards.html">Geschenkkarten</a></li>
               <li><a href="payment.html">Zahlung</a></li>
@@ -873,7 +889,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="../../assets/js/animatedModal.min-7345a731ae2c14daa28eaa1a7cf166c5.js"></script>
   <script src="../../assets/js/selectboxit.min-3a414ae410dd205fa8fff2027c297a89.js"></script>
-  <script src="../../assets/js/main.min-bbfa0b1f9b3e4bf36ec962ac8f167e37.js"></script>
+  <script src="../../assets/js/main.min-0408c0508ac669c9257a5b2703a37880.js"></script>
 </body>
 </html>
 <!-- end my-account-login.hbs -->

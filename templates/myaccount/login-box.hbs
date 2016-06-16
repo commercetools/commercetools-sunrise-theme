@@ -11,31 +11,34 @@
   <hr class="login-box-hr">
   <div class="login-box-description">{{i18n "my-account-login:loginBox.description"}}</div>
   <div class="login-box-input-wrapper">
-    <form id="form-sign-in" method="post" action="{{@root.meta._links.logInSubmit.href}}">
+    <form id="form-sign-in" method="POST" action="{{@root.meta._links.logInSubmit.href}}">
       <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
-        {{> form/global-errors errors=content.logInForm.errors}}
-        <div class="login-box-input">
-          <span>{{i18n "my-account-login:loginBox.email"}}*</span><br>
-          <input type="email" name="username" value="{{content.logInForm.username}}">
-        </div>
-        <div class="login-box-input">
-          <span>{{i18n "my-account-login:loginBox.password"}}*</span><br>
-          <input type="password" name="password">
-        </div>
-        <div class="clearfix">
-          <div class="pull-left">
-            <div class="login-box-remember-me">
-              <input type="checkbox" name="rememberMe" value="{{content.logInForm.rememberMe}}">
-              <label for="">{{i18n "my-account-login:loginBox.rememberMe"}}</label>
-            </div>
-          </div>
-          <div class="pull-right">
-            <div class="login-box-forgot-password">
-              <a href="#">{{i18n "my-account-login:loginBox.forgotPassword"}}</a>
-            </div>
+      <div class="row">
+        {{> form/global-messages messages=form.messages}}
+        {{> form/global-errors errors=form.errors}}
+      </div>
+      <div class="login-box-input">
+        <span>{{i18n "my-account-login:loginBox.email"}}*</span><br>
+        <input type="email" name="username" value="{{form.username}}">
+      </div>
+      <div class="login-box-input">
+        <span>{{i18n "my-account-login:loginBox.password"}}*</span><br>
+        <input type="password" name="password">
+      </div>
+      <div class="clearfix">
+        <div class="pull-left">
+          <div class="login-box-remember-me">
+            <input id="form-login-remember-me" type="checkbox" name="rememberMe" value="true" {{#if form.rememberMe}}checked{{/if}}>
+            <label for="form-login-remember-me">{{i18n "my-account-login:loginBox.rememberMe"}}</label>
           </div>
         </div>
-        <button class="login-box-sign-in-btn">{{i18n "my-account-login:loginBox.signIn"}}</button>
+        <div class="pull-right">
+          <div class="login-box-forgot-password">
+            <a href="#">{{i18n "my-account-login:loginBox.forgotPassword"}}</a>
+          </div>
+        </div>
+      </div>
+      <button class="login-box-sign-in-btn">{{i18n "my-account-login:loginBox.signIn"}}</button>
     </form>
   </div>
 </div>

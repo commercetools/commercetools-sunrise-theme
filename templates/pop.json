@@ -1589,7 +1589,7 @@
       "title": "Women",
       "description": "Lorem dolor deserunt debitis voluptatibus odio id animi voluptates alias eum adipisci laudantium iusto totam quibusdam modi quo! Consectetur.",
       "imageMobile": "../../assets/img/banner_mobile-f19a3131b6a48cb459e95f5af82d06c3.jpg",
-      "imageDesktop": "../../assets/img/banner_desktop-8c4dfd624225b5e578d951e9c5b156ab.jpg"
+      "imageDesktop": "../../assets/img/banner_desktop-133f0f4e6fdd3243f003587d03f750cd.jpg"
     },
     "jumbotron": {
       "title": "Coats",
@@ -3741,13 +3741,22 @@
         "href": "pdp.html"
       },
       "signIn": {
-        "href": "signIn.html"
+        "href": "my-account-login.html"
+      },
+      "logInSubmit": {
+        "href": "my-account-personal-details.html"
+      },
+      "signUpSubmit": {
+        "href": "my-account-personal-details.html"
       },
       "myAccount": {
-        "href": "myaccount.html"
+        "href": "my-account-personal-details.html"
       },
-      "checkout": {
-        "href": "checkout-shipping.html"
+      "myPersonalDetails": {
+        "href": "my-account-personal-details.html"
+      },
+      "changePassword": {
+        "href": "my-account-change-password.html"
       },
       "myAddressBook": {
         "href": "my-account-address-book.html"
@@ -3763,6 +3772,9 @@
       },
       "myOrders": {
         "href": "my-account-my-orders.html"
+      },
+      "checkout": {
+        "href": "checkout-shipping.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"
@@ -3802,12 +3814,6 @@
       },
       "continueShopping": {
         "href": "pop.html"
-      },
-      "changePassword": {
-        "href": "my-account-change-password.html"
-      },
-      "personalDetails": {
-        "href": "my-account-personal-details.html"
       }
     },
     "features": {

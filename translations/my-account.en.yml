@@ -10,6 +10,7 @@ myAccountSidebar:
   signOut: Sign Out
   changePassword: Change password
 personalDetails:
+  title: Your Personal Details
   shopAllBtn: Shop All
   updateBtn: Update Details
   cancelBtn: Cancel
@@ -21,7 +22,16 @@ personalDetails:
     subtitle: Make the great days happen
   welcomeBack: Welcome back
   welcomeDescription: for an even better customer service please provide your customer number
-  personalDetailsTitle: Your Personal Details
+  subscribedToNewsletter: Subscribed to weekly newsletter
+  personalDetailsForm:
+    title: Title
+    firstName: First Name
+    lastName: Last Name
+    phone: Telephone Number
+    email: Email Address
+    password: Password
+    confirmPassword: Confirm Password
+    subscribeToNewsletter: Please add me to the <a href="">Sunrise Newsletter</a>
 addressBook:
   title : Address Book
   defaultAddresses:

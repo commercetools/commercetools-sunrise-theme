@@ -1583,29 +1583,68 @@
   },
   "footer": {},
   "content": {
-    "salutations": {
-      "list": [
-        {
-          "label": "Mr.",
-          "value": "Mr.",
-          "selected": true
-        },
-        {
-          "label": "Mrs.",
-          "value": "Mrs.",
-          "selected": false
-        },
-        {
-          "label": "Ms.",
-          "value": "Ms.",
-          "selected": false
-        },
-        {
-          "label": "Dr.",
-          "value": "Dr.",
-          "selected": false
-        }
-      ]
+    "signUpForm": {
+      "salutations": {
+        "list": [
+          {
+            "label": "Mr.",
+            "value": "Mr.",
+            "selected": true
+          },
+          {
+            "label": "Mrs.",
+            "value": "Mrs.",
+            "selected": false
+          },
+          {
+            "label": "Ms.",
+            "value": "Ms.",
+            "selected": false
+          },
+          {
+            "label": "Dr.",
+            "value": "Dr.",
+            "selected": false
+          }
+        ]
+      },
+      "firstName": "Bruce",
+      "lastName": "Wayne",
+      "email": "somebody@somewhere.com",
+      "subscribeToNewsletter": true,
+      "agreeToTerms": true,
+      "messages": {
+        "globalMessages": [
+          {
+            "message": "Some feedback message."
+          }
+        ]
+      },
+      "errors": {
+        "globalErrors": [
+          {
+            "message": "Some error message."
+          }
+        ]
+      }
+    },
+    "logInForm": {
+      "username": "somebody@somewhere.com",
+      "rememberMe": true,
+      "messages": {
+        "globalMessages": [
+          {
+            "message": "Some feedback message."
+          }
+        ]
+      },
+      "errors": {
+        "globalErrors": [
+          {
+            "message": "Some error message."
+          }
+        ]
+      }
     }
   },
   "meta": {
@@ -1693,13 +1732,22 @@
         "href": "pdp.html"
       },
       "signIn": {
-        "href": "signIn.html"
+        "href": "my-account-login.html"
+      },
+      "logInSubmit": {
+        "href": "my-account-personal-details.html"
+      },
+      "signUpSubmit": {
+        "href": "my-account-personal-details.html"
       },
       "myAccount": {
-        "href": "myaccount.html"
+        "href": "my-account-personal-details.html"
       },
-      "checkout": {
-        "href": "checkout-shipping.html"
+      "myPersonalDetails": {
+        "href": "my-account-personal-details.html"
+      },
+      "changePassword": {
+        "href": "my-account-change-password.html"
       },
       "myAddressBook": {
         "href": "my-account-address-book.html"
@@ -1715,6 +1763,9 @@
       },
       "myOrders": {
         "href": "my-account-my-orders.html"
+      },
+      "checkout": {
+        "href": "checkout-shipping.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"
@@ -1754,12 +1805,6 @@
       },
       "continueShopping": {
         "href": "pop.html"
-      },
-      "changePassword": {
-        "href": "my-account-change-password.html"
-      },
-      "personalDetails": {
-        "href": "my-account-personal-details.html"
       }
     },
     "features": {

@@ -190,13 +190,22 @@
         "href": "pdp.html"
       },
       "signIn": {
-        "href": "signIn.html"
+        "href": "my-account-login.html"
+      },
+      "logInSubmit": {
+        "href": "my-account-personal-details.html"
+      },
+      "signUpSubmit": {
+        "href": "my-account-personal-details.html"
       },
       "myAccount": {
-        "href": "myaccount.html"
+        "href": "my-account-personal-details.html"
       },
-      "checkout": {
-        "href": "checkout-shipping.html"
+      "myPersonalDetails": {
+        "href": "my-account-personal-details.html"
+      },
+      "changePassword": {
+        "href": "my-account-change-password.html"
       },
       "myAddressBook": {
         "href": "my-account-address-book.html"
@@ -212,6 +221,9 @@
       },
       "myOrders": {
         "href": "my-account-my-orders.html"
+      },
+      "checkout": {
+        "href": "checkout-shipping.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"
@@ -251,12 +263,6 @@
       },
       "continueShopping": {
         "href": "pop.html"
-      },
-      "changePassword": {
-        "href": "my-account-change-password.html"
-      },
-      "personalDetails": {
-        "href": "my-account-personal-details.html"
       }
     },
     "features": {

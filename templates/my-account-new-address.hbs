@@ -32,8 +32,10 @@
                   </div>
                   <form id="form-add-my-address-book" action="{{@root.meta._links.myAddressBookAddAddressSubmit.href}}" method="POST">
                     <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
-                    {{> form/global-messages messages=content.newAddressForm.messages}}
-                    {{> form/global-errors errors=content.newAddressForm.errors}}
+                    <div class="row">
+                      {{> form/global-messages messages=content.newAddressForm.messages}}
+                      {{> form/global-errors errors=content.newAddressForm.errors}}
+                    </div>
                     <div class="row">
                       <div class="col-sm-12">
                         {{> myaccount/my-address-book-address-form form=content.newAddressForm}}

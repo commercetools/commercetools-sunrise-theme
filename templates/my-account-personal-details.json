@@ -1583,46 +1583,60 @@
   },
   "footer": {},
   "content": {
-    "welcomeName": "Bruce Wayne",
-    "customerNumber": "1010101069691010",
-    "personalDetailsRequired": "Required",
-    "personalDetails": {
-      "name": "Mr. Bruce Wayne",
-      "password": "Password: ********",
-      "phone": "Phone: +49 123 123 123 123",
-      "email": "batman@gotham.com",
-      "subscribed": "Subscribed to weekly newsletter",
-      "editBtn": "Edit"
+    "customerInfo": {
+      "customer": {
+        "customerNumber": "1010101069691010",
+        "email": "somebody@somewhere.com",
+        "firstName": "Bruce",
+        "lastName": "Wayne",
+        "title": "Mr."
+      },
+      "subscribed": true
     },
-    "editPersonalDetails": {
-      "title": "Title",
-      "titleOptions": [
-        {
-          "text": "Choose your title",
-          "value": "choose your title",
-          "disabled": true,
-          "selected": true
-        },
-        {
-          "text": "Mr.",
-          "value": "mr",
-          "selected": false
-        },
-        {
-          "text": "Mrs.",
-          "value": "mrs",
-          "selected": false
-        }
-      ],
-      "firstName": "First Name",
-      "primaryPhone": "Primary Telephone Number",
-      "formNotesOne": "Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla",
-      "secondName": "Second Name",
-      "email": "Email Address",
-      "formNotesTwo": "Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla"
-    },
-    "addMeTo": "Please add me to the",
-    "newsletter": "SUNRISE Newsletter"
+    "personalDetailsForm": {
+      "salutations": {
+        "list": [
+          {
+            "label": "Mr.",
+            "value": "Mr.",
+            "selected": true
+          },
+          {
+            "label": "Mrs.",
+            "value": "Mrs.",
+            "selected": false
+          },
+          {
+            "label": "Ms.",
+            "value": "Ms.",
+            "selected": false
+          },
+          {
+            "label": "Dr.",
+            "value": "Dr.",
+            "selected": false
+          }
+        ]
+      },
+      "firstName": "Bruce",
+      "lastName": "Wayne",
+      "email": "somebody@somewhere.com",
+      "subscribeToNewsletter": true,
+      "messages": {
+        "globalMessages": [
+          {
+            "message": "Some feedback message."
+          }
+        ]
+      },
+      "errors": {
+        "globalErrors": [
+          {
+            "message": "Some error message."
+          }
+        ]
+      }
+    }
   },
   "meta": {
     "assetsPath": "../../assets/",
@@ -1709,13 +1723,22 @@
         "href": "pdp.html"
       },
       "signIn": {
-        "href": "signIn.html"
+        "href": "my-account-login.html"
+      },
+      "logInSubmit": {
+        "href": "my-account-personal-details.html"
+      },
+      "signUpSubmit": {
+        "href": "my-account-personal-details.html"
       },
       "myAccount": {
-        "href": "myaccount.html"
+        "href": "my-account-personal-details.html"
       },
-      "checkout": {
-        "href": "checkout-shipping.html"
+      "myPersonalDetails": {
+        "href": "my-account-personal-details.html"
+      },
+      "changePassword": {
+        "href": "my-account-change-password.html"
       },
       "myAddressBook": {
         "href": "my-account-address-book.html"
@@ -1731,6 +1754,9 @@
       },
       "myOrders": {
         "href": "my-account-my-orders.html"
+      },
+      "checkout": {
+        "href": "checkout-shipping.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"
@@ -1770,12 +1796,6 @@
       },
       "continueShopping": {
         "href": "pop.html"
-      },
-      "changePassword": {
-        "href": "my-account-change-password.html"
-      },
-      "personalDetails": {
-        "href": "my-account-personal-details.html"
       }
     },
     "features": {
