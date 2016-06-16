@@ -1,5 +1,7 @@
 {
-    "totalItems" : 3,
+    "orderNumber" : "01445678",
+    "orderDate" : "Nov 10, 2015",
+    "customerEmail" : "thedoctor@commercetools.com",
     "totalPrice" : "150.00 €",
     "salesTax" : "23.95 €",
     "promoCode" : "Sunny Sale",
@@ -20,8 +22,5 @@
         "card" : "Visa",
         "number" : "**** **** **** **56",
         "date" : "09.18"
-    },
-    "orderNumber" : "01445678",
-    "orderDate" : "Nov 10, 2015",
-    "customerEmail" : "thedoctor@commercetools.com"
+    }
 }
