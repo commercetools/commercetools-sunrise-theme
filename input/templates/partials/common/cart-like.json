@@ -6,16 +6,16 @@
     "salesTax" : "23.95 €",
     "promoCode" : "Sunny Sale",
     "subtotalPrice" : "147.00 €",
-    "shippingMethod" : {"$ref" : "shipping-method-1.json"},
     "lineItems" : {
         "list" : [
-            { "$ref" : "../checkout/line-item.json" },
-            { "$ref" : "../checkout/line-item.json" },
-            { "$ref" : "../checkout/line-item.json" }
+            { "$ref" : "line-item-1.json" },
+            { "$ref" : "line-item-1.json" },
+            { "$ref" : "line-item-1.json" }
         ]
     },
-    "shippingAddress" : { "$ref" : "common/address-1.json" },
-    "billingAddress" : { "$ref" : "common/address-2.json" },
+    "shippingAddress" : { "$ref" : "address-1.json" },
+    "billingAddress" : { "$ref" : "address-2.json" },
+    "shippingMethod" : {"$ref" : "shipping-method-1.json"},
     "paymentDetails" : {
         "type" : "Credit Card",
         "name" : "P. Osgood",

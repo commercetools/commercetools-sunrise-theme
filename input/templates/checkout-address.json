@@ -34,7 +34,7 @@
                 "countries" : { "$ref" : "form/choose-country-2.json" }
             }
         },
-        "cart" : { "$ref" : "checkout/cart.json" }
+        "cart" : { "$ref" : "common/cart-like.json" }
     },
     "meta" : { "$ref" : "common/meta.json" }
 }

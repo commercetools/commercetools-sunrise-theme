@@ -54,7 +54,7 @@ myOrder:
   creationDate: Order date
   print: Print Receipt
   shippingAddress: Shipping Address
-  billingAddress: Shipping Address
+  billingAddress: Billing Address
   shippingMethod: Shipping Method
   paymentDetails: Payment Details
   price:

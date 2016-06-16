@@ -7,5 +7,6 @@
   "city" : "Berlin",
   "region" : "Berlin",
   "postalCode" : "80808",
-  "country" : "Germany"
+  "country" : "Germany",
+  "phone" : "5555-24-64"
 }
