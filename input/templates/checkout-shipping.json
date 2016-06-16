@@ -8,7 +8,7 @@
         "shippingForm" : {
             "shippingMethods" : { "$ref" : "checkout/shipping-methods.json" }
         },
-        "cart" : { "$ref" : "checkout/cart.json" }
+        "cart" : { "$ref" : "common/cart-like.json" }
     },
     "meta" : { "$ref" : "common/meta.json" }
 }
