@@ -2,34 +2,28 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"shippingAddress" : {
-			"name" : "Bruce Wayne",
-			"address" : "100 Gotham Street",
-			"region" : "Gotham",
-			"postalCode" : "11111",
-			"country" : "Country"
+		"defaultShippingAddress" : {
+			"address" : { "$ref" : "common/address-1.json" },
+			"addressEditUrl" : "my-account-edit-address.html",
+			"addressDeleteUrl" : "my-account-address-book.html"
 		},
-		"billingAddress" : {
-			"name" : "Bruce Wayne",
-			"address" : "100 Gotham Street",
-			"region" : "Gotham",
-			"postalCode" : "11111",
-			"country" : "Country"
+		"defaultBillingAddress" : {
+			"address" : { "$ref" : "common/address-2.json" },
+			"addressEditUrl" : "my-account-edit-address.html",
+			"addressDeleteUrl" : "my-account-address-book.html"
 		},
-		"additionalAddress" : {
-			"name" : "Bruce Wayne",
-			"address" : "100 Gotham Street",
-			"region" : "Gotham",
-			"postalCode" : "11111",
-			"country" : "Country"
-		},
-		"secondaryAddress" : {
-			"name" : "Bruce Wayne",
-			"address" : "100 Gotham Street",
-			"region" : "Gotham",
-			"postalCode" : "11111",
-			"country" : "Country"
-		}
+			"addresses" : [
+			{
+				"address" : { "$ref" : "common/address-2.json" },
+				"addressEditUrl" : "my-account-edit-address.html",
+				"addressDeleteUrl" : "my-account-address-book.html"
+			},
+			{
+				"address" : { "$ref" : "common/address-1.json" },
+				"addressEditUrl" : "my-account-edit-address.html",
+				"addressDeleteUrl" : "my-account-address-book.html"
+			}
+		]
 	},
     "meta" : { "$ref" : "common/meta.json" }
 }
