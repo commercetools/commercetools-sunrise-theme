@@ -2,46 +2,19 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"welcomeName" : "Bruce Wayne",
-		"customerNumber" : "1010101069691010",
-		"personalDetailsRequired" : "Required",
-		"personalDetails" : {
-			"name" : "Mr. Bruce Wayne",
-			"password" : "Password: ********",
-			"phone" : "Phone: +49 123 123 123 123",
-			"email" : "batman@gotham.com",
-			"subscribed" : "Subscribed to weekly newsletter",
-			"editBtn" : "Edit"
+		"customerInfo" : {
+			"customer" : { "$ref" : "common/customer-1.json" },
+			"subscribed" : true
 		},
-		"editPersonalDetails" : {
-			"title" : "Title",
-			"titleOptions" : [
-				{
-					"text" : "Choose your title",
-					"value" : "choose your title",
-					"disabled" : true,
-					"selected" : true
-				},
-				{
-					"text" : "Mr.",
-					"value" : "mr",
-					"selected" : false
-				},
-				{
-					"text" : "Mrs.",
-					"value" : "mrs",
-					"selected" : false
-				}
-			],
-			"firstName" : "First Name",
-			"primaryPhone" : "Primary Telephone Number",
-			"formNotesOne" : "Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla",
-			"secondName" : "Second Name",
-			"email" : "Email Address",
-			"formNotesTwo" : "Please provide your lorem ipsun, bla bla bla, Please provide your lorem ipsun, bla bla bla"
-		},
-		"addMeTo" : "Please add me to the",
-		"newsletter" : "SUNRISE Newsletter"
+		"personalDetailsForm" : {
+			"salutations" : { "$ref" : "form/choose-title-1.json" },
+			"firstName" : "Bruce",
+			"lastName" : "Wayne",
+			"email" : "somebody@somewhere.com",
+			"subscribeToNewsletter" : true,
+			"messages" : { "$ref" : "form/messages.json" },
+			"errors" : { "$ref" : "form/errors.json" }
+		}
 	},
-    "meta" : { "$ref" : "common/meta.json" }
+  "meta" : { "$ref" : "common/meta.json" }
 }

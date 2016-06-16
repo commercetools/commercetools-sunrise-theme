@@ -506,14 +506,12 @@ function closeForm(formClassName) {
 function initializeEditableData(formClassName) {
    var formWrapper = $(formClassName);
    if (formWrapper.hasClass("in")) {
-      console.log('has class IN');
       openForm(formClassName);
    } else {
-     console.log('CLOSES');
       closeForm(formClassName);
    }
-   $("." + formClassName + "-show-btn").click(function(){ console.log('SHOWS BTN CLICKED'); openForm(formClassName); });
-   $("." + formClassName + "-hide-btn").click(function(){ console.log('HIDE BTN CLICKED'); closeForm(formClassName); });
+   $("." + formClassName + "-show-btn").click(function(){ openForm(formClassName); });
+   $("." + formClassName + "-hide-btn").click(function(){ closeForm(formClassName); });
 }
 
 initializeEditableData("personal-details-edit");
