@@ -87,7 +87,8 @@
                         <hr class="light-grey-hr">
                         <div class="personal-details-newsletter">
                           <span>
-                            <input type="checkbox">{{i18n "my-account:personalDetails.personalDetailsForm.subscribeToNewsletter"}}
+                            <input name="subscribeToNewsletter" type="checkbox" {{#if personalDetails.personalDetailsForm.subscribeToNewsletter}}checked{{/if}}/>
+                            {{i18n "my-account:personalDetails.personalDetailsForm.subscribeToNewsletter"}}
                           </span>
                         </div>
                         <div class="personal-details-edit-btn">

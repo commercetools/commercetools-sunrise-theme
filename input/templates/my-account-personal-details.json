@@ -11,6 +11,7 @@
 			"firstName" : "Bruce",
 			"lastName" : "Wayne",
 			"email" : "somebody@somewhere.com",
+			"subscribeToNewsletter" : true,
 			"messages" : { "$ref" : "form/messages.json" },
 			"errors" : { "$ref" : "form/errors.json" }
 		}

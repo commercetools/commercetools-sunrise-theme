@@ -2,7 +2,22 @@
     "header" : { "$ref" : "common/header.json" },
     "footer" : { "$ref" : "common/footer.json" },
     "content" : {
-        "salutations" : { "$ref" : "form/choose-title-1.json" }
+      "signUpForm" : {
+        "salutations" : { "$ref" : "form/choose-title-1.json" },
+        "firstName" : "Bruce",
+        "lastName" : "Wayne",
+        "email" : "somebody@somewhere.com",
+        "subscribeToNewsletter" : true,
+        "agreeToTerms" : true,
+        "messages" : { "$ref" : "form/messages.json" },
+        "errors" : { "$ref" : "form/errors.json" }
+      },
+      "logInForm" : {
+        "username" : "somebody@somewhere.com",
+        "rememberMe" : true,
+        "messages" : { "$ref" : "form/messages.json" },
+        "errors" : { "$ref" : "form/errors.json" }
+      }
     },
     "meta" : { "$ref" : "common/meta.json" }
 }
