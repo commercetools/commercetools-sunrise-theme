@@ -46,20 +46,7 @@ myOrders:
   creationDate: Date
   totalPrice: Total
   paymentStatus: Payment Status
-  paymentStatus:
-    balanceDue: Balance due
-    failed: Failed
-    pending: Pending
-    creditOwed: Credit owed
-    paid: Paid
   shippingStatus: Shipping Status
-  shippingStatus:
-    shipped: Shipped
-    ready: Ready
-    pending: Pending
-    partial: Partial
-    backorder: Backorder
-    delayed: Delayed
   view: View
 myOrder:
   title: Your Order Details
