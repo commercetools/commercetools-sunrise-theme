@@ -19,22 +19,24 @@
           <div class="address-book-wrapper">
             <div class="row">
               <div class="col-sm-3">
-                {{> myaccount/my-account-sidebar positionTwo=true}}
+                {{> myaccount/my-account-sidebar myAddressBookTab=true}}
               </div>
               <div id="my-account-desktop-content" class="col-sm-9">
                 <div class="address-book-content edit-address-book-content">
-                  <form id="form-add-my-address-book" action="{{@root.meta._links.myAddressBookAddAddressSubmit.href}}" method="POST">
-                    <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="address-book-title hidden-xs">
-                          {{i18n "my-account:addressBook.title"}}
-                        </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="address-book-title hidden-xs">
+                        {{i18n "my-account:addressBook.title"}}
                       </div>
                     </div>
+                  </div>
+                  <form id="form-add-my-address-book" action="{{@root.meta._links.myAddressBookAddAddressSubmit.href}}" method="POST">
+                    <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
+                    {{> form/global-messages messages=content.newAddressForm.messages}}
+                    {{> form/global-errors errors=content.newAddressForm.errors}}
                     <div class="row">
                       <div class="col-sm-12">
-                        {{> myaccount/my-address-book-address-form form=content.addressForm}}
+                        {{> myaccount/my-address-book-address-form form=content.newAddressForm}}
                       </div>
                     </div>
                     <div class="row">

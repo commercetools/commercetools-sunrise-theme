@@ -1583,7 +1583,7 @@
   },
   "footer": {},
   "content": {
-    "addressForm": {
+    "newAddressForm": {
       "salutations": {
         "list": [
           {
@@ -1640,7 +1640,21 @@
         ]
       },
       "defaultShippingAddress": true,
-      "defaultBillingAddress": false
+      "defaultBillingAddress": false,
+      "messages": {
+        "globalMessages": [
+          {
+            "message": "Some feedback message."
+          }
+        ]
+      },
+      "errors": {
+        "globalErrors": [
+          {
+            "message": "Some error message."
+          }
+        ]
+      }
     }
   },
   "meta": {

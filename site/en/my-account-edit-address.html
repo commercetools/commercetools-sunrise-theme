@@ -677,6 +677,9 @@
                   <div  class="my-account-sidebar-items ">
                     <a href="">Personal Details</a>
                   </div>
+                  <div class="my-account-sidebar-items ">
+                    <a href="my-account-change-password.html">Change password</a>
+                  </div>
                   <div id="my-account-mobile-content"class="my-account-sidebar-items active">
                     <a href="my-account-address-book.html">Address Book</a>
                   </div>
@@ -694,10 +697,7 @@
                       <span><img class="sidebar-wishlist-heart hidden-sm" src="../../assets//img/heart-1-9d7b6606aac1a8be257fa530467e7d91.png" alt="heart icon"></span>Wishlist<span class="sidebar-wishlist-quantity hidden-sm"></span>
                     </a>
                   </div>
-                  <div class="my-account-sidebar-items ">
-                    <a href="my-account-change-password.html">Change password</a>
-                  </div>
-                  <div class="my-account-sidebar-items ">
+                  <div class="my-account-sidebar-items">
                     <a href="">Sign Out</a>
                   </div>
                 </div>
@@ -705,16 +705,18 @@
               </div>
               <div id="my-account-desktop-content" class="col-sm-9">
                 <div class="address-book-content edit-address-book-content">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="address-book-title hidden-xs">
+                        Address Book
+                      </div>
+                    </div>
+                  </div>
                   <form id="form-edit-my-address-book" action="my-account-address-book.html" method="POST">
                     <input type="hidden" name="csrfToken" value="Test123"/>
                     <input type="hidden" name="id" value="34jhd94"/>
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="address-book-title hidden-xs">
-                          Address Book
-                        </div>
-                      </div>
-                    </div>
+                        <div class="alert alert-info">Some feedback message.</div>
+                        <div class="alert alert-danger">Some error message.</div>
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="row">

@@ -43,8 +43,9 @@ buttons:
   addNewAddress: Add New Address
 
 changePassword:
-  labelTxt: Password
-  confirmLabelTxt: Confirm password
+  oldPasswordLabelTxt: Current password
+  newPasswordLabelTxt: New password
+  confirmPasswordLabelTxt: Confirm new password
   changePasswordTitle: Change your password
   changeBtn: Change password
   backBtn: Back
