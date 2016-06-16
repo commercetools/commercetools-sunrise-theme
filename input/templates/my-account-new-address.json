@@ -2,18 +2,20 @@
   "header" : { "$ref" : "common/header.json" },
   "footer" : { "$ref" : "common/footer.json" },
   "content" : {
-    "addressForm" : {
+    "newAddressForm" : {
       "salutations" : { "$ref" : "form/choose-title-1.json" },
-	  "firstName" : "Bruce",
-	  "lastName" : "Wayne",
-	  "streetName" : "100 Gotham Street",
-	  "additionalStreetInfo" : "Basement",
-	  "city" : "Gotham",
-	  "region" : "NY",
-	  "postalCode" : "11111",
+  	  "firstName" : "Bruce",
+  	  "lastName" : "Wayne",
+  	  "streetName" : "100 Gotham Street",
+  	  "additionalStreetInfo" : "Basement",
+  	  "city" : "Gotham",
+  	  "region" : "NY",
+  	  "postalCode" : "11111",
       "countries" : { "$ref" : "form/choose-country-1.json" },
       "defaultShippingAddress" : true,
-      "defaultBillingAddress" : false
+      "defaultBillingAddress" : false,
+      "messages": { "$ref" : "form/messages.json" },
+      "errors" : { "$ref" : "form/errors.json" }
     }
   },
     "meta" : { "$ref" : "common/meta.json" }
