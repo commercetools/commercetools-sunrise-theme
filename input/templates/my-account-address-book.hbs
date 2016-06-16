@@ -36,14 +36,14 @@
                       </div>
                       {{#if content.defaultShippingAddress}}
                       <div class="address-book-dark-box">
-                        <div class="address-book-dark-box-title">{{i18n "my-account:addressBook.defaultShippingAddress.title"}}</div>
-                        {{> my-account/my-address-book-address address=content.defaultShippingAddress}}
+                        <div class="address-book-dark-box-title">{{i18n "my-account:addressBook.shippingAddress.title"}}</div>
+                        {{> myaccount/my-address-book-address addressInfo=content.defaultShippingAddress}}
                       </div>
                       {{/if}}
                       {{#if content.defaultBillingAddress}}
                       <div class="address-book-dark-box">
                         <div class="address-book-dark-box-title">{{i18n "my-account:addressBook.billingAddress.title"}}</div>
-                        {{> my-account/my-address-book-address address=content.defaultBillingAddress}}
+                        {{> myaccount/my-address-book-address addressInfo=content.defaultBillingAddress}}
                       </div>
                       {{/if}}
                     </div>
@@ -53,7 +53,7 @@
                       </div>
                       {{#each content.addresses}}
                       <div class="address-book-white-box">
-                        {{> my-account/my-address-book-address address=this}}
+                        {{> myaccount/my-address-book-address addressInfo=this}}
                       </div>
                       {{/each}}
                     </div>

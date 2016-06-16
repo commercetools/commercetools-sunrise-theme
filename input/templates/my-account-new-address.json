@@ -1,0 +1,15 @@
+{
+  "header" : { "$ref" : "common/header.json" },
+  "footer" : { "$ref" : "common/footer.json" },
+  "content" : {
+    "addressForm" : {
+      "salutations" : { "$ref" : "form/choose-title-1.json" },
+      "name" : "Bruce Wayne",
+      "address" : "100 Gotham Street",
+      "region" : "Gotham",
+      "postalCode" : "11111",
+      "countries" : { "$ref" : "form/choose-country-1.json" }
+    }
+  },
+    "meta" : { "$ref" : "common/meta.json" }
+}

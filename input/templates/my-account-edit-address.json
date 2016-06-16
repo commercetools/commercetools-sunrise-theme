@@ -2,13 +2,19 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"shippingAddress" : {
-			"title" : "Shipping Address",
-			"name" : "Bruce Wayne",
-			"address" : "100 Gotham Street",
-			"region" : "Gotham",
-			"postalCode" : "11111",
-			"country" : "Country"
+		"addressForm" : {
+			"id" : "34jhd94",
+			"salutations" : { "$ref" : "form/choose-title-1.json" },
+		  "firstName" : "Bruce",
+		  "lastName" : "Wayne",
+		  "streetName" : "100 Gotham Street",
+		  "additionalStreetInfo" : "Basement",
+		  "city" : "Gotham",
+		  "region" : "NY",
+		  "postalCode" : "11111",
+      "countries" : { "$ref" : "form/choose-country-1.json" },
+      "defaultShippingAddress" : true,
+      "defaultBillingAddress" : false
 		}
 	},
     "meta" : { "$ref" : "common/meta.json" }

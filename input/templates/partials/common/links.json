@@ -30,7 +30,7 @@
 
     "checkout": { "href": "checkout-shipping.html" },
     "myAddressBook": { "href": "my-account-address-book.html" },
-    "myAddressBookAddAddress": { "href": "my-account-edit-address.html" },
+    "myAddressBookAddAddress": { "href": "my-account-new-address.html" },
     "myAddressBookAddAddressSubmit": { "href": "my-account-address-book.html" },
     "myAddressBookEditAddressSubmit": { "href": "my-account-address-book.html" },
     

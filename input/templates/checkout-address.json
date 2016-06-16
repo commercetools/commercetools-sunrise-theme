@@ -8,7 +8,7 @@
         "addressForm" : {
             "billingAddressDifferentToBillingAddress": true,
             "shippingAddress" : {
-                "salutations" : { "$ref" : "checkout/salutations.json" },
+                "salutations" : { "$ref" : "form/choose-title-1.json" },
                 "firstName" : "John",
                 "lastName" : "Smith",
                 "streetName" : "Tardisstreet",
@@ -16,12 +16,12 @@
                 "city" : "London",
                 "region" : "London (Region)",
                 "postalCode" : "123456",
-                "countries" : { "$ref" : "checkout/choose-country-1.json" },
+                "countries" : { "$ref" : "form/choose-country-1.json" },
                 "phone" : "+49 123 4567899",
                 "email" : "thedoctor@commercetools.com"
             },
             "billingAddress" : {
-                "salutations" : { "$ref" : "checkout/salutations.json" },
+                "salutations" : { "$ref" : "form/choose-title-1.json" },
                 "firstName" : "John",
                 "lastName" : "Smith (billing)",
                 "streetName" : "Duststreet 500",
@@ -31,7 +31,7 @@
                 "postalCode" : "56789",
                 "phone" : "+49 123 4567899 (billing)",
                 "email" : "billing@commercetools.com",
-                "countries" : { "$ref" : "checkout/choose-country-2.json" }
+                "countries" : { "$ref" : "form/choose-country-2.json" }
             }
         },
         "cart" : { "$ref" : "checkout/cart.json" }
