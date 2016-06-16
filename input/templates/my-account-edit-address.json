@@ -2,7 +2,7 @@
 	"header" : { "$ref" : "common/header.json" },
 	"footer" : { "$ref" : "common/footer.json" },
 	"content" : {
-		"addressForm" : {
+		"editAddressForm" : {
 			"id" : "34jhd94",
 			"salutations" : { "$ref" : "form/choose-title-1.json" },
 		  "firstName" : "Bruce",
@@ -14,7 +14,9 @@
 		  "postalCode" : "11111",
       "countries" : { "$ref" : "form/choose-country-1.json" },
       "defaultShippingAddress" : true,
-      "defaultBillingAddress" : false
+      "defaultBillingAddress" : false,
+      "messages": { "$ref" : "form/messages.json" },
+      "errors" : { "$ref" : "form/errors.json" }
 		}
 	},
     "meta" : { "$ref" : "common/meta.json" }
