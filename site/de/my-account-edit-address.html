@@ -705,13 +705,13 @@
               </div>
               <div id="my-account-desktop-content" class="col-sm-9">
                 <div class="address-book-content edit-address-book-content">
-                  <form id="form-edit-my-address-book" action="my-account-edit-address.html" method="POST">
+                  <form id="form-edit-my-address-book" action="my-account-address-book.html" method="POST">
                     <input type="hidden" name="csrfToken" value="Test123"/>
-                    <input type="hidden" name="id" value=""/>
+                    <input type="hidden" name="id" value="34jhd94"/>
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="address-book-title hidden-xs">
-                          Addressbuch > Addresse > Bearbeiten
+                          Addressbuch
                         </div>
                       </div>
                     </div>
@@ -721,61 +721,68 @@
                           <div class="col-sm-4">
                             <div class="title">
                               <span class="text-uppercase">Titel</span><br>
-                              <select id="shipping-title-select" class="checkout-dropdown" name="titleBilling">
+                              <select id="address-book-title-select" class="checkout-dropdown" name="title">
                                 <option value="" selected>Auswählen</option>
+                                <option value="Mr." selected>Mr.</option>
+                                <option value="Mrs." >Mrs.</option>
+                                <option value="Ms." >Ms.</option>
+                                <option value="Dr." >Dr.</option>
                               </select>
-                            </div>
-                          </div>
+                            </div>  </div>
                         </div>
                         <div class="row">
                           <div class="col-sm-6">
                             <div class="input-block">
                               <span class="text-uppercase">Vorname<abbr title="Pflichtfeld">*</abbr></span><br>
-                              <input id="input-firstName-Billing" class="checkout-input-field" type="text" name="firstNameBilling" value="">
+                              <input id="input-firstName-" class="checkout-input-field" type="text" name="firstName" value="Bruce">
                             </div>
                           </div>
                           <div class="col-sm-6">
                             <div class="input-block">
                               <span class="text-uppercase">Nachname<abbr title="Pflichtfeld">*</abbr></span><br>
-                              <input id="input-lastName-Billing" class="checkout-input-field" type="text" name="lastNameBilling" value="">
+                              <input id="input-lastName-" class="checkout-input-field" type="text" name="lastName" value="Wayne">
                             </div>
                           </div>
                           <div class="col-sm-12">
                             <div class="input-block">
                               <span class="text-uppercase">Adresse 1<abbr title="Pflichtfeld">*</abbr></span><br>
-                              <input id="input-streetName-Billing" class="checkout-input-field" type="text" name="streetNameBilling" value="">
+                              <input id="input-streetName-" class="checkout-input-field" type="text" name="streetName" value="100 Gotham Street">
                             </div>
                           </div>
                           <div class="col-sm-12">
                             <div class="input-block">
                               <span class="text-uppercase">Adresse 2</span><br>
-                              <input id="input-additionalStreetInfo-Billing" class="checkout-input-field" type="text" name="additionalStreetInfoBilling" value="">
+                              <input id="input-additionalStreetInfo-" class="checkout-input-field" type="text" name="additionalStreetInfo" value="Basement">
                             </div>
                           </div>
                           <div class="col-sm-8">
                             <div class="input-block">
                               <span class="text-uppercase">Stadt<abbr title="Pflichtfeld">*</abbr></span><br>
-                              <input id="input-city-Billing" class="checkout-input-field" type="text" name="cityBilling" value="">
+                              <input id="input-city-" class="checkout-input-field" type="text" name="city" value="Gotham">
                             </div>
                           </div>
                           <div class="col-sm-4">
                             <div class="input-block">
                               <span class="text-uppercase">PLZ<abbr title="Pflichtfeld">*</abbr></span><br>
-                              <input id="input-postalCode-Billing" class="checkout-input-field" type="text" name="postalCodeBilling" value="">
+                              <input id="input-postalCode-" class="checkout-input-field" type="text" name="postalCode" value="11111">
                             </div>
                           </div>
                           <div class="col-sm-6">
-                            <div class="input-block">
+                            <div class="country input-block">
                               <span class="text-uppercase">Land*</span><br>
-                              <select id="shipping-country-select" class="checkout-dropdown" name="countryBilling">
+                              <select id="address-book-country-select" class="checkout-dropdown" name="country">
                                 <option value="" selected>Auswählen</option>
+                                <option value="UK" selected>United Kingdom</option>
+                                <option value="DE" >Germany</option>
+                                <option value="FR" >France</option>
+                                <option value="ES" >Spain</option>
                               </select>
                             </div>
                           </div>
                           <div class="col-sm-6">
                             <div class="input-block">
                               <span class="text-uppercase">Region</span><br>
-                              <input id="input-region-Billing" class="checkout-input-field" type="text" name="regionBilling" value="">
+                              <input id="input-region-" class="checkout-input-field" type="text" name="region" value="NY">
                             </div>
                           </div>
                         </div>
@@ -785,7 +792,7 @@
                             <div class="input-block">
                               <label for="billing-checkbox">
                                 <span>
-                                  <input id="default-billing-checkbox" type="checkbox" name="defaultBillingAddress">
+                                  <input id="default-billing-checkbox" type="checkbox" name="defaultBillingAddress" >
                                 </span>
                                 <span>Als meine Rechnungadresse verwenden</span>
                               </label>
@@ -795,7 +802,7 @@
                             <div class="input-block">
                               <label for="delivery-checkbox">
                                 <span>
-                                  <input id="default-shipping-checkbox" type="checkbox" name="defaultShippingAddress">
+                                  <input id="default-shipping-checkbox" type="checkbox" name="defaultShippingAddress" checked>
                                 </span>
                                 <span>Als meine Lieferadresse verwenden</span>
                               </label>

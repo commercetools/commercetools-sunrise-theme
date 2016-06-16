@@ -1,4 +1,4 @@
-<!-- start my-account-edit-address.hbs -->
+<!-- start my-account-new-address.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,9 +23,8 @@
               </div>
               <div id="my-account-desktop-content" class="col-sm-9">
                 <div class="address-book-content edit-address-book-content">
-                  <form id="form-edit-my-address-book" action="{{@root.meta._links.myAddressBookEditAddressSubmit.href}}" method="POST">
+                  <form id="form-add-my-address-book" action="{{@root.meta._links.myAddressBookAddAddressSubmit.href}}" method="POST">
                     <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
-                    <input type="hidden" name="id" value="{{content.addressForm.id}}"/>
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="address-book-title hidden-xs">
@@ -65,4 +64,4 @@
 </body>
 
 </html>
-<!-- end my-account-edit-address.hbs -->
+<!-- end my-account-new-address.hbs -->

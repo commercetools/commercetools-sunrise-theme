@@ -1,4 +1,4 @@
-<!-- start my-account-address-book.hbs -->
+<!-- start my-account-new-address.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -704,119 +704,125 @@
                 <!-- end myaccount/my-account-sidebar.hbs -->
               </div>
               <div id="my-account-desktop-content" class="col-sm-9">
-                <div class="address-book-content">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="address-book-title hidden-xs">
-                        Address Book
+                <div class="address-book-content edit-address-book-content">
+                  <form id="form-add-my-address-book" action="my-account-address-book.html" method="POST">
+                    <input type="hidden" name="csrfToken" value="Test123"/>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="address-book-title hidden-xs">
+                          Address Book
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="box-addresses-title">
-                        Default Addresses
-                      </div>
-                      <div class="address-book-dark-box">
-                        <div class="address-book-dark-box-title">Shipping Address</div>
-                        <div>Mr. Bruce Wayne</div>
-                        <div>100 Gotham Street</div>
-                        <div>Basement</div>
-                        <div>Gotham</div>
-                        <div>11111 NY</div>
-                        <div>United States</div>
-                        <div class="address-book-edit-delete">
-                          <div>
-                            <a href="my-account-edit-address.html">
-                              <img src="../../assets//img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="edit icon">
-                              Edit
-                            </a>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="title">
+                              <span class="text-uppercase">Title</span><br>
+                              <select id="address-book-title-select" class="checkout-dropdown" name="title">
+                                <option value="" selected>Choose</option>
+                                <option value="Mr." selected>Mr.</option>
+                                <option value="Mrs." >Mrs.</option>
+                                <option value="Ms." >Ms.</option>
+                                <option value="Dr." >Dr.</option>
+                              </select>
+                            </div>  </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <span class="text-uppercase">First Name<abbr title="Required">*</abbr></span><br>
+                              <input id="input-firstName-" class="checkout-input-field" type="text" name="firstName" value="Bruce">
+                            </div>
                           </div>
-                          <div>
-                            <a href="my-account-address-book.html">
-                              <img src="../../assets//img/delete-60px-79b39c9928264fae4ba63e8655a46992.png" alt="delete icon">
-                              Delete
-                            </a>
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <span class="text-uppercase">Last Name<abbr title="Required">*</abbr></span><br>
+                              <input id="input-lastName-" class="checkout-input-field" type="text" name="lastName" value="Wayne">
+                            </div>
                           </div>
-                        </div>                      </div>
-                      <div class="address-book-dark-box">
-                        <div class="address-book-dark-box-title">Billing Address</div>
-                        <div>Mrs. Jane Doe</div>
-                        <div>404 Ave.</div>
-                        <div>Garden house</div>
-                        <div>Berlin</div>
-                        <div>80808 Berlin</div>
-                        <div>Germany</div>
-                        <div class="address-book-edit-delete">
-                          <div>
-                            <a href="my-account-edit-address.html">
-                              <img src="../../assets//img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="edit icon">
-                              Edit
-                            </a>
+                          <div class="col-sm-12">
+                            <div class="input-block">
+                              <span class="text-uppercase">Address 1<abbr title="Required">*</abbr></span><br>
+                              <input id="input-streetName-" class="checkout-input-field" type="text" name="streetName" value="100 Gotham Street">
+                            </div>
                           </div>
-                          <div>
-                            <a href="my-account-address-book.html">
-                              <img src="../../assets//img/delete-60px-79b39c9928264fae4ba63e8655a46992.png" alt="delete icon">
-                              Delete
-                            </a>
+                          <div class="col-sm-12">
+                            <div class="input-block">
+                              <span class="text-uppercase">Address 2</span><br>
+                              <input id="input-additionalStreetInfo-" class="checkout-input-field" type="text" name="additionalStreetInfo" value="Basement">
+                            </div>
                           </div>
-                        </div>                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="box-addresses-title">
-                        Additional addresses
-                      </div>
-                      <div class="address-book-white-box">
-                        <div>Mrs. Jane Doe</div>
-                        <div>404 Ave.</div>
-                        <div>Garden house</div>
-                        <div>Berlin</div>
-                        <div>80808 Berlin</div>
-                        <div>Germany</div>
-                        <div class="address-book-edit-delete">
-                          <div>
-                            <a href="my-account-edit-address.html">
-                              <img src="../../assets//img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="edit icon">
-                              Edit
-                            </a>
+                          <div class="col-sm-8">
+                            <div class="input-block">
+                              <span class="text-uppercase">City<abbr title="Required">*</abbr></span><br>
+                              <input id="input-city-" class="checkout-input-field" type="text" name="city" value="Gotham">
+                            </div>
                           </div>
-                          <div>
-                            <a href="my-account-address-book.html">
-                              <img src="../../assets//img/delete-60px-79b39c9928264fae4ba63e8655a46992.png" alt="delete icon">
-                              Delete
-                            </a>
+                          <div class="col-sm-4">
+                            <div class="input-block">
+                              <span class="text-uppercase">Post Code<abbr title="Required">*</abbr></span><br>
+                              <input id="input-postalCode-" class="checkout-input-field" type="text" name="postalCode" value="11111">
+                            </div>
                           </div>
-                        </div>                      </div>
-                      <div class="address-book-white-box">
-                        <div>Mr. Bruce Wayne</div>
-                        <div>100 Gotham Street</div>
-                        <div>Basement</div>
-                        <div>Gotham</div>
-                        <div>11111 NY</div>
-                        <div>United States</div>
-                        <div class="address-book-edit-delete">
-                          <div>
-                            <a href="my-account-edit-address.html">
-                              <img src="../../assets//img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="edit icon">
-                              Edit
-                            </a>
+                          <div class="col-sm-6">
+                            <div class="country input-block">
+                              <span class="text-uppercase">Country*</span><br>
+                              <select id="address-book-country-select" class="checkout-dropdown" name="country">
+                                <option value="" selected>Choose</option>
+                                <option value="UK" selected>United Kingdom</option>
+                                <option value="DE" >Germany</option>
+                                <option value="FR" >France</option>
+                                <option value="ES" >Spain</option>
+                              </select>
+                            </div>
                           </div>
-                          <div>
-                            <a href="my-account-address-book.html">
-                              <img src="../../assets//img/delete-60px-79b39c9928264fae4ba63e8655a46992.png" alt="delete icon">
-                              Delete
-                            </a>
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <span class="text-uppercase">Region</span><br>
+                              <input id="input-region-" class="checkout-input-field" type="text" name="region" value="NY">
+                            </div>
                           </div>
-                        </div>                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="add-new-address-btn">
-                        <a href="my-account-new-address.html">Add New Address</a>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <label for="billing-checkbox">
+                                <span>
+                                  <input id="default-billing-checkbox" type="checkbox" name="defaultBillingAddress" >
+                                </span>
+                                <span>Use as default address for billing</span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="input-block">
+                              <label for="delivery-checkbox">
+                                <span>
+                                  <input id="default-shipping-checkbox" type="checkbox" name="defaultShippingAddress" checked>
+                                </span>
+                                <span>Use as default address for shipping</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="edit-address-book-footer">
+                          <div class="btn-grey push-left">
+                            <a href="my-account-address-book.html">Cancel editing</button>
+                          </div>
+                          <div class="add-new-address-btn push-right">
+                            <button type="submit">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -921,4 +927,4 @@
 </body>
 
 </html>
-<!-- end my-account-address-book.hbs -->
+<!-- end my-account-new-address.hbs -->

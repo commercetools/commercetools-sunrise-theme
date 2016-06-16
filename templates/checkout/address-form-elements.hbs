@@ -1,15 +1,7 @@
 <!-- start checkout/address-form-elements.hbs -->
 <div class="row">
   <div class="col-sm-4">
-    <div class="title">
-      <span class="text-uppercase">{{i18n "main:form.title"}}</span><br>
-      <select id="shipping-title-select" class="checkout-dropdown" name="title{{suffix}}">
-        <option value="" selected>{{i18n "main:form.choose"}}</option>
-        {{#each form.salutations.list}}
-        <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
-        {{/each}}
-      </select>
-    </div>
+    {{> form/choose-title containerClass="title" selectId="shipping-title-select" selectName="title" options=form.salutations}}
   </div>
 </div>
 <div class="row">
@@ -20,7 +12,7 @@
   {{> form/input-text columnWidth=8 name="city" labelKey="form.city" required=true value=form.city}}
   {{> form/input-text columnWidth=4 name="postalCode" labelKey="form.postCode" required=true value=form.postalCode}}
   <div class="col-sm-6">
-    {{> checkout/choose-country containerClass="country" selectId="shipping-country-select" selectName="country" options=form.countries}}
+    {{> form/choose-country containerClass="country" selectId="shipping-country-select" selectName="country" options=form.countries}}
   </div>
   {{> form/input-text columnWidth=6 name="region" labelKey="form.region" required=false value=form.region}}
 </div>

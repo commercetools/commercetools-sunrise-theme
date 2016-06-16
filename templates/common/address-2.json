@@ -1,0 +1,11 @@
+{
+  "title" : "Mrs.",
+  "firstName" : "Jane",
+  "lastName" : "Doe",
+  "streetName" : "404 Ave.",
+  "additionalStreetInfo" : "Garden house",
+  "city" : "Berlin",
+  "region" : "Berlin",
+  "postalCode" : "80808",
+  "country" : "Germany"
+}

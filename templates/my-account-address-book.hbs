@@ -35,61 +35,34 @@
                       <div class="box-addresses-title">
                         {{i18n "my-account:addressBook.defaultAddresses.title"}}
                       </div>
+                      {{#if content.defaultShippingAddress}}
                       <div class="address-book-dark-box">
-                        <div class="address-book-dark-box-title">{{i18n "my-account:addressBook.normalAddress.title"}}</div>
-                        <div>{{content.shippingAddress.name}}</div>
-                        <div>{{content.shippingAddress.address}}</div>
-                        <div>{{content.shippingAddress.region}}</div>
-                        <div>{{content.shippingAddress.postalCode}}</div>
-                        <div>{{content.shippingAddress.country}}</div>
-                        <div class="address-box-edit-btn">
-                          <a href="{{@root.meta._links.editMyAddressBook.href}}"><img src="{{meta.assetsPath}}/img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="edit icon">{{i18n "my-account:buttons.edit"}}</a>
-                        </div>
+                        <div class="address-book-dark-box-title">{{i18n "my-account:addressBook.shippingAddress.title"}}</div>
+                        {{> myaccount/my-address-book-address addressInfo=content.defaultShippingAddress}}
                       </div>
+                      {{/if}}
+                      {{#if content.defaultBillingAddress}}
                       <div class="address-book-dark-box">
                         <div class="address-book-dark-box-title">{{i18n "my-account:addressBook.billingAddress.title"}}</div>
-                        <div>{{content.billingAddress.name}}</div>
-                        <div>{{content.billingAddress.address}}</div>
-                        <div>{{content.billingAddress.region}}</div>
-                        <div>{{content.billingAddress.postalCode}}</div>
-                        <div>{{content.billingAddress.country}}</div>
-                        <div class="address-box-edit-btn">
-                          <a href="{{@root.meta._links.editMyAddressBook.href}}"><img src="{{meta.assetsPath}}/img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="edit icon">{{i18n "my-account:buttons.edit"}}</a>
-                        </div>
+                        {{> myaccount/my-address-book-address addressInfo=content.defaultBillingAddress}}
                       </div>
+                      {{/if}}
                     </div>
                     <div class="col-sm-6">
                       <div class="box-addresses-title">
                         {{i18n "my-account:addressBook.additionalAddress.title"}}
                       </div>
+                      {{#each content.addresses}}
                       <div class="address-book-white-box">
-                        <div>{{content.secondaryAddress.name}}</div>
-                        <div>{{content.secondaryAddress.address}}</div>
-                        <div>{{content.secondaryAddress.region}}</div>
-                        <div>{{content.secondaryAddress.postalCode}}</div>
-                        <div>{{content.secondaryAddress.country}}</div>
-                        <div class="address-book-edit-delete">
-                          <div><a href="{{@root.meta._links.editMyAddressBook.href}}"><img src="{{meta.assetsPath}}/img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="">{{i18n "my-account:buttons.edit"}}</a></div>
-                          <div><a href="#"><img src="{{meta.assetsPath}}/img/delete-60px-79b39c9928264fae4ba63e8655a46992.png" alt="">{{i18n "my-account:buttons.delete"}}</a></div>
-                        </div>
+                        {{> myaccount/my-address-book-address addressInfo=this}}
                       </div>
-                      <div class="address-book-white-box">
-                        <div>{{content.additionalAddress.name}}</div>
-                        <div>{{content.additionalAddress.address}}</div>
-                        <div>{{content.additionalAddress.region}}</div>
-                        <div>{{content.additionalAddress.postalCode}}</div>
-                        <div>{{content.additionalAddress.country}}</div>
-                        <div class="address-book-edit-delete">
-                          <div><a href="{{@root.meta._links.editMyAddressBook.href}}"><img src="{{meta.assetsPath}}/img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="">{{i18n "my-account:buttons.edit"}}</a></div>
-                          <div><a href="#"><img src="{{meta.assetsPath}}/img/delete-60px-79b39c9928264fae4ba63e8655a46992.png" alt="">{{i18n "my-account:buttons.delete"}}</a></div>
-                        </div>
-                      </div>
+                      {{/each}}
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="add-new-address-btn">
-                        <a href="#">{{i18n "my-account:buttons.addNewAddress"}}</a>
+                        <a href="{{@root.meta._links.myAddressBookAddAddress.href}}">{{i18n "my-account:buttons.addNewAddress"}}</a>
                       </div>
                     </div>
                   </div>

@@ -1583,13 +1583,65 @@
   },
   "footer": {},
   "content": {
-    "shippingAddress": {
-      "title": "Shipping Address",
-      "name": "Bruce Wayne",
-      "address": "100 Gotham Street",
-      "region": "Gotham",
+    "addressForm": {
+      "id": "34jhd94",
+      "salutations": {
+        "list": [
+          {
+            "label": "Mr.",
+            "value": "Mr.",
+            "selected": true
+          },
+          {
+            "label": "Mrs.",
+            "value": "Mrs.",
+            "selected": false
+          },
+          {
+            "label": "Ms.",
+            "value": "Ms.",
+            "selected": false
+          },
+          {
+            "label": "Dr.",
+            "value": "Dr.",
+            "selected": false
+          }
+        ]
+      },
+      "firstName": "Bruce",
+      "lastName": "Wayne",
+      "streetName": "100 Gotham Street",
+      "additionalStreetInfo": "Basement",
+      "city": "Gotham",
+      "region": "NY",
       "postalCode": "11111",
-      "country": "Country"
+      "countries": {
+        "list": [
+          {
+            "label": "United Kingdom",
+            "value": "UK",
+            "selected": true
+          },
+          {
+            "label": "Germany",
+            "value": "DE",
+            "selected": false
+          },
+          {
+            "label": "France",
+            "value": "FR",
+            "selected": false
+          },
+          {
+            "label": "Spain",
+            "value": "ES",
+            "selected": false
+          }
+        ]
+      },
+      "defaultShippingAddress": true,
+      "defaultBillingAddress": false
     }
   },
   "meta": {
@@ -1688,8 +1740,14 @@
       "myAddressBook": {
         "href": "my-account-address-book.html"
       },
-      "editMyAddressBook": {
-        "href": "my-account-edit-address.html"
+      "myAddressBookAddAddress": {
+        "href": "my-account-new-address.html"
+      },
+      "myAddressBookAddAddressSubmit": {
+        "href": "my-account-address-book.html"
+      },
+      "myAddressBookEditAddressSubmit": {
+        "href": "my-account-address-book.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"

@@ -24,8 +24,6 @@ personalDetails:
   personalDetailsTitle: Ihre Benutzerdaten
 addressBook:
   title : Addressbuch
-  normalAddress:
-    title: Addresse
   defaultAddresses:
     title: Standard-Adressen
   additionalAddress:

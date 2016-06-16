@@ -1583,34 +1583,68 @@
   },
   "footer": {},
   "content": {
-    "shippingAddress": {
-      "name": "Bruce Wayne",
-      "address": "100 Gotham Street",
-      "region": "Gotham",
-      "postalCode": "11111",
-      "country": "Country"
+    "defaultShippingAddress": {
+      "address": {
+        "title": "Mr.",
+        "firstName": "Bruce",
+        "lastName": "Wayne",
+        "streetName": "100 Gotham Street",
+        "additionalStreetInfo": "Basement",
+        "city": "Gotham",
+        "region": "NY",
+        "postalCode": "11111",
+        "country": "United States"
+      },
+      "addressEditUrl": "my-account-edit-address.html",
+      "addressDeleteUrl": "my-account-address-book.html"
     },
-    "billingAddress": {
-      "name": "Bruce Wayne",
-      "address": "100 Gotham Street",
-      "region": "Gotham",
-      "postalCode": "11111",
-      "country": "Country"
+    "defaultBillingAddress": {
+      "address": {
+        "title": "Mrs.",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "streetName": "404 Ave.",
+        "additionalStreetInfo": "Garden house",
+        "city": "Berlin",
+        "region": "Berlin",
+        "postalCode": "80808",
+        "country": "Germany"
+      },
+      "addressEditUrl": "my-account-edit-address.html",
+      "addressDeleteUrl": "my-account-address-book.html"
     },
-    "additionalAddress": {
-      "name": "Bruce Wayne",
-      "address": "100 Gotham Street",
-      "region": "Gotham",
-      "postalCode": "11111",
-      "country": "Country"
-    },
-    "secondaryAddress": {
-      "name": "Bruce Wayne",
-      "address": "100 Gotham Street",
-      "region": "Gotham",
-      "postalCode": "11111",
-      "country": "Country"
-    }
+    "addresses": [
+      {
+        "address": {
+          "title": "Mrs.",
+          "firstName": "Jane",
+          "lastName": "Doe",
+          "streetName": "404 Ave.",
+          "additionalStreetInfo": "Garden house",
+          "city": "Berlin",
+          "region": "Berlin",
+          "postalCode": "80808",
+          "country": "Germany"
+        },
+        "addressEditUrl": "my-account-edit-address.html",
+        "addressDeleteUrl": "my-account-address-book.html"
+      },
+      {
+        "address": {
+          "title": "Mr.",
+          "firstName": "Bruce",
+          "lastName": "Wayne",
+          "streetName": "100 Gotham Street",
+          "additionalStreetInfo": "Basement",
+          "city": "Gotham",
+          "region": "NY",
+          "postalCode": "11111",
+          "country": "United States"
+        },
+        "addressEditUrl": "my-account-edit-address.html",
+        "addressDeleteUrl": "my-account-address-book.html"
+      }
+    ]
   },
   "meta": {
     "assetsPath": "../../assets/",
@@ -1708,8 +1742,14 @@
       "myAddressBook": {
         "href": "my-account-address-book.html"
       },
-      "editMyAddressBook": {
-        "href": "my-account-edit-address.html"
+      "myAddressBookAddAddress": {
+        "href": "my-account-new-address.html"
+      },
+      "myAddressBookAddAddressSubmit": {
+        "href": "my-account-address-book.html"
+      },
+      "myAddressBookEditAddressSubmit": {
+        "href": "my-account-address-book.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"

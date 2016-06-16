@@ -246,8 +246,14 @@
       "myAddressBook": {
         "href": "my-account-address-book.html"
       },
-      "editMyAddressBook": {
-        "href": "my-account-edit-address.html"
+      "myAddressBookAddAddress": {
+        "href": "my-account-new-address.html"
+      },
+      "myAddressBookAddAddressSubmit": {
+        "href": "my-account-address-book.html"
+      },
+      "myAddressBookEditAddressSubmit": {
+        "href": "my-account-address-book.html"
       },
       "checkoutConfirmation": {
         "href": "checkout-confirmation.html"

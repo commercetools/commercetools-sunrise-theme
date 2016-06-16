@@ -13,14 +13,7 @@
       </div>
       <hr class="signup-box-hr">
       <div class="signup-box-description">{{i18n "my-account-login:signupBox.description"}}</div>
-      <div class="signup-box-input">
-        <span>{{i18n "my-account-login:signupBox.titleSelect"}}</span><br>
-        <select name="title">
-          {{#each content.signUpForm.salutations.list}}
-            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
-          {{/each}}
-        </select>
-      </div>
+       {{> form/choose-title containerClass="signup-box-input" selectId="title" selectName="title" options=content.signUpForm.salutations}}
       <div class="row">
         <div class="col-sm-6">
           <div class="signup-box-input">

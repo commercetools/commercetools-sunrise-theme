@@ -1,0 +1,22 @@
+<!-- start myaccount/my-address-book-address.hbs -->
+<div>{{addressInfo.address.title}} {{addressInfo.address.firstName}} {{addressInfo.address.lastName}}</div>
+<div>{{addressInfo.address.streetName}}</div>
+<div>{{addressInfo.address.additionalStreetInfo}}</div>
+<div>{{addressInfo.address.city}}</div>
+<div>{{addressInfo.address.postalCode}} {{addressInfo.address.region}}</div>
+<div>{{addressInfo.address.country}}</div>
+<div class="address-book-edit-delete">
+  <div>
+    <a href="{{addressInfo.addressEditUrl}}">
+      <img src="{{@root.meta.assetsPath}}/img/edit-1-ee67c29dd583c457214daab443cee2a4.png" alt="edit icon">
+      {{i18n "my-account:buttons.edit"}}
+    </a>
+  </div>
+  <div>
+    <a href="{{addressInfo.addressDeleteUrl}}">
+      <img src="{{@root.meta.assetsPath}}/img/delete-60px-79b39c9928264fae4ba63e8655a46992.png" alt="delete icon">
+      {{i18n "my-account:buttons.delete"}}
+    </a>
+  </div>
+</div>
+<!-- end myaccount/my-address-book-address.hbs -->

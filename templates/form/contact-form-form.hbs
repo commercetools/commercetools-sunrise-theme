@@ -1,14 +1,6 @@
 <!-- start form/contact-form-form.hbs -->
 <form class="" action="" method="post">
-  <div class="title">
-    <span class="text-uppercase">{{i18n "main:form.title"}}</span><br>
-    <select id="shipping-title-select" class="checkout-dropdown" name="title{{suffix}}">
-      <option value="" selected>{{i18n "main:form.choose"}}</option>
-      {{#each form.salutations.list}}
-      <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
-      {{/each}}
-    </select>
-  </div>
+  {{> form/choose-title containerClass="title" selectId="contact-title-select" selectName="title" options=form.salutations}}
   <div class="row">
     {{> form/input-text columnWidth=6 name="firstName" labelKey="main:form.firstName" required=true value=form.firstName}}
     {{> form/input-text columnWidth=6 name="lastName" labelKey="main:form.lastName" required=true value=form.lastName}}
