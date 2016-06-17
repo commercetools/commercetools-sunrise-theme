@@ -13,7 +13,7 @@
       "repoSlug": "commercetools/commercetools-sunrise-theme"
     },
     "maven": {
-      "groupId": "io.commercetools.sunrise",
+      "groupId": "com.commercetools.sunrise",
       "repositoryId": "commercetools-bintray",
       "url": "https://api.bintray.com/maven/commercetools/maven/commercetools-sunrise-theme"
     }
