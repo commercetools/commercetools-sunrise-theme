@@ -23,9 +23,9 @@ module.exports = function(grunt) {
   grunt.registerTask('build-templates', ['clean:templates', 'internal-build-templates']);
   grunt.registerTask('build-release', ['build', 'assetFingerprint']);
 
-  grunt.registerTask('build-composer', ['build-release', 'copy:composer']);
+  grunt.registerTask('build-composer', ['build-release', 'copy:composer', 'clean:output']);
   
-  grunt.registerTask('build-webjar', ['build-release', 'maven:webjars']);
+  grunt.registerTask('build-webjar', ['build-release', 'maven:webjars', 'clean:output']);
   grunt.registerTask('install-webjar', ['build-release', 'maven:install', 'clean']);
   grunt.registerTask('release-webjar', ['build-release', 'maven:release', 'clean']);
 
@@ -34,7 +34,6 @@ module.exports = function(grunt) {
   grunt.registerTask('internal-build-images', ['copy:images', 'imagemin']);
   grunt.registerTask('internal-build-assets', ['copy:assets', 'sass', 'postcss', 'uglify']);
   grunt.registerTask('internal-build-templates', ['copy:templates', 'copy:others', 'json-refs', 'generate-html']);
-
 };
 
 function loadConfig(path) {

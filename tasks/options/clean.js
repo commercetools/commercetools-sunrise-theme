@@ -3,8 +3,7 @@ module.exports = {
   // 'grunt-contrib-clean': remove files
 
   output: [
-    'output/',
-    'composer/'
+    'output/'
   ],
 
   images: [
@@ -25,7 +24,8 @@ module.exports = {
   ],
 
   dist: [
-    '*.jar'
+    '*.jar',
+    'composer/'
   ]
 
 }
