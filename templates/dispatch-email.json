@@ -21,7 +21,7 @@
     },
     "order": [
       {
-        "image": "../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg",
+        "image": "../../assets/img/blue-shirt-5bdf49d3ec20b6fdddcf3e6a70798068.jpg",
         "nameHeadline": "Enditatem Product Name",
         "nameSubline": "Optional Line Two",
         "sku": "Sunrise #SUN123456",
@@ -37,7 +37,7 @@
         "totalPrice": "100,00 €"
       },
       {
-        "image": "../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg",
+        "image": "../../assets/img/blue-shirt-5bdf49d3ec20b6fdddcf3e6a70798068.jpg",
         "nameHeadline": "Enditatem Product Name",
         "nameSubline": "Optional Line Two",
         "sku": "Sunrise #SUN123456",
@@ -70,7 +70,7 @@
     "suggestionsTitle": "You may also like",
     "suggestions": [
       {
-        "image": "../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg",
+        "image": "../../assets/img/blue-shirt-5bdf49d3ec20b6fdddcf3e6a70798068.jpg",
         "nameHeadline": "Enditatem Product Name",
         "nameSubline": "Optional Line Two",
         "price": "€ 100,00",
@@ -80,7 +80,7 @@
         "sale": true
       },
       {
-        "image": "../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg",
+        "image": "../../assets/img/blue-shirt-5bdf49d3ec20b6fdddcf3e6a70798068.jpg",
         "nameHeadline": "Enditatem Product Name",
         "nameSubline": "Optional Line Two",
         "price": "€ 100,00",
@@ -90,7 +90,7 @@
       },
       {
         "last": true,
-        "image": "../../assets/img/blue-shirt-2996166b4fab7fd82e416402b3937ba9.jpg",
+        "image": "../../assets/img/blue-shirt-5bdf49d3ec20b6fdddcf3e6a70798068.jpg",
         "nameHeadline": "Enditatem Product Name",
         "nameSubline": "Optional Line Two",
         "price": "€ 100,00",
