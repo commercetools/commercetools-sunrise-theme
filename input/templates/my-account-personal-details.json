@@ -6,8 +6,11 @@
 			"customer" : { "$ref" : "common/customer-1.json" },
 			"subscribed" : true
 		},
+		"personalDetailsFormSettings" : {
+			"title": { "$ref" : "form/choose-title-1.json" }
+		},
 		"personalDetailsForm" : {
-			"salutations" : { "$ref" : "form/choose-title-1.json" },
+			"title" : "Mr.",
 			"firstName" : "Bruce",
 			"lastName" : "Wayne",
 			"email" : "somebody@somewhere.com",

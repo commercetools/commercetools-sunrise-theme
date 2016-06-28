@@ -1,6 +1,6 @@
 <div class="{{containerClass}}">
   <span class="text-uppercase">{{i18n "main:form.title"}}</span><br>
-  <select id="{{selectId}}" class="checkout-dropdown" name="{{selectName}}{{suffix}}">
+  <select id="{{selectId}}" class="checkout-dropdown" name="{{options.formName}}{{#unless options.formName}}{{selectName}}{{/unless}}">
     <option value="" selected>{{i18n "main:form.choose"}}</option>
     {{#each options.list}}
     <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>

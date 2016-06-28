@@ -2,7 +2,12 @@
     "header" : { "$ref" : "common/header.json" },
     "footer" : { "$ref" : "common/footer.json" },
     "content" : {
-        "salutations" : { "$ref" : "form/choose-title-1.json" }
+        "contactFormSettings": {
+            "title" : { "$ref" : "form/choose-title-1.json" }
+        },
+        "contactForm": {
+            "title": "Mr."
+        }
     },
     "meta" : { "$ref" : "common/meta.json" }
 }
