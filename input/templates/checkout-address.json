@@ -11,6 +11,12 @@
             },
             "titleBilling": {
                 "$ref": "form/choose-title-1.json"
+            },
+            "countriesShipping": {
+                "$ref": "form/choose-country-1.json"
+            },
+            "countriesBilling": {
+                "$ref": "form/choose-country-1.json"
             }
         },
         "addressForm" : {
@@ -23,9 +29,7 @@
             "cityShipping": "London",
             "regionShipping": "London (Region)",
             "postalCodeShipping": "123456",
-            "countriesShipping": {
-                "$ref": "form/choose-country-1.json"
-            },
+            "countriesShipping": "UK",
             "phoneShipping": "+49 123 4567899",
             "emailShipping": "thedoctor@commercetools.com",
             "titleBilling": "Mr",
@@ -36,9 +40,7 @@
             "cityBilling": "London",
             "regionBilling": "London (Region)",
             "postalCodeBilling": "123456",
-            "countriesBilling": {
-                "$ref": "form/choose-country-1.json"
-            },
+            "countriesBilling":  "UK",
             "phoneBilling": "+49 123 4567899",
             "emailBilling": "thedoctor@commercetools.com"
         },

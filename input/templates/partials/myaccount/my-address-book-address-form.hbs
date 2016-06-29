@@ -11,7 +11,7 @@
   {{> form/input-text columnWidth=8 name="city" labelKey="form.city" required=true value=form.city settings=settings.city}}
   {{> form/input-text columnWidth=4 name="postalCode" labelKey="form.postCode" required=true value=form.postalCode settings=settings.postalCode}}
   <div class="col-sm-6">
-    {{> form/choose-country containerClass="country" selectId="address-book-country-select" selectName="country" options=form.countries settings=settings.countries}}
+    {{> form/choose-country containerClass="country" selectId="address-book-country-select" selectName="country" options=settings.countries}}
   </div>
   {{> form/input-text columnWidth=6 name="region" labelKey="form.region" required=false value=form.region settings=settings.region}}
 </div>
