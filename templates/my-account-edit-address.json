@@ -1583,9 +1583,8 @@
   },
   "footer": {},
   "content": {
-    "editAddressForm": {
-      "id": "34jhd94",
-      "salutations": {
+    "editAddressFormSettings": {
+      "title": {
         "list": [
           {
             "label": "Mr.",
@@ -1609,13 +1608,6 @@
           }
         ]
       },
-      "firstName": "Bruce",
-      "lastName": "Wayne",
-      "streetName": "100 Gotham Street",
-      "additionalStreetInfo": "Basement",
-      "city": "Gotham",
-      "region": "NY",
-      "postalCode": "11111",
       "countries": {
         "list": [
           {
@@ -1639,7 +1631,19 @@
             "selected": false
           }
         ]
-      },
+      }
+    },
+    "editAddressForm": {
+      "id": "34jhd94",
+      "title": "Mr.",
+      "firstName": "Bruce",
+      "lastName": "Wayne",
+      "streetName": "100 Gotham Street",
+      "additionalStreetInfo": "Basement",
+      "city": "Gotham",
+      "region": "NY",
+      "postalCode": "11111",
+      "countries": "UK",
       "defaultShippingAddress": true,
       "defaultBillingAddress": false,
       "messages": {

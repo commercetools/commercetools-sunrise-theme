@@ -39,14 +39,14 @@
                     </div>
                     <div class="row">
                       <div class="col-sm-12">
-                        {{> myaccount/my-address-book-address-form form=content.editAddressForm}}
+                        {{> myaccount/my-address-book-address-form form=content.editAddressForm settings=content.editAddressFormSettings}}
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="edit-address-book-footer">
                           <div class="btn-grey push-left">
-                            <a href="{{@root.meta._links.myAddressBook.href}}">{{i18n "my-account:addressBook.buttons.cancelAddressBtn"}}</button>
+                            <a href="{{@root.meta._links.myAddressBook.href}}">{{i18n "my-account:addressBook.buttons.cancelAddressBtn"}}</a>
                           </div>
                           <div class="add-new-address-btn push-right">
                             <button type="submit">{{i18n "my-account:addressBook.buttons.saveAddressBtn"}}</button>

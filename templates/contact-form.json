@@ -1583,29 +1583,34 @@
   },
   "footer": {},
   "content": {
-    "salutations": {
-      "list": [
-        {
-          "label": "Mr.",
-          "value": "Mr.",
-          "selected": true
-        },
-        {
-          "label": "Mrs.",
-          "value": "Mrs.",
-          "selected": false
-        },
-        {
-          "label": "Ms.",
-          "value": "Ms.",
-          "selected": false
-        },
-        {
-          "label": "Dr.",
-          "value": "Dr.",
-          "selected": false
-        }
-      ]
+    "contactFormSettings": {
+      "title": {
+        "list": [
+          {
+            "label": "Mr.",
+            "value": "Mr.",
+            "selected": true
+          },
+          {
+            "label": "Mrs.",
+            "value": "Mrs.",
+            "selected": false
+          },
+          {
+            "label": "Ms.",
+            "value": "Ms.",
+            "selected": false
+          },
+          {
+            "label": "Dr.",
+            "value": "Dr.",
+            "selected": false
+          }
+        ]
+      }
+    },
+    "contactForm": {
+      "title": "Mr."
     }
   },
   "meta": {

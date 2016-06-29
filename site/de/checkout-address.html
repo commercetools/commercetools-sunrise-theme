@@ -76,90 +76,91 @@
                     <span class="text-uppercase shipping-info-title">Versand Information</span>
                     <span class="pull-right required-fields">Pflichtfeld*</span>
                   </div>
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <div class="title">
-                        <span class="text-uppercase">Titel</span><br>
-                        <select id="shipping-title-select" class="checkout-dropdown" name="titleShipping">
-                          <option value="" selected>Auswählen</option>
-                          <option value="Mr." selected>Mr.</option>
-                          <option value="Mrs." >Mrs.</option>
-                          <option value="Ms." >Ms.</option>
-                          <option value="Dr." >Dr.</option>
-                        </select>
-                      </div>  </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="input-block">
-                        <span class="text-uppercase">Vorname<abbr title="Pflichtfeld">*</abbr></span><br>
-                        <input id="input-firstName-Shipping" class="checkout-input-field" type="text" name="firstNameShipping" value="John">
-                      </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="title">
+                              <span class="text-uppercase">Titel</span><br>
+                              <select id="shipping-title-select" class="checkout-dropdown" name="titleShipping">
+                                <option value="" selected>Auswählen</option>
+                                <option value="Mr." selected>Mr.</option>
+                                <option value="Mrs." >Mrs.</option>
+                                <option value="Ms." >Ms.</option>
+                                <option value="Dr." >Dr.</option>
+                              </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="input-block">
-                        <span class="text-uppercase">Nachname<abbr title="Pflichtfeld">*</abbr></span><br>
-                        <input id="input-lastName-Shipping" class="checkout-input-field" type="text" name="lastNameShipping" value="Smith">
-                      </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                          <div class="input-block">
+                            <span class="text-uppercase">Vorname<abbr title="Pflichtfeld">*</abbr></span><br>
+                            <input id="input-firstNameShipping" class="checkout-input-field" type="text" name="firstNameShipping" value="John">
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="input-block">
+                            <span class="text-uppercase">Nachname<abbr title="Pflichtfeld">*</abbr></span><br>
+                            <input id="input-lastNameShipping" class="checkout-input-field" type="text" name="lastNameShipping" value="Smith">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="input-block">
+                            <span class="text-uppercase">Adresse 1<abbr title="Pflichtfeld">*</abbr></span><br>
+                            <input id="input-streetNameShipping" class="checkout-input-field" type="text" name="streetNameShipping" value="Tardisstreet">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="input-block">
+                            <span class="text-uppercase">Adresse 2</span><br>
+                            <input id="input-additionalStreetInfoShipping" class="checkout-input-field" type="text" name="additionalStreetInfoShipping" value="">
+                          </div>
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="input-block">
+                            <span class="text-uppercase">Stadt<abbr title="Pflichtfeld">*</abbr></span><br>
+                            <input id="input-cityShipping" class="checkout-input-field" type="text" name="cityShipping" value="London">
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="input-block">
+                            <span class="text-uppercase">PLZ<abbr title="Pflichtfeld">*</abbr></span><br>
+                            <input id="input-postalCodeShipping" class="checkout-input-field" type="text" name="postalCodeShipping" value="123456">
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="country input-block">
+                              <span class="text-uppercase">Land*</span><br>
+                              <select id="shipping-country-select" class="checkout-dropdown" name="countryShipping">
+                                <option value="" selected>Auswählen</option>
+                                <option value="UK" selected>United Kingdom</option>
+                                <option value="DE" >Germany</option>
+                                <option value="FR" >France</option>
+                                <option value="ES" >Spain</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="input-block">
+                            <span class="text-uppercase">Region</span><br>
+                            <input id="input-regionShipping" class="checkout-input-field" type="text" name="regionShipping" value="London (Region)">
+                          </div>
+                        </div>
                     </div>
-                    <div class="col-sm-12">
-                      <div class="input-block">
-                        <span class="text-uppercase">Adresse 1<abbr title="Pflichtfeld">*</abbr></span><br>
-                        <input id="input-streetName-Shipping" class="checkout-input-field" type="text" name="streetNameShipping" value="Tardisstreet">
-                      </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-6">
+                          <div class="input-block">
+                            <span class="text-uppercase">Telefon</span><br>
+                            <input id="input-phoneShipping" class="checkout-input-field" type="text" name="phoneShipping" value="+49 123 4567899">
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="input-block">
+                            <span class="text-uppercase">E-Mail-Adresse<abbr title="Pflichtfeld">*</abbr></span><br>
+                            <input id="input-emailShipping" class="checkout-input-field" type="text" name="emailShipping" value="thedoctor@commercetools.com">
+                          </div>
+                        </div>
                     </div>
-                    <div class="col-sm-12">
-                      <div class="input-block">
-                        <span class="text-uppercase">Adresse 2</span><br>
-                        <input id="input-additionalStreetInfo-Shipping" class="checkout-input-field" type="text" name="additionalStreetInfoShipping" value="">
-                      </div>
-                    </div>
-                    <div class="col-sm-8">
-                      <div class="input-block">
-                        <span class="text-uppercase">Stadt<abbr title="Pflichtfeld">*</abbr></span><br>
-                        <input id="input-city-Shipping" class="checkout-input-field" type="text" name="cityShipping" value="London">
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="input-block">
-                        <span class="text-uppercase">PLZ<abbr title="Pflichtfeld">*</abbr></span><br>
-                        <input id="input-postalCode-Shipping" class="checkout-input-field" type="text" name="postalCodeShipping" value="123456">
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="country input-block">
-                        <span class="text-uppercase">Land*</span><br>
-                        <select id="shipping-country-select" class="checkout-dropdown" name="countryShipping">
-                          <option value="" selected>Auswählen</option>
-                          <option value="UK" selected>United Kingdom</option>
-                          <option value="DE" >Germany</option>
-                          <option value="FR" >France</option>
-                          <option value="ES" >Spain</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="input-block">
-                        <span class="text-uppercase">Region</span><br>
-                        <input id="input-region-Shipping" class="checkout-input-field" type="text" name="regionShipping" value="London (Region)">
-                      </div>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="input-block">
-                        <span class="text-uppercase">Telefon</span><br>
-                        <input id="input-phone-Shipping" class="checkout-input-field" type="text" name="phoneShipping" value="+49 123 4567899">
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="input-block">
-                        <span class="text-uppercase">E-Mail-Adresse<abbr title="Pflichtfeld">*</abbr></span><br>
-                        <input id="input-email-Shipping" class="checkout-input-field" type="text" name="emailShipping" value="thedoctor@commercetools.com">
-                      </div>
-                    </div>
-                  </div>
                   <div class="row different-billing-row">
                     <div class="col-sm-12">
                       <div class="different-for-billing input-block">
@@ -176,91 +177,91 @@
                     <div class="col-sm-12">
                       <div id="different-billing-address">
                         <div class="row">
-                          <div class="row">
-                            <div class="col-sm-4">
-                              <div class="title">
-                                <span class="text-uppercase">Titel</span><br>
-                                <select id="shipping-title-select" class="checkout-dropdown" name="titleBilling">
-                                  <option value="" selected>Auswählen</option>
-                                  <option value="Mr." selected>Mr.</option>
-                                  <option value="Mrs." >Mrs.</option>
-                                  <option value="Ms." >Ms.</option>
-                                  <option value="Dr." >Dr.</option>
-                                </select>
-                              </div>  </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-6">
-                              <div class="input-block">
-                                <span class="text-uppercase">Vorname<abbr title="Pflichtfeld">*</abbr></span><br>
-                                <input id="input-firstName-Billing" class="checkout-input-field" type="text" name="firstNameBilling" value="John">
-                              </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="title">
+                                      <span class="text-uppercase">Titel</span><br>
+                                      <select id="billing-title-select" class="checkout-dropdown" name="titleBilling">
+                                        <option value="" selected>Auswählen</option>
+                                        <option value="Mr." selected>Mr.</option>
+                                        <option value="Mrs." >Mrs.</option>
+                                        <option value="Ms." >Ms.</option>
+                                        <option value="Dr." >Dr.</option>
+                                      </select>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-6">
-                              <div class="input-block">
-                                <span class="text-uppercase">Nachname<abbr title="Pflichtfeld">*</abbr></span><br>
-                                <input id="input-lastName-Billing" class="checkout-input-field" type="text" name="lastNameBilling" value="Smith (billing)">
-                              </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="input-block">
+                                    <span class="text-uppercase">Vorname<abbr title="Pflichtfeld">*</abbr></span><br>
+                                    <input id="input-firstNameBilling" class="checkout-input-field" type="text" name="firstNameBilling" value="John">
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="input-block">
+                                    <span class="text-uppercase">Nachname<abbr title="Pflichtfeld">*</abbr></span><br>
+                                    <input id="input-lastNameBilling" class="checkout-input-field" type="text" name="lastNameBilling" value="Smith">
+                                  </div>
+                                </div>
+                                <div class="col-sm-12">
+                                  <div class="input-block">
+                                    <span class="text-uppercase">Adresse 1<abbr title="Pflichtfeld">*</abbr></span><br>
+                                    <input id="input-streetNameBilling" class="checkout-input-field" type="text" name="streetNameBilling" value="Tardisstreet">
+                                  </div>
+                                </div>
+                                <div class="col-sm-12">
+                                  <div class="input-block">
+                                    <span class="text-uppercase">Adresse 2</span><br>
+                                    <input id="input-additionalStreetInfoBilling" class="checkout-input-field" type="text" name="additionalStreetInfoBilling" value="">
+                                  </div>
+                                </div>
+                                <div class="col-sm-8">
+                                  <div class="input-block">
+                                    <span class="text-uppercase">Stadt<abbr title="Pflichtfeld">*</abbr></span><br>
+                                    <input id="input-cityBilling" class="checkout-input-field" type="text" name="cityBilling" value="London">
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="input-block">
+                                    <span class="text-uppercase">PLZ<abbr title="Pflichtfeld">*</abbr></span><br>
+                                    <input id="input-postalCodeBilling" class="checkout-input-field" type="text" name="postalCodeBilling" value="123456">
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="country input-block">
+                                      <span class="text-uppercase">Land*</span><br>
+                                      <select id="billing-country-select" class="checkout-dropdown" name="countryBilling">
+                                        <option value="" selected>Auswählen</option>
+                                        <option value="UK" selected>United Kingdom</option>
+                                        <option value="DE" >Germany</option>
+                                        <option value="FR" >France</option>
+                                        <option value="ES" >Spain</option>
+                                      </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="input-block">
+                                    <span class="text-uppercase">Region</span><br>
+                                    <input id="input-regionBilling" class="checkout-input-field" type="text" name="regionBilling" value="London (Region)">
+                                  </div>
+                                </div>
                             </div>
-                            <div class="col-sm-12">
-                              <div class="input-block">
-                                <span class="text-uppercase">Adresse 1<abbr title="Pflichtfeld">*</abbr></span><br>
-                                <input id="input-streetName-Billing" class="checkout-input-field" type="text" name="streetNameBilling" value="Duststreet 500">
-                              </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="input-block">
+                                    <span class="text-uppercase">Telefon</span><br>
+                                    <input id="input-phoneBilling" class="checkout-input-field" type="text" name="phoneBilling" value="+49 123 4567899">
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="input-block">
+                                    <span class="text-uppercase">E-Mail-Adresse<abbr title="Pflichtfeld">*</abbr></span><br>
+                                    <input id="input-emailBilling" class="checkout-input-field" type="text" name="emailBilling" value="thedoctor@commercetools.com">
+                                  </div>
+                                </div>
                             </div>
-                            <div class="col-sm-12">
-                              <div class="input-block">
-                                <span class="text-uppercase">Adresse 2</span><br>
-                                <input id="input-additionalStreetInfo-Billing" class="checkout-input-field" type="text" name="additionalStreetInfoBilling" value="">
-                              </div>
-                            </div>
-                            <div class="col-sm-8">
-                              <div class="input-block">
-                                <span class="text-uppercase">Stadt<abbr title="Pflichtfeld">*</abbr></span><br>
-                                <input id="input-city-Billing" class="checkout-input-field" type="text" name="cityBilling" value="">
-                              </div>
-                            </div>
-                            <div class="col-sm-4">
-                              <div class="input-block">
-                                <span class="text-uppercase">PLZ<abbr title="Pflichtfeld">*</abbr></span><br>
-                                <input id="input-postalCode-Billing" class="checkout-input-field" type="text" name="postalCodeBilling" value="56789">
-                              </div>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="country input-block">
-                                <span class="text-uppercase">Land*</span><br>
-                                <select id="shipping-country-select" class="checkout-dropdown" name="countryBilling">
-                                  <option value="" selected>Auswählen</option>
-                                  <option value="UK" >United Kingdom</option>
-                                  <option value="DE" >Germany</option>
-                                  <option value="FR" >France</option>
-                                  <option value="ES" >Spain</option>
-                                  <option value="US" selected>USA</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="input-block">
-                                <span class="text-uppercase">Region</span><br>
-                                <input id="input-region-Billing" class="checkout-input-field" type="text" name="regionBilling" value="Utah">
-                              </div>
-                            </div>
-                          </div>
-                          <hr>
-                          <div class="row">
-                            <div class="col-sm-6">
-                              <div class="input-block">
-                                <span class="text-uppercase">Telefon</span><br>
-                                <input id="input-phone-Billing" class="checkout-input-field" type="text" name="phoneBilling" value="+49 123 4567899 (billing)">
-                              </div>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="input-block">
-                                <span class="text-uppercase">E-Mail-Adresse<abbr title="Pflichtfeld">*</abbr></span><br>
-                                <input id="input-email-Billing" class="checkout-input-field" type="text" name="emailBilling" value="billing@commercetools.com">
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>

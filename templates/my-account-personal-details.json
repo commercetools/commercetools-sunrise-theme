@@ -1593,8 +1593,8 @@
       },
       "subscribed": true
     },
-    "personalDetailsForm": {
-      "salutations": {
+    "personalDetailsFormSettings": {
+      "title": {
         "list": [
           {
             "label": "Mr.",
@@ -1617,7 +1617,10 @@
             "selected": false
           }
         ]
-      },
+      }
+    },
+    "personalDetailsForm": {
+      "title": "Mr.",
       "firstName": "Bruce",
       "lastName": "Wayne",
       "email": "somebody@somewhere.com",

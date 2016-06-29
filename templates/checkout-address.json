@@ -8,131 +8,128 @@
     "stepWidget": {
       "shippingStepActive": true
     },
+    "addressFormSettings": {
+      "titleShipping": {
+        "list": [
+          {
+            "label": "Mr.",
+            "value": "Mr.",
+            "selected": true
+          },
+          {
+            "label": "Mrs.",
+            "value": "Mrs.",
+            "selected": false
+          },
+          {
+            "label": "Ms.",
+            "value": "Ms.",
+            "selected": false
+          },
+          {
+            "label": "Dr.",
+            "value": "Dr.",
+            "selected": false
+          }
+        ]
+      },
+      "titleBilling": {
+        "list": [
+          {
+            "label": "Mr.",
+            "value": "Mr.",
+            "selected": true
+          },
+          {
+            "label": "Mrs.",
+            "value": "Mrs.",
+            "selected": false
+          },
+          {
+            "label": "Ms.",
+            "value": "Ms.",
+            "selected": false
+          },
+          {
+            "label": "Dr.",
+            "value": "Dr.",
+            "selected": false
+          }
+        ]
+      },
+      "countriesShipping": {
+        "list": [
+          {
+            "label": "United Kingdom",
+            "value": "UK",
+            "selected": true
+          },
+          {
+            "label": "Germany",
+            "value": "DE",
+            "selected": false
+          },
+          {
+            "label": "France",
+            "value": "FR",
+            "selected": false
+          },
+          {
+            "label": "Spain",
+            "value": "ES",
+            "selected": false
+          }
+        ]
+      },
+      "countriesBilling": {
+        "list": [
+          {
+            "label": "United Kingdom",
+            "value": "UK",
+            "selected": true
+          },
+          {
+            "label": "Germany",
+            "value": "DE",
+            "selected": false
+          },
+          {
+            "label": "France",
+            "value": "FR",
+            "selected": false
+          },
+          {
+            "label": "Spain",
+            "value": "ES",
+            "selected": false
+          }
+        ]
+      }
+    },
     "addressForm": {
       "billingAddressDifferentToBillingAddress": true,
-      "shippingAddress": {
-        "salutations": {
-          "list": [
-            {
-              "label": "Mr.",
-              "value": "Mr.",
-              "selected": true
-            },
-            {
-              "label": "Mrs.",
-              "value": "Mrs.",
-              "selected": false
-            },
-            {
-              "label": "Ms.",
-              "value": "Ms.",
-              "selected": false
-            },
-            {
-              "label": "Dr.",
-              "value": "Dr.",
-              "selected": false
-            }
-          ]
-        },
-        "firstName": "John",
-        "lastName": "Smith",
-        "streetName": "Tardisstreet",
-        "streetNumber": "1",
-        "city": "London",
-        "region": "London (Region)",
-        "postalCode": "123456",
-        "countries": {
-          "list": [
-            {
-              "label": "United Kingdom",
-              "value": "UK",
-              "selected": true
-            },
-            {
-              "label": "Germany",
-              "value": "DE",
-              "selected": false
-            },
-            {
-              "label": "France",
-              "value": "FR",
-              "selected": false
-            },
-            {
-              "label": "Spain",
-              "value": "ES",
-              "selected": false
-            }
-          ]
-        },
-        "phone": "+49 123 4567899",
-        "email": "thedoctor@commercetools.com"
-      },
-      "billingAddress": {
-        "salutations": {
-          "list": [
-            {
-              "label": "Mr.",
-              "value": "Mr.",
-              "selected": true
-            },
-            {
-              "label": "Mrs.",
-              "value": "Mrs.",
-              "selected": false
-            },
-            {
-              "label": "Ms.",
-              "value": "Ms.",
-              "selected": false
-            },
-            {
-              "label": "Dr.",
-              "value": "Dr.",
-              "selected": false
-            }
-          ]
-        },
-        "firstName": "John",
-        "lastName": "Smith (billing)",
-        "streetName": "Duststreet 500",
-        "additionalAddressInfo": "dust",
-        "city": "",
-        "region": "Utah",
-        "postalCode": "56789",
-        "phone": "+49 123 4567899 (billing)",
-        "email": "billing@commercetools.com",
-        "countries": {
-          "list": [
-            {
-              "label": "United Kingdom",
-              "value": "UK",
-              "selected": false
-            },
-            {
-              "label": "Germany",
-              "value": "DE",
-              "selected": false
-            },
-            {
-              "label": "France",
-              "value": "FR",
-              "selected": false
-            },
-            {
-              "label": "Spain",
-              "value": "ES",
-              "selected": false
-            },
-            {
-              "label": "USA",
-              "value": "US",
-              "selected": true
-            }
-          ]
-        }
-      }
+      "titleShipping": "Mr",
+      "firstNameShipping": "John",
+      "lastNameShipping": "Smith",
+      "streetNameShipping": "Tardisstreet",
+      "streetNumberShipping": "1",
+      "cityShipping": "London",
+      "regionShipping": "London (Region)",
+      "postalCodeShipping": "123456",
+      "countriesShipping": "UK",
+      "phoneShipping": "+49 123 4567899",
+      "emailShipping": "thedoctor@commercetools.com",
+      "titleBilling": "Mr",
+      "firstNameBilling": "John",
+      "lastNameBilling": "Smith",
+      "streetNameBilling": "Tardisstreet",
+      "streetNumberBilling": "1",
+      "cityBilling": "London",
+      "regionBilling": "London (Region)",
+      "postalCodeBilling": "123456",
+      "countriesBilling": "UK",
+      "phoneBilling": "+49 123 4567899",
+      "emailBilling": "thedoctor@commercetools.com"
     },
     "cart": {
       "orderNumber": "01445678",
