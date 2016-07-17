@@ -11,3 +11,4 @@ output/
 /vendor/
 *.sublime-*
 composer
+*.iml
