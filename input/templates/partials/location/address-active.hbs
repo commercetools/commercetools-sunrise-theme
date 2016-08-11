@@ -14,15 +14,15 @@
 
   <div class="info">
     <div class="info-title">
-      Address:
+      {{i18n "main:storeLocation.address"}}:
     </div>
     <div class="info-content">
       {{address.content.line1}} <br/>
-      {{address.content.line1}}
+      {{address.content.line2}}
     </div>
 
     <div class="info-title">
-      Opening hours:
+      {{i18n "main:storeLocation.workingHours"}}:
     </div>
     <div class="info-content">
       {{address.hours.line1}}<br/>
@@ -33,7 +33,7 @@
   <div class="box-footer">
     <div class="status">
       {{#if this.status}}
-        <div class="status-color green"></div> 
+        <div class="status-color green"></div>
         <span class="status-text">{{i18n "main:storeLocation.status.available"}}</span>
       {{else}}
         <div class="status-color red"></div>
