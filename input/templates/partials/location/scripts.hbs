@@ -1,0 +1,19 @@
+<script>
+    function initMap() {
+      var mapDiv = document.getElementById('map');
+      var myLatLng = {lat: 48.26128, lng: 11.47589};
+      var map = new google.maps.Map(mapDiv, {
+          center: myLatLng,
+          zoom: 16
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Dachauer Einkaufszentrum'
+      });
+    }
+  </script>
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfg2iJdYwmmOiUZ-DG6XpsKD5GBQO7OM&callback=initMap">
+  </script>

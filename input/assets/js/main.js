@@ -64,6 +64,11 @@ $(document).ready(function() {
       theme:"dark",
       scrollInertia:50
     });
+
+    $(".store-location-wrapper > .addresses").mCustomScrollbar({
+      theme:"dark-thin",
+      scrollInertia:50
+    });
   });
 
   // "Select" elements becomes customized

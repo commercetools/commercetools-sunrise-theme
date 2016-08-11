@@ -1,0 +1,91 @@
+{
+	"header" : { "$ref" : "common/header.json" },
+	"footer" : { "$ref" : "common/footer.json" },
+	"content" : {
+        "address" : {
+            "active" : {
+                "title": "Dachauer Einkaufszentrum",
+        		"distance" : {
+                    "value" : "1,2",
+                    "unit" : "km"
+                },
+        		"price" : {
+                    "value" : "50,00",
+                    "currency" : "€"
+                },
+                "content" : {
+                    "line1" : "Street, number",
+                    "line2" : "PLZ, city"
+                },
+                "hours" : {
+                    "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
+                    "line2" : "Sa. 9:00 a.m - 6:00 p.m"
+                },
+                "status" : true
+            },
+            "list" : [
+                {
+                    "title": "Marienplatz",
+            		"distance" : {
+                        "value" : "2,5",
+                        "unit" : "km"
+                    },
+            		"price" : {
+                        "value" : "47,50",
+                        "currency" : "€"
+                    },
+                    "content" : {
+                        "line1" : "Street, number",
+                        "line2" : "PLZ, city"
+                    },
+                    "hours" : {
+                        "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
+                        "line2" : "Sa. 9:00 a.m - 6:00 p.m"
+                    },
+                    "status" : true
+                },
+                {
+                    "title": "Leopolstrasse I",
+            		"distance" : {
+                        "value" : "3,0",
+                        "unit" : "km"
+                    },
+            		"price" : {
+                        "value" : "49,00",
+                        "currency" : "€"
+                    },
+                    "content" : {
+                        "line1" : "Street, number",
+                        "line2" : "PLZ, city"
+                    },
+                    "hours" : {
+                        "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
+                        "line2" : "Sa. 9:00 a.m - 6:00 p.m"
+                    },
+                    "status" : false
+                },
+                {
+                    "title": "Leopolstrasse II",
+            		"distance" : {
+                        "value" : "3,7",
+                        "unit" : "km"
+                    },
+            		"price" : {
+                        "value" : "49,00",
+                        "currency" : "€"
+                    },
+                    "content" : {
+                        "line1" : "Street, number",
+                        "line2" : "PLZ, city"
+                    },
+                    "hours" : {
+                        "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
+                        "line2" : "Sa. 9:00 a.m - 6:00 p.m"
+                    },
+                    "status" : true
+                }
+            ]
+        }
+    },
+	"meta" : { "$ref" : "common/meta.json" }
+}

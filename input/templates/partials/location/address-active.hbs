@@ -1,0 +1,49 @@
+<div class="address address--active">
+  <span class="distance">
+    <i class="icon icon-marker"></i>
+    {{address.distance.value}} {{address.distance.unit}}
+  </span>
+
+  <b class="price">
+    {{address.price.value}} {{address.price.currency}}
+  </b>
+
+  <strong class="title">
+    {{address.title}}
+  </strong>
+
+  <div class="info">
+    <div class="info-title">
+      Address:
+    </div>
+    <div class="info-content">
+      {{address.content.line1}} <br/>
+      {{address.content.line1}}
+    </div>
+
+    <div class="info-title">
+      Opening hours:
+    </div>
+    <div class="info-content">
+      {{address.hours.line1}}<br/>
+      {{address.hours.line2}}
+    </div>
+  </div>
+
+  <div class="box-footer">
+    <div class="status">
+      {{#if this.status}}
+        <div class="status-color green"></div> 
+        <span class="status-text">{{i18n "main:storeLocation.status.available"}}</span>
+      {{else}}
+        <div class="status-color red"></div>
+        <span class="status-text">{{i18n "main:storeLocation.status.notAvailable"}}</span>
+      {{/if}}
+    </div>
+
+    <div class="action">
+      <button class="btn-standard">RESERVE</button>
+    </div>
+  </div>
+
+</div>

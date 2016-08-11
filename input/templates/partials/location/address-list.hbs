@@ -1,0 +1,32 @@
+<ul class="list">
+  {{#each address}}
+    <li class="item address">
+      <a class="item-link" href="#">
+        <span class="distance">
+          <i class="icon icon-marker"></i>
+          {{this.distance.value}} {{this.distance.unit}}
+        </span>
+
+        <b class="price">
+          {{this.price.value}} {{this.price.currency}}
+        </b>
+
+        <strong class="title">
+          {{this.title}}
+        </strong>
+
+        <div class="box-footer">
+          <div class="status">
+            {{#if this.status}}
+              <div class="status-color green"></div>
+              <span class="status-text">{{i18n "main:storeLocation.status.available"}}</span>
+            {{else}}
+              <div class="status-color red"></div>
+              <span class="status-text">{{i18n "main:storeLocation.status.notAvailable"}}</span>
+            {{/if}}
+          </div>
+        </div>
+      </a>
+    </li>
+  {{/each}}
+</ul>
