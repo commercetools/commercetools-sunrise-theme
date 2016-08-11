@@ -1,0 +1,19 @@
+// Reserve in store btn
+.reserve-in-store-btn {
+  background-color: $limed-spruce;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 15px 25px;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $river-bed;
+  }
+}
+
+.store-thumb {
+  height: 25px;
+  margin: 0 10px 0 0;
+}
