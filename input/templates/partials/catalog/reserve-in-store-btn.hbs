@@ -1,6 +1,4 @@
-<form id="form-reserve-in-store{{index}}" name="reserve-in-store" action="{{@root.meta._links.reserveInStore.href}}">
-  <button type="submit" class="btn pdp-product-reserve">
-    <img class="store-thumb" src="{{@root.meta.assetsPath}}img/store-icon-29-29px.png" alt="{{i18n "catalog:reserve.title"}}">
-    {{i18n "catalog:reserve.title"}}
-  </button>
-</form>
+<a href="{{@root.meta._links.reserveInStore.href}}" class="btn pdp-product-reserve">
+  <img class="store-thumb" src="{{@root.meta.assetsPath}}img/store-icon-29-29px.png" alt="{{i18n "catalog:reserve.title"}}">
+  {{i18n "catalog:reserve.title"}}
+</a>
