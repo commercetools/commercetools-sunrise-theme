@@ -9,10 +9,17 @@
     background: $gray;
     float: right;
 
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+
     #map {
       height: 705px;
       width: 100%;
       float: left;
+      @media screen and (max-width: 991px) {
+        height: 400px; 
+      }
     }
   }
 
@@ -21,6 +28,9 @@
     width: 40%;
     height: 705px;
     padding: 30px 0 0 0;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
 
     .address {
       float: left;
