@@ -18,7 +18,7 @@
       width: 100%;
       float: left;
       @media screen and (max-width: 991px) {
-        height: 400px; 
+        height: 400px;
       }
     }
   }
@@ -27,7 +27,7 @@
     float: right;
     width: 40%;
     height: 705px;
-    padding: 30px 0 0 0;
+    padding: 0;
     @media screen and (max-width: 991px) {
       width: 100%;
     }
@@ -37,16 +37,8 @@
       width: 100%;
       background-color: $snow-grey;
       border-bottom: 1px $alto solid;
-
-      &--active {
-        background-color: $white;
-        padding: 0 25px 30px 25px;
-
-        .price {
-          color: $my-sin;
-          font-weight: bold !important;
-        }
-      }
+      cursor: pointer;
+      transition: all 0.3s ease;
 
       .distance {
         color: $mine-shaft;
@@ -84,6 +76,7 @@
         color: $gray;
         font-size: 14px;
         margin-bottom: 25px;
+        display: none;
 
         &-title {
           width: 40%;
@@ -133,6 +126,7 @@
 
         .action {
           text-align: right;
+          display: none;
         }
 
         .action,
@@ -141,10 +135,32 @@
           float: left;
         }
       }
+
+      &--active {
+        background-color: $white;
+
+        &:hover {
+          background-color: $white !important;
+          cursor: default;
+        }
+
+        .price {
+          color: $my-sin;
+          font-weight: bold !important;
+        }
+
+        .info,
+        .action {
+          display: block !important;
+        }
+      }
     }
     /* custom Scrollbar spacing */
     .mCSB_inside >.mCSB_container {
       margin-right: 0;
+    }
+    .mCSB_scrollTools {
+      width: 2px;
     }
   }
 

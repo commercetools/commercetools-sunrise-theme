@@ -11,9 +11,9 @@
 
   <div class="container">
     <div class="store-finder-title">{{i18n "main:storeLocation.title"}}</div>
-    {{> location/store-location addresses=content.address}}
+    {{> location/store-location list=content.locations.list}}
   </div>
-  {{> location/scripts}}
+  {{> location/scripts list=content.locations.list}}
   {{> common/footer}}
   {{> common/htmlscripts}}
 </body>

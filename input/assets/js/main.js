@@ -194,6 +194,18 @@ $(".navbar-toggle").click(function() {
 
 /*****************************************************************************/
 /*
+ /* LOCATION STORE PAGE
+ /*
+ /*****************************************************************************/
+
+// Selecting a store - add or remove class for active
+$(".store-location-wrapper .list .item").click(function() {
+  $(".store-location-wrapper .list .item").removeClass("address--active");
+  $(this).addClass("address--active");
+});
+
+/*****************************************************************************/
+/*
  /* PDP PAGE
  /*
  /*****************************************************************************/

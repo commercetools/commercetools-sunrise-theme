@@ -52,7 +52,9 @@ wishlist:
   view: View your wishlist
   recentlyAdded: My recently added items
 reserve:
-  title: Reserve in store
+  title:
+    long: Reserve in store
+    short: Reserve
 suggestions:
   title: You may also like
 reviews:
