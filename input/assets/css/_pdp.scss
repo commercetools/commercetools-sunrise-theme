@@ -185,7 +185,7 @@
   background-size: 12px;
   color: $gray;
   padding: 10px 30px 10px 10px;
-  margin: 0 10px 0 1em;
+  margin: 0 10px 0 0;
   border-radius: 0;
   border: 2px solid $my-sin;
 }
@@ -194,13 +194,33 @@
 .pdp-product-heart {
   width: 50px;
   height: 50px;
-  margin-bottom: 3px;
+  margin-bottom: 20px;
   background: url("../img/heart_sprite.png") no-repeat;
   background-size: 167px;
   &:hover,
   &:focus {
     background-position: -60px;
   }
+}
+
+// Reserve in store button
+.pdp-product-reserve {
+  background-color: $limed-spruce;
+  color: $white !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 15px 25px;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $river-bed;
+  }
+}
+
+.store-thumb {
+  height: 25px;
+  margin: 0 10px 0 0;
 }
 
 // Availability
