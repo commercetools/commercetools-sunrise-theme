@@ -25,7 +25,7 @@
                                 "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
                                 "line2" : "Sa. 9:00 a.m - 6:00 p.m"
                             },
-                            "status" : true,
+                            "status" : "fewItemsLeft",
                             "map" : {
                                 "position" : "48.26128, 11.47589"
                             },
@@ -49,7 +49,7 @@
                                 "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
                                 "line2" : "Sa. 9:00 a.m - 6:00 p.m"
                             },
-                            "status" : true,
+                            "status" : "available",
                             "map" : {
                                 "position" : "48.1373932, 11.5732545"
                             },
@@ -73,7 +73,7 @@
                                 "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
                                 "line2" : "Sa. 9:00 a.m - 6:00 p.m"
                             },
-                            "status" : false,
+                            "status" : "notAvailable",
                             "map" : {
                                 "position" : "48.1536723,11.5805786"
                             },
@@ -97,7 +97,7 @@
                                 "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
                                 "line2" : "Sa. 9:00 a.m - 6:00 p.m"
                             },
-                            "status" : true,
+                            "status" : "available",
                             "map" : {
                                 "position" : "48.16485, 11.584616"
                             },
