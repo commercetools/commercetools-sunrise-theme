@@ -33,21 +33,7 @@
             </div>
 
             <div class="box-footer">
-                <div class="status">
-                  {{#*inline "available"}}
-                      <div class="status-color green"></div>
-                      <span class="status-text">{{i18n "main:storeLocation.availability.available"}}</span>
-                  {{/inline}}
-                  {{#*inline "notAvailable"}}
-                      <div class="status-color red"></div>
-                      <span class="status-text">{{i18n "main:storeLocation.availability.notAvailable"}}</span>
-                  {{/inline}}
-                  {{#*inline "fewItemsLeft"}}
-                      <div class="status-color orange"></div>
-                      <span class="status-text">{{i18n "main:storeLocation.availability.fewItemsLeft"}}</span>
-                  {{/inline}}
-                  {{> (lookup . 'availability')}}
-                </div>
+                {{> catalog/product-availability availability=this.availability}}
 
                 <div class="action">
                   {{> catalog/reserve-in-store-btn icon=false default-color=false text-short=true}}
