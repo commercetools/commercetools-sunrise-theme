@@ -4,15 +4,15 @@
 	"list" : [
 		{
 			"name" : "some item",
-			"imageUrl" : "../../assets/img/blue-shirt-5bdf49d3ec20b6fdddcf3e6a70798068.jpg"
+			"imageUrl" : "../../assets/img/blue-shirt-b41862c9fe0f368a0539c44c79b94ae1.jpg"
 		},
 		{
 			"name" : "some more item",
-			"imageUrl" : "../../assets/img/blue-shirt-5bdf49d3ec20b6fdddcf3e6a70798068.jpg"
+			"imageUrl" : "../../assets/img/blue-shirt-b41862c9fe0f368a0539c44c79b94ae1.jpg"
 		},
 		{
 			"name" : "some other item",
-			"imageUrl" : "../../assets/img/blue-shirt-5bdf49d3ec20b6fdddcf3e6a70798068.jpg"
+			"imageUrl" : "../../assets/img/blue-shirt-b41862c9fe0f368a0539c44c79b94ae1.jpg"
 		}
 	]
 }

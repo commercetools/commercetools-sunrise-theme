@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
   <link href="../../assets/css/selectboxit.min-db6170754f9da8de6c95b8093801eb76.css" rel="stylesheet">
-  <link href="../../assets/css/main.min-8efcdb9429ed04a6a931c905b5a88f49.css" rel="stylesheet">
+  <link href="../../assets/css/main.min-1a65ee045f3261fe249f97b5c0a767c9.css" rel="stylesheet">
   <title>Sunrise - Page Title</title>
 </head>
 
@@ -669,277 +669,296 @@
       <div class="map">
         <div id="map"></div>
       </div>
+      
+      <script>
+          var map;
+      
+          function initialize() {
+              // creates the map with default options
+              map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 11,
+                  center: new google.maps.LatLng(48.1545702, 11.5616558), // find out current position
+                  mapTypeId: 'roadmap',
+                  scrollwheel: false,
+                  draggable: false
+              });
+      
+              // icons folder
+              var iconBase = '../../assets/img/map/';
+      
+              // defines the default map marker icon
+              var icons = {
+                  default: {
+                      icon: iconBase + 'pointer-active.png'
+                  }
+              };
+      
+              // assigns the .json array to the map markers array
+              var features = [
+                    {
+                        position: new google.maps.LatLng(48.26128, 11.47589),
+                        type: 'default'
+                    },
+                    {
+                        position: new google.maps.LatLng(48.1373932, 11.5732545),
+                        type: 'default'
+                    },
+                    {
+                        position: new google.maps.LatLng(48.1536723,11.5805786),
+                        type: 'default'
+                    },
+                    {
+                        position: new google.maps.LatLng(48.26128, 11.47589),
+                        type: 'default'
+                    },
+              ];
+      
+              // creates the map markes for each address object in the array
+              for (var i = 0, feature; feature = features[i]; i++) {
+                  var marker = new google.maps.Marker({
+                      position: feature.position,
+                      icon: icons[feature.type].icon,
+                      animation : google.maps.Animation.DROP,
+                      map: map
+                  });
+              }
+      
+              // if the object has the property "active" the page will
+              // render into a zoomed view
+                  var newLatnewLng = "48.26128, 11.47589";
+                  var newLatnewLngParts = newLatnewLng.split(',');
+                  var newLat = +newLatnewLngParts[0];
+                  var newLng = newLatnewLngParts[1];
+                  var newLng = +newLng.replace(/\s/g, ''); // removes whitespaces
+                  setLocation(newLat, newLng);
+                  var newLatnewLng = "48.26128, 11.47589";
+                  var newLatnewLngParts = newLatnewLng.split(',');
+                  var newLat = +newLatnewLngParts[0];
+                  var newLng = newLatnewLngParts[1];
+                  var newLng = +newLng.replace(/\s/g, ''); // removes whitespaces
+                  setLocation(newLat, newLng);
+          }
+      
+          // the default function when you click the div with the address
+          // so it will center the map to the coordinates contained in "onclick"
+          function setLocation(newLat, newLng) {
+              map.setCenter({
+                  lat : newLat,
+                  lng : newLng
+              });
+              map.setZoom(15);
+          }
+      </script>
+      <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfg2iJdYwmmOiUZ-DG6XpsKD5GBQO7OM&callback=initialize">
+      </script>
       <div class="addresses">
         <ul class="list">
               <li class="item address address--active">
-                <div class="item-link" onClick="setLocation(48.26128, 11.47589);">
-                  <span class="distance">
-                    <i class="icon icon-marker"></i>
-                    1,2 km
-                  </span>
+                  <div class="item-link" onClick="setLocation(48.26128, 11.47589);">
+                      <span class="distance">
+                        <i class="icon icon-marker"></i>
+                        3 Km
+                      </span>
           
-                  <b class="price">
-                    50,00 €
-                  </b>
+                      <b class="price">
+                        50,00 €
+                      </b>
           
-                  <strong class="title">
-                    Dachauer Einkaufszentrum
-                  </strong>
+                      <strong class="title">
+                        Dachauer Einkaufszentrum
+                      </strong>
           
-                  <div class="info">
-                    <div class="info-title">
-                      Addresse:
-                    </div>
-                    <div class="info-content">
-                      Street, number <br/>
-                      PLZ, city
-                    </div>
+                      <div class="info">
+                          <div class="info-title">
+                            Addresse:
+                          </div>
+                          <div class="info-content">
+                            100 Gotham Street <br/>
+                            11111,
+                            Gotham
+                            (United States)
+                          </div>
           
-                    <div class="info-title">
-                      Öffungszeit:
-                    </div>
-                    <div class="info-content">
-                      Mo-Fr. 10:00 a.m - 8:00 p.m. <br/>
-                      Sa. 9:00 a.m - 6:00 p.m
-                    </div>
+                          <div class="info-title">
+                            Opening hours:
+                          </div>
+                          <div class="info-content">
+                            <p>Mo-Fr. 10:00 a.m - 8:00 p.m.<br/>Sa. 9:00 a.m - 6:00 p.m</p>
+                          </div>
+                      </div>
+          
+                      <div class="box-footer">
+                        <div class="status">
+                                <div class="status-color green"></div>
+                                <span class="status-text">available</span>
+                        </div>
+          
+                          <div class="action">
+                              <form id="form-reserve-in-store0" name="reserve-in-store" method="post" action="reserve-in-store.html">
+                                  <input type="hidden" name="csrfToken" value="Test123"/>
+                                  <input type="hidden" name="storeId" value="some-store-id">
+                                  <button type="submit" class="btn btn-standard">Reserve</button>
+                              </form>
+                          </div>
+                      </div>
                   </div>
-          
-                  <div class="box-footer">
-                    <div class="status">
-                        <div class="status-color green"></div>
-                        <span class="status-text">verfügbar</span>
-                    </div>
-          
-                    <div class="action">
-                      <a href="reserve-in-store.html" class="btn  btn-standard ">
-                          Reservieren
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </li>
               <li class="item address ">
-                <div class="item-link" onClick="setLocation(48.1373932, 11.5732545);">
-                  <span class="distance">
-                    <i class="icon icon-marker"></i>
-                    2,5 km
-                  </span>
+                  <div class="item-link" onClick="setLocation(48.1373932, 11.5732545);">
+                      <span class="distance">
+                        <i class="icon icon-marker"></i>
+                        3 Km
+                      </span>
           
-                  <b class="price">
-                    47,50 €
-                  </b>
+                      <b class="price">
+                        47,50 €
+                      </b>
           
-                  <strong class="title">
-                    Marienplatz
-                  </strong>
+                      <strong class="title">
+                        Marienplatz
+                      </strong>
           
-                  <div class="info">
-                    <div class="info-title">
-                      Addresse:
-                    </div>
-                    <div class="info-content">
-                      Street, number <br/>
-                      PLZ, city
-                    </div>
+                      <div class="info">
+                          <div class="info-title">
+                            Addresse:
+                          </div>
+                          <div class="info-content">
+                            404 Ave. <br/>
+                            80808,
+                            Berlin
+                            (Germany)
+                          </div>
           
-                    <div class="info-title">
-                      Öffungszeit:
-                    </div>
-                    <div class="info-content">
-                      Mo-Fr. 10:00 a.m - 8:00 p.m. <br/>
-                      Sa. 9:00 a.m - 6:00 p.m
-                    </div>
+                          <div class="info-title">
+                            Opening hours:
+                          </div>
+                          <div class="info-content">
+                            <p>Mo-Fr. 10:00 a.m - 8:00 p.m.<br/>Sa. 9:00 a.m - 6:00 p.m</p>
+                          </div>
+                      </div>
+          
+                      <div class="box-footer">
+                        <div class="status">
+                                <div class="status-color red"></div>
+                                <span class="status-text">not available</span>
+                        </div>
+          
+                          <div class="action">
+                              <form id="form-reserve-in-store1" name="reserve-in-store" method="post" action="reserve-in-store.html">
+                                  <input type="hidden" name="csrfToken" value="Test123"/>
+                                  <input type="hidden" name="storeId" value="some-other-store-id">
+                                  <button type="submit" class="btn btn-standard">Reserve</button>
+                              </form>
+                          </div>
+                      </div>
                   </div>
-          
-                  <div class="box-footer">
-                    <div class="status">
-                        <div class="status-color green"></div>
-                        <span class="status-text">verfügbar</span>
-                    </div>
-          
-                    <div class="action">
-                      <a href="reserve-in-store.html" class="btn  btn-standard ">
-                          Reservieren
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </li>
               <li class="item address ">
-                <div class="item-link" onClick="setLocation(48.1536723,11.5805786);">
-                  <span class="distance">
-                    <i class="icon icon-marker"></i>
-                    3,0 km
-                  </span>
+                  <div class="item-link" onClick="setLocation(48.1536723,11.5805786);">
+                      <span class="distance">
+                        <i class="icon icon-marker"></i>
+                        3 Km
+                      </span>
           
-                  <b class="price">
-                    49,00 €
-                  </b>
+                      <b class="price">
+                        49,00 €
+                      </b>
           
-                  <strong class="title">
-                    Leopolstrasse I
-                  </strong>
+                      <strong class="title">
+                        Leopolstrasse I
+                      </strong>
           
-                  <div class="info">
-                    <div class="info-title">
-                      Addresse:
-                    </div>
-                    <div class="info-content">
-                      Street, number <br/>
-                      PLZ, city
-                    </div>
+                      <div class="info">
+                          <div class="info-title">
+                            Addresse:
+                          </div>
+                          <div class="info-content">
+                            100 Gotham Street <br/>
+                            11111,
+                            Gotham
+                            (United States)
+                          </div>
           
-                    <div class="info-title">
-                      Öffungszeit:
-                    </div>
-                    <div class="info-content">
-                      Mo-Fr. 10:00 a.m - 8:00 p.m. <br/>
-                      Sa. 9:00 a.m - 6:00 p.m
-                    </div>
+                          <div class="info-title">
+                            Opening hours:
+                          </div>
+                          <div class="info-content">
+                            <p>Mo-Fr. 10:00 a.m - 8:00 p.m.<br/>Sa. 9:00 a.m - 6:00 p.m</p>
+                          </div>
+                      </div>
+          
+                      <div class="box-footer">
+                        <div class="status">
+                                <div class="status-color orange"></div>
+                                <span class="status-text">few items left</span>
+                        </div>
+          
+                          <div class="action">
+                              <form id="form-reserve-in-store2" name="reserve-in-store" method="post" action="reserve-in-store.html">
+                                  <input type="hidden" name="csrfToken" value="Test123"/>
+                                  <input type="hidden" name="storeId" value="even-some-other-store-id">
+                                  <button type="submit" class="btn btn-standard">Reserve</button>
+                              </form>
+                          </div>
+                      </div>
                   </div>
-          
-                  <div class="box-footer">
-                    <div class="status">
-                        <div class="status-color red"></div>
-                        <span class="status-text">nicht verfügbar</span>
-                    </div>
-          
-                    <div class="action">
-                      <a href="reserve-in-store.html" class="btn  btn-standard ">
-                          Reservieren
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </li>
-              <li class="item address ">
-                <div class="item-link" onClick="setLocation(48.16485, 11.584616);">
-                  <span class="distance">
-                    <i class="icon icon-marker"></i>
-                    3,7 km
-                  </span>
+              <li class="item address address--active">
+                  <div class="item-link" onClick="setLocation(48.26128, 11.47589);">
+                      <span class="distance">
+                        <i class="icon icon-marker"></i>
+                        3 Km
+                      </span>
           
-                  <b class="price">
-                    49,00 €
-                  </b>
+                      <b class="price">
+                        50,00 €
+                      </b>
           
-                  <strong class="title">
-                    Leopolstrasse II
-                  </strong>
+                      <strong class="title">
+                        Dachauer Einkaufszentrum
+                      </strong>
           
-                  <div class="info">
-                    <div class="info-title">
-                      Addresse:
-                    </div>
-                    <div class="info-content">
-                      Street, number <br/>
-                      PLZ, city
-                    </div>
+                      <div class="info">
+                          <div class="info-title">
+                            Addresse:
+                          </div>
+                          <div class="info-content">
+                            100 Gotham Street <br/>
+                            11111,
+                            Gotham
+                            (United States)
+                          </div>
           
-                    <div class="info-title">
-                      Öffungszeit:
-                    </div>
-                    <div class="info-content">
-                      Mo-Fr. 10:00 a.m - 8:00 p.m. <br/>
-                      Sa. 9:00 a.m - 6:00 p.m
-                    </div>
+                          <div class="info-title">
+                            Opening hours:
+                          </div>
+                          <div class="info-content">
+                            <p>Mo-Fr. 10:00 a.m - 8:00 p.m.<br/>Sa. 9:00 a.m - 6:00 p.m</p>
+                          </div>
+                      </div>
+          
+                      <div class="box-footer">
+                        <div class="status">
+                                <div class="status-color green"></div>
+                                <span class="status-text">available</span>
+                        </div>
+          
+                          <div class="action">
+                              <form id="form-reserve-in-store3" name="reserve-in-store" method="post" action="reserve-in-store.html">
+                                  <input type="hidden" name="csrfToken" value="Test123"/>
+                                  <input type="hidden" name="storeId" value="some-store-id">
+                                  <button type="submit" class="btn btn-standard">Reserve</button>
+                              </form>
+                          </div>
+                      </div>
                   </div>
-          
-                  <div class="box-footer">
-                    <div class="status">
-                        <div class="status-color green"></div>
-                        <span class="status-text">verfügbar</span>
-                    </div>
-          
-                    <div class="action">
-                      <a href="reserve-in-store.html" class="btn  btn-standard ">
-                          Reservieren
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </li>
         </ul>
       </div>
     
     </div>
   </div>
-  <script>
-    var map;
-  
-    function initialize() {
-      // creates the map with default options
-      map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: new google.maps.LatLng(48.1545702, 11.5616558),
-        mapTypeId: 'roadmap',
-        scrollwheel: false,
-        draggable: false
-      });
-  
-      // icons folder
-      var iconBase = '../../assets/img/map/';
-  
-      // defines the default map marker icon
-      var icons = {
-        default: {
-          icon: iconBase + 'pointer-active.png'
-        }
-      };
-  
-      // assigns the .json array to the map markers array
-      var features = [
-          {
-            position: new google.maps.LatLng(48.26128, 11.47589),
-            type: 'default'
-          },
-          {
-            position: new google.maps.LatLng(48.1373932, 11.5732545),
-            type: 'default'
-          },
-          {
-            position: new google.maps.LatLng(48.1536723,11.5805786),
-            type: 'default'
-          },
-          {
-            position: new google.maps.LatLng(48.16485, 11.584616),
-            type: 'default'
-          },
-      ];
-  
-      // creates the map markes for each address object in the array
-      for (var i = 0, feature; feature = features[i]; i++) {
-        var marker = new google.maps.Marker({
-          position: feature.position,
-          icon: icons[feature.type].icon,
-          animation : google.maps.Animation.DROP,
-          map: map
-        });
-      }
-  
-      // if the object has the property "active" the page will
-      // render into a zoomed view
-          var newLatnewLng = "48.26128, 11.47589";
-          var newLatnewLngParts = newLatnewLng.split(',');
-          var newLat = +newLatnewLngParts[0];
-          var newLng = newLatnewLngParts[1];
-          var newLng = +newLng.replace(/\s/g, ''); // removes whitespaces
-          setLocation(newLat, newLng);
-    }
-  
-    // the default function when you click the div with the address
-    // so it will center the map to the coordinates contained in "onclick"
-    function setLocation(newLat, newLng) {
-      map.setCenter({
-        lat : newLat,
-        lng : newLng
-      });
-      map.setZoom(15);
-    }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfg2iJdYwmmOiUZ-DG6XpsKD5GBQO7OM&callback=initialize">
-    </script>
   <div class="footer">
     <div id="footer" class="container">
       <div class="row text-uppercase">

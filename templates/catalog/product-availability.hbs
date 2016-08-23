@@ -1,5 +1,17 @@
 <!-- start catalog/product-availability.hbs -->
-<div class="availability">
-  <span class="glyphicon glyphicon-ok-sign"></span>{{i18n "catalog:availability.available"}}
+<div class="status">
+  {{#*inline "available"}}
+      <div class="status-color green"></div>
+      <span class="status-text">{{i18n "main:storeLocation.availability.available"}}</span>
+  {{/inline}}
+  {{#*inline "notAvailable"}}
+      <div class="status-color red"></div>
+      <span class="status-text">{{i18n "main:storeLocation.availability.notAvailable"}}</span>
+  {{/inline}}
+  {{#*inline "fewItemsLeft"}}
+      <div class="status-color orange"></div>
+      <span class="status-text">{{i18n "main:storeLocation.availability.fewItemsLeft"}}</span>
+  {{/inline}}
+  {{> (lookup . 'availability')}}
 </div>
 <!-- end catalog/product-availability.hbs -->
