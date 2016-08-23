@@ -1,0 +1,3 @@
+available: "main:storeLocation.status.available"
+notAvailable: "main:storeLocation.status.notAvailable"
+fewItemsLeft: "main:storeLocation.status.fewItemsLeft"

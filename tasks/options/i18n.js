@@ -15,7 +15,8 @@ module.exports = {
         'my-account-login',
         'no-search-result',
         'mix-match',
-        'my-account'
+        'my-account',
+        'status'
       ],
       defaultNs: 'main'
     }

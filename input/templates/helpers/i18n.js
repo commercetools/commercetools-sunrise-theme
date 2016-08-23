@@ -1,5 +1,6 @@
 module.exports = function (i18nKey, options) {
     var opts = options.hash;
+    i18nKey = i18nKey.toString();
 
     if (opts.bundle) {
         i18nKey = opts.bundle + ':' + i18nKey;

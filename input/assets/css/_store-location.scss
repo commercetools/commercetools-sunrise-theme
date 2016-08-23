@@ -111,15 +111,15 @@
             float: left;
           }
 
-          .green {
+          .available {
             background-color: $citron;
           }
 
-          .orange {
+          .fewItemsLeft {
             background-color: $orange;
           }
 
-          .red {
+          .notAvailable {
             background-color: $red;
           }
         }
