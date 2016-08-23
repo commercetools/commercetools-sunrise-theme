@@ -1,3 +1,4 @@
+<!-- start myaccount/signup-box.hbs -->
 <div class="signup-box-wrapper">
   <form id="form-sign-up" method="post" action="{{@root.meta._links.signUpSubmit.href}}">
     <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
@@ -17,7 +18,7 @@
       </div>
       <div class="row">
         <div class="col-sm-6">
-       {{> form/choose-title containerClass="signup-box-input" selectId="title" selectName="title" options=form.salutations}}
+       {{> form/choose-title containerClass="signup-box-input" selectId="title" selectName="title" options=settings.title}}
      </div>
      </div>
       <div class="row">
@@ -66,3 +67,4 @@
       <button class="signup-register-btn">{{i18n "my-account-login:signupBox.registerNow"}}</button>
     </form>
 </div>
+<!-- end myaccount/signup-box.hbs -->

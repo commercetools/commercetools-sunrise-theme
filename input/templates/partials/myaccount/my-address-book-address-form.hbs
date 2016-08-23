@@ -1,3 +1,4 @@
+<!-- start myaccount/my-address-book-address-form.hbs -->
 <div class="row">
   <div class="col-sm-4">
     {{> form/choose-title containerClass="title" selectId="address-book-title-select" selectName="title" options=settings.title}}
@@ -21,7 +22,7 @@
     <div class="input-block">
       <label for="billing-checkbox">
         <span>
-          <input id="default-billing-checkbox" type="checkbox" name="defaultBillingAddress" {{#if form.defaultBillingAddress}}checked{{/if}}>
+          <input id="default-billing-checkbox" type="checkbox" name="defaultBillingAddress" value="true" {{#if form.defaultBillingAddress}}checked{{/if}}>
         </span>
         <span>{{i18n "my-account:addressBook.billingAddress.label"}}</span>
       </label>
@@ -31,10 +32,11 @@
     <div class="input-block">
       <label for="delivery-checkbox">
         <span>
-          <input id="default-shipping-checkbox" type="checkbox" name="defaultShippingAddress" {{#if form.defaultShippingAddress}}checked{{/if}}>
+          <input id="default-shipping-checkbox" type="checkbox" name="defaultShippingAddress" value="true" {{#if form.defaultShippingAddress}}checked{{/if}}>
         </span>
         <span>{{i18n "my-account:addressBook.shippingAddress.label"}}</span>
       </label>
     </div>
   </div>
 </div>
+<!-- end myaccount/my-address-book-address-form.hbs -->

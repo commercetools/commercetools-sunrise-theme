@@ -1,3 +1,4 @@
+<!-- start checkout/payment-form.hbs -->
 <form method="post" action="{{@root.meta._links.checkoutPaymentSubmit.href}}">
   <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
   <div class="shipping-info">
@@ -11,12 +12,16 @@
       </div>
     </div>
   </div>
+    <div class="row">
+        {{> form/global-messages messages=paymentForm.messages}}
+        {{> form/global-errors errors=paymentForm.errors}}
+    </div>
   <div class="row">
-    {{#each content.paymentForm.paymentOptions.list}}
+    {{#each content.paymentFormSettings.paymentMethod.list}}
     <div class="col-lg-3 col-md-4 col-sm-4">
       <div class="payment-type">
         <label for="payment-type-{{value}}">
-          {{#if image}}<img src="{{@root.meta.assetsPath}}{{image}}" class="payment-type-icon" alt="{{text}}">{{/if}}<br>
+          {{#if image}}<img src="{{@root.meta.assetsPath}}{{image}}" class="payment-type-icon" alt="{{label}}">{{/if}}<br>
           <input id="payment-type-{{value}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{label}}
         </label>
       </div>
@@ -64,7 +69,7 @@
         <div class="security-code">
           <span class="text-uppercase">{{i18n "checkout:paymentPage.securityCode"}}*</span><br>
           <input id="payment-securitycode-input" class="checkout-input-field security-code-input" type="text">
-          <span class="security-code-info" title="{{i18n "checkout:paymentPage.securityCodeTooltip"}}"><img class="info-icon" src="{{@root.meta.assetsPath}}img/information.png" alt="information icon"></span>
+          <span class="security-code-info" title="{{i18n "checkout:paymentPage.securityCodeTooltip"}}"><img class="info-icon" src="{{@root.meta.assetsPath}}img/information-93ded7e64c544cde8e4ba4a82c13d46c.png" alt="information icon"></span>
         </div>
       </div>
     </div>
@@ -72,3 +77,4 @@
   <hr class="hr-checkout-payment">
   {{> checkout/continue-checkout-button}}
 </form>
+<!-- end checkout/payment-form.hbs -->
