@@ -32,6 +32,7 @@
 - [No Search Result](http://commercetools.github.io/commercetools-sunrise-theme/site/en/no-search-result.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/no-search-result.html) )
 - [Mix & Match](http://commercetools.github.io/commercetools-sunrise-theme/site/en/mix-match.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/mix-match.html) )
 - [Contact Form](http://commercetools.github.io/commercetools-sunrise-theme/site/en/contact-form.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/contact-form.html) )
+- [Reserve in Store](http://commercetools.github.io/commercetools-sunrise-theme/site/en/reserve-in-store.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/reserve-in-store.html) )
 - [Store Finder](http://commercetools.github.io/commercetools-sunrise-theme/site/en/store-finder.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/store-finder.html) )
 - [FAQ Page](http://commercetools.github.io/commercetools-sunrise-theme/site/en/faq.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/faq.html) )
 - [Imprint Page](http://commercetools.github.io/commercetools-sunrise-theme/site/en/imprint.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/imprint.html) )
