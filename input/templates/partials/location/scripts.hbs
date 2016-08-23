@@ -5,7 +5,7 @@
     // creates the map with default options
     map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11,
-      center: new google.maps.LatLng({{list.position}}),
+      center: new google.maps.LatLng(48.1545702, 11.5616558), // find out current position
       mapTypeId: 'roadmap',
       scrollwheel: false,
       draggable: false
@@ -23,9 +23,9 @@
 
     // assigns the .json array to the map markers array
     var features = [
-      {{#each list.addresses}}
+      {{#each stores}}
         {
-          position: new google.maps.LatLng({{this.map.position}}),
+          position: new google.maps.LatLng({{this.storeInfo.location}}),
           type: 'default'
         },
       {{/each}}
@@ -43,9 +43,9 @@
 
     // if the object has the property "active" the page will
     // render into a zoomed view
-    {{#each list.addresses}}
+    {{#each stores}}
       {{#if this.active}}
-        var newLatnewLng = "{{this.map.position}}";
+        var newLatnewLng = "{{this.storeInfo.location}}";
         var newLatnewLngParts = newLatnewLng.split(',');
         var newLat = +newLatnewLngParts[0];
         var newLng = newLatnewLngParts[1];
