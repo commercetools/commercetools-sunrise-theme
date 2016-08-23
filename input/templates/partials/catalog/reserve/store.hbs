@@ -1,10 +1,10 @@
 {{#each stores}}
     <li class="item address {{#if this.active}}address--active{{/if}}">
         <div class="item-link" onClick="setLocation({{this.storeInfo.location}});">
-        <span class="distance">
-          <i class="icon icon-marker"></i>
-          3 Km
-        </span>
+            <span class="distance">
+              <i class="icon icon-marker"></i>
+              3 Km
+            </span>
 
             <b class="price">
               {{this.price}}
@@ -20,8 +20,9 @@
                 </div>
                 <div class="info-content">
                   {{this.storeInfo.address.streetName}} {{this.storeInfo.address.streetNumber}}<br/>
-                  {{this.storeInfo.address.postalCode}}, {{this.storeInfo.address.city}}
-                    ({{this.storeInfo.address.country}})
+                  {{#if this.storeInfo.address.postalCode}}{{this.storeInfo.address.postalCode}},{{/if}}
+                  {{this.storeInfo.address.city}}
+                  {{#if this.storeInfo.address.country}}({{this.storeInfo.address.country}}){{/if}}
                 </div>
 
                 <div class="info-title">
@@ -33,10 +34,14 @@
             </div>
 
             <div class="box-footer">
-                {{> catalog/product-availability availability=this.availability}}
+              {{> catalog/product-availability availability=this.availability}}
 
                 <div class="action">
-                  {{> catalog/reserve-in-store-btn icon=false default-color=false text-short=true}}
+                    <form id="form-reserve-in-store{{@index}}" name="reserve-in-store" method="post" action="{{@root.meta._links.reserveInStore.href}}">
+                        <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
+                        <input type="hidden" name="storeId" value="{{this.storeInfo.id}}">
+                        <button type="submit" class="btn btn-standard">{{i18n "main:storeLocation.reserve"}}</button>
+                    </form>
                 </div>
             </div>
         </div>

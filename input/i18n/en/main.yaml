@@ -145,6 +145,7 @@ storeLocation:
     available: "available"
     notAvailable: "not available"
     fewItemsLeft: "few items left"
+  reserve: Reserve
 faq:
   title: FAQS
   delivery: Delivery
