@@ -1,0 +1,72 @@
+<!-- start location/scripts.hbs -->
+<script>
+  var map;
+
+  function initialize() {
+    // creates the map with default options
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: new google.maps.LatLng({{list.position}}),
+      mapTypeId: 'roadmap',
+      scrollwheel: false,
+      draggable: false
+    });
+
+    // icons folder
+    var iconBase = '../../assets/img/map/';
+
+    // defines the default map marker icon
+    var icons = {
+      default: {
+        icon: iconBase + 'pointer-active.png'
+      }
+    };
+
+    // assigns the .json array to the map markers array
+    var features = [
+      {{#each list.addresses}}
+        {
+          position: new google.maps.LatLng({{this.map.position}}),
+          type: 'default'
+        },
+      {{/each}}
+    ];
+
+    // creates the map markes for each address object in the array
+    for (var i = 0, feature; feature = features[i]; i++) {
+      var marker = new google.maps.Marker({
+        position: feature.position,
+        icon: icons[feature.type].icon,
+        animation : google.maps.Animation.DROP,
+        map: map
+      });
+    }
+
+    // if the object has the property "active" the page will
+    // render into a zoomed view
+    {{#each list.addresses}}
+      {{#if this.active}}
+        var newLatnewLng = "{{this.map.position}}";
+        var newLatnewLngParts = newLatnewLng.split(',');
+        var newLat = +newLatnewLngParts[0];
+        var newLng = newLatnewLngParts[1];
+        var newLng = +newLng.replace(/\s/g, ''); // removes whitespaces
+        setLocation(newLat, newLng);
+      {{/if}}
+    {{/each}}
+  }
+
+  // the default function when you click the div with the address
+  // so it will center the map to the coordinates contained in "onclick"
+  function setLocation(newLat, newLng) {
+    map.setCenter({
+      lat : newLat,
+      lng : newLng
+    });
+    map.setZoom(15);
+  }
+  </script>
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfg2iJdYwmmOiUZ-DG6XpsKD5GBQO7OM&callback=initialize">
+  </script>
+<!-- end location/scripts.hbs -->

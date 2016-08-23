@@ -28,6 +28,7 @@
   "img/loading.gif": "img/loading-e6b35e17e1d1c5d17cba40c2de7033d3.gif",
   "img/logo-white-text.svg": "img/logo-white-text-008e97eaefc525275471fc640a6b0f7d.svg",
   "img/logo.svg": "img/logo-4937001dc82afc24588d7582a6230bf5.svg",
+  "img/map/pointer-active.png": "img/map/pointer-active-8df68309490be306a39d776c68531ebe.png",
   "img/menu-teaser.jpg": "img/menu-teaser-de46638bd32742598f8cf3f48a7913b7.jpg",
   "img/minus-1.png": "img/minus-1-22cd2943dbfb68726f2c8718bd04b45a.png",
   "img/payment-option-card.gif": "img/payment-option-card-911d1826fde4546025462fc13875e2a0.gif",
@@ -35,6 +36,7 @@
   "img/phone.png": "img/phone-902a1672830e3f05a019455b569d8929.png",
   "img/plus79.png": "img/plus79-a99dee4280dc2bd51261761658802249.png",
   "img/ruler-1.png": "img/ruler-1-826141a72694b1341fa9f735f24dc869.png",
+  "img/store-icon-29-29px.png": "img/store-icon-29-29px-49a74ffb1834f6142a1647d2a18a312f.png",
   "img/sun-logo.png": "img/sun-logo-709384debb2f9d98b86ef505681ce42e.png",
   "img/sunset-girl.jpg": "img/sunset-girl-6889cda0a0faf08d889430af1f1b4b6a.jpg",
   "img/user-2.png": "img/user-2-abd815c72004f7ac3827c142d3e37762.png",
@@ -47,9 +49,9 @@
   "js/jquery.ui.touch-punch.min.js": "js/jquery.ui.touch-punch.min-8bb628dd45e16b599e7a52e543b52fcd.js",
   "js/jqzoom.js": "js/jqzoom-88136f0b85da81ce33244cadd519dad4.js",
   "js/jqzoom.min.js": "js/jqzoom.min-fb6b29916a977b3db2072fc411794228.js",
-  "js/main.js": "js/main-851f4e351507d1c2a3d2ca51240e2f12.js",
-  "js/main.min.js": "js/main.min-b6ff9003fc74552a859436990f2b5016.js",
+  "js/main.js": "js/main-0a08ad9cd3453ee2f666c43c1b9217de.js",
+  "js/main.min.js": "js/main.min-105c5e4890f8377cb14cbd632ffb37cf.js",
   "js/selectboxit.min.js": "js/selectboxit.min-3a414ae410dd205fa8fff2027c297a89.js",
-  "main.min.css": "main.min-b4049694ecbd5645215bbcaa069cafcc.css",
+  "main.min.css": "main.min-8efcdb9429ed04a6a931c905b5a88f49.css",
   "selectboxit.min.css": "selectboxit.min-db6170754f9da8de6c95b8093801eb76.css"
 }

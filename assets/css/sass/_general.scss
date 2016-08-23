@@ -14,10 +14,13 @@ $silver-chalice: #ADADAD;
 $spring-wood: #F5F2EA;
 $timberwolf: #D9D7CE;
 $wild-sand: #F5F5F5;
+$snow-grey: #f2f2f2;
 
 // BLUE
 $ebony-clay: #2A343F;
 $ship-cove: #6989C2;
+$limed-spruce: #353e49;
+$river-bed: #3b4551;
 
 // BLACK
 $mine-shaft: #333333;
@@ -26,10 +29,15 @@ $mine-shaft: #333333;
 $my-sin: #FFBA27;
 
 // RED
+$red: #ff0000;
 $valencia: #D54D4D;
+
+//ORANGE
+$orange: #ff761a;
 
 // GREEN
 $highland: #699E63;
+$citron: #95c11f;
 
 /*****************************************************************************/
 /*
@@ -118,6 +126,15 @@ button {
 
 .btn {
 	border-radius: 0;
+}
+
+.btn-standard {
+	text-transform: uppercase;
+	background: $my-sin;
+	padding: 10px 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 16px;
 }
 
 // Transition color effect

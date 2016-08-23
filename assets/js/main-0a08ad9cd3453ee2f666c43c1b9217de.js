@@ -64,6 +64,11 @@ $(document).ready(function() {
       theme:"dark",
       scrollInertia:50
     });
+
+    $(".store-location-wrapper > .addresses").mCustomScrollbar({
+      theme:"dark-thin",
+      scrollInertia:50
+    });
   });
 
   // "Select" elements becomes customized
@@ -185,6 +190,18 @@ $(".wishlist-btn").click(function() {
 // Dark background on opened menu (mobile)
 $(".navbar-toggle").click(function() {
   $(".darkbg").toggleClass("hidden");
+});
+
+/*****************************************************************************/
+/*
+ /* LOCATION STORE PAGE
+ /*
+ /*****************************************************************************/
+
+// Selecting a store - add or remove class for active
+$(".store-location-wrapper .list .item").click(function() {
+  $(".store-location-wrapper .list .item").removeClass("address--active");
+  $(this).addClass("address--active");
 });
 
 /*****************************************************************************/

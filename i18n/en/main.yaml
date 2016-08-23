@@ -137,6 +137,14 @@ storeFinder:
     title: Holiday Opening Hours
     monFri: "Monday-Friday: 09.00 - 20.00"
     weekend: "Weekend: 09.00 - 20.00"
+storeLocation:
+  title: Store location
+  address: Address
+  workingHours: Opening hours
+  status:
+    available: "available"
+    notAvailable: "not available"
+    fewItemsLeft: "few items left"
 faq:
   title: FAQS
   delivery: Delivery

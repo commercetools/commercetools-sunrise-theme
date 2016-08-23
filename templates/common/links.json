@@ -23,6 +23,7 @@
     "search": { "href": "pop.html" },
     "addToCart" : { "href": "cart.html" },
     "addToWishlist": { "href": "wishlist.html" },
+    "reserveInStore": { "href": "reserve-in-store.html" },
     "addReview": { "href": "pdp.html"},
 
     "signIn": { "href" : "my-account-login.html" },
@@ -36,7 +37,7 @@
     "myAddressBookAddAddressSubmit": { "href": "my-account-address-book.html" },
     "myAddressBookEditAddressSubmit": { "href": "my-account-address-book.html" },
     "myOrders": { "href": "my-account-my-orders.html" },
-    
+
     "checkout": { "href": "checkout-shipping.html" },
     "checkoutConfirmation": { "href": "checkout-confirmation.html" },
     "checkoutConfirmationSubmit": { "href": "checkout-thankyou.html" },
