@@ -1,10 +1,4 @@
-<a href="{{@root.meta._links.reserveInStore.href}}" class="btn {{#if default-color}} pdp-product-reserve {{else}} btn-standard {{/if}}">
-  {{#if icon}}
-    <img class="store-thumb" src="{{@root.meta.assetsPath}}img/store-icon-29-29px.png" alt="{{i18n "catalog:reserve.title"}}">
-  {{/if}}
-  {{#if text-short}}
-    {{i18n "catalog:reserve.title.short"}}
-  {{else}}
-    {{i18n "catalog:reserve.title.long"}}
-  {{/if}}
+<a href="{{@root.meta._links.reserveInStore.href}}" class="btn pdp-product-reserve">
+  <img class="store-thumb" src="{{@root.meta.assetsPath}}img/store-icon-29-29px.png" alt="{{i18n "catalog:reserve.title"}}">
+  {{i18n "catalog:reserve.btn"}}
 </a>

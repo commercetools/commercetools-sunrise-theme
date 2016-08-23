@@ -1,111 +1,27 @@
 {
-	"header" : { "$ref" : "common/header.json" },
-	"footer" : { "$ref" : "common/footer.json" },
-	"content" : {
-        "locations" : {
-            "list" : {
-                    "city" : "Munich",
-                    "position" : "48.1545702, 11.5616558",
-                     "addresses" : [
-                         {
-                            "title": "Dachauer Einkaufszentrum",
-                    		"distance" : {
-                                "value" : "1,2",
-                                "unit" : "km"
-                            },
-                    		"price" : {
-                                "value" : "50,00",
-                                "currency" : "€"
-                            },
-                            "content" : {
-                                "line1" : "Street, number",
-                                "line2" : "PLZ, city"
-                            },
-                            "hours" : {
-                                "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
-                                "line2" : "Sa. 9:00 a.m - 6:00 p.m"
-                            },
-                            "status" : true,
-                            "map" : {
-                                "position" : "48.26128, 11.47589"
-                            },
-                            "active": true
-                         },
-                         {
-                            "title": "Marienplatz",
-                    		"distance" : {
-                                "value" : "2,5",
-                                "unit" : "km"
-                            },
-                    		"price" : {
-                                "value" : "47,50",
-                                "currency" : "€"
-                            },
-                            "content" : {
-                                "line1" : "Street, number",
-                                "line2" : "PLZ, city"
-                            },
-                            "hours" : {
-                                "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
-                                "line2" : "Sa. 9:00 a.m - 6:00 p.m"
-                            },
-                            "status" : true,
-                            "map" : {
-                                "position" : "48.1373932, 11.5732545"
-                            },
-                            "active": false
-                         },
-                         {
-                            "title": "Leopolstrasse I",
-                    		"distance" : {
-                                "value" : "3,0",
-                                "unit" : "km"
-                            },
-                    		"price" : {
-                                "value" : "49,00",
-                                "currency" : "€"
-                            },
-                            "content" : {
-                                "line1" : "Street, number",
-                                "line2" : "PLZ, city"
-                            },
-                            "hours" : {
-                                "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
-                                "line2" : "Sa. 9:00 a.m - 6:00 p.m"
-                            },
-                            "status" : false,
-                            "map" : {
-                                "position" : "48.1536723,11.5805786"
-                            },
-                            "active": false
-                         },
-                         {
-                            "title": "Leopolstrasse II",
-                    		"distance" : {
-                                "value" : "3,7",
-                                "unit" : "km"
-                            },
-                    		"price" : {
-                                "value" : "49,00",
-                                "currency" : "€"
-                            },
-                            "content" : {
-                                "line1" : "Street, number",
-                                "line2" : "PLZ, city"
-                            },
-                            "hours" : {
-                                "line1" : "Mo-Fr. 10:00 a.m - 8:00 p.m. ",
-                                "line2" : "Sa. 9:00 a.m - 6:00 p.m"
-                            },
-                            "status" : true,
-                            "map" : {
-                                "position" : "48.16485, 11.584616"
-                            },
-                            "active": false
-                        }
-                    ]
-                }
-        }
+    "header": {
+        "$ref": "common/header.json"
     },
-	"meta" : { "$ref" : "common/meta.json" }
+    "footer": {
+        "$ref": "common/footer.json"
+    },
+    "content": {
+        "stores": [
+            {
+                "$ref": "catalog/reserve/store-1.json"
+            },
+            {
+                "$ref": "catalog/reserve/store-2.json"
+            },
+            {
+                "$ref": "catalog/reserve/store-3.json"
+            },
+            {
+                "$ref": "catalog/reserve/store-1.json"
+            }
+        ]
+    },
+    "meta": {
+        "$ref": "common/meta.json"
+    }
 }

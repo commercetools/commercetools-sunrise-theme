@@ -1,0 +1,14 @@
+{
+    "storeInfo": {
+        "id": "some-store-id",
+        "name": "Dachauer Einkaufszentrum",
+        "address": {
+            "$ref": "../../common/address-1.json"
+        },
+        "openingTimes": "<p>Mo-Fr. 10:00 a.m - 8:00 p.m.<br/>Sa. 9:00 a.m - 6:00 p.m</p>",
+        "location": "48.26128, 11.47589"
+    },
+    "price": "50,00 €",
+    "availability": "available",
+    "active": true
+}
