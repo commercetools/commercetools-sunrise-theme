@@ -12,12 +12,16 @@
       </div>
     </div>
   </div>
+    <div class="row">
+        {{> form/global-messages messages=paymentForm.messages}}
+        {{> form/global-errors errors=paymentForm.errors}}
+    </div>
   <div class="row">
-    {{#each content.paymentForm.paymentOptions.list}}
+    {{#each content.paymentFormSettings.paymentMethod.list}}
     <div class="col-lg-3 col-md-4 col-sm-4">
       <div class="payment-type">
         <label for="payment-type-{{value}}">
-          {{#if image}}<img src="{{@root.meta.assetsPath}}{{image}}" class="payment-type-icon" alt="{{text}}">{{/if}}<br>
+          {{#if image}}<img src="{{@root.meta.assetsPath}}{{image}}" class="payment-type-icon" alt="{{label}}">{{/if}}<br>
           <input id="payment-type-{{value}}" class="payment-text" type="radio" name="payment" value="{{value}}" {{#if selected}}checked{{/if}}>{{label}}
         </label>
       </div>

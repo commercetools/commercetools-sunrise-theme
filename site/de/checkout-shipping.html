@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
   <link href="../../assets/css/selectboxit.min-db6170754f9da8de6c95b8093801eb76.css" rel="stylesheet">
-  <link href="../../assets/css/main.min-1a65ee045f3261fe249f97b5c0a767c9.css" rel="stylesheet">
+  <link href="../../assets/css/main.min-7aaffc9fe053e4ecbd86649d3834d23d.css" rel="stylesheet">
   <title>Sunrise - Checkout Page</title>
 </head>
 
@@ -70,29 +70,11 @@
           <div class="checkout">
             <div class="row">
               <div class="col-sm-7">
-                <form method="post" action="">
+                <form id="form-edit-shipping" method="post" action="">
                   <input type="hidden" name="csrfToken" value="Test123"/>
                   <div class="shipping-method input-block" id="shipping-methods-setting">
                     <div class="text-uppercase shipping-method-title">checkout:shippingForm</div>
-                      <div class="shipping-method-option">
-                        <label for="shipping-method-0">
-                          <span class="shipping-method-span">
-                            <input id="shipping-method-0" class="shipping-method-radio" type="radio" name="shippingMethodId" value="dhl-standard" checked>
-                            DHL Standard
-                          </span>
-                          <span class="text-uppercase delivery-time">Delivery: 3-5 Days</span>
-                        </label>
-                        <a href=""><span class="pull-right text-uppercase delivery-details">Details ansehen</span></a>
-                      </div>
-                      <div class="shipping-method-option">
-                        <label for="shipping-method-1">
-                          <span class="shipping-method-span">
-                            <input id="shipping-method-1" class="shipping-method-radio" type="radio" name="shippingMethodId" value="dhl-express" >
-                            DHL Express
-                          </span>
-                          <span class="text-uppercase delivery-time">Delivery: Same day</span>
-                        </label>
-                        <a href=""><span class="pull-right text-uppercase delivery-details">Details ansehen</span></a>
+                      <div class="row">
                       </div>
                   </div>
                   <div class="row">
