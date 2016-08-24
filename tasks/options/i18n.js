@@ -8,6 +8,7 @@ module.exports = {
     fallbackLng: 'en',
     ns: {
       namespaces: [
+        'cms',
         'main',
         'banner',
         'catalog',
