@@ -12,6 +12,6 @@
       <div class="status-color orange"></div>
       <span class="status-text">{{i18n "main:storeLocation.availability.fewItemsLeft"}}</span>
   {{/inline}}
-  {{> (lookup . 'availability')}}
+  {{#if availability}}{{> (lookup . 'availability')}}{{/if}}
 </div>
 <!-- end catalog/product-availability.hbs -->
