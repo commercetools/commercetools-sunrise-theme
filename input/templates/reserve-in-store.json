@@ -15,9 +15,6 @@
             },
             {
                 "$ref": "catalog/reserve/store-3.json"
-            },
-            {
-                "$ref": "catalog/reserve/store-1.json"
             }
         ]
     },

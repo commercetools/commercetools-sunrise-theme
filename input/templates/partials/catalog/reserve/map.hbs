@@ -1,15 +1,13 @@
 <div class="map">
   <div id="map"></div>
 </div>
-
 <script>
     var map;
-
     function initialize() {
         // creates the map with default options
         map = new google.maps.Map(document.getElementById('map'), {
             zoom: 11,
-            center: new google.maps.LatLng(48.1545702, 11.5616558), // find out current position
+            center: new google.maps.LatLng(48.1545702, 11.5616558), // FIXME: here needs to be the "city/country/place" where it will be centered at first (this is a mock lat for Munich)
             mapTypeId: 'roadmap',
             scrollwheel: false,
             draggable: false
@@ -44,31 +42,35 @@
                 map: map
             });
         }
-
-        // if the object has the property "active" the page will
-        // render into a zoomed view
-      {{#each stores}}
-        {{#if this.active}}
-            var newLatnewLng = "{{this.storeInfo.location}}";
-            var newLatnewLngParts = newLatnewLng.split(',');
-            var newLat = +newLatnewLngParts[0];
-            var newLng = newLatnewLngParts[1];
-            var newLng = +newLng.replace(/\s/g, ''); // removes whitespaces
-            setLocation(newLat, newLng);
-        {{/if}}
-      {{/each}}
     }
 
     // the default function when you click the div with the address
     // so it will center the map to the coordinates contained in "onclick"
     function setLocation(newLat, newLng) {
+      console.log('location: ', newLat, newLng)
         map.setCenter({
             lat : newLat,
             lng : newLng
         });
         map.setZoom(15);
     }
+
+    function computeDistance(fromLatLng, toLatLgn) {
+      var transformedToLatLgn = toLatLgn.split(", ");
+      var toLat = parseFloat(transformedToLatLgn[0]);
+      var toLng = parseFloat(transformedToLatLgn[1]);
+
+      var transformedFromLatLgn = fromLatLng.split(", ");
+      var fromLat = parseFloat(transformedFromLatLgn[0]);
+      var fromLng = parseFloat(transformedFromLatLgn[1]);
+
+      var fromLatLng = new google.maps.LatLng(fromLat, fromLng);
+      var toLatLng = new google.maps.LatLng(toLat, toLng);
+      var result = google.maps.geometry.spherical.computeDistanceBetween(fromLatLng, toLatLng);
+      var result = parseFloat(Math.round(result) / 1000).toFixed(2);
+
+      return result;
+    }
 </script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfg2iJdYwmmOiUZ-DG6XpsKD5GBQO7OM&callback=initialize">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfg2iJdYwmmOiUZ-DG6XpsKD5GBQO7OM&callback=initialize&libraries=geometry">
 </script>

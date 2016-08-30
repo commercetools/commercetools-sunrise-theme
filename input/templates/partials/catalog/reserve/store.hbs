@@ -1,9 +1,11 @@
 {{#each stores}}
-    <li class="item address {{#if this.active}}address--active{{/if}}">
-        <div class="item-link" onClick="setLocation({{this.storeInfo.location}});">
+    <li class="item address">
+        <div class="item-link">
             <span class="distance">
               <i class="icon icon-marker"></i>
-              3 Km
+              <span class="gm-computed-distance" data-value="{{this.storeInfo.location}}">
+                {{i18n "main:storeLocation.calculatingTxt"}}
+              </span> km
             </span>
 
             <b class="price">

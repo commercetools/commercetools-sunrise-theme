@@ -97,6 +97,7 @@ $(document).ready(function() {
   $('.list-item-location, .list-item-bag, .nav-minicart').click(function(event) {
     event.stopPropagation();
   });
+
 });
 
 // Toggling plus and minus icons for mobile navigation menu
@@ -190,18 +191,6 @@ $(".wishlist-btn").click(function() {
 // Dark background on opened menu (mobile)
 $(".navbar-toggle").click(function() {
   $(".darkbg").toggleClass("hidden");
-});
-
-/*****************************************************************************/
-/*
- /* LOCATION STORE PAGE
- /*
- /*****************************************************************************/
-
-// Selecting a store - add or remove class for active
-$(".store-location-wrapper .list .item").click(function() {
-  $(".store-location-wrapper .list .item").removeClass("address--active");
-  $(this).addClass("address--active");
 });
 
 /*****************************************************************************/
