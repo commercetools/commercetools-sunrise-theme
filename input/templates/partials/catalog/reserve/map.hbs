@@ -13,31 +13,27 @@
             draggable: false
         });
 
-        // icons folder
-        var iconBase = '../../assets/img/map/';
-
-        // defines the default map marker icon
-        var icons = {
-            default: {
-                icon: iconBase + 'pointer-active.png'
-            }
+        var image = {
+          url: '../../assets/img/map/pointer-active.png',
+          scaledSize: new google.maps.Size(42, 62),
+          origin: new google.maps.Point(0, 0),
+          anchor: new google.maps.Point(0, 0)
         };
 
         // assigns the .json array to the map markers array
         var features = [
           {{#each stores}}
               {
-                  position: new google.maps.LatLng({{this.storeInfo.location}}),
+                  position: new google.maps.LatLng({{this.storeInfo.location.lat}}, {{this.storeInfo.location.lng}}),
                   type: 'default'
               },
           {{/each}}
         ];
 
-        // creates the map markes for each address object in the array
         for (var i = 0, feature; feature = features[i]; i++) {
             var marker = new google.maps.Marker({
                 position: feature.position,
-                icon: icons[feature.type].icon,
+                icon: image,
                 animation : google.maps.Animation.DROP,
                 map: map
             });
@@ -54,15 +50,7 @@
         map.setZoom(15);
     }
 
-    function computeDistance(fromLatLng, toLatLgn) {
-      var transformedToLatLgn = toLatLgn.split(", ");
-      var toLat = parseFloat(transformedToLatLgn[0]);
-      var toLng = parseFloat(transformedToLatLgn[1]);
-
-      var transformedFromLatLgn = fromLatLng.split(", ");
-      var fromLat = parseFloat(transformedFromLatLgn[0]);
-      var fromLng = parseFloat(transformedFromLatLgn[1]);
-
+    function computeDistance(fromLat, fromLng, toLat, toLng) {
       var fromLatLng = new google.maps.LatLng(fromLat, fromLng);
       var toLatLng = new google.maps.LatLng(toLat, toLng);
       var result = google.maps.geometry.spherical.computeDistanceBetween(fromLatLng, toLatLng);

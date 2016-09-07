@@ -3,15 +3,14 @@
     var addressList = $('.store-location-wrapper .addresses .list');
     var addressItem = addressList.find('.item');
     var coordsContainer = ".gm-computed-distance"
-    var coordValues = "data-value";
+    var coordValueLat = "data-coord-lat";
+    var coordValueLng = "data-coord-lng";
     var activeClass = "address--active";
 
     // change the location onClick
     addressList.on('click', '.item', function() {
-      var changeLocationLatLng = $(this).find(coordsContainer).attr(coordValues);
-      var changeLocationParts = changeLocationLatLng.split(',');
-      var changeLocationLat = parseFloat(changeLocationParts[0]);
-      var changeLocationLng = parseFloat(changeLocationParts[1]);
+      var changeLocationLat = parseFloat($(this).find(coordsContainer).attr(coordValueLat));
+      var changeLocationLng = parseFloat($(this).find(coordsContainer).attr(coordValueLng));
       setLocation(changeLocationLat, changeLocationLng);
       addressItem.removeClass(activeClass);
       $(this).addClass(activeClass);
@@ -24,14 +23,14 @@
       var success = function(position) {
         // gets user geolocation
         userPosition = position;
-        fromLat = userPosition.coords.latitude + ', ';
-        fromLng = userPosition.coords.longitude;
-        distanceFrom = fromLat.concat(fromLng);
+        distanceFromLat = userPosition.coords.latitude;
+        distanceFromLng = userPosition.coords.longitude;
 
         // calculates and updates the text (km) inside div
         $(coordsContainer).each(function() {
-          var distanceTo = $(this).attr(coordValues);
-          $(this).html(computeDistance(distanceFrom, distanceTo));
+          var distanceToLat = parseFloat($(this).attr(coordValueLat));
+          var distanceToLng = parseFloat($(this).attr(coordValueLng));
+          $(this).html(computeDistance(distanceFromLat, distanceFromLng, distanceToLat, distanceToLng));
         });
 
         // after updating it will sort based on the shortest distance
@@ -44,17 +43,15 @@
 
         // adds the active class and centers map based on shortest distance item
         var closestItem = addressItem.eq(0);
-        var closestItemLatLng = closestItem.find(coordsContainer).attr(coordValues);
-        var setLocationParts = closestItemLatLng.split(',');
-        var setLocationLat = parseFloat(setLocationParts[0]);
-        var setLocationLng = parseFloat(setLocationParts[1]);
+        var setLocationLat = parseFloat(closestItem.find(coordsContainer).attr(coordValueLat));
+        var setLocationLng = parseFloat(closestItem.find(coordsContainer).attr(coordValueLng));
         addressItem.removeClass(activeClass);
         closestItem.addClass(activeClass);
         setLocation(setLocationLat, setLocationLng);
       };
 
       var error = function(error) {
-        console.log('Error occurred. Error code: ' + error.code);
+        window.console&&console.log('Error occurred. Error code: ' + error.code);
         $(coordsContainer).each(function() {
           $(this).html('?');
         });
