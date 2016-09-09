@@ -669,28 +669,26 @@
       <div class="map">
         <div id="map"></div>
       </div>
-      
       <script>
           var map;
-      
           function initialize() {
               // creates the map with default options
               map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 11,
-                  center: new google.maps.LatLng(48.1545702, 11.5616558), // find out current position
+                  center: new google.maps.LatLng(48.1545702, 11.5616558), // FIXME: here needs to be the "city/country/place" where it will be centered at first (this is a mock lat for Munich)
                   mapTypeId: 'roadmap',
                   scrollwheel: false,
                   draggable: false
               });
       
-              // icons folder
-              var iconBase = '../../assets/img/map/';
+              var iconBase = '../../assets/';
       
-              // defines the default map marker icon
-              var icons = {
-                  default: {
-                      icon: iconBase + 'pointer-active.png'
-                  }
+              var iconImage = {
+                url: iconBase + 'img/map/pointer-active-2ba547e1716a8b9ee7f6e80e2b18f948.png',
+                scaledSize: new google.maps.Size(42
+                  , 62),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(0, 0)
               };
       
               // assigns the .json array to the map markers array
@@ -704,39 +702,19 @@
                         type: 'default'
                     },
                     {
-                        position: new google.maps.LatLng(48.1536723,11.5805786),
-                        type: 'default'
-                    },
-                    {
-                        position: new google.maps.LatLng(48.26128, 11.47589),
+                        position: new google.maps.LatLng(48.1536723, 11.5805786),
                         type: 'default'
                     },
               ];
       
-              // creates the map markes for each address object in the array
               for (var i = 0, feature; feature = features[i]; i++) {
                   var marker = new google.maps.Marker({
                       position: feature.position,
-                      icon: icons[feature.type].icon,
+                      icon: iconImage,
                       animation : google.maps.Animation.DROP,
                       map: map
                   });
               }
-      
-              // if the object has the property "active" the page will
-              // render into a zoomed view
-                  var newLatnewLng = "48.26128, 11.47589";
-                  var newLatnewLngParts = newLatnewLng.split(',');
-                  var newLat = +newLatnewLngParts[0];
-                  var newLng = newLatnewLngParts[1];
-                  var newLng = +newLng.replace(/\s/g, ''); // removes whitespaces
-                  setLocation(newLat, newLng);
-                  var newLatnewLng = "48.26128, 11.47589";
-                  var newLatnewLngParts = newLatnewLng.split(',');
-                  var newLat = +newLatnewLngParts[0];
-                  var newLng = newLatnewLngParts[1];
-                  var newLng = +newLng.replace(/\s/g, ''); // removes whitespaces
-                  setLocation(newLat, newLng);
           }
       
           // the default function when you click the div with the address
@@ -748,17 +726,27 @@
               });
               map.setZoom(15);
           }
+      
+          function computeDistance(fromLat, fromLng, toLat, toLng) {
+            var fromLatLng = new google.maps.LatLng(fromLat, fromLng);
+            var toLatLng = new google.maps.LatLng(toLat, toLng);
+            var result = google.maps.geometry.spherical.computeDistanceBetween(fromLatLng, toLatLng);
+            var result = parseFloat(Math.round(result) / 1000).toFixed(2);
+      
+            return result;
+          }
       </script>
-      <script async defer
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfg2iJdYwmmOiUZ-DG6XpsKD5GBQO7OM&callback=initialize">
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkfg2iJdYwmmOiUZ-DG6XpsKD5GBQO7OM&callback=initialize&libraries=geometry">
       </script>
       <div class="addresses">
         <ul class="list">
-              <li class="item address address--active">
-                  <div class="item-link" onClick="setLocation(48.26128, 11.47589);">
+              <li class="item address">
+                  <div class="item-link">
                       <span class="distance">
                         <i class="icon icon-marker"></i>
-                        3 Km
+                        <span class="gm-computed-distance" data-coord-lat="48.26128" data-coord-lng="11.47589">
+                          calculating...
+                        </span> km
                       </span>
           
                       <b class="price">
@@ -805,11 +793,13 @@
                       </div>
                   </div>
               </li>
-              <li class="item address ">
-                  <div class="item-link" onClick="setLocation(48.1373932, 11.5732545);">
+              <li class="item address">
+                  <div class="item-link">
                       <span class="distance">
                         <i class="icon icon-marker"></i>
-                        3 Km
+                        <span class="gm-computed-distance" data-coord-lat="48.1373932" data-coord-lng="11.5732545">
+                          calculating...
+                        </span> km
                       </span>
           
                       <b class="price">
@@ -856,11 +846,13 @@
                       </div>
                   </div>
               </li>
-              <li class="item address ">
-                  <div class="item-link" onClick="setLocation(48.1536723,11.5805786);">
+              <li class="item address">
+                  <div class="item-link">
                       <span class="distance">
                         <i class="icon icon-marker"></i>
-                        3 Km
+                        <span class="gm-computed-distance" data-coord-lat="48.1536723" data-coord-lng="11.5805786">
+                          calculating...
+                        </span> km
                       </span>
           
                       <b class="price">
@@ -907,60 +899,8 @@
                       </div>
                   </div>
               </li>
-              <li class="item address address--active">
-                  <div class="item-link" onClick="setLocation(48.26128, 11.47589);">
-                      <span class="distance">
-                        <i class="icon icon-marker"></i>
-                        3 Km
-                      </span>
-          
-                      <b class="price">
-                        50,00 €
-                      </b>
-          
-                      <strong class="title">
-                        Dachauer Einkaufszentrum
-                      </strong>
-          
-                      <div class="info">
-                          <div class="info-title">
-                            Address:
-                          </div>
-                          <div class="info-content">
-                            100 Gotham Street <br/>
-                            11111,
-                            Gotham
-                            (United States)
-                          </div>
-          
-                          <div class="info-title">
-                            Opening hours:
-                          </div>
-                          <div class="info-content">
-                            <p>Mo-Fr. 10:00 a.m - 8:00 p.m.<br/>Sa. 9:00 a.m - 6:00 p.m</p>
-                          </div>
-                      </div>
-          
-                      <div class="box-footer">
-                        <div class="status">
-                                <div class="status-color green"></div>
-                              <span class="status-text">available</span>
-                        
-                        </div>
-          
-                          <div class="action">
-                              <form id="form-reserve-in-store3" name="reserve-in-store" method="post" action="reserve-in-store.html">
-                                  <input type="hidden" name="csrfToken" value="Test123"/>
-                                  <input type="hidden" name="storeId" value="some-store-id">
-                                  <button type="submit" class="btn btn-standard">Reserve</button>
-                              </form>
-                          </div>
-                      </div>
-                  </div>
-              </li>
         </ul>
       </div>
-    
     </div>
   </div>
   <div class="footer">
@@ -1055,7 +995,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="../../assets/js/animatedModal.min-7345a731ae2c14daa28eaa1a7cf166c5.js"></script>
   <script src="../../assets/js/selectboxit.min-3a414ae410dd205fa8fff2027c297a89.js"></script>
-  <script src="../../assets/js/main.min-105c5e4890f8377cb14cbd632ffb37cf.js"></script>
+  <script src="../../assets/js/main.min-ec1092407cc5af7b82c04532d611353e.js"></script>
+  <script src="../../assets/js/map-scripts-15648e1f1179a9d4941335f47440d3c4.js"></script>
+
 </body>
 
 </html>

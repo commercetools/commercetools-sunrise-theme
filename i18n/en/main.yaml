@@ -141,6 +141,7 @@ storeLocation:
   title: Store location
   address: Address
   openingTimes: Opening hours
+  calculatingTxt: calculating...
   availability:
     available: "available"
     notAvailable: "not available"
