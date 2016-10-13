@@ -61,6 +61,15 @@
         text-align: right;
       }
 
+      .price-discounted {
+        width: 50%;
+        float: right;
+        font-size: 15px;
+        font-weight: normal;
+        text-align: right;
+        text-decoration: line-through;
+      }
+
       .distance,
       .price {
         margin-bottom: 15px;
