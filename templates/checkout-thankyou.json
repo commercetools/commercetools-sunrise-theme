@@ -216,9 +216,6 @@
       "addToWishlist": {
         "href": "wishlist.html"
       },
-      "reserveInStore": {
-        "href": "reserve-in-store.html"
-      },
       "addReview": {
         "href": "pdp.html"
       },

@@ -674,8 +674,8 @@
           function initialize() {
               // creates the map with default options
               map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 11,
-                  center: new google.maps.LatLng(48.1545702, 11.5616558), // FIXME: here needs to be the "city/country/place" where it will be centered at first (this is a mock lat for Munich)
+                  zoom: 5,
+                  center: new google.maps.LatLng(50.6398421, 8.9748593), // shows Europe
                   mapTypeId: 'roadmap',
                   scrollwheel: false,
                   draggable: false
@@ -788,7 +788,7 @@
                         </div>
           
                           <div class="action">
-                              <form id="form-reserve-in-store0" name="reserve-in-store" method="post" action="reserve-in-store.html">
+                              <form id="form-reserve-in-store0" name="reserve-in-store" method="post" action="">
                                   <input type="hidden" name="csrfToken" value="Test123"/>
                                   <input type="hidden" name="storeId" value="some-store-id">
                                   <button type="submit" class="btn btn-standard">Reservieren</button>
@@ -845,7 +845,7 @@
                         </div>
           
                           <div class="action">
-                              <form id="form-reserve-in-store1" name="reserve-in-store" method="post" action="reserve-in-store.html">
+                              <form id="form-reserve-in-store1" name="reserve-in-store" method="post" action="">
                                   <input type="hidden" name="csrfToken" value="Test123"/>
                                   <input type="hidden" name="storeId" value="some-other-store-id">
                                   <button type="submit" class="btn btn-standard">Reservieren</button>
@@ -898,7 +898,7 @@
                         </div>
           
                           <div class="action">
-                              <form id="form-reserve-in-store2" name="reserve-in-store" method="post" action="reserve-in-store.html">
+                              <form id="form-reserve-in-store2" name="reserve-in-store" method="post" action="">
                                   <input type="hidden" name="csrfToken" value="Test123"/>
                                   <input type="hidden" name="storeId" value="even-some-other-store-id">
                                   <button type="submit" class="btn btn-standard">Reservieren</button>

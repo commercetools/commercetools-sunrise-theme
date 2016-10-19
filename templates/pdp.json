@@ -2571,7 +2571,8 @@
           "imageUrl": "../../assets/img/blue-shirt-5bdf49d3ec20b6fdddcf3e6a70798068.jpg"
         }
       ]
-    }
+    },
+    "reserveInStoreUrl": "reserve-in-store.html"
   },
   "meta": {
     "assetsPath": "../../assets/",
@@ -2653,9 +2654,6 @@
       },
       "addToWishlist": {
         "href": "wishlist.html"
-      },
-      "reserveInStore": {
-        "href": "reserve-in-store.html"
       },
       "addReview": {
         "href": "pdp.html"
