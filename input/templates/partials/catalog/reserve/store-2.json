@@ -11,6 +11,11 @@
           "lng" : 11.5732545
         }
     },
-    "price": "47,50 €",
+    "prices": {
+            "value": "50,00 €",
+            "discounted": {
+                "value": "40,00 €"
+            }
+        },
     "availability": "notAvailable"
 }
