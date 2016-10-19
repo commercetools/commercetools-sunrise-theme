@@ -9,9 +9,19 @@
               </span> km
             </span>
 
-            <b class="price">
-              {{this.price}}
-            </b>
+            {{#if this.prices.discounted}}
+              <span class="price-discounted">
+                {{this.prices.value}}
+              </span>
+
+              <b class="price">
+                {{this.prices.discounted.value}}
+              </b>
+            {{else}}
+              <b class="price">
+                {{this.prices.value}}
+              </b>
+            {{/if}}
 
             <strong class="title">
               {{this.storeInfo.name}}

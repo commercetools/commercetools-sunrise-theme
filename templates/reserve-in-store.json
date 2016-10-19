@@ -1607,7 +1607,12 @@
             "lng": 11.47589
           }
         },
-        "price": "50,00 €",
+        "prices": {
+          "value": "50,00 €",
+          "discounted": {
+            "value": "40,00 €"
+          }
+        },
         "availability": "available"
       },
       {
@@ -1632,7 +1637,12 @@
             "lng": 11.5732545
           }
         },
-        "price": "47,50 €",
+        "prices": {
+          "value": "50,00 €",
+          "discounted": {
+            "value": "40,00 €"
+          }
+        },
         "availability": "notAvailable"
       },
       {
@@ -1658,7 +1668,9 @@
             "lng": 11.5805786
           }
         },
-        "price": "49,00 €",
+        "prices": {
+          "value": "50,00 €"
+        },
         "availability": "fewItemsLeft"
       }
     ]
