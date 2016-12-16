@@ -18,6 +18,10 @@
       {{> catalog/pop/facet-select}}
     {{/if}}
 
+    {{#if bucketRangeFacet}}
+      {{> catalog/pop/facet-bucket-range}}
+    {{/if}}
+
     {{#if sliderRangeFacet}}
       {{> catalog/pop/facet-slider-range}}
     {{/if}}
