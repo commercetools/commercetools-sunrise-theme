@@ -92,18 +92,15 @@
     }
   }
 }
+
 .add-new-address-btn {
   button {
-    text-transform: uppercase;
-    background: $my-sin;
     padding: 10px 20px;
-    font-weight: bold;
     letter-spacing: 1px;
     margin-right: 15px;
     font-size: 16px;
-    &:hover {
-      background: lighten($my-sin, 5%);
-    }
+    @extend %primary-action-profile;
+
     @media screen and (max-width: 767px) {
       margin-top: 15px;
     }

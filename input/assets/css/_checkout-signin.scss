@@ -63,16 +63,11 @@
       }
     }
     .quick-checkout-btn {
+      @extend %primary-action-profile;
       margin-top: 15px;
       padding: 10px 30px;
       letter-spacing: 1px;
       font-size: 18px;
-      text-transform: uppercase;
-      font-weight: bold;
-      background: $my-sin;
-      &:hover {
-        background: lighten($my-sin, 5%);
-      }
     }
   }
 }
@@ -107,15 +102,10 @@
     color: $gray;
   }
   .continue-guest-btn {
+    @extend %primary-action-profile;
     margin-top: 15px;
     padding: 10px 30px;
     letter-spacing: 1px;
     font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: $my-sin;
-    &:hover {
-      background: lighten($my-sin, 5%);
-    }
   }
 }

@@ -55,13 +55,19 @@
   color: $mine-shaft;
 }
 .checkout-now-btn {
-  background: url("../img/arrow-66.png") no-repeat 95% 13px $my-sin;
-  background-size: 15px;
+  @extend %primary-action-profile;
   border: none;
-  color: $mine-shaft;
   padding: 0.5em 2em;
   font-size: 1.2em;
   text-align: center;
+
+  background: {
+    size: 15px;
+    image: url("../img/arrow-66.png");
+    repeat: no-repeat;
+    position: 95% 13px;
+  }
+
   &:hover {
     background: url("../img/arrow-66.png") no-repeat 95% 13px lighten($my-sin, 5%);
     background-size: 15px;
@@ -161,13 +167,10 @@
   }
 }
 .quantity-submit-btn {
+  @extend %primary-action-profile;
   padding-top: 3px;
-  background: $my-sin;
   margin-top: 10px;
   font-size: 12px;
-  &:hover {
-    background: lighten($my-sin, 5%);
-  }
 }
 
 // Cart item price
