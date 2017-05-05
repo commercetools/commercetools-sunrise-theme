@@ -8,6 +8,7 @@
 ## Attention
 
 Currently the templates as well as the CSS and JavaScript files are not ready to be re-used.
+
 Despite of that we recommend to use the project itself to develop your own theme with the current setup, as it provides useful tasks that can help you in the process. For more details, please check the [Commands](#commands) section.
 
 ## Demo
