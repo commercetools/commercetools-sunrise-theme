@@ -1,8 +1,17 @@
 # Commercetools Sunrise Theme
 
-[![Build Status](https://travis-ci.org/commercetools/commercetools-sunrise-theme.png?branch=master)](https://travis-ci.org/commercetools/commercetools-sunrise-theme) [![Stories in Ready](https://badge.waffle.io/commercetools/commercetools-sunrise-theme.png?label=ready&title=Ready)](https://waffle.io/commercetools/commercetools-sunrise-theme) [ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-theme/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-theme/_latestVersion)
+[![Build Status](https://travis-ci.org/commercetools/commercetools-sunrise-theme.png?branch=master)](https://travis-ci.org/commercetools/commercetools-sunrise-theme)
+[ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-theme/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-theme/_latestVersion)
+[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/orangemug/stability-badges)
+[![Stories in Ready](https://badge.waffle.io/commercetools/commercetools-sunrise-theme.png?label=ready&title=Ready)](https://waffle.io/commercetools/commercetools-sunrise-theme)
 
-##Demo
+## Attention
+
+Currently the templates as well as the CSS and JavaScript files are not ready to be re-used.
+Despite of that we recommend to use the project itself to develop your own theme with the current setup.
+
+## Demo
+
 - [Home](http://commercetools.github.io/commercetools-sunrise-theme/site/en/home.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/home.html) )
 - [Product Overview](http://commercetools.github.io/commercetools-sunrise-theme/site/en/pop.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/pop.html) )
 - [Product Detail](http://commercetools.github.io/commercetools-sunrise-theme/site/en/pdp.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/pdp.html) )
@@ -37,14 +46,14 @@
 - [FAQ Page](http://commercetools.github.io/commercetools-sunrise-theme/site/en/faq.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/faq.html) )
 - [Imprint Page](http://commercetools.github.io/commercetools-sunrise-theme/site/en/imprint.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/imprint.html) )
 
-##Installation
+## Installation
 
 - Install [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/)
 - Install [Sass](http://sass-lang.com/install)
 - Install [Grunt](http://gruntjs.com/getting-started)
 - Run `npm install` in the project root to install the project dependencies
 
-##How to use
+## How to use
 
 You can import the theme to your project as a [WebJars](http://www.webjars.org/) dependency.
 
@@ -52,7 +61,7 @@ All releases for this theme can be found in a Maven repository hosted by [Bintra
 - `>= v0.58.0`: https://dl.bintray.com/commercetools/maven/com/commercetools/sunrise/commercetools-sunrise-theme/
 - `< v0.58.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/sunrise/commercetools-sunrise-theme/
 
-##How to develop
+## How to develop
 
 [Fork](https://help.github.com/articles/fork-a-repo/) or [copy](https://help.github.com/articles/duplicating-a-repository/) the project and adapt `package.json` to create your own theme.
 
@@ -63,7 +72,7 @@ Set it up as explained in the _[Installation](#installation)_ section, then appl
 3. Check your changes by accessing the desired HTML file generated in the `output/` folder
 4. Once ready, enable the theme in your Sunrise project following one of the methods described in _[Create WebJars file](#create-webjars-file)_
 
-###Commands
+### Commands
 
 Besides `grunt`, which builds the whole generated site (`grunt build`) and watches for changes, there are other commands available. Below are listed a non-exhaustive list of them.
 
