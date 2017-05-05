@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/commercetools/commercetools-sunrise-theme.png?branch=master)](https://travis-ci.org/commercetools/commercetools-sunrise-theme)
 [ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-theme/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-theme/_latestVersion)
-[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/orangemug/stability-badges)
+[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/orangemug/stability-badges#experimental)
 [![Stories in Ready](https://badge.waffle.io/commercetools/commercetools-sunrise-theme.png?label=ready&title=Ready)](https://waffle.io/commercetools/commercetools-sunrise-theme)
 
 ## Attention
