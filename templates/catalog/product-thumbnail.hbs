@@ -7,8 +7,12 @@
     {{#if thumbnail.new}}
       <div class="new-flag">{{i18n "catalog:thumbnail.new"}}</div>
     {{/if}}
-    <form id="form-add-to-wishlist-mobile{{index}}" {{#if wishlist}}class="hidden"{{/if}} name="add-to-wishlist-mobile" action="{{@root.meta._links.addToWishlist.href}}">
-      <button type="submit" class="heart-xs visible-xs">
+    <form id="form-add-to-wishlist-mobile{{index}}" method="post" {{#if wishlist}}class="hidden"{{/if}} name="add-to-wishlist-mobile" action="{{@root.meta._links.addToWishlist.href}}">
+        <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
+        <input type="hidden" name="productId" value="{{product.productId}}">
+        <input type="hidden" name="variantId" value="{{product.variantId}}">
+
+        <button type="submit" class="heart-xs visible-xs">
         <span class="sr-only">{{i18n "catalog:wishlist.add"}}</span>
       </button>
     </form>
@@ -45,13 +49,17 @@
       <button type="button" class="quickview" data-modal="quickview-modal{{index}}">
         {{i18n "catalog:thumbnail.quickView"}}
       </button>
-      <form id="form-add-to-wishlist{{index}}" {{#if wishlist}}class="hidden"{{/if}} name="add-to-wishlist" action="{{@root.meta._links.addToWishlist.href}}">
-        <button type="submit" class="heart">
+      <form id="form-add-to-wishlist{{index}}" method="post" {{#if wishlist}}class="hidden"{{/if}} name="add-to-wishlist" action="{{@root.meta._links.addToWishlist.href}}">
+          <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
+          <input type="hidden" name="productId" value="{{product.productId}}">
+          <input type="hidden" name="variantId" value="{{product.variantId}}">
+
+          <button type="submit" class="heart">
           <span class="sr-only">{{i18n "catalog:wishlist.add"}}</span>
         </button>
       </form>
     </div>
   </div>
 </a>
-{{> catalog/quickview}}
+{{> catalog/quickview wishlist=wishlist}}
 <!-- end catalog/product-thumbnail.hbs -->

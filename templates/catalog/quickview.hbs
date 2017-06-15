@@ -44,7 +44,7 @@
             </div>
             <div class="quickview-wishlist-row">
               <ul class="list-inline">
-                <li>
+                <li {{#if wishlist}}class="hidden"{{/if}}>
                   {{> catalog/add-to-wishlist-btn}}
                 </li>
                 <li>
