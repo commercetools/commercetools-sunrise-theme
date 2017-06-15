@@ -78,6 +78,11 @@ myOrder:
     quantity: Quantity
     unitPrice: Price
     totalPrice: Total
+myWishlist:
+  title: Meine Wunschliste
+  clear: Alle löschen
+  itemsTotal: __count__ Artikel
+  itemsTotal_plural: __count__ Artikel
 changePassword:
   oldPasswordLabelTxt: Aktuelles Passwort
   newPasswordLabelTxt: Neues Passwort

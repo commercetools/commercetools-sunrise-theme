@@ -79,6 +79,11 @@ myOrder:
     quantity: Quantity
     unitPrice: Price
     totalPrice: Total
+myWishlist:
+  title: My Wishlist
+  clear: Delete all
+  itemsTotal: __count__ item in total
+  itemsTotal_plural: __count__ items in total
 changePassword:
   oldPasswordLabelTxt: Current password
   newPasswordLabelTxt: New password
