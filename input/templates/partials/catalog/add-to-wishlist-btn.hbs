@@ -1,4 +1,3 @@
-<!-- start catalog/add-to-wishlist-btn.hbs -->
 <form id="form-add-to-wishlist{{index}}" method="post" name="add-to-wishlist" action="{{@root.meta._links.addToWishlist.href}}">
     <input type="hidden" name="csrfToken" value="{{@root.meta.csrfToken}}"/>
     <input type="hidden" name="productId" value="{{product.productId}}">
@@ -8,4 +7,3 @@
     <span class="sr-only">{{i18n "catalog:wishlist.add"}}</span>
   </button>
 </form>
-<!-- end catalog/add-to-wishlist-btn.hbs -->
