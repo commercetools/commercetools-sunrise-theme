@@ -1,25 +1,25 @@
 {
-	"text" : "Belts",
+	"name" : "Belts",
 	"url" : "",
 	"children" : [
 		{
-			"text" : "Basic example",
+			"name" : "Basic example",
 			"url" : ""
 		},
 		{
-			"text" : "Button toolbar",
+			"name" : "Button toolbar",
 			"url" : ""
 		},
 		{
-			"text" : "Sizing",
+			"name" : "Sizing",
 			"url" : ""
 		},
 		{
-			"text" : "Nesting",
+			"name" : "Nesting",
 			"url" : ""
 		},
 		{
-			"text" : "Vertical variation",
+			"name" : "Vertical variation",
 			"url" : ""
 		}
 	]

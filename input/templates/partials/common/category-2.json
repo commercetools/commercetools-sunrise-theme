@@ -1,41 +1,41 @@
 {
-	"text" : "Glasses",
+	"name" : "Glasses",
 	"url" : "",
 	"children" : [
 		{
-			"text" : "Lorem",
+			"name" : "Lorem",
 			"url" : ""
 		},
 		{
-			"text" : "Very long navigation item",
+			"name" : "Very long navigation item",
 			"url" : ""
 		},
 		{
-			"text" : "Very long navigation items will be truncated",
+			"name" : "Very long navigation items will be truncated",
 			"url" : ""
 		},
 		{
-			"text" : "Very long navigation item",
+			"name" : "Very long navigation item",
 			"url" : ""
 		},
 		{
-			"text" : "Button toolbar",
+			"name" : "Button toolbar",
 			"url" : ""
 		},
 		{
-			"text" : "Sizing",
+			"name" : "Sizing",
 			"url" : ""
 		},
 		{
-			"text" : "Nesting",
+			"name" : "Nesting",
 			"url" : ""
 		},
 		{
-			"text" : "Very long navigation items will be truncated",
+			"name" : "Very long navigation items will be truncated",
 			"url" : ""
 		},
 		{
-			"text" : "Very long navigation item",
+			"name" : "Very long navigation item",
 			"url" : ""
 		}
 	]

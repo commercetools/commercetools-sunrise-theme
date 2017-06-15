@@ -12,11 +12,11 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 breadcrumb-col">
-          {{> catalog/breadcrumb breadcrumb=content.breadcrumb}}
+          {{> catalog/breadcrumb}}
         </div>
       </div>
       <div class="row product-info-row-pdp">
-        {{> catalog/pdp/product-info product=content.product deliveryRates=content.deliveryRates}}
+        {{> catalog/pdp/product-info}}
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@
       {{> catalog/pdp/reviews}}
     </div>
   </div>
-  {{> common/wishlist wishlist=content.wishlist}}
+  {{> common/wishlist}}
 
   {{> common/footer}}
   {{> common/htmlscripts}}

@@ -3,10 +3,10 @@
     <li class="col-sm-8">
       <div class="nav-accordion">
         {{#each category.children}}
-          <h3><a href="{{url}}">{{text}}</a></h3>
+          <h3><a href="{{url}}">{{name}}</a></h3>
           <ul>
             {{#each children}}
-              <li><a href="{{url}}">{{text}}</a></li>
+              <li><a href="{{url}}">{{name}}</a></li>
             {{/each}}
           </ul>
         {{/each}}
