@@ -131,8 +131,9 @@
 .facet-count {
   color: $gray;
 }
-.category-active {
+li.category-active {
   font-weight: bold;
+  ul { font-weight: normal; }
 }
 
 // Price slider
