@@ -9,7 +9,9 @@
         <span class="recently-added-title">{{i18n "catalog:wishlist.recentlyAdded"}}</span>
         <div class="clearfix">
             {{#each wishlist.list}}
-                <img class="pull-left img-responsive wishlist-img" src="{{imageUrl}}" alt="{{name}}">
+                <a href="{{productSlug}}">
+                    <img class="pull-left img-responsive wishlist-img" src="{{imageUrl}}" alt="{{name}}">
+                </a>
             {{/each}}
         </div>
         <a href="{{@root.meta._links.myWishlist.href}}" id="wishlist-view-btn" class="btn view-wishlist-btn">
