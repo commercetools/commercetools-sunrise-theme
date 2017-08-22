@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{> common/htmlhead}}
+</head>
+
+<body>
+  <div class="darkbg hidden"></div>
+  {{> common/header}}
+  <div class="my-orders">
+    <div class="container">
+      <div class="my-account-title">
+        <span class="my-account-title-text icon-user">{{content.contentTitle}}</span>
+        <span class="my-account-holograms-items-number">{{content.itemsInTotal}}</span>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="my-orders-wrapper">
+            <div class="row">
+              <div id="my-account-desktop-content" class="col-sm-12">
+                <div class="my-orders-order-content">
+                  <div class="my-account-holograms-items-wrapper">
+                    <div class="row">
+                      {{#each content.products.list}}
+                        <div class="col-sm-6 col-md-4">
+                          {{> catalog/product-thumbnail thumbnail=this index=@index holograms=true}}
+                          <div class="my-account-holograms-remove-btn">
+                            <button>{{i18n "catalog:removeBtn.title"}}</button>
+                          </div>
+                        </div>
+                      {{/each}}
+                    </div>
+                  </div>
+                  <div class="my-account-holograms-pagination-bottom">
+                    <div class="row">
+                      <div class="col-sm-12 hidden-xs text-center custom-pagination">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-account-holograms-clear-btn">
+                    <button>{{content.clearWishlistBtn}}</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- {{> common/holograms}} --}}
+  {{> common/footer}}
+  {{> common/htmlscripts}}
+</body>
+
+</html>

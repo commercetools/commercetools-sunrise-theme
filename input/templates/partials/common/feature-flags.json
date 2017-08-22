@@ -4,5 +4,11 @@
     },
     "cartDiscounts": {
         "active": false
+    },
+    "wishlist": {
+        "active": true
+    },
+    "holograms": {
+        "active": true
     }
 }

@@ -1,0 +1,19 @@
+{{#if @root.meta.features.holograms.active}}
+  <div class="holograms">
+      <button id="holograms-open-btn" class="hidden-xs holograms-btn">
+          <div class="holograms-number">{{holograms.quantity}}</div>
+      </button>
+      <div class="holograms-items hidden">
+          <p class="holograms-title">
+            {{i18n "catalog:holograms.title"}} <span>({{holograms.quantity}})</span>
+          </p>
+          <span class="recently-added-title">{{i18n "catalog:holograms.recentlyAdded"}}</span>
+          <div class="clearfix">
+            {{#each holograms.list}}
+                <img class="pull-left img-responsive holograms-img" src="{{imageUrl}}" alt="{{name}}">
+            {{/each}}
+          </div>
+          <a href="{{holograms.url}}" id="holograms-view-btn" class="btn view-holograms-btn">{{i18n "catalog:holograms.view"}}</a>
+      </div>
+  </div>
+{{/if}}

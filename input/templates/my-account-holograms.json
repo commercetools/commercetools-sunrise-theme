@@ -1,0 +1,14 @@
+{
+	"header" : { "$ref" : "common/header.json" },
+	"footer" : { "$ref" : "common/footer.json" },
+	"content" : {
+        "contentTitle" : "My Saved Holograms",
+		"itemsInTotal" : "3 items in total",
+		"clearWishlistBtn" : "Clear Saved Holograms",
+		"removeBtn" : "Remove",
+        "pagination" : { "$ref" : "common/pagination.json" },
+        "displaySelector" : { "$ref" : "catalog/pop/display-selector.json" },
+		"products" : { "$ref" : "catalog/product-list3.json" }
+	},
+    "meta" : { "$ref" : "common/meta.json" }
+}

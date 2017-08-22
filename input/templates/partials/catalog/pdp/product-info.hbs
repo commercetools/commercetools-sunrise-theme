@@ -22,8 +22,11 @@
       {{> catalog/product-price}}
     </div>
   </div>
-  {{> catalog/add-to-cart}} 
+  {{> catalog/add-to-cart}}
   {{> catalog/add-to-wishlist}}
+  <!-- #if content.attributes.hasHologram}} -->
+    {{> catalog/add-to-saved-holograms}}
+  <!-- /if}} -->
   <div class="row">
     <div class="col-sm-12">
       {{> catalog/product-availability}}

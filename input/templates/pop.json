@@ -14,7 +14,8 @@
 		"displaySelector" : { "$ref" : "catalog/pop/display-selector.json" },
 		"sortSelector" : { "$ref" : "catalog/pop/sort-selector.json" },
 		"products" : { "$ref" : "catalog/product-list9.json" },
-		"wishlist" : { "$ref" : "common/wishlist.json" }
+		"wishlist" : { "$ref" : "common/wishlist.json" },
+        "holograms" : { "$ref" : "common/holograms.json" }
 	},
 	"meta" : { "$ref" : "common/meta.json" }
 }

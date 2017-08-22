@@ -51,6 +51,11 @@ wishlist:
   add: Add item to wishlist
   view: View your wishlist
   recentlyAdded: My recently added items
+holograms:
+  title: Saved Holograms
+  add: Add item to saved holograms
+  view: View your saved holograms
+  recentlyAdded: My recently added items
 suggestions:
   title: You may also like
 reviews:

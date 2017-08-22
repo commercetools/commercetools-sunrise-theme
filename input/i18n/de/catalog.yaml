@@ -51,6 +51,11 @@ wishlist:
   add: Auf den Wunschzettel
   view: Wunschliste ansehen
   recentlyAdded: Zuletzt hinzugefügte Artikel
+holograms:
+  title: Saved Holograms
+  add: Auf den Holograms
+  view: Saved holograms ansehen
+  recentlyAdded: Zuletzt hinzugefügte Artikel
 suggestions:
   title: Das könnte Ihnen auch gefallen
 reviews:

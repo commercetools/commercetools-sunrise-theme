@@ -29,7 +29,8 @@
 			}
 		},
 		"suggestions" : { "$ref" : "catalog/product-list4.json" },
-		"wishlist" : { "$ref" : "common/wishlist.json" }
+		"wishlist" : { "$ref" : "common/wishlist.json" },
+        "holograms" : { "$ref" : "common/holograms.json" }
 	},
 	"meta" : { "$ref" : "common/meta.json" }
 }

@@ -182,6 +182,11 @@ $(".wishlist-btn").click(function() {
   $(".wishlist-items").toggleClass("hidden");
 });
 
+// Holograms section
+$(".holograms-btn").click(function() {
+  $(".holograms-items").toggleClass("hidden");
+});
+
 // Dark background on opened menu (mobile)
 $(".navbar-toggle").click(function() {
   $(".darkbg").toggleClass("hidden");
