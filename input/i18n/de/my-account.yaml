@@ -105,7 +105,7 @@ forgotPassword:
     subject: Passwort zurücksetzen
     passwordResetTitle: Passwort zrücksetzen
     dearUser: Sehr geehrter
-    passwordResetText: Wir haben Ihre Anfrage zum Zurücksetzen Ihres Passworts erhalten. Bitte verwenden Sie den folgenden Link um Ihr Passwort zurück zu setzen:
+    passwordResetText: "Wir haben Ihre Anfrage zum Zurücksetzen Ihres Passworts erhalten. Bitte verwenden Sie den folgenden Link um Ihr Passwort zurück zu setzen:"
     passwordResetTextTwo: Bitte ignorieren Sie diese Email falls Sie Ihr Passwort nicht zurück setzen möchten.
     wishes: Mit freundlichen Grüssen
     who: SUNRISE Customer Service Team
