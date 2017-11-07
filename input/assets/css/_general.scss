@@ -155,3 +155,17 @@ button {
 .push-left {
 	float: left;
 }
+
+.img-lazy {
+  background: white url('../img/spinner.gif') no-repeat 50% 50%;
+  color: $white;
+  display: block;
+}
+
+.img-lazy,
+.img-lazy-error {
+  // image's height
+  height: 300px;
+  // hides alt text
+  font-size: 0;
+}
