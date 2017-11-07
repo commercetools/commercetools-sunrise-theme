@@ -169,3 +169,7 @@ button {
   // hides alt text
   font-size: 0;
 }
+
+.img-lazy-error {
+  @include aspect-ratio-in-element(3,4);
+}
