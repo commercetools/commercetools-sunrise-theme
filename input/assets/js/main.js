@@ -215,12 +215,12 @@ $(function() {
       if (self.is("img")) {
         var placeholder = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
         self.hide();
-          self.attr("src", imgSource).one("load", function() {
-            self.removeClass("img-lazy").removeAttr("data-original");
-          }).on("error", function() {
-            self.removeClass("img-lazy").addClass("img-lazy-error");
-            return self.attr("src", placeholder);
-          });
+        self.attr("src", imgSource).one("load", function() {
+          self.removeClass("img-lazy").removeAttr("data-original");
+        }).on("error", function() {
+          self.removeClass("img-lazy").addClass("img-lazy-error");
+          return self.attr("src", placeholder);
+        });
         self.fadeIn("slow");
       }
     }
