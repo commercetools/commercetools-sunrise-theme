@@ -13,19 +13,19 @@
         "list": [
           {
             "label": "Credit Card",
-            "image": "img/payment-option-card-911d1826fde4546025462fc13875e2a0.gif",
+            "image": "img/payment-option-card-a89723bb7792b24fae8e78c3b9130bcb.gif",
             "value": "credit-card",
             "selected": false
           },
           {
             "label": "PayPal",
-            "image": "img/payment-option-paypal-d00850532a79141d525c9914bd43cf98.png",
+            "image": "img/payment-option-paypal-224f861928062b2c7211dac7dd835c5e.png",
             "value": "paypal",
             "selected": false
           },
           {
             "label": "Pre-payment",
-            "image": "img/blank-img-751459b54b2d093a64bf2a331a8c82a0.jpg",
+            "image": "img/blank-img-286c0deed54e2ba979d9e3f3b2931c7e.jpg",
             "value": "prepaid",
             "selected": true
           }
@@ -126,7 +126,7 @@
             "totalPrice": "49,00 €",
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../../assets/img/blue-jacket-87124c108191907bf4bfb2c21ce170d4.jpg",
+              "image": "../../assets/img/blue-jacket-329d4682d1aa7ae44b6519057cc0d17c.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -151,7 +151,7 @@
             "totalPrice": "49,00 €",
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../../assets/img/blue-jacket-87124c108191907bf4bfb2c21ce170d4.jpg",
+              "image": "../../assets/img/blue-jacket-329d4682d1aa7ae44b6519057cc0d17c.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
@@ -176,7 +176,7 @@
             "totalPrice": "49,00 €",
             "variant": {
               "name": "Enditatem Product Name Optional very long line two",
-              "image": "../../assets/img/blue-jacket-87124c108191907bf4bfb2c21ce170d4.jpg",
+              "image": "../../assets/img/blue-jacket-329d4682d1aa7ae44b6519057cc0d17c.jpg",
               "url": "pdp.html",
               "sku": "Sunrise #SUN123456",
               "priceOld": "100,00 €",
