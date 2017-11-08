@@ -3,7 +3,7 @@ node_js: "0.12.2"
 
 before_install:
   - npm install -g grunt-cli
-  - gem install sass
+  - gem install sass -v 3.5.2
 
 install:
   - npm install
