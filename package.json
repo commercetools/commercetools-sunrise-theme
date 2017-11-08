@@ -52,8 +52,6 @@
     "i18next.yaml": "^1.6.0",
     "json-refs": "^2.0.3",
     "load-grunt-tasks": "^3.4.0",
-    "node-sass": "^3.4.2",
-    "request":"2.81.0",
-    "superagent":"3.5.1"
+    "node-sass": "^3.4.2"
   }
 }
