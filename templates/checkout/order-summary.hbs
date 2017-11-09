@@ -68,25 +68,16 @@
               </div>
           </div>
       </div>
-
-
-
-
-
-
   {{/each}}
-
   {{> checkout/order-summary/discount-code-input}}
-    {{#if checkoutConfirmation}}
-  {{> checkout/order-summary/confirmation-checkboxes}}
+  {{> checkout/order-summary/discount-summary}}
+  {{#if checkoutConfirmation}}
+    {{> checkout/order-summary/confirmation-checkboxes}}
   {{/if}}
     <div class="row">
         <div class="col-sm-12">
             <div class="total-price-calc">
-              {{#unless editable}}
-                {{> checkout/order-summary/discount-summary}}
-              {{/unless}}
-              {{> checkout/order-summary/totals}}
+                {{> checkout/order-summary/totals}}
             </div>
         </div>
     </div>

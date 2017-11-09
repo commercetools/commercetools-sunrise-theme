@@ -258,7 +258,13 @@
         "card": "Visa",
         "number": "**** **** **** **56",
         "date": "09.18"
-      }
+      },
+      "discountCodes": [
+        {
+          "name": "Sunrise",
+          "id": "1234"
+        }
+      ]
     }
   },
   "meta": {
