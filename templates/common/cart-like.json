@@ -27,6 +27,14 @@
         {
           "name": "Sunrise",
           "id": "1234"
+        },
+        {
+          "name": "Sunny",
+          "id": "12345"
+        },
+        {
+          "name": "Sunny No",
+          "id": "12345"
         }
     ]
 }
