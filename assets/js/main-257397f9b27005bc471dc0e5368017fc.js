@@ -213,28 +213,22 @@ $("ul.bzoom").each(function(index, ul) {
 
 // Lazy loading for images
 $(function() {
-  var loadImage = function(self, imgSource) {
-    self.hide();
-    if (self.is("img")) {
-      self.attr("src", imgSource);
-    } else {
-      self.css("background-image", "url('" + imgSource + "')");
-    }
-    self.fadeIn("slow");
-    return self.removeClass("img-lazy").removeAttr("data-original");
-  };
-
-  var placeholder = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
   $(".img-lazy").each(function() {
     var self = $(this);
+    var imgSource = self.data("original");
+
     if (self.parent().is(":visible")) {
       if (self.is("img")) {
-        self.attr("src", placeholder);
+        var placeholder = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+        self.hide();
+        self.attr("src", imgSource).one("load", function() {
+          self.removeClass("img-lazy").removeAttr("data-original");
+        }).on("error", function() {
+          self.removeClass("img-lazy").addClass("img-lazy-error");
+          return self.attr("src", placeholder);
+        });
+        self.fadeIn("slow");
       }
-      var imgSource = self.data("original");
-      return $("<img />").bind("load", function() {
-        return loadImage(self, imgSource);
-      }).attr("src", imgSource);
     }
   });
 });

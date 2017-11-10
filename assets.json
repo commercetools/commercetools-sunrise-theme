@@ -36,6 +36,7 @@
   "img/phone.png": "img/phone-eb5147e2ba037f8fefe550e508376f80.png",
   "img/plus79.png": "img/plus79-ff2fd999af2fc5d389613530e5c59636.png",
   "img/ruler-1.png": "img/ruler-1-dda7d9d95f7e16051fe32f27648eaa4b.png",
+  "img/spinner.gif": "img/spinner-2fe6e3e0baff69ba301ea00e2438c19e.gif",
   "img/store-icon-29-29px.png": "img/store-icon-29-29px-d01f7d468c1062ef818000172b22aee2.png",
   "img/sun-logo.png": "img/sun-logo-ec2a31e7e55b8c5dce2b219074eff2bd.png",
   "img/sunset-girl.jpg": "img/sunset-girl-336141f2d7212f0d9ba7982075346577.jpg",
@@ -49,10 +50,10 @@
   "js/jquery.ui.touch-punch.min.js": "js/jquery.ui.touch-punch.min-700b877cd3ade98ce6cd4be349d81a5c.js",
   "js/jqzoom.js": "js/jqzoom-a3b3c1f5690cf8fe9fa727f5cd7e09b3.js",
   "js/jqzoom.min.js": "js/jqzoom.min-fb6b29916a977b3db2072fc411794228.js",
-  "js/main.js": "js/main-5900a07824c001855b96e834994117f9.js",
-  "js/main.min.js": "js/main.min-492f169303ef2ecaa241b39a9b64e46f.js",
+  "js/main.js": "js/main-257397f9b27005bc471dc0e5368017fc.js",
+  "js/main.min.js": "js/main.min-46830e9ff17cd44c7b2b0ce3b589320f.js",
   "js/map-scripts.js": "js/map-scripts-15648e1f1179a9d4941335f47440d3c4.js",
   "js/selectboxit.min.js": "js/selectboxit.min-3a414ae410dd205fa8fff2027c297a89.js",
-  "main.min.css": "main.min-cefeaf11246c31cd706a2088123e2392.css",
+  "main.min.css": "main.min-8f67e47cf115587eaf744cd44a575f9a.css",
   "selectboxit.min.css": "selectboxit.min-db6170754f9da8de6c95b8093801eb76.css"
 }
