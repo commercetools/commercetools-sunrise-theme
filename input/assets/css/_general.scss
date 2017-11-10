@@ -172,3 +172,21 @@ button {
 .push-left {
 	float: left;
 }
+
+.img-lazy {
+  background: white url('../img/spinner.gif') no-repeat 50% 50%;
+  color: $white;
+  display: block;
+  // image's height
+  height: 300px;
+}
+
+.img-lazy-error {
+  @include aspect-ratio-in-element(3,4);
+}
+
+.img-lazy,
+.img-lazy-error {
+  // hides alt text
+  font-size: 0;
+}

@@ -13,9 +13,19 @@
   }
 
   .pop-product-image {
-    @include aspect-ratio(3,4);
+    position: relative;
+    overflow: hidden;
     margin: 10px;
+
+    > img,
+    > picture {
+      max-width: 100%;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
   }
+
   .pop-product-name {
     margin-top: 15px;
     text-align: center;
