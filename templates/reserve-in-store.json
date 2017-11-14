@@ -1673,6 +1673,16 @@
         },
         "availability": "fewItemsLeft"
       }
+    ],
+    "messages": [
+      {
+        "type": "info",
+        "message": "Info!"
+      },
+      {
+        "type": "danger",
+        "message": "Danger!"
+      }
     ]
   },
   "meta": {

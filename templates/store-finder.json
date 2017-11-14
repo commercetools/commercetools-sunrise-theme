@@ -1606,6 +1606,16 @@
         "value": "City2",
         "selected": false
       }
+    ],
+    "messages": [
+      {
+        "type": "info",
+        "message": "Info!"
+      },
+      {
+        "type": "danger",
+        "message": "Danger!"
+      }
     ]
   },
   "meta": {

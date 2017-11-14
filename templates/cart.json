@@ -1743,7 +1743,17 @@
           "imageUrl": "../../assets/img/blue-shirt-da31fc9730a2d3bbb323b6bd68aeb6d6.jpg"
         }
       ]
-    }
+    },
+    "messages": [
+      {
+        "type": "warning",
+        "message": "Warning!"
+      },
+      {
+        "type": "danger",
+        "message": "Danger!"
+      }
+    ]
   },
   "meta": {
     "assetsPath": "../../assets/",

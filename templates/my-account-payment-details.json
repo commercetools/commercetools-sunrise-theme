@@ -1612,7 +1612,17 @@
       "date": "09.18",
       "edit": "Edit",
       "delete": "delete"
-    }
+    },
+    "messages": [
+      {
+        "type": "info",
+        "message": "Info!"
+      },
+      {
+        "type": "success",
+        "message": "Success!"
+      }
+    ]
   },
   "meta": {
     "assetsPath": "../../assets/",

@@ -160,7 +160,17 @@
       "remember": {
         "selected": true
       }
-    }
+    },
+    "messages": [
+      {
+        "type": "warning",
+        "message": "Warning!"
+      },
+      {
+        "type": "success",
+        "message": "Success!"
+      }
+    ]
   },
   "meta": {
     "assetsPath": "../../assets/",

@@ -1645,7 +1645,17 @@
           }
         ]
       }
-    }
+    },
+    "messages": [
+      {
+        "type": "info",
+        "message": "Info!"
+      },
+      {
+        "type": "success",
+        "message": "Success!"
+      }
+    ]
   },
   "meta": {
     "assetsPath": "../../assets/",

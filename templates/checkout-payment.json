@@ -252,7 +252,17 @@
           "id": "12345"
         }
       ]
-    }
+    },
+    "messages": [
+      {
+        "type": "danger",
+        "message": "Danger!"
+      },
+      {
+        "type": "success",
+        "message": "Success!"
+      }
+    ]
   },
   "meta": {
     "assetsPath": "../../assets/",

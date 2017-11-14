@@ -1650,6 +1650,16 @@
         "addressEditUrl": "my-account-edit-address.html",
         "addressDeleteUrl": "my-account-address-book.html"
       }
+    ],
+    "messages": [
+      {
+        "type": "info",
+        "message": "Info!"
+      },
+      {
+        "type": "success",
+        "message": "Success!"
+      }
     ]
   },
   "meta": {

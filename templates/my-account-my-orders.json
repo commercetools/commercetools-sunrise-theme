@@ -1624,6 +1624,16 @@
         "shipping": "Delivered",
         "showOrderUrl": "my-account-my-orders-order.html"
       }
+    ],
+    "messages": [
+      {
+        "type": "info",
+        "message": "Info!"
+      },
+      {
+        "type": "success",
+        "message": "Success!"
+      }
     ]
   },
   "meta": {

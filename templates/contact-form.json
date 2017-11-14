@@ -1611,7 +1611,17 @@
     },
     "contactForm": {
       "title": "Mr."
-    }
+    },
+    "messages": [
+      {
+        "type": "info",
+        "message": "Info!"
+      },
+      {
+        "type": "danger",
+        "message": "Danger!"
+      }
+    ]
   },
   "meta": {
     "assetsPath": "../../assets/",
