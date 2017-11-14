@@ -33,7 +33,11 @@
       "errors": {
         "$ref": "form/errors.json"
       }
-    }
+    },
+    "messages" : [
+        { "$ref" : "common/message-info.json" },
+        { "$ref" : "common/message-success.json" }
+    ]
   },
   "meta": {
     "$ref": "common/meta.json"

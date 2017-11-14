@@ -8,7 +8,11 @@
 		"removeBtn" : "Remove",
         "pagination" : { "$ref" : "common/pagination.json" },
         "displaySelector" : { "$ref" : "catalog/pop/display-selector.json" },
-		"products" : { "$ref" : "catalog/product-list3.json" }
+		"products" : { "$ref" : "catalog/product-list3.json" },
+        "messages" : [
+            { "$ref" : "common/message-info.json" },
+            { "$ref" : "common/message-success.json" }
+        ]
 	},
     "meta" : { "$ref" : "common/meta.json" }
 }

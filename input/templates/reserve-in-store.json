@@ -16,6 +16,10 @@
             {
                 "$ref": "catalog/reserve/store-3.json"
             }
+        ],
+        "messages" : [
+            { "$ref" : "common/message-info.json" },
+            { "$ref" : "common/message-danger.json" }
         ]
     },
     "meta": {

@@ -23,7 +23,11 @@
 				"addressEditUrl" : "my-account-edit-address.html",
 				"addressDeleteUrl" : "my-account-address-book.html"
 			}
-		]
+		],
+        "messages" : [
+            { "$ref" : "common/message-info.json" },
+            { "$ref" : "common/message-success.json" }
+        ]
 	},
     "meta" : { "$ref" : "common/meta.json" }
 }

@@ -43,7 +43,11 @@
 				"shipping" : "Delivered",
 				"showOrderUrl" : "my-account-my-orders-order.html"
 			}
-		]
+		],
+        "messages" : [
+            { "$ref" : "common/message-info.json" },
+            { "$ref" : "common/message-success.json" }
+        ]
 	},
     "meta" : { "$ref" : "common/meta.json" }
 }
