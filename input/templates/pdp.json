@@ -8,7 +8,11 @@
         "suggestions" : { "$ref" : "catalog/product-list4.json" },
         "reviews" : { "$ref" : "catalog/pdp/reviews.json" },
         "wishlist" : { "$ref" :  "common/wishlist.json" },
-        "reserveInStoreUrl" : "reserve-in-store.html"
+        "reserveInStoreUrl" : "reserve-in-store.html",
+        "messages" : [
+            { "$ref" : "common/message-info.json" },
+            { "$ref" : "common/message-success.json" }
+        ]
     },
     "meta" : { "$ref" : "common/meta.json" }
 }

@@ -15,7 +15,11 @@
             "remember" : {
                 "selected": true
             }
-        }
+        },
+        "messages" : [
+            { "$ref" : "common/message-warning.json" },
+            { "$ref" : "common/message-success.json" }
+        ]
     },
     "meta" : { "$ref" : "common/meta.json" }
 }

@@ -11,7 +11,11 @@
     "guestCheckoutTitle" : "Guest Checkout",
     "guestCheckoutParagraph1" : "No problem, you do not need to create an account to place an order.",
     "guestCheckoutParagraph2" : "To make future purchases even faster, you will have the option of creating an acocount during checkout.",
-    "continueGuestBtn" : "Continue As Guest"
+    "continueGuestBtn" : "Continue As Guest",
+    "messages" : [
+      { "$ref" : "common/message-info.json" },
+      { "$ref" : "common/message-danger.json" }
+    ]
   },
   "meta" : { "$ref" : "common/meta.json" }
 }

@@ -23,7 +23,11 @@
                 ]
             }
         },
-        "cart" : { "$ref" : "common/cart-like.json" }
+        "cart" : { "$ref" : "common/cart-like.json" },
+        "messages" : [
+            { "$ref" : "common/message-danger.json" },
+            { "$ref" : "common/message-success.json" }
+        ]
     },
     "meta" : { "$ref" : "common/meta.json" }
 }
