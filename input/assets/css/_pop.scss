@@ -55,6 +55,9 @@
 }
 
 #pop-product-list {
+  display: flex;
+  flex-wrap: wrap;
+
   @media screen and (min-width: 767px) {
     float: right;
     width: 75%;
