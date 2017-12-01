@@ -1,8 +1,8 @@
 // SCSS partials compiled into main.min.css
 
 // Components
-@import "_general";
 @import "_mixins";
+@import "_general";
 @import "_input-fields";
 @import "_icon-font";
 @import "_banners";
@@ -19,6 +19,7 @@
 @import "_mix-match-product";
 @import "_add-to-bag-btn";
 @import "_add-to-wishlist-btn";
+@import "_product-availability";
 @import "_forgot-password";
 
 
@@ -55,5 +56,6 @@
 @import "_mix-match";
 @import "_contact-form";
 @import "_store-finder";
+@import "_store-location";
 @import "_faq";
 @import "_imprint";

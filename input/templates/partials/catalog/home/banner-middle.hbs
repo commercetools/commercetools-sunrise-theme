@@ -1,18 +1,20 @@
 <div class="aspect-ratio aspect-ratio--8to3">
   <picture>
-    <source srcset="{{cms "banner:homeMiddle.imageLarge"}}" media="(min-width: 1200px)">
-    <source srcset="{{cms "banner:homeMiddle.imageMedium"}}" media="(min-width: 768px)">
-    <img src="{{cms "banner:homeMiddle.imageSmall"}}" class="img-responsive">
+    <source srcset="{{cms "banners[2].backgroundImage" width="1499"}}" media="(min-width: 1200px)">
+    <source srcset="{{cms "banners[2].backgroundImage" width="992"}}" media="(min-width: 768px)">
+    <img src="{{cms "banners[2].backgroundImage" width="768"}}" class="img-responsive">
   </picture>
 </div>
 
 <div class="banner-text">
   <h4 class="banner-title">
-    {{{cms "banner:homeMiddle.title"}}}
+    <img class="hidden-xs" src="{{cms "banners[2].headerImage"}}"/>
+    <br/><br/>
+    {{{cms "banners[2].title"}}}
   </h4>
-  <p class="banner-subtitle">{{{cms "banner:homeMiddle.subtitle"}}}</p>
-  <p class="hidden-xs hidden-sm">{{{cms "banner:homeMiddle.description"}}}</p>
-  <a class="btn banner-btn" href="{{cms "banner:homeMiddle.linkHref"}}">
-    {{cms "banner:homeMiddle.linkText"}}
+  <p class="banner-subtitle">{{{cms "banners[2].subtitle"}}}</p>
+  <p class="hidden-xs hidden-sm">{{{cms "banners[2].description"}}}</p>
+  <a class="btn banner-btn" href="{{cms "banners[2].link"}}">
+    {{cms "banners[2].linkLabel"}}
   </a>
 </div>

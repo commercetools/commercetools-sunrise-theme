@@ -44,7 +44,11 @@
             "phoneBilling": "+49 123 4567899",
             "emailBilling": "thedoctor@commercetools.com"
         },
-        "cart" : { "$ref" : "common/cart-like.json" }
+        "cart" : { "$ref" : "common/cart-like.json" },
+        "messages" : [
+            { "$ref" : "common/message-info.json" },
+            { "$ref" : "common/message-success.json" }
+        ]
     },
     "meta" : { "$ref" : "common/meta.json" }
 }

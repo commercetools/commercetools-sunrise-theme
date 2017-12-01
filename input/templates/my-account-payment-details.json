@@ -31,7 +31,11 @@
             "date" : "09.18",
             "edit" : "Edit",
             "delete" : "delete"
-        }
+        },
+        "messages" : [
+            { "$ref" : "common/message-info.json" },
+            { "$ref" : "common/message-success.json" }
+        ]
 	},
     "meta" : { "$ref" : "common/meta.json" }
 }

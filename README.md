@@ -1,8 +1,18 @@
 # Commercetools Sunrise Theme
 
-[![Build Status](https://travis-ci.org/commercetools/commercetools-sunrise-theme.png?branch=master)](https://travis-ci.org/commercetools/commercetools-sunrise-theme) [![Stories in Ready](https://badge.waffle.io/commercetools/commercetools-sunrise-theme.png?label=ready&title=Ready)](https://waffle.io/commercetools/commercetools-sunrise-theme) [ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-theme/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-theme/_latestVersion)
+[![Build Status](https://travis-ci.org/commercetools/commercetools-sunrise-theme.svg?branch=master)](https://travis-ci.org/commercetools/commercetools-sunrise-theme)
+[ ![Download](https://api.bintray.com/packages/commercetools/maven/commercetools-sunrise-theme/images/download.svg) ](https://bintray.com/commercetools/maven/commercetools-sunrise-theme/_latestVersion)
+[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/orangemug/stability-badges#experimental)
+[![Stories in Ready](https://badge.waffle.io/commercetools/commercetools-sunrise-theme.png?label=ready&title=Ready)](https://waffle.io/commercetools/commercetools-sunrise-theme)
 
-##Demo
+## Attention
+
+Currently the templates as well as the CSS and JavaScript files are not ready to be re-used.
+
+Despite of that we recommend to use the project itself to develop your own theme with the current setup, as it provides useful tasks that can help you in the process. For more details, please check the [Commands](#commands) section.
+
+## Demo
+
 - [Home](http://commercetools.github.io/commercetools-sunrise-theme/site/en/home.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/home.html) )
 - [Product Overview](http://commercetools.github.io/commercetools-sunrise-theme/site/en/pop.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/pop.html) )
 - [Product Detail](http://commercetools.github.io/commercetools-sunrise-theme/site/en/pdp.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/pdp.html) )
@@ -25,6 +35,8 @@
 - [My Account: Wishlist](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-wishlist.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-wishlist.html) )
 - [My Account: Login](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-login.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-login.html) )
 - [My Account: Change Password](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-change-password.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-change-password.html) )
+- [My Account: Forgot Password](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-forgot-password.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-forgot-password.html) )
+- [My Account: Reset Password](http://commercetools.github.io/commercetools-sunrise-theme/site/en/my-account-reset-password.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/my-account-reset-password.html) )
 - [Confirmation Email](http://commercetools.github.io/commercetools-sunrise-theme/site/en/confirmation-email.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/confirmation-email.html) )
 - [Dispatch Email](http://commercetools.github.io/commercetools-sunrise-theme/site/en/dispatch-email.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/dispatch-email.html) )
 - [Registration Email](http://commercetools.github.io/commercetools-sunrise-theme/site/en/registration-email.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/registration-email.html) )
@@ -32,18 +44,19 @@
 - [No Search Result](http://commercetools.github.io/commercetools-sunrise-theme/site/en/no-search-result.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/no-search-result.html) )
 - [Mix & Match](http://commercetools.github.io/commercetools-sunrise-theme/site/en/mix-match.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/mix-match.html) )
 - [Contact Form](http://commercetools.github.io/commercetools-sunrise-theme/site/en/contact-form.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/contact-form.html) )
+- [Reserve in Store](http://commercetools.github.io/commercetools-sunrise-theme/site/en/reserve-in-store.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/reserve-in-store.html) )
 - [Store Finder](http://commercetools.github.io/commercetools-sunrise-theme/site/en/store-finder.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/store-finder.html) )
 - [FAQ Page](http://commercetools.github.io/commercetools-sunrise-theme/site/en/faq.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/faq.html) )
 - [Imprint Page](http://commercetools.github.io/commercetools-sunrise-theme/site/en/imprint.html) ( [DE](http://commercetools.github.io/commercetools-sunrise-theme/site/de/imprint.html) )
 
-##Installation
+## Installation
 
 - Install [Node.js](https://nodejs.org/) and [NPM](https://www.npmjs.com/)
 - Install [Sass](http://sass-lang.com/install)
 - Install [Grunt](http://gruntjs.com/getting-started)
 - Run `npm install` in the project root to install the project dependencies
 
-##How to use
+## How to use
 
 You can import the theme to your project as a [WebJars](http://www.webjars.org/) dependency.
 
@@ -51,9 +64,9 @@ All releases for this theme can be found in a Maven repository hosted by [Bintra
 - `>= v0.58.0`: https://dl.bintray.com/commercetools/maven/com/commercetools/sunrise/commercetools-sunrise-theme/
 - `< v0.58.0`: https://dl.bintray.com/commercetools/maven/io/commercetools/sunrise/commercetools-sunrise-theme/
 
-##How to develop
+## How to develop
 
-[Fork](https://help.github.com/articles/fork-a-repo/) or [copy](https://help.github.com/articles/duplicating-a-repository/) the project and adapt `package.json` to create your own theme.
+[Copy](https://help.github.com/articles/duplicating-a-repository/) the project and adapt `package.json` to create your own theme.
 
 Set it up as explained in the _[Installation](#installation)_ section, then apply your modifications as follows:
 
@@ -62,7 +75,7 @@ Set it up as explained in the _[Installation](#installation)_ section, then appl
 3. Check your changes by accessing the desired HTML file generated in the `output/` folder
 4. Once ready, enable the theme in your Sunrise project following one of the methods described in _[Create WebJars file](#create-webjars-file)_
 
-###Commands
+### Commands
 
 Besides `grunt`, which builds the whole generated site (`grunt build`) and watches for changes, there are other commands available. Below are listed a non-exhaustive list of them.
 

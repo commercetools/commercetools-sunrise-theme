@@ -51,6 +51,10 @@ wishlist:
   add: Auf den Wunschzettel
   view: Wunschliste ansehen
   recentlyAdded: Zuletzt hinzugefügte Artikel
+reserve:
+  title:
+    long: Im Shop reservieren
+    short: Reservieren
 suggestions:
   title: Das könnte Ihnen auch gefallen
 reviews:
