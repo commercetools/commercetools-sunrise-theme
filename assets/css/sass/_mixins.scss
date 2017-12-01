@@ -48,10 +48,6 @@
   }
 }
 
-@mixin aspect-ratio-in-element($width, $height) {
-  padding-top: ($height / $width) * 100%;
-}
-
 @mixin truncate {
   white-space: nowrap;
   overflow: hidden;
