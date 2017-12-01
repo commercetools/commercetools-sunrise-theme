@@ -182,7 +182,7 @@ button {
 }
 
 .img-lazy-error {
-  @include aspect-ratio-in-element(3,4);
+  height: 40vh;
 }
 
 .img-lazy,
