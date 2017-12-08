@@ -66,7 +66,7 @@ All releases for this theme can be found in a Maven repository hosted by [Bintra
 
 ## How to develop
 
-[Copy](https://help.github.com/articles/duplicating-a-repository/) the project and adapt `package.json` to create your own theme.
+[Duplicate](https://help.github.com/articles/duplicating-a-repository/) the repository and adapt `package.json` to create your own theme.
 
 Set it up as explained in the _[Installation](#installation)_ section, then apply your modifications as follows:
 
