@@ -9,7 +9,7 @@ module.exports = {
       email: "<%= pkg.config.github.email %>"
     },
     repo: 'https://<%= env.GH_TOKEN %>@github.com/<%= pkg.config.github.repoSlug %>.git',
-    silent: true,
+    silent: false,
     base: 'output'
   },
   src: ['**/*']
