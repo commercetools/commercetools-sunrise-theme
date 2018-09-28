@@ -1,7 +1,4 @@
 {
-  "img/Facebook.png": "img/Facebook-a06248937624f5df1ec4d84d6e9eceee.png",
-  "img/Google.png": "img/Google-d55ac7690b39ea702b84aa0fce8348b5.png",
-  "img/Pinterest.png": "img/Pinterest-e832665d73dc7ff9f37e7718c4c5903d.png",
   "img/arrow-28-32.png": "img/arrow-28-32-277cab781d95e86698f9186dc3f8af81.png",
   "img/arrow-66.png": "img/arrow-66-c8c7379b08ed4836296c1c8e3d0d9a9e.png",
   "img/arrow-67-black.png": "img/arrow-67-black-7e3e76794e11658a188194e4bbc060ab.png",
@@ -20,10 +17,12 @@
   "img/delete-1.png": "img/delete-1-421d04c332afe6d751d51e28934399fd.png",
   "img/delete-60px.png": "img/delete-60px-421d04c332afe6d751d51e28934399fd.png",
   "img/edit-1.png": "img/edit-1-3c955b0379986cb2b692bc3b4e01a0fb.png",
+  "img/Facebook.png": "img/Facebook-a06248937624f5df1ec4d84d6e9eceee.png",
   "img/globe-2.png": "img/globe-2-ce4bd751b9177719bbf799af3d0f79b2.png",
+  "img/Google.png": "img/Google-d55ac7690b39ea702b84aa0fce8348b5.png",
   "img/hand-bag-2-black.png": "img/hand-bag-2-black-37f5de8cfeb6fd8457308d278fcda59c.png",
-  "img/heart-1.png": "img/heart-1-505e0ca091ba75830c5be87ca9869163.png",
   "img/heart_sprite.png": "img/heart_sprite-fcac72328154f564df78d4092297de6d.png",
+  "img/heart-1.png": "img/heart-1-505e0ca091ba75830c5be87ca9869163.png",
   "img/information.png": "img/information-8d21419f46d4ebe129a0355701298343.png",
   "img/loading.gif": "img/loading-3c9132f5e3b9d7c1171a23ac53e586f0.gif",
   "img/logo-white-text.svg": "img/logo-white-text-008e97eaefc525275471fc640a6b0f7d.svg",
@@ -34,6 +33,7 @@
   "img/payment-option-card.gif": "img/payment-option-card-a89723bb7792b24fae8e78c3b9130bcb.gif",
   "img/payment-option-paypal.png": "img/payment-option-paypal-224f861928062b2c7211dac7dd835c5e.png",
   "img/phone.png": "img/phone-eb5147e2ba037f8fefe550e508376f80.png",
+  "img/Pinterest.png": "img/Pinterest-e832665d73dc7ff9f37e7718c4c5903d.png",
   "img/plus79.png": "img/plus79-ff2fd999af2fc5d389613530e5c59636.png",
   "img/ruler-1.png": "img/ruler-1-dda7d9d95f7e16051fe32f27648eaa4b.png",
   "img/spinner.gif": "img/spinner-2fe6e3e0baff69ba301ea00e2438c19e.gif",
@@ -54,6 +54,6 @@
   "js/main.min.js": "js/main.min-57df995deae85071ae59b8d1de6412fe.js",
   "js/map-scripts.js": "js/map-scripts-15648e1f1179a9d4941335f47440d3c4.js",
   "js/selectboxit.min.js": "js/selectboxit.min-3a414ae410dd205fa8fff2027c297a89.js",
-  "main.min.css": "main.min-f92a58c685a9394d31dcaa445c2c7a27.css",
+  "main.min.css": "main.min-06a78d344d979d8975269adeab1a88eb.css",
   "selectboxit.min.css": "selectboxit.min-db6170754f9da8de6c95b8093801eb76.css"
 }
