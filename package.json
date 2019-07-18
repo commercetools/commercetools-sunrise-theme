@@ -50,8 +50,14 @@
     "handlebars": "4.1.2",
     "i18next": "1.10.6",
     "i18next.yaml": "1.6.0",
+<<<<<<< HEAD
     "json-refs": "3.0.13",
     "load-grunt-tasks": "5.0.0",
     "node-sass": "4.12.0"
+=======
+    "json-refs": "2.1.7",
+    "load-grunt-tasks": "3.5.2",
+    "node-sass": "4.9.3"
+>>>>>>> parent of 6ead88cf... Update dependency load-grunt-tasks to v5
   }
 }
