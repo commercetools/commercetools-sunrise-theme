@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="generator" content="commercetools" />
-  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="../../assets/img/favicon.ico">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.min.css">
@@ -17,9 +17,9 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick-theme.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
-  <link href="css/selectboxit.min-db6170754f9da8de6c95b8093801eb76.css" rel="stylesheet">
-  <link href="css/main.min-0b77ff685eaaf5c0cbb93a7a0892f17f.css" rel="stylesheet">
-  <title></title>
+  <link href="../../assets/css/selectboxit.min-db6170754f9da8de6c95b8093801eb76.css" rel="stylesheet">
+  <link href="../../assets/css/main.min-06a78d344d979d8975269adeab1a88eb.css" rel="stylesheet">
+  <title>Sunrise - Checkout Page</title>
 </head>
 
 <body>
@@ -27,14 +27,14 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-4 col-xs-12">
-        <a href="" class="brand-logo">
-          <img class="checkout-header-logo img-responsive" src="img/logo-white-text-aecdbcf082cbe05d470364e9ef0d5979.svg" alt="SUNRISE Logo">
+        <a href="home.html" class="brand-logo">
+          <img class="checkout-header-logo img-responsive" src="../../assets/img/logo-white-text-008e97eaefc525275471fc640a6b0f7d.svg" alt="SUNRISE Logo">
         </a>
       </div>
       <div class="col-sm-8 col-xs-12">
         <div class="checkout-header-callus">
           <span class="">Need help? Customer Service</span>
-          <span class="checkout-header-number"><img class="phone-icon" src="img/phone-eb5147e2ba037f8fefe550e508376f80.png" alt="phone icon" /></span>
+          <span class="checkout-header-number"><img class="phone-icon" src="../../assets/img/phone-eb5147e2ba037f8fefe550e508376f80.png" alt="phone icon" />+12 345 6000</span>
         </div>
       </div>
     </div>
@@ -42,13 +42,13 @@
 </div><div class="checkout-shipping">
     <div class="container">
       <div class="row">
-         		<div class="alert alert-"></div>
-         		<div class="alert alert-"></div>
+         		<div class="alert alert-warning">Warning!</div>
+         		<div class="alert alert-success">Success!</div>
       </div>
         <div class="row">
             <div class="col-md-7">
               <div class="secure-payment">
-                  <span><img class="secure-payment-icon" src="img/credit-card-lock-9b9e07a3bbc1150a0cfb893d3e1a64dd.png" alt="secure payment"></span>
+                  <span><img class="secure-payment-icon" src="../../assets/img/credit-card-lock-9b9e07a3bbc1150a0cfb893d3e1a64dd.png" alt="secure payment"></span>
                   <span class="text-uppercase secure-payment-title">Secure Checkout - Confirmation</span>
               </div>
             </div>
@@ -72,31 +72,36 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="checkout">
-                    <form method="post" action="">
-                        <input type="hidden" name="csrfToken" value=""/>
+                    <form method="post" action="checkout-thankyou.html">
+                        <input type="hidden" name="csrfToken" value="Test123"/>
                         <div class="row">
                             <div class="col-sm-4 checkout-first-col">
                               <div class="checkout-summary">
                                   <div class="text-uppercase">
                                       <span class="checkout-summary-title">Shipping Address</span>
-                                          <a id="confirmation-edit-shipping-btn" href="">
+                                          <a id="confirmation-edit-shipping-btn" href="checkout-shipping.html">
                                             <span class="pull-right">
-                                                <img src="img/edit-1-3c955b0379986cb2b692bc3b4e01a0fb.png" class="checkout-summary-edit-icon" alt="">Edit
+                                                <img src="../../assets/img/edit-1-3c955b0379986cb2b692bc3b4e01a0fb.png" class="checkout-summary-edit-icon" alt="">Edit
                                             </span>
                                           </a>
                                   </div>
                                   <div class="checkout-summary-text">
-                                      <span></span>
+                                      <span> Mr. Bruce Wayne</span>
                                       <br>
-                                      <span> </span>
+                                      <span>100 Gotham Street </span>
                                       <br>
-                                      <span> </span>
+                                      <span>11111 Gotham</span>
                                       <br>
-                                      <span></span>
+                                      <span>NY</span>
                                       <br>
-                                      <span></span>
+                                      <span>United States</span>
                                   </div>
                                   <div>
+                                        <span>Phone:</span>
+                                        <span> 5555-24-64</span>
+                                        <br>
+                                        <span>Email:</span>
+                                        <span> someone@somewhere.com</span>
                                   </div>
                               </div>
                             </div>
@@ -104,24 +109,27 @@
                               <div class="checkout-summary">
                                   <div class="text-uppercase">
                                       <span class="checkout-summary-title">Billing Address</span>
-                                          <a id="confirmation-edit-shipping-btn" href="">
+                                          <a id="confirmation-edit-shipping-btn" href="checkout-shipping.html">
                                             <span class="pull-right">
-                                                <img src="img/edit-1-3c955b0379986cb2b692bc3b4e01a0fb.png" class="checkout-summary-edit-icon" alt="">Edit
+                                                <img src="../../assets/img/edit-1-3c955b0379986cb2b692bc3b4e01a0fb.png" class="checkout-summary-edit-icon" alt="">Edit
                                             </span>
                                           </a>
                                   </div>
                                   <div class="checkout-summary-text">
-                                      <span></span>
+                                      <span> Mrs. Jane Doe</span>
                                       <br>
-                                      <span> </span>
+                                      <span>404 Ave. </span>
                                       <br>
-                                      <span> </span>
+                                      <span>80808 Berlin</span>
                                       <br>
-                                      <span></span>
+                                      <span>Berlin</span>
                                       <br>
-                                      <span></span>
+                                      <span>Germany</span>
                                   </div>
                                   <div>
+                                        <span>Phone:</span>
+                                        <span> 5555-24-64</span>
+                                        <br>
                                   </div>
                               </div>
                             </div>
@@ -129,37 +137,37 @@
                               <div class="checkout-summary">
                                   <div class="text-uppercase">
                                       <span class="checkout-summary-title">Shipping Method</span>
-                                          <a id="confirmation-edit-method-btn" href="">
+                                          <a id="confirmation-edit-method-btn" href="checkout-shipping.html#shipping-methods-setting">
                                             <span class="pull-right">
-                                                <img src="img/edit-1-3c955b0379986cb2b692bc3b4e01a0fb.png" class="checkout-summary-edit-icon" alt="">Edit
+                                                <img src="../../assets/img/edit-1-3c955b0379986cb2b692bc3b4e01a0fb.png" class="checkout-summary-edit-icon" alt="">Edit
                                             </span>
                                           </a>
                                   </div>
                                   <div class="checkout-summary-text">
-                                      <span></span>
+                                      <span>DHL Standard</span>
                                       <br>
-                                      <span></span>
+                                      <span>DHL Standard - Delivery 3-5 Days</span>
                                   </div>
                               </div>
                               <div class="checkout-summary">
                                   <div class="text-uppercase">
                                       <span class="checkout-summary-title">Payment Details</span>
-                                          <a id="confirmation-edit-details-btn" href="">
+                                          <a id="confirmation-edit-details-btn" href="checkout-payment.html">
                                             <span class="pull-right">
-                                                <img src="img/edit-1-3c955b0379986cb2b692bc3b4e01a0fb.png" class="checkout-summary-edit-icon" alt="">Edit
+                                                <img src="../../assets/img/edit-1-3c955b0379986cb2b692bc3b4e01a0fb.png" class="checkout-summary-edit-icon" alt="">Edit
                                             </span>
                                           </a>
                                   </div>
                                   <div class="checkout-summary-text">
-                                      <span></span>
+                                      <span>Credit Card</span>
                                       <br>
-                                      <span></span>
+                                      <span>P. Osgood</span>
                                       <br>
-                                      <span></span>
+                                      <span>Visa</span>
                                       <br>
-                                      <span></span>
+                                      <span>**** **** **** **56</span>
                                       <br>
-                                      <span></span>
+                                      <span>09.18</span>
                                   </div>
                               </div>
                             </div>
@@ -181,7 +189,202 @@
                                 </div>
                             </div>
                         </div>
+                            <div class="row single-cart-item">
+                                <div class="col-sm-1 col-xs-4 product-img-col">
+                                    <img class="img-responsive cart-item-img" src="../../assets/img/blue-jacket-329d4682d1aa7ae44b6519057cc0d17c.jpg" alt="Enditatem Product Name Optional very long line two">
+                                </div>
+                                <div class="col-sm-3 col-xs-8 product-info-text">
+                                    <p class="cart-item-name">
+                                      <a href="pdp.html">Enditatem Product Name Optional very long line two</a>
+                                    </p>
+                                    <p class="grey-p">Sunrise #SUN123456</p>
+                                    <p class="cart-attributes">
+                                        Color
+                                        <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                                        <br>
+                                        Size
+                                        <span class="black-p" data-model="cartItem.size">M</span>
+                                        
+                                    </p>
+                                      <p class="cart-item-availability grey-p">
+                                          <span class="glyphicon glyphicon-ok-sign"></span>Available
+                                      </p>
+                                </div>
+                      
+                      
+                      
+                      
+                                <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
+                                    <span class="visible-xs">quantity:</span>
+                                    <span class="quantity-number">1</span>
+                                </div>
+                      
+                      
+                      
+                      
+                      
+                      
+                                <div class="col-sm-2 col-xs-7">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Price</span>
+                                          <span class="discounted-price">100,00 €</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-5">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Total</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row single-cart-item">
+                                <div class="col-sm-1 col-xs-4 product-img-col">
+                                    <img class="img-responsive cart-item-img" src="../../assets/img/blue-jacket-329d4682d1aa7ae44b6519057cc0d17c.jpg" alt="Enditatem Product Name Optional very long line two">
+                                </div>
+                                <div class="col-sm-3 col-xs-8 product-info-text">
+                                    <p class="cart-item-name">
+                                      <a href="pdp.html">Enditatem Product Name Optional very long line two</a>
+                                    </p>
+                                    <p class="grey-p">Sunrise #SUN123456</p>
+                                    <p class="cart-attributes">
+                                        Color
+                                        <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                                        <br>
+                                        Size
+                                        <span class="black-p" data-model="cartItem.size">M</span>
+                                        
+                                    </p>
+                                      <p class="cart-item-availability grey-p">
+                                          <span class="glyphicon glyphicon-ok-sign"></span>Available
+                                      </p>
+                                </div>
+                      
+                      
+                      
+                      
+                                <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
+                                    <span class="visible-xs">quantity:</span>
+                                    <span class="quantity-number">1</span>
+                                </div>
+                      
+                      
+                      
+                      
+                      
+                      
+                                <div class="col-sm-2 col-xs-7">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Price</span>
+                                          <span class="discounted-price">100,00 €</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-5">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Total</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row single-cart-item">
+                                <div class="col-sm-1 col-xs-4 product-img-col">
+                                    <img class="img-responsive cart-item-img" src="../../assets/img/blue-jacket-329d4682d1aa7ae44b6519057cc0d17c.jpg" alt="Enditatem Product Name Optional very long line two">
+                                </div>
+                                <div class="col-sm-3 col-xs-8 product-info-text">
+                                    <p class="cart-item-name">
+                                      <a href="pdp.html">Enditatem Product Name Optional very long line two</a>
+                                    </p>
+                                    <p class="grey-p">Sunrise #SUN123456</p>
+                                    <p class="cart-attributes">
+                                        Color
+                                        <span class="black-p" data-model="cartItem.color">Navy Blue</span>
+                                        <br>
+                                        Size
+                                        <span class="black-p" data-model="cartItem.size">M</span>
+                                        
+                                    </p>
+                                      <p class="cart-item-availability grey-p">
+                                          <span class="glyphicon glyphicon-ok-sign"></span>Available
+                                      </p>
+                                </div>
+                      
+                      
+                      
+                      
+                                <div class="col-sm-2 col-sm-offset-2 col-xs-12 text-center quantity-counter">
+                                    <span class="visible-xs">quantity:</span>
+                                    <span class="quantity-number">1</span>
+                                </div>
+                      
+                      
+                      
+                      
+                      
+                      
+                                <div class="col-sm-2 col-xs-7">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Price</span>
+                                          <span class="discounted-price">100,00 €</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-5">
+                                    <div class="text-right cart-item-price">
+                                        <span class="visible-xs xs-price-title">Total</span>
+                                        <span>49,00 €</span>
+                                    </div>
+                                </div>
+                            </div>
                         
+                        <div class="row">
+                          <div class="col-sm-12">
+                             <div class="col-sm-10 col-xs-7">
+                                <div class="text-right payment-code-applied">
+                                    <span class="text-uppercase payment-code-title" title="Promotion code applied">
+                                        Promotional Code Applied
+                                    </span>
+                                </div>
+                             </div>
+                             <div class="col-sm-2 col-xs-5 text-right">
+                                <form action="" method="post">
+                                    <span class="payment-code">Sunrise</span>
+                                    <input type="hidden" name="csrfToken" value="Test123"/>
+                                    <input type="hidden" name="discountCodeId" value="1234">
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                             <div class="col-sm-10 col-xs-7">
+                                <div class="text-right payment-code-applied">
+                                </div>
+                             </div>
+                             <div class="col-sm-2 col-xs-5 text-right">
+                                <form action="" method="post">
+                                    <span class="payment-code">Sunny</span>
+                                    <input type="hidden" name="csrfToken" value="Test123"/>
+                                    <input type="hidden" name="discountCodeId" value="12345">
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                             <div class="col-sm-10 col-xs-7">
+                                <div class="text-right payment-code-applied">
+                                </div>
+                             </div>
+                             <div class="col-sm-2 col-xs-5 text-right">
+                                <form action="" method="post">
+                                    <span class="payment-code">Sunny No</span>
+                                    <input type="hidden" name="csrfToken" value="Test123"/>
+                                    <input type="hidden" name="discountCodeId" value="12345">
+                                </form>
+                            </div>
+                          </div>
+                        </div>
                           <div class="row">
                             <div class="col-xs-12">
                               <div class="follow-up">
@@ -222,17 +425,17 @@
                                           </div>
                                           <div class="col-sm-2 col-xs-5 text-right">
                                               <div>
-                                                  <span></span>
+                                                  <span>147.00 €</span>
                                               </div>
                                               <div>
-                                                  <span></span>
+                                                  <span>3,00 €</span>
                                               </div>
                                               <hr>
                                               <div>
-                                                  <span></span>
+                                                  <span>23.95 €</span>
                                               </div>
                                               <div>
-                                                  <span class="order-total"></span>
+                                                  <span class="order-total">150.00 €</span>
                                               </div>
                                           </div>
                                       
@@ -256,9 +459,9 @@
             <div class="col-sm-12">
                 <ul class="footer-title imprint-row">
                     <li class="hidden-xs">© 2015 Sunrise</li>
-                    <li><a href="">Imprint</a></li>
-                    <li><a href="">Privacy policy</a></li>
-                    <li><a href="">Terms of use</a></li>
+                    <li><a href="imprint.html">Imprint</a></li>
+                    <li><a href="privacy.html">Privacy policy</a></li>
+                    <li><a href="terms.html">Terms of use</a></li>
                     <li class="visible-xs">© 2015 Sunrise</li>
                 </ul>
             </div>
@@ -266,14 +469,14 @@
     </div>
 </div> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-<script src="js/jquery.ui.touch-punch.min-700b877cd3ade98ce6cd4be349d81a5c.js"></script>
+<script src="../../assets/js/jquery.ui.touch-punch.min-700b877cd3ade98ce6cd4be349d81a5c.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="js/jqzoom.min-59de071919ca0d32f52e04170a95ad45.js"></script>
+<script src="../../assets/js/jqzoom.min-59de071919ca0d32f52e04170a95ad45.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/animatedModal.min-7345a731ae2c14daa28eaa1a7cf166c5.js"></script>
-<script src="js/selectboxit.min-3a414ae410dd205fa8fff2027c297a89.js"></script>
-<script src="js/main.min-c38cb0d2568e3e1382fdf0a42b32ba78.js"></script>
+<script src="../../assets/js/animatedModal.min-7345a731ae2c14daa28eaa1a7cf166c5.js"></script>
+<script src="../../assets/js/selectboxit.min-3a414ae410dd205fa8fff2027c297a89.js"></script>
+<script src="../../assets/js/main.min-57df995deae85071ae59b8d1de6412fe.js"></script>
 
 </body>
 
