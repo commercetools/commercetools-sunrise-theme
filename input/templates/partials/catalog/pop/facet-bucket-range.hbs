@@ -1,0 +1,21 @@
+<p class="filter-products">{{facet.label}}</p>
+<div class="row">
+  <div class="col-sm-12">
+    <select name={{facet.key}} class="select-product-detail" required>
+      <option disabled selected>All</option>
+      {{#each facet.options}}
+        <option value="{{lowerEndpoint}} to {{upperEndpoint}}" {{#if selected}}selected{{/if}}>
+          {{#unless lowerEndpoint}}
+           Up to {{priceFmt upperEndpoint}}
+          {{else}}
+            {{#unless upperEndpoint}}
+              More than {{priceFmt lowerEndpoint}}
+            {{else}}
+              {{priceFmt lowerEndpoint}} to {{priceFmt upperEndpoint}}
+            {{/unless}}
+          {{/unless}}
+        </option>
+      {{/each}}
+    </select>
+  </div>
+</div>
