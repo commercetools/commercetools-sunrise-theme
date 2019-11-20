@@ -47,7 +47,7 @@
     "grunt-gh-pages": "2.1.0",
     "grunt-maven-tasks": "1.4.0",
     "grunt-postcss": "0.9.0",
-    "handlebars": "4.0.14",
+    "handlebars": "4.5.3",
     "i18next": "1.10.6",
     "i18next.yaml": "1.6.0",
     "json-refs": "2.1.7",
