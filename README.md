@@ -5,6 +5,11 @@
 [![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/orangemug/stability-badges#experimental)
 [![Stories in Ready](https://badge.waffle.io/commercetools/commercetools-sunrise-theme.png?label=ready&title=Ready)](https://waffle.io/commercetools/commercetools-sunrise-theme)
 
+> :warning: **This repository is now deprecated and will be decommissioned in 2020.**
+
+If you would nevertheless like to use it for your own developments you should fork this repository under the given license and continue developing your version, but please be aware that there will be no more updates and no support provided.
+
+
 ## Attention
 
 Currently the templates as well as the CSS and JavaScript files are not ready to be re-used.
