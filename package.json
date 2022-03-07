@@ -52,6 +52,6 @@
     "i18next.yaml": "1.6.0",
     "json-refs": "2.1.7",
     "load-grunt-tasks": "5.0.0",
-    "node-sass": "4.9.3"
+    "node-sass": "7.0.0"
   }
 }
